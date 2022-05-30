@@ -14,15 +14,12 @@ echo "= Versions: ${VERSIONLIST[*]}"
 echo "= Branches: ${BRANCHLIST[*]}"
 echo "============================================================================"
 
-mkdir -p "build"
-touch "build/.nojekyll"
-
 for index in ${!VERSIONLIST[@]}; do
   version=${VERSIONLIST[$index]}
   moodlebranch=${BRANCHLIST[$index]}
   APIDOCDIR="build/${version}"
   echo "========================================"
-  echo "== Generating all API Documentation for ${version} using branch ${moodlebranch}"
+  echo "== Generating PHP API Documentation for ${version} using branch ${moodlebranch}"
   echo "== Generated documentation will be placed into ${APIDOCDIR}"
   echo "========================================"
   mkdir -p "${APIDOCDIR}"
@@ -36,34 +33,6 @@ for index in ${!VERSIONLIST[@]}; do
   git fetch origin "${moodlebranch}"
   git checkout "remotes/origin/${moodlebranch}"
   HASH=`git log -1 --format="%h"`
-
-  if [ "${version}" = "3.9" ]
-  then
-    echo "========================================"
-    echo "== Skipping JS Documentation for 3.9"
-    echo "========================================"
-  else
-    echo "========================================"
-    echo "== Installing NodeJS Dependencies"
-    echo "========================================"
-    npm ci
-
-    echo "========================================"
-    echo "== Generating ignorefiles"
-    echo "========================================"
-    npx grunt ignorefiles
-
-    echo "========================================"
-    echo "== Generating JS Documentation"
-    echo "========================================"
-    npx grunt jsdoc
-
-    echo "========================================"
-    echo "== Moving jsdocs into ${APIDOCDIR}/jsdoc"
-    echo "========================================"
-    cd "${ROOT}"
-    mv "${INPUT}/jsdoc" "${APIDOCDIR}/jsdoc"
-  fi
 
   echo "========================================"
   echo "== Building PHP Documentation"
@@ -80,10 +49,10 @@ for index in ${!VERSIONLIST[@]}; do
 
   # Move the built files into the build directory
   echo "========================================"
-  echo "== Moving phpdocs into ${APIDOCDIR}/phpdocs"
+  echo "== Moving phpdocs into ${APIDOCDIR}"
   echo "========================================"
   cd "${ROOT}"
-  mv "build/phpdocs/${version}/html" "${APIDOCDIR}/phpdocs"
+  mv "build/phpdocs/${version}/html" "${APIDOCDIR}"
 
   echo "========================================"
   echo "== Completed documentation generation for ${version}"
