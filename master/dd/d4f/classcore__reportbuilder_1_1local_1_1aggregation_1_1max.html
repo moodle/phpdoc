@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220527) (117b24013b)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220603) (5500d143f4)</div>
   </td>
  </tr>
  </tbody>
@@ -79,9 +79,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a91e6ace7418e3cd3b6f142e700716c05"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d4f/classcore__reportbuilder_1_1local_1_1aggregation_1_1max.html#a91e6ace7418e3cd3b6f142e700716c05">compatible</a> (int $columntype)</td></tr>
 <tr class="memdesc:a91e6ace7418e3cd3b6f142e700716c05"><td class="mdescLeft">&#160;</td><td class="mdescRight">This aggregation can be performed on all numeric/date/boolean types.  <a href="../../dd/d4f/classcore__reportbuilder_1_1local_1_1aggregation_1_1max.html#a91e6ace7418e3cd3b6f142e700716c05">More...</a><br /></td></tr>
 <tr class="separator:a91e6ace7418e3cd3b6f142e700716c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae01fdc493a4d5aee3eae50e26b9919bb"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d3e/classcore__reportbuilder_1_1local_1_1aggregation_1_1base.html#ae01fdc493a4d5aee3eae50e26b9919bb">format_value</a> ($<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>, array $values, array $callbacks)</td></tr>
-<tr class="memdesc:ae01fdc493a4d5aee3eae50e26b9919bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return formatted value for column when applying aggregation, by default executing all callbacks on the value.  <a href="../../d9/d3e/classcore__reportbuilder_1_1local_1_1aggregation_1_1base.html#ae01fdc493a4d5aee3eae50e26b9919bb">More...</a><br /></td></tr>
-<tr class="separator:ae01fdc493a4d5aee3eae50e26b9919bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afee0e5878cdad634774cd3ee35693449"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d3e/classcore__reportbuilder_1_1local_1_1aggregation_1_1base.html#afee0e5878cdad634774cd3ee35693449">format_value</a> ($<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>, array $values, array $callbacks, int $columntype)</td></tr>
+<tr class="memdesc:afee0e5878cdad634774cd3ee35693449"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return formatted value for column when applying aggregation, by default executing all callbacks on the value.  <a href="../../d9/d3e/classcore__reportbuilder_1_1local_1_1aggregation_1_1base.html#afee0e5878cdad634774cd3ee35693449">More...</a><br /></td></tr>
+<tr class="separator:afee0e5878cdad634774cd3ee35693449"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af58f2943981c1f7f21a436b5febfae36"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d3e/classcore__reportbuilder_1_1local_1_1aggregation_1_1base.html#af58f2943981c1f7f21a436b5febfae36">get_class_name</a> ()</td></tr>
 <tr class="memdesc:af58f2943981c1f7f21a436b5febfae36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the class name of the aggregation type.  <a href="../../d9/d3e/classcore__reportbuilder_1_1local_1_1aggregation_1_1base.html#af58f2943981c1f7f21a436b5febfae36">More...</a><br /></td></tr>
 <tr class="separator:af58f2943981c1f7f21a436b5febfae36"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,8 +147,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae01fdc493a4d5aee3eae50e26b9919bb" name="ae01fdc493a4d5aee3eae50e26b9919bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae01fdc493a4d5aee3eae50e26b9919bb">&#9670;&nbsp;</a></span>format_value()</h2>
+<a id="afee0e5878cdad634774cd3ee35693449" name="afee0e5878cdad634774cd3ee35693449"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afee0e5878cdad634774cd3ee35693449">&#9670;&nbsp;</a></span>format_value()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -172,7 +172,13 @@ Static Protected Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">array&#160;</td>
-          <td class="paramname"><em>$callbacks</em>&#160;</td>
+          <td class="paramname"><em>$callbacks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$columntype</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -198,6 +204,12 @@ Static Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d1/d3e/classcore__reportbuilder_1_1local_1_1report_1_1column.html#a6b1d16f5feefd9d5966c876e6aec6aba" title="Adds column callback (in the case there are multiple, they will be applied one after another)">column::add_callback</a>} for definition </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$columntype</td><td>The original type of the column, to ensure it is preserved for callbacks </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">mixed</td><td></td></tr>
@@ -205,7 +217,7 @@ Static Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d3/de3/classcore__reportbuilder_1_1local_1_1aggregation_1_1avg.html#a175722019da15536d825a98e8739b06b">core_reportbuilder\local\aggregation\avg</a>, <a class="el" href="../../d9/d65/classcore__reportbuilder_1_1local_1_1aggregation_1_1count.html#a49b6db0a6db89c5963c66ef8882899b7">core_reportbuilder\local\aggregation\count</a>, <a class="el" href="../../dc/d0e/classcore__reportbuilder_1_1local_1_1aggregation_1_1countdistinct.html#af7810ccdd8ccefd17a9da84e376a0778">core_reportbuilder\local\aggregation\countdistinct</a>, <a class="el" href="../../db/dac/classcore__reportbuilder_1_1local_1_1aggregation_1_1groupconcat.html#a6a285bc8cc6b40b31f0280da0aa1b5d7">core_reportbuilder\local\aggregation\groupconcat</a>, <a class="el" href="../../da/ddd/classcore__reportbuilder_1_1local_1_1aggregation_1_1percent.html#a0abc607b6ea9097f5e80d6b96304d330">core_reportbuilder\local\aggregation\percent</a>, and <a class="el" href="../../da/d34/classcore__reportbuilder_1_1local_1_1aggregation_1_1sum.html#a5e5b4a70326bbecd7a5647237c70ab9b">core_reportbuilder\local\aggregation\sum</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d3/de3/classcore__reportbuilder_1_1local_1_1aggregation_1_1avg.html#aa89fecdc81392ed62ca4053236cccff7">core_reportbuilder\local\aggregation\avg</a>, <a class="el" href="../../d9/d65/classcore__reportbuilder_1_1local_1_1aggregation_1_1count.html#a5e623282fe42234564de144dacec17c0">core_reportbuilder\local\aggregation\count</a>, <a class="el" href="../../dc/d0e/classcore__reportbuilder_1_1local_1_1aggregation_1_1countdistinct.html#ab2d8457c5eec28279efeb128b9f5ca44">core_reportbuilder\local\aggregation\countdistinct</a>, <a class="el" href="../../db/dac/classcore__reportbuilder_1_1local_1_1aggregation_1_1groupconcat.html#a2637ff1341d72c3b9f0c908cbdc937bf">core_reportbuilder\local\aggregation\groupconcat</a>, <a class="el" href="../../da/ddd/classcore__reportbuilder_1_1local_1_1aggregation_1_1percent.html#a5e483044a1157ad3d20c40dbfb036bce">core_reportbuilder\local\aggregation\percent</a>, and <a class="el" href="../../da/d34/classcore__reportbuilder_1_1local_1_1aggregation_1_1sum.html#acb4814017092ecfc49012d1406b14665">core_reportbuilder\local\aggregation\sum</a>.</p>
 
 </div>
 </div>
@@ -472,7 +484,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 30 2022 15:35:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jun 5 2022 03:26:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220527) (117b24013b)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220603) (5500d143f4)</div>
   </td>
  </tr>
  </tbody>
@@ -94,8 +94,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a37bfe6f5092f1899deada251263c032f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch records using given criteria.  <a href="../../d1/d20/classlogstore__standard_1_1log_1_1store.html#a37bfe6f5092f1899deada251263c032f">More...</a><br /></td></tr>
 <tr class="separator:a37bfe6f5092f1899deada251263c032f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a274050bf1b9fb17566f1119a80ef786b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d20/classlogstore__standard_1_1log_1_1store.html#a274050bf1b9fb17566f1119a80ef786b">get_events_select_count</a> ($selectwhere, array $params)</td></tr>
-<tr class="memdesc:a274050bf1b9fb17566f1119a80ef786b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of events matching given criteria.  <a href="../../d1/d20/classlogstore__standard_1_1log_1_1store.html#a274050bf1b9fb17566f1119a80ef786b">More...</a><br /></td></tr>
+<tr class="memdesc:a274050bf1b9fb17566f1119a80ef786b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get number of events present for the given select clause.  <a href="../../d1/d20/classlogstore__standard_1_1log_1_1store.html#a274050bf1b9fb17566f1119a80ef786b">More...</a><br /></td></tr>
 <tr class="separator:a274050bf1b9fb17566f1119a80ef786b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac828643e0f9c4fed20555aac3a1328a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d20/classlogstore__standard_1_1log_1_1store.html#ac828643e0f9c4fed20555aac3a1328a7">get_events_select_exists</a> (string $selectwhere, array $params)</td></tr>
+<tr class="memdesc:ac828643e0f9c4fed20555aac3a1328a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get whether events are present for the given select clause.  <a href="../../d1/d20/classlogstore__standard_1_1log_1_1store.html#ac828643e0f9c4fed20555aac3a1328a7">More...</a><br /></td></tr>
+<tr class="separator:ac828643e0f9c4fed20555aac3a1328a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43cfe7622a3451d8b4708c1c5b64bf85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d20/classlogstore__standard_1_1log_1_1store.html#a43cfe7622a3451d8b4708c1c5b64bf85">get_events_select_iterator</a> ($selectwhere, array $params, $<a class="el" href="../../dc/d71/group___imap___client.html#ga3d0fc1cc1d578318de8ea6548d53c546">sort</a>, $limitfrom, $limitnum)</td></tr>
 <tr class="memdesc:a43cfe7622a3451d8b4708c1c5b64bf85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch records using given criteria returning a Traversable object.  <a href="../../d1/d20/classlogstore__standard_1_1log_1_1store.html#a43cfe7622a3451d8b4708c1c5b64bf85">More...</a><br /></td></tr>
 <tr class="separator:a43cfe7622a3451d8b4708c1c5b64bf85"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -292,22 +295,67 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$logguests</b></td>
       </table>
 </div><div class="memdoc">
 
-<p>Return number of events matching given criteria. </p>
+<p>Get number of events present for the given select clause. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$selectwhere</td><td></td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$params</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$selectwhere</td><td>select conditions. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$params</td><td>params.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">int</td><td></td></tr>
+    <tr><td class="paramname">int</td><td>Number of events available for the given conditions </td></tr>
   </table>
   </dd>
 </dl>
 
 <p>Implements <a class="el" href="../../d7/dba/interfacecore_1_1log_1_1sql__reader.html#a950ba84c5fdf663b018af1eede0cfb66">core\log\sql_reader</a>.</p>
+
+</div>
+</div>
+<a id="ac828643e0f9c4fed20555aac3a1328a7" name="ac828643e0f9c4fed20555aac3a1328a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac828643e0f9c4fed20555aac3a1328a7">&#9670;&nbsp;</a></span>get_events_select_exists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">logstore_standard\log\store::get_events_select_exists </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$selectwhere</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get whether events are present for the given select clause. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$selectwhere</td><td>select conditions. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$params</td><td>params.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>Whether events available for the given conditions </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="../../d7/dba/interfacecore_1_1log_1_1sql__reader.html#a6ea4bf6654784b24a94d783acec8a736">core\log\sql_reader</a>.</p>
 
 </div>
 </div>
@@ -621,7 +669,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$logguests</b></td>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 30 2022 15:36:04 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jun 5 2022 03:26:57 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

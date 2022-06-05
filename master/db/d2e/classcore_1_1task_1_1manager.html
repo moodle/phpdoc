@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220527) (117b24013b)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220603) (5500d143f4)</div>
   </td>
  </tr>
  </tbody>
@@ -59,6 +59,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="../../d3/d46/classcore_1_1task_1_1manager-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">core\task\manager Class Reference<div class="ingroups"><a class="el" href="../../d0/de1/group__core.html">core</a></div></div></div>
@@ -100,6 +102,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a36b595085f8fbfdcfa9327ddc653ed03"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a36b595085f8fbfdcfa9327ddc653ed03">get_all_scheduled_tasks</a> ()</td></tr>
 <tr class="memdesc:a36b595085f8fbfdcfa9327ddc653ed03"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will return a list of all the scheduled tasks that exist in the database.  <a href="../../db/d2e/classcore_1_1task_1_1manager.html#a36b595085f8fbfdcfa9327ddc653ed03">More...</a><br /></td></tr>
 <tr class="separator:a36b595085f8fbfdcfa9327ddc653ed03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fd88026f893a008e9161bb7f322098c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a6fd88026f893a008e9161bb7f322098c">get_candidate_adhoc_tasks</a> (int $timestart, int $limit, ?int $runmax, array $pertasklimits=[])</td></tr>
+<tr class="memdesc:a6fd88026f893a008e9161bb7f322098c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of candidate adhoc tasks to run.  <a href="../../db/d2e/classcore_1_1task_1_1manager.html#a6fd88026f893a008e9161bb7f322098c">More...</a><br /></td></tr>
+<tr class="separator:a6fd88026f893a008e9161bb7f322098c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9969f481bc58f670e02257b5419c9c19"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a9969f481bc58f670e02257b5419c9c19">get_default_scheduled_task</a> ($classname, $expandr=true)</td></tr>
 <tr class="memdesc:a9969f481bc58f670e02257b5419c9c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function load the default scheduled task details for a given classname.  <a href="../../db/d2e/classcore_1_1task_1_1manager.html#a9969f481bc58f670e02257b5419c9c19">More...</a><br /></td></tr>
 <tr class="separator:a9969f481bc58f670e02257b5419c9c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,6 +171,32 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ad05b282d3da9ac9d0aacfc8366e2ae2c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#ad05b282d3da9ac9d0aacfc8366e2ae2c">static_caches_cleared_since</a> ($starttime)</td></tr>
 <tr class="memdesc:ad05b282d3da9ac9d0aacfc8366e2ae2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if the static caches have been cleared since $starttime.  <a href="../../db/d2e/classcore_1_1task_1_1manager.html#ad05b282d3da9ac9d0aacfc8366e2ae2c">More...</a><br /></td></tr>
 <tr class="separator:ad05b282d3da9ac9d0aacfc8366e2ae2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a16dbdd7f2008b99f7fc34b01289aaf47"><td class="memItemLeft" align="right" valign="top"><a id="a16dbdd7f2008b99f7fc34b01289aaf47" name="a16dbdd7f2008b99f7fc34b01289aaf47"></a>
+int const&#160;</td><td class="memItemRight" valign="bottom"><b>ADHOC_TASK_QUEUE_MODE_DISTRIBUTING</b> = 0</td></tr>
+<tr class="memdesc:a16dbdd7f2008b99f7fc34b01289aaf47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to tell the adhoc task queue to fairly distribute tasks. <br /></td></tr>
+<tr class="separator:a16dbdd7f2008b99f7fc34b01289aaf47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5be4ac62f3386fceab0389b3c736c963"><td class="memItemLeft" align="right" valign="top"><a id="a5be4ac62f3386fceab0389b3c736c963" name="a5be4ac62f3386fceab0389b3c736c963"></a>
+int const&#160;</td><td class="memItemRight" valign="bottom"><b>ADHOC_TASK_QUEUE_MODE_FILLING</b> = 1</td></tr>
+<tr class="memdesc:a5be4ac62f3386fceab0389b3c736c963"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to tell the adhoc task queue to try and fill unused capacity. <br /></td></tr>
+<tr class="separator:a5be4ac62f3386fceab0389b3c736c963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a589267b48e5ab47be84fdca1bb9dfe57"><td class="memItemLeft" align="right" valign="top"><a id="a589267b48e5ab47be84fdca1bb9dfe57" name="a589267b48e5ab47be84fdca1bb9dfe57"></a>
+static array&#160;</td><td class="memItemRight" valign="bottom"><b>$miniqueue</b></td></tr>
+<tr class="memdesc:a589267b48e5ab47be84fdca1bb9dfe57"><td class="mdescLeft">&#160;</td><td class="mdescRight">A cached queue of adhoc tasks. <br /></td></tr>
+<tr class="separator:a589267b48e5ab47be84fdca1bb9dfe57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95d9e3b57264f5872570f98587362956"><td class="memItemLeft" align="right" valign="top"><a id="a95d9e3b57264f5872570f98587362956" name="a95d9e3b57264f5872570f98587362956"></a>
+static string&#160;</td><td class="memItemRight" valign="bottom"><b>$mode</b></td></tr>
+<tr class="memdesc:a95d9e3b57264f5872570f98587362956"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to determine if the adhoc task queue is distributing or filling capacity. <br /></td></tr>
+<tr class="separator:a95d9e3b57264f5872570f98587362956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12d9541e038314c893a3f83486eed172"><td class="memItemLeft" align="right" valign="top"><a id="a12d9541e038314c893a3f83486eed172" name="a12d9541e038314c893a3f83486eed172"></a>
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>$numtasks</b></td></tr>
+<tr class="memdesc:a12d9541e038314c893a3f83486eed172"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last recorded number of unique adhoc tasks. <br /></td></tr>
+<tr class="separator:a12d9541e038314c893a3f83486eed172"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
@@ -495,6 +526,9 @@ Static Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000201">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-67648" class="el">MDL-67648</a> - please do not use this method anymore. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000074">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-74843" class="el">MDL-74843</a> This method will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a8bbf1e56f12c96dcd2172b7291db459f" title="This function will dispatch the next adhoc task in the queue.">core::task::manager::get_next_adhoc_task</a> </dd></dl>
 
 </div>
 </div>
@@ -598,6 +632,71 @@ Static Protected Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">core::task::scheduled_task[]</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6fd88026f893a008e9161bb7f322098c" name="a6fd88026f893a008e9161bb7f322098c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fd88026f893a008e9161bb7f322098c">&#9670;&nbsp;</a></span>get_candidate_adhoc_tasks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core\task\manager::get_candidate_adhoc_tasks </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$timestart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$limit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int&#160;</td>
+          <td class="paramname"><em>$runmax</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$pertasklimits</em> = <code>[]</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return a list of candidate adhoc tasks to run. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$timestart</td><td>Only return tasks where nextruntime is less than this value </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$limit</td><td>Limit the list to this many results </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$runmax</td><td>Only return tasks that have less than this value currently running </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$pertasklimits</td><td>An array of classname =&gt; limit specifying how many instance of a task may be returned </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>Array of candidate tasks </td></tr>
   </table>
   </dd>
 </dl>
@@ -1764,7 +1863,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 30 2022 15:35:37 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jun 5 2022 03:26:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

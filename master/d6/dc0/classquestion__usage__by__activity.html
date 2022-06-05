@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220527) (117b24013b)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220603) (5500d143f4)</div>
   </td>
  </tr>
  </tbody>
@@ -238,6 +238,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6633248c3f43eb23e1041775ea0ad22f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc0/classquestion__usage__by__activity.html#a6633248c3f43eb23e1041775ea0ad22f">update_question_flags</a> ($postdata=null)</td></tr>
 <tr class="memdesc:a6633248c3f43eb23e1041775ea0ad22f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the flagged state for all question_attempts in this usage, if their flagged state was changed in the request.  <a href="../../d6/dc0/classquestion__usage__by__activity.html#a6633248c3f43eb23e1041775ea0ad22f">More...</a><br /></td></tr>
 <tr class="separator:a6633248c3f43eb23e1041775ea0ad22f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab04fd0d7fc1c9701d34565b363b7c289"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc0/classquestion__usage__by__activity.html#ab04fd0d7fc1c9701d34565b363b7c289">validate_can_regrade_with_other_version</a> (int $slot, <a class="el" href="../../d7/da5/classquestion__definition.html">question_definition</a> $otherversion)</td></tr>
+<tr class="memdesc:ab04fd0d7fc1c9701d34565b363b7c289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify if the <a class="el" href="../../d3/dda/classquestion__attempt.html" title="Tracks an attempt at one particular question in a question_usage_by_activity.">question_attempt</a> in the given slot can be regraded with that other question version.  <a href="../../d6/dc0/classquestion__usage__by__activity.html#ab04fd0d7fc1c9701d34565b363b7c289">More...</a><br /></td></tr>
+<tr class="separator:ab04fd0d7fc1c9701d34565b363b7c289"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b3572e6c00b9a24bbb891fcfa4dc005"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc0/classquestion__usage__by__activity.html#a4b3572e6c00b9a24bbb891fcfa4dc005">validate_sequence_number</a> ($slot, $postdata=null)</td></tr>
 <tr class="memdesc:a4b3572e6c00b9a24bbb891fcfa4dc005"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that the sequence number, that detects weird things like the student clicking back, is OK.  <a href="../../d6/dc0/classquestion__usage__by__activity.html#a4b3572e6c00b9a24bbb891fcfa4dc005">More...</a><br /></td></tr>
 <tr class="separator:a4b3572e6c00b9a24bbb891fcfa4dc005"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2000,7 +2003,8 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$preferredbehaviour
 </div><div class="memdoc">
 
 <p>Regrade a question in this usage. </p>
-<p >This replays the sequence of submitted actions to recompute the outcomes. </p><dl class="params"><dt>Parameters</dt><dd>
+<p >This replays the sequence of submitted actions to recompute the outcomes.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$slot</td><td>the number used to identify this question within this usage. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$finished</td><td>whether the question attempt should be forced to be finished after the regrade, or whether it may still be in progress (default false). </td></tr>
@@ -2497,6 +2501,49 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$preferredbehaviour
 
 </div>
 </div>
+<a id="ab04fd0d7fc1c9701d34565b363b7c289" name="ab04fd0d7fc1c9701d34565b363b7c289"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab04fd0d7fc1c9701d34565b363b7c289">&#9670;&nbsp;</a></span>validate_can_regrade_with_other_version()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">question_usage_by_activity::validate_can_regrade_with_other_version </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$slot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/da5/classquestion__definition.html">question_definition</a>&#160;</td>
+          <td class="paramname"><em>$otherversion</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verify if the <a class="el" href="../../d3/dda/classquestion__attempt.html" title="Tracks an attempt at one particular question in a question_usage_by_activity.">question_attempt</a> in the given slot can be regraded with that other question version. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$slot</td><td>the number used to identify this question within this usage. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../d7/da5/classquestion__definition.html" title="The definition of a question of a particular type.">question_definition</a></td><td class="paramname">$otherversion</td><td>a different version of the question to use in the regrade. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string|null</td><td>null if the regrade can proceed, else a reason why not. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a4b3572e6c00b9a24bbb891fcfa4dc005" name="a4b3572e6c00b9a24bbb891fcfa4dc005"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4b3572e6c00b9a24bbb891fcfa4dc005">&#9670;&nbsp;</a></span>validate_sequence_number()</h2>
 
@@ -2573,7 +2620,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$preferredbehaviour
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 30 2022 15:34:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jun 5 2022 03:25:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

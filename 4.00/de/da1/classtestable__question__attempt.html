@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.1+ (Build: 20220527) (b81a2f80f7)</div>
+   <div id="projectbrief">Moodle 4.0.1+ (Build: 20220603) (ac39bac81b)</div>
   </td>
  </tr>
  </tbody>
@@ -327,6 +327,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8e3108e02c8fcb3ddd87b97cee3b3f1d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dda/classquestion__attempt.html#a8e3108e02c8fcb3ddd87b97cee3b3f1d">summarise_action</a> (<a class="el" href="../../df/db2/classquestion__attempt__step.html">question_attempt_step</a> $step)</td></tr>
 <tr class="memdesc:a8e3108e02c8fcb3ddd87b97cee3b3f1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Produce a plain-text summary of what the user did during a step.  <a href="../../d3/dda/classquestion__attempt.html#a8e3108e02c8fcb3ddd87b97cee3b3f1d">More...</a><br /></td></tr>
 <tr class="separator:a8e3108e02c8fcb3ddd87b97cee3b3f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8c3252f48538fa22260a4ba76fb6424"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dda/classquestion__attempt.html#ac8c3252f48538fa22260a4ba76fb6424">validate_can_regrade_with_other_version</a> (<a class="el" href="../../d7/da5/classquestion__definition.html">question_definition</a> $otherversion)</td></tr>
+<tr class="memdesc:ac8c3252f48538fa22260a4ba76fb6424"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verify if this <a class="el" href="../../d3/dda/classquestion__attempt.html" title="Tracks an attempt at one particular question in a question_usage_by_activity.">question_attempt</a> in can be regraded with that other question version.  <a href="../../d3/dda/classquestion__attempt.html#ac8c3252f48538fa22260a4ba76fb6424">More...</a><br /></td></tr>
+<tr class="separator:ac8c3252f48538fa22260a4ba76fb6424"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90b278c52901e4e4df63e87f59e658cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dda/classquestion__attempt.html#a90b278c52901e4e4df63e87f59e658cd">validate_manual_mark</a> ($currentmark)</td></tr>
 <tr class="memdesc:a90b278c52901e4e4df63e87f59e658cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate the manual mark for a question.  <a href="../../d3/dda/classquestion__attempt.html#a90b278c52901e4e4df63e87f59e658cd">More...</a><br /></td></tr>
 <tr class="separator:a90b278c52901e4e4df63e87f59e658cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -401,6 +404,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a5f2ce39032d92a929fae10ecbc30ca81"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dda/classquestion__attempt.html#a5f2ce39032d92a929fae10ecbc30ca81">extra_file_path_components</a> ()</td></tr>
 <tr class="memdesc:a5f2ce39032d92a929fae10ecbc30ca81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function used by <a class="el" href="../../d3/dda/classquestion__attempt.html#a40473161dc712c52142ec9d7252ae2ef">rewrite_pluginfile_urls()</a> and <a class="el" href="../../d3/dda/classquestion__attempt.html#a90148e0178e3da06f11ba1a465e671f5">rewrite_response_pluginfile_urls()</a>.  <a href="../../d3/dda/classquestion__attempt.html#a5f2ce39032d92a929fae10ecbc30ca81">More...</a><br /></td></tr>
 <tr class="separator:a5f2ce39032d92a929fae10ecbc30ca81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0836a56178429fbe95e70bf51deef4d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dda/classquestion__attempt.html#af0836a56178429fbe95e70bf51deef4d">get_attempt_state_data_to_regrade_with_version</a> (<a class="el" href="../../df/db2/classquestion__attempt__step.html">question_attempt_step</a> $oldstep, <a class="el" href="../../d7/da5/classquestion__definition.html">question_definition</a> $otherversion)</td></tr>
+<tr class="memdesc:af0836a56178429fbe95e70bf51deef4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper used by regrading.  <a href="../../d3/dda/classquestion__attempt.html#af0836a56178429fbe95e70bf51deef4d">More...</a><br /></td></tr>
+<tr class="separator:af0836a56178429fbe95e70bf51deef4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a992227c79bbae44237f03e7c54af19af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dda/classquestion__attempt.html#a992227c79bbae44237f03e7c54af19af">get_expected_data</a> ($expected, $postdata, $extraprefix)</td></tr>
 <tr class="memdesc:a992227c79bbae44237f03e7c54af19af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get any data from the request that matches the list of expected params.  <a href="../../d3/dda/classquestion__attempt.html#a992227c79bbae44237f03e7c54af19af">More...</a><br /></td></tr>
 <tr class="separator:a992227c79bbae44237f03e7c54af19af"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1066,6 +1072,58 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$variant</b></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">question_hint|null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af0836a56178429fbe95e70bf51deef4d" name="af0836a56178429fbe95e70bf51deef4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0836a56178429fbe95e70bf51deef4d">&#9670;&nbsp;</a></span>get_attempt_state_data_to_regrade_with_version()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">question_attempt::get_attempt_state_data_to_regrade_with_version </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/db2/classquestion__attempt__step.html">question_attempt_step</a>&#160;</td>
+          <td class="paramname"><em>$oldstep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/da5/classquestion__definition.html">question_definition</a>&#160;</td>
+          <td class="paramname"><em>$otherversion</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper used by regrading. </p>
+<p >Get the data from the first step of the old attempt and, if necessary, update it to be suitable for use with the other version of the question.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a question_attempt.">question_attempt_step</a></td><td class="paramname">$oldstep</td><td>First step at an attempt at $otherversion of this question. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../d7/da5/classquestion__definition.html" title="The definition of a question of a particular type.">question_definition</a></td><td class="paramname">$otherversion</td><td>Another version of the question being attempted. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>updated data required to restart an attempt with the current version of this question. </td></tr>
   </table>
   </dd>
 </dl>
@@ -4245,6 +4303,46 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$variant</b></td></tr>
 
 </div>
 </div>
+<a id="ac8c3252f48538fa22260a4ba76fb6424" name="ac8c3252f48538fa22260a4ba76fb6424"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8c3252f48538fa22260a4ba76fb6424">&#9670;&nbsp;</a></span>validate_can_regrade_with_other_version()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">question_attempt::validate_can_regrade_with_other_version </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/da5/classquestion__definition.html">question_definition</a>&#160;</td>
+          <td class="paramname"><em>$otherversion</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Verify if this <a class="el" href="../../d3/dda/classquestion__attempt.html" title="Tracks an attempt at one particular question in a question_usage_by_activity.">question_attempt</a> in can be regraded with that other question version. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d7/da5/classquestion__definition.html" title="The definition of a question of a particular type.">question_definition</a></td><td class="paramname">$otherversion</td><td>a different version of the question to use in the regrade. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string|null</td><td>null if the regrade can proceed, else a reason why not. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a90b278c52901e4e4df63e87f59e658cd" name="a90b278c52901e4e4df63e87f59e658cd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a90b278c52901e4e4df63e87f59e658cd">&#9670;&nbsp;</a></span>validate_manual_mark()</h2>
 
@@ -4567,7 +4665,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$variant</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 30 2022 15:28:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jun 5 2022 03:18:57 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

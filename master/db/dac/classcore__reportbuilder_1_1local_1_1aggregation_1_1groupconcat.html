@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220527) (117b24013b)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220603) (5500d143f4)</div>
   </td>
  </tr>
  </tbody>
@@ -81,9 +81,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aa3c538882bc9b6c4a94003913516fd39"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dac/classcore__reportbuilder_1_1local_1_1aggregation_1_1groupconcat.html#aa3c538882bc9b6c4a94003913516fd39">compatible</a> (int $columntype)</td></tr>
 <tr class="memdesc:aa3c538882bc9b6c4a94003913516fd39"><td class="mdescLeft">&#160;</td><td class="mdescRight">This aggregation can be performed on all non-timestamp columns.  <a href="../../db/dac/classcore__reportbuilder_1_1local_1_1aggregation_1_1groupconcat.html#aa3c538882bc9b6c4a94003913516fd39">More...</a><br /></td></tr>
 <tr class="separator:aa3c538882bc9b6c4a94003913516fd39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a285bc8cc6b40b31f0280da0aa1b5d7"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dac/classcore__reportbuilder_1_1local_1_1aggregation_1_1groupconcat.html#a6a285bc8cc6b40b31f0280da0aa1b5d7">format_value</a> ($<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>, array $values, array $callbacks)</td></tr>
-<tr class="memdesc:a6a285bc8cc6b40b31f0280da0aa1b5d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return formatted value for column when applying aggregation, note we need to split apart the concatenated string and apply callbacks to each concatenated value separately.  <a href="../../db/dac/classcore__reportbuilder_1_1local_1_1aggregation_1_1groupconcat.html#a6a285bc8cc6b40b31f0280da0aa1b5d7">More...</a><br /></td></tr>
-<tr class="separator:a6a285bc8cc6b40b31f0280da0aa1b5d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2637ff1341d72c3b9f0c908cbdc937bf"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dac/classcore__reportbuilder_1_1local_1_1aggregation_1_1groupconcat.html#a2637ff1341d72c3b9f0c908cbdc937bf">format_value</a> ($<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>, array $values, array $callbacks, int $columntype)</td></tr>
+<tr class="memdesc:a2637ff1341d72c3b9f0c908cbdc937bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return formatted value for column when applying aggregation, note we need to split apart the concatenated string and apply callbacks to each concatenated value separately.  <a href="../../db/dac/classcore__reportbuilder_1_1local_1_1aggregation_1_1groupconcat.html#a2637ff1341d72c3b9f0c908cbdc937bf">More...</a><br /></td></tr>
+<tr class="separator:a2637ff1341d72c3b9f0c908cbdc937bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af58f2943981c1f7f21a436b5febfae36"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d3e/classcore__reportbuilder_1_1local_1_1aggregation_1_1base.html#af58f2943981c1f7f21a436b5febfae36">get_class_name</a> ()</td></tr>
 <tr class="memdesc:af58f2943981c1f7f21a436b5febfae36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the class name of the aggregation type.  <a href="../../d9/d3e/classcore__reportbuilder_1_1local_1_1aggregation_1_1base.html#af58f2943981c1f7f21a436b5febfae36">More...</a><br /></td></tr>
 <tr class="separator:af58f2943981c1f7f21a436b5febfae36"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,8 +162,8 @@ string const&#160;</td><td class="memItemRight" valign="bottom"><b>FIELD_VALUE_D
 
 </div>
 </div>
-<a id="a6a285bc8cc6b40b31f0280da0aa1b5d7" name="a6a285bc8cc6b40b31f0280da0aa1b5d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a285bc8cc6b40b31f0280da0aa1b5d7">&#9670;&nbsp;</a></span>format_value()</h2>
+<a id="a2637ff1341d72c3b9f0c908cbdc937bf" name="a2637ff1341d72c3b9f0c908cbdc937bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2637ff1341d72c3b9f0c908cbdc937bf">&#9670;&nbsp;</a></span>format_value()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -187,7 +187,13 @@ string const&#160;</td><td class="memItemRight" valign="bottom"><b>FIELD_VALUE_D
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">array&#160;</td>
-          <td class="paramname"><em>$callbacks</em>&#160;</td>
+          <td class="paramname"><em>$callbacks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$columntype</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -208,6 +214,7 @@ string const&#160;</td><td class="memItemRight" valign="bottom"><b>FIELD_VALUE_D
     <tr><td class="paramtype">mixed</td><td class="paramname">$value</td><td></td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$values</td><td></td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$callbacks</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$columntype</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -218,7 +225,7 @@ string const&#160;</td><td class="memItemRight" valign="bottom"><b>FIELD_VALUE_D
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="../../d9/d3e/classcore__reportbuilder_1_1local_1_1aggregation_1_1base.html#ae01fdc493a4d5aee3eae50e26b9919bb">core_reportbuilder\local\aggregation\base</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d9/d3e/classcore__reportbuilder_1_1local_1_1aggregation_1_1base.html#afee0e5878cdad634774cd3ee35693449">core_reportbuilder\local\aggregation\base</a>.</p>
 
 </div>
 </div>
@@ -488,7 +495,7 @@ string const&#160;</td><td class="memItemRight" valign="bottom"><b>FIELD_VALUE_D
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 30 2022 15:35:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jun 5 2022 03:26:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

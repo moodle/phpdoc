@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220527) (117b24013b)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220603) (5500d143f4)</div>
   </td>
  </tr>
  </tbody>
@@ -59,6 +59,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d2/d34/classcore__reportbuilder_1_1local_1_1report_1_1column-members.html">List of all members</a>  </div>
@@ -182,6 +183,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9e84fe43067279922dd7faa3522893d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3e/classcore__reportbuilder_1_1local_1_1report_1_1column.html#a9e84fe43067279922dd7faa3522893d9">set_type</a> (int $type)</td></tr>
 <tr class="memdesc:a9e84fe43067279922dd7faa3522893d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the column type, if not called then the type will be assumed to be {.  <a href="../../d1/d3e/classcore__reportbuilder_1_1local_1_1report_1_1column.html#a9e84fe43067279922dd7faa3522893d9">More...</a><br /></td></tr>
 <tr class="separator:a9e84fe43067279922dd7faa3522893d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae10819f81090d68e30fe2e90e6d69b92"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3e/classcore__reportbuilder_1_1local_1_1report_1_1column.html#ae10819f81090d68e30fe2e90e6d69b92">get_default_value</a> (array $values, int $columntype)</td></tr>
+<tr class="memdesc:ae10819f81090d68e30fe2e90e6d69b92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the default column value, that being the value of it's first field.  <a href="../../d1/d3e/classcore__reportbuilder_1_1local_1_1report_1_1column.html#ae10819f81090d68e30fe2e90e6d69b92">More...</a><br /></td></tr>
+<tr class="separator:ae10819f81090d68e30fe2e90e6d69b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -624,6 +631,57 @@ core_reportbuilder::local::report::base::annotate_entity} </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae10819f81090d68e30fe2e90e6d69b92" name="ae10819f81090d68e30fe2e90e6d69b92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae10819f81090d68e30fe2e90e6d69b92">&#9670;&nbsp;</a></span>get_default_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_reportbuilder\local\report\column::get_default_value </td>
+          <td>(</td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$values</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$columntype</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the default column value, that being the value of it's first field. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$values</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$columntype</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">mixed</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1429,7 +1487,7 @@ core_reportbuilder::local::report::base::annotate_entity} </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 30 2022 15:35:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jun 5 2022 03:26:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

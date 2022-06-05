@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220527) (117b24013b)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220603) (5500d143f4)</div>
   </td>
  </tr>
  </tbody>
@@ -79,9 +79,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a1be3dce495bbcf64ebf0142bb35a9dc8"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d34/classcore__reportbuilder_1_1local_1_1aggregation_1_1sum.html#a1be3dce495bbcf64ebf0142bb35a9dc8">compatible</a> (int $columntype)</td></tr>
 <tr class="memdesc:a1be3dce495bbcf64ebf0142bb35a9dc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This aggregation can be performed on all numeric and boolean columns.  <a href="../../da/d34/classcore__reportbuilder_1_1local_1_1aggregation_1_1sum.html#a1be3dce495bbcf64ebf0142bb35a9dc8">More...</a><br /></td></tr>
 <tr class="separator:a1be3dce495bbcf64ebf0142bb35a9dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e5b4a70326bbecd7a5647237c70ab9b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d34/classcore__reportbuilder_1_1local_1_1aggregation_1_1sum.html#a5e5b4a70326bbecd7a5647237c70ab9b">format_value</a> ($<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>, array $values, array $callbacks)</td></tr>
-<tr class="memdesc:a5e5b4a70326bbecd7a5647237c70ab9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return formatted value for column when applying aggregation.  <a href="../../da/d34/classcore__reportbuilder_1_1local_1_1aggregation_1_1sum.html#a5e5b4a70326bbecd7a5647237c70ab9b">More...</a><br /></td></tr>
-<tr class="separator:a5e5b4a70326bbecd7a5647237c70ab9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb4814017092ecfc49012d1406b14665"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d34/classcore__reportbuilder_1_1local_1_1aggregation_1_1sum.html#acb4814017092ecfc49012d1406b14665">format_value</a> ($<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>, array $values, array $callbacks, int $columntype)</td></tr>
+<tr class="memdesc:acb4814017092ecfc49012d1406b14665"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return formatted value for column when applying aggregation.  <a href="../../da/d34/classcore__reportbuilder_1_1local_1_1aggregation_1_1sum.html#acb4814017092ecfc49012d1406b14665">More...</a><br /></td></tr>
+<tr class="separator:acb4814017092ecfc49012d1406b14665"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af58f2943981c1f7f21a436b5febfae36"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d3e/classcore__reportbuilder_1_1local_1_1aggregation_1_1base.html#af58f2943981c1f7f21a436b5febfae36">get_class_name</a> ()</td></tr>
 <tr class="memdesc:af58f2943981c1f7f21a436b5febfae36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the class name of the aggregation type.  <a href="../../d9/d3e/classcore__reportbuilder_1_1local_1_1aggregation_1_1base.html#af58f2943981c1f7f21a436b5febfae36">More...</a><br /></td></tr>
 <tr class="separator:af58f2943981c1f7f21a436b5febfae36"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,8 +147,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5e5b4a70326bbecd7a5647237c70ab9b" name="a5e5b4a70326bbecd7a5647237c70ab9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e5b4a70326bbecd7a5647237c70ab9b">&#9670;&nbsp;</a></span>format_value()</h2>
+<a id="acb4814017092ecfc49012d1406b14665" name="acb4814017092ecfc49012d1406b14665"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb4814017092ecfc49012d1406b14665">&#9670;&nbsp;</a></span>format_value()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -172,7 +172,13 @@ Static Protected Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">array&#160;</td>
-          <td class="paramname"><em>$callbacks</em>&#160;</td>
+          <td class="paramname"><em>$callbacks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$columntype</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -193,17 +199,18 @@ Static Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">mixed</td><td class="paramname">$value</td><td></td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$values</td><td></td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$callbacks</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$columntype</td><td></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">mixed</td><td></td></tr>
+    <tr><td class="paramname">int</td><td></td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="../../d9/d3e/classcore__reportbuilder_1_1local_1_1aggregation_1_1base.html#ae01fdc493a4d5aee3eae50e26b9919bb">core_reportbuilder\local\aggregation\base</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d9/d3e/classcore__reportbuilder_1_1local_1_1aggregation_1_1base.html#afee0e5878cdad634774cd3ee35693449">core_reportbuilder\local\aggregation\base</a>.</p>
 
 </div>
 </div>
@@ -470,7 +477,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 30 2022 15:35:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jun 5 2022 03:26:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
