@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220603) (5500d143f4)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220610) (ca583bddaf)</div>
   </td>
  </tr>
  </tbody>
@@ -146,9 +146,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae09ef62c3a538f587aa2dbce05cc6be7"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d49/classcore__competency_1_1template__cohort.html#ae09ef62c3a538f587aa2dbce05cc6be7">get_missing_plans</a> ($templateid, $cohortid, $unlinkedaremissing=false)</td></tr>
 <tr class="memdesc:ae09ef62c3a538f587aa2dbce05cc6be7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an array of user IDs for which the plans are missing.  <a href="../../dd/d49/classcore__competency_1_1template__cohort.html#ae09ef62c3a538f587aa2dbce05cc6be7">More...</a><br /></td></tr>
 <tr class="separator:ae09ef62c3a538f587aa2dbce05cc6be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdd0a30a150da524b38b18d345536854"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9f/classcore_1_1persistent.html#afdd0a30a150da524b38b18d345536854">get_record</a> ($filters=array())</td></tr>
-<tr class="memdesc:afdd0a30a150da524b38b18d345536854"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a single record.  <a href="../../df/d9f/classcore_1_1persistent.html#afdd0a30a150da524b38b18d345536854">More...</a><br /></td></tr>
-<tr class="separator:afdd0a30a150da524b38b18d345536854"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac342dff2a9ac0a218f4dcf5df14442be"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9f/classcore_1_1persistent.html#ac342dff2a9ac0a218f4dcf5df14442be">get_record</a> (array $filters=[], int $strictness=<a class="el" href="../../d0/de1/group__core.html#gaffc7005a2da386334d76ec5f85ca2d48">IGNORE_MISSING</a>)</td></tr>
+<tr class="memdesc:ac342dff2a9ac0a218f4dcf5df14442be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a single record.  <a href="../../df/d9f/classcore_1_1persistent.html#ac342dff2a9ac0a218f4dcf5df14442be">More...</a><br /></td></tr>
+<tr class="separator:ac342dff2a9ac0a218f4dcf5df14442be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa964375ea83be287776d144294abc972"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9f/classcore_1_1persistent.html#aa964375ea83be287776d144294abc972">get_records</a> ($filters=array(), $<a class="el" href="../../dc/d71/group___imap___client.html#ga3d0fc1cc1d578318de8ea6548d53c546">sort</a>='', $order='ASC', $skip=0, $limit=0)</td></tr>
 <tr class="memdesc:aa964375ea83be287776d144294abc972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a list of records.  <a href="../../df/d9f/classcore_1_1persistent.html#aa964375ea83be287776d144294abc972">More...</a><br /></td></tr>
 <tr class="separator:aa964375ea83be287776d144294abc972"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1155,8 +1155,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afdd0a30a150da524b38b18d345536854" name="afdd0a30a150da524b38b18d345536854"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afdd0a30a150da524b38b18d345536854">&#9670;&nbsp;</a></span>get_record()</h2>
+<a id="ac342dff2a9ac0a218f4dcf5df14442be" name="ac342dff2a9ac0a218f4dcf5df14442be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac342dff2a9ac0a218f4dcf5df14442be">&#9670;&nbsp;</a></span>get_record()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1167,9 +1167,19 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static core\persistent::get_record </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$filters</em> = <code>array()</code></td><td>)</td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$filters</em> = <code>[]</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$strictness</em> = <code><a class="el" href="../../d0/de1/group__core.html#gaffc7005a2da386334d76ec5f85ca2d48">IGNORE_MISSING</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -1183,9 +1193,13 @@ Static Protected Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$filters</td><td>Filters to apply. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$strictness</td><td>Similar to the internal <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> get_record call, indicate whether a missing record should be ignored/return false ({</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/de1/group__core.html#gaffc7005a2da386334d76ec5f85ca2d48" title="Return false if record not found, show debug warning if multiple records found.">IGNORE_MISSING</a>}) or should cause an exception to be thrown ({</dd>
+<dd>
+<a class="el" href="../../d0/de1/group__core.html#ga95a5600deb278b693b6c3ffed667df6f" title="Indicates exactly one record must exist.">MUST_EXIST</a>}) </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">false|static</td><td></td></tr>
@@ -2208,7 +2222,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 5 2022 03:26:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jun 12 2022 03:34:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

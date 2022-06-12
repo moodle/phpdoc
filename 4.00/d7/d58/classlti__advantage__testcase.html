@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.1+ (Build: 20220603) (ac39bac81b)</div>
+   <div id="projectbrief">Moodle 4.0.1+ (Build: 20220610) (4a9fa426bc)</div>
   </td>
  </tr>
  </tbody>
@@ -199,9 +199,9 @@ Protected Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>enable_enrol</b> ()</td></tr>
 <tr class="memdesc:a0b6d5539900ebf53fec5d335e517df0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable <a class="el" href="../../d9/d62/namespaceenrol__lti.html" title="&#160;">enrol_lti</a> plugin. <br /></td></tr>
 <tr class="separator:a0b6d5539900ebf53fec5d335e517df0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad767a239a379703612ac8661091ac3ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d58/classlti__advantage__testcase.html#ad767a239a379703612ac8661091ac3ff">get_mock_launch</a> (\stdClass $resource, array $mockuser, ?string $resourcelinkid=null, bool $ags=true, bool $nrps=true, ?array $migrationclaiminfo=null, ?array $customparams=null)</td></tr>
-<tr class="memdesc:ad767a239a379703612ac8661091ac3ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a mock LtiMessageLaunch object, as if a user had launched from a resource link in the platform.  <a href="../../d7/d58/classlti__advantage__testcase.html#ad767a239a379703612ac8661091ac3ff">More...</a><br /></td></tr>
-<tr class="separator:ad767a239a379703612ac8661091ac3ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a125d0c67424020e75aedcca15098574f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d58/classlti__advantage__testcase.html#a125d0c67424020e75aedcca15098574f">get_mock_launch</a> (\stdClass $resource, array $mockuser, ?string $resourcelinkid=null, bool $ags=true, bool $nrps=true, ?array $migrationclaiminfo=null, ?array $customparams=null, $aud='123')</td></tr>
+<tr class="memdesc:a125d0c67424020e75aedcca15098574f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a mock LtiMessageLaunch object, as if a user had launched from a resource link in the platform.  <a href="../../d7/d58/classlti__advantage__testcase.html#a125d0c67424020e75aedcca15098574f">More...</a><br /></td></tr>
+<tr class="separator:a125d0c67424020e75aedcca15098574f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23a21385e4a6e476541b89e9f861fdc2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d58/classlti__advantage__testcase.html#a23a21385e4a6e476541b89e9f861fdc2">get_mock_launch_users_with_ids</a> (array $<a class="el" href="../../dc/d71/group___imap___client.html#gac6b510fc6f371b5f27a24cd09135afba">ids</a>, bool $includepicture=false, string $role='http://purl.imsglobal.org/vocab/lis/v2/membership#Instructor')</td></tr>
 <tr class="memdesc:a23a21385e4a6e476541b89e9f861fdc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of users ready for use with mock launches by providing an array of user ids.  <a href="../../d7/d58/classlti__advantage__testcase.html#a23a21385e4a6e476541b89e9f861fdc2">More...</a><br /></td></tr>
 <tr class="separator:a23a21385e4a6e476541b89e9f861fdc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1246,8 +1246,8 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$issuer</b> = 'http
 
 </div>
 </div>
-<a id="ad767a239a379703612ac8661091ac3ff" name="ad767a239a379703612ac8661091ac3ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad767a239a379703612ac8661091ac3ff">&#9670;&nbsp;</a></span>get_mock_launch()</h2>
+<a id="a125d0c67424020e75aedcca15098574f" name="a125d0c67424020e75aedcca15098574f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a125d0c67424020e75aedcca15098574f">&#9670;&nbsp;</a></span>get_mock_launch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1295,7 +1295,13 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$issuer</b> = 'http
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">?array&#160;</td>
-          <td class="paramname"><em>$customparams</em> = <code>null</code>&#160;</td>
+          <td class="paramname"><em>$customparams</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$aud</em> = <code>'123'</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1320,6 +1326,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$issuer</b> = 'http
     <tr><td class="paramtype">bool</td><td class="paramname">$nrps</td><td>whether to include a mock NRPS claim or not. </td></tr>
     <tr><td class="paramtype">array&#160;|&#160;null</td><td class="paramname">$migrationclaiminfo</td><td>contains consumer key, secret and any fields which are sent in the claim. </td></tr>
     <tr><td class="paramtype">array&#160;|&#160;null</td><td class="paramname">$customparams</td><td>an array of custom params to send, or null to just use defaults. </td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$aud</td><td>the array or string value of aud to use in the mock launch data. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2407,7 +2414,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$issuer</b> = 'http
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 5 2022 03:18:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jun 12 2022 03:28:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

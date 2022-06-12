@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220603) (5500d143f4)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220610) (ca583bddaf)</div>
   </td>
  </tr>
  </tbody>
@@ -85,6 +85,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a0c10050bb911ef9c761c3c181055f2f6"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/classtool__dataprivacy_1_1api.html#a0c10050bb911ef9c761c3c181055f2f6">can_create_data_deletion_request_for_self</a> (int $userid=null)</td></tr>
 <tr class="memdesc:a0c10050bb911ef9c761c3c181055f2f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if user has permisson to create data deletion request for themselves.  <a href="../../d5/dd0/classtool__dataprivacy_1_1api.html#a0c10050bb911ef9c761c3c181055f2f6">More...</a><br /></td></tr>
 <tr class="separator:a0c10050bb911ef9c761c3c181055f2f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8d8b373eacf534d37fc66c24b6ebf93"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/classtool__dataprivacy_1_1api.html#ad8d8b373eacf534d37fc66c24b6ebf93">can_create_data_download_request_for_self</a> (int $userid=null)</td></tr>
+<tr class="memdesc:ad8d8b373eacf534d37fc66c24b6ebf93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if user has permission to create data download request for themselves.  <a href="../../d5/dd0/classtool__dataprivacy_1_1api.html#ad8d8b373eacf534d37fc66c24b6ebf93">More...</a><br /></td></tr>
+<tr class="separator:ad8d8b373eacf534d37fc66c24b6ebf93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bd86c05844ba7590d9f482b84ba7481"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/classtool__dataprivacy_1_1api.html#a3bd86c05844ba7590d9f482b84ba7481">can_create_data_request_for_user</a> ($user, $requester=null)</td></tr>
 <tr class="memdesc:a3bd86c05844ba7590d9f482b84ba7481"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a non-DPO user can make a data request for another user.  <a href="../../d5/dd0/classtool__dataprivacy_1_1api.html#a3bd86c05844ba7590d9f482b84ba7481">More...</a><br /></td></tr>
 <tr class="separator:a3bd86c05844ba7590d9f482b84ba7481"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -516,6 +519,46 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>DATAREQUEST_TYPE_EXP
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad8d8b373eacf534d37fc66c24b6ebf93" name="ad8d8b373eacf534d37fc66c24b6ebf93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8d8b373eacf534d37fc66c24b6ebf93">&#9670;&nbsp;</a></span>can_create_data_download_request_for_self()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static tool_dataprivacy\api::can_create_data_download_request_for_self </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$userid</em> = <code>null</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if user has permission to create data download request for themselves. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$userid</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2582,7 +2625,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>DATAREQUEST_TYPE_EXP
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 5 2022 03:27:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jun 12 2022 03:35:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

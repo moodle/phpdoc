@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220603) (5500d143f4)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220610) (ca583bddaf)</div>
   </td>
  </tr>
  </tbody>
@@ -463,7 +463,7 @@ SimplePie_Registry&#160;</td><td class="memItemRight" valign="bottom"><b>$regist
 <tr class="memitem:ad6c6bfbc67b9c2c932ba73e4b76f0224"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db8/class_simple_pie.html#ad6c6bfbc67b9c2c932ba73e4b76f0224">$strip_attributes</a> = array('bgsound', 'class', 'expr', 'id', 'style', 'onclick', 'onerror', 'onfinish', 'onmouseover', 'onmouseout', 'onfocus', 'onblur', 'lowsrc', 'dynsrc')</td></tr>
 <tr class="memdesc:ad6c6bfbc67b9c2c932ba73e4b76f0224"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the default attributes to be stripped by strip_attributes().  <a href="../../d5/db8/class_simple_pie.html#ad6c6bfbc67b9c2c932ba73e4b76f0224">More...</a><br /></td></tr>
 <tr class="separator:ad6c6bfbc67b9c2c932ba73e4b76f0224"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cd221c93145548672edb02f42ed134a"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db8/class_simple_pie.html#a5cd221c93145548672edb02f42ed134a">$strip_htmltags</a> = array('base', 'blink', '<a class="el" href="../../d8/ded/group___simple_pie.html#ga88c61c5f59a3f950b502f07325de2f87">body</a>', 'doctype', '<a class="el" href="../../d8/ded/group___simple_pie.html#gacb1c6c5b7e7bb03e4fdc24085c15509a">embed</a>', 'font', 'form', 'frame', 'frameset', 'html', 'iframe', 'input', 'marquee', 'meta', 'noscript', 'object', 'param', 'script', 'style')</td></tr>
+<tr class="memitem:a5cd221c93145548672edb02f42ed134a"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db8/class_simple_pie.html#a5cd221c93145548672edb02f42ed134a">$strip_htmltags</a> = array('base', 'blink', '<a class="el" href="../../d8/ded/group___simple_pie.html#ga88c61c5f59a3f950b502f07325de2f87">body</a>', 'doctype', '<a class="el" href="../../d8/ded/group___simple_pie.html#gacb1c6c5b7e7bb03e4fdc24085c15509a">embed</a>', 'font', 'form', 'frame', 'frameset', 'html', 'iframe', 'input', 'marquee', 'meta', 'noscript', 'object', '<a class="el" href="../../dc/d2c/group___a_d_odb.html#gab8352647a3ae7b9c49099dad81017def">param</a>', 'script', 'style')</td></tr>
 <tr class="memdesc:a5cd221c93145548672edb02f42ed134a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the default tags to be stripped by strip_htmltags().  <a href="../../d5/db8/class_simple_pie.html#a5cd221c93145548672edb02f42ed134a">More...</a><br /></td></tr>
 <tr class="separator:a5cd221c93145548672edb02f42ed134a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a558ae6701fd21e447a53a6421698ff"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db8/class_simple_pie.html#a8a558ae6701fd21e447a53a6421698ff">$timeout</a> = 10</td></tr>
@@ -2641,7 +2641,7 @@ echo $file;
 <p >When the 'permanent' mode is enabled, returns the original feed URL, except in the case of an <code>HTTP 301 Moved Permanently</code> status response, in which case the location of the first redirection is returned.</p>
 <p >When the 'permanent' mode is disabled (default), may or may not be different from the URL passed to {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d5/db8/class_simple_pie.html#a6796f3a31160065b0a0826984d097eed" title="Set the URL of the feed you want to parse.">set_feed_url()</a>}, depending on whether auto-discovery was used, and whether there were any redirects along the way.</dd></dl>
 <dl class="section since"><dt>Since</dt><dd>Preview Release (previously called <code>get_feed_url()</code> since <a class="el" href="../../d5/db8/class_simple_pie.html" title="SimplePie.">SimplePie</a> 0.8.) </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000202">Todo:</a></b></dt><dd><p class="startdd">Support &lt;itunes:new-feed-url&gt; </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000205">Todo:</a></b></dt><dd><p class="startdd">Support &lt;itunes:new-feed-url&gt; </p>
 <p class="enddd">Also, |atom:link|@rel=self </p>
 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -3092,7 +3092,7 @@ echo $file;
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">array SimplePie::$strip_htmltags = array('base', 'blink', '<a class="el" href="../../d8/ded/group___simple_pie.html#ga88c61c5f59a3f950b502f07325de2f87">body</a>', 'doctype', '<a class="el" href="../../d8/ded/group___simple_pie.html#gacb1c6c5b7e7bb03e4fdc24085c15509a">embed</a>', 'font', 'form', 'frame', 'frameset', 'html', 'iframe', 'input', 'marquee', 'meta', 'noscript', 'object', 'param', 'script', 'style')</td>
+          <td class="memname">array SimplePie::$strip_htmltags = array('base', 'blink', '<a class="el" href="../../d8/ded/group___simple_pie.html#ga88c61c5f59a3f950b502f07325de2f87">body</a>', 'doctype', '<a class="el" href="../../d8/ded/group___simple_pie.html#gacb1c6c5b7e7bb03e4fdc24085c15509a">embed</a>', 'font', 'form', 'frame', 'frameset', 'html', 'iframe', 'input', 'marquee', 'meta', 'noscript', 'object', '<a class="el" href="../../dc/d2c/group___a_d_odb.html#gab8352647a3ae7b9c49099dad81017def">param</a>', 'script', 'style')</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3142,7 +3142,7 @@ echo $file;
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 5 2022 03:25:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jun 12 2022 03:34:07 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

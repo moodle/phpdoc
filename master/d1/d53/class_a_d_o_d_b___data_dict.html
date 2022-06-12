@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220603) (5500d143f4)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220610) (ca583bddaf)</div>
   </td>
  </tr>
  </tbody>
@@ -109,9 +109,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a04b0af16b5a305514f2cb0d663e980cd"><td class="memItemLeft" align="right" valign="top"><a id="a04b0af16b5a305514f2cb0d663e980cd" name="a04b0af16b5a305514f2cb0d663e980cd"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>_tableSQL</b> ($tabname, $lines, $pkey, $tableoptions)</td></tr>
 <tr class="separator:a04b0af16b5a305514f2cb0d663e980cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a3fa048365df846cebed111d971532c"><td class="memItemLeft" align="right" valign="top"><a id="a1a3fa048365df846cebed111d971532c" name="a1a3fa048365df846cebed111d971532c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>_triggers</b> ($tabname, $taboptions)</td></tr>
-<tr class="memdesc:a1a3fa048365df846cebed111d971532c"><td class="mdescLeft">&#160;</td><td class="mdescRight">GENERATE TRIGGERS IF NEEDED used when table has auto-incrementing field that is emulated using triggers. <br /></td></tr>
+<tr class="memitem:a1a3fa048365df846cebed111d971532c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d53/class_a_d_o_d_b___data_dict.html#a1a3fa048365df846cebed111d971532c">_triggers</a> ($tabname, $taboptions)</td></tr>
+<tr class="memdesc:a1a3fa048365df846cebed111d971532c"><td class="mdescLeft">&#160;</td><td class="mdescRight">GENERATE TRIGGERS IF NEEDED used when table has auto-incrementing field that is emulated using triggers.  <a href="../../d1/d53/class_a_d_o_d_b___data_dict.html#a1a3fa048365df846cebed111d971532c">More...</a><br /></td></tr>
 <tr class="separator:a1a3fa048365df846cebed111d971532c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf4390f876d7d3320f1d2ca6825dda14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d53/class_a_d_o_d_b___data_dict.html#abf4390f876d7d3320f1d2ca6825dda14">actualType</a> ($meta)</td></tr>
 <tr class="memdesc:abf4390f876d7d3320f1d2ca6825dda14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the actual type given a character code.  <a href="../../d1/d53/class_a_d_o_d_b___data_dict.html#abf4390f876d7d3320f1d2ca6825dda14">More...</a><br /></td></tr>
@@ -247,6 +246,38 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a6685daa068491bf8f61df63d635b1329"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1a3fa048365df846cebed111d971532c" name="a1a3fa048365df846cebed111d971532c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a3fa048365df846cebed111d971532c">&#9670;&nbsp;</a></span>_triggers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ADODB_DataDict::_triggers </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$tabname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$taboptions</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GENERATE TRIGGERS IF NEEDED used when table has auto-incrementing field that is emulated using triggers. </p>
+
+<p>Reimplemented in <a class="el" href="../../d7/dd4/class_a_d_o_d_b2__firebird.html#a8f0747c57242a8a1bcf700b2f6c509d9">ADODB2_firebird</a>.</p>
+
+</div>
+</div>
 <a id="abf4390f876d7d3320f1d2ca6825dda14" name="abf4390f876d7d3320f1d2ca6825dda14"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abf4390f876d7d3320f1d2ca6825dda14">&#9670;&nbsp;</a></span>actualType()</h2>
 
@@ -267,6 +298,8 @@ Public Attributes</h2></td></tr>
 <p >C: varchar X: CLOB (character large object) or largest varchar size if CLOB is not supported C2: Multibyte varchar X2: Multibyte CLOB</p>
 <p >B: BLOB (binary large object)</p>
 <p >D: Date T: Date-time L: Integer field suitable for storing booleans (0 or 1) I: Integer F: Floating point number N: Numeric or decimal number </p>
+
+<p>Reimplemented in <a class="el" href="../../d7/dd4/class_a_d_o_d_b2__firebird.html#a3cd2b694b84b5ac2621351616124e13a">ADODB2_firebird</a>.</p>
 
 </div>
 </div>
@@ -314,7 +347,7 @@ Public Attributes</h2></td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$tabname</td><td>table-name </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$flds</td><td>column-name and type for the changed column </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$tableflds,=''</td><td>complete definition of the new table, eg. for postgres, default '' </td></tr>
-    <tr><td class="paramtype"></td><td class="paramname">array/string</td><td>$tableoptions='' options for the new table see createTableSQL, default '' </td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;string</td><td class="paramname">$tableoptions,=''</td><td>options for the new table see createTableSQL, default '' </td></tr>
   </table>
   </dd>
 </dl>
@@ -325,7 +358,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../de/de9/class_a_d_o_d_b2__db2.html#aef9e8b94d164e0c8d5790f72e843e248">ADODB2_db2</a>.</p>
+<p>Reimplemented in <a class="el" href="../../de/de9/class_a_d_o_d_b2__db2.html#aef9e8b94d164e0c8d5790f72e843e248">ADODB2_db2</a>, and <a class="el" href="../../d7/dd4/class_a_d_o_d_b2__firebird.html#a09d80d151a4967cabe89beb34def771a">ADODB2_firebird</a>.</p>
 
 </div>
 </div>
@@ -409,6 +442,8 @@ Public Attributes</h2></td></tr>
 <p>Generate the SQL to create table. </p>
 <p >Returns an array of sql strings. </p>
 
+<p>Reimplemented in <a class="el" href="../../d7/dd4/class_a_d_o_d_b2__firebird.html#aa495a69f3ff291ca8c2162b5556c5f2a">ADODB2_firebird</a>.</p>
+
 </div>
 </div>
 <a id="af842c5510a0e789049ed7fa8e23db10a" name="af842c5510a0e789049ed7fa8e23db10a"></a>
@@ -455,7 +490,7 @@ Public Attributes</h2></td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$tabname</td><td>table-name </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$flds</td><td>column-name and type for the changed column </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$tableflds,=''</td><td>complete definition of the new table, eg. for postgres, default '' </td></tr>
-    <tr><td class="paramtype"></td><td class="paramname">array/string</td><td>$tableoptions='' options for the new table see createTableSQL, default '' </td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;string</td><td class="paramname">$tableoptions,=''</td><td>options for the new table see createTableSQL, default '' </td></tr>
   </table>
   </dd>
 </dl>
@@ -549,7 +584,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 5 2022 03:23:56 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jun 12 2022 03:32:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

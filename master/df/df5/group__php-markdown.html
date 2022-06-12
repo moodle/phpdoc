@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220603) (5500d143f4)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220610) (ca583bddaf)</div>
   </td>
  </tr>
  </tbody>
@@ -285,7 +285,7 @@ Functions</h2></td></tr>
 
 	/**
 	 * The callback to strip <a class="el" href="../../d6/db1/group__mod__wiki.html#ga18b3d5253ddc6145e9bc81e2337889f6">link</a> definitions
-	 * @param  array $matches
+	 * @<a class="el" href="../../dc/d2c/group___a_d_odb.html#gab8352647a3ae7b9c49099dad81017def">param</a>  array $matches
 	 * @retval string
 	 */
 	protected function <a class="el" href="../../df/df5/group__php-markdown.html#ga6556513bd646deb0fe946f135249e674">_stripLinkDefinitions_callback</a>($matches) {
@@ -298,7 +298,7 @@ Functions</h2></td></tr>
 
 	/**
 	 * Hashify HTML blocks
-	 * @param  string $<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>
+	 * @<a class="el" href="../../dc/d2c/group___a_d_odb.html#gab8352647a3ae7b9c49099dad81017def">param</a>  string $<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>
 	 * @retval string
 	 */
 	protected function <a class="el" href="../../df/df5/group__php-markdown.html#gad3a4590e70083928dd806411def9b4bb">hashHTMLBlocks</a>($<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>) {
@@ -447,7 +447,7 @@ Functions</h2></td></tr>
 
 	/**
 	 * The callback for hashing HTML blocks
-	 * @param  string $matches
+	 * @<a class="el" href="../../dc/d2c/group___a_d_odb.html#gab8352647a3ae7b9c49099dad81017def">param</a>  string $matches
 	 * @retval string
 	 */
 	protected function _hashHTMLBlocks_callback($matches) {
@@ -466,8 +466,8 @@ Functions</h2></td></tr>
 	 * to be wrapped into paragraph tags at the <a class="el" href="../../da/d71/group___stream.html#gad6e6111f903c5015b2a69ff96b186cf9">end</a>, &quot;:&quot; is used for elements
 	 * that are word separators and &quot;X&quot; is used in the general case.
 	 *
-	 * @param  string $<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>
-	 * @param  string $boundary
+	 * @<a class="el" href="../../dc/d2c/group___a_d_odb.html#gab8352647a3ae7b9c49099dad81017def">param</a>  string $<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>
+	 * @<a class="el" href="../../dc/d2c/group___a_d_odb.html#gab8352647a3ae7b9c49099dad81017def">param</a>  string $boundary
 	 * @retval string
 	 */
 	protected function hashPart($<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>, $boundary = 'X') {
@@ -484,7 +484,7 @@ Functions</h2></td></tr>
 
 	/**
 	 * Shortcut function for hashPart with block-level boundaries.
-	 * @param  string $<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>
+	 * @<a class="el" href="../../dc/d2c/group___a_d_odb.html#gab8352647a3ae7b9c49099dad81017def">param</a>  string $<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>
 	 * @retval string
 	 */
 	protected function hashBlock($<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>) {
@@ -513,7 +513,7 @@ Functions</h2></td></tr>
 	 * list items and could have been indented. Indented blocks would have
 	 * been seen as <a class="el" href="../../df/d44/group__ouwiki.html#ga7ee3cdf45007d1fc172018f1ea2bb61c">a</a> code block in <a class="el" href="../../df/d44/group__ouwiki.html#ga7ee3cdf45007d1fc172018f1ea2bb61c">a</a> previous pass of hashHTMLBlocks.
 	 *
-	 * @param  string $<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>
+	 * @<a class="el" href="../../dc/d2c/group___a_d_odb.html#gab8352647a3ae7b9c49099dad81017def">param</a>  string $<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>
 	 * @retval string
 	 */
 	protected function runBlockGamut($<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>) {
@@ -526,7 +526,7 @@ Functions</h2></td></tr>
 	 * useful when HTML blocks are known to be already hashed, like in the <a class="el" href="../../d7/de4/group___mail.html#gac73eef9ff76ea330c0dab36ca448b90d">first</a>
 	 * whole-document pass.
 	 *
-	 * @param  string $<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>
+	 * @<a class="el" href="../../dc/d2c/group___a_d_odb.html#gab8352647a3ae7b9c49099dad81017def">param</a>  string $<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>
 	 * @retval string
 	 */
 	protected function runBasicBlockGamut($<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>) {
@@ -543,7 +543,7 @@ Functions</h2></td></tr>
 
 	/**
 	 * Convert horizontal rules
-	 * @param  string $<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>
+	 * @<a class="el" href="../../dc/d2c/group___a_d_odb.html#gab8352647a3ae7b9c49099dad81017def">param</a>  string $<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>
 	 * @retval string
 	 */
 	protected function doHorizontalRules($<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>) {
@@ -587,7 +587,7 @@ Functions</h2></td></tr>
 
 	/**
 	 * Run span gamut transformations
-	 * @param  string $<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>
+	 * @<a class="el" href="../../dc/d2c/group___a_d_odb.html#gab8352647a3ae7b9c49099dad81017def">param</a>  string $<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>
 	 * @retval string
 	 */
 	protected function runSpanGamut($<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>) {
@@ -600,7 +600,7 @@ Functions</h2></td></tr>
 
 	/**
 	 * Do hard breaks
-	 * @param  string $<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>
+	 * @<a class="el" href="../../dc/d2c/group___a_d_odb.html#gab8352647a3ae7b9c49099dad81017def">param</a>  string $<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>
 	 * @retval string
 	 */
 	protected function doHardBreaks($<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>) {
@@ -615,7 +615,7 @@ Functions</h2></td></tr>
 
 	/**
 	 * Trigger part hashing for the hard break (callback method)
-	 * @param  array $matches
+	 * @<a class="el" href="../../dc/d2c/group___a_d_odb.html#gab8352647a3ae7b9c49099dad81017def">param</a>  array $matches
 	 * @retval string
 	 */
 	protected function _doHardBreaks_callback($matches) {
@@ -624,7 +624,7 @@ Functions</h2></td></tr>
 
 	/**
 	 * Turn Markdown <a class="el" href="../../d6/db1/group__mod__wiki.html#ga18b3d5253ddc6145e9bc81e2337889f6">link</a> shortcuts into XHTML &lt;<a class="el" href="../../df/d44/group__ouwiki.html#ga7ee3cdf45007d1fc172018f1ea2bb61c">a</a>&gt; tags.
-	 * @param  string $<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>
+	 * @<a class="el" href="../../dc/d2c/group___a_d_odb.html#gab8352647a3ae7b9c49099dad81017def">param</a>  string $<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>
 	 * @retval string
 	 */
 	protected function <a class="el" href="../../df/df5/group__php-markdown.html#gafe542247a456cc842ea74ce234c78fd2">doAnchors</a>($<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>) {
@@ -680,7 +680,7 @@ Variables</h2></td></tr>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$abbr_word_re</b> = ''</td></tr>
 <tr class="separator:gadb4f761638e1a962dfd0e2d5de5f2777"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga820fdb0a044c1d739a209ee03b7e8640"><td class="memItemLeft" align="right" valign="top"><a id="ga820fdb0a044c1d739a209ee03b7e8640" name="ga820fdb0a044c1d739a209ee03b7e8640"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>$auto_close_tags_re</b> = 'hr|img|param|source|track'</td></tr>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$auto_close_tags_re</b> = 'hr|img|<a class="el" href="../../dc/d2c/group___a_d_odb.html#gab8352647a3ae7b9c49099dad81017def">param</a>|source|track'</td></tr>
 <tr class="memdesc:ga820fdb0a044c1d739a209ee03b7e8640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tags that do not need to be closed. <br /></td></tr>
 <tr class="separator:ga820fdb0a044c1d739a209ee03b7e8640"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga16a91db0f083f835cee94276428ef2e4"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df5/group__php-markdown.html#ga16a91db0f083f835cee94276428ef2e4">$block_tags_re</a> = '<a class="el" href="../../d0/de1/group__core.html#ga687f341dfcc0cc4f715a5fd2424d61e5">p</a>|div|h[1-6]|blockquote|pre|table|dl|ol|ul|address|form|fieldset|iframe|hr|legend|article|section|nav|aside|hgroup|header|footer|figcaption|figure'</td></tr>
@@ -695,7 +695,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$contain_span_tags_
 <tr class="memdesc:ga1eeed124c9a4910c10b8bd5bcf6f4171"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tags where markdown="1" default to span mode: <br /></td></tr>
 <tr class="separator:ga1eeed124c9a4910c10b8bd5bcf6f4171"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad2b486ae38b1e07d14e48beb03f938d2"><td class="memItemLeft" align="right" valign="top"><a id="gad2b486ae38b1e07d14e48beb03f938d2" name="gad2b486ae38b1e07d14e48beb03f938d2"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>$context_block_tags_re</b> = 'script|noscript|style|ins|del|iframe|object|source|track|param|math|svg|canvas|audio|video'</td></tr>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$context_block_tags_re</b> = 'script|noscript|style|ins|del|iframe|object|source|track|<a class="el" href="../../dc/d2c/group___a_d_odb.html#gab8352647a3ae7b9c49099dad81017def">param</a>|math|svg|canvas|audio|video'</td></tr>
 <tr class="memdesc:gad2b486ae38b1e07d14e48beb03f938d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tags treated as block tags only if the opening tag is alone on its line. <br /></td></tr>
 <tr class="separator:gad2b486ae38b1e07d14e48beb03f938d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1416f391894d995f90e07ab592d30fd6"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df5/group__php-markdown.html#ga1416f391894d995f90e07ab592d30fd6">$em_relist</a></td></tr>
@@ -4008,7 +4008,7 @@ $this&#160;</td><td class="memItemRight" valign="bottom"><b>in_anchor</b> = fals
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 5 2022 03:23:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jun 12 2022 03:32:35 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

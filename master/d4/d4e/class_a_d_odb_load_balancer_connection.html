@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220603) (5500d143f4)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220610) (ca583bddaf)</div>
   </td>
  </tr>
  </tbody>
@@ -73,6 +73,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a446c3e8aaeae4ac1b5305aeaff37c789"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d4e/class_a_d_odb_load_balancer_connection.html#a446c3e8aaeae4ac1b5305aeaff37c789">getADOdbObject</a> ()</td></tr>
 <tr class="memdesc:a446c3e8aaeae4ac1b5305aeaff37c789"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ADODB object for this connection.  <a href="../../d4/d4e/class_a_d_odb_load_balancer_connection.html#a446c3e8aaeae4ac1b5305aeaff37c789">More...</a><br /></td></tr>
 <tr class="separator:a446c3e8aaeae4ac1b5305aeaff37c789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae9a078074c9bf7070e3bd06cdc5f79b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d4e/class_a_d_odb_load_balancer_connection.html#aae9a078074c9bf7070e3bd06cdc5f79b">getConnectionTestCallback</a> ()</td></tr>
+<tr class="separator:aae9a078074c9bf7070e3bd06cdc5f79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8768898e66dc16079903ee382ba84b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d4e/class_a_d_odb_load_balancer_connection.html#af8768898e66dc16079903ee382ba84b0">setConnectionTestCallback</a> ($callback)</td></tr>
+<tr class="memdesc:af8768898e66dc16079903ee382ba84b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Anonymous function that is called and must return TRUE for the connection to be usable.  <a href="../../d4/d4e/class_a_d_odb_load_balancer_connection.html#af8768898e66dc16079903ee382ba84b0">More...</a><br /></td></tr>
+<tr class="separator:af8768898e66dc16079903ee382ba84b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -111,6 +116,10 @@ Protected Attributes</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>$adodb_obj</b> = false</td></tr>
 <tr class="memdesc:a6c6b9c3489fa8e686bb5be4acd351ef5"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADODB object. <br /></td></tr>
 <tr class="separator:a6c6b9c3489fa8e686bb5be4acd351ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a527f88c496d3c45134c9c9725327115e"><td class="memItemLeft" align="right" valign="top"><a id="a527f88c496d3c45134c9c9725327115e" name="a527f88c496d3c45134c9c9725327115e"></a>
+callable&#160;</td><td class="memItemRight" valign="bottom"><b>$connection_test_callback</b> = NULL</td></tr>
+<tr class="memdesc:a527f88c496d3c45134c9c9725327115e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closure. <br /></td></tr>
+<tr class="separator:a527f88c496d3c45134c9c9725327115e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49e2c91b367e014515ff63751c1bb093"><td class="memItemLeft" align="right" valign="top"><a id="a49e2c91b367e014515ff63751c1bb093" name="a49e2c91b367e014515ff63751c1bb093"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>$driver</b> = false</td></tr>
 <tr class="memdesc:a49e2c91b367e014515ff63751c1bb093"><td class="mdescLeft">&#160;</td><td class="mdescRight">ADOdb drive name. <br /></td></tr>
@@ -224,13 +233,71 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$driver</b> = false</
 
 </div>
 </div>
+<a id="aae9a078074c9bf7070e3bd06cdc5f79b" name="aae9a078074c9bf7070e3bd06cdc5f79b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae9a078074c9bf7070e3bd06cdc5f79b">&#9670;&nbsp;</a></span>getConnectionTestCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ADOdbLoadBalancerConnection::getConnectionTestCallback </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">callable|null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af8768898e66dc16079903ee382ba84b0" name="af8768898e66dc16079903ee382ba84b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8768898e66dc16079903ee382ba84b0">&#9670;&nbsp;</a></span>setConnectionTestCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ADOdbLoadBalancerConnection::setConnectionTestCallback </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Anonymous function that is called and must return TRUE for the connection to be usable. </p>
+<ul>
+<li>The first argument is the type of connection to test. Useful to check things like replication lag. <dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">callable</td><td class="paramname">$callback</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>lib/adodb/adodb-loadbalancer.inc.php</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 5 2022 03:23:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jun 12 2022 03:32:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

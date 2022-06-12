@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220603) (5500d143f4)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220610) (ca583bddaf)</div>
   </td>
  </tr>
  </tbody>
@@ -203,7 +203,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:abb857bc47c6cb9a56d3a0c090ba652c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">After definition hook.  <a href="../../d8/db1/classmoodleform.html#abb857bc47c6cb9a56d3a0c090ba652c3">More...</a><br /></td></tr>
 <tr class="separator:abb857bc47c6cb9a56d3a0c090ba652c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d6863e595a9f9b03d9c5d8952a9eaac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d69/classcore__reportbuilder_1_1form_1_1audience.html#a1d6863e595a9f9b03d9c5d8952a9eaac">check_access_for_dynamic_submission</a> ()</td></tr>
-<tr class="memdesc:a1d6863e595a9f9b03d9c5d8952a9eaac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if current user has access to this form, otherwise throws exception.  <a href="../../d2/d69/classcore__reportbuilder_1_1form_1_1audience.html#a1d6863e595a9f9b03d9c5d8952a9eaac">More...</a><br /></td></tr>
+<tr class="memdesc:a1d6863e595a9f9b03d9c5d8952a9eaac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensure current user is able to use this form.  <a href="../../d2/d69/classcore__reportbuilder_1_1form_1_1audience.html#a1d6863e595a9f9b03d9c5d8952a9eaac">More...</a><br /></td></tr>
 <tr class="separator:a1d6863e595a9f9b03d9c5d8952a9eaac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87ff3ae1b2bcec06efb04bbaed1d776a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db1/classmoodleform.html#a87ff3ae1b2bcec06efb04bbaed1d776a">get_array_value_by_keys</a> (array $array, array $keys)</td></tr>
 <tr class="memdesc:a87ff3ae1b2bcec06efb04bbaed1d776a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an element of multi-dimensional array given the list of keys.  <a href="../../d8/db1/classmoodleform.html#a87ff3ae1b2bcec06efb04bbaed1d776a">More...</a><br /></td></tr>
@@ -532,13 +532,8 @@ bool null&#160;</td><td class="memItemRight" valign="bottom"><b>$_validated</b> 
 </table>
 </div><div class="memdoc">
 
-<p>Checks if current user has access to this form, otherwise throws exception. </p>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../d6/da8/classmoodle__exception.html" title="Base Moodle Exception class.">moodle_exception</a></td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Ensure current user is able to use this form. </p>
+<p >A {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/dc2/classcore__reportbuilder_1_1report__access__exception.html">core_reportbuilder::report_access_exception</a>} will be thrown <a class="el" href="../../d8/d07/categoryif.html" title="Advance grading form element.">if</a> they can'<a class="el" href="../../d1/d65/group___translation.html#gab016495bb070691ef345c26974d81c4f" title="Returns the translation of a message.">t</a> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d6/d34/classcore__form_1_1dynamic__form.html#ab1d340f7a81148f21507e382f70a1369">core_form\dynamic_form</a>.</p>
 
@@ -1880,7 +1875,7 @@ bool null&#160;</td><td class="memItemRight" valign="bottom"><b>$_validated</b> 
 <p>Save verified uploaded files into directory. </p>
 <p >Upload process can be customised from <a class="el" href="../../d2/d69/classcore__reportbuilder_1_1form_1_1audience.html#a794716b194974320d70ea757f84acd44" title="Form definition.">definition()</a></p>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000613">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.0 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000111">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-31294" class="el">MDL-31294</a> remove this api </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000113">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-31294" class="el">MDL-31294</a> remove this api </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d8/db1/classmoodleform.html#a781905ea68ac7d52a34135ecdb44729e" title="Save file to local filesystem pool.">moodleform::save_stored_file()</a> </dd>
 <dd>
 <a class="el" href="../../d8/db1/classmoodleform.html#a8c59546b1afc2e4df9e06f846d847edc" title="Save file to standard filesystem.">moodleform::save_file()</a> </dd></dl>
@@ -2288,7 +2283,7 @@ bool null&#160;</td><td class="memItemRight" valign="bottom"><b>$_validated</b> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 5 2022 03:26:46 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jun 12 2022 03:34:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
