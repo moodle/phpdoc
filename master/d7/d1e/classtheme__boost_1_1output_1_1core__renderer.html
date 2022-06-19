@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220610) (ca583bddaf)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220617) (b81fb00f25)</div>
   </td>
  </tr>
  </tbody>
@@ -70,9 +70,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a77ef676657b50ba8073bea61c4edb098"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classtheme__boost_1_1output_1_1core__renderer.html#a77ef676657b50ba8073bea61c4edb098">context_header</a> ($headerinfo=null, $headinglevel=1)</td></tr>
 <tr class="memdesc:a77ef676657b50ba8073bea61c4edb098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the context header for the page.  <a href="../../d7/d1e/classtheme__boost_1_1output_1_1core__renderer.html#a77ef676657b50ba8073bea61c4edb098">More...</a><br /></td></tr>
 <tr class="separator:a77ef676657b50ba8073bea61c4edb098"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada56b0c3d63003dc16c169933055c7d2"><td class="memItemLeft" align="right" valign="top"><a id="ada56b0c3d63003dc16c169933055c7d2" name="ada56b0c3d63003dc16c169933055c7d2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>edit_button</b> (<a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a> $url)</td></tr>
-<tr class="separator:ada56b0c3d63003dc16c169933055c7d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0931a8c6e81948ae6f4dab792ab71f61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classtheme__boost_1_1output_1_1core__renderer.html#a0931a8c6e81948ae6f4dab792ab71f61">edit_button</a> (<a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a> $url, string $method='post')</td></tr>
+<tr class="memdesc:a0931a8c6e81948ae6f4dab792ab71f61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns HTML to display a "Turn editing on/off" button in a form.  <a href="../../d7/d1e/classtheme__boost_1_1output_1_1core__renderer.html#a0931a8c6e81948ae6f4dab792ab71f61">More...</a><br /></td></tr>
+<tr class="separator:a0931a8c6e81948ae6f4dab792ab71f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3d80ed6e9b626f8d54f357ab8605bd4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1e/classtheme__boost_1_1output_1_1core__renderer.html#aa3d80ed6e9b626f8d54f357ab8605bd4">firstview_fakeblocks</a> ()</td></tr>
 <tr class="memdesc:aa3d80ed6e9b626f8d54f357ab8605bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">See if this is the first view of the current cm in the session if it has fake blocks.  <a href="../../d7/d1e/classtheme__boost_1_1output_1_1core__renderer.html#aa3d80ed6e9b626f8d54f357ab8605bd4">More...</a><br /></td></tr>
 <tr class="separator:aa3d80ed6e9b626f8d54f357ab8605bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,6 +124,49 @@ Protected Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>A rendered context header. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0931a8c6e81948ae6f4dab792ab71f61" name="a0931a8c6e81948ae6f4dab792ab71f61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0931a8c6e81948ae6f4dab792ab71f61">&#9670;&nbsp;</a></span>edit_button()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">theme_boost\output\core_renderer::edit_button </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a>&#160;</td>
+          <td class="paramname"><em>$url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$method</em> = <code>'post'</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns HTML to display a "Turn editing on/off" button in a form. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$url</td><td>The URL + params to send through when clicking the button </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$method</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>HTML the button </td></tr>
   </table>
   </dd>
 </dl>
@@ -227,7 +270,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 12 2022 03:35:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jun 19 2022 03:47:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

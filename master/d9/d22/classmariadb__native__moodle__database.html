@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220610) (ca583bddaf)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220617) (b81fb00f25)</div>
   </td>
  </tr>
  </tbody>
@@ -372,6 +372,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2f45b0d7e916fc199a8d2b5aa1ad4c7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7c/classmysqli__native__moodle__database.html#a2f45b0d7e916fc199a8d2b5aa1ad4c7b">sql_cast_char2real</a> ($fieldname, $<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>=false)</td></tr>
 <tr class="memdesc:a2f45b0d7e916fc199a8d2b5aa1ad4c7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the SQL to be used in order to CAST one CHAR column to REAL number.  <a href="../../d1/d7c/classmysqli__native__moodle__database.html#a2f45b0d7e916fc199a8d2b5aa1ad4c7b">More...</a><br /></td></tr>
 <tr class="separator:a2f45b0d7e916fc199a8d2b5aa1ad4c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a790893b7ddd951c847e89ff924e49002"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#a790893b7ddd951c847e89ff924e49002">sql_cast_to_char</a> (string $field)</td></tr>
+<tr class="memdesc:a790893b7ddd951c847e89ff924e49002"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return SQL for casting to char of given field/expression.  <a href="../../d3/d6e/classmoodle__database.html#a790893b7ddd951c847e89ff924e49002">More...</a><br /></td></tr>
+<tr class="separator:a790893b7ddd951c847e89ff924e49002"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7890196bac87305b781986a03c6f5be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#af7890196bac87305b781986a03c6f5be">sql_ceil</a> ($fieldname)</td></tr>
 <tr class="memdesc:af7890196bac87305b781986a03c6f5be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the cross db correct CEIL (ceiling) expression applied to fieldname.  <a href="../../d3/d6e/classmoodle__database.html#af7890196bac87305b781986a03c6f5be">More...</a><br /></td></tr>
 <tr class="separator:af7890196bac87305b781986a03c6f5be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -7076,6 +7079,49 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 
 </div>
 </div>
+<a id="a790893b7ddd951c847e89ff924e49002" name="a790893b7ddd951c847e89ff924e49002"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a790893b7ddd951c847e89ff924e49002">&#9670;&nbsp;</a></span>sql_cast_to_char()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">moodle_database::sql_cast_to_char </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$field</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return SQL for casting to char of given field/expression. </p>
+<p >Default implementation performs implicit cast using concatenation with an empty string</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$field</td><td>Table field or SQL expression to be cast </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../db/df4/classoci__native__moodle__database.html#a53cb85b794e0144043b49f83314d4be0">oci_native_moodle_database</a>, and <a class="el" href="../../d2/db6/classpgsql__native__moodle__database.html#a64d74cbdb71cb1f85551f1625da73751">pgsql_native_moodle_database</a>.</p>
+
+</div>
+</div>
 <a id="af7890196bac87305b781986a03c6f5be" name="af7890196bac87305b781986a03c6f5be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af7890196bac87305b781986a03c6f5be">&#9670;&nbsp;</a></span>sql_ceil()</h2>
 
@@ -8759,7 +8805,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 12 2022 03:33:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jun 19 2022 03:45:44 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
