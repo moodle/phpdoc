@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220617) (b81fb00f25)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220624) (ceb41588d2)</div>
   </td>
  </tr>
  </tbody>
@@ -114,9 +114,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af4f9cddabf9337adb548e008a246253d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d63/classcore__message_1_1helper.html#af4f9cddabf9337adb548e008a246253d">render_messaging_widget</a> (bool $isdrawer, int $sendtouser=null, int $conversationid=null, string $view=null)</td></tr>
 <tr class="memdesc:af4f9cddabf9337adb548e008a246253d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the messaging widget.  <a href="../../dd/d63/classcore__message_1_1helper.html#af4f9cddabf9337adb548e008a246253d">More...</a><br /></td></tr>
 <tr class="separator:af4f9cddabf9337adb548e008a246253d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35af10916c3dfc60a48d741098d6b759"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d63/classcore__message_1_1helper.html#a35af10916c3dfc60a48d741098d6b759">search_get_user_details</a> (\stdClass $user)</td></tr>
-<tr class="memdesc:a35af10916c3dfc60a48d741098d6b759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns user details for a user, if they are visible to the current user in the message search.  <a href="../../dd/d63/classcore__message_1_1helper.html#a35af10916c3dfc60a48d741098d6b759">More...</a><br /></td></tr>
-<tr class="separator:a35af10916c3dfc60a48d741098d6b759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a421b8bc9bb063d194c7e238f3ca3ccdd"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d63/classcore__message_1_1helper.html#a421b8bc9bb063d194c7e238f3ca3ccdd">search_get_user_details</a> (\stdClass $user, array $userfields=[])</td></tr>
+<tr class="memdesc:a421b8bc9bb063d194c7e238f3ca3ccdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns user details for a user, if they are visible to the current user in the message search.  <a href="../../dd/d63/classcore__message_1_1helper.html#a421b8bc9bb063d194c7e238f3ca3ccdd">More...</a><br /></td></tr>
+<tr class="separator:a421b8bc9bb063d194c7e238f3ca3ccdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ff1b91780280fdfae3f6d290987cc4e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d63/classcore__message_1_1helper.html#a4ff1b91780280fdfae3f6d290987cc4e">show_online_status</a> ($user)</td></tr>
 <tr class="memdesc:a4ff1b91780280fdfae3f6d290987cc4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for checking if we should show the user's online status.  <a href="../../dd/d63/classcore__message_1_1helper.html#a4ff1b91780280fdfae3f6d290987cc4e">More...</a><br /></td></tr>
 <tr class="separator:a4ff1b91780280fdfae3f6d290987cc4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -885,8 +885,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a35af10916c3dfc60a48d741098d6b759" name="a35af10916c3dfc60a48d741098d6b759"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35af10916c3dfc60a48d741098d6b759">&#9670;&nbsp;</a></span>search_get_user_details()</h2>
+<a id="a421b8bc9bb063d194c7e238f3ca3ccdd" name="a421b8bc9bb063d194c7e238f3ca3ccdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a421b8bc9bb063d194c7e238f3ca3ccdd">&#9670;&nbsp;</a></span>search_get_user_details()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -898,8 +898,18 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">static core_message\helper::search_get_user_details </td>
           <td>(</td>
           <td class="paramtype">\stdClass&#160;</td>
-          <td class="paramname"><em>$user</em></td><td>)</td>
+          <td class="paramname"><em>$user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$userfields</em> = <code>[]</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -911,9 +921,15 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Returns user details for a user, if they are visible to the current user in the message search. </p>
 <p >This method checks the visibility of a user specifically for the purpose of inclusion in the message search results. Visibility depends on the site-wide messaging setting 'messagingallusers': If enabled, visibility depends only on the core notion of visibility; a visible site or course profile. If disabled, visibility requires that the user be sharing a course with the searching user, and have a visible profile there. The current user is always returned.</p>
+<p >You can use the $userfields parameter to reduce the amount of a user record that is required by the method. The minimum user fields are:</p><ul>
+<li>id</li>
+<li>deleted</li>
+<li>all potential fullname fields</li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$user</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$userfields</td><td>An array of userfields to be returned, the values must be a subset of user_get_default_fields (optional) </td></tr>
   </table>
   </dd>
 </dl>
@@ -1056,7 +1072,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 24 2022 02:43:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jun 26 2022 03:44:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

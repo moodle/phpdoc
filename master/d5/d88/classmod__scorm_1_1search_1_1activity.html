@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220617) (b81fb00f25)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220624) (ceb41588d2)</div>
   </td>
  </tr>
  </tbody>
@@ -136,9 +136,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad77655c32b8ea8a6ca6e6840028643d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd1/classcore__search_1_1base.html#ad77655c32b8ea8a6ca6e6840028643d6">get_recordset_by_timestamp</a> ($modifiedfrom=0)</td></tr>
 <tr class="memdesc:ad77655c32b8ea8a6ca6e6840028643d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a recordset ordered by modification date ASC.  <a href="../../d4/dd1/classcore__search_1_1base.html#ad77655c32b8ea8a6ca6e6840028643d6">More...</a><br /></td></tr>
 <tr class="separator:ad77655c32b8ea8a6ca6e6840028643d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6fd2850be9b8a4dbde4c1341e582d33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d98/classcore__search_1_1base__activity.html#ad6fd2850be9b8a4dbde4c1341e582d33">get_search_fileareas</a> ()</td></tr>
-<tr class="memdesc:ad6fd2850be9b8a4dbde4c1341e582d33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the context info required to index files for this search area.  <a href="../../d2/d98/classcore__search_1_1base__activity.html#ad6fd2850be9b8a4dbde4c1341e582d33">More...</a><br /></td></tr>
-<tr class="separator:ad6fd2850be9b8a4dbde4c1341e582d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae01c2720f5d6ae30b377e540f0e5f142"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d88/classmod__scorm_1_1search_1_1activity.html#ae01c2720f5d6ae30b377e540f0e5f142">get_search_fileareas</a> ()</td></tr>
+<tr class="memdesc:ae01c2720f5d6ae30b377e540f0e5f142"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the fileareas that should be indexed.  <a href="../../d5/d88/classmod__scorm_1_1search_1_1activity.html#ae01c2720f5d6ae30b377e540f0e5f142">More...</a><br /></td></tr>
+<tr class="separator:ae01c2720f5d6ae30b377e540f0e5f142"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86c1d89a2d7aef3dd68e4e64d96495ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd1/classcore__search_1_1base.html#a86c1d89a2d7aef3dd68e4e64d96495ac">get_visible_name</a> ($lazyload=false)</td></tr>
 <tr class="memdesc:a86c1d89a2d7aef3dd68e4e64d96495ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the area visible name.  <a href="../../d4/dd1/classcore__search_1_1base.html#a86c1d89a2d7aef3dd68e4e64d96495ac">More...</a><br /></td></tr>
 <tr class="separator:a86c1d89a2d7aef3dd68e4e64d96495ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,7 +253,7 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$levels</b> =
 </div><div class="memdoc">
 
 <p>Files related to the current document are attached, to the document object ready for indexing by Global Search. </p>
-<p >The default implementation retrieves all files for the file areas returned by <a class="el" href="../../d2/d98/classcore__search_1_1base__activity.html#ad6fd2850be9b8a4dbde4c1341e582d33" title="Return the context info required to index files for this search area.">get_search_fileareas()</a>. If you need to filter files to specific items per file area, you will need to override this method and explicitly provide the items.</p>
+<p >The default implementation retrieves all files for the file areas returned by <a class="el" href="../../d5/d88/classmod__scorm_1_1search_1_1activity.html#ae01c2720f5d6ae30b377e540f0e5f142" title="Return the fileareas that should be indexed.">get_search_fileareas()</a>. If you need to filter files to specific items per file area, you will need to override this method and explicitly provide the items.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">document</td><td class="paramname">$document</td><td>The current document </td></tr>
@@ -1280,31 +1280,22 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$levels</b> =
 
 </div>
 </div>
-<a id="ad6fd2850be9b8a4dbde4c1341e582d33" name="ad6fd2850be9b8a4dbde4c1341e582d33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6fd2850be9b8a4dbde4c1341e582d33">&#9670;&nbsp;</a></span>get_search_fileareas()</h2>
+<a id="ae01c2720f5d6ae30b377e540f0e5f142" name="ae01c2720f5d6ae30b377e540f0e5f142"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae01c2720f5d6ae30b377e540f0e5f142">&#9670;&nbsp;</a></span>get_search_fileareas()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">core_search\base_activity::get_search_fileareas </td>
+          <td class="memname">mod_scorm\search\activity::get_search_fileareas </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Return the context info required to index files for this search area. </p>
-<p >Should be onerridden by each search area.</p>
+<p>Return the fileareas that should be indexed. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td></td></tr>
@@ -1312,9 +1303,7 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$levels</b> =
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="../../d4/dd1/classcore__search_1_1base.html#ad42eed0fba2e5dd21f5d20b6b32820c8">core_search\base</a>.</p>
-
-<p>Reimplemented in <a class="el" href="../../da/d9d/classmod__assign_1_1search_1_1activity.html#a0feb72845cd5a5da62712928b7d5ecc9">mod_assign\search\activity</a>, <a class="el" href="../../db/df7/classmod__folder_1_1search_1_1activity.html#ae515366ce66e42bddd99fdb91129bfcd">mod_folder\search\activity</a>, <a class="el" href="../../de/d35/classmod__lesson_1_1search_1_1activity.html#a9b443516c228d31dcf0d0bbdf13f89f1">mod_lesson\search\activity</a>, <a class="el" href="../../dc/dd4/classmod__page_1_1search_1_1activity.html#a96caab4d7552271e511faf0d2a5e69e4">mod_page\search\activity</a>, <a class="el" href="../../db/dc1/classmod__resource_1_1search_1_1activity.html#ae98f67f20556b99ead68bb111e384eb8">mod_resource\search\activity</a>, and <a class="el" href="../../d8/dd5/classmod__workshop_1_1search_1_1activity.html#aeaf279c6e1a9126e7e51936744e7b8cd">mod_workshop\search\activity</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d2/d98/classcore__search_1_1base__activity.html#ad6fd2850be9b8a4dbde4c1341e582d33">core_search\base_activity</a>.</p>
 
 </div>
 </div>
@@ -1593,7 +1582,7 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$levels</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 24 2022 02:44:21 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jun 26 2022 03:45:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
