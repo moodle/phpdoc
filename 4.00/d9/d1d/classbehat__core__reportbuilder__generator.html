@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.1+ (Build: 20220624) (bbff432ffa)</div>
+   <div id="projectbrief">Moodle 4.0.1+ (Build: 20220701) (bab7bdc53e)</div>
   </td>
  </tr>
  </tbody>
@@ -133,6 +133,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a808fb5a680168c18e1ac0a06156a686a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/de5/classbehat__generator__base.html#a808fb5a680168c18e1ac0a06156a686a">get_user_id</a> ($username)</td></tr>
 <tr class="memdesc:a808fb5a680168c18e1ac0a06156a686a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the user id from it's username.  <a href="../../de/de5/classbehat__generator__base.html#a808fb5a680168c18e1ac0a06156a686a">More...</a><br /></td></tr>
 <tr class="separator:a808fb5a680168c18e1ac0a06156a686a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29f9aae66cadaa07752560f3fd4fdcbd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/de5/classbehat__generator__base.html#a29f9aae66cadaa07752560f3fd4fdcbd">get_userfrom_id</a> (string $username)</td></tr>
+<tr class="memdesc:a29f9aae66cadaa07752560f3fd4fdcbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the user id from it's username.  <a href="../../de/de5/classbehat__generator__base.html#a29f9aae66cadaa07752560f3fd4fdcbd">More...</a><br /></td></tr>
+<tr class="separator:a29f9aae66cadaa07752560f3fd4fdcbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a535800702d84813fa6f1b7e436a40378"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/de5/classbehat__generator__base.html#a535800702d84813fa6f1b7e436a40378">get_userto_id</a> (string $username)</td></tr>
+<tr class="memdesc:a535800702d84813fa6f1b7e436a40378"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the user id from it's username.  <a href="../../de/de5/classbehat__generator__base.html#a535800702d84813fa6f1b7e436a40378">More...</a><br /></td></tr>
+<tr class="separator:a535800702d84813fa6f1b7e436a40378"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e58eb4cfd8bd5fa9575b6bc7dccbbf4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/de5/classbehat__generator__base.html#a5e58eb4cfd8bd5fa9575b6bc7dccbbf4">name_for_errors</a> (string $entitytype)</td></tr>
 <tr class="memdesc:a5e58eb4cfd8bd5fa9575b6bc7dccbbf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for formatting error messages.  <a href="../../de/de5/classbehat__generator__base.html#a5e58eb4cfd8bd5fa9575b6bc7dccbbf4">More...</a><br /></td></tr>
 <tr class="separator:a5e58eb4cfd8bd5fa9575b6bc7dccbbf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -715,6 +721,8 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
+<p>Reimplemented in <a class="el" href="../../dc/d7c/classbehat__mod__forum__generator.html#ac5886d8ff720675379f2ccaeb767ee35">behat_mod_forum_generator</a>.</p>
+
 </div>
 </div>
 <a id="a87d1d28c4d281f339460b38a8de97a06" name="a87d1d28c4d281f339460b38a8de97a06"></a>
@@ -1022,6 +1030,98 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a29f9aae66cadaa07752560f3fd4fdcbd" name="a29f9aae66cadaa07752560f3fd4fdcbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29f9aae66cadaa07752560f3fd4fdcbd">&#9670;&nbsp;</a></span>get_userfrom_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_generator_base::get_userfrom_id </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$username</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the user id from it's username. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../df/d70/class_exception.html">Exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$username</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a535800702d84813fa6f1b7e436a40378" name="a535800702d84813fa6f1b7e436a40378"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a535800702d84813fa6f1b7e436a40378">&#9670;&nbsp;</a></span>get_userto_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_generator_base::get_userto_id </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$username</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the user id from it's username. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../df/d70/class_exception.html">Exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$username</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a5e58eb4cfd8bd5fa9575b6bc7dccbbf4" name="a5e58eb4cfd8bd5fa9575b6bc7dccbbf4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5e58eb4cfd8bd5fa9575b6bc7dccbbf4">&#9670;&nbsp;</a></span>name_for_errors()</h2>
 
@@ -1134,7 +1234,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 26 2022 03:37:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jul 3 2022 03:35:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
