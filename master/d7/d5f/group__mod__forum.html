@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220701) (9ccda59e00)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220707) (a23f0bff3e1)</div>
   </td>
  </tr>
  </tbody>
@@ -782,6 +782,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga7360afdeb5e445e95858b804ed8fee95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga7360afdeb5e445e95858b804ed8fee95">forum_rating_validate</a> ($params)</td></tr>
 <tr class="memdesc:ga7360afdeb5e445e95858b804ed8fee95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates a submitted rating.  <a href="../../d7/d5f/group__mod__forum.html#ga7360afdeb5e445e95858b804ed8fee95">More...</a><br /></td></tr>
 <tr class="separator:ga7360afdeb5e445e95858b804ed8fee95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga958454ec174d878c9bd76fffba1a070b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga958454ec174d878c9bd76fffba1a070b">forum_refresh_events</a> (int $courseid, stdClass $instance, stdClass $cm)</td></tr>
+<tr class="memdesc:ga958454ec174d878c9bd76fffba1a070b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This callback will check the provided instance of this module and make sure there are up-to-date events created for it.  <a href="../../d7/d5f/group__mod__forum.html#ga958454ec174d878c9bd76fffba1a070b">More...</a><br /></td></tr>
+<tr class="separator:ga958454ec174d878c9bd76fffba1a070b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga977315a0c30de5f2da12686d5cda5ccf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga977315a0c30de5f2da12686d5cda5ccf">forum_reset_course_form_defaults</a> ($course)</td></tr>
 <tr class="memdesc:ga977315a0c30de5f2da12686d5cda5ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Course reset form defaults.  <a href="../../d7/d5f/group__mod__forum.html#ga977315a0c30de5f2da12686d5cda5ccf">More...</a><br /></td></tr>
 <tr class="separator:ga977315a0c30de5f2da12686d5cda5ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5238,6 +5241,50 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 
 </div>
 </div>
+<a id="ga958454ec174d878c9bd76fffba1a070b" name="ga958454ec174d878c9bd76fffba1a070b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga958454ec174d878c9bd76fffba1a070b">&#9670;&nbsp;</a></span>forum_refresh_events()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">forum_refresh_events </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$courseid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$cm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This callback will check the provided instance of this module and make sure there are up-to-date events created for it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$courseid</td><td>Not used. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$instance</td><td>Forum module instance. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$cm</td><td>Course module object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga977315a0c30de5f2da12686d5cda5ccf" name="ga977315a0c30de5f2da12686d5cda5ccf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga977315a0c30de5f2da12686d5cda5ccf">&#9670;&nbsp;</a></span>forum_reset_course_form_defaults()</h2>
 
@@ -8838,7 +8885,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 3 2022 03:40:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jul 10 2022 03:45:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
