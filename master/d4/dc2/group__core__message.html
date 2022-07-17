@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220707) (a23f0bff3e1)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220714) (d9632ca8b28)</div>
   </td>
  </tr>
  </tbody>
@@ -568,7 +568,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_TYPE_NOTIFIC
 
 <p>Returns the count of unread messages for user. </p>
 <p >Either from a specific user or from all users.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000807">Deprecated:</a></b></dt><dd>since 3.10 TODO: <a href="https://tracker.moodle.org/browse/MDL-69643" class="el">MDL-69643</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000808">Deprecated:</a></b></dt><dd>since 3.10 TODO: <a href="https://tracker.moodle.org/browse/MDL-69643" class="el">MDL-69643</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">object</td><td class="paramname">$user1</td><td>the first user. Defaults to $USER </td></tr>
@@ -1310,7 +1310,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_TYPE_NOTIFIC
 </div><div class="memdoc">
 
 <p>Translate message default settings from binary value to the array of string representing the settings to be stored. </p>
-<p >Also validate the provided value and use default if it is malformed. </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000221">Todo:</a></b></dt><dd>Remove usage of MESSAGE_DEFAULT_LOGGEDOFF on <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>.</dd></dl>
+<p >Also validate the provided value and use default if it is malformed. </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000222">Todo:</a></b></dt><dd>Remove usage of MESSAGE_DEFAULT_LOGGEDOFF on <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$plugindefault</td><td>Default setting suggested by plugin </td></tr>
@@ -1363,8 +1363,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_TYPE_NOTIFIC
 
 <p>Define contants for messaging default settings population. </p>
 <p >For unambiguity of plugin developer intentions we use 4-bit value (LSB numbering): bit 0 - whether to send message (MESSAGE_DEFAULT_ENABLED) bit 1 - Deprecated: whether to send message (MESSAGE_DEFAULT_LOGGEDOFF). Used to mean only when the user is logged off. bit 2..3 - messaging permission (MESSAGE_DISALLOWED|MESSAGE_PERMITTED|MESSAGE_FORCED)</p>
-<p >MESSAGE_PERMITTED_MASK contains the mask we use to distinguish permission setting. </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000804">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0. Use MESSAGE_DEFAULT_ENABLED instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000218">Todo:</a></b></dt><dd>Remove on <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
+<p >MESSAGE_PERMITTED_MASK contains the mask we use to distinguish permission setting. </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000805">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0. Use MESSAGE_DEFAULT_ENABLED instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000219">Todo:</a></b></dt><dd>Remove on <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
 
 </div>
 </div>
@@ -1379,8 +1379,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_TYPE_NOTIFIC
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000805">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. Use MESSAGE_DEFAULT_ENABLED instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000219">Todo:</a></b></dt><dd>Remove on <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000806">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. Use MESSAGE_DEFAULT_ENABLED instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000220">Todo:</a></b></dt><dd>Remove on <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
 
 </div>
 </div>
@@ -1397,15 +1397,15 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_TYPE_NOTIFIC
 </div><div class="memdoc">
 
 <p>Set default value for default outputs permitted setting. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000806">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000220">Todo:</a></b></dt><dd>Remove on <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000807">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000221">Todo:</a></b></dt><dd>Remove on <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 10 2022 03:45:17 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jul 17 2022 03:51:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

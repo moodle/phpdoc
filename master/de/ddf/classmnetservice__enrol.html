@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220707) (a23f0bff3e1)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220714) (d9632ca8b28)</div>
   </td>
  </tr>
  </tbody>
@@ -70,7 +70,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3942a5db2c4c1dc8138f683a9c150705"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddf/classmnetservice__enrol.html#a3942a5db2c4c1dc8138f683a9c150705">format_error_message</a> ($errormsg)</td></tr>
-<tr class="memdesc:a3942a5db2c4c1dc8138f683a9c150705"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepares error messages returned by our XML-RPC requests to be send as debug info to <a class="el" href="../../d0/de1/group__core.html#ga84f89c7c9253884b4db7e42247c0b97d">print_error()</a>.  <a href="../../de/ddf/classmnetservice__enrol.html#a3942a5db2c4c1dc8138f683a9c150705">More...</a><br /></td></tr>
+<tr class="memdesc:a3942a5db2c4c1dc8138f683a9c150705"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepares error messages returned by our XML-RPC requests to be send as debug info to {.  <a href="../../de/ddf/classmnetservice__enrol.html#a3942a5db2c4c1dc8138f683a9c150705">More...</a><br /></td></tr>
 <tr class="separator:a3942a5db2c4c1dc8138f683a9c150705"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afddcc34de26990ba3ced766b0a16a3d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/ddf/classmnetservice__enrol.html#afddcc34de26990ba3ced766b0a16a3d7">get_remote_courses</a> ($mnethostid, $usecache=true)</td></tr>
 <tr class="memdesc:afddcc34de26990ba3ced766b0a16a3d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches the information about the courses available on remote host for our students.  <a href="../../de/ddf/classmnetservice__enrol.html#afddcc34de26990ba3ced766b0a16a3d7">More...</a><br /></td></tr>
@@ -143,8 +143,9 @@ static <a class="el" href="../../de/ddf/classmnetservice__enrol.html">mnetservic
       </table>
 </div><div class="memdoc">
 
-<p>Prepares error messages returned by our XML-RPC requests to be send as debug info to <a class="el" href="../../d0/de1/group__core.html#ga84f89c7c9253884b4db7e42247c0b97d">print_error()</a>. </p>
-<p >MNet client-side methods in this class return request error as serialized array.</p>
+<p>Prepares error messages returned by our XML-RPC requests to be send as debug info to {. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d6/da8/classmoodle__exception.html" title="Base Moodle Exception class.">moodle_exception()</a>}</dd></dl>
+<p>MNet client-side methods in this class return request error as serialized array.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$error</td><td>serialized array </td></tr>
@@ -252,7 +253,7 @@ static <a class="el" href="../../de/ddf/classmnetservice__enrol.html">mnetservic
 
 <p>Returns a list of remote servers that offer their courses for our users. </p>
 <p >We must subscribe MNet service 'mnet_enrol' for the peers to allow our users to enrol into their courses.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000224">Todo:</a></b></dt><dd><p class="startdd">once the MNet core is refactored this may be part of a parent class </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000225">Todo:</a></b></dt><dd><p class="startdd">once the MNet core is refactored this may be part of a parent class </p>
 <p class="enddd">the name of the service should be changed to the name of this plugin </p>
 </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
@@ -281,7 +282,7 @@ static <a class="el" href="../../de/ddf/classmnetservice__enrol.html">mnetservic
 
 <p>Returns a list of remote servers that can enrol their users into our courses. </p>
 <p >We must publish MNet service 'mnet_enrol' for the peers to allow them to enrol their users into our courses.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000223">Todo:</a></b></dt><dd><p class="startdd">once the MNet core is refactored this may be part of a parent class </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000224">Todo:</a></b></dt><dd><p class="startdd">once the MNet core is refactored this may be part of a parent class </p>
 <p class="enddd">the name of the service should be changed to the name of this plugin </p>
 </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
@@ -310,7 +311,7 @@ static <a class="el" href="../../de/ddf/classmnetservice__enrol.html">mnetservic
 
 <p>Is this service enabled? </p>
 <p >Currently, this checks if whole MNet is available. In the future, additional checks can be done. Probably the field 'offer' should be checked but it does not seem to be used so far.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000222">Todo:</a></b></dt><dd>move this to some parent class once we have such </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000223">Todo:</a></b></dt><dd>move this to some parent class once we have such </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td></td></tr>
@@ -459,7 +460,7 @@ static <a class="el" href="../../de/ddf/classmnetservice__enrol.html">mnetservic
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 10 2022 03:46:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jul 17 2022 03:53:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

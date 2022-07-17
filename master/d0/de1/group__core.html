@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220707) (a23f0bff3e1)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220714) (d9632ca8b28)</div>
   </td>
  </tr>
  </tbody>
@@ -2447,7 +2447,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error changing db structure, caused by some dependency found like trying to modify one field having related indexes.  <a href="../../d7/d09/classddl__dependency__exception.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddc/classddl__exception.html">ddl_exception</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">DDL exception class, use instead of <a class="el" href="../../d0/de1/group__core.html#ga84f89c7c9253884b4db7e42247c0b97d" title="Abort execution by throwing of a general exception, default exception handler displays the error mess...">print_error()</a> and "return false;" in ddl code.  <a href="../../df/ddc/classddl__exception.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">DDL exception class, use instead of throw new <a class="el" href="../../d6/da8/classmoodle__exception.html" title="Base Moodle Exception class.">moodle_exception()</a> and "return false;" in ddl code.  <a href="../../df/ddc/classddl__exception.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/classddl__field__missing__exception.html">ddl_field_missing_exception</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Table does not exist problem exception.  <a href="../../d2/d48/classddl__field__missing__exception.html#details">More...</a><br /></td></tr>
@@ -5423,6 +5423,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>fill_classmap_renam
 <tr class="memitem:ga655ea8a1852a9f7c5266e852b70c3943"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de1/group__core.html#ga655ea8a1852a9f7c5266e852b70c3943">qualified_me</a> ()</td></tr>
 <tr class="memdesc:ga655ea8a1852a9f7c5266e852b70c3943"><td class="mdescLeft">&#160;</td><td class="mdescRight">Guesses the full URL of the current script.  <a href="../../d0/de1/group__core.html#ga655ea8a1852a9f7c5266e852b70c3943">More...</a><br /></td></tr>
 <tr class="separator:ga655ea8a1852a9f7c5266e852b70c3943"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8f421013c42f06a3bd45264e9c744a57"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de1/group__core.html#ga8f421013c42f06a3bd45264e9c744a57">query_end</a> ($result)</td></tr>
+<tr class="memdesc:ga8f421013c42f06a3bd45264e9c744a57"><td class="mdescLeft">&#160;</td><td class="mdescRight">This should be called immediately after each db query.  <a href="../../d0/de1/group__core.html#ga8f421013c42f06a3bd45264e9c744a57">More...</a><br /></td></tr>
+<tr class="separator:ga8f421013c42f06a3bd45264e9c744a57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7fad1d078d05dfd68731f78457772a34"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de1/group__core.html#ga7fad1d078d05dfd68731f78457772a34">query_start</a> ($sql, array $params=null, $type, $extrainfo=null)</td></tr>
 <tr class="memdesc:ga7fad1d078d05dfd68731f78457772a34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called before each db query.  <a href="../../d0/de1/group__core.html#ga7fad1d078d05dfd68731f78457772a34">More...</a><br /></td></tr>
 <tr class="separator:ga7fad1d078d05dfd68731f78457772a34"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -6538,7 +6541,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>filterobject::$phra
 <tr class="memitem:ga4ab51386acb82cd0a0066eac2567b2bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de1/group__core.html#ga4ab51386acb82cd0a0066eac2567b2bd">$plugins</a></td></tr>
 <tr class="separator:ga4ab51386acb82cd0a0066eac2567b2bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga63c5d6a8a9f1768ea926cee666dc991b"><td class="memItemLeft" align="right" valign="top"><a id="ga63c5d6a8a9f1768ea926cee666dc991b" name="ga63c5d6a8a9f1768ea926cee666dc991b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$release</b> = '4.1dev (Build: 20220707)'</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$release</b> = '4.1dev (Build: 20220714)'</td></tr>
 <tr class="separator:ga63c5d6a8a9f1768ea926cee666dc991b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga21ea4dae509fad0a8aec221e2f095886"><td class="memItemLeft" align="right" valign="top"><a id="ga21ea4dae509fad0a8aec221e2f095886" name="ga21ea4dae509fad0a8aec221e2f095886"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$renamedclasses</b></td></tr>
@@ -6604,7 +6607,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>core\task::$trace
 global&#160;</td><td class="memItemRight" valign="bottom"><b>$USER</b></td></tr>
 <tr class="separator:ga6e76f75e2c700b871e9e622e51598180"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga17c8948c68aa44fa9961ae169b6a8961"><td class="memItemLeft" align="right" valign="top"><a id="ga17c8948c68aa44fa9961ae169b6a8961" name="ga17c8948c68aa44fa9961ae169b6a8961"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$version</b> = 2022070700.00</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$version</b> = 2022071400.00</td></tr>
 <tr class="separator:ga17c8948c68aa44fa9961ae169b6a8961"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga25a973d9316abf0df9c8c8d269f8bdf1"><td class="memItemLeft" align="right" valign="top"><a id="ga25a973d9316abf0df9c8c8d269f8bdf1" name="ga25a973d9316abf0df9c8c8d269f8bdf1"></a>
 null string&#160;</td><td class="memItemRight" valign="bottom"><b>filterobject::$workregexp</b> = null</td></tr>
@@ -8664,9 +8667,9 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000733">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000734">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d82/classqbank__managecategories_1_1helper.html">qbank_managecategories::helper</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000200">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000201">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
 
 </div>
 </div>
@@ -13263,7 +13266,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
 </div><div class="memdoc">
 
 <p>Returns true if the current version of PHP is greater that the specified one. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000168">Todo:</a></b></dt><dd>Check PHP version being required here is it too low?</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000169">Todo:</a></b></dt><dd>Check PHP version being required here is it too low?</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$version</td><td>The version of php being tested. </td></tr>
@@ -16217,7 +16220,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
 </div><div class="memdoc">
 
 <p>Creates a bare-bones user record. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000162">Todo:</a></b></dt><dd>Outline auth types and provide code example</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000163">Todo:</a></b></dt><dd>Outline auth types and provide code example</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$username</td><td>New user's username to add to record </td></tr>
@@ -17880,7 +17883,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
 
 <p>Given an arbitrary array, and a number of draws, this function returns an array with that amount of items. </p>
 <p >The indexes are retained.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000169">Todo:</a></b></dt><dd>Finish documenting this function</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000170">Todo:</a></b></dt><dd>Finish documenting this function</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$array</td><td></td></tr>
@@ -18327,7 +18330,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
 </div><div class="memdoc">
 
 <p>Based on a class by Mukul Sabharwal [mukulsabharwal @ yahoo.com]. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000166">Todo:</a></b></dt><dd>Finish documenting this function</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000167">Todo:</a></b></dt><dd>Finish documenting this function</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$pwd</td><td>The password to use when encrypting or decrypting </td></tr>
@@ -22252,9 +22255,9 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000732">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000733">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d82/classqbank__managecategories_1_1helper.html">qbank_managecategories::helper</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000199">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000200">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
 
 </div>
 </div>
@@ -23240,7 +23243,7 @@ Options:
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000761">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8 <a href="https://tracker.moodle.org/browse/MDL-61038" class="el">MDL-61038</a> - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000762">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8 <a href="https://tracker.moodle.org/browse/MDL-61038" class="el">MDL-61038</a> - please do not use this function any more. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../df/d3c/classcore_1_1uuid.html#adf014732671c87a49ca55e1ee730d328" title="Generate a V4 UUID.">core::uuid::generate()</a> </dd></dl>
 
 </div>
@@ -24060,9 +24063,9 @@ Options:
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000735">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000736">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d82/classqbank__managecategories_1_1helper.html">qbank_managecategories::helper</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000202">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000203">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
 
 </div>
 </div>
@@ -25624,7 +25627,7 @@ Options:
 
 <p>Returns an array with all the filenames in all subdirectories, relative to the given rootdir. </p>
 <p >If excludefiles is defined, then that file/directory is ignored If getdirs is true, then (sub)directories are included in the output If getfiles is true, then files are included in the output (at least one of these must be true!)</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000165">Todo:</a></b></dt><dd>Finish documenting this function. Add examples of $excludefile usage.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000166">Todo:</a></b></dt><dd>Finish documenting this function. Add examples of $excludefile usage.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$rootdir</td><td>A given root directory to start from </td></tr>
@@ -27252,7 +27255,7 @@ Options:
 <li>by the teacher for the current module, eg $assignment-&gt;maxbytes</li>
 </ol>
 <p >These last two are passed to this function as arguments (in bytes). Anything defined as 0 is ignored. The smallest of all the non-zero numbers is returned.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000164">Todo:</a></b></dt><dd>Finish documenting this function</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000165">Todo:</a></b></dt><dd>Finish documenting this function</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$sitebytes</td><td>Set maximum size </td></tr>
@@ -29977,7 +29980,7 @@ Options:
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000572">Deprecated:</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.0 <a href="https://tracker.moodle.org/browse/MDL-50491" class="el">MDL-50491</a>. This was used by the old text filtering system, but no more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000573">Deprecated:</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.0 <a href="https://tracker.moodle.org/browse/MDL-50491" class="el">MDL-50491</a>. This was used by the old text filtering system, but no more. </dd></dl>
 
 </div>
 </div>
@@ -31601,7 +31604,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 
 <p>Returns true if the page is displayed in a popup window. </p>
 <p >Gets the information from the URL parameter inpopup.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000213">Todo:</a></b></dt><dd>Use a central function to create the popup calls all over <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> and In the moment only works with resources and probably questions.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000214">Todo:</a></b></dt><dd>Use a central function to create the popup calls all over <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> and In the moment only works with resources and probably questions.</dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">boolean</td><td></td></tr>
@@ -33497,7 +33500,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 
 <p>Creates an array that represents all the current grades that can be chosen using the given grading type. </p>
 <p >Negative numbers are scales, zero is no grade, and positive numbers are maximum grades.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000170">Todo:</a></b></dt><dd>Finish documenting this function or better deprecated this completely!</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000171">Todo:</a></b></dt><dd>Finish documenting this function or better deprecated this completely!</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$gradingtype</td><td></td></tr>
@@ -33711,7 +33714,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 </div><div class="memdoc">
 
 <p>make_unique_id_code </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000171">Todo:</a></b></dt><dd>Finish documenting this function</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000172">Todo:</a></b></dt><dd>Finish documenting this function</dd></dl>
 <p >@uses $_SERVER </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$extra</td><td>Extra string to append to the end of the code </td></tr>
@@ -35316,7 +35319,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 </div><div class="memdoc">
 
 <p>? </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000163">Todo:</a></b></dt><dd>Finish documenting this function</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000164">Todo:</a></b></dt><dd>Finish documenting this function</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$modargs</td><td></td></tr>
@@ -36535,8 +36538,8 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 </div><div class="memdoc">
 
 <p>returns array of plagiarism details about specified file </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000721">Deprecated:</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0. - this function was a placeholder and not used in core. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000181">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-71326" class="el">MDL-71326</a> This is to be moved from here to deprecatedlib.php in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000722">Deprecated:</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0. - this function was a placeholder and not used in core. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000182">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-71326" class="el">MDL-71326</a> This is to be moved from here to deprecatedlib.php in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$cmid</td><td></td></tr>
@@ -36590,8 +36593,8 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 </div><div class="memdoc">
 
 <p>adds the list of plagiarism settings to a form - called inside modules that have enabled plagiarism </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000723">Deprecated:</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.9. <a href="https://tracker.moodle.org/browse/MDL-65835" class="el">MDL-65835</a> Please use {plugin name}_coursemodule_standard_elements() instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000183">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-67526" class="el">MDL-67526</a> This is to be moved from here to deprecatedlib.php in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000724">Deprecated:</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.9. <a href="https://tracker.moodle.org/browse/MDL-65835" class="el">MDL-65835</a> Please use {plugin name}_coursemodule_standard_elements() instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000184">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-67526" class="el">MDL-67526</a> This is to be moved from here to deprecatedlib.php in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">object</td><td class="paramname">$mform</td><td>- <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> form object </td></tr>
@@ -36651,7 +36654,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 </div><div class="memdoc">
 
 <p>Helper function - also loads lib file of plagiarism plugin. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000185">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-67872" class="el">MDL-67872</a> the deprecated code in this function to be removed in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000186">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-67872" class="el">MDL-67872</a> the deprecated code in this function to be removed in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td>of available plugins </td></tr>
@@ -36710,8 +36713,8 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 </div><div class="memdoc">
 
 <p>saves/updates plagiarism settings from a modules config page - called by course/modedit.php </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000722">Deprecated:</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.9. <a href="https://tracker.moodle.org/browse/MDL-65835" class="el">MDL-65835</a> Please use {plugin name}_coursemodule_edit_post_actions() instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000182">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-67526" class="el">MDL-67526</a> This is to be moved from here to deprecatedlib.php in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000723">Deprecated:</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.9. <a href="https://tracker.moodle.org/browse/MDL-65835" class="el">MDL-65835</a> Please use {plugin name}_coursemodule_edit_post_actions() instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000183">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-67526" class="el">MDL-67526</a> This is to be moved from here to deprecatedlib.php in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">object</td><td class="paramname">$data</td><td>- form data </td></tr>
@@ -36748,8 +36751,8 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 </div><div class="memdoc">
 
 <p>Allows a plagiarism plugin to print a button/link at the top of activity overview report pages. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000724">Deprecated:</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 - Please use {plugin name}_before_standard_top_of_body_html instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000184">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-71326" class="el">MDL-71326</a> Remove this method. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000725">Deprecated:</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 - Please use {plugin name}_before_standard_top_of_body_html instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000185">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-71326" class="el">MDL-71326</a> Remove this method. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">object</td><td class="paramname">$course</td><td>- full Course object </td></tr>
@@ -36834,7 +36837,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000167">Todo:</a></b></dt><dd>Decide about to deprecate and drop <a class="el" href="../../d0/de1/group__core.html#gaacaaea2e61dcf0c958c0d6b1d01b8f85" title="Invoke plugin&#39;s callback functions.">plugin_callback()</a> - <a href="https://tracker.moodle.org/browse/MDL-30743" class="el">MDL-30743</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000168">Todo:</a></b></dt><dd>Decide about to deprecate and drop <a class="el" href="../../d0/de1/group__core.html#gaacaaea2e61dcf0c958c0d6b1d01b8f85" title="Invoke plugin&#39;s callback functions.">plugin_callback()</a> - <a href="https://tracker.moodle.org/browse/MDL-30743" class="el">MDL-30743</a> </dd></dl>
 
 </div>
 </div>
@@ -37450,6 +37453,8 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 </div><div class="memdoc">
 
 <p>Abort execution by throwing of a general exception, default exception handler displays the error message in most cases. </p>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000548">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000095">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-74484" class="el">MDL-74484</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$errorcode</td><td>The name of the language string containing the error message. Normally this should be in the error.php lang file. </td></tr>
@@ -37514,7 +37519,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 </div><div class="memdoc">
 
 <p>Prints a grade menu (as part of an existing form) with help showing all possible numerical grades and scales. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000212">Todo:</a></b></dt><dd><p class="startdd">Finish documenting this function </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000213">Todo:</a></b></dt><dd><p class="startdd">Finish documenting this function </p>
 <p class="enddd">Deprecate: this is only used in a few contrib modules</p>
 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -37945,7 +37950,7 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 </div><div class="memdoc">
 
 <p>Returns a localized sentence in the current language summarizing the current password policy. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000214">Todo:</a></b></dt><dd>this should be handled by a function/method in the language pack library once we have a support for it @uses $CFG </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000215">Todo:</a></b></dt><dd>this should be handled by a function/method in the language pack library once we have a support for it @uses $CFG </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td></td></tr>
@@ -39225,6 +39230,47 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 
 </div>
 </div>
+<a id="ga8f421013c42f06a3bd45264e9c744a57" name="ga8f421013c42f06a3bd45264e9c744a57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8f421013c42f06a3bd45264e9c744a57">&#9670;&nbsp;</a></span>query_end()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">query_end </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$result</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This should be called immediately after each db query. </p>
+<p >It does a clean up of resources.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">mixed</td><td class="paramname">$result</td><td>The db specific result obtained from running a query. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga7fad1d078d05dfd68731f78457772a34" name="ga7fad1d078d05dfd68731f78457772a34"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga7fad1d078d05dfd68731f78457772a34">&#9670;&nbsp;</a></span>query_start()</h2>
 
@@ -39319,9 +39365,9 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000737">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000738">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d82/classqbank__managecategories_1_1helper.html">qbank_managecategories::helper</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000204">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000205">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
 
 </div>
 </div>
@@ -39481,9 +39527,9 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000736">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000737">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d82/classqbank__managecategories_1_1helper.html">qbank_managecategories::helper</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000203">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000204">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
 
 </div>
 </div>
@@ -39543,9 +39589,9 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000734">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000735">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d82/classqbank__managecategories_1_1helper.html">qbank_managecategories::helper</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000201">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000202">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
 
 </div>
 </div>
@@ -40008,9 +40054,9 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000738">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000739">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d82/classqbank__managecategories_1_1helper.html">qbank_managecategories::helper</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000205">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000206">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
 
 </div>
 </div>
@@ -40100,9 +40146,9 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000730">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000731">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dd/d16/classqbank__exporttoxml_1_1helper.html#a265f97afbf7a1aef83ead32d431a4b14" title="Get the URL to export a single question (exportone.php).">qbank_exporttoxml::helper::question_get_export_single_question_url()</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000197">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000198">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
 
 </div>
 </div>
@@ -40287,8 +40333,8 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000728">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000195">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000729">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000196">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
 
 </div>
 </div>
@@ -40462,9 +40508,9 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000729">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71573" class="el">MDL-71573</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000730">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71573" class="el">MDL-71573</a> </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../df/d7c/classqbank__exportquestions_1_1exportquestions__helper.html" title="Class exportquestions_helper contains all the library functions.">qbank_exportquestions::exportquestions_helper</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000196">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000197">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
 
 </div>
 </div>
@@ -40767,9 +40813,9 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dd5/classpopup__action.html">popup_action()</a>} constructor. </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000727">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000728">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>qbank_previewquestion::previewquestion_helper::question_preview_popup_params() </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000194">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000195">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
 
 </div>
 </div>
@@ -40841,9 +40887,9 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000726">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000727">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d6/df0/classqbank__previewquestion_1_1helper.html#afa6590bfff0232597a7dd63eed2a3daa" title="Generate the URL for starting a new preview of a given question with the given options.">qbank_previewquestion::helper::question_preview_url()</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000193">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000194">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
 
 </div>
 </div>
@@ -40876,9 +40922,9 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000731">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000732">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d82/classqbank__managecategories_1_1helper.html">qbank_managecategories::helper</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000198">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000199">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
 
 </div>
 </div>
@@ -43256,8 +43302,8 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
 
 <p>Primitive function to generate a SQL string from a parse tree using TEXT indexes. </p>
 <p >If searches aren't suitable to use TEXT this function calls the default <a class="el" href="../../d0/de1/group__core.html#ga7dd2bcad67124b3e6b9e6fd0b8884324" title="Primitive function to generate a SQL string from a parse tree.">search_generate_SQL()</a> one.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000757">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.9 <a href="https://tracker.moodle.org/browse/MDL-48939" class="el">MDL-48939</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000206">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-48940" class="el">MDL-48940</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.2 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000758">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.9 <a href="https://tracker.moodle.org/browse/MDL-48939" class="el">MDL-48939</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000207">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-48940" class="el">MDL-48940</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.2 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/de1/group__core.html#ga7dd2bcad67124b3e6b9e6fd0b8884324" title="Primitive function to generate a SQL string from a parse tree.">search_generate_SQL()</a> </dd></dl>
 
 </div>
@@ -46768,7 +46814,7 @@ config-dist.php @global stdClass <a class="el" href="../../d0/d25/group__mod__le
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000570">Deprecated:</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.0 <a href="https://tracker.moodle.org/browse/MDL-50491" class="el">MDL-50491</a>. This was used by the old text filtering system, but no more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000571">Deprecated:</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.0 <a href="https://tracker.moodle.org/browse/MDL-50491" class="el">MDL-50491</a>. This was used by the old text filtering system, but no more. </dd></dl>
 
 </div>
 </div>
@@ -46788,7 +46834,7 @@ config-dist.php @global stdClass <a class="el" href="../../d0/d25/group__mod__le
 </div><div class="memdoc">
 
 <p>As for the equivalent <a class="el" href="../../db/de3/classfilter__manager.html">filter_manager</a> method. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000571">Deprecated:</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.0 <a href="https://tracker.moodle.org/browse/MDL-50491" class="el">MDL-50491</a>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000572">Deprecated:</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.0 <a href="https://tracker.moodle.org/browse/MDL-50491" class="el">MDL-50491</a>. </dd></dl>
 
 </div>
 </div>
@@ -50084,7 +50130,7 @@ config-dist.php @global stdClass <a class="el" href="../../d0/d25/group__mod__le
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000557">Deprecated:</a></b></dt><dd><ul>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000558">Deprecated:</a></b></dt><dd><ul>
 <li>enrol caching was reworked, use ENROL_MAX_TIMESTAMP instead </li>
 </ul>
 </dd></dl>
@@ -50102,7 +50148,7 @@ config-dist.php @global stdClass <a class="el" href="../../d0/d25/group__mod__le
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000558">Deprecated:</a></b></dt><dd>since 2.4 not used any more, migrate plugin to new restore methods </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000559">Deprecated:</a></b></dt><dd>since 2.4 not used any more, migrate plugin to new restore methods </dd></dl>
 
 </div>
 </div>
@@ -50170,7 +50216,7 @@ config-dist.php @global stdClass <a class="el" href="../../d0/d25/group__mod__le
 </div><div class="memdoc">
 
 <p>True if module supports groupmembersonly (which no longer exists) </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000680">Deprecated:</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000681">Deprecated:</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 </dd></dl>
 
 </div>
 </div>
@@ -50187,7 +50233,7 @@ config-dist.php @global stdClass <a class="el" href="../../d0/d25/group__mod__le
 </div><div class="memdoc">
 
 <p>Wiki-formatted text. </p>
-<p >Deprecated: left here just to note that '3' is not used (at the moment) and to catch any latent wiki-like text (which generates an error) </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000779">Deprecated:</a></b></dt><dd>since 2005! </dd></dl>
+<p >Deprecated: left here just to note that '3' is not used (at the moment) and to catch any latent wiki-like text (which generates an error) </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000780">Deprecated:</a></b></dt><dd>since 2005! </dd></dl>
 
 </div>
 </div>
@@ -50312,7 +50358,7 @@ config-dist.php @global stdClass <a class="el" href="../../d0/d25/group__mod__le
 </ul>
 <p >Choice of the database handle is based on following:</p><ul>
 <li>SQL_QUERY_INSERT, UPDATE and STRUCTURE record table from the query in the $written array and microtime() the event. For those queries master write handle is used.</li>
-<li>SQL_QUERY_AUX queries will always use the master write handle because they are used for transactionstart/end, locking etc. In that respect, <a class="el" href="../../d0/de1/group__core.html#ga7fad1d078d05dfd68731f78457772a34" title="Called before each db query.">query_start()</a> and query_end() <em>must not</em> be used during the connection phase.</li>
+<li>SQL_QUERY_AUX queries will always use the master write handle because they are used for transactionstart/end, locking etc. In that respect, <a class="el" href="../../d0/de1/group__core.html#ga7fad1d078d05dfd68731f78457772a34" title="Called before each db query.">query_start()</a> and <a class="el" href="../../d0/de1/group__core.html#ga8f421013c42f06a3bd45264e9c744a57" title="This should be called immediately after each db query.">query_end()</a> <em>must not</em> be used during the connection phase.</li>
 <li>SELECT queries will use the master write handle if: &ndash; any of the tables involved is a temp table &ndash; any of the tables involved is listed in the 'exclude_tables' option &ndash; any of the tables involved is in the $written array:<ul>
 <li>current microtime() is compared to the write microrime, and if more than latency time has passed the slave handle is used</li>
 <li>otherwise (not enough time passed) we choose the master write handle If none of the above conditions are met the slave instance is used.</li>
@@ -50375,7 +50421,7 @@ config-dist.php @global stdClass <a class="el" href="../../d0/d25/group__mod__le
 </div><div class="memdoc">
 
 <p>PARAM_ACTION - deprecated alias for PARAM_ALPHANUMEXT, use for various actions in forms and urls NOTE: originally alias for PARAM_APLHA. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000677">Deprecated:</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000678">Deprecated:</a></b></dt><dd>since 2.0 </dd></dl>
 
 </div>
 </div>
@@ -50426,7 +50472,7 @@ config-dist.php @global stdClass <a class="el" href="../../d0/d25/group__mod__le
 </div><div class="memdoc">
 
 <p>PARAM_CLEAN - obsoleted, please use a more specific type of parameter. </p>
-<p >It was one of the first types, that is why it is abused so much ;-) </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000674">Deprecated:</a></b></dt><dd>since 2.0 </dd></dl>
+<p >It was one of the first types, that is why it is abused so much ;-) </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000675">Deprecated:</a></b></dt><dd>since 2.0 </dd></dl>
 
 </div>
 </div>
@@ -50494,7 +50540,7 @@ config-dist.php @global stdClass <a class="el" href="../../d0/d25/group__mod__le
 </div><div class="memdoc">
 
 <p>PARAM_FORMAT - deprecated alias for PARAM_ALPHANUMEXT, use for names of plugins, formats, etc. </p>
-<p >NOTE: originally alias for PARAM_APLHA </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000678">Deprecated:</a></b></dt><dd>since 2.0 </dd></dl>
+<p >NOTE: originally alias for PARAM_APLHA </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000679">Deprecated:</a></b></dt><dd>since 2.0 </dd></dl>
 
 </div>
 </div>
@@ -50511,7 +50557,7 @@ config-dist.php @global stdClass <a class="el" href="../../d0/d25/group__mod__le
 </div><div class="memdoc">
 
 <p>PARAM_INTEGER - deprecated alias for PARAM_INT. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000675">Deprecated:</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000676">Deprecated:</a></b></dt><dd>since 2.0 </dd></dl>
 
 </div>
 </div>
@@ -50562,7 +50608,7 @@ config-dist.php @global stdClass <a class="el" href="../../d0/d25/group__mod__le
 </div><div class="memdoc">
 
 <p>PARAM_MULTILANG - deprecated alias of PARAM_TEXT. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000679">Deprecated:</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000680">Deprecated:</a></b></dt><dd>since 2.0 </dd></dl>
 
 </div>
 </div>
@@ -50596,7 +50642,7 @@ config-dist.php @global stdClass <a class="el" href="../../d0/d25/group__mod__le
 </div><div class="memdoc">
 
 <p>PARAM_NUMBER - deprecated alias of PARAM_FLOAT. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000676">Deprecated:</a></b></dt><dd>since 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000677">Deprecated:</a></b></dt><dd>since 2.0 </dd></dl>
 
 </div>
 </div>
@@ -50750,7 +50796,7 @@ config-dist.php @global stdClass <a class="el" href="../../d0/d25/group__mod__le
 
 <p>To prevent problems with multibytes strings,Flag updating in nav not working on the review page. </p>
 <p >this should not exceed the length of "varchar(255) / 3 (bytes / utf-8 character) = 85". TODO: this is not correct, varchar(255) are 255 unicode chars ;-)</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000161">Todo:</a></b></dt><dd>define(TAG_MAX_LENGTH) this is not correct, varchar(255) are 255 unicode chars ;-) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000162">Todo:</a></b></dt><dd>define(TAG_MAX_LENGTH) this is not correct, varchar(255) are 255 unicode chars ;-) </dd></dl>
 
 </div>
 </div>
@@ -50791,7 +50837,7 @@ config-dist.php @global stdClass <a class="el" href="../../d0/d25/group__mod__le
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 10 2022 03:45:16 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jul 17 2022 03:51:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
