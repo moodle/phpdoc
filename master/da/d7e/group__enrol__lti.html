@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220714) (d9632ca8b28)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220722) (4ce642e8ba5)</div>
   </td>
  </tr>
  </tbody>
@@ -225,6 +225,9 @@ Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>enrol_lti_get_fontawesome_icon_map</b> ()</td></tr>
 <tr class="memdesc:ga6a5b2bd91bd9095164a233bde55d22c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get icon mapping for font-awesome. <br /></td></tr>
 <tr class="separator:ga6a5b2bd91bd9095164a233bde55d22c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c9042f0e080d1540f1c705ac0a23ffa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7e/group__enrol__lti.html#ga5c9042f0e080d1540f1c705ac0a23ffa">enrol_lti_pre_course_module_delete</a> (stdClass $cm)</td></tr>
+<tr class="memdesc:ga5c9042f0e080d1540f1c705ac0a23ffa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-delete course module hook which disables any methods referring to the deleted module, preventing launches and allowing remap.  <a href="../../da/d7e/group__enrol__lti.html#ga5c9042f0e080d1540f1c705ac0a23ffa">More...</a><br /></td></tr>
+<tr class="separator:ga5c9042f0e080d1540f1c705ac0a23ffa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5c2ed3212c234a385b2d184cacd2510f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7e/group__enrol__lti.html#ga5c2ed3212c234a385b2d184cacd2510f">enrol_lti_verify_private_key</a> ()</td></tr>
 <tr class="memdesc:ga5c2ed3212c234a385b2d184cacd2510f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function checks if a private key has been generated for this enrolment instance.  <a href="../../da/d7e/group__enrol__lti.html#ga5c2ed3212c234a385b2d184cacd2510f">More...</a><br /></td></tr>
 <tr class="separator:ga5c2ed3212c234a385b2d184cacd2510f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,7 +264,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>component</b> = 'e
 <tr class="memitem:ga816e85fbd31aa493f1f3c61082b10b1a"><td class="memItemLeft" align="right" valign="top">$plugin&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7e/group__enrol__lti.html#ga816e85fbd31aa493f1f3c61082b10b1a">dependencies</a></td></tr>
 <tr class="separator:ga816e85fbd31aa493f1f3c61082b10b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memItemLeft" align="right" valign="top"><a id="ga92a3fd99b37c9cbd65c4aead816b3a83" name="ga92a3fd99b37c9cbd65c4aead816b3a83"></a>
-$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022041900</td></tr>
+$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022061500</td></tr>
 <tr class="separator:ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -304,6 +307,32 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
     <tr><td class="paramtype"><a class="el" href="../../d8/dca/classsettings__navigation.html">settings_navigation</a></td><td class="paramname">$navigation</td><td>The settings navigation object </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>The course </td></tr>
     <tr><td class="paramtype">stdclass</td><td class="paramname">$context</td><td>Course context </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga5c9042f0e080d1540f1c705ac0a23ffa" name="ga5c9042f0e080d1540f1c705ac0a23ffa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5c9042f0e080d1540f1c705ac0a23ffa">&#9670;&nbsp;</a></span>enrol_lti_pre_course_module_delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enrol_lti_pre_course_module_delete </td>
+          <td>(</td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$cm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pre-delete course module hook which disables any methods referring to the deleted module, preventing launches and allowing remap. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$cm</td><td>The deleted course module record. </td></tr>
   </table>
   </dd>
 </dl>
@@ -428,7 +457,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 17 2022 03:51:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jul 24 2022 03:52:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

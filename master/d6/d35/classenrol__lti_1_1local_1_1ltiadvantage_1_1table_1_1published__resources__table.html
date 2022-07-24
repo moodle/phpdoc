@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220714) (d9632ca8b28)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220722) (4ce642e8ba5)</div>
   </td>
  </tr>
  </tbody>
@@ -446,6 +446,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a6de5274faa6e5065cb7ed5a3ef8bd079"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d18/classflexible__table.html#a6de5274faa6e5065cb7ed5a3ef8bd079">get_component</a> ()</td></tr>
 <tr class="memdesc:a6de5274faa6e5065cb7ed5a3ef8bd079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get dynamic class component.  <a href="../../d3/d18/classflexible__table.html#a6de5274faa6e5065cb7ed5a3ef8bd079">More...</a><br /></td></tr>
 <tr class="separator:a6de5274faa6e5065cb7ed5a3ef8bd079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81d702875e6d78df82d8575d86c81810"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d35/classenrol__lti_1_1local_1_1ltiadvantage_1_1table_1_1published__resources__table.html#a81d702875e6d78df82d8575d86c81810">get_deleted_activity_name_html</a> (\stdClass $tool)</td></tr>
+<tr class="memdesc:a81d702875e6d78df82d8575d86c81810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a warning icon, with tooltip, describing enrolment instances sharing activities which have been deleted.  <a href="../../d6/d35/classenrol__lti_1_1local_1_1ltiadvantage_1_1table_1_1published__resources__table.html#a81d702875e6d78df82d8575d86c81810">More...</a><br /></td></tr>
+<tr class="separator:a81d702875e6d78df82d8575d86c81810"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d6ee19d538ade329f525e2044e1a46a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d35/classenrol__lti_1_1local_1_1ltiadvantage_1_1table_1_1published__resources__table.html#a3d6ee19d538ade329f525e2044e1a46a">get_display_text</a> ($tool, $<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>)</td></tr>
 <tr class="memdesc:a3d6ee19d538ade329f525e2044e1a46a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns text to display in the columns.  <a href="../../d6/d35/classenrol__lti_1_1local_1_1ltiadvantage_1_1table_1_1published__resources__table.html#a3d6ee19d538ade329f525e2044e1a46a">More...</a><br /></td></tr>
 <tr class="separator:a3d6ee19d538ade329f525e2044e1a46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1661,6 +1664,46 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$sortdata</b></td></
 </dl>
 
 <p>Reimplemented in <a class="el" href="../../db/d7f/classcore__reportbuilder_1_1table_1_1custom__report__table__view.html#ae2fe0297f7130181752058631053d0a6">core_reportbuilder\table\custom_report_table_view</a>.</p>
+
+</div>
+</div>
+<a id="a81d702875e6d78df82d8575d86c81810" name="a81d702875e6d78df82d8575d86c81810"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81d702875e6d78df82d8575d86c81810">&#9670;&nbsp;</a></span>get_deleted_activity_name_html()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enrol_lti\local\ltiadvantage\table\published_resources_table::get_deleted_activity_name_html </td>
+          <td>(</td>
+          <td class="paramtype">\stdClass&#160;</td>
+          <td class="paramname"><em>$tool</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a warning icon, with tooltip, describing enrolment instances sharing activities which have been deleted. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$tool</td><td>the tool instance record. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>the HTML for the name column. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -2924,7 +2967,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$sortdata</b></td></
 </div><div class="memdoc">
 
 <p>This method is deprecated although the old api is still supported. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000771">Deprecated:</a></b></dt><dd>1.9.2 - Jun 2, 2008 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000774">Deprecated:</a></b></dt><dd>1.9.2 - Jun 2, 2008 </dd></dl>
 
 </div>
 </div>
@@ -3020,7 +3063,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$sortdata</b></td></
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000772">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000775">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
 
 </div>
 </div>
@@ -4198,7 +4241,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$sortdata</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 17 2022 03:54:46 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jul 24 2022 03:56:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

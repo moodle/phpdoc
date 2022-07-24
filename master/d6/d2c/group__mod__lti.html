@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220714) (d9632ca8b28)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220722) (4ce642e8ba5)</div>
   </td>
  </tr>
  </tbody>
@@ -460,9 +460,8 @@ Functions</h2></td></tr>
 <tr class="memitem:gabe5257ed3442e5901b5cf5d54d4e1d31"><td class="memItemLeft" align="right" valign="top"><a id="gabe5257ed3442e5901b5cf5d54d4e1d31" name="gabe5257ed3442e5901b5cf5d54d4e1d31"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>lti_get_shared_secrets_by_key</b> ($<a class="el" href="../../d7/d30/group___mime.html#ga729e946b4ef600e71740113c6d4332c0">key</a>)</td></tr>
 <tr class="separator:gabe5257ed3442e5901b5cf5d54d4e1d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaa8ecc015e9a0f2f851efa73297f39bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2c/group__mod__lti.html#gaaa8ecc015e9a0f2f851efa73297f39bb">lti_get_shortcuts</a> ($defaultitem)</td></tr>
-<tr class="memdesc:gaaa8ecc015e9a0f2f851efa73297f39bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return aliases of this activity.  <a href="../../d6/d2c/group__mod__lti.html#gaaa8ecc015e9a0f2f851efa73297f39bb">More...</a><br /></td></tr>
-<tr class="separator:gaaa8ecc015e9a0f2f851efa73297f39bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4611d6483360ff0ad827661fc855cbd8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2c/group__mod__lti.html#ga4611d6483360ff0ad827661fc855cbd8">lti_get_shortcuts</a> ()</td></tr>
+<tr class="separator:ga4611d6483360ff0ad827661fc855cbd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0c240d30908ac7f456a5369ab1f5f770"><td class="memItemLeft" align="right" valign="top"><a id="ga0c240d30908ac7f456a5369ab1f5f770" name="ga0c240d30908ac7f456a5369ab1f5f770"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>lti_get_tool_by_url_match</b> ($url, $courseid=null, $state=LTI_TOOL_STATE_CONFIGURED)</td></tr>
 <tr class="separator:ga0c240d30908ac7f456a5369ab1f5f770"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2010,7 +2009,7 @@ $settings&#160;</td><td class="memItemRight" valign="bottom"><b>visiblename</b> 
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000943">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 <a href="https://tracker.moodle.org/browse/MDL-62599" class="el">MDL-62599</a> - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000946">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 <a href="https://tracker.moodle.org/browse/MDL-62599" class="el">MDL-62599</a> - please do not use this function any more. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d6/d2c/group__mod__lti.html#ga2eded00c7001b00c0744cb0a6e5856ab" title="This function builds the standard parameters for an LTI message that must be sent to the tool produce...">lti_build_standard_message()</a> </dd></dl>
 
 </div>
@@ -3413,8 +3412,8 @@ $settings&#160;</td><td class="memItemRight" valign="bottom"><b>visiblename</b> 
 
 </div>
 </div>
-<a id="gaaa8ecc015e9a0f2f851efa73297f39bb" name="gaaa8ecc015e9a0f2f851efa73297f39bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaaa8ecc015e9a0f2f851efa73297f39bb">&#9670;&nbsp;</a></span>lti_get_shortcuts()</h2>
+<a id="ga4611d6483360ff0ad827661fc855cbd8" name="ga4611d6483360ff0ad827661fc855cbd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4611d6483360ff0ad827661fc855cbd8">&#9670;&nbsp;</a></span>lti_get_shortcuts()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3422,29 +3421,12 @@ $settings&#160;</td><td class="memItemRight" valign="bottom"><b>visiblename</b> 
         <tr>
           <td class="memname">lti_get_shortcuts </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$defaultitem</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Return aliases of this activity. </p>
-<p >LTI should have an alias for each configured tool type This is so you can add an external tool types directly to the activity chooser</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000941">Deprecated:</a></b></dt><dd>since 3.9 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000241">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-68011" class="el">MDL-68011</a> This is to be moved from here to deprecatedlib.php in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$defaultitem</td><td>default item that would be added to the activity chooser if this callback was not present. It has properties: archetype, name, title, help, icon, link </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">array</td><td>An array of aliases for this activity. Each element is an object with same list of properties as $defaultitem, plus an additional property, helplink. Properties title and link are required </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000944">Deprecated:</a></b></dt><dd>since 3.9 </dd></dl>
 
 </div>
 </div>
@@ -4661,7 +4643,7 @@ $settings&#160;</td><td class="memItemRight" valign="bottom"><b>visiblename</b> 
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000942">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000945">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8 </dd></dl>
 
 </div>
 </div>
@@ -5774,8 +5756,8 @@ $settings&#160;</td><td class="memItemRight" valign="bottom"><b>visiblename</b> 
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000944">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.10 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000242">Todo:</a></b></dt><dd>This will be finally removed for <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2 as part of <a href="https://tracker.moodle.org/browse/MDL-69976" class="el">MDL-69976</a>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000947">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.10 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000241">Todo:</a></b></dt><dd>This will be finally removed for <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2 as part of <a href="https://tracker.moodle.org/browse/MDL-69976" class="el">MDL-69976</a>. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td>An array of values representing this type </td></tr>
@@ -5938,7 +5920,7 @@ $settings&#160;</td><td class="memItemRight" valign="bottom"><b>visiblename</b> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 17 2022 03:51:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Jul 24 2022 03:52:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
