@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220729) (417d1b918bd)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220805) (35b993b6940)</div>
   </td>
  </tr>
  </tbody>
@@ -312,16 +312,12 @@ Protected Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>sync_profile_images</b> ()</td></tr>
 <tr class="memdesc:afff9501e1dedae3b583804e3b30d1ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs synchronisation of user profile images. <br /></td></tr>
 <tr class="separator:afff9501e1dedae3b583804e3b30d1ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1dabcc64b4789df8d94332e27fcbbf33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbe/classenrol__lti_1_1task_1_1sync__members.html#a1dabcc64b4789df8d94332e27fcbbf33">sync_unenrol</a> (stdClass $tool)</td></tr>
-<tr class="memdesc:a1dabcc64b4789df8d94332e27fcbbf33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs unenrolment of users that are no longer enrolled in the consumer side.  <a href="../../de/dbe/classenrol__lti_1_1task_1_1sync__members.html#a1dabcc64b4789df8d94332e27fcbbf33">More...</a><br /></td></tr>
-<tr class="separator:a1dabcc64b4789df8d94332e27fcbbf33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3927c81633492573b49a26a34049203"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbe/classenrol__lti_1_1task_1_1sync__members.html#af3927c81633492573b49a26a34049203">sync_unenrol</a> (stdClass $tool, string $consumerkey, array $currentusers)</td></tr>
+<tr class="memdesc:af3927c81633492573b49a26a34049203"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs unenrolment of users that are no longer enrolled in the consumer side.  <a href="../../de/dbe/classenrol__lti_1_1task_1_1sync__members.html#af3927c81633492573b49a26a34049203">More...</a><br /></td></tr>
+<tr class="separator:af3927c81633492573b49a26a34049203"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a37660ec1773a3e3759d558c7884591b4"><td class="memItemLeft" align="right" valign="top"><a id="a37660ec1773a3e3759d558c7884591b4" name="a37660ec1773a3e3759d558c7884591b4"></a>
-array&#160;</td><td class="memItemRight" valign="bottom"><b>$currentusers</b> = []</td></tr>
-<tr class="memdesc:a37660ec1773a3e3759d558c7884591b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array of current LTI users. <br /></td></tr>
-<tr class="separator:a37660ec1773a3e3759d558c7884591b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8039e200866563a88589110763be513f"><td class="memItemLeft" align="right" valign="top"><a id="a8039e200866563a88589110763be513f" name="a8039e200866563a88589110763be513f"></a>
 <a class="el" href="../../da/d29/classenrol__lti_1_1data__connector.html">data_connector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$dataconnector</b></td></tr>
 <tr class="memdesc:a8039e200866563a88589110763be513f"><td class="mdescLeft">&#160;</td><td class="mdescRight">$dataconnector A <a class="el" href="../../da/d29/classenrol__lti_1_1data__connector.html" title="Extends the IMS Tool provider library data connector for moodle.">data_connector</a> instance. <br /></td></tr>
@@ -2202,15 +2198,15 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userphotos</b> = []
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array</td><td>An array containing the number of members that were processed and the number of members that were enrolled. </td></tr>
+    <tr><td class="paramname">array</td><td>An array of users from processed members and the number that were enrolled. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a1dabcc64b4789df8d94332e27fcbbf33" name="a1dabcc64b4789df8d94332e27fcbbf33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1dabcc64b4789df8d94332e27fcbbf33">&#9670;&nbsp;</a></span>sync_unenrol()</h2>
+<a id="af3927c81633492573b49a26a34049203" name="af3927c81633492573b49a26a34049203"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3927c81633492573b49a26a34049203">&#9670;&nbsp;</a></span>sync_unenrol()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2222,8 +2218,24 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userphotos</b> = []
           <td class="memname">enrol_lti\task\sync_members::sync_unenrol </td>
           <td>(</td>
           <td class="paramtype">stdClass&#160;</td>
-          <td class="paramname"><em>$tool</em></td><td>)</td>
+          <td class="paramname"><em>$tool</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$consumerkey</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$currentusers</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -2237,6 +2249,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userphotos</b> = []
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$tool</td><td>The tool record object. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$consumerkey</td><td>ensure we only unenrol users from this tool consumer. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$currentusers</td><td>The list of current users. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2255,7 +2269,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userphotos</b> = []
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 31 2022 03:49:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Aug 7 2022 03:30:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220729) (417d1b918bd)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220805) (35b993b6940)</div>
   </td>
  </tr>
  </tbody>
@@ -71,6 +71,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5b8ffc9988c547b4bc9096dd4cfd040d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df3/classmod__data_1_1manager.html#a5b8ffc9988c547b4bc9096dd4cfd040d">__construct</a> (<a class="el" href="../../df/db9/classcm__info.html">cm_info</a> $cm, stdClass $instance)</td></tr>
 <tr class="memdesc:a5b8ffc9988c547b4bc9096dd4cfd040d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor.  <a href="../../d5/df3/classmod__data_1_1manager.html#a5b8ffc9988c547b4bc9096dd4cfd040d">More...</a><br /></td></tr>
 <tr class="separator:a5b8ffc9988c547b4bc9096dd4cfd040d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51b630684145270aab4f21e954650fd3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df3/classmod__data_1_1manager.html#a51b630684145270aab4f21e954650fd3">get_available_presets</a> ()</td></tr>
+<tr class="memdesc:a51b630684145270aab4f21e954650fd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array of all the available presets.  <a href="../../d5/df3/classmod__data_1_1manager.html#a51b630684145270aab4f21e954650fd3">More...</a><br /></td></tr>
+<tr class="separator:a51b630684145270aab4f21e954650fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4db17e00329a888b6ce46949487c0b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df3/classmod__data_1_1manager.html#ab4db17e00329a888b6ce46949487c0b1">get_available_saved_presets</a> ()</td></tr>
+<tr class="memdesc:ab4db17e00329a888b6ce46949487c0b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array of all the presets that users have saved to the site.  <a href="../../d5/df3/classmod__data_1_1manager.html#ab4db17e00329a888b6ce46949487c0b1">More...</a><br /></td></tr>
+<tr class="separator:ab4db17e00329a888b6ce46949487c0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a804b50f51855b6b72cc82327432706b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df3/classmod__data_1_1manager.html#a804b50f51855b6b72cc82327432706b2">get_context</a> ()</td></tr>
 <tr class="memdesc:a804b50f51855b6b72cc82327432706b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current context.  <a href="../../d5/df3/classmod__data_1_1manager.html#a804b50f51855b6b72cc82327432706b2">More...</a><br /></td></tr>
 <tr class="separator:a804b50f51855b6b72cc82327432706b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,6 +120,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ada6bbc5bab7cefb88de384626499c49b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df3/classmod__data_1_1manager.html#ada6bbc5bab7cefb88de384626499c49b">create_from_instance</a> (stdClass $instance)</td></tr>
 <tr class="memdesc:ada6bbc5bab7cefb88de384626499c49b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a manager instance from an instance record.  <a href="../../d5/df3/classmod__data_1_1manager.html#ada6bbc5bab7cefb88de384626499c49b">More...</a><br /></td></tr>
 <tr class="separator:ada6bbc5bab7cefb88de384626499c49b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45ba97ae4b9bc7235cb998ff7d16c509"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df3/classmod__data_1_1manager.html#a45ba97ae4b9bc7235cb998ff7d16c509">get_available_plugin_presets</a> ()</td></tr>
+<tr class="memdesc:a45ba97ae4b9bc7235cb998ff7d16c509"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array of all the available plugin presets.  <a href="../../d5/df3/classmod__data_1_1manager.html#a45ba97ae4b9bc7235cb998ff7d16c509">More...</a><br /></td></tr>
+<tr class="separator:a45ba97ae4b9bc7235cb998ff7d16c509"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -278,6 +287,89 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MODULE</b> = 'data'<
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">manager</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a45ba97ae4b9bc7235cb998ff7d16c509" name="a45ba97ae4b9bc7235cb998ff7d16c509"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45ba97ae4b9bc7235cb998ff7d16c509">&#9670;&nbsp;</a></span>get_available_plugin_presets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static mod_data\manager::get_available_plugin_presets </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an array of all the available plugin presets. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>A list with the datapreset plugins. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a51b630684145270aab4f21e954650fd3" name="a51b630684145270aab4f21e954650fd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51b630684145270aab4f21e954650fd3">&#9670;&nbsp;</a></span>get_available_presets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_data\manager::get_available_presets </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns an array of all the available presets. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>A list with the datapreset plugins and the presets saved by users. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab4db17e00329a888b6ce46949487c0b1" name="ab4db17e00329a888b6ce46949487c0b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4db17e00329a888b6ce46949487c0b1">&#9670;&nbsp;</a></span>get_available_saved_presets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_data\manager::get_available_saved_presets </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns an array of all the presets that users have saved to the site. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>A list with the preset saved by the users. </td></tr>
   </table>
   </dd>
 </dl>
@@ -578,7 +670,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MODULE</b> = 'data'<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 31 2022 03:49:35 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Aug 7 2022 03:30:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

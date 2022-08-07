@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.2+ (Build: 20220729) (a866652ea4b)</div>
+   <div id="projectbrief">Moodle 4.0.2+ (Build: 20220805) (8eb4217a49a)</div>
   </td>
  </tr>
  </tbody>
@@ -82,9 +82,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a976186a75b8fb3bcd4ee89aaa3343db7"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0e/classexternal__api.html#a976186a75b8fb3bcd4ee89aaa3343db7">clean_returnvalue</a> (<a class="el" href="../../d5/d9e/classexternal__description.html">external_description</a> $description, $response)</td></tr>
 <tr class="memdesc:a976186a75b8fb3bcd4ee89aaa3343db7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean response If a response attribute is unknown from the description, we just ignore the attribute.  <a href="../../d9/d0e/classexternal__api.html#a976186a75b8fb3bcd4ee89aaa3343db7">More...</a><br /></td></tr>
 <tr class="separator:a976186a75b8fb3bcd4ee89aaa3343db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42e0ce3091bb98481ffac2a52d8f66c6"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2b/classcore__reportbuilder_1_1external_1_1filters_1_1reset.html#a42e0ce3091bb98481ffac2a52d8f66c6">execute</a> (int $reportid)</td></tr>
-<tr class="memdesc:a42e0ce3091bb98481ffac2a52d8f66c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">External method execution.  <a href="../../d4/d2b/classcore__reportbuilder_1_1external_1_1filters_1_1reset.html#a42e0ce3091bb98481ffac2a52d8f66c6">More...</a><br /></td></tr>
-<tr class="separator:a42e0ce3091bb98481ffac2a52d8f66c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ae8d2f7ea94701e728a66f0559668f7"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2b/classcore__reportbuilder_1_1external_1_1filters_1_1reset.html#a5ae8d2f7ea94701e728a66f0559668f7">execute</a> (int $reportid, string $parameters='')</td></tr>
+<tr class="memdesc:a5ae8d2f7ea94701e728a66f0559668f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">External method execution.  <a href="../../d4/d2b/classcore__reportbuilder_1_1external_1_1filters_1_1reset.html#a5ae8d2f7ea94701e728a66f0559668f7">More...</a><br /></td></tr>
+<tr class="separator:a5ae8d2f7ea94701e728a66f0559668f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ce9769f098f2c229f23d4e0b80dc28a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2b/classcore__reportbuilder_1_1external_1_1filters_1_1reset.html#a8ce9769f098f2c229f23d4e0b80dc28a">execute_parameters</a> ()</td></tr>
 <tr class="memdesc:a8ce9769f098f2c229f23d4e0b80dc28a"><td class="mdescLeft">&#160;</td><td class="mdescRight">External method parameters.  <a href="../../d4/d2b/classcore__reportbuilder_1_1external_1_1filters_1_1reset.html#a8ce9769f098f2c229f23d4e0b80dc28a">More...</a><br /></td></tr>
 <tr class="separator:a8ce9769f098f2c229f23d4e0b80dc28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,8 +230,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a42e0ce3091bb98481ffac2a52d8f66c6" name="a42e0ce3091bb98481ffac2a52d8f66c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42e0ce3091bb98481ffac2a52d8f66c6">&#9670;&nbsp;</a></span>execute()</h2>
+<a id="a5ae8d2f7ea94701e728a66f0559668f7" name="a5ae8d2f7ea94701e728a66f0559668f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ae8d2f7ea94701e728a66f0559668f7">&#9670;&nbsp;</a></span>execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -243,8 +243,18 @@ Static Protected Member Functions</h2></td></tr>
           <td class="memname">static core_reportbuilder\external\filters\reset::execute </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>$reportid</em></td><td>)</td>
+          <td class="paramname"><em>$reportid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$parameters</em> = <code>''</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -258,9 +268,11 @@ Static Protected Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$reportid</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$parameters</td><td>JSON encoded parameters used to re-create the report, for instance for those reports that require parameters as part of their {</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/da7/classcore__reportbuilder_1_1system__report.html#aad0960edbbe73d7dab41698507a9bbc5" title="Validates access to view this report.">core_reportbuilder::system_report::can_view</a>} implementation </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td></td></tr>
@@ -636,7 +648,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 31 2022 03:44:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Aug 7 2022 03:26:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220729) (417d1b918bd)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220805) (35b993b6940)</div>
   </td>
  </tr>
  </tbody>
@@ -200,6 +200,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc3/classmod__data_1_1plugininfo_1_1datafield.html">mod_data\plugininfo\datafield</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d89/classmod__data_1_1plugininfo_1_1datapreset.html">mod_data\plugininfo\datapreset</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d64/classmod__data_1_1preset.html">mod_data\preset</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d13/interfacemod__data_1_1privacy_1_1datafield__provider.html">mod_data\privacy\datafield_provider</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface <a class="el" href="../../d1/d13/interfacemod__data_1_1privacy_1_1datafield__provider.html" title="Interface datafield_provider, all datafield plugins need to implement it.">datafield_provider</a>, all datafield plugins need to implement it.  <a href="../../d1/d13/interfacemod__data_1_1privacy_1_1datafield__provider.html#details">More...</a><br /></td></tr>
@@ -500,7 +502,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga800e78002786853e1b0fe206789c06c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d5d/group__mod__data.html#ga800e78002786853e1b0fe206789c06c4">data_user_can_add_entry</a> ($data, $currentgroup, $<a class="el" href="../../d0/de1/group__core.html#ga84b2144b9de9ead7e08f1711b1dca592">groupmode</a>, $<a class="el" href="../../da/d04/classcontext.html">context</a>=null)</td></tr>
 <tr class="memdesc:ga800e78002786853e1b0fe206789c06c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can user add more entries?  <a href="../../d5/d5d/group__mod__data.html#ga800e78002786853e1b0fe206789c06c4">More...</a><br /></td></tr>
 <tr class="separator:ga800e78002786853e1b0fe206789c06c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad855e03ff1f29d0888de3725141f9903"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d5d/group__mod__data.html#gad855e03ff1f29d0888de3725141f9903">data_user_can_delete_preset</a> ($<a class="el" href="../../da/d04/classcontext.html">context</a>, $preset)</td></tr>
+<tr class="memitem:gad855e03ff1f29d0888de3725141f9903"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d5d/group__mod__data.html#gad855e03ff1f29d0888de3725141f9903">data_user_can_delete_preset</a> ($<a class="el" href="../../da/d04/classcontext.html">context</a>, $<a class="el" href="../../d1/d64/classmod__data_1_1preset.html">preset</a>)</td></tr>
 <tr class="memdesc:gad855e03ff1f29d0888de3725141f9903"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks to see if the user has permission to delete the preset.  <a href="../../d5/d5d/group__mod__data.html#gad855e03ff1f29d0888de3725141f9903">More...</a><br /></td></tr>
 <tr class="separator:gad855e03ff1f29d0888de3725141f9903"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabe949fc634dedf67d5011f625a4f5a5d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d5d/group__mod__data.html#gabe949fc634dedf67d5011f625a4f5a5d">data_user_can_manage_entry</a> ($record, $data, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
@@ -516,6 +518,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga2c9679a79f323a03da49e40e4ae418ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the activity completed (if required) and trigger the course_module_viewed event.  <a href="../../d5/d5d/group__mod__data.html#ga2c9679a79f323a03da49e40e4ae418ed">More...</a><br /></td></tr>
 <tr class="separator:ga2c9679a79f323a03da49e40e4ae418ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6faa25d3b92f7b6f6551621e6381770b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d5d/group__mod__data.html#ga6faa25d3b92f7b6f6551621e6381770b">is_directory_a_preset</a> ($directory)</td></tr>
+<tr class="memdesc:ga6faa25d3b92f7b6f6551621e6381770b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the files in a directory are the expected for a preset.  <a href="../../d5/d5d/group__mod__data.html#ga6faa25d3b92f7b6f6551621e6381770b">More...</a><br /></td></tr>
 <tr class="separator:ga6faa25d3b92f7b6f6551621e6381770b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafc15262e6e6c2c8d56c9fcf966ceaa5c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d5d/group__mod__data.html#gafc15262e6e6c2c8d56c9fcf966ceaa5c">mod_data_core_calendar_event_timestart_updated</a> (\<a class="el" href="../../dd/d35/classcalendar__event.html">calendar_event</a> $event, stdClass $data)</td></tr>
 <tr class="memdesc:gafc15262e6e6c2c8d56c9fcf966ceaa5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will update the data module according to the event that has been modified.  <a href="../../d5/d5d/group__mod__data.html#gafc15262e6e6c2c8d56c9fcf966ceaa5c">More...</a><br /></td></tr>
@@ -1745,6 +1748,9 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000840">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75148" class="el">MDL-75148</a> - please, use the manager::get_available_presets() function instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000234">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>manager::get_available_presets() </dd></dl>
 
 </div>
 </div>
@@ -1788,6 +1794,9 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000841">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75148" class="el">MDL-75148</a> - please, use the manager::get_available_saved_presets() function instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000235">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>manager::get_available_saved_presets() </dd></dl>
 
 </div>
 </div>
@@ -2991,6 +3000,9 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000839">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75148" class="el">MDL-75148</a> - please, use the preset::get_name_from_plugin() function instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000233">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>preset::get_name_from_plugin() </dd></dl>
 
 </div>
 </div>
@@ -4695,8 +4707,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><div class="memdoc">
 
 <p>Mark the activity completed (if required) and trigger the course_module_viewed event. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000839">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75146" class="el">MDL-75146</a> - please do not use this function any more. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000233">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000843">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75146" class="el">MDL-75146</a> - please do not use this function any more. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000237">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$data</td><td>data object </td></tr>
@@ -4725,12 +4737,17 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Check if the files in a directory are the expected for a preset. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">bool</td><td></td></tr>
+    <tr><td class="paramname">bool</td><td>Wheter the defined $directory has or not all the expected preset files.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000842">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75148" class="el">MDL-75148</a> - please, use the preset::is_directory_a_preset() function instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000236">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>manager::is_directory_a_preset() </dd></dl>
 
 </div>
 </div>
@@ -5101,7 +5118,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 31 2022 03:47:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Aug 7 2022 03:28:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

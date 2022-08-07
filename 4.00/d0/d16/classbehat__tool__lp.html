@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.2+ (Build: 20220729) (a866652ea4b)</div>
+   <div id="projectbrief">Moodle 4.0.2+ (Build: 20220805) (8eb4217a49a)</div>
   </td>
  </tr>
  </tbody>
@@ -55,7 +55,9 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="../../d5/dad/classbehat__tool__lp-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">behat_tool_lp Class Reference<div class="ingroups"><a class="el" href="../../d8/d9e/group__tool__lp.html">tool_lp</a></div></div></div>
 </div><!--header-->
@@ -83,11 +85,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a12e83f1593fe537b7eb791644dba96c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Click on competency in the tree.  <a href="../../d0/d16/classbehat__tool__lp.html#a12e83f1593fe537b7eb791644dba96c3">More...</a><br /></td></tr>
 <tr class="separator:a12e83f1593fe537b7eb791644dba96c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a84d64afe8454d4eb2ff740219526a865"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d16/classbehat__tool__lp.html#a84d64afe8454d4eb2ff740219526a865">get_exact_named_selectors</a> ()</td></tr>
+<tr class="memdesc:a84d64afe8454d4eb2ff740219526a865"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of the exact named selectors for the component.  <a href="../../d0/d16/classbehat__tool__lp.html#a84d64afe8454d4eb2ff740219526a865">More...</a><br /></td></tr>
+<tr class="separator:a84d64afe8454d4eb2ff740219526a865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a1493fb96a85bfb906ba5468330de76c0"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d6d/interfacebehat__session__interface.html#a1493fb96a85bfb906ba5468330de76c0">PAGE_READY_JS</a></td></tr>
 <tr class="memdesc:a1493fb96a85bfb906ba5468330de76c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The JS code to check that the page is ready.  <a href="../../d9/d6d/interfacebehat__session__interface.html#a1493fb96a85bfb906ba5468330de76c0">More...</a><br /></td></tr>
 <tr class="separator:a1493fb96a85bfb906ba5468330de76c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aea2383618ac34bd13e0d178aeec35eba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d16/classbehat__tool__lp.html#aea2383618ac34bd13e0d178aeec35eba">resolve_page_instance_url</a> (string $page, string $identifier)</td></tr>
+<tr class="memdesc:aea2383618ac34bd13e0d178aeec35eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert page names to URLs for steps like 'When I am on the "[identifier]" "[page type]" page'.  <a href="../../d0/d16/classbehat__tool__lp.html#aea2383618ac34bd13e0d178aeec35eba">More...</a><br /></td></tr>
+<tr class="separator:aea2383618ac34bd13e0d178aeec35eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a83277024e6cc2018735619367b2f6626" name="a83277024e6cc2018735619367b2f6626"></a>
@@ -122,6 +136,39 @@ Public Attributes</h2></td></tr>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$nodetext</td><td></td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$rowname</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a84d64afe8454d4eb2ff740219526a865" name="a84d64afe8454d4eb2ff740219526a865"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84d64afe8454d4eb2ff740219526a865">&#9670;&nbsp;</a></span>get_exact_named_selectors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static behat_tool_lp::get_exact_named_selectors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return a list of the exact named selectors for the component. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">behat_component_named_selector[]</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -167,6 +214,64 @@ Public Attributes</h2></td></tr>
 </dl>
 
 <p>Implemented in <a class="el" href="../../d7/d4b/classbehat__form__field.html#a5c29122daa8103d8280ecf8fd7d441d5">behat_form_field</a>.</p>
+
+</div>
+</div>
+<a id="aea2383618ac34bd13e0d178aeec35eba" name="aea2383618ac34bd13e0d178aeec35eba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea2383618ac34bd13e0d178aeec35eba">&#9670;&nbsp;</a></span>resolve_page_instance_url()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_tool_lp::resolve_page_instance_url </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$page</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$identifier</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert page names to URLs for steps like 'When I am on the "[identifier]" "[page type]" page'. </p>
+<p >Recognised page names are: | pagetype | name meaning | description | | Course competencies | Course name | The course competencies page |</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$page</td><td>identifies which type of page this is, e.g. 'Course competencies'. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$identifier</td><td>identifies the particular page, e.g. 'C1'. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td>the corresponding URL. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../df/d70/class_exception.html">Exception</a></td><td>with a meaningful error message if the specified page cannot be found. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -232,7 +337,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 31 2022 03:42:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Aug 7 2022 03:25:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
