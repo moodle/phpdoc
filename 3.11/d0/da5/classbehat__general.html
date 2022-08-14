@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;3.11</span>
    </div>
-   <div id="projectbrief">Moodle 3.11.8+ (Build: 20220805) (8a147fee4b)</div>
+   <div id="projectbrief">Moodle 3.11.8+ (Build: 20220812) (4ed613fbc2)</div>
   </td>
  </tr>
  </tbody>
@@ -218,6 +218,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0374f1e00f51b22154b2d7f4071321e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da5/classbehat__general.html#a0374f1e00f51b22154b2d7f4071321e1">in_the_should_not_be_visible</a> ($element, $selectortype, $nodeelement, $nodeselectortype)</td></tr>
 <tr class="memdesc:a0374f1e00f51b22154b2d7f4071321e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks, that the existing element is not visible inside the existing container.  <a href="../../d0/da5/classbehat__general.html#a0374f1e00f51b22154b2d7f4071321e1">More...</a><br /></td></tr>
 <tr class="separator:a0374f1e00f51b22154b2d7f4071321e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a731f4a549647a7e3b0b2f4a9ed506b85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da5/classbehat__general.html#a731f4a549647a7e3b0b2f4a9ed506b85">plugin_is_installed</a> (string $plugin)</td></tr>
+<tr class="memdesc:a731f4a549647a7e3b0b2f4a9ed506b85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if given plugin is installed, and skips the current scenario if not.  <a href="../../d0/da5/classbehat__general.html#a731f4a549647a7e3b0b2f4a9ed506b85">More...</a><br /></td></tr>
+<tr class="separator:a731f4a549647a7e3b0b2f4a9ed506b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2cdb7e64c21f66c2767be429c6ce9d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da5/classbehat__general.html#aa2cdb7e64c21f66c2767be429c6ce9d3">reload</a> ()</td></tr>
 <tr class="memdesc:aa2cdb7e64c21f66c2767be429c6ce9d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reloads the current page.  <a href="../../d0/da5/classbehat__general.html#aa2cdb7e64c21f66c2767be429c6ce9d3">More...</a><br /></td></tr>
 <tr class="separator:aa2cdb7e64c21f66c2767be429c6ce9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2155,6 +2158,38 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a731f4a549647a7e3b0b2f4a9ed506b85" name="a731f4a549647a7e3b0b2f4a9ed506b85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a731f4a549647a7e3b0b2f4a9ed506b85">&#9670;&nbsp;</a></span>plugin_is_installed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_general::plugin_is_installed </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$plugin</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if given plugin is installed, and skips the current scenario if not. </p>
+<p >@Given the :plugin plugin is installed </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$plugin</td><td>frankenstyle plugin name, e.g. 'filter_embedquestion'. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../de/d1a/class_moodle_1_1_behat_extension_1_1_exception_1_1_skipped_exception.html">Moodle::BehatExtension::Exception::SkippedException</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aa2cdb7e64c21f66c2767be429c6ce9d3" name="aa2cdb7e64c21f66c2767be429c6ce9d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa2cdb7e64c21f66c2767be429c6ce9d3">&#9670;&nbsp;</a></span>reload()</h2>
 
@@ -3504,7 +3539,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 7 2022 03:21:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Aug 14 2022 03:30:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
