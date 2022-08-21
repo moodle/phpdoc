@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220812) (896e126a667)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220818) (17ee0726933)</div>
   </td>
  </tr>
  </tbody>
@@ -98,6 +98,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a604f064fff09e7ff0390c847ed30d5a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d60/classrenderer__base.html#a604f064fff09e7ff0390c847ed30d5a7">image_url</a> ($imagename, $component='moodle')</td></tr>
 <tr class="memdesc:a604f064fff09e7ff0390c847ed30d5a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the <a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a> for an image.  <a href="../../de/d60/classrenderer__base.html#a604f064fff09e7ff0390c847ed30d5a7">More...</a><br /></td></tr>
 <tr class="separator:a604f064fff09e7ff0390c847ed30d5a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ef8ba5014ac4c0b5632d3f01b310b7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d01/classmod__workshop__renderer.html#a6ef8ba5014ac4c0b5632d3f01b310b7a">initials_bars</a> (<a class="el" href="../../d6/d7d/classworkshop.html">workshop</a> $<a class="el" href="../../d6/d7d/classworkshop.html">workshop</a>, <a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a> $url)</td></tr>
+<tr class="memdesc:a6ef8ba5014ac4c0b5632d3f01b310b7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the initials bars for workshop.  <a href="../../de/d01/classmod__workshop__renderer.html#a6ef8ba5014ac4c0b5632d3f01b310b7a">More...</a><br /></td></tr>
+<tr class="separator:a6ef8ba5014ac4c0b5632d3f01b310b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bff6fa9a865a34564b5f5920d8d75a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d01/classmod__workshop__renderer.html#a3bff6fa9a865a34564b5f5920d8d75a8">perpage_selector</a> ($<a class="el" href="../../d7/d30/group___mime.html#gaf343507d1926e6ecf964625d41db528c">current</a>=10)</td></tr>
 <tr class="memdesc:a3bff6fa9a865a34564b5f5920d8d75a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders a perpage selector for workshop listings.  <a href="../../de/d01/classmod__workshop__renderer.html#a3bff6fa9a865a34564b5f5920d8d75a8">More...</a><br /></td></tr>
 <tr class="separator:a3bff6fa9a865a34564b5f5920d8d75a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -942,6 +945,49 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$target</b></td></t
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6ef8ba5014ac4c0b5632d3f01b310b7a" name="a6ef8ba5014ac4c0b5632d3f01b310b7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ef8ba5014ac4c0b5632d3f01b310b7a">&#9670;&nbsp;</a></span>initials_bars()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_workshop_renderer::initials_bars </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/d7d/classworkshop.html">workshop</a>&#160;</td>
+          <td class="paramname"><em>$workshop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a>&#160;</td>
+          <td class="paramname"><em>$url</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Render the initials bars for workshop. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">workshop</td><td class="paramname">$workshop</td><td>the current workshop of initial bars. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$url</td><td>base URL object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>HTML. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1950,7 +1996,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$target</b></td></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 14 2022 03:42:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Aug 21 2022 03:53:02 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

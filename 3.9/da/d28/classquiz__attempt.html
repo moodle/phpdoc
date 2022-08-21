@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;3.9</span>
    </div>
-   <div id="projectbrief">Moodle 3.9.15+ (Build: 20220812) (5a4f73d144)</div>
+   <div id="projectbrief">Moodle 3.9.16 (Build: 20220822) (d369112db4)</div>
   </td>
  </tr>
  </tbody>
@@ -93,9 +93,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a96b078fa00f70e9ef633afbd235548a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d28/classquiz__attempt.html#a96b078fa00f70e9ef633afbd235548a4">check_file_access</a> ($slot, $reviewing, $contextid, $component, $filearea, $args, $forcedownload)</td></tr>
 <tr class="memdesc:a96b078fa00f70e9ef633afbd235548a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check wheter access should be allowed to a particular file.  <a href="../../da/d28/classquiz__attempt.html#a96b078fa00f70e9ef633afbd235548a4">More...</a><br /></td></tr>
 <tr class="separator:a96b078fa00f70e9ef633afbd235548a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7ad602458b9ae406e710e6cb3e70401"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d28/classquiz__attempt.html#ad7ad602458b9ae406e710e6cb3e70401">check_page_access</a> ($page)</td></tr>
-<tr class="memdesc:ad7ad602458b9ae406e710e6cb3e70401"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check a page access to see if is an out of sequence access.  <a href="../../da/d28/classquiz__attempt.html#ad7ad602458b9ae406e710e6cb3e70401">More...</a><br /></td></tr>
-<tr class="separator:ad7ad602458b9ae406e710e6cb3e70401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3130b27ecc43c3744611bf18b4f8792e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d28/classquiz__attempt.html#a3130b27ecc43c3744611bf18b4f8792e">check_page_access</a> ($page, $allownext=true)</td></tr>
+<tr class="memdesc:a3130b27ecc43c3744611bf18b4f8792e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check a page read access to see if is an out of sequence access.  <a href="../../da/d28/classquiz__attempt.html#a3130b27ecc43c3744611bf18b4f8792e">More...</a><br /></td></tr>
+<tr class="separator:a3130b27ecc43c3744611bf18b4f8792e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f1ac235045050bebb0ece4c05be8528"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d28/classquiz__attempt.html#a8f1ac235045050bebb0ece4c05be8528">check_review_capability</a> ()</td></tr>
 <tr class="memdesc:a8f1ac235045050bebb0ece4c05be8528"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the appropriate capability to see whether this user may review their own attempt.  <a href="../../da/d28/classquiz__attempt.html#a8f1ac235045050bebb0ece4c05be8528">More...</a><br /></td></tr>
 <tr class="separator:a8f1ac235045050bebb0ece4c05be8528"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -802,8 +802,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$sections</b></td></
 
 </div>
 </div>
-<a id="ad7ad602458b9ae406e710e6cb3e70401" name="ad7ad602458b9ae406e710e6cb3e70401"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7ad602458b9ae406e710e6cb3e70401">&#9670;&nbsp;</a></span>check_page_access()</h2>
+<a id="a3130b27ecc43c3744611bf18b4f8792e" name="a3130b27ecc43c3744611bf18b4f8792e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3130b27ecc43c3744611bf18b4f8792e">&#9670;&nbsp;</a></span>check_page_access()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -812,22 +812,34 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$sections</b></td></
           <td class="memname">quiz_attempt::check_page_access </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$page</em></td><td>)</td>
+          <td class="paramname"><em>$page</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$allownext</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Check a page access to see if is an out of sequence access. </p>
+<p>Check a page read access to see if is an out of sequence access. </p>
+<p >If allownext is set then we also check whether access to the page after the current one should be permitted.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$page</td><td>page number. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$allownext</td><td>in case of a sequential navigation, can we go to next page ? </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">boolean</td><td>false is is an out of sequence access, true otherwise. </td></tr>
+    <tr><td class="paramname">boolean</td><td>false is an out of sequence access, true otherwise. </td></tr>
   </table>
   </dd>
 </dl>
@@ -4008,7 +4020,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$sections</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 14 2022 03:26:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Aug 21 2022 03:33:36 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

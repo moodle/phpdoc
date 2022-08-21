@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220812) (896e126a667)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220818) (17ee0726933)</div>
   </td>
  </tr>
  </tbody>
@@ -187,9 +187,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a18ed6815ac261247a154d81e1582f23c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/daf/classadvanced__testcase.html#a18ed6815ac261247a154d81e1582f23c">dataset_from_string</a> (string $content, string $type, ?string $table=null)</td></tr>
 <tr class="memdesc:a18ed6815ac261247a154d81e1582f23c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new dataset from string (CSV or XML).  <a href="../../dd/daf/classadvanced__testcase.html#a18ed6815ac261247a154d81e1582f23c">More...</a><br /></td></tr>
 <tr class="separator:a18ed6815ac261247a154d81e1582f23c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93a437706c01d960a8e4132c7dc79729"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d49/classcore__reportbuilder__testcase.html#a93a437706c01d960a8e4132c7dc79729">get_custom_report_content</a> (int $reportid, int $pagesize=30)</td></tr>
-<tr class="memdesc:a93a437706c01d960a8e4132c7dc79729"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve content for given report as array of report data.  <a href="../../d6/d49/classcore__reportbuilder__testcase.html#a93a437706c01d960a8e4132c7dc79729">More...</a><br /></td></tr>
-<tr class="separator:a93a437706c01d960a8e4132c7dc79729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a327db96f0422527d32612820f4dface6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d49/classcore__reportbuilder__testcase.html#a327db96f0422527d32612820f4dface6">get_custom_report_content</a> (int $reportid, int $pagesize=30, array $filtervalues=[])</td></tr>
+<tr class="memdesc:a327db96f0422527d32612820f4dface6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve content for given report as array of report data.  <a href="../../d6/d49/classcore__reportbuilder__testcase.html#a327db96f0422527d32612820f4dface6">More...</a><br /></td></tr>
+<tr class="separator:a327db96f0422527d32612820f4dface6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3812e028dc3b938e8fbbed82aca32e5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/daf/classadvanced__testcase.html#a3812e028dc3b938e8fbbed82aca32e5a">loadDataSet</a> (<a class="el" href="../../d9/d8a/classphpunit__dataset.html">phpunit_dataset</a> $dataset)</td></tr>
 <tr class="memdesc:a3812e028dc3b938e8fbbed82aca32e5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load date into moodle database tables from standard PHPUnit data set.  <a href="../../dd/daf/classadvanced__testcase.html#a3812e028dc3b938e8fbbed82aca32e5a">More...</a><br /></td></tr>
 <tr class="separator:a3812e028dc3b938e8fbbed82aca32e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1115,8 +1115,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a93a437706c01d960a8e4132c7dc79729" name="a93a437706c01d960a8e4132c7dc79729"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93a437706c01d960a8e4132c7dc79729">&#9670;&nbsp;</a></span>get_custom_report_content()</h2>
+<a id="a327db96f0422527d32612820f4dface6" name="a327db96f0422527d32612820f4dface6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a327db96f0422527d32612820f4dface6">&#9670;&nbsp;</a></span>get_custom_report_content()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1134,7 +1134,13 @@ Static Protected Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>$pagesize</em> = <code>30</code>&#160;</td>
+          <td class="paramname"><em>$pagesize</em> = <code>30</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$filtervalues</em> = <code>[]</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1154,6 +1160,7 @@ Static Protected Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$reportid</td><td></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$pagesize</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$filtervalues</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2048,7 +2055,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 14 2022 03:41:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Aug 21 2022 03:51:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>

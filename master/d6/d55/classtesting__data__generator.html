@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220812) (896e126a667)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220818) (17ee0726933)</div>
   </td>
  </tr>
  </tbody>
@@ -161,9 +161,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a81374c904b0cfd82746a95e74bc3910a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d55/classtesting__data__generator.html#a81374c904b0cfd82746a95e74bc3910a">reset</a> ()</td></tr>
 <tr class="memdesc:a81374c904b0cfd82746a95e74bc3910a"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be called from data reset code only, do not use in tests.  <a href="../../d6/d55/classtesting__data__generator.html#a81374c904b0cfd82746a95e74bc3910a">More...</a><br /></td></tr>
 <tr class="separator:a81374c904b0cfd82746a95e74bc3910a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff807baedc74ebc6f70c26ee46160bb4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d55/classtesting__data__generator.html#aff807baedc74ebc6f70c26ee46160bb4">role_assign</a> ($roleid, $userid, $contextid=false)</td></tr>
-<tr class="memdesc:aff807baedc74ebc6f70c26ee46160bb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns the specified role to a user in the context.  <a href="../../d6/d55/classtesting__data__generator.html#aff807baedc74ebc6f70c26ee46160bb4">More...</a><br /></td></tr>
-<tr class="separator:aff807baedc74ebc6f70c26ee46160bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae73b46cb2d4ce8a94c60d5d1bcd2bcd1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d55/classtesting__data__generator.html#ae73b46cb2d4ce8a94c60d5d1bcd2bcd1">role_assign</a> ($role, $userid, $contextid=false)</td></tr>
+<tr class="memdesc:ae73b46cb2d4ce8a94c60d5d1bcd2bcd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns the specified role to a user in the context.  <a href="../../d6/d55/classtesting__data__generator.html#ae73b46cb2d4ce8a94c60d5d1bcd2bcd1">More...</a><br /></td></tr>
+<tr class="separator:ae73b46cb2d4ce8a94c60d5d1bcd2bcd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -1588,8 +1588,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$gradeoutcomecounter</
 
 </div>
 </div>
-<a id="aff807baedc74ebc6f70c26ee46160bb4" name="aff807baedc74ebc6f70c26ee46160bb4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff807baedc74ebc6f70c26ee46160bb4">&#9670;&nbsp;</a></span>role_assign()</h2>
+<a id="ae73b46cb2d4ce8a94c60d5d1bcd2bcd1" name="ae73b46cb2d4ce8a94c60d5d1bcd2bcd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae73b46cb2d4ce8a94c60d5d1bcd2bcd1">&#9670;&nbsp;</a></span>role_assign()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1598,7 +1598,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$gradeoutcomecounter</
           <td class="memname">testing_data_generator::role_assign </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$roleid</em>, </td>
+          <td class="paramname"><em>$role</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1623,7 +1623,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$gradeoutcomecounter</
 <p>Assigns the specified role to a user in the context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$roleid</td><td></td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;string</td><td class="paramname">$role</td><td>either an int role id or a string role shortname. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$contextid</td><td>Defaults to the system context </td></tr>
   </table>
@@ -1694,7 +1694,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$gradeoutcomecounter</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 14 2022 03:42:58 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
+Generated on Sun Aug 21 2022 03:53:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
 </small></address>
 </body>
 </html>
