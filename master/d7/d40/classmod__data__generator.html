@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220826) (952d9e9f188)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220902) (a7514f231dd)</div>
   </td>
  </tr>
  </tbody>
@@ -77,9 +77,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac24b50272bf19b9c092ab7da82444e06"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dce/classtesting__module__generator.html#ac24b50272bf19b9c092ab7da82444e06">create_content</a> ($instance, $record=array())</td></tr>
 <tr class="memdesc:ac24b50272bf19b9c092ab7da82444e06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a piece of content for the module.  <a href="../../d6/dce/classtesting__module__generator.html#ac24b50272bf19b9c092ab7da82444e06">More...</a><br /></td></tr>
 <tr class="separator:ac24b50272bf19b9c092ab7da82444e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9afbb91c92419af92b510eac2983b641"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d40/classmod__data__generator.html#a9afbb91c92419af92b510eac2983b641">create_entry</a> ($data, array $contents, $groupid=0, $tags=[], array $options=null)</td></tr>
-<tr class="memdesc:a9afbb91c92419af92b510eac2983b641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a field for a <a class="el" href="../../d9/dad/namespacemod__data.html" title="&#160;">mod_data</a> instance.  <a href="../../d7/d40/classmod__data__generator.html#a9afbb91c92419af92b510eac2983b641">More...</a><br /></td></tr>
-<tr class="separator:a9afbb91c92419af92b510eac2983b641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a5b971dd3651e48da700c8df65483c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d40/classmod__data__generator.html#a8a5b971dd3651e48da700c8df65483c0">create_entry</a> ($data, array $contents, $groupid=0, $tags=[], array $options=null, int $userid=0)</td></tr>
+<tr class="memdesc:a8a5b971dd3651e48da700c8df65483c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a field for a <a class="el" href="../../d9/dad/namespacemod__data.html" title="&#160;">mod_data</a> instance.  <a href="../../d7/d40/classmod__data__generator.html#a8a5b971dd3651e48da700c8df65483c0">More...</a><br /></td></tr>
+<tr class="separator:a8a5b971dd3651e48da700c8df65483c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a019a8caa12c2478dfedd9b6a241ccf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d40/classmod__data__generator.html#a9a019a8caa12c2478dfedd9b6a241ccf">create_field</a> (stdClass $record=null, $data=null)</td></tr>
 <tr class="memdesc:a9a019a8caa12c2478dfedd9b6a241ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a field for a <a class="el" href="../../d9/dad/namespacemod__data.html" title="&#160;">mod_data</a> instance.  <a href="../../d7/d40/classmod__data__generator.html#a9a019a8caa12c2478dfedd9b6a241ccf">More...</a><br /></td></tr>
 <tr class="separator:a9a019a8caa12c2478dfedd9b6a241ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,8 +189,8 @@ number&#160;</td><td class="memItemRight" valign="bottom"><b>$instancecount</b> 
 
 </div>
 </div>
-<a id="a9afbb91c92419af92b510eac2983b641" name="a9afbb91c92419af92b510eac2983b641"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9afbb91c92419af92b510eac2983b641">&#9670;&#160;</a></span>create_entry()</h2>
+<a id="a8a5b971dd3651e48da700c8df65483c0" name="a8a5b971dd3651e48da700c8df65483c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a5b971dd3651e48da700c8df65483c0">&#9670;&#160;</a></span>create_entry()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -223,7 +223,13 @@ number&#160;</td><td class="memItemRight" valign="bottom"><b>$instancecount</b> 
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">array&#160;</td>
-          <td class="paramname"><em>$options</em> = <code>null</code>&#160;</td>
+          <td class="paramname"><em>$options</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$userid</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -243,6 +249,7 @@ number&#160;</td><td class="memItemRight" valign="bottom"><b>$instancecount</b> 
     <tr><td class="paramtype">int</td><td class="paramname">$groupid</td><td></td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$tags</td><td></td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$options</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>if defined, it will be the author of the entry </td></tr>
   </table>
   </dd>
 </dl>
@@ -652,7 +659,7 @@ number&#160;</td><td class="memItemRight" valign="bottom"><b>$instancecount</b> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 28 2022 04:05:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Sep 4 2022 04:26:10 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

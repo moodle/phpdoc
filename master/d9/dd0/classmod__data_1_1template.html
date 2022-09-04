@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220826) (952d9e9f188)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220902) (a7514f231dd)</div>
   </td>
  </tr>
  </tbody>
@@ -83,6 +83,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a5555daeb8068d05bcd2918ab865c7393"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dd0/classmod__data_1_1template.html#a5555daeb8068d05bcd2918ab865c7393">get_icons</a> ()</td></tr>
 <tr class="memdesc:a5555daeb8068d05bcd2918ab865c7393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the list of action icons.  <a href="../../d9/dd0/classmod__data_1_1template.html#a5555daeb8068d05bcd2918ab865c7393">More...</a><br /></td></tr>
 <tr class="separator:a5555daeb8068d05bcd2918ab865c7393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a424e9e710c23a032690bfef5aea1c16d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dd0/classmod__data_1_1template.html#a424e9e710c23a032690bfef5aea1c16d">get_tag_actionsmenu_replacement</a> (stdClass $entry, bool $canmanageentry)</td></tr>
+<tr class="memdesc:a424e9e710c23a032690bfef5aea1c16d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ##actionsmenu## tag replacement for an entry.  <a href="../../d9/dd0/classmod__data_1_1template.html#a424e9e710c23a032690bfef5aea1c16d">More...</a><br /></td></tr>
+<tr class="separator:a424e9e710c23a032690bfef5aea1c16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f1ff115eb6c1da6c0fb772ef808326f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dd0/classmod__data_1_1template.html#a8f1ff115eb6c1da6c0fb772ef808326f">get_tag_approvalstatus_replacement</a> (stdClass $entry, bool $canmanageentry)</td></tr>
 <tr class="memdesc:a8f1ff115eb6c1da6c0fb772ef808326f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ##approvalstatus## tag replacement for an entry.  <a href="../../d9/dd0/classmod__data_1_1template.html#a8f1ff115eb6c1da6c0fb772ef808326f">More...</a><br /></td></tr>
 <tr class="separator:a8f1ff115eb6c1da6c0fb772ef808326f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -252,6 +255,57 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$tags</b> = []</td><
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">pix_icon[]</td><td>icon name =&gt; <a class="el" href="../../d0/d6e/classpix__icon.html">pix_icon</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a424e9e710c23a032690bfef5aea1c16d" name="a424e9e710c23a032690bfef5aea1c16d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a424e9e710c23a032690bfef5aea1c16d">&#9670;&#160;</a></span>get_tag_actionsmenu_replacement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_data\template::get_tag_actionsmenu_replacement </td>
+          <td>(</td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$entry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$canmanageentry</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the ##actionsmenu## tag replacement for an entry. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$entry</td><td>the entry object </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$canmanageentry</td><td>if the current user can manage this entry </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>the tag replacement </td></tr>
   </table>
   </dd>
 </dl>
@@ -1199,7 +1253,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$tags</b> = []</td><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 28 2022 04:07:36 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Sep 4 2022 04:28:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

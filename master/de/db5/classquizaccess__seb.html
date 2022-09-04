@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220826) (952d9e9f188)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220902) (a7514f231dd)</div>
   </td>
  </tr>
  </tbody>
@@ -84,9 +84,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afaf41b911a119407cdd700d2e68ddfcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a083cd88481dda5dad7f567986eb89a33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/def/classquiz__access__rule__base.html#a083cd88481dda5dad7f567986eb89a33">attempt_must_be_in_popup</a> ()</td></tr>
 <tr class="separator:a083cd88481dda5dad7f567986eb89a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39f8a5d873f6643784760d2a2acbaca4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/def/classquiz__access__rule__base.html#a39f8a5d873f6643784760d2a2acbaca4">current_attempt_finished</a> ()</td></tr>
-<tr class="memdesc:a39f8a5d873f6643784760d2a2acbaca4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is called when the current attempt at the quiz is finished.  <a href="../../d7/def/classquiz__access__rule__base.html#a39f8a5d873f6643784760d2a2acbaca4">More...</a><br /></td></tr>
-<tr class="separator:a39f8a5d873f6643784760d2a2acbaca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf0837b80459474f1219be80b015ce6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db5/classquizaccess__seb.html#acf0837b80459474f1219be80b015ce6b">current_attempt_finished</a> ()</td></tr>
+<tr class="memdesc:acf0837b80459474f1219be80b015ce6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is called when the current attempt at the quiz is finished.  <a href="../../de/db5/classquizaccess__seb.html#acf0837b80459474f1219be80b015ce6b">More...</a><br /></td></tr>
+<tr class="separator:acf0837b80459474f1219be80b015ce6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8dbb05d817a94faf85a2d6a2a540d773"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db5/classquizaccess__seb.html#a8dbb05d817a94faf85a2d6a2a540d773">description</a> ()</td></tr>
 <tr class="memdesc:a8dbb05d817a94faf85a2d6a2a540d773"><td class="mdescLeft">&#160;</td><td class="mdescRight">Information, such as might be shown on the quiz view page, relating to this restriction.  <a href="../../de/db5/classquizaccess__seb.html#a8dbb05d817a94faf85a2d6a2a540d773">More...</a><br /></td></tr>
 <tr class="separator:a8dbb05d817a94faf85a2d6a2a540d773"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -349,33 +349,24 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timenow</b></td></tr>
 
 </div>
 </div>
-<a id="a39f8a5d873f6643784760d2a2acbaca4" name="a39f8a5d873f6643784760d2a2acbaca4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39f8a5d873f6643784760d2a2acbaca4">&#9670;&#160;</a></span>current_attempt_finished()</h2>
+<a id="acf0837b80459474f1219be80b015ce6b" name="acf0837b80459474f1219be80b015ce6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf0837b80459474f1219be80b015ce6b">&#9670;&#160;</a></span>current_attempt_finished()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">quiz_access_rule_base::current_attempt_finished </td>
+          <td class="memname">quizaccess_seb::current_attempt_finished </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>This is called when the current attempt at the quiz is finished. </p>
-<p >This is used, for example by the password rule, to clear the flag in the session. </p>
 
-<p>Reimplemented in <a class="el" href="../../da/dba/classquizaccess__offlineattempts.html#a371892d479178ef403cbf166d48bc165">quizaccess_offlineattempts</a>, and <a class="el" href="../../d4/d4d/classquizaccess__password.html#a8ccf788c6a3150d97ca1695b379dfff0">quizaccess_password</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d7/def/classquiz__access__rule__base.html#a39f8a5d873f6643784760d2a2acbaca4">quiz_access_rule_base</a>.</p>
 
 </div>
 </div>
@@ -1204,7 +1195,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timenow</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 28 2022 04:05:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Sep 4 2022 04:26:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>
