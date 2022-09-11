@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220902) (a7514f231dd)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220910) (c6211a68b4f)</div>
   </td>
  </tr>
  </tbody>
@@ -136,6 +136,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae910af2743e055040093c604a83f4fca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d9f/classcurl.html#ae910af2743e055040093c604a83f4fca">get_raw_response</a> ()</td></tr>
 <tr class="memdesc:ae910af2743e055040093c604a83f4fca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get raw HTTP Response Headers.  <a href="../../da/d9f/classcurl.html#ae910af2743e055040093c604a83f4fca">More...</a><br /></td></tr>
 <tr class="separator:ae910af2743e055040093c604a83f4fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e231e713cc5ba6eff0d7d5449341add"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dc2/classcore_1_1oauth2_1_1client.html#a0e231e713cc5ba6eff0d7d5449341add">get_raw_userinfo</a> ()</td></tr>
+<tr class="memdesc:a0e231e713cc5ba6eff0d7d5449341add"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch the user info from the user info endpoint.  <a href="../../d8/dc2/classcore_1_1oauth2_1_1client.html#a0e231e713cc5ba6eff0d7d5449341add">More...</a><br /></td></tr>
+<tr class="separator:a0e231e713cc5ba6eff0d7d5449341add"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c0a1634c545d8900c05102bf0a21b22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/classoauth2__client.html#a5c0a1634c545d8900c05102bf0a21b22">get_refresh_token</a> ()</td></tr>
 <tr class="memdesc:a5c0a1634c545d8900c05102bf0a21b22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a refresh token!!!  <a href="../../d2/d90/classoauth2__client.html#a5c0a1634c545d8900c05102bf0a21b22">More...</a><br /></td></tr>
 <tr class="separator:a5c0a1634c545d8900c05102bf0a21b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -325,6 +328,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$autorefresh</b> = fa
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>$basicauth</b> = false</td></tr>
 <tr class="memdesc:ae8d904963d58969a7f6db42882b69791"><td class="mdescLeft">&#160;</td><td class="mdescRight">basicauth <br /></td></tr>
 <tr class="separator:ae8d904963d58969a7f6db42882b69791"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa70859d7266f20de5fd59ba3987bf0ee"><td class="memItemLeft" align="right" valign="top"><a id="aa70859d7266f20de5fd59ba3987bf0ee" name="aa70859d7266f20de5fd59ba3987bf0ee"></a>
+array&#160;</td><td class="memItemRight" valign="bottom"><b>$rawuserinfo</b> = []</td></tr>
+<tr class="memdesc:aa70859d7266f20de5fd59ba3987bf0ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">$rawuserinfo Keep rawuserinfo from . <br /></td></tr>
+<tr class="separator:aa70859d7266f20de5fd59ba3987bf0ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04caa9bc107d8b36f458ac4135301a1c"><td class="memItemLeft" align="right" valign="top"><a id="a04caa9bc107d8b36f458ac4135301a1c" name="a04caa9bc107d8b36f458ac4135301a1c"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$refreshtoken</b> = ''</td></tr>
 <tr class="memdesc:a04caa9bc107d8b36f458ac4135301a1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">$refreshtoken refresh token string <br /></td></tr>
@@ -1223,6 +1230,37 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$system</b> = false</
 
 </div>
 </div>
+<a id="a0e231e713cc5ba6eff0d7d5449341add" name="a0e231e713cc5ba6eff0d7d5449341add"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e231e713cc5ba6eff0d7d5449341add">&#9670;&#160;</a></span>get_raw_userinfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core\oauth2\client::get_raw_userinfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fetch the user info from the user info endpoint. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array|false</td><td><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> user fields for the logged in user (or false if request failed) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../d6/da8/classmoodle__exception.html" title="Base Moodle Exception class.">moodle_exception</a></td><td>if the response is empty after decoding it. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a5c0a1634c545d8900c05102bf0a21b22" name="a5c0a1634c545d8900c05102bf0a21b22"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5c0a1634c545d8900c05102bf0a21b22">&#9670;&#160;</a></span>get_refresh_token()</h2>
 
@@ -1379,7 +1417,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$system</b> = false</
 <p>Fetch the user info from the user info endpoint and map all the fields back into moodle fields. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array|false</td><td><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> user fields for the logged in user (or false if request failed) </td></tr>
+    <tr><td class="paramname">stdClass|false</td><td><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> user fields for the logged in user (or false if request failed) </td></tr>
   </table>
   </dd>
 </dl>
@@ -2521,7 +2559,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$system</b> = false</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 4 2022 04:27:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Sep 11 2022 04:26:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220902) (a7514f231dd)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220910) (c6211a68b4f)</div>
   </td>
  </tr>
  </tbody>
@@ -132,9 +132,9 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>TAR_BLOCK_SIZE</
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a0b8e27c697f0b511107ba7251707fdaa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d04/classtgz__packer.html#a0b8e27c697f0b511107ba7251707fdaa">list_files_path</a> (array &amp;$expandedfiles, $archivepath, $path, <a class="el" href="../../d5/dd5/interfacefile__progress.html">file_progress</a> $progress=null, $done)</td></tr>
-<tr class="memdesc:a0b8e27c697f0b511107ba7251707fdaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Based on an OS path, adds either that path (if it's a file) or all its children (if it's a directory) into the list of files to archive.  <a href="../../df/d04/classtgz__packer.html#a0b8e27c697f0b511107ba7251707fdaa">More...</a><br /></td></tr>
-<tr class="separator:a0b8e27c697f0b511107ba7251707fdaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21e3e6b8ff4a85e84866bf972cd3c15b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d04/classtgz__packer.html#a21e3e6b8ff4a85e84866bf972cd3c15b">list_files_path</a> (array &amp;$expandedfiles, $archivepath, $path, ?<a class="el" href="../../d5/dd5/interfacefile__progress.html">file_progress</a> $progress, $done)</td></tr>
+<tr class="memdesc:a21e3e6b8ff4a85e84866bf972cd3c15b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Based on an OS path, adds either that path (if it's a file) or all its children (if it's a directory) into the list of files to archive.  <a href="../../df/d04/classtgz__packer.html#a21e3e6b8ff4a85e84866bf972cd3c15b">More...</a><br /></td></tr>
+<tr class="separator:a21e3e6b8ff4a85e84866bf972cd3c15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7aaf08f664370fc013c44e7832fe5b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d04/classtgz__packer.html#ae7aaf08f664370fc013c44e7832fe5b5">list_files_stored</a> (array &amp;$expandedfiles, $archivepath, <a class="el" href="../../d0/d00/classstored__file.html">stored_file</a> $file)</td></tr>
 <tr class="memdesc:ae7aaf08f664370fc013c44e7832fe5b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Based on a <a class="el" href="../../d0/d00/classstored__file.html">stored_file</a> objects, adds either that file (if it's a file) or all its children (if it's a directory) into the list of files to archive.  <a href="../../df/d04/classtgz__packer.html#ae7aaf08f664370fc013c44e7832fe5b5">More...</a><br /></td></tr>
 <tr class="separator:ae7aaf08f664370fc013c44e7832fe5b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -689,8 +689,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$includeindex</b> = t
 
 </div>
 </div>
-<a id="a0b8e27c697f0b511107ba7251707fdaa" name="a0b8e27c697f0b511107ba7251707fdaa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b8e27c697f0b511107ba7251707fdaa">&#9670;&#160;</a></span>list_files_path()</h2>
+<a id="a21e3e6b8ff4a85e84866bf972cd3c15b" name="a21e3e6b8ff4a85e84866bf972cd3c15b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21e3e6b8ff4a85e84866bf972cd3c15b">&#9670;&#160;</a></span>list_files_path()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -719,8 +719,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$includeindex</b> = t
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/dd5/interfacefile__progress.html">file_progress</a>&#160;</td>
-          <td class="paramname"><em>$progress</em> = <code>null</code>, </td>
+          <td class="paramtype">?<a class="el" href="../../d5/dd5/interfacefile__progress.html">file_progress</a>&#160;</td>
+          <td class="paramname"><em>$progress</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -748,7 +748,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$includeindex</b> = t
     <tr><td class="paramtype">array</td><td class="paramname">$expandedfiles</td><td>List of all files to archive (output) </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$archivepath</td><td>Current path within archive </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$path</td><td>OS path on disk </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../d5/dd5/interfacefile__progress.html">file_progress</a></td><td class="paramname">$progress</td><td>Progress indicator or null if none </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../d5/dd5/interfacefile__progress.html">file_progress</a>&#160;|&#160;null</td><td class="paramname">$progress</td><td>Progress indicator or null if none </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$done</td><td>Value for progress indicator </td></tr>
   </table>
   </dd>
@@ -948,7 +948,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$includeindex</b> = t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 4 2022 04:26:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Sep 11 2022 04:25:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

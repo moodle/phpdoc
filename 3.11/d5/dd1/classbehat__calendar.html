@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;3.11</span>
    </div>
-   <div id="projectbrief">Moodle 3.11.9+ (Build: 20220902) (2b22716dc2)</div>
+   <div id="projectbrief">Moodle 3.11.10 (Build: 20220912) (54b614ca7e)</div>
   </td>
  </tr>
  </tbody>
@@ -94,8 +94,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a287a836e827738f2a719defb12c7f468"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd1/classbehat__calendar.html#a287a836e827738f2a719defb12c7f468">i_hover_over_today_in_the_calendar</a> ()</td></tr>
 <tr class="memdesc:a287a836e827738f2a719defb12c7f468"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hover over today in the calendar.  <a href="../../d5/dd1/classbehat__calendar.html#a287a836e827738f2a719defb12c7f468">More...</a><br /></td></tr>
 <tr class="separator:a287a836e827738f2a719defb12c7f468"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a579ef1feae97168df734d9935c22ff09"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd1/classbehat__calendar.html#a579ef1feae97168df734d9935c22ff09">i_view_the_calendar_day_view</a> (int $day, int $month, int $year)</td></tr>
+<tr class="memdesc:a579ef1feae97168df734d9935c22ff09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Navigate to a specific date in the calendar.  <a href="../../d5/dd1/classbehat__calendar.html#a579ef1feae97168df734d9935c22ff09">More...</a><br /></td></tr>
+<tr class="separator:a579ef1feae97168df734d9935c22ff09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5893eaec9563613aadfc439617dd2dee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd1/classbehat__calendar.html#a5893eaec9563613aadfc439617dd2dee">i_view_the_calendar_for</a> ($month, $year)</td></tr>
-<tr class="memdesc:a5893eaec9563613aadfc439617dd2dee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Navigate to a specific date in the calendar.  <a href="../../d5/dd1/classbehat__calendar.html#a5893eaec9563613aadfc439617dd2dee">More...</a><br /></td></tr>
+<tr class="memdesc:a5893eaec9563613aadfc439617dd2dee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Navigate to a specific month in the calendar.  <a href="../../d5/dd1/classbehat__calendar.html#a5893eaec9563613aadfc439617dd2dee">More...</a><br /></td></tr>
 <tr class="separator:a5893eaec9563613aadfc439617dd2dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -302,6 +305,50 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a579ef1feae97168df734d9935c22ff09" name="a579ef1feae97168df734d9935c22ff09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a579ef1feae97168df734d9935c22ff09">&#9670;&#160;</a></span>i_view_the_calendar_day_view()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_calendar::i_view_the_calendar_day_view </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$day</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$month</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$year</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Navigate to a specific date in the calendar. </p>
+<p >@Given /^I view the calendar for "(?P&lt;day&gt;::d+)" "(?P&lt;month&gt;\d+)" "(?P&lt;year&gt;\d+)"$/ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$day</td><td>the day selected as a number </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$month</td><td>the month selected as a number </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$year</td><td>the four digit year </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a5893eaec9563613aadfc439617dd2dee" name="a5893eaec9563613aadfc439617dd2dee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5893eaec9563613aadfc439617dd2dee">&#9670;&#160;</a></span>i_view_the_calendar_for()</h2>
 
@@ -328,7 +375,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Navigate to a specific date in the calendar. </p>
+<p>Navigate to a specific month in the calendar. </p>
 <p >@Given /^I view the calendar for "(?P&lt;month&gt;::d+)" "(?P&lt;year&gt;\d+)"$/ </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$month</td><td>the month selected as a number </td></tr>
@@ -374,7 +421,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 4 2022 04:10:02 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Sep 11 2022 04:08:05 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

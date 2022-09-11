@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220902) (a7514f231dd)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220910) (c6211a68b4f)</div>
   </td>
  </tr>
  </tbody>
@@ -127,7 +127,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>kill_all_sessions</
 <tr class="memdesc:af430a6f02d024c47591054a2270c30c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminate all sessions of given user unconditionally.  <a href="../../d0/dcb/classcore_1_1session_1_1manager.html#af430a6f02d024c47591054a2270c30c9">More...</a><br /></td></tr>
 <tr class="separator:af430a6f02d024c47591054a2270c30c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa64cad81c56b3e9aa96860f1b5a732ba"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcb/classcore_1_1session_1_1manager.html#aa64cad81c56b3e9aa96860f1b5a732ba">login_user</a> (\stdClass $user)</td></tr>
-<tr class="memdesc:aa64cad81c56b3e9aa96860f1b5a732ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Login user, to be called from <a class="el" href="../../d0/de1/group__core.html#ga72414334bbe2ce217764936570eb57b6" title="Call to complete the user login process after authenticate_user_login() has succeeded.">complete_user_login()</a> only.  <a href="../../d0/dcb/classcore_1_1session_1_1manager.html#aa64cad81c56b3e9aa96860f1b5a732ba">More...</a><br /></td></tr>
+<tr class="memdesc:aa64cad81c56b3e9aa96860f1b5a732ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Login user, to be called from <a class="el" href="../../d0/de1/group__core.html#ga4acb6121854c6a3cd8c99c31fa2c4275" title="Call to complete the user login process after authenticate_user_login() has succeeded.">complete_user_login()</a> only.  <a href="../../d0/dcb/classcore_1_1session_1_1manager.html#aa64cad81c56b3e9aa96860f1b5a732ba">More...</a><br /></td></tr>
 <tr class="separator:aa64cad81c56b3e9aa96860f1b5a732ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c5a804ee360f710bccc7734fc9619f3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcb/classcore_1_1session_1_1manager.html#a7c5a804ee360f710bccc7734fc9619f3">loginas</a> ($userid, <a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, $generateevent=true)</td></tr>
 <tr class="memdesc:a7c5a804ee360f710bccc7734fc9619f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Login as another user - no security checks here.  <a href="../../d0/dcb/classcore_1_1session_1_1manager.html#a7c5a804ee360f710bccc7734fc9619f3">More...</a><br /></td></tr>
@@ -298,7 +298,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>$sessionactive
 </div><div class="memdoc">
 
 <p>Terminate other sessions of current user depending on $CFG-&gt;limitconcurrentlogins restriction. </p>
-<p >This is expected to be called right after <a class="el" href="../../d0/de1/group__core.html#ga72414334bbe2ce217764936570eb57b6" title="Call to complete the user login process after authenticate_user_login() has succeeded.">complete_user_login()</a>.</p>
+<p >This is expected to be called right after <a class="el" href="../../d0/de1/group__core.html#ga4acb6121854c6a3cd8c99c31fa2c4275" title="Call to complete the user login process after authenticate_user_login() has succeeded.">complete_user_login()</a>.</p>
 <p >NOTE:</p><ul>
 <li>Do not use from SSO auth plugins, this would not work.</li>
 <li>Do not use from web services because they do not have sessions.</li>
@@ -898,7 +898,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>$sessionactive
 </table>
 </div><div class="memdoc">
 
-<p>Login user, to be called from <a class="el" href="../../d0/de1/group__core.html#ga72414334bbe2ce217764936570eb57b6" title="Call to complete the user login process after authenticate_user_login() has succeeded.">complete_user_login()</a> only. </p>
+<p>Login user, to be called from <a class="el" href="../../d0/de1/group__core.html#ga4acb6121854c6a3cd8c99c31fa2c4275" title="Call to complete the user login process after authenticate_user_login() has succeeded.">complete_user_login()</a> only. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$user</td><td></td></tr>
@@ -1315,7 +1315,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>$sessionactive
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 4 2022 04:27:32 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Sep 11 2022 04:26:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

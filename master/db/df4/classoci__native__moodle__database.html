@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220902) (a7514f231dd)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220910) (c6211a68b4f)</div>
   </td>
  </tr>
  </tbody>
@@ -521,9 +521,9 @@ Protected Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>query_log_prevent</b> ()</td></tr>
 <tr class="memdesc:ae736dd6147181783e38360930e052e76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable logging temporarily. <br /></td></tr>
 <tr class="separator:ae736dd6147181783e38360930e052e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac29128fd7f8c5f7931c396540eb0d5b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df4/classoci__native__moodle__database.html#ac29128fd7f8c5f7931c396540eb0d5b4">query_start</a> ($sql, array $params=null, $type, $extrainfo=null)</td></tr>
-<tr class="memdesc:ac29128fd7f8c5f7931c396540eb0d5b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called before each db query.  <a href="../../db/df4/classoci__native__moodle__database.html#ac29128fd7f8c5f7931c396540eb0d5b4">More...</a><br /></td></tr>
-<tr class="separator:ac29128fd7f8c5f7931c396540eb0d5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6da091dc88ae1f9a1851f68ec4bc23f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/df4/classoci__native__moodle__database.html#a6da091dc88ae1f9a1851f68ec4bc23f2">query_start</a> ($sql, ?array $params, $type, $extrainfo=null)</td></tr>
+<tr class="memdesc:a6da091dc88ae1f9a1851f68ec4bc23f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called before each db query.  <a href="../../db/df4/classoci__native__moodle__database.html#a6da091dc88ae1f9a1851f68ec4bc23f2">More...</a><br /></td></tr>
+<tr class="separator:a6da091dc88ae1f9a1851f68ec4bc23f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f19d95c9bf5d29ea5cfc5063ce24af5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#a6f19d95c9bf5d29ea5cfc5063ce24af5">query_time</a> ()</td></tr>
 <tr class="memdesc:a6f19d95c9bf5d29ea5cfc5063ce24af5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the time elapsed since the query started.  <a href="../../d3/d6e/classmoodle__database.html#a6f19d95c9bf5d29ea5cfc5063ce24af5">More...</a><br /></td></tr>
 <tr class="separator:a6f19d95c9bf5d29ea5cfc5063ce24af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5239,8 +5239,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 
 </div>
 </div>
-<a id="ac29128fd7f8c5f7931c396540eb0d5b4" name="ac29128fd7f8c5f7931c396540eb0d5b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac29128fd7f8c5f7931c396540eb0d5b4">&#9670;&#160;</a></span>query_start()</h2>
+<a id="a6da091dc88ae1f9a1851f68ec4bc23f2" name="a6da091dc88ae1f9a1851f68ec4bc23f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6da091dc88ae1f9a1851f68ec4bc23f2">&#9670;&#160;</a></span>query_start()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5257,8 +5257,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">array&#160;</td>
-          <td class="paramname"><em>$params</em> = <code>null</code>, </td>
+          <td class="paramtype">?array&#160;</td>
+          <td class="paramname"><em>$params</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -5289,7 +5289,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$sql</td><td></td></tr>
-    <tr><td class="paramtype"></td><td class="paramname">array</td><td>array of parameters </td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;null</td><td class="paramname">$params</td><td>An array of parameters. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$type</td><td>type of query </td></tr>
     <tr><td class="paramtype">mixed</td><td class="paramname">$extrainfo</td><td>driver specific extra information </td></tr>
   </table>
@@ -5302,7 +5302,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="../../d3/d6e/classmoodle__database.html#a65be294625563c1f3b0a1f18192d0d64">moodle_database</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d3/d6e/classmoodle__database.html#a22869776c6a8b72f2983bc51152147bd">moodle_database</a>.</p>
 
 </div>
 </div>
@@ -8048,7 +8048,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 4 2022 04:26:17 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Sep 11 2022 04:25:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

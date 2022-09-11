@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.3+ (Build: 20220902) (b2e9ca957a7)</div>
+   <div id="projectbrief">Moodle 4.0.4 (Build: 20220912) (8febbe39733)</div>
   </td>
  </tr>
  </tbody>
@@ -96,6 +96,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a26aed5daa6ee4174e2dafd4602dc47c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de7/classcore__reportbuilder_1_1local_1_1filters_1_1base.html#a26aed5daa6ee4174e2dafd4602dc47c4">get_header</a> ()</td></tr>
 <tr class="memdesc:a26aed5daa6ee4174e2dafd4602dc47c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the filter header.  <a href="../../d9/de7/classcore__reportbuilder_1_1local_1_1filters_1_1base.html#a26aed5daa6ee4174e2dafd4602dc47c4">More...</a><br /></td></tr>
 <tr class="separator:a26aed5daa6ee4174e2dafd4602dc47c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a679db13a88324b3ea761558b04987153"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de7/classcore__reportbuilder_1_1local_1_1filters_1_1base.html#a679db13a88324b3ea761558b04987153">get_sample_values</a> ()</td></tr>
+<tr class="memdesc:a679db13a88324b3ea761558b04987153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return sample filter values, that when applied to a report would activate the filter - that is, cause the filter to return SQL snippet.  <a href="../../d9/de7/classcore__reportbuilder_1_1local_1_1filters_1_1base.html#a679db13a88324b3ea761558b04987153">More...</a><br /></td></tr>
+<tr class="separator:a679db13a88324b3ea761558b04987153"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad95c7cc215e24ebbfcdc2c8439e290d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de7/classcore__reportbuilder_1_1local_1_1filters_1_1base.html#ad95c7cc215e24ebbfcdc2c8439e290d9">get_sql_filter</a> (array $values)</td></tr>
 <tr class="memdesc:ad95c7cc215e24ebbfcdc2c8439e290d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the filter clauses to be used with SQL where.  <a href="../../d9/de7/classcore__reportbuilder_1_1local_1_1filters_1_1base.html#ad95c7cc215e24ebbfcdc2c8439e290d9">More...</a><br /></td></tr>
 <tr class="separator:ad95c7cc215e24ebbfcdc2c8439e290d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -295,6 +298,34 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$name</b></td></tr>
 
 </div>
 </div>
+<a id="a679db13a88324b3ea761558b04987153" name="a679db13a88324b3ea761558b04987153"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a679db13a88324b3ea761558b04987153">&#9670;&#160;</a></span>get_sample_values()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_reportbuilder\local\filters\base::get_sample_values </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return sample filter values, that when applied to a report would activate the filter - that is, cause the filter to return SQL snippet. </p>
+<p >Should be overridden in child classes, to ensure compatibility with stress tests of reports</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../da/dc0/classcore__reportbuilder_1_1local_1_1filters_1_1boolean__select.html#a3ea6b795302a8a0810fa640a2b807299">core_reportbuilder\local\filters\boolean_select</a>, <a class="el" href="../../d1/d19/classcore__reportbuilder_1_1local_1_1filters_1_1course__selector.html#ac9ae10301768126e313603509d060f77">core_reportbuilder\local\filters\course_selector</a>, <a class="el" href="../../da/de0/classcore__reportbuilder_1_1local_1_1filters_1_1date.html#ac5e439cf3a2aad1df717779a38eb8c18">core_reportbuilder\local\filters\date</a>, <a class="el" href="../../d9/d91/classcore__reportbuilder_1_1local_1_1filters_1_1duration.html#a7433325098d5f4aabb24f3867c1288f7">core_reportbuilder\local\filters\duration</a>, <a class="el" href="../../d8/d86/classcore__reportbuilder_1_1local_1_1filters_1_1number.html#aeef729f42a84ef1e0edfc0a4600b1e01">core_reportbuilder\local\filters\number</a>, <a class="el" href="../../d4/d77/classcore__reportbuilder_1_1local_1_1filters_1_1select.html#ab71d88a8c0e539f3e44ea38c2c4369d4">core_reportbuilder\local\filters\select</a>, <a class="el" href="../../d4/d65/classcore__reportbuilder_1_1local_1_1filters_1_1text.html#a08deb880b30c0abd8d695f638af2fca2">core_reportbuilder\local\filters\text</a>, and <a class="el" href="../../dd/d7e/classcore__reportbuilder_1_1local_1_1filters_1_1user.html#a4fe36b77522f4b34ce01247599e0d61e">core_reportbuilder\local\filters\user</a>.</p>
+
+</div>
+</div>
 <a id="ad95c7cc215e24ebbfcdc2c8439e290d9" name="ad95c7cc215e24ebbfcdc2c8439e290d9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad95c7cc215e24ebbfcdc2c8439e290d9">&#9670;&#160;</a></span>get_sql_filter()</h2>
 
@@ -379,7 +410,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$name</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 4 2022 04:20:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Sep 11 2022 04:19:02 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

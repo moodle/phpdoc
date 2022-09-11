@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;3.9</span>
    </div>
-   <div id="projectbrief">Moodle 3.9.16+ (Build: 20220902) (fd27acfcb1)</div>
+   <div id="projectbrief">Moodle 3.9.17 (Build: 20220912) (33e9b8c394)</div>
   </td>
  </tr>
  </tbody>
@@ -92,6 +92,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adfcfdd6a65bf7f934a557e43c5681356"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d55/classtesting__data__generator.html#adfcfdd6a65bf7f934a557e43c5681356">create_custom_field_category</a> ($data)</td></tr>
 <tr class="memdesc:adfcfdd6a65bf7f934a557e43c5681356"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new course custom field category with the given name.  <a href="../../d6/d55/classtesting__data__generator.html#adfcfdd6a65bf7f934a557e43c5681356">More...</a><br /></td></tr>
 <tr class="separator:adfcfdd6a65bf7f934a557e43c5681356"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ad37b8766ac9bf043e6a882f2a16c89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d55/classtesting__data__generator.html#a2ad37b8766ac9bf043e6a882f2a16c89">create_custom_profile_field</a> (array $data)</td></tr>
+<tr class="memdesc:a2ad37b8766ac9bf043e6a882f2a16c89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new custom profile field.  <a href="../../d6/d55/classtesting__data__generator.html#a2ad37b8766ac9bf043e6a882f2a16c89">More...</a><br /></td></tr>
+<tr class="separator:a2ad37b8766ac9bf043e6a882f2a16c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8044816950a92dd6ebc3ec67eb8b3e02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d55/classtesting__data__generator.html#a8044816950a92dd6ebc3ec67eb8b3e02">create_custom_profile_field_category</a> (array $data)</td></tr>
+<tr class="memdesc:a8044816950a92dd6ebc3ec67eb8b3e02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new category for custom profile fields.  <a href="../../d6/d55/classtesting__data__generator.html#a8044816950a92dd6ebc3ec67eb8b3e02">More...</a><br /></td></tr>
+<tr class="separator:a8044816950a92dd6ebc3ec67eb8b3e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5587c0e2aca8951c935c215fc96774f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d55/classtesting__data__generator.html#a5587c0e2aca8951c935c215fc96774f6">create_event</a> ($data=[])</td></tr>
 <tr class="memdesc:a5587c0e2aca8951c935c215fc96774f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function used to create an event.  <a href="../../d6/d55/classtesting__data__generator.html#a5587c0e2aca8951c935c215fc96774f6">More...</a><br /></td></tr>
 <tr class="separator:a5587c0e2aca8951c935c215fc96774f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -629,6 +635,74 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$gradeoutcomecounter</
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname"><a class="el" href="../../d2/d0c/classcore__customfield_1_1category__controller.html" title="Class category.">core_customfield::category_controller</a></td><td>The created category </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2ad37b8766ac9bf043e6a882f2a16c89" name="a2ad37b8766ac9bf043e6a882f2a16c89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ad37b8766ac9bf043e6a882f2a16c89">&#9670;&#160;</a></span>create_custom_profile_field()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">testing_data_generator::create_custom_profile_field </td>
+          <td>(</td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new custom profile field. </p>
+<p >Optional fields are:</p>
+<p >categoryid (or use 'category' to specify by name). If you don't specify either, it will add the field to a 'Testing' category, which will be created for you if necessary.</p>
+<p >sortorder (if you don't specify this, it will pick the next one in the category).</p>
+<p >all the other database fields (if you don't specify this, it will pick sensible defaults based on the data type).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>Array with 'datatype', 'shortname', and 'name' </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass</td><td>Database object from the user_info_field table </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8044816950a92dd6ebc3ec67eb8b3e02" name="a8044816950a92dd6ebc3ec67eb8b3e02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8044816950a92dd6ebc3ec67eb8b3e02">&#9670;&#160;</a></span>create_custom_profile_field_category()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">testing_data_generator::create_custom_profile_field_category </td>
+          <td>(</td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a new category for custom profile fields. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>Array with 'name' and optionally 'sortorder' </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass</td><td>New category object </td></tr>
   </table>
   </dd>
 </dl>
@@ -1619,7 +1693,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$gradeoutcomecounter</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 4 2022 04:05:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Sep 11 2022 04:03:21 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

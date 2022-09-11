@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220902) (a7514f231dd)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220910) (c6211a68b4f)</div>
   </td>
  </tr>
  </tbody>
@@ -70,6 +70,12 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a82ee3e6b3e44d7dc3e83d31cd600cb5e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d64/classmod__data_1_1preset.html#a82ee3e6b3e44d7dc3e83d31cd600cb5e">can_manage</a> ()</td></tr>
+<tr class="memdesc:a82ee3e6b3e44d7dc3e83d31cd600cb5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks to see if the user has permission to manage the preset.  <a href="../../d1/d64/classmod__data_1_1preset.html#a82ee3e6b3e44d7dc3e83d31cd600cb5e">More...</a><br /></td></tr>
+<tr class="separator:a82ee3e6b3e44d7dc3e83d31cd600cb5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96bdc7068dc9e75d071e5fa2c37274fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d64/classmod__data_1_1preset.html#a96bdc7068dc9e75d071e5fa2c37274fc">delete</a> ()</td></tr>
+<tr class="memdesc:a96bdc7068dc9e75d071e5fa2c37274fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes all files related to a saved preset.  <a href="../../d1/d64/classmod__data_1_1preset.html#a96bdc7068dc9e75d071e5fa2c37274fc">More...</a><br /></td></tr>
+<tr class="separator:a96bdc7068dc9e75d071e5fa2c37274fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb7a13c253efdba29a5992d54ed58ef0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d64/classmod__data_1_1preset.html#adb7a13c253efdba29a5992d54ed58ef0">export</a> ()</td></tr>
 <tr class="memdesc:adb7a13c253efdba29a5992d54ed58ef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export this preset.  <a href="../../d1/d64/classmod__data_1_1preset.html#adb7a13c253efdba29a5992d54ed58ef0">More...</a><br /></td></tr>
 <tr class="separator:adb7a13c253efdba29a5992d54ed58ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,6 +236,31 @@ Static Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a82ee3e6b3e44d7dc3e83d31cd600cb5e" name="a82ee3e6b3e44d7dc3e83d31cd600cb5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82ee3e6b3e44d7dc3e83d31cd600cb5e">&#9670;&#160;</a></span>can_manage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_data\preset::can_manage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks to see if the user has permission to manage the preset. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>Returns true if the user can manage this preset, false otherwise. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a440c46ebb354f2684eb75e0009141e8d" name="a440c46ebb354f2684eb75e0009141e8d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a440c46ebb354f2684eb75e0009141e8d">&#9670;&#160;</a></span>create_from_instance()</h2>
 
@@ -384,6 +415,31 @@ Static Protected Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">preset|null</td><td>If the given file doesn't belong to the expected component/filearea/context, null will be returned </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a96bdc7068dc9e75d071e5fa2c37274fc" name="a96bdc7068dc9e75d071e5fa2c37274fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96bdc7068dc9e75d071e5fa2c37274fc">&#9670;&#160;</a></span>delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_data\preset::delete </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Deletes all files related to a saved preset. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>True if the preset is a saved preset and the file exists in the file system; false otherwise. </td></tr>
   </table>
   </dd>
 </dl>
@@ -895,7 +951,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 4 2022 04:28:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Sep 11 2022 04:27:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

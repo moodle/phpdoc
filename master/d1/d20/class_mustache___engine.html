@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220902) (a7514f231dd)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220910) (c6211a68b4f)</div>
   </td>
  </tr>
  </tbody>
@@ -182,7 +182,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>PRAGMA_FILTERS</b> =
 const&#160;</td><td class="memItemRight" valign="bottom"><b>SPEC_VERSION</b> = '1.2.2'</td></tr>
 <tr class="separator:a84879c554f8ebde477cd2b09c066dfda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72d03dcf9344b51322ffc5b0811ad8e6"><td class="memItemLeft" align="right" valign="top"><a id="a72d03dcf9344b51322ffc5b0811ad8e6" name="a72d03dcf9344b51322ffc5b0811ad8e6"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>VERSION</b> = '2.14.0'</td></tr>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>VERSION</b> = '2.14.1'</td></tr>
 <tr class="separator:a72d03dcf9344b51322ffc5b0811ad8e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
@@ -272,6 +272,11 @@ Protected Member Functions</h2></td></tr>
     // helps protect against arbitrary code execution when user input is passed directly into the template.
     // This currently defaults to false, but will default to true in v3.0.
     'strict_callables' =&gt; true,
+
+    // Do not render the output of lambdas. Use this to prevent repeated rendering if the lambda already
+    // takes care of rendering its content. This helps protect against mustache code injection when user
+    // input is passed directly into the template. Defaults to false.
+    'disable_lambda_rendering' =&gt; true,
 
     // Enable pragmas across all templates, regardless of the presence of pragma tags in the individual
     // templates.
@@ -1218,7 +1223,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 4 2022 04:26:17 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Sep 11 2022 04:25:22 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>
