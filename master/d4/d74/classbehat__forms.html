@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220915) (b077af7e890)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220922) (8f492a836a5)</div>
   </td>
  </tr>
  </tbody>
@@ -167,6 +167,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0308b6aa5bb813ea0af2eb728bd091d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d74/classbehat__forms.html#a0308b6aa5bb813ea0af2eb728bd091d7">the_select_box_should_not_contain</a> ($select, $option)</td></tr>
 <tr class="memdesc:a0308b6aa5bb813ea0af2eb728bd091d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks, that given select box does not contain the specified option.  <a href="../../d4/d74/classbehat__forms.html#a0308b6aa5bb813ea0af2eb728bd091d7">More...</a><br /></td></tr>
 <tr class="separator:a0308b6aa5bb813ea0af2eb728bd091d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaac6524081759aa108edf04f3e61ae0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d74/classbehat__forms.html#aaaac6524081759aa108edf04f3e61ae0">the_select_menu_should_contain</a> (string $label, string $option, ?string $not=null)</td></tr>
+<tr class="memdesc:aaaac6524081759aa108edf04f3e61ae0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the select menu contains an option with specified text or not.  <a href="../../d4/d74/classbehat__forms.html#aaaac6524081759aa108edf04f3e61ae0">More...</a><br /></td></tr>
+<tr class="separator:aaaac6524081759aa108edf04f3e61ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -1651,6 +1654,57 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aaaac6524081759aa108edf04f3e61ae0" name="aaaac6524081759aa108edf04f3e61ae0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaac6524081759aa108edf04f3e61ae0">&#9670;&#160;</a></span>the_select_menu_should_contain()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_forms::the_select_menu_should_contain </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$option</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?string&#160;</td>
+          <td class="paramname"><em>$not</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether the select menu contains an option with specified text or not. </p>
+<p >@Then the :name select menu should contain :option @Then the :name select menu should :not contain :option</p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ExpectationException</td><td>When the expectation is not satisfied </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$label</td><td>The label of the select menu element </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$option</td><td>The string that is used to identify an option within the select menu. If the string has two items separated by '&gt;' (ex. "Group &gt; Option"), the first item ("Group") will be used to identify a particular group within the select menu, while the second ("Option") will be used to identify an option within that group. Otherwise, a string with a single item (ex. "Option") will be used to identify an option within the select menu regardless of any existing groups. </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$not</td><td>If set, the select menu should not contain the specified option. If null, the option should be present. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a1493fb96a85bfb906ba5468330de76c0" name="a1493fb96a85bfb906ba5468330de76c0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1493fb96a85bfb906ba5468330de76c0">&#9670;&#160;</a></span>PAGE_READY_JS</h2>
@@ -1686,7 +1740,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 18 2022 04:34:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Sep 25 2022 04:20:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

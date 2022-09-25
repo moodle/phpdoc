@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220915) (b077af7e890)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220922) (8f492a836a5)</div>
   </td>
  </tr>
  </tbody>
@@ -84,6 +84,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5c29122daa8103d8280ecf8fd7d441d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4b/classbehat__form__field.html#a5c29122daa8103d8280ecf8fd7d441d5">getSession</a> ($name=null)</td></tr>
 <tr class="memdesc:a5c29122daa8103d8280ecf8fd7d441d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Mink session.  <a href="../../d7/d4b/classbehat__form__field.html#a5c29122daa8103d8280ecf8fd7d441d5">More...</a><br /></td></tr>
 <tr class="separator:a5c29122daa8103d8280ecf8fd7d441d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c560e7f2d6707ba1b061c982ed3f1ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d69/classbehat__form__select__menu.html#a8c560e7f2d6707ba1b061c982ed3f1ae">has_option</a> (string $option)</td></tr>
+<tr class="memdesc:a8c560e7f2d6707ba1b061c982ed3f1ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a given option exists in the select menu field.  <a href="../../d6/d69/classbehat__form__select__menu.html#a8c560e7f2d6707ba1b061c982ed3f1ae">More...</a><br /></td></tr>
+<tr class="separator:a8c560e7f2d6707ba1b061c982ed3f1ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25335560b05522c2f5e8fa331a1920b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4b/classbehat__form__field.html#a25335560b05522c2f5e8fa331a1920b2">key_press</a> ($char, $modifier=null)</td></tr>
 <tr class="memdesc:a25335560b05522c2f5e8fa331a1920b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Presses specific keyboard key.  <a href="../../d7/d4b/classbehat__form__field.html#a25335560b05522c2f5e8fa331a1920b2">More...</a><br /></td></tr>
 <tr class="separator:a25335560b05522c2f5e8fa331a1920b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -91,7 +94,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a52048c428cbd6d8e5285f467aa30a057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic match implementation.  <a href="../../d7/d4b/classbehat__form__field.html#a52048c428cbd6d8e5285f467aa30a057">More...</a><br /></td></tr>
 <tr class="separator:a52048c428cbd6d8e5285f467aa30a057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9375f505334d66e889a301854db209fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d69/classbehat__form__select__menu.html#a9375f505334d66e889a301854db209fe">set_value</a> ($<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
-<tr class="memdesc:a9375f505334d66e889a301854db209fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value to a field.  <a href="../../d6/d69/classbehat__form__select__menu.html#a9375f505334d66e889a301854db209fe">More...</a><br /></td></tr>
+<tr class="memdesc:a9375f505334d66e889a301854db209fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of the select menu field.  <a href="../../d6/d69/classbehat__form__select__menu.html#a9375f505334d66e889a301854db209fe">More...</a><br /></td></tr>
 <tr class="separator:a9375f505334d66e889a301854db209fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -374,6 +377,38 @@ Session&#160;</td><td class="memItemRight" valign="bottom"><b>$session</b></td><
 
 </div>
 </div>
+<a id="a8c560e7f2d6707ba1b061c982ed3f1ae" name="a8c560e7f2d6707ba1b061c982ed3f1ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c560e7f2d6707ba1b061c982ed3f1ae">&#9670;&#160;</a></span>has_option()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_form_select_menu::has_option </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$option</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks whether a given option exists in the select menu field. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$option</td><td>The string that is used to identify an option within the select menu. If the string has two items separated by '&gt;' (ex. "Group &gt; Option"), the first item ("Group") will be used to identify a particular group within the select menu, while the second ("Option") will be used to identify an option within that group. Otherwise, a string with a single item (ex. "Option") will be used to identify an option within the select menu regardless of any existing groups. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>Whether the option exists in the select menu field or not. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a25335560b05522c2f5e8fa331a1920b2" name="a25335560b05522c2f5e8fa331a1920b2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a25335560b05522c2f5e8fa331a1920b2">&#9670;&#160;</a></span>key_press()</h2>
 
@@ -511,16 +546,10 @@ Session&#160;</td><td class="memItemRight" valign="bottom"><b>$session</b></td><
       </table>
 </div><div class="memdoc">
 
-<p>Sets the value to a field. </p>
+<p>Sets the value of the select menu field. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$value</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">void</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$value</td><td>The string that is used to identify an option within the select menu. If the string has two items separated by '&gt;' (ex. "Group &gt; Option"), the first item ("Group") will be used to identify a particular group within the select menu, while the second ("Option") will be used to identify an option within that group. Otherwise, a string with a single item (ex. "Option") will be used to identify an option within the select menu regardless of any existing groups. </td></tr>
   </table>
   </dd>
 </dl>
@@ -637,7 +666,7 @@ Session&#160;</td><td class="memItemRight" valign="bottom"><b>$session</b></td><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 18 2022 04:34:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Sep 25 2022 04:20:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

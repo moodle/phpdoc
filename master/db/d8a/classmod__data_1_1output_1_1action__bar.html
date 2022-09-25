@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220915) (b077af7e890)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220922) (8f492a836a5)</div>
   </td>
  </tr>
  </tbody>
@@ -75,6 +75,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7e19d4d30a7cb74812a2b2d4fc0ea67c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8a/classmod__data_1_1output_1_1action__bar.html#a7e19d4d30a7cb74812a2b2d4fc0ea67c">get_presets_action_bar</a> ()</td></tr>
 <tr class="memdesc:a7e19d4d30a7cb74812a2b2d4fc0ea67c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the output for the action selector in the presets page.  <a href="../../db/d8a/classmod__data_1_1output_1_1action__bar.html#a7e19d4d30a7cb74812a2b2d4fc0ea67c">More...</a><br /></td></tr>
 <tr class="separator:a7e19d4d30a7cb74812a2b2d4fc0ea67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e14bbc0cbcbe964bf48ed93ec529639"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8a/classmod__data_1_1output_1_1action__bar.html#a4e14bbc0cbcbe964bf48ed93ec529639">get_presets_preview_action_bar</a> (<a class="el" href="../../d5/df3/classmod__data_1_1manager.html">manager</a> $<a class="el" href="../../d5/df3/classmod__data_1_1manager.html">manager</a>, string $<a class="el" href="../../d0/de1/group__core.html#ga22ae943f55a27f3b9cca15f8ddd05db7">fullname</a>, string $current)</td></tr>
+<tr class="memdesc:a4e14bbc0cbcbe964bf48ed93ec529639"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the output for the action selector in the presets preview page.  <a href="../../db/d8a/classmod__data_1_1output_1_1action__bar.html#a4e14bbc0cbcbe964bf48ed93ec529639">More...</a><br /></td></tr>
+<tr class="separator:a4e14bbc0cbcbe964bf48ed93ec529639"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb312e9e25b4ee47873aec360be639fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8a/classmod__data_1_1output_1_1action__bar.html#aeb312e9e25b4ee47873aec360be639fc">get_templates_action_bar</a> ()</td></tr>
 <tr class="memdesc:aeb312e9e25b4ee47873aec360be639fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the output for the action selector in the templates page.  <a href="../../db/d8a/classmod__data_1_1output_1_1action__bar.html#aeb312e9e25b4ee47873aec360be639fc">More...</a><br /></td></tr>
 <tr class="separator:aeb312e9e25b4ee47873aec360be639fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,6 +199,56 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a4e14bbc0cbcbe964bf48ed93ec529639" name="a4e14bbc0cbcbe964bf48ed93ec529639"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e14bbc0cbcbe964bf48ed93ec529639">&#9670;&#160;</a></span>get_presets_preview_action_bar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_data\output\action_bar::get_presets_preview_action_bar </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/df3/classmod__data_1_1manager.html">manager</a>&#160;</td>
+          <td class="paramname"><em>$manager</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$fullname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$current</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate the output for the action selector in the presets preview page. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">manager</td><td class="paramname">$manager</td><td>the manager instance </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$fullname</td><td>the preset fullname </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$current</td><td>the current template name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>The HTML code for the action selector </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aeb312e9e25b4ee47873aec360be639fc" name="aeb312e9e25b4ee47873aec360be639fc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeb312e9e25b4ee47873aec360be639fc">&#9670;&#160;</a></span>get_templates_action_bar()</h2>
 
@@ -259,7 +312,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 18 2022 04:38:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Sep 25 2022 04:24:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

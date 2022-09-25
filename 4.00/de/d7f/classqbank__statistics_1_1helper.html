@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.4+ (Build: 20220915) (844abeaf5d3)</div>
+   <div id="projectbrief">Moodle 4.0.4+ (Build: 20220922) (d708740c3fd)</div>
   </td>
  </tr>
  </tbody>
@@ -81,12 +81,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a3ef3c81aa58600c7bbfdce4fbd906c5c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d7f/classqbank__statistics_1_1helper.html#a3ef3c81aa58600c7bbfdce4fbd906c5c">format_percentage</a> (?float $number, bool $fraction=true, int $decimals=2)</td></tr>
 <tr class="memdesc:a3ef3c81aa58600c7bbfdce4fbd906c5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a number to a localised percentage with specified decimal points.  <a href="../../de/d7f/classqbank__statistics_1_1helper.html#a3ef3c81aa58600c7bbfdce4fbd906c5c">More...</a><br /></td></tr>
 <tr class="separator:a3ef3c81aa58600c7bbfdce4fbd906c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace468621ffa62825a8d69afa8e358649"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d7f/classqbank__statistics_1_1helper.html#ace468621ffa62825a8d69afa8e358649">get_quizzes</a> (int $questionid)</td></tr>
-<tr class="memdesc:ace468621ffa62825a8d69afa8e358649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return ids of all quizzes that use the question.  <a href="../../de/d7f/classqbank__statistics_1_1helper.html#ace468621ffa62825a8d69afa8e358649">More...</a><br /></td></tr>
-<tr class="separator:ace468621ffa62825a8d69afa8e358649"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39428014dba07adb00b47f00ee84232c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d7f/classqbank__statistics_1_1helper.html#a39428014dba07adb00b47f00ee84232c">load_question_stats_item</a> (int $quizid, int $questionid, string $item)</td></tr>
-<tr class="memdesc:a39428014dba07adb00b47f00ee84232c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a specified stats item for a question.  <a href="../../de/d7f/classqbank__statistics_1_1helper.html#a39428014dba07adb00b47f00ee84232c">More...</a><br /></td></tr>
-<tr class="separator:a39428014dba07adb00b47f00ee84232c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae17151b370447ce3980f670a66dc5be1" name="ae17151b370447ce3980f670a66dc5be1"></a>
@@ -313,117 +307,13 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ace468621ffa62825a8d69afa8e358649" name="ace468621ffa62825a8d69afa8e358649"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace468621ffa62825a8d69afa8e358649">&#9670;&#160;</a></span>get_quizzes()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static qbank_statistics\helper::get_quizzes </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>$questionid</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return ids of all quizzes that use the question. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$questionid</td><td>id of the question </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">array</td><td>list of quizids </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../d5/d5c/classdml__exception.html">dml_exception</a></td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a39428014dba07adb00b47f00ee84232c" name="a39428014dba07adb00b47f00ee84232c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39428014dba07adb00b47f00ee84232c">&#9670;&#160;</a></span>load_question_stats_item()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static qbank_statistics\helper::load_question_stats_item </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>$quizid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>$questionid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$item</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Load a specified stats item for a question. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$quizid</td><td>quiz id </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$questionid</td><td>question id </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$item</td><td>a stats item </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">float|int</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>question/bank/statistics/classes/helper.php</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 18 2022 04:30:10 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Sep 25 2022 04:17:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

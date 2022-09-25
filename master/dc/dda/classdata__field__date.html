@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220915) (b077af7e890)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220922) (8f492a836a5)</div>
   </td>
  </tr>
  </tbody>
@@ -57,6 +57,8 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="../../dd/d36/classdata__field__date-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">data_field_date Class Reference</div></div>
@@ -109,9 +111,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2398219bf3c5edd324e57d628f8d43eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dda/classdata__field__date.html#a2398219bf3c5edd324e57d628f8d43eb">get_config_for_external</a> ()</td></tr>
 <tr class="memdesc:a2398219bf3c5edd324e57d628f8d43eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the plugin configs for external functions, in some cases the configs will need formatting or be returned only if the current user has some capabilities enabled.  <a href="../../dc/dda/classdata__field__date.html#a2398219bf3c5edd324e57d628f8d43eb">More...</a><br /></td></tr>
 <tr class="separator:a2398219bf3c5edd324e57d628f8d43eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9f49dc51f39fd367c242cc22b272ea9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dda/classdata__field__date.html#aa9f49dc51f39fd367c242cc22b272ea9">get_data_content_preview</a> (int $recordid)</td></tr>
+<tr class="memdesc:aa9f49dc51f39fd367c242cc22b272ea9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a fake data_content for this field to be used in preset previews.  <a href="../../dc/dda/classdata__field__date.html#aa9f49dc51f39fd367c242cc22b272ea9">More...</a><br /></td></tr>
+<tr class="separator:aa9f49dc51f39fd367c242cc22b272ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a69569f367f8bda0e1b9c2e0f17e7db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/classdata__field__base.html#a2a69569f367f8bda0e1b9c2e0f17e7db">get_name</a> ()</td></tr>
 <tr class="memdesc:a2a69569f367f8bda0e1b9c2e0f17e7db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the field type name.  <a href="../../d7/d88/classdata__field__base.html#a2a69569f367f8bda0e1b9c2e0f17e7db">More...</a><br /></td></tr>
 <tr class="separator:a2a69569f367f8bda0e1b9c2e0f17e7db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a243b385c48fc9ac2503cdcf4b21d982a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/classdata__field__base.html#a243b385c48fc9ac2503cdcf4b21d982a">get_preview</a> ()</td></tr>
+<tr class="memdesc:a243b385c48fc9ac2503cdcf4b21d982a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the field preview value.  <a href="../../d7/d88/classdata__field__base.html#a243b385c48fc9ac2503cdcf4b21d982a">More...</a><br /></td></tr>
+<tr class="separator:a243b385c48fc9ac2503cdcf4b21d982a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80989991ffbd92e72bcbc9ffdc29a06a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/classdata__field__base.html#a80989991ffbd92e72bcbc9ffdc29a06a">get_sort_field</a> ()</td></tr>
 <tr class="memdesc:a80989991ffbd92e72bcbc9ffdc29a06a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the sortable field for the content.  <a href="../../d7/d88/classdata__field__base.html#a80989991ffbd92e72bcbc9ffdc29a06a">More...</a><br /></td></tr>
 <tr class="separator:a80989991ffbd92e72bcbc9ffdc29a06a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,6 +148,12 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>print_before_form</b> ()</td></tr>
 <tr class="memdesc:a38c95adbccff1721caa9b046463edd32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Just in case a field needs to print something before the whole form. <br /></td></tr>
 <tr class="separator:a38c95adbccff1721caa9b046463edd32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4418f5d3d8b7e5a3edc07ad2ddaa6b17"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/classdata__field__base.html#a4418f5d3d8b7e5a3edc07ad2ddaa6b17">set_preview</a> (bool $preview)</td></tr>
+<tr class="memdesc:a4418f5d3d8b7e5a3edc07ad2ddaa6b17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the field to preview mode.  <a href="../../d7/d88/classdata__field__base.html#a4418f5d3d8b7e5a3edc07ad2ddaa6b17">More...</a><br /></td></tr>
+<tr class="separator:a4418f5d3d8b7e5a3edc07ad2ddaa6b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9058f6076fb3177aaa0cc00acb912c6a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dda/classdata__field__date.html#a9058f6076fb3177aaa0cc00acb912c6a">supports_preview</a> ()</td></tr>
+<tr class="memdesc:a9058f6076fb3177aaa0cc00acb912c6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return if the field type supports preview.  <a href="../../dc/dda/classdata__field__date.html#a9058f6076fb3177aaa0cc00acb912c6a">More...</a><br /></td></tr>
+<tr class="separator:a9058f6076fb3177aaa0cc00acb912c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55282f6f47974a9a9ace81e7c496e42e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/classdata__field__base.html#a55282f6f47974a9a9ace81e7c496e42e">text_export_supported</a> ()</td></tr>
 <tr class="memdesc:a55282f6f47974a9a9ace81e7c496e42e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per default, it is assumed that fields support text exporting.  <a href="../../d7/d88/classdata__field__base.html#a55282f6f47974a9a9ace81e7c496e42e">More...</a><br /></td></tr>
 <tr class="separator:a55282f6f47974a9a9ace81e7c496e42e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,6 +231,19 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MIN_PRIORITY</b> = 1
 const&#160;</td><td class="memItemRight" valign="bottom"><b>NO_PRIORITY</b> = 0</td></tr>
 <tr class="memdesc:a67c3a362b96dbc554ab6e2583b6f4ada"><td class="mdescLeft">&#160;</td><td class="mdescRight">priority value for invalid fields regarding indexing <br /></td></tr>
 <tr class="separator:a67c3a362b96dbc554ab6e2583b6f4ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ade86043785953dac848054ef22380eb3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/classdata__field__base.html#ade86043785953dac848054ef22380eb3">get_data_content</a> (int $recordid)</td></tr>
+<tr class="memdesc:ade86043785953dac848054ef22380eb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the data_content of the field, or generate it if it is in preview mode.  <a href="../../d7/d88/classdata__field__base.html#ade86043785953dac848054ef22380eb3">More...</a><br /></td></tr>
+<tr class="separator:ade86043785953dac848054ef22380eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a05f51333fba0d805d35718a4d0745dbc"><td class="memItemLeft" align="right" valign="top"><a id="a05f51333fba0d805d35718a4d0745dbc" name="a05f51333fba0d805d35718a4d0745dbc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>$preview</b> = false</td></tr>
+<tr class="memdesc:a05f51333fba0d805d35718a4d0745dbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">whether the field is used in preview mode. <br /></td></tr>
+<tr class="separator:a05f51333fba0d805d35718a4d0745dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
@@ -643,6 +670,81 @@ static priority&#160;</td><td class="memItemRight" valign="bottom"><b>$priority<
 
 </div>
 </div>
+<a id="ade86043785953dac848054ef22380eb3" name="ade86043785953dac848054ef22380eb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade86043785953dac848054ef22380eb3">&#9670;&#160;</a></span>get_data_content()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">data_field_base::get_data_content </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$recordid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the data_content of the field, or generate it if it is in preview mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$recordid</td><td>the record id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass|bool</td><td>the record data or false if none </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa9f49dc51f39fd367c242cc22b272ea9" name="aa9f49dc51f39fd367c242cc22b272ea9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9f49dc51f39fd367c242cc22b272ea9">&#9670;&#160;</a></span>get_data_content_preview()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">data_field_date::get_data_content_preview </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$recordid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a fake data_content for this field to be used in preset previews. </p>
+<p >Data plugins must override this method and support_preview in order to enable preset preview for this field.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$recordid</td><td>the fake record id </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass</td><td>the fake record </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="../../d7/d88/classdata__field__base.html#a7bbc86064f5e8bcadfd55b0a503146a4">data_field_base</a>.</p>
+
+</div>
+</div>
 <a id="a2a69569f367f8bda0e1b9c2e0f17e7db" name="a2a69569f367f8bda0e1b9c2e0f17e7db"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2a69569f367f8bda0e1b9c2e0f17e7db">&#9670;&#160;</a></span>get_name()</h2>
 
@@ -670,6 +772,39 @@ static priority&#160;</td><td class="memItemRight" valign="bottom"><b>$priority<
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>the filed type. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a243b385c48fc9ac2503cdcf4b21d982a" name="a243b385c48fc9ac2503cdcf4b21d982a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a243b385c48fc9ac2503cdcf4b21d982a">&#9670;&#160;</a></span>get_preview()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">data_field_base::get_preview </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the field preview value. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -959,6 +1094,68 @@ static priority&#160;</td><td class="memItemRight" valign="bottom"><b>$priority<
 
 </div>
 </div>
+<a id="a4418f5d3d8b7e5a3edc07ad2ddaa6b17" name="a4418f5d3d8b7e5a3edc07ad2ddaa6b17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4418f5d3d8b7e5a3edc07ad2ddaa6b17">&#9670;&#160;</a></span>set_preview()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">data_field_base::set_preview </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$preview</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the field to preview mode. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">bool</td><td class="paramname">$preview</td><td>the new preview value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9058f6076fb3177aaa0cc00acb912c6a" name="a9058f6076fb3177aaa0cc00acb912c6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9058f6076fb3177aaa0cc00acb912c6a">&#9670;&#160;</a></span>supports_preview()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">data_field_date::supports_preview </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return if the field type supports preview. </p>
+<p >Fields without a preview cannot be displayed in the preset preview.</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>if the plugin supports preview. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="../../d7/d88/classdata__field__base.html#a4d528ba48dd8e8ffcce084dac3eba21c">data_field_base</a>.</p>
+
+</div>
+</div>
 <a id="a55282f6f47974a9a9ace81e7c496e42e" name="a55282f6f47974a9a9ace81e7c496e42e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a55282f6f47974a9a9ace81e7c496e42e">&#9670;&#160;</a></span>text_export_supported()</h2>
 
@@ -1088,7 +1285,7 @@ static priority&#160;</td><td class="memItemRight" valign="bottom"><b>$priority<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 18 2022 04:34:24 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Sep 25 2022 04:21:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

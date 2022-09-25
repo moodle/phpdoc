@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220915) (b077af7e890)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220922) (8f492a836a5)</div>
   </td>
  </tr>
  </tbody>
@@ -110,6 +110,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a44ba0443bd3ba98b599457cd8dc4aa6c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/classassignfeedback__editpdf_1_1pdf.html#a44ba0443bd3ba98b599457cd8dc4aa6c">get_image</a> ($pageno)</td></tr>
 <tr class="memdesc:a44ba0443bd3ba98b599457cd8dc4aa6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate an image of the specified page in the PDF.  <a href="../../d2/d4d/classassignfeedback__editpdf_1_1pdf.html#a44ba0443bd3ba98b599457cd8dc4aa6c">More...</a><br /></td></tr>
 <tr class="separator:a44ba0443bd3ba98b599457cd8dc4aa6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56f5b68fd290f6ed8432f132429dcc6c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/classassignfeedback__editpdf_1_1pdf.html#a56f5b68fd290f6ed8432f132429dcc6c">get_images</a> ()</td></tr>
+<tr class="memdesc:a56f5b68fd290f6ed8432f132429dcc6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate images from the PDF.  <a href="../../d2/d4d/classassignfeedback__editpdf_1_1pdf.html#a56f5b68fd290f6ed8432f132429dcc6c">More...</a><br /></td></tr>
+<tr class="separator:a56f5b68fd290f6ed8432f132429dcc6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d314794928f45cc161d554be2bb8874"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/classassignfeedback__editpdf_1_1pdf.html#a2d314794928f45cc161d554be2bb8874">load_pdf</a> ($filename)</td></tr>
 <tr class="memdesc:a2d314794928f45cc161d554be2bb8874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the specified PDF and set the initial output configuration Used when processing comments and outputting a new PDF.  <a href="../../d2/d4d/classassignfeedback__editpdf_1_1pdf.html#a2d314794928f45cc161d554be2bb8874">More...</a><br /></td></tr>
 <tr class="separator:a2d314794928f45cc161d554be2bb8874"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,6 +198,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a4a28f2e893947a5329122547055ef967"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/classassignfeedback__editpdf_1_1pdf.html#a4a28f2e893947a5329122547055ef967">create_page_from_source</a> ($pageno)</td></tr>
 <tr class="memdesc:a4a28f2e893947a5329122547055ef967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a page from a source PDF.  <a href="../../d2/d4d/classassignfeedback__editpdf_1_1pdf.html#a4a28f2e893947a5329122547055ef967">More...</a><br /></td></tr>
 <tr class="separator:a4a28f2e893947a5329122547055ef967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a701be5cc35003ef148da9bc004bd7711"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/classassignfeedback__editpdf_1_1pdf.html#a701be5cc35003ef148da9bc004bd7711">precheck_generate_image</a> ()</td></tr>
+<tr class="memdesc:a701be5cc35003ef148da9bc004bd7711"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make sure the file name and image folder are ready before generate image.  <a href="../../d2/d4d/classassignfeedback__editpdf_1_1pdf.html#a701be5cc35003ef148da9bc004bd7711">More...</a><br /></td></tr>
+<tr class="separator:a701be5cc35003ef148da9bc004bd7711"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -805,6 +811,31 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>$scale</b> = 0.0</td
 
 </div>
 </div>
+<a id="a56f5b68fd290f6ed8432f132429dcc6c" name="a56f5b68fd290f6ed8432f132429dcc6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56f5b68fd290f6ed8432f132429dcc6c">&#9670;&#160;</a></span>get_images()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">assignfeedback_editpdf\pdf::get_images </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate images from the PDF. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>Array of filename of the generated images </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a2d314794928f45cc161d554be2bb8874" name="a2d314794928f45cc161d554be2bb8874"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2d314794928f45cc161d554be2bb8874">&#9670;&#160;</a></span>load_pdf()</h2>
 
@@ -856,6 +887,39 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>$scale</b> = 0.0</td
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">int</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a701be5cc35003ef148da9bc004bd7711" name="a701be5cc35003ef148da9bc004bd7711"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a701be5cc35003ef148da9bc004bd7711">&#9670;&#160;</a></span>precheck_generate_image()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">assignfeedback_editpdf\pdf::precheck_generate_image </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Make sure the file name and image folder are ready before generate image. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1038,7 +1102,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>$scale</b> = 0.0</td
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 18 2022 04:36:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Sep 25 2022 04:22:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

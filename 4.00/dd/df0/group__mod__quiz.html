@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.4+ (Build: 20220915) (844abeaf5d3)</div>
+   <div id="projectbrief">Moodle 4.0.4+ (Build: 20220922) (d708740c3fd)</div>
   </td>
  </tr>
  </tbody>
@@ -438,6 +438,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga695fd1bcd04638147ec95187e2e93d2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga695fd1bcd04638147ec95187e2e93d2e">duplicate_quiz</a> ($course, $<a class="el" href="../../dc/d8f/classquiz.html">quiz</a>)</td></tr>
 <tr class="memdesc:ga695fd1bcd04638147ec95187e2e93d2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A helper method to emulate duplication of the quiz.  <a href="../../dd/df0/group__mod__quiz.html#ga695fd1bcd04638147ec95187e2e93d2e">More...</a><br /></td></tr>
 <tr class="separator:ga695fd1bcd04638147ec95187e2e93d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae72e44861b65a463cf772279c3ca32fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gae72e44861b65a463cf772279c3ca32fd">mod_quiz_calculate_question_stats</a> (<a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memdesc:gae72e44861b65a463cf772279c3ca32fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement the calculate_question_stats callback.  <a href="../../dd/df0/group__mod__quiz.html#gae72e44861b65a463cf772279c3ca32fd">More...</a><br /></td></tr>
+<tr class="separator:gae72e44861b65a463cf772279c3ca32fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6d868ab4f93f0b62cb5721bada034f47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga6d868ab4f93f0b62cb5721bada034f47">mod_quiz_cm_info_dynamic</a> (<a class="el" href="../../df/db9/classcm__info.html">cm_info</a> $cm)</td></tr>
 <tr class="memdesc:ga6d868ab4f93f0b62cb5721bada034f47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets dynamic information about a course module.  <a href="../../dd/df0/group__mod__quiz.html#ga6d868ab4f93f0b62cb5721bada034f47">More...</a><br /></td></tr>
 <tr class="separator:ga6d868ab4f93f0b62cb5721bada034f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1266,6 +1269,39 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">cm_info|null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gae72e44861b65a463cf772279c3ca32fd" name="gae72e44861b65a463cf772279c3ca32fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae72e44861b65a463cf772279c3ca32fd">&#9670;&#160;</a></span>mod_quiz_calculate_question_stats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz_calculate_question_stats </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramname"><em>$context</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implement the calculate_question_stats callback. </p>
+<p >This enables quiz statistics to be shown in statistics columns in the database.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">context</td><td class="paramname">$context</td><td>return the statistics related to this context (which will be a quiz context). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">all_calculated_for_qubaid_condition|null</td><td>The statistics for this quiz, if any, else null. </td></tr>
   </table>
   </dd>
 </dl>
@@ -6826,7 +6862,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 18 2022 04:25:04 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Sep 25 2022 04:13:51 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

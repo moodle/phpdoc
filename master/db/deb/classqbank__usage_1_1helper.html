@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220915) (b077af7e890)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220922) (8f492a836a5)</div>
   </td>
  </tr>
  </tbody>
@@ -66,9 +66,15 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aa105525c6f039e45ab5972ce1945958d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/deb/classqbank__usage_1_1helper.html#aa105525c6f039e45ab5972ce1945958d">get_question_attempt_usage_sql</a> ()</td></tr>
+<tr class="memdesc:aa105525c6f039e45ab5972ce1945958d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the question attempt usage sql.  <a href="../../db/deb/classqbank__usage_1_1helper.html#aa105525c6f039e45ab5972ce1945958d">More...</a><br /></td></tr>
+<tr class="separator:aa105525c6f039e45ab5972ce1945958d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16d4a7714b567d57109d19083c8dac27"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/deb/classqbank__usage_1_1helper.html#a16d4a7714b567d57109d19083c8dac27">get_question_attempts_count_in_quiz</a> (int $questionid, $quizid=null)</td></tr>
 <tr class="memdesc:a16d4a7714b567d57109d19083c8dac27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get question attempt count for the question.  <a href="../../db/deb/classqbank__usage_1_1helper.html#a16d4a7714b567d57109d19083c8dac27">More...</a><br /></td></tr>
 <tr class="separator:a16d4a7714b567d57109d19083c8dac27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af92ecb3f53624a43c8bb561d4c94a06d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/deb/classqbank__usage_1_1helper.html#af92ecb3f53624a43c8bb561d4c94a06d">get_question_bank_usage_sql</a> ()</td></tr>
+<tr class="memdesc:af92ecb3f53624a43c8bb561d4c94a06d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the question bank usage sql.  <a href="../../db/deb/classqbank__usage_1_1helper.html#af92ecb3f53624a43c8bb561d4c94a06d">More...</a><br /></td></tr>
+<tr class="separator:af92ecb3f53624a43c8bb561d4c94a06d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a83f169629e937b7856149a1b438f5721"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/deb/classqbank__usage_1_1helper.html#a83f169629e937b7856149a1b438f5721">get_question_entry_usage_count</a> ($question)</td></tr>
 <tr class="memdesc:a83f169629e937b7856149a1b438f5721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the usage count for a question.  <a href="../../db/deb/classqbank__usage_1_1helper.html#a83f169629e937b7856149a1b438f5721">More...</a><br /></td></tr>
 <tr class="separator:a83f169629e937b7856149a1b438f5721"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -77,6 +83,40 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a57b16fbda9de940790ae3c278446499c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa105525c6f039e45ab5972ce1945958d" name="aa105525c6f039e45ab5972ce1945958d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa105525c6f039e45ab5972ce1945958d">&#9670;&#160;</a></span>get_question_attempt_usage_sql()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static qbank_usage\helper::get_question_attempt_usage_sql </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the question attempt usage sql. </p>
+<p >The resulting string which represents a sql query has then to be called accompanying a $params array which includes the necessary parameter, the question id.</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a16d4a7714b567d57109d19083c8dac27" name="a16d4a7714b567d57109d19083c8dac27"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a16d4a7714b567d57109d19083c8dac27">&#9670;&#160;</a></span>get_question_attempts_count_in_quiz()</h2>
 
@@ -122,6 +162,40 @@ Static Public Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">int</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af92ecb3f53624a43c8bb561d4c94a06d" name="af92ecb3f53624a43c8bb561d4c94a06d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af92ecb3f53624a43c8bb561d4c94a06d">&#9670;&#160;</a></span>get_question_bank_usage_sql()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static qbank_usage\helper::get_question_bank_usage_sql </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the question bank usage sql. </p>
+<p >The resulting string which represents a sql query has then to be called accompanying a $params array which includes the necessary parameters in the correct order which are the question id, then the component and finally the question area.</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -207,7 +281,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 18 2022 04:39:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Sep 25 2022 04:24:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>
