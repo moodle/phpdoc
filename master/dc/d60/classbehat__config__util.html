@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220922) (8f492a836a5)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220930) (24f97edd91e)</div>
   </td>
  </tr>
  </tbody>
@@ -186,6 +186,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a435b74a91acd1c0dbcd5fbe73b651bce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d60/classbehat__config__util.html#a435b74a91acd1c0dbcd5fbe73b651bce">remove_blacklisted_features_from_list</a> ($features, $blacklist)</td></tr>
 <tr class="memdesc:a435b74a91acd1c0dbcd5fbe73b651bce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove list of blacklisted features from the feature list.  <a href="../../dc/d60/classbehat__config__util.html#a435b74a91acd1c0dbcd5fbe73b651bce">More...</a><br /></td></tr>
 <tr class="separator:a435b74a91acd1c0dbcd5fbe73b651bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1306b409f3881058271fda3bb6b8191"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d60/classbehat__config__util.html#ad1306b409f3881058271fda3bb6b8191">sort_component_contexts</a> (array $contexts)</td></tr>
+<tr class="memdesc:ad1306b409f3881058271fda3bb6b8191"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort the list of components contexts.  <a href="../../dc/d60/classbehat__config__util.html#ad1306b409f3881058271fda3bb6b8191">More...</a><br /></td></tr>
+<tr class="separator:ad1306b409f3881058271fda3bb6b8191"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Behat configuration manager. </p>
@@ -1635,13 +1638,54 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad1306b409f3881058271fda3bb6b8191" name="ad1306b409f3881058271fda3bb6b8191"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1306b409f3881058271fda3bb6b8191">&#9670;&#160;</a></span>sort_component_contexts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_config_util::sort_component_contexts </td>
+          <td>(</td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$contexts</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sort the list of components contexts. </p>
+<p >This ensures that contexts are sorted consistently. Core hooks defined in the behat_hooks class <em>must</em> be defined first.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$contexts</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>The sorted context list </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>lib/behat/classes/behat_config_util.php</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 25 2022 04:20:51 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 2 2022 04:27:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

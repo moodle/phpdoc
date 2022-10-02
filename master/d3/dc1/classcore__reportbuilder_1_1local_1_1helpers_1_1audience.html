@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220922) (8f492a836a5)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20220930) (24f97edd91e)</div>
   </td>
  </tr>
  </tbody>
@@ -73,7 +73,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:aecd5d5b1f5e78424ea8d07191551fe4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns list of reports that the specified user can access.  <a href="../../d3/dc1/classcore__reportbuilder_1_1local_1_1helpers_1_1audience.html#aecd5d5b1f5e78424ea8d07191551fe4d">More...</a><br /></td></tr>
 <tr class="separator:aecd5d5b1f5e78424ea8d07191551fe4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80a362f1fb4c80fcb627f11524d291c2"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc1/classcore__reportbuilder_1_1local_1_1helpers_1_1audience.html#a80a362f1fb4c80fcb627f11524d291c2">get_base_records</a> (int $reportid)</td></tr>
-<tr class="memdesc:a80a362f1fb4c80fcb627f11524d291c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return audience base records for a given report.  <a href="../../d3/dc1/classcore__reportbuilder_1_1local_1_1helpers_1_1audience.html#a80a362f1fb4c80fcb627f11524d291c2">More...</a><br /></td></tr>
+<tr class="memdesc:a80a362f1fb4c80fcb627f11524d291c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return audience instances for a given report.  <a href="../../d3/dc1/classcore__reportbuilder_1_1local_1_1helpers_1_1audience.html#a80a362f1fb4c80fcb627f11524d291c2">More...</a><br /></td></tr>
 <tr class="separator:a80a362f1fb4c80fcb627f11524d291c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2016076611202c6a41820519c67c5002"><td class="memItemLeft" align="right" valign="top"><a id="a2016076611202c6a41820519c67c5002" name="a2016076611202c6a41820519c67c5002"></a>
 static&#160;</td><td class="memItemRight" valign="bottom"><b>purge_caches</b> ()</td></tr>
@@ -120,7 +120,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>purge_caches</b> ()
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001057">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 - please do not use this function any more, {</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001059">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 - please do not use this function any more, {</dd></dl>
 <dl class="section see"><dt>See also</dt><dd>custom_report_audience_cards_exporter} </dd></dl>
 
 </div>
@@ -190,7 +190,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>purge_caches</b> ()
 </table>
 </div><div class="memdoc">
 
-<p>Return audience base records for a given report. </p>
+<p>Return audience instances for a given report. </p>
+<p >Note that any records pointing to invalid audience types will be excluded</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$reportid</td><td></td></tr>
@@ -354,7 +355,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>purge_caches</b> ()
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 25 2022 04:23:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 2 2022 04:30:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>
