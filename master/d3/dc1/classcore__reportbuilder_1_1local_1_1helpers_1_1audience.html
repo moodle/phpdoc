@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220930) (24f97edd91e)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20221007) (cc4fec275f8)</div>
   </td>
  </tr>
  </tbody>
@@ -70,7 +70,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae0082157da111afc594698b4a32df8d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the audiences types the current user can add to, organised by categories.  <a href="../../d3/dc1/classcore__reportbuilder_1_1local_1_1helpers_1_1audience.html#ae0082157da111afc594698b4a32df8d9">More...</a><br /></td></tr>
 <tr class="separator:ae0082157da111afc594698b4a32df8d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecd5d5b1f5e78424ea8d07191551fe4d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc1/classcore__reportbuilder_1_1local_1_1helpers_1_1audience.html#aecd5d5b1f5e78424ea8d07191551fe4d">get_allowed_reports</a> (?int $userid=null)</td></tr>
-<tr class="memdesc:aecd5d5b1f5e78424ea8d07191551fe4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns list of reports that the specified user can access.  <a href="../../d3/dc1/classcore__reportbuilder_1_1local_1_1helpers_1_1audience.html#aecd5d5b1f5e78424ea8d07191551fe4d">More...</a><br /></td></tr>
+<tr class="memdesc:aecd5d5b1f5e78424ea8d07191551fe4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns list of report IDs that the specified user can access, based on audience configuration.  <a href="../../d3/dc1/classcore__reportbuilder_1_1local_1_1helpers_1_1audience.html#aecd5d5b1f5e78424ea8d07191551fe4d">More...</a><br /></td></tr>
 <tr class="separator:aecd5d5b1f5e78424ea8d07191551fe4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80a362f1fb4c80fcb627f11524d291c2"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc1/classcore__reportbuilder_1_1local_1_1helpers_1_1audience.html#a80a362f1fb4c80fcb627f11524d291c2">get_base_records</a> (int $reportid)</td></tr>
 <tr class="memdesc:a80a362f1fb4c80fcb627f11524d291c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return audience instances for a given report.  <a href="../../d3/dc1/classcore__reportbuilder_1_1local_1_1helpers_1_1audience.html#a80a362f1fb4c80fcb627f11524d291c2">More...</a><br /></td></tr>
@@ -83,10 +83,13 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>purge_caches</b> ()
 <tr class="memdesc:a9ec6459b49d40f2e00cb650304a772f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return appropriate list of where clauses and params for given audiences.  <a href="../../d3/dc1/classcore__reportbuilder_1_1local_1_1helpers_1_1audience.html#a9ec6459b49d40f2e00cb650304a772f8">More...</a><br /></td></tr>
 <tr class="separator:a9ec6459b49d40f2e00cb650304a772f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a098402b33200a0eca0909953ed491733"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc1/classcore__reportbuilder_1_1local_1_1helpers_1_1audience.html#a098402b33200a0eca0909953ed491733">user_reports_list</a> (?int $userid=null)</td></tr>
-<tr class="memdesc:a098402b33200a0eca0909953ed491733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return list of report ID's specified user can access.  <a href="../../d3/dc1/classcore__reportbuilder_1_1local_1_1helpers_1_1audience.html#a098402b33200a0eca0909953ed491733">More...</a><br /></td></tr>
+<tr class="memdesc:a098402b33200a0eca0909953ed491733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return list of report ID's specified user can access, based on audience configuration.  <a href="../../d3/dc1/classcore__reportbuilder_1_1local_1_1helpers_1_1audience.html#a098402b33200a0eca0909953ed491733">More...</a><br /></td></tr>
 <tr class="separator:a098402b33200a0eca0909953ed491733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae524a6a0d312cbabaf6d28f5e4280387"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc1/classcore__reportbuilder_1_1local_1_1helpers_1_1audience.html#ae524a6a0d312cbabaf6d28f5e4280387">user_reports_list_access_sql</a> (string $reporttablealias, ?int $userid=null, ?<a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>=null)</td></tr>
+<tr class="memdesc:ae524a6a0d312cbabaf6d28f5e4280387"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns SQL to limit the list of reports to those that the given user has access to.  <a href="../../d3/dc1/classcore__reportbuilder_1_1local_1_1helpers_1_1audience.html#ae524a6a0d312cbabaf6d28f5e4280387">More...</a><br /></td></tr>
+<tr class="separator:ae524a6a0d312cbabaf6d28f5e4280387"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8fc8a953a5dbe4e5577bbd339d78321"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc1/classcore__reportbuilder_1_1local_1_1helpers_1_1audience.html#ae8fc8a953a5dbe4e5577bbd339d78321">user_reports_list_sql</a> (string $reporttablealias, ?int $userid=null)</td></tr>
-<tr class="memdesc:ae8fc8a953a5dbe4e5577bbd339d78321"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate SQL select clause and params for selecting reports specified user can access.  <a href="../../d3/dc1/classcore__reportbuilder_1_1local_1_1helpers_1_1audience.html#ae8fc8a953a5dbe4e5577bbd339d78321">More...</a><br /></td></tr>
+<tr class="memdesc:ae8fc8a953a5dbe4e5577bbd339d78321"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate SQL select clause and params for selecting reports specified user can access, based on audience configuration.  <a href="../../d3/dc1/classcore__reportbuilder_1_1local_1_1helpers_1_1audience.html#ae8fc8a953a5dbe4e5577bbd339d78321">More...</a><br /></td></tr>
 <tr class="separator:ae8fc8a953a5dbe4e5577bbd339d78321"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -149,8 +152,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>purge_caches</b> ()
 </table>
 </div><div class="memdoc">
 
-<p>Returns list of reports that the specified user can access. </p>
-<p >Note this is potentially very expensive to calculate if a site has lots of reports, with lots of audiences, so we cache the result for the duration of the users session</p>
+<p>Returns list of report IDs that the specified user can access, based on audience configuration. </p>
+<p >This can be expensive if the site has lots of reports, with lots of audiences, so we cache the result for the duration of the users session</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$userid</td><td>User ID to check, or the current user if omitted </td></tr>
@@ -159,7 +162,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>purge_caches</b> ()
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array</td><td></td></tr>
+    <tr><td class="paramname">int[]</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -282,7 +285,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>purge_caches</b> ()
 </table>
 </div><div class="memdoc">
 
-<p>Return list of report ID's specified user can access. </p>
+<p>Return list of report ID's specified user can access, based on audience configuration. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$userid</td><td>User ID to check, or the current user if omitted </td></tr>
@@ -292,6 +295,76 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>purge_caches</b> ()
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">int[]</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae524a6a0d312cbabaf6d28f5e4280387" name="ae524a6a0d312cbabaf6d28f5e4280387"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae524a6a0d312cbabaf6d28f5e4280387">&#9670;&#160;</a></span>user_reports_list_access_sql()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_reportbuilder\local\helpers\audience::user_reports_list_access_sql </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$reporttablealias</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int&#160;</td>
+          <td class="paramname"><em>$userid</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?<a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramname"><em>$context</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns SQL to limit the list of reports to those that the given user has access to. </p>
+<ul>
+<li>A user with 'editall' capability will have access to all reports</li>
+<li>A user with 'edit' capability will have access to:<ul>
+<li>Those reports this user has created</li>
+<li>Those reports this user is in audience of</li>
+</ul>
+</li>
+<li>A user with 'view' capability will have access to:<ul>
+<li>Those reports this user is in audience of</li>
+</ul>
+</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$reporttablealias</td><td></td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$userid</td><td>User ID to check, or the current user if omitted </td></tr>
+    <tr><td class="paramtype">context&#160;|&#160;null</td><td class="paramname">$context</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -332,7 +405,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>purge_caches</b> ()
 </table>
 </div><div class="memdoc">
 
-<p>Generate SQL select clause and params for selecting reports specified user can access. </p>
+<p>Generate SQL select clause and params for selecting reports specified user can access, based on audience configuration. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$reporttablealias</td><td></td></tr>
@@ -355,7 +428,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>purge_caches</b> ()
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 2 2022 04:30:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 9 2022 04:22:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220930) (24f97edd91e)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20221007) (cc4fec275f8)</div>
   </td>
  </tr>
  </tbody>
@@ -98,6 +98,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2a71ef1b8a1e9fb357f57d07a5ee1d75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df3/classmod__data_1_1manager.html#a2a71ef1b8a1e9fb357f57d07a5ee1d75">get_instance</a> ()</td></tr>
 <tr class="memdesc:a2a71ef1b8a1e9fb357f57d07a5ee1d75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current instance.  <a href="../../d5/df3/classmod__data_1_1manager.html#a2a71ef1b8a1e9fb357f57d07a5ee1d75">More...</a><br /></td></tr>
 <tr class="separator:a2a71ef1b8a1e9fb357f57d07a5ee1d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7f59dc7cf01b2ca0e5028958c99e057"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df3/classmod__data_1_1manager.html#af7f59dc7cf01b2ca0e5028958c99e057">get_renderer</a> (?<a class="el" href="../../dc/ded/classmoodle__page.html">moodle_page</a> $page=null)</td></tr>
+<tr class="memdesc:af7f59dc7cf01b2ca0e5028958c99e057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current module renderer.  <a href="../../d5/df3/classmod__data_1_1manager.html#af7f59dc7cf01b2ca0e5028958c99e057">More...</a><br /></td></tr>
+<tr class="separator:af7f59dc7cf01b2ca0e5028958c99e057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2df117ccc95a3700d9799bc46654d43"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df3/classmod__data_1_1manager.html#ae2df117ccc95a3700d9799bc46654d43">get_template</a> (string $templatename, array $options=[])</td></tr>
 <tr class="memdesc:ae2df117ccc95a3700d9799bc46654d43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a specific template.  <a href="../../d5/df3/classmod__data_1_1manager.html#ae2df117ccc95a3700d9799bc46654d43">More...</a><br /></td></tr>
 <tr class="separator:ae2df117ccc95a3700d9799bc46654d43"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -590,6 +593,38 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>PLUGINNAME</b> = 'mo
 
 </div>
 </div>
+<a id="af7f59dc7cf01b2ca0e5028958c99e057" name="af7f59dc7cf01b2ca0e5028958c99e057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7f59dc7cf01b2ca0e5028958c99e057">&#9670;&#160;</a></span>get_renderer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_data\manager::get_renderer </td>
+          <td>(</td>
+          <td class="paramtype">?<a class="el" href="../../dc/ded/classmoodle__page.html">moodle_page</a>&#160;</td>
+          <td class="paramname"><em>$page</em> = <code>null</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the current module renderer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../dc/ded/classmoodle__page.html">moodle_page</a>&#160;|&#160;null</td><td class="paramname">$page</td><td>the current page </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../d5/d31/classmod__data__renderer.html">mod_data_renderer</a></td><td>the module renderer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ae2df117ccc95a3700d9799bc46654d43" name="ae2df117ccc95a3700d9799bc46654d43"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae2df117ccc95a3700d9799bc46654d43">&#9670;&#160;</a></span>get_template()</h2>
 
@@ -618,6 +653,11 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>PLUGINNAME</b> = 'mo
 
 <p>Return a specific template. </p>
 <p >NOTE: this method returns a default template if the module template is empty. However, it won't update the template database field.</p>
+<p >Some possible options:</p><ul>
+<li>search: string with the current searching text.</li>
+<li>page: integer repesenting the current pagination page numbre (if any)</li>
+<li>baseurl: a <a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a> object to the current page.</li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$templatename</td><td></td></tr>
@@ -752,7 +792,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>PLUGINNAME</b> = 'mo
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 2 2022 04:30:36 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 9 2022 04:22:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

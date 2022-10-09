@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20220930) (24f97edd91e)</div>
+   <div id="projectbrief">Moodle 4.1dev (Build: 20221007) (cc4fec275f8)</div>
   </td>
  </tr>
  </tbody>
@@ -423,6 +423,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a17896707600b6f12a885e0928cad3c62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#a17896707600b6f12a885e0928cad3c62">sql_null_from_clause</a> ()</td></tr>
 <tr class="memdesc:a17896707600b6f12a885e0928cad3c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the FROM clause required by some DBs in all SELECT statements.  <a href="../../d3/d6e/classmoodle__database.html#a17896707600b6f12a885e0928cad3c62">More...</a><br /></td></tr>
 <tr class="separator:a17896707600b6f12a885e0928cad3c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eb3d5f73789b5ed8c809e6fe1a0fa84"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#a7eb3d5f73789b5ed8c809e6fe1a0fa84">sql_order_by_null</a> (string $fieldname, int $<a class="el" href="../../dc/d71/group___imap___client.html#ga4bd31bcedb7b4943aac2da78d0d84afe">sort</a>=SORT_ASC)</td></tr>
+<tr class="memdesc:a7eb3d5f73789b5ed8c809e6fe1a0fa84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the SQL text to be used to order by columns, standardising the return pattern of null values across database types to sort nulls first when ascending and last when descending.  <a href="../../d3/d6e/classmoodle__database.html#a7eb3d5f73789b5ed8c809e6fe1a0fa84">More...</a><br /></td></tr>
+<tr class="separator:a7eb3d5f73789b5ed8c809e6fe1a0fa84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e51c0085bf05d53d7fb61840645f2c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#a4e51c0085bf05d53d7fb61840645f2c7">sql_order_by_text</a> ($fieldname, $numchars=32)</td></tr>
 <tr class="memdesc:a4e51c0085bf05d53d7fb61840645f2c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the SQL text to be used to order by one TEXT (clob) column, because some RDBMS doesn't support direct ordering of such fields.  <a href="../../d3/d6e/classmoodle__database.html#a4e51c0085bf05d53d7fb61840645f2c7">More...</a><br /></td></tr>
 <tr class="separator:a4e51c0085bf05d53d7fb61840645f2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -8030,6 +8033,59 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 
 </div>
 </div>
+<a id="a7eb3d5f73789b5ed8c809e6fe1a0fa84" name="a7eb3d5f73789b5ed8c809e6fe1a0fa84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eb3d5f73789b5ed8c809e6fe1a0fa84">&#9670;&#160;</a></span>sql_order_by_null()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">moodle_database::sql_order_by_null </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$fieldname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$sort</em> = <code>SORT_ASC</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the SQL text to be used to order by columns, standardising the return pattern of null values across database types to sort nulls first when ascending and last when descending. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$fieldname</td><td>The name of the field we need to sort by. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$sort</td><td>An order to sort the results in. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>The piece of SQL code to be used in your statement. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../db/df4/classoci__native__moodle__database.html#acc78b8866ff5a2fcede701b0b6bf097c">oci_native_moodle_database</a>, and <a class="el" href="../../d2/db6/classpgsql__native__moodle__database.html#a822470c86b6a680bd28e063d6f775cf8">pgsql_native_moodle_database</a>.</p>
+
+</div>
+</div>
 <a id="a4e51c0085bf05d53d7fb61840645f2c7" name="a4e51c0085bf05d53d7fb61840645f2c7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4e51c0085bf05d53d7fb61840645f2c7">&#9670;&#160;</a></span>sql_order_by_text()</h2>
 
@@ -8833,7 +8889,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 2 2022 04:27:24 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 9 2022 04:18:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>
