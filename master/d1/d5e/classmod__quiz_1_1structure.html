@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20221007) (cc4fec275f8)</div>
+   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221014) (3bc792b9b8d)</div>
   </td>
  </tr>
  </tbody>
@@ -186,6 +186,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abd49e117d3d28fcd368046c80da2e6e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5e/classmod__quiz_1_1structure.html#abd49e117d3d28fcd368046c80da2e6e6">has_questions</a> ()</td></tr>
 <tr class="memdesc:abd49e117d3d28fcd368046c80da2e6e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether there are any questions in the quiz.  <a href="../../d1/d5e/classmod__quiz_1_1structure.html#abd49e117d3d28fcd368046c80da2e6e6">More...</a><br /></td></tr>
 <tr class="separator:abd49e117d3d28fcd368046c80da2e6e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0f8d7151972143ff6c70b9efc6c07b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5e/classmod__quiz_1_1structure.html#ab0f8d7151972143ff6c70b9efc6c07b1">has_use_capability</a> (int $slotnumber)</td></tr>
+<tr class="memdesc:ab0f8d7151972143ff6c70b9efc6c07b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does the current user have '...use' capability over the question(s) in a given slot?  <a href="../../d1/d5e/classmod__quiz_1_1structure.html#ab0f8d7151972143ff6c70b9efc6c07b1">More...</a><br /></td></tr>
+<tr class="separator:ab0f8d7151972143ff6c70b9efc6c07b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af00b057e55ad7d2e87439fcc0d13e8b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5e/classmod__quiz_1_1structure.html#af00b057e55ad7d2e87439fcc0d13e8b3">is_first_section</a> ($section)</td></tr>
 <tr class="memdesc:af00b057e55ad7d2e87439fcc0d13e8b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this the first section in the quiz?  <a href="../../d1/d5e/classmod__quiz_1_1structure.html#af00b057e55ad7d2e87439fcc0d13e8b3">More...</a><br /></td></tr>
 <tr class="separator:af00b057e55ad7d2e87439fcc0d13e8b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1352,8 +1355,8 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$slotsinorder</
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000983">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71573" class="el">MDL-71573</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000251">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000981">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71573" class="el">MDL-71573</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000247">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
 
 </div>
 </div>
@@ -1465,6 +1468,38 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$slotsinorder</
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td>true if there is at least one question in the quiz. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab0f8d7151972143ff6c70b9efc6c07b1" name="ab0f8d7151972143ff6c70b9efc6c07b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0f8d7151972143ff6c70b9efc6c07b1">&#9670;&#160;</a></span>has_use_capability()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\structure::has_use_capability </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$slotnumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Does the current user have '...use' capability over the question(s) in a given slot? </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$slotnumber</td><td>the index of the slot in question. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>true if they have the required capability. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2271,7 +2306,7 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$slotsinorder</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 9 2022 04:22:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 16 2022 04:31:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.4+ (Build: 20221007) (b4493c2a168)</div>
+   <div id="projectbrief">Moodle 4.0.4+ (Build: 20221014) (00ad2a14daf)</div>
   </td>
  </tr>
  </tbody>
@@ -73,6 +73,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac9fea5b91524935eb7f9db292dcc6aba"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddc/classbehat__context__helper.html#ac9fea5b91524935eb7f9db292dcc6aba">get_component_context</a> (string $component)</td></tr>
 <tr class="memdesc:ac9fea5b91524935eb7f9db292dcc6aba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the context for the specified component or subsystem.  <a href="../../df/ddc/classbehat__context__helper.html#ac9fea5b91524935eb7f9db292dcc6aba">More...</a><br /></td></tr>
 <tr class="separator:ac9fea5b91524935eb7f9db292dcc6aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabacfdaf24b500f96bd65202ef149415"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddc/classbehat__context__helper.html#aabacfdaf24b500f96bd65202ef149415">get_prefixed_contexts</a> (string $prefix)</td></tr>
+<tr class="memdesc:aabacfdaf24b500f96bd65202ef149415"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find all Behat contexts which match the specified context class name prefix.  <a href="../../df/ddc/classbehat__context__helper.html#aabacfdaf24b500f96bd65202ef149415">More...</a><br /></td></tr>
+<tr class="separator:aabacfdaf24b500f96bd65202ef149415"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cbec7d4a55d259ea2fd137ffa858c8f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddc/classbehat__context__helper.html#a2cbec7d4a55d259ea2fd137ffa858c8f">has_context</a> (string $classname)</td></tr>
 <tr class="memdesc:a2cbec7d4a55d259ea2fd137ffa858c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether there is a context of the specified classname.  <a href="../../df/ddc/classbehat__context__helper.html#a2cbec7d4a55d259ea2fd137ffa858c8f">More...</a><br /></td></tr>
 <tr class="separator:a2cbec7d4a55d259ea2fd137ffa858c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,6 +228,52 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$nonexistingc
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">behat_base|null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aabacfdaf24b500f96bd65202ef149415" name="aabacfdaf24b500f96bd65202ef149415"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabacfdaf24b500f96bd65202ef149415">&#9670;&#160;</a></span>get_prefixed_contexts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static behat_context_helper::get_prefixed_contexts </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$prefix</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Find all Behat contexts which match the specified context class name prefix. </p>
+<p ><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> uses a consistent class naming scheme for all Behat contexts, whereby the context name is in the format: </p><pre class="fragment">behat_{component}
+</pre><p> This method will return all contexts which match the specified prefix.</p>
+<p >For example, to find all editors, you would pass in 'behat_editor', and this might return:</p><ul>
+<li><a class="el" href="../../da/df3/classbehat__editor__atto.html">behat_editor_atto</a></li>
+<li><a class="el" href="../../d5/d7d/classbehat__editor__textarea.html">behat_editor_textarea</a></li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$prefix</td><td>The prefix to search for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Behat::Behat::Context::Context[]</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -399,7 +448,7 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$nonexistingc
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 9 2022 04:11:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 16 2022 04:20:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

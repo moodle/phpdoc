@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20221007) (cc4fec275f8)</div>
+   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221014) (3bc792b9b8d)</div>
   </td>
  </tr>
  </tbody>
@@ -74,8 +74,9 @@ Inheritance diagram for grade_report:</div>
   <map id="grade_5Freport_map" name="grade_5Freport_map">
 <area href="../../df/df6/classgrade__report__grader.html" title="Class providing an API for the grader report building and displaying." alt="grade_report_grader" shape="rect" coords="0,56,145,80"/>
 <area href="../../d6/dda/classgrade__report__overview.html" title="Class providing an API for the overview report building and displaying." alt="grade_report_overview" shape="rect" coords="155,56,300,80"/>
-<area href="../../dc/d4f/classgrade__report__user.html" title="Class providing an API for the user report building and displaying." alt="grade_report_user" shape="rect" coords="310,56,455,80"/>
-<area href="../../d9/db4/classgradereport__singleview.html" title="This class is the main class that must be implemented by a grade report plugin." alt="gradereport_singleview" shape="rect" coords="465,56,610,80"/>
+<area href="../../de/dc9/classgrade__report__summary.html" title="Class providing an API for the summary report building." alt="grade_report_summary" shape="rect" coords="310,56,455,80"/>
+<area href="../../dc/d4f/classgrade__report__user.html" title="Class providing an API for the user report building and displaying." alt="grade_report_user" shape="rect" coords="465,56,610,80"/>
+<area href="../../d9/db4/classgradereport__singleview.html" title="This class is the main class that must be implemented by a grade report plugin." alt="gradereport_singleview" shape="rect" coords="620,56,765,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -93,6 +94,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a52d457a8567607a9d7395f338be32e9c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#a52d457a8567607a9d7395f338be32e9c">get_pref</a> ($pref, $objectid=null)</td></tr>
 <tr class="memdesc:a52d457a8567607a9d7395f338be32e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the name of a user preference (without grade_report_ prefix), locally saves then returns the value of that preference.  <a href="../../da/dd4/classgrade__report.html#a52d457a8567607a9d7395f338be32e9c">More...</a><br /></td></tr>
 <tr class="separator:a52d457a8567607a9d7395f338be32e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad927502603e2e6f348fb4eaf488fdc64"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#ad927502603e2e6f348fb4eaf488fdc64">item_types</a> ()</td></tr>
+<tr class="memdesc:ad927502603e2e6f348fb4eaf488fdc64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get grade item type names in a course to use in filter dropdown.  <a href="../../da/dd4/classgrade__report.html#ad927502603e2e6f348fb4eaf488fdc64">More...</a><br /></td></tr>
+<tr class="separator:ad927502603e2e6f348fb4eaf488fdc64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2bfcc1ee4040749c95146f415a110c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#ad2bfcc1ee4040749c95146f415a110c2">process_action</a> ($target, $action)</td></tr>
 <tr class="memdesc:ad2bfcc1ee4040749c95146f415a110c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes a single action against a category, <a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a> or grade.  <a href="../../da/dd4/classgrade__report.html#ad2bfcc1ee4040749c95146f415a110c2">More...</a><br /></td></tr>
 <tr class="separator:ad2bfcc1ee4040749c95146f415a110c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,9 +110,15 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>setup_users</b> ()</td></tr>
 <tr class="memdesc:ad29290fc3aab2bc324648eb3861c2c0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up this report's user criteria to restrict the selection of users to display. <br /></td></tr>
 <tr class="separator:ad29290fc3aab2bc324648eb3861c2c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9408d6f895346c6ae5246c428c70f62f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#a9408d6f895346c6ae5246c428c70f62f">ungraded_counts</a> ()</td></tr>
+<tr class="memdesc:a9408d6f895346c6ae5246c428c70f62f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get ungraded grade items info and sum of all grade items in a course.  <a href="../../da/dd4/classgrade__report.html#a9408d6f895346c6ae5246c428c70f62f">More...</a><br /></td></tr>
+<tr class="separator:a9408d6f895346c6ae5246c428c70f62f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ac8501735aa6d5db79360f94236087695"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#ac8501735aa6d5db79360f94236087695">calculate_average</a> (<a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a> $gradeitem, array $info)</td></tr>
+<tr class="memdesc:ac8501735aa6d5db79360f94236087695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate average grade for a given grade item.  <a href="../../da/dd4/classgrade__report.html#ac8501735aa6d5db79360f94236087695">More...</a><br /></td></tr>
+<tr class="separator:ac8501735aa6d5db79360f94236087695"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8a1e24bf5abf31f796823a7c5a99bde"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#ad8a1e24bf5abf31f796823a7c5a99bde">supports_mygrades</a> ()</td></tr>
 <tr class="memdesc:ad8a1e24bf5abf31f796823a7c5a99bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows support for being used as a 'Grades' report.  <a href="../../da/dd4/classgrade__report.html#ad8a1e24bf5abf31f796823a7c5a99bde">More...</a><br /></td></tr>
 <tr class="separator:ad8a1e24bf5abf31f796823a7c5a99bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -372,6 +382,58 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 
 </div>
 </div>
+<a id="ac8501735aa6d5db79360f94236087695" name="ac8501735aa6d5db79360f94236087695"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8501735aa6d5db79360f94236087695">&#9670;&#160;</a></span>calculate_average()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static grade_report::calculate_average </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a>&#160;</td>
+          <td class="paramname"><em>$gradeitem</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculate average grade for a given grade item. </p>
+<p >Based on calculate_averages function from grade/report/user/lib.php</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a></td><td class="paramname">$gradeitem</td><td>Grade item </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$info</td><td>Ungraded grade items counts and report preferences. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>Average grade and meancount. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a0150ab3ac9c714ba81b011b3591857c6" name="a0150ab3ac9c714ba81b011b3591857c6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0150ab3ac9c714ba81b011b3591857c6">&#9670;&#160;</a></span>get_lang_string()</h2>
 
@@ -546,6 +608,31 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 
 </div>
 </div>
+<a id="ad927502603e2e6f348fb4eaf488fdc64" name="ad927502603e2e6f348fb4eaf488fdc64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad927502603e2e6f348fb4eaf488fdc64">&#9670;&#160;</a></span>item_types()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">grade_report::item_types </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get grade item type names in a course to use in filter dropdown. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>Item types. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad2bfcc1ee4040749c95146f415a110c2" name="ad2bfcc1ee4040749c95146f415a110c2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad2bfcc1ee4040749c95146f415a110c2">&#9670;&#160;</a></span>process_action()</h2>
 
@@ -595,7 +682,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../df/df6/classgrade__report__grader.html#a68c81488fc54f133db20aaf207822896">grade_report_grader</a>, <a class="el" href="../../d6/dda/classgrade__report__overview.html#a1a2cfa81c9622c4d3f1fa2823c6729c1">grade_report_overview</a>, <a class="el" href="../../d9/db4/classgradereport__singleview.html#a2c7a2e96337c84651be2255ebec29ee7">gradereport_singleview</a>, and <a class="el" href="../../dc/d4f/classgrade__report__user.html#af961a8a76683292ef8fc3bf428b8bdc7">grade_report_user</a>.</p>
+<p>Reimplemented in <a class="el" href="../../df/df6/classgrade__report__grader.html#a68c81488fc54f133db20aaf207822896">grade_report_grader</a>, <a class="el" href="../../d6/dda/classgrade__report__overview.html#a1a2cfa81c9622c4d3f1fa2823c6729c1">grade_report_overview</a>, <a class="el" href="../../d9/db4/classgradereport__singleview.html#a2c7a2e96337c84651be2255ebec29ee7">gradereport_singleview</a>, <a class="el" href="../../de/dc9/classgrade__report__summary.html#a545d6db91abea3a2d99305770dc3bbb9">grade_report_summary</a>, and <a class="el" href="../../dc/d4f/classgrade__report__user.html#af961a8a76683292ef8fc3bf428b8bdc7">grade_report_user</a>.</p>
 
 </div>
 </div>
@@ -637,7 +724,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../df/df6/classgrade__report__grader.html#acc48581fb22f621fa2819af4566293aa">grade_report_grader</a>, <a class="el" href="../../d6/dda/classgrade__report__overview.html#ad7fcd1e83acf6a083361acd62417d454">grade_report_overview</a>, <a class="el" href="../../d9/db4/classgradereport__singleview.html#aebec89628d9ab8982412dd5bd1adfd56">gradereport_singleview</a>, and <a class="el" href="../../dc/d4f/classgrade__report__user.html#a532ad1ff1ebf2687b104a5ca182cff39">grade_report_user</a>.</p>
+<p>Reimplemented in <a class="el" href="../../df/df6/classgrade__report__grader.html#acc48581fb22f621fa2819af4566293aa">grade_report_grader</a>, <a class="el" href="../../d6/dda/classgrade__report__overview.html#ad7fcd1e83acf6a083361acd62417d454">grade_report_overview</a>, <a class="el" href="../../d9/db4/classgradereport__singleview.html#aebec89628d9ab8982412dd5bd1adfd56">gradereport_singleview</a>, <a class="el" href="../../de/dc9/classgrade__report__summary.html#aaa50f18b3071efe4b1e3665f86043806">grade_report_summary</a>, and <a class="el" href="../../dc/d4f/classgrade__report__user.html#a532ad1ff1ebf2687b104a5ca182cff39">grade_report_user</a>.</p>
 
 </div>
 </div>
@@ -717,6 +804,32 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 <p>Shows support for being used as a 'Grades' report. </p>
 
 <p>Reimplemented in <a class="el" href="../../d6/dda/classgrade__report__overview.html#a581cf425d355ee754b7dd0c2ebd3729e">grade_report_overview</a>.</p>
+
+</div>
+</div>
+<a id="a9408d6f895346c6ae5246c428c70f62f" name="a9408d6f895346c6ae5246c428c70f62f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9408d6f895346c6ae5246c428c70f62f">&#9670;&#160;</a></span>ungraded_counts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">grade_report::ungraded_counts </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get ungraded grade items info and sum of all grade items in a course. </p>
+<p >Based on calculate_averages function from grade/report/user/lib.php</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>Ungraded grade items counts with report preferences. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1040,7 +1153,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 9 2022 04:20:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 16 2022 04:28:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

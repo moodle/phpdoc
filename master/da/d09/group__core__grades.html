@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev (Build: 20221007) (cc4fec275f8)</div>
+   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221014) (3bc792b9b8d)</div>
   </td>
  </tr>
  </tbody>
@@ -369,9 +369,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa749521fcc58a5707895703642142c92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d09/group__core__grades.html#gaa749521fcc58a5707895703642142c92">hide_natural_aggregation_upgrade_notice</a> ($courseid)</td></tr>
 <tr class="memdesc:gaa749521fcc58a5707895703642142c92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hide warning about changed grades during upgrade to 2.8.  <a href="../../da/d09/group__core__grades.html#gaa749521fcc58a5707895703642142c92">More...</a><br /></td></tr>
 <tr class="separator:gaa749521fcc58a5707895703642142c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga35070bd8aece235265751c098e8f664a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d09/group__core__grades.html#ga35070bd8aece235265751c098e8f664a">print_grade_page_head</a> (int $courseid, string $active_type, ?string $active_plugin=null, $heading=false, bool $return=false, $buttons=false, bool $shownavigation=true, ?string $headerhelpidentifier=null, ?string $headerhelpcomponent=null, ?stdClass $user=null, ?<a class="el" href="../../dd/d23/classcore__grades_1_1output_1_1action__bar.html">action_bar</a> $actionbar=null)</td></tr>
-<tr class="memdesc:ga35070bd8aece235265751c098e8f664a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the page headers, breadcrumb trail, page heading, (optional) navigation and for any gradebook page.  <a href="../../da/d09/group__core__grades.html#ga35070bd8aece235265751c098e8f664a">More...</a><br /></td></tr>
-<tr class="separator:ga35070bd8aece235265751c098e8f664a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga71a9b0c4fc582659520c4a9ea20e986e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d09/group__core__grades.html#ga71a9b0c4fc582659520c4a9ea20e986e">print_grade_page_head</a> (int $courseid, string $active_type, ?string $active_plugin=null, $heading=false, bool $return=false, $buttons=false, bool $shownavigation=true, ?string $headerhelpidentifier=null, ?string $headerhelpcomponent=null, ?stdClass $user=null, ?<a class="el" href="../../dd/d23/classcore__grades_1_1output_1_1action__bar.html">action_bar</a> $actionbar=null, $showtitle=true)</td></tr>
+<tr class="memdesc:ga71a9b0c4fc582659520c4a9ea20e986e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the page headers, breadcrumb trail, page heading, (optional) navigation and for any gradebook page.  <a href="../../da/d09/group__core__grades.html#ga71a9b0c4fc582659520c4a9ea20e986e">More...</a><br /></td></tr>
+<tr class="separator:ga71a9b0c4fc582659520c4a9ea20e986e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9b53f8837c3644738f7b194f51e2758b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d09/group__core__grades.html#ga9b53f8837c3644738f7b194f51e2758b">print_graded_users_selector</a> ($course, $actionpage, $userid=0, $groupid=0, $includeall=true, $return=false)</td></tr>
 <tr class="memdesc:ga9b53f8837c3644738f7b194f51e2758b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a selection popup form of the graded users in a course.  <a href="../../da/d09/group__core__grades.html#ga9b53f8837c3644738f7b194f51e2758b">More...</a><br /></td></tr>
 <tr class="separator:ga9b53f8837c3644738f7b194f51e2758b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2332,8 +2332,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>GRADE_UPDATE_OK</b> 
 
 </div>
 </div>
-<a id="ga35070bd8aece235265751c098e8f664a" name="ga35070bd8aece235265751c098e8f664a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga35070bd8aece235265751c098e8f664a">&#9670;&#160;</a></span>print_grade_page_head()</h2>
+<a id="ga71a9b0c4fc582659520c4a9ea20e986e" name="ga71a9b0c4fc582659520c4a9ea20e986e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga71a9b0c4fc582659520c4a9ea20e986e">&#9670;&#160;</a></span>print_grade_page_head()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2402,7 +2402,13 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>GRADE_UPDATE_OK</b> 
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">?<a class="el" href="../../dd/d23/classcore__grades_1_1output_1_1action__bar.html">action_bar</a>&#160;</td>
-          <td class="paramname"><em>$actionbar</em> = <code>null</code>&#160;</td>
+          <td class="paramname"><em>$actionbar</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$showtitle</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2427,6 +2433,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>GRADE_UPDATE_OK</b> 
     <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$headerhelpcomponent</td><td>The component for the help string. </td></tr>
     <tr><td class="paramtype">stdClass&#160;|&#160;null</td><td class="paramname">$user</td><td>The user object for use with the user context header. </td></tr>
     <tr><td class="paramtype">actionbar&#160;|&#160;null</td><td class="paramname">$actionbar</td><td>The actions bar which will be displayed on the page if $shownavigation is set to true. If $actionbar is not explicitly defined, the general action bar (<a class="el" href="../../d3/df3/classcore__grades_1_1output_1_1general__action__bar.html">core_grades::output::general_action_bar</a>) will be used by default. </td></tr>
+    <tr><td class="paramtype">boolean</td><td class="paramname">$showtitle</td><td>If set to false just show course full name as a title. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2732,7 +2739,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>GRADE_UPDATE_OK</b> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 9 2022 04:18:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 16 2022 04:27:27 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>
