@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221014) (3bc792b9b8d)</div>
+   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221021) (046e48c49c8)</div>
   </td>
  </tr>
  </tbody>
@@ -135,9 +135,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3e097b666446deb2704306c8002f970e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7f/classcore__reportbuilder_1_1table_1_1custom__report__table__view.html#a3e097b666446deb2704306c8002f970e">download_buttons</a> ()</td></tr>
 <tr class="memdesc:a3e097b666446deb2704306c8002f970e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the html for the download buttons.  <a href="../../db/d7f/classcore__reportbuilder_1_1table_1_1custom__report__table__view.html#a3e097b666446deb2704306c8002f970e">More...</a><br /></td></tr>
 <tr class="separator:a3e097b666446deb2704306c8002f970e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a9df9c34385f09263a8c5e613f60055"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dd7/classcore__reportbuilder_1_1table_1_1base__report__table.html#a2a9df9c34385f09263a8c5e613f60055">export_class_instance</a> ($exportclass=null)</td></tr>
-<tr class="memdesc:a2a9df9c34385f09263a8c5e613f60055"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the export class to use when downloading reports (TODO: consider applying to all tables, <a href="https://tracker.moodle.org/browse/MDL-72058" class="el">MDL-72058</a>)  <a href="../../d6/dd7/classcore__reportbuilder_1_1table_1_1base__report__table.html#a2a9df9c34385f09263a8c5e613f60055">More...</a><br /></td></tr>
-<tr class="separator:a2a9df9c34385f09263a8c5e613f60055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af53542e467807beedfdd1c025ef6d4bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d18/classflexible__table.html#af53542e467807beedfdd1c025ef6d4bd">export_class_instance</a> ($exportclass=null)</td></tr>
+<tr class="memdesc:af53542e467807beedfdd1c025ef6d4bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get, and optionally set, the export class.  <a href="../../d3/d18/classflexible__table.html#af53542e467807beedfdd1c025ef6d4bd">More...</a><br /></td></tr>
+<tr class="separator:af53542e467807beedfdd1c025ef6d4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84bb92fc0545a25b0d18f763eec4d775"><td class="memItemLeft" align="right" valign="top"><a id="a84bb92fc0545a25b0d18f763eec4d775" name="a84bb92fc0545a25b0d18f763eec4d775"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>finish_html</b> ()</td></tr>
 <tr class="memdesc:a84bb92fc0545a25b0d18f763eec4d775"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is not part of the public api. <br /></td></tr>
@@ -1309,8 +1309,8 @@ bool const&#160;</td><td class="memItemRight" valign="bottom"><b>REPORT_EDITING<
 
 </div>
 </div>
-<a id="a2a9df9c34385f09263a8c5e613f60055" name="a2a9df9c34385f09263a8c5e613f60055"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a9df9c34385f09263a8c5e613f60055">&#9670;&#160;</a></span>export_class_instance()</h2>
+<a id="af53542e467807beedfdd1c025ef6d4bd" name="af53542e467807beedfdd1c025ef6d4bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af53542e467807beedfdd1c025ef6d4bd">&#9670;&#160;</a></span>export_class_instance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1319,7 +1319,7 @@ bool const&#160;</td><td class="memItemRight" valign="bottom"><b>REPORT_EDITING<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">core_reportbuilder\table\base_report_table::export_class_instance </td>
+          <td class="memname">flexible_table::export_class_instance </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$exportclass</em> = <code>null</code></td><td>)</td>
@@ -1333,21 +1333,19 @@ bool const&#160;</td><td class="memItemRight" valign="bottom"><b>REPORT_EDITING<
 </table>
 </div><div class="memdoc">
 
-<p>Set the export class to use when downloading reports (TODO: consider applying to all tables, <a href="https://tracker.moodle.org/browse/MDL-72058" class="el">MDL-72058</a>) </p>
+<p>Get, and optionally set, the export class. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../d0/d46/classtable__default__export__format__parent.html">table_default_export_format_parent</a>&#160;|&#160;null</td><td class="paramname">$exportclass</td><td></td></tr>
+    <tr><td class="paramname">$exportclass</td><td>(optional) if passed, set the table to use this export class. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">table_default_export_format_parent|null</td><td></td></tr>
+    <tr><td class="paramname"><a class="el" href="../../d0/d46/classtable__default__export__format__parent.html">table_default_export_format_parent</a></td><td>the export class in use (after any set). </td></tr>
   </table>
   </dd>
 </dl>
-
-<p>Reimplemented from <a class="el" href="../../d3/d18/classflexible__table.html#af53542e467807beedfdd1c025ef6d4bd">flexible_table</a>.</p>
 
 </div>
 </div>
@@ -4251,7 +4249,7 @@ bool const&#160;</td><td class="memItemRight" valign="bottom"><b>REPORT_EDITING<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 16 2022 04:30:36 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 23 2022 04:23:07 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

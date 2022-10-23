@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221014) (3bc792b9b8d)</div>
+   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221021) (046e48c49c8)</div>
   </td>
  </tr>
  </tbody>
@@ -77,9 +77,9 @@ Inheritance diagram for core\lock\file_lock_factory:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aae611e8676ad92c980eb582d950a6404"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dd4/classcore_1_1lock_1_1file__lock__factory.html#aae611e8676ad92c980eb582d950a6404">__construct</a> ($type)</td></tr>
-<tr class="memdesc:aae611e8676ad92c980eb582d950a6404"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create this lock factory.  <a href="../../d6/dd4/classcore_1_1lock_1_1file__lock__factory.html#aae611e8676ad92c980eb582d950a6404">More...</a><br /></td></tr>
-<tr class="separator:aae611e8676ad92c980eb582d950a6404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acad0e54b1e270ae3c2c2873cc323382d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dd4/classcore_1_1lock_1_1file__lock__factory.html#acad0e54b1e270ae3c2c2873cc323382d">__construct</a> ($type, ?string $lockdirectory=null)</td></tr>
+<tr class="memdesc:acad0e54b1e270ae3c2c2873cc323382d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create this lock factory.  <a href="../../d6/dd4/classcore_1_1lock_1_1file__lock__factory.html#acad0e54b1e270ae3c2c2873cc323382d">More...</a><br /></td></tr>
+<tr class="separator:acad0e54b1e270ae3c2c2873cc323382d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4ebb727c32af51d45014b8d8648dc2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dd4/classcore_1_1lock_1_1file__lock__factory.html#af4ebb727c32af51d45014b8d8648dc2e">extend_lock</a> (<a class="el" href="../../d3/daf/classcore_1_1lock_1_1lock.html">lock</a> $<a class="el" href="../../d3/daf/classcore_1_1lock_1_1lock.html">lock</a>, $maxlifetime=86400)</td></tr>
 <tr class="memdesc:af4ebb727c32af51d45014b8d8648dc2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extend a lock that was previously obtained with @lock.  <a href="../../d6/dd4/classcore_1_1lock_1_1file__lock__factory.html#af4ebb727c32af51d45014b8d8648dc2e">More...</a><br /></td></tr>
 <tr class="separator:af4ebb727c32af51d45014b8d8648dc2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,8 +123,8 @@ boolean&#160;</td><td class="memItemRight" valign="bottom"><b>$verbose</b></td><
 <tr class="separator:ac78b9eee22cd250855354d471c75f5d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aae611e8676ad92c980eb582d950a6404" name="aae611e8676ad92c980eb582d950a6404"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae611e8676ad92c980eb582d950a6404">&#9670;&#160;</a></span>__construct()</h2>
+<a id="acad0e54b1e270ae3c2c2873cc323382d" name="acad0e54b1e270ae3c2c2873cc323382d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acad0e54b1e270ae3c2c2873cc323382d">&#9670;&#160;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -133,8 +133,18 @@ boolean&#160;</td><td class="memItemRight" valign="bottom"><b>$verbose</b></td><
           <td class="memname">core\lock\file_lock_factory::__construct </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$type</em></td><td>)</td>
+          <td class="paramname"><em>$type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">?string&#160;</td>
+          <td class="paramname"><em>$lockdirectory</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -143,11 +153,10 @@ boolean&#160;</td><td class="memItemRight" valign="bottom"><b>$verbose</b></td><
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$type</td><td>- The type, e.g. cron, cache, session </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$lockdirectory</td><td>- Optional path to the lock directory, to override defaults. </td></tr>
   </table>
   </dd>
 </dl>
-
-<p>Implements <a class="el" href="../../d7/da2/interfacecore_1_1lock_1_1lock__factory.html#a5b8c9df5a20ae3f64b5f456d931bed39">core\lock\lock_factory</a>.</p>
 
 </div>
 </div>
@@ -458,7 +467,7 @@ boolean&#160;</td><td class="memItemRight" valign="bottom"><b>$verbose</b></td><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 16 2022 04:30:02 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 23 2022 04:22:32 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

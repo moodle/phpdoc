@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221014) (3bc792b9b8d)</div>
+   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221021) (046e48c49c8)</div>
   </td>
  </tr>
  </tbody>
@@ -66,8 +66,7 @@ Inheritance diagram for table_default_export_format_parent:</div>
  <div class="center">
   <img src="../../d0/d46/classtable__default__export__format__parent.png" usemap="#table_5Fdefault_5Fexport_5Fformat_5Fparent_map" alt=""/>
   <map id="table_5Fdefault_5Fexport_5Fformat_5Fparent_map" name="table_5Fdefault_5Fexport_5Fformat_5Fparent_map">
-<area href="../../d8/ddf/classtable__dataformat__export__format.html" title="Dataformat exporter." alt="table_dataformat_export_format" shape="rect" coords="0,56,303,80"/>
-<area href="../../df/db2/classcore__reportbuilder_1_1output_1_1dataformat__export__format.html" alt="core_reportbuilder\output\dataformat_export_format" shape="rect" coords="0,112,303,136"/>
+<area href="../../d8/ddf/classtable__dataformat__export__format.html" title="Dataformat exporter." alt="table_dataformat_export_format" shape="rect" coords="0,56,211,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -84,6 +83,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a978cadd23c7dcb88ae071732f9ecec6b"><td class="memItemLeft" align="right" valign="top"><a id="a978cadd23c7dcb88ae071732f9ecec6b" name="a978cadd23c7dcb88ae071732f9ecec6b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>document_started</b> ()</td></tr>
 <tr class="separator:a978cadd23c7dcb88ae071732f9ecec6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab58edf2ca46fe80fee50f75f1c6d7a14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d46/classtable__default__export__format__parent.html#ab58edf2ca46fe80fee50f75f1c6d7a14">format_data</a> (array $row)</td></tr>
+<tr class="memdesc:ab58edf2ca46fe80fee50f75f1c6d7a14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a row of data, removing HTML tags and entities from each of the cells.  <a href="../../d0/d46/classtable__default__export__format__parent.html#ab58edf2ca46fe80fee50f75f1c6d7a14">More...</a><br /></td></tr>
+<tr class="separator:ab58edf2ca46fe80fee50f75f1c6d7a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5768eb51617ecb8afe8e17fdcce0686d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d46/classtable__default__export__format__parent.html#a5768eb51617ecb8afe8e17fdcce0686d">format_text</a> ($text, $format=<a class="el" href="../../d0/de1/group__core.html#ga569aa47f4fc21339755148f0bd388b76">FORMAT_MOODLE</a>, $options=NULL, $courseid=NULL)</td></tr>
 <tr class="memdesc:a5768eb51617ecb8afe8e17fdcce0686d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given text in a variety of format codings, this function returns the text as safe HTML or as plain text dependent on what is appropriate for the download format.  <a href="../../d0/d46/classtable__default__export__format__parent.html#a5768eb51617ecb8afe8e17fdcce0686d">More...</a><br /></td></tr>
 <tr class="separator:a5768eb51617ecb8afe8e17fdcce0686d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,7 +153,39 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="../../d8/ddf/classtable__dataformat__export__format.html#af704c9ee98e623b9c092646c1719c43f">table_dataformat_export_format</a>, and <a class="el" href="../../df/db2/classcore__reportbuilder_1_1output_1_1dataformat__export__format.html#a452eaa621aad9a0223966f81999aac14">core_reportbuilder\output\dataformat_export_format</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d8/ddf/classtable__dataformat__export__format.html#af704c9ee98e623b9c092646c1719c43f">table_dataformat_export_format</a>.</p>
+
+</div>
+</div>
+<a id="ab58edf2ca46fe80fee50f75f1c6d7a14" name="ab58edf2ca46fe80fee50f75f1c6d7a14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab58edf2ca46fe80fee50f75f1c6d7a14">&#9670;&#160;</a></span>format_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">table_default_export_format_parent::format_data </td>
+          <td>(</td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$row</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Format a row of data, removing HTML tags and entities from each of the cells. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$row</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -244,7 +278,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 16 2022 04:29:17 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 23 2022 04:21:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

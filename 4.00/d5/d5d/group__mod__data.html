@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.4+ (Build: 20221014) (00ad2a14daf)</div>
+   <div id="projectbrief">Moodle 4.0.4+ (Build: 20221021) (9d7609f39c9)</div>
   </td>
  </tr>
  </tbody>
@@ -1824,7 +1824,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Obtains the automatic completion state for this database item based on any conditions on its settings. </p>
 <p >The call for this is in completion lib where the modulename is appended to the function name. This is why there are unused parameters.</p>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000849">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000227">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-71196" class="el">MDL-71196</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000228">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-71196" class="el">MDL-71196</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../db/d1a/classmod__data_1_1completion_1_1custom__completion.html">mod_data::completion::custom_completion</a> </dd></dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -2180,15 +2180,15 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>returns a subclass field object given a record of the field, used to invoke plugin methods input: $param $field - record from db </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$field</td><td></td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$data</td><td></td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$cm</td><td></td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$field</td><td>the field record </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$data</td><td>the data instance </td></tr>
+    <tr><td class="paramtype">stdClass&#160;|&#160;null</td><td class="paramname">$cm</td><td>optional course module data </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">object</td><td></td></tr>
+    <tr><td class="paramname"><a class="el" href="../../d7/d88/classdata__field__base.html">data_field_base</a></td><td>the field object instance or <a class="el" href="../../d7/d88/classdata__field__base.html">data_field_base</a> if unkown type </td></tr>
   </table>
   </dd>
 </dl>
@@ -2601,7 +2601,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">string</td><td>The title of the entry </td></tr>
+    <tr><td class="paramname">string|null</td><td>It will return the title of the entry or null if the field type is not available. </td></tr>
   </table>
   </dd>
 </dl>
@@ -5082,7 +5082,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 16 2022 04:20:27 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 23 2022 04:12:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

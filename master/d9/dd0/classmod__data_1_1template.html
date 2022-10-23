@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221014) (3bc792b9b8d)</div>
+   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221021) (046e48c49c8)</div>
   </td>
  </tr>
  </tbody>
@@ -78,6 +78,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1fbbdb2fb2101034f35da7325ea23ebb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dd0/classmod__data_1_1template.html#a1fbbdb2fb2101034f35da7325ea23ebb">get_template_content</a> ()</td></tr>
 <tr class="memdesc:a1fbbdb2fb2101034f35da7325ea23ebb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the raw template content.  <a href="../../d9/dd0/classmod__data_1_1template.html#a1fbbdb2fb2101034f35da7325ea23ebb">More...</a><br /></td></tr>
 <tr class="separator:a1fbbdb2fb2101034f35da7325ea23ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a703083502049ba9ed9f2a8780e24b4de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dd0/classmod__data_1_1template.html#a703083502049ba9ed9f2a8780e24b4de">get_template_name</a> ()</td></tr>
+<tr class="memdesc:a703083502049ba9ed9f2a8780e24b4de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current template name.  <a href="../../d9/dd0/classmod__data_1_1template.html#a703083502049ba9ed9f2a8780e24b4de">More...</a><br /></td></tr>
+<tr class="separator:a703083502049ba9ed9f2a8780e24b4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33ccfd26785d6bab4a296902806d85a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dd0/classmod__data_1_1template.html#a33ccfd26785d6bab4a296902806d85a4">has_tag</a> (string $tagname)</td></tr>
+<tr class="memdesc:a33ccfd26785d6bab4a296902806d85a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a tag is present in the template.  <a href="../../d9/dd0/classmod__data_1_1template.html#a33ccfd26785d6bab4a296902806d85a4">More...</a><br /></td></tr>
+<tr class="separator:a33ccfd26785d6bab4a296902806d85a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61b4ed25efd7f4c0ba8a0ea6c5e15f64"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dd0/classmod__data_1_1template.html#a61b4ed25efd7f4c0ba8a0ea6c5e15f64">parse_add_entry</a> (?stdClass $processeddata=null, ?int $entryid=null, ?stdClass $entrydata=null)</td></tr>
 <tr class="memdesc:a61b4ed25efd7f4c0ba8a0ea6c5e15f64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the template as if it was for add entry.  <a href="../../d9/dd0/classmod__data_1_1template.html#a61b4ed25efd7f4c0ba8a0ea6c5e15f64">More...</a><br /></td></tr>
 <tr class="separator:a61b4ed25efd7f4c0ba8a0ea6c5e15f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1330,6 +1336,63 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$tags</b> = []</td><
 
 </div>
 </div>
+<a id="a703083502049ba9ed9f2a8780e24b4de" name="a703083502049ba9ed9f2a8780e24b4de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a703083502049ba9ed9f2a8780e24b4de">&#9670;&#160;</a></span>get_template_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_data\template::get_template_name </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the current template name. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>the template name </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a33ccfd26785d6bab4a296902806d85a4" name="a33ccfd26785d6bab4a296902806d85a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33ccfd26785d6bab4a296902806d85a4">&#9670;&#160;</a></span>has_tag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_data\template::has_tag </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$tagname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if a tag is present in the template. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">bool</td><td class="paramname">$tagname</td><td>the tag to check (without ##) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>if the tag is present </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="adfc83dbd85ae43392f7fc61d9e119ec4" name="adfc83dbd85ae43392f7fc61d9e119ec4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adfc83dbd85ae43392f7fc61d9e119ec4">&#9670;&#160;</a></span>load_template_tags()</h2>
 
@@ -1455,7 +1518,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$tags</b> = []</td><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 16 2022 04:30:58 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 23 2022 04:23:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

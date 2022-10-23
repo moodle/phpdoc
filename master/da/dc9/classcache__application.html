@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221014) (3bc792b9b8d)</div>
+   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221021) (046e48c49c8)</div>
   </td>
  </tr>
  </tbody>
@@ -276,6 +276,10 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:aa833a80ee9db53785491c0ea31dbb433"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dc9/classcache__application.html#aa833a80ee9db53785491c0ea31dbb433">$lockidentifier</a></td></tr>
 <tr class="memdesc:aa833a80ee9db53785491c0ea31dbb433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock identifier.  <a href="../../da/dc9/classcache__application.html#aa833a80ee9db53785491c0ea31dbb433">More...</a><br /></td></tr>
 <tr class="separator:aa833a80ee9db53785491c0ea31dbb433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a612b4a7bfd88903619160be406b9596c"><td class="memItemLeft" align="right" valign="top"><a id="a612b4a7bfd88903619160be406b9596c" name="a612b4a7bfd88903619160be406b9596c"></a>
+array&#160;</td><td class="memItemRight" valign="bottom"><b>$locks</b></td></tr>
+<tr class="memdesc:a612b4a7bfd88903619160be406b9596c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a list of locks acquired by this process. <br /></td></tr>
+<tr class="separator:a612b4a7bfd88903619160be406b9596c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba232dc536aa81847ba11dc28a6678f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d4b/classcache__store.html">cache_store</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dc9/classcache__application.html#aba232dc536aa81847ba11dc28a6678f0">$nativelocking</a> = null</td></tr>
 <tr class="memdesc:aba232dc536aa81847ba11dc28a6678f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets set to true if the cache's primary store natively supports locking.  <a href="../../da/dc9/classcache__application.html#aba232dc536aa81847ba11dc28a6678f0">More...</a><br /></td></tr>
 <tr class="separator:aba232dc536aa81847ba11dc28a6678f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -286,6 +290,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$perfdebug</b> = fals
 <tr class="memitem:a6710909f44e38edd7b1533b41de730cc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dc9/classcache__application.html#a6710909f44e38edd7b1533b41de730cc">$requirelocking</a> = false</td></tr>
 <tr class="memdesc:a6710909f44e38edd7b1533b41de730cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets set to true if the cache is going to be using locking.  <a href="../../da/dc9/classcache__application.html#a6710909f44e38edd7b1533b41de730cc">More...</a><br /></td></tr>
 <tr class="separator:a6710909f44e38edd7b1533b41de730cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcff8ad09447884bf314efbf2d4ec1b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dc9/classcache__application.html#abcff8ad09447884bf314efbf2d4ec1b5">$requirelockingbeforewrite</a> = false</td></tr>
+<tr class="memdesc:abcff8ad09447884bf314efbf2d4ec1b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets set to true if the cache writes (set|delete) must have a manual lock created first.  <a href="../../da/dc9/classcache__application.html#abcff8ad09447884bf314efbf2d4ec1b5">More...</a><br /></td></tr>
+<tr class="separator:abcff8ad09447884bf314efbf2d4ec1b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9c8d9ecc077a93e0badd74143b49a82"><td class="memItemLeft" align="right" valign="top"><a id="ad9c8d9ecc077a93e0badd74143b49a82" name="ad9c8d9ecc077a93e0badd74143b49a82"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>$requirelockingread</b> = false</td></tr>
 <tr class="memdesc:ad9c8d9ecc077a93e0badd74143b49a82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets set to true if the cache must use read locking (get|has). <br /></td></tr>
@@ -2763,6 +2770,30 @@ Attempt to set the information </li>
 
 </div>
 </div>
+<a id="abcff8ad09447884bf314efbf2d4ec1b5" name="abcff8ad09447884bf314efbf2d4ec1b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcff8ad09447884bf314efbf2d4ec1b5">&#9670;&#160;</a></span>$requirelockingbeforewrite</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool cache_application::$requirelockingbeforewrite = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets set to true if the cache writes (set|delete) must have a manual lock created first. </p>
+
+</div>
+</div>
 <a id="a7cba93f4223f142b1f94bd1cbeb76873" name="a7cba93f4223f142b1f94bd1cbeb76873"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7cba93f4223f142b1f94bd1cbeb76873">&#9670;&#160;</a></span>$requirelockingwrite</h2>
 
@@ -2818,7 +2849,7 @@ Attempt to set the information </li>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 16 2022 04:27:46 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 23 2022 04:20:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

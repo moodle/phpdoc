@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.4+ (Build: 20221014) (00ad2a14daf)</div>
+   <div id="projectbrief">Moodle 4.0.4+ (Build: 20221021) (9d7609f39c9)</div>
   </td>
  </tr>
  </tbody>
@@ -85,8 +85,8 @@ Namespaces</h2></td></tr>
 <tr class="memitem:d1/d6c/namespacemod__assign_1_1grades"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d6c/namespacemod__assign_1_1grades.html">mod_assign\grades</a></td></tr>
 <tr class="memdesc:d1/d6c/namespacemod__assign_1_1grades"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#160; <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d7/d9f/namespacemod__assign_1_1local_1_1views"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d9f/namespacemod__assign_1_1local_1_1views.html">mod_assign\local\views</a></td></tr>
-<tr class="memdesc:d7/d9f/namespacemod__assign_1_1local_1_1views"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#160; <br /></td></tr>
+<tr class="memitem:d4/dc6/namespacemod__assign_1_1navigation_1_1views"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc6/namespacemod__assign_1_1navigation_1_1views.html">mod_assign\navigation\views</a></td></tr>
+<tr class="memdesc:d4/dc6/namespacemod__assign_1_1navigation_1_1views"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#160; <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:da/d1b/namespacemod__assign_1_1output"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1b/namespacemod__assign_1_1output.html">mod_assign\output</a></td></tr>
 <tr class="memdesc:da/d1b/namespacemod__assign_1_1output"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#160; <br /></td></tr>
@@ -297,7 +297,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6f/classmod__assign_1_1group__observers.html">mod_assign\group_observers</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Group observers class.  <a href="../../db/d6f/classmod__assign_1_1group__observers.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d56/classmod__assign_1_1local_1_1views_1_1secondary.html">mod_assign\local\views\secondary</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d98/classmod__assign_1_1navigation_1_1views_1_1secondary.html">mod_assign\navigation\views\secondary</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d6e/classmod__assign_1_1output_1_1actionmenu.html">mod_assign\output\actionmenu</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output the actionbar for this activity.  <a href="../../da/d6e/classmod__assign_1_1output_1_1actionmenu.html#details">More...</a><br /></td></tr>
@@ -2940,7 +2940,9 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <b>Initial value:</b><div class="fragment"><div class="line">= [</div>
 <div class="line">    </div>
 <div class="line">    <span class="stringliteral">&#39;assign_header&#39;</span> =&gt; <span class="stringliteral">&#39;mod_assign\output\assign_header&#39;</span>,</div>
-<div class="line">    <span class="stringliteral">&#39;assign_submission_status&#39;</span> =&gt; <span class="stringliteral">&#39;mod_assign\output\assign_submission_status&#39;</span></div>
+<div class="line">    <span class="stringliteral">&#39;assign_submission_status&#39;</span> =&gt; <span class="stringliteral">&#39;mod_assign\output\assign_submission_status&#39;</span>,</div>
+<div class="line">    </div>
+<div class="line">    <span class="stringliteral">&#39;mod_assign\local\views\secondary&#39;</span> =&gt; <span class="stringliteral">&#39;mod_assign\navigation\views\secondary&#39;</span>,</div>
 <div class="line">]</div>
 </div><!-- fragment -->
 </div>
@@ -2973,7 +2975,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 16 2022 04:20:27 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 23 2022 04:12:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

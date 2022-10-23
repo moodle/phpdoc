@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221014) (3bc792b9b8d)</div>
+   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221021) (046e48c49c8)</div>
   </td>
  </tr>
  </tbody>
@@ -76,6 +76,7 @@ Inheritance diagram for cachestore_file:</div>
 <area href="../../d0/d07/interfacecache__is__key__aware.html" title="Cache store feature: key awareness." alt="cache_is_key_aware" shape="rect" coords="151,56,292,80"/>
 <area href="../../d1/ddc/interfacecache__is__configurable.html" title="Cache store feature: configurable." alt="cache_is_configurable" shape="rect" coords="302,56,443,80"/>
 <area href="../../d8/d32/interfacecache__is__searchable.html" title="Cache store feature: keys are searchable." alt="cache_is_searchable" shape="rect" coords="453,56,594,80"/>
+<area href="../../d0/d78/interfacecache__is__lockable.html" title="Cache store feature: locking." alt="cache_is_lockable" shape="rect" coords="604,56,745,80"/>
 <area href="../../d0/dcf/interfacecache__store__interface.html" alt="cache_store_interface" shape="rect" coords="0,0,141,24"/>
   </map>
 </div></div>
@@ -85,9 +86,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a826b814ab99e17c96f287f2b14be17b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df9/classcachestore__file.html#a826b814ab99e17c96f287f2b14be17b4">__construct</a> ($name, array $configuration=array())</td></tr>
 <tr class="memdesc:a826b814ab99e17c96f287f2b14be17b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the store instance.  <a href="../../da/df9/classcachestore__file.html#a826b814ab99e17c96f287f2b14be17b4">More...</a><br /></td></tr>
 <tr class="separator:a826b814ab99e17c96f287f2b14be17b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe0fb30178209533b5d23aa9d3d8d44"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df9/classcachestore__file.html#a9fe0fb30178209533b5d23aa9d3d8d44">acquire_lock</a> ($key, $ownerid)</td></tr>
+<tr class="memdesc:a9fe0fb30178209533b5d23aa9d3d8d44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use lock factory to acquire a lock.  <a href="../../da/df9/classcachestore__file.html#a9fe0fb30178209533b5d23aa9d3d8d44">More...</a><br /></td></tr>
+<tr class="separator:a9fe0fb30178209533b5d23aa9d3d8d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa911d355bd55a89979b9722c65a28830"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df9/classcachestore__file.html#aa911d355bd55a89979b9722c65a28830">cache_size_details</a> (int $samplekeys=50)</td></tr>
 <tr class="memdesc:aa911d355bd55a89979b9722c65a28830"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets total size for a specific cache.  <a href="../../da/df9/classcachestore__file.html#aa911d355bd55a89979b9722c65a28830">More...</a><br /></td></tr>
 <tr class="separator:aa911d355bd55a89979b9722c65a28830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fd093f5580490ba5082dfb722364198"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df9/classcachestore__file.html#a3fd093f5580490ba5082dfb722364198">check_lock_state</a> ($key, $ownerid)</td></tr>
+<tr class="memdesc:a3fd093f5580490ba5082dfb722364198"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use lock factory to determine the lock state.  <a href="../../da/df9/classcachestore__file.html#a3fd093f5580490ba5082dfb722364198">More...</a><br /></td></tr>
+<tr class="separator:a3fd093f5580490ba5082dfb722364198"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afda1a4ad7217bb818bdc15d0019146b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d4b/classcache__store.html#afda1a4ad7217bb818bdc15d0019146b2">cleanup</a> ()</td></tr>
 <tr class="separator:afda1a4ad7217bb818bdc15d0019146b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac12ff744cc2ce28d425b180b6b9920e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d4b/classcache__store.html#ac12ff744cc2ce28d425b180b6b9920e8">create_clone</a> (array $details=array())</td></tr>
@@ -153,6 +160,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7a81753cc0d44fcb2d0a74c404a58ce5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df9/classcachestore__file.html#a7a81753cc0d44fcb2d0a74c404a58ce5">purge</a> ()</td></tr>
 <tr class="memdesc:a7a81753cc0d44fcb2d0a74c404a58ce5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Purges the cache definition deleting all the items within it.  <a href="../../da/df9/classcachestore__file.html#a7a81753cc0d44fcb2d0a74c404a58ce5">More...</a><br /></td></tr>
 <tr class="separator:a7a81753cc0d44fcb2d0a74c404a58ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a084ef2a2418005f8e22066b25e91258d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df9/classcachestore__file.html#a084ef2a2418005f8e22066b25e91258d">release_lock</a> ($key, $ownerid)</td></tr>
+<tr class="memdesc:a084ef2a2418005f8e22066b25e91258d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use lock factory to release a lock.  <a href="../../da/df9/classcachestore__file.html#a084ef2a2418005f8e22066b25e91258d">More...</a><br /></td></tr>
+<tr class="separator:a084ef2a2418005f8e22066b25e91258d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12694f1ab1c0b237fdcbaa4bf0b99cb8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df9/classcachestore__file.html#a12694f1ab1c0b237fdcbaa4bf0b99cb8">set</a> ($key, $data)</td></tr>
 <tr class="memdesc:a12694f1ab1c0b237fdcbaa4bf0b99cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets an item in the cache given its key and data value.  <a href="../../da/df9/classcachestore__file.html#a12694f1ab1c0b237fdcbaa4bf0b99cb8">More...</a><br /></td></tr>
 <tr class="separator:a12694f1ab1c0b237fdcbaa4bf0b99cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -308,6 +318,16 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$keys</b> = array()<
 int&#160;</td><td class="memItemRight" valign="bottom"><b>$lastiobytes</b> = 0</td></tr>
 <tr class="memdesc:a468979f0ff2dce0a968b94ef7ca7a035"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bytes read or written by last call to <a class="el" href="../../dc/d71/group___imap___client.html#ga0dae8e91a93f347875c2acc9129ae73b" title="Store information in cache.">set()</a>/get() or set_many()/get_many(). <br /></td></tr>
 <tr class="separator:a468979f0ff2dce0a968b94ef7ca7a035"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a543026c27719e2b217f79cf1aaa6b054"><td class="memItemLeft" align="right" valign="top">core lock file_lock_factory&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df9/classcachestore__file.html#a543026c27719e2b217f79cf1aaa6b054">$lockfactory</a> = null</td></tr>
+<tr class="memdesc:a543026c27719e2b217f79cf1aaa6b054"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instance of file_lock_factory configured to create locks in the cache directory.  <a href="../../da/df9/classcachestore__file.html#a543026c27719e2b217f79cf1aaa6b054">More...</a><br /></td></tr>
+<tr class="separator:a543026c27719e2b217f79cf1aaa6b054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af696dc54cbf3b6a20015397a9fcbd134"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df9/classcachestore__file.html#af696dc54cbf3b6a20015397a9fcbd134">$locks</a> = []</td></tr>
+<tr class="memdesc:af696dc54cbf3b6a20015397a9fcbd134"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of current locks.  <a href="../../da/df9/classcachestore__file.html#af696dc54cbf3b6a20015397a9fcbd134">More...</a><br /></td></tr>
+<tr class="separator:af696dc54cbf3b6a20015397a9fcbd134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0452622cdb0e8062766efd284650c73"><td class="memItemLeft" align="right" valign="top"><a id="ac0452622cdb0e8062766efd284650c73" name="ac0452622cdb0e8062766efd284650c73"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>$lockwait</b> = 60</td></tr>
+<tr class="memdesc:ac0452622cdb0e8062766efd284650c73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of seconds to wait for a lock before giving up. <br /></td></tr>
+<tr class="separator:ac0452622cdb0e8062766efd284650c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a878001eca5080369d91fc5daf6e41296"><td class="memItemLeft" align="right" valign="top"><a id="a878001eca5080369d91fc5daf6e41296" name="a878001eca5080369d91fc5daf6e41296"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$name</b></td></tr>
 <tr class="memdesc:a878001eca5080369d91fc5daf6e41296"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the store. <br /></td></tr>
@@ -371,6 +391,57 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$prescan</b> = false<
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9fe0fb30178209533b5d23aa9d3d8d44" name="a9fe0fb30178209533b5d23aa9d3d8d44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fe0fb30178209533b5d23aa9d3d8d44">&#9670;&#160;</a></span>acquire_lock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cachestore_file::acquire_lock </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$ownerid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Use lock factory to acquire a lock. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$key</td><td>Lock identifier </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$ownerid</td><td>Cache identifier </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">cache_exception</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="../../d0/d78/interfacecache__is__lockable.html#a321c2d60b5b0e3887751db0fd4649061">cache_is_lockable</a>.</p>
+
+</div>
+</div>
 <a id="a1b84090abfb1a2c51684fae6d7bfcace" name="a1b84090abfb1a2c51684fae6d7bfcace"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1b84090abfb1a2c51684fae6d7bfcace">&#9670;&#160;</a></span>are_requirements_met()</h2>
 
@@ -473,6 +544,51 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$prescan</b> = false<
 </dl>
 
 <p>Reimplemented in <a class="el" href="../../dc/df3/classcachestore__dummy.html#a6ceafec112c37230ac72830d7999a0cd">cachestore_dummy</a>, <a class="el" href="../../dc/dd6/classcachestore__session.html#a326b2197b5b61115fd26274cbde2392a">cachestore_session</a>, and <a class="el" href="../../d3/dde/classcachestore__static.html#aaceb3ec4fac3b15a0d8b962f99301861">cachestore_static</a>.</p>
+
+</div>
+</div>
+<a id="a3fd093f5580490ba5082dfb722364198" name="a3fd093f5580490ba5082dfb722364198"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fd093f5580490ba5082dfb722364198">&#9670;&#160;</a></span>check_lock_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cachestore_file::check_lock_state </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$ownerid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Use lock factory to determine the lock state. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$key</td><td>Lock identifier </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$ownerid</td><td>Cache identifier </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool|null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="../../d0/d78/interfacecache__is__lockable.html#a153faafa36fd95329e46012954bafa8f">cache_is_lockable</a>.</p>
 
 </div>
 </div>
@@ -1720,6 +1836,51 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$prescan</b> = false<
 
 </div>
 </div>
+<a id="a084ef2a2418005f8e22066b25e91258d" name="a084ef2a2418005f8e22066b25e91258d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a084ef2a2418005f8e22066b25e91258d">&#9670;&#160;</a></span>release_lock()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cachestore_file::release_lock </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$ownerid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Use lock factory to release a lock. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$key</td><td>Lock identifier </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$ownerid</td><td>Cache identifier </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="../../d0/d78/interfacecache__is__lockable.html#aa651a06ad8fcd16124b3d7bb41d1f8de">cache_is_lockable</a>.</p>
+
+</div>
+</div>
 <a id="a12694f1ab1c0b237fdcbaa4bf0b99cb8" name="a12694f1ab1c0b237fdcbaa4bf0b99cb8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a12694f1ab1c0b237fdcbaa4bf0b99cb8">&#9670;&#160;</a></span>set()</h2>
 
@@ -2069,6 +2230,56 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$prescan</b> = false<
 
 </div>
 </div>
+<a id="a543026c27719e2b217f79cf1aaa6b054" name="a543026c27719e2b217f79cf1aaa6b054"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a543026c27719e2b217f79cf1aaa6b054">&#9670;&#160;</a></span>$lockfactory</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core lock file_lock_factory cachestore_file::$lockfactory = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Instance of file_lock_factory configured to create locks in the cache directory. </p>
+<p >$lockfactory </p>
+
+</div>
+</div>
+<a id="af696dc54cbf3b6a20015397a9fcbd134" name="af696dc54cbf3b6a20015397a9fcbd134"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af696dc54cbf3b6a20015397a9fcbd134">&#9670;&#160;</a></span>$locks</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">array cachestore_file::$locks = []</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>List of current locks. </p>
+<p >$locks </p>
+
+</div>
+</div>
 <a id="a378ead9a58072628760865a0dc11683d" name="a378ead9a58072628760865a0dc11683d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a378ead9a58072628760865a0dc11683d">&#9670;&#160;</a></span>$singledirectory</h2>
 
@@ -2200,7 +2411,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$prescan</b> = false<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 16 2022 04:27:46 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 23 2022 04:20:16 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

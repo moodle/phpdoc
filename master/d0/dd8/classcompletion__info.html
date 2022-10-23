@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221014) (3bc792b9b8d)</div>
+   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221021) (046e48c49c8)</div>
   </td>
  </tr>
  </tbody>
@@ -99,6 +99,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7f6f79175bfdb7d1f7391778e693b6cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd8/classcompletion__info.html#a7f6f79175bfdb7d1f7391778e693b6cf">get_completion</a> ($user_id, $criteriatype)</td></tr>
 <tr class="memdesc:a7f6f79175bfdb7d1f7391778e693b6cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a course completion for a user.  <a href="../../d0/dd8/classcompletion__info.html#a7f6f79175bfdb7d1f7391778e693b6cf">More...</a><br /></td></tr>
 <tr class="separator:a7f6f79175bfdb7d1f7391778e693b6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7a4cd01624e0eb49c55a10554800f61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd8/classcompletion__info.html#ae7a4cd01624e0eb49c55a10554800f61">get_completion_data</a> (int $coursemoduleid, int $userid, array $defaultdata)</td></tr>
+<tr class="memdesc:ae7a4cd01624e0eb49c55a10554800f61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get completion data include viewed field.  <a href="../../d0/dd8/classcompletion__info.html#ae7a4cd01624e0eb49c55a10554800f61">More...</a><br /></td></tr>
+<tr class="separator:ae7a4cd01624e0eb49c55a10554800f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb2a098420def28423a677fc92a32f05"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd8/classcompletion__info.html#abb2a098420def28423a677fc92a32f05">get_completions</a> ($user_id, $criteriatype=null)</td></tr>
 <tr class="memdesc:abb2a098420def28423a677fc92a32f05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all course criteria's completion objects for a user.  <a href="../../d0/dd8/classcompletion__info.html#abb2a098420def28423a677fc92a32f05">More...</a><br /></td></tr>
 <tr class="separator:abb2a098420def28423a677fc92a32f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -575,6 +578,56 @@ Protected Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool|completion_criteria_completion</td><td>returns false on fail </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae7a4cd01624e0eb49c55a10554800f61" name="ae7a4cd01624e0eb49c55a10554800f61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7a4cd01624e0eb49c55a10554800f61">&#9670;&#160;</a></span>get_completion_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">completion_info::get_completion_data </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$coursemoduleid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$userid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$defaultdata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get completion data include viewed field. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$coursemoduleid</td><td>The course module id. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>The User ID. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$defaultdata</td><td>Default data completion. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>Data completion retrieved. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1767,7 +1820,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 16 2022 04:27:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 23 2022 04:20:17 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

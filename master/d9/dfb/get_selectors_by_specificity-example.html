@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221014) (3bc792b9b8d)</div>
+   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221021) (046e48c49c8)</div>
   </td>
  </tr>
  </tbody>
@@ -56,17 +56,24 @@ $(function() {
   <div class="headertitle"><div class="title">getSelectorsBySpecificity</div></div>
 </div><!--header-->
 <div class="contents">
-<p >Returns all Selector objects found recursively in the tree.</p>
-<p >Returns all Selector objects found recursively in the tree.Note that this does not yield the full DeclarationBlock that the selector belongs to (and, currently, there is no way to get to that). </p><dl class="params"><dt>Parameters</dt><dd>
+<p >Returns all <code>Selector</code> objects found recursively in the tree.</p>
+<p >Returns all <code>Selector</code> objects found recursively in the tree.Note that this does not yield the full <code>DeclarationBlock</code> that the selector belongs to (and, currently, there is no way to get to that).</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$sSpecificitySearch</td><td>An optional filter by specificity. May contain a comparison operator and a number or just a number (defaults to "=="). ('&gt;= 100')</td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$sSpecificitySearch</td><td>An optional filter by specificity. May contain a comparison operator and a number or just a number (defaults to "==").</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array&lt;int,Selector&gt;</td><td>('&gt;= 100')`</td></tr>
   </table>
   </dd>
 </dl>
 <div class="fragment"></div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 16 2022 04:27:24 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 23 2022 04:19:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

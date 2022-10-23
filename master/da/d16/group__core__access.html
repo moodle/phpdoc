@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221014) (3bc792b9b8d)</div>
+   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221021) (046e48c49c8)</div>
   </td>
  </tr>
  </tbody>
@@ -185,6 +185,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gae06c72d126b730c50a297cfd258c8333"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d16/group__core__access.html#gae06c72d126b730c50a297cfd258c8333">get_default_role_archetype_allows</a> ($type, $archetype)</td></tr>
 <tr class="memdesc:gae06c72d126b730c50a297cfd258c8333"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return default roles that can be assigned, overridden or switched by give role archetype.  <a href="../../da/d16/group__core__access.html#gae06c72d126b730c50a297cfd258c8333">More...</a><br /></td></tr>
 <tr class="separator:gae06c72d126b730c50a297cfd258c8333"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga09b1eba3b9160056bb3d4cadf268d14a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d16/group__core__access.html#ga09b1eba3b9160056bb3d4cadf268d14a">get_deprecated_capability_info</a> ($capabilityname)</td></tr>
+<tr class="memdesc:ga09b1eba3b9160056bb3d4cadf268d14a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns deprecation info for this particular capabilty (cached)  <a href="../../da/d16/group__core__access.html#ga09b1eba3b9160056bb3d4cadf268d14a">More...</a><br /></td></tr>
+<tr class="separator:ga09b1eba3b9160056bb3d4cadf268d14a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab59a0e62fc226a4952602ed064d3c5ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d16/group__core__access.html#gab59a0e62fc226a4952602ed064d3c5ef">get_guest_role</a> ()</td></tr>
 <tr class="memdesc:gab59a0e62fc226a4952602ed064d3c5ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default guest role, this is used for guest account, search engine spiders, etc.  <a href="../../da/d16/group__core__access.html#gab59a0e62fc226a4952602ed064d3c5ef">More...</a><br /></td></tr>
 <tr class="separator:gab59a0e62fc226a4952602ed064d3c5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1595,6 +1598,39 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>ROLENAME_SHORT</b> 5
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td>of role ids </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga09b1eba3b9160056bb3d4cadf268d14a" name="ga09b1eba3b9160056bb3d4cadf268d14a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga09b1eba3b9160056bb3d4cadf268d14a">&#9670;&#160;</a></span>get_deprecated_capability_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">get_deprecated_capability_info </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$capabilityname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns deprecation info for this particular capabilty (cached) </p>
+<p >Do not use this function except in the get_capability_info</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$capabilityname</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass|null</td><td>with deprecation message and potential replacement if not null </td></tr>
   </table>
   </dd>
 </dl>
@@ -4366,7 +4402,7 @@ assignment".</p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 16 2022 04:27:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 23 2022 04:19:56 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

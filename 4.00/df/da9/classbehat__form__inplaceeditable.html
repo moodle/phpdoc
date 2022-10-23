@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.4+ (Build: 20221014) (00ad2a14daf)</div>
+   <div id="projectbrief">Moodle 4.0.4+ (Build: 20221021) (9d7609f39c9)</div>
   </td>
  </tr>
  </tbody>
@@ -115,9 +115,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a2e73bb4bd51678d21ff4c38be540185b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4b/classbehat__form__field.html#a2e73bb4bd51678d21ff4c38be540185b">running_javascript</a> ()</td></tr>
 <tr class="memdesc:a2e73bb4bd51678d21ff4c38be540185b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the scenario is running in a browser that can run Javascript or not.  <a href="../../d7/d4b/classbehat__form__field.html#a2e73bb4bd51678d21ff4c38be540185b">More...</a><br /></td></tr>
 <tr class="separator:a2e73bb4bd51678d21ff4c38be540185b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80ccf8a42ccedc9feea5b6c7511473ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4b/classbehat__form__field.html#a80ccf8a42ccedc9feea5b6c7511473ba">text_matches</a> ($expectedvalue)</td></tr>
-<tr class="memdesc:a80ccf8a42ccedc9feea5b6c7511473ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the provided text matches the field value.  <a href="../../d7/d4b/classbehat__form__field.html#a80ccf8a42ccedc9feea5b6c7511473ba">More...</a><br /></td></tr>
-<tr class="separator:a80ccf8a42ccedc9feea5b6c7511473ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75a4f71e01e0c4554724384eea4b205b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4b/classbehat__form__field.html#a75a4f71e01e0c4554724384eea4b205b">text_matches</a> ($expectedvalue, ?string $actualvalue=null)</td></tr>
+<tr class="memdesc:a75a4f71e01e0c4554724384eea4b205b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the provided text matches the field value.  <a href="../../d7/d4b/classbehat__form__field.html#a75a4f71e01e0c4554724384eea4b205b">More...</a><br /></td></tr>
+<tr class="separator:a75a4f71e01e0c4554724384eea4b205b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25c4ba4c63cedbf66a6461cce136f761"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4b/classbehat__form__field.html#a25c4ba4c63cedbf66a6461cce136f761">wait_for_pending_js</a> ()</td></tr>
 <tr class="memdesc:a25c4ba4c63cedbf66a6461cce136f761"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for all the JS activity to be completed.  <a href="../../d7/d4b/classbehat__form__field.html#a25c4ba4c63cedbf66a6461cce136f761">More...</a><br /></td></tr>
 <tr class="separator:a25c4ba4c63cedbf66a6461cce136f761"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -539,8 +539,8 @@ Session&#160;</td><td class="memItemRight" valign="bottom"><b>$session</b></td><
 
 </div>
 </div>
-<a id="a80ccf8a42ccedc9feea5b6c7511473ba" name="a80ccf8a42ccedc9feea5b6c7511473ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80ccf8a42ccedc9feea5b6c7511473ba">&#9670;&#160;</a></span>text_matches()</h2>
+<a id="a75a4f71e01e0c4554724384eea4b205b" name="a75a4f71e01e0c4554724384eea4b205b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75a4f71e01e0c4554724384eea4b205b">&#9670;&#160;</a></span>text_matches()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -552,8 +552,18 @@ Session&#160;</td><td class="memItemRight" valign="bottom"><b>$session</b></td><
           <td class="memname">behat_form_field::text_matches </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$expectedvalue</em></td><td>)</td>
+          <td class="paramname"><em>$expectedvalue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">?string&#160;</td>
+          <td class="paramname"><em>$actualvalue</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -567,6 +577,7 @@ Session&#160;</td><td class="memItemRight" valign="bottom"><b>$session</b></td><
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$expectedvalue</td><td></td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$actualvalue</td><td>The actual value. If not specified, this will be fetched from $this-&gt;<a class="el" href="../../dc/d34/classbehat__form__text.html#a5f24583fde499d0358cb94a9cc0aded5" title="Returns the current value of the element.">get_value()</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -647,7 +658,7 @@ Session&#160;</td><td class="memItemRight" valign="bottom"><b>$session</b></td><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 16 2022 04:20:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 23 2022 04:13:03 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

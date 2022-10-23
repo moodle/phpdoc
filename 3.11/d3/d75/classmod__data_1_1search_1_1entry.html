@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;3.11</span>
    </div>
-   <div id="projectbrief">Moodle 3.11.10+ (Build: 20221014) (efc6d19ac2)</div>
+   <div id="projectbrief">Moodle 3.11.10+ (Build: 20221021) (42be9c33eb)</div>
   </td>
  </tr>
  </tbody>
@@ -192,7 +192,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a93500d97ca279866588409365483af73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get database entry data.  <a href="../../d3/d75/classmod__data_1_1search_1_1entry.html#a93500d97ca279866588409365483af73">More...</a><br /></td></tr>
 <tr class="separator:a93500d97ca279866588409365483af73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cf859494d70aa7682ee5eec947df575"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d75/classmod__data_1_1search_1_1entry.html#a5cf859494d70aa7682ee5eec947df575">get_field_class_name</a> ($fieldtype)</td></tr>
-<tr class="memdesc:a5cf859494d70aa7682ee5eec947df575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the class name for that field type and includes it.  <a href="../../d3/d75/classmod__data_1_1search_1_1entry.html#a5cf859494d70aa7682ee5eec947df575">More...</a><br /></td></tr>
+<tr class="memdesc:a5cf859494d70aa7682ee5eec947df575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the class name for the given field type and includes it.  <a href="../../d3/d75/classmod__data_1_1search_1_1entry.html#a5cf859494d70aa7682ee5eec947df575">More...</a><br /></td></tr>
 <tr class="separator:a5cf859494d70aa7682ee5eec947df575"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e85dfec40bf665064528454c38e6812"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d75/classmod__data_1_1search_1_1entry.html#a1e85dfec40bf665064528454c38e6812">get_fields_for_entries</a> ($<a class="el" href="../../d3/d75/classmod__data_1_1search_1_1entry.html">entry</a>)</td></tr>
 <tr class="memdesc:a1e85dfec40bf665064528454c38e6812"><td class="mdescLeft">&#160;</td><td class="mdescRight">get_fields_for_entries  <a href="../../d3/d75/classmod__data_1_1search_1_1entry.html#a1e85dfec40bf665064528454c38e6812">More...</a><br /></td></tr>
@@ -1193,7 +1193,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the class name for that field type and includes it. </p>
+<p>Returns the class name for the given field type and includes it. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$fieldtype</td><td></td></tr>
@@ -1202,7 +1202,7 @@ Static Protected Attributes</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">string</td><td></td></tr>
+    <tr><td class="paramname">string|null</td><td>It will return the class name or null if the field type is not available. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1694,7 +1694,7 @@ Static Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 16 2022 04:16:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 23 2022 04:08:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>
