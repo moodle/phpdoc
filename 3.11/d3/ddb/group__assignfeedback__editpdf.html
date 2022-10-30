@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;3.11</span>
    </div>
-   <div id="projectbrief">Moodle 3.11.10+ (Build: 20221021) (42be9c33eb)</div>
+   <div id="projectbrief">Moodle 3.11.10+ (Build: 20221028) (98fd15d75b)</div>
   </td>
  </tr>
  </tbody>
@@ -109,6 +109,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d97/classassignfeedback__editpdf_1_1privacy_1_1provider.html">assignfeedback_editpdf\privacy\provider</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Privacy class for requesting user data.  <a href="../../d8/d97/classassignfeedback__editpdf_1_1privacy_1_1provider.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d1f/classassignfeedback__editpdf_1_1task_1_1bump__submission__for__stale__conversions.html">assignfeedback_editpdf\task\bump_submission_for_stale_conversions</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adhoc task to bump the submission timemodified associated with a stale conversion.  <a href="../../dc/d1f/classassignfeedback__editpdf_1_1task_1_1bump__submission__for__stale__conversions.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d93/classassignfeedback__editpdf_1_1task_1_1convert__submissions.html">assignfeedback_editpdf\task\convert_submissions</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple task to convert submissions to pdf in the background.  <a href="../../de/d93/classassignfeedback__editpdf_1_1task_1_1convert__submissions.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,6 +132,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:gab15aa30baee712420638af3140ee623b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ddb/group__assignfeedback__editpdf.html#gab15aa30baee712420638af3140ee623b">assignfeedback_editpdf_after_file_updated</a> (stdClass $file, stdClass $filepreupdate)</td></tr>
+<tr class="memdesc:gab15aa30baee712420638af3140ee623b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Files API hook to remove stale conversion records.  <a href="../../d3/ddb/group__assignfeedback__editpdf.html#gab15aa30baee712420638af3140ee623b">More...</a><br /></td></tr>
+<tr class="separator:gab15aa30baee712420638af3140ee623b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacdf2b640d725b06530441adcf38ec96b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ddb/group__assignfeedback__editpdf.html#gacdf2b640d725b06530441adcf38ec96b">assignfeedback_editpdf_pluginfile</a> ( $course, $cm, <a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, $filearea, $args, $forcedownload, array $options=array())</td></tr>
 <tr class="memdesc:gacdf2b640d725b06530441adcf38ec96b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serves assignment feedback and other files.  <a href="../../d3/ddb/group__assignfeedback__editpdf.html#gacdf2b640d725b06530441adcf38ec96b">More...</a><br /></td></tr>
 <tr class="separator:gacdf2b640d725b06530441adcf38ec96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,11 +188,50 @@ global&#160;</td><td class="memItemRight" valign="bottom"><b>$CFG</b></td></tr>
 $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>component</b> = 'assignfeedback_editpdf'</td></tr>
 <tr class="separator:ga27dc7e2c13f48a05e56e0d3138fe3c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memItemLeft" align="right" valign="top"><a id="ga92a3fd99b37c9cbd65c4aead816b3a83" name="ga92a3fd99b37c9cbd65c4aead816b3a83"></a>
-$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2021051701</td></tr>
+$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2021051702</td></tr>
 <tr class="separator:ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="gab15aa30baee712420638af3140ee623b" name="gab15aa30baee712420638af3140ee623b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab15aa30baee712420638af3140ee623b">&#9670;&#160;</a></span>assignfeedback_editpdf_after_file_updated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">assignfeedback_editpdf_after_file_updated </td>
+          <td>(</td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$filepreupdate</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Files API hook to remove stale conversion records. </p>
+<p >When a file is update, its contenthash will change, but its ID remains the same. The document converter API records source file IDs and destination file IDs. When a file is updated, the document converter API has no way of knowing that the content of the file has changed, so it just serves the previously stored destination file.</p>
+<p >In this hook we check if the contenthash has changed, and if it has we delete the existing conversion so that a new one will be created.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$file</td><td>The updated file record. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$filepreupdate</td><td>The file record pre-update. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="gacdf2b640d725b06530441adcf38ec96b" name="gacdf2b640d725b06530441adcf38ec96b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gacdf2b640d725b06530441adcf38ec96b">&#9670;&#160;</a></span>assignfeedback_editpdf_pluginfile()</h2>
 
@@ -368,7 +413,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2021
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 23 2022 04:05:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 30 2022 03:46:22 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

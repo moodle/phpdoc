@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.4+ (Build: 20221021) (9d7609f39c9)</div>
+   <div id="projectbrief">Moodle 4.0.4+ (Build: 20221028) (141e369a012)</div>
   </td>
  </tr>
  </tbody>
@@ -2244,6 +2244,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$choiceorder</b></td
 
 <p>Update the data representing the initial state of an attempt another version of this question, to allow for the changes. </p>
 <p >What is required is probably most easily understood using an example. Think about multiple choice questions. The first step has a variable '_order' which is a comma-separated list of <a class="el" href="../../d3/d9e/classquestion__answer.html" title="Class to represent a question answer, loaded from the question_answers table in the database.">question_answer</a> ids. A different version of the question will have different question_answers with different ids. However, the list of choices should be similar, and so we need to shuffle the new list of ids in the same way that the old one was.</p>
+<p >Note: be sure to return all the data that was originally in $oldstep, while updating the fields that require it. Otherwise you might break features like 'Each attempt builds on last' in the quiz.</p>
 <p >This method should only be called if {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/de5/classqtype__gapselect__question__base.html#a9219e18cfd2ef1140ce666e822378481" title="Verify if an attempt at this question can be re-graded using the other question version.">validate_can_regrade_with_other_version()</a>} did not <a class="el" href="../../dc/d71/group___imap___client.html#gadff608071b1ff012fd348b02fe983fc1" title="Search for a flag/keywords.">flag</a> up a potential problem. So, this method will throw a {</dd>
 <dd>
 <a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a>} <a class="el" href="../../d8/d07/categoryif.html" title="Advance grading form element.">if</a> it is not possible to work out a return <a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e" title="See what state to move to while within non-quoted header values.">value</a>.</dd></dl>
@@ -2404,7 +2405,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$choiceorder</b></td
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 23 2022 04:14:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 30 2022 03:54:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

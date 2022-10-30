@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221021) (046e48c49c8)</div>
+   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221028) (fa7a55aa5de)</div>
   </td>
  </tr>
  </tbody>
@@ -62,16 +62,16 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aefb77030a6f720b095b2a8e8568996e5"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1d/class_j_w_k.html#aefb77030a6f720b095b2a8e8568996e5">parseKey</a> (array $jwk)</td></tr>
-<tr class="memdesc:aefb77030a6f720b095b2a8e8568996e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a <a class="el" href="../../da/d1d/class_j_w_k.html">JWK</a> key.  <a href="../../da/d1d/class_j_w_k.html#aefb77030a6f720b095b2a8e8568996e5">More...</a><br /></td></tr>
-<tr class="separator:aefb77030a6f720b095b2a8e8568996e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbcc8c50bedd1d690b97964a1ffe4e20"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1d/class_j_w_k.html#afbcc8c50bedd1d690b97964a1ffe4e20">parseKeySet</a> (array $jwks)</td></tr>
-<tr class="memdesc:afbcc8c50bedd1d690b97964a1ffe4e20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a set of <a class="el" href="../../da/d1d/class_j_w_k.html">JWK</a> keys.  <a href="../../da/d1d/class_j_w_k.html#afbcc8c50bedd1d690b97964a1ffe4e20">More...</a><br /></td></tr>
-<tr class="separator:afbcc8c50bedd1d690b97964a1ffe4e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af623f5c3d54c427dd00532559d0abbc1"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1d/class_j_w_k.html#af623f5c3d54c427dd00532559d0abbc1">parseKey</a> (array $jwk, string $defaultAlg=null)</td></tr>
+<tr class="memdesc:af623f5c3d54c427dd00532559d0abbc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a <a class="el" href="../../da/d1d/class_j_w_k.html">JWK</a> key.  <a href="../../da/d1d/class_j_w_k.html#af623f5c3d54c427dd00532559d0abbc1">More...</a><br /></td></tr>
+<tr class="separator:af623f5c3d54c427dd00532559d0abbc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c409e676e8b6f7d91e853323c502b8a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d1d/class_j_w_k.html#a8c409e676e8b6f7d91e853323c502b8a">parseKeySet</a> (array $jwks, string $defaultAlg=null)</td></tr>
+<tr class="memdesc:a8c409e676e8b6f7d91e853323c502b8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a set of <a class="el" href="../../da/d1d/class_j_w_k.html">JWK</a> keys.  <a href="../../da/d1d/class_j_w_k.html#a8c409e676e8b6f7d91e853323c502b8a">More...</a><br /></td></tr>
+<tr class="separator:a8c409e676e8b6f7d91e853323c502b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aefb77030a6f720b095b2a8e8568996e5" name="aefb77030a6f720b095b2a8e8568996e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefb77030a6f720b095b2a8e8568996e5">&#9670;&#160;</a></span>parseKey()</h2>
+<a id="af623f5c3d54c427dd00532559d0abbc1" name="af623f5c3d54c427dd00532559d0abbc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af623f5c3d54c427dd00532559d0abbc1">&#9670;&#160;</a></span>parseKey()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -83,8 +83,18 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">static JWK::parseKey </td>
           <td>(</td>
           <td class="paramtype">array&#160;</td>
-          <td class="paramname"><em>$jwk</em></td><td>)</td>
+          <td class="paramname"><em>$jwk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$defaultAlg</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -97,7 +107,8 @@ Static Public Member Functions</h2></td></tr>
 <p>Parse a <a class="el" href="../../da/d1d/class_j_w_k.html">JWK</a> key. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$jwk</td><td>An individual <a class="el" href="../../da/d1d/class_j_w_k.html">JWK</a></td></tr>
+    <tr><td class="paramtype"></td><td class="paramname">array&lt;mixed&gt;</td><td>$jwk An individual <a class="el" href="../../da/d1d/class_j_w_k.html">JWK</a> </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$defaultAlg</td><td>The algorithm for the Key object if "alg" is not set in the JSON Web Key Set</td></tr>
   </table>
   </dd>
 </dl>
@@ -119,8 +130,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afbcc8c50bedd1d690b97964a1ffe4e20" name="afbcc8c50bedd1d690b97964a1ffe4e20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbcc8c50bedd1d690b97964a1ffe4e20">&#9670;&#160;</a></span>parseKeySet()</h2>
+<a id="a8c409e676e8b6f7d91e853323c502b8a" name="a8c409e676e8b6f7d91e853323c502b8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c409e676e8b6f7d91e853323c502b8a">&#9670;&#160;</a></span>parseKeySet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -132,8 +143,18 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">static JWK::parseKeySet </td>
           <td>(</td>
           <td class="paramtype">array&#160;</td>
-          <td class="paramname"><em>$jwks</em></td><td>)</td>
+          <td class="paramname"><em>$jwks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$defaultAlg</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -146,7 +167,8 @@ Static Public Member Functions</h2></td></tr>
 <p>Parse a set of <a class="el" href="../../da/d1d/class_j_w_k.html">JWK</a> keys. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$jwks</td><td>The JSON Web Key Set as an associative array</td></tr>
+    <tr><td class="paramtype"></td><td class="paramname">array&lt;mixed&gt;</td><td>$jwks The JSON Web Key Set as an associative array </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$defaultAlg</td><td>The algorithm for the Key object if "alg" is not set in the JSON Web Key Set</td></tr>
   </table>
   </dd>
 </dl>
@@ -174,7 +196,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 23 2022 04:21:21 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 30 2022 04:01:17 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

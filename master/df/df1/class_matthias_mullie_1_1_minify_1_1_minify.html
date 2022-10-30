@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221021) (046e48c49c8)</div>
+   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221028) (fa7a55aa5de)</div>
   </td>
  </tr>
  </tbody>
@@ -61,6 +61,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../dd/d64/class_matthias_mullie_1_1_minify_1_1_minify-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">MatthiasMullie\Minify\Minify Class Reference<div class="ingroups"><a class="el" href="../../d5/ddd/group___minify.html">Minify</a></div></div></div>
@@ -69,15 +70,6 @@ $(function() {
 
 <p>Abstract minifier class.  
  <a href="../../df/df1/class_matthias_mullie_1_1_minify_1_1_minify.html#details">More...</a></p>
-<div class="dynheader">
-Inheritance diagram for MatthiasMullie\Minify\Minify:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="../../df/df1/class_matthias_mullie_1_1_minify_1_1_minify.png" usemap="#MatthiasMullie_5CMinify_5CMinify_map" alt=""/>
-  <map id="MatthiasMullie_5CMinify_5CMinify_map" name="MatthiasMullie_5CMinify_5CMinify_map">
-<area href="../../de/d54/class_matthias_mullie_1_1_minify_1_1_c_s_s.html" title="CSS minifier." alt="MatthiasMullie\Minify\CSS" shape="rect" coords="0,56,171,80"/>
-  </map>
-</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -116,6 +108,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a2a8fd2f70bdeda26cb7e3f8ed1f81839"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df1/class_matthias_mullie_1_1_minify_1_1_minify.html#a2a8fd2f70bdeda26cb7e3f8ed1f81839">canImportFile</a> ($path)</td></tr>
 <tr class="memdesc:a2a8fd2f70bdeda26cb7e3f8ed1f81839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the path is a regular file and can be read.  <a href="../../df/df1/class_matthias_mullie_1_1_minify_1_1_minify.html#a2a8fd2f70bdeda26cb7e3f8ed1f81839">More...</a><br /></td></tr>
 <tr class="separator:a2a8fd2f70bdeda26cb7e3f8ed1f81839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54a57b5b092e696d0d629d447b1a56da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df1/class_matthias_mullie_1_1_minify_1_1_minify.html#a54a57b5b092e696d0d629d447b1a56da">executeReplacement</a> ($replacement, $<a class="el" href="../../d7/de4/group___mail.html#gad6ffdd5d243a28fa33bc9d39f06aaceb">match</a>)</td></tr>
+<tr class="memdesc:a54a57b5b092e696d0d629d447b1a56da"><td class="mdescLeft">&#160;</td><td class="mdescRight">If $replacement is a callback, execute it, passing in the match data.  <a href="../../df/df1/class_matthias_mullie_1_1_minify_1_1_minify.html#a54a57b5b092e696d0d629d447b1a56da">More...</a><br /></td></tr>
+<tr class="separator:a54a57b5b092e696d0d629d447b1a56da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fc862f0385452f7121f0a05d37412ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df1/class_matthias_mullie_1_1_minify_1_1_minify.html#a6fc862f0385452f7121f0a05d37412ca">extractStrings</a> ($chars='\'&quot;', $placeholderPrefix = '') </td></tr>
 <tr class="memdesc:a6fc862f0385452f7121f0a05d37412ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Strings are a pattern we need to match, in order to ignore potential code-like content inside them, but we just want all of the string content to remain untouched.  <a href="../../df/df1/class_matthias_mullie_1_1_minify_1_1_minify.html#a6fc862f0385452f7121f0a05d37412ca">More...</a><br /></td></tr>
 <tr class="separator:a6fc862f0385452f7121f0a05d37412ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,9 +126,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a67a9afda5da913eaa78537d6663db7b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df1/class_matthias_mullie_1_1_minify_1_1_minify.html#a67a9afda5da913eaa78537d6663db7b1">replace</a> ($content)</td></tr>
 <tr class="memdesc:a67a9afda5da913eaa78537d6663db7b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">We can't "just" run some regular expressions against JavaScript: it's a complex language.  <a href="../../df/df1/class_matthias_mullie_1_1_minify_1_1_minify.html#a67a9afda5da913eaa78537d6663db7b1">More...</a><br /></td></tr>
 <tr class="separator:a67a9afda5da913eaa78537d6663db7b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a388b7862eeefb29467bd6797e4ec6ce4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df1/class_matthias_mullie_1_1_minify_1_1_minify.html#a388b7862eeefb29467bd6797e4ec6ce4">replacePattern</a> ($pattern, $replacement, $content)</td></tr>
-<tr class="memdesc:a388b7862eeefb29467bd6797e4ec6ce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is where a pattern is matched against $content and the matches are replaced by their respective value.  <a href="../../df/df1/class_matthias_mullie_1_1_minify_1_1_minify.html#a388b7862eeefb29467bd6797e4ec6ce4">More...</a><br /></td></tr>
-<tr class="separator:a388b7862eeefb29467bd6797e4ec6ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dcd7d9daae771849ee27cbba64e31e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df1/class_matthias_mullie_1_1_minify_1_1_minify.html#a2dcd7d9daae771849ee27cbba64e31e6">restoreExtractedData</a> ($content)</td></tr>
 <tr class="memdesc:a2dcd7d9daae771849ee27cbba64e31e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method will restore all extracted data (strings, regexes) that were replaced with placeholder text in extract*().  <a href="../../df/df1/class_matthias_mullie_1_1_minify_1_1_minify.html#a2dcd7d9daae771849ee27cbba64e31e6">More...</a><br /></td></tr>
 <tr class="separator:a2dcd7d9daae771849ee27cbba64e31e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,6 +135,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ae8922292e1324df803b2f72d35a7e7e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df1/class_matthias_mullie_1_1_minify_1_1_minify.html#ae8922292e1324df803b2f72d35a7e7e6">writeToFile</a> ($handler, $content, $path='')</td></tr>
 <tr class="memdesc:ae8922292e1324df803b2f72d35a7e7e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to write $content to the file specified by $handler.  <a href="../../df/df1/class_matthias_mullie_1_1_minify_1_1_minify.html#ae8922292e1324df803b2f72d35a7e7e6">More...</a><br /></td></tr>
 <tr class="separator:ae8922292e1324df803b2f72d35a7e7e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:a3153c6604bf174a094efeabe99693ddd"><td class="memItemLeft" align="right" valign="top"><a id="a3153c6604bf174a094efeabe99693ddd" name="a3153c6604bf174a094efeabe99693ddd"></a>
+static&#160;</td><td class="memItemRight" valign="bottom"><b>str_replace_first</b> ($<a class="el" href="../../dc/d71/group___imap___client.html#ga51cc7ed42bce580dcc33ed45d9cef0c9">search</a>, $<a class="el" href="../../df/df1/class_matthias_mullie_1_1_minify_1_1_minify.html#a67a9afda5da913eaa78537d6663db7b1">replace</a>, $subject)</td></tr>
+<tr class="separator:a3153c6604bf174a094efeabe99693ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -338,6 +336,58 @@ string[]&#160;</td><td class="memItemRight" valign="bottom"><b>$patterns</b> = a
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>The minified data </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a54a57b5b092e696d0d629d447b1a56da" name="a54a57b5b092e696d0d629d447b1a56da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54a57b5b092e696d0d629d447b1a56da">&#9670;&#160;</a></span>executeReplacement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MatthiasMullie\Minify\Minify::executeReplacement </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$replacement</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$match</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If $replacement is a callback, execute it, passing in the match data. </p>
+<p >If it's a string, just pass it through.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string&#160;|&#160;callable</td><td class="paramname">$replacement</td><td>Replacement value </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$match</td><td>Match data, in PREG_OFFSET_CAPTURE form</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -575,6 +625,7 @@ string[]&#160;</td><td class="memItemRight" valign="bottom"><b>$patterns</b> = a
 </div><div class="memdoc">
 
 <p>Register a pattern to execute against the source content. </p>
+<p >If $replacement is a string, it must be plain text. Placeholders like $1 or 2 don't work. If you need that functionality, use a callback instead.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$pattern</td><td>PCRE pattern </td></tr>
@@ -620,65 +671,6 @@ string[]&#160;</td><td class="memItemRight" valign="bottom"><b>$patterns</b> = a
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>The (manipulated) content </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a388b7862eeefb29467bd6797e4ec6ce4" name="a388b7862eeefb29467bd6797e4ec6ce4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a388b7862eeefb29467bd6797e4ec6ce4">&#9670;&#160;</a></span>replacePattern()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">MatthiasMullie\Minify\Minify::replacePattern </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$pattern</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$replacement</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$content</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>This is where a pattern is matched against $content and the matches are replaced by their respective value. </p>
-<p >This function will be called plenty of times, where $content will always move up 1 character.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$pattern</td><td>Pattern to match </td></tr>
-    <tr><td class="paramtype">string&#160;|&#160;callable</td><td class="paramname">$replacement</td><td>Replacement value </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$content</td><td>Content to match pattern against</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">string</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -842,7 +834,7 @@ string[]&#160;</td><td class="memItemRight" valign="bottom"><b>$patterns</b> = a
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 23 2022 04:23:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 30 2022 04:03:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

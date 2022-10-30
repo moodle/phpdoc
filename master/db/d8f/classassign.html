@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221021) (046e48c49c8)</div>
+   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221028) (fa7a55aa5de)</div>
   </td>
  </tr>
  </tbody>
@@ -519,9 +519,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a9f4b4539625bf58855e6746c900b3fac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classassign.html#a9f4b4539625bf58855e6746c900b3fac">delete_grades</a> ()</td></tr>
 <tr class="memdesc:a9f4b4539625bf58855e6746c900b3fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete all grades from the gradebook for this assignment.  <a href="../../db/d8f/classassign.html#a9f4b4539625bf58855e6746c900b3fac">More...</a><br /></td></tr>
 <tr class="separator:a9f4b4539625bf58855e6746c900b3fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3881b5b13a9805ff28680ccd10bb571a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classassign.html#a3881b5b13a9805ff28680ccd10bb571a">download_submissions</a> ($userids=false)</td></tr>
-<tr class="memdesc:a3881b5b13a9805ff28680ccd10bb571a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Download a zip file of all assignment submissions.  <a href="../../db/d8f/classassign.html#a3881b5b13a9805ff28680ccd10bb571a">More...</a><br /></td></tr>
-<tr class="separator:a3881b5b13a9805ff28680ccd10bb571a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee2988022af6b06e7f62740eeb5ef17d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classassign.html#aee2988022af6b06e7f62740eeb5ef17d">download_submissions</a> ($userids=null)</td></tr>
+<tr class="memdesc:aee2988022af6b06e7f62740eeb5ef17d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Download a zip file of all assignment submissions.  <a href="../../db/d8f/classassign.html#aee2988022af6b06e7f62740eeb5ef17d">More...</a><br /></td></tr>
+<tr class="separator:aee2988022af6b06e7f62740eeb5ef17d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad95cc8c785079c9008667f1f22128efd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8f/classassign.html#ad95cc8c785079c9008667f1f22128efd">fix_null_grades</a> ()</td></tr>
 <tr class="memdesc:ad95cc8c785079c9008667f1f22128efd"><td class="mdescLeft">&#160;</td><td class="mdescRight">View fix rescaled null grades.  <a href="../../db/d8f/classassign.html#ad95cc8c785079c9008667f1f22128efd">More...</a><br /></td></tr>
 <tr class="separator:ad95cc8c785079c9008667f1f22128efd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2357,8 +2357,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3881b5b13a9805ff28680ccd10bb571a" name="a3881b5b13a9805ff28680ccd10bb571a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3881b5b13a9805ff28680ccd10bb571a">&#9670;&#160;</a></span>download_submissions()</h2>
+<a id="aee2988022af6b06e7f62740eeb5ef17d" name="aee2988022af6b06e7f62740eeb5ef17d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee2988022af6b06e7f62740eeb5ef17d">&#9670;&#160;</a></span>download_submissions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2370,7 +2370,7 @@ Static Protected Member Functions</h2></td></tr>
           <td class="memname">assign::download_submissions </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$userids</em> = <code>false</code></td><td>)</td>
+          <td class="paramname"><em>$userids</em> = <code>null</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2384,7 +2384,7 @@ Static Protected Member Functions</h2></td></tr>
 <p>Download a zip file of all assignment submissions. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$userids</td><td>Array of user ids to download assignment submissions in a zip file </td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;null</td><td class="paramname">$userids</td><td>Array of user ids to download assignment submissions in a zip file </td></tr>
   </table>
   </dd>
 </dl>
@@ -3520,7 +3520,7 @@ Static Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">stdClass</td><td>The submission </td></tr>
+    <tr><td class="paramname">stdClass|false</td><td>The submission </td></tr>
   </table>
   </dd>
 </dl>
@@ -4637,7 +4637,7 @@ Static Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">stdClass</td><td>The submission </td></tr>
+    <tr><td class="paramname">stdClass|false</td><td>The submission </td></tr>
   </table>
   </dd>
 </dl>
@@ -9174,7 +9174,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 23 2022 04:20:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 30 2022 04:00:03 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

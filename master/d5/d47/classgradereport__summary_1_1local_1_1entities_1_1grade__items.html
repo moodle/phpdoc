@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221021) (046e48c49c8)</div>
+   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221028) (fa7a55aa5de)</div>
   </td>
  </tr>
  </tbody>
@@ -126,8 +126,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:abe4951652f6657830ab88d69e0e21e93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set entity title.  <a href="../../d0/dba/classcore__reportbuilder_1_1local_1_1entities_1_1base.html#abe4951652f6657830ab88d69e0e21e93">More...</a><br /></td></tr>
 <tr class="separator:abe4951652f6657830ab88d69e0e21e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99d38b7e1ced07a334404f179ee483ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dba/classcore__reportbuilder_1_1local_1_1entities_1_1base.html#a99d38b7e1ced07a334404f179ee483ce">set_table_alias</a> (string $tablename, string $alias)</td></tr>
-<tr class="memdesc:a99d38b7e1ced07a334404f179ee483ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override the default alias for given database table used in entity queries.  <a href="../../d0/dba/classcore__reportbuilder_1_1local_1_1entities_1_1base.html#a99d38b7e1ced07a334404f179ee483ce">More...</a><br /></td></tr>
+<tr class="memdesc:a99d38b7e1ced07a334404f179ee483ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override the default alias for given database table used in entity queries, to avoid table alias clashes that may occur if multiple entities of a report each define the same default alias for one of their tables.  <a href="../../d0/dba/classcore__reportbuilder_1_1local_1_1entities_1_1base.html#a99d38b7e1ced07a334404f179ee483ce">More...</a><br /></td></tr>
 <tr class="separator:a99d38b7e1ced07a334404f179ee483ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2d1cbcfd124ae3de875619e84498120"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dba/classcore__reportbuilder_1_1local_1_1entities_1_1base.html#af2d1cbcfd124ae3de875619e84498120">set_table_aliases</a> (array $aliases)</td></tr>
+<tr class="memdesc:af2d1cbcfd124ae3de875619e84498120"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override multiple default database table aliases used in entity queries as per {.  <a href="../../d0/dba/classcore__reportbuilder_1_1local_1_1entities_1_1base.html#af2d1cbcfd124ae3de875619e84498120">More...</a><br /></td></tr>
+<tr class="separator:af2d1cbcfd124ae3de875619e84498120"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -1100,7 +1103,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Override the default alias for given database table used in entity queries. </p>
+<p>Override the default alias for given database table used in entity queries, to avoid table alias clashes that may occur if multiple entities of a report each define the same default alias for one of their tables. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$tablename</td><td></td></tr>
@@ -1123,13 +1126,54 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="af2d1cbcfd124ae3de875619e84498120" name="af2d1cbcfd124ae3de875619e84498120"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2d1cbcfd124ae3de875619e84498120">&#9670;&#160;</a></span>set_table_aliases()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_reportbuilder\local\entities\base::set_table_aliases </td>
+          <td>(</td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$aliases</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Override multiple default database table aliases used in entity queries as per {. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/dba/classcore__reportbuilder_1_1local_1_1entities_1_1base.html#a99d38b7e1ced07a334404f179ee483ce" title="Override the default alias for given database table used in entity queries, to avoid table alias clas...">set_table_alias</a>}, typically when you're adding an <a class="el" href="../../d8/ded/group___simple_pie.html#ga8c152f6ef1c779ffd79d5c7ee4d37721" title="Decode an entity.">entity</a> multiple times to a <a class="el" href="../../d1/dc3/group__report.html">report</a> you'd want to override the table aliases in the second instance to avoid clashes with the <a class="el" href="../../dc/d71/group___imap___client.html#gac73eef9ff76ea330c0dab36ca448b90d" title="Return the first fetch object in the results, if there is only one object.">first</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$aliases</td><td>Array of tablename =&gt; alias values </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">self</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>grade/report/summary/classes/local/entities/grade_items.php</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 23 2022 04:23:16 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Oct 30 2022 04:03:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>
