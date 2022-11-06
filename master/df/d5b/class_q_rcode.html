@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221028) (fa7a55aa5de)</div>
+   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221104) (fee1b8ce5fb)</div>
   </td>
  </tr>
  </tbody>
@@ -257,7 +257,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a22c3f59d4c048785339533e55231cf1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">lengthOfCode  <a href="../../df/d5b/class_q_rcode.html#a22c3f59d4c048785339533e55231cf1c">More...</a><br /></td></tr>
 <tr class="separator:a22c3f59d4c048785339533e55231cf1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a019154e7946c1ab54e8fba881c11280f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d5b/class_q_rcode.html#a019154e7946c1ab54e8fba881c11280f">lookAnTable</a> ($c)</td></tr>
-<tr class="memdesc:a019154e7946c1ab54e8fba881c11280f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look up the alphabet-numeric convesion table (see JIS X0510:2004, pp.19).  <a href="../../df/d5b/class_q_rcode.html#a019154e7946c1ab54e8fba881c11280f">More...</a><br /></td></tr>
+<tr class="memdesc:a019154e7946c1ab54e8fba881c11280f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Look up the alphabet-numeric conversion table (see JIS X0510:2004, pp.19).  <a href="../../df/d5b/class_q_rcode.html#a019154e7946c1ab54e8fba881c11280f">More...</a><br /></td></tr>
 <tr class="separator:a019154e7946c1ab54e8fba881c11280f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae85296924ac8070ec86ce6362dca95e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d5b/class_q_rcode.html#ae85296924ac8070ec86ce6362dca95e7">makeMask</a> ($width, $frame, $maskNo, $level)</td></tr>
 <tr class="memdesc:ae85296924ac8070ec86ce6362dca95e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">makeMask  <a href="../../df/d5b/class_q_rcode.html#ae85296924ac8070ec86ce6362dca95e7">More...</a><br /></td></tr>
@@ -528,8 +528,8 @@ Protected Attributes</h2></td></tr>
 <p>This is the class constructor. </p>
 <p >Creates a <a class="el" href="../../df/d5b/class_q_rcode.html" title="Class to create QR-code arrays for TCPDF class.">QRcode</a> object </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$code</td><td>(string) code to represent using <a class="el" href="../../df/d5b/class_q_rcode.html" title="Class to create QR-code arrays for TCPDF class.">QRcode</a> </td></tr>
-    <tr><td class="paramname">$eclevel</td><td>(string) error level: <ul>
+    <tr><td class="paramtype">string</td><td class="paramname">$code</td><td>code to represent using <a class="el" href="../../df/d5b/class_q_rcode.html" title="Class to create QR-code arrays for TCPDF class.">QRcode</a> </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$eclevel</td><td>error level: <ul>
 <li>
 L : About 7% or less errors can be corrected.</li>
 <li>
@@ -575,7 +575,7 @@ H : About 30% or less errors can be corrected.</li>
 <p>Return an array with zeros. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$setLength</td><td>(int) array size </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$setLength</td><td>array size </td></tr>
   </table>
   </dd>
 </dl>
@@ -625,8 +625,8 @@ H : About 30% or less errors can be corrected.</li>
 <p>Append one bitstream to another. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$bitstream</td><td>(array) original bitstream </td></tr>
-    <tr><td class="paramname">$append</td><td>(array) bitstream to append </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$bitstream</td><td>original bitstream </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$append</td><td>bitstream to append </td></tr>
   </table>
   </dd>
 </dl>
@@ -682,9 +682,9 @@ H : About 30% or less errors can be corrected.</li>
 <p>Append one bitstream created from bytes to another. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$bitstream</td><td>(array) original bitstream </td></tr>
-    <tr><td class="paramname">$size</td><td>(int) size </td></tr>
-    <tr><td class="paramname">$data</td><td>(array) bytes </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$bitstream</td><td>original bitstream </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$size</td><td>size </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>bytes </td></tr>
   </table>
   </dd>
 </dl>
@@ -746,16 +746,16 @@ H : About 30% or less errors can be corrected.</li>
 <p>Append data to an input object. </p>
 <p >The data is copied and appended to the input object. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$items</td><td>(arrray) input items </td></tr>
-    <tr><td class="paramname">$mode</td><td>(int) encoding mode. </td></tr>
-    <tr><td class="paramname">$size</td><td>(int) size of data (byte). </td></tr>
-    <tr><td class="paramname">$data</td><td>(array) array of input data. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$items</td><td>input items </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$mode</td><td>encoding mode. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$size</td><td>size of data (byte). </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>array of input data. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">items</td><td></td></tr>
+    <tr><td class="paramname">array</td><td>items </td></tr>
   </table>
   </dd>
 </dl>
@@ -805,9 +805,9 @@ H : About 30% or less errors can be corrected.</li>
 <p>Append one bitstream created from number to another. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$bitstream</td><td>(array) original bitstream </td></tr>
-    <tr><td class="paramname">$bits</td><td>(int) number of bits </td></tr>
-    <tr><td class="paramname">$num</td><td>(int) number </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$bitstream</td><td>original bitstream </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$bits</td><td>number of bits </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$num</td><td>number </td></tr>
   </table>
   </dd>
 </dl>
@@ -847,7 +847,7 @@ H : About 30% or less errors can be corrected.</li>
 <p>Append Padding Bit to bitstream. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$bstream</td><td>(array) </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$bstream</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -887,7 +887,7 @@ H : About 30% or less errors can be corrected.</li>
 <p>Convert the frame in binary form. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$frame</td><td>(array) array to binarize </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$frame</td><td>array to binarize </td></tr>
   </table>
   </dd>
 </dl>
@@ -927,7 +927,7 @@ H : About 30% or less errors can be corrected.</li>
 <p>Convert bitstream to bytes. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$bstream</td><td>(array) original bitstream </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$bstream</td><td>original bitstream </td></tr>
   </table>
   </dd>
 </dl>
@@ -967,7 +967,7 @@ H : About 30% or less errors can be corrected.</li>
 <p>calcN1N3 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$length</td><td>(int) </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$length</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1007,7 +1007,7 @@ H : About 30% or less errors can be corrected.</li>
 <p>calcParity </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$items</td><td>(array) </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$items</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1063,9 +1063,9 @@ H : About 30% or less errors can be corrected.</li>
 <p>Validate the input data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$mode</td><td>(int) encoding mode. </td></tr>
-    <tr><td class="paramname">$size</td><td>(int) size of data (byte). </td></tr>
-    <tr><td class="paramname">$data</td><td>(array) data to validate </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$mode</td><td>encoding mode. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$size</td><td>size of data (byte). </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>data to validate </td></tr>
   </table>
   </dd>
 </dl>
@@ -1115,8 +1115,8 @@ H : About 30% or less errors can be corrected.</li>
 <p>checkModeAn </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$size</td><td>(int) </td></tr>
-    <tr><td class="paramname">$data</td><td>(array) </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$size</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1166,8 +1166,8 @@ H : About 30% or less errors can be corrected.</li>
 <p>checkModeKanji </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$size</td><td>(int) </td></tr>
-    <tr><td class="paramname">$data</td><td>(array) </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$size</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1217,8 +1217,8 @@ H : About 30% or less errors can be corrected.</li>
 <p>checkModeNum </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$size</td><td>(int) </td></tr>
-    <tr><td class="paramname">$data</td><td>(array) </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$size</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1258,7 +1258,7 @@ H : About 30% or less errors can be corrected.</li>
 <p>convertData </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$items</td><td>(array) </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$items</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1298,7 +1298,7 @@ H : About 30% or less errors can be corrected.</li>
 <p>createBitStream </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$items</td><td>(array) </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$items</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1338,13 +1338,13 @@ H : About 30% or less errors can be corrected.</li>
 <p>Return a copy of initialized frame. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$version</td><td>(int) version </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$version</td><td>version </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">Array</td><td>of unsigned char. </td></tr>
+    <tr><td class="paramname">array</td><td>array of unsigned char. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1526,9 +1526,9 @@ H : About 30% or less errors can be corrected.</li>
 <p>Encode a Reed-Solomon codec and returns the parity array. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$rs</td><td>(array) RS values </td></tr>
-    <tr><td class="paramname">$data</td><td>(array) data </td></tr>
-    <tr><td class="paramname">$parity</td><td>(array) parity </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$rs</td><td>RS values </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>data </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$parity</td><td>parity </td></tr>
   </table>
   </dd>
 </dl>
@@ -1578,8 +1578,8 @@ H : About 30% or less errors can be corrected.</li>
 <p>encodeBitStream </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$inputitem</td><td>(array) </td></tr>
-    <tr><td class="paramname">$version</td><td>(int) </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$inputitem</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$version</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1619,7 +1619,7 @@ H : About 30% or less errors can be corrected.</li>
 <p>Encode mask. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$mask</td><td>(int) masking mode </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$mask</td><td>masking mode </td></tr>
   </table>
   </dd>
 </dl>
@@ -1663,8 +1663,8 @@ H : About 30% or less errors can be corrected.</li>
 <p>encodeMode8 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$inputitem</td><td>(array) </td></tr>
-    <tr><td class="paramname">$version</td><td>(int) </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$inputitem</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$version</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1714,8 +1714,8 @@ H : About 30% or less errors can be corrected.</li>
 <p>encodeModeAn </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$inputitem</td><td>(array) </td></tr>
-    <tr><td class="paramname">$version</td><td>(int) </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$inputitem</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$version</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1765,8 +1765,8 @@ H : About 30% or less errors can be corrected.</li>
 <p>encodeModeKanji </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$inputitem</td><td>(array) </td></tr>
-    <tr><td class="paramname">$version</td><td>(int) </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$inputitem</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$version</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1816,8 +1816,8 @@ H : About 30% or less errors can be corrected.</li>
 <p>encodeModeNum </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$inputitem</td><td>(array) </td></tr>
-    <tr><td class="paramname">$version</td><td>(int) </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$inputitem</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$version</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1857,7 +1857,7 @@ H : About 30% or less errors can be corrected.</li>
 <p>encodeModeStructure </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$inputitem</td><td>(array) </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$inputitem</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1897,7 +1897,7 @@ H : About 30% or less errors can be corrected.</li>
 <p>Encode the input string to QR code. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$string</td><td>(string) input string to encode </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$string</td><td>input string to encode </td></tr>
   </table>
   </dd>
 </dl>
@@ -1931,7 +1931,7 @@ H : About 30% or less errors can be corrected.</li>
 <p>estimateBitsMode8 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$size</td><td>(int) </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$size</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1971,7 +1971,7 @@ H : About 30% or less errors can be corrected.</li>
 <p>estimateBitsModeAn </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$size</td><td>(int) </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$size</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2011,7 +2011,7 @@ H : About 30% or less errors can be corrected.</li>
 <p>estimateBitsModeKanji </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$size</td><td>(int) </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$size</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2051,7 +2051,7 @@ H : About 30% or less errors can be corrected.</li>
 <p>estimateBitsModeNum </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$size</td><td>(int) </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$size</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2101,8 +2101,8 @@ H : About 30% or less errors can be corrected.</li>
 <p>estimateBitStreamSize </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$items</td><td>(array) </td></tr>
-    <tr><td class="paramname">$version</td><td>(int) </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$items</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$version</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2142,7 +2142,7 @@ H : About 30% or less errors can be corrected.</li>
 <p>estimateVersion </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$items</td><td>(array) </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$items</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2192,8 +2192,8 @@ H : About 30% or less errors can be corrected.</li>
 <p>evaluateSymbol </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$width</td><td>(int) </td></tr>
-    <tr><td class="paramname">$frame</td><td>(array) </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$width</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$frame</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2249,9 +2249,9 @@ H : About 30% or less errors can be corrected.</li>
 <p>Return bitmask. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$maskNo</td><td>(int) mask number </td></tr>
-    <tr><td class="paramname">$width</td><td>(int) width </td></tr>
-    <tr><td class="paramname">$frame</td><td>(array) frame </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$maskNo</td><td>mask number </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$width</td><td>width </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$frame</td><td>frame </td></tr>
   </table>
   </dd>
 </dl>
@@ -2316,7 +2316,7 @@ H : About 30% or less errors can be corrected.</li>
 <p>Returns a stream of bits. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$items</td><td>(int) </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$items</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2356,7 +2356,7 @@ H : About 30% or less errors can be corrected.</li>
 <p>Pack all bit streams padding bits into a byte array. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$items</td><td>(int) </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$items</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2439,8 +2439,8 @@ H : About 30% or less errors can be corrected.</li>
 <p>Return maximum data code length (bytes) for the version. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$version</td><td>(int) version </td></tr>
-    <tr><td class="paramname">$level</td><td>(int) error correction level </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$version</td><td>version </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$level</td><td>error correction level </td></tr>
   </table>
   </dd>
 </dl>
@@ -2490,8 +2490,8 @@ H : About 30% or less errors can be corrected.</li>
 <p>Return maximum error correction code length (bytes) for the version. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$version</td><td>(int) version </td></tr>
-    <tr><td class="paramname">$level</td><td>(int) error correction level </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$version</td><td>version </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$level</td><td>error correction level </td></tr>
   </table>
   </dd>
 </dl>
@@ -2547,9 +2547,9 @@ H : About 30% or less errors can be corrected.</li>
 <p>Return an array of ECC specification. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$version</td><td>(int) version </td></tr>
-    <tr><td class="paramname">$level</td><td>(int) error correction level </td></tr>
-    <tr><td class="paramname">$spec</td><td>(array) an array of ECC specification contains as following: {# of type1 blocks, # of data code, # of ecc code, # of type2 blocks, # of data code} </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$version</td><td>version </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$level</td><td>error correction level </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$spec</td><td>an array of ECC specification contains as following: {# of type1 blocks, # of data code, # of ecc code, # of type2 blocks, # of data code} </td></tr>
   </table>
   </dd>
 </dl>
@@ -2599,14 +2599,14 @@ H : About 30% or less errors can be corrected.</li>
 <p>Return BCH encoded format information pattern. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$mask</td><td>(array) </td></tr>
-    <tr><td class="paramname">$level</td><td>(int) error correction level </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$mask</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$level</td><td>error correction level </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">BCH</td><td>encoded format information pattern </td></tr>
+    <tr><td class="paramname">string</td><td>BCH encoded format information pattern </td></tr>
   </table>
   </dd>
 </dl>
@@ -2640,7 +2640,7 @@ H : About 30% or less errors can be corrected.</li>
 <p>Get frame value at specified position. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$at</td><td>(array) x,y position </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$at</td><td>x,y position </td></tr>
   </table>
   </dd>
 </dl>
@@ -2690,8 +2690,8 @@ H : About 30% or less errors can be corrected.</li>
 <p>Return a version number that satisfies the input code length. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$size</td><td>(int) input code length (bytes) </td></tr>
-    <tr><td class="paramname">$level</td><td>(int) error correction level </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$size</td><td>input code length (bytes) </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$level</td><td>error correction level </td></tr>
   </table>
   </dd>
 </dl>
@@ -2764,7 +2764,7 @@ H : About 30% or less errors can be corrected.</li>
 <p>Return the numer of remainder bits. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$version</td><td>(int) version </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$version</td><td>version </td></tr>
   </table>
   </dd>
 </dl>
@@ -2804,13 +2804,13 @@ H : About 30% or less errors can be corrected.</li>
 <p>Return BCH encoded version information pattern that is used for the symbol of version 7 or greater. </p>
 <p >Use lower 18 bits. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$version</td><td>(int) version </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$version</td><td>version </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">BCH</td><td>encoded version information pattern </td></tr>
+    <tr><td class="paramname">string</td><td>BCH encoded version information pattern </td></tr>
   </table>
   </dd>
 </dl>
@@ -2844,7 +2844,7 @@ H : About 30% or less errors can be corrected.</li>
 <p>Return the width of the symbol for the version. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$version</td><td>(int) version </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$version</td><td>version </td></tr>
   </table>
   </dd>
 </dl>
@@ -2884,7 +2884,7 @@ H : About 30% or less errors can be corrected.</li>
 <p>identifyMode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$pos</td><td>(int) </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$pos</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2924,13 +2924,13 @@ H : About 30% or less errors can be corrected.</li>
 <p>Initialize code. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$spec</td><td>(array) array of ECC specification </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$spec</td><td>array of ECC specification </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">0</td><td>in case of success, -1 in case of error </td></tr>
+    <tr><td class="paramname">int</td><td>0 in case of success, -1 in case of error </td></tr>
   </table>
   </dd>
 </dl>
@@ -2998,12 +2998,12 @@ H : About 30% or less errors can be corrected.</li>
 <p>Initialize a Reed-Solomon codec and add it to existing rsitems. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$symsize</td><td>(int) symbol size, bits </td></tr>
-    <tr><td class="paramname">$gfpoly</td><td>(int) Field generator polynomial coefficients </td></tr>
-    <tr><td class="paramname">$fcr</td><td>(int) first root of RS code generator polynomial, index form </td></tr>
-    <tr><td class="paramname">$prim</td><td>(int) primitive element to generate polynomial roots </td></tr>
-    <tr><td class="paramname">$nroots</td><td>(int) RS code generator polynomial degree (number of roots) </td></tr>
-    <tr><td class="paramname">$pad</td><td>(int) padding bytes at front of shortened block </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$symsize</td><td>symbol size, bits </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$gfpoly</td><td>Field generator polynomial coefficients </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$fcr</td><td>first root of RS code generator polynomial, index form </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$prim</td><td>primitive element to generate polynomial roots </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$nroots</td><td>RS code generator polynomial degree (number of roots) </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$pad</td><td>padding bytes at front of shortened block </td></tr>
   </table>
   </dd>
 </dl>
@@ -3103,12 +3103,12 @@ gfpoly</li>
 <p>Initialize a Reed-Solomon codec and returns an array of values. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$symsize</td><td>(int) symbol size, bits </td></tr>
-    <tr><td class="paramname">$gfpoly</td><td>(int) Field generator polynomial coefficients </td></tr>
-    <tr><td class="paramname">$fcr</td><td>(int) first root of RS code generator polynomial, index form </td></tr>
-    <tr><td class="paramname">$prim</td><td>(int) primitive element to generate polynomial roots </td></tr>
-    <tr><td class="paramname">$nroots</td><td>(int) RS code generator polynomial degree (number of roots) </td></tr>
-    <tr><td class="paramname">$pad</td><td>(int) padding bytes at front of shortened block </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$symsize</td><td>symbol size, bits </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$gfpoly</td><td>Field generator polynomial coefficients </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$fcr</td><td>first root of RS code generator polynomial, index form </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$prim</td><td>primitive element to generate polynomial roots </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$nroots</td><td>RS code generator polynomial degree (number of roots) </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$pad</td><td>padding bytes at front of shortened block </td></tr>
   </table>
   </dd>
 </dl>
@@ -3196,10 +3196,10 @@ gfpoly</li>
 <p>insertStructuredAppendHeader </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$items</td><td>(array) </td></tr>
-    <tr><td class="paramname">$size</td><td>(int) </td></tr>
-    <tr><td class="paramname">$index</td><td>(int) </td></tr>
-    <tr><td class="paramname">$parity</td><td>(int) </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$items</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$size</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$index</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$parity</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -3249,8 +3249,8 @@ gfpoly</li>
 <p>Return true if the character at specified position is an alphanumeric character. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$str</td><td>(string) string </td></tr>
-    <tr><td class="paramname">$pos</td><td>(int) characted position </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$str</td><td>string </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$pos</td><td>characted position </td></tr>
   </table>
   </dd>
 </dl>
@@ -3300,8 +3300,8 @@ gfpoly</li>
 <p>Return true if the character at specified position is a number. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$str</td><td>(string) string </td></tr>
-    <tr><td class="paramname">$pos</td><td>(int) characted position </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$str</td><td>string </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$pos</td><td>characted position </td></tr>
   </table>
   </dd>
 </dl>
@@ -3351,8 +3351,8 @@ gfpoly</li>
 <p>Return the size of length indicator for the mode and version. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$mode</td><td>(int) encoding mode </td></tr>
-    <tr><td class="paramname">$version</td><td>(int) version </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$mode</td><td>encoding mode </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$version</td><td>version </td></tr>
   </table>
   </dd>
 </dl>
@@ -3408,9 +3408,9 @@ gfpoly</li>
 <p>lengthOfCode </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$mode</td><td>(int) </td></tr>
-    <tr><td class="paramname">$version</td><td>(int) </td></tr>
-    <tr><td class="paramname">$bits</td><td>(int) </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$mode</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$version</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$bits</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -3447,16 +3447,16 @@ gfpoly</li>
 </table>
 </div><div class="memdoc">
 
-<p>Look up the alphabet-numeric convesion table (see JIS X0510:2004, pp.19). </p>
+<p>Look up the alphabet-numeric conversion table (see JIS X0510:2004, pp.19). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$c</td><td>(int) character value </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$c</td><td>character value </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">value</td><td></td></tr>
+    <tr><td class="paramname">int</td><td>value </td></tr>
   </table>
   </dd>
 </dl>
@@ -3512,10 +3512,10 @@ gfpoly</li>
 <p>makeMask </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$width</td><td>(int) </td></tr>
-    <tr><td class="paramname">$frame</td><td>(array) </td></tr>
-    <tr><td class="paramname">$maskNo</td><td>(int) </td></tr>
-    <tr><td class="paramname">$level</td><td>(int) </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$width</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$frame</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$maskNo</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$level</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -3583,11 +3583,11 @@ gfpoly</li>
 <p>makeMaskNo </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$maskNo</td><td>(int) </td></tr>
-    <tr><td class="paramname">$width</td><td>(int) </td></tr>
-    <tr><td class="paramname">$s</td><td>(int) </td></tr>
-    <tr><td class="paramname">$d</td><td>(int) </td></tr>
-    <tr><td class="paramname">$maskGenOnly</td><td>(boolean) </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$maskNo</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$width</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$s</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$d</td><td></td></tr>
+    <tr><td class="paramtype">boolean</td><td class="paramname">$maskGenOnly</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -3643,9 +3643,9 @@ gfpoly</li>
 <p>mask </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$width</td><td>(int) </td></tr>
-    <tr><td class="paramname">$frame</td><td>(array) </td></tr>
-    <tr><td class="paramname">$level</td><td>(int) </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$width</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$frame</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$level</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -3695,8 +3695,8 @@ gfpoly</li>
 <p>mask0 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$x</td><td>(int) X position </td></tr>
-    <tr><td class="paramname">$y</td><td>(int) Y position </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$x</td><td>X position </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$y</td><td>Y position </td></tr>
   </table>
   </dd>
 </dl>
@@ -3746,8 +3746,8 @@ gfpoly</li>
 <p>mask1 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$x</td><td>(int) X position </td></tr>
-    <tr><td class="paramname">$y</td><td>(int) Y position </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$x</td><td>X position </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$y</td><td>Y position </td></tr>
   </table>
   </dd>
 </dl>
@@ -3797,8 +3797,8 @@ gfpoly</li>
 <p>mask2 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$x</td><td>(int) X position </td></tr>
-    <tr><td class="paramname">$y</td><td>(int) Y position </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$x</td><td>X position </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$y</td><td>Y position </td></tr>
   </table>
   </dd>
 </dl>
@@ -3848,8 +3848,8 @@ gfpoly</li>
 <p>mask3 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$x</td><td>(int) X position </td></tr>
-    <tr><td class="paramname">$y</td><td>(int) Y position </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$x</td><td>X position </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$y</td><td>Y position </td></tr>
   </table>
   </dd>
 </dl>
@@ -3899,8 +3899,8 @@ gfpoly</li>
 <p>mask4 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$x</td><td>(int) X position </td></tr>
-    <tr><td class="paramname">$y</td><td>(int) Y position </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$x</td><td>X position </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$y</td><td>Y position </td></tr>
   </table>
   </dd>
 </dl>
@@ -3950,8 +3950,8 @@ gfpoly</li>
 <p>mask5 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$x</td><td>(int) X position </td></tr>
-    <tr><td class="paramname">$y</td><td>(int) Y position </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$x</td><td>X position </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$y</td><td>Y position </td></tr>
   </table>
   </dd>
 </dl>
@@ -4001,8 +4001,8 @@ gfpoly</li>
 <p>mask6 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$x</td><td>(int) X position </td></tr>
-    <tr><td class="paramname">$y</td><td>(int) Y position </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$x</td><td>X position </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$y</td><td>Y position </td></tr>
   </table>
   </dd>
 </dl>
@@ -4052,8 +4052,8 @@ gfpoly</li>
 <p>mask7 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$x</td><td>(int) X position </td></tr>
-    <tr><td class="paramname">$y</td><td>(int) Y position </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$x</td><td>X position </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$y</td><td>Y position </td></tr>
   </table>
   </dd>
 </dl>
@@ -4103,8 +4103,8 @@ gfpoly</li>
 <p>Return the maximum length for the mode and version. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$mode</td><td>(int) encoding mode </td></tr>
-    <tr><td class="paramname">$version</td><td>(int) version </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$mode</td><td>encoding mode </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$version</td><td>version </td></tr>
   </table>
   </dd>
 </dl>
@@ -4144,7 +4144,7 @@ gfpoly</li>
 <p>mergeBitStream </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$items</td><td>(array) items </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$items</td><td>items </td></tr>
   </table>
   </dd>
 </dl>
@@ -4194,8 +4194,8 @@ gfpoly</li>
 <p>modnn </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$rs</td><td>(array) RS values </td></tr>
-    <tr><td class="paramname">$x</td><td>(int) X position </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$rs</td><td>RS values </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$x</td><td>X position </td></tr>
   </table>
   </dd>
 </dl>
@@ -4235,13 +4235,13 @@ gfpoly</li>
 <p>Set new frame for the specified version. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$version</td><td>(int) version </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$version</td><td>version </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">Array</td><td>of unsigned char. </td></tr>
+    <tr><td class="paramname">array</td><td>array of unsigned char. </td></tr>
   </table>
   </dd>
 </dl>
@@ -4285,8 +4285,8 @@ gfpoly</li>
 <p>Return new bitstream from bytes. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$size</td><td>(int) size </td></tr>
-    <tr><td class="paramname">$data</td><td>(array) bytes </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$size</td><td>size </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>bytes </td></tr>
   </table>
   </dd>
 </dl>
@@ -4336,8 +4336,8 @@ gfpoly</li>
 <p>Return new bitstream from number. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$bits</td><td>(int) number of bits </td></tr>
-    <tr><td class="paramname">$num</td><td>(int) number </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$bits</td><td>number of bits </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$num</td><td>number </td></tr>
   </table>
   </dd>
 </dl>
@@ -4399,10 +4399,10 @@ gfpoly</li>
 <p>newInputItem </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$mode</td><td>(int) </td></tr>
-    <tr><td class="paramname">$size</td><td>(int) </td></tr>
-    <tr><td class="paramname">$data</td><td>(array) </td></tr>
-    <tr><td class="paramname">$bstream</td><td>(array) </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$mode</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$size</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$bstream</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -4458,9 +4458,9 @@ gfpoly</li>
 <p>Put an alignment marker. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$frame</td><td>(array) frame </td></tr>
-    <tr><td class="paramname">$ox</td><td>(int) X center coordinate of the pattern </td></tr>
-    <tr><td class="paramname">$oy</td><td>(int) Y center coordinate of the pattern </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$frame</td><td>frame </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$ox</td><td>X center coordinate of the pattern </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$oy</td><td>Y center coordinate of the pattern </td></tr>
   </table>
   </dd>
 </dl>
@@ -4516,9 +4516,9 @@ gfpoly</li>
 <p>Put an alignment pattern. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$version</td><td>(int) version </td></tr>
-    <tr><td class="paramname">$frame</td><td>(array) frame </td></tr>
-    <tr><td class="paramname">$width</td><td>(int) width </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$version</td><td>version </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$frame</td><td>frame </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$width</td><td>width </td></tr>
   </table>
   </dd>
 </dl>
@@ -4574,9 +4574,9 @@ gfpoly</li>
 <p>Put a finder pattern. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$frame</td><td>(array) frame </td></tr>
-    <tr><td class="paramname">$ox</td><td>(int) X center coordinate of the pattern </td></tr>
-    <tr><td class="paramname">$oy</td><td>(int) Y center coordinate of the pattern </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$frame</td><td>frame </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$ox</td><td>X center coordinate of the pattern </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$oy</td><td>Y center coordinate of the pattern </td></tr>
   </table>
   </dd>
 </dl>
@@ -4644,11 +4644,11 @@ gfpoly</li>
 <p>Replace a value on the array at the specified position. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$srctab</td><td>(array) </td></tr>
-    <tr><td class="paramname">$x</td><td>(int) X position </td></tr>
-    <tr><td class="paramname">$y</td><td>(int) Y position </td></tr>
-    <tr><td class="paramname">$repl</td><td>(string) value to replace </td></tr>
-    <tr><td class="paramname">$replLen</td><td>(int) length of the repl string </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$srctab</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$x</td><td>X position </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$y</td><td>Y position </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$repl</td><td>value to replace </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$replLen</td><td>length of the repl string </td></tr>
   </table>
   </dd>
 </dl>
@@ -4688,7 +4688,7 @@ gfpoly</li>
 <p>Return block number 0. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$spec</td><td>(array) </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$spec</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -4728,7 +4728,7 @@ gfpoly</li>
 <p>Return block number 1. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$spec</td><td>(array) </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$spec</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -4768,7 +4768,7 @@ gfpoly</li>
 <p>Return block number 2. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$spec</td><td>(array) </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$spec</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -4808,7 +4808,7 @@ gfpoly</li>
 <p>Return data codes 1. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$spec</td><td>(array) </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$spec</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -4848,7 +4848,7 @@ gfpoly</li>
 <p>Return data codes 2. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$spec</td><td>(array) </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$spec</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -4888,7 +4888,7 @@ gfpoly</li>
 <p>Return data length. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$spec</td><td>(array) </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$spec</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -4928,7 +4928,7 @@ gfpoly</li>
 <p>Return ecc codes 1. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$spec</td><td>(array) </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$spec</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -4968,7 +4968,7 @@ gfpoly</li>
 <p>Return ecc codes 2. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$spec</td><td>(array) </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$spec</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -5008,7 +5008,7 @@ gfpoly</li>
 <p>Return ecc length. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$spec</td><td>(array) </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$spec</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -5058,8 +5058,8 @@ gfpoly</li>
 <p>Set frame value at specified position. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$at</td><td>(array) x,y position </td></tr>
-    <tr><td class="paramname">$val</td><td>(int) value of the character to set </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$at</td><td>x,y position </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$val</td><td>value of the character to set </td></tr>
   </table>
   </dd>
 </dl>
@@ -5092,7 +5092,7 @@ gfpoly</li>
 <p>splitString </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">(int)</td><td></td></tr>
+    <tr><td class="paramname">int</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -5148,10 +5148,10 @@ gfpoly</li>
 <p>Write Format Information on frame and returns the number of black bits. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$width</td><td>(int) frame width </td></tr>
-    <tr><td class="paramname">$frame</td><td>(array) frame </td></tr>
-    <tr><td class="paramname">$mask</td><td>(array) masking mode </td></tr>
-    <tr><td class="paramname">$level</td><td>(int) error correction level </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$width</td><td>frame width </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$frame</td><td>frame </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$mask</td><td>masking mode </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$level</td><td>error correction level </td></tr>
   </table>
   </dd>
 </dl>
@@ -5434,7 +5434,7 @@ gfpoly</li>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 30 2022 04:01:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 6 2022 03:47:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

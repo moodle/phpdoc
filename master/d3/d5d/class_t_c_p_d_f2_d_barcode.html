@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221028) (fa7a55aa5de)</div>
+   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221104) (fee1b8ce5fb)</div>
   </td>
  </tr>
  </tbody>
@@ -103,7 +103,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a03abea5250d8f41f74c4bd5fb64b34fb"><td class="memItemLeft" align="right" valign="top"><a id="a03abea5250d8f41f74c4bd5fb64b34fb" name="a03abea5250d8f41f74c4bd5fb64b34fb"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$barcode_array</b> = false</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$barcode_array</b> = array()</td></tr>
 <tr class="memdesc:a03abea5250d8f41f74c4bd5fb64b34fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array representation of barcode. <br /></td></tr>
 <tr class="separator:a03abea5250d8f41f74c4bd5fb64b34fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -151,14 +151,14 @@ $arrcode['bcode'][$r][$c] value of the cell is $r row and $c column (0 = transpa
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$code</td><td>(string) code to print </td></tr>
-    <tr><td class="paramname">$type</td><td>(string) type of barcode: <ul>
+    <tr><td class="paramtype">string</td><td class="paramname">$code</td><td>code to print </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$type</td><td>type of barcode: <ul>
 <li>
 DATAMATRIX : <a class="el" href="../../dd/d05/class_datamatrix.html" title="Class to create DataMatrix ECC 200 barcode arrays for TCPDF class.">Datamatrix</a> (ISO/IEC 16022)</li>
 <li>
 <a class="el" href="../../d0/df5/class_p_d_f417.html" title="Class to create PDF417 barcode arrays for TCPDF class.">PDF417</a> : <a class="el" href="../../d0/df5/class_p_d_f417.html" title="Class to create PDF417 barcode arrays for TCPDF class.">PDF417</a> (ISO/IEC 15438:2006)</li>
 <li>
-<a class="el" href="../../d0/df5/class_p_d_f417.html" title="Class to create PDF417 barcode arrays for TCPDF class.">PDF417</a>,a,e,t,s,f,o0,o1,o2,o3,o4,o5,o6 : <a class="el" href="../../d0/df5/class_p_d_f417.html" title="Class to create PDF417 barcode arrays for TCPDF class.">PDF417</a> with parameters: a = aspect ratio (width/height); e = error correction level (0-8); t = total number of macro segments; s = macro segment index (0-99998); f = file ID; o0 = File Name (text); o1 = Segment Count (numeric); o2 = Time Stamp (numeric); o3 = Sender (text); o4 = Addressee (text); o5 = File Size (numeric); o6 = Checksum (numeric). NOTES: Parameters t, s and f are required for a Macro Control Block, all other parametrs are optional. To use a comma character ',' on text options, replace it with the character 255: "::xff".</li>
+<a class="el" href="../../d0/df5/class_p_d_f417.html" title="Class to create PDF417 barcode arrays for TCPDF class.">PDF417</a>,a,e,t,s,f,o0,o1,o2,o3,o4,o5,o6 : <a class="el" href="../../d0/df5/class_p_d_f417.html" title="Class to create PDF417 barcode arrays for TCPDF class.">PDF417</a> with parameters: a = aspect ratio (width/height); e = error correction level (0-8); t = total number of macro segments; s = macro segment index (0-99998); f = file ID; o0 = File Name (text); o1 = Segment Count (numeric); o2 = Time Stamp (numeric); o3 = Sender (text); o4 = Addressee (text); o5 = File Size (numeric); o6 = Checksum (numeric). NOTES: Parameters t, s and f are required for a Macro Control Block, all other parameters are optional. To use a comma character ',' on text options, replace it with the character 255: "::xff".</li>
 <li>
 QRCODE : <a class="el" href="../../df/d5b/class_q_rcode.html" title="Class to create QR-code arrays for TCPDF class.">QRcode</a> Low error correction</li>
 <li>
@@ -244,9 +244,9 @@ TEST : Test matrix</li>
 <p>Return an HTML representation of barcode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$w</td><td>(int) Width of a single rectangle element in pixels. </td></tr>
-    <tr><td class="paramname">$h</td><td>(int) Height of a single rectangle element in pixels. </td></tr>
-    <tr><td class="paramname">$color</td><td>(string) Foreground color for bar elements (background is transparent). </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$w</td><td>Width of a single rectangle element in pixels. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$h</td><td>Height of a single rectangle element in pixels. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$color</td><td>Foreground color for bar elements (background is transparent). </td></tr>
   </table>
   </dd>
 </dl>
@@ -294,9 +294,9 @@ TEST : Test matrix</li>
 <p>Send a PNG image representation of barcode (requires GD or Imagick library). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$w</td><td>(int) Width of a single rectangle element in pixels. </td></tr>
-    <tr><td class="paramname">$h</td><td>(int) Height of a single rectangle element in pixels. </td></tr>
-    <tr><td class="paramname">$color</td><td>(array) RGB (0-255) foreground color for bar elements (background is transparent). </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$w</td><td>Width of a single rectangle element in pixels. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$h</td><td>Height of a single rectangle element in pixels. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$color</td><td>RGB (0-255) foreground color for bar elements (background is transparent). </td></tr>
   </table>
   </dd>
 </dl>
@@ -338,15 +338,15 @@ TEST : Test matrix</li>
 <p>Return a PNG image representation of barcode (requires GD or Imagick library). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$w</td><td>(int) Width of a single rectangle element in pixels. </td></tr>
-    <tr><td class="paramname">$h</td><td>(int) Height of a single rectangle element in pixels. </td></tr>
-    <tr><td class="paramname">$color</td><td>(array) RGB (0-255) foreground color for bar elements (background is transparent). </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$w</td><td>Width of a single rectangle element in pixels. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$h</td><td>Height of a single rectangle element in pixels. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$color</td><td>RGB (0-255) foreground color for bar elements (background is transparent). </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">image</td><td>or false in case of error. </td></tr>
+    <tr><td class="paramname">string|Imagick|false</td><td>image or false in case of error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -388,9 +388,9 @@ TEST : Test matrix</li>
 <p>Send barcode as SVG image object to the standard output. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$w</td><td>(int) Width of a single rectangle element in user units. </td></tr>
-    <tr><td class="paramname">$h</td><td>(int) Height of a single rectangle element in user units. </td></tr>
-    <tr><td class="paramname">$color</td><td>(string) Foreground color (in SVG format) for bar elements (background is transparent). </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$w</td><td>Width of a single rectangle element in user units. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$h</td><td>Height of a single rectangle element in user units. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$color</td><td>Foreground color (in SVG format) for bar elements (background is transparent). </td></tr>
   </table>
   </dd>
 </dl>
@@ -432,9 +432,9 @@ TEST : Test matrix</li>
 <p>Return a SVG string representation of barcode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$w</td><td>(int) Width of a single rectangle element in user units. </td></tr>
-    <tr><td class="paramname">$h</td><td>(int) Height of a single rectangle element in user units. </td></tr>
-    <tr><td class="paramname">$color</td><td>(string) Foreground color (in SVG format) for bar elements (background is transparent). </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$w</td><td>Width of a single rectangle element in user units. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$h</td><td>Height of a single rectangle element in user units. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$color</td><td>Foreground color (in SVG format) for bar elements (background is transparent). </td></tr>
   </table>
   </dd>
 </dl>
@@ -476,14 +476,14 @@ TEST : Test matrix</li>
 <p>Set the barcode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$code</td><td>(string) code to print </td></tr>
-    <tr><td class="paramname">$type</td><td>(string) type of barcode: <ul>
+    <tr><td class="paramtype">string</td><td class="paramname">$code</td><td>code to print </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$type</td><td>type of barcode: <ul>
 <li>
 DATAMATRIX : <a class="el" href="../../dd/d05/class_datamatrix.html" title="Class to create DataMatrix ECC 200 barcode arrays for TCPDF class.">Datamatrix</a> (ISO/IEC 16022)</li>
 <li>
 <a class="el" href="../../d0/df5/class_p_d_f417.html" title="Class to create PDF417 barcode arrays for TCPDF class.">PDF417</a> : <a class="el" href="../../d0/df5/class_p_d_f417.html" title="Class to create PDF417 barcode arrays for TCPDF class.">PDF417</a> (ISO/IEC 15438:2006)</li>
 <li>
-<a class="el" href="../../d0/df5/class_p_d_f417.html" title="Class to create PDF417 barcode arrays for TCPDF class.">PDF417</a>,a,e,t,s,f,o0,o1,o2,o3,o4,o5,o6 : <a class="el" href="../../d0/df5/class_p_d_f417.html" title="Class to create PDF417 barcode arrays for TCPDF class.">PDF417</a> with parameters: a = aspect ratio (width/height); e = error correction level (0-8); t = total number of macro segments; s = macro segment index (0-99998); f = file ID; o0 = File Name (text); o1 = Segment Count (numeric); o2 = Time Stamp (numeric); o3 = Sender (text); o4 = Addressee (text); o5 = File Size (numeric); o6 = Checksum (numeric). NOTES: Parameters t, s and f are required for a Macro Control Block, all other parametrs are optional. To use a comma character ',' on text options, replace it with the character 255: "::xff".</li>
+<a class="el" href="../../d0/df5/class_p_d_f417.html" title="Class to create PDF417 barcode arrays for TCPDF class.">PDF417</a>,a,e,t,s,f,o0,o1,o2,o3,o4,o5,o6 : <a class="el" href="../../d0/df5/class_p_d_f417.html" title="Class to create PDF417 barcode arrays for TCPDF class.">PDF417</a> with parameters: a = aspect ratio (width/height); e = error correction level (0-8); t = total number of macro segments; s = macro segment index (0-99998); f = file ID; o0 = File Name (text); o1 = Segment Count (numeric); o2 = Time Stamp (numeric); o3 = Sender (text); o4 = Addressee (text); o5 = File Size (numeric); o6 = Checksum (numeric). NOTES: Parameters t, s and f are required for a Macro Control Block, all other parameters are optional. To use a comma character ',' on text options, replace it with the character 255: "::xff".</li>
 <li>
 QRCODE : <a class="el" href="../../df/d5b/class_q_rcode.html" title="Class to create QR-code arrays for TCPDF class.">QRcode</a> Low error correction</li>
 <li>
@@ -507,7 +507,7 @@ TEST : Test matrix</li>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array</td><td></td></tr>
+    <tr><td class="paramname">void</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -520,7 +520,7 @@ TEST : Test matrix</li>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 30 2022 04:01:44 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 6 2022 03:47:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.4+ (Build: 20221028) (141e369a012)</div>
+   <div id="projectbrief">Moodle 4.0.4+ (Build: 20221104) (28043b9b2eb)</div>
   </td>
  </tr>
  </tbody>
@@ -256,9 +256,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aa8926bfc1344e7dca3dec084e5468481"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d98/classcore__course__external.html#aa8926bfc1344e7dca3dec084e5468481">get_enrolled_courses_by_timeline_classification_returns</a> ()</td></tr>
 <tr class="memdesc:aa8926bfc1344e7dca3dec084e5468481"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns description of method result value.  <a href="../../d4/d98/classcore__course__external.html#aa8926bfc1344e7dca3dec084e5468481">More...</a><br /></td></tr>
 <tr class="separator:aa8926bfc1344e7dca3dec084e5468481"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1541518ed78f2f24ecb3ffdbce4e8ad"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d98/classcore__course__external.html#aa1541518ed78f2f24ecb3ffdbce4e8ad">get_enrolled_users_by_cmid</a> (int $cmid, int $groupid=0)</td></tr>
-<tr class="memdesc:aa1541518ed78f2f24ecb3ffdbce4e8ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all users in a course for a given cmid.  <a href="../../d4/d98/classcore__course__external.html#aa1541518ed78f2f24ecb3ffdbce4e8ad">More...</a><br /></td></tr>
-<tr class="separator:aa1541518ed78f2f24ecb3ffdbce4e8ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60ec72b8662f67a5557c3f6917555bbc"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d98/classcore__course__external.html#a60ec72b8662f67a5557c3f6917555bbc">get_enrolled_users_by_cmid</a> (int $cmid, int $groupid=0, bool $onlyactive=false)</td></tr>
+<tr class="memdesc:a60ec72b8662f67a5557c3f6917555bbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all users in a course for a given cmid.  <a href="../../d4/d98/classcore__course__external.html#a60ec72b8662f67a5557c3f6917555bbc">More...</a><br /></td></tr>
+<tr class="separator:a60ec72b8662f67a5557c3f6917555bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2400bb52aad2e8e7db702db90f6a6dc3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d98/classcore__course__external.html#a2400bb52aad2e8e7db702db90f6a6dc3">get_enrolled_users_by_cmid_parameters</a> ()</td></tr>
 <tr class="memdesc:a2400bb52aad2e8e7db702db90f6a6dc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns description of method parameters.  <a href="../../d4/d98/classcore__course__external.html#a2400bb52aad2e8e7db702db90f6a6dc3">More...</a><br /></td></tr>
 <tr class="separator:a2400bb52aad2e8e7db702db90f6a6dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3064,8 +3064,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa1541518ed78f2f24ecb3ffdbce4e8ad" name="aa1541518ed78f2f24ecb3ffdbce4e8ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1541518ed78f2f24ecb3ffdbce4e8ad">&#9670;&#160;</a></span>get_enrolled_users_by_cmid()</h2>
+<a id="a60ec72b8662f67a5557c3f6917555bbc" name="a60ec72b8662f67a5557c3f6917555bbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60ec72b8662f67a5557c3f6917555bbc">&#9670;&#160;</a></span>get_enrolled_users_by_cmid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3083,7 +3083,13 @@ Static Protected Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>$groupid</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>$groupid</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$onlyactive</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3103,6 +3109,7 @@ Static Protected Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$cmid</td><td>Course Module id from which the users will be obtained </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$groupid</td><td>Group id from which the users will be obtained </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$onlyactive</td><td>Whether to return only the active enrolled users or all enrolled users in the course. </td></tr>
   </table>
   </dd>
 </dl>
@@ -5099,7 +5106,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 30 2022 03:53:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 6 2022 03:36:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

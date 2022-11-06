@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221028) (fa7a55aa5de)</div>
+   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221104) (fee1b8ce5fb)</div>
   </td>
  </tr>
  </tbody>
@@ -164,10 +164,10 @@ Protected Attributes</h2></td></tr>
 <p>This is the class constructor. </p>
 <p >Creates a <a class="el" href="../../d0/df5/class_p_d_f417.html" title="Class to create PDF417 barcode arrays for TCPDF class.">PDF417</a> object </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$code</td><td>(string) code to represent using <a class="el" href="../../d0/df5/class_p_d_f417.html" title="Class to create PDF417 barcode arrays for TCPDF class.">PDF417</a> </td></tr>
-    <tr><td class="paramname">$ecl</td><td>(int) error correction level (0-8); default -1 = automatic correction level </td></tr>
-    <tr><td class="paramname">$aspectratio</td><td>(float) the width to height of the symbol (excluding quiet zones) </td></tr>
-    <tr><td class="paramname">$macro</td><td>(array) information for macro block </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$code</td><td>code to represent using <a class="el" href="../../d0/df5/class_p_d_f417.html" title="Class to create PDF417 barcode arrays for TCPDF class.">PDF417</a> </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$ecl</td><td>error correction level (0-8); default -1 = automatic correction level </td></tr>
+    <tr><td class="paramtype">float</td><td class="paramname">$aspectratio</td><td>the width to height of the symbol (excluding quiet zones) </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$macro</td><td>information for macro block </td></tr>
   </table>
   </dd>
 </dl>
@@ -243,9 +243,9 @@ Protected Attributes</h2></td></tr>
 <p>Compact data by mode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$mode</td><td>(int) compaction mode number </td></tr>
-    <tr><td class="paramname">$code</td><td>(string) data to compact </td></tr>
-    <tr><td class="paramname">$addmode</td><td>(boolean) if true add the mode codeword at first position </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$mode</td><td>compaction mode number </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$code</td><td>data to compact </td></tr>
+    <tr><td class="paramtype">boolean</td><td class="paramname">$addmode</td><td>if true add the mode codeword at first position </td></tr>
   </table>
   </dd>
 </dl>
@@ -295,8 +295,8 @@ Protected Attributes</h2></td></tr>
 <p>Returns the error correction codewords. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$cw</td><td>(array) array of codewords including Symbol Length Descriptor and pad </td></tr>
-    <tr><td class="paramname">$ecl</td><td>(int) error correction level 0-8 </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$cw</td><td>array of codewords including Symbol Length Descriptor and pad </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$ecl</td><td>error correction level 0-8 </td></tr>
   </table>
   </dd>
 </dl>
@@ -346,8 +346,8 @@ Protected Attributes</h2></td></tr>
 <p>Returns the error correction level (0-8) to be used. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$ecl</td><td>(int) error correction level </td></tr>
-    <tr><td class="paramname">$numcw</td><td>(int) number of data codewords </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$ecl</td><td>error correction level </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$numcw</td><td>number of data codewords </td></tr>
   </table>
   </dd>
 </dl>
@@ -387,13 +387,13 @@ Protected Attributes</h2></td></tr>
 <p>Create array of sequences from input. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$code</td><td>(string) code </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$code</td><td>code </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">bidimensional</td><td>array containing characters and classification </td></tr>
+    <tr><td class="paramname">array</td><td>bi-dimensional array containing characters and classification </td></tr>
   </table>
   </dd>
 </dl>
@@ -524,7 +524,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 30 2022 04:01:27 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 6 2022 03:47:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

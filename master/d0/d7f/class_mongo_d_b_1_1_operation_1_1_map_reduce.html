@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221028) (fa7a55aa5de)</div>
+   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221104) (fee1b8ce5fb)</div>
   </td>
  </tr>
  </tbody>
@@ -146,11 +146,10 @@ Public Member Functions</h2></td></tr>
 </ul>
 <p >Supported options:</p>
 <ul>
-<li><p class="startli">bypassDocumentValidation (boolean): If true, allows the write to circumvent document level validation. This only applies when results are output to a collection.</p>
-<p class="startli">For servers &lt; 3.2, this option is ignored as document level validation is not available.</p>
-</li>
-<li><p class="startli">collation (document): Collation specification.</p>
-<p class="startli">This is not supported for server versions &lt; 3.4 and will result in an exception at execution time if used.</p>
+<li>bypassDocumentValidation (boolean): If true, allows the write to circumvent document level validation. This only applies when results are output to a collection.</li>
+<li>collation (document): Collation specification.</li>
+<li><p class="startli">comment (mixed): BSON value to attach as a comment to this command.</p>
+<p class="startli">This is not supported for servers versions &lt; 4.4.</p>
 </li>
 <li><p class="startli">finalize (MongoDB::BSON::JavascriptInterface): Follows the reduce method and modifies the output.</p>
 <p class="startli">Passing a Javascript instance with a scope is deprecated. Put all scope variables in the "scope" option of the <a class="el" href="../../d0/d7f/class_mongo_d_b_1_1_operation_1_1_map_reduce.html">MapReduce</a> operation.</p>
@@ -159,22 +158,16 @@ Public Member Functions</h2></td></tr>
 <li>limit (integer): Specifies a maximum number of documents for the input into the map function.</li>
 <li>maxTimeMS (integer): The maximum amount of time to allow the query to run.</li>
 <li>query (document): Specifies the selection criteria using query operators for determining the documents input to the map function.</li>
-<li><p class="startli">readConcern (MongoDB::Driver::ReadConcern): Read concern. This is not supported when results are returned inline.</p>
-<p class="startli">This is not supported for server versions &lt; 3.2 and will result in an exception at execution time if used.</p>
-</li>
+<li>readConcern (MongoDB::Driver::ReadConcern): Read concern. This is not supported when results are returned inline.</li>
 <li><p class="startli">readPreference (MongoDB::Driver::ReadPreference): Read preference.</p>
 <p class="startli">This option is ignored if results are output to a collection.</p>
 </li>
 <li>scope (document): Specifies global variables that are accessible in the map, reduce and finalize functions.</li>
-<li><p class="startli">session (MongoDB::Driver::Session): <a class="el" href="../../d5/df8/class_mongo_d_b_1_1_client.html">Client</a> session.</p>
-<p class="startli">Sessions are not supported for server versions &lt; 3.6.</p>
-</li>
+<li>session (MongoDB::Driver::Session): <a class="el" href="../../d5/df8/class_mongo_d_b_1_1_client.html">Client</a> session.</li>
 <li>sort (document): Sorts the input documents. This option is useful for optimization. For example, specify the sort key to be the same as the emit key so that there are fewer reduce operations. The sort key must be in an existing index for this collection.</li>
 <li>typeMap (array): Type map for BSON deserialization. This will be applied to the returned Cursor (it is not sent to the server).</li>
 <li>verbose (boolean): Specifies whether to include the timing information in the result information.</li>
-<li><p class="startli">writeConcern (MongoDB::Driver::WriteConcern): Write concern. This only applies when results are output to a collection.</p>
-<p class="startli">This is not supported for server versions &lt; 3.4 and will result in an exception at execution time if used.</p>
-</li>
+<li>writeConcern (MongoDB::Driver::WriteConcern): Write concern. This only applies when results are output to a collection.</li>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -230,7 +223,7 @@ Public Member Functions</h2></td></tr>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname">UnexpectedValueException</td><td>if the command response was malformed </td></tr>
-    <tr><td class="paramname">UnsupportedException</td><td>if collation, read concern, or write concern is used and unsupported </td></tr>
+    <tr><td class="paramname">UnsupportedException</td><td>if read concern or write concern is used and unsupported </td></tr>
     <tr><td class="paramname">DriverRuntimeException</td><td>for other driver errors (e.g. connection errors) </td></tr>
   </table>
   </dd>
@@ -246,7 +239,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 30 2022 04:03:57 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 6 2022 03:50:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

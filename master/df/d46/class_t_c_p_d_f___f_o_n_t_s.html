@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221028) (fa7a55aa5de)</div>
+   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221104) (fee1b8ce5fb)</div>
   </td>
  </tr>
  </tbody>
@@ -118,7 +118,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a6585c303ea99a2a1e7128104e5001ff6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract a slice of the $strarr array and return it as string.  <a href="../../df/d46/class_t_c_p_d_f___f_o_n_t_s.html#a6585c303ea99a2a1e7128104e5001ff6">More...</a><br /></td></tr>
 <tr class="separator:a6585c303ea99a2a1e7128104e5001ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac33ba9645a358b4d5476d983b6ff39a4"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d46/class_t_c_p_d_f___f_o_n_t_s.html#ac33ba9645a358b4d5476d983b6ff39a4">UTF8ArrToLatin1</a> ($unicode)</td></tr>
-<tr class="memdesc:ac33ba9645a358b4d5476d983b6ff39a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts UTF-8 characters array to array of Latin1 string<br  />
+<tr class="memdesc:ac33ba9645a358b4d5476d983b6ff39a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts UTF-8 characters array to Latin1 string<br  />
   <a href="../../df/d46/class_t_c_p_d_f___f_o_n_t_s.html#ac33ba9645a358b4d5476d983b6ff39a4">More...</a><br /></td></tr>
 <tr class="separator:ac33ba9645a358b4d5476d983b6ff39a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91edd0aabc64f951d6a2e0c46cc6dd0e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d46/class_t_c_p_d_f___f_o_n_t_s.html#a91edd0aabc64f951d6a2e0c46cc6dd0e">UTF8ArrToLatin1Arr</a> ($unicode)</td></tr>
@@ -226,14 +226,14 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$cache_uniord</b> =
 <p>Returns a subset of the TrueType font data without the unused glyphs. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$font</td><td>(string) TrueType font data. </td></tr>
-    <tr><td class="paramname">$subsetchars</td><td>(array) Array of used characters (the glyphs to keep). </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$font</td><td>TrueType font data. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$subsetchars</td><td>Array of used characters (the glyphs to keep). </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">(string)</td><td>A subset of TrueType font data without the unused glyphs. </td></tr>
+    <tr><td class="paramname">string</td><td>A subset of TrueType font data without the unused glyphs. </td></tr>
   </table>
   </dd>
 </dl>
@@ -279,8 +279,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$cache_uniord</b> =
 <p>Returs the checksum of a TTF table. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$table</td><td>(string) table to check </td></tr>
-    <tr><td class="paramname">$length</td><td>(int) length of table in bytes </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$table</td><td>table to check </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$length</td><td>length of table in bytes </td></tr>
   </table>
   </dd>
 </dl>
@@ -332,14 +332,14 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$cache_uniord</b> =
 <p>Outputs font widths. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$font</td><td>(array) font data </td></tr>
-    <tr><td class="paramname">$cidoffset</td><td>(int) offset for CID values </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$font</td><td>font data </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$cidoffset</td><td>offset for CID values </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">PDF</td><td>command string for font widths </td></tr>
+    <tr><td class="paramname">string</td><td>PDF command string for font widths </td></tr>
   </table>
   </dd>
 </dl>
@@ -427,21 +427,21 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$cache_uniord</b> =
 <p>Convert and add the selected TrueType or Type1 font to the fonts folder (that must be writeable). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$fontfile</td><td>(string) Font file (full path). </td></tr>
-    <tr><td class="paramname">$fonttype</td><td>(string) Font type. Leave empty for autodetect mode. Valid values are: TrueTypeUnicode, TrueType, Type1, CID0JP = CID-0 Japanese, CID0KR = CID-0 Korean, CID0CS = CID-0 Chinese Simplified, CID0CT = CID-0 Chinese Traditional. </td></tr>
-    <tr><td class="paramname">$enc</td><td>(string) Name of the encoding table to use. Leave empty for default mode. Omit this parameter for TrueType Unicode and symbolic fonts like Symbol or ZapfDingBats. </td></tr>
-    <tr><td class="paramname">$flags</td><td>(int) Unsigned 32-bit integer containing flags specifying various characteristics of the font (PDF32000:2008 - 9.8.2 Font Descriptor Flags): +1 for fixed font; +4 for symbol or +32 for non-symbol; +64 for italic. Fixed and Italic mode are generally autodetected so you have to set it to 32 = non-symbolic font (default) or 4 = symbolic font. </td></tr>
-    <tr><td class="paramname">$outpath</td><td>(string) Output path for generated font files (must be writeable by the web server). Leave empty for default font folder. </td></tr>
-    <tr><td class="paramname">$platid</td><td>(int) Platform ID for CMAP table to extract (when building a Unicode font for Windows this value should be 3, for Macintosh should be 1). </td></tr>
-    <tr><td class="paramname">$encid</td><td>(int) Encoding ID for CMAP table to extract (when building a Unicode font for Windows this value should be 1, for Macintosh should be 0). When Platform ID is 3, legal values for Encoding ID are: 0=Symbol, 1=Unicode, 2=ShiftJIS, 3=PRC, 4=Big5, 5=Wansung, 6=Johab, 7=Reserved, 8=Reserved, 9=Reserved, 10=UCS-4. </td></tr>
-    <tr><td class="paramname">$addcbbox</td><td>(boolean) If true includes the character bounding box information on the php font file. </td></tr>
-    <tr><td class="paramname">$link</td><td>(boolean) If true link to system font instead of copying the font data (not transportable) - Note: do not work with Type1 fonts. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$fontfile</td><td>Font file (full path). </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$fonttype</td><td>Font type. Leave empty for autodetect mode. Valid values are: TrueTypeUnicode, TrueType, Type1, CID0JP = CID-0 Japanese, CID0KR = CID-0 Korean, CID0CS = CID-0 Chinese Simplified, CID0CT = CID-0 Chinese Traditional. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$enc</td><td>Name of the encoding table to use. Leave empty for default mode. Omit this parameter for TrueType Unicode and symbolic fonts like Symbol or ZapfDingBats. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$flags</td><td>Unsigned 32-bit integer containing flags specifying various characteristics of the font (PDF32000:2008 - 9.8.2 Font Descriptor Flags): +1 for fixed font; +4 for symbol or +32 for non-symbol; +64 for italic. Fixed and Italic mode are generally autodetected so you have to set it to 32 = non-symbolic font (default) or 4 = symbolic font. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$outpath</td><td>Output path for generated font files (must be writeable by the web server). Leave empty for default font folder. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$platid</td><td>Platform ID for CMAP table to extract (when building a Unicode font for Windows this value should be 3, for Macintosh should be 1). </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$encid</td><td>Encoding ID for CMAP table to extract (when building a Unicode font for Windows this value should be 1, for Macintosh should be 0). When Platform ID is 3, legal values for Encoding ID are: 0=Symbol, 1=Unicode, 2=ShiftJIS, 3=PRC, 4=Big5, 5=Wansung, 6=Johab, 7=Reserved, 8=Reserved, 9=Reserved, 10=UCS-4. </td></tr>
+    <tr><td class="paramtype">boolean</td><td class="paramname">$addcbbox</td><td>If true includes the character bounding box information on the php font file. </td></tr>
+    <tr><td class="paramtype">boolean</td><td class="paramname">$link</td><td>If true link to system font instead of copying the font data (not transportable) - Note: do not work with Type1 fonts. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">(string)</td><td>TCPDF font name or boolean false in case of error. </td></tr>
+    <tr><td class="paramname">string|false</td><td>TCPDF font name or boolean false in case of error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -514,8 +514,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$cache_uniord</b> =
    W2 = 110111xxxxxxxxxx
 </pre> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$unicode</td><td>(array) array containing UTF-8 unicode values </td></tr>
-    <tr><td class="paramname">$setbom</td><td>(boolean) if true set the Byte Order Mark (BOM = 0xFEFF) </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$unicode</td><td>array containing UTF-8 unicode values </td></tr>
+    <tr><td class="paramtype">boolean</td><td class="paramname">$setbom</td><td>if true set the Byte Order Mark (BOM = 0xFEFF) </td></tr>
   </table>
   </dd>
 </dl>
@@ -567,8 +567,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$cache_uniord</b> =
 <p>Return font full path. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$file</td><td>(string) Font file name. </td></tr>
-    <tr><td class="paramname">$fontdir</td><td>(string) Font directory (set to false fto search on default directories) </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$file</td><td>Font file name. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$fontdir</td><td>Font directory (set to false fto search on default directories) </td></tr>
   </table>
   </dd>
 </dl>
@@ -620,8 +620,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$cache_uniord</b> =
 <p>Get a reference font size. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$size</td><td>(string) String containing font size value. </td></tr>
-    <tr><td class="paramname">$refsize</td><td>(float) Reference font size in points. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$size</td><td>String containing font size value. </td></tr>
+    <tr><td class="paramtype">float</td><td class="paramname">$refsize</td><td>Reference font size in points. </td></tr>
   </table>
   </dd>
 </dl>
@@ -686,7 +686,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$cache_uniord</b> =
   ---------------------------------------------------------------------
 </pre> <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$uch</td><td>(string) character string to process. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$uch</td><td>character string to process. </td></tr>
   </table>
   </dd>
 </dl>
@@ -743,15 +743,15 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$cache_uniord</b> =
 <p>Extract a slice of the $uniarr array and return it as string. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$uniarr</td><td>(string) The input array of characters. </td></tr>
-    <tr><td class="paramname">$start</td><td>(int) the starting element of $strarr. </td></tr>
-    <tr><td class="paramname">$end</td><td>(int) first element that will not be returned. </td></tr>
+    <tr><td class="paramtype">string[]</td><td class="paramname">$uniarr</td><td>The input array of characters. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$start</td><td>the starting element of $strarr. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$end</td><td>first element that will not be returned. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">Return</td><td>part of a string </td></tr>
+    <tr><td class="paramname">string</td><td>Return part of a string </td></tr>
   </table>
   </dd>
 </dl>
@@ -796,14 +796,14 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$cache_uniord</b> =
 <p>Returns the unicode caracter specified by the value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$c</td><td>(int) UTF-8 value </td></tr>
-    <tr><td class="paramname">$unicode</td><td>(boolean) True if we are in unicode mode, false otherwise. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$c</td><td>UTF-8 value </td></tr>
+    <tr><td class="paramtype">boolean</td><td class="paramname">$unicode</td><td>True if we are in unicode mode, false otherwise. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">Returns</td><td>the specified character. </td></tr>
+    <tr><td class="paramname">string</td><td>Returns the specified character. </td></tr>
   </table>
   </dd>
 </dl>
@@ -838,13 +838,13 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$cache_uniord</b> =
 <p>Returns the unicode caracter specified by ASCII value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$c</td><td>(int) UTF-8 value </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$c</td><td>UTF-8 value </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">Returns</td><td>the specified character. static </td></tr>
+    <tr><td class="paramname">string</td><td>Returns the specified character. static </td></tr>
   </table>
   </dd>
 </dl>
@@ -878,13 +878,13 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$cache_uniord</b> =
 <p>Returns the unicode caracter specified by UTF-8 value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$c</td><td>(int) UTF-8 value </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$c</td><td>UTF-8 value </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">Returns</td><td>the specified character. static </td></tr>
+    <tr><td class="paramname">string</td><td>Returns the specified character. static </td></tr>
   </table>
   </dd>
 </dl>
@@ -919,7 +919,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$cache_uniord</b> =
 <p ><br  />
  Uses the <a class="el" href="../../df/d46/class_t_c_p_d_f___f_o_n_t_s.html#ae38d399c66714c513052ca7d414dcbd4" title="Converts UTF-8 character to integer value.">getUniord()</a> method if the value is not cached. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$uch</td><td>(string) character string to process. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$uch</td><td>character string to process. </td></tr>
   </table>
   </dd>
 </dl>
@@ -975,15 +975,15 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$cache_uniord</b> =
 <p>Update the CIDToGIDMap string with a new value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$map</td><td>(string) CIDToGIDMap. </td></tr>
-    <tr><td class="paramname">$cid</td><td>(int) CID value. </td></tr>
-    <tr><td class="paramname">$gid</td><td>(int) GID value. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$map</td><td>CIDToGIDMap. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$cid</td><td>CID value. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$gid</td><td>GID value. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">(string)</td><td>CIDToGIDMap. </td></tr>
+    <tr><td class="paramname">string</td><td>CIDToGIDMap. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1029,14 +1029,14 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$cache_uniord</b> =
 <p>Convert an array of UTF8 values to array of unicode characters. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$ta</td><td>(array) The input array of UTF8 values. </td></tr>
-    <tr><td class="paramname">$isunicode</td><td>(boolean) True for Unicode mode, false otherwise. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$ta</td><td>The input array of UTF8 values. </td></tr>
+    <tr><td class="paramtype">boolean</td><td class="paramname">$isunicode</td><td>True for Unicode mode, false otherwise. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">Return</td><td>array of unicode characters </td></tr>
+    <tr><td class="paramname">array</td><td>Return array of unicode characters </td></tr>
   </table>
   </dd>
 </dl>
@@ -1093,16 +1093,16 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$cache_uniord</b> =
 <p>Extract a slice of the $strarr array and return it as string. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$strarr</td><td>(string) The input array of characters. </td></tr>
-    <tr><td class="paramname">$start</td><td>(int) the starting element of $strarr. </td></tr>
-    <tr><td class="paramname">$end</td><td>(int) first element that will not be returned. </td></tr>
-    <tr><td class="paramname">$unicode</td><td>(boolean) True if we are in unicode mode, false otherwise. </td></tr>
+    <tr><td class="paramtype">string[]</td><td class="paramname">$strarr</td><td>The input array of characters. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$start</td><td>the starting element of $strarr. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$end</td><td>first element that will not be returned. </td></tr>
+    <tr><td class="paramtype">boolean</td><td class="paramname">$unicode</td><td>True if we are in unicode mode, false otherwise. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">Return</td><td>part of a string static </td></tr>
+    <tr><td class="paramname">string</td><td>Return part of a string static </td></tr>
   </table>
   </dd>
 </dl>
@@ -1133,17 +1133,17 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$cache_uniord</b> =
 </table>
 </div><div class="memdoc">
 
-<p>Converts UTF-8 characters array to array of Latin1 string<br  />
+<p>Converts UTF-8 characters array to Latin1 string<br  />
  </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$unicode</td><td>(array) array containing UTF-8 unicode values </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$unicode</td><td>array containing UTF-8 unicode values </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array</td><td></td></tr>
+    <tr><td class="paramname">string</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1180,7 +1180,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$cache_uniord</b> =
  </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$unicode</td><td>(array) array containing UTF-8 unicode values </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$unicode</td><td>array containing UTF-8 unicode values </td></tr>
   </table>
   </dd>
 </dl>
@@ -1250,11 +1250,11 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$cache_uniord</b> =
 <p>Reverse the RLT substrings using the Bidirectional Algorithm (<a href="http://unicode.org/reports/tr9/">http://unicode.org/reports/tr9/</a>). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$ta</td><td>(array) array of characters composing the string. </td></tr>
-    <tr><td class="paramname">$str</td><td>(string) string to process </td></tr>
-    <tr><td class="paramname">$forcertl</td><td>(bool) if 'R' forces RTL, if 'L' forces LTR </td></tr>
-    <tr><td class="paramname">$isunicode</td><td>(boolean) True if the document is in Unicode mode, false otherwise. </td></tr>
-    <tr><td class="paramname">$currentfont</td><td>(array) Reference to current font array. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$ta</td><td>array of characters composing the string. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$str</td><td>string to process </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$forcertl</td><td>if 'R' forces RTL, if 'L' forces LTR </td></tr>
+    <tr><td class="paramtype">boolean</td><td class="paramname">$isunicode</td><td>True if the document is in Unicode mode, false otherwise. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$currentfont</td><td>Reference to current font array. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1330,12 +1330,12 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$cache_uniord</b> =
 <p>Reverse the RLT substrings array using the Bidirectional Algorithm (<a href="http://unicode.org/reports/tr9/">http://unicode.org/reports/tr9/</a>). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$arr</td><td>(array) array of unicode values. </td></tr>
-    <tr><td class="paramname">$str</td><td>(string) string to manipulate (or empty value). </td></tr>
-    <tr><td class="paramname">$setbom</td><td>(bool) if true set the Byte Order Mark (BOM = 0xFEFF) </td></tr>
-    <tr><td class="paramname">$forcertl</td><td>(bool) if true forces RTL text direction </td></tr>
-    <tr><td class="paramname">$isunicode</td><td>(boolean) True if the document is in Unicode mode, false otherwise. </td></tr>
-    <tr><td class="paramname">$currentfont</td><td>(array) Reference to current font array. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$arr</td><td>array of unicode values. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$str</td><td>string to manipulate (or empty value). </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$setbom</td><td>if true set the Byte Order Mark (BOM = 0xFEFF) </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$forcertl</td><td>if true forces RTL text direction </td></tr>
+    <tr><td class="paramtype">boolean</td><td class="paramname">$isunicode</td><td>True if the document is in Unicode mode, false otherwise. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$currentfont</td><td>Reference to current font array. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1395,9 +1395,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$cache_uniord</b> =
  Invalid byte sequences will be replaced with 0xFFFD (replacement character)<br  />
  </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$str</td><td>(string) string to process. </td></tr>
-    <tr><td class="paramname">$isunicode</td><td>(boolean) True when the documetn is in Unicode mode, false otherwise. </td></tr>
-    <tr><td class="paramname">$currentfont</td><td>(array) Reference to current font array. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$str</td><td>string to process. </td></tr>
+    <tr><td class="paramtype">boolean</td><td class="paramname">$isunicode</td><td>True when the documetn is in Unicode mode, false otherwise. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$currentfont</td><td>Reference to current font array. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1466,11 +1466,11 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$cache_uniord</b> =
 <p>Reverse the RLT substrings using the Bidirectional Algorithm (<a href="http://unicode.org/reports/tr9/">http://unicode.org/reports/tr9/</a>). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$str</td><td>(string) string to manipulate. </td></tr>
-    <tr><td class="paramname">$setbom</td><td>(bool) if true set the Byte Order Mark (BOM = 0xFEFF) </td></tr>
-    <tr><td class="paramname">$forcertl</td><td>(bool) if true forces RTL text direction </td></tr>
-    <tr><td class="paramname">$isunicode</td><td>(boolean) True if the document is in Unicode mode, false otherwise. </td></tr>
-    <tr><td class="paramname">$currentfont</td><td>(array) Reference to current font array. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$str</td><td>string to manipulate. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$setbom</td><td>if true set the Byte Order Mark (BOM = 0xFEFF) </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$forcertl</td><td>if true forces RTL text direction </td></tr>
+    <tr><td class="paramtype">boolean</td><td class="paramname">$isunicode</td><td>True if the document is in Unicode mode, false otherwise. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$currentfont</td><td>Reference to current font array. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1529,9 +1529,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$cache_uniord</b> =
 <p ><br  />
  </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$str</td><td>(string) string to process. </td></tr>
-    <tr><td class="paramname">$isunicode</td><td>(boolean) True when the documetn is in Unicode mode, false otherwise. </td></tr>
-    <tr><td class="paramname">$currentfont</td><td>(array) Reference to current font array. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$str</td><td>string to process. </td></tr>
+    <tr><td class="paramtype">boolean</td><td class="paramname">$isunicode</td><td>True when the documetn is in Unicode mode, false otherwise. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$currentfont</td><td>Reference to current font array. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1595,10 +1595,10 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$cache_uniord</b> =
 <p ><br  />
  </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$str</td><td>(string) string to process. </td></tr>
-    <tr><td class="paramname">$setbom</td><td>(boolean) if true set the Byte Order Mark (BOM = 0xFEFF) </td></tr>
-    <tr><td class="paramname">$isunicode</td><td>(boolean) True when the documetn is in Unicode mode, false otherwise. </td></tr>
-    <tr><td class="paramname">$currentfont</td><td>(array) Reference to current font array. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$str</td><td>string to process. </td></tr>
+    <tr><td class="paramtype">boolean</td><td class="paramname">$setbom</td><td>if true set the Byte Order Mark (BOM = 0xFEFF) </td></tr>
+    <tr><td class="paramtype">boolean</td><td class="paramname">$isunicode</td><td>True when the documetn is in Unicode mode, false otherwise. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$currentfont</td><td>Reference to current font array. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1619,7 +1619,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$cache_uniord</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 30 2022 04:01:44 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 6 2022 03:47:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

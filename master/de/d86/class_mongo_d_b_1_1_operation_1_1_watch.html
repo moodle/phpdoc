@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221028) (fa7a55aa5de)</div>
+   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221104) (fee1b8ce5fb)</div>
   </td>
  </tr>
  </tbody>
@@ -94,12 +94,27 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:acee3a4951f341d16143a4190c66560de"><td class="memItemLeft" align="right" valign="top"><a id="acee3a4951f341d16143a4190c66560de" name="acee3a4951f341d16143a4190c66560de"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>FULL_DOCUMENT_BEFORE_CHANGE_OFF</b> = 'off'</td></tr>
+<tr class="separator:acee3a4951f341d16143a4190c66560de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa17d5d2749e8513dd001b7d03ca9b60e"><td class="memItemLeft" align="right" valign="top"><a id="aa17d5d2749e8513dd001b7d03ca9b60e" name="aa17d5d2749e8513dd001b7d03ca9b60e"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>FULL_DOCUMENT_BEFORE_CHANGE_REQUIRED</b> = 'required'</td></tr>
+<tr class="separator:aa17d5d2749e8513dd001b7d03ca9b60e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae88e20be4e409533144fd196f9864832"><td class="memItemLeft" align="right" valign="top"><a id="ae88e20be4e409533144fd196f9864832" name="ae88e20be4e409533144fd196f9864832"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>FULL_DOCUMENT_BEFORE_CHANGE_WHEN_AVAILABLE</b> = 'whenAvailable'</td></tr>
+<tr class="separator:ae88e20be4e409533144fd196f9864832"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ef6b20bca141f316ee9d76b4a4d48ec"><td class="memItemLeft" align="right" valign="top"><a id="a1ef6b20bca141f316ee9d76b4a4d48ec" name="a1ef6b20bca141f316ee9d76b4a4d48ec"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>FULL_DOCUMENT_DEFAULT</b> = 'default'</td></tr>
 <tr class="separator:a1ef6b20bca141f316ee9d76b4a4d48ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacb15c11497a7b7604c28338a3121be2"><td class="memItemLeft" align="right" valign="top"><a id="aacb15c11497a7b7604c28338a3121be2" name="aacb15c11497a7b7604c28338a3121be2"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>FULL_DOCUMENT_REQUIRED</b> = 'required'</td></tr>
+<tr class="separator:aacb15c11497a7b7604c28338a3121be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0598ddb01c36f6130ed16c52dc18e7a6"><td class="memItemLeft" align="right" valign="top"><a id="a0598ddb01c36f6130ed16c52dc18e7a6" name="a0598ddb01c36f6130ed16c52dc18e7a6"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>FULL_DOCUMENT_UPDATE_LOOKUP</b> = 'updateLookup'</td></tr>
 <tr class="separator:a0598ddb01c36f6130ed16c52dc18e7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8326818099e6e6789355f8cec9f8194"><td class="memItemLeft" align="right" valign="top"><a id="af8326818099e6e6789355f8cec9f8194" name="af8326818099e6e6789355f8cec9f8194"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>FULL_DOCUMENT_WHEN_AVAILABLE</b> = 'whenAvailable'</td></tr>
+<tr class="separator:af8326818099e6e6789355f8cec9f8194"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a726077639bcbb5b4b07d072ba32edda1" name="a726077639bcbb5b4b07d072ba32edda1"></a>
@@ -151,8 +166,16 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FULL_DOCUMENT_UPDATE
 <ul>
 <li>batchSize (integer): The number of documents to return per batch.</li>
 <li>collation (document): Specifies a collation.</li>
-<li><p class="startli">fullDocument (string): Determines whether the "fullDocument" field will be populated for update operations. By default, change streams only return the delta of fields during the update operation (via the "updateDescription" field). To additionally return the most current majority-committed version of the updated document, specify "updateLookup" for this option. Defaults to "default".</p>
-<p class="startli">Insert and replace operations always include the "fullDocument" field and delete operations omit the field as the document no longer exists.</p>
+<li><p class="startli">comment (mixed): BSON value to attach as a comment to this command.</p>
+<p class="startli">Only string values are supported for server versions &lt; 4.4.</p>
+</li>
+<li><p class="startli">fullDocument (string): Determines how the "fullDocument" response field will be populated for update operations.</p>
+<p class="startli">By default, change streams only return the delta of fields (via an "updateDescription" field) for update operations and "fullDocument" is omitted. Insert and replace operations always include the "fullDocument" field. <a class="el" href="../../de/d76/class_mongo_d_b_1_1_operation_1_1_delete.html">Delete</a> operations omit the field as the document no longer exists.</p>
+<p class="startli">Specify "updateLookup" to return the current majority-committed version of the updated document.</p>
+<p class="startli"><a class="el" href="../../d1/d48/namespace_mongo_d_b.html" title="&#160;">MongoDB</a> 6.0+ allows returning the post-image of the modified document if the collection has changeStreamPreAndPostImages enabled. Specify "whenAvailable" to return the post-image if available or a null value if not. Specify "required" to return the post-image if available or raise an error if not.</p>
+</li>
+<li><p class="startli">fullDocumentBeforeChange (string): Determines how the "fullDocumentBeforeChange" response field will be populated. By default, the field is omitted.</p>
+<p class="startli"><a class="el" href="../../d1/d48/namespace_mongo_d_b.html" title="&#160;">MongoDB</a> 6.0+ allows returning the pre-image of the modified document if the collection has changeStreamPreAndPostImages enabled. Specify "whenAvailable" to return the pre-image if available or a null value if not. Specify "required" to return the pre-image if available or raise an error if not.</p>
 </li>
 <li>maxAwaitTimeMS (integer): The maximum amount of time for the server to wait on new documents to satisfy a change stream query.</li>
 <li>readConcern (MongoDB::Driver::ReadConcern): Read concern.</li>
@@ -160,8 +183,9 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FULL_DOCUMENT_UPDATE
 <li><p class="startli">resumeAfter (document): Specifies the logical starting point for the new change stream.</p>
 <p class="startli">Using this option in conjunction with "startAfter" and/or "startAtOperationTime" will result in a server error. The options are mutually exclusive.</p>
 </li>
-<li><p class="startli">session (MongoDB::Driver::Session): <a class="el" href="../../d5/df8/class_mongo_d_b_1_1_client.html">Client</a> session.</p>
-<p class="startli">Sessions are not supported for server versions &lt; 3.6.</p>
+<li>session (MongoDB::Driver::Session): <a class="el" href="../../d5/df8/class_mongo_d_b_1_1_client.html">Client</a> session.</li>
+<li><p class="startli">showExpandedEvents (boolean): Enables the server to send the expanded list of change stream events.</p>
+<p class="startli">This option is not supported for server versions &lt; 6.0.</p>
 </li>
 <li><p class="startli">startAfter (document): Specifies the logical starting point for the new change stream. Unlike "resumeAfter", this option can be used with a resume token from an "invalidate" event.</p>
 <p class="startli">Using this option in conjunction with "resumeAfter" and/or "startAtOperationTime" will result in a server error. The options are mutually exclusive.</p>
@@ -241,7 +265,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FULL_DOCUMENT_UPDATE
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 30 2022 04:03:58 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 6 2022 03:50:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

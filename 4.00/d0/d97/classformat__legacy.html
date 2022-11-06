@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.4+ (Build: 20221028) (141e369a012)</div>
+   <div id="projectbrief">Moodle 4.0.4+ (Build: 20221104) (28043b9b2eb)</div>
   </td>
  </tr>
  </tbody>
@@ -228,9 +228,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a703a2bd49193d997d328b03ca113fbee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a703a2bd49193d997d328b03ca113fbee">set_sections_preference</a> (string $preferencename, array $sectionids)</td></tr>
 <tr class="memdesc:a703a2bd49193d997d328b03ca113fbee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the format section preferences.  <a href="../../d4/da0/classcore__courseformat_1_1base.html#a703a2bd49193d997d328b03ca113fbee">More...</a><br /></td></tr>
 <tr class="separator:a703a2bd49193d997d328b03ca113fbee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a309c9613b660b9ac9914d7d9020aafca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a309c9613b660b9ac9914d7d9020aafca">show_editor</a> ()</td></tr>
-<tr class="memdesc:a309c9613b660b9ac9914d7d9020aafca"><td class="mdescLeft">&#160;</td><td class="mdescRight">return true if the course editor must be displayed.  <a href="../../d4/da0/classcore__courseformat_1_1base.html#a309c9613b660b9ac9914d7d9020aafca">More...</a><br /></td></tr>
-<tr class="separator:a309c9613b660b9ac9914d7d9020aafca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66c61e0a265c36b541bcfb428cf715bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a66c61e0a265c36b541bcfb428cf715bc">show_editor</a> (?array $capabilities=['moodle/course:manageactivities'])</td></tr>
+<tr class="memdesc:a66c61e0a265c36b541bcfb428cf715bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">return true if the course editor must be displayed.  <a href="../../d4/da0/classcore__courseformat_1_1base.html#a66c61e0a265c36b541bcfb428cf715bc">More...</a><br /></td></tr>
+<tr class="separator:a66c61e0a265c36b541bcfb428cf715bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f6a22452ed79af4df1443bd8ec82a67"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d97/classformat__legacy.html#a3f6a22452ed79af4df1443bd8ec82a67">supports_ajax</a> ()</td></tr>
 <tr class="memdesc:a3f6a22452ed79af4df1443bd8ec82a67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the information about the ajax support in the given source format.  <a href="../../d0/d97/classformat__legacy.html#a3f6a22452ed79af4df1443bd8ec82a67">More...</a><br /></td></tr>
 <tr class="separator:a3f6a22452ed79af4df1443bd8ec82a67"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2712,8 +2712,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesection</b> = 0
 
 </div>
 </div>
-<a id="a309c9613b660b9ac9914d7d9020aafca" name="a309c9613b660b9ac9914d7d9020aafca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a309c9613b660b9ac9914d7d9020aafca">&#9670;&#160;</a></span>show_editor()</h2>
+<a id="a66c61e0a265c36b541bcfb428cf715bc" name="a66c61e0a265c36b541bcfb428cf715bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66c61e0a265c36b541bcfb428cf715bc">&#9670;&#160;</a></span>show_editor()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2724,7 +2724,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesection</b> = 0
         <tr>
           <td class="memname">core_courseformat\base::show_editor </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">?array&#160;</td>
+          <td class="paramname"><em>$capabilities</em> = <code>['moodle/course:manageactivities']</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2736,6 +2737,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesection</b> = 0
 </div><div class="memdoc">
 
 <p>return true if the course editor must be displayed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array&#160;|&#160;null</td><td class="paramname">$capabilities</td><td>array of capabilities a user needs to have to see edit controls in general. If null or not specified, the user needs to have 'moodle/course:manageactivities' </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td>true if edit controls must be displayed </td></tr>
@@ -3210,7 +3217,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesection</b> = 0
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 30 2022 03:53:25 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 6 2022 03:37:07 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

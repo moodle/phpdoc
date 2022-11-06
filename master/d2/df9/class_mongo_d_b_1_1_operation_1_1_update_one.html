@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221028) (fa7a55aa5de)</div>
+   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221104) (fee1b8ce5fb)</div>
   </td>
  </tr>
  </tbody>
@@ -84,6 +84,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8bf98646a9b4afc0a5613ed12fdecca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the operation.  <a href="../../d2/df9/class_mongo_d_b_1_1_operation_1_1_update_one.html#a8bf98646a9b4afc0a5613ed12fdecca9">More...</a><br /></td></tr>
 <tr class="separator:a8bf98646a9b4afc0a5613ed12fdecca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd006378acf6c1aba6cfaceb22cc0de8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df9/class_mongo_d_b_1_1_operation_1_1_update_one.html#afd006378acf6c1aba6cfaceb22cc0de8">getCommandDocument</a> (Server $<a class="el" href="../../dc/d71/group___imap___client.html#gaa7cf0dd2417970c0d8ade087cb1dc7f8">server</a>)</td></tr>
+<tr class="memdesc:afd006378acf6c1aba6cfaceb22cc0de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the command document for this operation.  <a href="../../d2/df9/class_mongo_d_b_1_1_operation_1_1_update_one.html#afd006378acf6c1aba6cfaceb22cc0de8">More...</a><br /></td></tr>
 <tr class="separator:afd006378acf6c1aba6cfaceb22cc0de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -134,22 +135,18 @@ Public Member Functions</h2></td></tr>
 <p>Constructs an update command. </p>
 <p >Supported options:</p>
 <ul>
-<li><p class="startli">arrayFilters (document array): A set of filters specifying to which array elements an update should apply.</p>
-<p class="startli">This is not supported for server versions &lt; 3.6 and will result in an$ exception at execution time if used.</p>
-</li>
-<li><p class="startli">bypassDocumentValidation (boolean): If true, allows the write to circumvent document level validation.</p>
-<p class="startli">For servers &lt; 3.2, this option is ignored as document level validation is not available.</p>
-</li>
-<li><p class="startli">collation (document): Collation specification.</p>
-<p class="startli">This is not supported for server versions &lt; 3.4 and will result in an exception at execution time if used.</p>
+<li>arrayFilters (document array): A set of filters specifying to which array elements an update should apply.</li>
+<li>bypassDocumentValidation (boolean): If true, allows the write to circumvent document level validation.</li>
+<li>collation (document): Collation specification.</li>
+<li><p class="startli">comment (mixed): BSON value to attach as a comment to this command.</p>
+<p class="startli">This is not supported for servers versions &lt; 4.4.</p>
 </li>
 <li><p class="startli">hint (string|document): The index to use. Specify either the index name as a string or the index key pattern as a document. If specified, then the query system will only consider plans using the hinted index.</p>
 <p class="startli">This is not supported for server versions &lt; 4.2 and will result in an exception at execution time if used.</p>
 </li>
-<li><p class="startli">session (MongoDB::Driver::Session): <a class="el" href="../../d5/df8/class_mongo_d_b_1_1_client.html">Client</a> session.</p>
-<p class="startli">Sessions are not supported for server versions &lt; 3.6.</p>
-</li>
+<li>session (MongoDB::Driver::Session): <a class="el" href="../../d5/df8/class_mongo_d_b_1_1_client.html">Client</a> session.</li>
 <li>upsert (boolean): When true, a new document is created if no document matches the query. The default is false.</li>
+<li>let (document): Map of parameter names and values. Values must be constant or closed expressions that do not reference document fields. Parameters can then be accessed as variables in an aggregate expression context (e.g. "$$var").</li>
 <li>writeConcern (MongoDB::Driver::WriteConcern): Write concern.</li>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -230,7 +227,22 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="../../d6/dd0/interface_mongo_d_b_1_1_operation_1_1_explainable.html">MongoDB\Operation\Explainable</a>.</p>
+<p>Returns the command document for this operation. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d6/dd0/interface_mongo_d_b_1_1_operation_1_1_explainable.html#aca5db3b08170fbc519ad14e9f32907fa" title="Returns the command document for this operation.">Explainable::getCommandDocument()</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">Server</td><td class="paramname">$server</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="../../d6/dd0/interface_mongo_d_b_1_1_operation_1_1_explainable.html#aca5db3b08170fbc519ad14e9f32907fa">MongoDB\Operation\Explainable</a>.</p>
 
 </div>
 </div>
@@ -240,7 +252,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 30 2022 04:03:58 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 6 2022 03:50:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

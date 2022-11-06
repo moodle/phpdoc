@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221028) (fa7a55aa5de)</div>
+   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221104) (fee1b8ce5fb)</div>
   </td>
  </tr>
  </tbody>
@@ -73,14 +73,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a530c93b0a4caa64760ab6d5ef618187b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d60/classmnet__xmlrpc__client.html#a530c93b0a4caa64760ab6d5ef618187b">add_param</a> ($argument, $type='string')</td></tr>
 <tr class="memdesc:a530c93b0a4caa64760ab6d5ef618187b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a parameter to the array of parameters.  <a href="../../db/d60/classmnet__xmlrpc__client.html#a530c93b0a4caa64760ab6d5ef618187b">More...</a><br /></td></tr>
 <tr class="separator:a530c93b0a4caa64760ab6d5ef618187b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7c137ff987ac2d41cbb93d0f9d96586"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d60/classmnet__xmlrpc__client.html#ab7c137ff987ac2d41cbb93d0f9d96586">mnet_xmlrpc_client</a> ()</td></tr>
-<tr class="memdesc:ab7c137ff987ac2d41cbb93d0f9d96586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Old syntax of class constructor.  <a href="../../db/d60/classmnet__xmlrpc__client.html#ab7c137ff987ac2d41cbb93d0f9d96586">More...</a><br /></td></tr>
-<tr class="separator:ab7c137ff987ac2d41cbb93d0f9d96586"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b95b33dda4972886c2a883018ef3ada"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d60/classmnet__xmlrpc__client.html#a9b95b33dda4972886c2a883018ef3ada">permission_to_call</a> ($<a class="el" href="../../d2/dad/classmnet__peer.html">mnet_peer</a>)</td></tr>
 <tr class="memdesc:a9b95b33dda4972886c2a883018ef3ada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that we are permitted to call method on specified peer.  <a href="../../db/d60/classmnet__xmlrpc__client.html#a9b95b33dda4972886c2a883018ef3ada">More...</a><br /></td></tr>
 <tr class="separator:a9b95b33dda4972886c2a883018ef3ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc775af88377bdc89cd16da7269b182f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d60/classmnet__xmlrpc__client.html#abc775af88377bdc89cd16da7269b182f">prepare_http_request</a> ($<a class="el" href="../../d2/dad/classmnet__peer.html">mnet_peer</a>)</td></tr>
-<tr class="memdesc:abc775af88377bdc89cd16da7269b182f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a curl handle and prepare it for sending to an mnet host.  <a href="../../db/d60/classmnet__xmlrpc__client.html#abc775af88377bdc89cd16da7269b182f">More...</a><br /></td></tr>
+<tr class="memdesc:abc775af88377bdc89cd16da7269b182f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a <a class="el" href="../../d6/d57/class_php_xml_rpc_1_1_client.html">PhpXmlRpc::Client</a> handle and prepare it for sending to an mnet host.  <a href="../../db/d60/classmnet__xmlrpc__client.html#abc775af88377bdc89cd16da7269b182f">More...</a><br /></td></tr>
 <tr class="separator:abc775af88377bdc89cd16da7269b182f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a522122e603bbd7c68d9154a5f7520347"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d60/classmnet__xmlrpc__client.html#a522122e603bbd7c68d9154a5f7520347">send</a> ($<a class="el" href="../../d2/dad/classmnet__peer.html">mnet_peer</a>)</td></tr>
 <tr class="memdesc:a522122e603bbd7c68d9154a5f7520347"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the request to the server - decode and return the response.  <a href="../../db/d60/classmnet__xmlrpc__client.html#a522122e603bbd7c68d9154a5f7520347">More...</a><br /></td></tr>
@@ -146,7 +143,7 @@ Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$argument</td><td>A transport ID, as defined in lib.php </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$type</td><td>The argument type, can be one of: none empty base64 boolean datetime double int string array struct In its weakly-typed wisdom, PHP will (currently) ignore everything except datetime and base64 </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$type</td><td>The argument type, can be one of: i4 i8 int double string boolean datetime | dateTime.iso8601 base64 null array struct </td></tr>
   </table>
   </dd>
 </dl>
@@ -156,27 +153,6 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="ab7c137ff987ac2d41cbb93d0f9d96586" name="ab7c137ff987ac2d41cbb93d0f9d96586"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7c137ff987ac2d41cbb93d0f9d96586">&#9670;&#160;</a></span>mnet_xmlrpc_client()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">mnet_xmlrpc_client::mnet_xmlrpc_client </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Old syntax of class constructor. </p>
-<p >Deprecated in PHP7.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000827">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -228,7 +204,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Generate a curl handle and prepare it for sending to an mnet host. </p>
+<p>Generate a <a class="el" href="../../d6/d57/class_php_xml_rpc_1_1_client.html">PhpXmlRpc::Client</a> handle and prepare it for sending to an mnet host. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">object</td><td class="paramname">$mnet_peer</td><td>A <a class="el" href="../../d2/dad/classmnet__peer.html">mnet_peer</a> object with details of the remote host the request will be sent to </td></tr>
@@ -237,7 +213,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">cURL</td><td>handle - the almost-ready-to-send http request </td></tr>
+    <tr><td class="paramname"><a class="el" href="../../d6/d57/class_php_xml_rpc_1_1_client.html">PhpXmlRpc::Client</a></td><td>handle - the almost-ready-to-send http request </td></tr>
   </table>
   </dd>
 </dl>
@@ -269,7 +245,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">mixed</td><td>A PHP variable, as returned by the remote function </td></tr>
+    <tr><td class="paramname">mixed</td><td>A PHP variable, as returned by the </td></tr>
   </table>
   </dd>
 </dl>
@@ -329,7 +305,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 30 2022 04:01:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 6 2022 03:46:58 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

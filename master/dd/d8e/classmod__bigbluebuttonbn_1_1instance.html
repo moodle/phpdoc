@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221028) (fa7a55aa5de)</div>
+   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221104) (fee1b8ce5fb)</div>
   </td>
  </tr>
  </tbody>
@@ -184,9 +184,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab98e2a03bf6191b2225360127e5c6ee2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html#ab98e2a03bf6191b2225360127e5c6ee2">get_record_ready_url</a> ()</td></tr>
 <tr class="memdesc:ab98e2a03bf6191b2225360127e5c6ee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the URL that the remote server will use to notify that the recording is ready.  <a href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html#ab98e2a03bf6191b2225360127e5c6ee2">More...</a><br /></td></tr>
 <tr class="separator:ab98e2a03bf6191b2225360127e5c6ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64627fff777900293f2acf07ec35e408"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html#a64627fff777900293f2acf07ec35e408">get_recordings</a> (array $excludedid=[], $viewdeleted=false)</td></tr>
-<tr class="memdesc:a64627fff777900293f2acf07ec35e408"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get recordings for this instance.  <a href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html#a64627fff777900293f2acf07ec35e408">More...</a><br /></td></tr>
-<tr class="separator:a64627fff777900293f2acf07ec35e408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08041b89eac58b81fbd7807d6f1ac2b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html#a08041b89eac58b81fbd7807d6f1ac2b7">get_recordings</a> (array $excludedid=[], bool $viewdeleted=false)</td></tr>
+<tr class="memdesc:a08041b89eac58b81fbd7807d6f1ac2b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get recordings for this instance.  <a href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html#a08041b89eac58b81fbd7807d6f1ac2b7">More...</a><br /></td></tr>
+<tr class="separator:a08041b89eac58b81fbd7807d6f1ac2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae462a3d51608c42d0dfb9726777cc5d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html#ae462a3d51608c42d0dfb9726777cc5d6">get_recordings_imported</a> ()</td></tr>
 <tr class="memdesc:ae462a3d51608c42d0dfb9726777cc5d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get recordings_imported from instancedata.  <a href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html#ae462a3d51608c42d0dfb9726777cc5d6">More...</a><br /></td></tr>
 <tr class="separator:ae462a3d51608c42d0dfb9726777cc5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1260,7 +1260,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$participantlist</b>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">string</td><td></td></tr>
+    <tr><td class="paramname">mixed|null</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1608,8 +1608,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$participantlist</b>
 
 </div>
 </div>
-<a id="a64627fff777900293f2acf07ec35e408" name="a64627fff777900293f2acf07ec35e408"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64627fff777900293f2acf07ec35e408">&#9670;&#160;</a></span>get_recordings()</h2>
+<a id="a08041b89eac58b81fbd7807d6f1ac2b7" name="a08041b89eac58b81fbd7807d6f1ac2b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08041b89eac58b81fbd7807d6f1ac2b7">&#9670;&#160;</a></span>get_recordings()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1623,7 +1623,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$participantlist</b>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>$viewdeleted</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
@@ -2486,7 +2486,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$participantlist</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 30 2022 04:03:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 6 2022 03:49:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

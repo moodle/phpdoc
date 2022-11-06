@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221028) (fa7a55aa5de)</div>
+   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221104) (fee1b8ce5fb)</div>
   </td>
  </tr>
  </tbody>
@@ -172,7 +172,7 @@ Protected Attributes</h2></td></tr>
 <p>This is the class constructor. </p>
 <p >Creates a datamatrix object </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$code</td><td>(string) Code to represent using <a class="el" href="../../dd/d05/class_datamatrix.html" title="Class to create DataMatrix ECC 200 barcode arrays for TCPDF class.">Datamatrix</a>. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$code</td><td>Code to represent using <a class="el" href="../../dd/d05/class_datamatrix.html" title="Class to create DataMatrix ECC 200 barcode arrays for TCPDF class.">Datamatrix</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -217,14 +217,14 @@ Protected Attributes</h2></td></tr>
 <p>Return the 253-state codeword. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$cwpad</td><td>(int) Pad codeword. </td></tr>
-    <tr><td class="paramname">$cwpos</td><td>(int) Number of data codewords from the beginning of encoded data. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$cwpad</td><td>Pad codeword. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$cwpos</td><td>Number of data codewords from the beginning of encoded data. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pad</td><td>codeword </td></tr>
+    <tr><td class="paramname">int</td><td>pad codeword </td></tr>
   </table>
   </dd>
 </dl>
@@ -268,14 +268,14 @@ Protected Attributes</h2></td></tr>
 <p>Return the 255-state codeword. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$cwpad</td><td>(int) Pad codeword. </td></tr>
-    <tr><td class="paramname">$cwpos</td><td>(int) Number of data codewords from the beginning of encoded data. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$cwpad</td><td>Pad codeword. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$cwpos</td><td>Number of data codewords from the beginning of encoded data. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">pad</td><td>codeword </td></tr>
+    <tr><td class="paramname">int</td><td>pad codeword </td></tr>
   </table>
   </dd>
 </dl>
@@ -368,12 +368,12 @@ Protected Attributes</h2></td></tr>
 <p>Add error correction codewords to data codewords array (ANNEX E). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$wd</td><td>(array) Array of datacodewords. </td></tr>
-    <tr><td class="paramname">$nb</td><td>(int) Number of blocks. </td></tr>
-    <tr><td class="paramname">$nd</td><td>(int) Number of data codewords per block. </td></tr>
-    <tr><td class="paramname">$nc</td><td>(int) Number of correction codewords per block. </td></tr>
-    <tr><td class="paramname">$gf</td><td>(int) numner of fields on log/antilog table (power of 2). </td></tr>
-    <tr><td class="paramname">$pp</td><td>(int) The value of its prime modulus polynomial (301 for ECC200). </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$wd</td><td>Array of datacodewords. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$nb</td><td>Number of blocks. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$nd</td><td>Number of data codewords per block. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$nc</td><td>Number of correction codewords per block. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$gf</td><td>numner of fields on log/antilog table (power of 2). </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$pp</td><td>The value of its prime modulus polynomial (301 for ECC200). </td></tr>
   </table>
   </dd>
 </dl>
@@ -441,11 +441,11 @@ Protected Attributes</h2></td></tr>
 <p>Product of two numbers in a Power-of-Two Galois Field. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$a</td><td>(int) first number to multiply. </td></tr>
-    <tr><td class="paramname">$b</td><td>(int) second number to multiply. </td></tr>
-    <tr><td class="paramname">$log</td><td>(array) Log table. </td></tr>
-    <tr><td class="paramname">$alog</td><td>(array) Anti-Log table. </td></tr>
-    <tr><td class="paramname">$gf</td><td>(array) Number of Factors of the Reed-Solomon polynomial. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$a</td><td>first number to multiply. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$b</td><td>second number to multiply. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$log</td><td>Log table. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$alog</td><td>Anti-Log table. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$gf</td><td>Number of Factors of the Reed-Solomon polynomial. </td></tr>
   </table>
   </dd>
 </dl>
@@ -485,7 +485,7 @@ Protected Attributes</h2></td></tr>
 <p>Get high level encoding using the minimum symbol data characters for ECC 200. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$data</td><td>(string) data to encode </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$data</td><td>data to encode </td></tr>
   </table>
   </dd>
 </dl>
@@ -525,13 +525,13 @@ Protected Attributes</h2></td></tr>
 <p>Choose the minimum matrix size and return the max number of data codewords. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$numcw</td><td>(int) Number of current codewords. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$numcw</td><td>Number of current codewords. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">number</td><td>of data codewords in matrix </td></tr>
+    <tr><td class="paramname">int</td><td>number of data codewords in matrix </td></tr>
   </table>
   </dd>
 </dl>
@@ -575,8 +575,8 @@ Protected Attributes</h2></td></tr>
 <p>Build a placement map. </p>
 <p >(Annex F - ECC 200 symbol character placement) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$nrow</td><td>(int) Number of rows. </td></tr>
-    <tr><td class="paramname">$ncol</td><td>(int) Number of columns. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$nrow</td><td>Number of rows. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$ncol</td><td>Number of columns. </td></tr>
   </table>
   </dd>
 </dl>
@@ -616,13 +616,13 @@ Protected Attributes</h2></td></tr>
 <p>Get the switching codeword to a new encoding mode (latch codeword) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$mode</td><td>(int) New encoding mode. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$mode</td><td>New encoding mode. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">(int)</td><td>Switch codeword. </td></tr>
+    <tr><td class="paramname">int</td><td>Switch codeword. </td></tr>
   </table>
   </dd>
 </dl>
@@ -666,8 +666,8 @@ Protected Attributes</h2></td></tr>
 <p>Returns true if the char belongs to the selected mode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$chr</td><td>(int) Character (byte) to check. </td></tr>
-    <tr><td class="paramname">$mode</td><td>(int) Current encoding mode. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$chr</td><td>Character (byte) to check. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$mode</td><td>Current encoding mode. </td></tr>
   </table>
   </dd>
 </dl>
@@ -723,9 +723,9 @@ Protected Attributes</h2></td></tr>
 <p>The look-ahead test scans the data to be encoded to find the best mode (Annex P - steps from J to S). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$data</td><td>(string) data to encode </td></tr>
-    <tr><td class="paramname">$pos</td><td>(int) current position </td></tr>
-    <tr><td class="paramname">$mode</td><td>(int) current encoding mode </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$data</td><td>data to encode </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$pos</td><td>current position </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$mode</td><td>current encoding mode </td></tr>
   </table>
   </dd>
 </dl>
@@ -787,10 +787,10 @@ Protected Attributes</h2></td></tr>
 <p>Places the 8 bits of the first special corner case. </p>
 <p >(Annex F - ECC 200 symbol character placement) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$marr</td><td>(array) Array of symbols. </td></tr>
-    <tr><td class="paramname">$nrow</td><td>(int) Number of rows. </td></tr>
-    <tr><td class="paramname">$ncol</td><td>(int) Number of columns. </td></tr>
-    <tr><td class="paramname">$chr</td><td>(int) Char byte. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$marr</td><td>Array of symbols. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$nrow</td><td>Number of rows. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$ncol</td><td>Number of columns. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$chr</td><td>Char byte. </td></tr>
   </table>
   </dd>
 </dl>
@@ -852,10 +852,10 @@ Protected Attributes</h2></td></tr>
 <p>Places the 8 bits of the second special corner case. </p>
 <p >(Annex F - ECC 200 symbol character placement) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$marr</td><td>(array) Array of symbols. </td></tr>
-    <tr><td class="paramname">$nrow</td><td>(int) Number of rows. </td></tr>
-    <tr><td class="paramname">$ncol</td><td>(int) Number of columns. </td></tr>
-    <tr><td class="paramname">$chr</td><td>(int) Char byte. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$marr</td><td>Array of symbols. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$nrow</td><td>Number of rows. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$ncol</td><td>Number of columns. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$chr</td><td>Char byte. </td></tr>
   </table>
   </dd>
 </dl>
@@ -917,10 +917,10 @@ Protected Attributes</h2></td></tr>
 <p>Places the 8 bits of the third special corner case. </p>
 <p >(Annex F - ECC 200 symbol character placement) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$marr</td><td>(array) Array of symbols. </td></tr>
-    <tr><td class="paramname">$nrow</td><td>(int) Number of rows. </td></tr>
-    <tr><td class="paramname">$ncol</td><td>(int) Number of columns. </td></tr>
-    <tr><td class="paramname">$chr</td><td>(int) Char byte. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$marr</td><td>Array of symbols. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$nrow</td><td>Number of rows. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$ncol</td><td>Number of columns. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$chr</td><td>Char byte. </td></tr>
   </table>
   </dd>
 </dl>
@@ -982,10 +982,10 @@ Protected Attributes</h2></td></tr>
 <p>Places the 8 bits of the fourth special corner case. </p>
 <p >(Annex F - ECC 200 symbol character placement) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$marr</td><td>(array) Array of symbols. </td></tr>
-    <tr><td class="paramname">$nrow</td><td>(int) Number of rows. </td></tr>
-    <tr><td class="paramname">$ncol</td><td>(int) Number of columns. </td></tr>
-    <tr><td class="paramname">$chr</td><td>(int) Char byte. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$marr</td><td>Array of symbols. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$nrow</td><td>Number of rows. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$ncol</td><td>Number of columns. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$chr</td><td>Char byte. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1065,13 +1065,13 @@ Protected Attributes</h2></td></tr>
 <p>Places "chr+bit" with appropriate wrapping within array[]. </p>
 <p >(Annex F - ECC 200 symbol character placement) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$marr</td><td>(array) Array of symbols. </td></tr>
-    <tr><td class="paramname">$nrow</td><td>(int) Number of rows. </td></tr>
-    <tr><td class="paramname">$ncol</td><td>(int) Number of columns. </td></tr>
-    <tr><td class="paramname">$row</td><td>(int) Row number. </td></tr>
-    <tr><td class="paramname">$col</td><td>(int) Column number. </td></tr>
-    <tr><td class="paramname">$chr</td><td>(int) Char byte. </td></tr>
-    <tr><td class="paramname">$bit</td><td>(int) Bit. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$marr</td><td>Array of symbols. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$nrow</td><td>Number of rows. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$ncol</td><td>Number of columns. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$row</td><td>Row number. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$col</td><td>Column number. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$chr</td><td>Char byte. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$bit</td><td>Bit. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1145,12 +1145,12 @@ Protected Attributes</h2></td></tr>
 <p>Places the 8 bits of a utah-shaped symbol character. </p>
 <p >(Annex F - ECC 200 symbol character placement) </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$marr</td><td>(array) Array of symbols. </td></tr>
-    <tr><td class="paramname">$nrow</td><td>(int) Number of rows. </td></tr>
-    <tr><td class="paramname">$ncol</td><td>(int) Number of columns. </td></tr>
-    <tr><td class="paramname">$row</td><td>(int) Row number. </td></tr>
-    <tr><td class="paramname">$col</td><td>(int) Column number. </td></tr>
-    <tr><td class="paramname">$chr</td><td>(int) Char byte. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$marr</td><td>Array of symbols. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$nrow</td><td>Number of rows. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$ncol</td><td>Number of columns. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$row</td><td>Row number. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$col</td><td>Column number. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$chr</td><td>Char byte. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1228,7 +1228,7 @@ error codewords per block </li>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 30 2022 04:00:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 6 2022 03:45:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.4+ (Build: 20221028) (141e369a012)</div>
+   <div id="projectbrief">Moodle 4.0.4+ (Build: 20221104) (28043b9b2eb)</div>
   </td>
  </tr>
  </tbody>
@@ -56,6 +56,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="../../d6/d46/classbehat__action__menu-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">behat_action_menu Class Reference<div class="ingroups"><a class="el" href="../../d0/de1/group__core.html">core</a></div></div></div>
 </div><!--header-->
@@ -76,18 +77,42 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abc6cbc428b83d6bca71aaffbd15da4ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d6d/interfacebehat__session__interface.html#abc6cbc428b83d6bca71aaffbd15da4ab">getSession</a> ($name=null)</td></tr>
 <tr class="memdesc:abc6cbc428b83d6bca71aaffbd15da4ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Mink session.  <a href="../../d9/d6d/interfacebehat__session__interface.html#abc6cbc428b83d6bca71aaffbd15da4ab">More...</a><br /></td></tr>
 <tr class="separator:abc6cbc428b83d6bca71aaffbd15da4ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c4c5f14df3e5c5176769839052e422"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6f/classbehat__action__menu.html#a82c4c5f14df3e5c5176769839052e422">i_choose_in_the_named_menu</a> (string $item, string $actionmenu)</td></tr>
+<tr class="memdesc:a82c4c5f14df3e5c5176769839052e422"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select a specific item in an action menu.  <a href="../../db/d6f/classbehat__action__menu.html#a82c4c5f14df3e5c5176769839052e422">More...</a><br /></td></tr>
+<tr class="separator:a82c4c5f14df3e5c5176769839052e422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb079a3866f9648e6ee8c9109c6fa668"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6f/classbehat__action__menu.html#abb079a3866f9648e6ee8c9109c6fa668">i_choose_in_the_named_menu_in_container</a> (string $item, string $actionmenu, $locator, $selector)</td></tr>
+<tr class="memdesc:abb079a3866f9648e6ee8c9109c6fa668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select a specific item in an action menu within a container.  <a href="../../db/d6f/classbehat__action__menu.html#abb079a3866f9648e6ee8c9109c6fa668">More...</a><br /></td></tr>
+<tr class="separator:abb079a3866f9648e6ee8c9109c6fa668"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81bcc68126d09057a30de74393e118e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6f/classbehat__action__menu.html#a81bcc68126d09057a30de74393e118e7">i_choose_in_the_open_action_menu</a> ($menuitemstring)</td></tr>
 <tr class="memdesc:a81bcc68126d09057a30de74393e118e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">When an action menu is open, follow one of the items in it.  <a href="../../db/d6f/classbehat__action__menu.html#a81bcc68126d09057a30de74393e118e7">More...</a><br /></td></tr>
 <tr class="separator:a81bcc68126d09057a30de74393e118e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03b74b2d08c1b2e8947227a50560ddf2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6f/classbehat__action__menu.html#a03b74b2d08c1b2e8947227a50560ddf2">i_open_the_action_menu_in</a> ($element, $selectortype)</td></tr>
 <tr class="memdesc:a03b74b2d08c1b2e8947227a50560ddf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open the action menu in.  <a href="../../db/d6f/classbehat__action__menu.html#a03b74b2d08c1b2e8947227a50560ddf2">More...</a><br /></td></tr>
 <tr class="separator:a03b74b2d08c1b2e8947227a50560ddf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b2cd6a16cdb79de8a3f00656d36a070"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6f/classbehat__action__menu.html#a4b2cd6a16cdb79de8a3f00656d36a070">item_should_exist</a> (string $item, string $actionmenu)</td></tr>
+<tr class="memdesc:a4b2cd6a16cdb79de8a3f00656d36a070"><td class="mdescLeft">&#160;</td><td class="mdescRight">The action menu item should exist.  <a href="../../db/d6f/classbehat__action__menu.html#a4b2cd6a16cdb79de8a3f00656d36a070">More...</a><br /></td></tr>
+<tr class="separator:a4b2cd6a16cdb79de8a3f00656d36a070"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34e9ddddffb074d74739007b65b093ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6f/classbehat__action__menu.html#a34e9ddddffb074d74739007b65b093ba">item_should_exist_in_the</a> (string $item, string $actionmenu, $locator, $selector)</td></tr>
+<tr class="memdesc:a34e9ddddffb074d74739007b65b093ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">The action menu item should exist within a container.  <a href="../../db/d6f/classbehat__action__menu.html#a34e9ddddffb074d74739007b65b093ba">More...</a><br /></td></tr>
+<tr class="separator:a34e9ddddffb074d74739007b65b093ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa778e44055a85a84261ff1921bcd9efc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6f/classbehat__action__menu.html#aa778e44055a85a84261ff1921bcd9efc">item_should_not_exist</a> (string $item, string $actionmenu)</td></tr>
+<tr class="memdesc:aa778e44055a85a84261ff1921bcd9efc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The action menu item should not exist.  <a href="../../db/d6f/classbehat__action__menu.html#aa778e44055a85a84261ff1921bcd9efc">More...</a><br /></td></tr>
+<tr class="separator:aa778e44055a85a84261ff1921bcd9efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a156f586d36e93850749d075adb5db404"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6f/classbehat__action__menu.html#a156f586d36e93850749d075adb5db404">item_should_not_exist_in_the</a> (string $item, string $actionmenu, $locator, $selector)</td></tr>
+<tr class="memdesc:a156f586d36e93850749d075adb5db404"><td class="mdescLeft">&#160;</td><td class="mdescRight">The action menu item should not exist within a container.  <a href="../../db/d6f/classbehat__action__menu.html#a156f586d36e93850749d075adb5db404">More...</a><br /></td></tr>
+<tr class="separator:a156f586d36e93850749d075adb5db404"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a1493fb96a85bfb906ba5468330de76c0"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d6d/interfacebehat__session__interface.html#a1493fb96a85bfb906ba5468330de76c0">PAGE_READY_JS</a></td></tr>
 <tr class="memdesc:a1493fb96a85bfb906ba5468330de76c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The JS code to check that the page is ready.  <a href="../../d9/d6d/interfacebehat__session__interface.html#a1493fb96a85bfb906ba5468330de76c0">More...</a><br /></td></tr>
 <tr class="separator:a1493fb96a85bfb906ba5468330de76c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a5795d15880a3d6f9ea415ec3df04a765"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6f/classbehat__action__menu.html#a5795d15880a3d6f9ea415ec3df04a765">select_item_in_action_menu</a> (string $item, NodeElement $menu)</td></tr>
+<tr class="memdesc:a5795d15880a3d6f9ea415ec3df04a765"><td class="mdescLeft">&#160;</td><td class="mdescRight">Select an item in the specified menu.  <a href="../../db/d6f/classbehat__action__menu.html#a5795d15880a3d6f9ea415ec3df04a765">More...</a><br /></td></tr>
+<tr class="separator:a5795d15880a3d6f9ea415ec3df04a765"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="abc6cbc428b83d6bca71aaffbd15da4ab" name="abc6cbc428b83d6bca71aaffbd15da4ab"></a>
@@ -129,6 +154,94 @@ Public Attributes</h2></td></tr>
 </dl>
 
 <p>Implemented in <a class="el" href="../../d7/d4b/classbehat__form__field.html#a5c29122daa8103d8280ecf8fd7d441d5">behat_form_field</a>.</p>
+
+</div>
+</div>
+<a id="a82c4c5f14df3e5c5176769839052e422" name="a82c4c5f14df3e5c5176769839052e422"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82c4c5f14df3e5c5176769839052e422">&#9670;&#160;</a></span>i_choose_in_the_named_menu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_action_menu::i_choose_in_the_named_menu </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$actionmenu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Select a specific item in an action menu. </p>
+<p >@When /^I choose the "(?P&lt;item_string&gt;(?:[^"]|::")*)" item in the "(?P&lt;actionmenu_string&gt;(?:[^"]|")*)" action menu$/ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$item</td><td>The item to choose </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$actionmenu</td><td>The text used in the description of the action menu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abb079a3866f9648e6ee8c9109c6fa668" name="abb079a3866f9648e6ee8c9109c6fa668"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb079a3866f9648e6ee8c9109c6fa668">&#9670;&#160;</a></span>i_choose_in_the_named_menu_in_container()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_action_menu::i_choose_in_the_named_menu_in_container </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$actionmenu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$locator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$selector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Select a specific item in an action menu within a container. </p>
+<p >@When /^I choose the "(?P&lt;item_string&gt;(?:[^"]|::")*)" item in the "(?P&lt;actionmenu_string&gt;(?:[^"]|")*)" action menu of the "(?P&lt;locator_string&gt;(?:[^"]|::")*)" "(?P&lt;type_string&gt;(?:[^"]|\")*)"$/ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$item</td><td>The item to choose </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$actionmenu</td><td>The text used in the description of the action menu </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;NodeElement</td><td class="paramname">$locator</td><td>The identifer used for the container </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$selector</td><td>The type of container to locate </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -207,6 +320,228 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a4b2cd6a16cdb79de8a3f00656d36a070" name="a4b2cd6a16cdb79de8a3f00656d36a070"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b2cd6a16cdb79de8a3f00656d36a070">&#9670;&#160;</a></span>item_should_exist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_action_menu::item_should_exist </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$actionmenu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The action menu item should exist. </p>
+<p >@Then /^the "(?P&lt;item_string&gt;(?:[^"]|::")*)" item should exist in the "(?P&lt;actionmenu_string&gt;(?:[^"]|")*)" action menu$/ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$item</td><td>The item to check </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$actionmenu</td><td>The text used in the description of the action menu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a34e9ddddffb074d74739007b65b093ba" name="a34e9ddddffb074d74739007b65b093ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34e9ddddffb074d74739007b65b093ba">&#9670;&#160;</a></span>item_should_exist_in_the()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_action_menu::item_should_exist_in_the </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$actionmenu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$locator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$selector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The action menu item should exist within a container. </p>
+<p >@Then /^the "(?P&lt;item_string&gt;(?:[^"]|::")*)" item should exist in the "(?P&lt;actionmenu_string&gt;(?:[^"]|")*)" action menu of the "(?P&lt;locator_string&gt;(?:[^"]|::")*)" "(?P&lt;type_string&gt;(?:[^"]|\")*)"$/ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$item</td><td>The item to check </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$actionmenu</td><td>The text used in the description of the action menu </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;NodeElement</td><td class="paramname">$locator</td><td>The identifer used for the container </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$selector</td><td>The type of container to locate </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa778e44055a85a84261ff1921bcd9efc" name="aa778e44055a85a84261ff1921bcd9efc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa778e44055a85a84261ff1921bcd9efc">&#9670;&#160;</a></span>item_should_not_exist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_action_menu::item_should_not_exist </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$actionmenu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The action menu item should not exist. </p>
+<p >@Then /^the "(?P&lt;item_string&gt;(?:[^"]|::")*)" item should not exist in the "(?P&lt;actionmenu_string&gt;(?:[^"]|")*)" action menu$/ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$item</td><td>The item to check </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$actionmenu</td><td>The text used in the description of the action menu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a156f586d36e93850749d075adb5db404" name="a156f586d36e93850749d075adb5db404"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a156f586d36e93850749d075adb5db404">&#9670;&#160;</a></span>item_should_not_exist_in_the()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_action_menu::item_should_not_exist_in_the </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$actionmenu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$locator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$selector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The action menu item should not exist within a container. </p>
+<p >@Then /^the "(?P&lt;item_string&gt;(?:[^"]|::")*)" item should not exist in the "(?P&lt;actionmenu_string&gt;(?:[^"]|")*)" action menu of the "(?P&lt;locator_string&gt;(?:[^"]|::")*)" "(?P&lt;type_string&gt;(?:[^"]|\")*)"$/ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$item</td><td>The item to check </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$actionmenu</td><td>The text used in the description of the action menu </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;NodeElement</td><td class="paramname">$locator</td><td>The identifer used for the container </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$selector</td><td>The type of container to locate </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5795d15880a3d6f9ea415ec3df04a765" name="a5795d15880a3d6f9ea415ec3df04a765"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5795d15880a3d6f9ea415ec3df04a765">&#9670;&#160;</a></span>select_item_in_action_menu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_action_menu::select_item_in_action_menu </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">NodeElement&#160;</td>
+          <td class="paramname"><em>$menu</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Select an item in the specified menu. </p>
+<p >Note: This step does work both with, and without, JavaScript.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$item</td><td>Item string value </td></tr>
+    <tr><td class="paramtype">NodeElement</td><td class="paramname">$menu</td><td>The menu NodeElement to select from </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a1493fb96a85bfb906ba5468330de76c0" name="a1493fb96a85bfb906ba5468330de76c0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1493fb96a85bfb906ba5468330de76c0">&#9670;&#160;</a></span>PAGE_READY_JS</h2>
@@ -242,7 +577,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 30 2022 03:53:10 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 6 2022 03:36:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221028) (fa7a55aa5de)</div>
+   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221104) (fee1b8ce5fb)</div>
   </td>
  </tr>
  </tbody>
@@ -151,8 +151,8 @@ Protected Attributes</h2></td></tr>
 <p>Parse a PDF document an return an array of objects. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$data</td><td>(string) PDF data to parse. </td></tr>
-    <tr><td class="paramname">$cfg</td><td>(array) Array of configuration parameters: 'die_for_errors' : if true termitate the program execution in case of error, otherwise thows an exception; 'ignore_filter_decoding_errors' : if true ignore filter decoding errors; 'ignore_missing_filter_decoders' : if true ignore missing filter decoding errors.</td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$data</td><td>PDF data to parse. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$cfg</td><td>Array of configuration parameters: 'die_for_errors' : if true termitate the program execution in case of error, otherwise thows an exception; 'ignore_filter_decoding_errors' : if true ignore filter decoding errors; 'ignore_missing_filter_decoders' : if true ignore missing filter decoding errors.</td></tr>
   </table>
   </dd>
 </dl>
@@ -198,8 +198,8 @@ Protected Attributes</h2></td></tr>
 <p>Decode the specified stream. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$sdic</td><td>(array) Stream's dictionary array. </td></tr>
-    <tr><td class="paramname">$stream</td><td>(string) Stream to decode. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$sdic</td><td>Stream's dictionary array. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$stream</td><td>Stream to decode. </td></tr>
   </table>
   </dd>
 </dl>
@@ -250,14 +250,14 @@ Protected Attributes</h2></td></tr>
 <p>Decode the Cross-Reference section. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$startxref</td><td>(int) Offset at which the xref section starts (position of the 'xref' keyword). </td></tr>
-    <tr><td class="paramname">$xref</td><td>(array) Previous xref array (if any). </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$startxref</td><td>Offset at which the xref section starts (position of the 'xref' keyword). </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$xref</td><td>Previous xref array (if any). </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">Array</td><td>containing xref and trailer data.</td></tr>
+    <tr><td class="paramname">array</td><td>containing xref and trailer data.</td></tr>
   </table>
   </dd>
 </dl>
@@ -302,14 +302,14 @@ Protected Attributes</h2></td></tr>
 <p>Decode the Cross-Reference Stream section. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$startxref</td><td>(int) Offset at which the xref section starts. </td></tr>
-    <tr><td class="paramname">$xref</td><td>(array) Previous xref array (if any). </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$startxref</td><td>Offset at which the xref section starts. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$xref</td><td>Previous xref array (if any). </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">Array</td><td>containing xref and trailer data.</td></tr>
+    <tr><td class="paramname">array</td><td>containing xref and trailer data.</td></tr>
   </table>
   </dd>
 </dl>
@@ -336,7 +336,7 @@ Protected Attributes</h2></td></tr>
 <p>Throw an exception or print an error message and die if the K_TCPDF_PARSER_THROW_EXCEPTION_ERROR constant is set to true. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$msg</td><td>(string) The error message</td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$msg</td><td>The error message</td></tr>
   </table>
   </dd>
 </dl>
@@ -387,9 +387,9 @@ Protected Attributes</h2></td></tr>
 <p>Get content of indirect object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$obj_ref</td><td>(string) Object number and generation number separated by underscore character. </td></tr>
-    <tr><td class="paramname">$offset</td><td>(int) Object offset. </td></tr>
-    <tr><td class="paramname">$decoding</td><td>(boolean) If true decode streams. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$obj_ref</td><td>Object number and generation number separated by underscore character. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$offset</td><td>Object offset. </td></tr>
+    <tr><td class="paramtype">boolean</td><td class="paramname">$decoding</td><td>If true decode streams. </td></tr>
   </table>
   </dd>
 </dl>
@@ -430,7 +430,7 @@ Protected Attributes</h2></td></tr>
 <p>Get the content of object, resolving indect object reference if necessary. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$obj</td><td>(string) Object value. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$obj</td><td>Object value. </td></tr>
   </table>
   </dd>
 </dl>
@@ -462,7 +462,7 @@ Protected Attributes</h2></td></tr>
 <p>Return an array of parsed PDF document objects. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">(array)</td><td>Array of parsed PDF document objects.</td></tr>
+    <tr><td class="paramname">array</td><td>Array of parsed PDF document objects.</td></tr>
   </table>
   </dd>
 </dl>
@@ -497,7 +497,7 @@ Protected Attributes</h2></td></tr>
 <p>Get object type, raw value and offset to next object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$offset</td><td>(int) Object offset. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$offset</td><td>Object offset. </td></tr>
   </table>
   </dd>
 </dl>
@@ -548,14 +548,14 @@ Protected Attributes</h2></td></tr>
 <p>Get Cross-Reference (xref) table and trailer data from PDF document data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$offset</td><td>(int) xref offset (if know). </td></tr>
-    <tr><td class="paramname">$xref</td><td>(array) previous xref array (if any). </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$offset</td><td>xref offset (if know). </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$xref</td><td>previous xref array (if any). </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">Array</td><td>containing xref and trailer data.</td></tr>
+    <tr><td class="paramname">array</td><td>containing xref and trailer data.</td></tr>
   </table>
   </dd>
 </dl>
@@ -590,7 +590,7 @@ Protected Attributes</h2></td></tr>
 <p>Set the configuration parameters. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$cfg</td><td>(array) Array of configuration parameters: 'die_for_errors' : if true termitate the program execution in case of error, otherwise thows an exception; 'ignore_filter_decoding_errors' : if true ignore filter decoding errors; 'ignore_missing_filter_decoders' : if true ignore missing filter decoding errors. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$cfg</td><td>Array of configuration parameters: 'die_for_errors' : if true termitate the program execution in case of error, otherwise thows an exception; 'ignore_filter_decoding_errors' : if true ignore filter decoding errors; 'ignore_missing_filter_decoders' : if true ignore missing filter decoding errors. </td></tr>
   </table>
   </dd>
 </dl>
@@ -603,7 +603,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 30 2022 04:01:44 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 6 2022 03:47:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>
