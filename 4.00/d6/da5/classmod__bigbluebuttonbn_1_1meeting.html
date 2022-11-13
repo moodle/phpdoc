@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.4+ (Build: 20221104) (28043b9b2eb)</div>
+   <div id="projectbrief">Moodle 4.0.5 (Build: 20221114) (fdbcfa1b153)</div>
   </td>
  </tr>
  </tbody>
@@ -118,9 +118,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:afe8f549d73c9fe20063fc5cf2cc5b469"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da5/classmod__bigbluebuttonbn_1_1meeting.html#afe8f549d73c9fe20063fc5cf2cc5b469">join_meeting</a> (<a class="el" href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html">instance</a> $<a class="el" href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html">instance</a>, $origin=<a class="el" href="../../df/dbe/classmod__bigbluebuttonbn_1_1logger.html#ac60b70951d94c995107014e0b66de295">logger::ORIGIN_BASE</a>)</td></tr>
 <tr class="memdesc:afe8f549d73c9fe20063fc5cf2cc5b469"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to join a meeting.  <a href="../../d6/da5/classmod__bigbluebuttonbn_1_1meeting.html#afe8f549d73c9fe20063fc5cf2cc5b469">More...</a><br /></td></tr>
 <tr class="separator:afe8f549d73c9fe20063fc5cf2cc5b469"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65ca388918832675204ddb1ba451a96f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da5/classmod__bigbluebuttonbn_1_1meeting.html#a65ca388918832675204ddb1ba451a96f">meeting_events</a> (<a class="el" href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html">instance</a> $<a class="el" href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html">instance</a>)</td></tr>
-<tr class="memdesc:a65ca388918832675204ddb1ba451a96f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for responding when storing live meeting events is requested.  <a href="../../d6/da5/classmod__bigbluebuttonbn_1_1meeting.html#a65ca388918832675204ddb1ba451a96f">More...</a><br /></td></tr>
-<tr class="separator:a65ca388918832675204ddb1ba451a96f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a677e6f6424d7417cb4f6675648e00147"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da5/classmod__bigbluebuttonbn_1_1meeting.html#a677e6f6424d7417cb4f6675648e00147">meeting_events</a> (<a class="el" href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html">instance</a> $<a class="el" href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html">instance</a>, object $data)</td></tr>
+<tr class="memdesc:a677e6f6424d7417cb4f6675648e00147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for responding when storing live meeting events is requested.  <a href="../../d6/da5/classmod__bigbluebuttonbn_1_1meeting.html#a677e6f6424d7417cb4f6675648e00147">More...</a><br /></td></tr>
+<tr class="separator:a677e6f6424d7417cb4f6675648e00147"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -704,8 +704,8 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$meetinginfo</b> 
 
 </div>
 </div>
-<a id="a65ca388918832675204ddb1ba451a96f" name="a65ca388918832675204ddb1ba451a96f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65ca388918832675204ddb1ba451a96f">&#9670;&#160;</a></span>meeting_events()</h2>
+<a id="a677e6f6424d7417cb4f6675648e00147" name="a677e6f6424d7417cb4f6675648e00147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a677e6f6424d7417cb4f6675648e00147">&#9670;&#160;</a></span>meeting_events()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -717,8 +717,18 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$meetinginfo</b> 
           <td class="memname">static mod_bigbluebuttonbn\meeting::meeting_events </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html">instance</a>&#160;</td>
-          <td class="paramname"><em>$instance</em></td><td>)</td>
+          <td class="paramname"><em>$instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>$data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -737,12 +747,13 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$meetinginfo</b> 
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">instance</td><td class="paramname">$instance</td><td></td></tr>
+    <tr><td class="paramtype">object</td><td class="paramname">$data</td><td></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">void</td><td></td></tr>
+    <tr><td class="paramname">string</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -877,7 +888,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$meetinginfo</b> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 6 2022 03:40:37 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 13 2022 03:36:17 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

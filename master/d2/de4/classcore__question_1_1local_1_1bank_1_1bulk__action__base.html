@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221104) (fee1b8ce5fb)</div>
+   <div id="projectbrief">Moodle 4.1beta (Build: 20221111) (7c3188b2ca7)</div>
   </td>
  </tr>
  </tbody>
@@ -88,6 +88,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaa7530b519321286a675d23e1e4a4723"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de4/classcore__question_1_1local_1_1bank_1_1bulk__action__base.html#aaa7530b519321286a675d23e1e4a4723">get_bulk_action_url</a> ()</td></tr>
 <tr class="memdesc:aaa7530b519321286a675d23e1e4a4723"><td class="mdescLeft">&#160;</td><td class="mdescRight">URL of the bulk action redirect page.  <a href="../../d2/de4/classcore__question_1_1local_1_1bank_1_1bulk__action__base.html#aaa7530b519321286a675d23e1e4a4723">More...</a><br /></td></tr>
 <tr class="separator:aaa7530b519321286a675d23e1e4a4723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf5f7668509ac0bbbf9f8b46bb827328"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de4/classcore__question_1_1local_1_1bank_1_1bulk__action__base.html#acf5f7668509ac0bbbf9f8b46bb827328">get_key</a> ()</td></tr>
+<tr class="memdesc:acf5f7668509ac0bbbf9f8b46bb827328"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unique key for the bulk action, this will be used in the api to identify the action data.  <a href="../../d2/de4/classcore__question_1_1local_1_1bank_1_1bulk__action__base.html#acf5f7668509ac0bbbf9f8b46bb827328">More...</a><br /></td></tr>
+<tr class="separator:acf5f7668509ac0bbbf9f8b46bb827328"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1080ff308721ea9d55cd5d40311a6342" name="a1080ff308721ea9d55cd5d40311a6342"></a>
@@ -123,9 +126,6 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">core_question\local\bank\bulk_action_base::get_bulk_action_key </td>
@@ -134,11 +134,6 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>A unique key for the bulk action, this will be used in the api to identify the action data. </p>
@@ -149,8 +144,9 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p>Reimplemented in <a class="el" href="../../d8/d34/classqbank__bulkmove_1_1bulk__move__action.html#ad248167b4f98327916311ff87efb74f3">qbank_bulkmove\bulk_move_action</a>, and <a class="el" href="../../d5/d3f/classqbank__deletequestion_1_1bulk__delete__action.html#aa4473d151242848b93f85ea86dc9c0ca">qbank_deletequestion\bulk_delete_action</a>.</p>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001042">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/de4/classcore__question_1_1local_1_1bank_1_1bulk__action__base.html#acf5f7668509ac0bbbf9f8b46bb827328" title="A unique key for the bulk action, this will be used in the api to identify the action data.">get_key()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000304">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
 
 </div>
 </div>
@@ -226,13 +222,49 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="acf5f7668509ac0bbbf9f8b46bb827328" name="acf5f7668509ac0bbbf9f8b46bb827328"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf5f7668509ac0bbbf9f8b46bb827328">&#9670;&#160;</a></span>get_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_question\local\bank\bulk_action_base::get_key </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A unique key for the bulk action, this will be used in the api to identify the action data. </p>
+<p >Every bulk must have a unique key to perform the action as a part of the form post in the base view. When questions are selected, it will post according to the key its selected from the dropdown.</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../d8/d34/classqbank__bulkmove_1_1bulk__move__action.html#a222aafb12b906acfe66f41f3d465b642">qbank_bulkmove\bulk_move_action</a>, and <a class="el" href="../../d5/d3f/classqbank__deletequestion_1_1bulk__delete__action.html#a5ab15a56b4c4e14305fa183228353c21">qbank_deletequestion\bulk_delete_action</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>question/classes/local/bank/bulk_action_base.php</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 6 2022 03:49:00 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 13 2022 03:43:05 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

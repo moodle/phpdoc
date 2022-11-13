@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.4+ (Build: 20221104) (28043b9b2eb)</div>
+   <div id="projectbrief">Moodle 4.0.5 (Build: 20221114) (fdbcfa1b153)</div>
   </td>
  </tr>
  </tbody>
@@ -411,6 +411,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae7fba4bbf3f6e865a889e8742481e7e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#ae7fba4bbf3f6e865a889e8742481e7e4">sql_regex</a> ($positivematch=true, $casesensitive=false)</td></tr>
 <tr class="memdesc:ae7fba4bbf3f6e865a889e8742481e7e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the driver specific syntax (SQL part) for matching regex positively or negatively (inverted matching).  <a href="../../d3/d6e/classmoodle__database.html#ae7fba4bbf3f6e865a889e8742481e7e4">More...</a><br /></td></tr>
 <tr class="separator:ae7fba4bbf3f6e865a889e8742481e7e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52bf2f972a7f4e6a5f6456bf36cfedce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#a52bf2f972a7f4e6a5f6456bf36cfedce">sql_regex_get_word_beginning_boundary_marker</a> ()</td></tr>
+<tr class="memdesc:a52bf2f972a7f4e6a5f6456bf36cfedce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the word-beginning boundary marker if this database driver supports regex syntax when searching.  <a href="../../d3/d6e/classmoodle__database.html#a52bf2f972a7f4e6a5f6456bf36cfedce">More...</a><br /></td></tr>
+<tr class="separator:a52bf2f972a7f4e6a5f6456bf36cfedce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2313430109d2e2c6625d0462fca7d1b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#a2313430109d2e2c6625d0462fca7d1b8">sql_regex_get_word_end_boundary_marker</a> ()</td></tr>
+<tr class="memdesc:a2313430109d2e2c6625d0462fca7d1b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the word-end boundary marker if this database driver supports regex syntax when searching.  <a href="../../d3/d6e/classmoodle__database.html#a2313430109d2e2c6625d0462fca7d1b8">More...</a><br /></td></tr>
+<tr class="separator:a2313430109d2e2c6625d0462fca7d1b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2372afdf1879c5b986f9ea5e04352304"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#a2372afdf1879c5b986f9ea5e04352304">sql_regex_supported</a> ()</td></tr>
 <tr class="memdesc:a2372afdf1879c5b986f9ea5e04352304"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this database driver supports regex syntax when searching.  <a href="../../d3/d6e/classmoodle__database.html#a2372afdf1879c5b986f9ea5e04352304">More...</a><br /></td></tr>
 <tr class="separator:a2372afdf1879c5b986f9ea5e04352304"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -6812,6 +6818,60 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 
 </div>
 </div>
+<a id="a52bf2f972a7f4e6a5f6456bf36cfedce" name="a52bf2f972a7f4e6a5f6456bf36cfedce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52bf2f972a7f4e6a5f6456bf36cfedce">&#9670;&#160;</a></span>sql_regex_get_word_beginning_boundary_marker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">moodle_database::sql_regex_get_word_beginning_boundary_marker </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the word-beginning boundary marker if this database driver supports regex syntax when searching. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>The word-beginning boundary marker. Otherwise, an empty string. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../d1/d7c/classmysqli__native__moodle__database.html#afa629853c2fd0bd659864594c8498b31">mysqli_native_moodle_database</a>.</p>
+
+</div>
+</div>
+<a id="a2313430109d2e2c6625d0462fca7d1b8" name="a2313430109d2e2c6625d0462fca7d1b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2313430109d2e2c6625d0462fca7d1b8">&#9670;&#160;</a></span>sql_regex_get_word_end_boundary_marker()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">moodle_database::sql_regex_get_word_end_boundary_marker </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the word-end boundary marker if this database driver supports regex syntax when searching. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>The word-end boundary marker. Otherwise, an empty string. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../d1/d7c/classmysqli__native__moodle__database.html#a05a7c7b03e223bc39b855a0ca23727eb">mysqli_native_moodle_database</a>.</p>
+
+</div>
+</div>
 <a id="a2372afdf1879c5b986f9ea5e04352304" name="a2372afdf1879c5b986f9ea5e04352304"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2372afdf1879c5b986f9ea5e04352304">&#9670;&#160;</a></span>sql_regex_supported()</h2>
 
@@ -7413,7 +7473,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 6 2022 03:38:21 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 13 2022 03:34:24 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

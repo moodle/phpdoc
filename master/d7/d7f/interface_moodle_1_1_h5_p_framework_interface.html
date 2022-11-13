@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221104) (fee1b8ce5fb)</div>
+   <div id="projectbrief">Moodle 4.1beta (Build: 20221111) (7c3188b2ca7)</div>
   </td>
  </tr>
  </tbody>
@@ -69,7 +69,7 @@ Inheritance diagram for Moodle\H5PFrameworkInterface:</div>
  <div class="center">
   <img src="../../d7/d7f/interface_moodle_1_1_h5_p_framework_interface.png" usemap="#Moodle_5CH5PFrameworkInterface_map" alt=""/>
   <map id="Moodle_5CH5PFrameworkInterface_map" name="Moodle_5CH5PFrameworkInterface_map">
-<area href="../../d9/d27/classcore__h5p_1_1framework.html" title="Moodle&#39;s implementation of the H5P framework interface." alt="core_h5p\framework" shape="rect" coords="0,56,195,80"/>
+<area href="../../d9/d27/classcore__h5p_1_1framework.html" alt="core_h5p\framework" shape="rect" coords="0,56,195,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -102,12 +102,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8e18f792da05882d329904b05ad47683"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d7f/interface_moodle_1_1_h5_p_framework_interface.html#a8e18f792da05882d329904b05ad47683">deleteLibraryUsage</a> ($contentId)</td></tr>
 <tr class="memdesc:a8e18f792da05882d329904b05ad47683"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete what libraries a content item is using.  <a href="../../d7/d7f/interface_moodle_1_1_h5_p_framework_interface.html#a8e18f792da05882d329904b05ad47683">More...</a><br /></td></tr>
 <tr class="separator:a8e18f792da05882d329904b05ad47683"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ebfdebb7af75f5c9449f99984cc081c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d7f/interface_moodle_1_1_h5_p_framework_interface.html#a3ebfdebb7af75f5c9449f99984cc081c">fetchExternalData</a> ($url, $data=NULL, $blocking=TRUE, $stream=NULL)</td></tr>
-<tr class="memdesc:a3ebfdebb7af75f5c9449f99984cc081c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches a file from a remote server using HTTP GET.  <a href="../../d7/d7f/interface_moodle_1_1_h5_p_framework_interface.html#a3ebfdebb7af75f5c9449f99984cc081c">More...</a><br /></td></tr>
-<tr class="separator:a3ebfdebb7af75f5c9449f99984cc081c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae43ca582973e99924206c9c38f9fe2f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d7f/interface_moodle_1_1_h5_p_framework_interface.html#ae43ca582973e99924206c9c38f9fe2f1">fetchExternalData</a> ($url, $data=NULL, $blocking=TRUE, $stream=NULL, $fullData=FALSE, $<a class="el" href="../../dc/d71/group___imap___client.html#gafe94898c7bd186ef2727a4dff03b5109">headers</a>=array(), $files=array(), $method='POST')</td></tr>
+<tr class="memdesc:ae43ca582973e99924206c9c38f9fe2f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches a file from a remote server using HTTP GET.  <a href="../../d7/d7f/interface_moodle_1_1_h5_p_framework_interface.html#ae43ca582973e99924206c9c38f9fe2f1">More...</a><br /></td></tr>
+<tr class="separator:ae43ca582973e99924206c9c38f9fe2f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0edf12e7e3d815bba77d3e829748ee2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d7f/interface_moodle_1_1_h5_p_framework_interface.html#ab0edf12e7e3d815bba77d3e829748ee2">getAdminUrl</a> ()</td></tr>
 <tr class="memdesc:ab0edf12e7e3d815bba77d3e829748ee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the URL to the library admin page.  <a href="../../d7/d7f/interface_moodle_1_1_h5_p_framework_interface.html#ab0edf12e7e3d815bba77d3e829748ee2">More...</a><br /></td></tr>
 <tr class="separator:ab0edf12e7e3d815bba77d3e829748ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08c1c920ced0702b303438615e054cca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d7f/interface_moodle_1_1_h5_p_framework_interface.html#a08c1c920ced0702b303438615e054cca">getContentHubMetadataCache</a> ($lang='en')</td></tr>
+<tr class="memdesc:a08c1c920ced0702b303438615e054cca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get content hub metadata cache from db.  <a href="../../d7/d7f/interface_moodle_1_1_h5_p_framework_interface.html#a08c1c920ced0702b303438615e054cca">More...</a><br /></td></tr>
+<tr class="separator:a08c1c920ced0702b303438615e054cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b1d727064442f8ec94120c7e763e53e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d7f/interface_moodle_1_1_h5_p_framework_interface.html#a1b1d727064442f8ec94120c7e763e53e">getContentHubMetadataChecked</a> ($lang='en')</td></tr>
+<tr class="memdesc:a1b1d727064442f8ec94120c7e763e53e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get time of last content hub metadata check.  <a href="../../d7/d7f/interface_moodle_1_1_h5_p_framework_interface.html#a1b1d727064442f8ec94120c7e763e53e">More...</a><br /></td></tr>
+<tr class="separator:a1b1d727064442f8ec94120c7e763e53e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14d43f9de744e691011688957c9b5ae8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d7f/interface_moodle_1_1_h5_p_framework_interface.html#a14d43f9de744e691011688957c9b5ae8">getLibraryConfig</a> ($libraries=NULL)</td></tr>
 <tr class="memdesc:a14d43f9de744e691011688957c9b5ae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load config for libraries.  <a href="../../d7/d7f/interface_moodle_1_1_h5_p_framework_interface.html#a14d43f9de744e691011688957c9b5ae8">More...</a><br /></td></tr>
 <tr class="separator:a14d43f9de744e691011688957c9b5ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,6 +201,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afe22156028833cad27feb886b1e98d32"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d7f/interface_moodle_1_1_h5_p_framework_interface.html#afe22156028833cad27feb886b1e98d32">mayUpdateLibraries</a> ()</td></tr>
 <tr class="memdesc:afe22156028833cad27feb886b1e98d32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the current user allowed to update libraries?  <a href="../../d7/d7f/interface_moodle_1_1_h5_p_framework_interface.html#afe22156028833cad27feb886b1e98d32">More...</a><br /></td></tr>
 <tr class="separator:afe22156028833cad27feb886b1e98d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1972c1abea85712eef176b38ee1fdd4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d7f/interface_moodle_1_1_h5_p_framework_interface.html#aa1972c1abea85712eef176b38ee1fdd4">replaceContentHubMetadataCache</a> ($metadata, $lang)</td></tr>
+<tr class="memdesc:aa1972c1abea85712eef176b38ee1fdd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace content hub metadata cache.  <a href="../../d7/d7f/interface_moodle_1_1_h5_p_framework_interface.html#aa1972c1abea85712eef176b38ee1fdd4">More...</a><br /></td></tr>
+<tr class="separator:aa1972c1abea85712eef176b38ee1fdd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8057fc9272e445e9e80e4e709c85d44"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d7f/interface_moodle_1_1_h5_p_framework_interface.html#ad8057fc9272e445e9e80e4e709c85d44">replaceContentTypeCache</a> ($contentTypeCache)</td></tr>
 <tr class="memdesc:ad8057fc9272e445e9e80e4e709c85d44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces existing content type cache with the one passed in.  <a href="../../d7/d7f/interface_moodle_1_1_h5_p_framework_interface.html#ad8057fc9272e445e9e80e4e709c85d44">More...</a><br /></td></tr>
 <tr class="separator:ad8057fc9272e445e9e80e4e709c85d44"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,6 +222,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afc21879f105ffda37c8926a55584eb46"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d7f/interface_moodle_1_1_h5_p_framework_interface.html#afc21879f105ffda37c8926a55584eb46">saveLibraryUsage</a> ($contentId, $librariesInUse)</td></tr>
 <tr class="memdesc:afc21879f105ffda37c8926a55584eb46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves what libraries the content uses.  <a href="../../d7/d7f/interface_moodle_1_1_h5_p_framework_interface.html#afc21879f105ffda37c8926a55584eb46">More...</a><br /></td></tr>
 <tr class="separator:afc21879f105ffda37c8926a55584eb46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82f62a740b88c471f6106d02723be821"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d7f/interface_moodle_1_1_h5_p_framework_interface.html#a82f62a740b88c471f6106d02723be821">setContentHubMetadataChecked</a> ($time, $lang='en')</td></tr>
+<tr class="memdesc:a82f62a740b88c471f6106d02723be821"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set time of last content hub metadata check.  <a href="../../d7/d7f/interface_moodle_1_1_h5_p_framework_interface.html#a82f62a740b88c471f6106d02723be821">More...</a><br /></td></tr>
+<tr class="separator:a82f62a740b88c471f6106d02723be821"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4cac9159d1962dc969d2a806193a76c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d7f/interface_moodle_1_1_h5_p_framework_interface.html#aa4cac9159d1962dc969d2a806193a76c">setErrorMessage</a> ($message, $code=NULL)</td></tr>
 <tr class="memdesc:aa4cac9159d1962dc969d2a806193a76c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show the user an error message.  <a href="../../d7/d7f/interface_moodle_1_1_h5_p_framework_interface.html#aa4cac9159d1962dc969d2a806193a76c">More...</a><br /></td></tr>
 <tr class="separator:aa4cac9159d1962dc969d2a806193a76c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -546,8 +558,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3ebfdebb7af75f5c9449f99984cc081c" name="a3ebfdebb7af75f5c9449f99984cc081c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ebfdebb7af75f5c9449f99984cc081c">&#9670;&#160;</a></span>fetchExternalData()</h2>
+<a id="ae43ca582973e99924206c9c38f9fe2f1" name="ae43ca582973e99924206c9c38f9fe2f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae43ca582973e99924206c9c38f9fe2f1">&#9670;&#160;</a></span>fetchExternalData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -574,7 +586,31 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$stream</em> = <code>NULL</code>&#160;</td>
+          <td class="paramname"><em>$stream</em> = <code>NULL</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$fullData</em> = <code>FALSE</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$headers</em> = <code>array()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$files</em> = <code>array()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$method</em> = <code>'POST'</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -591,17 +627,21 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>Data to post to the URL. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$blocking</td><td>Set to 'FALSE' to instantly time out (fire and forget). </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$stream</td><td>Path to where the file should be saved. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$fullData</td><td>Return additional response data such as headers and potentially other data </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$headers</td><td>Headers to send </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$files</td><td>Files to send </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$method</td><td></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">string</td><td>The content (response body). NULL if something went wrong </td></tr>
+    <tr><td class="paramname">string|array</td><td>The content (response body), or an array with data. NULL if something went wrong </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="../../d9/d27/classcore__h5p_1_1framework.html#abaf02e0f8d3a1d7aca60371366a97f5d">core_h5p\framework</a>.</p>
+<p>Implemented in <a class="el" href="../../d9/d27/classcore__h5p_1_1framework.html#ae4d52187f1aef9cf501c8fa4c9fea449">core_h5p\framework</a>.</p>
 
 </div>
 </div>
@@ -629,6 +669,74 @@ Public Member Functions</h2></td></tr>
 </dl>
 
 <p>Implemented in <a class="el" href="../../d9/d27/classcore__h5p_1_1framework.html#a9fdc3f6ae9addc4a1272be5621ac07e6">core_h5p\framework</a>.</p>
+
+</div>
+</div>
+<a id="a08c1c920ced0702b303438615e054cca" name="a08c1c920ced0702b303438615e054cca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08c1c920ced0702b303438615e054cca">&#9670;&#160;</a></span>getContentHubMetadataCache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Moodle\H5PFrameworkInterface::getContentHubMetadataCache </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$lang</em> = <code>'en'</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get content hub metadata cache from db. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$lang</td><td>Language code in ISO 639-1</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">JsonSerializable</td><td>Json string </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="../../d9/d27/classcore__h5p_1_1framework.html#a6584aba566580502999700c28efcdfdb">core_h5p\framework</a>.</p>
+
+</div>
+</div>
+<a id="a1b1d727064442f8ec94120c7e763e53e" name="a1b1d727064442f8ec94120c7e763e53e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b1d727064442f8ec94120c7e763e53e">&#9670;&#160;</a></span>getContentHubMetadataChecked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Moodle\H5PFrameworkInterface::getContentHubMetadataChecked </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$lang</em> = <code>'en'</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get time of last content hub metadata check. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$lang</td><td>Language code iin ISO 639-1 format</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string|null</td><td>Time in RFC7231 format </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="../../d9/d27/classcore__h5p_1_1framework.html#a6d29d2fc1f6fa353b7d624be499809ae">core_h5p\framework</a>.</p>
 
 </div>
 </div>
@@ -1751,6 +1859,51 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa1972c1abea85712eef176b38ee1fdd4" name="aa1972c1abea85712eef176b38ee1fdd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1972c1abea85712eef176b38ee1fdd4">&#9670;&#160;</a></span>replaceContentHubMetadataCache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Moodle\H5PFrameworkInterface::replaceContentHubMetadataCache </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$metadata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$lang</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Replace content hub metadata cache. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">JsonSerializable</td><td class="paramname">$metadata</td><td>Metadata as received from content hub </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$lang</td><td>Language in ISO 639-1</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">mixed</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="../../d9/d27/classcore__h5p_1_1framework.html#aedfd94f82b5c60b4c7b9d332e2171ba3">core_h5p\framework</a>.</p>
+
+</div>
+</div>
 <a id="ad8057fc9272e445e9e80e4e709c85d44" name="ad8057fc9272e445e9e80e4e709c85d44"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad8057fc9272e445e9e80e4e709c85d44">&#9670;&#160;</a></span>replaceContentTypeCache()</h2>
 
@@ -2031,6 +2184,51 @@ Public Member Functions</h2></td></tr>
 </dl>
 
 <p>Implemented in <a class="el" href="../../d9/d27/classcore__h5p_1_1framework.html#aff005d969c2e323861d1457f6d0987cc">core_h5p\framework</a>.</p>
+
+</div>
+</div>
+<a id="a82f62a740b88c471f6106d02723be821" name="a82f62a740b88c471f6106d02723be821"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82f62a740b88c471f6106d02723be821">&#9670;&#160;</a></span>setContentHubMetadataChecked()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Moodle\H5PFrameworkInterface::setContentHubMetadataChecked </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$time</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$lang</em> = <code>'en'</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set time of last content hub metadata check. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$time</td><td>Time in RFC7231 format </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$lang</td><td>Language code iin ISO 639-1 format</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>True if successful </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="../../d9/d27/classcore__h5p_1_1framework.html#a7d54a9f1ed39ef958c609247e01a16fa">core_h5p\framework</a>.</p>
 
 </div>
 </div>
@@ -2344,7 +2542,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 6 2022 03:50:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 13 2022 03:44:09 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

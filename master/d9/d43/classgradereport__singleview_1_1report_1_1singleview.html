@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221104) (fee1b8ce5fb)</div>
+   <div id="projectbrief">Moodle 4.1beta (Build: 20221111) (7c3188b2ca7)</div>
   </td>
  </tr>
  </tbody>
@@ -62,6 +62,7 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d1/dbd/classgradereport__singleview_1_1report_1_1singleview-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">gradereport_singleview\report\singleview Class Reference<div class="ingroups"><a class="el" href="../../de/d85/group__gradereport__singleview.html">gradereport_singleview</a></div></div></div>
@@ -82,6 +83,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac28aeedc443982e6ae96effbd64c617c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d43/classgradereport__singleview_1_1report_1_1singleview.html#ac28aeedc443982e6ae96effbd64c617c">__construct</a> (int $courseid, object $gpr, <a class="el" href="../../d8/d0a/classcontext__course.html">context_course</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, string $itemtype, ?int $itemid, ?string $unused=null)</td></tr>
 <tr class="memdesc:ac28aeedc443982e6ae96effbd64c617c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for this report.  <a href="../../d9/d43/classgradereport__singleview_1_1report_1_1singleview.html#ac28aeedc443982e6ae96effbd64c617c">More...</a><br /></td></tr>
 <tr class="separator:ac28aeedc443982e6ae96effbd64c617c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae41a9c36d5f3eaedc78ac9c8e5daa09e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d43/classgradereport__singleview_1_1report_1_1singleview.html#ae41a9c36d5f3eaedc78ac9c8e5daa09e">bulk_actions_menu</a> (<a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a> $<a class="el" href="../../d9/d43/classgradereport__singleview_1_1report_1_1singleview.html#a17ddea5d750edc586f901d792a7cfaee">output</a>)</td></tr>
+<tr class="memdesc:ae41a9c36d5f3eaedc78ac9c8e5daa09e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds bulk actions menu.  <a href="../../d9/d43/classgradereport__singleview_1_1report_1_1singleview.html#ae41a9c36d5f3eaedc78ac9c8e5daa09e">More...</a><br /></td></tr>
+<tr class="separator:ae41a9c36d5f3eaedc78ac9c8e5daa09e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0150ab3ac9c714ba81b011b3591857c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#a0150ab3ac9c714ba81b011b3591857c6">get_lang_string</a> ($strcode, $section=null)</td></tr>
 <tr class="memdesc:a0150ab3ac9c714ba81b011b3591857c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">First checks the cached language strings, then returns match if found, or uses get_string() to get it from the <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a>, caches it then returns it.  <a href="../../da/dd4/classgrade__report.html#a0150ab3ac9c714ba81b011b3591857c6">More...</a><br /></td></tr>
 <tr class="separator:a0150ab3ac9c714ba81b011b3591857c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,6 +166,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$groupmode</b></td></t
 <tr class="memitem:a48027c3f85ec691d56e8b9b5fa7d1bd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d74/classgrade__tree.html">grade_tree</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#a48027c3f85ec691d56e8b9b5fa7d1bd6">$gtree</a></td></tr>
 <tr class="memdesc:a48027c3f85ec691d56e8b9b5fa7d1bd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="../../de/d74/classgrade__tree.html" title="This class represents a complete tree of categories, grade_items and final grades,...">grade_tree</a> object.  <a href="../../da/dd4/classgrade__report.html#a48027c3f85ec691d56e8b9b5fa7d1bd6">More...</a><br /></td></tr>
 <tr class="separator:a48027c3f85ec691d56e8b9b5fa7d1bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abffcb263d15901a0ba7f75c4f0c9700d"><td class="memItemLeft" align="right" valign="top"><a id="abffcb263d15901a0ba7f75c4f0c9700d" name="abffcb263d15901a0ba7f75c4f0c9700d"></a>
+string null string&#160;</td><td class="memItemRight" valign="bottom"><b>$itemselector</b> = null</td></tr>
+<tr class="memdesc:abffcb263d15901a0ba7f75c4f0c9700d"><td class="mdescLeft">&#160;</td><td class="mdescRight">$itemselector The raw HTML of the item selector based on the selected single view item type. <br /></td></tr>
+<tr class="separator:abffcb263d15901a0ba7f75c4f0c9700d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d1a9f8d6c26f65b1afaa5f844f0f322"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#a6d1a9f8d6c26f65b1afaa5f844f0f322">$lang_strings</a> = array()</td></tr>
 <tr class="memdesc:a6d1a9f8d6c26f65b1afaa5f844f0f322"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array of cached language strings (using get_string() all the time takes a long time!).  <a href="../../da/dd4/classgrade__report.html#a6d1a9f8d6c26f65b1afaa5f844f0f322">More...</a><br /></td></tr>
 <tr class="separator:a6d1a9f8d6c26f65b1afaa5f844f0f322"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,10 +194,18 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aa8f11f8585719f9313d9404c5af8e81c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#aa8f11f8585719f9313d9404c5af8e81c">get_sort_arrow</a> ($direction='move', $sortlink=null)</td></tr>
 <tr class="memdesc:aa8f11f8585719f9313d9404c5af8e81c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an arrow icon inside an  tag, for the purpose of sorting a column.  <a href="../../da/dd4/classgrade__report.html#aa8f11f8585719f9313d9404c5af8e81c">More...</a><br /></td></tr>
 <tr class="separator:aa8f11f8585719f9313d9404c5af8e81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a514c305126cd4ef6a87b1cc2d0effe52"><td class="memItemLeft" align="right" valign="top"><a id="a514c305126cd4ef6a87b1cc2d0effe52" name="a514c305126cd4ef6a87b1cc2d0effe52"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>setup_groups</b> ()</td></tr>
-<tr class="memdesc:a514c305126cd4ef6a87b1cc2d0effe52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up this object's group variables, mainly to restrict the selection of users to display. <br /></td></tr>
-<tr class="separator:a514c305126cd4ef6a87b1cc2d0effe52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2d3e610fc938d727a99d3ccc85b5d9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d43/classgradereport__singleview_1_1report_1_1singleview.html#aa2d3e610fc938d727a99d3ccc85b5d9b">setup_groups</a> ()</td></tr>
+<tr class="memdesc:aa2d3e610fc938d727a99d3ccc85b5d9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up this object's group variables, mainly to restrict the selection of users to display.  <a href="../../d9/d43/classgradereport__singleview_1_1report_1_1singleview.html#aa2d3e610fc938d727a99d3ccc85b5d9b">More...</a><br /></td></tr>
+<tr class="separator:aa2d3e610fc938d727a99d3ccc85b5d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69b5144aaa6214f6852c50d2bc01724c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d43/classgradereport__singleview_1_1report_1_1singleview.html#a69b5144aaa6214f6852c50d2bc01724c">setup_item_selector</a> (string $itemtype, ?int $itemid)</td></tr>
+<tr class="memdesc:a69b5144aaa6214f6852c50d2bc01724c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function used to set the appropriate item selector (raw HTML) based on the selected single view item type.  <a href="../../d9/d43/classgradereport__singleview_1_1report_1_1singleview.html#a69b5144aaa6214f6852c50d2bc01724c">More...</a><br /></td></tr>
+<tr class="separator:a69b5144aaa6214f6852c50d2bc01724c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:a6645cd22c03b8219dd3ac9eec5516d7e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d43/classgradereport__singleview_1_1report_1_1singleview.html#a6645cd22c03b8219dd3ac9eec5516d7e">groups_course_menu</a> (stdClass $course, <a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a> $urlroot)</td></tr>
+<tr class="memdesc:a6645cd22c03b8219dd3ac9eec5516d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ideally we should move this function to the base class and call it from the setup_groups in the base class, so all reports would automatically use it.  <a href="../../d9/d43/classgradereport__singleview_1_1report_1_1singleview.html#a6645cd22c03b8219dd3ac9eec5516d7e">More...</a><br /></td></tr>
+<tr class="separator:a6645cd22c03b8219dd3ac9eec5516d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -390,6 +406,38 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array[]</td><td>containing values for 'grade', 'grademax', 'grademin', 'aggregationstatus' and 'aggregationweight' </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae41a9c36d5f3eaedc78ac9c8e5daa09e" name="ae41a9c36d5f3eaedc78ac9c8e5daa09e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae41a9c36d5f3eaedc78ac9c8e5daa09e">&#9670;&#160;</a></span>bulk_actions_menu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gradereport_singleview\report\singleview::bulk_actions_menu </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a>&#160;</td>
+          <td class="paramname"><em>$output</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds bulk actions menu. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a></td><td class="paramname">$output</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>HTML to display </td></tr>
   </table>
   </dd>
 </dl>
@@ -646,6 +694,57 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 
 </div>
 </div>
+<a id="a6645cd22c03b8219dd3ac9eec5516d7e" name="a6645cd22c03b8219dd3ac9eec5516d7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6645cd22c03b8219dd3ac9eec5516d7e">&#9670;&#160;</a></span>groups_course_menu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static gradereport_singleview\report\singleview::groups_course_menu </td>
+          <td>(</td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$course</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a>&#160;</td>
+          <td class="paramname"><em>$urlroot</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ideally we should move this function to the base class and call it from the setup_groups in the base class, so all reports would automatically use it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$urlroot</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad927502603e2e6f348fb4eaf488fdc64" name="ad927502603e2e6f348fb4eaf488fdc64"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad927502603e2e6f348fb4eaf488fdc64">&#9670;&#160;</a></span>item_types()</h2>
 
@@ -830,6 +929,80 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td>Success or failure. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa2d3e610fc938d727a99d3ccc85b5d9b" name="aa2d3e610fc938d727a99d3ccc85b5d9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2d3e610fc938d727a99d3ccc85b5d9b">&#9670;&#160;</a></span>setup_groups()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">gradereport_singleview\report\singleview::setup_groups </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets up this object's group variables, mainly to restrict the selection of users to display. </p>
+
+<p>Reimplemented from <a class="el" href="../../da/dd4/classgrade__report.html#a514c305126cd4ef6a87b1cc2d0effe52">grade_report</a>.</p>
+
+</div>
+</div>
+<a id="a69b5144aaa6214f6852c50d2bc01724c" name="a69b5144aaa6214f6852c50d2bc01724c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69b5144aaa6214f6852c50d2bc01724c">&#9670;&#160;</a></span>setup_item_selector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">gradereport_singleview\report\singleview::setup_item_selector </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$itemtype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int&#160;</td>
+          <td class="paramname"><em>$itemid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function used to set the appropriate item selector (raw HTML) based on the selected single view item type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$itemtype</td><td>The single view item type. </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$itemid</td><td>The item ID. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1364,7 +1537,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 6 2022 03:49:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 13 2022 03:43:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

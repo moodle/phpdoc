@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221104) (fee1b8ce5fb)</div>
+   <div id="projectbrief">Moodle 4.1beta (Build: 20221111) (7c3188b2ca7)</div>
   </td>
  </tr>
  </tbody>
@@ -74,6 +74,9 @@ Inheritance diagram for mod_bigbluebuttonbn_generator:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a1dc9fb879a914dc04d88c644f61ebcc5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d71/classmod__bigbluebuttonbn__generator.html#a1dc9fb879a914dc04d88c644f61ebcc5">add_meeting_event</a> (object $user, <a class="el" href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html">instance</a> $<a class="el" href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html">instance</a>, string $eventtype, string $eventdata='')</td></tr>
+<tr class="memdesc:a1dc9fb879a914dc04d88c644f61ebcc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger a meeting event on BBB side.  <a href="../../d8/d71/classmod__bigbluebuttonbn__generator.html#a1dc9fb879a914dc04d88c644f61ebcc5">More...</a><br /></td></tr>
+<tr class="separator:a1dc9fb879a914dc04d88c644f61ebcc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac24b50272bf19b9c092ab7da82444e06"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dce/classtesting__module__generator.html#ac24b50272bf19b9c092ab7da82444e06">create_content</a> ($instance, $record=array())</td></tr>
 <tr class="memdesc:ac24b50272bf19b9c092ab7da82444e06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a piece of content for the module.  <a href="../../d6/dce/classtesting__module__generator.html#ac24b50272bf19b9c092ab7da82444e06">More...</a><br /></td></tr>
 <tr class="separator:ac24b50272bf19b9c092ab7da82444e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,6 +102,9 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>reset_mock</b> ()</td></tr>
 <tr class="memdesc:ac511bdaa8129ba7886629795e1ed2cc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the mock server. <br /></td></tr>
 <tr class="separator:ac511bdaa8129ba7886629795e1ed2cc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cad7ca8322cfaa25a0fb5f5458dfa82"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d71/classmod__bigbluebuttonbn__generator.html#a8cad7ca8322cfaa25a0fb5f5458dfa82">send_all_events</a> (<a class="el" href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html">instance</a> $<a class="el" href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html">instance</a>)</td></tr>
+<tr class="memdesc:a8cad7ca8322cfaa25a0fb5f5458dfa82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send all previously store events.  <a href="../../d8/d71/classmod__bigbluebuttonbn__generator.html#a8cad7ca8322cfaa25a0fb5f5458dfa82">More...</a><br /></td></tr>
+<tr class="separator:a8cad7ca8322cfaa25a0fb5f5458dfa82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -141,6 +147,63 @@ number&#160;</td><td class="memItemRight" valign="bottom"><b>$instancecount</b> 
 <tr class="separator:a148479a1dac4455e5f2ee11549d4ec02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1dc9fb879a914dc04d88c644f61ebcc5" name="a1dc9fb879a914dc04d88c644f61ebcc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dc9fb879a914dc04d88c644f61ebcc5">&#9670;&#160;</a></span>add_meeting_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_bigbluebuttonbn_generator::add_meeting_event </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>$user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html">instance</a>&#160;</td>
+          <td class="paramname"><em>$instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$eventtype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$eventdata</em> = <code>''</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Trigger a meeting event on BBB side. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">object</td><td class="paramname">$user</td><td></td></tr>
+    <tr><td class="paramtype">instance</td><td class="paramname">$instance</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$eventtype</td><td></td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$eventdata</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ac24b50272bf19b9c092ab7da82444e06" name="ac24b50272bf19b9c092ab7da82444e06"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac24b50272bf19b9c092ab7da82444e06">&#9670;&#160;</a></span>create_content()</h2>
 
@@ -793,6 +856,38 @@ number&#160;</td><td class="memItemRight" valign="bottom"><b>$instancecount</b> 
 
 </div>
 </div>
+<a id="a8cad7ca8322cfaa25a0fb5f5458dfa82" name="a8cad7ca8322cfaa25a0fb5f5458dfa82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cad7ca8322cfaa25a0fb5f5458dfa82">&#9670;&#160;</a></span>send_all_events()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_bigbluebuttonbn_generator::send_all_events </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html">instance</a>&#160;</td>
+          <td class="paramname"><em>$instance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send all previously store events. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">instance</td><td class="paramname">$instance</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">object|null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a2f74b4ee128718f1eeb44cfaf94a0bf6" name="a2f74b4ee128718f1eeb44cfaf94a0bf6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2f74b4ee128718f1eeb44cfaf94a0bf6">&#9670;&#160;</a></span>send_mock_request()</h2>
 
@@ -898,7 +993,7 @@ number&#160;</td><td class="memItemRight" valign="bottom"><b>$instancecount</b> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 6 2022 03:46:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 13 2022 03:41:24 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

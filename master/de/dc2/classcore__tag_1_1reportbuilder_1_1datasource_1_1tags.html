@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221104) (fee1b8ce5fb)</div>
+   <div id="projectbrief">Moodle 4.1beta (Build: 20221111) (7c3188b2ca7)</div>
   </td>
  </tr>
  </tbody>
@@ -133,6 +133,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3354d175ec04c9601ecead875f333016"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/classcore__reportbuilder_1_1local_1_1report_1_1base.html#a3354d175ec04c9601ecead875f333016">get_context</a> ()</td></tr>
 <tr class="memdesc:a3354d175ec04c9601ecead875f333016"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the report context.  <a href="../../d8/d1d/classcore__reportbuilder_1_1local_1_1report_1_1base.html#a3354d175ec04c9601ecead875f333016">More...</a><br /></td></tr>
 <tr class="separator:a3354d175ec04c9601ecead875f333016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a341168a1c7ecb9b1fb4a0ce110ff2976"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4a/classcore__reportbuilder_1_1datasource.html#a341168a1c7ecb9b1fb4a0ce110ff2976">get_default_column_sorting</a> ()</td></tr>
+<tr class="memdesc:a341168a1c7ecb9b1fb4a0ce110ff2976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the default sorting that will be added to the report once it is created.  <a href="../../d7/d4a/classcore__reportbuilder_1_1datasource.html#a341168a1c7ecb9b1fb4a0ce110ff2976">More...</a><br /></td></tr>
+<tr class="separator:a341168a1c7ecb9b1fb4a0ce110ff2976"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc51597ce218a2d9d2caa0355fa687fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc2/classcore__tag_1_1reportbuilder_1_1datasource_1_1tags.html#adc51597ce218a2d9d2caa0355fa687fe">get_default_columns</a> ()</td></tr>
 <tr class="memdesc:adc51597ce218a2d9d2caa0355fa687fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the columns that will be added to the report upon creation.  <a href="../../de/dc2/classcore__tag_1_1reportbuilder_1_1datasource_1_1tags.html#adc51597ce218a2d9d2caa0355fa687fe">More...</a><br /></td></tr>
 <tr class="separator:adc51597ce218a2d9d2caa0355fa687fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1631,6 +1634,41 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a341168a1c7ecb9b1fb4a0ce110ff2976" name="a341168a1c7ecb9b1fb4a0ce110ff2976"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a341168a1c7ecb9b1fb4a0ce110ff2976">&#9670;&#160;</a></span>get_default_column_sorting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_reportbuilder\datasource::get_default_column_sorting </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the default sorting that will be added to the report once it is created. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int[]</td><td>array [column identifier =&gt; SORT_ASC/SORT_DESC] </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../d8/d66/classcore__badges_1_1reportbuilder_1_1datasource_1_1badges.html#a9ffc61475832fd449f2f12129382a3d6">core_badges\reportbuilder\datasource\badges</a>, <a class="el" href="../../d3/d69/classcore__cohort_1_1reportbuilder_1_1datasource_1_1cohorts.html#a47bab11799a84e8288b136132e11b8e2">core_cohort\reportbuilder\datasource\cohorts</a>, <a class="el" href="../../da/d7b/classcore__course_1_1reportbuilder_1_1datasource_1_1courses.html#a997beaccfd8410c23a9c0df08e11e804">core_course\reportbuilder\datasource\courses</a>, and <a class="el" href="../../d3/d9c/classcore__user_1_1reportbuilder_1_1datasource_1_1users.html#a466fd09020c0aef7704c265c42a9a4dc">core_user\reportbuilder\datasource\users</a>.</p>
+
+</div>
+</div>
 <a id="adc51597ce218a2d9d2caa0355fa687fe" name="adc51597ce218a2d9d2caa0355fa687fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adc51597ce218a2d9d2caa0355fa687fe">&#9670;&#160;</a></span>get_default_columns()</h2>
 
@@ -2659,7 +2697,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 6 2022 03:49:10 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 13 2022 03:43:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

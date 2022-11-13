@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;3.11</span>
    </div>
-   <div id="projectbrief">Moodle 3.11.10+ (Build: 20221104) (71841556aa)</div>
+   <div id="projectbrief">Moodle 3.11.11 (Build: 20221114) (becbdd847d)</div>
   </td>
  </tr>
  </tbody>
@@ -394,8 +394,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1dabdaad89f10af2acf0add08bc952fa"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d48/group__mod__glossary.html#ga1dabdaad89f10af2acf0add08bc952fa">glossary_print_entry_icons</a> ($course, $cm, $glossary, $entry, $mode='', $hook='', $type='print')</td></tr>
 <tr class="memdesc:ga1dabdaad89f10af2acf0add08bc952fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">@global object @global object  <a href="../../d4/d48/group__mod__glossary.html#ga1dabdaad89f10af2acf0add08bc952fa">More...</a><br /></td></tr>
 <tr class="separator:ga1dabdaad89f10af2acf0add08bc952fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3812c622facf0c74b9cd46e058f64393"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d48/group__mod__glossary.html#ga3812c622facf0c74b9cd46e058f64393">glossary_print_entry_lower_section</a> ($course, $cm, $glossary, $entry, $mode, $hook, $printicons, $aliases=true)</td></tr>
-<tr class="separator:ga3812c622facf0c74b9cd46e058f64393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga21a723cf30375bd69d2b28ed6471b6e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d48/group__mod__glossary.html#ga21a723cf30375bd69d2b28ed6471b6e3">glossary_print_entry_lower_section</a> ($course, $cm, $glossary, $entry, $mode, $hook, $printicons, $aliases=true, $printseparator=true)</td></tr>
+<tr class="separator:ga21a723cf30375bd69d2b28ed6471b6e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga28b57d02b8aa25b58b5f83ea5b993eae"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d48/group__mod__glossary.html#ga28b57d02b8aa25b58b5f83ea5b993eae">glossary_print_entry_ratings</a> ($course, $entry)</td></tr>
 <tr class="memdesc:ga28b57d02b8aa25b58b5f83ea5b993eae"><td class="mdescLeft">&#160;</td><td class="mdescRight">@global object @global object  <a href="../../d4/d48/group__mod__glossary.html#ga28b57d02b8aa25b58b5f83ea5b993eae">More...</a><br /></td></tr>
 <tr class="separator:ga28b57d02b8aa25b58b5f83ea5b993eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3891,8 +3891,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2021
 
 </div>
 </div>
-<a id="ga3812c622facf0c74b9cd46e058f64393" name="ga3812c622facf0c74b9cd46e058f64393"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3812c622facf0c74b9cd46e058f64393">&#9670;&#160;</a></span>glossary_print_entry_lower_section()</h2>
+<a id="ga21a723cf30375bd69d2b28ed6471b6e3" name="ga21a723cf30375bd69d2b28ed6471b6e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga21a723cf30375bd69d2b28ed6471b6e3">&#9670;&#160;</a></span>glossary_print_entry_lower_section()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3943,7 +3943,13 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2021
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$aliases</em> = <code>true</code>&#160;</td>
+          <td class="paramname"><em>$aliases</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$printseparator</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3962,6 +3968,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2021
     <tr><td class="paramtype">object</td><td class="paramname">$hook</td><td></td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$printicons</td><td></td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$aliases</td><td></td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$printseparator</td><td>Whether to print a thematic break (separator) at the end of the lower section. </td></tr>
   </table>
   </dd>
 </dl>
@@ -5905,7 +5912,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2021
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 6 2022 03:28:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 13 2022 03:26:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

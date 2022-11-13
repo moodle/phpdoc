@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221104) (fee1b8ce5fb)</div>
+   <div id="projectbrief">Moodle 4.1beta (Build: 20221111) (7c3188b2ca7)</div>
   </td>
  </tr>
  </tbody>
@@ -76,6 +76,7 @@ Inheritance diagram for gradereport_singleview\local\ui\feedback:</div>
 <area href="../../d2/d2d/classgradereport__singleview_1_1local_1_1ui_1_1grade__attribute__format.html" title="Abstract class for a form element representing something about a grade_grade." alt="gradereport_singleview\local\ui\grade_attribute_format" shape="rect" coords="165,56,486,80"/>
 <area href="../../de/db0/interfacegradereport__singleview_1_1local_1_1ui_1_1unique__value.html" title="Simple interface for an item with a value." alt="gradereport_singleview\local\ui\unique_value" shape="rect" coords="496,56,817,80"/>
 <area href="../../da/dbf/interfacegradereport__singleview_1_1local_1_1ui_1_1be__disabled.html" title="Simple interface implemented to add behaviour that an element can be checked to see if it should be d..." alt="gradereport_singleview\local\ui\be_disabled" shape="rect" coords="827,56,1148,80"/>
+<area href="../../db/d67/interfacegradereport__singleview_1_1local_1_1ui_1_1be__readonly.html" title="Simple interface implemented to add behaviour that an element can be checked to see if it should be r..." alt="gradereport_singleview\local\ui\be_readonly" shape="rect" coords="1158,56,1479,80"/>
 <area href="../../d4/d54/classgradereport__singleview_1_1local_1_1ui_1_1attribute__format.html" title="Class that builds an element tree that can be converted to a string." alt="gradereport_singleview\local\ui\attribute_format" shape="rect" coords="0,0,321,24"/>
 <area href="../../d4/de5/interfacegradereport__singleview_1_1local_1_1ui_1_1unique__name.html" title="A form element with a name field." alt="gradereport_singleview\local\ui\unique_name" shape="rect" coords="331,0,652,24"/>
   </map>
@@ -101,6 +102,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3a401a45ac9ce1741783499af8aabad8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d17/classgradereport__singleview_1_1local_1_1ui_1_1feedback.html#a3a401a45ac9ce1741783499af8aabad8">is_disabled</a> ()</td></tr>
 <tr class="memdesc:a3a401a45ac9ce1741783499af8aabad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if this input should be disabled based on the other settings.  <a href="../../dd/d17/classgradereport__singleview_1_1local_1_1ui_1_1feedback.html#a3a401a45ac9ce1741783499af8aabad8">More...</a><br /></td></tr>
 <tr class="separator:a3a401a45ac9ce1741783499af8aabad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bcea6da1bff335694c9c909664dd022"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d17/classgradereport__singleview_1_1local_1_1ui_1_1feedback.html#a7bcea6da1bff335694c9c909664dd022">is_readonly</a> ()</td></tr>
+<tr class="memdesc:a7bcea6da1bff335694c9c909664dd022"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if this is read-only.  <a href="../../dd/d17/classgradereport__singleview_1_1local_1_1ui_1_1feedback.html#a7bcea6da1bff335694c9c909664dd022">More...</a><br /></td></tr>
+<tr class="separator:a7bcea6da1bff335694c9c909664dd022"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58d3854add79cd8535f7c7129aba8ea0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d17/classgradereport__singleview_1_1local_1_1ui_1_1feedback.html#a58d3854add79cd8535f7c7129aba8ea0">set</a> ($<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
 <tr class="memdesc:a58d3854add79cd8535f7c7129aba8ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the value for this input.  <a href="../../dd/d17/classgradereport__singleview_1_1local_1_1ui_1_1feedback.html#a58d3854add79cd8535f7c7129aba8ea0">More...</a><br /></td></tr>
 <tr class="separator:a58d3854add79cd8535f7c7129aba8ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -299,6 +303,33 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$name</b> = '<a cla
 
 </div>
 </div>
+<a id="a7bcea6da1bff335694c9c909664dd022" name="a7bcea6da1bff335694c9c909664dd022"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bcea6da1bff335694c9c909664dd022">&#9670;&#160;</a></span>is_readonly()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gradereport_singleview\local\ui\feedback::is_readonly </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return true if this is read-only. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="../../db/d67/interfacegradereport__singleview_1_1local_1_1ui_1_1be__readonly.html#ac9bc2fcc8ce8d65ee9e20b0f429b3a5d">gradereport_singleview\local\ui\be_readonly</a>.</p>
+
+</div>
+</div>
 <a id="a58d3854add79cd8535f7c7129aba8ea0" name="a58d3854add79cd8535f7c7129aba8ea0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a58d3854add79cd8535f7c7129aba8ea0">&#9670;&#160;</a></span>set()</h2>
 
@@ -339,7 +370,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$name</b> = '<a cla
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 6 2022 03:49:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 13 2022 03:43:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

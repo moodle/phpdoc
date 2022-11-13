@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.4+ (Build: 20221104) (28043b9b2eb)</div>
+   <div id="projectbrief">Moodle 4.0.5 (Build: 20221114) (fdbcfa1b153)</div>
   </td>
  </tr>
  </tbody>
@@ -201,6 +201,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae2d3de9ff54d7c5dd732d6ce3cf4e181"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de3/classnavigation__node.html#ae2d3de9ff54d7c5dd732d6ce3cf4e181">set_force_into_more_menu</a> (bool $forceintomoremenu=false)</td></tr>
 <tr class="memdesc:ae2d3de9ff54d7c5dd732d6ce3cf4e181"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the node and its children should be added into a "more" menu whenever possible.  <a href="../../dd/de3/classnavigation__node.html#ae2d3de9ff54d7c5dd732d6ce3cf4e181">More...</a><br /></td></tr>
 <tr class="separator:ae2d3de9ff54d7c5dd732d6ce3cf4e181"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaac0b8c8dcac1f8ee5e5cb32429c1561"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd2/classcore_1_1navigation_1_1views_1_1secondary.html#aaac0b8c8dcac1f8ee5e5cb32429c1561">set_overflow_selected_node</a> (string $nodekey)</td></tr>
+<tr class="memdesc:aaac0b8c8dcac1f8ee5e5cb32429c1561"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force a specific node in the 'coursereuse' course overflow to be selected, based on the provided node key.  <a href="../../d0/dd2/classcore_1_1navigation_1_1views_1_1secondary.html#aaac0b8c8dcac1f8ee5e5cb32429c1561">More...</a><br /></td></tr>
+<tr class="separator:aaac0b8c8dcac1f8ee5e5cb32429c1561"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a1f5f8965e893495fd8890a955b6307"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de3/classnavigation__node.html#a8a1f5f8965e893495fd8890a955b6307">set_parent</a> (<a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a> $parent)</td></tr>
 <tr class="memdesc:a8a1f5f8965e893495fd8890a955b6307"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the parent for this node and if this node is active ensures that the tree is properly adjusted as well.  <a href="../../dd/de3/classnavigation__node.html#a8a1f5f8965e893495fd8890a955b6307">More...</a><br /></td></tr>
 <tr class="separator:a8a1f5f8965e893495fd8890a955b6307"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -523,6 +526,9 @@ Protected Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>load_single_activity_course_navigation</b> ()</td></tr>
 <tr class="memdesc:a63cd1ae843574eba3452f0a0ef46015c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the single activity course secondary navigation. <br /></td></tr>
 <tr class="separator:a63cd1ae843574eba3452f0a0ef46015c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36d0ed83debb946b2e296470c157254e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd2/classcore_1_1navigation_1_1views_1_1secondary.html#a36d0ed83debb946b2e296470c157254e">node_matches_key_string</a> (<a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a> $node, string $key)</td></tr>
+<tr class="memdesc:a36d0ed83debb946b2e296470c157254e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursively search a node and its children for a node matching the key string $key.  <a href="../../d0/dd2/classcore_1_1navigation_1_1views_1_1secondary.html#a36d0ed83debb946b2e296470c157254e">More...</a><br /></td></tr>
+<tr class="separator:a36d0ed83debb946b2e296470c157254e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72dc01e15ca846862dc6014126f162f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd2/classcore_1_1navigation_1_1views_1_1secondary.html#a72dc01e15ca846862dc6014126f162f6">nodes_match_current_url</a> (<a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a> $node)</td></tr>
 <tr class="memdesc:a72dc01e15ca846862dc6014126f162f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursively looks for a match to the current page url.  <a href="../../d0/dd2/classcore_1_1navigation_1_1views_1_1secondary.html#a72dc01e15ca846862dc6014126f162f6">More...</a><br /></td></tr>
 <tr class="separator:a72dc01e15ca846862dc6014126f162f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -570,6 +576,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$initialised</b> = fa
 <tr class="separator:ada2b67c304a0d26c9566b1dbbe00a415"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fed35352fff4bfbcd140862f3de16b9"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de3/classnavigation__node.html#a4fed35352fff4bfbcd140862f3de16b9">$namedtypes</a></td></tr>
 <tr class="separator:a4fed35352fff4bfbcd140862f3de16b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a466404a8695dcb0260a201b8b8ee1cd1"><td class="memItemLeft" align="right" valign="top"><a id="a466404a8695dcb0260a201b8b8ee1cd1" name="a466404a8695dcb0260a201b8b8ee1cd1"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$overflowselected</b> = null</td></tr>
+<tr class="memdesc:a466404a8695dcb0260a201b8b8ee1cd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The key of the node to set as selected in the course overflow menu, if explicitly set by a page. <br /></td></tr>
+<tr class="separator:a466404a8695dcb0260a201b8b8ee1cd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affc2f15882855a67e1cb496d0b3ab61c"><td class="memItemLeft" align="right" valign="top"><a id="affc2f15882855a67e1cb496d0b3ab61c" name="affc2f15882855a67e1cb496d0b3ab61c"></a>
 <a class="el" href="../../dc/ded/classmoodle__page.html">moodle_page</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$page</b></td></tr>
 <tr class="memdesc:affc2f15882855a67e1cb496d0b3ab61c"><td class="mdescLeft">&#160;</td><td class="mdescRight">$page the moodle page that the navigation belongs to <br /></td></tr>
@@ -3073,6 +3083,57 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>$loadadmintree
 
 </div>
 </div>
+<a id="a36d0ed83debb946b2e296470c157254e" name="a36d0ed83debb946b2e296470c157254e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36d0ed83debb946b2e296470c157254e">&#9670;&#160;</a></span>node_matches_key_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core\navigation\views\secondary::node_matches_key_string </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a>&#160;</td>
+          <td class="paramname"><em>$node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Recursively search a node and its children for a node matching the key string $key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a></td><td class="paramname">$node</td><td>the navigation node to check. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$key</td><td>the key of the node to match. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">navigation_node|null</td><td>node if found, otherwise null. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a72dc01e15ca846862dc6014126f162f6" name="a72dc01e15ca846862dc6014126f162f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a72dc01e15ca846862dc6014126f162f6">&#9670;&#160;</a></span>nodes_match_current_url()</h2>
 
@@ -3381,6 +3442,47 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>$loadadmintree
 
 </div>
 </div>
+<a id="aaac0b8c8dcac1f8ee5e5cb32429c1561" name="aaac0b8c8dcac1f8ee5e5cb32429c1561"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaac0b8c8dcac1f8ee5e5cb32429c1561">&#9670;&#160;</a></span>set_overflow_selected_node()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core\navigation\views\secondary::set_overflow_selected_node </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$nodekey</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Force a specific node in the 'coursereuse' course overflow to be selected, based on the provided node key. </p>
+<p >Normally, the selected node is determined by matching the page URL to the node URL. E.g. The page 'backup/restorefile.php' will match the "Restore" node which has a registered URL of 'backup/restorefile.php' because the URLs match.</p>
+<p >This method allows a page to choose a specific node to match, which is useful in cases where the page knows its URL won't match the node it needs to reside under. I.e. this permits several pages to 'share' the same overflow node. When the page knows the PAGE-&gt;url won't match the node URL, the page can simply say "I want to match the 'XXX' node".</p>
+<p >E.g.</p><ul>
+<li>The $PAGE-&gt;url is 'backup/restore.php' (this page is used during restores but isn't the main landing page for a restore)</li>
+<li>The 'Restore' node in the overflow has a key of 'restore' and will only match 'backup/restorefile.php' by default (the main restore landing page).</li>
+<li>The backup/restore.php page calls: $PAGE-&gt;secondarynav-&gt;set_overflow_selected_node(new <a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a>('restore'); and when the page is loaded, the 'Restore' node be presented as the selected node.</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$nodekey</td><td>The string key of the overflow node to match. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a8a1f5f8965e893495fd8890a955b6307" name="a8a1f5f8965e893495fd8890a955b6307"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8a1f5f8965e893495fd8890a955b6307">&#9670;&#160;</a></span>set_parent()</h2>
 
@@ -3592,7 +3694,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>$loadadmintree
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 6 2022 03:40:57 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 13 2022 03:36:33 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

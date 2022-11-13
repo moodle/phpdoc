@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221104) (fee1b8ce5fb)</div>
+   <div id="projectbrief">Moodle 4.1beta (Build: 20221111) (7c3188b2ca7)</div>
   </td>
  </tr>
  </tbody>
@@ -212,7 +212,7 @@ string const&#160;</td><td class="memItemRight" valign="bottom"><b>LE</b> = &quo
 <tr class="memdesc:a176ff3840a4e8b4308f22305ec21f6ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum line length allowed for replies in RFC 5321 section 4.5.3.1.5, <em>including</em> a trailing CRLF line break.  <a href="../../d0/d3b/class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p.html#a176ff3840a4e8b4308f22305ec21f6ff">More...</a><br /></td></tr>
 <tr class="separator:a176ff3840a4e8b4308f22305ec21f6ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26e073c83df551af26d722250e44d823"><td class="memItemLeft" align="right" valign="top"><a id="a26e073c83df551af26d722250e44d823" name="a26e073c83df551af26d722250e44d823"></a>
-string const&#160;</td><td class="memItemRight" valign="bottom"><b>VERSION</b> = '6.5.3'</td></tr>
+string const&#160;</td><td class="memItemRight" valign="bottom"><b>VERSION</b> = '6.6.5'</td></tr>
 <tr class="memdesc:a26e073c83df551af26d722250e44d823"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="../../df/d76/class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer.html" title="PHPMailer - PHP email creation and transport class.">PHPMailer</a> <a class="el" href="../../d0/d3b/class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p.html" title="PHPMailer RFC821 SMTP email transport class.">SMTP</a> version number. <br /></td></tr>
 <tr class="separator:a26e073c83df551af26d722250e44d823"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -329,7 +329,7 @@ Marcus Bointon <a href="#" onclick="location.href='mai'+'lto:'+'php'+'ma'+'ile'+
     <tr><td class="paramtype">string</td><td class="paramname">$username</td><td>The user name </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$password</td><td>The password </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$authtype</td><td>The auth type (CRAM-MD5, PLAIN, LOGIN, XOAUTH2) </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../d8/d87/class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth.html" title="OAuth - OAuth2 authentication wrapper class.">OAuth</a></td><td class="paramname">$OAuth</td><td>An optional <a class="el" href="../../d8/d87/class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth.html" title="OAuth - OAuth2 authentication wrapper class.">OAuth</a> instance for XOAUTH2 authentication</td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../d5/d87/interface_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_token_provider.html" title="OAuthTokenProvider - OAuth2 token provider interface.">OAuthTokenProvider</a></td><td class="paramname">$OAuth</td><td>An optional <a class="el" href="../../d5/d87/interface_p_h_p_mailer_1_1_p_h_p_mailer_1_1_o_auth_token_provider.html" title="OAuthTokenProvider - OAuth2 token provider interface.">OAuthTokenProvider</a> instance for XOAUTH2 authentication</td></tr>
   </table>
   </dd>
 </dl>
@@ -1847,6 +1847,7 @@ Marcus Bointon <a href="#" onclick="location.href='mai'+'lto:'+'php'+'ma'+'ile'+
 <div class="line">        <span class="stringliteral">&#39;SendGrid&#39;</span> =&gt; <span class="stringliteral">&#39;/[\d]{3} Ok: queued as (.*)/&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;CampaignMonitor&#39;</span> =&gt; <span class="stringliteral">&#39;/[\d]{3} 2.0.0 OK:([a-zA-Z\d]{48})/&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;Haraka&#39;</span> =&gt; <span class="stringliteral">&#39;/[\d]{3} Message Queued ((.*)::)/&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;Mailjet&#39;</span> =&gt; <span class="stringliteral">&#39;/[\d]{3} OK queued as (.*)/&#39;</span>,</div>
 <div class="line">    ]</div>
 </div><!-- fragment -->
 <p>Patterns to extract an <a class="el" href="../../d0/d3b/class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_s_m_t_p.html" title="PHPMailer RFC821 SMTP email transport class.">SMTP</a> transaction id from reply to a DATA command. </p>
@@ -1929,7 +1930,7 @@ Marcus Bointon <a href="#" onclick="location.href='mai'+'lto:'+'php'+'ma'+'ile'+
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 6 2022 03:50:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 13 2022 03:44:10 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

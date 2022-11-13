@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1dev+ (Build: 20221104) (fee1b8ce5fb)</div>
+   <div id="projectbrief">Moodle 4.1beta (Build: 20221111) (7c3188b2ca7)</div>
   </td>
  </tr>
  </tbody>
@@ -87,6 +87,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa2a13f3cdef73b32840e90b48998fd62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d75/classbehat__mod__bigbluebuttonbn.html#aa2a13f3cdef73b32840e90b48998fd62">mock_is_configured</a> ()</td></tr>
 <tr class="memdesc:aa2a13f3cdef73b32840e90b48998fd62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that the TEST_MOD_BIGBLUEBUTTONBN_MOCK_SERVER is defined, so we can connect to the mock server.  <a href="../../d7/d75/classbehat__mod__bigbluebuttonbn.html#aa2a13f3cdef73b32840e90b48998fd62">More...</a><br /></td></tr>
 <tr class="separator:aa2a13f3cdef73b32840e90b48998fd62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeef0a93eca9f55073db7f11bf5587cf5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d75/classbehat__mod__bigbluebuttonbn.html#aeef0a93eca9f55073db7f11bf5587cf5">trigger_all_events</a> (string $instancename)</td></tr>
+<tr class="memdesc:aeef0a93eca9f55073db7f11bf5587cf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send all events received for this meeting back to moodle.  <a href="../../d7/d75/classbehat__mod__bigbluebuttonbn.html#aeef0a93eca9f55073db7f11bf5587cf5">More...</a><br /></td></tr>
+<tr class="separator:aeef0a93eca9f55073db7f11bf5587cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a190c94ba6b7df05a113d6efa97e01885"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d75/classbehat__mod__bigbluebuttonbn.html#a190c94ba6b7df05a113d6efa97e01885">trigger_meeting_event</a> (string $username, TableNode $data)</td></tr>
+<tr class="memdesc:a190c94ba6b7df05a113d6efa97e01885"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger a meeting event on BBB side.  <a href="../../d7/d75/classbehat__mod__bigbluebuttonbn.html#a190c94ba6b7df05a113d6efa97e01885">More...</a><br /></td></tr>
+<tr class="separator:a190c94ba6b7df05a113d6efa97e01885"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afac601696377c021a591bb7f7265ac02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d75/classbehat__mod__bigbluebuttonbn.html#afac601696377c021a591bb7f7265ac02">trigger_recording_ready_notification</a> ()</td></tr>
 <tr class="memdesc:afac601696377c021a591bb7f7265ac02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger a recording ready notification on BBB side.  <a href="../../d7/d75/classbehat__mod__bigbluebuttonbn.html#afac601696377c021a591bb7f7265ac02">More...</a><br /></td></tr>
 <tr class="separator:afac601696377c021a591bb7f7265ac02"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -489,6 +495,69 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aeef0a93eca9f55073db7f11bf5587cf5" name="aeef0a93eca9f55073db7f11bf5587cf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeef0a93eca9f55073db7f11bf5587cf5">&#9670;&#160;</a></span>trigger_all_events()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_mod_bigbluebuttonbn::trigger_all_events </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$instancename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Send all events received for this meeting back to moodle. </p>
+<p >@Given /^the BigBlueButtonBN activity "(?P&lt;element_string&gt;(?:[^"]|::")*)" has sent recording all its events$/ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$instancename</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a190c94ba6b7df05a113d6efa97e01885" name="a190c94ba6b7df05a113d6efa97e01885"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a190c94ba6b7df05a113d6efa97e01885">&#9670;&#160;</a></span>trigger_meeting_event()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_mod_bigbluebuttonbn::trigger_meeting_event </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$username</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TableNode&#160;</td>
+          <td class="paramname"><em>$data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Trigger a meeting event on BBB side. </p>
+<p >@Given /^the BigBlueButtonBN server has received the following events from user "(?P&lt;element_string&gt;(?:[^"]|::")*)":$/ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$username</td><td></td></tr>
+    <tr><td class="paramtype">TableNode</td><td class="paramname">$data</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="afac601696377c021a591bb7f7265ac02" name="afac601696377c021a591bb7f7265ac02"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afac601696377c021a591bb7f7265ac02">&#9670;&#160;</a></span>trigger_recording_ready_notification()</h2>
 
@@ -544,7 +613,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 6 2022 03:45:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 13 2022 03:40:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>
