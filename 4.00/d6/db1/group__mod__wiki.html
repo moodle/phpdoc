@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.5 (Build: 20221114) (fdbcfa1b153)</div>
+   <div id="projectbrief">Moodle 4.0.5+ (Build: 20221118) (2da8a318495)</div>
   </td>
  </tr>
  </tbody>
@@ -388,9 +388,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9f8e82a64892b02e0f9673d01a2f31c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db1/group__mod__wiki.html#ga9f8e82a64892b02e0f9673d01a2f31c0">wiki_delete_synonym</a> ($subwikiid, $pageid=null)</td></tr>
 <tr class="memdesc:ga9f8e82a64892b02e0f9673d01a2f31c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete wiki synonyms related to subwikiid or page.  <a href="../../d6/db1/group__mod__wiki.html#ga9f8e82a64892b02e0f9673d01a2f31c0">More...</a><br /></td></tr>
 <tr class="separator:ga9f8e82a64892b02e0f9673d01a2f31c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga986602b771005b707b37febf267c684d"><td class="memItemLeft" align="right" valign="top"><a id="ga986602b771005b707b37febf267c684d" name="ga986602b771005b707b37febf267c684d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>wiki_extend_navigation</b> (<a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a> $navref, $course, $module, $cm)</td></tr>
-<tr class="separator:ga986602b771005b707b37febf267c684d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab6e5e748319ce9421fce70758693bf9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db1/group__mod__wiki.html#gab6e5e748319ce9421fce70758693bf9e">wiki_extend_navigation</a> (<a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a> $navref, stdClass $course, stdClass $instance, <a class="el" href="../../df/db9/classcm__info.html">cm_info</a> $cm)</td></tr>
+<tr class="memdesc:gab6e5e748319ce9421fce70758693bf9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extends the global navigation tree by adding wiki nodes if there is a relevant content.  <a href="../../d6/db1/group__mod__wiki.html#gab6e5e748319ce9421fce70758693bf9e">More...</a><br /></td></tr>
+<tr class="separator:gab6e5e748319ce9421fce70758693bf9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9aeecd0b4031a9a06ab8056c50406103"><td class="memItemLeft" align="right" valign="top"><a id="ga9aeecd0b4031a9a06ab8056c50406103" name="ga9aeecd0b4031a9a06ab8056c50406103"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>wiki_get_comment</b> ($commentid)</td></tr>
 <tr class="separator:ga9aeecd0b4031a9a06ab8056c50406103"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1530,6 +1530,58 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>WORST</b> '-'</td></
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$subwikiid</td><td>id of sunbwiki </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$pageid</td><td>id of page </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gab6e5e748319ce9421fce70758693bf9e" name="gab6e5e748319ce9421fce70758693bf9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab6e5e748319ce9421fce70758693bf9e">&#9670;&#160;</a></span>wiki_extend_navigation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">wiki_extend_navigation </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a>&#160;</td>
+          <td class="paramname"><em>$navref</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$course</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a>&#160;</td>
+          <td class="paramname"><em>$cm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extends the global navigation tree by adding wiki nodes if there is a relevant content. </p>
+<p >This can be called by an AJAX request so do not rely on $PAGE as it might not be set up properly.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a></td><td class="paramname">$navref</td><td>An object representing the navigation tree node of the workshop module instance </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$instance</td><td>the activity record object </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a></td><td class="paramname">$cm</td><td>the course module object </td></tr>
   </table>
   </dd>
 </dl>
@@ -3677,7 +3729,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>WORST</b> '-'</td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 13 2022 03:32:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 20 2022 03:26:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1beta (Build: 20221111) (7c3188b2ca7)</div>
+   <div id="projectbrief">Moodle 4.1rc1 (Build: 20221118) (7c14a2239a4)</div>
   </td>
  </tr>
  </tbody>
@@ -263,8 +263,9 @@ Protected Member Functions</h2></td></tr>
 
 <p>Clicks on an option from the specified search widget in the current gradebook page. </p>
 <p >Examples:</p><ul>
-<li>I click on "Student1" in the "user" search widget</li>
-<li>I click on "Group1" in the "group" search widget</li>
+<li>I click on "Student" in the "user" search widget</li>
+<li>I click on "Group" in the "group" search widget</li>
+<li>I click on "Grade item" in the "grade" search widget</li>
 </ul>
 <p >@Given /^I click on "(?P&lt;needle&gt;(?:[^"]|::")*)" in the "(?P&lt;haystack&gt;(?:[^"]|")*)" search widget$/ </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -312,12 +313,14 @@ Protected Member Functions</h2></td></tr>
 
 <p>Confirm if a value is not within the search widget within the gradebook. </p>
 <p >Examples:</p><ul>
-<li>I confirm "User1" in "User" search within the gradebook widget does not exist</li>
+<li>I confirm "User" in "user" search within the gradebook widget does not exist</li>
+<li>I confirm "Group" in "group" search within the gradebook widget does not exist</li>
+<li>I confirm "Grade item" in "grade" search within the gradebook widget does not exist</li>
 </ul>
 <p >@Given /^I confirm "(?P&lt;needle&gt;(?:[^"]|::")*)" in "(?P&lt;haystack&gt;(?:[^"]|")*)" search within the gradebook widget does not exist$/ </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$needle</td><td>The value to search for. </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$haystack</td><td>The selector to use within the zero state. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$haystack</td><td>The type of the search widget. </td></tr>
   </table>
   </dd>
 </dl>
@@ -360,12 +363,14 @@ Protected Member Functions</h2></td></tr>
 
 <p>Confirm if a value is within the search widget within the gradebook. </p>
 <p >Examples:</p><ul>
-<li>I confirm "User1" in "User" search within the gradebook widget exists</li>
+<li>I confirm "User" in "user" search within the gradebook widget exists</li>
+<li>I confirm "Group" in "group" search within the gradebook widget exists</li>
+<li>I confirm "Grade item" in "grade" search within the gradebook widget exists</li>
 </ul>
 <p >@Given /^I confirm "(?P&lt;needle&gt;(?:[^"]|::")*)" in "(?P&lt;haystack&gt;(?:[^"]|")*)" search within the gradebook widget exists$/ </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$needle</td><td>The value to search for. </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$haystack</td><td>The selector to use within the zero state. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$haystack</td><td>The type of the search widget. </td></tr>
   </table>
   </dd>
 </dl>
@@ -953,7 +958,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 13 2022 03:40:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 20 2022 03:34:09 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>
