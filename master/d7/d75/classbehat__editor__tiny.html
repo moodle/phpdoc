@@ -23,9 +23,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../Moodle-Logo-ReversedWhite_RGB.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
+   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.1rc1 (Build: 20221118) (7c14a2239a4)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20221128) (57c1e97bf17)</div>
   </td>
  </tr>
  </tbody>
@@ -56,6 +56,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="../../d9/dea/classbehat__editor__tiny-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">behat_editor_tiny Class Reference<div class="ingroups"><a class="el" href="../../dd/df2/group__editor__tiny.html">editor_tiny</a></div></div></div>
 </div><!--header-->
@@ -77,17 +78,69 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abc6cbc428b83d6bca71aaffbd15da4ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d6d/interfacebehat__session__interface.html#abc6cbc428b83d6bca71aaffbd15da4ab">getSession</a> ($name=null)</td></tr>
 <tr class="memdesc:abc6cbc428b83d6bca71aaffbd15da4ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Mink session.  <a href="../../d9/d6d/interfacebehat__session__interface.html#abc6cbc428b83d6bca71aaffbd15da4ab">More...</a><br /></td></tr>
 <tr class="separator:abc6cbc428b83d6bca71aaffbd15da4ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae2388c2f35a83c0c81ba2497ba5b151"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d75/classbehat__editor__tiny.html#aae2388c2f35a83c0c81ba2497ba5b151">set_editor_value</a> (string $editorid, string $<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
-<tr class="memdesc:aae2388c2f35a83c0c81ba2497ba5b151"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value for the editor.  <a href="../../d7/d75/classbehat__editor__tiny.html#aae2388c2f35a83c0c81ba2497ba5b151">More...</a><br /></td></tr>
-<tr class="separator:aae2388c2f35a83c0c81ba2497ba5b151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d5e56ceefabb80a03bb88ee25cd07cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d01/interfacecore__behat_1_1settable__editor.html#a1d5e56ceefabb80a03bb88ee25cd07cf">set_editor_value</a> (string $editorid, string $<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
+<tr class="memdesc:a1d5e56ceefabb80a03bb88ee25cd07cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the editor value.  <a href="../../da/d01/interfacecore__behat_1_1settable__editor.html#a1d5e56ceefabb80a03bb88ee25cd07cf">More...</a><br /></td></tr>
+<tr class="separator:a1d5e56ceefabb80a03bb88ee25cd07cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a1493fb96a85bfb906ba5468330de76c0"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d6d/interfacebehat__session__interface.html#a1493fb96a85bfb906ba5468330de76c0">PAGE_READY_JS</a></td></tr>
 <tr class="memdesc:a1493fb96a85bfb906ba5468330de76c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The JS code to check that the page is ready.  <a href="../../d9/d6d/interfacebehat__session__interface.html#a1493fb96a85bfb906ba5468330de76c0">More...</a><br /></td></tr>
 <tr class="separator:a1493fb96a85bfb906ba5468330de76c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:abc3d77f20949861fee899e24120612d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d75/classbehat__editor__tiny.html#abc3d77f20949861fee899e24120612d8">execute_javascript_for_editor</a> (string $editorid, string $code)</td></tr>
+<tr class="memdesc:abc3d77f20949861fee899e24120612d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute some JavaScript for a particular Editor instance.  <a href="../../d7/d75/classbehat__editor__tiny.html#abc3d77f20949861fee899e24120612d8">More...</a><br /></td></tr>
+<tr class="separator:abc3d77f20949861fee899e24120612d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="abc3d77f20949861fee899e24120612d8" name="abc3d77f20949861fee899e24120612d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc3d77f20949861fee899e24120612d8">&#9670;&#160;</a></span>execute_javascript_for_editor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_editor_tiny::execute_javascript_for_editor </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$editorid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$code</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Execute some JavaScript for a particular Editor instance. </p>
+<p >The editor instance is available on the 'instnace' variable.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$editorid</td><td>The ID of the editor </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$code</td><td>The code to execute </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="abc6cbc428b83d6bca71aaffbd15da4ab" name="abc6cbc428b83d6bca71aaffbd15da4ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abc6cbc428b83d6bca71aaffbd15da4ab">&#9670;&#160;</a></span>getSession()</h2>
 
@@ -130,14 +183,17 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aae2388c2f35a83c0c81ba2497ba5b151" name="aae2388c2f35a83c0c81ba2497ba5b151"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae2388c2f35a83c0c81ba2497ba5b151">&#9670;&#160;</a></span>set_editor_value()</h2>
+<a id="a1d5e56ceefabb80a03bb88ee25cd07cf" name="a1d5e56ceefabb80a03bb88ee25cd07cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d5e56ceefabb80a03bb88ee25cd07cf">&#9670;&#160;</a></span>set_editor_value()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">behat_editor_tiny::set_editor_value </td>
+          <td class="memname">core_behat\settable_editor::set_editor_value </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$editorid</em>, </td>
@@ -154,19 +210,23 @@ Public Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Set the value for the editor. </p>
-<p >Note: This function is called by the <a class="el" href="../../d5/d65/classbehat__form__editor.html">behat_form_editor</a> class. It is called regardless of the current default editor as editor selection is a user preference. Therefore it must fail gracefully and only set a value if the editor instance was found on the page.</p>
+<p>Set the editor value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$editorid</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$value</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$editorid</td><td>The id of the editor within the page </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$value</td><td>The intended content of the editor </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="../../da/d01/interfacecore__behat_1_1settable__editor.html#a1d5e56ceefabb80a03bb88ee25cd07cf">core_behat\settable_editor</a>.</p>
+<p>Implemented in <a class="el" href="../../da/df3/classbehat__editor__atto.html#a4f8112c16ceb9e5b1597d8cd5eb49db7">behat_editor_atto</a>, and <a class="el" href="../../d5/d7d/classbehat__editor__textarea.html#a005517d20ecdb6dcc721fb36ef99dabb">behat_editor_textarea</a>.</p>
 
 </div>
 </div>
@@ -205,7 +265,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 20 2022 03:34:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 27 2022 03:27:02 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

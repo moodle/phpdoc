@@ -23,9 +23,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../Moodle-Logo-ReversedWhite_RGB.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
+   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.1rc1 (Build: 20221118) (7c14a2239a4)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20221128) (57c1e97bf17)</div>
   </td>
  </tr>
  </tbody>
@@ -106,6 +106,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>set_default_server_
 static&#160;</td><td class="memItemRight" valign="bottom"><b>store_default_php_timezone</b> ()</td></tr>
 <tr class="memdesc:ae07a81a48a48749f10ae4fdd32099706"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be called from lib/setup.php only! <br /></td></tr>
 <tr class="separator:ae07a81a48a48749f10ae4fdd32099706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec0901daee19fa000cc165918e65b15"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc6/classcore__date.html#a3ec0901daee19fa000cc165918e65b15">strftime</a> (string $format, $timestamp=null, ?string $locale=null)</td></tr>
+<tr class="memdesc:a3ec0901daee19fa000cc165918e65b15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locale-formatted strftime using IntlDateFormatter (PHP 8.1 compatible) This provides a cross-platform alternative to <a class="el" href="../../d5/dc6/classcore__date.html#a3ec0901daee19fa000cc165918e65b15" title="Locale-formatted strftime using IntlDateFormatter (PHP 8.1 compatible) This provides a cross-platform...">strftime()</a> for when it will be removed from PHP.  <a href="../../d5/dc6/classcore__date.html#a3ec0901daee19fa000cc165918e65b15">More...</a><br /></td></tr>
+<tr class="separator:a3ec0901daee19fa000cc165918e65b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
@@ -488,13 +491,74 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$goodzones</b
 
 </div>
 </div>
+<a id="a3ec0901daee19fa000cc165918e65b15" name="a3ec0901daee19fa000cc165918e65b15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ec0901daee19fa000cc165918e65b15">&#9670;&#160;</a></span>strftime()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_date::strftime </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$timestamp</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?string&#160;</td>
+          <td class="paramname"><em>$locale</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Locale-formatted strftime using IntlDateFormatter (PHP 8.1 compatible) This provides a cross-platform alternative to <a class="el" href="../../d5/dc6/classcore__date.html#a3ec0901daee19fa000cc165918e65b15" title="Locale-formatted strftime using IntlDateFormatter (PHP 8.1 compatible) This provides a cross-platform...">strftime()</a> for when it will be removed from PHP. </p>
+<p >Note that output can be slightly different between libc sprintf and this function as it is using ICU.</p>
+<p >From: <a href="https://github.com/alphp/strftime">https://github.com/alphp/strftime</a></p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$format</td><td>Date format </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;string&#160;|&#160;DateTime</td><td class="paramname">$timestamp</td><td>Timestamp </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$locale</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section author"><dt>Author</dt><dd>BohwaZ <a href="https://bohwaz.net/">https://bohwaz.net/</a> </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>lib/classes/date.php</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 20 2022 03:34:16 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Nov 27 2022 03:27:09 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>
