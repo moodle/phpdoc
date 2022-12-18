@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20221209) (40a89d8a9aa)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20221216) (5019abfdd64)</div>
   </td>
  </tr>
  </tbody>
@@ -67,9 +67,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a67f0012d8dbed137edae61c11b0a7327"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db4/classreport__progress_1_1local_1_1helper.html#a67f0012d8dbed137edae61c11b0a7327">get_activities_to_show</a> (\<a class="el" href="../../d0/dd8/classcompletion__info.html">completion_info</a> $completion, string $activityinclude, string $activityorder)</td></tr>
-<tr class="memdesc:a67f0012d8dbed137edae61c11b0a7327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get activities information by the activity include and activity order option.  <a href="../../d0/db4/classreport__progress_1_1local_1_1helper.html#a67f0012d8dbed137edae61c11b0a7327">More...</a><br /></td></tr>
-<tr class="separator:a67f0012d8dbed137edae61c11b0a7327"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c6219b6ee76f9c84b4c9d025ce80748"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db4/classreport__progress_1_1local_1_1helper.html#a1c6219b6ee76f9c84b4c9d025ce80748">get_activities_to_show</a> (\<a class="el" href="../../d0/dd8/classcompletion__info.html">completion_info</a> $completion, string $activityinclude, string $activityorder, int $activitysection=-1)</td></tr>
+<tr class="memdesc:a1c6219b6ee76f9c84b4c9d025ce80748"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get activities information by the activity include and activity order option.  <a href="../../d0/db4/classreport__progress_1_1local_1_1helper.html#a1c6219b6ee76f9c84b4c9d025ce80748">More...</a><br /></td></tr>
+<tr class="separator:a1c6219b6ee76f9c84b4c9d025ce80748"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -79,8 +79,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COMPLETION_REPORT_PA
 <tr class="separator:a2935db1011e7e9b1e084034fe9b2d358"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a67f0012d8dbed137edae61c11b0a7327" name="a67f0012d8dbed137edae61c11b0a7327"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67f0012d8dbed137edae61c11b0a7327">&#9670;&#160;</a></span>get_activities_to_show()</h2>
+<a id="a1c6219b6ee76f9c84b4c9d025ce80748" name="a1c6219b6ee76f9c84b4c9d025ce80748"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c6219b6ee76f9c84b4c9d025ce80748">&#9670;&#160;</a></span>get_activities_to_show()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -104,7 +104,13 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COMPLETION_REPORT_PA
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$activityorder</em>&#160;</td>
+          <td class="paramname"><em>$activityorder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$activitysection</em> = <code>-1</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -125,6 +131,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COMPLETION_REPORT_PA
     <tr><td class="paramtype"><a class="el" href="../../d0/dd8/classcompletion__info.html">completion_info</a></td><td class="paramname">$completion</td><td>Completion information of course. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$activityinclude</td><td>Activity type for filtering. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$activityorder</td><td>Activity sort option. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$activitysection</td><td>Section number for filtering. </td></tr>
   </table>
   </dd>
 </dl>
@@ -149,7 +156,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COMPLETION_REPORT_PA
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 11 2022 03:25:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Dec 18 2022 03:13:02 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

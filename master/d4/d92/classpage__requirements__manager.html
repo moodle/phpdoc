@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20221209) (40a89d8a9aa)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20221216) (5019abfdd64)</div>
   </td>
  </tr>
  </tbody>
@@ -203,7 +203,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a2359a9830c965bbe797041b2fef7bf8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise with the bits of JavaScript that every <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> page should have.  <a href="../../d4/d92/classpage__requirements__manager.html#a2359a9830c965bbe797041b2fef7bf8a">More...</a><br /></td></tr>
 <tr class="separator:a2359a9830c965bbe797041b2fef7bf8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b4e411ebe4a240c4ac70fcd8b3d9bcf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d92/classpage__requirements__manager.html#a1b4e411ebe4a240c4ac70fcd8b3d9bcf">js_fix_url</a> ($url)</td></tr>
-<tr class="memdesc:a1b4e411ebe4a240c4ac70fcd8b3d9bcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the actual url through which a script is served.  <a href="../../d4/d92/classpage__requirements__manager.html#a1b4e411ebe4a240c4ac70fcd8b3d9bcf">More...</a><br /></td></tr>
+<tr class="memdesc:a1b4e411ebe4a240c4ac70fcd8b3d9bcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the actual url through which a JavaScript file is served.  <a href="../../d4/d92/classpage__requirements__manager.html#a1b4e411ebe4a240c4ac70fcd8b3d9bcf">More...</a><br /></td></tr>
 <tr class="separator:a1b4e411ebe4a240c4ac70fcd8b3d9bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6f9de0815bcb204b6cd0e005f1845ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d92/classpage__requirements__manager.html#af6f9de0815bcb204b6cd0e005f1845ab">js_module_loaded</a> ($module)</td></tr>
 <tr class="memdesc:af6f9de0815bcb204b6cd0e005f1845ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the module has already been loaded.  <a href="../../d4/d92/classpage__requirements__manager.html#af6f9de0815bcb204b6cd0e005f1845ab">More...</a><br /></td></tr>
@@ -1412,10 +1412,16 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$yuicssmodules</b> =
 </table>
 </div><div class="memdoc">
 
-<p>Returns the actual url through which a script is served. </p>
+<p>Returns the actual url through which a JavaScript file is served. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a>&#160;|&#160;string</td><td class="paramname">$url</td><td>full moodle url, or shortened path to script </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a>&#160;|&#160;string</td><td class="paramname">$url</td><td>full moodle url, or shortened path to script. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td>if the given $url isn't a shortened url starting with / or a <a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a> instance. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1987,7 +1993,7 @@ alert(M.util.get_string('fullnamedisplay', 'moodle', user);
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 11 2022 03:22:21 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Dec 18 2022 03:09:36 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

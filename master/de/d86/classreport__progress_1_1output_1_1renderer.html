@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20221209) (40a89d8a9aa)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20221216) (5019abfdd64)</div>
   </td>
  </tr>
  </tbody>
@@ -106,6 +106,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae725c39f9d71a352ace231a3f36fc04e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/classreport__progress_1_1output_1_1renderer.html#ae725c39f9d71a352ace231a3f36fc04e">render_activity_order_select</a> (\<a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a> $url, string $activityorder)</td></tr>
 <tr class="memdesc:ae725c39f9d71a352ace231a3f36fc04e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render activity order single select box.  <a href="../../de/d86/classreport__progress_1_1output_1_1renderer.html#ae725c39f9d71a352ace231a3f36fc04e">More...</a><br /></td></tr>
 <tr class="separator:ae725c39f9d71a352ace231a3f36fc04e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf1693641f53ac0b466fb74a0d7dd4f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/classreport__progress_1_1output_1_1renderer.html#aaf1693641f53ac0b466fb74a0d7dd4f9">render_activity_section_select</a> (\<a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a> $url, string $activitysection, array $sections)</td></tr>
+<tr class="memdesc:aaf1693641f53ac0b466fb74a0d7dd4f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render activity section single select box.  <a href="../../de/d86/classreport__progress_1_1output_1_1renderer.html#aaf1693641f53ac0b466fb74a0d7dd4f9">More...</a><br /></td></tr>
+<tr class="separator:aaf1693641f53ac0b466fb74a0d7dd4f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0c5eb10ab22f76e53fbeec8a67cd862"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d86/classreport__progress_1_1output_1_1renderer.html#aa0c5eb10ab22f76e53fbeec8a67cd862">render_download_buttons</a> (\<a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a> $url)</td></tr>
 <tr class="memdesc:aa0c5eb10ab22f76e53fbeec8a67cd862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render download buttons.  <a href="../../de/d86/classreport__progress_1_1output_1_1renderer.html#aa0c5eb10ab22f76e53fbeec8a67cd862">More...</a><br /></td></tr>
 <tr class="separator:aa0c5eb10ab22f76e53fbeec8a67cd862"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -667,6 +670,62 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$target</b></td></t
 
 </div>
 </div>
+<a id="aaf1693641f53ac0b466fb74a0d7dd4f9" name="aaf1693641f53ac0b466fb74a0d7dd4f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf1693641f53ac0b466fb74a0d7dd4f9">&#9670;&#160;</a></span>render_activity_section_select()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">report_progress\output\renderer::render_activity_section_select </td>
+          <td>(</td>
+          <td class="paramtype">\<a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a>&#160;</td>
+          <td class="paramname"><em>$url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$activitysection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$sections</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Render activity section single select box. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$url</td><td>The base url. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$activitysection</td><td>The current selected section. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$sections</td><td>An array containing all sections of the course </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>HTML </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aa0c5eb10ab22f76e53fbeec8a67cd862" name="aa0c5eb10ab22f76e53fbeec8a67cd862"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa0c5eb10ab22f76e53fbeec8a67cd862">&#9670;&#160;</a></span>render_download_buttons()</h2>
 
@@ -964,7 +1023,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$target</b></td></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 11 2022 03:25:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Dec 18 2022 03:13:02 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

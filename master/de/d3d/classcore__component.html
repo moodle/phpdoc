@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20221209) (40a89d8a9aa)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20221216) (5019abfdd64)</div>
   </td>
  </tr>
  </tbody>
@@ -76,6 +76,9 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:a671a9d4773946d78e7ee11658e453dc3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d3d/classcore__component.html#a671a9d4773946d78e7ee11658e453dc3">fetch_apis</a> ()</td></tr>
+<tr class="memdesc:a671a9d4773946d78e7ee11658e453dc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns list of core APIs.  <a href="../../de/d3d/classcore__component.html#a671a9d4773946d78e7ee11658e453dc3">More...</a><br /></td></tr>
+<tr class="separator:a671a9d4773946d78e7ee11658e453dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05ea25950874f1aaf0ae4849e56b4f94"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d3d/classcore__component.html#a05ea25950874f1aaf0ae4849e56b4f94">fetch_component_source</a> (string $key)</td></tr>
 <tr class="memdesc:a05ea25950874f1aaf0ae4849e56b4f94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the component source content as loaded from /lib/components.json.  <a href="../../de/d3d/classcore__component.html#a05ea25950874f1aaf0ae4849e56b4f94">More...</a><br /></td></tr>
 <tr class="separator:a05ea25950874f1aaf0ae4849e56b4f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,6 +127,10 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></t
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
+<tr class="memitem:ac974e6472b4933032b09b20203c7d42a"><td class="memItemLeft" align="right" valign="top"><a id="ac974e6472b4933032b09b20203c7d42a" name="ac974e6472b4933032b09b20203c7d42a"></a>
+static array&#160;</td><td class="memItemRight" valign="bottom"><b>$apis</b> = null</td></tr>
+<tr class="memdesc:ac974e6472b4933032b09b20203c7d42a"><td class="mdescLeft">&#160;</td><td class="mdescRight">cache of core APIs <br /></td></tr>
+<tr class="separator:ac974e6472b4933032b09b20203c7d42a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67a840d06debf2630e2bb177c985e07a"><td class="memItemLeft" align="right" valign="top"><a id="a67a840d06debf2630e2bb177c985e07a" name="a67a840d06debf2630e2bb177c985e07a"></a>
 static array&#160;</td><td class="memItemRight" valign="bottom"><b>$classmap</b> = null</td></tr>
 <tr class="memdesc:a67a840d06debf2630e2bb177c985e07a"><td class="mdescLeft">&#160;</td><td class="mdescRight">list of all known classes that can be autoloaded <br /></td></tr>
@@ -216,6 +223,39 @@ static int float&#160;</td><td class="memItemRight" valign="bottom"><b>$version<
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$classname</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a671a9d4773946d78e7ee11658e453dc3" name="a671a9d4773946d78e7ee11658e453dc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a671a9d4773946d78e7ee11658e453dc3">&#9670;&#160;</a></span>fetch_apis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_component::fetch_apis </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns list of core APIs. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass[]</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -829,7 +869,7 @@ static int float&#160;</td><td class="memItemRight" valign="bottom"><b>$version<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 11 2022 03:20:51 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Dec 18 2022 03:08:02 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

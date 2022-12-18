@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20221209) (40a89d8a9aa)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20221216) (5019abfdd64)</div>
   </td>
  </tr>
  </tbody>
@@ -450,7 +450,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get all the WHEN 'x' THEN 'y' terms needed to convert the question_attempt_steps.state column to a summary state. </p>
-<p >Use this like CASE qas.state {$this-&gt;<a class="el" href="../../da/d46/classquestion__engine__data__mapper.html#aee98ea9879969b5c315e92bceb0ce859" title="Get all the WHEN &#39;x&#39; THEN &#39;y&#39; terms needed to convert the question_attempt_steps.state column to a su...">full_states_to_summary_state_sql()</a>} END AS summarystate,</p>
+<p >Use this like CASE qas.state {$this-&gt;full_states_to_summary_state_sql()} END AS summarystate,</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>SQL fragment. </td></tr>
@@ -1309,8 +1309,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get a subquery that returns the latest step of every qa in some qubas. </p>
-<p >Currently, this is only used by the quiz reports. See <a class="el" href="../../d5/d9b/classquiz__attempts__report__table.html#a32aa141f920f56747635fd381cc6e54b">quiz_attempts_report_table::add_latest_state_join()</a>.</p>
-<p >This method may be called publicly.</p>
+<p >Currently, this is only used by the quiz reports. See {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d4/de0/classmod__quiz_1_1local_1_1reports_1_1attempts__report__table.html#aebc23c314a40afedff6d9f2649a3867b" title="Add the information about the latest state of the question with slot $slot to the query.">mod_quiz::local::reports::attempts_report_table::add_latest_state_join()</a>}.</dd></dl>
+<p>This method may be called publicly.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$alias</td><td>alias to use for this inline-view. </td></tr>
@@ -1672,7 +1672,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 11 2022 03:22:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Dec 18 2022 03:09:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>

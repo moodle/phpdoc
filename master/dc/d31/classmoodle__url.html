@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20221209) (40a89d8a9aa)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20221216) (5019abfdd64)</div>
   </td>
  </tr>
  </tbody>
@@ -95,11 +95,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9721e6cadd851ba411c7d61fc832e12b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/classmoodle__url.html#a9721e6cadd851ba411c7d61fc832e12b">get_scheme</a> ()</td></tr>
 <tr class="memdesc:a9721e6cadd851ba411c7d61fc832e12b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the 'scheme' portion of a URL.  <a href="../../dc/d31/classmoodle__url.html#a9721e6cadd851ba411c7d61fc832e12b">More...</a><br /></td></tr>
 <tr class="separator:a9721e6cadd851ba411c7d61fc832e12b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecf2e76ab86072f64a0c53edc35c17cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/classmoodle__url.html#aecf2e76ab86072f64a0c53edc35c17cc">is_local_url</a> ()</td></tr>
+<tr class="memdesc:aecf2e76ab86072f64a0c53edc35c17cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if URL is relative to $CFG-&gt;wwwroot.  <a href="../../dc/d31/classmoodle__url.html#aecf2e76ab86072f64a0c53edc35c17cc">More...</a><br /></td></tr>
+<tr class="separator:aecf2e76ab86072f64a0c53edc35c17cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0460094fc8832e2655965b16a1b742c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/classmoodle__url.html#aa0460094fc8832e2655965b16a1b742c">out</a> ($escaped=true, array $overrideparams=null)</td></tr>
 <tr class="memdesc:aa0460094fc8832e2655965b16a1b742c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output url.  <a href="../../dc/d31/classmoodle__url.html#aa0460094fc8832e2655965b16a1b742c">More...</a><br /></td></tr>
 <tr class="separator:aa0460094fc8832e2655965b16a1b742c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeabeee7854062af7cf73c77f1a215597"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/classmoodle__url.html#aeabeee7854062af7cf73c77f1a215597">out_as_local_url</a> ($escaped=true, array $overrideparams=null)</td></tr>
-<tr class="memdesc:aeabeee7854062af7cf73c77f1a215597"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns URL a relative path from $CFG-&gt;wwwroot.  <a href="../../dc/d31/classmoodle__url.html#aeabeee7854062af7cf73c77f1a215597">More...</a><br /></td></tr>
+<tr class="memdesc:aeabeee7854062af7cf73c77f1a215597"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns URL as relative path from $CFG-&gt;wwwroot.  <a href="../../dc/d31/classmoodle__url.html#aeabeee7854062af7cf73c77f1a215597">More...</a><br /></td></tr>
 <tr class="separator:aeabeee7854062af7cf73c77f1a215597"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60fde5ba174bf9991736eb7ac957621c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/classmoodle__url.html#a60fde5ba174bf9991736eb7ac957621c">out_omit_querystring</a> ($includeanchor=false)</td></tr>
 <tr class="memdesc:a60fde5ba174bf9991736eb7ac957621c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns url without parameters, everything before '?'.  <a href="../../dc/d31/classmoodle__url.html#a60fde5ba174bf9991736eb7ac957621c">More...</a><br /></td></tr>
@@ -503,6 +506,31 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$user</b> = ''</td>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>Scheme of the URL. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aecf2e76ab86072f64a0c53edc35c17cc" name="aecf2e76ab86072f64a0c53edc35c17cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecf2e76ab86072f64a0c53edc35c17cc">&#9670;&#160;</a></span>is_local_url()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">moodle_url::is_local_url </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if URL is relative to $CFG-&gt;wwwroot. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>True if URL is relative to $CFG-&gt;wwwroot; otherwise, false. </td></tr>
   </table>
   </dd>
 </dl>
@@ -988,7 +1016,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$user</b> = ''</td>
       </table>
 </div><div class="memdoc">
 
-<p>Returns URL a relative path from $CFG-&gt;wwwroot. </p>
+<p>Returns URL as relative path from $CFG-&gt;wwwroot. </p>
 <p >Can be used for passing around urls with the wwwroot stripped</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1371,7 +1399,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$user</b> = ''</td>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 11 2022 03:22:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Dec 18 2022 03:09:33 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>
