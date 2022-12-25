@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1+ (Build: 20221216) (24c009f222b)</div>
+   <div id="projectbrief">Moodle 4.1+ (Build: 20221222) (178aa052272)</div>
   </td>
  </tr>
  </tbody>
@@ -75,6 +75,12 @@ Inheritance diagram for behat_data_generators:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a746e505b3fbd7e2f65e0036fc45f2ed0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d81/classbehat__data__generators.html#a746e505b3fbd7e2f65e0036fc45f2ed0">get_all_entities</a> ()</td></tr>
+<tr class="memdesc:a746e505b3fbd7e2f65e0036fc45f2ed0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all entities that can be created in all components using <a class="el" href="../../dc/d81/classbehat__data__generators.html#a5832fcc066b00ac85594ee4ecb17b917" title="Creates the specified elements.">the_following_entities_exist()</a>  <a href="../../dc/d81/classbehat__data__generators.html#a746e505b3fbd7e2f65e0036fc45f2ed0">More...</a><br /></td></tr>
+<tr class="separator:a746e505b3fbd7e2f65e0036fc45f2ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebb0b6d3aa1e0a69dde76ee836353fbb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d81/classbehat__data__generators.html#aebb0b6d3aa1e0a69dde76ee836353fbb">get_entity</a> (string $entitytype)</td></tr>
+<tr class="memdesc:aebb0b6d3aa1e0a69dde76ee836353fbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the required fields for a specific creatable entity.  <a href="../../dc/d81/classbehat__data__generators.html#aebb0b6d3aa1e0a69dde76ee836353fbb">More...</a><br /></td></tr>
+<tr class="separator:aebb0b6d3aa1e0a69dde76ee836353fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc6cbc428b83d6bca71aaffbd15da4ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d6d/interfacebehat__session__interface.html#abc6cbc428b83d6bca71aaffbd15da4ab">getSession</a> ($name=null)</td></tr>
 <tr class="memdesc:abc6cbc428b83d6bca71aaffbd15da4ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Mink session.  <a href="../../d9/d6d/interfacebehat__session__interface.html#abc6cbc428b83d6bca71aaffbd15da4ab">More...</a><br /></td></tr>
 <tr class="separator:abc6cbc428b83d6bca71aaffbd15da4ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,6 +116,75 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a9e4df6e2cea465b169465861837986ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a746e505b3fbd7e2f65e0036fc45f2ed0" name="a746e505b3fbd7e2f65e0036fc45f2ed0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a746e505b3fbd7e2f65e0036fc45f2ed0">&#9670;&#160;</a></span>get_all_entities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_data_generators::get_all_entities </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get all entities that can be created in all components using <a class="el" href="../../dc/d81/classbehat__data__generators.html#a5832fcc066b00ac85594ee4ecb17b917" title="Creates the specified elements.">the_following_entities_exist()</a> </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aebb0b6d3aa1e0a69dde76ee836353fbb" name="aebb0b6d3aa1e0a69dde76ee836353fbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebb0b6d3aa1e0a69dde76ee836353fbb">&#9670;&#160;</a></span>get_entity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_data_generators::get_entity </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$entitytype</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the required fields for a specific creatable entity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$entitytype</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">mixed</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a587467adf67f5d2cd12907778fb41577" name="a587467adf67f5d2cd12907778fb41577"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a587467adf67f5d2cd12907778fb41577">&#9670;&#160;</a></span>get_instance_for_component()</h2>
 
@@ -420,7 +495,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 18 2022 02:58:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+Generated on Sun Dec 25 2022 03:01:04 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
 </small></address>
 </body>
 </html>
