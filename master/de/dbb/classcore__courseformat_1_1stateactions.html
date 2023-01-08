@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20221229) (12e9d9e1bf1)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230105) (b8b905cd90f)</div>
   </td>
  </tr>
  </tbody>
@@ -64,9 +64,24 @@ $(function() {
   <div class="headertitle"><div class="title">core_courseformat\stateactions Class Reference<div class="ingroups"><a class="el" href="../../db/d92/group__core__courseformat.html">core_courseformat</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for core_courseformat\stateactions:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../de/dbb/classcore__courseformat_1_1stateactions.png" usemap="#core_5Fcourseformat_5Cstateactions_map" alt=""/>
+  <map id="core_5Fcourseformat_5Cstateactions_map" name="core_5Fcourseformat_5Cstateactions_map">
+<area href="../../d8/de7/classformat__topics_1_1courseformat_1_1stateactions.html" alt="format_topics\courseformat\stateactions" shape="rect" coords="0,56,235,80"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a733e8c1241931edb88bd215072f95d73"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classcore__courseformat_1_1stateactions.html#a733e8c1241931edb88bd215072f95d73">cm_delete</a> (<a class="el" href="../../d5/df4/classcore__courseformat_1_1stateupdates.html">stateupdates</a> $updates, stdClass $course, array $<a class="el" href="../../dc/d71/group___imap___client.html#ga0e7aafd213abac03caf04d0534cbfa4e">ids</a>=[], ?int $targetsectionid=null, ?int $targetcmid=null)</td></tr>
+<tr class="memdesc:a733e8c1241931edb88bd215072f95d73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete course cms.  <br /></td></tr>
+<tr class="separator:a733e8c1241931edb88bd215072f95d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3836f1f7dafeea5c54d25d17823ae47e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classcore__courseformat_1_1stateactions.html#a3836f1f7dafeea5c54d25d17823ae47e">cm_duplicate</a> (<a class="el" href="../../d5/df4/classcore__courseformat_1_1stateupdates.html">stateupdates</a> $updates, stdClass $course, array $<a class="el" href="../../dc/d71/group___imap___client.html#ga0e7aafd213abac03caf04d0534cbfa4e">ids</a>=[], ?int $targetsectionid=null, ?int $targetcmid=null)</td></tr>
+<tr class="memdesc:a3836f1f7dafeea5c54d25d17823ae47e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duplicate a course modules instances into the same course.  <br /></td></tr>
+<tr class="separator:a3836f1f7dafeea5c54d25d17823ae47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4461337238838700110fc94dd068d53c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classcore__courseformat_1_1stateactions.html#a4461337238838700110fc94dd068d53c">cm_hide</a> (<a class="el" href="../../d5/df4/classcore__courseformat_1_1stateupdates.html">stateupdates</a> $updates, stdClass $course, array $<a class="el" href="../../dc/d71/group___imap___client.html#ga0e7aafd213abac03caf04d0534cbfa4e">ids</a>=[], ?int $targetsectionid=null, ?int $targetcmid=null)</td></tr>
 <tr class="memdesc:a4461337238838700110fc94dd068d53c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hide course cms.  <br /></td></tr>
 <tr class="separator:a4461337238838700110fc94dd068d53c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,6 +147,122 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:abc348c57b205d50b8edb770122369905"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a733e8c1241931edb88bd215072f95d73" name="a733e8c1241931edb88bd215072f95d73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a733e8c1241931edb88bd215072f95d73">&#9670;&#160;</a></span>cm_delete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\stateactions::cm_delete </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/df4/classcore__courseformat_1_1stateupdates.html">stateupdates</a>&#160;</td>
+          <td class="paramname"><em>$updates</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$course</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$ids</em> = <code>[]</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int&#160;</td>
+          <td class="paramname"><em>$targetsectionid</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int&#160;</td>
+          <td class="paramname"><em>$targetcmid</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Delete course cms. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stateupdates</td><td class="paramname">$updates</td><td>the affected course elements track </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object </td></tr>
+    <tr><td class="paramtype">int[]</td><td class="paramname">$ids</td><td>section ids </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$targetsectionid</td><td>not used </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$targetcmid</td><td>not used </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3836f1f7dafeea5c54d25d17823ae47e" name="a3836f1f7dafeea5c54d25d17823ae47e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3836f1f7dafeea5c54d25d17823ae47e">&#9670;&#160;</a></span>cm_duplicate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\stateactions::cm_duplicate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/df4/classcore__courseformat_1_1stateupdates.html">stateupdates</a>&#160;</td>
+          <td class="paramname"><em>$updates</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$course</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$ids</em> = <code>[]</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int&#160;</td>
+          <td class="paramname"><em>$targetsectionid</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int&#160;</td>
+          <td class="paramname"><em>$targetcmid</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Duplicate a course modules instances into the same course. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stateupdates</td><td class="paramname">$updates</td><td>the affected course elements track </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object </td></tr>
+    <tr><td class="paramtype">int[]</td><td class="paramname">$ids</td><td>course modules ids to duplicate </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetsectionid</td><td>optional target section id destination </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$targetcmid</td><td>optional target before cm id destination </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a4461337238838700110fc94dd068d53c" name="a4461337238838700110fc94dd068d53c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4461337238838700110fc94dd068d53c">&#9670;&#160;</a></span>cm_hide()</h2>
 
@@ -1298,7 +1429,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 1 2023 03:15:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 8 2023 03:08:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

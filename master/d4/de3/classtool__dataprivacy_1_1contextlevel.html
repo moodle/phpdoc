@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20221229) (12e9d9e1bf1)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230105) (b8b905cd90f)</div>
   </td>
  </tr>
  </tbody>
@@ -76,7 +76,7 @@ Inheritance diagram for tool_dataprivacy\contextlevel:</div>
  <div class="center">
   <img src="../../d4/de3/classtool__dataprivacy_1_1contextlevel.png" usemap="#tool_5Fdataprivacy_5Ccontextlevel_map" alt=""/>
   <map id="tool_5Fdataprivacy_5Ccontextlevel_map" name="tool_5Fdataprivacy_5Ccontextlevel_map">
-<area href="../../df/d9f/classcore_1_1persistent.html" title="Abstract class for core objects saved to the DB." alt="core\persistent" shape="rect" coords="0,0,177,24"/>
+<area href="../../df/d9f/classcore_1_1persistent.html" alt="core\persistent" shape="rect" coords="0,0,177,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -166,6 +166,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a1e96352d3cc18ec3fbfcb5d39dc8d493"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9f/classcore_1_1persistent.html#a1e96352d3cc18ec3fbfcb5d39dc8d493">properties_definition</a> ()</td></tr>
 <tr class="memdesc:a1e96352d3cc18ec3fbfcb5d39dc8d493"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the properties definition of this model.  <br /></td></tr>
 <tr class="separator:a1e96352d3cc18ec3fbfcb5d39dc8d493"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f43abe8c495452589dde02487cfea39"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9f/classcore_1_1persistent.html#a9f43abe8c495452589dde02487cfea39">properties_filter</a> (stdClass $record)</td></tr>
+<tr class="memdesc:a9f43abe8c495452589dde02487cfea39"><td class="mdescLeft">&#160;</td><td class="mdescRight">For a given record, return an array containing only those properties that are defined by the persistent.  <br /></td></tr>
+<tr class="separator:a9f43abe8c495452589dde02487cfea39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab283676859b74040ef0aee8dd5abe5f0"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9f/classcore_1_1persistent.html#ab283676859b74040ef0aee8dd5abe5f0">record_exists</a> ($id)</td></tr>
 <tr class="memdesc:ab283676859b74040ef0aee8dd5abe5f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a record exists by ID.  <br /></td></tr>
 <tr class="separator:ab283676859b74040ef0aee8dd5abe5f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1507,6 +1510,46 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a9f43abe8c495452589dde02487cfea39" name="a9f43abe8c495452589dde02487cfea39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f43abe8c495452589dde02487cfea39">&#9670;&#160;</a></span>properties_filter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core\persistent::properties_filter </td>
+          <td>(</td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$record</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">final</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>For a given record, return an array containing only those properties that are defined by the persistent. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$record</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad9f77dd8a69a2ed4a7517bd69125075d" name="ad9f77dd8a69a2ed4a7517bd69125075d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad9f77dd8a69a2ed4a7517bd69125075d">&#9670;&#160;</a></span>raw_get()</h2>
 
@@ -1997,7 +2040,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 1 2023 03:17:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 8 2023 03:09:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

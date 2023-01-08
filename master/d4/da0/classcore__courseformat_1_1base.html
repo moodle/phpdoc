@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20221229) (12e9d9e1bf1)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230105) (b8b905cd90f)</div>
   </td>
  </tr>
  </tbody>
@@ -117,6 +117,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ade647f62964c5222982ee81282802768"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#ade647f62964c5222982ee81282802768">delete_format_data</a> ()</td></tr>
 <tr class="memdesc:ade647f62964c5222982ee81282802768"><td class="mdescLeft">&#160;</td><td class="mdescRight">Course deletion hook.  <br /></td></tr>
 <tr class="separator:ade647f62964c5222982ee81282802768"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fd8dabe9920e6a1c90c99354ab6ae30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a8fd8dabe9920e6a1c90c99354ab6ae30">delete_module</a> (<a class="el" href="../../df/db9/classcm__info.html">cm_info</a> $cm, bool $async=false)</td></tr>
+<tr class="memdesc:a8fd8dabe9920e6a1c90c99354ab6ae30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for course_delete_module method.  <br /></td></tr>
+<tr class="separator:a8fd8dabe9920e6a1c90c99354ab6ae30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5593bf6fdaf28135f42b737bbdfcced"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#ab5593bf6fdaf28135f42b737bbdfcced">delete_section</a> ($section, $forcedeleteifnotempty=false)</td></tr>
 <tr class="memdesc:ab5593bf6fdaf28135f42b737bbdfcced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a section.  <br /></td></tr>
 <tr class="separator:ab5593bf6fdaf28135f42b737bbdfcced"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,6 +135,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aae5bcfb23250e298e7407932522e7048"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#aae5bcfb23250e298e7407932522e7048">get_config_for_external</a> ()</td></tr>
 <tr class="memdesc:aae5bcfb23250e298e7407932522e7048"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the plugin config settings for external functions, in some cases the configs will need formatting or be returned only if the current user has some capabilities enabled.  <br /></td></tr>
 <tr class="separator:aae5bcfb23250e298e7407932522e7048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac22520a0ec5ed246025d90cfd33c942f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#ac22520a0ec5ed246025d90cfd33c942f">get_context</a> ()</td></tr>
+<tr class="memdesc:ac22520a0ec5ed246025d90cfd33c942f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the course context.  <br /></td></tr>
+<tr class="separator:ac22520a0ec5ed246025d90cfd33c942f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af898cef34fc807b85c0241dcb50b113a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#af898cef34fc807b85c0241dcb50b113a">get_course</a> ()</td></tr>
 <tr class="memdesc:af898cef34fc807b85c0241dcb50b113a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a record from course database table plus additional fields that course format defines.  <br /></td></tr>
 <tr class="separator:af898cef34fc807b85c0241dcb50b113a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -717,6 +723,50 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesection</b> = 0
 
 </div>
 </div>
+<a id="a8fd8dabe9920e6a1c90c99354ab6ae30" name="a8fd8dabe9920e6a1c90c99354ab6ae30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fd8dabe9920e6a1c90c99354ab6ae30">&#9670;&#160;</a></span>delete_module()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\base::delete_module </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a>&#160;</td>
+          <td class="paramname"><em>$cm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$async</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wrapper for course_delete_module method. </p>
+<p>Format plugins can override this method to provide their own implementation of course_delete_module.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a></td><td class="paramname">$cm</td><td>the course module information </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$async</td><td>whether or not to try to delete the module using an adhoc task. Async also depends on a plugin hook. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../d6/da8/classmoodle__exception.html" title="Base Moodle Exception class.">moodle_exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ab5593bf6fdaf28135f42b737bbdfcced" name="ab5593bf6fdaf28135f42b737bbdfcced"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5593bf6fdaf28135f42b737bbdfcced">&#9670;&#160;</a></span>delete_section()</h2>
 
@@ -967,6 +1017,39 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesection</b> = 0
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.5 </dd></dl>
 
 <p>Reimplemented in <a class="el" href="../../d7/d86/classformat__singleactivity.html#aa6fce405697a64b16e5004eeb27af9e5">format_singleactivity</a>, <a class="el" href="../../de/d63/classformat__social.html#a01453f2e4c6818781f05ebac358536e1">format_social</a>, <a class="el" href="../../d1/d92/classformat__topics.html#a5af4adb31efebe21b3e8e7dacf4c4121">format_topics</a>, and <a class="el" href="../../d5/d8d/classformat__weeks.html#a3aaf8863eae6a34f5ec70dc63a983bb7">format_weeks</a>.</p>
+
+</div>
+</div>
+<a id="ac22520a0ec5ed246025d90cfd33c942f" name="ac22520a0ec5ed246025d90cfd33c942f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac22520a0ec5ed246025d90cfd33c942f">&#9670;&#160;</a></span>get_context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\base::get_context </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the course context. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../d8/d0a/classcontext__course.html">context_course</a></td><td>the course context </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -2922,7 +3005,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesection</b> = 0
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 1 2023 03:15:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 8 2023 03:08:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>
