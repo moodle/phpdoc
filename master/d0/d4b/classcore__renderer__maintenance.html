@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230105) (b8b905cd90f)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230113) (5dbac075be0)</div>
   </td>
  </tr>
  </tbody>
@@ -271,9 +271,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a22c34921b6358ec5ac1971936f03502b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d4b/classcore__renderer__maintenance.html#a22c34921b6358ec5ac1971936f03502b">init_block_hider_js</a> (<a class="el" href="../../db/dce/classblock__contents.html">block_contents</a> $bc)</td></tr>
 <tr class="memdesc:a22c34921b6358ec5ac1971936f03502b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does nothing.  <br /></td></tr>
 <tr class="separator:a22c34921b6358ec5ac1971936f03502b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae96753d584a6675c3fe1666f886168d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7b/classcore__renderer.html#aae96753d584a6675c3fe1666f886168d">initials_bar</a> ($current, $class, $title, $urlvar, $url, $alpha=null)</td></tr>
-<tr class="memdesc:aae96753d584a6675c3fe1666f886168d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns HTML to display initials bar to provide access to other pages (usually in a search)  <br /></td></tr>
-<tr class="separator:aae96753d584a6675c3fe1666f886168d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9c70b3f3462be0c2dc0284a06520b03"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7b/classcore__renderer.html#ab9c70b3f3462be0c2dc0284a06520b03">initials_bar</a> ($current, $class, $title, $urlvar, $url, $alpha=null, bool $minirender=false)</td></tr>
+<tr class="memdesc:ab9c70b3f3462be0c2dc0284a06520b03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns HTML to display initials bar to provide access to other pages (usually in a search)  <br /></td></tr>
+<tr class="separator:ab9c70b3f3462be0c2dc0284a06520b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a698297016bc9a5c72ad8d5f9cea44bde"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d4b/classcore__renderer__maintenance.html#a698297016bc9a5c72ad8d5f9cea44bde">lang_menu</a> ()</td></tr>
 <tr class="memdesc:a698297016bc9a5c72ad8d5f9cea44bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does nothing.  <br /></td></tr>
 <tr class="separator:a698297016bc9a5c72ad8d5f9cea44bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3657,8 +3657,8 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$unique_performance
 
 </div>
 </div>
-<a id="aae96753d584a6675c3fe1666f886168d" name="aae96753d584a6675c3fe1666f886168d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae96753d584a6675c3fe1666f886168d">&#9670;&#160;</a></span>initials_bar()</h2>
+<a id="ab9c70b3f3462be0c2dc0284a06520b03" name="ab9c70b3f3462be0c2dc0284a06520b03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9c70b3f3462be0c2dc0284a06520b03">&#9670;&#160;</a></span>initials_bar()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3700,7 +3700,13 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$unique_performance
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$alpha</em> = <code>null</code>&#160;</td>
+          <td class="paramname"><em>$alpha</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$minirender</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3724,6 +3730,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$unique_performance
     <tr><td class="paramtype">string</td><td class="paramname">$urlvar</td><td>URL parameter name for this initial. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$url</td><td>URL object. </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$alpha</td><td>of letters in the alphabet. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$minirender</td><td>Return a trimmed down view of the initials bar. </td></tr>
   </table>
   </dd>
 </dl>
@@ -8110,7 +8117,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$unique_performance
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 8 2023 03:06:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 15 2023 03:11:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230105) (b8b905cd90f)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230113) (5dbac075be0)</div>
   </td>
  </tr>
  </tbody>
@@ -107,10 +107,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aad036109033a892ad3ad626ad8ded2b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called during validation.  <br /></td></tr>
 <tr class="separator:aad036109033a892ad3ad626ad8ded2b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19cf75961efde1d320a698121de3c4bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de5/classmod__quiz__mod__form.html#a19cf75961efde1d320a698121de3c4bf">data_postprocessing</a> ($data)</td></tr>
-<tr class="memdesc:a19cf75961efde1d320a698121de3c4bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows module to modify the data returned by form <a class="el" href="../../d2/d19/classmoodleform__mod.html#aafca0a5a73c77a71dd9ff6bcbb77135d" title="Return submitted data if properly submitted or returns NULL if validation fails or if there is no sub...">get_data()</a>.  <br /></td></tr>
+<tr class="memdesc:a19cf75961efde1d320a698121de3c4bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows module to modify the data returned by form get_data().  <br /></td></tr>
 <tr class="separator:a19cf75961efde1d320a698121de3c4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e73a708213ff089dff41ee419a31381"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de5/classmod__quiz__mod__form.html#a9e73a708213ff089dff41ee419a31381">data_preprocessing</a> (&amp;$toform)</td></tr>
-<tr class="memdesc:a9e73a708213ff089dff41ee419a31381"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows module to modify data returned by <a class="el" href="../../d5/dd0/group__core__course.html#gaf8c1dc2beab7f37216a260bde6d7201b" title="Get module information data required for updating the module.">get_moduleinfo_data()</a> or <a class="el" href="../../d5/dd0/group__core__course.html#ga2f0b2976dd025752dd188689e2f7a751" title="Prepare the standard module information for a new module instance.">prepare_new_moduleinfo_data()</a> before calling <a class="el" href="../../d2/d19/classmoodleform__mod.html#ac6fd07e2bf474423fa84df791f2b8722" title="Load in existing data as form defaults.">set_data()</a> This method is also called in the bulk activity completion form.  <br /></td></tr>
+<tr class="memdesc:a9e73a708213ff089dff41ee419a31381"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows module to modify data returned by <a class="el" href="../../d5/dd0/group__core__course.html#gaf8c1dc2beab7f37216a260bde6d7201b" title="Get module information data required for updating the module.">get_moduleinfo_data()</a> or <a class="el" href="../../d5/dd0/group__core__course.html#ga2f0b2976dd025752dd188689e2f7a751" title="Prepare the standard module information for a new module instance.">prepare_new_moduleinfo_data()</a> before calling set_data() This method is also called in the bulk activity completion form.  <br /></td></tr>
 <tr class="separator:a9e73a708213ff089dff41ee419a31381"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafe19da9a3d8d6b99230cdcb465a59a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d19/classmoodleform__mod.html#aafe19da9a3d8d6b99230cdcb465a59a6">definition_after_data</a> ()</td></tr>
 <tr class="memdesc:aafe19da9a3d8d6b99230cdcb465a59a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each module which defines <a class="el" href="../../d2/d19/classmoodleform__mod.html#aafe19da9a3d8d6b99230cdcb465a59a6" title="Each module which defines definition_after_data() must call this method using parent::definition_afte...">definition_after_data()</a> must call this method using parent::definition_after_data();.  <br /></td></tr>
@@ -479,7 +479,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$reviewfields</b> =
 </table>
 </div><div class="memdoc">
 
-<p>Overriding formslib's <a class="el" href="../../d2/d19/classmoodleform__mod.html#a1f93599f2743d576b1ab0ac206718563" title="Overriding formslib&#39;s add_action_buttons() method, to add an extra submit &quot;save changes and return&quot; b...">add_action_buttons()</a> method, to add an extra submit "save changes and return" button. </p>
+<p>Overriding formslib's add_action_buttons() method, to add an extra submit "save changes and return" button. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">bool</td><td class="paramname">$cancel</td><td>show cancel button </td></tr>
@@ -746,7 +746,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$reviewfields</b> =
       </table>
 </div><div class="memdoc">
 
-<p>Allows module to modify the data returned by form <a class="el" href="../../d2/d19/classmoodleform__mod.html#aafca0a5a73c77a71dd9ff6bcbb77135d" title="Return submitted data if properly submitted or returns NULL if validation fails or if there is no sub...">get_data()</a>. </p>
+<p>Allows module to modify the data returned by form get_data(). </p>
 <p>This method is also called in the bulk activity completion form.</p>
 <p>Only available on <a class="el" href="../../d2/d19/classmoodleform__mod.html" title="This class adds extra methods to form wrapper specific to be used for module add / update forms mod/{...">moodleform_mod</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -776,7 +776,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$reviewfields</b> =
       </table>
 </div><div class="memdoc">
 
-<p>Allows module to modify data returned by <a class="el" href="../../d5/dd0/group__core__course.html#gaf8c1dc2beab7f37216a260bde6d7201b" title="Get module information data required for updating the module.">get_moduleinfo_data()</a> or <a class="el" href="../../d5/dd0/group__core__course.html#ga2f0b2976dd025752dd188689e2f7a751" title="Prepare the standard module information for a new module instance.">prepare_new_moduleinfo_data()</a> before calling <a class="el" href="../../d2/d19/classmoodleform__mod.html#ac6fd07e2bf474423fa84df791f2b8722" title="Load in existing data as form defaults.">set_data()</a> This method is also called in the bulk activity completion form. </p>
+<p>Allows module to modify data returned by <a class="el" href="../../d5/dd0/group__core__course.html#gaf8c1dc2beab7f37216a260bde6d7201b" title="Get module information data required for updating the module.">get_moduleinfo_data()</a> or <a class="el" href="../../d5/dd0/group__core__course.html#ga2f0b2976dd025752dd188689e2f7a751" title="Prepare the standard module information for a new module instance.">prepare_new_moduleinfo_data()</a> before calling set_data() This method is also called in the bulk activity completion form. </p>
 <p>Only available on <a class="el" href="../../d2/d19/classmoodleform__mod.html" title="This class adds extra methods to form wrapper specific to be used for module add / update forms mod/{...">moodleform_mod</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -842,7 +842,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$reviewfields</b> =
 </table>
 </div><div class="memdoc">
 
-<p>Each module which defines <a class="el" href="../../d2/d19/classmoodleform__mod.html#aafe19da9a3d8d6b99230cdcb465a59a6" title="Each module which defines definition_after_data() must call this method using parent::definition_afte...">definition_after_data()</a> must call this method using parent::definition_after_data();. </p>
+<p>Each module which defines definition_after_data() must call this method using parent::definition_after_data();. </p>
 
 <p>Reimplemented from <a class="el" href="../../d6/d9c/group__core__form.html#ga5ccc3aeffce27e3335c4fbc26b857563">moodleform</a>.</p>
 
@@ -1006,7 +1006,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$reviewfields</b> =
 </div><div class="memdoc">
 
 <p>Return submitted data if properly submitted or returns NULL if validation fails or if there is no submitted data. </p>
-<p>Do not override this method, override <a class="el" href="../../d4/de5/classmod__quiz__mod__form.html#a19cf75961efde1d320a698121de3c4bf" title="Allows module to modify the data returned by form get_data().">data_postprocessing()</a> instead.</p>
+<p>Do not override this method, override data_postprocessing() instead.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">object</td><td>submitted data; NULL if not valid or not submitted or cancelled </td></tr>
@@ -1444,7 +1444,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$reviewfields</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 8 2023 03:07:16 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 15 2023 03:12:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

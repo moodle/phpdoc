@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230105) (b8b905cd90f)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230113) (5dbac075be0)</div>
   </td>
  </tr>
  </tbody>
@@ -59,22 +59,19 @@ $(function() {
   <div class="headertitle"><div class="title">mod_quiz_overdue_attempt_updater Class Reference<div class="ingroups"><a class="el" href="../../dd/df0/group__mod__quiz.html">mod_quiz</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>This class holds all the code for automatically updating all attempts that have gone over their time limit.  
- <a href="../../d0/d37/classmod__quiz__overdue__attempt__updater.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aeb8cc04c4d6346a953f61c85d31a2817"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d37/classmod__quiz__overdue__attempt__updater.html#aeb8cc04c4d6346a953f61c85d31a2817">get_list_of_overdue_attempts</a> ($processto)</td></tr>
 <tr class="separator:aeb8cc04c4d6346a953f61c85d31a2817"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdbbd207f53d86bf9f7d95701bbc397d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d37/classmod__quiz__overdue__attempt__updater.html#afdbbd207f53d86bf9f7d95701bbc397d">update_overdue_attempts</a> ($timenow, $processto)</td></tr>
-<tr class="memdesc:afdbbd207f53d86bf9f7d95701bbc397d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do the processing required.  <br /></td></tr>
 <tr class="separator:afdbbd207f53d86bf9f7d95701bbc397d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class holds all the code for automatically updating all attempts that have gone over their time limit. </p>
-<dl class="section copyright"><dt>Copyright</dt><dd>2012 the Open University </dd></dl>
+<div class="textblock"><dl class="section copyright"><dt>Copyright</dt><dd>2012 the Open University </dd></dl>
 <dl class="section user"><dt>License</dt><dd><a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a> GNU GPL v3 or later </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000995">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Code moved to <a class="el" href="../../d1/ddd/classmod__quiz_1_1task_1_1update__overdue__attempts.html" title="Update Overdue Attempts Task.">mod_quiz::task::update_overdue_attempts</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000296">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76612" class="el">MDL-76612</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6 </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aeb8cc04c4d6346a953f61c85d31a2817" name="aeb8cc04c4d6346a953f61c85d31a2817"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeb8cc04c4d6346a953f61c85d31a2817">&#9670;&#160;</a></span>get_list_of_overdue_attempts()</h2>
@@ -91,12 +88,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../d6/d34/classmoodle__recordset.html" title="Abstract class for resultsets returned from database functions.">moodle_recordset</a></td><td>of quiz_attempts that need to be processed because time has passed. The array is sorted by courseid then quizid. </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000998">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Code moved to <a class="el" href="../../d1/ddd/classmod__quiz_1_1task_1_1update__overdue__attempts.html" title="Update Overdue Attempts Task.">mod_quiz::task::update_overdue_attempts</a>. </dd></dl>
 
 </div>
 </div>
@@ -125,31 +117,17 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Do the processing required. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$timenow</td><td>the time to consider as 'now' during the processing. </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$processto</td><td>only process attempt with timecheckstate longer ago than this. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">array</td><td>with two elements, the number of attempt considered, and how many different quizzes that was. </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000997">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Code moved to <a class="el" href="../../d1/ddd/classmod__quiz_1_1task_1_1update__overdue__attempts.html" title="Update Overdue Attempts Task.">mod_quiz::task::update_overdue_attempts</a>. that was. </dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>mod/quiz/cronlib.php</li>
+<li>mod/quiz/deprecatedlib.php</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 8 2023 03:07:16 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 15 2023 03:12:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

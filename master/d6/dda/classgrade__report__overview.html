@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230105) (b8b905cd90f)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230113) (5dbac075be0)</div>
   </td>
  </tr>
  </tbody>
@@ -109,6 +109,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad7fcd1e83acf6a083361acd62417d454"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dda/classgrade__report__overview.html#ad7fcd1e83acf6a083361acd62417d454">process_data</a> ($data)</td></tr>
 <tr class="memdesc:ad7fcd1e83acf6a083361acd62417d454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes the data sent by the form (grades and feedbacks).  <br /></td></tr>
 <tr class="separator:ad7fcd1e83acf6a083361acd62417d454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8367a3452f26afb93ee7ea605f288524"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dda/classgrade__report__overview.html#a8367a3452f26afb93ee7ea605f288524">regrade_all_courses_if_needed</a> (bool $frontend=false)</td></tr>
+<tr class="memdesc:a8367a3452f26afb93ee7ea605f288524"><td class="mdescLeft">&#160;</td><td class="mdescRight">Regrades all courses if needed.  <br /></td></tr>
+<tr class="separator:a8367a3452f26afb93ee7ea605f288524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a722b5d92e25661d6e68f53574fac8daf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#a722b5d92e25661d6e68f53574fac8daf">set_pref</a> ($pref, $pref_value='default', $itemid=null)</td></tr>
 <tr class="memdesc:a722b5d92e25661d6e68f53574fac8daf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses set_user_preferences() to update the value of a user preference.  <br /></td></tr>
 <tr class="separator:a722b5d92e25661d6e68f53574fac8daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -919,6 +922,33 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 
 </div>
 </div>
+<a id="a8367a3452f26afb93ee7ea605f288524" name="a8367a3452f26afb93ee7ea605f288524"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8367a3452f26afb93ee7ea605f288524">&#9670;&#160;</a></span>regrade_all_courses_if_needed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">grade_report_overview::regrade_all_courses_if_needed </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$frontend</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Regrades all courses if needed. </p>
+<p>If $frontend is true, this may show a progress bar and redirect back to the page (possibly several times if multiple courses need it). Otherwise, it will not return until all the courses have been updated.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">bool</td><td class="paramname">$frontend</td><td>True if we are running front-end code and can safely redirect back </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a722b5d92e25661d6e68f53574fac8daf" name="a722b5d92e25661d6e68f53574fac8daf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a722b5d92e25661d6e68f53574fac8daf">&#9670;&#160;</a></span>set_pref()</h2>
 
@@ -1671,7 +1701,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 8 2023 03:07:10 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 15 2023 03:12:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

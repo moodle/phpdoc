@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.5+ (Build: 20230105) (da216a55451)</div>
+   <div id="projectbrief">Moodle 4.0.6 (Build: 20230116) (b864c78a31e)</div>
   </td>
  </tr>
  </tbody>
@@ -4886,6 +4886,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>core\event::is_depr
 <tr class="memitem:ga8643808fe020d0242fb98be8fce80496"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de1/group__core.html#ga8643808fe020d0242fb98be8fce80496">mtrace</a> ($string, $eol=&quot;\n&quot;, $sleep=0)</td></tr>
 <tr class="memdesc:ga8643808fe020d0242fb98be8fce80496"><td class="mdescLeft">&#160;</td><td class="mdescRight">For outputting debugging info.  <br /></td></tr>
 <tr class="separator:ga8643808fe020d0242fb98be8fce80496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75510c59be3a5fa20620d2b0fd569e7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de1/group__core.html#ga75510c59be3a5fa20620d2b0fd569e7d">mtrace_exception</a> (Throwable $e)</td></tr>
+<tr class="memdesc:ga75510c59be3a5fa20620d2b0fd569e7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to {.  <br /></td></tr>
+<tr class="separator:ga75510c59be3a5fa20620d2b0fd569e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga68453715e9bee72fc0455bb304c1583c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de1/group__core.html#ga68453715e9bee72fc0455bb304c1583c">my_page_type_list</a> ($pagetype, $parentcontext=null, $currentcontext=null)</td></tr>
 <tr class="memdesc:ga68453715e9bee72fc0455bb304c1583c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the page type list for the my moodle page.  <br /></td></tr>
 <tr class="separator:ga68453715e9bee72fc0455bb304c1583c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -6338,7 +6341,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>filterobject::$phra
 <tr class="memitem:ga4ab51386acb82cd0a0066eac2567b2bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de1/group__core.html#ga4ab51386acb82cd0a0066eac2567b2bd">$plugins</a></td></tr>
 <tr class="separator:ga4ab51386acb82cd0a0066eac2567b2bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga63c5d6a8a9f1768ea926cee666dc991b"><td class="memItemLeft" align="right" valign="top"><a id="ga63c5d6a8a9f1768ea926cee666dc991b" name="ga63c5d6a8a9f1768ea926cee666dc991b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$release</b> = '4.0.5+ (Build: 20230105)'</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$release</b> = '4.0.6 (Build: 20230116)'</td></tr>
 <tr class="separator:ga63c5d6a8a9f1768ea926cee666dc991b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga21ea4dae509fad0a8aec221e2f095886"><td class="memItemLeft" align="right" valign="top"><a id="ga21ea4dae509fad0a8aec221e2f095886" name="ga21ea4dae509fad0a8aec221e2f095886"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$renamedclasses</b></td></tr>
@@ -6404,7 +6407,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>core\task::$trace
 global&#160;</td><td class="memItemRight" valign="bottom"><b>$USER</b></td></tr>
 <tr class="separator:ga6e76f75e2c700b871e9e622e51598180"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga17c8948c68aa44fa9961ae169b6a8961"><td class="memItemLeft" align="right" valign="top"><a id="ga17c8948c68aa44fa9961ae169b6a8961" name="ga17c8948c68aa44fa9961ae169b6a8961"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$version</b> = 2022041905.11</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$version</b> = 2022041906.00</td></tr>
 <tr class="separator:ga17c8948c68aa44fa9961ae169b6a8961"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga25a973d9316abf0df9c8c8d269f8bdf1"><td class="memItemLeft" align="right" valign="top"><a id="ga25a973d9316abf0df9c8c8d269f8bdf1" name="ga25a973d9316abf0df9c8c8d269f8bdf1"></a>
 null string&#160;</td><td class="memItemRight" valign="bottom"><b>filterobject::$workregexp</b> = null</td></tr>
@@ -25995,13 +25998,13 @@ Options:
 <p>Returns detailed information about specified exception. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">exception</td><td class="paramname">$ex</td><td></td></tr>
+    <tr><td class="paramtype">Throwable</td><td class="paramname">$ex</td><td>any sort of exception or throwable. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">object</td><td></td></tr>
+    <tr><td class="paramname">stdClass</td><td>standardised info to display. Fields are clear if you look at the end of this function. </td></tr>
   </table>
   </dd>
 </dl>
@@ -35312,6 +35315,33 @@ frame in Unknown on line 0". That makes debugging very hard, so we do take speci
     <tr><td class="paramtype">string</td><td class="paramname">$string</td><td>The string to write </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$eol</td><td>The end of line char(s) to use </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$sleep</td><td>Period to make the application sleep This ensures any messages have time to display before redirect </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga75510c59be3a5fa20620d2b0fd569e7d" name="ga75510c59be3a5fa20620d2b0fd569e7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga75510c59be3a5fa20620d2b0fd569e7d">&#9670;&#160;</a></span>mtrace_exception()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mtrace_exception </td>
+          <td>(</td>
+          <td class="paramtype">Throwable&#160;</td>
+          <td class="paramname"><em>$e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Helper to {. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/de1/group__core.html#ga8643808fe020d0242fb98be8fce80496" title="For outputting debugging info.">mtrace()</a>} an exception or throwable, including all relevant information.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">Throwable</td><td class="paramname">$e</td><td>the error to ouptput. </td></tr>
   </table>
   </dd>
 </dl>
@@ -50160,7 +50190,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 <div class="line"> </div>
 <div class="line">    </div>
 <div class="line">    <span class="keyword">protected</span> <a class="code hl_class" href="../../dd/d5e/classprogress__trace.html">progress_trace</a> $trace = <span class="keyword">null</span></div>
-<div class="ttc" id="aclassprogress__trace_html"><div class="ttname"><a href="../../dd/d5e/classprogress__trace.html">progress_trace</a></div><div class="ttdoc">Progress trace class.</div><div class="ttdef"><b>Definition:</b> weblib.php:3358</div></div>
+<div class="ttc" id="aclassprogress__trace_html"><div class="ttname"><a href="../../dd/d5e/classprogress__trace.html">progress_trace</a></div><div class="ttdoc">Progress trace class.</div><div class="ttdef"><b>Definition:</b> weblib.php:3357</div></div>
 </div><!-- fragment -->
 <p>This trait includes functions to assist with logging in tasks. </p>
 <dl class="section copyright"><dt>Copyright</dt><dd>2018 Andrew Nicols <a href="#" onclick="location.href='mai'+'lto:'+'and'+'re'+'w@n'+'ic'+'ols'+'.c'+'o.u'+'k'; return false;">andre<span class="obfuscator">.nosp@m.</span>w@ni<span class="obfuscator">.nosp@m.</span>cols.<span class="obfuscator">.nosp@m.</span>co.u<span class="obfuscator">.nosp@m.</span>k</a> </dd></dl>
@@ -50707,7 +50737,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 8 2023 02:53:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 15 2023 02:56:09 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

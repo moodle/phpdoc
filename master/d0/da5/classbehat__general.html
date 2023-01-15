@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230105) (b8b905cd90f)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230113) (5dbac075be0)</div>
   </td>
  </tr>
  </tbody>
@@ -201,6 +201,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acf117d6f9fa521a4314dd382bd011ba9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da5/classbehat__general.html#acf117d6f9fa521a4314dd382bd011ba9">i_run_the_scheduled_task</a> ($taskname)</td></tr>
 <tr class="memdesc:acf117d6f9fa521a4314dd382bd011ba9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs a scheduled task immediately, given full class name.  <br /></td></tr>
 <tr class="separator:acf117d6f9fa521a4314dd382bd011ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed79f1c00b43c0d7b0a12459eec5242f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da5/classbehat__general.html#aed79f1c00b43c0d7b0a12459eec5242f">i_should_see_node_occurrences_of_type_in_element</a> (int $elementscount, string $nodetype, string $element, string $selectortype)</td></tr>
+<tr class="memdesc:aed79f1c00b43c0d7b0a12459eec5242f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks, that the specified element contains the specified node type a certain amount of times.  <br /></td></tr>
+<tr class="separator:aed79f1c00b43c0d7b0a12459eec5242f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7608b907910dcd3eeb484e5f1fc9e84"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da5/classbehat__general.html#ab7608b907910dcd3eeb484e5f1fc9e84">i_should_see_occurrences_of_in_element</a> ($elementscount, $text, $element, $selectortype)</td></tr>
 <tr class="memdesc:ab7608b907910dcd3eeb484e5f1fc9e84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks, that the specified element contains the specified text a certain amount of times.  <br /></td></tr>
 <tr class="separator:ab7608b907910dcd3eeb484e5f1fc9e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1972,6 +1975,65 @@ Protected Member Functions</h2></td></tr>
 <p>@Given /^I run the scheduled task "(?P&lt;task_name&gt;[^"]+)"$/ </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$taskname</td><td>Name of task e.g. 'mod_whatever::task::do_something' </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aed79f1c00b43c0d7b0a12459eec5242f" name="aed79f1c00b43c0d7b0a12459eec5242f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed79f1c00b43c0d7b0a12459eec5242f">&#9670;&#160;</a></span>i_should_see_node_occurrences_of_type_in_element()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_general::i_should_see_node_occurrences_of_type_in_element </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$elementscount</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$nodetype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$selectortype</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks, that the specified element contains the specified node type a certain amount of times. </p>
+<p>When running Javascript tests it also considers that texts may be hidden.</p>
+<p>@Then /^I should see "(?P&lt;elementscount_number&gt;::d+)" node occurrences of type "(?P&lt;node_type&gt;(?:[^"]|")*)" in the "(?P&lt;element_string&gt;(?:[^"]|::")*)" "(?P&lt;text_selector_string&gt;[^"]*)"$/ </p><dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ElementNotFoundException</td><td></td></tr>
+    <tr><td class="paramname">ExpectationException</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$elementscount</td><td>How many occurrences of the element we look for. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$nodetype</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$element</td><td>Element we look in. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$selectortype</td><td>The type of element where we are looking in. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3853,7 +3915,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 8 2023 03:06:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 15 2023 03:11:22 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

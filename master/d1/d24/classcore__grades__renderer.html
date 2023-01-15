@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230105) (b8b905cd90f)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230113) (5dbac075be0)</div>
   </td>
  </tr>
  </tbody>
@@ -96,6 +96,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a604f064fff09e7ff0390c847ed30d5a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d60/classrenderer__base.html#a604f064fff09e7ff0390c847ed30d5a7">image_url</a> ($imagename, $component='moodle')</td></tr>
 <tr class="memdesc:a604f064fff09e7ff0390c847ed30d5a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the <a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a> for an image.  <br /></td></tr>
 <tr class="separator:a604f064fff09e7ff0390c847ed30d5a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad16c8925fe61838e24fd893918169af5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d24/classcore__grades__renderer.html#ad16c8925fe61838e24fd893918169af5">initials_selector</a> (object $course, <a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, string $slug)</td></tr>
+<tr class="memdesc:ad16c8925fe61838e24fd893918169af5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build the data to render the initials bar filter within the gradebook.  <br /></td></tr>
+<tr class="separator:ad16c8925fe61838e24fd893918169af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ee759f6bc32ee4c14634718790c8779"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d60/classrenderer__base.html#a1ee759f6bc32ee4c14634718790c8779">pix_url</a> ($imagename, $component='moodle')</td></tr>
 <tr class="memdesc:a1ee759f6bc32ee4c14634718790c8779"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the direct URL for an image from the pix folder.  <br /></td></tr>
 <tr class="separator:a1ee759f6bc32ee4c14634718790c8779"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -517,6 +520,57 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$target</b></td></t
 
 </div>
 </div>
+<a id="ad16c8925fe61838e24fd893918169af5" name="ad16c8925fe61838e24fd893918169af5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad16c8925fe61838e24fd893918169af5">&#9670;&#160;</a></span>initials_selector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_grades_renderer::initials_selector </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>$course</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramname"><em>$context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$slug</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Build the data to render the initials bar filter within the gradebook. </p>
+<p>Using this initials selector means you'll have to retain the use of the templates &amp; JS to handle form submission. If a simple redirect on each selection is desired the standard user_search() within the user renderer is what you are after.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">object</td><td class="paramname">$course</td><td>The course object. </td></tr>
+    <tr><td class="paramtype">context</td><td class="paramname">$context</td><td>Our current context. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$slug</td><td>The slug for the report that called this function. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass</td><td>The data to output. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a1ee759f6bc32ee4c14634718790c8779" name="a1ee759f6bc32ee4c14634718790c8779"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ee759f6bc32ee4c14634718790c8779">&#9670;&#160;</a></span>pix_url()</h2>
 
@@ -896,7 +950,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$target</b></td></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 8 2023 03:06:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 15 2023 03:11:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

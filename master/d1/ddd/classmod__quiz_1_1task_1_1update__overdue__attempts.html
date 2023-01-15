@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230105) (b8b905cd90f)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230113) (5dbac075be0)</div>
   </td>
  </tr>
  </tbody>
@@ -117,6 +117,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9d5a0b3610ed806abbbc62f570dcd412"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d87/classcore_1_1task_1_1scheduled__task.html#a9d5a0b3610ed806abbbc62f570dcd412">get_last_run_time</a> ()</td></tr>
 <tr class="memdesc:a9d5a0b3610ed806abbbc62f570dcd412"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last run time for this scheduled task.  <br /></td></tr>
 <tr class="separator:a9d5a0b3610ed806abbbc62f570dcd412"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a6ddfdf29ce7fe081ed6cdcaf277049"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddd/classmod__quiz_1_1task_1_1update__overdue__attempts.html#a3a6ddfdf29ce7fe081ed6cdcaf277049">get_list_of_overdue_attempts</a> (int $processto)</td></tr>
+<tr class="memdesc:a3a6ddfdf29ce7fe081ed6cdcaf277049"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a recordset of all the attempts that need to be processed now.  <br /></td></tr>
+<tr class="separator:a3a6ddfdf29ce7fe081ed6cdcaf277049"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9ac8c7f646f06ba815bb4300378b687"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfa/classcore_1_1task_1_1task__base.html#af9ac8c7f646f06ba815bb4300378b687">get_lock</a> ()</td></tr>
 <tr class="memdesc:af9ac8c7f646f06ba815bb4300378b687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current lock for this task.  <br /></td></tr>
 <tr class="separator:af9ac8c7f646f06ba815bb4300378b687"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -222,6 +225,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae348a21f63e44a0dbffe534057334843"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfa/classcore_1_1task_1_1task__base.html#ae348a21f63e44a0dbffe534057334843">set_timestarted</a> ($timestarted=null)</td></tr>
 <tr class="memdesc:ae348a21f63e44a0dbffe534057334843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter for $timestarted.  <br /></td></tr>
 <tr class="separator:ae348a21f63e44a0dbffe534057334843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac83ea5fc8f474422bd1dbc71d3d0736d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/ddd/classmod__quiz_1_1task_1_1update__overdue__attempts.html#ac83ea5fc8f474422bd1dbc71d3d0736d">update_all_overdue_attempts</a> (int $timenow, int $processto)</td></tr>
+<tr class="memdesc:ac83ea5fc8f474422bd1dbc71d3d0736d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do the processing required.  <br /></td></tr>
+<tr class="separator:ac83ea5fc8f474422bd1dbc71d3d0736d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -743,6 +749,39 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MONTHMIN</b> = 1</td
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">int</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3a6ddfdf29ce7fe081ed6cdcaf277049" name="a3a6ddfdf29ce7fe081ed6cdcaf277049"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a6ddfdf29ce7fe081ed6cdcaf277049">&#9670;&#160;</a></span>get_list_of_overdue_attempts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\task\update_overdue_attempts::get_list_of_overdue_attempts </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$processto</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a recordset of all the attempts that need to be processed now. </p>
+<p>(Only public to allow unit testing. Do not use!)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$processto</td><td>timestamp to process up to. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../d6/d34/classmoodle__recordset.html" title="Abstract class for resultsets returned from database functions.">moodle_recordset</a></td><td>of quiz_attempts that need to be processed because time has passed, sorted by courseid then quizid. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1960,13 +1999,56 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MONTHMIN</b> = 1</td
 
 </div>
 </div>
+<a id="ac83ea5fc8f474422bd1dbc71d3d0736d" name="ac83ea5fc8f474422bd1dbc71d3d0736d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac83ea5fc8f474422bd1dbc71d3d0736d">&#9670;&#160;</a></span>update_all_overdue_attempts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\task\update_overdue_attempts::update_all_overdue_attempts </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$timenow</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$processto</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Do the processing required. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$timenow</td><td>the time to consider as 'now' during the processing. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$processto</td><td>only process attempt with timecheckstate longer ago than this. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>with two elements, the number of attempt considered, and how many different quizzes that was. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>mod/quiz/classes/task/update_overdue_attempts.php</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 8 2023 03:08:57 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 15 2023 03:14:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

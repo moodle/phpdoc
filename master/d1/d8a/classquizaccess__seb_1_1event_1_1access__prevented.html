@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230105) (b8b905cd90f)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230113) (5dbac075be0)</div>
   </td>
  </tr>
  </tbody>
@@ -138,9 +138,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a7c59593de9e17704bb258d8a4ffd53a0"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d77/classcore_1_1event_1_1base.html#a7c59593de9e17704bb258d8a4ffd53a0">create</a> (array $data=null)</td></tr>
 <tr class="memdesc:a7c59593de9e17704bb258d8a4ffd53a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create new event.  <br /></td></tr>
 <tr class="separator:a7c59593de9e17704bb258d8a4ffd53a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6da235318e1ad2bf7ed1305b956913f1"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d8a/classquizaccess__seb_1_1event_1_1access__prevented.html#a6da235318e1ad2bf7ed1305b956913f1">create_strict</a> (<a class="el" href="../../db/d1b/classquizaccess__seb_1_1access__manager.html">access_manager</a> $accessmanager, string $<a class="el" href="../../d8/ded/group___simple_pie.html#gae5486f649cbd951ac235cc991d491345">reason</a>, ?string $configkey=null, ?string $browserexamkey=null)</td></tr>
-<tr class="memdesc:a6da235318e1ad2bf7ed1305b956913f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create event with strict parameters.  <br /></td></tr>
-<tr class="separator:a6da235318e1ad2bf7ed1305b956913f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f5e6e9d966487c591b031d5cdfd7d7"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d8a/classquizaccess__seb_1_1event_1_1access__prevented.html#a72f5e6e9d966487c591b031d5cdfd7d7">create_strict</a> (<a class="el" href="../../db/d5f/classquizaccess__seb_1_1seb__access__manager.html">seb_access_manager</a> $accessmanager, string $<a class="el" href="../../d8/ded/group___simple_pie.html#gae5486f649cbd951ac235cc991d491345">reason</a>, ?string $configkey=null, ?string $browserexamkey=null)</td></tr>
+<tr class="memdesc:a72f5e6e9d966487c591b031d5cdfd7d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create event with strict parameters.  <br /></td></tr>
+<tr class="separator:a72f5e6e9d966487c591b031d5cdfd7d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95be4cfcefed1e1bcbf01d548bb3e838"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d77/classcore_1_1event_1_1base.html#a95be4cfcefed1e1bcbf01d548bb3e838">get_explanation</a> ()</td></tr>
 <tr class="memdesc:a95be4cfcefed1e1bcbf01d548bb3e838"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an explanation of what the class does.  <br /></td></tr>
 <tr class="separator:a95be4cfcefed1e1bcbf01d548bb3e838"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -519,8 +519,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$logextra</b></td></
 
 </div>
 </div>
-<a id="a6da235318e1ad2bf7ed1305b956913f1" name="a6da235318e1ad2bf7ed1305b956913f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6da235318e1ad2bf7ed1305b956913f1">&#9670;&#160;</a></span>create_strict()</h2>
+<a id="a72f5e6e9d966487c591b031d5cdfd7d7" name="a72f5e6e9d966487c591b031d5cdfd7d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72f5e6e9d966487c591b031d5cdfd7d7">&#9670;&#160;</a></span>create_strict()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -531,7 +531,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$logextra</b></td></
         <tr>
           <td class="memname">static quizaccess_seb\event\access_prevented::create_strict </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../db/d1b/classquizaccess__seb_1_1access__manager.html">access_manager</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../db/d5f/classquizaccess__seb_1_1seb__access__manager.html">seb_access_manager</a>&#160;</td>
           <td class="paramname"><em>$accessmanager</em>, </td>
         </tr>
         <tr>
@@ -569,7 +569,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$logextra</b></td></
 <p>Define strict parameters to create event with instead of relying on internal validation of array. Better code practice. Easier for consumers of this class to know what data must be supplied and observers can have more trust in event data.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">access_manager</td><td class="paramname">$accessmanager</td><td>Access manager. </td></tr>
+    <tr><td class="paramtype">seb_access_manager</td><td class="paramname">$accessmanager</td><td>Access manager. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$reason</td><td>Reason that access was prevented. </td></tr>
     <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$configkey</td><td>A Safe Exam Browser config key. </td></tr>
     <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$browserexamkey</td><td>A Safe Exam Browser browser exam key. </td></tr>
@@ -1583,7 +1583,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$logextra</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 8 2023 03:09:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 15 2023 03:15:09 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

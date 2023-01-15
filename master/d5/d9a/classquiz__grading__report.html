@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230105) (b8b905cd90f)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230113) (5dbac075be0)</div>
   </td>
  </tr>
  </tbody>
@@ -74,13 +74,13 @@ Inheritance diagram for quiz_grading_report:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a44ef9346c3d3cb92e68b2c706b5985c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9a/classquiz__grading__report.html#a44ef9346c3d3cb92e68b2c706b5985c6">display</a> ($<a class="el" href="../../dc/d8f/classquiz.html">quiz</a>, $cm, $course)</td></tr>
+<tr class="memitem:a44ef9346c3d3cb92e68b2c706b5985c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9a/classquiz__grading__report.html#a44ef9346c3d3cb92e68b2c706b5985c6">display</a> ($quiz, $cm, $course)</td></tr>
 <tr class="memdesc:a44ef9346c3d3cb92e68b2c706b5985c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this function to display the report.  <br /></td></tr>
 <tr class="separator:a44ef9346c3d3cb92e68b2c706b5985c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afde3dca4c2e277d0f6d74dc55be6295e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d86/classmod__quiz_1_1local_1_1reports_1_1report__base.html#afde3dca4c2e277d0f6d74dc55be6295e">get_current_group</a> ($cm, $course, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
 <tr class="memdesc:afde3dca4c2e277d0f6d74dc55be6295e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current group for the user user looking at the report.  <br /></td></tr>
 <tr class="separator:afde3dca4c2e277d0f6d74dc55be6295e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51af0e102a761dd311f7bc2334382663"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9a/classquiz__grading__report.html#a51af0e102a761dd311f7bc2334382663">print_header_and_tabs</a> ($cm, $course, $<a class="el" href="../../dc/d8f/classquiz.html">quiz</a>, $reportmode='overview')</td></tr>
+<tr class="memitem:a51af0e102a761dd311f7bc2334382663"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d9a/classquiz__grading__report.html#a51af0e102a761dd311f7bc2334382663">print_header_and_tabs</a> ($cm, $course, $quiz, $reportmode='overview')</td></tr>
 <tr class="memdesc:a51af0e102a761dd311f7bc2334382663"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise some parts of $PAGE and start output.  <br /></td></tr>
 <tr class="separator:a51af0e102a761dd311f7bc2334382663"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -587,7 +587,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$viewoptions</b> = [
 <p>Get question heading. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$attempt</td><td>An instance of <a class="el" href="../../da/d28/classquiz__attempt.html" title="This class extends the quiz class to hold data about the state of a particular attempt,...">quiz_attempt</a>. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$attempt</td><td>An instance of quiz_attempt. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$shownames</td><td>True to show the student first/lastnames. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$showcustomfields</td><td>Whether custom field values should be shown. </td></tr>
   </table>
@@ -961,7 +961,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$viewoptions</b> = [
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 8 2023 03:07:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 15 2023 03:12:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>
