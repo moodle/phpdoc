@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230113) (5dbac075be0)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230120) (df502b3e4c8)</div>
   </td>
  </tr>
  </tbody>
@@ -144,9 +144,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:af7d7ed8fc6523a6b1e76d3921a1c6115"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfd/classmod__quiz_1_1local_1_1reports_1_1attempts__report.html#af7d7ed8fc6523a6b1e76d3921a1c6115">get_students_joins</a> ($cm, $course=null)</td></tr>
 <tr class="memdesc:af7d7ed8fc6523a6b1e76d3921a1c6115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get sql fragments (joins) which can be used to build queries that will select an appropriate set of students to show in the reports.  <br /></td></tr>
 <tr class="separator:af7d7ed8fc6523a6b1e76d3921a1c6115"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40ccb765c54511a160c23004b79decf6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfd/classmod__quiz_1_1local_1_1reports_1_1attempts__report.html#a40ccb765c54511a160c23004b79decf6">load_relevant_students</a> ($cm, $course=null)</td></tr>
-<tr class="memdesc:a40ccb765c54511a160c23004b79decf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get information about which students to show in the report.  <br /></td></tr>
-<tr class="separator:a40ccb765c54511a160c23004b79decf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2311f1c7a6d1793d353cec8e80973220"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfd/classmod__quiz_1_1local_1_1reports_1_1attempts__report.html#a2311f1c7a6d1793d353cec8e80973220">print_standard_header_and_messages</a> ($cm, $course, $quiz, $options, $currentgroup, $hasquestions, $hasstudents)</td></tr>
 <tr class="memdesc:a2311f1c7a6d1793d353cec8e80973220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs the things you commonly want at the top of a quiz report.  <br /></td></tr>
 <tr class="separator:a2311f1c7a6d1793d353cec8e80973220"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -753,58 +750,6 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$qmsubselect</b></t
 
 </div>
 </div>
-<a id="a40ccb765c54511a160c23004b79decf6" name="a40ccb765c54511a160c23004b79decf6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40ccb765c54511a160c23004b79decf6">&#9670;&#160;</a></span>load_relevant_students()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">mod_quiz\local\reports\attempts_report::load_relevant_students </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$cm</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$course</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get information about which students to show in the report. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$cm</td><td>the coures module. </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$course</td><td>the course settings. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">array</td><td>with four elements: 0 =&gt; integer the current group id (0 for none). 1 =&gt; array ids of all the students in this course. 2 =&gt; array ids of all the students in the current group. 3 =&gt; array ids of all the students to show in the report. Will be the same as either element 1 or 2. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000984">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.2 Please use <a class="el" href="../../df/dfd/classmod__quiz_1_1local_1_1reports_1_1attempts__report.html#af7d7ed8fc6523a6b1e76d3921a1c6115" title="Get sql fragments (joins) which can be used to build queries that will select an appropriate set of s...">get_students_joins()</a> instead. </dd></dl>
-
-</div>
-</div>
 <a id="a52f31c5ad38f28fe037e69f3b6771937" name="a52f31c5ad38f28fe037e69f3b6771937"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a52f31c5ad38f28fe037e69f3b6771937">&#9670;&#160;</a></span>print_header_and_tabs()</h2>
 
@@ -1127,7 +1072,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$qmsubselect</b></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 15 2023 03:13:00 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 22 2023 03:07:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

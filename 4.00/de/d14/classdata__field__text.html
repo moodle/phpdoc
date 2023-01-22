@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.6 (Build: 20230116) (b864c78a31e)</div>
+   <div id="projectbrief">Moodle 4.0.6+ (Build: 20230120) (13bc06e37df)</div>
   </td>
  </tr>
  </tbody>
@@ -146,6 +146,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a829c3bd27be225360a7b8edb590fc5ae"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/classdata__field__base.html#a829c3bd27be225360a7b8edb590fc5ae">update_field</a> ()</td></tr>
 <tr class="memdesc:a829c3bd27be225360a7b8edb590fc5ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a field in the database.  <br /></td></tr>
 <tr class="separator:a829c3bd27be225360a7b8edb590fc5ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a601cdda0693577a4b057f27e28af6145"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/classdata__field__base.html#a601cdda0693577a4b057f27e28af6145">validate</a> (stdClass $fieldinput)</td></tr>
+<tr class="memdesc:a601cdda0693577a4b057f27e28af6145"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates params of fieldinput data.  <br /></td></tr>
+<tr class="separator:a601cdda0693577a4b057f27e28af6145"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -1060,13 +1063,57 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$priority</b> =
 
 </div>
 </div>
+<a id="a601cdda0693577a4b057f27e28af6145" name="a601cdda0693577a4b057f27e28af6145"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a601cdda0693577a4b057f27e28af6145">&#9670;&#160;</a></span>validate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">data_field_base::validate </td>
+          <td>(</td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$fieldinput</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Validates params of fieldinput data. </p>
+<p>Overwrite to validate fieldtype specific data.</p>
+<p>You are expected to return an array like ['paramname' =&gt; 'Error message for paramname param'] if there is an error, return an empty array if everything is fine.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$fieldinput</td><td>The field input data to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array::$errors</td><td>if empty validation was fine, otherwise contains one or more error messages </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../de/d6a/classdata__field__picture.html#a8c1c0b32328447344467cfa785352f1e">data_field_picture</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>mod/data/field/text/field.class.php</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 15 2023 02:56:35 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 22 2023 02:54:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

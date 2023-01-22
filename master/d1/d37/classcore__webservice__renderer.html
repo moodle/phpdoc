@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230113) (5dbac075be0)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230120) (df502b3e4c8)</div>
   </td>
  </tr>
  </tbody>
@@ -103,7 +103,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:af1f2b2813d7837190de1617c8a0920c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a description object in indented xml format (for REST response) It is indented to be output within.  <br /></td></tr>
 <tr class="separator:af1f2b2813d7837190de1617c8a0920c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa34684bb4b5b2d06701859ebcc7bb39d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d37/classcore__webservice__renderer.html#aa34684bb4b5b2d06701859ebcc7bb39d">detailed_description_html</a> ($params)</td></tr>
-<tr class="memdesc:aa34684bb4b5b2d06701859ebcc7bb39d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return documentation for a ws description object ws description object can be '<a class="el" href="../../de/dd8/classexternal__multiple__structure.html" title="Bulk array description class.">external_multiple_structure</a>', '<a class="el" href="../../d6/d12/classexternal__single__structure.html" title="Associative array description class.">external_single_structure</a>' or '<a class="el" href="../../dd/d2e/classexternal__value.html" title="Scalar value description class.">external_value</a>'.  <br /></td></tr>
+<tr class="memdesc:aa34684bb4b5b2d06701859ebcc7bb39d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return documentation for a ws description object ws description object can be 'external_multiple_structure', 'external_single_structure' or 'external_value'.  <br /></td></tr>
 <tr class="separator:aa34684bb4b5b2d06701859ebcc7bb39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d5064d27c86f499734e02790eefcbc2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d37/classcore__webservice__renderer.html#a2d5064d27c86f499734e02790eefcbc2">documentation_html</a> ($functions, $printableformat, $activatedprotocol, $authparams, $parenturl='/<a class="el" href="../../db/dbc/classwebservice.html">webservice</a>/wsdoc.php')</td></tr>
 <tr class="memdesc:a2d5064d27c86f499734e02790eefcbc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays all the documentation.  <br /></td></tr>
@@ -556,7 +556,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$target</b></td></t
 
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../d5/d9e/classexternal__description.html" title="Common ancestor of all parameter description classes.">external_description</a></td><td class="paramname">$returndescription</td><td>the description structure of the web service function returned value
+    <tr><td class="paramtype">external_description</td><td class="paramname">$returndescription</td><td>the description structure of the web service function returned value
 </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$indentation</td><td>Indentation in the generated HTML code; should contain only spaces.
 </td></tr>
@@ -589,7 +589,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$target</b></td></t
       </table>
 </div><div class="memdoc">
 
-<p>Return documentation for a ws description object ws description object can be '<a class="el" href="../../de/dd8/classexternal__multiple__structure.html" title="Bulk array description class.">external_multiple_structure</a>', '<a class="el" href="../../d6/d12/classexternal__single__structure.html" title="Associative array description class.">external_single_structure</a>' or '<a class="el" href="../../dd/d2e/classexternal__value.html" title="Scalar value description class.">external_value</a>'. </p>
+<p>Return documentation for a ws description object ws description object can be 'external_multiple_structure', 'external_single_structure' or 'external_value'. </p>
 <p>Example of documentation for core_group_create_groups function: list of ( object { courseid int //id of course name string //multilang compatible name, course unique description string //group description text enrolmentkey string //group enrol secret phrase } )</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -654,7 +654,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$target</b></td></t
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000361">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76078" class="el">MDL-76078</a> - Incorrect inter-communication, core cannot have plugin dependencies like this.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$functions</td><td><a class="el" href="../../d5/d9e/classexternal__description.html" title="Common ancestor of all parameter description classes.">external_description</a> of all the web service functions </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$functions</td><td>external_description of all the web service functions </td></tr>
     <tr><td class="paramtype">boolean</td><td class="paramname">$printableformat</td><td>true if we want to display the documentation in a printable format </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$activatedprotocol</td><td>the currently enabled protocol </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$authparams</td><td>url parameters (it contains 'tokenid' and sometimes 'print') </td></tr>
@@ -929,7 +929,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$target</b></td></t
 
 <p>Return the direct URL for an image from the pix folder. </p>
 <p>Use this function sparingly and never for icons. For icons use <a class="el" href="../../d0/d6e/classpix__icon.html">pix_icon</a> or the pix helper in a mustache template.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000700">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000701">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$imagename</td><td>the name of the icon. </td></tr>
@@ -1112,7 +1112,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$target</b></td></t
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000360">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76078" class="el">MDL-76078</a> - Incorrect inter-communication, core cannot have plugin dependencies like this.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../d5/d9e/classexternal__description.html" title="Common ancestor of all parameter description classes.">external_description</a></td><td class="paramname">$paramdescription</td><td>the description structure of the web service function parameters </td></tr>
+    <tr><td class="paramtype">external_description</td><td class="paramname">$paramdescription</td><td>the description structure of the web service function parameters </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$paramstring</td><td>parameter </td></tr>
   </table>
   </dd>
@@ -1151,7 +1151,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$target</b></td></t
 </div><div class="memdoc">
 
 <p>Whether we should display the main logo. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000701">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000702">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000165">Todo:</a></b></dt><dd>final deprecation. To be removed in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-73165" class="el">MDL-73165</a>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1314,7 +1314,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$target</b></td></t
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000359">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76078" class="el">MDL-76078</a> - Incorrect inter-communication, core cannot have plugin dependencies like this.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../d5/d9e/classexternal__description.html" title="Common ancestor of all parameter description classes.">external_description</a></td><td class="paramname">$paramdescription</td><td>the description structure of the web service function parameters </td></tr>
+    <tr><td class="paramtype">external_description</td><td class="paramname">$paramdescription</td><td>the description structure of the web service function parameters </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$indentation</td><td>Indentation in the generated HTML code; should contain only spaces. </td></tr>
   </table>
   </dd>
@@ -1360,7 +1360,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$target</b></td></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 15 2023 03:11:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 22 2023 03:06:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

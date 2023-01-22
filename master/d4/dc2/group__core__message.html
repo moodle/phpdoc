@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230113) (5dbac075be0)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230120) (df502b3e4c8)</div>
   </td>
  </tr>
  </tbody>
@@ -194,9 +194,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga70d98b96cb4873816f7509fe67c40eae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc2/group__core__message.html#ga70d98b96cb4873816f7509fe67c40eae">get_message_providers</a> ()</td></tr>
 <tr class="memdesc:ga70d98b96cb4873816f7509fe67c40eae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all message providers, validate their plugin existance and system configuration.  <br /></td></tr>
 <tr class="separator:ga70d98b96cb4873816f7509fe67c40eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga34f3af9066caf50686b7cf6e7f784fca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc2/group__core__message.html#ga34f3af9066caf50686b7cf6e7f784fca">message_count_unread_messages</a> ($user1=null, $user2=null)</td></tr>
-<tr class="memdesc:ga34f3af9066caf50686b7cf6e7f784fca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the count of unread messages for user.  <br /></td></tr>
-<tr class="separator:ga34f3af9066caf50686b7cf6e7f784fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaff784246a739c6fe77c640a5ae7732c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc2/group__core__message.html#gaaff784246a739c6fe77c640a5ae7732c">message_format_contexturl</a> ($message)</td></tr>
 <tr class="memdesc:gaaff784246a739c6fe77c640a5ae7732c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a the context url and context url name of a message for display.  <br /></td></tr>
 <tr class="separator:gaaff784246a739c6fe77c640a5ae7732c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -537,51 +534,6 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_TYPE_NOTIFIC
 
 </div>
 </div>
-<a id="ga34f3af9066caf50686b7cf6e7f784fca" name="ga34f3af9066caf50686b7cf6e7f784fca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga34f3af9066caf50686b7cf6e7f784fca">&#9670;&#160;</a></span>message_count_unread_messages()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">message_count_unread_messages </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$user1</em> = <code>null</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$user2</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the count of unread messages for user. </p>
-<p>Either from a specific user or from all users.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000826">Deprecated:</a></b></dt><dd>since 3.10 TODO: <a href="https://tracker.moodle.org/browse/MDL-69643" class="el">MDL-69643</a> </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$user1</td><td>the first user. Defaults to $USER </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$user2</td><td>the second user. If null this function will count all of user 1's unread messages. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">int</td><td>the count of $user1's unread messages </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="gaaff784246a739c6fe77c640a5ae7732c" name="gaaff784246a739c6fe77c640a5ae7732c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaaff784246a739c6fe77c640a5ae7732c">&#9670;&#160;</a></span>message_format_contexturl()</h2>
 
@@ -743,7 +695,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_TYPE_NOTIFIC
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../d5/d9e/classexternal__description.html" title="Common ancestor of all parameter description classes.">external_description</a></td><td></td></tr>
+    <tr><td class="paramname">external_description</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1360,7 +1312,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_TYPE_NOTIFIC
 
 <p>Define contants for messaging default settings population. </p>
 <p>For unambiguity of plugin developer intentions we use 4-bit value (LSB numbering): bit 0 - whether to send message (MESSAGE_DEFAULT_ENABLED) bit 1 - Deprecated: whether to send message (MESSAGE_DEFAULT_LOGGEDOFF). Used to mean only when the user is logged off. bit 2..3 - messaging permission (MESSAGE_DISALLOWED|MESSAGE_PERMITTED|MESSAGE_FORCED)</p>
-<p>MESSAGE_PERMITTED_MASK contains the mask we use to distinguish permission setting. </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000823">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0. Use MESSAGE_DEFAULT_ENABLED instead. </dd></dl>
+<p>MESSAGE_PERMITTED_MASK contains the mask we use to distinguish permission setting. </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000824">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0. Use MESSAGE_DEFAULT_ENABLED instead. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000243">Todo:</a></b></dt><dd>Remove on <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
 
 </div>
@@ -1376,7 +1328,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_TYPE_NOTIFIC
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000824">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. Use MESSAGE_DEFAULT_ENABLED instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000825">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. Use MESSAGE_DEFAULT_ENABLED instead. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000244">Todo:</a></b></dt><dd>Remove on <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
 
 </div>
@@ -1394,7 +1346,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_TYPE_NOTIFIC
 </div><div class="memdoc">
 
 <p>Set default value for default outputs permitted setting. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000825">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000826">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000245">Todo:</a></b></dt><dd>Remove on <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
 
 </div>
@@ -1402,7 +1354,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_TYPE_NOTIFIC
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 15 2023 03:11:05 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 22 2023 03:06:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

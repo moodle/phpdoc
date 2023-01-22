@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230113) (5dbac075be0)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230120) (df502b3e4c8)</div>
   </td>
  </tr>
  </tbody>
@@ -169,6 +169,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa10ec2395016fe51f8223ea4d5f43759"><td class="memItemLeft" align="right" valign="top"><a id="aa10ec2395016fe51f8223ea4d5f43759" name="aa10ec2395016fe51f8223ea4d5f43759"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>update_thumbnail</b> ($content, $file)</td></tr>
 <tr class="separator:aa10ec2395016fe51f8223ea4d5f43759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c1c0b32328447344467cfa785352f1e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6a/classdata__field__picture.html#a8c1c0b32328447344467cfa785352f1e">validate</a> (stdClass $fieldinput)</td></tr>
+<tr class="memdesc:a8c1c0b32328447344467cfa785352f1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate the image field type parameters.  <br /></td></tr>
+<tr class="separator:a8c1c0b32328447344467cfa785352f1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -1258,13 +1261,54 @@ static priority&#160;</td><td class="memItemRight" valign="bottom"><b>$priority<
 
 </div>
 </div>
+<a id="a8c1c0b32328447344467cfa785352f1e" name="a8c1c0b32328447344467cfa785352f1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c1c0b32328447344467cfa785352f1e">&#9670;&#160;</a></span>validate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">data_field_picture::validate </td>
+          <td>(</td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$fieldinput</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Validate the image field type parameters. </p>
+<p>This will check for valid numeric values in the width and height fields.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$fieldinput</td><td>the field input data </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>array of error messages if width or height parameters are not numeric </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="../../d7/d88/classdata__field__base.html#a601cdda0693577a4b057f27e28af6145">data_field_base</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>mod/data/field/picture/field.class.php</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 15 2023 03:11:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 22 2023 03:06:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

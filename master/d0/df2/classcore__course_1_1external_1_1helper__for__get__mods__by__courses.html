@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230113) (5dbac075be0)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230120) (df502b3e4c8)</div>
   </td>
  </tr>
  </tbody>
@@ -229,7 +229,7 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Get the list of standard fields, to add to the declaration of the return values. </p>
 <p>Example usage combine the fields returned here with any extra ones your activity uses:</p>
-<p>public static function execute_returns() { return new <a class="el" href="../../d6/d12/classexternal__single__structure.html" title="Associative array description class.">external_single_structure</a>([ 'bigbluebuttonbns' =&gt; new <a class="el" href="../../de/dd8/classexternal__multiple__structure.html" title="Bulk array description class.">external_multiple_structure</a>( new <a class="el" href="../../d6/d12/classexternal__single__structure.html" title="Associative array description class.">external_single_structure</a>(array_merge( helper_for_get_mods_by_courses::standard_coursemodule_elements_returns(), [ 'meetingid' =&gt; new <a class="el" href="../../dd/d2e/classexternal__value.html" title="Scalar value description class.">external_value</a>(PARAM_RAW, 'Meeting id'), 'timemodified' =&gt; new <a class="el" href="../../dd/d2e/classexternal__value.html" title="Scalar value description class.">external_value</a>(PARAM_INT, 'Last time the instance was modified'), ] )) ), 'warnings' =&gt; new <a class="el" href="../../d7/d06/classexternal__warnings.html" title="Standard Moodle web service warnings.">external_warnings()</a>, ] ); }</p>
+<p>public static function execute_returns() { return new external_single_structure([ 'bigbluebuttonbns' =&gt; new external_multiple_structure( new external_single_structure(array_merge( helper_for_get_mods_by_courses::standard_coursemodule_elements_returns(), [ 'meetingid' =&gt; new external_value(PARAM_RAW, 'Meeting id'), 'timemodified' =&gt; new external_value(PARAM_INT, 'Last time the instance was modified'), ] )) ), 'warnings' =&gt; new external_warnings(), ] ); }</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">bool</td><td class="paramname">$introoptional</td><td>if true, the intro fields are marked as optional. Default false. </td></tr>
@@ -251,7 +251,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 15 2023 03:13:56 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 22 2023 03:08:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>
