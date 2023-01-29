@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230120) (df502b3e4c8)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230126) (880462a1685)</div>
   </td>
  </tr>
  </tbody>
@@ -529,7 +529,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$target</b></td></t
 
 <p>Return the direct URL for an image from the pix folder. </p>
 <p>Use this function sparingly and never for icons. For icons use <a class="el" href="../../d0/d6e/classpix__icon.html">pix_icon</a> or the pix helper in a mustache template.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000701">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000702">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$imagename</td><td>the name of the icon. </td></tr>
@@ -772,7 +772,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$target</b></td></t
 <p>Render grade link for question. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$counts</td><td></td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$counts</td><td></td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$type</td><td>Type of grade. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$gradestring</td><td>Lang string. </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$gradequestionurl</td><td>Url to grade question. </td></tr>
@@ -923,11 +923,11 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$target</b></td></t
 <p>Render grading page. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$questioninfo</td><td>Information of a question. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$questioninfo</td><td>Information of a question. </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$listquestionsurl</td><td>Url of the page that list all questions. </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../d8/d0e/classquiz__grading__settings__form.html" title="Quiz grading report settings form.">quiz_grading_settings_form</a></td><td class="paramname">$filterform</td><td>Question filter form. </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$paginginfo</td><td>Pagination information. </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$pagingbar</td><td>Pagination bar information. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$paginginfo</td><td>Pagination information. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$pagingbar</td><td>Pagination bar information. </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$formaction</td><td>Form submit url. </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$hiddeninputs</td><td>List of hidden input fields. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$gradequestioncontent</td><td>HTML string of question content. </td></tr>
@@ -1066,9 +1066,9 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$target</b></td></t
 <p>Render no question notification. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>The quiz settings. </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$cm</td><td>The course-module for this quiz. </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$context</td><td>The quiz context. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>The quiz settings. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$cm</td><td>The course-module for this quiz. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$context</td><td>The quiz context. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1106,7 +1106,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$target</b></td></t
 </div><div class="memdoc">
 
 <p>Whether we should display the main logo. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000702">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000703">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000165">Todo:</a></b></dt><dd>final deprecation. To be removed in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-73165" class="el">MDL-73165</a>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1189,7 +1189,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$target</b></td></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 22 2023 03:07:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 29 2023 03:09:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

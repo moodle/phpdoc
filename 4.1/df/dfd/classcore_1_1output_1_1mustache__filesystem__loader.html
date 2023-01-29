@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1.1+ (Build: 20230120) (8de12b79979)</div>
+   <div id="projectbrief">Moodle 4.1.1+ (Build: 20230126) (67bbf6c4160)</div>
   </td>
  </tr>
  </tbody>
@@ -96,9 +96,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ab41abb9359cf3866c90448b92490a375"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dcf/class_mustache___loader___filesystem_loader.html#ab41abb9359cf3866c90448b92490a375">loadFile</a> ($name)</td></tr>
 <tr class="memdesc:ab41abb9359cf3866c90448b92490a375"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for loading a Mustache file by name.  <br /></td></tr>
 <tr class="separator:ab41abb9359cf3866c90448b92490a375"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe284462b358f168ed2107c834f5ee0d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dcf/class_mustache___loader___filesystem_loader.html#abe284462b358f168ed2107c834f5ee0d">shouldCheckPath</a> ()</td></tr>
-<tr class="memdesc:abe284462b358f168ed2107c834f5ee0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only check if baseDir is a directory and requested templates are files if baseDir is using the filesystem stream wrapper.  <br /></td></tr>
-<tr class="separator:abe284462b358f168ed2107c834f5ee0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f2abee4f3614b3402c306b09997c1c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfd/classcore_1_1output_1_1mustache__filesystem__loader.html#a2f2abee4f3614b3402c306b09997c1c9">shouldCheckPath</a> ()</td></tr>
+<tr class="memdesc:a2f2abee4f3614b3402c306b09997c1c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only check if baseDir is a directory and requested templates are files if baseDir is using the filesystem stream wrapper.  <br /></td></tr>
+<tr class="separator:a2f2abee4f3614b3402c306b09997c1c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Perform some custom name mapping for template file names. </p>
@@ -241,8 +241,8 @@ $loader-&gt;load('admin/dashboard'); // loads "./views/admin/dashboard.mustache"
 
 </div>
 </div>
-<a id="abe284462b358f168ed2107c834f5ee0d" name="abe284462b358f168ed2107c834f5ee0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe284462b358f168ed2107c834f5ee0d">&#9670;&#160;</a></span>shouldCheckPath()</h2>
+<a id="a2f2abee4f3614b3402c306b09997c1c9" name="a2f2abee4f3614b3402c306b09997c1c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f2abee4f3614b3402c306b09997c1c9">&#9670;&#160;</a></span>shouldCheckPath()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -251,7 +251,7 @@ $loader-&gt;load('admin/dashboard'); // loads "./views/admin/dashboard.mustache"
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Mustache_Loader_FilesystemLoader::shouldCheckPath </td>
+          <td class="memname">core\output\mustache_filesystem_loader::shouldCheckPath </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -259,18 +259,21 @@ $loader-&gt;load('admin/dashboard'); // loads "./views/admin/dashboard.mustache"
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>Only check if baseDir is a directory and requested templates are files if baseDir is using the filesystem stream wrapper. </p>
+<p>Always check path for mustache_filesystem_loader.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td>Whether to check <code>is_dir</code> and <code>file_exists</code> </td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Reimplemented from <a class="el" href="../../d6/dcf/class_mustache___loader___filesystem_loader.html#abe284462b358f168ed2107c834f5ee0d">Mustache_Loader_FilesystemLoader</a>.</p>
 
 </div>
 </div>
@@ -280,7 +283,7 @@ $loader-&gt;load('admin/dashboard'); // loads "./views/admin/dashboard.mustache"
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 22 2023 03:01:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 29 2023 03:03:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

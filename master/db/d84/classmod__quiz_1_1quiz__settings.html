@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230120) (df502b3e4c8)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230126) (880462a1685)</div>
   </td>
  </tr>
  </tbody>
@@ -261,9 +261,9 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$sections</b> =
 <p>Constructor, assuming we already have the necessary data loaded. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the row from the quiz table. </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$cm</td><td>the course_module object for this quiz. </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$course</td><td>the row from the course table for the course we belong to. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the row from the quiz table. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$cm</td><td>the course_module object for this quiz. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the row from the course table for the course we belong to. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$getcontext</td><td>intended for testing - stops the constructor getting the context. </td></tr>
   </table>
   </dd>
@@ -429,7 +429,7 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$sections</b> =
 <dl class="section see"><dt>See also</dt><dd>quiz_attempt} for an attempt at this quiz.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$attemptdata</td><td>row from the quiz_attempts table. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$attemptdata</td><td>row from the quiz_attempts table. </td></tr>
   </table>
   </dd>
 </dl>
@@ -584,7 +584,7 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$sections</b> =
 <p>Get the course-module object for this quiz. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">object</td><td>the course_module object. </td></tr>
+    <tr><td class="paramname">stdClass</td><td>the course_module object. </td></tr>
   </table>
   </dd>
 </dl>
@@ -659,7 +659,7 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$sections</b> =
 <p>Get the course settings object that this quiz belongs to. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">object</td><td>the row of the course table. </td></tr>
+    <tr><td class="paramname">stdClass</td><td>the row of the course table. </td></tr>
   </table>
   </dd>
 </dl>
@@ -921,7 +921,7 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$sections</b> =
 </div><div class="memdoc">
 
 <p>Get an instance of the {. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d1/d5e/classmod__quiz_1_1structure.html" title="Quiz structure class.">mod_quiz::structure</a>} class for this quiz.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d1/d5e/classmod__quiz_1_1structure.html">mod_quiz::structure</a>} class for this quiz.</dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">structure</td><td>describes the questions in the quiz. </td></tr>
@@ -1344,7 +1344,7 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$sections</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 22 2023 03:09:10 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 29 2023 03:11:10 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

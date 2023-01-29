@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230120) (df502b3e4c8)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230126) (880462a1685)</div>
   </td>
  </tr>
  </tbody>
@@ -111,9 +111,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ac8f4edef07135f8b5ca5166204aa312e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html#ac8f4edef07135f8b5ca5166204aa312e">analyse_responses_for_all_questions_and_subquestions</a> ($questions, $subquestions, $qubaids, $whichtries, $progress=null)</td></tr>
 <tr class="memdesc:ac8f4edef07135f8b5ca5166204aa312e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Analyse responses for all questions and sub questions in this quiz.  <br /></td></tr>
 <tr class="separator:ac8f4edef07135f8b5ca5166204aa312e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a484c75cda81a31307885ea3e495d4c70"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html#a484c75cda81a31307885ea3e495d4c70">analyse_responses_for_questions</a> ($questions, $qubaids, $whichtries, $progress=null, $done=array())</td></tr>
-<tr class="memdesc:a484c75cda81a31307885ea3e495d4c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Analyse responses for an array of questions or sub questions.  <br /></td></tr>
-<tr class="separator:a484c75cda81a31307885ea3e495d4c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5906b5bb8446c27e0d5ab4f386f904fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html#a5906b5bb8446c27e0d5ab4f386f904fe">analyse_responses_for_questions</a> ($questions, $qubaids, $whichtries, $progress=null, $done=[])</td></tr>
+<tr class="memdesc:a5906b5bb8446c27e0d5ab4f386f904fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Analyse responses for an array of questions or sub questions.  <br /></td></tr>
+<tr class="separator:a5906b5bb8446c27e0d5ab4f386f904fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f78e62717b7e205e2676d4e8c3b2c1a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html#a0f78e62717b7e205e2676d4e8c3b2c1a">download_quiz_info_table</a> ($quizinfo)</td></tr>
 <tr class="memdesc:a0f78e62717b7e205e2676d4e8c3b2c1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Download the table of overall quiz statistics.  <br /></td></tr>
 <tr class="separator:a0f78e62717b7e205e2676d4e8c3b2c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,8 +224,8 @@ core progress base null&#160;</td><td class="memItemRight" valign="bottom"><b>$p
 <p>Analyse responses for all questions and sub questions in this quiz. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object[]</td><td class="paramname">$questions</td><td>as returned by self::load_and_initialise_questions_for_calculations </td></tr>
-    <tr><td class="paramtype">object[]</td><td class="paramname">$subquestions</td><td>full question objects. </td></tr>
+    <tr><td class="paramtype">stdClass[]</td><td class="paramname">$questions</td><td>as returned by self::load_and_initialise_questions_for_calculations </td></tr>
+    <tr><td class="paramtype">stdClass[]</td><td class="paramname">$subquestions</td><td>full question objects. </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../d2/d58/classqubaid__condition.html" title="This class represents a restriction on the set of question_usage ids to include in a larger database ...">qubaid_condition</a></td><td class="paramname">$qubaids</td><td>the question usages whose responses to analyse. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$whichtries</td><td>which tries to analyse <a class="el" href="../../d3/dda/classquestion__attempt.html#aa687711921de6e5c3bd395d1e87ddc5c" title="means first try at a question during an attempt by a user.">question_attempt::FIRST_TRY</a>, LAST_TRY or ALL_TRIES. </td></tr>
     <tr><td class="paramtype">null&#160;|&#160;<a class="el" href="../../db/df4/classcore_1_1progress_1_1base.html">core::progress::base</a></td><td class="paramname">$progress</td><td>Used to indicate progress of task. </td></tr>
@@ -235,8 +235,8 @@ core progress base null&#160;</td><td class="memItemRight" valign="bottom"><b>$p
 
 </div>
 </div>
-<a id="a484c75cda81a31307885ea3e495d4c70" name="a484c75cda81a31307885ea3e495d4c70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a484c75cda81a31307885ea3e495d4c70">&#9670;&#160;</a></span>analyse_responses_for_questions()</h2>
+<a id="a5906b5bb8446c27e0d5ab4f386f904fe" name="a5906b5bb8446c27e0d5ab4f386f904fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5906b5bb8446c27e0d5ab4f386f904fe">&#9670;&#160;</a></span>analyse_responses_for_questions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -272,7 +272,7 @@ core progress base null&#160;</td><td class="memItemRight" valign="bottom"><b>$p
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$done</em> = <code>array()</code>&#160;</td>
+          <td class="paramname"><em>$done</em> = <code>[]</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -290,7 +290,7 @@ core progress base null&#160;</td><td class="memItemRight" valign="bottom"><b>$p
 <p>Analyse responses for an array of questions or sub questions. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object[]</td><td class="paramname">$questions</td><td>as returned by self::load_and_initialise_questions_for_calculations. </td></tr>
+    <tr><td class="paramtype">stdClass[]</td><td class="paramname">$questions</td><td>as returned by self::load_and_initialise_questions_for_calculations. </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../d2/d58/classqubaid__condition.html" title="This class represents a restriction on the set of question_usage ids to include in a larger database ...">qubaid_condition</a></td><td class="paramname">$qubaids</td><td>the question usages whose responses to analyse. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$whichtries</td><td>which tries to analyse <a class="el" href="../../d3/dda/classquestion__attempt.html#aa687711921de6e5c3bd395d1e87ddc5c" title="means first try at a question during an attempt by a user.">question_attempt::FIRST_TRY</a>, LAST_TRY or ALL_TRIES. </td></tr>
     <tr><td class="paramtype">null&#160;|&#160;<a class="el" href="../../db/df4/classcore_1_1progress_1_1base.html">core::progress::base</a></td><td class="paramname">$progress</td><td>Used to indicate progress of task. </td></tr>
@@ -531,7 +531,7 @@ core progress base null&#160;</td><td class="memItemRight" valign="bottom"><b>$p
 <p>Get the quiz and question statistics, either by loading the cached results, or by recomputing them. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz settings. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz settings. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$whichattempts</td><td>which attempts to use, represented internally as one of the constants as used in $quiz-&gt;grademethod ie. QUIZ_GRADEAVERAGE, QUIZ_GRADEHIGHEST, QUIZ_ATTEMPTLAST or QUIZ_ATTEMPTFIRST we calculate stats based on which attempts would affect the grade for each student. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$whichtries</td><td>which tries to analyse for response analysis. Will be one of <a class="el" href="../../d3/dda/classquestion__attempt.html#aa687711921de6e5c3bd395d1e87ddc5c" title="means first try at a question during an attempt by a user.">question_attempt::FIRST_TRY</a>, LAST_TRY or ALL_TRIES. </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../dc/ddc/classcore_1_1dml_1_1sql__join.html">core::dml::sql_join</a></td><td class="paramname">$groupstudentsjoins</td><td>Contains joins, wheres, params for students in this group. </td></tr>
@@ -595,8 +595,8 @@ core progress base null&#160;</td><td class="memItemRight" valign="bottom"><b>$p
 <p>Get the current group for the user user looking at the report. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$cm</td><td>the course_module information. </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$course</td><td>the course settings. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$cm</td><td>the course_module information. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course settings. </td></tr>
     <tr><td class="paramtype">context</td><td class="paramname">$context</td><td>the quiz context. </td></tr>
   </table>
   </dd>
@@ -662,7 +662,7 @@ core progress base null&#160;</td><td class="memItemRight" valign="bottom"><b>$p
 <p>Load the questions in this quiz and add some properties to the objects needed in the reports. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz. </td></tr>
   </table>
   </dd>
 </dl>
@@ -852,7 +852,7 @@ core progress base null&#160;</td><td class="memItemRight" valign="bottom"><b>$p
 <p>Only called when not downloading.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz settings. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz settings. </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../dc/d42/classcore__question_1_1statistics_1_1questions_1_1calculated.html" title="This class is used to return the stats as calculated by core_question::statistics::questions::calcula...">core_question::statistics::questions::calculated</a></td><td class="paramname">$questionstat</td><td>the question to report on. </td></tr>
   </table>
   </dd>
@@ -921,7 +921,7 @@ core progress base null&#160;</td><td class="memItemRight" valign="bottom"><b>$p
 <p>Display the response analysis for a question. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$question</td><td>the question to report on. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$question</td><td>the question to report on. </td></tr>
     <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$variantno</td><td>the variant </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$s</td><td></td></tr>
     <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$reporturl</td><td>the URL to redisplay this report. </td></tr>
@@ -1141,7 +1141,7 @@ core progress base null&#160;</td><td class="memItemRight" valign="bottom"><b>$p
 <p>Output question text in a box with urls appropriate for a preview of the question. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$question</td><td>question data. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$question</td><td>question data. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1160,7 +1160,7 @@ core progress base null&#160;</td><td class="memItemRight" valign="bottom"><b>$p
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 22 2023 03:07:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 29 2023 03:09:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

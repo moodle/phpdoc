@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230120) (df502b3e4c8)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230126) (880462a1685)</div>
   </td>
  </tr>
  </tbody>
@@ -106,9 +106,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gafbdf5a84431afbb2763d739847918581"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d9e/group__quiz__statistics.html#gafbdf5a84431afbb2763d739847918581">quiz_statistics_qubaids_condition</a> ($quizid, <a class="el" href="../../dc/ddc/classcore_1_1dml_1_1sql__join.html">core\dml\sql_join</a> $groupstudentsjoins, $whichattempts=QUIZ_GRADEAVERAGE, $includeungraded=false)</td></tr>
 <tr class="memdesc:gafbdf5a84431afbb2763d739847918581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a <a class="el" href="../../d2/d58/classqubaid__condition.html">qubaid_condition</a> from the values returned by <a class="el" href="../../da/d9e/group__quiz__statistics.html#ga74550d4f213a5684b0dcbcd0f16a0dd8">quiz_statistics_attempts_sql</a>.  <br /></td></tr>
 <tr class="separator:gafbdf5a84431afbb2763d739847918581"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga500090c81bf5c264a7f25904f096f105"><td class="memItemLeft" align="right" valign="top"><a id="ga500090c81bf5c264a7f25904f096f105" name="ga500090c81bf5c264a7f25904f096f105"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>quiz_statistics_question_preview_pluginfile</b> ($previewcontext, $questionid, $filecontext, $filecomponent, $filearea, $args, $forcedownload, $options=array())</td></tr>
-<tr class="separator:ga500090c81bf5c264a7f25904f096f105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1cc84c1b26a257d93745bd4d2e6909d8"><td class="memItemLeft" align="right" valign="top"><a id="ga1cc84c1b26a257d93745bd4d2e6909d8" name="ga1cc84c1b26a257d93745bd4d2e6909d8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>quiz_statistics_question_preview_pluginfile</b> ($previewcontext, $questionid, $filecontext, $filecomponent, $filearea, $args, $forcedownload, $options=[])</td></tr>
+<tr class="separator:ga1cc84c1b26a257d93745bd4d2e6909d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7e3b747333015972dd5873aa6e1481cf"><td class="memItemLeft" align="right" valign="top"><a id="ga7e3b747333015972dd5873aa6e1481cf" name="ga7e3b747333015972dd5873aa6e1481cf"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>xmldb_quiz_statistics_install</b> ()</td></tr>
 <tr class="memdesc:ga7e3b747333015972dd5873aa6e1481cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post-install script. <br /></td></tr>
@@ -262,21 +262,20 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
-<div class="line">    <span class="stringliteral">&#39;quiz/statistics:view&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= [</div>
+<div class="line">    <span class="stringliteral">&#39;quiz/statistics:view&#39;</span> =&gt; [</div>
 <div class="line">        <span class="stringliteral">&#39;captype&#39;</span> =&gt; <span class="stringliteral">&#39;read&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;contextlevel&#39;</span> =&gt; <a class="code hl_variable" href="../../da/d16/group__core__access.html#gad810921ece54f4a0ccee43743267164f">CONTEXT_MODULE</a>,</div>
-<div class="line">        <span class="stringliteral">&#39;archetypes&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
+<div class="line">        <span class="stringliteral">&#39;archetypes&#39;</span> =&gt; [</div>
 <div class="line">            <span class="stringliteral">&#39;teacher&#39;</span> =&gt; <a class="code hl_variable" href="../../da/d16/group__core__access.html#gacc879f41ad412efa2fc8022359b3ebfb">CAP_ALLOW</a>,</div>
 <div class="line">            <span class="stringliteral">&#39;editingteacher&#39;</span> =&gt; <a class="code hl_variable" href="../../da/d16/group__core__access.html#gacc879f41ad412efa2fc8022359b3ebfb">CAP_ALLOW</a>,</div>
 <div class="line">            <span class="stringliteral">&#39;manager&#39;</span> =&gt; <a class="code hl_variable" href="../../da/d16/group__core__access.html#gacc879f41ad412efa2fc8022359b3ebfb">CAP_ALLOW</a></div>
-<div class="line">        ),</div>
+<div class="line">        ],</div>
 <div class="line">        <span class="stringliteral">&#39;clonepermissionsfrom&#39;</span> =&gt;  <span class="stringliteral">&#39;mod/quiz:viewreports&#39;</span></div>
-<div class="line">    )</div>
-<div class="line">)</div>
+<div class="line">    ]</div>
+<div class="line">]</div>
 <div class="ttc" id="agroup__core__access_html_gacc879f41ad412efa2fc8022359b3ebfb"><div class="ttname"><a href="../../da/d16/group__core__access.html#gacc879f41ad412efa2fc8022359b3ebfb">CAP_ALLOW</a></div><div class="ttdeci">const CAP_ALLOW</div><div class="ttdoc">Allow permission, overrides CAP_PREVENT defined in parent contexts.</div><div class="ttdef"><b>Definition:</b> accesslib.php:115</div></div>
 <div class="ttc" id="agroup__core__access_html_gad810921ece54f4a0ccee43743267164f"><div class="ttname"><a href="../../da/d16/group__core__access.html#gad810921ece54f4a0ccee43743267164f">CONTEXT_MODULE</a></div><div class="ttdeci">const CONTEXT_MODULE</div><div class="ttdoc">Course module context level - one instance for each course module.</div><div class="ttdef"><b>Definition:</b> accesslib.php:130</div></div>
-<div class="ttc" id="anamespacearray_html"><div class="ttname"><a href="../../d7/df9/namespacearray.html">array</a></div><div class="ttdoc">('') &amp;#160;</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -308,7 +307,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 22 2023 03:06:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 29 2023 03:08:04 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

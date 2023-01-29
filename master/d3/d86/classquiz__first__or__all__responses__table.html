@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230120) (df502b3e4c8)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230126) (880462a1685)</div>
   </td>
  </tr>
  </tbody>
@@ -1062,7 +1062,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b> = 
 <p>This extracts the contents for any cell in the email column from the row data.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$tablerow</td><td>Row data. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$tablerow</td><td>Row data. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1251,7 +1251,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b> = 
 <p>This extracts the contents for any cell in the sumgrades column from the row data.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$tablerow</td><td>Row data. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$tablerow</td><td>Row data. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1913,7 +1913,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b> = 
 <p>Column text from the extra data loaded in <a class="el" href="../../d3/d86/classquiz__first__or__all__responses__table.html#a8da0b2a96e217bffac2a23c32ff43a51" title="Load any extra data after main query.">load_extra_data()</a>, before html formatting etc. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$attempt</td><td></td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$attempt</td><td></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$slot</td><td></td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$field</td><td></td></tr>
   </table>
@@ -2404,7 +2404,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b> = 
 <p>How many tries were attempted at this question in this slot, during this usage? </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$tablerow</td><td>attempt data from db. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$tablerow</td><td>attempt data from db. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$slot</td><td>Slot number </td></tr>
   </table>
   </dd>
@@ -2998,7 +2998,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b> = 
 <p>Get the summary of the response after the try. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$tablerow</td><td>row data </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$tablerow</td><td>row data </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$slot</td><td>Slot number. </td></tr>
   </table>
   </dd>
@@ -3316,7 +3316,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b> = 
 <p>Is this the last try in the question attempt? </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$tablerow</td><td>attempt data from db. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$tablerow</td><td>attempt data from db. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$slot</td><td>Slot number </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$tryno</td><td>try no </td></tr>
   </table>
@@ -3911,7 +3911,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b> = 
 </div><div class="memdoc">
 
 <p>This method is deprecated although the old api is still supported. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000805">Deprecated:</a></b></dt><dd>1.9.2 - Jun 2, 2008 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000806">Deprecated:</a></b></dt><dd>1.9.2 - Jun 2, 2008 </dd></dl>
 
 </div>
 </div>
@@ -4007,7 +4007,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b> = 
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000806">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000807">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
 
 </div>
 </div>
@@ -4858,7 +4858,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b> = 
 <p>The grade for this slot after this try. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$tablerow</td><td>attempt data from db. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$tablerow</td><td>attempt data from db. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$slot</td><td>Slot number. </td></tr>
   </table>
   </dd>
@@ -4911,7 +4911,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b> = 
 <p>Find the state for $slot given after this try. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$tablerow</td><td>row data </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$tablerow</td><td>row data </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$slot</td><td>Slot number. </td></tr>
   </table>
   </dd>
@@ -5590,7 +5590,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b> = 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 22 2023 03:07:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 29 2023 03:09:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

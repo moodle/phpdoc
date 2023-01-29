@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230120) (df502b3e4c8)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230126) (880462a1685)</div>
   </td>
  </tr>
  </tbody>
@@ -331,13 +331,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d84/classmod__quiz_1_1quiz__settings.html">mod_quiz\quiz_settings</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d5f/classmod__quiz_1_1repaginate.html">mod_quiz\repaginate</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The repaginate class will rearrange questions in pages.  <a href="../../dd/d5f/classmod__quiz_1_1repaginate.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d02/classmod__quiz_1_1search_1_1activity.html">mod_quiz\search\activity</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search area for <a class="el" href="../../de/da7/namespacemod__quiz.html" title="&#160;">mod_quiz</a> activities.  <a href="../../df/d02/classmod__quiz_1_1search_1_1activity.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d5e/classmod__quiz_1_1structure.html">mod_quiz\structure</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quiz structure class.  <a href="../../d1/d5e/classmod__quiz_1_1structure.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df9/classmod__quiz_1_1task_1_1legacy__quiz__accessrules__cron.html">mod_quiz\task\legacy_quiz_accessrules_cron</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Legacy Cron Quiz Access Rules Task.  <a href="../../de/df9/classmod__quiz_1_1task_1_1legacy__quiz__accessrules__cron.html#details">More...</a><br /></td></tr>
@@ -379,6 +377,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga223b8728ab602ad31b1e5b370f99b905"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga223b8728ab602ad31b1e5b370f99b905">add_one_random_question</a> ($questiongenerator, stdClass $quiz, $override=[])</td></tr>
 <tr class="memdesc:ga223b8728ab602ad31b1e5b370f99b905"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper method to add random question to quiz.  <br /></td></tr>
 <tr class="separator:ga223b8728ab602ad31b1e5b370f99b905"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b60de47303a53fa147736fb6ca66708"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga8b60de47303a53fa147736fb6ca66708">mod_quiz::add_section_heading</a> ($pagenumber, $heading=null)</td></tr>
+<tr class="memdesc:ga8b60de47303a53fa147736fb6ca66708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a section heading on a given page and return the sectionid.  <br /></td></tr>
+<tr class="separator:ga8b60de47303a53fa147736fb6ca66708"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8376e9fa1480d428664d41159f31ccf8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga8376e9fa1480d428664d41159f31ccf8">add_two_regular_questions</a> ($questiongenerator, stdClass $quiz, $override=null)</td></tr>
 <tr class="memdesc:ga8376e9fa1480d428664d41159f31ccf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper method to add regular questions in quiz.  <br /></td></tr>
 <tr class="separator:ga8376e9fa1480d428664d41159f31ccf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -388,12 +389,54 @@ Functions</h2></td></tr>
 <tr class="memitem:ga797e6e9c3879532d7f92c9622d1491b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga797e6e9c3879532d7f92c9622d1491b0">backup_quiz</a> (\stdClass $quiz, stdClass $user)</td></tr>
 <tr class="memdesc:ga797e6e9c3879532d7f92c9622d1491b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">A helper method to backup test quiz.  <br /></td></tr>
 <tr class="separator:ga797e6e9c3879532d7f92c9622d1491b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga17f5412c730ee3391ccece456dd653ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga17f5412c730ee3391ccece456dd653ec">mod_quiz::can_add_random_questions</a> ()</td></tr>
+<tr class="memdesc:ga17f5412c730ee3391ccece456dd653ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the current user can add random questions to the quiz or not.  <br /></td></tr>
+<tr class="separator:ga17f5412c730ee3391ccece456dd653ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga06c3181c84f5b86703a13db95d74e092"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga06c3181c84f5b86703a13db95d74e092">mod_quiz::can_add_section_heading</a> ($pagenumber)</td></tr>
+<tr class="memdesc:ga06c3181c84f5b86703a13db95d74e092"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether adding a section heading is possible.  <br /></td></tr>
+<tr class="separator:ga06c3181c84f5b86703a13db95d74e092"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabb9181fb09e932ac540164e51b456a7a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gabb9181fb09e932ac540164e51b456a7a">create_test_quiz</a> (\stdClass $course)</td></tr>
 <tr class="memdesc:gabb9181fb09e932ac540164e51b456a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a test quiz for the specified course.  <br /></td></tr>
 <tr class="separator:gabb9181fb09e932ac540164e51b456a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga695fd1bcd04638147ec95187e2e93d2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga695fd1bcd04638147ec95187e2e93d2e">duplicate_quiz</a> ($course, $quiz)</td></tr>
 <tr class="memdesc:ga695fd1bcd04638147ec95187e2e93d2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A helper method to emulate duplication of the quiz.  <br /></td></tr>
 <tr class="separator:ga695fd1bcd04638147ec95187e2e93d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0591910251b7da864339d847bccd0282"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga0591910251b7da864339d847bccd0282">mod_quiz::formatted_question_grade</a> ($slotnumber)</td></tr>
+<tr class="memdesc:ga0591910251b7da864339d847bccd0282"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximum mark for a question, formatted for display.  <br /></td></tr>
+<tr class="separator:ga0591910251b7da864339d847bccd0282"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga10766f17eda70a4d6be6e3ce7a62d94e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga10766f17eda70a4d6be6e3ce7a62d94e">mod_quiz::formatted_quiz_grade</a> ()</td></tr>
+<tr class="memdesc:ga10766f17eda70a4d6be6e3ce7a62d94e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the overall quiz grade formatted for display.  <br /></td></tr>
+<tr class="separator:ga10766f17eda70a4d6be6e3ce7a62d94e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga38ea9f2d2636ca31bf05337c94da9536"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga38ea9f2d2636ca31bf05337c94da9536">mod_quiz::get_dates_summary</a> ()</td></tr>
+<tr class="memdesc:ga38ea9f2d2636ca31bf05337c94da9536"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the date information about the current state of the quiz.  <br /></td></tr>
+<tr class="separator:ga38ea9f2d2636ca31bf05337c94da9536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga607f5a0ca3da56fd4b193cf2ef88a7d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga607f5a0ca3da56fd4b193cf2ef88a7d0">mod_quiz::get_decimal_places_for_grades</a> ()</td></tr>
+<tr class="memdesc:ga607f5a0ca3da56fd4b193cf2ef88a7d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of decimal places for displaying overall quiz grades or marks.  <br /></td></tr>
+<tr class="separator:ga607f5a0ca3da56fd4b193cf2ef88a7d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab871fee9862c0350e083917377d63e7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gab871fee9862c0350e083917377d63e7d">mod_quiz::get_decimal_places_for_question_marks</a> ()</td></tr>
+<tr class="memdesc:gab871fee9862c0350e083917377d63e7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of decimal places for displaying question marks.  <br /></td></tr>
+<tr class="separator:gab871fee9862c0350e083917377d63e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaddc0a55512e3795c0238db54a6ee002c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gaddc0a55512e3795c0238db54a6ee002c">mod_quiz::get_edit_page_warnings</a> ()</td></tr>
+<tr class="memdesc:gaddc0a55512e3795c0238db54a6ee002c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get any warnings to show at the top of the edit page.  <br /></td></tr>
+<tr class="separator:gaddc0a55512e3795c0238db54a6ee002c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga006646001eba6f93f21479a83da39cb4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga006646001eba6f93f21479a83da39cb4">mod_quiz::get_section_by_id</a> ($sectionid)</td></tr>
+<tr class="memdesc:ga006646001eba6f93f21479a83da39cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a particular section by id.  <br /></td></tr>
+<tr class="separator:ga006646001eba6f93f21479a83da39cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20ea9a75ca46536d26abcfa2a17549a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga20ea9a75ca46536d26abcfa2a17549a9">mod_quiz::get_section_count</a> ()</td></tr>
+<tr class="memdesc:ga20ea9a75ca46536d26abcfa2a17549a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of questions in the quiz.  <br /></td></tr>
+<tr class="separator:ga20ea9a75ca46536d26abcfa2a17549a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9fd8dcdf9d25b34445de4729069cdc86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga9fd8dcdf9d25b34445de4729069cdc86">mod_quiz::get_sections</a> ()</td></tr>
+<tr class="memdesc:ga9fd8dcdf9d25b34445de4729069cdc86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the sections of the quiz.  <br /></td></tr>
+<tr class="separator:ga9fd8dcdf9d25b34445de4729069cdc86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga799e18d5693672eef6a04a09de0ff44d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga799e18d5693672eef6a04a09de0ff44d">mod_quiz::get_slot_tags_for_slot_id</a> ($slotid)</td></tr>
+<tr class="memdesc:ga799e18d5693672eef6a04a09de0ff44d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the list of slot tags for the given slot id.  <br /></td></tr>
+<tr class="separator:ga799e18d5693672eef6a04a09de0ff44d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7c6714127115d2dcdd6a4b1f89c04a30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga7c6714127115d2dcdd6a4b1f89c04a30">mod_quiz::get_slots_in_section</a> ($sectionid)</td></tr>
+<tr class="memdesc:ga7c6714127115d2dcdd6a4b1f89c04a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the slots in a section of the quiz.  <br /></td></tr>
+<tr class="separator:ga7c6714127115d2dcdd6a4b1f89c04a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1c0c5edf31ae5090422ada2b98ad08cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga1c0c5edf31ae5090422ada2b98ad08cc">mod_quiz::get_version_choices_for_slot</a> (int $slotnumber)</td></tr>
+<tr class="memdesc:ga1c0c5edf31ae5090422ada2b98ad08cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the version options to show on the 'Questions' page for a particular question.  <br /></td></tr>
+<tr class="separator:ga1c0c5edf31ae5090422ada2b98ad08cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae72e44861b65a463cf772279c3ca32fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gae72e44861b65a463cf772279c3ca32fd">mod_quiz_calculate_question_stats</a> (<a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
 <tr class="memdesc:gae72e44861b65a463cf772279c3ca32fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement the calculate_question_stats callback.  <br /></td></tr>
 <tr class="separator:gae72e44861b65a463cf772279c3ca32fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -428,6 +471,21 @@ Functions</h2></td></tr>
 <tr class="memitem:gadb18171b7e4bf745f353c50aa118b8e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gadb18171b7e4bf745f353c50aa118b8e1">mod_quiz_output_fragment_quiz_question_bank</a> ($args)</td></tr>
 <tr class="memdesc:gadb18171b7e4bf745f353c50aa118b8e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the question bank in a fragment output.  <br /></td></tr>
 <tr class="separator:gadb18171b7e4bf745f353c50aa118b8e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga05e327c9b89acba4aa3bc3578b5c0758"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga05e327c9b89acba4aa3bc3578b5c0758">mod_quiz::move_slot</a> ($idmove, $idmoveafter, $page)</td></tr>
+<tr class="memdesc:ga05e327c9b89acba4aa3bc3578b5c0758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move a slot from its current location to a new location.  <br /></td></tr>
+<tr class="separator:ga05e327c9b89acba4aa3bc3578b5c0758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3347da221def5b6ef54e2c41aa2b3589"><td class="memItemLeft" align="right" valign="top"><a id="ga3347da221def5b6ef54e2c41aa2b3589" name="ga3347da221def5b6ef54e2c41aa2b3589"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>mod_quiz::populate_question_numbers</b> ()</td></tr>
+<tr class="memdesc:ga3347da221def5b6ef54e2c41aa2b3589"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number the questions. <br /></td></tr>
+<tr class="separator:ga3347da221def5b6ef54e2c41aa2b3589"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf62f0b5595acf214e0e8c96489f8f2f5"><td class="memItemLeft" align="right" valign="top"><a id="gaf62f0b5595acf214e0e8c96489f8f2f5" name="gaf62f0b5595acf214e0e8c96489f8f2f5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>mod_quiz::populate_slots_with_sections</b> ()</td></tr>
+<tr class="memdesc:gaf62f0b5595acf214e0e8c96489f8f2f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill in the section ids for each slot. <br /></td></tr>
+<tr class="separator:gaf62f0b5595acf214e0e8c96489f8f2f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeab802f5adfdbd68d3323a2317d2ad0d"><td class="memItemLeft" align="right" valign="top"><a id="gaeab802f5adfdbd68d3323a2317d2ad0d" name="gaeab802f5adfdbd68d3323a2317d2ad0d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>mod_quiz::populate_structure</b> ()</td></tr>
+<tr class="memdesc:gaeab802f5adfdbd68d3323a2317d2ad0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up this class with the structure for a given quiz. <br /></td></tr>
+<tr class="separator:gaeab802f5adfdbd68d3323a2317d2ad0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab26cbfb2b93d2a722bf8c851e846377c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gab26cbfb2b93d2a722bf8c851e846377c">quiz_add_instance</a> ($quiz)</td></tr>
 <tr class="memdesc:gab26cbfb2b93d2a722bf8c851e846377c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an object containing all the necessary data, (defined by the form in mod_form.php) this function will create a new instance and return the id number of the new instance.  <br /></td></tr>
 <tr class="separator:gab26cbfb2b93d2a722bf8c851e846377c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -464,9 +522,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga457d0588ed1285cbaf710f48a0968250"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga457d0588ed1285cbaf710f48a0968250">quiz_calculate_best_grade</a> ($quiz, $attempts)</td></tr>
 <tr class="memdesc:ga457d0588ed1285cbaf710f48a0968250"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the overall grade for a quiz given a number of attempts by a particular user.  <br /></td></tr>
 <tr class="separator:ga457d0588ed1285cbaf710f48a0968250"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0e779b6b1a8315a43bf9aee3586feb53"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga0e779b6b1a8315a43bf9aee3586feb53">quiz_check_updates_since</a> (<a class="el" href="../../df/db9/classcm__info.html">cm_info</a> $cm, $from, $filter=array())</td></tr>
-<tr class="memdesc:ga0e779b6b1a8315a43bf9aee3586feb53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the module has any update that affects the current user since a given time.  <br /></td></tr>
-<tr class="separator:ga0e779b6b1a8315a43bf9aee3586feb53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6f74b6af1e73a09714e9dbbd54b64568"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga6f74b6af1e73a09714e9dbbd54b64568">quiz_check_updates_since</a> (<a class="el" href="../../df/db9/classcm__info.html">cm_info</a> $cm, $from, $filter=[])</td></tr>
+<tr class="memdesc:ga6f74b6af1e73a09714e9dbbd54b64568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the module has any update that affects the current user since a given time.  <br /></td></tr>
+<tr class="separator:ga6f74b6af1e73a09714e9dbbd54b64568"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga150ca960f3deffd616e1f12e45a90eb7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga150ca960f3deffd616e1f12e45a90eb7">quiz_completion_check_min_attempts</a> ($userid, $quiz)</td></tr>
 <tr class="memdesc:ga150ca960f3deffd616e1f12e45a90eb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal function used in quiz_get_completion_state.  <br /></td></tr>
 <tr class="separator:ga150ca960f3deffd616e1f12e45a90eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -513,7 +571,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gad53fa11cd679153e2d86ea3181eff4b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the feedback object for this grade on this quiz.  <br /></td></tr>
 <tr class="separator:gad53fa11cd679153e2d86ea3181eff4b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga38f05709992268c9cc32921d525c4b28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga38f05709992268c9cc32921d525c4b28">quiz_format_grade</a> ($quiz, $grade)</td></tr>
-<tr class="memdesc:ga38f05709992268c9cc32921d525c4b28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Round a grade to to the correct number of decimal places, and format it for display.  <br /></td></tr>
+<tr class="memdesc:ga38f05709992268c9cc32921d525c4b28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Round a grade to the correct number of decimal places, and format it for display.  <br /></td></tr>
 <tr class="separator:ga38f05709992268c9cc32921d525c4b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae03733ff3ded19d86953580485fae51b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gae03733ff3ded19d86953580485fae51b">quiz_format_question_grade</a> ($quiz, $grade)</td></tr>
 <tr class="memdesc:gae03733ff3ded19d86953580485fae51b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Round a grade to the correct number of decimal places, and format it for display.  <br /></td></tr>
@@ -615,9 +673,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gab1a43e6036ba903fc993f94cb4433271"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gab1a43e6036ba903fc993f94cb4433271">quiz_page_type_list</a> ($pagetype, $parentcontext, $currentcontext)</td></tr>
 <tr class="memdesc:gab1a43e6036ba903fc993f94cb4433271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of page types.  <br /></td></tr>
 <tr class="separator:gab1a43e6036ba903fc993f94cb4433271"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga399474116b5fe586eec907fc97d737e6"><td class="memItemLeft" align="right" valign="top"><a id="ga399474116b5fe586eec907fc97d737e6" name="ga399474116b5fe586eec907fc97d737e6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>quiz_pluginfile</b> ($course, $cm, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $filearea, $args, $forcedownload, array $options=array())</td></tr>
-<tr class="separator:ga399474116b5fe586eec907fc97d737e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4c555dca3ab49a1279583f45a7076862"><td class="memItemLeft" align="right" valign="top"><a id="ga4c555dca3ab49a1279583f45a7076862" name="ga4c555dca3ab49a1279583f45a7076862"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>quiz_pluginfile</b> ($course, $cm, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $filearea, $args, $forcedownload, array $options=[])</td></tr>
+<tr class="separator:ga4c555dca3ab49a1279583f45a7076862"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9e202d0759048231086a70e16d26198e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga9e202d0759048231086a70e16d26198e">quiz_prepare_and_start_new_attempt</a> (<a class="el" href="../../db/d84/classmod__quiz_1_1quiz__settings.html">quiz_settings</a> $quizobj, $attemptnumber, $lastattempt, $offlineattempt=false, $forcedrandomquestions=[], $forcedvariants=[], $userid=null)</td></tr>
 <tr class="memdesc:ga9e202d0759048231086a70e16d26198e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare and start a new attempt deleting the previous preview attempts.  <br /></td></tr>
 <tr class="separator:ga9e202d0759048231086a70e16d26198e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -634,9 +692,9 @@ Functions</h2></td></tr>
 <tr class="separator:ga107811994b7fe8f2cb690b4c37ca4242"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8d9d9ec3db555b4ebee741e2be16b8d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga8d9d9ec3db555b4ebee741e2be16b8d5">quiz_question_edit_button</a> ($cmid, $question, $returnurl, $contentaftericon='')</td></tr>
 <tr class="separator:ga8d9d9ec3db555b4ebee741e2be16b8d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabd61284ecfc5e9d2f733d65c5b0774ce"><td class="memItemLeft" align="right" valign="top"><a id="gabd61284ecfc5e9d2f733d65c5b0774ce" name="gabd61284ecfc5e9d2f733d65c5b0774ce"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>quiz_question_pluginfile</b> ($course, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $component, $filearea, $qubaid, $slot, $args, $forcedownload, array $options=array())</td></tr>
-<tr class="separator:gabd61284ecfc5e9d2f733d65c5b0774ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga875376373850a1f0ffcc65be89472cbe"><td class="memItemLeft" align="right" valign="top"><a id="ga875376373850a1f0ffcc65be89472cbe" name="ga875376373850a1f0ffcc65be89472cbe"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>quiz_question_pluginfile</b> ($course, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $component, $filearea, $qubaid, $slot, $args, $forcedownload, array $options=[])</td></tr>
+<tr class="separator:ga875376373850a1f0ffcc65be89472cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa71b9a53e69010cd6b0e8a9ec7a94412"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gaa71b9a53e69010cd6b0e8a9ec7a94412">quiz_question_preview_button</a> ($quiz, $question, $label=false, $variant=null, $random=null)</td></tr>
 <tr class="separator:gaa71b9a53e69010cd6b0e8a9ec7a94412"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga75c93c72b30ab479c52a5e600cf8189e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga75c93c72b30ab479c52a5e600cf8189e">quiz_question_preview_url</a> ($quiz, $question, $variant=null)</td></tr>
@@ -720,9 +778,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gac742957ff50fbb4d7739281dc7c21dba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gac742957ff50fbb4d7739281dc7c21dba">quiz_review_option_form_to_db</a> ($fromform, $field)</td></tr>
 <tr class="memdesc:gac742957ff50fbb4d7739281dc7c21dba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for <a class="el" href="../../dd/df0/group__mod__quiz.html#gafcdcd51ce5ec0b740bf48b877d82c74f">quiz_process_options()</a>.  <br /></td></tr>
 <tr class="separator:gac742957ff50fbb4d7739281dc7c21dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadab1921e1c49cad721c6d8095506126d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gadab1921e1c49cad721c6d8095506126d">quiz_save_best_grade</a> ($quiz, $userid=null, $attempts=array())</td></tr>
-<tr class="memdesc:gadab1921e1c49cad721c6d8095506126d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the overall grade for a user at a quiz in the quiz_grades table.  <br /></td></tr>
-<tr class="separator:gadab1921e1c49cad721c6d8095506126d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3d35876776fb2129bc9d64d90181b1b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga3d35876776fb2129bc9d64d90181b1b8">quiz_save_best_grade</a> ($quiz, $userid=null, $attempts=[])</td></tr>
+<tr class="memdesc:ga3d35876776fb2129bc9d64d90181b1b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the overall grade for a user at a quiz in the quiz_grades table.  <br /></td></tr>
+<tr class="separator:ga3d35876776fb2129bc9d64d90181b1b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga99d5d4df74dbc548c8d11521073f8861"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga99d5d4df74dbc548c8d11521073f8861">quiz_send_confirmation</a> ($recipient, $a, $studentisonline)</td></tr>
 <tr class="memdesc:ga99d5d4df74dbc548c8d11521073f8861"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a confirmation message to the student confirming that the attempt was processed.  <br /></td></tr>
 <tr class="separator:ga99d5d4df74dbc548c8d11521073f8861"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -744,9 +802,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf4f053b3f5943cc5912b8b4a92161d97"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gaf4f053b3f5943cc5912b8b4a92161d97">quiz_start_attempt_built_on_last</a> ($quba, $attempt, $lastattempt)</td></tr>
 <tr class="memdesc:gaf4f053b3f5943cc5912b8b4a92161d97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a subsequent new attempt, in each attempt builds on last mode.  <br /></td></tr>
 <tr class="separator:gaf4f053b3f5943cc5912b8b4a92161d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabc8655220b2a277f89c80b613c99c7e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gabc8655220b2a277f89c80b613c99c7e6">quiz_start_new_attempt</a> ($quizobj, $quba, $attempt, $attemptnumber, $timenow, $questionids=array(), $forcedvariantsbyslot=array())</td></tr>
-<tr class="memdesc:gabc8655220b2a277f89c80b613c99c7e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a normal, new, quiz attempt.  <br /></td></tr>
-<tr class="separator:gabc8655220b2a277f89c80b613c99c7e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab0276f2655748b76a1fbd4e59a166c62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gab0276f2655748b76a1fbd4e59a166c62">quiz_start_new_attempt</a> ($quizobj, $quba, $attempt, $attemptnumber, $timenow, $questionids=[], $forcedvariantsbyslot=[])</td></tr>
+<tr class="memdesc:gab0276f2655748b76a1fbd4e59a166c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a normal, new, quiz attempt.  <br /></td></tr>
+<tr class="separator:gab0276f2655748b76a1fbd4e59a166c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga202c54b8576fc98a70fbba7e5710b019"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga202c54b8576fc98a70fbba7e5710b019">quiz_supports</a> ($feature)</td></tr>
 <tr class="separator:ga202c54b8576fc98a70fbba7e5710b019"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad4ebda646f72b72a3f9100135703fdbc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gad4ebda646f72b72a3f9100135703fdbc">quiz_update_all_attempt_sumgrades</a> ($quiz)</td></tr>
@@ -788,9 +846,42 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa00c9bf5c2f63db7db75a1070719ac1a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gaa00c9bf5c2f63db7db75a1070719ac1a">quiz_view</a> ($quiz, $course, $cm, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
 <tr class="memdesc:gaa00c9bf5c2f63db7db75a1070719ac1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the activity completed (if required) and trigger the course_module_viewed event.  <br /></td></tr>
 <tr class="separator:gaa00c9bf5c2f63db7db75a1070719ac1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae56b4412ef8f252f3f3b9a2485969083"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gae56b4412ef8f252f3f3b9a2485969083">mod_quiz::refresh_page_numbers</a> ($slots=[])</td></tr>
+<tr class="memdesc:gae56b4412ef8f252f3f3b9a2485969083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh page numbering of quiz slots.  <br /></td></tr>
+<tr class="separator:gae56b4412ef8f252f3f3b9a2485969083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga63939706a4b586cc7ba2b9c101132050"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga63939706a4b586cc7ba2b9c101132050">mod_quiz::refresh_page_numbers_and_update_db</a> ()</td></tr>
+<tr class="memdesc:ga63939706a4b586cc7ba2b9c101132050"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh page numbering of quiz slots and save to the database.  <br /></td></tr>
+<tr class="separator:ga63939706a4b586cc7ba2b9c101132050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac856d71dc6608076c499f6e79394375f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gac856d71dc6608076c499f6e79394375f">mod_quiz::remove_section_heading</a> ($sectionid)</td></tr>
+<tr class="memdesc:gac856d71dc6608076c499f6e79394375f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the section heading with the given id.  <br /></td></tr>
+<tr class="separator:gac856d71dc6608076c499f6e79394375f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18873daec86a753bd2118b81dbf85da4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga18873daec86a753bd2118b81dbf85da4">mod_quiz::remove_slot</a> ($slotnumber)</td></tr>
+<tr class="memdesc:ga18873daec86a753bd2118b81dbf85da4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a slot from a quiz.  <br /></td></tr>
+<tr class="separator:ga18873daec86a753bd2118b81dbf85da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0f53be812c313b8eaf84d8f41f3ce0cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga0f53be812c313b8eaf84d8f41f3ce0cc">restore_quiz</a> (string $backupid, stdClass $course, stdClass $user)</td></tr>
 <tr class="memdesc:ga0f53be812c313b8eaf84d8f41f3ce0cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">A helper method to restore provided backup.  <br /></td></tr>
 <tr class="separator:ga0f53be812c313b8eaf84d8f41f3ce0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4faad27fae40416af6b74a114ababa9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga4faad27fae40416af6b74a114ababa9a">mod_quiz::set_section_heading</a> ($id, $newheading)</td></tr>
+<tr class="memdesc:ga4faad27fae40416af6b74a114ababa9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the heading for a section.  <br /></td></tr>
+<tr class="separator:ga4faad27fae40416af6b74a114ababa9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga38b7e2af27ef016d7e33a654ba35e625"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga38b7e2af27ef016d7e33a654ba35e625">mod_quiz::set_section_shuffle</a> ($id, $shuffle)</td></tr>
+<tr class="memdesc:ga38b7e2af27ef016d7e33a654ba35e625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the shuffle setting for a section.  <br /></td></tr>
+<tr class="separator:ga38b7e2af27ef016d7e33a654ba35e625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaed849926ff3da9f6e419a5b7d695ee78"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gaed849926ff3da9f6e419a5b7d695ee78">mod_quiz::unset_question</a> ($slotid)</td></tr>
+<tr class="memdesc:gaed849926ff3da9f6e419a5b7d695ee78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unset the question object after deletion.  <br /></td></tr>
+<tr class="separator:gaed849926ff3da9f6e419a5b7d695ee78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa33dd9c5247027ae7cc43746a90ae36a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gaa33dd9c5247027ae7cc43746a90ae36a">mod_quiz::update_page_break</a> ($slotid, $type)</td></tr>
+<tr class="memdesc:gaa33dd9c5247027ae7cc43746a90ae36a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add/Remove a pagebreak.  <br /></td></tr>
+<tr class="separator:gaa33dd9c5247027ae7cc43746a90ae36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga29f324605b3e4ac46349dbe90d1cbeb9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga29f324605b3e4ac46349dbe90d1cbeb9">mod_quiz::update_question_dependency</a> ($slotid, $requireprevious)</td></tr>
+<tr class="memdesc:ga29f324605b3e4ac46349dbe90d1cbeb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether the question in a particular slot requires the previous one.  <br /></td></tr>
+<tr class="separator:ga29f324605b3e4ac46349dbe90d1cbeb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gababfa2b6723691e3223fe75bde3381e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gababfa2b6723691e3223fe75bde3381e3">mod_quiz::update_slot_display_number</a> (int $slotid, string $displaynumber)</td></tr>
+<tr class="memdesc:gababfa2b6723691e3223fe75bde3381e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the question display number when is set as customised display number or empy string.  <br /></td></tr>
+<tr class="separator:gababfa2b6723691e3223fe75bde3381e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc7384acfdbb858ecfb1c93f550c85df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gadc7384acfdbb858ecfb1c93f550c85df">mod_quiz::update_slot_maxmark</a> ($slot, $maxmark)</td></tr>
+<tr class="memdesc:gadc7384acfdbb858ecfb1c93f550c85df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the max mark for a slot.  <br /></td></tr>
+<tr class="separator:gadc7384acfdbb858ecfb1c93f550c85df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga84ecaa7541835b97f13d80e8df7a4065"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga84ecaa7541835b97f13d80e8df7a4065">xmldb_quiz_upgrade</a> ($oldversion)</td></tr>
 <tr class="memdesc:ga84ecaa7541835b97f13d80e8df7a4065"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quiz module upgrade function.  <br /></td></tr>
 <tr class="separator:ga84ecaa7541835b97f13d80e8df7a4065"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -832,13 +923,13 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$quiz</b></td></t
 &#160;</td><td class="memItemRight" valign="bottom"><b>$reports</b> = <a class="el" href="../../d0/de1/group__core.html#ga13782f6a8fc81efa7034a369a413cdfe">core_component::get_plugin_list_with_file</a>('quiz', 'settings.php', false)</td></tr>
 <tr class="separator:ga13fe20ad4e32a7f82a42a1ed618d6d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae7fbc0726a7c41b8be72d6465cc02114"><td class="memItemLeft" align="right" valign="top"><a id="gae7fbc0726a7c41b8be72d6465cc02114" name="gae7fbc0726a7c41b8be72d6465cc02114"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$reportsbyname</b> = array()</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$reportsbyname</b> = []</td></tr>
 <tr class="separator:gae7fbc0726a7c41b8be72d6465cc02114"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga811d22ac55b4592f7f2a202529629419"><td class="memItemLeft" align="right" valign="top"><a id="ga811d22ac55b4592f7f2a202529629419" name="ga811d22ac55b4592f7f2a202529629419"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$rules</b> = <a class="el" href="../../d0/de1/group__core.html#ga13782f6a8fc81efa7034a369a413cdfe">core_component::get_plugin_list_with_file</a>('quizaccess', 'settings.php', false)</td></tr>
 <tr class="separator:ga811d22ac55b4592f7f2a202529629419"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga217909ce39786ebb3fa5aa4dbb04bfa2"><td class="memItemLeft" align="right" valign="top"><a id="ga217909ce39786ebb3fa5aa4dbb04bfa2" name="ga217909ce39786ebb3fa5aa4dbb04bfa2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$rulesbyname</b> = array()</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$rulesbyname</b> = []</td></tr>
 <tr class="separator:ga217909ce39786ebb3fa5aa4dbb04bfa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4bfeb3fa3b8d9c3ad8ddb3e7f15ac9a0"><td class="memItemLeft" align="right" valign="top"><a id="ga4bfeb3fa3b8d9c3ad8ddb3e7f15ac9a0" name="ga4bfeb3fa3b8d9c3ad8ddb3e7f15ac9a0"></a>
 <a class="el" href="../../d0/de1/group__core.html#ga13a74e59a81139e77c9593ab40cec354">foreach</a>( $reportsbyname as $strreportname=&gt; $report) <a class="el" href="../../d0/de1/group__core.html#ga13a74e59a81139e77c9593ab40cec354">foreach</a>($rulesbyname as $strrulename=&gt; $rule)&#160;</td><td class="memItemRight" valign="bottom"><b>$settings</b> = null</td></tr>
@@ -968,6 +1059,43 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
     <tr><td class="paramtype"><a class="el" href="../../d5/dfb/classcomponent__generator__base.html" title="Component generator base class.">component_generator_base</a></td><td class="paramname">$questiongenerator</td><td></td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td></td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$override</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga8b60de47303a53fa147736fb6ca66708" name="ga8b60de47303a53fa147736fb6ca66708"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8b60de47303a53fa147736fb6ca66708">&#9670;&#160;</a></span>add_section_heading()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\add_section_heading </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$pagenumber</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$heading</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a section heading on a given page and return the sectionid. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$pagenumber</td><td>the number of the page where the section heading begins. </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$heading</td><td>the heading to add. If not given, a default is used. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1135,6 +1263,64 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 
 </div>
 </div>
+<a id="ga17f5412c730ee3391ccece456dd653ec" name="ga17f5412c730ee3391ccece456dd653ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga17f5412c730ee3391ccece456dd653ec">&#9670;&#160;</a></span>can_add_random_questions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\can_add_random_questions </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether the current user can add random questions to the quiz or not. </p>
+<p>It is only possible to add a random question if the user has the moodle/question:useall capability on at least one of the contexts related to the one where we are currently editing questions.</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga06c3181c84f5b86703a13db95d74e092" name="ga06c3181c84f5b86703a13db95d74e092"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga06c3181c84f5b86703a13db95d74e092">&#9670;&#160;</a></span>can_add_section_heading()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\can_add_section_heading </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$pagenumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check whether adding a section heading is possible. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$pagenumber</td><td>the number of the page. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">boolean</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="gabb9181fb09e932ac540164e51b456a7a" name="gabb9181fb09e932ac540164e51b456a7a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gabb9181fb09e932ac540164e51b456a7a">&#9670;&#160;</a></span>create_test_quiz()</h2>
 
@@ -1220,6 +1406,337 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">cm_info|null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga0591910251b7da864339d847bccd0282" name="ga0591910251b7da864339d847bccd0282"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0591910251b7da864339d847bccd0282">&#9670;&#160;</a></span>formatted_question_grade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\formatted_question_grade </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$slotnumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the maximum mark for a question, formatted for display. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$slotnumber</td><td>the index of the slot in question. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>the maximum mark for the question in this slot. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga10766f17eda70a4d6be6e3ce7a62d94e" name="ga10766f17eda70a4d6be6e3ce7a62d94e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga10766f17eda70a4d6be6e3ce7a62d94e">&#9670;&#160;</a></span>formatted_quiz_grade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\formatted_quiz_grade </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the overall quiz grade formatted for display. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>the maximum grade for this quiz. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga38ea9f2d2636ca31bf05337c94da9536" name="ga38ea9f2d2636ca31bf05337c94da9536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga38ea9f2d2636ca31bf05337c94da9536">&#9670;&#160;</a></span>get_dates_summary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\get_dates_summary </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the date information about the current state of the quiz. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string[]</td><td>array of two strings. First a short summary, then a longer explanation of the current state, e.g. for a tool-tip. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga607f5a0ca3da56fd4b193cf2ef88a7d0" name="ga607f5a0ca3da56fd4b193cf2ef88a7d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga607f5a0ca3da56fd4b193cf2ef88a7d0">&#9670;&#160;</a></span>get_decimal_places_for_grades()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\get_decimal_places_for_grades </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of decimal places for displaying overall quiz grades or marks. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td>the number of decimal places. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gab871fee9862c0350e083917377d63e7d" name="gab871fee9862c0350e083917377d63e7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab871fee9862c0350e083917377d63e7d">&#9670;&#160;</a></span>get_decimal_places_for_question_marks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\get_decimal_places_for_question_marks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of decimal places for displaying question marks. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td>the number of decimal places. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaddc0a55512e3795c0238db54a6ee002c" name="gaddc0a55512e3795c0238db54a6ee002c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaddc0a55512e3795c0238db54a6ee002c">&#9670;&#160;</a></span>get_edit_page_warnings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\get_edit_page_warnings </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get any warnings to show at the top of the edit page. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string[]</td><td>array of strings. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga006646001eba6f93f21479a83da39cb4" name="ga006646001eba6f93f21479a83da39cb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga006646001eba6f93f21479a83da39cb4">&#9670;&#160;</a></span>get_section_by_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\get_section_by_id </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$sectionid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a particular section by id. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass</td><td>the section. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga20ea9a75ca46536d26abcfa2a17549a9" name="ga20ea9a75ca46536d26abcfa2a17549a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga20ea9a75ca46536d26abcfa2a17549a9">&#9670;&#160;</a></span>get_section_count()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\get_section_count </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the number of questions in the quiz. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td>the number of questions in the quiz. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga9fd8dcdf9d25b34445de4729069cdc86" name="ga9fd8dcdf9d25b34445de4729069cdc86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9fd8dcdf9d25b34445de4729069cdc86">&#9670;&#160;</a></span>get_sections()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\get_sections </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get all the sections of the quiz. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass[]</td><td>the sections in this quiz. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga799e18d5693672eef6a04a09de0ff44d" name="ga799e18d5693672eef6a04a09de0ff44d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga799e18d5693672eef6a04a09de0ff44d">&#9670;&#160;</a></span>get_slot_tags_for_slot_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\get_slot_tags_for_slot_id </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$slotid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieve the list of slot tags for the given slot id. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$slotid</td><td>The id for the slot </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass[]</td><td>The list of slot tag records </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000990">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71573" class="el">MDL-71573</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000291">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
+
+</div>
+</div>
+<a id="ga7c6714127115d2dcdd6a4b1f89c04a30" name="ga7c6714127115d2dcdd6a4b1f89c04a30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7c6714127115d2dcdd6a4b1f89c04a30">&#9670;&#160;</a></span>get_slots_in_section()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\get_slots_in_section </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$sectionid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get all the slots in a section of the quiz. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$sectionid</td><td>the section id. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int[]</td><td>slot numbers. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga1c0c5edf31ae5090422ada2b98ad08cc" name="ga1c0c5edf31ae5090422ada2b98ad08cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1c0c5edf31ae5090422ada2b98ad08cc">&#9670;&#160;</a></span>get_version_choices_for_slot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\get_version_choices_for_slot </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$slotnumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the version options to show on the 'Questions' page for a particular question. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$slotnumber</td><td>which slot to get the choices for. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass[]</td><td>other versions of this question. Each object has fields versionid, version and selected. Array is returned most recent version first. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1617,6 +2134,51 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 
 </div>
 </div>
+<a id="ga05e327c9b89acba4aa3bc3578b5c0758" name="ga05e327c9b89acba4aa3bc3578b5c0758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga05e327c9b89acba4aa3bc3578b5c0758">&#9670;&#160;</a></span>move_slot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\move_slot </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$idmove</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$idmoveafter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$page</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Move a slot from its current location to a new location. </p>
+<p>After calling this method, this class will be in an invalid state, and should be discarded if you want to manipulate the structure further.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$idmove</td><td>id of slot to be moved </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$idmoveafter</td><td>id of slot to come before slot being moved </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$page</td><td>new page number of slot being moved </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="gab26cbfb2b93d2a722bf8c851e846377c" name="gab26cbfb2b93d2a722bf8c851e846377c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab26cbfb2b93d2a722bf8c851e846377c">&#9670;&#160;</a></span>quiz_add_instance()</h2>
 
@@ -1636,7 +2198,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Given an object containing all the necessary data, (defined by the form in mod_form.php) this function will create a new instance and return the id number of the new instance. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the data that came from the form. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the data that came from the form. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1691,7 +2253,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Adds a question to a quiz by updating $quiz as well as the quiz and quiz_slots tables. It also adds a page break if required. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$questionid</td><td>The id of the question to be added </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>The extended quiz object as used by edit.php This is updated by this function </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>The extended quiz object as used by edit.php This is updated by this function </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$page</td><td>Which page in quiz to add the question on. If 0 (default), add at the end </td></tr>
     <tr><td class="paramtype">float</td><td class="paramname">$maxmark</td><td>The maximum mark to set for this question. (Optional, defaults to question.defaultmark. </td></tr>
   </table>
@@ -1790,7 +2352,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>This function is called at the end of quiz_add_instance and quiz_update_instance, to do the common processing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz object. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz object. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1860,13 +2422,13 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
   <table class="params">
     <tr><td class="paramtype">quiz_settings</td><td class="paramname">$quizobj</td><td></td></tr>
     <tr><td class="paramtype"><a class="el" href="../../d6/dc0/classquestion__usage__by__activity.html" title="This class keeps track of a group of questions that are being attempted, and which state,...">question_usage_by_activity</a></td><td class="paramname">$quba</td><td></td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$attempt</td><td></td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$attempt</td><td></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">object</td><td>attempt object with uniqueid and id set. </td></tr>
+    <tr><td class="paramname">stdClass</td><td>attempt object with uniqueid and id set. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1902,8 +2464,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Work out what state this quiz attempt is in - in the sense used by quiz_get_review_options, not in the sense of $attempt-&gt;state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz settings </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$attempt</td><td>the quiz_attempt database row. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz settings </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$attempt</td><td>the quiz_attempt database row. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1969,7 +2531,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>This sends the confirmation and notification messages, if required.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$event</td><td>the event object. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$event</td><td>the event object. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2023,9 +2585,9 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Returns the same as <a class="el" href="../../dd/df0/group__mod__quiz.html#gad96fe5202ce77e1de7d6bb30a79aac31">quiz_num_attempt_summary()</a> but wrapped in a link to the quiz reports. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz object. Only $quiz-&gt;id is used at the moment. </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$cm</td><td>the cm object. Only $cm-&gt;course, $cm-&gt;groupmode and $cm-&gt;groupingid fields are used at the moment. </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$context</td><td>the quiz context. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz object. Only $quiz-&gt;id is used at the moment. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$cm</td><td>the cm object. Only $cm-&gt;course, $cm-&gt;groupmode and $cm-&gt;groupingid fields are used at the moment. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$context</td><td>the quiz context. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$returnzero</td><td>if false (default), when no attempts have been made '' is returned instead of 'Attempts: 0'. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$currentgroup</td><td>if there is a concept of current group where this method is being called (e.g. a report) pass it in here. Default 0 which means no current group. </td></tr>
   </table>
@@ -2069,13 +2631,13 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Return the attempt with the best grade for a quiz. </p>
 <p>Which attempt is the best depends on $quiz-&gt;grademethod. If the grade method is GRADEAVERAGE then this function simply returns the last attempt. </p><dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">object</td><td>The attempt with the best grade </td></tr>
+    <tr><td class="paramname">stdClass</td><td>The attempt with the best grade </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>The quiz for which the best grade is to be calculated </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>The quiz for which the best grade is to be calculated </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$attempts</td><td>An array of all the attempts of the user at the quiz </td></tr>
   </table>
   </dd>
@@ -2112,7 +2674,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Calculate the overall grade for a quiz given a number of attempts by a particular user. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz settings object. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz settings object. </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$attempts</td><td>an array of all the user's attempts at this quiz in order. </td></tr>
   </table>
   </dd>
@@ -2126,8 +2688,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 
 </div>
 </div>
-<a id="ga0e779b6b1a8315a43bf9aee3586feb53" name="ga0e779b6b1a8315a43bf9aee3586feb53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0e779b6b1a8315a43bf9aee3586feb53">&#9670;&#160;</a></span>quiz_check_updates_since()</h2>
+<a id="ga6f74b6af1e73a09714e9dbbd54b64568" name="ga6f74b6af1e73a09714e9dbbd54b64568"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6f74b6af1e73a09714e9dbbd54b64568">&#9670;&#160;</a></span>quiz_check_updates_since()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2148,7 +2710,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$filter</em> = <code>array()</code>&#160;</td>
+          <td class="paramname"><em>$filter</em> = <code>[]</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2205,7 +2767,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 
 <p>Internal function used in quiz_get_completion_state. </p>
 <p>Check minimum attempts requirement for completion.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000992">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000993">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000294">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-71196" class="el">MDL-71196</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d49/classmod__quiz_1_1completion_1_1custom__completion.html">mod_quiz::completion::custom_completion</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -2264,7 +2826,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 
 <p>Internal function used in quiz_get_completion_state. </p>
 <p>Check passing grade (or no attempts left) requirement for completion.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000991">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000992">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000293">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-71196" class="el">MDL-71196</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d49/classmod__quiz_1_1completion_1_1custom__completion.html">mod_quiz::completion::custom_completion</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -2345,18 +2907,18 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Creates an attempt object to represent an attempt at the quiz by the current user starting at the current time. The -&gt;id field is not set. The object is NOT written to the database.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quizobj</td><td>the quiz object to create an attempt for. </td></tr>
+    <tr><td class="paramtype">quiz_settings</td><td class="paramname">$quizobj</td><td>the quiz object to create an attempt for. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$attemptnumber</td><td>the sequence number for the attempt. </td></tr>
     <tr><td class="paramtype">stdClass&#160;|&#160;false</td><td class="paramname">$lastattempt</td><td>the previous attempt by this user, if any. Only needed if $attemptnumber &gt; 1 and $quiz-&gt;attemptonlast is true. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$timenow</td><td>the time the attempt was started at. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$ispreview</td><td>whether this new attempt is a preview. </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>the id of the user attempting this quiz.</td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$userid</td><td>the id of the user attempting this quiz.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">object</td><td>the newly created attempt object. </td></tr>
+    <tr><td class="paramname">stdClass</td><td>the newly created attempt object. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2425,7 +2987,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Delete all the attempts belonging to a quiz. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>The quiz object. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>The quiz object. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2461,7 +3023,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Deletes all quiz overrides from the database and clears any corresponding calendar events. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>The quiz object. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>The quiz object. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$log</td><td>Whether to trigger logs. </td></tr>
   </table>
   </dd>
@@ -2499,7 +3061,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">mixed</td><td class="paramname">$attempt</td><td>an integer attempt id or an attempt object (row of the quiz_attempts table). </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz object. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz object. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2573,7 +3135,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Deletes a quiz override from the database and clears any corresponding calendar events. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>The quiz object. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>The quiz object. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$overrideid</td><td>The id of the override being deleted </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$log</td><td>Whether to trigger logs. </td></tr>
   </table>
@@ -2617,7 +3179,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Delete all the preview attempts at a quiz, or possibly all the attempts belonging to one user. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz object. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz object. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>(optional) if given, only delete the previews belonging to this user. </td></tr>
   </table>
   </dd>
@@ -2680,8 +3242,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Delete all the attempts belonging to a user in a particular quiz. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>The quiz object. </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$user</td><td>The user object. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>The quiz object. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$user</td><td>The user object. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2813,7 +3375,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">float</td><td class="paramname">$grade</td><td>a grade on this quiz. </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz settings. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz settings. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2853,7 +3415,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
       </table>
 </div><div class="memdoc">
 
-<p>Round a grade to to the correct number of decimal places, and format it for display. </p>
+<p>Round a grade to the correct number of decimal places, and format it for display. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>The quiz table row, only $quiz-&gt;decimalpoints is used. </td></tr>
@@ -2863,7 +3425,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">float</td><td></td></tr>
+    <tr><td class="paramname">string</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2975,7 +3537,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Get the best current grade for a particular user in a quiz. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz settings. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz settings. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>the id of the user. </td></tr>
   </table>
   </dd>
@@ -3019,7 +3581,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Returns an array of two ojects, so the suggested way of calling this funciton is: list($someoptions, $alloptions) = quiz_get_combined_reviewoptions(...)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz instance. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz instance. </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$attempts</td><td>an array of attempt objects.</td></tr>
   </table>
   </dd>
@@ -3072,7 +3634,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><div class="memdoc">
 
 <p>Obtains the automatic completion state for this quiz on any conditions in quiz settings, such as if all attempts are used or a certain grade is achieved. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000993">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000994">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000295">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-71196" class="el">MDL-71196</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d49/classmod__quiz_1_1completion_1_1custom__completion.html">mod_quiz::completion::custom_completion</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -3176,8 +3738,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$attempt</td><td>the attempt. </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$context</td><td>the quiz context. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$attempt</td><td>the attempt. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$context</td><td>the quiz context. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3209,7 +3771,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Determine the correct number of decimal places required to format a grade. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>The quiz table row, only $quiz-&gt;decimalpoints is used. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>The quiz table row, only $quiz-&gt;decimalpoints and -&gt;questiondecimalpoints are used. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3647,7 +4209,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">object</td><td>An object with of all quizids and close unixdates in this course, taking into account the most lenient overrides, if existing and 0 if no close date is set. </td></tr>
+    <tr><td class="paramname">stdClass</td><td>An object with of all quizids and close unixdates in this course, taking into account the most lenient overrides, if existing and 0 if no close date is set. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3728,7 +4290,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz database row. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz database row. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3760,7 +4322,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Is this a graded quiz? If this method returns true, you can assume that $quiz-&gt;grade and $quiz-&gt;sumgrades are non-zero (for example, if you want to divide by them). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>a row from the quiz table. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>a row from the quiz table. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3800,10 +4362,10 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><div class="memdoc">
 
 <p>Verify that the question exists, and the user has permission to use it. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000995">Deprecated:</a></b></dt><dd>in 4.1 use mod_quiz::structure::has_use_capability(...) instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000996">Deprecated:</a></b></dt><dd>in 4.1 use mod_quiz::structure::has_use_capability(...) instead.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz settings. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz settings. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$slot</td><td>which question in the quiz to test. </td></tr>
   </table>
   </dd>
@@ -3910,9 +4472,9 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Generate a message saying that this quiz has no questions, with a button to go to the edit page, if the user has the right capability. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz settings. </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$cm</td><td>the course_module object. </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$context</td><td>the quiz context. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz settings. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$cm</td><td>the course_module object. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$context</td><td>the quiz context. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3966,8 +4528,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Return a textual summary of the number of attempts that have been made at a particular quiz, returns '' if no attempts have been made yet, unless $returnzero is passed as true. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz object. Only $quiz-&gt;id is used at the moment. </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$cm</td><td>the cm object. Only $cm-&gt;course, $cm-&gt;groupmode and $cm-&gt;groupingid fields are used at the moment. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz object. Only $quiz-&gt;id is used at the moment. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$cm</td><td>the cm object. Only $cm-&gt;course, $cm-&gt;groupmode and $cm-&gt;groupingid fields are used at the moment. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$returnzero</td><td>if false (default), when no attempts have been made '' is returned instead of 'Attempts: 0'. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$currentgroup</td><td>if there is a concept of current group where this method is being called (e.g. a report) pass it in here. Default 0 which means no current group. </td></tr>
   </table>
@@ -4138,7 +4700,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
   <table class="params">
     <tr><td class="paramtype">quiz_settings</td><td class="paramname">$quizobj</td><td>quiz object </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$attemptnumber</td><td>the attempt number </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$lastattempt</td><td>last attempt object </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$lastattempt</td><td>last attempt object </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$offlineattempt</td><td>whether is an offline attempt or not </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$forcedrandomquestions</td><td>slot number =&gt; question id. Used for random questions, to force the choice of a particular actual question. Intended for testing purposes only. </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$forcedvariants</td><td>slot number =&gt; variant. Used for questions with variants, to force the choice of a particular variant. Intended for testing purposes only. </td></tr>
@@ -4148,7 +4710,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">object</td><td>the new attempt </td></tr>
+    <tr><td class="paramname">stdClass</td><td>the new attempt </td></tr>
   </table>
   </dd>
 </dl>
@@ -4208,7 +4770,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Called by add/update instance in this file.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>The variables set on the form. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>The variables set on the form. </td></tr>
   </table>
   </dd>
 </dl>
@@ -4260,12 +4822,11 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$cmid</td><td>the course_module object for this quiz. </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$question</td><td>the question. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$question</td><td>the question. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$returnurl</td><td>url to return to after action is done. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$variant</td><td>which question variant to preview (optional). </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$random</td><td>if question is random, true. </td></tr>
   </table>
   </dd>
 </dl>
@@ -4318,7 +4879,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$cmid</td><td>the course_module.id for this quiz. </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$question</td><td>the question. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$question</td><td>the question. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$returnurl</td><td>url to return to after action is done. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$contentbeforeicon</td><td>some HTML content to be added inside the link, before the icon. </td></tr>
   </table>
@@ -4378,8 +4939,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz settings </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$question</td><td>the question </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz settings </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$question</td><td>the question </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$label</td><td>if true, show the preview question label after the icon </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$variant</td><td>which question variant to preview (optional). </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$random</td><td>if question is random, true. </td></tr>
@@ -4428,8 +4989,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz settings </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$question</td><td>the question </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz settings </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$question</td><td>the question </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$variant</td><td>which question variant to preview (optional). </td></tr>
   </table>
   </dd>
@@ -4490,7 +5051,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Creates a textual representation of a question for display. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$question</td><td>A question object from the database questions table </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$question</td><td>A question object from the database questions table </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$showicon</td><td>If true, show the question's icon with the question. False by default. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$showquestiontext</td><td>If true (default), show question text after question name. If false, show only question name. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$showidnumber</td><td>If true, show the question's idnumber, if any. False by default. </td></tr>
@@ -4667,7 +5228,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz settings. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz settings. </td></tr>
   </table>
   </dd>
 </dl>
@@ -4699,7 +5260,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Get the default report for the current user. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$context</td><td>the quiz context. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$context</td><td>the quiz context. </td></tr>
   </table>
   </dd>
 </dl>
@@ -4825,7 +5386,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Get the slots of real questions (not descriptions) in this quiz, in order. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz. </td></tr>
   </table>
   </dd>
 </dl>
@@ -5045,7 +5606,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>See definition for <a class="el" href="../../dd/df0/group__mod__quiz.html#ga67ec8d46306e22b2212bcd13602d7913">quiz_report_grade_method_sql</a> below.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td></td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td></td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$quizattemptsalias</td><td>sql alias for 'quiz_attempts' table </td></tr>
   </table>
   </dd>
@@ -5095,7 +5656,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">number</td><td class="paramname">$rawgrade</td><td>the mark to format. </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz settings </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz settings </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$round</td><td>whether to round the results ot $quiz-&gt;decimalpoints. </td></tr>
   </table>
   </dd>
@@ -5132,7 +5693,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Should the grades be displayed in this report. </p>
 <p>That depends on the quiz display options, and whether the quiz is graded. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz settings. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz settings. </td></tr>
     <tr><td class="paramtype">context</td><td class="paramname">$context</td><td>the quiz context. </td></tr>
   </table>
   </dd>
@@ -5208,7 +5769,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">float</td><td class="paramname">$rawgrade</td><td>the unadjusted grade, fof example $attempt-&gt;sumgrades </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz object. Only the fields grade, sumgrades and decimalpoints are used. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz object. Only the fields grade, sumgrades and decimalpoints are used. </td></tr>
     <tr><td class="paramtype">bool&#160;|&#160;string</td><td class="paramname">$format</td><td>whether to format the results for display or 'question' to format a question grade (different number of decimal places. </td></tr>
   </table>
   </dd>
@@ -5331,7 +5892,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Also, move the quiz open and close dates, if the course start date is changing.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$data</td><td>the data submitted from the reset course. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$data</td><td>the data submitted from the reset course. </td></tr>
   </table>
   </dd>
 </dl>
@@ -5375,7 +5936,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000994">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000995">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000296">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
 
 </div>
@@ -5409,7 +5970,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Helper function for <a class="el" href="../../dd/df0/group__mod__quiz.html#gafcdcd51ce5ec0b740bf48b877d82c74f">quiz_process_options()</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$fromform</td><td>the sumbitted form date. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$fromform</td><td>the sumbitted form date. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$field</td><td>one of the review option field names. </td></tr>
   </table>
   </dd>
@@ -5417,8 +5978,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 
 </div>
 </div>
-<a id="gadab1921e1c49cad721c6d8095506126d" name="gadab1921e1c49cad721c6d8095506126d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadab1921e1c49cad721c6d8095506126d">&#9670;&#160;</a></span>quiz_save_best_grade()</h2>
+<a id="ga3d35876776fb2129bc9d64d90181b1b8" name="ga3d35876776fb2129bc9d64d90181b1b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3d35876776fb2129bc9d64d90181b1b8">&#9670;&#160;</a></span>quiz_save_best_grade()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5439,7 +6000,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$attempts</em> = <code>array()</code>&#160;</td>
+          <td class="paramname"><em>$attempts</em> = <code>[]</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -5452,7 +6013,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Save the overall grade for a user at a quiz in the quiz_grades table. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>The quiz for which the best grade is to be calculated and then saved. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>The quiz for which the best grade is to be calculated and then saved. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>The userid to calculate the grade for. Defaults to the current user. </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$attempts</td><td>The attempts of this user. Useful if you are looping through many users. Attempts can be fetched in one master query to avoid repeated querying. </td></tr>
   </table>
@@ -5502,7 +6063,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Sends a confirmation message to the student confirming that the attempt was processed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$a</td><td>lots of useful information that can be used in the message subject and body. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$recipient</td><td>user object for the recipient. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$a</td><td>lots of useful information that can be used in the message subject and body. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$studentisonline</td><td>is the student currently interacting with <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a>?</td></tr>
   </table>
   </dd>
@@ -5551,8 +6113,9 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Sends notification messages to the interested parties that assign the role capability. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$recipient</td><td>user object of the intended recipient </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$a</td><td>associative array of replaceable fields for the templates</td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$recipient</td><td>user object of the intended recipient </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$submitter</td><td>user object for the user who submitted the attempt. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$a</td><td>associative array of replaceable fields for the templates</td></tr>
   </table>
   </dd>
 </dl>
@@ -5618,11 +6181,11 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Send all the requried messages when a quiz attempt is submitted. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$course</td><td>the course </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$attempt</td><td>this attempt just finished </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$context</td><td>the quiz context </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$cm</td><td>the coursemodule for this quiz </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$attempt</td><td>this attempt just finished </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$context</td><td>the quiz context </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$cm</td><td>the coursemodule for this quiz </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$studentisonline</td><td>is the student currently interacting with <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a>?</td></tr>
   </table>
   </dd>
@@ -5666,7 +6229,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">quiz_attempt</td><td class="paramname">$attemptobj</td><td>Some data about the quiz attempt. </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$userto</td><td></td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$userto</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -5736,7 +6299,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">float</td><td class="paramname">$newgrade</td><td>the new maximum grade for the quiz. </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz we are updating. Passed by reference so its grade field can be updated too. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz we are updating. Passed by reference so its grade field can be updated too. </td></tr>
   </table>
   </dd>
 </dl>
@@ -5785,22 +6348,22 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="../../d6/dc0/classquestion__usage__by__activity.html" title="This class keeps track of a group of questions that are being attempted, and which state,...">question_usage_by_activity</a></td><td class="paramname">$quba</td><td>this question usage </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$attempt</td><td>this attempt </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$lastattempt</td><td>last attempt </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$attempt</td><td>this attempt </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$lastattempt</td><td>last attempt </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">object</td><td>modified attempt object </td></tr>
+    <tr><td class="paramname">stdClass</td><td>modified attempt object </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="gabc8655220b2a277f89c80b613c99c7e6" name="gabc8655220b2a277f89c80b613c99c7e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabc8655220b2a277f89c80b613c99c7e6">&#9670;&#160;</a></span>quiz_start_new_attempt()</h2>
+<a id="gab0276f2655748b76a1fbd4e59a166c62" name="gab0276f2655748b76a1fbd4e59a166c62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab0276f2655748b76a1fbd4e59a166c62">&#9670;&#160;</a></span>quiz_start_new_attempt()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -5839,13 +6402,13 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$questionids</em> = <code>array()</code>, </td>
+          <td class="paramname"><em>$questionids</em> = <code>[]</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$forcedvariantsbyslot</em> = <code>array()</code>&#160;</td>
+          <td class="paramname"><em>$forcedvariantsbyslot</em> = <code>[]</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -5860,7 +6423,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
   <table class="params">
     <tr><td class="paramtype">quiz_settings</td><td class="paramname">$quizobj</td><td>the quiz object to start an attempt for. </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../d6/dc0/classquestion__usage__by__activity.html" title="This class keeps track of a group of questions that are being attempted, and which state,...">question_usage_by_activity</a></td><td class="paramname">$quba</td><td></td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$attempt</td><td></td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$attempt</td><td></td></tr>
     <tr><td class="paramtype">integer</td><td class="paramname">$attemptnumber</td><td>starting from 1 </td></tr>
     <tr><td class="paramtype">integer</td><td class="paramname">$timenow</td><td>the attempt start time </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$questionids</td><td>slot number =&gt; question id. Used for random questions, to force the choice of a particular actual question. Intended for testing purposes only. </td></tr>
@@ -5870,7 +6433,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">object</td><td>modified attempt object </td></tr>
+    <tr><td class="paramname">stdClass</td><td>modified attempt object </td></tr>
   </table>
   </dd>
 </dl>
@@ -5926,7 +6489,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Update the sumgrades field of the attempts at a quiz. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>a quiz. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>a quiz. </td></tr>
   </table>
   </dd>
 </dl>
@@ -5953,7 +6516,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>This function is equivalent to calling quiz_save_best_grade for all users, but much more efficient.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz settings. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz settings. </td></tr>
   </table>
   </dd>
 </dl>
@@ -5991,14 +6554,14 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Special case: if there is more than one password that applies to the user, then quiz-&gt;extrapasswords will contain an array of strings giving the remaining passwords.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>The quiz object. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>The quiz object. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>The userid. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">object::$quiz</td><td>The updated quiz object. </td></tr>
+    <tr><td class="paramname">stdClass::$quiz</td><td>The updated quiz object. </td></tr>
   </table>
   </dd>
 </dl>
@@ -6033,10 +6596,10 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 
 <p>This function updates the events associated to the quiz. </p>
 <p>If $override is non-zero, then it updates only the events associated with the specified override.</p>
-<p>@uses QUIZ_MAX_EVENT_LENGTH </p><dl class="params"><dt>Parameters</dt><dd>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz object. </td></tr>
-    <tr><td class="paramtype"></td><td class="paramname">object</td><td>optional $override limit to a specific override </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz object. </td></tr>
+    <tr><td class="paramtype">stdClass&#160;|&#160;null</td><td class="paramname">$override</td><td>limit to a specific override </td></tr>
   </table>
   </dd>
 </dl>
@@ -6072,7 +6635,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Given an object containing all the necessary data, (defined by the form in mod_form.php) this function will update an existing instance with new data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the data that came from the form. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the data that came from the form. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$mform</td><td>no longer used. </td></tr>
   </table>
   </dd>
 </dl>
@@ -6183,7 +6747,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>You should call <a class="el" href="../../dd/df0/group__mod__quiz.html#gab597cb872eb48b9d68193c94e7a0b439">quiz_delete_previews()</a> before you call this function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>a quiz. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>a quiz. </td></tr>
   </table>
   </dd>
 </dl>
@@ -6231,10 +6795,10 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Print a detailed representation of what a user has done with a given particular instance of this module, for user activity reports. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$course</td><td></td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$user</td><td></td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$mod</td><td></td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td></td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td></td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$user</td><td></td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$mod</td><td></td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -6289,16 +6853,16 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>$return-&gt;time = the time they did it $return-&gt;info = a short text description</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$course</td><td></td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$user</td><td></td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$mod</td><td></td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td></td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td></td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$user</td><td></td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$mod</td><td></td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">object|null</td><td></td></tr>
+    <tr><td class="paramname">stdClass|null</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -6422,6 +6986,121 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 
 </div>
 </div>
+<a id="gae56b4412ef8f252f3f3b9a2485969083" name="gae56b4412ef8f252f3f3b9a2485969083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae56b4412ef8f252f3f3b9a2485969083">&#9670;&#160;</a></span>refresh_page_numbers()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\refresh_page_numbers </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$slots</em> = <code>[]</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Refresh page numbering of quiz slots. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass[]</td><td class="paramname">$slots</td><td>(optional) array of slot objects. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass[]</td><td>array of slot objects. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga63939706a4b586cc7ba2b9c101132050" name="ga63939706a4b586cc7ba2b9c101132050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga63939706a4b586cc7ba2b9c101132050">&#9670;&#160;</a></span>refresh_page_numbers_and_update_db()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\refresh_page_numbers_and_update_db </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Refresh page numbering of quiz slots and save to the database. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass[]</td><td>array of slot objects. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gac856d71dc6608076c499f6e79394375f" name="gac856d71dc6608076c499f6e79394375f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac856d71dc6608076c499f6e79394375f">&#9670;&#160;</a></span>remove_section_heading()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\remove_section_heading </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$sectionid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove the section heading with the given id. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$sectionid</td><td>the section to remove. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga18873daec86a753bd2118b81dbf85da4" name="ga18873daec86a753bd2118b81dbf85da4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga18873daec86a753bd2118b81dbf85da4">&#9670;&#160;</a></span>remove_slot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\remove_slot </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$slotnumber</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove a slot from a quiz. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$slotnumber</td><td>The number of the slot to be deleted. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga0f53be812c313b8eaf84d8f41f3ce0cc" name="ga0f53be812c313b8eaf84d8f41f3ce0cc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga0f53be812c313b8eaf84d8f41f3ce0cc">&#9670;&#160;</a></span>restore_quiz()</h2>
 
@@ -6468,6 +7147,270 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
     <tr><td class="paramtype">string</td><td class="paramname">$backupid</td><td>Backup ID to restore. </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td></td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$user</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga4faad27fae40416af6b74a114ababa9a" name="ga4faad27fae40416af6b74a114ababa9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4faad27fae40416af6b74a114ababa9a">&#9670;&#160;</a></span>set_section_heading()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\set_section_heading </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$newheading</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change the heading for a section. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$id</td><td>the id of the section to change. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$newheading</td><td>the new heading for this section. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga38b7e2af27ef016d7e33a654ba35e625" name="ga38b7e2af27ef016d7e33a654ba35e625"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga38b7e2af27ef016d7e33a654ba35e625">&#9670;&#160;</a></span>set_section_shuffle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\set_section_shuffle </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$shuffle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change the shuffle setting for a section. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$id</td><td>the id of the section to change. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$shuffle</td><td>whether this section should be shuffled. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaed849926ff3da9f6e419a5b7d695ee78" name="gaed849926ff3da9f6e419a5b7d695ee78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaed849926ff3da9f6e419a5b7d695ee78">&#9670;&#160;</a></span>unset_question()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\unset_question </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$slotid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unset the question object after deletion. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$slotid</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaa33dd9c5247027ae7cc43746a90ae36a" name="gaa33dd9c5247027ae7cc43746a90ae36a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa33dd9c5247027ae7cc43746a90ae36a">&#9670;&#160;</a></span>update_page_break()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\update_page_break </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$slotid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add/Remove a pagebreak. </p>
+<p>Save changes to the slot page relationship in the quiz_slots table and reorders the paging for subsequent slots.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$slotid</td><td>id of slot which we will add/remove the page break before. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$type</td><td><a class="el" href="../../dd/d5f/classmod__quiz_1_1repaginate.html#a3aface81f92c9ff0ae0c6d8c17209cff" title="means join pages.">repaginate::LINK</a> or <a class="el" href="../../dd/d5f/classmod__quiz_1_1repaginate.html#a4c18026a3a5ffa21dd20f6d3edb5d237" title="means split pages.">repaginate::UNLINK</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass[]</td><td>array of slot objects. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga29f324605b3e4ac46349dbe90d1cbeb9" name="ga29f324605b3e4ac46349dbe90d1cbeb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga29f324605b3e4ac46349dbe90d1cbeb9">&#9670;&#160;</a></span>update_question_dependency()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\update_question_dependency </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$slotid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$requireprevious</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set whether the question in a particular slot requires the previous one. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$slotid</td><td>id of slot. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$requireprevious</td><td>if true, set this question to require the previous one. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gababfa2b6723691e3223fe75bde3381e3" name="gababfa2b6723691e3223fe75bde3381e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gababfa2b6723691e3223fe75bde3381e3">&#9670;&#160;</a></span>update_slot_display_number()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\update_slot_display_number </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$slotid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$displaynumber</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update the question display number when is set as customised display number or empy string. </p>
+<p>When the field displaynumber is set to empty string, the automated numbering is used. Log the updated displatnumber field.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$slotid</td><td>id of slot. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$displaynumber</td><td>set to customised string as question number or empty string fo autonumbering. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gadc7384acfdbb858ecfb1c93f550c85df" name="gadc7384acfdbb858ecfb1c93f550c85df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadc7384acfdbb858ecfb1c93f550c85df">&#9670;&#160;</a></span>update_slot_maxmark()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\update_slot_maxmark </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$slot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$maxmark</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change the max mark for a slot. </p>
+<p>Save changes to the question grades in the quiz_slots table and any corresponding question_attempts.</p>
+<p>It does not update 'sumgrades' in the quiz table.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$slot</td><td>row from the quiz_slots table. </td></tr>
+    <tr><td class="paramtype">float</td><td class="paramname">$maxmark</td><td>the new maxmark. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>true if the new grade is different from the old one. </td></tr>
   </table>
   </dd>
 </dl>
@@ -6534,24 +7477,23 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
-<div class="line">    <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;module&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span>=&gt;<span class="stringliteral">&#39;add&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span>=&gt;<span class="stringliteral">&#39;name&#39;</span>),</div>
-<div class="line">    <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;module&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span>=&gt;<span class="stringliteral">&#39;update&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span>=&gt;<span class="stringliteral">&#39;name&#39;</span>),</div>
-<div class="line">    <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;module&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span>=&gt;<span class="stringliteral">&#39;view&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span>=&gt;<span class="stringliteral">&#39;name&#39;</span>),</div>
-<div class="line">    <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;module&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span>=&gt;<span class="stringliteral">&#39;report&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span>=&gt;<span class="stringliteral">&#39;name&#39;</span>),</div>
-<div class="line">    <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;module&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span>=&gt;<span class="stringliteral">&#39;attempt&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span>=&gt;<span class="stringliteral">&#39;name&#39;</span>),</div>
-<div class="line">    <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;module&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span>=&gt;<span class="stringliteral">&#39;submit&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span>=&gt;<span class="stringliteral">&#39;name&#39;</span>),</div>
-<div class="line">    <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;module&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span>=&gt;<span class="stringliteral">&#39;review&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span>=&gt;<span class="stringliteral">&#39;name&#39;</span>),</div>
-<div class="line">    <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;module&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span>=&gt;<span class="stringliteral">&#39;editquestions&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span>=&gt;<span class="stringliteral">&#39;name&#39;</span>),</div>
-<div class="line">    <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;module&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span>=&gt;<span class="stringliteral">&#39;preview&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span>=&gt;<span class="stringliteral">&#39;name&#39;</span>),</div>
-<div class="line">    <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;module&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span>=&gt;<span class="stringliteral">&#39;start attempt&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span>=&gt;<span class="stringliteral">&#39;name&#39;</span>),</div>
-<div class="line">    <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;module&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span>=&gt;<span class="stringliteral">&#39;close attempt&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span>=&gt;<span class="stringliteral">&#39;name&#39;</span>),</div>
-<div class="line">    <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;module&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span>=&gt;<span class="stringliteral">&#39;continue attempt&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span>=&gt;<span class="stringliteral">&#39;name&#39;</span>),</div>
-<div class="line">    <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;module&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span>=&gt;<span class="stringliteral">&#39;edit override&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span>=&gt;<span class="stringliteral">&#39;name&#39;</span>),</div>
-<div class="line">    <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;module&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span>=&gt;<span class="stringliteral">&#39;delete override&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span>=&gt;<span class="stringliteral">&#39;name&#39;</span>),</div>
-<div class="line">    <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;module&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span>=&gt;<span class="stringliteral">&#39;view summary&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span>=&gt;<span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span>=&gt;<span class="stringliteral">&#39;name&#39;</span>),</div>
-<div class="line">)</div>
-<div class="ttc" id="anamespacearray_html"><div class="ttname"><a href="../../d7/df9/namespacearray.html">array</a></div><div class="ttdoc">('') &amp;#160;</div></div>
+<b>Initial value:</b><div class="fragment"><div class="line">= [</div>
+<div class="line">    [<span class="stringliteral">&#39;module&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span> =&gt; <span class="stringliteral">&#39;add&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span> =&gt; <span class="stringliteral">&#39;name&#39;</span>],</div>
+<div class="line">    [<span class="stringliteral">&#39;module&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span> =&gt; <span class="stringliteral">&#39;update&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span> =&gt; <span class="stringliteral">&#39;name&#39;</span>],</div>
+<div class="line">    [<span class="stringliteral">&#39;module&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span> =&gt; <span class="stringliteral">&#39;view&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span> =&gt; <span class="stringliteral">&#39;name&#39;</span>],</div>
+<div class="line">    [<span class="stringliteral">&#39;module&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span> =&gt; <span class="stringliteral">&#39;report&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span> =&gt; <span class="stringliteral">&#39;name&#39;</span>],</div>
+<div class="line">    [<span class="stringliteral">&#39;module&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span> =&gt; <span class="stringliteral">&#39;attempt&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span> =&gt; <span class="stringliteral">&#39;name&#39;</span>],</div>
+<div class="line">    [<span class="stringliteral">&#39;module&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span> =&gt; <span class="stringliteral">&#39;submit&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span> =&gt; <span class="stringliteral">&#39;name&#39;</span>],</div>
+<div class="line">    [<span class="stringliteral">&#39;module&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span> =&gt; <span class="stringliteral">&#39;review&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span> =&gt; <span class="stringliteral">&#39;name&#39;</span>],</div>
+<div class="line">    [<span class="stringliteral">&#39;module&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span> =&gt; <span class="stringliteral">&#39;editquestions&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span> =&gt; <span class="stringliteral">&#39;name&#39;</span>],</div>
+<div class="line">    [<span class="stringliteral">&#39;module&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span> =&gt; <span class="stringliteral">&#39;preview&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span> =&gt; <span class="stringliteral">&#39;name&#39;</span>],</div>
+<div class="line">    [<span class="stringliteral">&#39;module&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span> =&gt; <span class="stringliteral">&#39;start attempt&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span> =&gt; <span class="stringliteral">&#39;name&#39;</span>],</div>
+<div class="line">    [<span class="stringliteral">&#39;module&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span> =&gt; <span class="stringliteral">&#39;close attempt&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span> =&gt; <span class="stringliteral">&#39;name&#39;</span>],</div>
+<div class="line">    [<span class="stringliteral">&#39;module&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span> =&gt; <span class="stringliteral">&#39;continue attempt&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span> =&gt; <span class="stringliteral">&#39;name&#39;</span>],</div>
+<div class="line">    [<span class="stringliteral">&#39;module&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span> =&gt; <span class="stringliteral">&#39;edit override&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span> =&gt; <span class="stringliteral">&#39;name&#39;</span>],</div>
+<div class="line">    [<span class="stringliteral">&#39;module&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span> =&gt; <span class="stringliteral">&#39;delete override&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span> =&gt; <span class="stringliteral">&#39;name&#39;</span>],</div>
+<div class="line">    [<span class="stringliteral">&#39;module&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;action&#39;</span> =&gt; <span class="stringliteral">&#39;view summary&#39;</span>, <span class="stringliteral">&#39;mtable&#39;</span> =&gt; <span class="stringliteral">&#39;quiz&#39;</span>, <span class="stringliteral">&#39;field&#39;</span> =&gt; <span class="stringliteral">&#39;name&#39;</span>],</div>
+<div class="line">]</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -6566,28 +7508,28 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= [</div>
 <div class="line">    </div>
-<div class="line">    <span class="stringliteral">&#39;submission&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
+<div class="line">    <span class="stringliteral">&#39;submission&#39;</span> =&gt; [</div>
 <div class="line">        <span class="stringliteral">&#39;capability&#39;</span> =&gt; <span class="stringliteral">&#39;mod/quiz:emailnotifysubmission&#39;</span></div>
-<div class="line">    ),</div>
+<div class="line">    ],</div>
 <div class="line"> </div>
 <div class="line">    </div>
-<div class="line">    <span class="stringliteral">&#39;confirmation&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
+<div class="line">    <span class="stringliteral">&#39;confirmation&#39;</span> =&gt; [</div>
 <div class="line">        <span class="stringliteral">&#39;capability&#39;</span> =&gt; <span class="stringliteral">&#39;mod/quiz:emailconfirmsubmission&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;defaults&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
+<div class="line">        <span class="stringliteral">&#39;defaults&#39;</span> =&gt; [</div>
 <div class="line">            <span class="stringliteral">&#39;airnotifier&#39;</span> =&gt; MESSAGE_PERMITTED + MESSAGE_DEFAULT_ENABLED,</div>
-<div class="line">        ),</div>
-<div class="line">    ),</div>
+<div class="line">        ],</div>
+<div class="line">    ],</div>
 <div class="line"> </div>
 <div class="line">    </div>
 <div class="line">    </div>
-<div class="line">    <span class="stringliteral">&#39;attempt_overdue&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
+<div class="line">    <span class="stringliteral">&#39;attempt_overdue&#39;</span> =&gt; [</div>
 <div class="line">        <span class="stringliteral">&#39;capability&#39;</span> =&gt; <span class="stringliteral">&#39;mod/quiz:emailwarnoverdue&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;defaults&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
+<div class="line">        <span class="stringliteral">&#39;defaults&#39;</span> =&gt; [</div>
 <div class="line">            <span class="stringliteral">&#39;airnotifier&#39;</span> =&gt; MESSAGE_PERMITTED + MESSAGE_DEFAULT_ENABLED,</div>
-<div class="line">        ),</div>
-<div class="line">    ),</div>
+<div class="line">        ],</div>
+<div class="line">    ],</div>
 <div class="line"> </div>
 <div class="line">    <span class="stringliteral">&#39;attempt_grading_complete&#39;</span> =&gt; [</div>
 <div class="line">        <span class="stringliteral">&#39;capability&#39;</span> =&gt; <span class="stringliteral">&#39;mod/quiz:emailnotifyattemptgraded&#39;</span>,</div>
@@ -6595,7 +7537,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <div class="line">            <span class="stringliteral">&#39;airnotifier&#39;</span> =&gt; MESSAGE_PERMITTED + MESSAGE_DEFAULT_ENABLED,</div>
 <div class="line">        ],</div>
 <div class="line">    ],</div>
-<div class="line">)</div>
+<div class="line">]</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -6721,7 +7663,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 22 2023 03:06:07 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 29 2023 03:08:03 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

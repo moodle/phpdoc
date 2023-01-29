@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230120) (df502b3e4c8)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230126) (880462a1685)</div>
   </td>
  </tr>
  </tbody>
@@ -644,9 +644,10 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$questions</b></td><
 stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$quiz</b></td></tr>
 <tr class="memdesc:af49d88b87179b37c678bf8dc5ff18b33"><td class="mdescLeft">&#160;</td><td class="mdescRight">the quiz settings for the quiz we are reporting on. <br /></td></tr>
 <tr class="separator:af49d88b87179b37c678bf8dc5ff18b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad46c3fe9be154dc6dd66316e084e7c54"><td class="memItemLeft" align="right" valign="top"><a id="ad46c3fe9be154dc6dd66316e084e7c54" name="ad46c3fe9be154dc6dd66316e084e7c54"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$regradedqs</b> = array()</td></tr>
-<tr class="separator:ad46c3fe9be154dc6dd66316e084e7c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a953908db56a6d5b6f787288204f9d674"><td class="memItemLeft" align="right" valign="top"><a id="a953908db56a6d5b6f787288204f9d674" name="a953908db56a6d5b6f787288204f9d674"></a>
+array&#160;</td><td class="memItemRight" valign="bottom"><b>$regradedqs</b> = []</td></tr>
+<tr class="memdesc:a953908db56a6d5b6f787288204f9d674"><td class="mdescLeft">&#160;</td><td class="mdescRight">used to store information about which questoins have been regraded. <br /></td></tr>
+<tr class="separator:a953908db56a6d5b6f787288204f9d674"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6fb3b21b6eb4bfba43ea6f0244a4680"><td class="memItemLeft" align="right" valign="top"><a id="aa6fb3b21b6eb4bfba43ea6f0244a4680" name="aa6fb3b21b6eb4bfba43ea6f0244a4680"></a>
 <a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$reporturl</b></td></tr>
 <tr class="memdesc:aa6fb3b21b6eb4bfba43ea6f0244a4680"><td class="mdescLeft">&#160;</td><td class="mdescRight">the URL of this report. <br /></td></tr>
@@ -740,7 +741,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b> = 
 <p>Constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td></td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td></td></tr>
     <tr><td class="paramtype">context</td><td class="paramname">$context</td><td></td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$qmsubselect</td><td></td></tr>
     <tr><td class="paramtype"><a class="el" href="../../db/d7e/classquiz__overview__options.html">quiz_overview_options</a></td><td class="paramname">$options</td><td></td></tr>
@@ -2047,7 +2048,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b> = 
 <p>Format an entry in an average row. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$record</td><td>with fields grade and numaveraged. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$record</td><td>with fields grade and numaveraged. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$question</td><td>true if this is a question score, false if it is an overall score. </td></tr>
   </table>
   </dd>
@@ -3690,7 +3691,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b> = 
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$colname</td><td>the name of the column. </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$attempt</td><td>the row of data - see the SQL in display() in mod/quiz/report/overview/report.php to see what fields are present, and what they are called. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$attempt</td><td>the row of data - see the SQL in display() in mod/quiz/report/overview/report.php to see what fields are present, and what they are called. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3895,7 +3896,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b> = 
 </div><div class="memdoc">
 
 <p>This method is deprecated although the old api is still supported. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000805">Deprecated:</a></b></dt><dd>1.9.2 - Jun 2, 2008 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000806">Deprecated:</a></b></dt><dd>1.9.2 - Jun 2, 2008 </dd></dl>
 
 </div>
 </div>
@@ -3991,7 +3992,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b> = 
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000806">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000807">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
 
 </div>
 </div>
@@ -5506,7 +5507,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b> = 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 22 2023 03:07:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 29 2023 03:09:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

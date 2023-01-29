@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230120) (df502b3e4c8)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230126) (880462a1685)</div>
   </td>
  </tr>
  </tbody>
@@ -358,7 +358,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timenow</b></td></tr>
 <p>This is called from {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dd/df0/group__mod__quiz.html#ga41e300aad72ab1216c9fc977a2874f93" title="Given an ID of an instance of this module, this function will permanently delete the instance and any...">quiz_delete_instance()</a>} in lib.php. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the data from the database, including $quiz-&gt;id which is the id of the quiz being deleted. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the data from the database, including $quiz-&gt;id which is the id of the quiz being deleted. </td></tr>
   </table>
   </dd>
 </dl>
@@ -662,7 +662,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timenow</b></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$numprevattempts</td><td>the number of previous attempts this user has made. </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$lastattempt</td><td>information about the user's last completed attempt. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$lastattempt</td><td>information about the user's last completed attempt. </td></tr>
   </table>
   </dd>
 </dl>
@@ -880,7 +880,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timenow</b></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$numprevattempts</td><td>the number of previous attempts this user has made. </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$lastattempt</td><td>information about the user's last completed attempt. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$lastattempt</td><td>information about the user's last completed attempt. </td></tr>
   </table>
   </dd>
 </dl>
@@ -923,7 +923,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timenow</b></td></tr>
 <p>This is called from {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dd/df0/group__mod__quiz.html#gaab02f7896e9cc90b405fc7134d239cbc" title="This function is called at the end of quiz_add_instance and quiz_update_instance, to do the common pr...">quiz_after_add_or_update()</a>} in lib.php. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the data from the quiz form, including $quiz-&gt;id which is the id of the quiz being saved. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the data from the quiz form, including $quiz-&gt;id which is the id of the quiz being saved. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1006,7 +1006,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timenow</b></td></tr>
 <p>If the user should be shown a different amount of time than $timenow - $this-&gt;end_time(), then override this method. </p>
 <p>This is useful if the time remaining is large enough to be omitted. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$attempt</td><td>the current attempt </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$attempt</td><td>the current attempt </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$timenow</td><td>the time now. We don't use $this-&gt;timenow, so we can give the user a more accurate indication of how much time is left. </td></tr>
   </table>
   </dd>
@@ -1165,7 +1165,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timenow</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 22 2023 03:07:44 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 29 2023 03:09:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

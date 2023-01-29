@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230120) (df502b3e4c8)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230126) (880462a1685)</div>
   </td>
  </tr>
  </tbody>
@@ -368,6 +368,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga644284bb03c030cda3014b75253c81a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga644284bb03c030cda3014b75253c81a2">core_course_inplace_editable</a> ($itemtype, $itemid, $newvalue)</td></tr>
 <tr class="memdesc:ga644284bb03c030cda3014b75253c81a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements callback inplace_editable() allowing to edit values in-place.  <br /></td></tr>
 <tr class="separator:ga644284bb03c030cda3014b75253c81a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5156e087c9f08d102ee87ebd2a70b3f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga5156e087c9f08d102ee87ebd2a70b3f8">core_courseformat_output_fragment_cmitem</a> ($args)</td></tr>
+<tr class="memdesc:ga5156e087c9f08d102ee87ebd2a70b3f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Course-module fragment renderer method.  <br /></td></tr>
+<tr class="separator:ga5156e087c9f08d102ee87ebd2a70b3f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae96140dba26150064ddbd53c38c7c1e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#gae96140dba26150064ddbd53c38c7c1e3">core_courseformat_output_fragment_section</a> ($args)</td></tr>
+<tr class="memdesc:gae96140dba26150064ddbd53c38c7c1e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Section fragment renderer method.  <br /></td></tr>
+<tr class="separator:gae96140dba26150064ddbd53c38c7c1e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5f4ba7dd0feaf52507e49fdbe200dfb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga5f4ba7dd0feaf52507e49fdbe200dfb1">course_add_cm_to_section</a> ($courseorid, $cmid, $sectionnum, $beforemod=null)</td></tr>
 <tr class="memdesc:ga5f4ba7dd0feaf52507e49fdbe200dfb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an existing module to the section.  <br /></td></tr>
 <tr class="separator:ga5f4ba7dd0feaf52507e49fdbe200dfb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2030,6 +2036,72 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname"><a class="el" href="../../d4/d65/classcore_1_1output_1_1inplace__editable.html">core::output::inplace_editable</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga5156e087c9f08d102ee87ebd2a70b3f8" name="ga5156e087c9f08d102ee87ebd2a70b3f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5156e087c9f08d102ee87ebd2a70b3f8">&#9670;&#160;</a></span>core_courseformat_output_fragment_cmitem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat_output_fragment_cmitem </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Course-module fragment renderer method. </p>
+<p>The fragment arguments are id and sr (section return).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$args</td><td>The fragment arguments. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>The rendered cm item. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gae96140dba26150064ddbd53c38c7c1e3" name="gae96140dba26150064ddbd53c38c7c1e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae96140dba26150064ddbd53c38c7c1e3">&#9670;&#160;</a></span>core_courseformat_output_fragment_section()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat_output_fragment_section </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Section fragment renderer method. </p>
+<p>The fragment arguments are courseid, section id and sr (section return).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$args</td><td>The fragment arguments. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>The rendered section. </td></tr>
   </table>
   </dd>
 </dl>
@@ -8507,7 +8579,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 22 2023 03:06:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 29 2023 03:08:02 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

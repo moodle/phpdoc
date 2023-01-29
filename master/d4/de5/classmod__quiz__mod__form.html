@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230120) (df502b3e4c8)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230126) (880462a1685)</div>
   </td>
  </tr>
  </tbody>
@@ -242,7 +242,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:a32c4314a30612d6c5a41f0f8736ef2c2"><td class="memItemLeft" align="right" valign="top"><a id="a32c4314a30612d6c5a41f0f8736ef2c2" name="a32c4314a30612d6c5a41f0f8736ef2c2"></a>
-static array&#160;</td><td class="memItemRight" valign="bottom"><b>$datefieldoptions</b> = array('optional' =&gt; true)</td></tr>
+static array&#160;</td><td class="memItemRight" valign="bottom"><b>$datefieldoptions</b> = ['optional' =&gt; true]</td></tr>
 <tr class="memdesc:a32c4314a30612d6c5a41f0f8736ef2c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">options to be used with date_time_selector fields in the quiz. <br /></td></tr>
 <tr class="separator:a32c4314a30612d6c5a41f0f8736ef2c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -335,9 +335,10 @@ object&#160;</td><td class="memItemRight" valign="bottom"><b>$_definition_finali
 &#160;</td><td class="memItemRight" valign="bottom"><b>$_features</b></td></tr>
 <tr class="memdesc:a1fc0576062b060d9bd24f9aab45c2596"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of modform features. <br /></td></tr>
 <tr class="separator:a1fc0576062b060d9bd24f9aab45c2596"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e50f62751270b724631b329d147c75a"><td class="memItemLeft" align="right" valign="top"><a id="a2e50f62751270b724631b329d147c75a" name="a2e50f62751270b724631b329d147c75a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$_feedbacks</b></td></tr>
-<tr class="separator:a2e50f62751270b724631b329d147c75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eb736a4d813d5f0dbeb8aadc7fab95f"><td class="memItemLeft" align="right" valign="top"><a id="a8eb736a4d813d5f0dbeb8aadc7fab95f" name="a8eb736a4d813d5f0dbeb8aadc7fab95f"></a>
+array&#160;</td><td class="memItemRight" valign="bottom"><b>$_feedbacks</b></td></tr>
+<tr class="memdesc:a8eb736a4d813d5f0dbeb8aadc7fab95f"><td class="mdescLeft">&#160;</td><td class="mdescRight">caches the quiz overall feedback, for convenience. <br /></td></tr>
+<tr class="separator:a8eb736a4d813d5f0dbeb8aadc7fab95f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab2d4eee10404e3367b567af2a3e74934"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../d5/d8e/class_moodle_quick_form.html">MoodleQuickForm</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$_form</b></td></tr>
 <tr class="memdesc:gab2d4eee10404e3367b567af2a3e74934"><td class="mdescLeft">&#160;</td><td class="mdescRight">quickform object definition <br /></td></tr>
@@ -387,9 +388,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$maxattemptsanyoverrid
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
-<tr class="memitem:a21c5fd29f69dc38183832d198a0255be"><td class="memItemLeft" align="right" valign="top"><a id="a21c5fd29f69dc38183832d198a0255be" name="a21c5fd29f69dc38183832d198a0255be"></a>
-static&#160;</td><td class="memItemRight" valign="bottom"><b>$reviewfields</b> = array()</td></tr>
-<tr class="separator:a21c5fd29f69dc38183832d198a0255be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade5e84aae24f70785f9c2f9982a8b556"><td class="memItemLeft" align="right" valign="top">static array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de5/classmod__quiz__mod__form.html#ade5e84aae24f70785f9c2f9982a8b556">$reviewfields</a> = []</td></tr>
+<tr class="memdesc:ade5e84aae24f70785f9c2f9982a8b556"><td class="mdescLeft">&#160;</td><td class="mdescRight">for convenience stores the list of types of review option.  <br /></td></tr>
+<tr class="separator:ade5e84aae24f70785f9c2f9982a8b556"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Settings form for the quiz module. </p>
@@ -1438,13 +1439,38 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$reviewfields</b> =
 
 </div>
 </div>
+<a id="ade5e84aae24f70785f9c2f9982a8b556" name="ade5e84aae24f70785f9c2f9982a8b556"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade5e84aae24f70785f9c2f9982a8b556">&#9670;&#160;</a></span>$reviewfields</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">array mod_quiz_mod_form::$reviewfields = []</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>for convenience stores the list of types of review option. </p>
+<p>Initialised in the constructor. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>mod/quiz/mod_form.php</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 22 2023 03:07:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Jan 29 2023 03:09:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>
