@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230126) (880462a1685)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230203) (0780e87f06e)</div>
   </td>
  </tr>
  </tbody>
@@ -144,6 +144,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a0c676be54e9d3be5705a2a60f2f06504"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dd0/classmod__data_1_1template.html#a0c676be54e9d3be5705a2a60f2f06504">get_tag_moreurl_replacement</a> (stdClass $entry, bool $canmanageentry)</td></tr>
 <tr class="memdesc:a0c676be54e9d3be5705a2a60f2f06504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ##moreurl## tag replacement for an entry.  <br /></td></tr>
 <tr class="separator:a0c676be54e9d3be5705a2a60f2f06504"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87e55edccc387fa5ce867263b60608ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dd0/classmod__data_1_1template.html#a87e55edccc387fa5ce867263b60608ad">get_tag_otherfields_replacement</a> (stdClass $entry, bool $canmanageentry)</td></tr>
+<tr class="memdesc:a87e55edccc387fa5ce867263b60608ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ##otherfields## tag replacement for an entry.  <br /></td></tr>
+<tr class="separator:a87e55edccc387fa5ce867263b60608ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a278bbcce9ad922b5a90370a476a3d679"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dd0/classmod__data_1_1template.html#a278bbcce9ad922b5a90370a476a3d679">get_tag_tags_replacement</a> (stdClass $entry, bool $canmanageentry)</td></tr>
 <tr class="memdesc:a278bbcce9ad922b5a90370a476a3d679"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ##tags## tag replacement for an entry.  <br /></td></tr>
 <tr class="separator:a278bbcce9ad922b5a90370a476a3d679"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,6 +165,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:adfc83dbd85ae43392f7fc61d9e119ec4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dd0/classmod__data_1_1template.html#adfc83dbd85ae43392f7fc61d9e119ec4">load_template_tags</a> (string $templatecontent)</td></tr>
 <tr class="memdesc:adfc83dbd85ae43392f7fc61d9e119ec4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scan the template tags.  <br /></td></tr>
 <tr class="separator:adfc83dbd85ae43392f7fc61d9e119ec4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa07bb3cf9d5425f4619106f69f366f47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dd0/classmod__data_1_1template.html#aa07bb3cf9d5425f4619106f69f366f47">preprocess_tag_otherfields</a> (string $templatecontent)</td></tr>
+<tr class="memdesc:aa07bb3cf9d5425f4619106f69f366f47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare otherfield tag scanning the present template fields.  <br /></td></tr>
+<tr class="separator:aa07bb3cf9d5425f4619106f69f366f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -169,6 +175,10 @@ Protected Attributes</h2></td></tr>
 array&#160;</td><td class="memItemRight" valign="bottom"><b>$fields</b> = []</td></tr>
 <tr class="memdesc:ac59a21911cd5af7942ee20eed6d14579"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="../../d9/dad/namespacemod__data.html" title="&#160;">mod_data</a> fields. <br /></td></tr>
 <tr class="separator:ac59a21911cd5af7942ee20eed6d14579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9db8ff0968b1c79c449a46b05f184b50"><td class="memItemLeft" align="right" valign="top"><a id="a9db8ff0968b1c79c449a46b05f184b50" name="a9db8ff0968b1c79c449a46b05f184b50"></a>
+array&#160;</td><td class="memItemRight" valign="bottom"><b>$otherfields</b> = []</td></tr>
+<tr class="memdesc:a9db8ff0968b1c79c449a46b05f184b50"><td class="mdescLeft">&#160;</td><td class="mdescRight">All fields that are not present in the template content. <br /></td></tr>
+<tr class="separator:a9db8ff0968b1c79c449a46b05f184b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf6743148d4fcac1da376659c5166e71"><td class="memItemLeft" align="right" valign="top"><a id="aaf6743148d4fcac1da376659c5166e71" name="aaf6743148d4fcac1da376659c5166e71"></a>
 array&#160;</td><td class="memItemRight" valign="bottom"><b>$tags</b> = []</td></tr>
 <tr class="memdesc:aaf6743148d4fcac1da376659c5166e71"><td class="mdescLeft">&#160;</td><td class="mdescRight">All template tags (calculated in load_template_tags). <br /></td></tr>
@@ -1056,6 +1066,57 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$tags</b> = []</td><
 
 </div>
 </div>
+<a id="a87e55edccc387fa5ce867263b60608ad" name="a87e55edccc387fa5ce867263b60608ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87e55edccc387fa5ce867263b60608ad">&#9670;&#160;</a></span>get_tag_otherfields_replacement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_data\template::get_tag_otherfields_replacement </td>
+          <td>(</td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$entry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$canmanageentry</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the ##otherfields## tag replacement for an entry. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$entry</td><td>the entry object </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$canmanageentry</td><td>if the current user can manage this entry </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>the tag replacement </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a278bbcce9ad922b5a90370a476a3d679" name="a278bbcce9ad922b5a90370a476a3d679"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a278bbcce9ad922b5a90370a476a3d679">&#9670;&#160;</a></span>get_tag_tags_replacement()</h2>
 
@@ -1512,13 +1573,47 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$tags</b> = []</td><
 
 </div>
 </div>
+<a id="aa07bb3cf9d5425f4619106f69f366f47" name="aa07bb3cf9d5425f4619106f69f366f47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa07bb3cf9d5425f4619106f69f366f47">&#9670;&#160;</a></span>preprocess_tag_otherfields()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_data\template::preprocess_tag_otherfields </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$templatecontent</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Prepare otherfield tag scanning the present template fields. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$templatecontent</td><td>the template content </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>mod/data/classes/template.php</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 29 2023 03:11:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Feb 5 2023 03:19:57 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>
