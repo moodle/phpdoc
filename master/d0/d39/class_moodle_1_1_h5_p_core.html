@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230203) (0780e87f06e)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230210) (1ea152c99a6)</div>
   </td>
  </tr>
  </tbody>
@@ -76,7 +76,7 @@ Inheritance diagram for Moodle\H5PCore:</div>
  <div class="center">
   <img src="../../d0/d39/class_moodle_1_1_h5_p_core.png" usemap="#Moodle_5CH5PCore_map" alt=""/>
   <map id="Moodle_5CH5PCore_map" name="Moodle_5CH5PCore_map">
-<area href="../../d2/d83/classcore__h5p_1_1core.html" title="H5P core class, containing functions and storage shared by the other H5P classes." alt="core_h5p\core" shape="rect" coords="0,56,110,80"/>
+<area href="../../d2/d83/classcore__h5p_1_1core.html" alt="core_h5p\core" shape="rect" coords="0,56,110,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -214,9 +214,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ad1d16fa03e4041975c3bdcb30bbbedac"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d39/class_moodle_1_1_h5_p_core.html#ad1d16fa03e4041975c3bdcb30bbbedac">libraryFromString</a> ($libraryString)</td></tr>
 <tr class="memdesc:ad1d16fa03e4041975c3bdcb30bbbedac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses library data from a string on the form {machineName} {majorVersion}.  <br /></td></tr>
 <tr class="separator:ad1d16fa03e4041975c3bdcb30bbbedac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9c95acfe7a0944f2998783ba9730937"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d39/class_moodle_1_1_h5_p_core.html#ac9c95acfe7a0944f2998783ba9730937">libraryToString</a> ($library, $folderName=FALSE)</td></tr>
-<tr class="memdesc:ac9c95acfe7a0944f2998783ba9730937"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes library data as string on the form {machineName} {majorVersion}.  <br /></td></tr>
-<tr class="separator:ac9c95acfe7a0944f2998783ba9730937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04d8eab3d71361c274e0cb8f42ffafe9"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d39/class_moodle_1_1_h5_p_core.html#a04d8eab3d71361c274e0cb8f42ffafe9">libraryToFolderName</a> ($library)</td></tr>
+<tr class="memdesc:a04d8eab3d71361c274e0cb8f42ffafe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of a library's folder name.  <br /></td></tr>
+<tr class="separator:a04d8eab3d71361c274e0cb8f42ffafe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37c705f5bac503378e0ea5dea9710f86"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d39/class_moodle_1_1_h5_p_core.html#a37c705f5bac503378e0ea5dea9710f86">libraryToString</a> ($library)</td></tr>
+<tr class="memdesc:a37c705f5bac503378e0ea5dea9710f86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes library data as string on the form {machineName} {majorVersion}.  <br /></td></tr>
+<tr class="separator:a37c705f5bac503378e0ea5dea9710f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac39cde5a7cdbd6bcdb0c82e10ddd72dc"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d39/class_moodle_1_1_h5_p_core.html#ac39cde5a7cdbd6bcdb0c82e10ddd72dc">libraryVersion</a> ($library)</td></tr>
 <tr class="memdesc:ac39cde5a7cdbd6bcdb0c82e10ddd72dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the absolute version for the library as a human readable string.  <br /></td></tr>
 <tr class="separator:ac39cde5a7cdbd6bcdb0c82e10ddd72dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -303,7 +306,7 @@ Static Public Attributes</h2></td></tr>
 <tr class="memitem:ab207199620a2e72471f55be7295cce67"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d39/class_moodle_1_1_h5_p_core.html#ab207199620a2e72471f55be7295cce67">$coreApi</a></td></tr>
 <tr class="separator:ab207199620a2e72471f55be7295cce67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a274241822b96b97e12977f800e0fb070"><td class="memItemLeft" align="right" valign="top"><a id="a274241822b96b97e12977f800e0fb070" name="a274241822b96b97e12977f800e0fb070"></a>
-static&#160;</td><td class="memItemRight" valign="bottom"><b>$defaultContentWhitelist</b> = 'json png jpg jpeg gif bmp tif tiff svg eot ttf woff woff2 otf webm mp4 ogg mp3 m4a wav txt <a class="el" href="../../dc/d30/classpdf.html">pdf</a> rtf doc docx xls xlsx ppt pptx odt ods odp xml csv <a class="el" href="../../dc/d71/group___imap___client.html#ga9bbb5048917cda479da78c776c5eeca3">diff</a> patch swf md textile vtt webvtt'</td></tr>
+static&#160;</td><td class="memItemRight" valign="bottom"><b>$defaultContentWhitelist</b> = 'json png jpg jpeg gif bmp tif tiff svg eot ttf woff woff2 otf webm mp4 ogg mp3 m4a wav txt <a class="el" href="../../dc/d30/classpdf.html">pdf</a> rtf doc docx xls xlsx ppt pptx odt ods odp xml csv <a class="el" href="../../dc/d71/group___imap___client.html#ga9bbb5048917cda479da78c776c5eeca3">diff</a> patch swf md textile vtt webvtt gltf glb'</td></tr>
 <tr class="separator:a274241822b96b97e12977f800e0fb070"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfa971e9309d8107626755a34f9e79c0"><td class="memItemLeft" align="right" valign="top"><a id="abfa971e9309d8107626755a34f9e79c0" name="abfa971e9309d8107626755a34f9e79c0"></a>
 static&#160;</td><td class="memItemRight" valign="bottom"><b>$defaultLibraryWhitelistExtras</b> = 'js css'</td></tr>
@@ -1138,6 +1141,8 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Reimplemented in <a class="el" href="../../d2/d83/classcore__h5p_1_1core.html#ab5bfa1ac677c7f0a133f2b1dd468341d">core_h5p\core</a>.</p>
+
 </div>
 </div>
 <a id="aa0f8dc2044153f183d1524c031569db1" name="aa0f8dc2044153f183d1524c031569db1"></a>
@@ -1618,8 +1623,42 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac9c95acfe7a0944f2998783ba9730937" name="ac9c95acfe7a0944f2998783ba9730937"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9c95acfe7a0944f2998783ba9730937">&#9670;&#160;</a></span>libraryToString()</h2>
+<a id="a04d8eab3d71361c274e0cb8f42ffafe9" name="a04d8eab3d71361c274e0cb8f42ffafe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04d8eab3d71361c274e0cb8f42ffafe9">&#9670;&#160;</a></span>libraryToFolderName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Moodle\H5PCore::libraryToFolderName </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$library</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the name of a library's folder name. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a37c705f5bac503378e0ea5dea9710f86" name="a37c705f5bac503378e0ea5dea9710f86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37c705f5bac503378e0ea5dea9710f86">&#9670;&#160;</a></span>libraryToString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1631,18 +1670,8 @@ Protected Member Functions</h2></td></tr>
           <td class="memname">static Moodle\H5PCore::libraryToString </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$library</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>$library</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$folderName</em> = <code>FALSE</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -1656,8 +1685,7 @@ Protected Member Functions</h2></td></tr>
 <p>{minorVersion}</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$library</td><td>With keys machineName, majorVersion and minorVersion </td></tr>
-    <tr><td class="paramtype">boolean</td><td class="paramname">$folderName</td><td>Use hyphen instead of space in returned string. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$library</td><td>With keys (machineName and/or name), majorVersion and minorVersion </td></tr>
   </table>
   </dd>
 </dl>
@@ -2226,7 +2254,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
 <div class="line">    <span class="stringliteral">&#39;majorVersion&#39;</span> =&gt; 1,</div>
-<div class="line">    <span class="stringliteral">&#39;minorVersion&#39;</span> =&gt; 24</div>
+<div class="line">    <span class="stringliteral">&#39;minorVersion&#39;</span> =&gt; 25</div>
 <div class="line">  )</div>
 </div><!-- fragment -->
 </div>
@@ -2288,6 +2316,7 @@ Protected Member Functions</h2></td></tr>
 <div class="line">    <span class="stringliteral">&#39;js/h5p-confirmation-dialog.js&#39;</span>,</div>
 <div class="line">    <span class="stringliteral">&#39;js/h5p-action-bar.js&#39;</span>,</div>
 <div class="line">    <span class="stringliteral">&#39;js/request-queue.js&#39;</span>,</div>
+<div class="line">    <span class="stringliteral">&#39;js/h5p-tooltip.js&#39;</span>,</div>
 <div class="line">  )</div>
 </div><!-- fragment -->
 </div>
@@ -2314,7 +2343,8 @@ Protected Member Functions</h2></td></tr>
 <b>Initial value:</b><div class="fragment"><div class="line">= <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
 <div class="line">    <span class="stringliteral">&#39;styles/h5p.css&#39;</span>,</div>
 <div class="line">    <span class="stringliteral">&#39;styles/h5p-confirmation-dialog.css&#39;</span>,</div>
-<div class="line">    <span class="stringliteral">&#39;styles/h5p-core-button.css&#39;</span></div>
+<div class="line">    <span class="stringliteral">&#39;styles/h5p-core-button.css&#39;</span>,</div>
+<div class="line">    <span class="stringliteral">&#39;styles/h5p-tooltip.css&#39;</span>,</div>
 <div class="line">  )</div>
 </div><!-- fragment -->
 </div>
@@ -2325,7 +2355,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 5 2023 03:20:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Feb 12 2023 03:12:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

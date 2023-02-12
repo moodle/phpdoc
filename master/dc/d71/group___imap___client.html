@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230203) (0780e87f06e)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230210) (1ea152c99a6)</div>
   </td>
  </tr>
  </tbody>
@@ -114,6 +114,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga8f132f051b7cd7d570ccb9f6e2bb4201"><td class="memItemLeft" align="right" valign="top"><a id="ga8f132f051b7cd7d570ccb9f6e2bb4201" name="ga8f132f051b7cd7d570ccb9f6e2bb4201"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>__isset</b> ($name)</td></tr>
 <tr class="separator:ga8f132f051b7cd7d570ccb9f6e2bb4201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab1d6abfbdcd8c9dd63dfef565bd2cfcf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d71/group___imap___client.html#gab1d6abfbdcd8c9dd63dfef565bd2cfcf">__serialize</a> ()</td></tr>
+<tr class="memdesc:gab1d6abfbdcd8c9dd63dfef565bd2cfcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialization.  <br /></td></tr>
+<tr class="separator:gab1d6abfbdcd8c9dd63dfef565bd2cfcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga83c2703c91959192f759992ad5640b67"><td class="memItemLeft" align="right" valign="top"><a id="ga83c2703c91959192f759992ad5640b67" name="ga83c2703c91959192f759992ad5640b67"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>__set</b> ($name, $<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
 <tr class="separator:ga83c2703c91959192f759992ad5640b67"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,6 +126,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga7516ca30af0db3cdbf9a7739b48ce91d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d71/group___imap___client.html#ga7516ca30af0db3cdbf9a7739b48ce91d">__toString</a> ()</td></tr>
 <tr class="memdesc:ga7516ca30af0db3cdbf9a7739b48ce91d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cooerce to string.  <br /></td></tr>
 <tr class="separator:ga7516ca30af0db3cdbf9a7739b48ce91d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaece9561d22d6ba341c36c371e50c2a8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d71/group___imap___client.html#gaece9561d22d6ba341c36c371e50c2a8a">__unserialize</a> ( $data)</td></tr>
+<tr class="memdesc:gaece9561d22d6ba341c36c371e50c2a8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unserialization.  <br /></td></tr>
+<tr class="separator:gaece9561d22d6ba341c36c371e50c2a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga14ce9d864e73ce205828908269ac1049"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d71/group___imap___client.html#ga14ce9d864e73ce205828908269ac1049">_addFuzzy</a> ($<a class="el" href="../../dc/d71/group___imap___client.html#ga41ec23da3e5ce7ebf35d4fde663cf1db">add</a>, &amp;$temp)</td></tr>
 <tr class="memdesc:ga14ce9d864e73ce205828908269ac1049"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds fuzzy modifier to search keys.  <br /></td></tr>
 <tr class="separator:ga14ce9d864e73ce205828908269ac1049"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2866,7 +2872,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>UTF7IMAP_CONVERSION<
     <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>See $_thread. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$type</td><td>Either 'sequence' or 'uid'.</td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$message</td><td>Error message (non-translated). </td></tr>
-    <tr><td class="paramtype">code</td><td class="paramname">$code</td><td>Error code.</td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$code</td><td>Error code.</td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$extension</td><td>The extension not supported on the server. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$msg</td><td>A non-standard error message to use instead of the default.</td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$ob_class</td><td>Class to use when creating a new fetch object. </td></tr>
@@ -3216,7 +3222,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>UTF7IMAP_CONVERSION<
            DEFAULT: 30 seconds</pre></li>
 <li><pre>username: (string) [REQUIRED] The username.</pre></li>
 <li><pre>authusername (string) The username used for SASL authentication.
-     If specified this is the user name whose password is used 
+     If specified this is the user name whose password is used
      (e.g. administrator).
      Only valid for RFC 2595/4616 - PLAIN SASL mechanism.
      DEFAULT: the same value provided in the username parameter.
@@ -3569,6 +3575,39 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>UTF7IMAP_CONVERSION<
 
 </div>
 </div>
+<a id="gab1d6abfbdcd8c9dd63dfef565bd2cfcf" name="gab1d6abfbdcd8c9dd63dfef565bd2cfcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab1d6abfbdcd8c9dd63dfef565bd2cfcf">&#9670;&#160;</a></span>__serialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__serialize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Serialization. </p>
+<p>Serialize (PHP 7.4+)</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td></td></tr>
+    <tr><td class="paramname">string</td><td>Serialized data.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>object state </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga7516ca30af0db3cdbf9a7739b48ce91d" name="ga7516ca30af0db3cdbf9a7739b48ce91d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga7516ca30af0db3cdbf9a7739b48ce91d">&#9670;&#160;</a></span>__toString()</h2>
 
@@ -3599,6 +3638,50 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>UTF7IMAP_CONVERSION<
     <tr><td class="paramname">string</td><td>The base subject.</td></tr>
     <tr><td class="paramname">string</td><td>String value.</td></tr>
     <tr><td class="paramname">string</td><td>A URL string. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaece9561d22d6ba341c36c371e50c2a8a" name="gaece9561d22d6ba341c36c371e50c2a8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaece9561d22d6ba341c36c371e50c2a8a">&#9670;&#160;</a></span>__unserialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">__unserialize </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unserialization. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$data</td><td>Serialized data.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../df/d70/class_exception.html">Exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -19456,7 +19539,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>UTF7IMAP_CONVERSION<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 5 2023 03:16:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Feb 12 2023 03:09:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

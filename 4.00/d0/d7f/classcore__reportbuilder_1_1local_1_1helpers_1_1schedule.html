@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.6+ (Build: 20230203) (a2b88160d77)</div>
+   <div id="projectbrief">Moodle 4.0.6+ (Build: 20230210) (44d77d08487)</div>
   </td>
  </tr>
  </tbody>
@@ -69,9 +69,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4bea21fa4ac6b39daf9541aeb73b68f0"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d7f/classcore__reportbuilder_1_1local_1_1helpers_1_1schedule.html#a4bea21fa4ac6b39daf9541aeb73b68f0">calculate_next_send_time</a> (model $<a class="el" href="../../d0/d7f/classcore__reportbuilder_1_1local_1_1helpers_1_1schedule.html">schedule</a>, ?int $timenow=null)</td></tr>
 <tr class="memdesc:a4bea21fa4ac6b39daf9541aeb73b68f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the next time a schedule should be sent, based on it's recurrence and when it was initially scheduled.  <br /></td></tr>
 <tr class="separator:a4bea21fa4ac6b39daf9541aeb73b68f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad61d791a109b27073115d81b0bb2ef59"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d7f/classcore__reportbuilder_1_1local_1_1helpers_1_1schedule.html#ad61d791a109b27073115d81b0bb2ef59">create_schedule</a> (stdClass $data)</td></tr>
-<tr class="memdesc:ad61d791a109b27073115d81b0bb2ef59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create report schedule, calculate when it should be next sent.  <br /></td></tr>
-<tr class="separator:ad61d791a109b27073115d81b0bb2ef59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac00eb804405068c5f8fa8ff61450905c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d7f/classcore__reportbuilder_1_1local_1_1helpers_1_1schedule.html#ac00eb804405068c5f8fa8ff61450905c">create_schedule</a> (stdClass $data, ?int $timenow=null)</td></tr>
+<tr class="memdesc:ac00eb804405068c5f8fa8ff61450905c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create report schedule, calculate when it should be next sent.  <br /></td></tr>
+<tr class="separator:ac00eb804405068c5f8fa8ff61450905c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac7850427388ac6731424435a32f101b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d7f/classcore__reportbuilder_1_1local_1_1helpers_1_1schedule.html#aac7850427388ac6731424435a32f101b">delete_schedule</a> (int $reportid, int $scheduleid)</td></tr>
 <tr class="memdesc:aac7850427388ac6731424435a32f101b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete report schedule.  <br /></td></tr>
 <tr class="separator:aac7850427388ac6731424435a32f101b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,7 +149,7 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">model</td><td class="paramname">$schedule</td><td></td></tr>
-    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$timenow</td><td>Time to use for calculation (defaults to current time) </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$timenow</td><td>Time to use as comparison against current date (defaults to current time) </td></tr>
   </table>
   </dd>
 </dl>
@@ -162,8 +162,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad61d791a109b27073115d81b0bb2ef59" name="ad61d791a109b27073115d81b0bb2ef59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad61d791a109b27073115d81b0bb2ef59">&#9670;&#160;</a></span>create_schedule()</h2>
+<a id="ac00eb804405068c5f8fa8ff61450905c" name="ac00eb804405068c5f8fa8ff61450905c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac00eb804405068c5f8fa8ff61450905c">&#9670;&#160;</a></span>create_schedule()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -175,8 +175,18 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">static core_reportbuilder\local\helpers\schedule::create_schedule </td>
           <td>(</td>
           <td class="paramtype">stdClass&#160;</td>
-          <td class="paramname"><em>$data</em></td><td>)</td>
+          <td class="paramname"><em>$data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">?int&#160;</td>
+          <td class="paramname"><em>$timenow</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -190,6 +200,7 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$data</td><td></td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$timenow</td><td>Time to use as comparison against current date (defaults to current time) </td></tr>
   </table>
   </dd>
 </dl>
@@ -725,7 +736,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 5 2023 03:05:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Feb 12 2023 02:59:22 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

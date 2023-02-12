@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230203) (0780e87f06e)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230210) (1ea152c99a6)</div>
   </td>
  </tr>
  </tbody>
@@ -198,7 +198,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a761d2cf200915f580ca0e08d086b9c01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preload all contexts instances from course.  <br /></td></tr>
 <tr class="separator:a761d2cf200915f580ca0e08d086b9c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a880fd7e866a46ef42a40b2a1e4ad1588"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dca/classcontext__helper.html#a880fd7e866a46ef42a40b2a1e4ad1588">preload_from_record</a> (stdClass $rec)</td></tr>
-<tr class="memdesc:a880fd7e866a46ef42a40b2a1e4ad1588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preloads context information from db record and strips the cached info.  <br /></td></tr>
+<tr class="memdesc:a880fd7e866a46ef42a40b2a1e4ad1588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preloads context cache with information from db record and strips the cached info.  <br /></td></tr>
 <tr class="separator:a880fd7e866a46ef42a40b2a1e4ad1588"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6713734461866996292e3e501c6d736e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dca/classcontext__helper.html#a6713734461866996292e3e501c6d736e">reset_caches</a> ()</td></tr>
 <tr class="memdesc:a6713734461866996292e3e501c6d736e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the cache to remove all data.  <br /></td></tr>
@@ -1891,7 +1891,7 @@ static <a class="el" href="../../de/de3/classcontext__system.html">context_syste
 </table>
 </div><div class="memdoc">
 
-<p>Preloads context information from db record and strips the cached info. </p>
+<p>Preloads context cache with information from db record and strips the cached info. </p>
 <p>The db request has to contain all columns from <a class="el" href="../../df/dca/classcontext__helper.html#ab0347266737df19842b3744ee9df983a" title="Returns all fields necessary for context preloading from user $rec.">context_helper::get_preload_record_columns()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1901,7 +1901,7 @@ static <a class="el" href="../../de/de3/classcontext__system.html">context_syste
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">void</td><td>(modifies $rec) </td></tr>
+    <tr><td class="paramname">void</td><td>This is intentional. See <a href="https://tracker.moodle.org/browse/MDL-37115" class="el">MDL-37115</a>. You will need to get the context in the normal way, but it is now cached, so that will be fast. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2297,7 +2297,7 @@ static <a class="el" href="../../de/de3/classcontext__system.html">context_syste
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 5 2023 03:16:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Feb 12 2023 03:09:27 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>
