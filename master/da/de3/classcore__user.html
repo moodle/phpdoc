@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230210) (1ea152c99a6)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230217) (8503f2cfd84)</div>
   </td>
  </tr>
  </tbody>
@@ -114,6 +114,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:add0a9b43d3d0992a403a2fb5c47832de"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de3/classcore__user.html#add0a9b43d3d0992a403a2fb5c47832de">get_user_by_username</a> ($username, $fields=' *', $mnethostid=null, $strictness=<a class="el" href="../../d0/de1/group__core.html#gaffc7005a2da386334d76ec5f85ca2d48">IGNORE_MISSING</a>)</td></tr>
 <tr class="memdesc:add0a9b43d3d0992a403a2fb5c47832de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return user object from db based on their username.  <br /></td></tr>
 <tr class="separator:add0a9b43d3d0992a403a2fb5c47832de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a320af0c9938021483f0c912d3b36f0d5"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de3/classcore__user.html#a320af0c9938021483f0c912d3b36f0d5">is_current_user</a> (stdClass $user)</td></tr>
+<tr class="memdesc:a320af0c9938021483f0c912d3b36f0d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the given user ID is that of the current user.  <br /></td></tr>
+<tr class="separator:a320af0c9938021483f0c912d3b36f0d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bf1f0231c2b0f5a59920c59ac04e57c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de3/classcore__user.html#a9bf1f0231c2b0f5a59920c59ac04e57c">is_real_user</a> ($userid, $checkdb=false)</td></tr>
 <tr class="memdesc:a9bf1f0231c2b0f5a59920c59ac04e57c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if user id is greater than 0 and alternatively check db.  <br /></td></tr>
 <tr class="separator:a9bf1f0231c2b0f5a59920c59ac04e57c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1201,6 +1204,47 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$propertiesca
 
 </div>
 </div>
+<a id="a320af0c9938021483f0c912d3b36f0d5" name="a320af0c9938021483f0c912d3b36f0d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a320af0c9938021483f0c912d3b36f0d5">&#9670;&#160;</a></span>is_current_user()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_user::is_current_user </td>
+          <td>(</td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$user</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determine whether the given user ID is that of the current user. </p>
+<p>Useful for components implementing permission callbacks for preferences consumed by {</p><dl class="section see"><dt>See also</dt><dd>fill_preferences_cache}</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$user</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a9bf1f0231c2b0f5a59920c59ac04e57c" name="a9bf1f0231c2b0f5a59920c59ac04e57c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9bf1f0231c2b0f5a59920c59ac04e57c">&#9670;&#160;</a></span>is_real_user()</h2>
 
@@ -1605,7 +1649,7 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$propertiesca
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 12 2023 03:09:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Feb 19 2023 03:13:36 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

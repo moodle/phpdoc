@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230210) (1ea152c99a6)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230217) (8503f2cfd84)</div>
   </td>
  </tr>
  </tbody>
@@ -76,7 +76,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:adcf23785d3e881ae4976fd5d8b8372a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add column attributes (data-, class, etc.) that will be included in HTML when column is displayed.  <br /></td></tr>
 <tr class="separator:adcf23785d3e881ae4976fd5d8b8372a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b1d16f5feefd9d5966c876e6aec6aba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3e/classcore__reportbuilder_1_1local_1_1report_1_1column.html#a6b1d16f5feefd9d5966c876e6aec6aba">add_callback</a> (callable $callable, $additionalarguments=null)</td></tr>
-<tr class="memdesc:a6b1d16f5feefd9d5966c876e6aec6aba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds column callback (in the case there are multiple, they will be applied one after another)  <br /></td></tr>
+<tr class="memdesc:a6b1d16f5feefd9d5966c876e6aec6aba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds column callback (in the case there are multiple, they will be called iteratively - the result of each passed along to the next in the chain)  <br /></td></tr>
 <tr class="separator:a6b1d16f5feefd9d5966c876e6aec6aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aada3ae9849bf5196cd8b074b9fece437"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d3e/classcore__reportbuilder_1_1local_1_1report_1_1column.html#aada3ae9849bf5196cd8b074b9fece437">add_field</a> (string $sql, string $alias='', array $params=[])</td></tr>
 <tr class="memdesc:aada3ae9849bf5196cd8b074b9fece437"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a field to be queried from the database that is necessary for this column.  <br /></td></tr>
@@ -337,13 +337,13 @@ column_model&#160;</td><td class="memItemRight" valign="bottom"><b>$persistent</
       </table>
 </div><div class="memdoc">
 
-<p>Adds column callback (in the case there are multiple, they will be applied one after another) </p>
-<p>The callback should implement the following signature (where $value is the first column field, $row is all column fields, and $additionalarguments are those passed on from this method):</p>
-<p>The type of the $value parameter passed to the callback is determined by calling {</p><dl class="section see"><dt>See also</dt><dd>set_type}, this type is preserved <a class="el" href="../../d8/d07/categoryif.html" title="Advance grading form element.">if</a> the column is part of a <a class="el" href="../../d1/dc3/group__report.html">report</a> source and is being aggregated. For <a class="el" href="../../df/db1/classentities.html">entities</a> that can to be left joined to a <a class="el" href="../../d1/dc3/group__report.html">report</a>, the <a class="el" href="../../dc/d71/group___imap___client.html#gac73eef9ff76ea330c0dab36ca448b90d" title="Return the first fetch object in the results, if there is only one object.">first</a> argument to their column callbacks must be nullable.</dd></dl>
-<p>function($value, stdClass $row[, $additionalarguments]): string</p>
+<p>Adds column callback (in the case there are multiple, they will be called iteratively - the result of each passed along to the next in the chain) </p>
+<p>The callback should implement the following signature (where $value is the first column field, $row is all column fields, $additionalarguments are those passed to this method, and $aggregation indicates the current aggregation type being applied to the column):</p>
+<p>function($value, stdClass $row, $additionalarguments, ?string $aggregation): string</p>
+<p>The type of the $value parameter passed to the callback is determined by calling {</p><dl class="section see"><dt>See also</dt><dd>set_type}, this type is preserved <a class="el" href="../../d8/d07/categoryif.html" title="Advance grading form element.">if</a> the column is part of a <a class="el" href="../../d1/dc3/group__report.html">report</a> source and is being aggregated. For <a class="el" href="../../df/db1/classentities.html">entities</a> that can be left joined to a <a class="el" href="../../d1/dc3/group__report.html">report</a>, the <a class="el" href="../../dc/d71/group___imap___client.html#gac73eef9ff76ea330c0dab36ca448b90d" title="Return the first fetch object in the results, if there is only one object.">first</a> argument of the callback must be nullable (as it should also be <a class="el" href="../../d8/d07/categoryif.html" title="Advance grading form element.">if</a> the <a class="el" href="../../dc/d71/group___imap___client.html#gac73eef9ff76ea330c0dab36ca448b90d" title="Return the first fetch object in the results, if there is only one object.">first</a> column field is itself nullable).</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">callable</td><td class="paramname">$callable</td><td>function that takes arguments ($value, stdClass $row, $additionalarguments) </td></tr>
+    <tr><td class="paramtype">callable</td><td class="paramname">$callable</td><td></td></tr>
     <tr><td class="paramtype">mixed</td><td class="paramname">$additionalarguments</td><td></td></tr>
   </table>
   </dd>
@@ -1487,7 +1487,7 @@ column_model&#160;</td><td class="memItemRight" valign="bottom"><b>$persistent</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 12 2023 03:11:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Feb 19 2023 03:15:57 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

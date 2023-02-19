@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230210) (1ea152c99a6)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230217) (8503f2cfd84)</div>
   </td>
  </tr>
  </tbody>
@@ -75,6 +75,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a07e878b6ec750d885942f0a914146fe0"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcb/classcore_1_1session_1_1manager.html#a07e878b6ec750d885942f0a914146fe0">apply_concurrent_login_limit</a> ($userid, $sid=null)</td></tr>
 <tr class="memdesc:a07e878b6ec750d885942f0a914146fe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminate other sessions of current user depending on $CFG-&gt;limitconcurrentlogins restriction.  <br /></td></tr>
 <tr class="separator:a07e878b6ec750d885942f0a914146fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac256f3316b334bccdfb4b44e46d33334"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dcb/classcore_1_1session_1_1manager.html#ac256f3316b334bccdfb4b44e46d33334">check_mutated_closed_session</a> ()</td></tr>
+<tr class="memdesc:ac256f3316b334bccdfb4b44e46d33334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the session has been mutated since it was closed.  <br /></td></tr>
+<tr class="separator:ac256f3316b334bccdfb4b44e46d33334"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ddc7c9e3e2e8077a5f9c150e60177e8"><td class="memItemLeft" align="right" valign="top"><a id="a5ddc7c9e3e2e8077a5f9c150e60177e8" name="a5ddc7c9e3e2e8077a5f9c150e60177e8"></a>
 static&#160;</td><td class="memItemRight" valign="bottom"><b>cleanup_recent_session_locks</b> ()</td></tr>
 <tr class="memdesc:a5ddc7c9e3e2e8077a5f9c150e60177e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset recent session locks array if there is a time gap more than SESSION_RESET_GAP_THRESHOLD. <br /></td></tr>
@@ -316,6 +319,34 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>$sessionactive
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ac256f3316b334bccdfb4b44e46d33334" name="ac256f3316b334bccdfb4b44e46d33334"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac256f3316b334bccdfb4b44e46d33334">&#9670;&#160;</a></span>check_mutated_closed_session()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core\session\manager::check_mutated_closed_session </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the session has been mutated since it was closed. </p>
+<p>In write_close the session is saved to the variable $sessionatclose If there is a difference between $sessionatclose and the current session, it means a script has erroneously closed the session too early. Script is usually called in shutdown_manager </p>
 
 </div>
 </div>
@@ -1315,7 +1346,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>$sessionactive
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 12 2023 03:11:22 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Feb 19 2023 03:15:32 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>
