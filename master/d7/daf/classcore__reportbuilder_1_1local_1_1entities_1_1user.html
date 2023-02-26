@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230217) (8503f2cfd84)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230224) (9ee4f8db8ba)</div>
   </td>
  </tr>
  </tbody>
@@ -111,10 +111,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4173fa2a9851cb9d3e066d2e30aabaec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns entity filters.  <br /></td></tr>
 <tr class="separator:a4173fa2a9851cb9d3e066d2e30aabaec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a323f7275856de91379191acb2ca36a9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/daf/classcore__reportbuilder_1_1local_1_1entities_1_1user.html#a323f7275856de91379191acb2ca36a9a">get_identity_column</a> (string $identityfield)</td></tr>
-<tr class="memdesc:a323f7275856de91379191acb2ca36a9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns column that corresponds to the given identity field.  <br /></td></tr>
+<tr class="memdesc:a323f7275856de91379191acb2ca36a9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns column that corresponds to the given identity field, profile field identifiers will be converted to those used by the {.  <br /></td></tr>
 <tr class="separator:a323f7275856de91379191acb2ca36a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a617bdf5a8358d36ab51b9ad8d1206777"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/daf/classcore__reportbuilder_1_1local_1_1entities_1_1user.html#a617bdf5a8358d36ab51b9ad8d1206777">get_identity_filter</a> (string $identityfield)</td></tr>
-<tr class="memdesc:a617bdf5a8358d36ab51b9ad8d1206777"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns filter that corresponds to the given identity field.  <br /></td></tr>
+<tr class="memdesc:a617bdf5a8358d36ab51b9ad8d1206777"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns filter that corresponds to the given identity field, profile field identifiers will be converted to those used by the {.  <br /></td></tr>
 <tr class="separator:a617bdf5a8358d36ab51b9ad8d1206777"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7e15d03f1eb67d24ab2623a8d54b29d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dba/classcore__reportbuilder_1_1local_1_1entities_1_1base.html#aa7e15d03f1eb67d24ab2623a8d54b29d">get_joins</a> ()</td></tr>
 <tr class="memdesc:aa7e15d03f1eb67d24ab2623a8d54b29d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return entity joins.  <br /></td></tr>
@@ -932,10 +932,11 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns column that corresponds to the given identity field. </p>
+<p>Returns column that corresponds to the given identity field, profile field identifiers will be converted to those used by the {. </p>
+<dl class="section see"><dt>See also</dt><dd>user_profile_fields} helper</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$identityfield</td><td>Field from the user table, or the shortname of a custom profile field </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$identityfield</td><td>Field from the user table, or a custom profile field </td></tr>
   </table>
   </dd>
 </dl>
@@ -964,10 +965,11 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns filter that corresponds to the given identity field. </p>
+<p>Returns filter that corresponds to the given identity field, profile field identifiers will be converted to those used by the {. </p>
+<dl class="section see"><dt>See also</dt><dd>user_profile_fields} helper</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$identityfield</td><td>Field from the user table, or the shortname of a custom profile field </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$identityfield</td><td>Field from the user table, or a custom profile field </td></tr>
   </table>
   </dd>
 </dl>
@@ -1521,7 +1523,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 19 2023 03:15:56 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Feb 26 2023 03:21:37 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230217) (8503f2cfd84)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230224) (9ee4f8db8ba)</div>
   </td>
  </tr>
  </tbody>
@@ -93,9 +93,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeb569416ae907def40fcbd8edc9451fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d16/classbehat__grade.html#aeb569416ae907def40fcbd8edc9451fb">i_duplicate_the_grade_item</a> ($gradeitem)</td></tr>
 <tr class="memdesc:aeb569416ae907def40fcbd8edc9451fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duplicates a grade item or category.  <br /></td></tr>
 <tr class="separator:aeb569416ae907def40fcbd8edc9451fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b5a5cf71f3692fd23a048ee1177d4b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d16/classbehat__grade.html#a8b5a5cf71f3692fd23a048ee1177d4b1">i_give_the_feedback</a> ($feedback, $userfullname, $itemname)</td></tr>
-<tr class="memdesc:a8b5a5cf71f3692fd23a048ee1177d4b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enters a quick feedback via the gradebook for a specific grade item and user when viewing the 'Grader report' with editing mode turned on.  <br /></td></tr>
-<tr class="separator:a8b5a5cf71f3692fd23a048ee1177d4b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40c80b8951f4b102a922c3d1897bdadd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d16/classbehat__grade.html#a40c80b8951f4b102a922c3d1897bdadd">i_give_the_grade</a> ($grade, $userfullname, $itemname)</td></tr>
 <tr class="memdesc:a40c80b8951f4b102a922c3d1897bdadd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enters a grade via the gradebook for a specific grade item and user when viewing the 'Grader report' with editing mode turned on.  <br /></td></tr>
 <tr class="separator:a40c80b8951f4b102a922c3d1897bdadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -366,50 +363,6 @@ Protected Member Functions</h2></td></tr>
 <p>@Given /^I duplicate the grade item "(?P&lt;grade_item_string&gt;(?:[^"]|::")*)"$/ </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$gradeitem</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a8b5a5cf71f3692fd23a048ee1177d4b1" name="a8b5a5cf71f3692fd23a048ee1177d4b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b5a5cf71f3692fd23a048ee1177d4b1">&#9670;&#160;</a></span>i_give_the_feedback()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">behat_grade::i_give_the_feedback </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$feedback</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$userfullname</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$itemname</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Enters a quick feedback via the gradebook for a specific grade item and user when viewing the 'Grader report' with editing mode turned on. </p>
-<p>@Given /^I give the feedback "(?P&lt;grade_number&gt;(?:[^"]|::")*)" to the user "(?P&lt;username_string&gt;(?:[^"]|")*)" for the grade item "(?P&lt;grade_activity_string&gt;(?:[^"]|::")*)"$/ </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$feedback</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$userfullname</td><td>the user's fullname as returned by <a class="el" href="../../d0/de1/group__core.html#ga22ae943f55a27f3b9cca15f8ddd05db7" title="Returns a persons full name.">fullname()</a> </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$itemname</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -769,7 +722,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Select a given option from a navigation URL selector in the gradebook. </p>
 <p>We must be on one of the gradebook pages already.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000144">Deprecated:</a></b></dt><dd>since 4.1 - use behat_forms::i_set_the_field_to() instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000155">Deprecated:</a></b></dt><dd>since 4.1 - use behat_forms::i_set_the_field_to() instead. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$path</td><td>The string path that is used to identify an item within the navigation selector. If the path has two items (ex. "More &gt; Grade letters"), the first item ("More") will be used to identify an option group in the navigation selector, while the second ("Grade letters") will be used to identify an option within that option group. Otherwise, a single item in a path (ex. "Scales") will be used to identify an option in the navigation selector regardless of the option group. </td></tr>
@@ -806,7 +759,7 @@ Protected Member Functions</h2></td></tr>
 
 <p>Select the tab in the gradebook. </p>
 <p>We must be on one of the gradebook pages already.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000143">Deprecated:</a></b></dt><dd>since 4.0 - use behat_forms::i_set_the_field_to() instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000154">Deprecated:</a></b></dt><dd>since 4.0 - use behat_forms::i_set_the_field_to() instead. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$gradepath</td><td>examples: "View &gt; User report", "Letters &gt; View", "Scales" </td></tr>
@@ -851,7 +804,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 19 2023 03:13:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Feb 26 2023 03:19:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1.1+ (Build: 20230217) (3312a6814a5)</div>
+   <div id="projectbrief">Moodle 4.1.1+ (Build: 20230224) (a31f5830bd5)</div>
   </td>
  </tr>
  </tbody>
@@ -198,6 +198,9 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:a6f4fa9d6241c6079bcc042fe3603b439"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da8/classfile__system__filedir.html#a6f4fa9d6241c6079bcc042fe3603b439">check_file_exists_and_get_size</a> (string $hashfile)</td></tr>
+<tr class="memdesc:a6f4fa9d6241c6079bcc042fe3603b439"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the file exists and gets its size.  <br /></td></tr>
+<tr class="separator:a6f4fa9d6241c6079bcc042fe3603b439"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4d701d8a2a8a18368b668ba059c7c72"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d66/classfile__system.html#ab4d701d8a2a8a18368b668ba059c7c72">get_file_handle_for_path</a> ($path, $type=<a class="el" href="../../d0/d00/classstored__file.html#a5eebe96673d6aa18540e0c813e7b8be6">stored_file::FILE_HANDLE_FOPEN</a>)</td></tr>
 <tr class="memdesc:ab4d701d8a2a8a18368b668ba059c7c72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a file handle for the specified path.  <br /></td></tr>
 <tr class="separator:ab4d701d8a2a8a18368b668ba059c7c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -416,6 +419,47 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$trashdir</b> = nul
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">void</td><td>This needs the fullpath for the storedfile :/ Can this be achieved in some other fashion? </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6f4fa9d6241c6079bcc042fe3603b439" name="a6f4fa9d6241c6079bcc042fe3603b439"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f4fa9d6241c6079bcc042fe3603b439">&#9670;&#160;</a></span>check_file_exists_and_get_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static file_system_filedir::check_file_exists_and_get_size </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$hashfile</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the file exists and gets its size. </p>
+<p>This function avoids a specific issue with networked file systems if they incorrectly report the file exists, but then decide it doesn't as soon as you try to get the file size.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$hashfile</td><td>File to check </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int|null</td><td>Null if the file does not exist, or the result of filesize(), or -1 if error </td></tr>
   </table>
   </dd>
 </dl>
@@ -1992,7 +2036,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$trashdir</b> = nul
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 19 2023 03:06:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Feb 26 2023 03:13:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

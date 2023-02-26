@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230217) (8503f2cfd84)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230224) (9ee4f8db8ba)</div>
   </td>
  </tr>
  </tbody>
@@ -82,6 +82,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a24446b1957f4982a0c3c681d1fbd4792"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df6/classgrade__report__grader.html#a24446b1957f4982a0c3c681d1fbd4792">__construct</a> ($courseid, $gpr, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $page=null, $sortitemid=null)</td></tr>
 <tr class="memdesc:a24446b1957f4982a0c3c681d1fbd4792"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:a24446b1957f4982a0c3c681d1fbd4792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29775575cb77092c4c605beb4ee1d478"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df6/classgrade__report__grader.html#a29775575cb77092c4c605beb4ee1d478">get_grade_action_menu</a> (array $element)</td></tr>
+<tr class="memdesc:a29775575cb77092c4c605beb4ee1d478"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an action menu for the grade.  <br /></td></tr>
+<tr class="separator:a29775575cb77092c4c605beb4ee1d478"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19c5b36475733928252ac50c7639a3f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df6/classgrade__report__grader.html#a19c5b36475733928252ac50c7639a3f1">get_grade_table</a> ($displayaverages=false)</td></tr>
 <tr class="memdesc:a19c5b36475733928252ac50c7639a3f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Depending on the style of report (fixedstudents vs traditional one-table), arranges the rows of data in one or two tables, and returns the output of these tables in HTML.  <br /></td></tr>
 <tr class="separator:a19c5b36475733928252ac50c7639a3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,9 +118,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a959ca9ccf8290372ee360d1ced16e35a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df6/classgrade__report__grader.html#a959ca9ccf8290372ee360d1ced16e35a">get_right_range_row</a> ($rows=array())</td></tr>
 <tr class="memdesc:a959ca9ccf8290372ee360d1ced16e35a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds and return the row of ranges for the right part of the grader report.  <br /></td></tr>
 <tr class="separator:a959ca9ccf8290372ee360d1ced16e35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a6c6c7a76be6cca5f72a979717f573b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df6/classgrade__report__grader.html#a4a6c6c7a76be6cca5f72a979717f573b">get_right_rows</a> ($displayaverages)</td></tr>
-<tr class="memdesc:a4a6c6c7a76be6cca5f72a979717f573b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds and returns the rows that will make up the right part of the grader report.  <br /></td></tr>
-<tr class="separator:a4a6c6c7a76be6cca5f72a979717f573b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36cfee1953ece926ab42eb657b62b501"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df6/classgrade__report__grader.html#a36cfee1953ece926ab42eb657b62b501">get_right_rows</a> (bool $displayaverages)</td></tr>
+<tr class="memdesc:a36cfee1953ece926ab42eb657b62b501"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds and returns the rows that will make up the right part of the grader report.  <br /></td></tr>
+<tr class="separator:a36cfee1953ece926ab42eb657b62b501"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab878bb97fade2a1da0435701dce9cb7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df6/classgrade__report__grader.html#ab878bb97fade2a1da0435701dce9cb7b">get_sort_arrows</a> (array $extrafields=array())</td></tr>
 <tr class="memdesc:ab878bb97fade2a1da0435701dce9cb7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refactored function for generating HTML of sorting links with matching arrows.  <br /></td></tr>
 <tr class="separator:ab878bb97fade2a1da0435701dce9cb7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,8 +148,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a68c81488fc54f133db20aaf207822896"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes a single action against a category, <a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a> or grade.  <br /></td></tr>
 <tr class="separator:a68c81488fc54f133db20aaf207822896"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc48581fb22f621fa2819af4566293aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df6/classgrade__report__grader.html#acc48581fb22f621fa2819af4566293aa">process_data</a> ($data)</td></tr>
-<tr class="memdesc:acc48581fb22f621fa2819af4566293aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes the data sent by the form (grades and feedbacks).  <br /></td></tr>
+<tr class="memdesc:acc48581fb22f621fa2819af4566293aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes the data sent by the form (grades).  <br /></td></tr>
 <tr class="separator:acc48581fb22f621fa2819af4566293aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e15fe78b1f845d562815888c6845640"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df6/classgrade__report__grader.html#a2e15fe78b1f845d562815888c6845640">set_grade_status_icons</a> (<a class="el" href="../../dc/df3/classgrade__grade.html">grade_grade</a> $grade)</td></tr>
+<tr class="memdesc:a2e15fe78b1f845d562815888c6845640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets status icons for the grade.  <br /></td></tr>
+<tr class="separator:a2e15fe78b1f845d562815888c6845640"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a722b5d92e25661d6e68f53574fac8daf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#a722b5d92e25661d6e68f53574fac8daf">set_pref</a> ($pref, $pref_value='default', $itemid=null)</td></tr>
 <tr class="memdesc:a722b5d92e25661d6e68f53574fac8daf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Uses set_user_preferences() to update the value of a user preference.  <br /></td></tr>
 <tr class="separator:a722b5d92e25661d6e68f53574fac8daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -291,9 +297,6 @@ Static Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a37223bd8ca623d5b9ad93ba358106ccc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df6/classgrade__report__grader.html#a37223bd8ca623d5b9ad93ba358106ccc">$feedback_trunc_length</a> = 50</td></tr>
-<tr class="memdesc:a37223bd8ca623d5b9ad93ba358106ccc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length at which feedback will be truncated (to the nearest word) and an ellipsis be added.  <br /></td></tr>
-<tr class="separator:a37223bd8ca623d5b9ad93ba358106ccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b92b888ba8cfee30b9247d4df771ed3"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#a0b92b888ba8cfee30b9247d4df771ed3">$groupsql</a></td></tr>
 <tr class="memdesc:a0b92b888ba8cfee30b9247d4df771ed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">An SQL fragment used to add linking information to the group tables.  <br /></td></tr>
 <tr class="separator:a0b92b888ba8cfee30b9247d4df771ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -421,7 +424,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </div><div class="memdoc">
 
 <p>Optionally blank out course/category totals if they contain any hidden items. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000142">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 - Call blank_hidden_total_and_adjust_bounds instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000153">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 - Call blank_hidden_total_and_adjust_bounds instead. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$courseid</td><td>the course id </td></tr>
@@ -763,6 +766,38 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>HTML </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a29775575cb77092c4c605beb4ee1d478" name="a29775575cb77092c4c605beb4ee1d478"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29775575cb77092c4c605beb4ee1d478">&#9670;&#160;</a></span>get_grade_action_menu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">grade_report_grader::get_grade_action_menu </td>
+          <td>(</td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$element</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns an action menu for the grade. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$element</td><td>Array with cell info. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1269,8 +1304,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 
 </div>
 </div>
-<a id="a4a6c6c7a76be6cca5f72a979717f573b" name="a4a6c6c7a76be6cca5f72a979717f573b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a6c6c7a76be6cca5f72a979717f573b">&#9670;&#160;</a></span>get_right_rows()</h2>
+<a id="a36cfee1953ece926ab42eb657b62b501" name="a36cfee1953ece926ab42eb657b62b501"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36cfee1953ece926ab42eb657b62b501">&#9670;&#160;</a></span>get_right_rows()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1278,7 +1313,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
         <tr>
           <td class="memname">grade_report_grader::get_right_rows </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>$displayaverages</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1544,7 +1579,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
       </table>
 </div><div class="memdoc">
 
-<p>Processes the data sent by the form (grades and feedbacks). </p>
+<p>Processes the data sent by the form (grades). </p>
 <p>Caller is responsible for all access control checks </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>form submission (with magic quotes) </td></tr>
@@ -1602,6 +1637,38 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$courseid</td><td></td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$collapsed</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2e15fe78b1f845d562815888c6845640" name="a2e15fe78b1f845d562815888c6845640"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e15fe78b1f845d562815888c6845640">&#9670;&#160;</a></span>set_grade_status_icons()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">grade_report_grader::set_grade_status_icons </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/df3/classgrade__grade.html">grade_grade</a>&#160;</td>
+          <td class="paramname"><em>$grade</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets status icons for the grade. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../dc/df3/classgrade__grade.html">grade_grade</a></td><td class="paramname">$grade</td><td>Grade</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>status icons container HTML </td></tr>
   </table>
   </dd>
 </dl>
@@ -1906,31 +1973,6 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 
 <p>The current groupname being displayed. </p>
 <p>$currentgroupname </p>
-
-</div>
-</div>
-<a id="a37223bd8ca623d5b9ad93ba358106ccc" name="a37223bd8ca623d5b9ad93ba358106ccc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37223bd8ca623d5b9ad93ba358106ccc">&#9670;&#160;</a></span>$feedback_trunc_length</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int grade_report_grader::$feedback_trunc_length = 50</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Length at which feedback will be truncated (to the nearest word) and an ellipsis be added. </p>
-<p>TODO replace this by a report preference $feedback_trunc_length </p>
 
 </div>
 </div>
@@ -2317,7 +2359,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 19 2023 03:14:35 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Feb 26 2023 03:20:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

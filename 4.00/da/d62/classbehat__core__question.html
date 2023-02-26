@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.6+ (Build: 20230217) (cb2fa7a92d1)</div>
+   <div id="projectbrief">Moodle 4.0.6+ (Build: 20230224) (64586584000)</div>
   </td>
  </tr>
  </tbody>
@@ -82,6 +82,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adbc5d04ed86da24ea1b73ab69c9d889e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d62/classbehat__core__question.html#adbc5d04ed86da24ea1b73ab69c9d889e">action_not_exists</a> ($action, $questionname)</td></tr>
 <tr class="memdesc:adbc5d04ed86da24ea1b73ab69c9d889e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that action does not exist for a question.  <br /></td></tr>
 <tr class="separator:adbc5d04ed86da24ea1b73ab69c9d889e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6c627ec744e133cbf03dcae72cc3fd1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d62/classbehat__core__question.html#ab6c627ec744e133cbf03dcae72cc3fd1">change_question_to_nonexistant_type</a> ($questionname)</td></tr>
+<tr class="memdesc:ab6c627ec744e133cbf03dcae72cc3fd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the question type of the give question to a type that does not exist.  <br /></td></tr>
+<tr class="separator:ab6c627ec744e133cbf03dcae72cc3fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc6cbc428b83d6bca71aaffbd15da4ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d6d/interfacebehat__session__interface.html#abc6cbc428b83d6bca71aaffbd15da4ab">getSession</a> ($name=null)</td></tr>
 <tr class="memdesc:abc6cbc428b83d6bca71aaffbd15da4ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Mink session.  <br /></td></tr>
 <tr class="separator:abc6cbc428b83d6bca71aaffbd15da4ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,6 +103,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa7b2c43db87d8e916a1ddad599bb7c28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d62/classbehat__core__question.html#aa7b2c43db87d8e916a1ddad599bb7c28">i_should_see_question_bulk_action</a> ($action)</td></tr>
 <tr class="memdesc:aa7b2c43db87d8e916a1ddad599bb7c28"><td class="mdescLeft">&#160;</td><td class="mdescRight">A particular bulk action is visible in the question bank UI.  <br /></td></tr>
 <tr class="separator:aa7b2c43db87d8e916a1ddad599bb7c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d7c963d9d19c6915ababfa7a9d39d94"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d62/classbehat__core__question.html#a9d7c963d9d19c6915ababfa7a9d39d94">remove_question_from_db</a> ($questionname)</td></tr>
+<tr class="memdesc:a9d7c963d9d19c6915ababfa7a9d39d94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forcibly delete a question from the database.  <br /></td></tr>
+<tr class="separator:a9d7c963d9d19c6915ababfa7a9d39d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47ffd0808a953162986a83733a7adae6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d62/classbehat__core__question.html#a47ffd0808a953162986a83733a7adae6">the_state_of_question_is_shown_as</a> ($questiondescription, $state)</td></tr>
 <tr class="memdesc:a47ffd0808a953162986a83733a7adae6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks the state of the specified question.  <br /></td></tr>
 <tr class="separator:a47ffd0808a953162986a83733a7adae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,6 +199,34 @@ Protected Member Functions</h2></td></tr>
 <p>@Then the :action action should not exist for the :questionname question in the question bank </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$action</td><td>the label for the action you want to activate. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$questionname</td><td>the question name. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab6c627ec744e133cbf03dcae72cc3fd1" name="ab6c627ec744e133cbf03dcae72cc3fd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6c627ec744e133cbf03dcae72cc3fd1">&#9670;&#160;</a></span>change_question_to_nonexistant_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_core_question::change_question_to_nonexistant_type </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$questionname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change the question type of the give question to a type that does not exist. </p>
+<p>This is useful for testing robustness of the code when a question type has been uninstalled, even though there are still questions of that type or attempts at them.</p>
+<p>In order to set things up, you probably need to start by generating questions of a valid type, then using this to change the type once the data is created.</p>
+<p>@Given question :questionname is changed to simulate being of an uninstalled type </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$questionname</td><td>the question name. </td></tr>
   </table>
   </dd>
@@ -483,6 +517,34 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a9d7c963d9d19c6915ababfa7a9d39d94" name="a9d7c963d9d19c6915ababfa7a9d39d94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d7c963d9d19c6915ababfa7a9d39d94">&#9670;&#160;</a></span>remove_question_from_db()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_core_question::remove_question_from_db </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$questionname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Forcibly delete a question from the database. </p>
+<p>This is useful for testing robustness of the code when a question record is no longer in the database, even though it is referred to. Obviously, this should never happen, but it has been known to in the past and so we sometimes need to be able to test the code can handle this situation.</p>
+<p>In order to set things up, you probably need to start by generating a valid questions, then using this to remove it once the data is created.</p>
+<p>@Given question :questionname no longer exists in the database </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$questionname</td><td>the question name. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a0f433128cc462f3dfde1893d26e201dd" name="a0f433128cc462f3dfde1893d26e201dd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0f433128cc462f3dfde1893d26e201dd">&#9670;&#160;</a></span>resolve_page_instance_url()</h2>
 
@@ -667,7 +729,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 19 2023 02:59:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Feb 26 2023 03:06:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

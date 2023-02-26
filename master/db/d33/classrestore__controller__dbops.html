@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230217) (8503f2cfd84)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230224) (9ee4f8db8ba)</div>
   </td>
  </tr>
  </tbody>
@@ -82,9 +82,9 @@ Static Public Member Functions</h2></td></tr>
 static&#160;</td><td class="memItemRight" valign="bottom"><b>calculate_course_names</b> ($courseid, $<a class="el" href="../../d0/de1/group__core.html#ga22ae943f55a27f3b9cca15f8ddd05db7">fullname</a>, $shortname)</td></tr>
 <tr class="memdesc:a2e4f8a62c242d291ac68d9c1a801b727"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given on courseid, fullname and shortname, calculate the correct fullname/shortname to avoid dupes. <br /></td></tr>
 <tr class="separator:a2e4f8a62c242d291ac68d9c1a801b727"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b9325f5a4a59b86969cbeb30055679f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d87/classrestore__dbops.html#a2b9325f5a4a59b86969cbeb30055679f">create_included_users</a> ($basepath, $restoreid, $userid, <a class="el" href="../../db/df4/classcore_1_1progress_1_1base.html">core\progress\base</a> $progress)</td></tr>
-<tr class="memdesc:a2b9325f5a4a59b86969cbeb30055679f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given one restoreid, create in <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> all the users present in backup_ids having newitemid = 0, as far as <a class="el" href="../../d1/d87/classrestore__dbops.html#a23f90410363b86d93eab6b60c0c1c69c" title="Check all the included users, deciding the action to perform for each one (mapping / creation) and re...">precheck_included_users()</a> have left them there ready to be created.  <br /></td></tr>
-<tr class="separator:a2b9325f5a4a59b86969cbeb30055679f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65fb575ec882426ba8954191df6a0e09"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d87/classrestore__dbops.html#a65fb575ec882426ba8954191df6a0e09">create_included_users</a> ($basepath, $restoreid, $userid, <a class="el" href="../../db/df4/classcore_1_1progress_1_1base.html">core\progress\base</a> $progress, int $courseid=0)</td></tr>
+<tr class="memdesc:a65fb575ec882426ba8954191df6a0e09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given one restoreid, create in <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> all the users present in backup_ids having newitemid = 0, as far as <a class="el" href="../../d1/d87/classrestore__dbops.html#a23f90410363b86d93eab6b60c0c1c69c" title="Check all the included users, deciding the action to perform for each one (mapping / creation) and re...">precheck_included_users()</a> have left them there ready to be created.  <br /></td></tr>
+<tr class="separator:a65fb575ec882426ba8954191df6a0e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9e661703a938c2da4eb430b14f3bf95"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/d6e/classmoodle__database.html">moodle_database</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d87/classrestore__dbops.html#ac9e661703a938c2da4eb430b14f3bf95">create_new_course</a> ($<a class="el" href="../../d0/de1/group__core.html#ga22ae943f55a27f3b9cca15f8ddd05db7">fullname</a>, $shortname, $categoryid)</td></tr>
 <tr class="memdesc:ac9e661703a938c2da4eb430b14f3bf95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a skeleton record within the database using the passed parameters and returns the new course id.  <br /></td></tr>
 <tr class="separator:ac9e661703a938c2da4eb430b14f3bf95"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,8 +237,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>get_best_assignable
 
 </div>
 </div>
-<a id="a2b9325f5a4a59b86969cbeb30055679f" name="a2b9325f5a4a59b86969cbeb30055679f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b9325f5a4a59b86969cbeb30055679f">&#9670;&#160;</a></span>create_included_users()</h2>
+<a id="a65fb575ec882426ba8954191df6a0e09" name="a65fb575ec882426ba8954191df6a0e09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65fb575ec882426ba8954191df6a0e09">&#9670;&#160;</a></span>create_included_users()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -268,7 +268,13 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>get_best_assignable
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="../../db/df4/classcore_1_1progress_1_1base.html">core\progress\base</a>&#160;</td>
-          <td class="paramname"><em>$progress</em>&#160;</td>
+          <td class="paramname"><em>$progress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$courseid</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -292,6 +298,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>get_best_assignable
     <tr><td class="paramtype">string</td><td class="paramname">$restoreid</td><td>Restore ID </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>Default userid for files </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../db/df4/classcore_1_1progress_1_1base.html">core::progress::base</a></td><td class="paramname">$progress</td><td>Object used for progress tracking </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$courseid</td><td>Course ID </td></tr>
   </table>
   </dd>
 </dl>
@@ -1535,7 +1542,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>get_best_assignable
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 19 2023 03:14:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Feb 26 2023 03:20:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

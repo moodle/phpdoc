@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230217) (8503f2cfd84)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230224) (9ee4f8db8ba)</div>
   </td>
  </tr>
  </tbody>
@@ -111,9 +111,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0732fed1644c7597472c75bc28c1a5e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d0f/class_mustache___helper_collection.html#a0732fed1644c7597472c75bc28c1a5e9">remove</a> ($name)</td></tr>
 <tr class="memdesc:a0732fed1644c7597472c75bc28c1a5e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a given helper is present in the collection.  <br /></td></tr>
 <tr class="separator:a0732fed1644c7597472c75bc28c1a5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c49189cb32d71fd9b8e7f119c12092e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db6/classcore_1_1output_1_1mustache__helper__collection.html#a3c49189cb32d71fd9b8e7f119c12092e">strip_blacklisted_helpers</a> ($disallowedlist, $string)</td></tr>
-<tr class="memdesc:a3c49189cb32d71fd9b8e7f119c12092e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the given string and remove any reference to disallowed helpers.  <br /></td></tr>
-<tr class="separator:a3c49189cb32d71fd9b8e7f119c12092e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b442de6f7fc798a1745e79cd5bc8f60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db6/classcore_1_1output_1_1mustache__helper__collection.html#a5b442de6f7fc798a1745e79cd5bc8f60">strip_blacklisted_helpers</a> ()</td></tr>
+<tr class="separator:a5b442de6f7fc798a1745e79cd5bc8f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04999413937ab577da4e633b38f5b522"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db6/classcore_1_1output_1_1mustache__helper__collection.html#a04999413937ab577da4e633b38f5b522">strip_disallowed_helpers</a> ($disallowedlist, $string)</td></tr>
 <tr class="memdesc:a04999413937ab577da4e633b38f5b522"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the given string and remove any reference to disallowed helpers.  <br /></td></tr>
 <tr class="separator:a04999413937ab577da4e633b38f5b522"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -560,8 +559,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a3c49189cb32d71fd9b8e7f119c12092e" name="a3c49189cb32d71fd9b8e7f119c12092e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c49189cb32d71fd9b8e7f119c12092e">&#9670;&#160;</a></span>strip_blacklisted_helpers()</h2>
+<a id="a5b442de6f7fc798a1745e79cd5bc8f60" name="a5b442de6f7fc798a1745e79cd5bc8f60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b442de6f7fc798a1745e79cd5bc8f60">&#9670;&#160;</a></span>strip_blacklisted_helpers()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -569,39 +568,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">core\output\mustache_helper_collection::strip_blacklisted_helpers </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$disallowedlist</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$string</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Parse the given string and remove any reference to disallowed helpers. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000207">Deprecated:</a></b></dt><dd>Deprecated since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.10 (<a href="https://tracker.moodle.org/browse/MDL-69050" class="el">MDL-69050</a>) - use {</dd></dl>
-<dl class="section see"><dt>See also</dt><dd>self::strip_disallowed_helpers()} </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string[]</td><td class="paramname">$disallowedlist</td><td>List of helper names to strip </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$string</td><td>String to parse </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">string</td><td>Parsed string </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000219">Deprecated:</a></b></dt><dd>Deprecated since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.10 (<a href="https://tracker.moodle.org/browse/MDL-69050" class="el">MDL-69050</a>) - use {</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>strip_disallowed_helpers} </dd></dl>
 
 </div>
 </div>
@@ -655,7 +628,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 19 2023 03:15:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Feb 26 2023 03:21:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

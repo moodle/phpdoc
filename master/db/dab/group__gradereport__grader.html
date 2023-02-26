@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230217) (8503f2cfd84)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230224) (9ee4f8db8ba)</div>
   </td>
  </tr>
  </tbody>
@@ -78,6 +78,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dc1/classbehat__gradereport__grader.html">behat_gradereport_grader</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Steps definitions related with the drag and drop onto image question type.  <a href="../../df/dc1/classbehat__gradereport__grader.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc5/classbehat__gradereport__grader__deprecated.html">behat_gradereport_grader_deprecated</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df6/classgrade__report__grader.html">grade_report_grader</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class providing an API for the grader report building and displaying.  <a href="../../df/df6/classgrade__report__grader.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,17 +102,6 @@ Variables</h2></td></tr>
 <tr class="memitem:gada8a7130088351710bb02ed622d6bf65"><td class="memItemLeft" align="right" valign="top"><a id="gada8a7130088351710bb02ed622d6bf65" name="gada8a7130088351710bb02ed622d6bf65"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$plugin</b> = 2022111800</td></tr>
 <tr class="separator:gada8a7130088351710bb02ed622d6bf65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa1d731aa570613e5bcff831bb10e9b87"><td class="memItemLeft" align="right" valign="top"><a id="gaa1d731aa570613e5bcff831bb10e9b87" name="gaa1d731aa570613e5bcff831bb10e9b87"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$row</b> = $tabs = array()</td></tr>
-<tr class="separator:gaa1d731aa570613e5bcff831bb10e9b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7eaf3fae157907fc016a863347039117"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dab/group__gradereport__grader.html#ga7eaf3fae157907fc016a863347039117">$row</a> []</td></tr>
-<tr class="separator:ga7eaf3fae157907fc016a863347039117"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf1df11bed7af806c1ea853e996231351"><td class="memItemLeft" align="right" valign="top"><a id="gaf1df11bed7af806c1ea853e996231351" name="gaf1df11bed7af806c1ea853e996231351"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$tabcontext</b> = context_course::instance($COURSE-&gt;id)</td></tr>
-<tr class="separator:gaf1df11bed7af806c1ea853e996231351"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2cd32059ed498b9122b456c6cbd8fb11"><td class="memItemLeft" align="right" valign="top"><a id="ga2cd32059ed498b9122b456c6cbd8fb11" name="ga2cd32059ed498b9122b456c6cbd8fb11"></a>
-<a class="el" href="../../d8/d07/categoryif.html">if</a>(has_capability('moodle/grade:manage', $tabcontext)||has_capability('moodle/grade:edit', $tabcontext)||has_capability('gradereport/grader:view', $tabcontext))&#160;</td><td class="memItemRight" valign="bottom"><b>$tabs</b> [] = $row</td></tr>
-<tr class="separator:ga2cd32059ed498b9122b456c6cbd8fb11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga27dc7e2c13f48a05e56e0d3138fe3c82"><td class="memItemLeft" align="right" valign="top"><a id="ga27dc7e2c13f48a05e56e0d3138fe3c82" name="ga27dc7e2c13f48a05e56e0d3138fe3c82"></a>
 $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>component</b> = 'gradereport_grader'</td></tr>
 <tr class="separator:ga27dc7e2c13f48a05e56e0d3138fe3c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -154,28 +145,10 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ga7eaf3fae157907fc016a863347039117" name="ga7eaf3fae157907fc016a863347039117"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7eaf3fae157907fc016a863347039117">&#9670;&#160;</a></span>$row</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">$row[]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <span class="keyword">new</span> <a class="code hl_class" href="../../d3/dc5/classtabobject.html">tabobject</a>(<span class="stringliteral">&#39;graderreport&#39;</span>,</div>
-<div class="line">                           $CFG-&gt;wwwroot.<span class="stringliteral">&#39;/grade/report/grader/index.php?id=&#39;</span>.$courseid,</div>
-<div class="line">                           get_string(<span class="stringliteral">&#39;pluginname&#39;</span>, <span class="stringliteral">&#39;gradereport_grader&#39;</span>))</div>
-<div class="ttc" id="aclasstabobject_html"><div class="ttname"><a href="../../d3/dc5/classtabobject.html">tabobject</a></div><div class="ttdoc">Stores one tab.</div><div class="ttdef"><b>Definition:</b> outputcomponents.php:3958</div></div>
-</div><!-- fragment -->
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 19 2023 03:13:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Feb 26 2023 03:19:00 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

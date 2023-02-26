@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230217) (8503f2cfd84)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230224) (9ee4f8db8ba)</div>
   </td>
  </tr>
  </tbody>
@@ -122,6 +122,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aba0e11b965c35b147f030effcdc2c4af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/classassignfeedback__editpdf_1_1pdf.html#aba0e11b965c35b147f030effcdc2c4af">save_pdf</a> ($filename)</td></tr>
 <tr class="memdesc:aba0e11b965c35b147f030effcdc2c4af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the completed PDF to the given file.  <br /></td></tr>
 <tr class="separator:aba0e11b965c35b147f030effcdc2c4af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae437243b59c453708e28e23208828aea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/classassignfeedback__editpdf_1_1pdf.html#ae437243b59c453708e28e23208828aea">set_export_font_name</a> ($fontname)</td></tr>
+<tr class="memdesc:ae437243b59c453708e28e23208828aea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set font name.  <br /></td></tr>
+<tr class="separator:ae437243b59c453708e28e23208828aea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4480d3292664f3192ec39e5f92bb5559"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4d/classassignfeedback__editpdf_1_1pdf.html#a4480d3292664f3192ec39e5f92bb5559">set_image_folder</a> ($folder)</td></tr>
 <tr class="memdesc:a4480d3292664f3192ec39e5f92bb5559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the path to the folder in which to generate page image files.  <br /></td></tr>
 <tr class="separator:a4480d3292664f3192ec39e5f92bb5559"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -212,6 +215,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$currentpage</b> = 0</
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$filename</b> = null</td></tr>
 <tr class="memdesc:a7df0036e9fa37b99b6dbefe648d5557e"><td class="mdescLeft">&#160;</td><td class="mdescRight">the path to the PDF currently being processed <br /></td></tr>
 <tr class="separator:a7df0036e9fa37b99b6dbefe648d5557e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9da329f690a650734932e4dd92fa1d36"><td class="memItemLeft" align="right" valign="top"><a id="a9da329f690a650734932e4dd92fa1d36" name="a9da329f690a650734932e4dd92fa1d36"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$fontname</b> = null</td></tr>
+<tr class="memdesc:a9da329f690a650734932e4dd92fa1d36"><td class="mdescLeft">&#160;</td><td class="mdescRight">the fontname used when the PDF being processed <br /></td></tr>
+<tr class="separator:a9da329f690a650734932e4dd92fa1d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6194614d569433bd2c8989cf9cf4401c"><td class="memItemLeft" align="right" valign="top"><a id="a6194614d569433bd2c8989cf9cf4401c" name="a6194614d569433bd2c8989cf9cf4401c"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$imagefolder</b> = null</td></tr>
 <tr class="memdesc:a6194614d569433bd2c8989cf9cf4401c"><td class="mdescLeft">&#160;</td><td class="mdescRight">the path in which to store generated page images <br /></td></tr>
@@ -952,6 +959,38 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>$scale</b> = 0.0</td
 
 </div>
 </div>
+<a id="ae437243b59c453708e28e23208828aea" name="ae437243b59c453708e28e23208828aea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae437243b59c453708e28e23208828aea">&#9670;&#160;</a></span>set_export_font_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">assignfeedback_editpdf\pdf::set_export_font_name </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$fontname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set font name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$fontname</td><td>Font name which is </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a4480d3292664f3192ec39e5f92bb5559" name="a4480d3292664f3192ec39e5f92bb5559"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4480d3292664f3192ec39e5f92bb5559">&#9670;&#160;</a></span>set_image_folder()</h2>
 
@@ -1102,7 +1141,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>$scale</b> = 0.0</td
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 19 2023 03:15:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Feb 26 2023 03:20:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>
