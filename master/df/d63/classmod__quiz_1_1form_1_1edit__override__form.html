@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230224) (9ee4f8db8ba)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230303) (556208417de)</div>
   </td>
  </tr>
  </tbody>
@@ -78,9 +78,9 @@ Inheritance diagram for mod_quiz\form\edit_override_form:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a244576a7d37ba395896f600c41f94bfa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d63/classmod__quiz_1_1form_1_1edit__override__form.html#a244576a7d37ba395896f600c41f94bfa">__construct</a> (<a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a> $submiturl, <a class="el" href="../../df/db9/classcm__info.html">cm_info</a> $cm, stdClass $quiz, <a class="el" href="../../db/db4/classcontext__module.html">context_module</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, bool $<a class="el" href="../../d0/de1/group__core.html#ga84b2144b9de9ead7e08f1711b1dca592">groupmode</a>, ?stdClass $override)</td></tr>
-<tr class="memdesc:a244576a7d37ba395896f600c41f94bfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
-<tr class="separator:a244576a7d37ba395896f600c41f94bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54065b287a9cbdce81ab99d96785510f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d63/classmod__quiz_1_1form_1_1edit__override__form.html#a54065b287a9cbdce81ab99d96785510f">__construct</a> (<a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a> $submiturl, <a class="el" href="../../df/db9/classcm__info.html">cm_info</a>|stdClass $cm, stdClass $quiz, <a class="el" href="../../db/db4/classcontext__module.html">context_module</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, bool $<a class="el" href="../../d0/de1/group__core.html#ga84b2144b9de9ead7e08f1711b1dca592">groupmode</a>, ?stdClass $override)</td></tr>
+<tr class="memdesc:a54065b287a9cbdce81ab99d96785510f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
+<tr class="separator:a54065b287a9cbdce81ab99d96785510f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga594cb9d675e5d847bfc39b001e02e752"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9c/group__core__form.html#ga594cb9d675e5d847bfc39b001e02e752">_process_submission</a> ($method)</td></tr>
 <tr class="memdesc:ga594cb9d675e5d847bfc39b001e02e752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal method.  <br /></td></tr>
 <tr class="separator:ga594cb9d675e5d847bfc39b001e02e752"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -266,8 +266,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$userid</b></td></tr>
 <tr class="separator:a85f95cee1ce78aa6dbe6bf0ff0287d7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a244576a7d37ba395896f600c41f94bfa" name="a244576a7d37ba395896f600c41f94bfa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a244576a7d37ba395896f600c41f94bfa">&#9670;&#160;</a></span>__construct()</h2>
+<a id="a54065b287a9cbdce81ab99d96785510f" name="a54065b287a9cbdce81ab99d96785510f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54065b287a9cbdce81ab99d96785510f">&#9670;&#160;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -281,7 +281,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$userid</b></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a>|stdClass&#160;</td>
           <td class="paramname"><em>$cm</em>, </td>
         </tr>
         <tr>
@@ -320,7 +320,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$userid</b></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$submiturl</td><td>the form action URL. </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a></td><td class="paramname">$cm</td><td>course module object. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a>&#160;|&#160;stdClass</td><td class="paramname">$cm</td><td>course module object. </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz settings object. </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../db/db4/classcontext__module.html">context_module</a></td><td class="paramname">$context</td><td>the quiz context. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$groupmode</td><td>editing group override (true) or user override (false). </td></tr>
@@ -466,7 +466,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$userid</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 26 2023 03:22:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 5 2023 03:25:25 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

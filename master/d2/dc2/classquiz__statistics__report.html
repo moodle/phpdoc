@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230224) (9ee4f8db8ba)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230303) (556208417de)</div>
   </td>
  </tr>
  </tbody>
@@ -141,9 +141,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a9bdb2eb22aab3b964f8044f05f160d30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html#a9bdb2eb22aab3b964f8044f05f160d30">output_quiz_structure_analysis_table</a> ($questionstats)</td></tr>
 <tr class="memdesc:a9bdb2eb22aab3b964f8044f05f160d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output the table that lists all the questions in the quiz with their statistics.  <br /></td></tr>
 <tr class="separator:a9bdb2eb22aab3b964f8044f05f160d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12838e1a2f5b43e7ff00bb082f9011f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html#a12838e1a2f5b43e7ff00bb082f9011f2">output_statistics_graph</a> ($quizorid, $qubaids)</td></tr>
-<tr class="memdesc:a12838e1a2f5b43e7ff00bb082f9011f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output the HTML needed to show the statistics graph.  <br /></td></tr>
-<tr class="separator:a12838e1a2f5b43e7ff00bb082f9011f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a912356ca35dee28694be92ac87ded51a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html#a912356ca35dee28694be92ac87ded51a">output_statistics_graph</a> ($quiz, $qubaids)</td></tr>
+<tr class="memdesc:a912356ca35dee28694be92ac87ded51a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output the HTML needed to show the statistics graph.  <br /></td></tr>
+<tr class="separator:a912356ca35dee28694be92ac87ded51a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bdbf9ee1a69e2cbd406ed998092e177"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html#a2bdbf9ee1a69e2cbd406ed998092e177">render_question_text</a> ($question)</td></tr>
 <tr class="memdesc:a2bdbf9ee1a69e2cbd406ed998092e177"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output question text in a box with urls appropriate for a preview of the question.  <br /></td></tr>
 <tr class="separator:a2bdbf9ee1a69e2cbd406ed998092e177"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1007,8 +1007,8 @@ core progress base null&#160;</td><td class="memItemRight" valign="bottom"><b>$p
 
 </div>
 </div>
-<a id="a12838e1a2f5b43e7ff00bb082f9011f2" name="a12838e1a2f5b43e7ff00bb082f9011f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12838e1a2f5b43e7ff00bb082f9011f2">&#9670;&#160;</a></span>output_statistics_graph()</h2>
+<a id="a912356ca35dee28694be92ac87ded51a" name="a912356ca35dee28694be92ac87ded51a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a912356ca35dee28694be92ac87ded51a">&#9670;&#160;</a></span>output_statistics_graph()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1020,7 +1020,7 @@ core progress base null&#160;</td><td class="memItemRight" valign="bottom"><b>$p
           <td class="memname">quiz_statistics_report::output_statistics_graph </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$quizorid</em>, </td>
+          <td class="paramname"><em>$quiz</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1044,9 +1044,8 @@ core progress base null&#160;</td><td class="memItemRight" valign="bottom"><b>$p
 <p>Output the HTML needed to show the statistics graph. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">int&#160;|&#160;object</td><td class="paramname">$quizorid</td><td>The quiz, or its ID. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz. </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../d2/d58/classqubaid__condition.html" title="This class represents a restriction on the set of question_usage ids to include in a larger database ...">qubaid_condition</a></td><td class="paramname">$qubaids</td><td>the question usages whose responses to analyse. </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$whichattempts</td><td>Which attempts constant. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1160,7 +1159,7 @@ core progress base null&#160;</td><td class="memItemRight" valign="bottom"><b>$p
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 26 2023 03:20:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 5 2023 03:23:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

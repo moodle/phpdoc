@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1.1+ (Build: 20230224) (a31f5830bd5)</div>
+   <div id="projectbrief">Moodle 4.1.1+ (Build: 20230303) (f49f934786f)</div>
   </td>
  </tr>
  </tbody>
@@ -106,6 +106,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7aafd40bc27367a572eb4fed1c470592"><td class="memItemLeft" align="right" valign="top"><a id="a7aafd40bc27367a572eb4fed1c470592" name="a7aafd40bc27367a572eb4fed1c470592"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>get_basepath</b> ()</td></tr>
 <tr class="separator:a7aafd40bc27367a572eb4fed1c470592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe9c499d12721bc0bff3e79341a96471"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc0/classrestore__task.html#afe9c499d12721bc0bff3e79341a96471">get_comment_mapping_itemname</a> ($commentarea)</td></tr>
+<tr class="memdesc:afe9c499d12721bc0bff3e79341a96471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a commment area, return the itemname that contains the itemid mappings.  <br /></td></tr>
+<tr class="separator:afe9c499d12721bc0bff3e79341a96471"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7622bf4e0e7c05c61ae8952aae3e4572"><td class="memItemLeft" align="right" valign="top"><a id="a7622bf4e0e7c05c61ae8952aae3e4572" name="a7622bf4e0e7c05c61ae8952aae3e4572"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>get_courseid</b> ()</td></tr>
 <tr class="separator:a7622bf4e0e7c05c61ae8952aae3e4572"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -439,6 +442,49 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="afe9c499d12721bc0bff3e79341a96471" name="afe9c499d12721bc0bff3e79341a96471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe9c499d12721bc0bff3e79341a96471">&#9670;&#160;</a></span>get_comment_mapping_itemname()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">restore_task::get_comment_mapping_itemname </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$commentarea</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Given a commment area, return the itemname that contains the itemid mappings. </p>
+<p>By default, both are the same (commentarea = itemname), so return it. If some plugins use a different approach, this method can be overriden in its task.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$commentarea</td><td>area defined for this comment </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>itemname that contains the related itemid mapping </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../d3/d66/classrestore__assign__activity__task.html#af35cb5bd94a75d2a3e9030f70ac30df8">restore_assign_activity_task</a>, and <a class="el" href="../../db/d73/classrestore__data__activity__task.html#a7f3f201e1c8424c3ed3f05119de11a70">restore_data_activity_task</a>.</p>
+
+</div>
+</div>
 <a id="a989ddc437c9d1714be0b46f86c3fa506" name="a989ddc437c9d1714be0b46f86c3fa506"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a989ddc437c9d1714be0b46f86c3fa506">&#9670;&#160;</a></span>get_progress()</h2>
 
@@ -690,7 +736,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 26 2023 03:14:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 5 2023 03:17:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

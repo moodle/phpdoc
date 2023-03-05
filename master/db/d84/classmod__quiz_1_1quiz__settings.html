@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230224) (9ee4f8db8ba)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230303) (556208417de)</div>
   </td>
  </tr>
  </tbody>
@@ -61,6 +61,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d5/dde/classmod__quiz_1_1quiz__settings-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">mod_quiz\quiz_settings Class Reference<div class="ingroups"><a class="el" href="../../dd/df0/group__mod__quiz.html">mod_quiz</a></div></div></div>
@@ -105,6 +106,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a17e569fa56fdd8735f583ea02e81a601"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d84/classmod__quiz_1_1quiz__settings.html#a17e569fa56fdd8735f583ea02e81a601">get_courseid</a> ()</td></tr>
 <tr class="memdesc:a17e569fa56fdd8735f583ea02e81a601"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the id of the course this quiz belongs to.  <br /></td></tr>
 <tr class="separator:a17e569fa56fdd8735f583ea02e81a601"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9d7ab52871ea528d7a0b0ac078c452a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d84/classmod__quiz_1_1quiz__settings.html#aa9d7ab52871ea528d7a0b0ac078c452a">get_grade_calculator</a> ()</td></tr>
+<tr class="memdesc:aa9d7ab52871ea528d7a0b0ac078c452a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the grade_calculator object for this quiz.  <br /></td></tr>
+<tr class="separator:aa9d7ab52871ea528d7a0b0ac078c452a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5abe01a0e500b755b331aa663530f226"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d84/classmod__quiz_1_1quiz__settings.html#a5abe01a0e500b755b331aa663530f226">get_navigation_method</a> ()</td></tr>
 <tr class="memdesc:a5abe01a0e500b755b331aa663530f226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the navigation method in use.  <br /></td></tr>
 <tr class="separator:a5abe01a0e500b755b331aa663530f226"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,15 +179,24 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:add51d18171ce67d2223d913c97f4f0a5"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d84/classmod__quiz_1_1quiz__settings.html#add51d18171ce67d2223d913c97f4f0a5">create</a> ($quizid, $userid=null)</td></tr>
-<tr class="memdesc:add51d18171ce67d2223d913c97f4f0a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static function to create a new quiz object for a specific user.  <br /></td></tr>
-<tr class="separator:add51d18171ce67d2223d913c97f4f0a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a569782853e3ebed67d9927ffba640b30"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d84/classmod__quiz_1_1quiz__settings.html#a569782853e3ebed67d9927ffba640b30">create</a> (int $quizid, int $userid=null)</td></tr>
+<tr class="memdesc:a569782853e3ebed67d9927ffba640b30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static function to create a new quiz settings object from a quiz id, for a specific user.  <br /></td></tr>
+<tr class="separator:a569782853e3ebed67d9927ffba640b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26f90e039368f6c41d97c1714930f3d0"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d84/classmod__quiz_1_1quiz__settings.html#a26f90e039368f6c41d97c1714930f3d0">create_for_cmid</a> (int $cmid, int $userid=null)</td></tr>
+<tr class="memdesc:a26f90e039368f6c41d97c1714930f3d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static function to create a new quiz settings object from a cmid, for a specific user.  <br /></td></tr>
+<tr class="separator:a26f90e039368f6c41d97c1714930f3d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a3b75aac1b9a3d76753c3635f3fd582c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d84/classmod__quiz_1_1quiz__settings.html#a3b75aac1b9a3d76753c3635f3fd582c2">ensure_question_loaded</a> ($id)</td></tr>
 <tr class="memdesc:a3b75aac1b9a3d76753c3635f3fd582c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check that the definition of a particular question is loaded, and if not throw an exception.  <br /></td></tr>
 <tr class="separator:a3b75aac1b9a3d76753c3635f3fd582c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:a112905a693af2d97622e297e23a5f349"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d84/classmod__quiz_1_1quiz__settings.html#a112905a693af2d97622e297e23a5f349">create_helper</a> (stdClass $quiz, <a class="el" href="../../df/db9/classcm__info.html">cm_info</a>|stdClass $cm, stdClass $course, ?int $userid)</td></tr>
+<tr class="memdesc:a112905a693af2d97622e297e23a5f349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper used by the other factory methods.  <br /></td></tr>
+<tr class="separator:a112905a693af2d97622e297e23a5f349"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -358,8 +371,8 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$sections</b> =
 
 </div>
 </div>
-<a id="add51d18171ce67d2223d913c97f4f0a5" name="add51d18171ce67d2223d913c97f4f0a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add51d18171ce67d2223d913c97f4f0a5">&#9670;&#160;</a></span>create()</h2>
+<a id="a569782853e3ebed67d9927ffba640b30" name="a569782853e3ebed67d9927ffba640b30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a569782853e3ebed67d9927ffba640b30">&#9670;&#160;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -370,13 +383,13 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$sections</b> =
         <tr>
           <td class="memname">static mod_quiz\quiz_settings::create </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>$quizid</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>$userid</em> = <code>null</code>&#160;</td>
         </tr>
         <tr>
@@ -392,17 +405,17 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$sections</b> =
 </table>
 </div><div class="memdoc">
 
-<p>Static function to create a new quiz object for a specific user. </p>
+<p>Static function to create a new quiz settings object from a quiz id, for a specific user. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$quizid</td><td>the the quiz id. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$quizid</td><td>the quiz id. </td></tr>
     <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$userid</td><td>the the userid (optional). If passed, relevant overrides are applied. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">quiz_settings</td><td>the new quiz object. </td></tr>
+    <tr><td class="paramname">quiz_settings</td><td>the new quiz settings object. </td></tr>
   </table>
   </dd>
 </dl>
@@ -436,6 +449,122 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$sections</b> =
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">quiz_attempt</td><td>the new quiz_attempt object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a26f90e039368f6c41d97c1714930f3d0" name="a26f90e039368f6c41d97c1714930f3d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26f90e039368f6c41d97c1714930f3d0">&#9670;&#160;</a></span>create_for_cmid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static mod_quiz\quiz_settings::create_for_cmid </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$cmid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$userid</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Static function to create a new quiz settings object from a cmid, for a specific user. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$cmid</td><td>the course-module id. </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$userid</td><td>the the userid (optional). If passed, relevant overrides are applied. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">quiz_settings</td><td>the new quiz settings object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a112905a693af2d97622e297e23a5f349" name="a112905a693af2d97622e297e23a5f349"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a112905a693af2d97622e297e23a5f349">&#9670;&#160;</a></span>create_helper()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static mod_quiz\quiz_settings::create_helper </td>
+          <td>(</td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$quiz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a>|stdClass&#160;</td>
+          <td class="paramname"><em>$cm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$course</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int&#160;</td>
+          <td class="paramname"><em>$userid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper used by the other factory methods. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a>&#160;|&#160;stdClass</td><td class="paramname">$cm</td><td></td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td></td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$userid</td><td>the the userid (optional). If passed, relevant overrides are applied. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">quiz_settings</td><td>the new quiz settings object. </td></tr>
   </table>
   </dd>
 </dl>
@@ -526,7 +655,7 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$sections</b> =
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">access_manager</td><td>and instance of the access_manager class for this quiz at this time. </td></tr>
+    <tr><td class="paramname">access_manager</td><td>an instance of the access_manager class for this quiz at this time. </td></tr>
   </table>
   </dd>
 </dl>
@@ -685,6 +814,31 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$sections</b> =
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">int</td><td>the course id. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa9d7ab52871ea528d7a0b0ac078c452a" name="aa9d7ab52871ea528d7a0b0ac078c452a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9d7ab52871ea528d7a0b0ac078c452a">&#9670;&#160;</a></span>get_grade_calculator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\quiz_settings::get_grade_calculator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the grade_calculator object for this quiz. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">grade_calculator</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1344,7 +1498,7 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$sections</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 26 2023 03:22:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 5 2023 03:25:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.6+ (Build: 20230224) (64586584000)</div>
+   <div id="projectbrief">Moodle 4.0.6+ (Build: 20230303) (62cfa26cb92)</div>
   </td>
  </tr>
  </tbody>
@@ -104,9 +104,9 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>force_regrading</b> ()</td></tr>
 <tr class="memdesc:a55802aee1db89ac93ca201ddf07ca9a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Marks this grade categories' associated grade item as needing regrading. <br /></td></tr>
 <tr class="separator:a55802aee1db89ac93ca201ddf07ca9a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae546cd14f7dd52d01a8879df104ab37a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8f/classgrade__category.html#ae546cd14f7dd52d01a8879df104ab37a">generate_grades</a> ($userid=null)</td></tr>
-<tr class="memdesc:ae546cd14f7dd52d01a8879df104ab37a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates and saves final grades in associated category grade item.  <br /></td></tr>
-<tr class="separator:ae546cd14f7dd52d01a8879df104ab37a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a691e59b3b067e827a7009dafd41e6771"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8f/classgrade__category.html#a691e59b3b067e827a7009dafd41e6771">generate_grades</a> ($userid=null, ?\<a class="el" href="../../db/df4/classcore_1_1progress_1_1base.html">core\progress\base</a> $progress=null)</td></tr>
+<tr class="memdesc:a691e59b3b067e827a7009dafd41e6771"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates and saves final grades in associated category grade item.  <br /></td></tr>
+<tr class="separator:a691e59b3b067e827a7009dafd41e6771"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade955b707bf6a36512d8f6ca432bfe06"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d8f/classgrade__category.html#ade955b707bf6a36512d8f6ca432bfe06">get_children</a> ($include_category_items=false)</td></tr>
 <tr class="memdesc:ade955b707bf6a36512d8f6ca432bfe06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches and returns all the children categories and/or grade_items belonging to this category.  <br /></td></tr>
 <tr class="separator:ade955b707bf6a36512d8f6ca432bfe06"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1180,8 +1180,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$canapplylimitrules</
 
 </div>
 </div>
-<a id="ae546cd14f7dd52d01a8879df104ab37a" name="ae546cd14f7dd52d01a8879df104ab37a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae546cd14f7dd52d01a8879df104ab37a">&#9670;&#160;</a></span>generate_grades()</h2>
+<a id="a691e59b3b067e827a7009dafd41e6771" name="a691e59b3b067e827a7009dafd41e6771"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a691e59b3b067e827a7009dafd41e6771">&#9670;&#160;</a></span>generate_grades()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1190,8 +1190,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$canapplylimitrules</
           <td class="memname">grade_category::generate_grades </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$userid</em> = <code>null</code></td><td>)</td>
+          <td class="paramname"><em>$userid</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">?\<a class="el" href="../../db/df4/classcore_1_1progress_1_1base.html">core\progress\base</a>&#160;</td>
+          <td class="paramname"><em>$progress</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1199,7 +1209,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$canapplylimitrules</
 <p>Generates and saves final grades in associated category grade item. </p>
 <p>These immediate children must already have their own final grades. The category's aggregation method is used to generate final grades.</p>
 <p>Please note that category grade is either calculated or aggregated, not both at the same time.</p>
-<p>This method must be used ONLY from <a class="el" href="../../d0/d8b/classgrade__item.html#a0eaf322a6a3548c073074fcc23eae46b" title="Performs the necessary calculations on the grades_final referenced by this grade_item.">grade_item::regrade_final_grades()</a>, because the calculation must be done in correct order!</p>
+<p>This method must be used ONLY from <a class="el" href="../../d0/d8b/classgrade__item.html#a10a761a92fede6ab362c42cbc59ae8e5" title="Performs the necessary calculations on the grades_final referenced by this grade_item.">grade_item::regrade_final_grades()</a>, because the calculation must be done in correct order!</p>
 <p>Steps to follow:</p><ol type="1">
 <li>Get final grades from immediate children</li>
 <li>Aggregate these grades</li>
@@ -1208,6 +1218,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$canapplylimitrules</
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>The user ID if final grade generation should be limited to a single user </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../db/df4/classcore_1_1progress_1_1base.html">core::progress::base</a>&#160;|&#160;null</td><td class="paramname">$progress</td><td>Optional progress indicator </td></tr>
   </table>
   </dd>
 </dl>
@@ -2915,7 +2926,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$canapplylimitrules</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 26 2023 03:07:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 5 2023 03:10:57 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

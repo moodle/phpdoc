@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230224) (9ee4f8db8ba)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230303) (556208417de)</div>
   </td>
  </tr>
  </tbody>
@@ -244,6 +244,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df8/classmod__quiz_1_1form_1_1randomquestion__form.html">mod_quiz\form\randomquestion_form</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class randomquestion_form.  <a href="../../d7/df8/classmod__quiz_1_1form_1_1randomquestion__form.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc7/classmod__quiz_1_1grade__calculator.html">mod_quiz\grade_calculator</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dba/classmod__quiz_1_1group__observers.html">mod_quiz\group_observers</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Group observers class.  <a href="../../dd/dba/classmod__quiz_1_1group__observers.html#details">More...</a><br /></td></tr>
@@ -667,9 +669,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gad96fe5202ce77e1de7d6bb30a79aac31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gad96fe5202ce77e1de7d6bb30a79aac31">quiz_num_attempt_summary</a> ($quiz, $cm, $returnzero=false, $currentgroup=0)</td></tr>
 <tr class="memdesc:gad96fe5202ce77e1de7d6bb30a79aac31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a textual summary of the number of attempts that have been made at a particular quiz, returns '' if no attempts have been made yet, unless $returnzero is passed as true.  <br /></td></tr>
 <tr class="separator:gad96fe5202ce77e1de7d6bb30a79aac31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa97b8d7640e9ef73779a737b3c26f1e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gaa97b8d7640e9ef73779a737b3c26f1e4">quiz_override_summary</a> (stdClass $quiz, stdClass $cm, int $currentgroup=0)</td></tr>
-<tr class="memdesc:gaa97b8d7640e9ef73779a737b3c26f1e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return summary of the number of settings override that exist.  <br /></td></tr>
-<tr class="separator:gaa97b8d7640e9ef73779a737b3c26f1e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9270b11952f8229416e2a2cabf2fd713"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga9270b11952f8229416e2a2cabf2fd713">quiz_override_summary</a> (stdClass $quiz, <a class="el" href="../../df/db9/classcm__info.html">cm_info</a>|stdClass $cm, int $currentgroup=0)</td></tr>
+<tr class="memdesc:ga9270b11952f8229416e2a2cabf2fd713"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return summary of the number of settings override that exist.  <br /></td></tr>
+<tr class="separator:ga9270b11952f8229416e2a2cabf2fd713"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab1a43e6036ba903fc993f94cb4433271"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gab1a43e6036ba903fc993f94cb4433271">quiz_page_type_list</a> ($pagetype, $parentcontext, $currentcontext)</td></tr>
 <tr class="memdesc:gab1a43e6036ba903fc993f94cb4433271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of page types.  <br /></td></tr>
 <tr class="separator:gab1a43e6036ba903fc993f94cb4433271"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2531,7 +2533,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>This sends the confirmation and notification messages, if required.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$event</td><td>the event object. </td></tr>
+    <tr><td class="paramtype">attempt_submitted</td><td class="paramname">$event</td><td>the event object. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2642,6 +2644,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001054">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. No direct replacement. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000317">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76612" class="el">MDL-76612</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6 </dd></dl>
 
 </div>
 </div>
@@ -2685,6 +2689,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001053">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. No direct replacement. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000316">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76612" class="el">MDL-76612</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6 </dd></dl>
 
 </div>
 </div>
@@ -3681,7 +3687,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../d8/d59/classcached__cm__info.html" title="Class that is the return value for the _get_coursemodule_info module API function.">cached_cm_info</a></td><td>An object on information that the courses will know about (most noticeably, an icon). </td></tr>
+    <tr><td class="paramname">cached_cm_info|false</td><td>An object on information that the courses will know about (most noticeably, an icon). </td></tr>
   </table>
   </dd>
 </dl>
@@ -4544,8 +4550,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 
 </div>
 </div>
-<a id="gaa97b8d7640e9ef73779a737b3c26f1e4" name="gaa97b8d7640e9ef73779a737b3c26f1e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa97b8d7640e9ef73779a737b3c26f1e4">&#9670;&#160;</a></span>quiz_override_summary()</h2>
+<a id="ga9270b11952f8229416e2a2cabf2fd713" name="ga9270b11952f8229416e2a2cabf2fd713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9270b11952f8229416e2a2cabf2fd713">&#9670;&#160;</a></span>quiz_override_summary()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4559,7 +4565,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a>|stdClass&#160;</td>
           <td class="paramname"><em>$cm</em>, </td>
         </tr>
         <tr>
@@ -4581,7 +4587,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz settings. Only $quiz-&gt;id is used at the moment. </td></tr>
-    <tr><td class="paramtype">stdClass&#160;|&#160;<a class="el" href="../../df/db9/classcm__info.html">cm_info</a></td><td class="paramname">$cm</td><td>the cm object. Only $cm-&gt;course, $cm-&gt;groupmode and $cm-&gt;groupingid fields are used at the moment. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a>&#160;|&#160;stdClass</td><td class="paramname">$cm</td><td>the cm object. Only $cm-&gt;course, $cm-&gt;groupmode and $cm-&gt;groupingid fields are used at the moment. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$currentgroup</td><td>if there is a concept of current group where this method is being called (e.g. a report) pass it in here. Default 0 which means no current group. </td></tr>
   </table>
   </dd>
@@ -6025,6 +6031,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001052">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Please use grade_calculator::update_quiz_maximum_grade. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000315">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76612" class="el">MDL-76612</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6 </dd></dl>
 
 </div>
 </div>
@@ -6295,7 +6303,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><div class="memdoc">
 
 <p>The quiz grade is the maximum that student's results are marked out of. </p>
-<p>When it changes, the corresponding data in quiz_grades and quiz_feedback needs to be rescaled. After calling this function, you probably need to call quiz_update_all_attempt_sumgrades, quiz_update_all_final_grades and quiz_update_grades.</p>
+<p>When it changes, the corresponding data in quiz_grades and quiz_feedback needs to be rescaled. After calling this function, you probably need to call quiz_update_all_attempt_sumgrades, grade_calculator::recompute_all_final_grades(); quiz_update_grades. (At least, that is what this comment has said for years, but it seems to call recompute_all_final_grades itself.)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">float</td><td class="paramname">$newgrade</td><td>the new maximum grade for the quiz. </td></tr>
@@ -6309,6 +6317,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001051">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Please use grade_calculator::update_quiz_maximum_grade. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000314">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76612" class="el">MDL-76612</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6 </dd></dl>
 
 </div>
 </div>
@@ -6493,6 +6503,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001049">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Please use grade_calculator::recompute_all_attempt_sumgrades. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000312">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76612" class="el">MDL-76612</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6 </dd></dl>
 
 </div>
 </div>
@@ -6520,6 +6532,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001050">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Please use grade_calculator::recompute_all_final_grades. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000313">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76612" class="el">MDL-76612</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6 </dd></dl>
 
 </div>
 </div>
@@ -6744,13 +6758,15 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 
 <p>Update the sumgrades field of the quiz. </p>
 <p>This needs to be called whenever the grading structure of the quiz is changed. For example if a question is added or removed, or a question weight is changed.</p>
-<p>You should call <a class="el" href="../../dd/df0/group__mod__quiz.html#gab597cb872eb48b9d68193c94e7a0b439">quiz_delete_previews()</a> before you call this function.</p>
+<p>You should call {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dd/df0/group__mod__quiz.html#gab597cb872eb48b9d68193c94e7a0b439" title="Delete all the preview attempts at a quiz, or possibly all the attempts belonging to one user.">quiz_delete_previews()</a>} before you <a class="el" href="../../d6/d9f/group__moodlecore.html#gaa731f016ddefcd9a6ec52a6fe3c2194a" title="To use the phpFlickr::call method, pass a string containing the API method you want to use and an ass...">call</a> this function.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>a quiz. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001048">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Please use grade_calculator::recompute_quiz_sumgrades. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000311">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76612" class="el">MDL-76612</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6 </dd></dl>
 
 </div>
 </div>
@@ -7663,7 +7679,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 26 2023 03:19:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 5 2023 03:22:16 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230224) (9ee4f8db8ba)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230303) (556208417de)</div>
   </td>
  </tr>
  </tbody>
@@ -167,6 +167,9 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="../../d4/d25/classmod__quiz_1_1local_1_1reports_1_1attempts__report__options__form.html">attempts_report_options_form</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$form</b></td></tr>
 <tr class="memdesc:a8f6ebf4b01060e1daff682f40c38b6d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The settings form to use. <br /></td></tr>
 <tr class="separator:a8f6ebf4b01060e1daff682f40c38b6d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5a7232de6f2c44fcdf6a76a29b863c9"><td class="memItemLeft" align="right" valign="top"><a id="ae5a7232de6f2c44fcdf6a76a29b863c9" name="ae5a7232de6f2c44fcdf6a76a29b863c9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>$hasgroupstudents</b></td></tr>
+<tr class="separator:ae5a7232de6f2c44fcdf6a76a29b863c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad148849cf4530ef2a9d1ebad00803dfd"><td class="memItemLeft" align="right" valign="top"><a id="ad148849cf4530ef2a9d1ebad00803dfd" name="ad148849cf4530ef2a9d1ebad00803dfd"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$mode</b></td></tr>
 <tr class="memdesc:ad148849cf4530ef2a9d1ebad00803dfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">the mode this report is. <br /></td></tr>
@@ -175,6 +178,9 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$mode</b></td></tr>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$qmsubselect</b></td></tr>
 <tr class="memdesc:ac8beabb1e3c9042788a471a9263b80f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">SQL fragment for selecting the attempt that gave the final grade, if applicable. <br /></td></tr>
 <tr class="separator:ac8beabb1e3c9042788a471a9263b80f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23c94f377155a77744c801a44757ea1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d84/classmod__quiz_1_1quiz__settings.html">quiz_settings</a> null&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfd/classmod__quiz_1_1local_1_1reports_1_1attempts__report.html#a23c94f377155a77744c801a44757ea1a">$quizobj</a> = null</td></tr>
+<tr class="memdesc:a23c94f377155a77744c801a44757ea1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">quiz settings object.  <br /></td></tr>
+<tr class="separator:a23c94f377155a77744c801a44757ea1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1bd01400347e30f6983a207c52d3127"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfd/classmod__quiz_1_1local_1_1reports_1_1attempts__report.html#ae1bd01400347e30f6983a207c52d3127">$showgrades</a> = null</td></tr>
 <tr class="memdesc:ae1bd01400347e30f6983a207c52d3127"><td class="mdescLeft">&#160;</td><td class="mdescRight">caches the results of {  <br /></td></tr>
 <tr class="separator:ae1bd01400347e30f6983a207c52d3127"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1034,6 +1040,31 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$qmsubselect</b></t
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a23c94f377155a77744c801a44757ea1a" name="a23c94f377155a77744c801a44757ea1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23c94f377155a77744c801a44757ea1a">&#9670;&#160;</a></span>$quizobj</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d84/classmod__quiz_1_1quiz__settings.html">quiz_settings</a> null mod_quiz\local\reports\attempts_report::$quizobj = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>quiz settings object. </p>
+<p>Set in the init method. </p>
+
+</div>
+</div>
 <a id="ae1bd01400347e30f6983a207c52d3127" name="ae1bd01400347e30f6983a207c52d3127"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae1bd01400347e30f6983a207c52d3127">&#9670;&#160;</a></span>$showgrades</h2>
 
@@ -1065,7 +1096,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$qmsubselect</b></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 26 2023 03:22:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 5 2023 03:25:25 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

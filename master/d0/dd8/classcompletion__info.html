@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230224) (9ee4f8db8ba)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230303) (556208417de)</div>
   </td>
  </tr>
  </tbody>
@@ -185,9 +185,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a8f97559669b59fa556cabfd9c88661b7"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd8/classcompletion__info.html#a8f97559669b59fa556cabfd9c88661b7">get_aggregation_methods</a> ()</td></tr>
 <tr class="memdesc:a8f97559669b59fa556cabfd9c88661b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return array of aggregation methods.  <br /></td></tr>
 <tr class="separator:a8f97559669b59fa556cabfd9c88661b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2be809f7444415aaaf6218c3741a5aa5"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd8/classcompletion__info.html#a2be809f7444415aaaf6218c3741a5aa5">internal_get_grade_state</a> ($item, $grade)</td></tr>
-<tr class="memdesc:a2be809f7444415aaaf6218c3741a5aa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the completion state that would result from a graded item (where grade-based completion is turned on) based on the actual grade and settings.  <br /></td></tr>
-<tr class="separator:a2be809f7444415aaaf6218c3741a5aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addb5285747b9ea095072741b762f0662"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd8/classcompletion__info.html#addb5285747b9ea095072741b762f0662">internal_get_grade_state</a> ($item, $grade, bool $returnpassfail=false)</td></tr>
+<tr class="memdesc:addb5285747b9ea095072741b762f0662"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the completion state that would result from a graded item (where grade-based completion is turned on) based on the actual grade and settings.  <br /></td></tr>
+<tr class="separator:addb5285747b9ea095072741b762f0662"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a334ff0b67bc166f9afcec1dc3815d448"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dd8/classcompletion__info.html#a334ff0b67bc166f9afcec1dc3815d448">is_enabled_for_site</a> ()</td></tr>
 <tr class="memdesc:a334ff0b67bc166f9afcec1dc3815d448"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether completion is enabled across entire site.  <br /></td></tr>
 <tr class="separator:a334ff0b67bc166f9afcec1dc3815d448"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1282,8 +1282,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2be809f7444415aaaf6218c3741a5aa5" name="a2be809f7444415aaaf6218c3741a5aa5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2be809f7444415aaaf6218c3741a5aa5">&#9670;&#160;</a></span>internal_get_grade_state()</h2>
+<a id="addb5285747b9ea095072741b762f0662" name="addb5285747b9ea095072741b762f0662"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addb5285747b9ea095072741b762f0662">&#9670;&#160;</a></span>internal_get_grade_state()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1301,7 +1301,13 @@ Protected Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$grade</em>&#160;</td>
+          <td class="paramname"><em>$grade</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$returnpassfail</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1322,6 +1328,7 @@ Protected Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a></td><td class="paramname">$item</td><td>an instance of <a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a> </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../dc/df3/classgrade__grade.html">grade_grade</a></td><td class="paramname">$grade</td><td>an instance of <a class="el" href="../../dc/df3/classgrade__grade.html">grade_grade</a> </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$returnpassfail</td><td>If course module has pass grade completion criteria </td></tr>
   </table>
   </dd>
 </dl>
@@ -1820,7 +1827,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 26 2023 03:19:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 5 2023 03:22:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

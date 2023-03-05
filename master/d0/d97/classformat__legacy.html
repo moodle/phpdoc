@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230224) (9ee4f8db8ba)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230303) (556208417de)</div>
   </td>
  </tr>
  </tbody>
@@ -114,6 +114,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab5593bf6fdaf28135f42b737bbdfcced"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#ab5593bf6fdaf28135f42b737bbdfcced">delete_section</a> ($section, $forcedeleteifnotempty=false)</td></tr>
 <tr class="memdesc:ab5593bf6fdaf28135f42b737bbdfcced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a section.  <br /></td></tr>
 <tr class="separator:ab5593bf6fdaf28135f42b737bbdfcced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb972b8c93a8d2170c0de8d84da783f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#abb972b8c93a8d2170c0de8d84da783f7">duplicate_section</a> (<a class="el" href="../../d1/db5/classsection__info.html">section_info</a> $originalsection)</td></tr>
+<tr class="memdesc:abb972b8c93a8d2170c0de8d84da783f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duplicate a section.  <br /></td></tr>
+<tr class="separator:abb972b8c93a8d2170c0de8d84da783f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92443eaa1e4064cb2e42104919e2d3ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a92443eaa1e4064cb2e42104919e2d3ce">edit_form_validation</a> ($data, $files, $errors)</td></tr>
 <tr class="memdesc:a92443eaa1e4064cb2e42104919e2d3ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override if you need to perform some extra validation of the format options.  <br /></td></tr>
 <tr class="separator:a92443eaa1e4064cb2e42104919e2d3ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -817,6 +820,47 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesection</b> = 0
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="abb972b8c93a8d2170c0de8d84da783f7" name="abb972b8c93a8d2170c0de8d84da783f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb972b8c93a8d2170c0de8d84da783f7">&#9670;&#160;</a></span>duplicate_section()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\base::duplicate_section </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/db5/classsection__info.html">section_info</a>&#160;</td>
+          <td class="paramname"><em>$originalsection</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Duplicate a section. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d1/db5/classsection__info.html">section_info</a></td><td class="paramname">$originalsection</td><td>The section to be duplicated </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../d1/db5/classsection__info.html">section_info</a></td><td>The new duplicated section </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2 </dd></dl>
 
 </div>
 </div>
@@ -3143,16 +3187,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesection</b> = 0
 </div><div class="memdoc">
 
 <p>Returns true if this course format uses activity indentation. </p>
-<p>Indentation is not supported by core formats anymore and may be deprecated in the future. This method will keep a default return "true" for legacy reasons but new formats should override it with a return false to prevent future deprecations.</p>
-<p>A message in a bottle: if indentation is finally deprecated, both behat steps i_indent_right_activity and i_indent_left_activity should be removed as well. Right now no core behat uses them but indentation is not officially deprecated so they are still available for the contrib formats.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td>if the course format uses indentation. </td></tr>
   </table>
   </dd>
 </dl>
-
-<p>Reimplemented in <a class="el" href="../../d1/d92/classformat__topics.html#a71c92eba5da523a9e95d005b0c136b56">format_topics</a>, and <a class="el" href="../../d5/d8d/classformat__weeks.html#ac3be814d81bfd5ed18f67601d6d83c9e">format_weeks</a>.</p>
 
 </div>
 </div>
@@ -3308,7 +3348,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesection</b> = 0
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 26 2023 03:19:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 5 2023 03:22:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

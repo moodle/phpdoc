@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.6+ (Build: 20230224) (64586584000)</div>
+   <div id="projectbrief">Moodle 4.0.6+ (Build: 20230303) (62cfa26cb92)</div>
   </td>
  </tr>
  </tbody>
@@ -107,9 +107,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7aafd40bc27367a572eb4fed1c470592"><td class="memItemLeft" align="right" valign="top"><a id="a7aafd40bc27367a572eb4fed1c470592" name="a7aafd40bc27367a572eb4fed1c470592"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>get_basepath</b> ()</td></tr>
 <tr class="separator:a7aafd40bc27367a572eb4fed1c470592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81a8b439ee10955f80d95a508f748d46"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9a/classrestore__activity__task.html#a81a8b439ee10955f80d95a508f748d46">get_comment_mapping_itemname</a> ($commentarea)</td></tr>
-<tr class="memdesc:a81a8b439ee10955f80d95a508f748d46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a commment area, return the itemname that contains the itemid mappings.  <br /></td></tr>
-<tr class="separator:a81a8b439ee10955f80d95a508f748d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe9c499d12721bc0bff3e79341a96471"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dc0/classrestore__task.html#afe9c499d12721bc0bff3e79341a96471">get_comment_mapping_itemname</a> ($commentarea)</td></tr>
+<tr class="memdesc:afe9c499d12721bc0bff3e79341a96471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a commment area, return the itemname that contains the itemid mappings.  <br /></td></tr>
+<tr class="separator:afe9c499d12721bc0bff3e79341a96471"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56142eccc935396081702fd740d4cc45"><td class="memItemLeft" align="right" valign="top"><a id="a56142eccc935396081702fd740d4cc45" name="a56142eccc935396081702fd740d4cc45"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>get_contextid</b> ()</td></tr>
 <tr class="separator:a56142eccc935396081702fd740d4cc45"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -703,8 +703,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a81a8b439ee10955f80d95a508f748d46" name="a81a8b439ee10955f80d95a508f748d46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81a8b439ee10955f80d95a508f748d46">&#9670;&#160;</a></span>get_comment_mapping_itemname()</h2>
+<a id="afe9c499d12721bc0bff3e79341a96471" name="afe9c499d12721bc0bff3e79341a96471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe9c499d12721bc0bff3e79341a96471">&#9670;&#160;</a></span>get_comment_mapping_itemname()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -713,7 +713,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">restore_activity_task::get_comment_mapping_itemname </td>
+          <td class="memname">restore_task::get_comment_mapping_itemname </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$commentarea</em></td><td>)</td>
@@ -728,7 +728,19 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Given a commment area, return the itemname that contains the itemid mappings. </p>
-<p>By default both are the same (commentarea = itemname), so return it. If some module uses a different approach, this method can be overriden in its taks </p>
+<p>By default, both are the same (commentarea = itemname), so return it. If some plugins use a different approach, this method can be overriden in its task.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$commentarea</td><td>area defined for this comment </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>itemname that contains the related itemid mapping </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Reimplemented in <a class="el" href="../../d3/d66/classrestore__assign__activity__task.html#af35cb5bd94a75d2a3e9030f70ac30df8">restore_assign_activity_task</a>, and <a class="el" href="../../db/d73/classrestore__data__activity__task.html#a7f3f201e1c8424c3ed3f05119de11a70">restore_data_activity_task</a>.</p>
 
@@ -1049,7 +1061,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 26 2023 03:08:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 5 2023 03:11:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

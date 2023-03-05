@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230224) (9ee4f8db8ba)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230303) (556208417de)</div>
   </td>
  </tr>
  </tbody>
@@ -549,9 +549,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2a03649f21118e000e50ac26458d411f"><td class="memItemLeft" align="right" valign="top"><a id="ga2a03649f21118e000e50ac26458d411f" name="ga2a03649f21118e000e50ac26458d411f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>delete_mod_from_section</b> ($modid, $sectionid)</td></tr>
 <tr class="separator:ga2a03649f21118e000e50ac26458d411f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5e624de9d75de20785819ad23b69ff7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga5e624de9d75de20785819ad23b69ff7d">duplicate_module</a> ($course, $cm)</td></tr>
-<tr class="memdesc:ga5e624de9d75de20785819ad23b69ff7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Api to duplicate a module.  <br /></td></tr>
-<tr class="separator:ga5e624de9d75de20785819ad23b69ff7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf027dd2ede4d34a47d30176fc6efd97e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#gaf027dd2ede4d34a47d30176fc6efd97e">duplicate_module</a> ($course, $cm, int $sectionid=null, bool $changename=true)</td></tr>
+<tr class="memdesc:gaf027dd2ede4d34a47d30176fc6efd97e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Api to duplicate a module.  <br /></td></tr>
+<tr class="separator:gaf027dd2ede4d34a47d30176fc6efd97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaca3e939724f1c7e01a7c20cc7abba967"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#gaca3e939724f1c7e01a7c20cc7abba967">edit_module_post_actions</a> ($moduleinfo, $course)</td></tr>
 <tr class="memdesc:gaca3e939724f1c7e01a7c20cc7abba967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Common create/update module module actions that need to be processed as soon as a module is created/updaded.  <br /></td></tr>
 <tr class="separator:gaca3e939724f1c7e01a7c20cc7abba967"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4697,8 +4697,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 
 </div>
 </div>
-<a id="ga5e624de9d75de20785819ad23b69ff7d" name="ga5e624de9d75de20785819ad23b69ff7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5e624de9d75de20785819ad23b69ff7d">&#9670;&#160;</a></span>duplicate_module()</h2>
+<a id="gaf027dd2ede4d34a47d30176fc6efd97e" name="gaf027dd2ede4d34a47d30176fc6efd97e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf027dd2ede4d34a47d30176fc6efd97e">&#9670;&#160;</a></span>duplicate_module()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4713,7 +4713,19 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$cm</em>&#160;</td>
+          <td class="paramname"><em>$cm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$sectionid</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$changename</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -4728,6 +4740,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
   <table class="params">
     <tr><td class="paramtype">object</td><td class="paramname">$course</td><td>course object. </td></tr>
     <tr><td class="paramtype">object</td><td class="paramname">$cm</td><td>course module object to be duplicated. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$sectionid</td><td>section ID new course module will be placed in. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$changename</td><td>updates module name with text from duplicatedmodule lang string. </td></tr>
   </table>
   </dd>
 </dl>
@@ -8591,7 +8605,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 26 2023 03:18:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 5 2023 03:22:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

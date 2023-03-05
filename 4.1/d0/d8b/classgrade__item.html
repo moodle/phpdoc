@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1.1+ (Build: 20230224) (a31f5830bd5)</div>
+   <div id="projectbrief">Moodle 4.1.1+ (Build: 20230303) (f49f934786f)</div>
   </td>
  </tr>
  </tbody>
@@ -243,9 +243,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aee892678f2288f4eec4da26b5210026d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d8b/classgrade__item.html#aee892678f2288f4eec4da26b5210026d">refresh_grades</a> ($userid=0)</td></tr>
 <tr class="memdesc:aee892678f2288f4eec4da26b5210026d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refetch grades from modules, plugins.  <br /></td></tr>
 <tr class="separator:aee892678f2288f4eec4da26b5210026d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0eaf322a6a3548c073074fcc23eae46b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d8b/classgrade__item.html#a0eaf322a6a3548c073074fcc23eae46b">regrade_final_grades</a> ($userid=null)</td></tr>
-<tr class="memdesc:a0eaf322a6a3548c073074fcc23eae46b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs the necessary calculations on the grades_final referenced by this <a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a>.  <br /></td></tr>
-<tr class="separator:a0eaf322a6a3548c073074fcc23eae46b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a761a92fede6ab362c42cbc59ae8e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d8b/classgrade__item.html#a10a761a92fede6ab362c42cbc59ae8e5">regrade_final_grades</a> ($userid=null, ?\<a class="el" href="../../db/df4/classcore_1_1progress_1_1base.html">core\progress\base</a> $progress=null)</td></tr>
+<tr class="memdesc:a10a761a92fede6ab362c42cbc59ae8e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs the necessary calculations on the grades_final referenced by this <a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a>.  <br /></td></tr>
+<tr class="separator:a10a761a92fede6ab362c42cbc59ae8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4680c382b5adda9998c92f47ca2ec55a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d8b/classgrade__item.html#a4680c382b5adda9998c92f47ca2ec55a">regrading_finished</a> ()</td></tr>
 <tr class="memdesc:a4680c382b5adda9998c92f47ca2ec55a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark regrading as finished successfully.  <br /></td></tr>
 <tr class="separator:a4680c382b5adda9998c92f47ca2ec55a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2615,8 +2615,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0eaf322a6a3548c073074fcc23eae46b" name="a0eaf322a6a3548c073074fcc23eae46b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0eaf322a6a3548c073074fcc23eae46b">&#9670;&#160;</a></span>regrade_final_grades()</h2>
+<a id="a10a761a92fede6ab362c42cbc59ae8e5" name="a10a761a92fede6ab362c42cbc59ae8e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10a761a92fede6ab362c42cbc59ae8e5">&#9670;&#160;</a></span>regrade_final_grades()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2625,8 +2625,18 @@ Static Protected Member Functions</h2></td></tr>
           <td class="memname">grade_item::regrade_final_grades </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$userid</em> = <code>null</code></td><td>)</td>
+          <td class="paramname"><em>$userid</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">?\<a class="el" href="../../db/df4/classcore_1_1progress_1_1base.html">core\progress\base</a>&#160;</td>
+          <td class="paramname"><em>$progress</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2637,6 +2647,7 @@ Static Protected Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>Supply a user ID to limit the regrading to a single user </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../db/df4/classcore_1_1progress_1_1base.html">core::progress::base</a>&#160;|&#160;null</td><td class="paramname">$progress</td><td>Optional progress object, will be updated per user </td></tr>
   </table>
   </dd>
 </dl>
@@ -4062,7 +4073,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 26 2023 03:14:04 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 5 2023 03:17:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

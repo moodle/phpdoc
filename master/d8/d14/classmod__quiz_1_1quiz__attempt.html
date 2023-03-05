@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230224) (9ee4f8db8ba)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230303) (556208417de)</div>
   </td>
  </tr>
  </tbody>
@@ -153,6 +153,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad7c830c7f3d93ad6e0686fe2c4599e20"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#ad7c830c7f3d93ad6e0686fe2c4599e20">get_cmid</a> ()</td></tr>
 <tr class="memdesc:ad7c830c7f3d93ad6e0686fe2c4599e20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the course-module id.  <br /></td></tr>
 <tr class="separator:ad7c830c7f3d93ad6e0686fe2c4599e20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f880546a9bf4b7a5ade55e80fe6b579"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#a2f880546a9bf4b7a5ade55e80fe6b579">get_context</a> ()</td></tr>
+<tr class="memdesc:a2f880546a9bf4b7a5ade55e80fe6b579"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the quiz context.  <br /></td></tr>
+<tr class="separator:a2f880546a9bf4b7a5ade55e80fe6b579"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8882c22c665270e447edec4812cb19c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#a8882c22c665270e447edec4812cb19c8">get_course</a> ()</td></tr>
 <tr class="memdesc:a8882c22c665270e447edec4812cb19c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the course settings object.  <br /></td></tr>
 <tr class="separator:a8882c22c665270e447edec4812cb19c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -455,6 +458,10 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a84d1fb2b05e69d4bd1aa0c598c805c11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#a84d1fb2b05e69d4bd1aa0c598c805c11">page_and_question_url</a> ($script, $slot, $page, $showall, $thispage)</td></tr>
 <tr class="memdesc:a84d1fb2b05e69d4bd1aa0c598c805c11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a URL for a particular question on a particular page of the quiz.  <br /></td></tr>
 <tr class="separator:a84d1fb2b05e69d4bd1aa0c598c805c11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaad0e68de11c6340333646160d07e3fa"><td class="memItemLeft" align="right" valign="top"><a id="aaad0e68de11c6340333646160d07e3fa" name="aaad0e68de11c6340333646160d07e3fa"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>recompute_final_grade</b> ()</td></tr>
+<tr class="memdesc:aaad0e68de11c6340333646160d07e3fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Needs to be called after this attempt's grade is changed, to update the overall quiz grade. <br /></td></tr>
+<tr class="separator:aaad0e68de11c6340333646160d07e3fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a548e64a23234545d5656c093f18ebf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#a4a548e64a23234545d5656c093f18ebf">render_question_helper</a> ($slot, $reviewing, $thispageurl, <a class="el" href="../../d0/d9d/classmod__quiz_1_1output_1_1renderer.html">renderer</a> $<a class="el" href="../../d0/d9d/classmod__quiz_1_1output_1_1renderer.html">renderer</a>, $<a class="el" href="../../dc/d71/group___imap___client.html#gaa0d504e1c841b2b3a8cdf428cb9d4cc9">seq</a>)</td></tr>
 <tr class="memdesc:a4a548e64a23234545d5656c093f18ebf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper used by {.  <br /></td></tr>
 <tr class="separator:a4a548e64a23234545d5656c093f18ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1522,6 +1529,31 @@ display_options::AFTER_CLOSE}. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">int</td><td>the course_module id. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2f880546a9bf4b7a5ade55e80fe6b579" name="a2f880546a9bf4b7a5ade55e80fe6b579"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f880546a9bf4b7a5ade55e80fe6b579">&#9670;&#160;</a></span>get_context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\quiz_attempt::get_context </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the quiz context. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../db/db4/classcontext__module.html">context_module</a></td><td>the context of the quiz this attempt belongs to. </td></tr>
   </table>
   </dd>
 </dl>
@@ -4386,7 +4418,7 @@ render_question_at_step()}.</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 26 2023 03:22:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 5 2023 03:25:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>
