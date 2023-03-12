@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1.1+ (Build: 20230303) (f49f934786f)</div>
+   <div id="projectbrief">Moodle 4.1.2 (Build: 20230313) (033858e2491)</div>
   </td>
  </tr>
  </tbody>
@@ -61,7 +61,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Stores one step in a <a class="el" href="../../d3/dda/classquestion__attempt.html">question_attempt</a>.  
+<p>Stores one step in a {.  
  <a href="../../df/db2/classquestion__attempt__step.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for question_attempt_step:</div>
@@ -69,9 +69,9 @@ Inheritance diagram for question_attempt_step:</div>
  <div class="center">
   <img src="../../df/db2/classquestion__attempt__step.png" usemap="#question_5Fattempt_5Fstep_map" alt=""/>
   <map id="question_5Fattempt_5Fstep_map" name="question_5Fattempt_5Fstep_map">
-<area href="../../df/d48/classquestion__attempt__pending__step.html" title="A subclass of question_attempt_step used when processing a new submission." alt="question_attempt_pending_step" shape="rect" coords="0,56,257,80"/>
-<area href="../../d7/d78/classquestion__attempt__step__read__only.html" title="A subclass of question_attempt_step that cannot be modified." alt="question_attempt_step_read_only" shape="rect" coords="267,56,524,80"/>
-<area href="../../d3/d4f/classquestion__attempt__step__subquestion__adapter.html" title="This is an adapter class that wraps a question_attempt_step and modifies the get/set_*_data methods s..." alt="question_attempt_step_subquestion_adapter" shape="rect" coords="534,56,791,80"/>
+<area href="../../df/d48/classquestion__attempt__pending__step.html" title="A subclass of {." alt="question_attempt_pending_step" shape="rect" coords="0,56,257,80"/>
+<area href="../../d7/d78/classquestion__attempt__step__read__only.html" title="A subclass of {." alt="question_attempt_step_read_only" shape="rect" coords="267,56,524,80"/>
+<area href="../../d3/d4f/classquestion__attempt__step__subquestion__adapter.html" title="This is an adapter class that wraps a {." alt="question_attempt_step_subquestion_adapter" shape="rect" coords="534,56,791,80"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -156,20 +156,39 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a51b41f06e97ee49afce2f6396d8b3c38"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db2/classquestion__attempt__step.html#a51b41f06e97ee49afce2f6396d8b3c38">load_from_records</a> ($records, $attemptstepid, $qtype=null)</td></tr>
-<tr class="memdesc:a51b41f06e97ee49afce2f6396d8b3c38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a question_attempt.">question_attempt_step</a> from records loaded from the database.  <br /></td></tr>
+<tr class="memdesc:a51b41f06e97ee49afce2f6396d8b3c38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a {.">question_attempt_step</a> from records loaded from the database.  <br /></td></tr>
 <tr class="separator:a51b41f06e97ee49afce2f6396d8b3c38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Stores one step in a <a class="el" href="../../d3/dda/classquestion__attempt.html">question_attempt</a>. </p>
-<p>The most important attributes of a step are the state, which is one of the <a class="el" href="../../d9/d5e/classquestion__state.html">question_state</a> constants, the fraction, which may be null, or a number bewteen the attempt's minfraction and maxfraction, and the array of submitted data, about which more later.</p>
+<div class="textblock"><p>Stores one step in a {. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d3/dda/classquestion__attempt.html" title="Tracks an attempt at one particular question in a question_usage_by_activity.">question_attempt</a>}.</dd></dl>
+<p>The most important attributes of a step are the state, which is one of the {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d9/d5e/classquestion__state.html" title="An enumeration representing the states a question can be in after a question_attempt_step.">question_state</a>} constants, the fraction, which may be <a class="el" href="../../db/df6/namespacenull.html" title="&#160;">null</a>, or a number bewteen the attempt'<a class="el" href="../../d0/d4a/classs.html">s</a> minfraction and maxfraction, and the <a class="el" href="../../d7/df9/namespacearray.html" title="(&#39;&#39;) &#160;">array</a> of submitted data, about which more later.</dd></dl>
 <p>A step also tracks the time it was created, and the user responsible for creating it.</p>
-<p>The submitted data is basically just an array of name =&gt; value pairs, with certain conventions about the to divide the variables into four = two times two categories.</p>
+<p>The submitted data is basically just an array of name =&gt; value pairs, with certain conventions about the to divide the variables into five = 2 x 2 + 1 categories.</p>
 <p>Variables may either belong to the behaviour, in which case the name starts with a '-', or they may belong to the question type in which case they name does not start with a '-'.</p>
 <p>Second, variables may either be ones that came form the original request, in which case the name does not start with an _, or they are cached values that were created during processing, in which case the name does start with an _.</p>
-<p>That is, each name will start with one of '', '_'. '-' or '-_'. The remainder of the name should match the regex [a-z][a-z0-9]*.</p>
-<p>These variables can be accessed with <a class="el" href="../../df/db2/classquestion__attempt__step.html#aa7e960f480a35a9898f4d07f01a166d7">get_behaviour_var()</a> and <a class="el" href="../../df/db2/classquestion__attempt__step.html#a0776b9d3e6076e4e4c5f1dbcdd293b74">get_qt_var()</a>,</p><ul>
-<li>to be clear, -&gt;get_behaviour_var('x') gets the variable with name '-x' - and values whose names start with '_' can be set using <a class="el" href="../../df/db2/classquestion__attempt__step.html#a79278dca99d0af23065345d646eb82d6">set_behaviour_var()</a> and <a class="el" href="../../df/db2/classquestion__attempt__step.html#a475c1cac7d43fefb3541242984cb56c1">set_qt_var()</a>. There are some other methods like <a class="el" href="../../df/db2/classquestion__attempt__step.html#a9f336a51fded3bac1d8f905ecd9e8678">has_behaviour_var()</a> to check wether a varaible with a particular name is set, and <a class="el" href="../../df/db2/classquestion__attempt__step.html#a68880d82944fb96dbda0f852fece6ec8">get_behaviour_data()</a> to get all the behaviour data as an associative array.</li>
+<p>In addition, we can store 'metadata', typically only in the first step of a question attempt. These are stored with the initial characters ':_'.</p>
+<p>That is, each name will start with one of '', '_', '-', '-_' or ':_'. The remainder of the name was supposed to match the regex [a-z][a-z0-9]* - but this has never been enforced. Question types exist which break this rule. E.g. qtype_combined. Perhpas now, an accurate regex would be [a-z][a-z0-9_:]*.</p>
+<p>These variables can be accessed with {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../df/db2/classquestion__attempt__step.html#aa7e960f480a35a9898f4d07f01a166d7">get_behaviour_var()</a>} and {</dd>
+<dd>
+<a class="el" href="../../df/db2/classquestion__attempt__step.html#a0776b9d3e6076e4e4c5f1dbcdd293b74">get_qt_var()</a>},<ul>
+<li>to be <a class="el" href="../../dc/d71/group___imap___client.html#gac2a69841f294f9cc95deb919f217578d" title="Clear the cache.">clear</a>, -&gt;<a class="el" href="../../df/db2/classquestion__attempt__step.html#aa7e960f480a35a9898f4d07f01a166d7">get_behaviour_var</a>('x') gets the variable with name '-x' - and values whose names start with '_' can be <a class="el" href="../../dc/d71/group___imap___client.html#ga0dae8e91a93f347875c2acc9129ae73b" title="Store information in cache.">set</a> using {</li>
 </ul>
+</dd>
+<dd>
+<a class="el" href="../../df/db2/classquestion__attempt__step.html#a79278dca99d0af23065345d646eb82d6" title="Set a cached behaviour variable.">set_behaviour_var()</a>} and {</dd>
+<dd>
+<a class="el" href="../../df/db2/classquestion__attempt__step.html#a475c1cac7d43fefb3541242984cb56c1" title="Set a cached question type variable.">set_qt_var()</a>}. There are some other methods like {</dd>
+<dd>
+<a class="el" href="../../df/db2/classquestion__attempt__step.html#a9f336a51fded3bac1d8f905ecd9e8678">has_behaviour_var()</a>} to check wether a varaible with a particular name is <a class="el" href="../../dc/d71/group___imap___client.html#ga0dae8e91a93f347875c2acc9129ae73b" title="Store information in cache.">set</a>, and {</dd>
+<dd>
+<a class="el" href="../../df/db2/classquestion__attempt__step.html#a68880d82944fb96dbda0f852fece6ec8" title="Get all the behaviour variables.">get_behaviour_data()</a>} to <a class="el" href="../../dc/d71/group___imap___client.html#gafcf303080696d20cffeed262f4ebc4bb" title="Get information from the cache.">get</a> all the behaviour data as an associative <a class="el" href="../../d7/df9/namespacearray.html" title="(&#39;&#39;) &#160;">array</a>. There are also {</dd>
+<dd>
+<a class="el" href="../../df/db2/classquestion__attempt__step.html#a055ae12fe8d24425365ae02780f869f1" title="Get a metadata variable.">get_metadata_var()</a>}, {</dd>
+<dd>
+<a class="el" href="../../df/db2/classquestion__attempt__step.html#af096aeb0330ae08fcbb32342e44ed838" title="Set a metadata variable.">set_metadata_var()</a>} and {</dd>
+<dd>
+<a class="el" href="../../df/db2/classquestion__attempt__step.html#aa686c83bf68dd59aae4e72d40accd528" title="Whether this step has a metadata variable.">has_metadata_var()</a>},</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>2009 The Open University </dd></dl>
 <dl class="section user"><dt>License</dt><dd><a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a> GNU GPL v3 or later </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -212,7 +231,10 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>You should not need to call this constructor in your own code. </p>
-<p>Steps are normally created by <a class="el" href="../../d3/dda/classquestion__attempt.html">question_attempt</a> methods like <a class="el" href="../../d3/dda/classquestion__attempt.html#a05656ac3bb4418bdec11cec8c3614583">question_attempt::process_action()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Steps are normally created by {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d3/dda/classquestion__attempt.html" title="Tracks an attempt at one particular question in a question_usage_by_activity.">question_attempt</a>} methods like {</dd>
+<dd>
+<a class="el" href="../../d3/dda/classquestion__attempt.html#a05656ac3bb4418bdec11cec8c3614583" title="Perform the action described by $submitteddata.">question_attempt::process_action()</a>}. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>the submitted data that defines this step. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$timestamp</td><td>the time to record for the action. (If not given, use now.) </td></tr>
@@ -273,7 +295,8 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get all the data. </p>
-<p>behaviour variables have the - at the start of their name. This is only intended for internal use, for example by <a class="el" href="../../da/d46/classquestion__engine__data__mapper.html#a234cdd22982a6062cd348a83df970bfa">question_engine_data_mapper::insert_question_attempt_step()</a>, however, it can occasionally be useful in test code. It should not be considered part of the public API of this class. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>behaviour variables have the - at the start of their name. This is only intended for internal use, for example by {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../da/d46/classquestion__engine__data__mapper.html#a234cdd22982a6062cd348a83df970bfa" title="Store a question_attempt_step in the database.">question_engine_data_mapper::insert_question_attempt_step()</a>}, however, it can occasionally be useful in test code. It should not be considered part of the public API of this class. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">array</td><td>name =&gt; value pairs. </td></tr>
   </table>
@@ -408,7 +431,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get a metadata variable. </p>
-<p>Do not call this method directly from your code. It is for internal use only. You should call <a class="el" href="../../">question_usage::get_question_attempt_metadata()</a>.</p>
+<p>Do not call this method directly from your code. It is for internal use only. You should call {</p><dl class="section see"><dt>See also</dt><dd>question_usage::get_question_attempt_metadata()}.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$name</td><td>the name of the variable to set. [a-z][a-z0-9]*. </td></tr>
@@ -481,15 +504,17 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$name</td><td>the name of the associated variable. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$contextid</td><td>contextid of the question attempt </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array</td><td>of <a class="el" href="../../">stored_files</a>. </td></tr>
+    <tr><td class="paramname">array</td><td>of {</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd>stored_files}. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="../../d3/d4f/classquestion__attempt__step__subquestion__adapter.html#a115f6002f4d670c8522965c1588fb2f2">question_attempt_step_subquestion_adapter</a>.</p>
 
@@ -568,7 +593,8 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get all the submitted data, but not the cached data. </p>
-<p>behaviour variables have the - at the start of their name. This is only really intended for use by <a class="el" href="../../d3/dda/classquestion__attempt.html#a5adbdc63285deda9ac83b65f3eb3a168">question_attempt::regrade()</a>, it should not be considered part of the public API. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>behaviour variables have the - at the start of their name. This is only really intended for use by {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d3/dda/classquestion__attempt.html#a5adbdc63285deda9ac83b65f3eb3a168" title="Perform a regrade.">question_attempt::regrade()</a>}, it should not be considered part of the public API. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">array</td><td>name =&gt; value pairs. </td></tr>
   </table>
@@ -728,7 +754,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Whether this step has a metadata variable. </p>
-<p>Do not call this method directly from your code. It is for internal use only. You should call <a class="el" href="../../">question_usage::get_question_attempt_metadata()</a>.</p>
+<p>Do not call this method directly from your code. It is for internal use only. You should call {</p><dl class="section see"><dt>See also</dt><dd>question_usage::get_question_attempt_metadata()}.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$name</td><td>the name of the variable to set. [a-z][a-z0-9]*. </td></tr>
@@ -816,7 +842,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Create a <a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a question_attempt.">question_attempt_step</a> from records loaded from the database. </p>
+<p>Create a <a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a {.">question_attempt_step</a> from records loaded from the database. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">Iterator</td><td class="paramname">$records</td><td>Raw records loaded from the database. </td></tr>
@@ -827,7 +853,7 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a question_attempt.">question_attempt_step</a></td><td>The newly constructed <a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a question_attempt.">question_attempt_step</a>. </td></tr>
+    <tr><td class="paramname"><a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a {.">question_attempt_step</a></td><td>The newly constructed <a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a {.">question_attempt_step</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -970,7 +996,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Rewrite the @PLUGINFILE@ tokens in a response variable from this step that contains links to file. </p>
-<p>Normally you should probably call <a class="el" href="../../d3/dda/classquestion__attempt.html#a90148e0178e3da06f11ba1a465e671f5">question_attempt::rewrite_response_pluginfile_urls()</a> instead of calling this method directly.</p>
+<p>Normally you should probably call {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d3/dda/classquestion__attempt.html#a90148e0178e3da06f11ba1a465e671f5" title="Calls question_rewrite_question_urls() with appropriate parameters for content belonging to responses...">question_attempt::rewrite_response_pluginfile_urls()</a>} instead of calling this method directly.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$text</td><td>the text to update the URLs in. </td></tr>
@@ -1085,7 +1111,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set a metadata variable. </p>
-<p>Do not call this method directly from your code. It is for internal use only. You should call <a class="el" href="../../">question_usage::set_question_attempt_metadata()</a>.</p>
+<p>Do not call this method directly from your code. It is for internal use only. You should call {</p><dl class="section see"><dt>See also</dt><dd>question_usage::set_question_attempt_metadata()}.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$name</td><td>the name of the variable to set. [a-z][a-z0-9]*. </td></tr>
@@ -1154,10 +1180,11 @@ Static Public Member Functions</h2></td></tr>
 <p>Set the state. </p>
 <p>Normally only called by behaviours. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../d9/d5e/classquestion__state.html" title="An enumeration representing the states a question can be in after a question_attempt_step.">question_state</a></td><td class="paramname">$state</td><td>one of the <a class="el" href="../../d9/d5e/classquestion__state.html">question_state</a> constants. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../d9/d5e/classquestion__state.html" title="An enumeration representing the states a question can be in after a question_attempt_step.">question_state</a></td><td class="paramname">$state</td><td>one of the {</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d9/d5e/classquestion__state.html" title="An enumeration representing the states a question can be in after a question_attempt_step.">question_state</a>} constants. </dd></dl>
 
 <p>Reimplemented in <a class="el" href="../../d7/d78/classquestion__attempt__step__read__only.html#a6033c1b95cdd303753d21aa422c317eb">question_attempt_step_read_only</a>, and <a class="el" href="../../d3/d4f/classquestion__attempt__step__subquestion__adapter.html#a61ea34660cb5c124612090462670b659">question_attempt_step_subquestion_adapter</a>.</p>
 
@@ -1169,7 +1196,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 5 2023 03:17:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 12 2023 03:04:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

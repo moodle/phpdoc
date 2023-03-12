@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1.1+ (Build: 20230303) (f49f934786f)</div>
+   <div id="projectbrief">Moodle 4.1.2 (Build: 20230313) (033858e2491)</div>
   </td>
  </tr>
  </tbody>
@@ -77,6 +77,12 @@ Inheritance diagram for mod_quiz_display_options:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a1ebe010ee971833e7a51ba7863e8dc81"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d05/classquestion__display__options.html#a1ebe010ee971833e7a51ba7863e8dc81">add_question_identifier_to_label</a> (string $label, bool $sridentifier=false, bool $addbefore=false)</td></tr>
+<tr class="memdesc:a1ebe010ee971833e7a51ba7863e8dc81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to add the question identify (if there is one) to the label of an input field in a question.  <br /></td></tr>
+<tr class="separator:a1ebe010ee971833e7a51ba7863e8dc81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a305741247676895c251bc755abf56506"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d05/classquestion__display__options.html#a305741247676895c251bc755abf56506">has_question_identifier</a> ()</td></tr>
+<tr class="memdesc:a305741247676895c251bc755abf56506"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a question number has been provided for the question that is being displayed.  <br /></td></tr>
+<tr class="separator:a305741247676895c251bc755abf56506"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20861929b22ceaa5b4a9a58c065d269e"><td class="memItemLeft" align="right" valign="top"><a id="a20861929b22ceaa5b4a9a58c065d269e" name="a20861929b22ceaa5b4a9a58c065d269e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>hide_all_feedback</b> ()</td></tr>
 <tr class="memdesc:a20861929b22ceaa5b4a9a58c065d269e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set all the feedback-related fields <a class="el" href="../../">$feedback</a>, <a class="el" href="../../">generalfeedback</a>, <a class="el" href="../../">rightanswer</a> and <a class="el" href="../../">manualcomment</a> to <a class="el" href="../../#a31a9537d01eb7aff2f395ed6928e2e8d">question_display_options::HIDDEN</a>. <br /></td></tr>
@@ -151,6 +157,9 @@ integer&#160;</td><td class="memItemRight" valign="bottom"><b>$marks</b> = self:
 boolean&#160;</td><td class="memItemRight" valign="bottom"><b>$overallfeedback</b> = self::VISIBLE</td></tr>
 <tr class="memdesc:a7bd8d739705839a42af79c076b4480fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">if this is false, then the student is not allowed to review anything about the attempt. <br /></td></tr>
 <tr class="separator:a7bd8d739705839a42af79c076b4480fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe968bac58054fa5096fd30bfcefc74a"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d05/classquestion__display__options.html#abe968bac58054fa5096fd30bfcefc74a">$questionidentifier</a> = null</td></tr>
+<tr class="memdesc:abe968bac58054fa5096fd30bfcefc74a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This identifier should be added to the labels of all input fields in the question.  <br /></td></tr>
+<tr class="separator:abe968bac58054fa5096fd30bfcefc74a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f4239dc7567306c0323f1ede150cb3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d05/classquestion__display__options.html#a8f4239dc7567306c0323f1ede150cb3d">$questionreviewlink</a> = null</td></tr>
 <tr class="memdesc:a8f4239dc7567306c0323f1ede150cb3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used in places like the question history table, to show a link to review this question in a certain state.  <br /></td></tr>
 <tr class="separator:a8f4239dc7567306c0323f1ede150cb3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -213,6 +222,64 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>extract</b> ($bitma
 <dl class="section copyright"><dt>Copyright</dt><dd>2010 The Open University </dd></dl>
 <dl class="section user"><dt>License</dt><dd><a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a> GNU GPL v3 or later </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1ebe010ee971833e7a51ba7863e8dc81" name="a1ebe010ee971833e7a51ba7863e8dc81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ebe010ee971833e7a51ba7863e8dc81">&#9670;&#160;</a></span>add_question_identifier_to_label()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">question_display_options::add_question_identifier_to_label </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$label</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$sridentifier</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$addbefore</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper to add the question identify (if there is one) to the label of an input field in a question. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$label</td><td>The plain field label. E.g. 'Answer 1' </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$sridentifier</td><td>If true, the question identifier, if added, will be wrapped in a sr-only span. Default false. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$addbefore</td><td>If true, the question identifier will be added before the label. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>The amended label. For example 'Answer 1, Question 1'. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a1aae1741545f68d7963a18faea506bcc" name="a1aae1741545f68d7963a18faea506bcc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1aae1741545f68d7963a18faea506bcc">&#9670;&#160;</a></span>get_dp_options()</h2>
 
@@ -242,6 +309,39 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>extract</b> ($bitma
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td>suitable for passing to <a class="el" href="../../d4/d78/classhtml__writer.html#a365cc551d84baa015c82b8c007abeca0">html_writer::select()</a> or similar. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a305741247676895c251bc755abf56506" name="a305741247676895c251bc755abf56506"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a305741247676895c251bc755abf56506">&#9670;&#160;</a></span>has_question_identifier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">question_display_options::has_question_identifier </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether a question number has been provided for the question that is being displayed. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -491,6 +591,33 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>extract</b> ($bitma
 
 </div>
 </div>
+<a id="abe968bac58054fa5096fd30bfcefc74a" name="abe968bac58054fa5096fd30bfcefc74a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe968bac58054fa5096fd30bfcefc74a">&#9670;&#160;</a></span>$questionidentifier</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string question_display_options::$questionidentifier = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This identifier should be added to the labels of all input fields in the question. </p>
+<p>This is so people using assistive technology can easily tell which input belong to which question. The helper {</p><dl class="section see"><dt>See also</dt><dd>self::add_question_identifier_to_label() makes this easier.</dd></dl>
+<p>If not set before the question is rendered, then it defaults to 'Question N'. (lang string)</p>
+<p>The identifier that the question being rendered is associated with. E.g. The question number when it is rendered on a quiz. </p>
+
+</div>
+</div>
 <a id="a8f4239dc7567306c0323f1ede150cb3d" name="a8f4239dc7567306c0323f1ede150cb3d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8f4239dc7567306c0323f1ede150cb3d">&#9670;&#160;</a></span>$questionreviewlink</h2>
 
@@ -572,7 +699,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>extract</b> ($bitma
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 5 2023 03:17:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 12 2023 03:04:05 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

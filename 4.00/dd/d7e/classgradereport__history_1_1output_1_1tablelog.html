@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.6+ (Build: 20230303) (62cfa26cb92)</div>
+   <div id="projectbrief">Moodle 4.0.7 (Build: 20230313) (0fae900b585)</div>
   </td>
  </tr>
  </tbody>
@@ -476,6 +476,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a871a389a1d41a4d510375147647e5724"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7e/classgradereport__history_1_1output_1_1tablelog.html#a871a389a1d41a4d510375147647e5724">define_table_configs</a> (\<a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a> $url)</td></tr>
 <tr class="memdesc:a871a389a1d41a4d510375147647e5724"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define table configs.  <br /></td></tr>
 <tr class="separator:a871a389a1d41a4d510375147647e5724"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a871d0137ec3b3ff9560527c3da849197"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7e/classgradereport__history_1_1output_1_1tablelog.html#a871d0137ec3b3ff9560527c3da849197">define_table_filters</a> (\stdClass $filters)</td></tr>
+<tr class="memdesc:a871d0137ec3b3ff9560527c3da849197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define table filters.  <br /></td></tr>
+<tr class="separator:a871d0137ec3b3ff9560527c3da849197"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6de5274faa6e5065cb7ed5a3ef8bd079"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d18/classflexible__table.html#a6de5274faa6e5065cb7ed5a3ef8bd079">get_component</a> ()</td></tr>
 <tr class="memdesc:a6de5274faa6e5065cb7ed5a3ef8bd079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get dynamic class component.  <br /></td></tr>
 <tr class="separator:a6de5274faa6e5065cb7ed5a3ef8bd079"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -604,6 +607,10 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$sortdata</b></td></
 <tr class="memitem:a225ec1432087463911706bbd927abd53"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d18/classflexible__table.html#a225ec1432087463911706bbd927abd53">$userfullnamecolumns</a> = ['<a class="el" href="../../d0/de1/group__core.html#ga22ae943f55a27f3b9cca15f8ddd05db7">fullname</a>']</td></tr>
 <tr class="memdesc:a225ec1432087463911706bbd927abd53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Columns that are expected to contain a users fullname.  <br /></td></tr>
 <tr class="separator:a225ec1432087463911706bbd927abd53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80285547a053e125b6c3f713bdd25bd6"><td class="memItemLeft" align="right" valign="top"><a id="a80285547a053e125b6c3f713bdd25bd6" name="a80285547a053e125b6c3f713bdd25bd6"></a>
+stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$users</b> = []</td></tr>
+<tr class="memdesc:a80285547a053e125b6c3f713bdd25bd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of users included in the report (if userids are specified as filters) <br /></td></tr>
+<tr class="separator:a80285547a053e125b6c3f713bdd25bd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Renderable class for gradehistory report. </p>
@@ -1666,6 +1673,40 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$sortdata</b></td></
 
 </div>
 </div>
+<a id="a871d0137ec3b3ff9560527c3da849197" name="a871d0137ec3b3ff9560527c3da849197"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a871d0137ec3b3ff9560527c3da849197">&#9670;&#160;</a></span>define_table_filters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">gradereport_history\output\tablelog::define_table_filters </td>
+          <td>(</td>
+          <td class="paramtype">\stdClass&#160;</td>
+          <td class="paramname"><em>$filters</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Define table filters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$filters</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a07192677aa7562a7539362e3523fb1d3" name="a07192677aa7562a7539362e3523fb1d3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a07192677aa7562a7539362e3523fb1d3">&#9670;&#160;</a></span>download_buttons()</h2>
 
@@ -2478,7 +2519,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$sortdata</b></td></
 <p>Returns a list of selected users. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array</td><td>returns an array in the format $userid =&gt; $userid </td></tr>
+    <tr><td class="paramname">stdClass[]</td><td>List of user objects </td></tr>
   </table>
   </dd>
 </dl>
@@ -4555,7 +4596,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$sortdata</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 5 2023 03:12:22 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 12 2023 02:59:25 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

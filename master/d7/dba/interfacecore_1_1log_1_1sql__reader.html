@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230303) (556208417de)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
   </td>
  </tr>
  </tbody>
@@ -72,10 +72,9 @@ Inheritance diagram for core\log\sql_reader:</div>
  <div class="center">
   <img src="../../d7/dba/interfacecore_1_1log_1_1sql__reader.png" usemap="#core_5Clog_5Csql_5Freader_map" alt=""/>
   <map id="core_5Clog_5Csql_5Freader_map" name="core_5Clog_5Csql_5Freader_map">
-<area href="../../d6/d57/interfacecore_1_1log_1_1reader.html" alt="core\log\reader" shape="rect" coords="216,0,422,24"/>
+<area href="../../d6/d57/interfacecore_1_1log_1_1reader.html" alt="core\log\reader" shape="rect" coords="108,0,314,24"/>
 <area href="../../d3/df6/interfacecore_1_1log_1_1sql__internal__table__reader.html" title="Sql internal table reader." alt="core\log\sql_internal_table_reader" shape="rect" coords="0,112,206,136"/>
 <area href="../../d0/d5d/classlogstore__database_1_1log_1_1store.html" alt="logstore_database\log\store" shape="rect" coords="216,112,422,136"/>
-<area href="../../dd/df4/classlogstore__legacy_1_1log_1_1store.html" alt="logstore_legacy\log\store" shape="rect" coords="432,112,638,136"/>
 <area href="../../d1/d20/classlogstore__standard_1_1log_1_1store.html" alt="logstore_standard\log\store" shape="rect" coords="0,168,206,192"/>
   </map>
 </div></div>
@@ -209,7 +208,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="../../d0/d5d/classlogstore__database_1_1log_1_1store.html#a7f3e7cf7080c55671bc1153244dc4248">logstore_database\log\store</a>, <a class="el" href="../../dd/df4/classlogstore__legacy_1_1log_1_1store.html#adabc96f7c03dcd0755580b11d661ddf7">logstore_legacy\log\store</a>, and <a class="el" href="../../d1/d20/classlogstore__standard_1_1log_1_1store.html#a37bfe6f5092f1899deada251263c032f">logstore_standard\log\store</a>.</p>
+<p>Implemented in <a class="el" href="../../d0/d5d/classlogstore__database_1_1log_1_1store.html#a7f3e7cf7080c55671bc1153244dc4248">logstore_database\log\store</a>, and <a class="el" href="../../d1/d20/classlogstore__standard_1_1log_1_1store.html#a37bfe6f5092f1899deada251263c032f">logstore_standard\log\store</a>.</p>
 
 </div>
 </div>
@@ -254,7 +253,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="../../d0/d5d/classlogstore__database_1_1log_1_1store.html#aae2ef9b2bf10220ecd8a8bdc8ef67009">logstore_database\log\store</a>, <a class="el" href="../../dd/df4/classlogstore__legacy_1_1log_1_1store.html#aaef34c7f0ddfe2046ecad99d6391f4d9">logstore_legacy\log\store</a>, and <a class="el" href="../../d1/d20/classlogstore__standard_1_1log_1_1store.html#a274050bf1b9fb17566f1119a80ef786b">logstore_standard\log\store</a>.</p>
+<p>Implemented in <a class="el" href="../../d0/d5d/classlogstore__database_1_1log_1_1store.html#aae2ef9b2bf10220ecd8a8bdc8ef67009">logstore_database\log\store</a>, and <a class="el" href="../../d1/d20/classlogstore__standard_1_1log_1_1store.html#a274050bf1b9fb17566f1119a80ef786b">logstore_standard\log\store</a>.</p>
 
 </div>
 </div>
@@ -299,7 +298,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="../../d0/d5d/classlogstore__database_1_1log_1_1store.html#a38f85b42d28b02e9057810d8e1b176c3">logstore_database\log\store</a>, <a class="el" href="../../dd/df4/classlogstore__legacy_1_1log_1_1store.html#a8f7aae8436c9e534e12dee0651242c21">logstore_legacy\log\store</a>, and <a class="el" href="../../d1/d20/classlogstore__standard_1_1log_1_1store.html#ac828643e0f9c4fed20555aac3a1328a7">logstore_standard\log\store</a>.</p>
+<p>Implemented in <a class="el" href="../../d0/d5d/classlogstore__database_1_1log_1_1store.html#a38f85b42d28b02e9057810d8e1b176c3">logstore_database\log\store</a>, and <a class="el" href="../../d1/d20/classlogstore__standard_1_1log_1_1store.html#ac828643e0f9c4fed20555aac3a1328a7">logstore_standard\log\store</a>.</p>
 
 </div>
 </div>
@@ -348,7 +347,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Fetch records using the given criteria returning an traversable list of events. </p>
-<p>Note that the returned object is Traversable, not Iterator, as we are returning EmptyIterator if we know there are no events, and EmptyIterator does not implement Countable <a href="https://bugs.php.net/bug.php?id=60577" class="el externalurl"></a> so valid() should be checked in any case instead of a count().</p>
+<p>Note that the returned object is Traversable, not Iterator, as we are returning EmptyIterator if we know there are no events, and EmptyIterator does not implement Countable <a href="https://bugs.php.net/bug.php?id=60577" class="el externalurl"></a> so valid() should be checked in any case instead of a <a class="el" href="../../dc/d71/group___imap___client.html#gac751e87b3d4c4bf2feb03bee8b092755" title="Address count.">count()</a>.</p>
 <p>Also note that the traversable object contains a recordset and it is very important that you close it after using it.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -367,7 +366,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="../../d0/d5d/classlogstore__database_1_1log_1_1store.html#a63cf5cd69555bc287914b0bc3929d921">logstore_database\log\store</a>, <a class="el" href="../../dd/df4/classlogstore__legacy_1_1log_1_1store.html#ae0b17268fdb09d26e1d83a7e0c33991f">logstore_legacy\log\store</a>, and <a class="el" href="../../d1/d20/classlogstore__standard_1_1log_1_1store.html#a43cfe7622a3451d8b4708c1c5b64bf85">logstore_standard\log\store</a>.</p>
+<p>Implemented in <a class="el" href="../../d0/d5d/classlogstore__database_1_1log_1_1store.html#a63cf5cd69555bc287914b0bc3929d921">logstore_database\log\store</a>, and <a class="el" href="../../d1/d20/classlogstore__standard_1_1log_1_1store.html#a43cfe7622a3451d8b4708c1c5b64bf85">logstore_standard\log\store</a>.</p>
 
 </div>
 </div>
@@ -401,7 +400,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="../../d0/d5d/classlogstore__database_1_1log_1_1store.html#a33fd7da231beed2c722fe7cad37f0fe3">logstore_database\log\store</a>, <a class="el" href="../../dd/df4/classlogstore__legacy_1_1log_1_1store.html#ac1689147598a0c959366f6b8976f6596">logstore_legacy\log\store</a>, and <a class="el" href="../../d1/d20/classlogstore__standard_1_1log_1_1store.html#a307de2296982b86e073aca9f8ca1dc17">logstore_standard\log\store</a>.</p>
+<p>Implemented in <a class="el" href="../../d0/d5d/classlogstore__database_1_1log_1_1store.html#a33fd7da231beed2c722fe7cad37f0fe3">logstore_database\log\store</a>, and <a class="el" href="../../d1/d20/classlogstore__standard_1_1log_1_1store.html#a307de2296982b86e073aca9f8ca1dc17">logstore_standard\log\store</a>.</p>
 
 </div>
 </div>
@@ -470,7 +469,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="../../d0/d5d/classlogstore__database_1_1log_1_1store.html#a9154252aa93064dfd4912efecf452d9c">logstore_database\log\store</a>, <a class="el" href="../../dd/df4/classlogstore__legacy_1_1log_1_1store.html#a811ad827d928a4623fb2137f4563464a">logstore_legacy\log\store</a>, and <a class="el" href="../../d1/d20/classlogstore__standard_1_1log_1_1store.html#ab9fbc7a137109c7c08bfb838e0761b8d">logstore_standard\log\store</a>.</p>
+<p>Implemented in <a class="el" href="../../d0/d5d/classlogstore__database_1_1log_1_1store.html#a9154252aa93064dfd4912efecf452d9c">logstore_database\log\store</a>, and <a class="el" href="../../d1/d20/classlogstore__standard_1_1log_1_1store.html#ab9fbc7a137109c7c08bfb838e0761b8d">logstore_standard\log\store</a>.</p>
 
 </div>
 </div>
@@ -480,7 +479,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 5 2023 03:24:24 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 12 2023 03:10:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

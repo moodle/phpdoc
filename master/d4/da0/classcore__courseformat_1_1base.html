@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230303) (556208417de)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
   </td>
  </tr>
  </tbody>
@@ -291,6 +291,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a9c394810af5227849fb4a8ab3d36cc48"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a9c394810af5227849fb4a8ab3d36cc48">session_cache_reset</a> (stdClass $course)</td></tr>
 <tr class="memdesc:a9c394810af5227849fb4a8ab3d36cc48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the current user course format cache.  <br /></td></tr>
 <tr class="separator:a9c394810af5227849fb4a8ab3d36cc48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47adc887b40707bbc924b961d012cee2"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a47adc887b40707bbc924b961d012cee2">session_cache_reset_all</a> ()</td></tr>
+<tr class="memdesc:a47adc887b40707bbc924b961d012cee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the current user for all courses.  <br /></td></tr>
+<tr class="separator:a47adc887b40707bbc924b961d012cee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -1919,7 +1922,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesection</b> = 0
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int&#160;|&#160;stdClass</td><td class="paramname">$section</td><td>Section object from database or just field course_sections.section if null the course view page is returned </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$options</td><td>options for view URL. At the moment core uses: 'navigation' (bool) if true and section has no separate page, the function returns null 'sr' (int) used by multipage formats to specify to which section to return </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$options</td><td>options for view URL. At the moment core uses: 'navigation' (bool) if true and section has no separate page, the function returns null 'sr' (int) used by multipage formats to specify to which section to return 'expanded' (bool) if true the section will be shown expanded, true by default </td></tr>
   </table>
   </dd>
 </dl>
@@ -2106,7 +2109,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesection</b> = 0
 </div><div class="memdoc">
 
 <p>Returns an instance of the class. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000046">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-35727" class="el">MDL-35727</a> use MUC for caching of instances, limit the number of cached instances</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000034">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-35727" class="el">MDL-35727</a> use MUC for caching of instances, limit the number of cached instances</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int&#160;|&#160;stdClass</td><td class="paramname">$courseorid</td><td>either course id or an object that has the property 'format' and may contain property 'id' </td></tr>
@@ -2522,6 +2525,40 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesection</b> = 0
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>the new statekey </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a47adc887b40707bbc924b961d012cee2" name="a47adc887b40707bbc924b961d012cee2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47adc887b40707bbc924b961d012cee2">&#9670;&#160;</a></span>session_cache_reset_all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_courseformat\base::session_cache_reset_all </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reset the current user for all courses. </p>
+<p>The course format cache resets every time the course cache resets but also when the user changes their language, all course editors</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -3037,7 +3074,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesection</b> = 0
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 5 2023 03:24:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 12 2023 03:11:04 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230303) (556208417de)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
   </td>
  </tr>
  </tbody>
@@ -61,7 +61,6 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="../../d4/dcf/classenrol__lti_1_1local_1_1ltiadvantage_1_1task_1_1sync__grades-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">enrol_lti\local\ltiadvantage\task\sync_grades Class Reference<div class="ingroups"><a class="el" href="../../da/d7e/group__enrol__lti.html">enrol_lti</a></div></div></div>
 </div><!--header-->
@@ -86,7 +85,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a412f9a67b31700269020303c6413a8ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Take a cron field definition and return an array of valid numbers with the range min-max.  <br /></td></tr>
 <tr class="separator:a412f9a67b31700269020303c6413a8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04531028be5960a7c7558fe8315ffd34"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddd/classenrol__lti_1_1local_1_1ltiadvantage_1_1task_1_1sync__grades.html#a04531028be5960a7c7558fe8315ffd34">execute</a> ()</td></tr>
-<tr class="memdesc:a04531028be5960a7c7558fe8315ffd34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs the synchronisation of grades from the tool to any registered platforms.  <br /></td></tr>
+<tr class="memdesc:a04531028be5960a7c7558fe8315ffd34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates adhoc tasks (one per resource) to synchronize grades from the tool to any registered platforms.  <br /></td></tr>
 <tr class="separator:a04531028be5960a7c7558fe8315ffd34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a239d98c229628eb668725f5983ce7f9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfa/classcore_1_1task_1_1task__base.html#a239d98c229628eb668725f5983ce7f9e">get_component</a> ()</td></tr>
 <tr class="memdesc:a239d98c229628eb668725f5983ce7f9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for $component.  <br /></td></tr>
@@ -289,18 +288,6 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MONTHMAX</b> = 12</t
 const&#160;</td><td class="memItemRight" valign="bottom"><b>MONTHMIN</b> = 1</td></tr>
 <tr class="memdesc:aa5204623d5a9b8387e84d1efea7ca16b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum month value. <br /></td></tr>
 <tr class="separator:aa5204623d5a9b8387e84d1efea7ca16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:aff0aa4c2015c746505eb1ec8eb675f66"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddd/classenrol__lti_1_1local_1_1ltiadvantage_1_1task_1_1sync__grades.html#aff0aa4c2015c746505eb1ec8eb675f66">get_ags</a> (<a class="el" href="../../d1/d73/class_packback_1_1_lti1p3_1_1_lti_service_connector.html">LtiServiceConnector</a> $sc, <a class="el" href="../../d6/d2d/class_packback_1_1_lti1p3_1_1_lti_registration.html">LtiRegistration</a> $<a class="el" href="../../d0/d4c/classenrol__lti_1_1output_1_1registration.html">registration</a>, array $sd)</td></tr>
-<tr class="memdesc:aff0aa4c2015c746505eb1ec8eb675f66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an ags instance to make the call to the platform.  <br /></td></tr>
-<tr class="separator:aff0aa4c2015c746505eb1ec8eb675f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c64804477cc632abed619c7c5b699e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddd/classenrol__lti_1_1local_1_1ltiadvantage_1_1task_1_1sync__grades.html#a4c64804477cc632abed619c7c5b699e4">get_line_item_label</a> (\stdClass $resource, <a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
-<tr class="memdesc:a4c64804477cc632abed619c7c5b699e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the string label for the line item associated with the resource, based on the course or module name.  <br /></td></tr>
-<tr class="separator:a4c64804477cc632abed619c7c5b699e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f9cbd3250cce78026e950fc873422f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddd/classenrol__lti_1_1local_1_1ltiadvantage_1_1task_1_1sync__grades.html#a5f9cbd3250cce78026e950fc873422f3">sync_grades_for_resource</a> ($resource)</td></tr>
-<tr class="memdesc:a5f9cbd3250cce78026e950fc873422f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sync grades to the platform using the Assignment and Grade Services.  <br /></td></tr>
-<tr class="separator:a5f9cbd3250cce78026e950fc873422f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6b24a3b0dfec447348c4912658194bd3" name="a6b24a3b0dfec447348c4912658194bd3"></a>
@@ -411,7 +398,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Performs the synchronisation of grades from the tool to any registered platforms. </p>
+<p>Creates adhoc tasks (one per resource) to synchronize grades from the tool to any registered platforms. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool|void</td><td></td></tr>
@@ -420,64 +407,6 @@ Protected Member Functions</h2></td></tr>
 </dl>
 
 <p>Reimplemented from <a class="el" href="../../db/dfa/classcore_1_1task_1_1task__base.html#a5c5ea521fb1baa489783be5c79b4f1fc">core\task\task_base</a>.</p>
-
-</div>
-</div>
-<a id="aff0aa4c2015c746505eb1ec8eb675f66" name="aff0aa4c2015c746505eb1ec8eb675f66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff0aa4c2015c746505eb1ec8eb675f66">&#9670;&#160;</a></span>get_ags()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enrol_lti\local\ltiadvantage\task\sync_grades::get_ags </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d1/d73/class_packback_1_1_lti1p3_1_1_lti_service_connector.html">LtiServiceConnector</a>&#160;</td>
-          <td class="paramname"><em>$sc</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d6/d2d/class_packback_1_1_lti1p3_1_1_lti_registration.html">LtiRegistration</a>&#160;</td>
-          <td class="paramname"><em>$registration</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">array&#160;</td>
-          <td class="paramname"><em>$sd</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get an ags instance to make the call to the platform. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">LtiServiceConnector</td><td class="paramname">$sc</td><td>a service connector instance. </td></tr>
-    <tr><td class="paramtype">LtiRegistration</td><td class="paramname">$registration</td><td>the registration instance. </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$sd</td><td>the service data. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">LtiAssignmentsGradesService</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -812,57 +741,6 @@ Protected Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">int</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a4c64804477cc632abed619c7c5b699e4" name="a4c64804477cc632abed619c7c5b699e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c64804477cc632abed619c7c5b699e4">&#9670;&#160;</a></span>get_line_item_label()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enrol_lti\local\ltiadvantage\task\sync_grades::get_line_item_label </td>
-          <td>(</td>
-          <td class="paramtype">\stdClass&#160;</td>
-          <td class="paramname"><em>$resource</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
-          <td class="paramname"><em>$context</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get the string label for the line item associated with the resource, based on the course or module name. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$resource</td><td>the enrol_lti_tools record. </td></tr>
-    <tr><td class="paramtype">context</td><td class="paramname">$context</td><td>the context of the resource - either course or module. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">string</td><td>the label to use in the line item. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2080,53 +1958,13 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a5f9cbd3250cce78026e950fc873422f3" name="a5f9cbd3250cce78026e950fc873422f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f9cbd3250cce78026e950fc873422f3">&#9670;&#160;</a></span>sync_grades_for_resource()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enrol_lti\local\ltiadvantage\task\sync_grades::sync_grades_for_resource </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$resource</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sync grades to the platform using the Assignment and Grade Services. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$resource</td><td>the enrol_lti_tools data record for the shared resource. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">array</td><td>an array containing the </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>enrol/lti/classes/local/ltiadvantage/task/sync_grades.php</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 5 2023 03:24:58 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 12 2023 03:11:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

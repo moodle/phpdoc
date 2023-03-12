@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230303) (556208417de)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
   </td>
  </tr>
  </tbody>
@@ -141,6 +141,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a80ad2451096e940360c7439c22303edf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d76/class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer.html#a80ad2451096e940360c7439c22303edf">send</a> ()</td></tr>
 <tr class="memdesc:a80ad2451096e940360c7439c22303edf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a message and send it.  <br /></td></tr>
 <tr class="separator:a80ad2451096e940360c7439c22303edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5e98217d293d524c592cc2bba598acc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d76/class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer.html#ab5e98217d293d524c592cc2bba598acc">setBoundaries</a> ()</td></tr>
+<tr class="memdesc:ab5e98217d293d524c592cc2bba598acc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the boundaries to use for delimiting MIME parts.  <br /></td></tr>
+<tr class="separator:ab5e98217d293d524c592cc2bba598acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3de3655ad7d29985118fa6fbefebe46a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d76/class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer.html#a3de3655ad7d29985118fa6fbefebe46a">setFrom</a> ($address, $name='', $auto=true)</td></tr>
 <tr class="memdesc:a3de3655ad7d29985118fa6fbefebe46a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the From and FromName properties.  <br /></td></tr>
 <tr class="separator:a3de3655ad7d29985118fa6fbefebe46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -440,7 +443,7 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>STOP_MESSAGE</b>
 <tr class="memdesc:ac6de104a5c91d6257346fd824b8d1e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error severity: message only, continue processing. <br /></td></tr>
 <tr class="separator:ac6de104a5c91d6257346fd824b8d1e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f16ba29b61ae7daf9abbac0a89e9654"><td class="memItemLeft" align="right" valign="top"><a id="a4f16ba29b61ae7daf9abbac0a89e9654" name="a4f16ba29b61ae7daf9abbac0a89e9654"></a>
-string const&#160;</td><td class="memItemRight" valign="bottom"><b>VERSION</b> = '6.6.5'</td></tr>
+string const&#160;</td><td class="memItemRight" valign="bottom"><b>VERSION</b> = '6.7.1'</td></tr>
 <tr class="memdesc:a4f16ba29b61ae7daf9abbac0a89e9654"><td class="mdescLeft">&#160;</td><td class="mdescRight">The PHPMailer <a class="el" href="../../de/d34/class_version.html">Version</a> number. <br /></td></tr>
 <tr class="separator:a4f16ba29b61ae7daf9abbac0a89e9654"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -1541,6 +1544,32 @@ PHPMailer::$SMTPDebug</dd></dl>
 
 </div>
 </div>
+<a id="ab5e98217d293d524c592cc2bba598acc" name="ab5e98217d293d524c592cc2bba598acc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5e98217d293d524c592cc2bba598acc">&#9670;&#160;</a></span>setBoundaries()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PHPMailer\PHPMailer\PHPMailer::setBoundaries </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the boundaries to use for delimiting MIME parts. </p>
+<p>If you override this, ensure you set all 3 boundaries to unique values. The default boundaries include a "=_" sequence which cannot occur in quoted-printable bodies, as suggested by <a href="https://www.rfc-editor.org/rfc/rfc2045#section-6.7">https://www.rfc-editor.org/rfc/rfc2045#section-6.7</a></p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a3de3655ad7d29985118fa6fbefebe46a" name="a3de3655ad7d29985118fa6fbefebe46a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3de3655ad7d29985118fa6fbefebe46a">&#9670;&#160;</a></span>setFrom()</h2>
 
@@ -2352,7 +2381,7 @@ PHPMailer::$all_recipients </dd></dl>
 
 <p>Whether to split multiple to addresses into multiple messages or send them all in one message. </p>
 <p>Only supported in <code>mail</code> and <code>sendmail</code> transports, not in SMTP.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000767">Deprecated:</a></b></dt><dd>6.0.0 PHPMailer isn't a mailing list manager! </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000747">Deprecated:</a></b></dt><dd>6.0.0 PHPMailer isn't a mailing list manager! </dd></dl>
 
 </div>
 </div>
@@ -2606,7 +2635,7 @@ SMTP::$do_debug </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 5 2023 03:25:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 12 2023 03:11:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

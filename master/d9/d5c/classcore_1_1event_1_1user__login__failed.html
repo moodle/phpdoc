@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230303) (556208417de)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
   </td>
  </tr>
  </tbody>
@@ -138,9 +138,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a95be4cfcefed1e1bcbf01d548bb3e838"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d77/classcore_1_1event_1_1base.html#a95be4cfcefed1e1bcbf01d548bb3e838">get_explanation</a> ()</td></tr>
 <tr class="memdesc:a95be4cfcefed1e1bcbf01d548bb3e838"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an explanation of what the class does.  <br /></td></tr>
 <tr class="separator:a95be4cfcefed1e1bcbf01d548bb3e838"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc8ef12ff6cb34e61afe23648b8ff8bb"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d77/classcore_1_1event_1_1base.html#acc8ef12ff6cb34e61afe23648b8ff8bb">get_legacy_eventname</a> ()</td></tr>
-<tr class="memdesc:acc8ef12ff6cb34e61afe23648b8ff8bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does this event replace legacy event?  <br /></td></tr>
-<tr class="separator:acc8ef12ff6cb34e61afe23648b8ff8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1d9851d1ddddafdc5adf1c6659f3a98"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d5c/classcore_1_1event_1_1user__login__failed.html#ad1d9851d1ddddafdc5adf1c6659f3a98">get_name</a> ()</td></tr>
 <tr class="memdesc:ad1d9851d1ddddafdc5adf1c6659f3a98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return localised event name.  <br /></td></tr>
 <tr class="separator:ad1d9851d1ddddafdc5adf1c6659f3a98"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,12 +194,6 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>USER_OTHER</b> = -1<
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a632f9487d8bba0f5203f46dc828d01d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d77/classcore_1_1event_1_1base.html#a632f9487d8bba0f5203f46dc828d01d3">get_legacy_eventdata</a> ()</td></tr>
-<tr class="memdesc:a632f9487d8bba0f5203f46dc828d01d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Legacy event data if get_legacy_eventname() is not empty.  <br /></td></tr>
-<tr class="separator:a632f9487d8bba0f5203f46dc828d01d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6222468656eca4f9d5f70dadfdc1b8cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d5c/classcore_1_1event_1_1user__login__failed.html#a6222468656eca4f9d5f70dadfdc1b8cc">get_legacy_logdata</a> ()</td></tr>
-<tr class="memdesc:a6222468656eca4f9d5f70dadfdc1b8cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return legacy data for <a class="el" href="../../d0/de1/group__core.html#gad98490c571dc40b4ba2801777d422796">add_to_log()</a>.  <br /></td></tr>
-<tr class="separator:a6222468656eca4f9d5f70dadfdc1b8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15b1a281a63ef0065caad233ce4b6327"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d5c/classcore_1_1event_1_1user__login__failed.html#a15b1a281a63ef0065caad233ce4b6327">init</a> ()</td></tr>
 <tr class="memdesc:a15b1a281a63ef0065caad233ce4b6327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init method.  <br /></td></tr>
 <tr class="separator:a15b1a281a63ef0065caad233ce4b6327"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -444,7 +435,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$logextra</b></td></
 </div><div class="memdoc">
 
 <p>This method was originally intended for granular access control on the event level, unfortunately the proper implementation would be too expensive in many cases. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000189">Deprecated:</a></b></dt><dd>since 2.7</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000172">Deprecated:</a></b></dt><dd>since 2.7</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int&#160;|&#160;stdClass</td><td class="paramname">$user_or_id</td><td>ID of the user. </td></tr>
@@ -633,113 +624,6 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$logextra</b></td></
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a632f9487d8bba0f5203f46dc828d01d3" name="a632f9487d8bba0f5203f46dc828d01d3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a632f9487d8bba0f5203f46dc828d01d3">&#9670;&#160;</a></span>get_legacy_eventdata()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">core\event\base::get_legacy_eventdata </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Legacy event data if get_legacy_eventname() is not empty. </p>
-<p>Note: do not use directly!</p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">mixed</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Reimplemented in <a class="el" href="../../d1/de0/classcore_1_1event_1_1cohort__created.html#aab903a8b8277d038b0619fd098821892">core\event\cohort_created</a>, <a class="el" href="../../dc/d92/classcore_1_1event_1_1cohort__deleted.html#a7ff565dd7fb2bf334e7d7d2b70dc9f45">core\event\cohort_deleted</a>, <a class="el" href="../../d6/d79/classcore_1_1event_1_1cohort__updated.html#a31e71a2a4d6125287d9ff9cfbaaef45d">core\event\cohort_updated</a>, <a class="el" href="../../d0/dbe/classcore_1_1event_1_1course__completed.html#a829d0dce71fde45d1950eb2e14ff3ea6">core\event\course_completed</a>, <a class="el" href="../../d5/dba/classcore_1_1event_1_1course__module__deleted.html#a94140091f0e404fb27401a0b65724ccc">core\event\course_module_deleted</a>, <a class="el" href="../../d9/d69/classcore_1_1event_1_1course__updated.html#a1f7d8c0a11dff797f5ac6ebad19c2abc">core\event\course_updated</a>, <a class="el" href="../../d4/d53/classcore_1_1event_1_1group__created.html#a3949d59949303873ff93d05e985d83ad">core\event\group_created</a>, <a class="el" href="../../d9/d58/classcore_1_1event_1_1group__deleted.html#aadc5f193bc533ed8e003144f22834108">core\event\group_deleted</a>, <a class="el" href="../../d2/d98/classcore_1_1event_1_1group__updated.html#a373e08102d0582a2f933933f42b37623">core\event\group_updated</a>, <a class="el" href="../../d0/d65/classcore_1_1event_1_1grouping__created.html#a80ba6165466f8d9866c5973d409c5e41">core\event\grouping_created</a>, <a class="el" href="../../d7/d6d/classcore_1_1event_1_1grouping__deleted.html#a36fec03c29894c38ecf88a6d7742139b">core\event\grouping_deleted</a>, <a class="el" href="../../dc/d74/classcore_1_1event_1_1grouping__updated.html#a147dd5f68b2405ef058802ff6789e29c">core\event\grouping_updated</a>, <a class="el" href="../../d9/d64/classcore_1_1event_1_1user__deleted.html#a9fef93fde990ce9f549f04908403b2bc">core\event\user_deleted</a>, <a class="el" href="../../d6/d55/classcore_1_1event_1_1user__enrolment__created.html#a92081eb16d5394303bcd8c722922a9c4">core\event\user_enrolment_created</a>, <a class="el" href="../../d1/de5/classcore_1_1event_1_1user__enrolment__updated.html#ab9eb2e47cd9a09f77960ef0ea96050cc">core\event\user_enrolment_updated</a>, <a class="el" href="../../dc/d66/classcore_1_1event_1_1user__loggedout.html#a80b83afe48c0d1aee1dad781f0e69245">core\event\user_loggedout</a>, <a class="el" href="../../d2/d92/classassignsubmission__file_1_1event_1_1assessable__uploaded.html#a94033b241dfae78f20354cf379dc7478">assignsubmission_file\event\assessable_uploaded</a>, <a class="el" href="../../d4/db2/classassignsubmission__onlinetext_1_1event_1_1assessable__uploaded.html#aee2bac33090c73a0a6e1902c9dee565b">assignsubmission_onlinetext\event\assessable_uploaded</a>, <a class="el" href="../../d7/d4d/classmod__forum_1_1event_1_1assessable__uploaded.html#a490f5886a8ee967e7cdf8ec4730a5576">mod_forum\event\assessable_uploaded</a>, <a class="el" href="../../da/d10/classmod__lti_1_1event_1_1unknown__service__api__called.html#a9908c3013bd007da4282f39fee9576fe">mod_lti\event\unknown_service_api_called</a>, <a class="el" href="../../de/dd4/classmod__quiz_1_1event_1_1attempt__abandoned.html#a9b4c73ff6173d5ec406a39bbd9ce95d8">mod_quiz\event\attempt_abandoned</a>, <a class="el" href="../../d4/d2a/classmod__quiz_1_1event_1_1attempt__becameoverdue.html#ac340062f650d527adbe8d369f3b98080">mod_quiz\event\attempt_becameoverdue</a>, <a class="el" href="../../d4/d2e/classmod__quiz_1_1event_1_1attempt__submitted.html#ad488a37123d3cae849d8090f1d7eb119">mod_quiz\event\attempt_submitted</a>, <a class="el" href="../../dd/deb/classmod__workshop_1_1event_1_1assessable__uploaded.html#a269c269cbd4e93566e805e517ba51ff5">mod_workshop\event\assessable_uploaded</a>, and <a class="el" href="../../de/d07/classmod__workshop_1_1event_1_1course__module__viewed.html#aac734aabf8c008b3253d16c18fbd3cdc">mod_workshop\event\course_module_viewed</a>.</p>
-
-</div>
-</div>
-<a id="acc8ef12ff6cb34e61afe23648b8ff8bb" name="acc8ef12ff6cb34e61afe23648b8ff8bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc8ef12ff6cb34e61afe23648b8ff8bb">&#9670;&#160;</a></span>get_legacy_eventname()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static core\event\base::get_legacy_eventname </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Does this event replace legacy event? </p>
-<p>Note: do not use directly!</p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">null|string</td><td>legacy event name </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Reimplemented in <a class="el" href="../../d1/de0/classcore_1_1event_1_1cohort__created.html#adab357dcbd9f529307a75525e9b85080">core\event\cohort_created</a>, <a class="el" href="../../dc/d92/classcore_1_1event_1_1cohort__deleted.html#a2fd5eb439d248d538d194a7533e97683">core\event\cohort_deleted</a>, <a class="el" href="../../d6/d79/classcore_1_1event_1_1cohort__updated.html#ac6417f36031e23b850c533eb71104621">core\event\cohort_updated</a>, <a class="el" href="../../d0/dbe/classcore_1_1event_1_1course__completed.html#a3744da9bbf910d5f898a9258363d0d3e">core\event\course_completed</a>, <a class="el" href="../../d5/dba/classcore_1_1event_1_1course__module__deleted.html#a7b6ac51ccd7bfabd6492a8256e9d40ae">core\event\course_module_deleted</a>, <a class="el" href="../../d9/d69/classcore_1_1event_1_1course__updated.html#a726760cf1e4a40e204c1d5dbb596bf94">core\event\course_updated</a>, <a class="el" href="../../d4/d53/classcore_1_1event_1_1group__created.html#ab2777f3a90f96c9dd57cd1b4e9f7e7cd">core\event\group_created</a>, <a class="el" href="../../d9/d58/classcore_1_1event_1_1group__deleted.html#a41a130bdd95485c0cba794e51308ceea">core\event\group_deleted</a>, <a class="el" href="../../d2/d98/classcore_1_1event_1_1group__updated.html#a0953cb2e93cf04bb392c7f3fed68b538">core\event\group_updated</a>, <a class="el" href="../../d0/d65/classcore_1_1event_1_1grouping__created.html#a770e2295d8c4248381e68ca6c95b1b1d">core\event\grouping_created</a>, <a class="el" href="../../d7/d6d/classcore_1_1event_1_1grouping__deleted.html#a1a99f259a361813e4570b6bed721d838">core\event\grouping_deleted</a>, <a class="el" href="../../dc/d74/classcore_1_1event_1_1grouping__updated.html#a77679837ce6358fd8b4a050efab52abe">core\event\grouping_updated</a>, <a class="el" href="../../d9/d64/classcore_1_1event_1_1user__deleted.html#adb35d2c72e1e9fc427ec46a029588db6">core\event\user_deleted</a>, <a class="el" href="../../d6/d55/classcore_1_1event_1_1user__enrolment__created.html#ae67db8d0ab02de68e2740af1d06e7f60">core\event\user_enrolment_created</a>, <a class="el" href="../../d1/de5/classcore_1_1event_1_1user__enrolment__updated.html#a9f612645be234e30ec091bcda045fe72">core\event\user_enrolment_updated</a>, <a class="el" href="../../dc/d66/classcore_1_1event_1_1user__loggedout.html#a6ca97fbfa7d4cfd8516486231d83b38a">core\event\user_loggedout</a>, <a class="el" href="../../d2/d92/classassignsubmission__file_1_1event_1_1assessable__uploaded.html#a0fa27548493a2b1c301b5e81c89a754d">assignsubmission_file\event\assessable_uploaded</a>, <a class="el" href="../../d4/db2/classassignsubmission__onlinetext_1_1event_1_1assessable__uploaded.html#a7cb5d1ff129acc1dc55a1d9476ca5624">assignsubmission_onlinetext\event\assessable_uploaded</a>, <a class="el" href="../../d7/d4d/classmod__forum_1_1event_1_1assessable__uploaded.html#aed72e9f00da4f602545fa8a58f25529f">mod_forum\event\assessable_uploaded</a>, <a class="el" href="../../da/d10/classmod__lti_1_1event_1_1unknown__service__api__called.html#a03fd5dc5fb6982a9ade11dd4d547346a">mod_lti\event\unknown_service_api_called</a>, <a class="el" href="../../de/dd4/classmod__quiz_1_1event_1_1attempt__abandoned.html#a0a355870b5391dcbaf8257cad248dba4">mod_quiz\event\attempt_abandoned</a>, <a class="el" href="../../d4/d2a/classmod__quiz_1_1event_1_1attempt__becameoverdue.html#ad9a7d715f330c4c9eb70f7a8ed758e85">mod_quiz\event\attempt_becameoverdue</a>, <a class="el" href="../../d4/d2e/classmod__quiz_1_1event_1_1attempt__submitted.html#a2d9affcab90f7505ffe0be445b1cf74e">mod_quiz\event\attempt_submitted</a>, <a class="el" href="../../dd/deb/classmod__workshop_1_1event_1_1assessable__uploaded.html#aa36b7ac638687bde9dfaf8ce29054f18">mod_workshop\event\assessable_uploaded</a>, and <a class="el" href="../../de/d07/classmod__workshop_1_1event_1_1course__module__viewed.html#abb6d3390397514b6190b956423bc416a">mod_workshop\event\course_module_viewed</a>.</p>
-
-</div>
-</div>
-<a id="a6222468656eca4f9d5f70dadfdc1b8cc" name="a6222468656eca4f9d5f70dadfdc1b8cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6222468656eca4f9d5f70dadfdc1b8cc">&#9670;&#160;</a></span>get_legacy_logdata()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">core\event\user_login_failed::get_legacy_logdata </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return legacy data for <a class="el" href="../../d0/de1/group__core.html#gad98490c571dc40b4ba2801777d422796">add_to_log()</a>. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">array</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Reimplemented from <a class="el" href="../../d9/d77/classcore_1_1event_1_1base.html#ae85227fae5208905e81b3925924f4628">core\event\base</a>.</p>
 
 </div>
 </div>
@@ -1531,7 +1415,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$logextra</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 5 2023 03:24:22 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 12 2023 03:10:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

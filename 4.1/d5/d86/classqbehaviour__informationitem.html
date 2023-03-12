@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1.1+ (Build: 20230303) (f49f934786f)</div>
+   <div id="projectbrief">Moodle 4.1.2 (Build: 20230313) (033858e2491)</div>
   </td>
  </tr>
  </tbody>
@@ -142,11 +142,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7b2ecabcf94d08f3c41604fe487de269"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d86/classqbehaviour__informationitem.html#a7b2ecabcf94d08f3c41604fe487de269">process_comment</a> (<a class="el" href="../../df/d48/classquestion__attempt__pending__step.html">question_attempt_pending_step</a> $pendingstep)</td></tr>
 <tr class="memdesc:a7b2ecabcf94d08f3c41604fe487de269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation of processing a manual comment/grade action that should be suitable for most subclasses.  <br /></td></tr>
 <tr class="separator:a7b2ecabcf94d08f3c41604fe487de269"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad3a470f5842c281dd485efa264f3708"><td class="memItemLeft" align="right" valign="top"><a id="aad3a470f5842c281dd485efa264f3708" name="aad3a470f5842c281dd485efa264f3708"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>process_finish</b> (<a class="el" href="../../df/d48/classquestion__attempt__pending__step.html">question_attempt_pending_step</a> $pendingstep)</td></tr>
+<tr class="memitem:aad3a470f5842c281dd485efa264f3708"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d86/classqbehaviour__informationitem.html#aad3a470f5842c281dd485efa264f3708">process_finish</a> (<a class="el" href="../../df/d48/classquestion__attempt__pending__step.html">question_attempt_pending_step</a> $pendingstep)</td></tr>
+<tr class="memdesc:aad3a470f5842c281dd485efa264f3708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle the 'finish' case of {.  <br /></td></tr>
 <tr class="separator:aad3a470f5842c281dd485efa264f3708"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2137411891728a3b37f47eb2a7105ee8"><td class="memItemLeft" align="right" valign="top"><a id="a2137411891728a3b37f47eb2a7105ee8" name="a2137411891728a3b37f47eb2a7105ee8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>process_seen</b> (<a class="el" href="../../df/d48/classquestion__attempt__pending__step.html">question_attempt_pending_step</a> $pendingstep)</td></tr>
+<tr class="memitem:a2137411891728a3b37f47eb2a7105ee8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d86/classqbehaviour__informationitem.html#a2137411891728a3b37f47eb2a7105ee8">process_seen</a> (<a class="el" href="../../df/d48/classquestion__attempt__pending__step.html">question_attempt_pending_step</a> $pendingstep)</td></tr>
+<tr class="memdesc:a2137411891728a3b37f47eb2a7105ee8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle the 'seen' case of {.  <br /></td></tr>
 <tr class="separator:a2137411891728a3b37f47eb2a7105ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72c8e2aaa67db0807445f35254cfa993"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d03/classquestion__behaviour.html#a72c8e2aaa67db0807445f35254cfa993">render</a> (<a class="el" href="../../d8/d05/classquestion__display__options.html">question_display_options</a> $options, $number, <a class="el" href="../../d1/d9d/classcore__question__renderer.html">core_question_renderer</a> $qoutput, <a class="el" href="../../db/db0/classqtype__renderer.html">qtype_renderer</a> $qtoutput)</td></tr>
 <tr class="memdesc:a72c8e2aaa67db0807445f35254cfa993"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cause the question to be renderered.  <br /></td></tr>
@@ -247,7 +247,7 @@ Protected Attributes</h2></td></tr>
 <p>This method must call $this-&gt;question-&gt;apply_attempt_state($step), and may perform additional processing if the behaviour requries it.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a question_attempt.">question_attempt_step</a></td><td>The first step of the <a class="el" href="../../d3/dda/classquestion__attempt.html">question_attempt</a> being loaded. </td></tr>
+    <tr><td class="paramname"><a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a {.">question_attempt_step</a></td><td>The first step of the <a class="el" href="../../d3/dda/classquestion__attempt.html">question_attempt</a> being loaded. </td></tr>
   </table>
   </dd>
 </dl>
@@ -935,7 +935,7 @@ Protected Attributes</h2></td></tr>
 <p>This method must call $this-&gt;question-&gt;start_attempt($step, $variant), and may perform additional processing if the behaviour requries it.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a question_attempt.">question_attempt_step</a></td><td class="paramname">$step</td><td>the first step of the <a class="el" href="../../d3/dda/classquestion__attempt.html" title="Tracks an attempt at one particular question in a question_usage_by_activity.">question_attempt</a> being started. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a {.">question_attempt_step</a></td><td class="paramname">$step</td><td>the first step of the <a class="el" href="../../d3/dda/classquestion__attempt.html" title="Tracks an attempt at one particular question in a question_usage_by_activity.">question_attempt</a> being started. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$variant</td><td>which variant of the question to use. </td></tr>
   </table>
   </dd>
@@ -1003,7 +1003,7 @@ Protected Attributes</h2></td></tr>
 <p>That is, whether the comment, and the mark (if given) is the same.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a question_attempt.">question_attempt_step</a></td><td class="paramname">$pendingstep</td><td>contains the new responses. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a {.">question_attempt_step</a></td><td class="paramname">$pendingstep</td><td>contains the new responses. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1040,7 +1040,7 @@ Protected Attributes</h2></td></tr>
 <p>Often this method is implemented as a dispatching method that examines the pending step to determine the kind of action being performed, and then calls a more specific method like <a class="el" href="../../">process_save()</a> or <a class="el" href="../../">process_comment()</a>. Look at some of the standard behaviours for examples.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../df/d48/classquestion__attempt__pending__step.html" title="A subclass of question_attempt_step used when processing a new submission.">question_attempt_pending_step</a></td><td class="paramname">$pendingstep</td><td>a partially initialised step containing all the information about the action that is being peformed. This information can be accessed using <a class="el" href="../../df/db2/classquestion__attempt__step.html#aa7e960f480a35a9898f4d07f01a166d7">question_attempt_step::get_behaviour_var()</a>. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../df/d48/classquestion__attempt__pending__step.html" title="A subclass of {.">question_attempt_pending_step</a></td><td class="paramname">$pendingstep</td><td>a partially initialised step containing all the information about the action that is being peformed. This information can be accessed using <a class="el" href="../../df/db2/classquestion__attempt__step.html#aa7e960f480a35a9898f4d07f01a166d7">question_attempt_step::get_behaviour_var()</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1083,7 +1083,7 @@ Protected Attributes</h2></td></tr>
 <p>By default this does nothing. interesting processing is done in <a class="el" href="../../dc/de9/classquestion__behaviour__with__save.html">question_behaviour_with_save</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../df/d48/classquestion__attempt__pending__step.html" title="A subclass of question_attempt_step used when processing a new submission.">question_attempt_pending_step</a></td><td class="paramname">$pendingstep</td><td>a partially initialised step containing all the information about the action that is being peformed. This information can be accessed using <a class="el" href="../../df/db2/classquestion__attempt__step.html#aa7e960f480a35a9898f4d07f01a166d7">question_attempt_step::get_behaviour_var()</a>. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../df/d48/classquestion__attempt__pending__step.html" title="A subclass of {.">question_attempt_pending_step</a></td><td class="paramname">$pendingstep</td><td>a partially initialised step containing all the information about the action that is being peformed. This information can be accessed using <a class="el" href="../../df/db2/classquestion__attempt__step.html#aa7e960f480a35a9898f4d07f01a166d7">question_attempt_step::get_behaviour_var()</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1117,7 +1117,7 @@ Protected Attributes</h2></td></tr>
 <p>Implementation of processing a manual comment/grade action that should be suitable for most subclasses. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../df/d48/classquestion__attempt__pending__step.html" title="A subclass of question_attempt_step used when processing a new submission.">question_attempt_pending_step</a></td><td class="paramname">$pendingstep</td><td>a partially initialised step containing all the information about the action that is being peformed. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../df/d48/classquestion__attempt__pending__step.html" title="A subclass of {.">question_attempt_pending_step</a></td><td class="paramname">$pendingstep</td><td>a partially initialised step containing all the information about the action that is being peformed. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1129,6 +1129,78 @@ Protected Attributes</h2></td></tr>
 </dl>
 
 <p>Reimplemented from <a class="el" href="../../d3/d03/classquestion__behaviour.html#a49b99c5887621fcca66a6aff528b30e4">question_behaviour</a>.</p>
+
+</div>
+</div>
+<a id="aad3a470f5842c281dd485efa264f3708" name="aad3a470f5842c281dd485efa264f3708"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad3a470f5842c281dd485efa264f3708">&#9670;&#160;</a></span>process_finish()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">qbehaviour_informationitem::process_finish </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d48/classquestion__attempt__pending__step.html">question_attempt_pending_step</a>&#160;</td>
+          <td class="paramname"><em>$pendingstep</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handle the 'finish' case of {. </p>
+<dl class="section see"><dt>See also</dt><dd>process_action()}.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../df/d48/classquestion__attempt__pending__step.html" title="A subclass of {.">question_attempt_pending_step</a></td><td class="paramname">$pendingstep</td><td>step representing the action. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>either {</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d3/dda/classquestion__attempt.html#aa9989523844f5e05e44f6a9c78574865" title="#+ Constants used by the intereaction models to indicate whether the current pending step should be k...">question_attempt::KEEP</a>} or {</dd>
+<dd>
+question_attempt::DISCARD}. </dd></dl>
+
+</div>
+</div>
+<a id="a2137411891728a3b37f47eb2a7105ee8" name="a2137411891728a3b37f47eb2a7105ee8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2137411891728a3b37f47eb2a7105ee8">&#9670;&#160;</a></span>process_seen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">qbehaviour_informationitem::process_seen </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/d48/classquestion__attempt__pending__step.html">question_attempt_pending_step</a>&#160;</td>
+          <td class="paramname"><em>$pendingstep</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Handle the 'seen' case of {. </p>
+<dl class="section see"><dt>See also</dt><dd>process_action()}.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../df/d48/classquestion__attempt__pending__step.html" title="A subclass of {.">question_attempt_pending_step</a></td><td class="paramname">$pendingstep</td><td>step representing the action. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>either {</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d3/dda/classquestion__attempt.html#aa9989523844f5e05e44f6a9c78574865" title="#+ Constants used by the intereaction models to indicate whether the current pending step should be k...">question_attempt::KEEP</a>} or {</dd>
+<dd>
+question_attempt::DISCARD}. </dd></dl>
 
 </div>
 </div>
@@ -1225,7 +1297,7 @@ Protected Attributes</h2></td></tr>
 <p>This method should return true for any attempt explicitly submitted by a student. The question engine itself will also automatically recognise any last saved response before the attempt is finished, you don't need to return true here for these steps with responses which are not explicitly submitted by the student.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a question_attempt.">question_attempt_step</a></td><td class="paramname">$step</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a {.">question_attempt_step</a></td><td class="paramname">$step</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1291,7 +1363,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a question_attempt.">question_attempt_step</a></td><td class="paramname">$step</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a {.">question_attempt_step</a></td><td class="paramname">$step</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1304,7 +1376,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 5 2023 03:17:24 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 12 2023 03:04:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

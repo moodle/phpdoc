@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230303) (556208417de)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
   </td>
  </tr>
  </tbody>
@@ -90,9 +90,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6d079a79edd79795de3dfd52aeedc38a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d36/classtool__log_1_1log_1_1manager.html#a6d079a79edd79795de3dfd52aeedc38a">get_supported_reports</a> ($logstore)</td></tr>
 <tr class="memdesc:a6d079a79edd79795de3dfd52aeedc38a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of reports that support the given store instance.  <br /></td></tr>
 <tr class="separator:a6d079a79edd79795de3dfd52aeedc38a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf4faf6f50b467c5a261b3b7ac3daa98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d36/classtool__log_1_1log_1_1manager.html#aaf4faf6f50b467c5a261b3b7ac3daa98">legacy_add_to_log</a> ($courseid, $module, $action, $url='', $info='', $cm=0, $user=0, $ip=null, $time=null)</td></tr>
-<tr class="memdesc:aaf4faf6f50b467c5a261b3b7ac3daa98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Legacy <a class="el" href="../../d0/de1/group__core.html#gad98490c571dc40b4ba2801777d422796">add_to_log()</a> redirection.  <br /></td></tr>
-<tr class="separator:aaf4faf6f50b467c5a261b3b7ac3daa98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33db6a9be1966dec4307ece8ed78ad59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d36/classtool__log_1_1log_1_1manager.html#a33db6a9be1966dec4307ece8ed78ad59">process</a> (\<a class="el" href="../../d9/d77/classcore_1_1event_1_1base.html">core\event\base</a> $event)</td></tr>
 <tr class="memdesc:a33db6a9be1966dec4307ece8ed78ad59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called from the observer only.  <br /></td></tr>
 <tr class="separator:a33db6a9be1966dec4307ece8ed78ad59"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -281,94 +278,6 @@ tool_log log <a class="el" href="../../df/d34/interfacetool__log_1_1log_1_1write
 
 </div>
 </div>
-<a id="aaf4faf6f50b467c5a261b3b7ac3daa98" name="aaf4faf6f50b467c5a261b3b7ac3daa98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf4faf6f50b467c5a261b3b7ac3daa98">&#9670;&#160;</a></span>legacy_add_to_log()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">tool_log\log\manager::legacy_add_to_log </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$courseid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$module</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$action</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$url</em> = <code>''</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$info</em> = <code>''</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$cm</em> = <code>0</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$user</em> = <code>0</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$ip</em> = <code>null</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$time</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Legacy <a class="el" href="../../d0/de1/group__core.html#gad98490c571dc40b4ba2801777d422796">add_to_log()</a> redirection. </p>
-<p>To be used only from deprecated <a class="el" href="../../d0/de1/group__core.html#gad98490c571dc40b4ba2801777d422796">add_to_log()</a> function and event trigger() method.</p>
-<p>NOTE: this is hardcoded to legacy log store plugin, hopefully we can get rid of it soon.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$courseid</td><td>The course id </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$module</td><td>The module name e.g. forum, journal, resource, course, user etc </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$action</td><td>'view', 'update', 'add' or 'delete', possibly followed by another word to clarify </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$url</td><td>The file and parameters used to see the results of the action </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$info</td><td>Additional description information </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$cm</td><td>The course_module-&gt;id if there is one </td></tr>
-    <tr><td class="paramtype">int&#160;|&#160;stdClass</td><td class="paramname">$user</td><td>If log regards $user other than $USER </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$ip</td><td>Override the IP, should only be used for restore. </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$time</td><td>Override the log time, should only be used for restore. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a33db6a9be1966dec4307ece8ed78ad59" name="a33db6a9be1966dec4307ece8ed78ad59"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a33db6a9be1966dec4307ece8ed78ad59">&#9670;&#160;</a></span>process()</h2>
 
@@ -401,7 +310,7 @@ tool_log log <a class="el" href="../../df/d34/interfacetool__log_1_1log_1_1write
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 5 2023 03:25:58 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 12 2023 03:12:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

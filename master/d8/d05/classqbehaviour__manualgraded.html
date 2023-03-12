@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230303) (556208417de)</div>
+   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
   </td>
  </tr>
  </tbody>
@@ -262,7 +262,7 @@ Protected Attributes</h2></td></tr>
 <p>This method must call $this-&gt;question-&gt;apply_attempt_state($step), and may perform additional processing if the behaviour requries it.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a question_attempt.">question_attempt_step</a></td><td>The first step of the <a class="el" href="../../d3/dda/classquestion__attempt.html">question_attempt</a> being loaded. </td></tr>
+    <tr><td class="paramname"><a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a {.">question_attempt_step</a></td><td>The first step of the <a class="el" href="../../d3/dda/classquestion__attempt.html">question_attempt</a> being loaded. </td></tr>
   </table>
   </dd>
 </dl>
@@ -974,7 +974,7 @@ Protected Attributes</h2></td></tr>
 <p>This method must call $this-&gt;question-&gt;start_attempt($step, $variant), and may perform additional processing if the behaviour requries it.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a question_attempt.">question_attempt_step</a></td><td class="paramname">$step</td><td>the first step of the <a class="el" href="../../d3/dda/classquestion__attempt.html" title="Tracks an attempt at one particular question in a question_usage_by_activity.">question_attempt</a> being started. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a {.">question_attempt_step</a></td><td class="paramname">$step</td><td>the first step of the <a class="el" href="../../d3/dda/classquestion__attempt.html" title="Tracks an attempt at one particular question in a question_usage_by_activity.">question_attempt</a> being started. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$variant</td><td>which variant of the question to use. </td></tr>
   </table>
   </dd>
@@ -1041,7 +1041,7 @@ Protected Attributes</h2></td></tr>
 <p>Work out whether the response in $pendingstep represent a complete answer to the question. </p>
 <p>Normally this will call <a class="el" href="../../df/df5/interfacequestion__manually__gradable.html#a909df3bd679254fce6a9d401bf1810a7">question_manually_gradable::is_complete_response</a>, but some behaviours, for example the CBM ones, have their own parts to the response. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a question_attempt.">question_attempt_step</a></td><td class="paramname">$pendingstep</td><td>contains the new responses. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a {.">question_attempt_step</a></td><td class="paramname">$pendingstep</td><td>contains the new responses. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1084,7 +1084,7 @@ Protected Attributes</h2></td></tr>
 <p>That is, whether the comment, and the mark (if given) is the same.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a question_attempt.">question_attempt_step</a></td><td class="paramname">$pendingstep</td><td>contains the new responses. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a {.">question_attempt_step</a></td><td class="paramname">$pendingstep</td><td>contains the new responses. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1124,7 +1124,7 @@ Protected Attributes</h2></td></tr>
 <p>Work out whether the response in $pendingstep are significantly different from the last set of responses we have stored. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a question_attempt.">question_attempt_step</a></td><td class="paramname">$pendingstep</td><td>contains the new responses. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a {.">question_attempt_step</a></td><td class="paramname">$pendingstep</td><td>contains the new responses. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1163,7 +1163,7 @@ Protected Attributes</h2></td></tr>
 <p>Often this method is implemented as a dispatching method that examines the pending step to determine the kind of action being performed, and then calls a more specific method like <a class="el" href="../../">process_save()</a> or <a class="el" href="../../">process_comment()</a>. Look at some of the standard behaviours for examples.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../df/d48/classquestion__attempt__pending__step.html" title="A subclass of question_attempt_step used when processing a new submission.">question_attempt_pending_step</a></td><td class="paramname">$pendingstep</td><td>a partially initialised step containing all the information about the action that is being peformed. This information can be accessed using <a class="el" href="../../df/db2/classquestion__attempt__step.html#aa7e960f480a35a9898f4d07f01a166d7">question_attempt_step::get_behaviour_var()</a>. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../df/d48/classquestion__attempt__pending__step.html" title="A subclass of {.">question_attempt_pending_step</a></td><td class="paramname">$pendingstep</td><td>a partially initialised step containing all the information about the action that is being peformed. This information can be accessed using <a class="el" href="../../df/db2/classquestion__attempt__step.html#aa7e960f480a35a9898f4d07f01a166d7">question_attempt_step::get_behaviour_var()</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1206,7 +1206,7 @@ Protected Attributes</h2></td></tr>
 <p>By default this does nothing. interesting processing is done in <a class="el" href="../../dc/de9/classquestion__behaviour__with__save.html">question_behaviour_with_save</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../df/d48/classquestion__attempt__pending__step.html" title="A subclass of question_attempt_step used when processing a new submission.">question_attempt_pending_step</a></td><td class="paramname">$pendingstep</td><td>a partially initialised step containing all the information about the action that is being peformed. This information can be accessed using <a class="el" href="../../df/db2/classquestion__attempt__step.html#aa7e960f480a35a9898f4d07f01a166d7">question_attempt_step::get_behaviour_var()</a>. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../df/d48/classquestion__attempt__pending__step.html" title="A subclass of {.">question_attempt_pending_step</a></td><td class="paramname">$pendingstep</td><td>a partially initialised step containing all the information about the action that is being peformed. This information can be accessed using <a class="el" href="../../df/db2/classquestion__attempt__step.html#aa7e960f480a35a9898f4d07f01a166d7">question_attempt_step::get_behaviour_var()</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1248,7 +1248,7 @@ Protected Attributes</h2></td></tr>
 <p>Implementation of processing a manual comment/grade action that should be suitable for most subclasses. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../df/d48/classquestion__attempt__pending__step.html" title="A subclass of question_attempt_step used when processing a new submission.">question_attempt_pending_step</a></td><td class="paramname">$pendingstep</td><td>a partially initialised step containing all the information about the action that is being peformed. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../df/d48/classquestion__attempt__pending__step.html" title="A subclass of {.">question_attempt_pending_step</a></td><td class="paramname">$pendingstep</td><td>a partially initialised step containing all the information about the action that is being peformed. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1282,7 +1282,7 @@ Protected Attributes</h2></td></tr>
 <p>Like the parent method, except that when a response is gradable, but not completely, we move it to the invalid state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../df/d48/classquestion__attempt__pending__step.html" title="A subclass of question_attempt_step used when processing a new submission.">question_attempt_pending_step</a></td><td class="paramname">$pendingstep</td><td>a partially initialised step containing all the information about the action that is being performed. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../df/d48/classquestion__attempt__pending__step.html" title="A subclass of {.">question_attempt_pending_step</a></td><td class="paramname">$pendingstep</td><td>a partially initialised step containing all the information about the action that is being performed. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1390,7 +1390,7 @@ Protected Attributes</h2></td></tr>
 <p>This method should return true for any attempt explicitly submitted by a student. The question engine itself will also automatically recognise any last saved response before the attempt is finished, you don't need to return true here for these steps with responses which are not explicitly submitted by the student.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a question_attempt.">question_attempt_step</a></td><td class="paramname">$step</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a {.">question_attempt_step</a></td><td class="paramname">$step</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1484,7 +1484,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a question_attempt.">question_attempt_step</a></td><td class="paramname">$step</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../df/db2/classquestion__attempt__step.html" title="Stores one step in a {.">question_attempt_step</a></td><td class="paramname">$step</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1497,7 +1497,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 5 2023 03:23:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 12 2023 03:10:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

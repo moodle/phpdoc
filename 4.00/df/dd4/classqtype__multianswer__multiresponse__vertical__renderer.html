@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.6+ (Build: 20230303) (62cfa26cb92)</div>
+   <div id="projectbrief">Moodle 4.0.7 (Build: 20230313) (0fae900b585)</div>
   </td>
  </tr>
  </tbody>
@@ -58,6 +58,7 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="../../d7/d75/classqtype__multianswer__multiresponse__vertical__renderer-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">qtype_multianswer_multiresponse_vertical_renderer Class Reference<div class="ingroups"><a class="el" href="../../d6/db7/group__qtype.html">qtype</a></div></div></div>
 </div><!--header-->
@@ -167,6 +168,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ab356d8b82f04c3ca4978a7d6a69d559f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db0/classqtype__renderer.html#ab356d8b82f04c3ca4978a7d6a69d559f">general_feedback</a> (<a class="el" href="../../d3/dda/classquestion__attempt.html">question_attempt</a> $qa)</td></tr>
 <tr class="memdesc:ab356d8b82f04c3ca4978a7d6a69d559f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gereate the general feedback.  <br /></td></tr>
 <tr class="separator:ab356d8b82f04c3ca4978a7d6a69d559f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90bc5bdadc9138e92537b368fc7e58ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d75/classqtype__multianswer__subq__renderer__base.html#a90bc5bdadc9138e92537b368fc7e58ec">get_answer_label</a> (string $langkey='answerx', string $component='question')</td></tr>
+<tr class="memdesc:a90bc5bdadc9138e92537b368fc7e58ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a label for an answer field.  <br /></td></tr>
+<tr class="separator:a90bc5bdadc9138e92537b368fc7e58ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f2ad539c15c279982da704664a094fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d60/classrenderer__base.html#a1f2ad539c15c279982da704664a094fc">get_mustache</a> ()</td></tr>
 <tr class="memdesc:a1f2ad539c15c279982da704664a094fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an instance of the mustache class.  <br /></td></tr>
 <tr class="separator:a1f2ad539c15c279982da704664a094fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,6 +186,10 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:a707f6b9b1482d7ae92b2c6c5b51f1bce"><td class="memItemLeft" align="right" valign="top"><a id="a707f6b9b1482d7ae92b2c6c5b51f1bce" name="a707f6b9b1482d7ae92b2c6c5b51f1bce"></a>
+<a class="el" href="../../d8/d05/classquestion__display__options.html">question_display_options</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$displayoptions</b></td></tr>
+<tr class="memdesc:a707f6b9b1482d7ae92b2c6c5b51f1bce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Question display options instance for any necessary information for rendering the question. <br /></td></tr>
+<tr class="separator:a707f6b9b1482d7ae92b2c6c5b51f1bce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9756fe2c75889dfa616b2c8f1e39b1cf"><td class="memItemLeft" align="right" valign="top"><a id="a9756fe2c75889dfa616b2c8f1e39b1cf" name="a9756fe2c75889dfa616b2c8f1e39b1cf"></a>
 <a class="el" href="../../d7/d87/classxhtml__container__stack.html">xhtml_container_stack</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$opencontainers</b></td></tr>
 <tr class="memdesc:a9756fe2c75889dfa616b2c8f1e39b1cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="../../d7/d87/classxhtml__container__stack.html">xhtml_container_stack</a> to use. <br /></td></tr>
@@ -201,6 +209,13 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$target</b></td></t
 array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> = []</td></tr>
 <tr class="memdesc:ad2cbac2fac97cd41bd82de7aa91fb130"><td class="mdescLeft">&#160;</td><td class="mdescRight">$templatecache The mustache template cache. <br /></td></tr>
 <tr class="separator:ad2cbac2fac97cd41bd82de7aa91fb130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:ac1377418973ee05aaf652f7ed968778f"><td class="memItemLeft" align="right" valign="top"><a id="ac1377418973ee05aaf652f7ed968778f" name="ac1377418973ee05aaf652f7ed968778f"></a>
+static int[]&#160;</td><td class="memItemRight" valign="bottom"><b>$answercount</b> = []</td></tr>
+<tr class="memdesc:ac1377418973ee05aaf652f7ed968778f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the counts of answer instances for questions. <br /></td></tr>
+<tr class="separator:ac1377418973ee05aaf652f7ed968778f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class qtype_multianswer_multiresponse_renderer. </p>
@@ -834,6 +849,64 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>HTML fragment. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a90bc5bdadc9138e92537b368fc7e58ec" name="a90bc5bdadc9138e92537b368fc7e58ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90bc5bdadc9138e92537b368fc7e58ec">&#9670;&#160;</a></span>get_answer_label()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">qtype_multianswer_subq_renderer_base::get_answer_label </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$langkey</em> = <code>'answerx'</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$component</em> = <code>'question'</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generates a label for an answer field. </p>
+<p>If the question number is set ({</p><dl class="section see"><dt>See also</dt><dd>qtype_renderer::$questionnumber}), the label will include the question number in order to indicate which question the answer field belongs to.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$langkey</td><td>The lang string key for the lang string that does not include the question number. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$component</td><td>The Frankenstyle component name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1647,7 +1720,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 5 2023 03:11:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 12 2023 02:58:16 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>
