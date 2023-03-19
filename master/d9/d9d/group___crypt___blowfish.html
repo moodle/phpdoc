@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -190,17 +190,64 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MAXKEYSIZE</b> = 56<
           <td class="memname">__construct </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$key</em></td><td>)</td>
+          <td class="paramname"><em>$data</em> = <code>''</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Constructor. </p>
+<p>Scans $input for uuencoded data and converts it to unencoded data.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$cipher</td><td>Either 'ecb' or 'cbc'.</td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$key</td><td>Encrpytion key. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$key</td><td>Encrpytion key.</td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$rights</td><td>The rights (see RFC 4314 [2.1]).</td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$data</td><td>Data.</td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$data</td><td>Either a mailbox object or a UTF-8 mailbox name.</td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$charset</td><td>The charset that was attempted to be converted to.</td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$tag</td><td>The tag to use. If not set, will be automatically generated.</td></tr>
+    <tr><td class="paramtype">Closure</td><td class="paramname">$closure</td><td>A function to run after the continuation response is received. It receives one argument - a Continuation object - and should return a list of arguments to send to the server (via a Horde_Imap_Client_Data_Format_List object).</td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$mboxes</td><td>A mailbox or list of mailboxes.</td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$ns</td><td>The list of namespace objects.</td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$data</td><td>Data to add (string, resource, or Horde_Stream object).</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Absolute IMAP URLs takes one of the following forms:</p><ul>
+<li>imap://&lt;iserver&gt;[/]</li>
+<li>imap://&lt;iserver&gt;/&lt;enc-mailbox&gt;[&lt;uidvalidity&gt;][?&lt;enc-search&gt;]</li>
+<li>imap://&lt;iserver&gt;/&lt;enc-mailbox&gt;[&lt;uidvalidity&gt;]&lt;iuid&gt;[&lt;isection&gt;][&lt;ipartial&gt;][&lt;iurlauth&gt;]</li>
+</ul>
+<p>POP URLs take one of the following forms:</p><ul>
+<li>pop://&lt;user&gt;;auth=&lt;auth&gt;&lt;host&gt;:&lt;port&gt;</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$url</td><td>A URL string.</td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$url</td><td>A URL string.</td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$value</td><td>Identification field value to parse.</td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$obs</td><td>Address data to store in this object.</td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$params</td><td>A hash with basic message information. 'charset' is the character set of the message. 'body' is the message body. All other parameters are assumed to be message headers.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Horde_Mime_Exception</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>V1 data.</td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$input</td><td>The input data</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>An array of strings and/or streams to combine into a single stream. </td></tr>
   </table>
   </dd>
 </dl>
@@ -217,7 +264,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MAXKEYSIZE</b> = 56<
           <td class="memname">__construct </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$key</em>, </td>
+          <td class="paramname"><em>$data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -240,9 +287,25 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MAXKEYSIZE</b> = 56<
     <tr><td class="paramtype">array</td><td class="paramname">$opts</td><td>Additional options:<ul>
 <li>cipher: (string) Either 'ecb' or 'cbc'.</li>
 <li>ignore: (integer) A mask of drivers to ignore (IGNORE_* constants).</li>
-<li>iv: (string) IV to use. </li>
+<li>iv: (string) IV to use.</li>
 </ul>
 </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$opts</td><td>Additional options:<ul>
+<li>eol: (boolean) If true, normalize EOLs in input. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>2.2.0<ul>
+<li>skipscan: (boolean) If true, don't scan input for binary/literal/quoted data. </li>
+</ul>
+</dd>
+<dd>
+2.2.0</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Horde_Imap_Client_Data_Format_Exception</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -763,14 +826,13 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MAXKEYSIZE</b> = 56<
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= array(</div>
 <div class="line">        0x243F6A88, 0x85A308D3, 0x13198A2E, 0x03707344,</div>
 <div class="line">        0xA4093822, 0x299F31D0, 0x082EFA98, 0xEC4E6C89,</div>
 <div class="line">        0x452821E6, 0x38D01377, 0xBE5466CF, 0x34E90C6C,</div>
 <div class="line">        0xC0AC29B7, 0xC97C50DD, 0x3F84D5B5, 0xB5470917,</div>
 <div class="line">        0x9216D5D9, 0x8979FB1B</div>
 <div class="line">    )</div>
-<div class="ttc" id="anamespacearray_html"><div class="ttname"><a href="../../d7/df9/namespacearray.html">array</a></div><div class="ttdoc">('') &amp;#160;</div></div>
 </div><!-- fragment -->
 <p>P-Array contains 18 32-bit subkeys. </p>
 
@@ -779,7 +841,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MAXKEYSIZE</b> = 56<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:08:46 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:14:24 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -98,7 +98,7 @@ $(function() {
 <div class="line">    $pid = getmypid();</div>
 <div class="line"> </div>
 <div class="line">    <span class="keywordflow">if</span> ( strncmp(strtoupper(PHP_OS),<span class="stringliteral">&#39;WIN&#39;</span>,3)==0) {</div>
-<div class="line">        $output = <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>();</div>
+<div class="line">        $output = array();</div>
 <div class="line"> </div>
 <div class="line">        exec(<span class="stringliteral">&#39;tasklist /FI &quot;PID eq &#39;</span> . $pid. <span class="stringliteral">&#39;&quot; /FO LIST&#39;</span>, $output);</div>
 <div class="line">        <span class="keywordflow">return</span> substr($output[5], strpos($output[5], <span class="charliteral">&#39;:&#39;</span>) + 1);</div>
@@ -198,7 +198,7 @@ $(function() {
 <div class="line"> </div>
 <div class="line">        <span class="keywordflow">if</span> (is_array($sql)) $sql = $sql[0];</div>
 <div class="line">        <span class="keywordflow">if</span> ($prefix) $sql = $prefix.$sql;</div>
-<div class="line">        $arr = <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="charliteral">&#39;b&#39;</span>=&gt;strlen($sql).<span class="charliteral">&#39;.&#39;</span>.crc32($sql),</div>
+<div class="line">        $arr = array(<span class="charliteral">&#39;b&#39;</span>=&gt;strlen($sql).<span class="charliteral">&#39;.&#39;</span>.crc32($sql),</div>
 <div class="line">                    <span class="charliteral">&#39;c&#39;</span>=&gt;substr($sql,0,3900), <span class="charliteral">&#39;d&#39;</span>=&gt;$params,<span class="charliteral">&#39;e&#39;</span>=&gt;$tracer,<span class="charliteral">&#39;f&#39;</span>=&gt;adodb_round($time,6));</div>
 <div class="line">        <span class="comment">//var_dump($arr);</span></div>
 <div class="line">        $saved = $conn-&gt;debug;</div>
@@ -992,10 +992,10 @@ $(function() {
 <div class="line"> </div>
 <div class="line">&lt;form method=<span class="stringliteral">&quot;POST&quot;</span> action=<span class="stringliteral">&quot;&lt;?php echo $PHP_SELF ?&gt;&quot;</span>&gt;</div>
 <div class="line">&lt;table&gt;&lt;tr&gt;</div>
-<div class="line">&lt;td&gt; Form size: &lt;input type=<span class="stringliteral">&quot;submit&quot;</span> <a id="a7" name="a7"></a><a class="code hl_function" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>=<span class="stringliteral">&quot; &amp;lt; &quot;</span> name=<span class="stringliteral">&quot;SMALLER&quot;</span>&gt;&lt;input type=<span class="stringliteral">&quot;submit&quot;</span> <a class="code hl_function" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>=<span class="stringliteral">&quot; &amp;gt; &amp;gt; &quot;</span> name=<span class="stringliteral">&quot;BIGGER&quot;</span>&gt;</div>
+<div class="line">&lt;td&gt; Form size: &lt;input type=<span class="stringliteral">&quot;submit&quot;</span> value=<span class="stringliteral">&quot; &amp;lt; &quot;</span> name=<span class="stringliteral">&quot;SMALLER&quot;</span>&gt;&lt;input type=<span class="stringliteral">&quot;submit&quot;</span> value=<span class="stringliteral">&quot; &amp;gt; &amp;gt; &quot;</span> name=<span class="stringliteral">&quot;BIGGER&quot;</span>&gt;</div>
 <div class="line">&lt;/td&gt;</div>
 <div class="line">&lt;td align=right&gt;</div>
-<div class="line">&lt;input type=<span class="stringliteral">&quot;submit&quot;</span> <a class="code hl_function" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>=<span class="stringliteral">&quot; Run SQL Below &quot;</span> name=<span class="stringliteral">&quot;RUN&quot;</span>&gt;&lt;input type=hidden name=<span class="keywordflow">do</span> <a class="code hl_function" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>=dosql&gt;</div>
+<div class="line">&lt;input type=<span class="stringliteral">&quot;submit&quot;</span> value=<span class="stringliteral">&quot; Run SQL Below &quot;</span> name=<span class="stringliteral">&quot;RUN&quot;</span>&gt;&lt;input type=hidden name=<span class="keywordflow">do</span> value=dosql&gt;</div>
 <div class="line">&lt;/td&gt;&lt;/tr&gt;</div>
 <div class="line">  &lt;tr&gt;</div>
 <div class="line">  &lt;td colspan=2&gt;&lt;textarea rows=&lt;?php print $rows; ?&gt; name=<span class="stringliteral">&quot;sql&quot;</span> cols=<span class="stringliteral">&quot;80&quot;</span>&gt;&lt;?php print htmlspecialchars($sql) ?&gt;&lt;/textarea&gt;</div>
@@ -1013,7 +1013,7 @@ $(function() {
 <div class="line">            $sqla = $this-&gt;SplitSQL($sql);</div>
 <div class="line">        } <span class="keywordflow">else</span>  {</div>
 <div class="line">            $print = <span class="keyword">false</span>;</div>
-<div class="line">            $sqla = <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>($sql);</div>
+<div class="line">            $sqla = array($sql);</div>
 <div class="line">        }</div>
 <div class="line">        <span class="keywordflow">foreach</span>($sqla as $sqls) {</div>
 <div class="line"> </div>
@@ -1072,13 +1072,13 @@ $(function() {
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">function</span> <a id="a8" name="a8"></a><a class="code hl_function" href="../../de/d06/classadodb__perf.html#ad4f9952aee2039976255eed5c577354f">OptimizeTable</a>( $table, $mode = ADODB_OPT_LOW)</div>
+<div class="line">    <span class="keyword">function</span> <a id="a7" name="a7"></a><a class="code hl_function" href="../../de/d06/classadodb__perf.html#ad4f9952aee2039976255eed5c577354f">OptimizeTable</a>( $table, $mode = ADODB_OPT_LOW)</div>
 <div class="line">    {</div>
 <div class="line">        <a class="code hl_function" href="../../d4/dbd/class_a_d_o_connection.html#afc26fd0394260eb534f90429ae00707c">ADOConnection::outp</a>( sprintf( <span class="stringliteral">&quot;&lt;p&gt;%s: &#39;%s&#39; not implemented for driver &#39;%s&#39;&lt;/p&gt;&quot;</span>, __CLASS__, __FUNCTION__, $this-&gt;conn-&gt;databaseType));</div>
 <div class="line">        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">function</span> <a id="a9" name="a9"></a><a class="code hl_function" href="../../de/d06/classadodb__perf.html#a66be832c08d14e3af1eb2772f917403c">optimizeDatabase</a>()</div>
+<div class="line">    <span class="keyword">function</span> <a id="a8" name="a8"></a><a class="code hl_function" href="../../de/d06/classadodb__perf.html#a66be832c08d14e3af1eb2772f917403c">optimizeDatabase</a>()</div>
 <div class="line">    {</div>
 <div class="line">        $conn = $this-&gt;conn;</div>
 <div class="line">        <span class="keywordflow">if</span> ( !$conn) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -1097,7 +1097,7 @@ $(function() {
 <div class="line">    <span class="comment">// end hack</span></div>
 <div class="line">}</div>
 <div class="ttc" id="aclass_a_d_o_connection_html_afc26fd0394260eb534f90429ae00707c"><div class="ttname"><a href="../../d4/dbd/class_a_d_o_connection.html#afc26fd0394260eb534f90429ae00707c">ADOConnection\outp</a></div><div class="ttdeci">static outp($msg, $newline=true)</div><div class="ttdoc">All error messages go through this bottleneck function.</div><div class="ttdef"><b>Definition:</b> adodb.inc.php:782</div></div>
-<div class="ttc" id="aclass_exception_html"><div class="ttname"><a href="../../df/d70/class_exception.html">Exception</a></div><div class="ttdef"><b>Definition:</b> Exception.php:27</div></div>
+<div class="ttc" id="aclass_exception_html"><div class="ttname"><a href="../../df/d70/class_exception.html">Exception</a></div><div class="ttdoc">General SimplePie exception class.</div><div class="ttdef"><b>Definition:</b> Exception.php:27</div></div>
 <div class="ttc" id="aclassadodb__perf_html"><div class="ttname"><a href="../../de/d06/classadodb__perf.html">adodb_perf</a></div><div class="ttdef"><b>Definition:</b> adodb-perf.inc.php:226</div></div>
 <div class="ttc" id="aclassadodb__perf_html_a66be832c08d14e3af1eb2772f917403c"><div class="ttname"><a href="../../de/d06/classadodb__perf.html#a66be832c08d14e3af1eb2772f917403c">adodb_perf\optimizeDatabase</a></div><div class="ttdeci">optimizeDatabase()</div><div class="ttdoc">Reorganise current database.</div><div class="ttdef"><b>Definition:</b> adodb-perf.inc.php:1064</div></div>
 <div class="ttc" id="aclassadodb__perf_html_ad4f9952aee2039976255eed5c577354f"><div class="ttname"><a href="../../de/d06/classadodb__perf.html#ad4f9952aee2039976255eed5c577354f">adodb_perf\OptimizeTable</a></div><div class="ttdeci">OptimizeTable( $table, $mode=ADODB_OPT_LOW)</div><div class="ttdoc">Reorganise the table-indices/statistics/.</div><div class="ttdef"><b>Definition:</b> adodb-perf.inc.php:1050</div></div>
@@ -1105,15 +1105,13 @@ $(function() {
 <div class="ttc" id="agroup___crypt___blowfish_html_gaf1b7751b6c09e2d3124df5828a7b6490"><div class="ttname"><a href="../../d9/d9d/group___crypt___blowfish.html#gaf1b7751b6c09e2d3124df5828a7b6490">$key</a></div><div class="ttdeci">string $key</div><div class="ttdoc">Encryption key.</div><div class="ttdef"><b>Definition:</b> Base.php:44</div></div>
 <div class="ttc" id="agroup___imap___client_html_ga4927115ba2fb10567f7ea8241f6b1909"><div class="ttname"><a href="../../dc/d71/group___imap___client.html#ga4927115ba2fb10567f7ea8241f6b1909">$partial</a></div><div class="ttdeci">string $partial</div><div class="ttdoc">A byte range for use with IMAP FETCH.</div><div class="ttdef"><b>Definition:</b> Url.php:56</div></div>
 <div class="ttc" id="agroup___imap___client_html_ga4a20559544fdf4dcb457e258dc976cf8"><div class="ttname"><a href="../../dc/d71/group___imap___client.html#ga4a20559544fdf4dcb457e258dc976cf8">reset</a></div><div class="ttdeci">reset()</div><div class="ttdoc">Reset the mailbox information.</div><div class="ttdef"><b>Definition:</b> Mailbox.php:171</div></div>
-<div class="ttc" id="agroup___simple_pie_html_gaefbfa229f1c9e1fc967bff724a010f9e"><div class="ttname"><a href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a></div><div class="ttdeci">value()</div><div class="ttdoc">See what state to move to while within non-quoted header values.</div><div class="ttdef"><b>Definition:</b> Parser.php:332</div></div>
 <div class="ttc" id="agroup___support_html_ga4f0f28af205235b0726da91caf226b9f"><div class="ttname"><a href="../../d5/d41/group___support.html#ga4f0f28af205235b0726da91caf226b9f">fopen</a></div><div class="ttdeci">fopen()</div><div class="ttdoc">Return a stream handle to this stream.</div><div class="ttdef"><b>Definition:</b> CombineStream.php:46</div></div>
 <div class="ttc" id="agroup__core_html_ga344f0bbd67f6f7e684e91319c052931b"><div class="ttname"><a href="../../d0/de1/group__core.html#ga344f0bbd67f6f7e684e91319c052931b">defined</a></div><div class="ttdeci">defined( 'HUB_MOODLEORGHUBURL')||define( 'HUB_MOODLEORGHUBURL'</div><div class="ttdoc">URL of the Moodle sites registration portal.</div><div class="ttdef"><b>Definition:</b> moodlelib.php:520</div></div>
 <div class="ttc" id="agroup__tool__log_html_ga7543e29bf5065f86f5b6ec5145aacc77"><div class="ttname"><a href="../../d7/d02/group__tool__log.html#ga7543e29bf5065f86f5b6ec5145aacc77">tool_log\helper\flush</a></div><div class="ttdeci">flush()</div><div class="ttdoc">Flush event buffer.</div><div class="ttdef"><b>Definition:</b> buffered_writer.php:99</div></div>
-<div class="ttc" id="anamespacearray_html"><div class="ttname"><a href="../../d7/df9/namespacearray.html">array</a></div><div class="ttdoc">('') &amp;#160;</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:08:46 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:14:24 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

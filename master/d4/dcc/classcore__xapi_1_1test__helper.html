@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -59,6 +59,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="../../d1/d4f/classcore__xapi_1_1test__helper-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">core_xapi\test_helper Class Reference<div class="ingroups"><a class="el" href="../../d5/dfe/group__core__xapi.html">core_xapi</a></div></div></div>
 </div><!--header-->
@@ -76,6 +77,12 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>init_log</b> ()</td></tr>
 <tr class="memdesc:a47ff0f81f0fb1b4f6a23764d7dbbd8d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for a xAPI test helper. <br /></td></tr>
 <tr class="separator:a47ff0f81f0fb1b4f6a23764d7dbbd8d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ac1dee078b6f0ea1dd2bbe860caf43ef1"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dcc/classcore__xapi_1_1test__helper.html#ac1dee078b6f0ea1dd2bbe860caf43ef1">create_state</a> (array $info=[], bool $createindatabase=false)</td></tr>
+<tr class="memdesc:ac1dee078b6f0ea1dd2bbe860caf43ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a valid state object with the params passed.  <br /></td></tr>
+<tr class="separator:ac1dee078b6f0ea1dd2bbe860caf43ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains helper functions for xAPI PHPUnit Tests. </p>
@@ -83,6 +90,58 @@ Public Member Functions</h2></td></tr>
 <dl class="section copyright"><dt>Copyright</dt><dd>2020 Ferran Recio </dd></dl>
 <dl class="section user"><dt>License</dt><dd><a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a> GNU GPL v3 or later </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac1dee078b6f0ea1dd2bbe860caf43ef1" name="ac1dee078b6f0ea1dd2bbe860caf43ef1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1dee078b6f0ea1dd2bbe860caf43ef1">&#9670;&#160;</a></span>create_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_xapi\test_helper::create_state </td>
+          <td>(</td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$info</em> = <code>[]</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$createindatabase</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return a valid state object with the params passed. </p>
+<p>All tests are based on craft different types of states. This function is made to prevent redundant code on the test.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$info</td><td>array of overriden state data (default []). </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$createindatabase</td><td>Whether the state object should be created in database too or not. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">state</td><td>the resulting state </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a7b7a3a4837a9e2bda8dfd05b3143b7c2" name="a7b7a3a4837a9e2bda8dfd05b3143b7c2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7b7a3a4837a9e2bda8dfd05b3143b7c2">&#9670;&#160;</a></span>get_last_log_entry()</h2>
 
@@ -114,7 +173,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:11:21 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:17:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

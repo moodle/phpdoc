@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -100,13 +100,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab0dd1286bce947f7bd29d36df09b4c12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de0/interface_psr_1_1_http_1_1_message_1_1_message_interface.html#ab0dd1286bce947f7bd29d36df09b4c12">hasHeader</a> ($name)</td></tr>
 <tr class="memdesc:ab0dd1286bce947f7bd29d36df09b4c12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a header exists by the given case-insensitive name.  <br /></td></tr>
 <tr class="separator:ab0dd1286bce947f7bd29d36df09b4c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3066660a3b746f52eee7c8996d22981"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de0/interface_psr_1_1_http_1_1_message_1_1_message_interface.html#ad3066660a3b746f52eee7c8996d22981">withAddedHeader</a> ($name, $<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
+<tr class="memitem:ad3066660a3b746f52eee7c8996d22981"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de0/interface_psr_1_1_http_1_1_message_1_1_message_interface.html#ad3066660a3b746f52eee7c8996d22981">withAddedHeader</a> ($name, $value)</td></tr>
 <tr class="memdesc:ad3066660a3b746f52eee7c8996d22981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an instance with the specified header appended with the given value.  <br /></td></tr>
 <tr class="separator:ad3066660a3b746f52eee7c8996d22981"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45af72ddafb601548ea60d0ddd961e65"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de0/interface_psr_1_1_http_1_1_message_1_1_message_interface.html#a45af72ddafb601548ea60d0ddd961e65">withBody</a> (<a class="el" href="../../d8/d24/interface_psr_1_1_http_1_1_message_1_1_stream_interface.html">StreamInterface</a> $<a class="el" href="../../d8/ded/group___simple_pie.html#ga88c61c5f59a3f950b502f07325de2f87">body</a>)</td></tr>
+<tr class="memitem:a45af72ddafb601548ea60d0ddd961e65"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de0/interface_psr_1_1_http_1_1_message_1_1_message_interface.html#a45af72ddafb601548ea60d0ddd961e65">withBody</a> (<a class="el" href="../../d8/d24/interface_psr_1_1_http_1_1_message_1_1_stream_interface.html">StreamInterface</a> $body)</td></tr>
 <tr class="memdesc:a45af72ddafb601548ea60d0ddd961e65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an instance with the specified message body.  <br /></td></tr>
 <tr class="separator:a45af72ddafb601548ea60d0ddd961e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4648889c9007ddb25adf65ef4cb2a612"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de0/interface_psr_1_1_http_1_1_message_1_1_message_interface.html#a4648889c9007ddb25adf65ef4cb2a612">withHeader</a> ($name, $<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
+<tr class="memitem:a4648889c9007ddb25adf65ef4cb2a612"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de0/interface_psr_1_1_http_1_1_message_1_1_message_interface.html#a4648889c9007ddb25adf65ef4cb2a612">withHeader</a> ($name, $value)</td></tr>
 <tr class="memdesc:a4648889c9007ddb25adf65ef4cb2a612"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an instance with the provided value replacing the specified header.  <br /></td></tr>
 <tr class="separator:a4648889c9007ddb25adf65ef4cb2a612"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f7d926ece92b019554c42e00911ac3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de0/interface_psr_1_1_http_1_1_message_1_1_message_interface.html#a8f7d926ece92b019554c42e00911ac3e">withoutHeader</a> ($name)</td></tr>
@@ -333,7 +333,7 @@ foreach ($message-&gt;getHeaders() as $name =&gt; $values) {
 </div><div class="memdoc">
 
 <p>Gets the response reason phrase associated with the status code. </p>
-<p>Because a reason phrase is not a required element in a response status line, the reason phrase value MAY be null. Implementations MAY choose to return the default RFC 7231 recommended reason phrase (or those listed in the IANA HTTP Status Code Registry) for the response's status code.</p>
+<p>Because a reason phrase is not a required element in a response status line, the reason phrase value MAY be null. Implementations MAY choose to return the default RFC 7231 recommended reason phrase (or those listed in the IANA HTTP Status Code <a class="el" href="../../d4/d78/class_registry.html" title="Handles creating objects and calling methods.">Registry</a>) for the response's status code.</p>
 <p>@externalurl <a href="http://tools.ietf.org/html/rfc7231#section-6">http://tools.ietf.org/html/rfc7231#section-6</a> @externalurl <a href="http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml">http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml</a> </p><dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>Reason phrase; must return an empty string if none present. </td></tr>
@@ -722,7 +722,7 @@ foreach ($message-&gt;getHeaders() as $name =&gt; $values) {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:11:57 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:18:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

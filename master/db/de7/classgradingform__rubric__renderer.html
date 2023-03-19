@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -84,7 +84,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7548caf80cb7cc9344d53e688b423ef0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d60/classrenderer__base.html#a7548caf80cb7cc9344d53e688b423ef0">add_action_handler</a> (<a class="el" href="../../d8/d80/classcomponent__action.html">component_action</a> $action, $id=null)</td></tr>
 <tr class="memdesc:a7548caf80cb7cc9344d53e688b423ef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a JS action for the element with the provided id.  <br /></td></tr>
 <tr class="separator:a7548caf80cb7cc9344d53e688b423ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f4334dad9f7a4a0a478ae6634e84a16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de7/classgradingform__rubric__renderer.html#a9f4334dad9f7a4a0a478ae6634e84a16">criterion_template</a> ($mode, $options, $elementname='{NAME}', $criterion=null, $levelsstr='{LEVELS}', $<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>=null)</td></tr>
+<tr class="memitem:a9f4334dad9f7a4a0a478ae6634e84a16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de7/classgradingform__rubric__renderer.html#a9f4334dad9f7a4a0a478ae6634e84a16">criterion_template</a> ($mode, $options, $elementname='{NAME}', $criterion=null, $levelsstr='{LEVELS}', $value=null)</td></tr>
 <tr class="memdesc:a9f4334dad9f7a4a0a478ae6634e84a16"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns html code for displaying criterion.  <br /></td></tr>
 <tr class="separator:a9f4334dad9f7a4a0a478ae6634e84a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a561ace4b6693f3166ef36aa4ad5e3ed9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de7/classgradingform__rubric__renderer.html#a561ace4b6693f3166ef36aa4ad5e3ed9">display_instance</a> (<a class="el" href="../../d3/d6e/classgradingform__rubric__instance.html">gradingform_rubric_instance</a> $instance, $idx, $cangrade)</td></tr>
@@ -93,7 +93,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7ba6dabc7be092842de168c6a1c1eb9c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de7/classgradingform__rubric__renderer.html#a7ba6dabc7be092842de168c6a1c1eb9c">display_instances</a> ($instances, $defaultcontent, $cangrade)</td></tr>
 <tr class="memdesc:a7ba6dabc7be092842de168c6a1c1eb9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays for the student the list of instances or default content if no instances found.  <br /></td></tr>
 <tr class="separator:a7ba6dabc7be092842de168c6a1c1eb9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01d1be396f975b1a15198188a04574f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de7/classgradingform__rubric__renderer.html#a01d1be396f975b1a15198188a04574f4">display_regrade_confirmation</a> ($elementname, $changelevel, $<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
+<tr class="memitem:a01d1be396f975b1a15198188a04574f4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de7/classgradingform__rubric__renderer.html#a01d1be396f975b1a15198188a04574f4">display_regrade_confirmation</a> ($elementname, $changelevel, $value)</td></tr>
 <tr class="memdesc:a01d1be396f975b1a15198188a04574f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays confirmation that students require re-grading.  <br /></td></tr>
 <tr class="separator:a01d1be396f975b1a15198188a04574f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e9de4981c815e4f02faeabb9f29ac1a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de7/classgradingform__rubric__renderer.html#a6e9de4981c815e4f02faeabb9f29ac1a">display_rubric</a> ($criteria, $options, $mode, $elementname=null, $values=null)</td></tr>
@@ -978,7 +978,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 
 <p>Return the direct URL for an image from the pix folder. </p>
 <p>Use this function sparingly and never for icons. For icons use <a class="el" href="../../d0/d6e/classpix__icon.html">pix_icon</a> or the pix helper in a mustache template.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000731">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000741">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$imagename</td><td>the name of the icon. </td></tr>
@@ -1277,7 +1277,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Whether we should display the main logo. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000732">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000742">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000165">Todo:</a></b></dt><dd>final deprecation. To be removed in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-73165" class="el">MDL-73165</a>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1360,7 +1360,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:10:04 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:15:58 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

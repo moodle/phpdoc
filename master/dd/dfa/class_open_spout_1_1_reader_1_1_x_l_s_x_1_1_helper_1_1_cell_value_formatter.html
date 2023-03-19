@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -124,10 +124,10 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:add40e15c51ef01ae166cdc162038caca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the cell Boolean value from a specific node's Value.  <br /></td></tr>
 <tr class="separator:add40e15c51ef01ae166cdc162038caca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae6c4e5ab01c1f040d5756d09bfbf362"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dfa/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_helper_1_1_cell_value_formatter.html#aae6c4e5ab01c1f040d5756d09bfbf362">formatDateCellValue</a> ($nodeValue)</td></tr>
-<tr class="memdesc:aae6c4e5ab01c1f040d5756d09bfbf362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a cell's PHP Date value, associated to the given stored nodeValue.  <br /></td></tr>
+<tr class="memdesc:aae6c4e5ab01c1f040d5756d09bfbf362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a cell's PHP <a class="el" href="../../de/db5/class_date.html" title="Date Parser.">Date</a> value, associated to the given stored nodeValue.  <br /></td></tr>
 <tr class="separator:aae6c4e5ab01c1f040d5756d09bfbf362"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a738925b0f84e4c6e1c549d4d6f4101c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dfa/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_helper_1_1_cell_value_formatter.html#a738925b0f84e4c6e1c549d4d6f4101c9">formatExcelTimestampValue</a> ($nodeValue, $cellStyleId)</td></tr>
-<tr class="memdesc:a738925b0f84e4c6e1c549d4d6f4101c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a cell's PHP Date value, associated to the given timestamp.  <br /></td></tr>
+<tr class="memdesc:a738925b0f84e4c6e1c549d4d6f4101c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a cell's PHP <a class="el" href="../../de/db5/class_date.html" title="Date Parser.">Date</a> value, associated to the given timestamp.  <br /></td></tr>
 <tr class="separator:a738925b0f84e4c6e1c549d4d6f4101c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a362f5ff374507141eca5760f6ff66f54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dfa/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_helper_1_1_cell_value_formatter.html#a362f5ff374507141eca5760f6ff66f54">formatExcelTimestampValueAsDateTimeValue</a> ($nodeValue, $cellStyleId)</td></tr>
 <tr class="memdesc:a362f5ff374507141eca5760f6ff66f54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a cell's PHP DateTime value, associated to the given timestamp.  <br /></td></tr>
@@ -334,11 +334,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$shouldUse1904Dates</
 </table>
 </div><div class="memdoc">
 
-<p>Returns a cell's PHP Date value, associated to the given stored nodeValue. </p>
+<p>Returns a cell's PHP <a class="el" href="../../de/db5/class_date.html" title="Date Parser.">Date</a> value, associated to the given stored nodeValue. </p>
 <dl class="section see"><dt>See also</dt><dd>ECMA-376 Part 1 - §18.17.4</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$nodeValue</td><td>ISO 8601 Date string</td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$nodeValue</td><td>ISO 8601 <a class="el" href="../../de/db5/class_date.html" title="Date Parser.">Date</a> string</td></tr>
   </table>
   </dd>
 </dl>
@@ -391,7 +391,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$shouldUse1904Dates</
 </table>
 </div><div class="memdoc">
 
-<p>Returns a cell's PHP Date value, associated to the given timestamp. </p>
+<p>Returns a cell's PHP <a class="el" href="../../de/db5/class_date.html" title="Date Parser.">Date</a> value, associated to the given timestamp. </p>
 <p>NOTE: The timestamp is a float representing the number of days since the base Excel date: Dec 30th 1899, 1900 or Jan 1st, 1904, depending on the Workbook setting. NOTE: The timestamp can also represent a time, if it is a value between 0 and 1.</p>
 <dl class="section see"><dt>See also</dt><dd>ECMA-376 Part 1 - §18.17.4</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -727,7 +727,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$shouldUse1904Dates</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:11:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:18:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

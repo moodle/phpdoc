@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -67,11 +67,11 @@ $(function() {
   <tr class="odd"><td class="entry"><a class="el" href="../../de/d7c/classcore__h5p__generator.html#af9a05cd0ecc09da0cb9d56896f79f051">create_contents_libraries_record</a>(string $h5pid, int $libid, string $dependencytype='preloaded')</td><td class="entry"><a class="el" href="../../de/d7c/classcore__h5p__generator.html">core_h5p_generator</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../de/d7c/classcore__h5p__generator.html#a4181d7573688fed17aa778eb0624a00c">create_export_file</a>(string $filename, int $contextid, string $component, string $filearea, int $typeurl=self::WSPLUGINFILE)</td><td class="entry"><a class="el" href="../../de/d7c/classcore__h5p__generator.html">core_h5p_generator</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../de/d7c/classcore__h5p__generator.html#a6b6962781cbc1a2e03a1186e612a4f64">create_file</a>(string $file, string $content='')</td><td class="entry"><a class="el" href="../../de/d7c/classcore__h5p__generator.html">core_h5p_generator</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../de/d7c/classcore__h5p__generator.html#a8aa29b28dfa146f5b60a10272475576b">create_h5p_record</a>(int $mainlibid, string $jsoncontent=null, string $filtered=null)</td><td class="entry"><a class="el" href="../../de/d7c/classcore__h5p__generator.html">core_h5p_generator</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../de/d7c/classcore__h5p__generator.html#a36161057857f6beac5e22006c6e45fd4">create_h5p_record</a>(int $mainlibid, string $jsoncontent=null, string $filtered=null, ?array $filerecord=null)</td><td class="entry"><a class="el" href="../../de/d7c/classcore__h5p__generator.html">core_h5p_generator</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../de/d7c/classcore__h5p__generator.html#ae3ea825dca2fe9d85efb05aa97314b44">create_library</a>(string $uploaddirectory, int $libraryid, string $machinename, int $majorversion, int $minorversion, ?array $langs=[])</td><td class="entry"><a class="el" href="../../de/d7c/classcore__h5p__generator.html">core_h5p_generator</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../de/d7c/classcore__h5p__generator.html#a3ad417564a004cd0bb64a46bf081128f">create_library_dependency_record</a>(int $libid, int $requiredlibid, string $dependencytype='preloaded')</td><td class="entry"><a class="el" href="../../de/d7c/classcore__h5p__generator.html">core_h5p_generator</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../de/d7c/classcore__h5p__generator.html#a43dd0e32900e1a525f8c96c69cf5ee55">create_library_record</a>(string $machinename, string $title, int $majorversion=1, int $minorversion=0, int $patchversion=1, string $semantics='', string $addto=null, string $tutorial=null, string $example=null, bool $enabled=true, int $runnable=1)</td><td class="entry"><a class="el" href="../../de/d7c/classcore__h5p__generator.html">core_h5p_generator</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../de/d7c/classcore__h5p__generator.html#a8c3caab909fca4d21f5acee6ab95c365">generate_h5p_data</a>(bool $createlibraryfiles=false)</td><td class="entry"><a class="el" href="../../de/d7c/classcore__h5p__generator.html">core_h5p_generator</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../de/d7c/classcore__h5p__generator.html#a2f7fb30776cc0c99b187c96a4b2157a9">generate_h5p_data</a>(bool $createlibraryfiles=false, ?array $filerecord=null)</td><td class="entry"><a class="el" href="../../de/d7c/classcore__h5p__generator.html">core_h5p_generator</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../de/d7c/classcore__h5p__generator.html#a87821a9ae723920d07a0df11c0e222d7">PLUGINFILE</a></td><td class="entry"><a class="el" href="../../de/d7c/classcore__h5p__generator.html">core_h5p_generator</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d5/dfb/classcomponent__generator__base.html#a81093fef9b263083e0a5b097744c27d1">reset</a>()</td><td class="entry"><a class="el" href="../../d5/dfb/classcomponent__generator__base.html">component_generator_base</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../d5/dfb/classcomponent__generator__base.html#a329f03482f108614994d88593d1cf71a">set_user</a>(?stdClass $user=null)</td><td class="entry"><a class="el" href="../../d5/dfb/classcomponent__generator__base.html">component_generator_base</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
@@ -80,7 +80,7 @@ $(function() {
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:09:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:14:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

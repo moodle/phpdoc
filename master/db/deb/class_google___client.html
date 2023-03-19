@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -146,9 +146,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac6343d2ef2fffb41a2430efafdb80e35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the auth config from the JSON file in the path provided.  <br /></td></tr>
 <tr class="separator:ac6343d2ef2fffb41a2430efafdb80e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85eb00d12fe38852ce3b0d353240f567"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/deb/class_google___client.html#a85eb00d12fe38852ce3b0d353240f567">setCache</a> (<a class="el" href="../../d4/d29/class_google___cache___abstract.html">Google_Cache_Abstract</a> $<a class="el" href="../../d3/d3d/classcache.html">cache</a>)</td></tr>
-<tr class="memdesc:a85eb00d12fe38852ce3b0d353240f567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Cache object.  <br /></td></tr>
+<tr class="memdesc:a85eb00d12fe38852ce3b0d353240f567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the <a class="el" href="../../dc/d67/class_cache.html" title="Used to create cache objects.">Cache</a> object.  <br /></td></tr>
 <tr class="separator:a85eb00d12fe38852ce3b0d353240f567"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39ab99a77cfa420f15429d0faca9b9b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/deb/class_google___client.html#a39ab99a77cfa420f15429d0faca9b9b3">setClassConfig</a> ($class, $config, $<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>=null)</td></tr>
+<tr class="memitem:a39ab99a77cfa420f15429d0faca9b9b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/deb/class_google___client.html#a39ab99a77cfa420f15429d0faca9b9b3">setClassConfig</a> ($class, $config, $value=null)</td></tr>
 <tr class="memdesc:a39ab99a77cfa420f15429d0faca9b9b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set configuration specific to a given class.  <br /></td></tr>
 <tr class="separator:a39ab99a77cfa420f15429d0faca9b9b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61e3b83fbd7e801fe1b86fe03bf2f336"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/deb/class_google___client.html#a61e3b83fbd7e801fe1b86fe03bf2f336">setClientId</a> ($clientId)</td></tr>
@@ -499,7 +499,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$requestedScopes</b>
 </div><div class="memdoc">
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../d4/d29/class_google___cache___abstract.html">Google_Cache_Abstract</a></td><td>Cache implementation </td></tr>
+    <tr><td class="paramname"><a class="el" href="../../d4/d29/class_google___cache___abstract.html">Google_Cache_Abstract</a></td><td><a class="el" href="../../dc/d67/class_cache.html" title="Used to create cache objects.">Cache</a> implementation </td></tr>
   </table>
   </dd>
 </dl>
@@ -725,7 +725,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$requestedScopes</b>
 <p>Uses that and the given array of scopes to return an assertion credential for use with refreshTokenWithAssertionCredential.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$jsonLocation</td><td>File location of the project-key.json. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$jsonLocation</td><td><a class="el" href="../../d1/d31/class_file.html" title="Caches data to the filesystem.">File</a> location of the project-key.json. </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$scopes</td><td>The scopes to assert. </td></tr>
   </table>
   </dd>
@@ -1056,7 +1056,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$requestedScopes</b>
       </table>
 </div><div class="memdoc">
 
-<p>Set the Cache object. </p>
+<p>Set the <a class="el" href="../../dc/d67/class_cache.html" title="Used to create cache objects.">Cache</a> object. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="../../d4/d29/class_google___cache___abstract.html">Google_Cache_Abstract</a></td><td class="paramname">$cache</td><td></td></tr>
@@ -1663,7 +1663,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$requestedScopes</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:09:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:14:57 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

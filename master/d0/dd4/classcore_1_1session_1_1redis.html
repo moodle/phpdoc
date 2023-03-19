@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -67,7 +67,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Redis based session handler.  
+<p><a class="el" href="../../d7/d0a/class_redis.html" title="Caches data to redis.">Redis</a> based session handler.  
  <a href="../../d0/dd4/classcore_1_1session_1_1redis.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for core\session\redis:</div>
@@ -178,12 +178,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$compressor</b> = self
 <tr class="memdesc:abed5758ee5decd52ca7e4b98fae6e6c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">$compressor The compressor to use <br /></td></tr>
 <tr class="separator:abed5758ee5decd52ca7e4b98fae6e6c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f5dcd20ea3fe193527c54f728f2b10e"><td class="memItemLeft" align="right" valign="top"><a id="a7f5dcd20ea3fe193527c54f728f2b10e" name="a7f5dcd20ea3fe193527c54f728f2b10e"></a>
-Redis&#160;</td><td class="memItemRight" valign="bottom"><b>$connection</b> = null</td></tr>
+<a class="el" href="../../d7/d0a/class_redis.html">Redis</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$connection</b> = null</td></tr>
 <tr class="memdesc:a7f5dcd20ea3fe193527c54f728f2b10e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection. <br /></td></tr>
 <tr class="separator:a7f5dcd20ea3fe193527c54f728f2b10e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01e42afcc3f9cd42aa6f4c1654edf335"><td class="memItemLeft" align="right" valign="top"><a id="a01e42afcc3f9cd42aa6f4c1654edf335" name="a01e42afcc3f9cd42aa6f4c1654edf335"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>$database</b> = 0</td></tr>
-<tr class="memdesc:a01e42afcc3f9cd42aa6f4c1654edf335"><td class="mdescLeft">&#160;</td><td class="mdescRight">$database the Redis database to store sesions in <br /></td></tr>
+<tr class="memdesc:a01e42afcc3f9cd42aa6f4c1654edf335"><td class="mdescLeft">&#160;</td><td class="mdescRight">$database the <a class="el" href="../../d7/d0a/class_redis.html" title="Caches data to redis.">Redis</a> database to store sesions in <br /></td></tr>
 <tr class="separator:a01e42afcc3f9cd42aa6f4c1654edf335"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4253ebbdb5ff59534d88cfae79b443e2"><td class="memItemLeft" align="right" valign="top"><a id="a4253ebbdb5ff59534d88cfae79b443e2" name="a4253ebbdb5ff59534d88cfae79b443e2"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$host</b> = ''</td></tr>
@@ -228,8 +228,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timeout</b></td></tr>
 <tr class="separator:a0dadf983e200080b56aabb5754a3a257"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Redis based session handler. </p>
-<p>The default Redis session handler does not handle locking in 2.2.7, so we have written a php session handler that uses locking. The places where locking is used was modeled from the memcached code that is used in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> <a href="https://github.com/php-memcached-dev/php-memcached/blob/master/php_memcached_session.c">https://github.com/php-memcached-dev/php-memcached/blob/master/php_memcached_session.c</a></p>
+<div class="textblock"><p><a class="el" href="../../d7/d0a/class_redis.html" title="Caches data to redis.">Redis</a> based session handler. </p>
+<p>The default <a class="el" href="../../d7/d0a/class_redis.html" title="Caches data to redis.">Redis</a> session handler does not handle locking in 2.2.7, so we have written a php session handler that uses locking. The places where locking is used was modeled from the memcached code that is used in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> <a href="https://github.com/php-memcached-dev/php-memcached/blob/master/php_memcached_session.c">https://github.com/php-memcached-dev/php-memcached/blob/master/php_memcached_session.c</a></p>
 <dl class="section copyright"><dt>Copyright</dt><dd>2016 Russell Smith </dd></dl>
 <dl class="section user"><dt>License</dt><dd><a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a> GNU GPL v3 or later </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -336,7 +336,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timeout</b></td></tr>
 </div><div class="memdoc">
 
 <p>Garbage collect sessions. </p>
-<p>We don't we any as Redis does it for us.</p>
+<p>We don't we any as <a class="el" href="../../d7/d0a/class_redis.html" title="Caches data to redis.">Redis</a> does it for us.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">integer</td><td class="paramname">$maxlifetime</td><td>All sessions older than this should be removed. </td></tr>
@@ -345,7 +345,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timeout</b></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">bool</td><td>true, as Redis handles expiry for us. </td></tr>
+    <tr><td class="paramname">bool</td><td>true, as <a class="el" href="../../d7/d0a/class_redis.html" title="Caches data to redis.">Redis</a> handles expiry for us. </td></tr>
   </table>
   </dd>
 </dl>
@@ -426,7 +426,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timeout</b></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">RedisException</td><td>when we are unable to talk to the Redis server. </td></tr>
+    <tr><td class="paramname">RedisException</td><td>when we are unable to talk to the <a class="el" href="../../d7/d0a/class_redis.html" title="Caches data to redis.">Redis</a> server. </td></tr>
   </table>
   </dd>
 </dl>
@@ -822,7 +822,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timeout</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:10:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:16:57 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

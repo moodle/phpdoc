@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -85,7 +85,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a289f4d5149534d7186c4d8ed2146417f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a Cloud SQL instance.  <br /></td></tr>
 <tr class="separator:a289f4d5149534d7186c4d8ed2146417f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07d46e8683d3f5b1f5b6896b94ec272b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_google___service___s_q_l_admin___instances___resource.html#a07d46e8683d3f5b1f5b6896b94ec272b">export</a> ($project, $instance, <a class="el" href="../../db/d4d/class_google___service___s_q_l_admin___instances_export_request.html">Google_Service_SQLAdmin_InstancesExportRequest</a> $postBody, $optParams=array())</td></tr>
-<tr class="memdesc:a07d46e8683d3f5b1f5b6896b94ec272b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports data from a Cloud SQL instance to a Google Cloud Storage bucket as a MySQL dump file.  <br /></td></tr>
+<tr class="memdesc:a07d46e8683d3f5b1f5b6896b94ec272b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports data from a Cloud SQL instance to a Google Cloud Storage bucket as a <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> dump file.  <br /></td></tr>
 <tr class="separator:a07d46e8683d3f5b1f5b6896b94ec272b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb3235b7dbda23d82db284ec623c6a03"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_google___service___s_q_l_admin___instances___resource.html#afb3235b7dbda23d82db284ec623c6a03">failover</a> ($project, $instance, <a class="el" href="../../dc/dcc/class_google___service___s_q_l_admin___instances_failover_request.html">Google_Service_SQLAdmin_InstancesFailoverRequest</a> $postBody, $optParams=array())</td></tr>
 <tr class="memdesc:afb3235b7dbda23d82db284ec623c6a03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Failover the instance to its failover replica instance.  <br /></td></tr>
@@ -94,7 +94,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ade857f1f669531ed29c0bbf93e4bc480"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a resource containing information about a Cloud SQL instance.  <br /></td></tr>
 <tr class="separator:ade857f1f669531ed29c0bbf93e4bc480"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8f4ff7dc42ad9b7744f3a3631da7854"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_google___service___s_q_l_admin___instances___resource.html#ab8f4ff7dc42ad9b7744f3a3631da7854">import</a> ($project, $instance, <a class="el" href="../../d6/d3c/class_google___service___s_q_l_admin___instances_import_request.html">Google_Service_SQLAdmin_InstancesImportRequest</a> $postBody, $optParams=array())</td></tr>
-<tr class="memdesc:ab8f4ff7dc42ad9b7744f3a3631da7854"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imports data into a Cloud SQL instance from a MySQL dump file in Google Cloud Storage.  <br /></td></tr>
+<tr class="memdesc:ab8f4ff7dc42ad9b7744f3a3631da7854"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imports data into a Cloud SQL instance from a <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> dump file in Google Cloud Storage.  <br /></td></tr>
 <tr class="separator:ab8f4ff7dc42ad9b7744f3a3631da7854"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52c4dedbba5a8743839e45cff59fc348"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df0/class_google___service___s_q_l_admin___instances___resource.html#a52c4dedbba5a8743839e45cff59fc348">insert</a> ($project, <a class="el" href="../../d0/d1b/class_google___service___s_q_l_admin___database_instance.html">Google_Service_SQLAdmin_DatabaseInstance</a> $postBody, $optParams=array())</td></tr>
 <tr class="memdesc:a52c4dedbba5a8743839e45cff59fc348"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new Cloud SQL instance.  <br /></td></tr>
@@ -348,7 +348,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Exports data from a Cloud SQL instance to a Google Cloud Storage bucket as a MySQL dump file. </p>
+<p>Exports data from a Cloud SQL instance to a Google Cloud Storage bucket as a <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> dump file. </p>
 <p>(instances.export)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -515,7 +515,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Imports data into a Cloud SQL instance from a MySQL dump file in Google Cloud Storage. </p>
+<p>Imports data into a Cloud SQL instance from a <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> dump file in Google Cloud Storage. </p>
 <p>(instances.import)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1065,7 +1065,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:09:58 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:15:51 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

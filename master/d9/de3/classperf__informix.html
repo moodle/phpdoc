@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -239,7 +239,7 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d4/d38/_2home_2runner_2work_2phpdoc_2phpdoc_2_8moodle_2lib_2adodb_2adodb-perf_8inc_8php-example.html#a9">/home/runner/work/phpdoc/phpdoc/.moodle/lib/adodb/adodb-perf.inc.php</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d4/d38/_2home_2runner_2work_2phpdoc_2phpdoc_2_8moodle_2lib_2adodb_2adodb-perf_8inc_8php-example.html#a8">/home/runner/work/phpdoc/phpdoc/.moodle/lib/adodb/adodb-perf.inc.php</a>.</dd>
 </dl>
 
 </div>
@@ -294,7 +294,7 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d4/d38/_2home_2runner_2work_2phpdoc_2phpdoc_2_8moodle_2lib_2adodb_2adodb-perf_8inc_8php-example.html#a8">/home/runner/work/phpdoc/phpdoc/.moodle/lib/adodb/adodb-perf.inc.php</a>.</dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d4/d38/_2home_2runner_2work_2phpdoc_2phpdoc_2_8moodle_2lib_2adodb_2adodb-perf_8inc_8php-example.html#a7">/home/runner/work/phpdoc/phpdoc/.moodle/lib/adodb/adodb-perf.inc.php</a>.</dd>
 </dl>
 
 </div>
@@ -361,9 +361,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= array(</div>
 <div class="line">    <span class="stringliteral">&#39;Ratios&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;data cache hit ratio&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;RATIOH&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;data cache hit ratio&#39;</span> =&gt; array(<span class="stringliteral">&#39;RATIOH&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&quot;select round((1-(wt.value / (rd.value + wr.value)))*100,2)</span></div>
 <div class="line"><span class="stringliteral">        from sysmaster:sysprofile wr, sysmaster:sysprofile rd, sysmaster:sysprofile wt</span></div>
 <div class="line"><span class="stringliteral">        where rd.name = &#39;pagreads&#39; and</span></div>
@@ -371,23 +371,22 @@ Public Attributes</h2></td></tr>
 <div class="line"><span class="stringliteral">        wt.name = &#39;buffwts&#39;&quot;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;=WarnCacheRatio&#39;</span>),</div>
 <div class="line">    <span class="stringliteral">&#39;IO&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;data reads&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;IO&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;data reads&#39;</span> =&gt; array(<span class="stringliteral">&#39;IO&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&quot;select value from sysmaster:sysprofile where name=&#39;pagreads&#39;&quot;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;Page reads&#39;</span>),</div>
 <div class="line"> </div>
-<div class="line">        <span class="stringliteral">&#39;data writes&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;IO&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;data writes&#39;</span> =&gt; array(<span class="stringliteral">&#39;IO&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&quot;select value from sysmaster:sysprofile where name=&#39;pagwrites&#39;&quot;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;Page writes&#39;</span>),</div>
 <div class="line"> </div>
 <div class="line">    <span class="stringliteral">&#39;Connections&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;current connections&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;SESS&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;current connections&#39;</span> =&gt; array(<span class="stringliteral">&#39;SESS&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;select count(*) from sysmaster:syssessions&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;Number of sessions&#39;</span>),</div>
 <div class="line"> </div>
 <div class="line">    <span class="keyword">false</span></div>
 <div class="line"> </div>
 <div class="line">    )</div>
-<div class="ttc" id="anamespacearray_html"><div class="ttname"><a href="../../d7/df9/namespacearray.html">array</a></div><div class="ttdoc">('') &amp;#160;</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -397,7 +396,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:10:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:16:10 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

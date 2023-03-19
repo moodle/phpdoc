@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -388,7 +388,7 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>NODETYPE_LEAF</b
 <tr class="separator:a5518b968638b1df8dfed6bdc483d9143"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af13a5f1fff450a11bb8a23eb6f6751ac"><td class="memItemLeft" align="right" valign="top"><a id="af13a5f1fff450a11bb8a23eb6f6751ac" name="af13a5f1fff450a11bb8a23eb6f6751ac"></a>
 int const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_CATEGORY</b> = 10</td></tr>
-<tr class="memdesc:af13a5f1fff450a11bb8a23eb6f6751ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category node type 10. <br /></td></tr>
+<tr class="memdesc:af13a5f1fff450a11bb8a23eb6f6751ac"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d7/df3/class_category.html" title="Manages all category-related data.">Category</a> node type 10. <br /></td></tr>
 <tr class="separator:af13a5f1fff450a11bb8a23eb6f6751ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec0f99e8471e1d7012573b1ea6317ec1"><td class="memItemLeft" align="right" valign="top"><a id="aec0f99e8471e1d7012573b1ea6317ec1" name="aec0f99e8471e1d7012573b1ea6317ec1"></a>
 int const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_CONTAINER</b> = 90</td></tr>
@@ -404,7 +404,7 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_CUSTOM</b> 
 <tr class="separator:a3bc9409dfc5aa930819a542e15cb1ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b61960522e409fdaac2609961a04c19"><td class="memItemLeft" align="right" valign="top"><a id="a7b61960522e409fdaac2609961a04c19" name="a7b61960522e409fdaac2609961a04c19"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_MY_CATEGORY</b> = 11</td></tr>
-<tr class="memdesc:a7b61960522e409fdaac2609961a04c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">var int Category displayed in MyHome navigation node <br /></td></tr>
+<tr class="memdesc:a7b61960522e409fdaac2609961a04c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">var int <a class="el" href="../../d7/df3/class_category.html" title="Manages all category-related data.">Category</a> displayed in MyHome navigation node <br /></td></tr>
 <tr class="separator:a7b61960522e409fdaac2609961a04c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15d975fd534b4d450ed5116af878a01a"><td class="memItemLeft" align="right" valign="top">int const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de3/classnavigation__node.html#a15d975fd534b4d450ed5116af878a01a">TYPE_RESOURCE</a> = 50</td></tr>
 <tr class="memdesc:a15d975fd534b4d450ed5116af878a01a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resource node type, e.g.  <br /></td></tr>
@@ -857,7 +857,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>$loadadmintree
 </div><div class="memdoc">
 
 <p>Walk the tree building up a list of all the flat navigation nodes. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000717">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000727">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="../../d0/d23/classflat__navigation.html" title="Class used to generate a collection of navigation nodes most closely related to the current page.">flat_navigation</a></td><td class="paramname">$nodes</td><td>List of the found flat navigation nodes. </td></tr>
@@ -2342,10 +2342,9 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>$loadadmintree
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(0 =&gt; <span class="stringliteral">&#39;system&#39;</span>, 10 =&gt; <span class="stringliteral">&#39;category&#39;</span>, 20 =&gt; <span class="stringliteral">&#39;course&#39;</span>, 30 =&gt; <span class="stringliteral">&#39;structure&#39;</span>, 40 =&gt; <span class="stringliteral">&#39;activity&#39;</span>,</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= array(0 =&gt; <span class="stringliteral">&#39;system&#39;</span>, 10 =&gt; <span class="stringliteral">&#39;category&#39;</span>, 20 =&gt; <span class="stringliteral">&#39;course&#39;</span>, 30 =&gt; <span class="stringliteral">&#39;structure&#39;</span>, 40 =&gt; <span class="stringliteral">&#39;activity&#39;</span>,</div>
 <div class="line">                                  50 =&gt; <span class="stringliteral">&#39;resource&#39;</span>, 60 =&gt; <span class="stringliteral">&#39;custom&#39;</span>, 70 =&gt; <span class="stringliteral">&#39;setting&#39;</span>, 71 =&gt; <span class="stringliteral">&#39;siteadmin&#39;</span>, 80 =&gt; <span class="stringliteral">&#39;user&#39;</span>,</div>
 <div class="line">                                  90 =&gt; <span class="stringliteral">&#39;container&#39;</span>)</div>
-<div class="ttc" id="anamespacearray_html"><div class="ttname"><a href="../../d7/df9/namespacearray.html">array</a></div><div class="ttdoc">('') &amp;#160;</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2405,7 +2404,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>$loadadmintree
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:09:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:14:56 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

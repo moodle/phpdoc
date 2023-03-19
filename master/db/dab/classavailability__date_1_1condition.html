@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -69,7 +69,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Date condition.  
+<p><a class="el" href="../../de/db5/class_date.html" title="Date Parser.">Date</a> condition.  
  <a href="../../db/dab/classavailability__date_1_1condition.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for availability_date\condition:</div>
@@ -191,7 +191,7 @@ Static Protected Member Functions</h2></td></tr>
 <tr class="memitem:abab427b2076109eaf2ccd1f3803b329a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dab/classavailability__date_1_1condition.html#abab427b2076109eaf2ccd1f3803b329a">is_midnight</a> ($time)</td></tr>
 <tr class="memdesc:abab427b2076109eaf2ccd1f3803b329a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a given time refers exactly to midnight (in current user timezone).  <br /></td></tr>
 <tr class="separator:abab427b2076109eaf2ccd1f3803b329a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97ba6eab3b91bfddcbf90cd0e31de3bd"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dea/classcore__availability_1_1tree__node.html#a97ba6eab3b91bfddcbf90cd0e31de3bd">unique_sql_parameter</a> (array &amp;$params, $<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
+<tr class="memitem:a97ba6eab3b91bfddcbf90cd0e31de3bd"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dea/classcore__availability_1_1tree__node.html#a97ba6eab3b91bfddcbf90cd0e31de3bd">unique_sql_parameter</a> (array &amp;$params, $value)</td></tr>
 <tr class="memdesc:a97ba6eab3b91bfddcbf90cd0e31de3bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Utility function for generating SQL parameters (because we can't use ? parameters because get_enrolled_sql has infected us with horrible named parameters).  <br /></td></tr>
 <tr class="separator:a97ba6eab3b91bfddcbf90cd0e31de3bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -203,7 +203,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniquesqlparam
 <tr class="separator:ad4a32aa826eb99dad0d837e8ba681372"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Date condition. </p>
+<div class="textblock"><p><a class="el" href="../../de/db5/class_date.html" title="Date Parser.">Date</a> condition. </p>
 <dl class="section copyright"><dt>Copyright</dt><dd>2014 The Open University </dd></dl>
 <dl class="section user"><dt>License</dt><dd><a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a> GNU GPL v3 or later </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
@@ -328,7 +328,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniquesqlparam
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">bool</td><td class="paramname">$not</td><td>Set true if we are inverting the condition </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../d8/d46/classcore__availability_1_1info.html" title="Base class for conditional availability information (for module or section).">core_availability::info</a></td><td class="paramname">$info</td><td>Item we're checking </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../d8/d46/classcore__availability_1_1info.html" title="Base class for conditional availability information (for module or section).">core_availability::info</a></td><td class="paramname">$info</td><td><a class="el" href="../../dc/d32/class_item.html" title="Manages all item-related data.">Item</a> we're checking </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$grabthelot</td><td>Performance hint: if true, caches information required for all course-modules, to make the front page and similar pages work more quickly (works only for current user) </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>User ID to check availability for </td></tr>
   </table>
@@ -581,7 +581,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniquesqlparam
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$users</td><td>Array of userid =&gt; object </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$not</td><td>True if this condition is applying in negative mode </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../d8/d46/classcore__availability_1_1info.html" title="Base class for conditional availability information (for module or section).">core_availability::info</a></td><td class="paramname">$info</td><td>Item we're checking </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../d8/d46/classcore__availability_1_1info.html" title="Base class for conditional availability information (for module or section).">core_availability::info</a></td><td class="paramname">$info</td><td><a class="el" href="../../dc/d32/class_item.html" title="Manages all item-related data.">Item</a> we're checking </td></tr>
     <tr><td class="paramtype">capability_checker</td><td class="paramname">$checker</td><td></td></tr>
   </table>
   </dd>
@@ -679,7 +679,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniquesqlparam
   <table class="params">
     <tr><td class="paramtype">bool</td><td class="paramname">$full</td><td>Set true if this is the 'full information' view </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$not</td><td>Set true if we are inverting the condition </td></tr>
-    <tr><td class="paramtype">info</td><td class="paramname">$info</td><td>Item we're checking </td></tr>
+    <tr><td class="paramtype">info</td><td class="paramname">$info</td><td><a class="el" href="../../dc/d32/class_item.html" title="Manages all item-related data.">Item</a> we're checking </td></tr>
   </table>
   </dd>
 </dl>
@@ -880,7 +880,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniquesqlparam
   <table class="params">
     <tr><td class="paramtype">bool</td><td class="paramname">$full</td><td>Set true if this is the 'full information' view </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$not</td><td>Set true if we are inverting the condition </td></tr>
-    <tr><td class="paramtype">info</td><td class="paramname">$info</td><td>Item we're checking </td></tr>
+    <tr><td class="paramtype">info</td><td class="paramname">$info</td><td><a class="el" href="../../dc/d32/class_item.html" title="Manages all item-related data.">Item</a> we're checking </td></tr>
   </table>
   </dd>
 </dl>
@@ -1012,7 +1012,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniquesqlparam
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">bool</td><td class="paramname">$not</td><td>True if this condition is applying in negative mode </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../d8/d46/classcore__availability_1_1info.html" title="Base class for conditional availability information (for module or section).">core_availability::info</a></td><td class="paramname">$info</td><td>Item we're checking </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../d8/d46/classcore__availability_1_1info.html" title="Base class for conditional availability information (for module or section).">core_availability::info</a></td><td class="paramname">$info</td><td><a class="el" href="../../dc/d32/class_item.html" title="Manages all item-related data.">Item</a> we're checking </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$onlyactive</td><td>If true, only returns active enrolments </td></tr>
   </table>
   </dd>
@@ -1191,7 +1191,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniquesqlparam
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">bool</td><td class="paramname">$not</td><td>Set true if we are inverting the condition </td></tr>
-    <tr><td class="paramtype">info</td><td class="paramname">$info</td><td>Item we're checking </td></tr>
+    <tr><td class="paramtype">info</td><td class="paramname">$info</td><td><a class="el" href="../../dc/d32/class_item.html" title="Manages all item-related data.">Item</a> we're checking </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$grabthelot</td><td>Performance hint: if true, caches information required for all course-modules, to make the front page and similar pages work more quickly (works only for current user) </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>User ID to check availability for </td></tr>
   </table>
@@ -1395,7 +1395,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniquesqlparam
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">string</td><td>Date </td></tr>
+    <tr><td class="paramname">string</td><td><a class="el" href="../../de/db5/class_date.html" title="Date Parser.">Date</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -1628,7 +1628,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniquesqlparam
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:10:32 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:16:32 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

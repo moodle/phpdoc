@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -106,7 +106,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af0346da326609e211f8e44fc547f6af4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df9/classcachestore__file.html#af0346da326609e211f8e44fc547f6af4">delete_many</a> (array $keys)</td></tr>
 <tr class="memdesc:af0346da326609e211f8e44fc547f6af4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes several keys from the cache in a single action.  <br /></td></tr>
 <tr class="separator:af0346da326609e211f8e44fc547f6af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84b02257f7ac72d9fdf07c5234700d62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d4b/classcache__store.html#a84b02257f7ac72d9fdf07c5234700d62">estimate_stored_size</a> ($key, $<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
+<tr class="memitem:a84b02257f7ac72d9fdf07c5234700d62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d4b/classcache__store.html#a84b02257f7ac72d9fdf07c5234700d62">estimate_stored_size</a> ($key, $value)</td></tr>
 <tr class="memdesc:a84b02257f7ac72d9fdf07c5234700d62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimates the storage size used within this cache if the given value is stored with the given key.  <br /></td></tr>
 <tr class="separator:a84b02257f7ac72d9fdf07c5234700d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae20f39292d2028afc5cc1379a44ce53d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df9/classcachestore__file.html#ae20f39292d2028afc5cc1379a44ce53d">find_all</a> ()</td></tr>
@@ -119,7 +119,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a21003853260ac7b465ff1bb0b81e4d5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves an item from the cache store given its key.  <br /></td></tr>
 <tr class="separator:a21003853260ac7b465ff1bb0b81e4d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd3628777e08caadae1600093b922e02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df9/classcachestore__file.html#afd3628777e08caadae1600093b922e02">get_last_io_bytes</a> ()</td></tr>
-<tr class="memdesc:afd3628777e08caadae1600093b922e02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets bytes read by last <a class="el" href="../../d8/ded/group___simple_pie.html#ga5ba61361bf0695a285bbaefefc427191" title="Get the object.">get()</a> or get_many(), or written by <a class="el" href="../../dc/d71/group___imap___client.html#ga0dae8e91a93f347875c2acc9129ae73b" title="Store information in cache.">set()</a> or set_many().  <br /></td></tr>
+<tr class="memdesc:afd3628777e08caadae1600093b922e02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets bytes read by last <a class="el" href="../../dc/d71/group___imap___client.html#gafcf303080696d20cffeed262f4ebc4bb" title="Get information from the cache.">get()</a> or get_many(), or written by <a class="el" href="../../dc/d71/group___imap___client.html#ga0dae8e91a93f347875c2acc9129ae73b" title="Store information in cache.">set()</a> or set_many().  <br /></td></tr>
 <tr class="separator:afd3628777e08caadae1600093b922e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada13c8c88aac8200eb9d73d2d60e80ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df9/classcachestore__file.html#ada13c8c88aac8200eb9d73d2d60e80ad">get_many</a> ($keys)</td></tr>
 <tr class="memdesc:ada13c8c88aac8200eb9d73d2d60e80ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves several items from the cache store in a single transaction.  <br /></td></tr>
@@ -421,7 +421,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$prescan</b> = false<
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$key</td><td>Lock identifier </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$ownerid</td><td>Cache identifier </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$ownerid</td><td><a class="el" href="../../dc/d67/class_cache.html" title="Used to create cache objects.">Cache</a> identifier </td></tr>
   </table>
   </dd>
 </dl>
@@ -503,7 +503,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$prescan</b> = false<
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">stdClass</td><td>Cache details </td></tr>
+    <tr><td class="paramname">stdClass</td><td><a class="el" href="../../dc/d67/class_cache.html" title="Used to create cache objects.">Cache</a> details </td></tr>
   </table>
   </dd>
 </dl>
@@ -577,7 +577,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$prescan</b> = false<
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$key</td><td>Lock identifier </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$ownerid</td><td>Cache identifier </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$ownerid</td><td><a class="el" href="../../dc/d67/class_cache.html" title="Used to create cache objects.">Cache</a> identifier </td></tr>
   </table>
   </dd>
 </dl>
@@ -1069,7 +1069,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$prescan</b> = false<
       </table>
 </div><div class="memdoc">
 
-<p>Gets bytes read by last <a class="el" href="../../d8/ded/group___simple_pie.html#ga5ba61361bf0695a285bbaefefc427191" title="Get the object.">get()</a> or get_many(), or written by <a class="el" href="../../dc/d71/group___imap___client.html#ga0dae8e91a93f347875c2acc9129ae73b" title="Store information in cache.">set()</a> or set_many(). </p>
+<p>Gets bytes read by last <a class="el" href="../../dc/d71/group___imap___client.html#gafcf303080696d20cffeed262f4ebc4bb" title="Get information from the cache.">get()</a> or get_many(), or written by <a class="el" href="../../dc/d71/group___imap___client.html#ga0dae8e91a93f347875c2acc9129ae73b" title="Store information in cache.">set()</a> or set_many(). </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">int</td><td>Bytes read or written </td></tr>
@@ -1822,7 +1822,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$prescan</b> = false<
 </div><div class="memdoc">
 
 <p>Returns true if this cache store instance is both suitable for testing, and ready for testing. </p>
-<p>Cache stores that support being used as the default store for unit and acceptance testing should override this function and return true if there requirements have been met.</p>
+<p><a class="el" href="../../dc/d67/class_cache.html" title="Used to create cache objects.">Cache</a> stores that support being used as the default store for unit and acceptance testing should override this function and return true if there requirements have been met.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td></td></tr>
@@ -1864,7 +1864,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$prescan</b> = false<
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$key</td><td>Lock identifier </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$ownerid</td><td>Cache identifier </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$ownerid</td><td><a class="el" href="../../dc/d67/class_cache.html" title="Used to create cache objects.">Cache</a> identifier </td></tr>
   </table>
   </dd>
 </dl>
@@ -2409,7 +2409,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$prescan</b> = false<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:09:05 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:14:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

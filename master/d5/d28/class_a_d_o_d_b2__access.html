@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -96,7 +96,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a193f488689f27c916e8ea13ff1ae513d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add9a13c451dfa2c3abc9749e248bec3a"><td class="memItemLeft" align="right" valign="top"><a id="add9a13c451dfa2c3abc9749e248bec3a" name="add9a13c451dfa2c3abc9749e248bec3a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>_options</b> ($opts)</td></tr>
-<tr class="memdesc:add9a13c451dfa2c3abc9749e248bec3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sanitize options, so that array elements with no keys are promoted to keys. <br /></td></tr>
+<tr class="memdesc:add9a13c451dfa2c3abc9749e248bec3a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../db/d53/class_sanitize.html" title="Used for data cleanup and post-processing.">Sanitize</a> options, so that array elements with no keys are promoted to keys. <br /></td></tr>
 <tr class="separator:add9a13c451dfa2c3abc9749e248bec3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04b0af16b5a305514f2cb0d663e980cd"><td class="memItemLeft" align="right" valign="top"><a id="a04b0af16b5a305514f2cb0d663e980cd" name="a04b0af16b5a305514f2cb0d663e980cd"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>_tableSQL</b> ($tabname, $lines, $pkey, $tableoptions)</td></tr>
@@ -121,7 +121,7 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>AlterColumnSQL</b> ($tabname, $flds, $tableflds='', $tableoptions='')</td></tr>
 <tr class="separator:ac5e76f4241187a87781826a9a45eb383"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cb7b4d6e0e4d4b932dcb620af771f26"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d53/class_a_d_o_d_b___data_dict.html#a1cb7b4d6e0e4d4b932dcb620af771f26">changeTableSQL</a> ($tablename, $flds, $tableoptions=false, $dropOldFlds=false)</td></tr>
-<tr class="memdesc:a1cb7b4d6e0e4d4b932dcb620af771f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Florian Buzin [ easywe ]" &lt;florian.buzin::easywe.de&gt;  <br /></td></tr>
+<tr class="memdesc:a1cb7b4d6e0e4d4b932dcb620af771f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function changes/adds new fields to your table.  <br /></td></tr>
 <tr class="separator:a1cb7b4d6e0e4d4b932dcb620af771f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5017f60e2c6f7c634f9ab5c193102c68"><td class="memItemLeft" align="right" valign="top"><a id="a5017f60e2c6f7c634f9ab5c193102c68" name="a5017f60e2c6f7c634f9ab5c193102c68"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>createDatabase</b> ($dbname, $options=false)</td></tr>
@@ -287,7 +287,7 @@ Public Attributes</h2></td></tr>
 <p>Returns the actual type given a character code. </p>
 <p>C: varchar X: CLOB (character large object) or largest varchar size if CLOB is not supported C2: Multibyte varchar X2: Multibyte CLOB</p>
 <p>B: BLOB (binary large object)</p>
-<p>D: Date T: Date-time L: Integer field suitable for storing booleans (0 or 1) I: Integer F: Floating point number N: Numeric or decimal number </p>
+<p>D: <a class="el" href="../../de/db5/class_date.html" title="Date Parser.">Date</a> T: Date-time L: Integer field suitable for storing booleans (0 or 1) I: Integer F: Floating point number N: Numeric or decimal number </p>
 
 </div>
 </div>
@@ -404,8 +404,23 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>"Florian Buzin [ easywe ]" &lt;florian.buzin::easywe.de&gt; </p>
-<p>This function changes/adds new fields to your table. You don't have to know if the col is new or not. It will check on its own. </p>
+<p>This function changes/adds new fields to your table. </p>
+<p>You don't have to know if the col is new or not. It will check on its own.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$tablename</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$flds</td><td></td></tr>
+    <tr><td class="paramtype">string[]</td><td class="paramname">$tableoptions</td><td></td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$dropOldFlds</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string[]</td><td>Array of SQL Commands </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Reimplemented in <a class="el" href="../../de/de9/class_a_d_o_d_b2__db2.html#a8c8e5910475a24dbd85fcc4763def1f9">ADODB2_db2</a>.</p>
 
@@ -618,7 +633,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:08:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:14:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

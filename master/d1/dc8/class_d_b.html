@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -55,13 +55,23 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="../../d6/dca/class_d_b-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">DB Class Reference<div class="ingroups"><a class="el" href="../../dc/d2c/group___a_d_odb.html">ADOdb</a></div></div></div>
+  <div class="headertitle"><div class="title">DB Class Reference<div class="ingroups"><a class="el" href="../../dc/d2c/group___a_d_odb.html">ADOdb</a> &#124; <a class="el" href="../../d8/ded/group___simple_pie.html">SimplePie</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>The main "DB" class is simply a container class with some static methods for creating <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> objects as well as some utility functions common to all parts of <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a>.  
  <a href="../../d1/dc8/class_d_b.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for DB:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../d1/dc8/class_d_b.png" usemap="#DB_map" alt=""/>
+  <map id="DB_map" name="DB_map">
+<area href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database." alt="MySQL" shape="rect" coords="0,112,55,136"/>
+  </map>
+</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -77,18 +87,26 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a42a5688b2c82a2ed9801ad1942336d6c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc8/class_d_b.html#a42a5688b2c82a2ed9801ad1942336d6c">factory</a> ($type)</td></tr>
 <tr class="memdesc:a42a5688b2c82a2ed9801ad1942336d6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> object for the specified database type.  <br /></td></tr>
 <tr class="separator:a42a5688b2c82a2ed9801ad1942336d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bc5d2051c4fc422ffa4edf4b1a3612b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc8/class_d_b.html#a6bc5d2051c4fc422ffa4edf4b1a3612b">isError</a> ($<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
+<tr class="memitem:a6bc5d2051c4fc422ffa4edf4b1a3612b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc8/class_d_b.html#a6bc5d2051c4fc422ffa4edf4b1a3612b">isError</a> ($value)</td></tr>
 <tr class="memdesc:a6bc5d2051c4fc422ffa4edf4b1a3612b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tell whether a result code from a <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> method is an error.  <br /></td></tr>
 <tr class="separator:a6bc5d2051c4fc422ffa4edf4b1a3612b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d30e978abdf04aa6f4f870f14d39ebc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc8/class_d_b.html#a3d30e978abdf04aa6f4f870f14d39ebc">isWarning</a> ($<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
+<tr class="memitem:a3d30e978abdf04aa6f4f870f14d39ebc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc8/class_d_b.html#a3d30e978abdf04aa6f4f870f14d39ebc">isWarning</a> ($value)</td></tr>
 <tr class="memdesc:a3d30e978abdf04aa6f4f870f14d39ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tell whether a result code from a <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> method is a warning.  <br /></td></tr>
 <tr class="separator:a3d30e978abdf04aa6f4f870f14d39ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa23dbf0c20e9d39c53c572872ab7bd92"><td class="memItemLeft" align="right" valign="top"><a id="aa23dbf0c20e9d39c53c572872ab7bd92" name="aa23dbf0c20e9d39c53c572872ab7bd92"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>parseDSN</b> ($dsn)</td></tr>
 <tr class="separator:aa23dbf0c20e9d39c53c572872ab7bd92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:a9bfa4a52de5a94441b0bb2edd54ac057"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dc8/class_d_b.html#a9bfa4a52de5a94441b0bb2edd54ac057">prepare_simplepie_object_for_cache</a> ($data)</td></tr>
+<tr class="memdesc:a9bfa4a52de5a94441b0bb2edd54ac057"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper for database conversion.  <br /></td></tr>
+<tr class="separator:a9bfa4a52de5a94441b0bb2edd54ac057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The main "DB" class is simply a container class with some static methods for creating <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> objects as well as some utility functions common to all parts of <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a>. </p>
+<p><a class="el" href="../../d9/da0/interface_base.html" title="Base for cache objects.">Base</a> class for database-based caches.</p>
+<p>@subpackage Caching </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000909">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d5/db8/class_simple_pie.html" title="SimplePie.">SimplePie</a> 1.8.0, use implementation of "Psr::SimpleCache::CacheInterface" instead </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a92431aa580c180c84381be0e53133b43" name="a92431aa580c180c84381be0e53133b43"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a92431aa580c180c84381be0e53133b43">&#9670;&#160;</a></span>apiVersion()</h2>
@@ -290,13 +308,55 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a id="a9bfa4a52de5a94441b0bb2edd54ac057" name="a9bfa4a52de5a94441b0bb2edd54ac057"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bfa4a52de5a94441b0bb2edd54ac057">&#9670;&#160;</a></span>prepare_simplepie_object_for_cache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static DB::prepare_simplepie_object_for_cache </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper for database conversion. </p>
+<p>Converts a given {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d5/db8/class_simple_pie.html" title="SimplePie.">SimplePie</a>} object into data to be stored</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">SimplePie::SimplePie</td><td class="paramname">$data</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>First item is the serialized data for storage, second item is the unique ID for this item </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>lib/adodb/adodb-pear.inc.php</li>
+<li>lib/simplepie/src/Cache/DB.php</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:09:10 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:14:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

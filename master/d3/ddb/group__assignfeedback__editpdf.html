@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -156,9 +156,9 @@ global&#160;</td><td class="memItemRight" valign="bottom"><b>assignfeedback_edit
 <tr class="memitem:gac5c2b68f4b60dac62c056953264d53aa"><td class="memItemLeft" align="right" valign="top"><a id="gac5c2b68f4b60dac62c056953264d53aa" name="gac5c2b68f4b60dac62c056953264d53aa"></a>
 global&#160;</td><td class="memItemRight" valign="bottom"><b>$CFG</b></td></tr>
 <tr class="separator:gac5c2b68f4b60dac62c056953264d53aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga87b032cba06009e3467abf1c8018d960"><td class="memItemLeft" align="right" valign="top"><a id="ga87b032cba06009e3467abf1c8018d960" name="ga87b032cba06009e3467abf1c8018d960"></a>
+<tr class="memitem:ga3ded079791165f7a47954f667570aa0f"><td class="memItemLeft" align="right" valign="top"><a id="ga3ded079791165f7a47954f667570aa0f" name="ga3ded079791165f7a47954f667570aa0f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$description</b> = get_string('stampsdesc', 'assignfeedback_editpdf')</td></tr>
-<tr class="separator:ga87b032cba06009e3467abf1c8018d960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ga3ded079791165f7a47954f667570aa0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5d346e31b75d916e3bac9cb193bfc97f"><td class="memItemLeft" align="right" valign="top"><a id="ga5d346e31b75d916e3bac9cb193bfc97f" name="ga5d346e31b75d916e3bac9cb193bfc97f"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$link</b> = <a class="el" href="../../d6/db1/group__mod__wiki.html#ga18b3d5253ddc6145e9bc81e2337889f6">html_writer::link</a>($url, get_string('testgs', 'assignfeedback_editpdf'))</td></tr>
 <tr class="separator:ga5d346e31b75d916e3bac9cb193bfc97f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -354,17 +354,16 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
-<div class="line">    <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= array(</div>
+<div class="line">    array(</div>
 <div class="line">        <span class="stringliteral">&#39;eventname&#39;</span>   =&gt; <span class="stringliteral">&#39;\mod_assign\event\submission_created&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;callback&#39;</span>    =&gt; <span class="stringliteral">&#39;\assignfeedback_editpdf\event\observer::submission_created&#39;</span>,</div>
 <div class="line">    ),</div>
-<div class="line">    <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
+<div class="line">    array(</div>
 <div class="line">        <span class="stringliteral">&#39;eventname&#39;</span>   =&gt; <span class="stringliteral">&#39;\mod_assign\event\submission_updated&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;callback&#39;</span>    =&gt; <span class="stringliteral">&#39;\assignfeedback_editpdf\event\observer::submission_updated&#39;</span>,</div>
 <div class="line">    ),</div>
 <div class="line">)</div>
-<div class="ttc" id="anamespacearray_html"><div class="ttname"><a href="../../d7/df9/namespacearray.html">array</a></div><div class="ttdoc">('') &amp;#160;</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -380,15 +379,15 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= <span class="keyword">new</span> <a class="code hl_class" href="../../d5/d8b/classadmin__setting__configstoredfile.html">admin_setting_configstoredfile</a>($name, $title, $description, <span class="stringliteral">&#39;stamps&#39;</span>, 0,</div>
-<div class="line">    <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;maxfiles&#39;</span> =&gt; 8, <span class="stringliteral">&#39;accepted_types&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;image&#39;</span>)))</div>
-<div class="ttc" id="aclassadmin__setting__configstoredfile_html"><div class="ttname"><a href="../../d5/d8b/classadmin__setting__configstoredfile.html">admin_setting_configstoredfile</a></div><div class="ttdoc">Class used for uploading of one file into file storage, the file name is stored in config table.</div><div class="ttdef"><b>Definition:</b> adminlib.php:10546</div></div>
+<div class="line">    array(<span class="stringliteral">&#39;maxfiles&#39;</span> =&gt; 8, <span class="stringliteral">&#39;accepted_types&#39;</span> =&gt; array(<span class="stringliteral">&#39;image&#39;</span>)))</div>
+<div class="ttc" id="aclassadmin__setting__configstoredfile_html"><div class="ttname"><a href="../../d5/d8b/classadmin__setting__configstoredfile.html">admin_setting_configstoredfile</a></div><div class="ttdoc">Class used for uploading of one file into file storage, the file name is stored in config table.</div><div class="ttdef"><b>Definition:</b> adminlib.php:10424</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:08:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:14:25 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -77,7 +77,7 @@ Inheritance diagram for GuzzleHttp\Promise\RejectedPromise:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa245457845016b1057788faf634c8537"><td class="memItemLeft" align="right" valign="top"><a id="aa245457845016b1057788faf634c8537" name="aa245457845016b1057788faf634c8537"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>__construct</b> ($<a class="el" href="../../d8/ded/group___simple_pie.html#gae5486f649cbd951ac235cc991d491345">reason</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>__construct</b> ($reason)</td></tr>
 <tr class="separator:aa245457845016b1057788faf634c8537"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57da0985dd2da478314844a4a1b7d781"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d60/class_guzzle_http_1_1_promise_1_1_rejected_promise.html#a57da0985dd2da478314844a4a1b7d781">cancel</a> ()</td></tr>
 <tr class="memdesc:a57da0985dd2da478314844a4a1b7d781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancels the promise if possible.  <br /></td></tr>
@@ -88,10 +88,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a83b4819e3244c3f0ee82c636b54bb99c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d60/class_guzzle_http_1_1_promise_1_1_rejected_promise.html#a83b4819e3244c3f0ee82c636b54bb99c">otherwise</a> (callable $onRejected)</td></tr>
 <tr class="memdesc:a83b4819e3244c3f0ee82c636b54bb99c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a rejection handler callback to the promise, and returns a new promise resolving to the return value of the callback if it is called, or to its original fulfillment value if the promise is instead fulfilled.  <br /></td></tr>
 <tr class="separator:a83b4819e3244c3f0ee82c636b54bb99c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6890810c39d795507fef5d8be1a4d60d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d60/class_guzzle_http_1_1_promise_1_1_rejected_promise.html#a6890810c39d795507fef5d8be1a4d60d">reject</a> ($<a class="el" href="../../d8/ded/group___simple_pie.html#gae5486f649cbd951ac235cc991d491345">reason</a>)</td></tr>
+<tr class="memitem:a6890810c39d795507fef5d8be1a4d60d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d60/class_guzzle_http_1_1_promise_1_1_rejected_promise.html#a6890810c39d795507fef5d8be1a4d60d">reject</a> ($reason)</td></tr>
 <tr class="memdesc:a6890810c39d795507fef5d8be1a4d60d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reject the promise with the given reason.  <br /></td></tr>
 <tr class="separator:a6890810c39d795507fef5d8be1a4d60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ae165802820c8c9afa1d4d2697c3c58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d60/class_guzzle_http_1_1_promise_1_1_rejected_promise.html#a7ae165802820c8c9afa1d4d2697c3c58">resolve</a> ($<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
+<tr class="memitem:a7ae165802820c8c9afa1d4d2697c3c58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d60/class_guzzle_http_1_1_promise_1_1_rejected_promise.html#a7ae165802820c8c9afa1d4d2697c3c58">resolve</a> ($value)</td></tr>
 <tr class="memdesc:a7ae165802820c8c9afa1d4d2697c3c58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve the promise with the given value.  <br /></td></tr>
 <tr class="separator:a7ae165802820c8c9afa1d4d2697c3c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b91783cd3388e3aa66d0902c3cf4c49"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d60/class_guzzle_http_1_1_promise_1_1_rejected_promise.html#a2b91783cd3388e3aa66d0902c3cf4c49">then</a> (callable $onFulfilled=null, callable $onRejected=null)</td></tr>
@@ -370,7 +370,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REJECTED</b> = 'reje
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:11:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:17:37 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

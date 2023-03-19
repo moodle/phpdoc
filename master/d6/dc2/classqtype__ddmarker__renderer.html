@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -164,9 +164,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a1f2ad539c15c279982da704664a094fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an instance of the mustache class.  <br /></td></tr>
 <tr class="separator:a1f2ad539c15c279982da704664a094fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41ee6272caff6ab302084327fa505596"><td class="memItemLeft" align="right" valign="top"><a id="a41ee6272caff6ab302084327fa505596" name="a41ee6272caff6ab302084327fa505596"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>hidden_field_choice</b> (<a class="el" href="../../d3/dda/classquestion__attempt.html">question_attempt</a> $qa, $choiceno, $infinite, $noofdrags, $<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>=null)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>hidden_field_choice</b> (<a class="el" href="../../d3/dda/classquestion__attempt.html">question_attempt</a> $qa, $choiceno, $infinite, $noofdrags, $value=null)</td></tr>
 <tr class="separator:a41ee6272caff6ab302084327fa505596"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abba7fc57b981e7e429b61c2be7fc77e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d10/classqtype__ddtoimage__renderer__base.html#abba7fc57b981e7e429b61c2be7fc77e4">hidden_field_for_qt_var</a> (<a class="el" href="../../d3/dda/classquestion__attempt.html">question_attempt</a> $qa, $varname, $<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>=null, $classes=null)</td></tr>
+<tr class="memitem:abba7fc57b981e7e429b61c2be7fc77e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d10/classqtype__ddtoimage__renderer__base.html#abba7fc57b981e7e429b61c2be7fc77e4">hidden_field_for_qt_var</a> (<a class="el" href="../../d3/dda/classquestion__attempt.html">question_attempt</a> $qa, $varname, $value=null, $classes=null)</td></tr>
 <tr class="memdesc:abba7fc57b981e7e429b61c2be7fc77e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a hidden field for a qt variable.  <br /></td></tr>
 <tr class="separator:abba7fc57b981e7e429b61c2be7fc77e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a69361429692702c51bba7b48aee5ae1a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc2/classqtype__ddmarker__renderer.html#a69361429692702c51bba7b48aee5ae1a">hint</a> (<a class="el" href="../../d3/dda/classquestion__attempt.html">question_attempt</a> $qa, <a class="el" href="../../d4/d0f/classquestion__hint.html">question_hint</a> $hint)</td></tr>
@@ -803,8 +803,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">object</td><td class="paramname">$qa</td><td>Question attempt object </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$filearea</td><td>File area descriptor </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$itemid</td><td>Item id to get </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$filearea</td><td><a class="el" href="../../d1/d31/class_file.html" title="Caches data to the filesystem.">File</a> area descriptor </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$itemid</td><td><a class="el" href="../../dc/d32/class_item.html" title="Manages all item-related data.">Item</a> id to get </td></tr>
   </table>
   </dd>
 </dl>
@@ -1191,7 +1191,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 
 <p>Return the direct URL for an image from the pix folder. </p>
 <p>Use this function sparingly and never for icons. For icons use <a class="el" href="../../d0/d6e/classpix__icon.html">pix_icon</a> or the pix helper in a mustache template.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000731">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000741">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$imagename</td><td>the name of the icon. </td></tr>
@@ -1369,7 +1369,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Whether we should display the main logo. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000732">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000742">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000165">Todo:</a></b></dt><dd>final deprecation. To be removed in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-73165" class="el">MDL-73165</a>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1494,7 +1494,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:10:16 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:16:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

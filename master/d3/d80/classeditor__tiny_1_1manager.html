@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -76,9 +76,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aa6e6400a9a4f1ead5aaa8cf747fa13e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d80/classeditor__tiny_1_1manager.html#aa6e6400a9a4f1ead5aaa8cf747fa13e3">get_available_plugins</a> ()</td></tr>
 <tr class="memdesc:aa6e6400a9a4f1ead5aaa8cf747fa13e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of all available plugins, including both TinyMCE shipped, and <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> add-onis.  <br /></td></tr>
 <tr class="separator:aa6e6400a9a4f1ead5aaa8cf747fa13e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adce7b35e1082aa5827bdddf4b0f3ff12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d80/classeditor__tiny_1_1manager.html#adce7b35e1082aa5827bdddf4b0f3ff12">get_disabled_plugins</a> ()</td></tr>
-<tr class="memdesc:adce7b35e1082aa5827bdddf4b0f3ff12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of the disabled plugins.  <br /></td></tr>
-<tr class="separator:adce7b35e1082aa5827bdddf4b0f3ff12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4f5640ab542191457bbae56bb5f6eb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d80/classeditor__tiny_1_1manager.html#ae4f5640ab542191457bbae56bb5f6eb1">get_disabled_tinymce_plugins</a> ()</td></tr>
+<tr class="memdesc:ae4f5640ab542191457bbae56bb5f6eb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of the built-in TinyMCE plugins which we want to disable.  <br /></td></tr>
+<tr class="separator:ae4f5640ab542191457bbae56bb5f6eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63ee3d6a035cbd47844f6657eb10f22d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d80/classeditor__tiny_1_1manager.html#a63ee3d6a035cbd47844f6657eb10f22d">get_moodle_plugins</a> ()</td></tr>
 <tr class="memdesc:a63ee3d6a035cbd47844f6657eb10f22d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of the <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> plugins with their button, and menuitem, configuration.  <br /></td></tr>
 <tr class="separator:a63ee3d6a035cbd47844f6657eb10f22d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,8 +140,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adce7b35e1082aa5827bdddf4b0f3ff12" name="adce7b35e1082aa5827bdddf4b0f3ff12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adce7b35e1082aa5827bdddf4b0f3ff12">&#9670;&#160;</a></span>get_disabled_plugins()</h2>
+<a id="ae4f5640ab542191457bbae56bb5f6eb1" name="ae4f5640ab542191457bbae56bb5f6eb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4f5640ab542191457bbae56bb5f6eb1">&#9670;&#160;</a></span>get_disabled_tinymce_plugins()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -150,7 +150,7 @@ Protected Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">editor_tiny\manager::get_disabled_plugins </td>
+          <td class="memname">editor_tiny\manager::get_disabled_tinymce_plugins </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -163,7 +163,8 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Get a list of the disabled plugins. </p>
+<p>Get a list of the built-in TinyMCE plugins which we want to disable. </p>
+<p>These are usually disabled because we have replaced them, or they are not compatible with <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> in some way.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string[]</td><td></td></tr>
@@ -467,7 +468,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:11:22 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:17:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -123,7 +123,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">General web service library.  <a href="../../db/dbc/classwebservice.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d19/classwebservice__access__exception.html">webservice_access_exception</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../df/d70/class_exception.html">Exception</a> indicating access control problem in web service call This exception should return general errors about web service setup.  <a href="../../d2/d19/classwebservice__access__exception.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../df/d70/class_exception.html" title="General SimplePie exception class.">Exception</a> indicating access control problem in web service call This exception should return general errors about web service setup.  <a href="../../d2/d19/classwebservice__access__exception.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc3/classwebservice__server.html">webservice_server</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract web service base class.  <a href="../../dd/dc3/classwebservice__server.html#details">More...</a><br /></td></tr>
@@ -1598,8 +1598,8 @@ Options are the same that in <a class="el" href="../../d0/de1/group__core.html#g
 
 <p>Get user capabilities (with context) Only useful for documentation purpose WARNING: do not use this "broken" function. </p>
 <p>It was created in the goal to display some capabilities required by users. In theory we should not need to display this kind of information as the front end does not display it itself. In pratice, admins would like the info, for more info you can follow: <a href="https://tracker.moodle.org/browse/MDL-29962" class="el">MDL-29962</a></p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001134">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 in <a href="https://tracker.moodle.org/browse/MDL-67748" class="el">MDL-67748</a> without a replacement. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000365">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-70187" class="el">MDL-70187</a> Please delete this method completely in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3, thank you. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001217">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 in <a href="https://tracker.moodle.org/browse/MDL-67748" class="el">MDL-67748</a> without a replacement. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000357">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-70187" class="el">MDL-70187</a> Please delete this method completely in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3, thank you. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>user id </td></tr>
@@ -2080,9 +2080,9 @@ Options are the same that in <a class="el" href="../../d0/de1/group__core.html#g
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
-<div class="line">   <span class="stringliteral">&#39;Moodle mobile web service&#39;</span>  =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
-<div class="line">        <span class="stringliteral">&#39;functions&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(), </div>
+<b>Initial value:</b><div class="fragment"><div class="line">= array(</div>
+<div class="line">   <span class="stringliteral">&#39;Moodle mobile web service&#39;</span>  =&gt; array(</div>
+<div class="line">        <span class="stringliteral">&#39;functions&#39;</span> =&gt; array(), </div>
 <div class="line">        <span class="stringliteral">&#39;enabled&#39;</span> =&gt; 0,</div>
 <div class="line">        <span class="stringliteral">&#39;restrictedusers&#39;</span> =&gt; 0,</div>
 <div class="line">        <span class="stringliteral">&#39;shortname&#39;</span> =&gt; <a class="code hl_variable" href="../../d0/de1/group__core.html#gaf6fb70f9486cdc497645d14d9afc9a89">MOODLE_OFFICIAL_MOBILE_SERVICE</a>,</div>
@@ -2091,7 +2091,6 @@ Options are the same that in <a class="el" href="../../d0/de1/group__core.html#g
 <div class="line">    ),</div>
 <div class="line">)</div>
 <div class="ttc" id="agroup__core_html_gaf6fb70f9486cdc497645d14d9afc9a89"><div class="ttname"><a href="../../d0/de1/group__core.html#gaf6fb70f9486cdc497645d14d9afc9a89">MOODLE_OFFICIAL_MOBILE_SERVICE</a></div><div class="ttdeci">const MOODLE_OFFICIAL_MOBILE_SERVICE</div><div class="ttdoc">Moodle mobile app service name.</div><div class="ttdef"><b>Definition:</b> moodlelib.php:530</div></div>
-<div class="ttc" id="anamespacearray_html"><div class="ttname"><a href="../../d7/df9/namespacearray.html">array</a></div><div class="ttdoc">('') &amp;#160;</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2115,7 +2114,7 @@ Options are the same that in <a class="el" href="../../d0/de1/group__core.html#g
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:08:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:14:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

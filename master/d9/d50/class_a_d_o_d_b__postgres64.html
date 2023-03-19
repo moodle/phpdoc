@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -434,7 +434,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af559f537c7f4c82eb15e05f641d7fa0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbd/class_a_d_o_connection.html#af559f537c7f4c82eb15e05f641d7fa0e">setCharSet</a> ($<a class="el" href="../../dc/d71/group___imap___client.html#gaa4b4442e4a5063e66fbe827b5d8e5827">charset</a>)</td></tr>
 <tr class="memdesc:af559f537c7f4c82eb15e05f641d7fa0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the client-side character set.  <br /></td></tr>
 <tr class="separator:af559f537c7f4c82eb15e05f641d7fa0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ae2d2727dbd99249c46f1fae03b8041"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbd/class_a_d_o_connection.html#a2ae2d2727dbd99249c46f1fae03b8041">setConnectionParameter</a> ($parameter, $<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
+<tr class="memitem:a2ae2d2727dbd99249c46f1fae03b8041"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbd/class_a_d_o_connection.html#a2ae2d2727dbd99249c46f1fae03b8041">setConnectionParameter</a> ($parameter, $value)</td></tr>
 <tr class="memdesc:a2ae2d2727dbd99249c46f1fae03b8041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a parameter to the connection string.  <br /></td></tr>
 <tr class="separator:a2ae2d2727dbd99249c46f1fae03b8041"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a700b415d70eb06f8ac80f998c2b2ecaf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbd/class_a_d_o_connection.html#a700b415d70eb06f8ac80f998c2b2ecaf">setCustomMetaType</a> ( $metaType, $dictionaryType, $actualType, $handleAsType=false, $callback=false)</td></tr>
@@ -643,7 +643,7 @@ PgSql Connection resource false&#160;</td><td class="memItemRight" valign="botto
 <tr class="separator:af474731721665c7d32213ea701d21987"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dba60d6ddc4c1daaf6baf0f61cad3c1"><td class="memItemLeft" align="right" valign="top"><a id="a2dba60d6ddc4c1daaf6baf0f61cad3c1" name="a2dba60d6ddc4c1daaf6baf0f61cad3c1"></a>
 bool callable&#160;</td><td class="memItemRight" valign="bottom"><b>$fnCacheExecute</b> = false</td></tr>
-<tr class="memdesc:a2dba60d6ddc4c1daaf6baf0f61cad3c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache execution function to call. <br /></td></tr>
+<tr class="memdesc:a2dba60d6ddc4c1daaf6baf0f61cad3c1"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../dc/d67/class_cache.html" title="Used to create cache objects.">Cache</a> execution function to call. <br /></td></tr>
 <tr class="separator:a2dba60d6ddc4c1daaf6baf0f61cad3c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1974e9932ce56594bf155ff0ea67447e"><td class="memItemLeft" align="right" valign="top"><a id="a1974e9932ce56594bf155ff0ea67447e" name="a1974e9932ce56594bf155ff0ea67447e"></a>
 bool callable&#160;</td><td class="memItemRight" valign="bottom"><b>$fnExecute</b> = false</td></tr>
@@ -1827,7 +1827,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Will select, getting rows from $offset (1-based), for $nrows. </p>
-<p>This simulates the MySQL "select * from table limit $offset,$nrows" , and the PostgreSQL "select * from table limit $nrows offset $offset". Note that MySQL and PostgreSQL parameter ordering is the opposite of the other. eg. CacheSelectLimit(15,'select * from table',3); will return rows 1 to 3 (1-based) CacheSelectLimit(15,'select * from table',3,2); will return rows 3 to 5 (1-based)</p>
+<p>This simulates the <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> "select * from table limit $offset,$nrows" , and the PostgreSQL "select * from table limit $nrows offset $offset". Note that <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> and PostgreSQL parameter ordering is the opposite of the other. eg. CacheSelectLimit(15,'select * from table',3); will return rows 1 to 3 (1-based) CacheSelectLimit(15,'select * from table',3,2); will return rows 3 to 5 (1-based)</p>
 <p>BUG: Currently CacheSelectLimit fails with $sql with LIMIT or TOP clause already set</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3298,7 +3298,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the last inserted ID. </p>
-<p>Not all databases support this feature. Some do not require to specify table or column name (e.g. MySQL).</p>
+<p>Not all databases support this feature. Some do not require to specify table or column name (e.g. <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a>).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$table</td><td>Table name, default '' </td></tr>
@@ -4809,7 +4809,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Insert or replace a single record. </p>
-<p>Note: this is not the same as MySQL's replace. ADOdb's <a class="el" href="../../d4/dbd/class_a_d_o_connection.html#a70fdba93401b4483753cac29290966a1" title="Insert or replace a single record.">Replace()</a> uses update-insert semantics, not insert-delete-duplicates of MySQL. Also note that no table locking is done currently, so it is possible that the record be inserted twice by two programs...</p>
+<p>Note: this is not the same as <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a>'s replace. ADOdb's <a class="el" href="../../d4/dbd/class_a_d_o_connection.html#a70fdba93401b4483753cac29290966a1" title="Insert or replace a single record.">Replace()</a> uses update-insert semantics, not insert-delete-duplicates of <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a>. Also note that no table locking is done currently, so it is possible that the record be inserted twice by two programs...</p>
 <p>$this-&gt;Replace('products', array('prodname' =&gt;"'Nails'","price" =&gt; 3.99), 'prodname');</p>
 <p>$table table name $fieldArray associative array of data (you must quote strings yourself). $keyCol the primary key field name or if compound key, array of field names autoQuote set to true to use a heuristic to quote strings. Works with nulls and numbers but does not work with dates nor SQL functions. has_autoinc the primary key is an auto-inc field, so skip in insert.</p>
 <p>Currently blob replace not supported</p>
@@ -5066,7 +5066,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Select a limited number of rows. </p>
-<p>Will select, getting rows from $offset (1-based), for $nrows. This simulates the MySQL "select * from table limit $offset,$nrows" , and the PostgreSQL "select * from table limit $nrows offset $offset". Note that MySQL and PostgreSQL parameter ordering is the opposite of the other. eg. SelectLimit('select * from table',3); will return rows 1 to 3 (1-based) SelectLimit('select * from table',3,2); will return rows 3 to 5 (1-based)</p>
+<p>Will select, getting rows from $offset (1-based), for $nrows. This simulates the <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> "select * from table limit $offset,$nrows" , and the PostgreSQL "select * from table limit $nrows offset $offset". Note that <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> and PostgreSQL parameter ordering is the opposite of the other. eg. SelectLimit('select * from table',3); will return rows 1 to 3 (1-based) SelectLimit('select * from table',3,2); will return rows 3 to 5 (1-based)</p>
 <p>Uses SELECT TOP for Microsoft databases (when $this-&gt;hasTop is set) BUG: Currently SelectLimit fails with $sql with LIMIT or TOP clause already set</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -5470,7 +5470,7 @@ Protected Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$fmt</td><td>Format string </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$col</td><td>Date column; use system date if not specified.</td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$col</td><td><a class="el" href="../../de/db5/class_date.html" title="Date Parser.">Date</a> column; use system date if not specified.</td></tr>
   </table>
   </dd>
 </dl>
@@ -5682,7 +5682,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">int|false</td><td>Date in unix timestamp format, or 0 if before TIMESTAMP_FIRST_YEAR, or false if invalid date format </td></tr>
+    <tr><td class="paramname">int|false</td><td><a class="el" href="../../de/db5/class_date.html" title="Date Parser.">Date</a> in unix timestamp format, or 0 if before TIMESTAMP_FIRST_YEAR, or false if invalid date format </td></tr>
   </table>
   </dd>
 </dl>
@@ -5724,7 +5724,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">int|false</td><td>Date in unix timestamp format, or 0 if before TIMESTAMP_FIRST_YEAR, or false if invalid date format </td></tr>
+    <tr><td class="paramname">int|false</td><td><a class="el" href="../../de/db5/class_date.html" title="Date Parser.">Date</a> in unix timestamp format, or 0 if before TIMESTAMP_FIRST_YEAR, or false if invalid date format </td></tr>
   </table>
   </dd>
 </dl>
@@ -5992,7 +5992,7 @@ Protected Attributes</h2></td></tr>
 <p>Also in <a class="el" href="../../d2/de1/class_a_d_o_record_set.html" title="RecordSet class that represents the dataset returned by the database.">ADORecordSet</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">mixed</td><td class="paramname">$v</td><td>Date in YYYY-MM-DD format, returned by database </td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$v</td><td><a class="el" href="../../de/db5/class_date.html" title="Date Parser.">Date</a> in YYYY-MM-DD format, returned by database </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$fmt</td><td>Format to apply, using date() </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$gmt</td><td></td></tr>
   </table>
@@ -6050,7 +6050,7 @@ Protected Attributes</h2></td></tr>
 <p>Format timestamp based on user defined format. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">mixed</td><td class="paramname">$v</td><td>Date in YYYY-MM-DD hh:mm:ss format </td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$v</td><td><a class="el" href="../../de/db5/class_date.html" title="Date Parser.">Date</a> in YYYY-MM-DD hh:mm:ss format </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$fmt</td><td>Format to apply, using date() </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$gmt</td><td></td></tr>
   </table>
@@ -6429,7 +6429,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:08:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:14:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -97,7 +97,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d4d/classbehat__tool__usertours.html">behat_tool_usertours</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de9/classtool__usertours_1_1cache.html">tool_usertours\cache</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache manager.  <a href="../../d2/de9/classtool__usertours_1_1cache.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../dc/d67/class_cache.html" title="Used to create cache objects.">Cache</a> manager.  <a href="../../d2/de9/classtool__usertours_1_1cache.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d87/classtool__usertours_1_1configuration.html">tool_usertours\configuration</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Step configuration detail class.  <a href="../../df/d87/classtool__usertours_1_1configuration.html#details">More...</a><br /></td></tr>
@@ -118,7 +118,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter base.  <a href="../../d0/d60/classtool__usertours_1_1local_1_1filter_1_1base.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classtool__usertours_1_1local_1_1filter_1_1category.html">tool_usertours\local\filter\category</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category filter.  <a href="../../de/dbb/classtool__usertours_1_1local_1_1filter_1_1category.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d7/df3/class_category.html" title="Manages all category-related data.">Category</a> filter.  <a href="../../de/dbb/classtool__usertours_1_1local_1_1filter_1_1category.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d30/classtool__usertours_1_1local_1_1filter_1_1course.html">tool_usertours\local\filter\course</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Course filter.  <a href="../../d4/d30/classtool__usertours_1_1local_1_1filter_1_1course.html#details">More...</a><br /></td></tr>
@@ -366,7 +366,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>Course object </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$cm</td><td>Course module object </td></tr>
     <tr><td class="paramtype">context</td><td class="paramname">$context</td><td>Context </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$filearea</td><td>File area for data privacy </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$filearea</td><td><a class="el" href="../../d1/d31/class_file.html" title="Caches data to the filesystem.">File</a> area for data privacy </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$args</td><td>Arguments </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$forcedownload</td><td>If we are forcing the download </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$options</td><td>More options </td></tr>
@@ -426,7 +426,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= array(</div>
 <div class="line">    <span class="stringliteral">&#39;tool/usertours:managetours&#39;</span> =&gt; [</div>
 <div class="line">        <span class="stringliteral">&#39;captype&#39;</span> =&gt; <span class="stringliteral">&#39;write&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;riskbitmask&#39;</span> =&gt; <a class="code hl_variable" href="../../da/d16/group__core__access.html#gad1ead7c9024d669a97ff733524b34e09">RISK_XSS</a>,</div>
@@ -439,7 +439,6 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <div class="ttc" id="agroup__core__access_html_ga1cef4b21548a9d4e72b5b85a4355cacd"><div class="ttname"><a href="../../da/d16/group__core__access.html#ga1cef4b21548a9d4e72b5b85a4355cacd">CONTEXT_SYSTEM</a></div><div class="ttdeci">const CONTEXT_SYSTEM</div><div class="ttdoc">System context level - only one instance in every system.</div><div class="ttdef"><b>Definition:</b> accesslib.php:122</div></div>
 <div class="ttc" id="agroup__core__access_html_gacc879f41ad412efa2fc8022359b3ebfb"><div class="ttname"><a href="../../da/d16/group__core__access.html#gacc879f41ad412efa2fc8022359b3ebfb">CAP_ALLOW</a></div><div class="ttdeci">const CAP_ALLOW</div><div class="ttdoc">Allow permission, overrides CAP_PREVENT defined in parent contexts.</div><div class="ttdef"><b>Definition:</b> accesslib.php:115</div></div>
 <div class="ttc" id="agroup__core__access_html_gad1ead7c9024d669a97ff733524b34e09"><div class="ttname"><a href="../../da/d16/group__core__access.html#gad1ead7c9024d669a97ff733524b34e09">RISK_XSS</a></div><div class="ttdeci">const RISK_XSS</div><div class="ttdoc">Capability allows user to add scripted content - see</div><div class="ttdef"><b>Definition:</b> accesslib.php:143</div></div>
-<div class="ttc" id="anamespacearray_html"><div class="ttname"><a href="../../d7/df9/namespacearray.html">array</a></div><div class="ttdoc">('') &amp;#160;</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -471,15 +470,15 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
-<div class="line">    <span class="stringliteral">&#39;tourdata&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= array(</div>
+<div class="line">    <span class="stringliteral">&#39;tourdata&#39;</span> =&gt; array(</div>
 <div class="line">        <span class="stringliteral">&#39;mode&#39;</span> =&gt; <a class="code hl_variable" href="../../d0/d4b/classcache__store.html#ab6c447b74def3f5eeb0699bb9284b346">cache_store::MODE_APPLICATION</a>,</div>
 <div class="line">        <span class="stringliteral">&#39;simplekeys&#39;</span> =&gt; <span class="keyword">true</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;simpledata&#39;</span> =&gt; <span class="keyword">true</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;staticacceleration&#39;</span> =&gt; <span class="keyword">true</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;staticaccelerationsize&#39;</span> =&gt; 1,</div>
 <div class="line">    ),</div>
-<div class="line">    <span class="stringliteral">&#39;stepdata&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
+<div class="line">    <span class="stringliteral">&#39;stepdata&#39;</span> =&gt; array(</div>
 <div class="line">        <span class="stringliteral">&#39;mode&#39;</span> =&gt; <a class="code hl_variable" href="../../d0/d4b/classcache__store.html#ab6c447b74def3f5eeb0699bb9284b346">cache_store::MODE_APPLICATION</a>,</div>
 <div class="line">        <span class="stringliteral">&#39;simplekeys&#39;</span> =&gt; <span class="keyword">true</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;simpledata&#39;</span> =&gt; <span class="keyword">true</span>,</div>
@@ -494,7 +493,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:08:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:14:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

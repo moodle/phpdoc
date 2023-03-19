@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -83,7 +83,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9cb03d912327b519fdd78f6e88f3d1a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dec/classcore__course__category.html#a9cb03d912327b519fdd78f6e88f3d1a9">__isset</a> ($name)</td></tr>
 <tr class="memdesc:a9cb03d912327b519fdd78f6e88f3d1a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Full support for isset on our magic read only properties.  <br /></td></tr>
 <tr class="separator:a9cb03d912327b519fdd78f6e88f3d1a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b4cd13a04c73f4ebf65d0a9dfc69623"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dec/classcore__course__category.html#a6b4cd13a04c73f4ebf65d0a9dfc69623">__set</a> ($name, $<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
+<tr class="memitem:a6b4cd13a04c73f4ebf65d0a9dfc69623"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dec/classcore__course__category.html#a6b4cd13a04c73f4ebf65d0a9dfc69623">__set</a> ($name, $value)</td></tr>
 <tr class="memdesc:a6b4cd13a04c73f4ebf65d0a9dfc69623"><td class="mdescLeft">&#160;</td><td class="mdescRight">Magic setter method, we do not want anybody to modify properties from the outside.  <br /></td></tr>
 <tr class="separator:a6b4cd13a04c73f4ebf65d0a9dfc69623"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a5c9cfd757aa8574f14e589e3b8c8b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dec/classcore__course__category.html#a9a5c9cfd757aa8574f14e589e3b8c8b2">__unset</a> ($name)</td></tr>
@@ -1497,8 +1497,8 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Creates a new category either from form data or from raw data. </p>
 <p>Please note that this function does not verify access control.</p>
-<p><a class="el" href="../../df/d70/class_exception.html">Exception</a> is thrown if name is missing or idnumber is duplicating another one in the system.</p>
-<p>Category visibility is inherited from parent unless $data-&gt;visible = 0 is specified</p>
+<p><a class="el" href="../../df/d70/class_exception.html" title="General SimplePie exception class.">Exception</a> is thrown if name is missing or idnumber is duplicating another one in the system.</p>
+<p><a class="el" href="../../d7/df3/class_category.html" title="Manages all category-related data.">Category</a> visibility is inherited from parent unless $data-&gt;visible = 0 is specified</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array&#160;|&#160;stdClass</td><td class="paramname">$data</td><td></td></tr>
@@ -2281,7 +2281,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Returns ids of all parents of the category. </p>
 <p>Last element in the return array is the direct parent</p>
-<p>For example, if you have a tree of categories like: Category (id = 1) Subcategory (id = 2) Sub-subcategory (id = 4) Other category (id = 3)</p>
+<p>For example, if you have a tree of categories like: <a class="el" href="../../d7/df3/class_category.html" title="Manages all category-related data.">Category</a> (id = 1) Subcategory (id = 2) Sub-subcategory (id = 4) Other category (id = 3)</p>
 <p>core_course_category::get(1)-&gt;get_parents() == array() core_course_category::get(2)-&gt;get_parents() == array(1) core_course_category::get(4)-&gt;get_parents() == array(1, 2);</p>
 <p>Note that this method does not check if all parents are accessible by current user</p>
 <dl class="retval"><dt>Return values</dt><dd>
@@ -2819,7 +2819,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>This function returns a nice list representing category tree for display or to use in a form &lt;select&gt; element. </p>
 <p>List is cached for 10 minutes</p>
-<p>For example, if you have a tree of categories like: Category (id = 1) Subcategory (id = 2) Sub-subcategory (id = 4) Other category (id = 3) Then after calling this function you will have array(1 =&gt; 'Category', 2 =&gt; 'Category / Subcategory', 4 =&gt; 'Category / Subcategory / Sub-subcategory', 3 =&gt; 'Other category');</p>
+<p>For example, if you have a tree of categories like: <a class="el" href="../../d7/df3/class_category.html" title="Manages all category-related data.">Category</a> (id = 1) Subcategory (id = 2) Sub-subcategory (id = 4) Other category (id = 3) Then after calling this function you will have array(1 =&gt; '<a class="el" href="../../d7/df3/class_category.html" title="Manages all category-related data.">Category</a>', 2 =&gt; '<a class="el" href="../../d7/df3/class_category.html" title="Manages all category-related data.">Category</a> / Subcategory', 4 =&gt; '<a class="el" href="../../d7/df3/class_category.html" title="Manages all category-related data.">Category</a> / Subcategory / Sub-subcategory', 3 =&gt; 'Other category');</p>
 <p>If you specify $requiredcapability, then only categories where the current user has that capability will be added to $list. If you only have $requiredcapability in a child category, not the parent, then the child catgegory will still be included.</p>
 <p>If you specify the option $excludeid, then that category, and all its children, are omitted from the tree. This is useful when you are doing something like moving categories, where you do not want to allow people to move a category to be the child of itself.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -3245,7 +3245,7 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Searches courses. </p>
-<p>List of found course ids is cached for 10 minutes. Cache may be purged prior to this when somebody edits courses or categories, however it is very difficult to keep track of all possible changes that may affect list of courses.</p>
+<p>List of found course ids is cached for 10 minutes. <a class="el" href="../../dc/d67/class_cache.html" title="Used to create cache objects.">Cache</a> may be purged prior to this when somebody edits courses or categories, however it is very difficult to keep track of all possible changes that may affect list of courses.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$search</td><td>contains search criterias, such as:<ul>
@@ -3710,23 +3710,22 @@ Static Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
-<div class="line">        <span class="stringliteral">&#39;id&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;id&#39;</span>, 0),</div>
-<div class="line">        <span class="stringliteral">&#39;name&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;na&#39;</span>, <span class="stringliteral">&#39;&#39;</span>),</div>
-<div class="line">        <span class="stringliteral">&#39;idnumber&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;in&#39;</span>, <span class="keyword">null</span>),</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= array(</div>
+<div class="line">        <span class="stringliteral">&#39;id&#39;</span> =&gt; array(<span class="stringliteral">&#39;id&#39;</span>, 0),</div>
+<div class="line">        <span class="stringliteral">&#39;name&#39;</span> =&gt; array(<span class="stringliteral">&#39;na&#39;</span>, <span class="stringliteral">&#39;&#39;</span>),</div>
+<div class="line">        <span class="stringliteral">&#39;idnumber&#39;</span> =&gt; array(<span class="stringliteral">&#39;in&#39;</span>, <span class="keyword">null</span>),</div>
 <div class="line">        <span class="stringliteral">&#39;description&#39;</span> =&gt; <span class="keyword">null</span>, </div>
 <div class="line">        <span class="stringliteral">&#39;descriptionformat&#39;</span> =&gt; <span class="keyword">null</span>, </div>
-<div class="line">        <span class="stringliteral">&#39;parent&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;pa&#39;</span>, 0),</div>
-<div class="line">        <span class="stringliteral">&#39;sortorder&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;so&#39;</span>, 0),</div>
-<div class="line">        <span class="stringliteral">&#39;coursecount&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;cc&#39;</span>, 0),</div>
-<div class="line">        <span class="stringliteral">&#39;visible&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;vi&#39;</span>, 1),</div>
+<div class="line">        <span class="stringliteral">&#39;parent&#39;</span> =&gt; array(<span class="stringliteral">&#39;pa&#39;</span>, 0),</div>
+<div class="line">        <span class="stringliteral">&#39;sortorder&#39;</span> =&gt; array(<span class="stringliteral">&#39;so&#39;</span>, 0),</div>
+<div class="line">        <span class="stringliteral">&#39;coursecount&#39;</span> =&gt; array(<span class="stringliteral">&#39;cc&#39;</span>, 0),</div>
+<div class="line">        <span class="stringliteral">&#39;visible&#39;</span> =&gt; array(<span class="stringliteral">&#39;vi&#39;</span>, 1),</div>
 <div class="line">        <span class="stringliteral">&#39;visibleold&#39;</span> =&gt; <span class="keyword">null</span>, </div>
 <div class="line">        <span class="stringliteral">&#39;timemodified&#39;</span> =&gt; <span class="keyword">null</span>, </div>
-<div class="line">        <span class="stringliteral">&#39;depth&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;dh&#39;</span>, 1),</div>
-<div class="line">        <span class="stringliteral">&#39;path&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(<span class="stringliteral">&#39;ph&#39;</span>, <span class="keyword">null</span>),</div>
+<div class="line">        <span class="stringliteral">&#39;depth&#39;</span> =&gt; array(<span class="stringliteral">&#39;dh&#39;</span>, 1),</div>
+<div class="line">        <span class="stringliteral">&#39;path&#39;</span> =&gt; array(<span class="stringliteral">&#39;ph&#39;</span>, <span class="keyword">null</span>),</div>
 <div class="line">        <span class="stringliteral">&#39;theme&#39;</span> =&gt; <span class="keyword">null</span>, </div>
 <div class="line">    )</div>
-<div class="ttc" id="anamespacearray_html"><div class="ttname"><a href="../../d7/df9/namespacearray.html">array</a></div><div class="ttdoc">('') &amp;#160;</div></div>
 </div><!-- fragment -->
 <p>list of all fields and their short name and default value for caching </p>
 
@@ -3739,7 +3738,7 @@ Static Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:09:07 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:14:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

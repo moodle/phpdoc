@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -80,7 +80,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ae2f8c3966d985ad48b0070979b082e61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize recent plugin.  <br /></td></tr>
 <tr class="separator:ae2f8c3966d985ad48b0070979b082e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accb70ecaee2d1a37d8203183a2640e3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d1a/classrepository.html#accb70ecaee2d1a37d8203183a2640e3e">cache_file_by_reference</a> ($reference, $storedfile)</td></tr>
-<tr class="memdesc:accb70ecaee2d1a37d8203183a2640e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache file from external repository by reference <a class="el" href="../../dc/d1a/classrepository.html#ac88b0c625ecb49e4c545ae5c49c93bf2">repository::get_file_reference()</a> <a class="el" href="../../dc/d1a/classrepository.html#a4404403c6d681ff8ed1b5f7297e92193">repository::get_file()</a> Invoked at MOODLE/repository/repository_ajax.php.  <br /></td></tr>
+<tr class="memdesc:accb70ecaee2d1a37d8203183a2640e3e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../dc/d67/class_cache.html" title="Used to create cache objects.">Cache</a> file from external repository by reference <a class="el" href="../../dc/d1a/classrepository.html#ac88b0c625ecb49e4c545ae5c49c93bf2">repository::get_file_reference()</a> <a class="el" href="../../dc/d1a/classrepository.html#a4404403c6d681ff8ed1b5f7297e92193">repository::get_file()</a> Invoked at MOODLE/repository/repository_ajax.php.  <br /></td></tr>
 <tr class="separator:accb70ecaee2d1a37d8203183a2640e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0566aa0689f2a21ca4943c11f6d04ef7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d1a/classrepository.html#a0566aa0689f2a21ca4943c11f6d04ef7">callback</a> ()</td></tr>
 <tr class="memdesc:a0566aa0689f2a21ca4943c11f6d04ef7"><td class="mdescLeft">&#160;</td><td class="mdescRight">For oauth like external authentication, when external repository direct user back to moodle, this function will be called to set up token and token_secret.  <br /></td></tr>
@@ -116,7 +116,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1ef698c073af29d7a1f468ab46bd8fe4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d08/classrepository__recent.html#a1ef698c073af29d7a1f468ab46bd8fe4">file_is_accessible</a> ($source)</td></tr>
 <tr class="memdesc:a1ef698c073af29d7a1f468ab46bd8fe4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Repository method to make sure that user can access particular file.  <br /></td></tr>
 <tr class="separator:a1ef698c073af29d7a1f468ab46bd8fe4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a892126d529325978597716d8e80e4e21"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d1a/classrepository.html#a892126d529325978597716d8e80e4e21">filter</a> ($<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
+<tr class="memitem:a892126d529325978597716d8e80e4e21"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d1a/classrepository.html#a892126d529325978597716d8e80e4e21">filter</a> ($value)</td></tr>
 <tr class="memdesc:a892126d529325978597716d8e80e4e21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter file listing to display specific types.  <br /></td></tr>
 <tr class="separator:a892126d529325978597716d8e80e4e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4404403c6d681ff8ed1b5f7297e92193"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d1a/classrepository.html#a4404403c6d681ff8ed1b5f7297e92193">get_file</a> ($url, $filename='')</td></tr>
@@ -472,7 +472,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timelimit</b></td></t
 
 <p>Scan file, throws exception in case of infected file. </p>
 <p>Please note that the scanning engine must be able to access the file, permissions of the file are not modified here!</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001114">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001197">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.0 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$thefile</td><td></td></tr>
@@ -521,7 +521,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timelimit</b></td></t
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001113">Deprecated:</a></b></dt><dd>since 2.5 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001196">Deprecated:</a></b></dt><dd>since 2.5 </dd></dl>
 
 </div>
 </div>
@@ -550,7 +550,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timelimit</b></td></t
 </div><div class="memdoc">
 
 <p>Build draft file's source field. </p>
-<p><a class="el" href="../../d5/d09/group__core__files.html#ga503ed81e4a26decc25ac86221414b8d9">file_restore_source_field_from_draft_file()</a> XXX: This is a hack for file manager (<a href="https://tracker.moodle.org/browse/MDL-28666" class="el">MDL-28666</a>) For newly created draft files we have to construct source filed in php serialized data format. File manager needs to know the original file information before copying to draft area, so we append these information in mdl_files.source field</p>
+<p><a class="el" href="../../d5/d09/group__core__files.html#ga503ed81e4a26decc25ac86221414b8d9">file_restore_source_field_from_draft_file()</a> XXX: This is a hack for file manager (<a href="https://tracker.moodle.org/browse/MDL-28666" class="el">MDL-28666</a>) For newly created draft files we have to construct source filed in php serialized data format. <a class="el" href="../../d1/d31/class_file.html" title="Caches data to the filesystem.">File</a> manager needs to know the original file information before copying to draft area, so we append these information in mdl_files.source field</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$source</td><td></td></tr>
@@ -613,7 +613,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timelimit</b></td></t
 </div><div class="memdoc">
 
 <p>Builds a tree of files This function is then called recursively. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000358">Todo:</a></b></dt><dd>take $search into account, and respect a threshold for dynamic loading </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000350">Todo:</a></b></dt><dd>take $search into account, and respect a threshold for dynamic loading </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="../../de/dff/classfile__info.html" title="Base class for things in the tree navigated by file_browser.">file_info</a></td><td class="paramname">$fileinfo</td><td>an object returned by <a class="el" href="../../d3/d38/classfile__browser.html#a697178efb2ba61c157da8987b6607922" title="Looks up file_info instance.">file_browser::get_file_info()</a> </td></tr>
@@ -666,7 +666,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timelimit</b></td></t
 </table>
 </div><div class="memdoc">
 
-<p>Cache file from external repository by reference <a class="el" href="../../dc/d1a/classrepository.html#ac88b0c625ecb49e4c545ae5c49c93bf2">repository::get_file_reference()</a> <a class="el" href="../../dc/d1a/classrepository.html#a4404403c6d681ff8ed1b5f7297e92193">repository::get_file()</a> Invoked at MOODLE/repository/repository_ajax.php. </p>
+<p><a class="el" href="../../dc/d67/class_cache.html" title="Used to create cache objects.">Cache</a> file from external repository by reference <a class="el" href="../../dc/d1a/classrepository.html#ac88b0c625ecb49e4c545ae5c49c93bf2">repository::get_file_reference()</a> <a class="el" href="../../dc/d1a/classrepository.html#a4404403c6d681ff8ed1b5f7297e92193">repository::get_file()</a> Invoked at MOODLE/repository/repository_ajax.php. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$reference</td><td>this reference is generated by <a class="el" href="../../dc/d1a/classrepository.html#ac88b0c625ecb49e4c545ae5c49c93bf2" title="Prepare file reference information.">repository::get_file_reference()</a> </td></tr>
@@ -1326,7 +1326,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timelimit</b></td></t
 
 <p>Repository method to make sure that user can access particular file. </p>
 <p>This is checked when user tries to pick the file from repository to deal with potential parameter substitutions is request</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000361">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-33805" class="el">MDL-33805</a> remove this function when recent files are managed correctly</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000353">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-33805" class="el">MDL-33805</a> remove this function when recent files are managed correctly</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$source</td><td></td></tr>
@@ -2774,7 +2774,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timelimit</b></td></t
 </div><div class="memdoc">
 
 <p>Move file from download folder to file pool using FILE API. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000357">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-28637" class="el">MDL-28637</a></dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000349">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-28637" class="el">MDL-28637</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$thefile</td><td>file path in download folder </td></tr>
@@ -3263,7 +3263,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timelimit</b></td></t
 </div><div class="memdoc">
 
 <p>Function <a class="el" href="../../dc/d1a/classrepository.html#a81e575cb60d16aee1ef4dbb892f400e4" title="Function repository::reset_caches() is deprecated, cache is handled by MUC now.">repository::reset_caches()</a> is deprecated, cache is handled by MUC now. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001115">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.6 <a href="https://tracker.moodle.org/browse/MDL-42016" class="el">MDL-42016</a> - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001198">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.6 <a href="https://tracker.moodle.org/browse/MDL-42016" class="el">MDL-42016</a> - please do not use this function any more. </dd></dl>
 
 </div>
 </div>
@@ -3665,7 +3665,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timelimit</b></td></t
 
 <p>Function <a class="el" href="../../dc/d1a/classrepository.html#a91ddea19dc0e264c77258280dbab29b7" title="Function repository::sync_external_file() is deprecated.">repository::sync_external_file()</a> is deprecated. </p>
 <p>Use <a class="el" href="../../dc/d1a/classrepository.html#a176c4c95cbd9c2b362fb90ea14f4ce13" title="Performs synchronisation of an external file if the previous one has expired.">repository::sync_reference</a> instead</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001116">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.6 <a href="https://tracker.moodle.org/browse/MDL-42016" class="el">MDL-42016</a> - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001199">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.6 <a href="https://tracker.moodle.org/browse/MDL-42016" class="el">MDL-42016</a> - please do not use this function any more. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dc/d1a/classrepository.html#a176c4c95cbd9c2b362fb90ea14f4ce13" title="Performs synchronisation of an external file if the previous one has expired.">repository::sync_reference()</a> </dd></dl>
 
 </div>
@@ -3912,7 +3912,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timelimit</b></td></t
 </div><div class="memdoc">
 
 <p>Helper function to indicate if this repository uses post requests for uploading files. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001117">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.2, 3.1.1, 3.0.5 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001200">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.2, 3.1.1, 3.0.5 </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td></td></tr>
@@ -4006,7 +4006,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timelimit</b></td></t
 </div><div class="memdoc">
 
 <p>Timeout in seconds for downloading the external file into moodle. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001110">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.7, please use $CFG-&gt;repositorygetfiletimeout instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001193">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.7, please use $CFG-&gt;repositorygetfiletimeout instead </dd></dl>
 
 </div>
 </div>
@@ -4031,7 +4031,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timelimit</b></td></t
 </div><div class="memdoc">
 
 <p>Timeout in seconds for syncronising the external file size. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001111">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.7, please use $CFG-&gt;repositorysyncfiletimeout instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001194">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.7, please use $CFG-&gt;repositorysyncfiletimeout instead </dd></dl>
 
 </div>
 </div>
@@ -4056,7 +4056,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timelimit</b></td></t
 </div><div class="memdoc">
 
 <p>Timeout in seconds for downloading an image file from external repository during syncronisation. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001112">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.7, please use $CFG-&gt;repositorysyncimagetimeout instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001195">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.7, please use $CFG-&gt;repositorysyncimagetimeout instead </dd></dl>
 
 </div>
 </div>
@@ -4066,7 +4066,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timelimit</b></td></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:10:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:16:21 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

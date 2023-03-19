@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -83,7 +83,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7322fb8608e32633dec0c8e9fb3fcba4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/da8/classlesson__base.html#a7322fb8608e32633dec0c8e9fb3fcba4">__isset</a> ($key)</td></tr>
 <tr class="memdesc:a7322fb8608e32633dec0c8e9fb3fcba4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stupid PHP needs an isset magic method if you use the get magic method and still want empty calls to work....  <br /></td></tr>
 <tr class="separator:a7322fb8608e32633dec0c8e9fb3fcba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a748dc0fe1d8c441c3d29b2c6ddc7306d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/da8/classlesson__base.html#a748dc0fe1d8c441c3d29b2c6ddc7306d">__set</a> ($key, $<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
+<tr class="memitem:a748dc0fe1d8c441c3d29b2c6ddc7306d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/da8/classlesson__base.html#a748dc0fe1d8c441c3d29b2c6ddc7306d">__set</a> ($key, $value)</td></tr>
 <tr class="memdesc:a748dc0fe1d8c441c3d29b2c6ddc7306d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Magic property method.  <br /></td></tr>
 <tr class="separator:a748dc0fe1d8c441c3d29b2c6ddc7306d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d703eb4a9233c8e73ad7f4d0e021327"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db3/classlesson.html#a1d703eb4a9233c8e73ad7f4d0e021327">add_message</a> ($message, $class=&quot;notifyproblem&quot;, $align='center')</td></tr>
@@ -826,7 +826,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$loadedallpages</b> =
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$filearea</td><td>Area that the files are stored. </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$itemid</td><td>Item ID. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$itemid</td><td><a class="el" href="../../dc/d32/class_item.html" title="Manages all item-related data.">Item</a> ID. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$newitemid</td><td>The item ID for the new page. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$contextid</td><td>Context ID for this page. </td></tr>
   </table>
@@ -2534,7 +2534,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$loadedallpages</b> =
 </div><div class="memdoc">
 
 <p>An array used to cache the pages associated with this lesson after the first time they have been loaded. </p>
-<p>A note to developers: If you are going to be working with MORE than one or two pages from a lesson you should probably call {</p><dl class="section see"><dt>See also</dt><dd>$lesson-&gt;<a class="el" href="../../de/db3/classlesson.html#ad38b6334e6d00aef592360d9c9dd70e8" title="Loads ALL of the pages for this lesson.">load_all_pages()</a>} in order to <a class="el" href="../../dc/d71/group___imap___client.html#gafc8a3c62679cf00ade9f15fb2a6d6132" title="Updates the cache.">save</a> excess database queries. An <a class="el" href="../../d7/df9/namespacearray.html" title="(&#39;&#39;) &#160;">array</a> of <a class="el" href="../../dc/d90/classlesson__page.html">lesson_page</a> objects </dd></dl>
+<p>A note to developers: If you are going to be working with MORE than one or two pages from a lesson you should probably call {</p><dl class="section see"><dt>See also</dt><dd>$lesson-&gt;<a class="el" href="../../de/db3/classlesson.html#ad38b6334e6d00aef592360d9c9dd70e8" title="Loads ALL of the pages for this lesson.">load_all_pages()</a>} in order to <a class="el" href="../../dc/d71/group___imap___client.html#gafc8a3c62679cf00ade9f15fb2a6d6132" title="Updates the cache.">save</a> excess database queries. An array of <a class="el" href="../../dc/d90/classlesson__page.html">lesson_page</a> objects </dd></dl>
 
 </div>
 </div>
@@ -2568,7 +2568,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$loadedallpages</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:10:07 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:16:02 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

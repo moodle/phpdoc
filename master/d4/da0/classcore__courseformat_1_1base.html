@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -68,7 +68,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Base class for course formats.  
+<p><a class="el" href="../../d9/da0/interface_base.html" title="Base for cache objects.">Base</a> class for course formats.  
  <a href="../../d4/da0/classcore__courseformat_1_1base.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for core_courseformat\base:</div>
@@ -345,7 +345,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesection</b> = 0
 <tr class="separator:aeab0a4d74f08a1317d049e606910fbb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Base class for course formats. </p>
+<div class="textblock"><p><a class="el" href="../../d9/da0/interface_base.html" title="Base for cache objects.">Base</a> class for course formats. </p>
 <p>Each course format must declare class class format_FORMATNAME extends <a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html" title="Base class for course formats.">core_courseformat::base</a> {} in file lib.php</p>
 <p>For each course just one instance of this class is created and it will always be returned by course_get_format($courseorid). Format may store it's specific course-dependent options in variables of this class.</p>
 <p>In rare cases instance of child class may be created just for format without course id i.e. to check if format supports AJAX.</p>
@@ -2927,6 +2927,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesection</b> = 0
   </dd>
 </dl>
 
+<p>Reimplemented in <a class="el" href="../../d1/d92/classformat__topics.html#a71c92eba5da523a9e95d005b0c136b56">format_topics</a>, and <a class="el" href="../../d5/d8d/classformat__weeks.html#ac3be814d81bfd5ed18f67601d6d83c9e">format_weeks</a>.</p>
+
 </div>
 </div>
 <a id="a591717986091b88fb2e4cbf9d00063b3" name="a591717986091b88fb2e4cbf9d00063b3"></a>
@@ -3074,7 +3076,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesection</b> = 0
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:11:04 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:17:10 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

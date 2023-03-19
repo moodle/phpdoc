@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -344,6 +344,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9131ea4e79f66e2f0d59238d29feda6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#a9131ea4e79f66e2f0d59238d29feda6b">process_redo_question</a> ($slot, $timestamp)</td></tr>
 <tr class="memdesc:a9131ea4e79f66e2f0d59238d29feda6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace a question in an attempt with a new attempt at the same question.  <br /></td></tr>
 <tr class="separator:a9131ea4e79f66e2f0d59238d29feda6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc233463f4e4707f445c58cfe08b97c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#adc233463f4e4707f445c58cfe08b97c6">process_reopen_abandoned</a> ($timestamp)</td></tr>
+<tr class="memdesc:adc233463f4e4707f445c58cfe08b97c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method takes an attempt in the 'Never submitted' state, and reopens it.  <br /></td></tr>
+<tr class="separator:adc233463f4e4707f445c58cfe08b97c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e7604d3a23204c87360a39d513f00fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html#a9e7604d3a23204c87360a39d513f00fc">process_submitted_actions</a> ($timestamp, $becomingoverdue=false, $simulatedresponses=null)</td></tr>
 <tr class="memdesc:a9e7604d3a23204c87360a39d513f00fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process all the actions that were submitted as part of the current request.  <br /></td></tr>
 <tr class="separator:a9e7604d3a23204c87360a39d513f00fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3187,7 +3190,7 @@ ABANDONED} are both considered finished in this state. Other states are not.</dd
 
 <p>Return an array of variant URLs to other attempts at this quiz. </p>
 <p>The $url passed in must contain an attempt parameter.</p>
-<p>The {</p><dl class="section see"><dt>See also</dt><dd>links_to_other_attempts} object returned <a class="el" href="../../dc/d71/group___imap___client.html#gacbd9980ee421fe98a0bbedcbba5d4a27" title="Does the query contain the given criteria?">contains</a> an <a class="el" href="../../d7/df9/namespacearray.html" title="(&#39;&#39;) &#160;">array</a> with keys that are the attempt number, 1, 2, 3. The <a class="el" href="../../d7/df9/namespacearray.html" title="(&#39;&#39;) &#160;">array</a> values are either a {</dd>
+<p>The {</p><dl class="section see"><dt>See also</dt><dd>links_to_other_attempts} object returned <a class="el" href="../../dc/d71/group___imap___client.html#gacbd9980ee421fe98a0bbedcbba5d4a27" title="Does the query contain the given criteria?">contains</a> an array with keys that are the attempt number, 1, 2, 3. The array values are either a {</dd>
 <dd>
 <a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a>} with the attempt parameter updated to point to the attempt id of the other attempt, or <a class="el" href="../../db/df6/namespacenull.html" title="&#160;">null</a> corresponding to the current attempt number.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -3233,7 +3236,7 @@ ABANDONED} are both considered finished in this state. Other states are not.</dd
 
 <p>Return an array of variant URLs to other redos of the question in a particular slot. </p>
 <p>The $url passed in must contain a slot parameter.</p>
-<p>The {</p><dl class="section see"><dt>See also</dt><dd>links_to_other_attempts} object returned <a class="el" href="../../dc/d71/group___imap___client.html#gacbd9980ee421fe98a0bbedcbba5d4a27" title="Does the query contain the given criteria?">contains</a> an <a class="el" href="../../d7/df9/namespacearray.html" title="(&#39;&#39;) &#160;">array</a> with keys that are the redo number, 1, 2, 3. The <a class="el" href="../../d7/df9/namespacearray.html" title="(&#39;&#39;) &#160;">array</a> values are either a {</dd>
+<p>The {</p><dl class="section see"><dt>See also</dt><dd>links_to_other_attempts} object returned <a class="el" href="../../dc/d71/group___imap___client.html#gacbd9980ee421fe98a0bbedcbba5d4a27" title="Does the query contain the given criteria?">contains</a> an array with keys that are the redo number, 1, 2, 3. The array values are either a {</dd>
 <dd>
 <a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a>} with the slot parameter updated to point to the slot that has that redo of this question; or <a class="el" href="../../db/df6/namespacenull.html" title="&#160;">null</a> corresponding to the redo identified by $slot.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -3615,6 +3618,33 @@ review_url()}.</dd></dl>
 
 </div>
 </div>
+<a id="adc233463f4e4707f445c58cfe08b97c6" name="adc233463f4e4707f445c58cfe08b97c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc233463f4e4707f445c58cfe08b97c6">&#9670;&#160;</a></span>process_reopen_abandoned()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\quiz_attempt::process_reopen_abandoned </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$timestamp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This method takes an attempt in the 'Never submitted' state, and reopens it. </p>
+<p>If, for this student, time has not expired (perhaps, because an override has been added, then the attempt is left open. Otherwise, it is immediately submitted for grading.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$timestamp</td><td>the time to deem as now. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a9e7604d3a23204c87360a39d513f00fc" name="a9e7604d3a23204c87360a39d513f00fc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9e7604d3a23204c87360a39d513f00fc">&#9670;&#160;</a></span>process_submitted_actions()</h2>
 
@@ -3656,7 +3686,7 @@ review_url()}.</dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d9/dd4/classcore__question__generator.html#aae9c193e6e81828a3faa0f8be2f6233f" title="This method can construct what the post data would be to simulate a user submitting responses to a nu...">core_question_generator::get_simulated_post_data_for_questions_in_usage()</a>}. the second is to pass an <a class="el" href="../../d7/df9/namespacearray.html" title="(&#39;&#39;) &#160;">array</a> slot no =&gt; <a class="el" href="../../dc/d71/group___imap___client.html#gacbd9980ee421fe98a0bbedcbba5d4a27" title="Does the query contain the given criteria?">contains</a> arrays representing student responses which will be passed to {</dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d9/dd4/classcore__question__generator.html#aae9c193e6e81828a3faa0f8be2f6233f" title="This method can construct what the post data would be to simulate a user submitting responses to a nu...">core_question_generator::get_simulated_post_data_for_questions_in_usage()</a>}. the second is to pass an array slot no =&gt; <a class="el" href="../../dc/d71/group___imap___client.html#gacbd9980ee421fe98a0bbedcbba5d4a27" title="Does the query contain the given criteria?">contains</a> arrays representing student responses which will be passed to {</dd>
 <dd>
 <a class="el" href="../../d7/da5/classquestion__definition.html#a50f6ead29930c760a2303f78cbd2a4f0" title="Takes an array of values representing a student response represented in a way that is understandable ...">question_definition::prepare_simulated_post_data()</a>}. This second method will probably <a class="el" href="../../dc/d71/group___imap___client.html#gafcf303080696d20cffeed262f4ebc4bb" title="Get information from the cache.">get</a> deprecated one day. </dd></dl>
 
@@ -4418,7 +4448,7 @@ render_question_at_step()}.</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:11:46 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:17:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -96,7 +96,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8776c0bdc6584ffd6c1698569e80b257"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df3/classcachestore__dummy.html#a8776c0bdc6584ffd6c1698569e80b257">delete_many</a> (array $keys)</td></tr>
 <tr class="memdesc:a8776c0bdc6584ffd6c1698569e80b257"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes many items from the cache.  <br /></td></tr>
 <tr class="separator:a8776c0bdc6584ffd6c1698569e80b257"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84b02257f7ac72d9fdf07c5234700d62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d4b/classcache__store.html#a84b02257f7ac72d9fdf07c5234700d62">estimate_stored_size</a> ($key, $<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
+<tr class="memitem:a84b02257f7ac72d9fdf07c5234700d62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d4b/classcache__store.html#a84b02257f7ac72d9fdf07c5234700d62">estimate_stored_size</a> ($key, $value)</td></tr>
 <tr class="memdesc:a84b02257f7ac72d9fdf07c5234700d62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimates the storage size used within this cache if the given value is stored with the given key.  <br /></td></tr>
 <tr class="separator:a84b02257f7ac72d9fdf07c5234700d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe05882aef53e0b263ca4c0d766a1821"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/df3/classcachestore__dummy.html#afe05882aef53e0b263ca4c0d766a1821">get</a> ($key)</td></tr>
@@ -648,7 +648,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$name</b></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the number of bytes read from or written to cache as a result of the last action. </p>
-<p>This includes calls to the functions <a class="el" href="../../d8/ded/group___simple_pie.html#ga5ba61361bf0695a285bbaefefc427191" title="Get the object.">get()</a>, <a class="el" href="../../dc/df3/classcachestore__dummy.html#ae9c6b336eec6202fd6186ebbf4e5de50" title="Gets&#39; the values for many keys.">get_many()</a>, <a class="el" href="../../dc/df3/classcachestore__dummy.html#ad4dc2864c7935459f3204815f4f6c4b1" title="Sets an item in the cache.">set()</a>, and <a class="el" href="../../dc/df3/classcachestore__dummy.html#a8a1f41a22f23b70f0303812e287a51a3" title="Sets many items in the cache.">set_many()</a>. The number is reset by calling any of these functions.</p>
+<p>This includes calls to the functions <a class="el" href="../../dc/df3/classcachestore__dummy.html#afe05882aef53e0b263ca4c0d766a1821" title="Returns the data for the given key.">get()</a>, <a class="el" href="../../dc/df3/classcachestore__dummy.html#ae9c6b336eec6202fd6186ebbf4e5de50" title="Gets&#39; the values for many keys.">get_many()</a>, <a class="el" href="../../dc/df3/classcachestore__dummy.html#ad4dc2864c7935459f3204815f4f6c4b1" title="Sets an item in the cache.">set()</a>, and <a class="el" href="../../dc/df3/classcachestore__dummy.html#a8a1f41a22f23b70f0303812e287a51a3" title="Sets many items in the cache.">set_many()</a>. The number is reset by calling any of these functions.</p>
 <p>This should be the actual number of bytes of the value read from or written to cache, giving an impression of the network or other load. It will not be exactly the same amount as netowrk traffic because of protocol overhead, key text, etc.</p>
 <p>If not supported, returns IO_BYTES_NOT_SUPPORTED.</p>
 <dl class="retval"><dt>Return values</dt><dd>
@@ -1153,7 +1153,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$name</b></td></tr>
 </div><div class="memdoc">
 
 <p>Returns true if this cache store instance is both suitable for testing, and ready for testing. </p>
-<p>Cache stores that support being used as the default store for unit and acceptance testing should override this function and return true if there requirements have been met.</p>
+<p><a class="el" href="../../dc/d67/class_cache.html" title="Used to create cache objects.">Cache</a> stores that support being used as the default store for unit and acceptance testing should override this function and return true if there requirements have been met.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td></td></tr>
@@ -1607,7 +1607,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$name</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:09:05 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:14:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

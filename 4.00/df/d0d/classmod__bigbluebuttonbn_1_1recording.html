@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.7 (Build: 20230313) (0fae900b585)</div>
+   <div id="projectbrief">Moodle 4.0.7+ (Build: 20230318) (a971b893899)</div>
   </td>
  </tr>
  </tbody>
@@ -179,9 +179,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae88a7d7d7387319addaf9990c1d3accd"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9f/classcore_1_1persistent.html#ae88a7d7d7387319addaf9990c1d3accd">record_exists_select</a> ($select, array $params=null)</td></tr>
 <tr class="memdesc:ae88a7d7d7387319addaf9990c1d3accd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a records exists.  <br /></td></tr>
 <tr class="separator:ae88a7d7d7387319addaf9990c1d3accd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25253b1eafac3b3add51638a55051c90"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0d/classmod__bigbluebuttonbn_1_1recording.html#a25253b1eafac3b3add51638a55051c90">sync_pending_recordings_from_server</a> ()</td></tr>
-<tr class="memdesc:a25253b1eafac3b3add51638a55051c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronise pending recordings from the server.  <br /></td></tr>
-<tr class="separator:a25253b1eafac3b3add51638a55051c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18c01b306f692ebb9b67498fb9dc7259"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0d/classmod__bigbluebuttonbn_1_1recording.html#a18c01b306f692ebb9b67498fb9dc7259">sync_pending_recordings_from_server</a> (bool $dismissedonly=false)</td></tr>
+<tr class="memdesc:a18c01b306f692ebb9b67498fb9dc7259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronise pending recordings from the server.  <br /></td></tr>
+<tr class="separator:a18c01b306f692ebb9b67498fb9dc7259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -2951,8 +2951,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$metadatachanged</b> 
 
 </div>
 </div>
-<a id="a25253b1eafac3b3add51638a55051c90" name="a25253b1eafac3b3add51638a55051c90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25253b1eafac3b3add51638a55051c90">&#9670;&#160;</a></span>sync_pending_recordings_from_server()</h2>
+<a id="a18c01b306f692ebb9b67498fb9dc7259" name="a18c01b306f692ebb9b67498fb9dc7259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18c01b306f692ebb9b67498fb9dc7259">&#9670;&#160;</a></span>sync_pending_recordings_from_server()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2963,7 +2963,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$metadatachanged</b> 
         <tr>
           <td class="memname">static mod_bigbluebuttonbn\recording::sync_pending_recordings_from_server </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$dismissedonly</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2975,7 +2976,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$metadatachanged</b> 
 </div><div class="memdoc">
 
 <p>Synchronise pending recordings from the server. </p>
-<p>This function should be called by the check_pending_recordings scheduled task. </p>
+<p>This function should be called by the check_pending_recordings scheduled task.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">bool</td><td class="paramname">$dismissedonly</td><td>fetch dismissed recording only </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -3145,7 +3152,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$metadatachanged</b> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 02:59:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:03:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

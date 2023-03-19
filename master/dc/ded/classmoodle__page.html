@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -68,7 +68,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a522f5d99298eb73d775cace62464967c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/classmoodle__page.html#a522f5d99298eb73d775cace62464967c">__get</a> ($name)</td></tr>
 <tr class="memdesc:a522f5d99298eb73d775cace62464967c"><td class="mdescLeft">&#160;</td><td class="mdescRight">PHP overloading magic to make the $PAGE-&gt;course syntax work by redirecting it to the corresponding $PAGE-&gt;magic_get_course() method if there is one, and throwing an exception if not.  <br /></td></tr>
 <tr class="separator:a522f5d99298eb73d775cace62464967c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9e7691e8f972f329ada7b08d9c72a33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/classmoodle__page.html#ad9e7691e8f972f329ada7b08d9c72a33">__set</a> ($name, $<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
+<tr class="memitem:ad9e7691e8f972f329ada7b08d9c72a33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/classmoodle__page.html#ad9e7691e8f972f329ada7b08d9c72a33">__set</a> ($name, $value)</td></tr>
 <tr class="memdesc:ad9e7691e8f972f329ada7b08d9c72a33"><td class="mdescLeft">&#160;</td><td class="mdescRight">PHP overloading magic to catch obvious coding errors.  <br /></td></tr>
 <tr class="separator:ad9e7691e8f972f329ada7b08d9c72a33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61cf485d3d84ab7cfdba4e3b4ad9c9c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/classmoodle__page.html#a61cf485d3d84ab7cfdba4e3b4ad9c9c2">add_alternate_version</a> ($title, $url, $mimetype)</td></tr>
@@ -197,7 +197,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af5329dfcdc01041aaf8f8425115bd506"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/classmoodle__page.html#af5329dfcdc01041aaf8f8425115bd506">set_headingmenu</a> ($menu)</td></tr>
 <tr class="memdesc:af5329dfcdc01041aaf8f8425115bd506"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets some HTML to use next to the heading <a class="el" href="../../dc/ded/classmoodle__page.html#a67054f5fde8acf3905e4db082d12f777">moodle_page::set_heading()</a>.  <br /></td></tr>
 <tr class="separator:af5329dfcdc01041aaf8f8425115bd506"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8307368058a81ae01a7eef11a7bce80e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/classmoodle__page.html#a8307368058a81ae01a7eef11a7bce80e">set_include_region_main_settings_in_header_actions</a> (bool $<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
+<tr class="memitem:a8307368058a81ae01a7eef11a7bce80e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/classmoodle__page.html#a8307368058a81ae01a7eef11a7bce80e">set_include_region_main_settings_in_header_actions</a> (bool $value)</td></tr>
 <tr class="memdesc:a8307368058a81ae01a7eef11a7bce80e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the flag to indicate if the region main settings should be rendered as an action in the header actions menu rather than at the top of the content.  <br /></td></tr>
 <tr class="separator:a8307368058a81ae01a7eef11a7bce80e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a17552df20900ebe2cfe6f61af3cf52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/classmoodle__page.html#a6a17552df20900ebe2cfe6f61af3cf52">set_navigation_overflow_state</a> (bool $state)</td></tr>
@@ -1502,7 +1502,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_subpage</b> = ''<
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000742">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000752">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 </dd></dl>
 
 </div>
 </div>
@@ -4182,7 +4182,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_subpage</b> = ''<
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000743">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000753">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 </dd></dl>
 
 </div>
 </div>
@@ -4768,7 +4768,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_subpage</b> = ''<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:10:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:16:07 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -114,7 +114,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:acaf9366bd84a03d4cec6c6f792d9bfe1"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d04/class_packback_1_1_lti1p3_1_1_lti_message_launch.html#acaf9366bd84a03d4cec6c6f792d9bfe1">fromCache</a> ($launch_id, <a class="el" href="../../d6/d74/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_database.html">IDatabase</a> $database, <a class="el" href="../../de/df3/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_cache.html">ICache</a> $<a class="el" href="../../d3/d3d/classcache.html">cache</a>=null, <a class="el" href="../../df/d0f/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_lti_service_connector.html">ILtiServiceConnector</a> $serviceConnector=null)</td></tr>
-<tr class="memdesc:acaf9366bd84a03d4cec6c6f792d9bfe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load an LtiMessageLaunch from a Cache using a launch id.  <br /></td></tr>
+<tr class="memdesc:acaf9366bd84a03d4cec6c6f792d9bfe1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load an LtiMessageLaunch from a <a class="el" href="../../dc/d67/class_cache.html" title="Used to create cache objects.">Cache</a> using a launch id.  <br /></td></tr>
 <tr class="separator:acaf9366bd84a03d4cec6c6f792d9bfe1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addaaa0db57e3bda189c7e4c2d0855a6e"><td class="memItemLeft" align="right" valign="top"><a id="addaaa0db57e3bda189c7e4c2d0855a6e" name="addaaa0db57e3bda189c7e4c2d0855a6e"></a>
 static&#160;</td><td class="memItemRight" valign="bottom"><b>getMissingRegistrationErrorMsg</b> (string $issuerUrl, ?string $clientId=null)</td></tr>
@@ -236,7 +236,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_SUBMISSIONREVIE
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">IDatabase</td><td class="paramname">$database</td><td>instance of the database interface used for looking up registrations and deployments </td></tr>
-    <tr><td class="paramtype">ICache</td><td class="paramname">$cache</td><td>instance of the Cache interface used to loading and storing launches </td></tr>
+    <tr><td class="paramtype">ICache</td><td class="paramname">$cache</td><td>instance of the <a class="el" href="../../dc/d67/class_cache.html" title="Used to create cache objects.">Cache</a> interface used to loading and storing launches </td></tr>
     <tr><td class="paramtype">ICookie</td><td class="paramname">$cookie</td><td>instance of the Cookie interface used to set and read cookies </td></tr>
     <tr><td class="paramtype">ILtiServiceConnector</td><td class="paramname">$serviceConnector</td><td>instance of the LtiServiceConnector used to by LTI services to make API requests </td></tr>
   </table>
@@ -292,12 +292,12 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_SUBMISSIONREVIE
 </table>
 </div><div class="memdoc">
 
-<p>Load an LtiMessageLaunch from a Cache using a launch id. </p>
+<p>Load an LtiMessageLaunch from a <a class="el" href="../../dc/d67/class_cache.html" title="Used to create cache objects.">Cache</a> using a launch id. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$launch_id</td><td>the launch id of the LtiMessageLaunch object that is being pulled from the cache </td></tr>
     <tr><td class="paramtype">IDatabase</td><td class="paramname">$database</td><td>instance of the database interface used for looking up registrations and deployments </td></tr>
-    <tr><td class="paramtype">ICache</td><td class="paramname">$cache</td><td>Instance of the Cache interface used to loading and storing launches. If non is provided launch data will be store in $_SESSION.</td></tr>
+    <tr><td class="paramtype">ICache</td><td class="paramname">$cache</td><td>Instance of the <a class="el" href="../../dc/d67/class_cache.html" title="Used to create cache objects.">Cache</a> interface used to loading and storing launches. If non is provided launch data will be store in $_SESSION.</td></tr>
   </table>
   </dd>
 </dl>
@@ -660,7 +660,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_SUBMISSIONREVIE
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:11:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:18:09 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

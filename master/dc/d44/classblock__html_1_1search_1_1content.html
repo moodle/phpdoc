@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -174,7 +174,7 @@ Static Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:adc1bbb6d2a90f1a338dc80d0e40d815d"><td class="memItemLeft" align="right" valign="top"><a id="adc1bbb6d2a90f1a338dc80d0e40d815d" name="adc1bbb6d2a90f1a338dc80d0e40d815d"></a>
 string const&#160;</td><td class="memItemRight" valign="bottom"><b>CACHE_INSTANCES</b> = 'base_block_instances'</td></tr>
-<tr class="memdesc:adc1bbb6d2a90f1a338dc80d0e40d815d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache name used for block instances. <br /></td></tr>
+<tr class="memdesc:adc1bbb6d2a90f1a338dc80d0e40d815d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../dc/d67/class_cache.html" title="Used to create cache objects.">Cache</a> name used for block instances. <br /></td></tr>
 <tr class="separator:adc1bbb6d2a90f1a338dc80d0e40d815d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
@@ -995,7 +995,7 @@ Static Protected Attributes</h2></td></tr>
 <p>This method receives a record with the document id and other info returned by get_recordset_by_timestamp or get_recordset_by_contexts that might be useful here. The idea is to restrict database queries to minimum as this function will be called for each document to index. As an alternative, use cached data.</p>
 <p>Internally it should use <a class="el" href="../../d3/d5d/classcore__search_1_1document.html" title="Represents a document to index.">core_search::document</a> to standarise the documents before sending them to the search engine.</p>
 <p>Search areas should send plain text to the search engine, use the following function to convert any user input data to plain text: <a class="el" href="../../d0/de1/group__core.html#ga970fcc4179ad3e821ece2609f4193282">content_to_text</a></p>
-<p>Valid keys for the options array are: indexfiles =&gt; File indexing is enabled if true. lastindexedtime =&gt; The last time this area was indexed. 0 if never indexed.</p>
+<p>Valid keys for the options array are: indexfiles =&gt; <a class="el" href="../../d1/d31/class_file.html" title="Caches data to the filesystem.">File</a> indexing is enabled if true. lastindexedtime =&gt; The last time this area was indexed. 0 if never indexed.</p>
 <p>The lastindexedtime value is not set if indexing a specific context rather than the whole system.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1529,7 +1529,7 @@ Static Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:10:32 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:16:33 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

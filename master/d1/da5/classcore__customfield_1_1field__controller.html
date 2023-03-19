@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -66,7 +66,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Base class for custom fields controllers.  
+<p><a class="el" href="../../d9/da0/interface_base.html" title="Base for cache objects.">Base</a> class for custom fields controllers.  
  <a href="../../d1/da5/classcore__customfield_1_1field__controller.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for core_customfield\field_controller:</div>
@@ -114,7 +114,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6b8cdde72a6cb78d825d6389c6af205a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da5/classcore__customfield_1_1field__controller.html#a6b8cdde72a6cb78d825d6389c6af205a">get_handler</a> ()</td></tr>
 <tr class="memdesc:a6b8cdde72a6cb78d825d6389c6af205a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a handler for this field.  <br /></td></tr>
 <tr class="separator:a6b8cdde72a6cb78d825d6389c6af205a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af10ce76b92f3efafff4064febfc01b64"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da5/classcore__customfield_1_1field__controller.html#af10ce76b92f3efafff4064febfc01b64">parse_value</a> (string $<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
+<tr class="memitem:af10ce76b92f3efafff4064febfc01b64"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da5/classcore__customfield_1_1field__controller.html#af10ce76b92f3efafff4064febfc01b64">parse_value</a> (string $value)</td></tr>
 <tr class="memdesc:af10ce76b92f3efafff4064febfc01b64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform pre-processing of field values, for example those that originate from an external source (e.g.  <br /></td></tr>
 <tr class="separator:af10ce76b92f3efafff4064febfc01b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22527ff5378b2839f4d854b974dcd408"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da5/classcore__customfield_1_1field__controller.html#a22527ff5378b2839f4d854b974dcd408">prepare_for_config_form</a> (\stdClass $formdata)</td></tr>
@@ -123,7 +123,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2d5f00fcd465bc60c490043365c9c9ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da5/classcore__customfield_1_1field__controller.html#a2d5f00fcd465bc60c490043365c9c9ee">save</a> ()</td></tr>
 <tr class="memdesc:a2d5f00fcd465bc60c490043365c9c9ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save or update the persistent class to database.  <br /></td></tr>
 <tr class="separator:a2d5f00fcd465bc60c490043365c9c9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6c2557d98f2f2f5a16bc5f8514a538a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da5/classcore__customfield_1_1field__controller.html#aa6c2557d98f2f2f5a16bc5f8514a538a">set</a> ($property, $<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
+<tr class="memitem:aa6c2557d98f2f2f5a16bc5f8514a538a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da5/classcore__customfield_1_1field__controller.html#aa6c2557d98f2f2f5a16bc5f8514a538a">set</a> ($property, $value)</td></tr>
 <tr class="memdesc:aa6c2557d98f2f2f5a16bc5f8514a538a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Persistent setter parser.  <br /></td></tr>
 <tr class="separator:aa6c2557d98f2f2f5a16bc5f8514a538a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b549e3420971f8ec32cc5780a8deeea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da5/classcore__customfield_1_1field__controller.html#a4b549e3420971f8ec32cc5780a8deeea">supports_course_grouping</a> ()</td></tr>
@@ -143,14 +143,14 @@ Static Public Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a31fdde62e05916247dc71a64f48c3278"><td class="memItemLeft" align="right" valign="top"><a id="a31fdde62e05916247dc71a64f48c3278" name="a31fdde62e05916247dc71a64f48c3278"></a>
 <a class="el" href="../../d2/d0c/classcore__customfield_1_1category__controller.html">category_controller</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$category</b></td></tr>
-<tr class="memdesc:a31fdde62e05916247dc71a64f48c3278"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category of the field. <br /></td></tr>
+<tr class="memdesc:a31fdde62e05916247dc71a64f48c3278"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d7/df3/class_category.html" title="Manages all category-related data.">Category</a> of the field. <br /></td></tr>
 <tr class="separator:a31fdde62e05916247dc71a64f48c3278"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f6c5c8f57ab65db19f3cec82205f094"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/de9/classcore__customfield_1_1field.html">field</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da5/classcore__customfield_1_1field__controller.html#a6f6c5c8f57ab65db19f3cec82205f094">$field</a></td></tr>
 <tr class="memdesc:a6f6c5c8f57ab65db19f3cec82205f094"><td class="mdescLeft">&#160;</td><td class="mdescRight">Field persistent class.  <br /></td></tr>
 <tr class="separator:a6f6c5c8f57ab65db19f3cec82205f094"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Base class for custom fields controllers. </p>
+<div class="textblock"><p><a class="el" href="../../d9/da0/interface_base.html" title="Base for cache objects.">Base</a> class for custom fields controllers. </p>
 <p>This class is a wrapper around the persistent field class that allows to define the field configuration</p>
 <p>Custom field plugins must define a class {pluginname}::field_controller extends <a class="el" href="../../d7/d4d/namespacecore__customfield.html" title="&#160;">core_customfield</a>\field_controller</p>
 <dl class="section copyright"><dt>Copyright</dt><dd>2018 Toni Barbera <a href="#" onclick="location.href='mai'+'lto:'+'ton'+'i@'+'moo'+'dl'+'e.c'+'om'; return false;">toni@<span class="obfuscator">.nosp@m.</span>mood<span class="obfuscator">.nosp@m.</span>le.co<span class="obfuscator">.nosp@m.</span>m</a> </dd></dl>
@@ -803,7 +803,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:11:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:17:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

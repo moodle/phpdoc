@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -282,9 +282,9 @@ Public Attributes</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$_obj</b></td></tr>
 <tr class="memdesc:ac9deadc8322f08679dfb272688986e68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init() should only be called once. <br /></td></tr>
 <tr class="separator:ac9deadc8322f08679dfb272688986e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ad397572f6dfcf99b481148ee0caa11"><td class="memItemLeft" align="right" valign="top">resource&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de1/class_a_d_o_record_set.html#a1ad397572f6dfcf99b481148ee0caa11">$_queryID</a> = -1</td></tr>
-<tr class="memdesc:a1ad397572f6dfcf99b481148ee0caa11"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of fields in recordset  <br /></td></tr>
-<tr class="separator:a1ad397572f6dfcf99b481148ee0caa11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfd1d240788f67e4d2e00be9bd88a48e"><td class="memItemLeft" align="right" valign="top">resource int false&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/de1/class_a_d_o_record_set.html#acfd1d240788f67e4d2e00be9bd88a48e">$_queryID</a> = self::DUMMY_QUERY_ID</td></tr>
+<tr class="memdesc:acfd1d240788f67e4d2e00be9bd88a48e"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of fields in recordset  <br /></td></tr>
+<tr class="separator:acfd1d240788f67e4d2e00be9bd88a48e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a797e77bf36bea00eb3332dd913a10569"><td class="memItemLeft" align="right" valign="top"><a id="a797e77bf36bea00eb3332dd913a10569" name="a797e77bf36bea00eb3332dd913a10569"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$bind</b> = false</td></tr>
 <tr class="separator:a797e77bf36bea00eb3332dd913a10569"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -344,6 +344,10 @@ bool array&#160;</td><td class="memItemRight" valign="bottom"><b>$fields</b> = f
 <tr class="memitem:a2d4c5042022617376a6e09125fd6c490"><td class="memItemLeft" align="right" valign="top"><a id="a2d4c5042022617376a6e09125fd6c490" name="a2d4c5042022617376a6e09125fd6c490"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$timeCreated</b> =0</td></tr>
 <tr class="separator:a2d4c5042022617376a6e09125fd6c490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa502dc30a3c4b1ced724eb34cdf18148"><td class="memItemLeft" align="right" valign="top"><a id="aa502dc30a3c4b1ced724eb34cdf18148" name="aa502dc30a3c4b1ced724eb34cdf18148"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>DUMMY_QUERY_ID</b> = -1</td></tr>
+<tr class="memdesc:aa502dc30a3c4b1ced724eb34cdf18148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used for cases when a recordset object is not created by executing a query. <br /></td></tr>
+<tr class="separator:aa502dc30a3c4b1ced724eb34cdf18148"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -2498,8 +2502,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a1ad397572f6dfcf99b481148ee0caa11" name="a1ad397572f6dfcf99b481148ee0caa11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ad397572f6dfcf99b481148ee0caa11">&#9670;&#160;</a></span>$_queryID</h2>
+<a id="acfd1d240788f67e4d2e00be9bd88a48e" name="acfd1d240788f67e4d2e00be9bd88a48e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfd1d240788f67e4d2e00be9bd88a48e">&#9670;&#160;</a></span>$_queryID</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2508,7 +2512,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">resource ADORecordSet::$_queryID = -1</td>
+          <td class="memname">resource int false ADORecordSet::$_queryID = self::DUMMY_QUERY_ID</td>
         </tr>
       </table>
   </td>
@@ -2579,7 +2583,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:08:56 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:14:36 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

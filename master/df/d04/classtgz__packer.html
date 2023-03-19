@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -138,7 +138,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ae7aaf08f664370fc013c44e7832fe5b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d04/classtgz__packer.html#ae7aaf08f664370fc013c44e7832fe5b5">list_files_stored</a> (array &amp;$expandedfiles, $archivepath, <a class="el" href="../../d0/d00/classstored__file.html">stored_file</a> $file)</td></tr>
 <tr class="memdesc:ae7aaf08f664370fc013c44e7832fe5b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Based on a <a class="el" href="../../d0/d00/classstored__file.html">stored_file</a> objects, adds either that file (if it's a file) or all its children (if it's a directory) into the list of files to archive.  <br /></td></tr>
 <tr class="separator:ae7aaf08f664370fc013c44e7832fe5b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae251e04d6079273d78a9b894f32f6b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d04/classtgz__packer.html#aae251e04d6079273d78a9b894f32f6b1">write_tar_entry</a> ($gz, $archivepath, $file, $size, $<a class="el" href="../../d8/ded/group___simple_pie.html#ga87df9874162af616bbcd66e3f28fcd73">mtime</a>, $content=null, <a class="el" href="../../d5/dd5/interfacefile__progress.html">file_progress</a> $progress=null, $done=0)</td></tr>
+<tr class="memitem:aae251e04d6079273d78a9b894f32f6b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d04/classtgz__packer.html#aae251e04d6079273d78a9b894f32f6b1">write_tar_entry</a> ($gz, $archivepath, $file, $size, $mtime, $content=null, <a class="el" href="../../d5/dd5/interfacefile__progress.html">file_progress</a> $progress=null, $done=0)</td></tr>
 <tr class="memdesc:aae251e04d6079273d78a9b894f32f6b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a single tar file to the archive, including its header record and then the file contents.  <br /></td></tr>
 <tr class="separator:aae251e04d6079273d78a9b894f32f6b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -407,8 +407,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$includeindex</b> = t
 <p>Wrapper function useful for deleting an existing file (if present) just before creating a new one. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../d3/ddd/classfile__storage.html">file_storage</a></td><td class="paramname">$fs</td><td>File storage </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$filerecord</td><td>File record in same format used to create file </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../d3/ddd/classfile__storage.html">file_storage</a></td><td class="paramname">$fs</td><td><a class="el" href="../../d1/d31/class_file.html" title="Caches data to the filesystem.">File</a> storage </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$filerecord</td><td><a class="el" href="../../d1/d31/class_file.html" title="Caches data to the filesystem.">File</a> record in same format used to create file </td></tr>
   </table>
   </dd>
 </dl>
@@ -605,7 +605,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$includeindex</b> = t
 
 <p>The zlib extension is required for this packer to work. </p>
 <p>This is a single location for the code to check whether the extension is available.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000566">Deprecated:</a></b></dt><dd>since 2.7 Always true because zlib extension is now required.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000576">Deprecated:</a></b></dt><dd>since 2.7 Always true because zlib extension is now required.</dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td>True if the zlib extension is available OK </td></tr>
@@ -808,7 +808,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$includeindex</b> = t
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$expandedfiles</td><td>List of all files to archive (output) </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$archivepath</td><td>Current path within archive </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../d0/d00/classstored__file.html">stored_file</a></td><td class="paramname">$file</td><td>File object </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../d0/d00/classstored__file.html">stored_file</a></td><td class="paramname">$file</td><td><a class="el" href="../../d1/d31/class_file.html" title="Caches data to the filesystem.">File</a> object </td></tr>
   </table>
   </dd>
 </dl>
@@ -948,7 +948,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$includeindex</b> = t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:10:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:16:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1.2 (Build: 20230313) (033858e2491)</div>
+   <div id="projectbrief">Moodle 4.1.2+ (Build: 20230318) (231c25e4987)</div>
   </td>
  </tr>
  </tbody>
@@ -109,9 +109,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4ecc35fb813cc6e9b5bdcea56d227322"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/classlesson__page.html#a4ecc35fb813cc6e9b5bdcea56d227322">earned_score</a> ($answers, $attempt)</td></tr>
 <tr class="memdesc:a4ecc35fb813cc6e9b5bdcea56d227322"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the score for the attempt This may be overridden by page types that require manual grading.  <br /></td></tr>
 <tr class="separator:a4ecc35fb813cc6e9b5bdcea56d227322"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a2a10a19b8aa2d6ff5b7327336afcd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/classlesson__page.html#a5a2a10a19b8aa2d6ff5b7327336afcd7">format_answer</a> ($answer, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $answerformat, $options=[])</td></tr>
-<tr class="memdesc:a5a2a10a19b8aa2d6ff5b7327336afcd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats the answer.  <br /></td></tr>
-<tr class="separator:a5a2a10a19b8aa2d6ff5b7327336afcd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5731d237aeb5cae323f231231faba840"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d37/classlesson__page__type__numerical.html#a5731d237aeb5cae323f231231faba840">format_answer</a> ($answer, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $answerformat, $options=[])</td></tr>
+<tr class="memdesc:a5731d237aeb5cae323f231231faba840"><td class="mdescLeft">&#160;</td><td class="mdescRight">Custom formats the answer to display.  <br /></td></tr>
+<tr class="separator:a5731d237aeb5cae323f231231faba840"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc4afb05adfb35ea347dcb259abd438c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/classlesson__page.html#afc4afb05adfb35ea347dcb259abd438c">get_answers</a> ()</td></tr>
 <tr class="memdesc:afc4afb05adfb35ea347dcb259abd438c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the answers that are associated with this page in the database.  <br /></td></tr>
 <tr class="separator:afc4afb05adfb35ea347dcb259abd438c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -763,17 +763,14 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a5a2a10a19b8aa2d6ff5b7327336afcd7" name="a5a2a10a19b8aa2d6ff5b7327336afcd7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5a2a10a19b8aa2d6ff5b7327336afcd7">&#9670;&#160;</a></span>format_answer()</h2>
+<a id="a5731d237aeb5cae323f231231faba840" name="a5731d237aeb5cae323f231231faba840"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5731d237aeb5cae323f231231faba840">&#9670;&#160;</a></span>format_answer()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">lesson_page::format_answer </td>
+          <td class="memname">lesson_page_type_numerical::format_answer </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$answer</em>, </td>
@@ -802,20 +799,15 @@ Protected Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Formats the answer. </p>
-<p>Override for custom formatting.</p>
+<p>Custom formats the answer to display. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$answer</td><td></td></tr>
     <tr><td class="paramtype">context</td><td class="paramname">$context</td><td></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$answerformat</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$options</td><td>Optional param for additional options. </td></tr>
   </table>
   </dd>
 </dl>
@@ -826,7 +818,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../da/ddd/classlesson__page__type__essay.html#a99aca6038c053a1c97cbb6b10c7f5893">lesson_page_type_essay</a>.</p>
+<p>Reimplemented from <a class="el" href="../../dc/d90/classlesson__page.html#a5a2a10a19b8aa2d6ff5b7327336afcd7">lesson_page</a>.</p>
 
 </div>
 </div>
@@ -2203,7 +2195,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:04:03 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:08:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

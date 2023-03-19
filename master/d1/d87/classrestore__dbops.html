@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -61,7 +61,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Base abstract class for all the helper classes providing <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> operations.  
+<p><a class="el" href="../../d9/da0/interface_base.html" title="Base for cache objects.">Base</a> abstract class for all the helper classes providing <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> operations.  
  <a href="../../d1/d87/classrestore__dbops.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for restore_dbops:</div>
@@ -177,14 +177,14 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>get_best_assignable
 <tr class="memdesc:a7c6a9b15e0be336cbb24735e2253609d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given one user object (from backup file), perform all the neccesary checks is order to decide how that user will be handled on restore.  <br /></td></tr>
 <tr class="separator:a7c6a9b15e0be336cbb24735e2253609d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3db405dc4bb2b180afa548f1f4381c84"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d87/classrestore__dbops.html#a3db405dc4bb2b180afa548f1f4381c84">set_backup_ids_cached</a> ($restoreid, $itemname, $itemid, $extrarecord)</td></tr>
-<tr class="memdesc:a3db405dc4bb2b180afa548f1f4381c84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache backup ids'.  <br /></td></tr>
+<tr class="memdesc:a3db405dc4bb2b180afa548f1f4381c84"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../dc/d67/class_cache.html" title="Used to create cache objects.">Cache</a> backup ids'.  <br /></td></tr>
 <tr class="separator:a3db405dc4bb2b180afa548f1f4381c84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fcf80c9cdcb2a0cdcc40530d3c977e8"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d87/classrestore__dbops.html#a8fcf80c9cdcb2a0cdcc40530d3c977e8">update_backup_cached_record</a> ($record, $extrarecord, $key, $existingrecord=null)</td></tr>
 <tr class="memdesc:a8fcf80c9cdcb2a0cdcc40530d3c977e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates existing backup record.  <br /></td></tr>
 <tr class="separator:a8fcf80c9cdcb2a0cdcc40530d3c977e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Base abstract class for all the helper classes providing <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> operations. </p>
+<div class="textblock"><p><a class="el" href="../../d9/da0/interface_base.html" title="Base for cache objects.">Base</a> abstract class for all the helper classes providing <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> operations. </p>
 <p>TODO: Finish phpdocs </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a65fb575ec882426ba8954191df6a0e09" name="a65fb575ec882426ba8954191df6a0e09"></a>
@@ -244,7 +244,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>get_best_assignable
 <p>This function will start and end a new progress section in the progress object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$basepath</td><td>Base path of unzipped backup </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$basepath</td><td><a class="el" href="../../d9/da0/interface_base.html" title="Base for cache objects.">Base</a> path of unzipped backup </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$restoreid</td><td>Restore ID </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>Default userid for files </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../db/df4/classcore_1_1progress_1_1base.html">core::progress::base</a></td><td class="paramname">$progress</td><td>Object used for progress tracking </td></tr>
@@ -479,7 +479,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>get_best_assignable
 <p>Returns suitable entry to include in log when there is a missing file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$file</td><td>File definition </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$file</td><td><a class="el" href="../../d1/d31/class_file.html" title="Caches data to the filesystem.">File</a> definition </td></tr>
   </table>
   </dd>
 </dl>
@@ -536,7 +536,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>get_best_assignable
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$restoreid</td><td>Restore id </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$inforeffile</td><td>File path </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$inforeffile</td><td><a class="el" href="../../d1/d31/class_file.html" title="Caches data to the filesystem.">File</a> path </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../db/df4/classcore_1_1progress_1_1base.html">core::progress::base</a></td><td class="paramname">$progress</td><td>Progress tracker </td></tr>
   </table>
   </dd>
@@ -588,7 +588,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>get_best_assignable
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$restoreid</td><td>Restore id </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$usersfile</td><td>File path </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$usersfile</td><td><a class="el" href="../../d1/d31/class_file.html" title="Caches data to the filesystem.">File</a> path </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../db/df4/classcore_1_1progress_1_1base.html">core::progress::base</a></td><td class="paramname">$progress</td><td>Progress tracker </td></tr>
   </table>
   </dd>
@@ -1336,7 +1336,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>get_best_assignable
 </table>
 </div><div class="memdoc">
 
-<p>Cache backup ids'. </p>
+<p><a class="el" href="../../dc/d67/class_cache.html" title="Used to create cache objects.">Cache</a> backup ids'. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$restoreid</td><td>id of backup </td></tr>
@@ -1421,7 +1421,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>get_best_assignable
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:10:24 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:16:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

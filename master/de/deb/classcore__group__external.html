@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -55,6 +55,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="../../d8/da7/classcore__group__external-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">core_group_external Class Reference<div class="ingroups"><a class="el" href="../../de/dc8/group__core__group.html">core_group</a></div></div></div>
 </div><!--header-->
@@ -233,6 +234,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a6252177f938c48b7af2b783f4470155c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/deb/classcore__group__external.html#a6252177f938c48b7af2b783f4470155c">update_groups_returns</a> ()</td></tr>
 <tr class="memdesc:a6252177f938c48b7af2b783f4470155c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns description of method result value.  <br /></td></tr>
 <tr class="separator:a6252177f938c48b7af2b783f4470155c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:a62bf53887273e7f4e5b4600478101eb6"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/deb/classcore__group__external.html#a62bf53887273e7f4e5b4600478101eb6">validate_visibility</a> (int $<a class="el" href="../../df/d67/classcore__group_1_1visibility.html">visibility</a>)</td></tr>
+<tr class="memdesc:a62bf53887273e7f4e5b4600478101eb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate visibility.  <br /></td></tr>
+<tr class="separator:a62bf53887273e7f4e5b4600478101eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a5657450b16f079d26e1e008cae0c3b42" name="a5657450b16f079d26e1e008cae0c3b42"></a>
@@ -2276,13 +2283,53 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a62bf53887273e7f4e5b4600478101eb6" name="a62bf53887273e7f4e5b4600478101eb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62bf53887273e7f4e5b4600478101eb6">&#9670;&#160;</a></span>validate_visibility()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_group_external::validate_visibility </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$visibility</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Validate visibility. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$visibility</td><td>Visibility string, must one of the visibility class constants. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../d5/def/classinvalid__parameter__exception.html" title="Exception indicating malformed parameter problem.">invalid_parameter_exception</a></td><td>if visibility is not an allowed value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>group/externallib.php</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:09:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:14:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

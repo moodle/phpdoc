@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -116,7 +116,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:adca0ddeace9823a75004c1ebcf50f57b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete one or more records from a table which match a particular WHERE clause.  <br /></td></tr>
 <tr class="separator:adca0ddeace9823a75004c1ebcf50f57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d33790de4d76a66ad8e0784f56c804b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7c/classmysqli__native__moodle__database.html#a5d33790de4d76a66ad8e0784f56c804b">delete_records_subquery</a> (string $table, string $field, string $alias, string $subquery, array $params=[])</td></tr>
-<tr class="memdesc:a5d33790de4d76a66ad8e0784f56c804b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes records using a subquery, which is done with a strange DELETE...JOIN syntax in MySQL because it performs very badly with normal subqueries.  <br /></td></tr>
+<tr class="memdesc:a5d33790de4d76a66ad8e0784f56c804b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes records using a subquery, which is done with a strange DELETE...JOIN syntax in <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> because it performs very badly with normal subqueries.  <br /></td></tr>
 <tr class="separator:a5d33790de4d76a66ad8e0784f56c804b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9abe993179862bc34f1fd38b7549cff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7c/classmysqli__native__moodle__database.html#ab9abe993179862bc34f1fd38b7549cff">diagnose</a> ()</td></tr>
 <tr class="memdesc:ab9abe993179862bc34f1fd38b7549cff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Diagnose database and tables, this function is used to verify database and driver settings, db engine types, etc.  <br /></td></tr>
@@ -152,10 +152,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a58c5bbf6e20fc45b50018c37a6e52874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the localised database description Note: can be used before <a class="el" href="../../d0/de1/group__core.html#ga7079456508a63408f9c01a83fca8fc7a" title="Connect to db The connection parameters processor that sets up stage for master write and slave reado...">connect()</a>  <br /></td></tr>
 <tr class="separator:a58c5bbf6e20fc45b50018c37a6e52874"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b820d2a296ee74e094378305e632af8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7c/classmysqli__native__moodle__database.html#a5b820d2a296ee74e094378305e632af8">get_dbcollation</a> ()</td></tr>
-<tr class="memdesc:a5b820d2a296ee74e094378305e632af8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current MySQL db collation.  <br /></td></tr>
+<tr class="memdesc:a5b820d2a296ee74e094378305e632af8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> db collation.  <br /></td></tr>
 <tr class="separator:a5b820d2a296ee74e094378305e632af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3de34e60d54e05d423868d0a8dd03e29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7c/classmysqli__native__moodle__database.html#a3de34e60d54e05d423868d0a8dd03e29">get_dbengine</a> ()</td></tr>
-<tr class="memdesc:a3de34e60d54e05d423868d0a8dd03e29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current MySQL db engine.  <br /></td></tr>
+<tr class="memdesc:a3de34e60d54e05d423868d0a8dd03e29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> db engine.  <br /></td></tr>
 <tr class="separator:a3de34e60d54e05d423868d0a8dd03e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add015da35b5f796f76421ab262a4e218"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7c/classmysqli__native__moodle__database.html#add015da35b5f796f76421ab262a4e218">get_dbfamily</a> ()</td></tr>
 <tr class="memdesc:add015da35b5f796f76421ab262a4e218"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns database family type - describes SQL dialect Note: can be used before <a class="el" href="../../d3/d6e/classmoodle__database.html#a05828fac5b359ddbb31e3ed4e40a8dc0" title="Connects to the database.">connect()</a>  <br /></td></tr>
@@ -437,10 +437,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a69a9ff16cb42c07d95a049e75fa21428"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return regex positive or negative match sql.  <br /></td></tr>
 <tr class="separator:a69a9ff16cb42c07d95a049e75fa21428"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa629853c2fd0bd659864594c8498b31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7c/classmysqli__native__moodle__database.html#afa629853c2fd0bd659864594c8498b31">sql_regex_get_word_beginning_boundary_marker</a> ()</td></tr>
-<tr class="memdesc:afa629853c2fd0bd659864594c8498b31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the word-beginning boundary marker based on MySQL version.  <br /></td></tr>
+<tr class="memdesc:afa629853c2fd0bd659864594c8498b31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the word-beginning boundary marker based on <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> version.  <br /></td></tr>
 <tr class="separator:afa629853c2fd0bd659864594c8498b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05a7c7b03e223bc39b855a0ca23727eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7c/classmysqli__native__moodle__database.html#a05a7c7b03e223bc39b855a0ca23727eb">sql_regex_get_word_end_boundary_marker</a> ()</td></tr>
-<tr class="memdesc:a05a7c7b03e223bc39b855a0ca23727eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the word-end boundary marker based on MySQL version.  <br /></td></tr>
+<tr class="memdesc:a05a7c7b03e223bc39b855a0ca23727eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the word-end boundary marker based on <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> version.  <br /></td></tr>
 <tr class="separator:a05a7c7b03e223bc39b855a0ca23727eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36385de1a5b1bfd8f1ab6b40585573c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7c/classmysqli__native__moodle__database.html#a36385de1a5b1bfd8f1ab6b40585573c5">sql_regex_supported</a> ()</td></tr>
 <tr class="memdesc:a36385de1a5b1bfd8f1ab6b40585573c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does this driver support regex syntax when searching.  <br /></td></tr>
@@ -493,7 +493,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aaad8f18305c59463e09fcec5cba300bd"><td class="memItemLeft" align="right" valign="top"><a id="aaad8f18305c59463e09fcec5cba300bd" name="aaad8f18305c59463e09fcec5cba300bd"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>create_recordset</b> ($result)</td></tr>
 <tr class="separator:aaad8f18305c59463e09fcec5cba300bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a110ef84973d48ab49c3f9847dd3d3650"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#a110ef84973d48ab49c3f9847dd3d3650">detect_objects</a> ($<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
+<tr class="memitem:a110ef84973d48ab49c3f9847dd3d3650"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#a110ef84973d48ab49c3f9847dd3d3650">detect_objects</a> ($value)</td></tr>
 <tr class="memdesc:a110ef84973d48ab49c3f9847dd3d3650"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detects object parameters and throws exception if found.  <br /></td></tr>
 <tr class="separator:a110ef84973d48ab49c3f9847dd3d3650"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bfc20b46fbb7ab66a31a7d5c8ce603d"><td class="memItemLeft" align="right" valign="top"><a id="a7bfc20b46fbb7ab66a31a7d5c8ce603d" name="a7bfc20b46fbb7ab66a31a7d5c8ce603d"></a>
@@ -522,7 +522,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:ac30d3f55af00560ad154cbf7341f2750"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle the creation and caching of the databasemeta information for all databases.  <br /></td></tr>
 <tr class="separator:ac30d3f55af00560ad154cbf7341f2750"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a187dfcca88e69fbf613afdb20accaf70"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7c/classmysqli__native__moodle__database.html#a187dfcca88e69fbf613afdb20accaf70">get_mysqli_server_info</a> ()</td></tr>
-<tr class="memdesc:a187dfcca88e69fbf613afdb20accaf70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the version of the MySQL server, as reported by the PHP client connection.  <br /></td></tr>
+<tr class="memdesc:a187dfcca88e69fbf613afdb20accaf70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the version of the <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> server, as reported by the PHP client connection.  <br /></td></tr>
 <tr class="separator:a187dfcca88e69fbf613afdb20accaf70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af44d6d3d48dc67c72d6143949a023ba8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#af44d6d3d48dc67c72d6143949a023ba8">get_settings_hash</a> ()</td></tr>
 <tr class="memdesc:af44d6d3d48dc67c72d6143949a023ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a hash for the settings used during connection.  <br /></td></tr>
@@ -531,7 +531,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:afe146e06552bdb6da89ca32cab04c754"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle the creation and caching of the temporary tables.  <br /></td></tr>
 <tr class="separator:afe146e06552bdb6da89ca32cab04c754"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fbd7891285434302319f6feeaa7d623"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7c/classmysqli__native__moodle__database.html#a2fbd7891285434302319f6feeaa7d623">get_version_from_db</a> ()</td></tr>
-<tr class="memdesc:a2fbd7891285434302319f6feeaa7d623"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the version of the MySQL server, as reported by 'SELECT VERSION()' query.  <br /></td></tr>
+<tr class="memdesc:a2fbd7891285434302319f6feeaa7d623"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the version of the <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> server, as reported by 'SELECT VERSION()' query.  <br /></td></tr>
 <tr class="separator:a2fbd7891285434302319f6feeaa7d623"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa885c06d0a766882f591f8ae357eddd3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7c/classmysqli__native__moodle__database.html#aa885c06d0a766882f591f8ae357eddd3">has_breaking_change_quoted_defaults</a> ()</td></tr>
 <tr class="memdesc:aa885c06d0a766882f591f8ae357eddd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether column information retrieved from <code>information_schema.columns</code> has default values quoted or not.  <br /></td></tr>
@@ -545,7 +545,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a7696933b02ece447e69a29117b087583"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#a7696933b02ece447e69a29117b087583">normalise_limit_from_num</a> ($limitfrom, $limitnum)</td></tr>
 <tr class="memdesc:a7696933b02ece447e69a29117b087583"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensures that limit params are numeric and positive integers, to be passed to the database.  <br /></td></tr>
 <tr class="separator:a7696933b02ece447e69a29117b087583"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6b6dc8485613b1c78360eafec5a815a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7c/classmysqli__native__moodle__database.html#aa6b6dc8485613b1c78360eafec5a815a">normalise_value</a> ($column, $<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
+<tr class="memitem:aa6b6dc8485613b1c78360eafec5a815a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d7c/classmysqli__native__moodle__database.html#aa6b6dc8485613b1c78360eafec5a815a">normalise_value</a> ($column, $value)</td></tr>
 <tr class="memdesc:aa6b6dc8485613b1c78360eafec5a815a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normalise values based in RDBMS dependencies (booleans, LOBs...)  <br /></td></tr>
 <tr class="separator:aa6b6dc8485613b1c78360eafec5a815a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae213fc07433fb5450dd199f8fb3494b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#ae213fc07433fb5450dd199f8fb3494b6">print_debug</a> ($sql, array $params=null, $obj=null)</td></tr>
@@ -695,7 +695,7 @@ boolean&#160;</td><td class="memItemRight" valign="bottom"><b>$skiplogging</b> =
 <tr class="separator:a05ef6253ee6c835f293daf39e66d32ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5118bd480f75339b2c4915095fd30c6"><td class="memItemLeft" align="right" valign="top"><a id="af5118bd480f75339b2c4915095fd30c6" name="af5118bd480f75339b2c4915095fd30c6"></a>
 array&#160;</td><td class="memItemRight" valign="bottom"><b>$tables</b> = null</td></tr>
-<tr class="memdesc:af5118bd480f75339b2c4915095fd30c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache of table info. <br /></td></tr>
+<tr class="memdesc:af5118bd480f75339b2c4915095fd30c6"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../dc/d67/class_cache.html" title="Used to create cache objects.">Cache</a> of table info. <br /></td></tr>
 <tr class="separator:af5118bd480f75339b2c4915095fd30c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2052ace7088bc2445906134247d4a57"><td class="memItemLeft" align="right" valign="top"><a id="ab2052ace7088bc2445906134247d4a57" name="ab2052ace7088bc2445906134247d4a57"></a>
 <a class="el" href="../../d3/d68/classmoodle__temptables.html">moodle_temptables</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$temptables</b></td></tr>
@@ -1639,7 +1639,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
       </table>
 </div><div class="memdoc">
 
-<p>Deletes records using a subquery, which is done with a strange DELETE...JOIN syntax in MySQL because it performs very badly with normal subqueries. </p>
+<p>Deletes records using a subquery, which is done with a strange DELETE...JOIN syntax in <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> because it performs very badly with normal subqueries. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$table</td><td>Table to delete from </td></tr>
@@ -2225,7 +2225,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>Returns the localised database description Note: can be used before <a class="el" href="../../d3/d6e/classmoodle__database.html#a05828fac5b359ddbb31e3ed4e40a8dc0" title="Connects to the database.">connect()</a> </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000549">Deprecated:</a></b></dt><dd>since 2.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000559">Deprecated:</a></b></dt><dd>since 2.6 </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td></td></tr>
@@ -2283,11 +2283,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
       </table>
 </div><div class="memdoc">
 
-<p>Returns the current MySQL db collation. </p>
-<p>This is an ugly workaround for MySQL default collation problems.</p>
+<p>Returns the current <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> db collation. </p>
+<p>This is an ugly workaround for <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> default collation problems.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">string</td><td>or null MySQL collation name </td></tr>
+    <tr><td class="paramname">string</td><td>or null <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> collation name </td></tr>
   </table>
   </dd>
 </dl>
@@ -2309,11 +2309,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
       </table>
 </div><div class="memdoc">
 
-<p>Returns the current MySQL db engine. </p>
-<p>This is an ugly workaround for MySQL default engine problems, <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> is designed to work best on ACID compliant databases with full transaction support. Do not use MyISAM.</p>
+<p>Returns the current <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> db engine. </p>
+<p>This is an ugly workaround for <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> default engine problems, <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> is designed to work best on ACID compliant databases with full transaction support. Do not use MyISAM.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">string</td><td>or null MySQL engine name </td></tr>
+    <tr><td class="paramname">string</td><td>or null <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> engine name </td></tr>
   </table>
   </dd>
 </dl>
@@ -3112,11 +3112,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </table>
 </div><div class="memdoc">
 
-<p>Returns the version of the MySQL server, as reported by the PHP client connection. </p>
+<p>Returns the version of the <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> server, as reported by the PHP client connection. </p>
 <p>Wrap $this-&gt;mysqli-&gt;server_info to improve testing strategy.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">string</td><td>A string representing the version of the MySQL server that the MySQLi extension is connected to. </td></tr>
+    <tr><td class="paramname">string</td><td>A string representing the version of the <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> server that the MySQLi extension is connected to. </td></tr>
   </table>
   </dd>
 </dl>
@@ -4398,7 +4398,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>Determine if the row format should be set to compressed, dynamic, or default. </p>
-<p>Terrible kludge. If we're using utf8mb4 AND we're using InnoDB, we need to specify row format to be either dynamic or compressed (default is compact) in order to allow for bigger indexes (MySQL errors #1709 and #1071).</p>
+<p>Terrible kludge. If we're using utf8mb4 AND we're using InnoDB, we need to specify row format to be either dynamic or compressed (default is compact) in order to allow for bigger indexes (<a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> errors #1709 and #1071).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$engine</td><td>The database engine being used. Will be looked up if not supplied. </td></tr>
@@ -4650,10 +4650,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </table>
 </div><div class="memdoc">
 
-<p>Returns the version of the MySQL server, as reported by 'SELECT VERSION()' query. </p>
+<p>Returns the version of the <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> server, as reported by 'SELECT VERSION()' query. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">string</td><td>A string that indicates the MySQL server version. </td></tr>
+    <tr><td class="paramname">string</td><td>A string that indicates the <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> server version. </td></tr>
   </table>
   </dd>
 </dl>
@@ -6208,7 +6208,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="../../d8/db9/classmoodle__transaction.html" title="Delegated transaction class.">moodle_transaction</a></td><td class="paramname">$transaction</td><td>An instance of a <a class="el" href="../../d8/db9/classmoodle__transaction.html" title="Delegated transaction class.">moodle_transaction</a>. </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../df/d70/class_exception.html">Exception</a>&#160;|&#160;Throwable</td><td class="paramname">$e</td><td>The related exception/throwable to this transaction rollback. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../df/d70/class_exception.html" title="General SimplePie exception class.">Exception</a>&#160;|&#160;Throwable</td><td class="paramname">$e</td><td>The related exception/throwable to this transaction rollback. </td></tr>
   </table>
   </dd>
 </dl>
@@ -6531,7 +6531,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>Enable/disable detailed sql logging. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000550">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.9 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000560">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.9 </dd></dl>
 
 </div>
 </div>
@@ -6816,7 +6816,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>Returns the SQL to be used in order to an UNSIGNED INTEGER column to SIGNED. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000553">Deprecated:</a></b></dt><dd>since 2.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000563">Deprecated:</a></b></dt><dd>since 2.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$fieldname</td><td>The name of the field to be cast </td></tr>
@@ -7165,7 +7165,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>This used to return empty string replacement character. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000552">Deprecated:</a></b></dt><dd>use bound parameter with empty string instead</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000562">Deprecated:</a></b></dt><dd>use bound parameter with empty string instead</dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>An empty string. </td></tr>
@@ -8014,7 +8014,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
       </table>
 </div><div class="memdoc">
 
-<p>Returns the word-beginning boundary marker based on MySQL version. </p>
+<p>Returns the word-beginning boundary marker based on <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> version. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>The word-beginning boundary marker. </td></tr>
@@ -8041,7 +8041,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
       </table>
 </div><div class="memdoc">
 
-<p>Returns the word-end boundary marker based on MySQL version. </p>
+<p>Returns the word-end boundary marker based on <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a> version. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>The word-end boundary marker. </td></tr>
@@ -8674,7 +8674,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:10:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:16:09 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

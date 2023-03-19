@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -121,7 +121,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ace5b0e443abd3e1fff6c411d16eeaacb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5d/classcore__search_1_1document.html#ace5b0e443abd3e1fff6c411d16eeaacb">is_set</a> ($field)</td></tr>
 <tr class="memdesc:ace5b0e443abd3e1fff6c411d16eeaacb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a field is set.  <br /></td></tr>
 <tr class="separator:ace5b0e443abd3e1fff6c411d16eeaacb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68bfb8263bd5e5396446a9111218cb56"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5d/classcore__search_1_1document.html#a68bfb8263bd5e5396446a9111218cb56">set</a> ($fieldname, $<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
+<tr class="memitem:a68bfb8263bd5e5396446a9111218cb56"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5d/classcore__search_1_1document.html#a68bfb8263bd5e5396446a9111218cb56">set</a> ($fieldname, $value)</td></tr>
 <tr class="memdesc:a68bfb8263bd5e5396446a9111218cb56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter.  <br /></td></tr>
 <tr class="separator:a68bfb8263bd5e5396446a9111218cb56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a77bc3c4387da23d700bbc2b2069451"><td class="memItemLeft" align="right" valign="top"><a id="a3a77bc3c4387da23d700bbc2b2069451" name="a3a77bc3c4387da23d700bbc2b2069451"></a>
@@ -136,7 +136,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a51582bff0083221e08e9d720fc7966ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5d/classcore__search_1_1document.html#a51582bff0083221e08e9d720fc7966ba">set_doc_url</a> (\<a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a> $url)</td></tr>
 <tr class="memdesc:a51582bff0083221e08e9d720fc7966ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the document url.  <br /></td></tr>
 <tr class="separator:a51582bff0083221e08e9d720fc7966ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cd2c52fa54c6d7ff164d5cdeb174d2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5d/classcore__search_1_1document.html#a6cd2c52fa54c6d7ff164d5cdeb174d2a">set_extra</a> ($fieldname, $<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
+<tr class="memitem:a6cd2c52fa54c6d7ff164d5cdeb174d2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5d/classcore__search_1_1document.html#a6cd2c52fa54c6d7ff164d5cdeb174d2a">set_extra</a> ($fieldname, $value)</td></tr>
 <tr class="memdesc:a6cd2c52fa54c6d7ff164d5cdeb174d2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets data to this-&gt;extradata.  <br /></td></tr>
 <tr class="separator:a6cd2c52fa54c6d7ff164d5cdeb174d2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6328f014d68b2d02838dda0f61c847c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d5d/classcore__search_1_1document.html#a6328f014d68b2d02838dda0f61c847c2">set_is_new</a> ($new)</td></tr>
@@ -1232,31 +1232,30 @@ Static Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
-<div class="line">        <span class="stringliteral">&#39;userid&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= array(</div>
+<div class="line">        <span class="stringliteral">&#39;userid&#39;</span> =&gt; array(</div>
 <div class="line">            <span class="stringliteral">&#39;type&#39;</span> =&gt; <span class="stringliteral">&#39;int&#39;</span>,</div>
 <div class="line">            <span class="stringliteral">&#39;stored&#39;</span> =&gt; <span class="keyword">true</span>,</div>
 <div class="line">            <span class="stringliteral">&#39;indexed&#39;</span> =&gt; <span class="keyword">true</span></div>
 <div class="line">        ),</div>
-<div class="line">        <span class="stringliteral">&#39;groupid&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
+<div class="line">        <span class="stringliteral">&#39;groupid&#39;</span> =&gt; array(</div>
 <div class="line">            <span class="stringliteral">&#39;type&#39;</span> =&gt; <span class="stringliteral">&#39;int&#39;</span>,</div>
 <div class="line">            <span class="stringliteral">&#39;stored&#39;</span> =&gt; <span class="keyword">true</span>,</div>
 <div class="line">            <span class="stringliteral">&#39;indexed&#39;</span> =&gt; <span class="keyword">true</span></div>
 <div class="line">        ),</div>
-<div class="line">        <span class="stringliteral">&#39;description1&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
+<div class="line">        <span class="stringliteral">&#39;description1&#39;</span> =&gt; array(</div>
 <div class="line">            <span class="stringliteral">&#39;type&#39;</span> =&gt; <span class="stringliteral">&#39;text&#39;</span>,</div>
 <div class="line">            <span class="stringliteral">&#39;stored&#39;</span> =&gt; <span class="keyword">true</span>,</div>
 <div class="line">            <span class="stringliteral">&#39;indexed&#39;</span> =&gt; <span class="keyword">true</span>,</div>
 <div class="line">            <span class="stringliteral">&#39;mainquery&#39;</span> =&gt; <span class="keyword">true</span></div>
 <div class="line">        ),</div>
-<div class="line">        <span class="stringliteral">&#39;description2&#39;</span> =&gt; <a class="code hl_namespace" href="../../d7/df9/namespacearray.html">array</a>(</div>
+<div class="line">        <span class="stringliteral">&#39;description2&#39;</span> =&gt; array(</div>
 <div class="line">            <span class="stringliteral">&#39;type&#39;</span> =&gt; <span class="stringliteral">&#39;text&#39;</span>,</div>
 <div class="line">            <span class="stringliteral">&#39;stored&#39;</span> =&gt; <span class="keyword">true</span>,</div>
 <div class="line">            <span class="stringliteral">&#39;indexed&#39;</span> =&gt; <span class="keyword">true</span>,</div>
 <div class="line">            <span class="stringliteral">&#39;mainquery&#39;</span> =&gt; <span class="keyword">true</span></div>
 <div class="line">        )</div>
 <div class="line">    )</div>
-<div class="ttc" id="anamespacearray_html"><div class="ttname"><a href="../../d7/df9/namespacearray.html">array</a></div><div class="ttdoc">('') &amp;#160;</div></div>
 </div><!-- fragment -->
 <p>All optional fields docs can contain. </p>
 <p>Although it matches solr fields format, this is just to define the field types. Search engine plugins are responsible of setting their appropriate field types and map these naming to whatever format they need. </p>
@@ -1312,7 +1311,7 @@ Static Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:11:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:17:27 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

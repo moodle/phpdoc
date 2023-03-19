@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev (Build: 20230310) (5e1df255667)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
   </td>
  </tr>
  </tbody>
@@ -111,7 +111,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a43da1430a775120a93301f22eacdbc89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df3/classcustomfield__select_1_1field__controller.html#a43da1430a775120a93301f22eacdbc89">get_options</a> ()</td></tr>
 <tr class="memdesc:a43da1430a775120a93301f22eacdbc89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return configured field options.  <br /></td></tr>
 <tr class="separator:a43da1430a775120a93301f22eacdbc89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fd26332b68efcbde11481710c3af32f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df3/classcustomfield__select_1_1field__controller.html#a0fd26332b68efcbde11481710c3af32f">parse_value</a> (string $<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
+<tr class="memitem:a0fd26332b68efcbde11481710c3af32f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df3/classcustomfield__select_1_1field__controller.html#a0fd26332b68efcbde11481710c3af32f">parse_value</a> (string $value)</td></tr>
 <tr class="memdesc:a0fd26332b68efcbde11481710c3af32f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locate the value parameter in the field options array, and return it's index.  <br /></td></tr>
 <tr class="separator:a0fd26332b68efcbde11481710c3af32f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22527ff5378b2839f4d854b974dcd408"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da5/classcore__customfield_1_1field__controller.html#a22527ff5378b2839f4d854b974dcd408">prepare_for_config_form</a> (\stdClass $formdata)</td></tr>
@@ -120,7 +120,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2d5f00fcd465bc60c490043365c9c9ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da5/classcore__customfield_1_1field__controller.html#a2d5f00fcd465bc60c490043365c9c9ee">save</a> ()</td></tr>
 <tr class="memdesc:a2d5f00fcd465bc60c490043365c9c9ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save or update the persistent class to database.  <br /></td></tr>
 <tr class="separator:a2d5f00fcd465bc60c490043365c9c9ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6c2557d98f2f2f5a16bc5f8514a538a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da5/classcore__customfield_1_1field__controller.html#aa6c2557d98f2f2f5a16bc5f8514a538a">set</a> ($property, $<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
+<tr class="memitem:aa6c2557d98f2f2f5a16bc5f8514a538a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da5/classcore__customfield_1_1field__controller.html#aa6c2557d98f2f2f5a16bc5f8514a538a">set</a> ($property, $value)</td></tr>
 <tr class="memdesc:aa6c2557d98f2f2f5a16bc5f8514a538a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Persistent setter parser.  <br /></td></tr>
 <tr class="separator:aa6c2557d98f2f2f5a16bc5f8514a538a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a133d46c87b2939d4ba5c8cc304ee2aed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/df3/classcustomfield__select_1_1field__controller.html#a133d46c87b2939d4ba5c8cc304ee2aed">supports_course_grouping</a> ()</td></tr>
@@ -150,7 +150,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE</b> = 'select'<
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a31fdde62e05916247dc71a64f48c3278"><td class="memItemLeft" align="right" valign="top"><a id="a31fdde62e05916247dc71a64f48c3278" name="a31fdde62e05916247dc71a64f48c3278"></a>
 category_controller&#160;</td><td class="memItemRight" valign="bottom"><b>$category</b></td></tr>
-<tr class="memdesc:a31fdde62e05916247dc71a64f48c3278"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category of the field. <br /></td></tr>
+<tr class="memdesc:a31fdde62e05916247dc71a64f48c3278"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d7/df3/class_category.html" title="Manages all category-related data.">Category</a> of the field. <br /></td></tr>
 <tr class="separator:a31fdde62e05916247dc71a64f48c3278"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f6c5c8f57ab65db19f3cec82205f094"><td class="memItemLeft" align="right" valign="top">field&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da5/classcore__customfield_1_1field__controller.html#a6f6c5c8f57ab65db19f3cec82205f094">$field</a></td></tr>
 <tr class="memdesc:a6f6c5c8f57ab65db19f3cec82205f094"><td class="mdescLeft">&#160;</td><td class="mdescRight">Field persistent class.  <br /></td></tr>
@@ -866,7 +866,7 @@ category_controller&#160;</td><td class="memItemRight" valign="bottom"><b>$categ
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 12 2023 03:11:21 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 19 2023 03:17:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>
