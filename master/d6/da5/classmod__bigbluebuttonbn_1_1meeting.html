@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230324) (09fd61415e4)</div>
   </td>
  </tr>
  </tbody>
@@ -87,9 +87,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a240a8f0204ca1b38a3e9655153c5179e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da5/classmod__bigbluebuttonbn_1_1meeting.html#a240a8f0204ca1b38a3e9655153c5179e">get_attendees</a> ()</td></tr>
 <tr class="memdesc:a240a8f0204ca1b38a3e9655153c5179e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get meeting attendees.  <br /></td></tr>
 <tr class="separator:a240a8f0204ca1b38a3e9655153c5179e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a477b6927c2539456e65fe77aa82229d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da5/classmod__bigbluebuttonbn_1_1meeting.html#a477b6927c2539456e65fe77aa82229d7">get_guest_join_url</a> (string $<a class="el" href="../../d0/de1/group__core.html#ga22ae943f55a27f3b9cca15f8ddd05db7">fullname</a>)</td></tr>
-<tr class="memdesc:a477b6927c2539456e65fe77aa82229d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get meeting join URL for guest.  <br /></td></tr>
-<tr class="separator:a477b6927c2539456e65fe77aa82229d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab38d335f52f34f0f38f4965818124949"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da5/classmod__bigbluebuttonbn_1_1meeting.html#ab38d335f52f34f0f38f4965818124949">get_guest_join_url</a> (string $userfullname)</td></tr>
+<tr class="memdesc:ab38d335f52f34f0f38f4965818124949"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get meeting join URL for guest.  <br /></td></tr>
+<tr class="separator:ab38d335f52f34f0f38f4965818124949"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2da0b05a6d0f324e053fdd18b0848216"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da5/classmod__bigbluebuttonbn_1_1meeting.html#a2da0b05a6d0f324e053fdd18b0848216">get_join_url</a> ()</td></tr>
 <tr class="memdesc:a2da0b05a6d0f324e053fdd18b0848216"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get meeting join URL.  <br /></td></tr>
 <tr class="separator:a2da0b05a6d0f324e053fdd18b0848216"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,7 +274,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$meetinginfo</b> 
 </div><div class="memdoc">
 
 <p>Helper to prepare data used for create meeting. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000246">Todo:</a></b></dt><dd>moderatorPW and attendeePW will be removed from create after release of BBB v2.6.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000248">Todo:</a></b></dt><dd>moderatorPW and attendeePW will be removed from create after release of BBB v2.6.</dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td></td></tr>
@@ -382,8 +382,8 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$meetinginfo</b> 
 
 </div>
 </div>
-<a id="a477b6927c2539456e65fe77aa82229d7" name="a477b6927c2539456e65fe77aa82229d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a477b6927c2539456e65fe77aa82229d7">&#9670;&#160;</a></span>get_guest_join_url()</h2>
+<a id="ab38d335f52f34f0f38f4965818124949" name="ab38d335f52f34f0f38f4965818124949"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab38d335f52f34f0f38f4965818124949">&#9670;&#160;</a></span>get_guest_join_url()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -392,7 +392,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$meetinginfo</b> 
           <td class="memname">mod_bigbluebuttonbn\meeting::get_guest_join_url </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$fullname</em></td><td>)</td>
+          <td class="paramname"><em>$userfullname</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -401,7 +401,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$meetinginfo</b> 
 <p>Get meeting join URL for guest. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$fullname</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$userfullname</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1017,7 +1017,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$meetinginfo</b> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 19 2023 03:17:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 26 2023 03:02:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

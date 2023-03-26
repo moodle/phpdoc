@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230324) (09fd61415e4)</div>
   </td>
  </tr>
  </tbody>
@@ -84,6 +84,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a1233d40b79d3d60993d74ac9e99b312e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d9b/classgrade__helper.html#a1233d40b79d3d60993d74ac9e99b312e">get_info_scales</a> ($courseid)</td></tr>
 <tr class="memdesc:a1233d40b79d3d60993d74ac9e99b312e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get information on scales.  <br /></td></tr>
 <tr class="separator:a1233d40b79d3d60993d74ac9e99b312e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad39d426569794a1274a873fc3b1bfd5d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d9b/classgrade__helper.html#ad39d426569794a1274a873fc3b1bfd5d">get_lang_string</a> (string $strcode, ?string $section=null)</td></tr>
+<tr class="memdesc:ad39d426569794a1274a873fc3b1bfd5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">First checks the cached language strings, then returns match if found, or uses get_string() to get it from the <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a>, caches it then returns it.  <br /></td></tr>
+<tr class="separator:ad39d426569794a1274a873fc3b1bfd5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41c5d7c3fc2e28da62192d51c4bf4e4a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d9b/classgrade__helper.html#a41c5d7c3fc2e28da62192d51c4bf4e4a">get_plugin_strings</a> ()</td></tr>
 <tr class="memdesc:a41c5d7c3fc2e28da62192d51c4bf4e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets strings commonly used by the describe plugins.  <br /></td></tr>
 <tr class="separator:a41c5d7c3fc2e28da62192d51c4bf4e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,6 +126,9 @@ Static Protected Attributes</h2></td></tr>
 <tr class="memitem:ae77108d4f259597a08521b747168fe94"><td class="memItemLeft" align="right" valign="top">static array false&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d9b/classgrade__helper.html#ae77108d4f259597a08521b747168fe94">$importplugins</a> = null</td></tr>
 <tr class="memdesc:ae77108d4f259597a08521b747168fe94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached grade import plugins {.  <br /></td></tr>
 <tr class="separator:ae77108d4f259597a08521b747168fe94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aace2aedd221aaedfe94b2d1ca9148ff7"><td class="memItemLeft" align="right" valign="top">static array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d9b/classgrade__helper.html#aace2aedd221aaedfe94b2d1ca9148ff7">$langstrings</a> = []</td></tr>
+<tr class="memdesc:aace2aedd221aaedfe94b2d1ca9148ff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached grade tree plugin strings.  <br /></td></tr>
+<tr class="separator:aace2aedd221aaedfe94b2d1ca9148ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a833da66fb255f2b0601371a0b96acb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d8/d2d/classgrade__plugin__info.html">grade_plugin_info</a> false&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d9b/classgrade__helper.html#a0a833da66fb255f2b0601371a0b96acb">$letterinfo</a> = null</td></tr>
 <tr class="memdesc:a0a833da66fb255f2b0601371a0b96acb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cached leftter info {.  <br /></td></tr>
 <tr class="separator:a0a833da66fb255f2b0601371a0b96acb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -372,6 +378,57 @@ Static Protected Attributes</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname"><a class="el" href="../../d8/d2d/classgrade__plugin__info.html" title="A simple class containing info about grade plugins.">grade_plugin_info</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad39d426569794a1274a873fc3b1bfd5d" name="ad39d426569794a1274a873fc3b1bfd5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad39d426569794a1274a873fc3b1bfd5d">&#9670;&#160;</a></span>get_lang_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static grade_helper::get_lang_string </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$strcode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?string&#160;</td>
+          <td class="paramname"><em>$section</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>First checks the cached language strings, then returns match if found, or uses get_string() to get it from the <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a>, caches it then returns it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$strcode</td><td></td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$section</td><td>Optional language section </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -713,7 +770,7 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Cached grade export plugins {. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d9b/classgrade__helper.html#a9c1dc2f4dc02ae55959bbd9614f5e306" title="Get information export plugins.">get_plugins_export</a>} </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>get_plugins_export} </dd></dl>
 
 </div>
 </div>
@@ -738,7 +795,7 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Cached grade report plugins preferences {. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d9b/classgrade__helper.html#a1233d40b79d3d60993d74ac9e99b312e" title="Get information on scales.">get_info_scales</a>} </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>get_info_scales} </dd></dl>
 
 </div>
 </div>
@@ -763,7 +820,7 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Cached grade report plugins {. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d9b/classgrade__helper.html#a228625abe832e37592904f9c113bda49" title="Returns an array of plugin reports as grade_plugin_info objects.">get_plugins_reports</a>} </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>get_plugins_reports} </dd></dl>
 
 </div>
 </div>
@@ -788,7 +845,31 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Cached grade import plugins {. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d9b/classgrade__helper.html#a2ee6838a7d65bed98f12e7eb14b402c9" title="Get information import plugins.">get_plugins_import</a>} </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>get_plugins_import} </dd></dl>
+
+</div>
+</div>
+<a id="aace2aedd221aaedfe94b2d1ca9148ff7" name="aace2aedd221aaedfe94b2d1ca9148ff7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aace2aedd221aaedfe94b2d1ca9148ff7">&#9670;&#160;</a></span>$langstrings</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">array grade_helper::$langstrings = []</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Cached grade tree plugin strings. </p>
 
 </div>
 </div>
@@ -813,7 +894,7 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Cached leftter info {. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d9b/classgrade__helper.html#ae62749fdd4a4cb539ebeb59e01bca66c" title="Get information on letters.">get_info_letters</a>} </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>get_info_letters} </dd></dl>
 
 </div>
 </div>
@@ -863,7 +944,7 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Cached outcome info {. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d9b/classgrade__helper.html#aae12d5639b70c214f3d0e9184131e3a2" title="Get information on outcomes.">get_info_outcomes</a>} </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>get_info_outcomes} </dd></dl>
 
 </div>
 </div>
@@ -912,7 +993,7 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Cached scale info {. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d9b/classgrade__helper.html#a1233d40b79d3d60993d74ac9e99b312e" title="Get information on scales.">get_info_scales</a>} </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>get_info_scales} </dd></dl>
 
 </div>
 </div>
@@ -922,7 +1003,7 @@ Static Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 19 2023 03:15:57 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 26 2023 03:01:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

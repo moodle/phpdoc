@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230324) (09fd61415e4)</div>
   </td>
  </tr>
  </tbody>
@@ -56,6 +56,7 @@ $(function() {
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">gradereport_grader</div></div>
 </div><!--header-->
@@ -95,6 +96,12 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Privacy Subsystem for gradereport_grader implementing null_provider.  <a href="../../d4/d0b/classgradereport__grader_1_1privacy_1_1provider.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga038e16c8b1c19ded819c3cab54a1da3b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dab/group__gradereport__grader.html#ga038e16c8b1c19ded819c3cab54a1da3b">xmldb_gradereport_grader_upgrade</a> (int $oldversion)</td></tr>
+<tr class="memdesc:ga038e16c8b1c19ded819c3cab54a1da3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to upgrade grader report.  <br /></td></tr>
+<tr class="separator:ga038e16c8b1c19ded819c3cab54a1da3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:ga3bd1a55d998861e02e56c127f4b46c94"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dab/group__gradereport__grader.html#ga3bd1a55d998861e02e56c127f4b46c94">$capabilities</a></td></tr>
@@ -109,10 +116,43 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>component</b> = 'g
 &#160;</td><td class="memItemRight" valign="bottom"><b>if</b> (!defined( '<a class="el" href="../../d0/de1/group__core.html#ga4a87e5b19cb6b7e3148f68a819ff0790">MOODLE_INTERNAL</a>'))</td></tr>
 <tr class="separator:gaea5ac8d87ce191b85d7e827a95b01405"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memItemLeft" align="right" valign="top"><a id="ga92a3fd99b37c9cbd65c4aead816b3a83" name="ga92a3fd99b37c9cbd65c4aead816b3a83"></a>
-$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022112800</td></tr>
+$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023032100</td></tr>
 <tr class="separator:ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga038e16c8b1c19ded819c3cab54a1da3b" name="ga038e16c8b1c19ded819c3cab54a1da3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga038e16c8b1c19ded819c3cab54a1da3b">&#9670;&#160;</a></span>xmldb_gradereport_grader_upgrade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">xmldb_gradereport_grader_upgrade </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$oldversion</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Function to upgrade grader report. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$oldversion</td><td>the version we are upgrading from </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>result </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="ga3bd1a55d998861e02e56c127f4b46c94" name="ga3bd1a55d998861e02e56c127f4b46c94"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga3bd1a55d998861e02e56c127f4b46c94">&#9670;&#160;</a></span>$capabilities</h2>
@@ -147,7 +187,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 19 2023 03:14:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 26 2023 02:59:56 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

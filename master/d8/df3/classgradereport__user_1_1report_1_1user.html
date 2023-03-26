@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230324) (09fd61415e4)</div>
   </td>
  </tr>
  </tbody>
@@ -97,6 +97,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a52d457a8567607a9d7395f338be32e9c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#a52d457a8567607a9d7395f338be32e9c">get_pref</a> ($pref, $objectid=null)</td></tr>
 <tr class="memdesc:a52d457a8567607a9d7395f338be32e9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the name of a user preference (without grade_report_ prefix), locally saves then returns the value of that preference.  <br /></td></tr>
 <tr class="separator:a52d457a8567607a9d7395f338be32e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac396f496f49449be52299714ebcdb6b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#ac396f496f49449be52299714ebcdb6b3">get_report_links</a> (<a class="el" href="../../d8/d0a/classcontext__course.html">context_course</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, int $courseid, array $element, <a class="el" href="../../da/dcc/classgrade__plugin__return.html">grade_plugin_return</a> $gpr, string $mode)</td></tr>
+<tr class="memdesc:ac396f496f49449be52299714ebcdb6b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array of links to appropriate report pages for the current element.  <br /></td></tr>
+<tr class="separator:ac396f496f49449be52299714ebcdb6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88f0dcc8db7db2e771497008b3df825d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/classgradereport__user_1_1report_1_1user.html#a88f0dcc8db7db2e771497008b3df825d">inject_rowspans</a> (array &amp;$element)</td></tr>
 <tr class="memdesc:a88f0dcc8db7db2e771497008b3df825d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recurse through a tree of elements setting the rowspan property on each element.  <br /></td></tr>
 <tr class="separator:a88f0dcc8db7db2e771497008b3df825d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -275,9 +278,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a61d585c8ae516433d4ae99de4c48d0f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#a61d585c8ae516433d4ae99de4c48d0f3">blank_hidden_total_and_adjust_bounds</a> ($courseid, $course_item, $finalgrade)</td></tr>
 <tr class="memdesc:a61d585c8ae516433d4ae99de4c48d0f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optionally blank out course/category totals if they contain any hidden items.  <br /></td></tr>
 <tr class="separator:a61d585c8ae516433d4ae99de4c48d0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8f11f8585719f9313d9404c5af8e81c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#aa8f11f8585719f9313d9404c5af8e81c">get_sort_arrow</a> ($direction='move', $sortlink=null)</td></tr>
-<tr class="memdesc:aa8f11f8585719f9313d9404c5af8e81c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an arrow icon inside an  tag, for the purpose of sorting a column.  <br /></td></tr>
-<tr class="separator:aa8f11f8585719f9313d9404c5af8e81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0daca4b505f04f84730f9fa769264a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#aa0daca4b505f04f84730f9fa769264a2">get_sort_arrow</a> (string $direction='down', ?<a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a> $sortlink=null)</td></tr>
+<tr class="memdesc:aa0daca4b505f04f84730f9fa769264a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an arrow icon inside an  tag, for the purpose of sorting a column.  <br /></td></tr>
+<tr class="separator:aa0daca4b505f04f84730f9fa769264a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a514c305126cd4ef6a87b1cc2d0effe52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#a514c305126cd4ef6a87b1cc2d0effe52">setup_groups</a> ()</td></tr>
 <tr class="memdesc:a514c305126cd4ef6a87b1cc2d0effe52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up this object's group variables, mainly to restrict the selection of users to display.  <br /></td></tr>
 <tr class="separator:a514c305126cd4ef6a87b1cc2d0effe52"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -413,7 +416,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </div><div class="memdoc">
 
 <p>Optionally blank out course/category totals if they contain any hidden items. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000136">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 - Call blank_hidden_total_and_adjust_bounds instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000147">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 - Call blank_hidden_total_and_adjust_bounds instead. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$courseid</td><td>the course id </td></tr>
@@ -746,8 +749,80 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 
 </div>
 </div>
-<a id="aa8f11f8585719f9313d9404c5af8e81c" name="aa8f11f8585719f9313d9404c5af8e81c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8f11f8585719f9313d9404c5af8e81c">&#9670;&#160;</a></span>get_sort_arrow()</h2>
+<a id="ac396f496f49449be52299714ebcdb6b3" name="ac396f496f49449be52299714ebcdb6b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac396f496f49449be52299714ebcdb6b3">&#9670;&#160;</a></span>get_report_links()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">grade_report::get_report_links </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d0a/classcontext__course.html">context_course</a>&#160;</td>
+          <td class="paramname"><em>$context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$courseid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/dcc/classgrade__plugin__return.html">grade_plugin_return</a>&#160;</td>
+          <td class="paramname"><em>$gpr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an array of links to appropriate report pages for the current element. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d8/d0a/classcontext__course.html">context_course</a></td><td class="paramname">$context</td><td>Course context </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$courseid</td><td>Course ID </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$element</td><td>An array representing an element in the <a class="el" href="../../de/d74/classgrade__tree.html" title="This class represents a complete tree of categories, grade_items and final grades,...">grade_tree</a> </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../da/dcc/classgrade__plugin__return.html" title="Utility class used for return tracking when using edit and other forms in grade plugins.">grade_plugin_return</a></td><td class="paramname">$gpr</td><td>A <a class="el" href="../../da/dcc/classgrade__plugin__return.html" title="Utility class used for return tracking when using edit and other forms in grade plugins.">grade_plugin_return</a> object </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$mode</td><td>Mode - gradeitem or user </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>Link to appropriate report </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa0daca4b505f04f84730f9fa769264a2" name="aa0daca4b505f04f84730f9fa769264a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0daca4b505f04f84730f9fa769264a2">&#9670;&#160;</a></span>get_sort_arrow()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -758,13 +833,13 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
         <tr>
           <td class="memname">grade_report::get_sort_arrow </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$direction</em> = <code>'move'</code>, </td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$direction</em> = <code>'down'</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">?<a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a>&#160;</td>
           <td class="paramname"><em>$sortlink</em> = <code>null</code>&#160;</td>
         </tr>
         <tr>
@@ -784,7 +859,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$direction</td><td></td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$sortlink</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a>&#160;|&#160;null</td><td class="paramname">$sortlink</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1827,7 +1902,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 19 2023 03:17:36 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 26 2023 03:02:44 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

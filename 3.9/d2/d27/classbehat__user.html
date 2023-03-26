@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;3.9</span>
    </div>
-   <div id="projectbrief">Moodle 3.9.20+ (Build: 20230314) (f24eb73cc5)</div>
+   <div id="projectbrief">Moodle 3.9.20+ (Build: 20230324) (ed154e71b0)</div>
   </td>
  </tr>
  </tbody>
@@ -56,6 +56,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="../../d3/d44/classbehat__user-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">behat_user Class Reference<div class="ingroups"><a class="el" href="../../d6/d91/group__core__user.html">core_user</a></div></div></div>
 </div><!--header-->
@@ -100,6 +101,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a6f0c2a5096dc9ffa0e46ae8d73ae94fe"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d6d/interfacebehat__session__interface.html#a6f0c2a5096dc9ffa0e46ae8d73ae94fe">TIMEOUT</a> = 6</td></tr>
 <tr class="memdesc:a6f0c2a5096dc9ffa0e46ae8d73ae94fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">The timeout for each Behat step (load page, wait for an element to load...).  <br /></td></tr>
 <tr class="separator:a6f0c2a5096dc9ffa0e46ae8d73ae94fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a15eefe2e4607335cbdcc97fce8e9563e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d27/classbehat__user.html#a15eefe2e4607335cbdcc97fce8e9563e">resolve_page_instance_url</a> (string $type, string $identifier)</td></tr>
+<tr class="memdesc:a15eefe2e4607335cbdcc97fce8e9563e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert page names to URLs for steps like 'When I am on the "[identifier]" "[page type]" page'.  <br /></td></tr>
+<tr class="separator:a15eefe2e4607335cbdcc97fce8e9563e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="abc6cbc428b83d6bca71aaffbd15da4ab" name="abc6cbc428b83d6bca71aaffbd15da4ab"></a>
@@ -164,6 +171,64 @@ Public Attributes</h2></td></tr>
 <p>@Given /^I choose "(?P&lt;nodetext_string&gt;(?:[^"]|::")*)" from the participants page bulk action menu$/ </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$nodetext</td><td>The menu item to select. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a15eefe2e4607335cbdcc97fce8e9563e" name="a15eefe2e4607335cbdcc97fce8e9563e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15eefe2e4607335cbdcc97fce8e9563e">&#9670;&#160;</a></span>resolve_page_instance_url()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_user::resolve_page_instance_url </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$identifier</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert page names to URLs for steps like 'When I am on the "[identifier]" "[page type]" page'. </p>
+<p>Recognised page names are: | Page Type | Identifier meaning | Description | | profile | username or email | User profile page (/user/profile.php) |</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$type</td><td>identifies which type of page this is, e.g. 'Editing'. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$identifier</td><td>identifies the user, e.g. 'student1'. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td>the corresponding URL. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Exception</td><td>with a meaningful error message if the specified page cannot be found. </td></tr>
   </table>
   </dd>
 </dl>
@@ -361,7 +426,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 19 2023 02:48:32 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 26 2023 02:37:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

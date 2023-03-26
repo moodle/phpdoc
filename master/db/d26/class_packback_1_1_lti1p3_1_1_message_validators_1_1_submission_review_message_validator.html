@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230324) (09fd61415e4)</div>
   </td>
  </tr>
  </tbody>
@@ -58,7 +58,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="../../d8/d3b/class_packback_1_1_lti1p3_1_1_message_validators_1_1_submission_review_message_validator-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Packback\Lti1p3\MessageValidators\SubmissionReviewMessageValidator Class Reference</div></div>
 </div><!--header-->
@@ -69,55 +69,104 @@ Inheritance diagram for Packback\Lti1p3\MessageValidators\SubmissionReviewMessag
  <div class="center">
   <img src="../../db/d26/class_packback_1_1_lti1p3_1_1_message_validators_1_1_submission_review_message_validator.png" usemap="#Packback_5CLti1p3_5CMessageValidators_5CSubmissionReviewMessageValidator_map" alt=""/>
   <map id="Packback_5CLti1p3_5CMessageValidators_5CSubmissionReviewMessageValidator_map" name="Packback_5CLti1p3_5CMessageValidators_5CSubmissionReviewMessageValidator_map">
+<area href="../../d5/d97/class_packback_1_1_lti1p3_1_1_message_validators_1_1_abstract_message_validator.html" alt="Packback\Lti1p3\MessageValidators\AbstractMessageValidator" shape="rect" coords="0,56,427,80"/>
 <area href="../../d0/d88/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_message_validator.html" alt="Packback\Lti1p3\Interfaces\IMessageValidator" shape="rect" coords="0,0,427,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a018770133b060f7476fb2c566c44c1f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d26/class_packback_1_1_lti1p3_1_1_message_validators_1_1_submission_review_message_validator.html#a018770133b060f7476fb2c566c44c1f9">canValidate</a> (array $jwtBody)</td></tr>
-<tr class="separator:a018770133b060f7476fb2c566c44c1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06612c213f3302d9e5839d1153b16c4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d26/class_packback_1_1_lti1p3_1_1_message_validators_1_1_submission_review_message_validator.html#a06612c213f3302d9e5839d1153b16c4c">validate</a> (array $jwtBody)</td></tr>
-<tr class="separator:a06612c213f3302d9e5839d1153b16c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a4bb68396fbe3b28ea4361545914ab913"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d97/class_packback_1_1_lti1p3_1_1_message_validators_1_1_abstract_message_validator.html#a4bb68396fbe3b28ea4361545914ab913">canValidate</a> (array $jwtBody)</td></tr>
+<tr class="separator:a4bb68396fbe3b28ea4361545914ab913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a830c4a99a1a4e313aa78066b89b12c15"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d26/class_packback_1_1_lti1p3_1_1_message_validators_1_1_submission_review_message_validator.html#a830c4a99a1a4e313aa78066b89b12c15">getMessageType</a> ()</td></tr>
+<tr class="separator:a830c4a99a1a4e313aa78066b89b12c15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e64b351219115cfe2d6f9e189e26d17"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d26/class_packback_1_1_lti1p3_1_1_message_validators_1_1_submission_review_message_validator.html#a0e64b351219115cfe2d6f9e189e26d17">validate</a> (array $jwtBody)</td></tr>
+<tr class="separator:a0e64b351219115cfe2d6f9e189e26d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a3ea88796f179f81e2201c45dbfd040"><td class="memItemLeft" align="right" valign="top"><a id="a9a3ea88796f179f81e2201c45dbfd040" name="a9a3ea88796f179f81e2201c45dbfd040"></a>
+static&#160;</td><td class="memItemRight" valign="bottom"><b>validateGenericMessage</b> (array $jwtBody)</td></tr>
+<tr class="separator:a9a3ea88796f179f81e2201c45dbfd040"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a018770133b060f7476fb2c566c44c1f9" name="a018770133b060f7476fb2c566c44c1f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a018770133b060f7476fb2c566c44c1f9">&#9670;&#160;</a></span>canValidate()</h2>
+<a id="a4bb68396fbe3b28ea4361545914ab913" name="a4bb68396fbe3b28ea4361545914ab913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bb68396fbe3b28ea4361545914ab913">&#9670;&#160;</a></span>canValidate()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Packback\Lti1p3\MessageValidators\SubmissionReviewMessageValidator::canValidate </td>
+          <td class="memname">static Packback\Lti1p3\MessageValidators\AbstractMessageValidator::canValidate </td>
           <td>(</td>
           <td class="paramtype">array&#160;</td>
           <td class="paramname"><em>$jwtBody</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="../../d0/d88/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_message_validator.html">Packback\Lti1p3\Interfaces\IMessageValidator</a>.</p>
 
 </div>
 </div>
-<a id="a06612c213f3302d9e5839d1153b16c4c" name="a06612c213f3302d9e5839d1153b16c4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06612c213f3302d9e5839d1153b16c4c">&#9670;&#160;</a></span>validate()</h2>
+<a id="a830c4a99a1a4e313aa78066b89b12c15" name="a830c4a99a1a4e313aa78066b89b12c15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a830c4a99a1a4e313aa78066b89b12c15">&#9670;&#160;</a></span>getMessageType()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Packback\Lti1p3\MessageValidators\SubmissionReviewMessageValidator::validate </td>
+          <td class="memname">static Packback\Lti1p3\MessageValidators\SubmissionReviewMessageValidator::getMessageType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../d5/d97/class_packback_1_1_lti1p3_1_1_message_validators_1_1_abstract_message_validator.html">Packback\Lti1p3\MessageValidators\AbstractMessageValidator</a>.</p>
+
+</div>
+</div>
+<a id="a0e64b351219115cfe2d6f9e189e26d17" name="a0e64b351219115cfe2d6f9e189e26d17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e64b351219115cfe2d6f9e189e26d17">&#9670;&#160;</a></span>validate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static Packback\Lti1p3\MessageValidators\SubmissionReviewMessageValidator::validate </td>
           <td>(</td>
           <td class="paramtype">array&#160;</td>
           <td class="paramname"><em>$jwtBody</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="../../d0/d88/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_message_validator.html">Packback\Lti1p3\Interfaces\IMessageValidator</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d5/d97/class_packback_1_1_lti1p3_1_1_message_validators_1_1_abstract_message_validator.html">Packback\Lti1p3\MessageValidators\AbstractMessageValidator</a>.</p>
 
 </div>
 </div>
@@ -127,7 +176,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 19 2023 03:18:09 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 26 2023 03:03:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230324) (09fd61415e4)</div>
   </td>
  </tr>
  </tbody>
@@ -322,6 +322,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga03d0a51b0a156e3b22867fe61c3b5007"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9b/group__mod__bigbluebuttonbn.html#ga03d0a51b0a156e3b22867fe61c3b5007">bigbluebuttonbn_check_updates_since</a> (<a class="el" href="../../df/db9/classcm__info.html">cm_info</a> $cm, $from, $filter=[])</td></tr>
 <tr class="memdesc:ga03d0a51b0a156e3b22867fe61c3b5007"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the module has any update that affects the current user since a given time.  <br /></td></tr>
 <tr class="separator:ga03d0a51b0a156e3b22867fe61c3b5007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada57ebd98b28fcaa9010b15525f1324a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9b/group__mod__bigbluebuttonbn.html#gada57ebd98b28fcaa9010b15525f1324a">bigbluebuttonbn_course_backend_generator_create_activity</a> (<a class="el" href="../../d4/d96/classtool__generator__course__backend.html">tool_generator_course_backend</a> $backend, testing_data_generator $generator, int $courseid, int $number)</td></tr>
+<tr class="memdesc:gada57ebd98b28fcaa9010b15525f1324a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a number of BigblueButtonBN activities.  <br /></td></tr>
+<tr class="separator:gada57ebd98b28fcaa9010b15525f1324a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga845eeae8d8655286ce44d7d0242b9fb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d9b/group__mod__bigbluebuttonbn.html#ga845eeae8d8655286ce44d7d0242b9fb1">bigbluebuttonbn_delete_instance</a> ($id)</td></tr>
 <tr class="memdesc:ga845eeae8d8655286ce44d7d0242b9fb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an ID of an instance of this module, this function will permanently delete the instance and any data that depends on it.  <br /></td></tr>
 <tr class="separator:ga845eeae8d8655286ce44d7d0242b9fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -579,6 +582,63 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
   </dd>
 </dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.2 </dd></dl>
+
+</div>
+</div>
+<a id="gada57ebd98b28fcaa9010b15525f1324a" name="gada57ebd98b28fcaa9010b15525f1324a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gada57ebd98b28fcaa9010b15525f1324a">&#9670;&#160;</a></span>bigbluebuttonbn_course_backend_generator_create_activity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bigbluebuttonbn_course_backend_generator_create_activity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d96/classtool__generator__course__backend.html">tool_generator_course_backend</a>&#160;</td>
+          <td class="paramname"><em>$backend</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">testing_data_generator&#160;</td>
+          <td class="paramname"><em>$generator</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$courseid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$number</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a number of BigblueButtonBN activities. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d4/d96/classtool__generator__course__backend.html" title="Backend code for the &#39;make large course&#39; tool.">tool_generator_course_backend</a></td><td class="paramname">$backend</td><td></td></tr>
+    <tr><td class="paramtype">testing_data_generator</td><td class="paramname">$generator</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$courseid</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$number</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1876,7 +1936,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000953">Deprecated:</a></b></dt><dd>please do not use this anymore (historical migrations) </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000964">Deprecated:</a></b></dt><dd>please do not use this anymore (historical migrations) </dd></dl>
 
 </div>
 </div>
@@ -1935,7 +1995,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000954">Deprecated:</a></b></dt><dd>please do not use this anymore (historical migrations) </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000965">Deprecated:</a></b></dt><dd>please do not use this anymore (historical migrations) </dd></dl>
 
 </div>
 </div>
@@ -2115,7 +2175,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 19 2023 03:14:27 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 26 2023 02:59:56 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

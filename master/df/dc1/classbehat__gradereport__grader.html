@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230324) (09fd61415e4)</div>
   </td>
  </tr>
  </tbody>
@@ -80,6 +80,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abc6cbc428b83d6bca71aaffbd15da4ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d6d/interfacebehat__session__interface.html#abc6cbc428b83d6bca71aaffbd15da4ab">getSession</a> ($name=null)</td></tr>
 <tr class="memdesc:abc6cbc428b83d6bca71aaffbd15da4ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Mink session.  <br /></td></tr>
 <tr class="separator:abc6cbc428b83d6bca71aaffbd15da4ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d3a05d4d7d5229c3a7aab04c545cfde"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dc1/classbehat__gradereport__grader.html#a1d3a05d4d7d5229c3a7aab04c545cfde">i_click_on_category_menu</a> (string $categoryname)</td></tr>
+<tr class="memdesc:a1d3a05d4d7d5229c3a7aab04c545cfde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clicks on given grade category menu.  <br /></td></tr>
+<tr class="separator:a1d3a05d4d7d5229c3a7aab04c545cfde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03d4fff8d8c51ac09ac130219411f80b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dc1/classbehat__gradereport__grader.html#a03d4fff8d8c51ac09ac130219411f80b">i_click_on_course_category_menu</a> (string $coursename)</td></tr>
+<tr class="memdesc:a03d4fff8d8c51ac09ac130219411f80b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clicks on course grade category menu.  <br /></td></tr>
+<tr class="separator:a03d4fff8d8c51ac09ac130219411f80b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00b1f9dab3c5ce52abf9ec49f72a782e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dc1/classbehat__gradereport__grader.html#a00b1f9dab3c5ce52abf9ec49f72a782e">i_click_on_grade_item_menu</a> (string $itemname)</td></tr>
+<tr class="memdesc:a00b1f9dab3c5ce52abf9ec49f72a782e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clicks on given grade item menu.  <br /></td></tr>
+<tr class="separator:a00b1f9dab3c5ce52abf9ec49f72a782e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a111b6eebce5aef7a46b002885bf4c25f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dc1/classbehat__gradereport__grader.html#a111b6eebce5aef7a46b002885bf4c25f">i_click_on_user_menu</a> (string $student)</td></tr>
+<tr class="memdesc:a111b6eebce5aef7a46b002885bf4c25f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clicks on given user menu.  <br /></td></tr>
+<tr class="separator:a111b6eebce5aef7a46b002885bf4c25f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -89,18 +101,220 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:a1103fbc12ea5d2f033ae0e202d29f49f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dc1/classbehat__gradereport__grader.html#a1103fbc12ea5d2f033ae0e202d29f49f">get_course_grade_category_id</a> (string $coursename)</td></tr>
+<tr class="memdesc:a1103fbc12ea5d2f033ae0e202d29f49f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets course grade category id from coursename.  <br /></td></tr>
+<tr class="separator:a1103fbc12ea5d2f033ae0e202d29f49f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d6ce3674ffe19c351821e222ee7574b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dc1/classbehat__gradereport__grader.html#a1d6ce3674ffe19c351821e222ee7574b">get_course_grade_category_selector</a> (string $coursename)</td></tr>
+<tr class="memdesc:a1d6ce3674ffe19c351821e222ee7574b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets unique xpath selector for a course category.  <br /></td></tr>
+<tr class="separator:a1d6ce3674ffe19c351821e222ee7574b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab98c1f8d92884e3d30fc2521919c072"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dc1/classbehat__gradereport__grader.html#aab98c1f8d92884e3d30fc2521919c072">get_grade_category_id</a> (string $categoryname)</td></tr>
+<tr class="memdesc:aab98c1f8d92884e3d30fc2521919c072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets grade category id from its name.  <br /></td></tr>
+<tr class="separator:aab98c1f8d92884e3d30fc2521919c072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a277d453d847c172b78b4c7844ef4ef98"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dc1/classbehat__gradereport__grader.html#a277d453d847c172b78b4c7844ef4ef98">get_grade_category_selector</a> (string $categoryname)</td></tr>
+<tr class="memdesc:a277d453d847c172b78b4c7844ef4ef98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets unique xpath selector for a grade category.  <br /></td></tr>
+<tr class="separator:a277d453d847c172b78b4c7844ef4ef98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d43bb48802ac2a6a9fbb13503d8bd4f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dc1/classbehat__gradereport__grader.html#a2d43bb48802ac2a6a9fbb13503d8bd4f">get_grade_item_id</a> ($itemname)</td></tr>
 <tr class="memdesc:a2d43bb48802ac2a6a9fbb13503d8bd4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the grade item id from its name.  <br /></td></tr>
 <tr class="separator:a2d43bb48802ac2a6a9fbb13503d8bd4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a786bb784c4266562a06df0be199531ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dc1/classbehat__gradereport__grader.html#a786bb784c4266562a06df0be199531ea">get_gradeitem_selector</a> (string $itemname)</td></tr>
+<tr class="memdesc:a786bb784c4266562a06df0be199531ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets unique xpath selector for a grade item.  <br /></td></tr>
+<tr class="separator:a786bb784c4266562a06df0be199531ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad02fc5040ca610ec436f03c163f7de2f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dc1/classbehat__gradereport__grader.html#ad02fc5040ca610ec436f03c163f7de2f">get_user_id</a> ($name)</td></tr>
 <tr class="memdesc:ad02fc5040ca610ec436f03c163f7de2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the user id from its name.  <br /></td></tr>
 <tr class="separator:ad02fc5040ca610ec436f03c163f7de2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50ed9f9fb498cb20fb7544c946d5f826"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dc1/classbehat__gradereport__grader.html#a50ed9f9fb498cb20fb7544c946d5f826">get_user_selector</a> (string $student)</td></tr>
+<tr class="memdesc:a50ed9f9fb498cb20fb7544c946d5f826"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets unique xpath selector for a user.  <br /></td></tr>
+<tr class="separator:a50ed9f9fb498cb20fb7544c946d5f826"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Steps definitions related with the drag and drop onto image question type. </p>
 <dl class="section copyright"><dt>Copyright</dt><dd>2015 Oakland University </dd></dl>
 <dl class="section user"><dt>License</dt><dd><a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a> GNU GPL v3 or later </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a1103fbc12ea5d2f033ae0e202d29f49f" name="a1103fbc12ea5d2f033ae0e202d29f49f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1103fbc12ea5d2f033ae0e202d29f49f">&#9670;&#160;</a></span>get_course_grade_category_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_gradereport_grader::get_course_grade_category_id </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$coursename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets course grade category id from coursename. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../df/d70/class_exception.html" title="General SimplePie exception class.">Exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$coursename</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1d6ce3674ffe19c351821e222ee7574b" name="a1d6ce3674ffe19c351821e222ee7574b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d6ce3674ffe19c351821e222ee7574b">&#9670;&#160;</a></span>get_course_grade_category_selector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_gradereport_grader::get_course_grade_category_selector </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$coursename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets unique xpath selector for a course category. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../df/d70/class_exception.html" title="General SimplePie exception class.">Exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$coursename</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aab98c1f8d92884e3d30fc2521919c072" name="aab98c1f8d92884e3d30fc2521919c072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab98c1f8d92884e3d30fc2521919c072">&#9670;&#160;</a></span>get_grade_category_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_gradereport_grader::get_grade_category_id </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$categoryname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets grade category id from its name. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../df/d70/class_exception.html" title="General SimplePie exception class.">Exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$categoryname</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a277d453d847c172b78b4c7844ef4ef98" name="a277d453d847c172b78b4c7844ef4ef98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a277d453d847c172b78b4c7844ef4ef98">&#9670;&#160;</a></span>get_grade_category_selector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_gradereport_grader::get_grade_category_selector </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$categoryname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets unique xpath selector for a grade category. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../df/d70/class_exception.html" title="General SimplePie exception class.">Exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$categoryname</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a2d43bb48802ac2a6a9fbb13503d8bd4f" name="a2d43bb48802ac2a6a9fbb13503d8bd4f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2d43bb48802ac2a6a9fbb13503d8bd4f">&#9670;&#160;</a></span>get_grade_item_id()</h2>
 
@@ -141,6 +355,52 @@ Protected Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">int</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a786bb784c4266562a06df0be199531ea" name="a786bb784c4266562a06df0be199531ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a786bb784c4266562a06df0be199531ea">&#9670;&#160;</a></span>get_gradeitem_selector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_gradereport_grader::get_gradeitem_selector </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$itemname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets unique xpath selector for a grade item. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../df/d70/class_exception.html" title="General SimplePie exception class.">Exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$itemname</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -193,6 +453,52 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a50ed9f9fb498cb20fb7544c946d5f826" name="a50ed9f9fb498cb20fb7544c946d5f826"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50ed9f9fb498cb20fb7544c946d5f826">&#9670;&#160;</a></span>get_user_selector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_gradereport_grader::get_user_selector </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$student</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets unique xpath selector for a user. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../df/d70/class_exception.html" title="General SimplePie exception class.">Exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$student</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="abc6cbc428b83d6bca71aaffbd15da4ab" name="abc6cbc428b83d6bca71aaffbd15da4ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abc6cbc428b83d6bca71aaffbd15da4ab">&#9670;&#160;</a></span>getSession()</h2>
 
@@ -235,6 +541,110 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a1d3a05d4d7d5229c3a7aab04c545cfde" name="a1d3a05d4d7d5229c3a7aab04c545cfde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d3a05d4d7d5229c3a7aab04c545cfde">&#9670;&#160;</a></span>i_click_on_category_menu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_gradereport_grader::i_click_on_category_menu </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$categoryname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clicks on given grade category menu. </p>
+<p>@Given /^I click on grade category menu "([^"]*)"$/ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$categoryname</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a03d4fff8d8c51ac09ac130219411f80b" name="a03d4fff8d8c51ac09ac130219411f80b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03d4fff8d8c51ac09ac130219411f80b">&#9670;&#160;</a></span>i_click_on_course_category_menu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_gradereport_grader::i_click_on_course_category_menu </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$coursename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clicks on course grade category menu. </p>
+<p>@Given /^I click on course grade category menu "([^"]*)"$/ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$coursename</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a00b1f9dab3c5ce52abf9ec49f72a782e" name="a00b1f9dab3c5ce52abf9ec49f72a782e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00b1f9dab3c5ce52abf9ec49f72a782e">&#9670;&#160;</a></span>i_click_on_grade_item_menu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_gradereport_grader::i_click_on_grade_item_menu </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$itemname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clicks on given grade item menu. </p>
+<p>@Given /^I click on grade item menu "([^"]*)"$/ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$itemname</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a111b6eebce5aef7a46b002885bf4c25f" name="a111b6eebce5aef7a46b002885bf4c25f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a111b6eebce5aef7a46b002885bf4c25f">&#9670;&#160;</a></span>i_click_on_user_menu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_gradereport_grader::i_click_on_user_menu </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$student</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clicks on given user menu. </p>
+<p>@Given /^I click on user menu "([^"]*)"$/ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$student</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a1493fb96a85bfb906ba5468330de76c0" name="a1493fb96a85bfb906ba5468330de76c0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1493fb96a85bfb906ba5468330de76c0">&#9670;&#160;</a></span>PAGE_READY_JS</h2>
@@ -270,7 +680,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 19 2023 03:14:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 26 2023 03:00:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

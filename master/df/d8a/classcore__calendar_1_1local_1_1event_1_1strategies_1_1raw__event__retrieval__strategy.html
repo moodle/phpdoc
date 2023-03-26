@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230324) (09fd61415e4)</div>
   </td>
  </tr>
  </tbody>
@@ -88,6 +88,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a0dd0cd84be81bc2fc29d2edc615d252d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8a/classcore__calendar_1_1local_1_1event_1_1strategies_1_1raw__event__retrieval__strategy.html#a0dd0cd84be81bc2fc29d2edc615d252d">get_raw_events_legacy_implementation</a> ( $users, $groups, $courses, $categories, $whereconditions, $whereparams, $ordersql, $offset, $limitnum, $ignorehidden)</td></tr>
 <tr class="memdesc:a0dd0cd84be81bc2fc29d2edc615d252d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The legacy implementation with minor tweaks.  <br /></td></tr>
 <tr class="separator:a0dd0cd84be81bc2fc29d2edc615d252d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9c1571fab0c6c8323891aeb79c867f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d8a/classcore__calendar_1_1local_1_1event_1_1strategies_1_1raw__event__retrieval__strategy.html#ae9c1571fab0c6c8323891aeb79c867f7">subquerytimeconditions</a> (string $prefix, array $conditions, array $params)</td></tr>
+<tr class="memdesc:ae9c1571fab0c6c8323891aeb79c867f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a query fragment and params, with time constraints applied.  <br /></td></tr>
+<tr class="separator:ae9c1571fab0c6c8323891aeb79c867f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Raw event retrieval strategy. </p>
@@ -302,13 +305,71 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ae9c1571fab0c6c8323891aeb79c867f7" name="ae9c1571fab0c6c8323891aeb79c867f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9c1571fab0c6c8323891aeb79c867f7">&#9670;&#160;</a></span>subquerytimeconditions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_calendar\local\event\strategies\raw_event_retrieval_strategy::subquerytimeconditions </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$prefix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$conditions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$params</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a query fragment and params, with time constraints applied. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$prefix</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$conditions</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$params</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>[&lt;where&gt;, &lt;params&gt;] </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>calendar/classes/local/event/strategies/raw_event_retrieval_strategy.php</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 19 2023 03:17:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 26 2023 03:02:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

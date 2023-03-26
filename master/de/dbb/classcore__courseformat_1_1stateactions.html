@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230324) (09fd61415e4)</div>
   </td>
  </tr>
  </tbody>
@@ -124,6 +124,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaf2e30a14712edcb7a3b6fada6eebb88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classcore__courseformat_1_1stateactions.html#aaf2e30a14712edcb7a3b6fada6eebb88">section_move</a> (<a class="el" href="../../d5/df4/classcore__courseformat_1_1stateupdates.html">stateupdates</a> $updates, stdClass $course, array $<a class="el" href="../../dc/d71/group___imap___client.html#ga0e7aafd213abac03caf04d0534cbfa4e">ids</a>, ?int $targetsectionid=null, ?int $targetcmid=null)</td></tr>
 <tr class="memdesc:aaf2e30a14712edcb7a3b6fada6eebb88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move course sections to another location in the same course.  <br /></td></tr>
 <tr class="separator:aaf2e30a14712edcb7a3b6fada6eebb88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbb4316da229fe94fa2c9bfbf5aac7c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classcore__courseformat_1_1stateactions.html#abbb4316da229fe94fa2c9bfbf5aac7c8">section_move_after</a> (<a class="el" href="../../d5/df4/classcore__courseformat_1_1stateupdates.html">stateupdates</a> $updates, stdClass $course, array $<a class="el" href="../../dc/d71/group___imap___client.html#ga0e7aafd213abac03caf04d0534cbfa4e">ids</a>, ?int $targetsectionid=null, ?int $targetcmid=null)</td></tr>
+<tr class="memdesc:abbb4316da229fe94fa2c9bfbf5aac7c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move course sections after to another location in the same course.  <br /></td></tr>
+<tr class="separator:abbb4316da229fe94fa2c9bfbf5aac7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86bb517d62e15eebb2bbe79449c29a2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classcore__courseformat_1_1stateactions.html#a86bb517d62e15eebb2bbe79449c29a2e">section_show</a> (<a class="el" href="../../d5/df4/classcore__courseformat_1_1stateupdates.html">stateupdates</a> $updates, stdClass $course, array $<a class="el" href="../../dc/d71/group___imap___client.html#ga0e7aafd213abac03caf04d0534cbfa4e">ids</a>=[], ?int $targetsectionid=null, ?int $targetcmid=null)</td></tr>
 <tr class="memdesc:a86bb517d62e15eebb2bbe79449c29a2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show course sections.  <br /></td></tr>
 <tr class="separator:a86bb517d62e15eebb2bbe79449c29a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -148,9 +151,15 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:af70c298d011d0415efca2925f3ab1302"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classcore__courseformat_1_1stateactions.html#af70c298d011d0415efca2925f3ab1302">set_section_visibility</a> (<a class="el" href="../../d5/df4/classcore__courseformat_1_1stateupdates.html">stateupdates</a> $updates, stdClass $course, array $<a class="el" href="../../dc/d71/group___imap___client.html#ga0e7aafd213abac03caf04d0534cbfa4e">ids</a>, int $visible)</td></tr>
 <tr class="memdesc:af70c298d011d0415efca2925f3ab1302"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show course sections.  <br /></td></tr>
 <tr class="separator:af70c298d011d0415efca2925f3ab1302"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c1188e22336d6cde333cd000e1b04c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classcore__courseformat_1_1stateactions.html#a0c1188e22336d6cde333cd000e1b04c4">validate_cms</a> (stdClass $course, array $cmids, ?string $info=null)</td></tr>
-<tr class="memdesc:a0c1188e22336d6cde333cd000e1b04c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks related to course modules: all given cm exist.  <br /></td></tr>
-<tr class="separator:a0c1188e22336d6cde333cd000e1b04c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e07927b671f442f4a98dac176b02e5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classcore__courseformat_1_1stateactions.html#a9e07927b671f442f4a98dac176b02e5b">sort_cm_ids_by_course_position</a> (stdClass $course, array $cmids, bool $descending=false)</td></tr>
+<tr class="memdesc:a9e07927b671f442f4a98dac176b02e5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort the cm ids list depending on the course position.  <br /></td></tr>
+<tr class="separator:a9e07927b671f442f4a98dac176b02e5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64e550f327bf2a3c055856d0377fd008"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classcore__courseformat_1_1stateactions.html#a64e550f327bf2a3c055856d0377fd008">sort_section_ids_by_section_number</a> (stdClass $course, array $sectionids, bool $descending=false)</td></tr>
+<tr class="memdesc:a64e550f327bf2a3c055856d0377fd008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sort the sections ids depending on the section number.  <br /></td></tr>
+<tr class="separator:a64e550f327bf2a3c055856d0377fd008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39e972f690bfdf51c6756acbab5fd800"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classcore__courseformat_1_1stateactions.html#a39e972f690bfdf51c6756acbab5fd800">validate_cms</a> (stdClass $course, array $cmids, ?string $info=null, array $capabilities=[])</td></tr>
+<tr class="memdesc:a39e972f690bfdf51c6756acbab5fd800"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks related to course modules: all given cm exist and the user has the required capabilities.  <br /></td></tr>
+<tr class="separator:a39e972f690bfdf51c6756acbab5fd800"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc348c57b205d50b8edb770122369905"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbb/classcore__courseformat_1_1stateactions.html#abc348c57b205d50b8edb770122369905">validate_sections</a> (stdClass $course, array $sectionids, ?string $info=null)</td></tr>
 <tr class="memdesc:abc348c57b205d50b8edb770122369905"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks related to sections: course format support them, all given sections exist and topic 0 is not included.  <br /></td></tr>
 <tr class="separator:abc348c57b205d50b8edb770122369905"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1192,6 +1201,64 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="abbb4316da229fe94fa2c9bfbf5aac7c8" name="abbb4316da229fe94fa2c9bfbf5aac7c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbb4316da229fe94fa2c9bfbf5aac7c8">&#9670;&#160;</a></span>section_move_after()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\stateactions::section_move_after </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/df4/classcore__courseformat_1_1stateupdates.html">stateupdates</a>&#160;</td>
+          <td class="paramname"><em>$updates</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$course</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int&#160;</td>
+          <td class="paramname"><em>$targetsectionid</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int&#160;</td>
+          <td class="paramname"><em>$targetcmid</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Move course sections after to another location in the same course. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stateupdates</td><td class="paramname">$updates</td><td>the affected course elements track </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object </td></tr>
+    <tr><td class="paramtype">int[]</td><td class="paramname">$ids</td><td>the list of affected course module ids </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$targetsectionid</td><td>optional target section id </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$targetcmid</td><td>optional target cm id </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a86bb517d62e15eebb2bbe79449c29a2e" name="a86bb517d62e15eebb2bbe79449c29a2e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a86bb517d62e15eebb2bbe79449c29a2e">&#9670;&#160;</a></span>section_show()</h2>
 
@@ -1493,8 +1560,126 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0c1188e22336d6cde333cd000e1b04c4" name="a0c1188e22336d6cde333cd000e1b04c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c1188e22336d6cde333cd000e1b04c4">&#9670;&#160;</a></span>validate_cms()</h2>
+<a id="a9e07927b671f442f4a98dac176b02e5b" name="a9e07927b671f442f4a98dac176b02e5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e07927b671f442f4a98dac176b02e5b">&#9670;&#160;</a></span>sort_cm_ids_by_course_position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\stateactions::sort_cm_ids_by_course_position </td>
+          <td>(</td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$course</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$cmids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$descending</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sort the cm ids list depending on the course position. </p>
+<p>Some actions like move should be done in an specific order.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object </td></tr>
+    <tr><td class="paramtype">int[]</td><td class="paramname">$cmids</td><td>the array of section $ids </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$descending</td><td>if the sort order must be descending instead of ascending </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int[]</td><td>the array of section ids sorted by section number </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a64e550f327bf2a3c055856d0377fd008" name="a64e550f327bf2a3c055856d0377fd008"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64e550f327bf2a3c055856d0377fd008">&#9670;&#160;</a></span>sort_section_ids_by_section_number()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\stateactions::sort_section_ids_by_section_number </td>
+          <td>(</td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$course</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$sectionids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$descending</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sort the sections ids depending on the section number. </p>
+<p>Some actions like move should be done in an specific order.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object </td></tr>
+    <tr><td class="paramtype">int[]</td><td class="paramname">$sectionids</td><td>the array of section $ids </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$descending</td><td>if the sort order must be descending instead of ascending </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int[]</td><td>the array of section ids sorted by section number </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a39e972f690bfdf51c6756acbab5fd800" name="a39e972f690bfdf51c6756acbab5fd800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39e972f690bfdf51c6756acbab5fd800">&#9670;&#160;</a></span>validate_cms()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1518,7 +1703,13 @@ Protected Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">?string&#160;</td>
-          <td class="paramname"><em>$info</em> = <code>null</code>&#160;</td>
+          <td class="paramname"><em>$info</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$capabilities</em> = <code>[]</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1533,12 +1724,13 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Checks related to course modules: all given cm exist. </p>
+<p>Checks related to course modules: all given cm exist and the user has the required capabilities. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>The course where given $cmids belong. </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$cmids</td><td>List of course module ids to validate. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$info</td><td>additional information in case of error. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$capabilities</td><td>optional capabilities checks per each cm context. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1615,7 +1807,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 19 2023 03:17:10 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 26 2023 03:02:22 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

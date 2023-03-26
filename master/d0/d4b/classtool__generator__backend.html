@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230318) (f3bf17cdfbe)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230324) (09fd61415e4)</div>
   </td>
  </tr>
  </tbody>
@@ -57,7 +57,6 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d3/d02/classtool__generator__backend-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">tool_generator_backend Class Reference<div class="ingroups"><a class="el" href="../../df/db7/group__tool__generator.html">tool_generator</a></div></div></div>
@@ -83,6 +82,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aeac33e7cb23ac17bba66b7a6ca0cb297"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d4b/classtool__generator__backend.html#aeac33e7cb23ac17bba66b7a6ca0cb297">__construct</a> ($size, $fixeddataset=false, $filesizelimit=false, $progress=true)</td></tr>
 <tr class="memdesc:aeac33e7cb23ac17bba66b7a6ca0cb297"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic generator class.  <br /></td></tr>
 <tr class="separator:aeac33e7cb23ac17bba66b7a6ca0cb297"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a5e8d07fe077f2935d422b4a1794ad4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d4b/classtool__generator__backend.html#a5a5e8d07fe077f2935d422b4a1794ad4">dot</a> (int $number, int $total)</td></tr>
+<tr class="memdesc:a5a5e8d07fe077f2935d422b4a1794ad4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs dots.  <br /></td></tr>
+<tr class="separator:a5a5e8d07fe077f2935d422b4a1794ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a864cee0d5c28daab45e267bf2d253681"><td class="memItemLeft" align="right" valign="top"><a id="a864cee0d5c28daab45e267bf2d253681" name="a864cee0d5c28daab45e267bf2d253681"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>end_log</b> ()</td></tr>
+<tr class="memdesc:a864cee0d5c28daab45e267bf2d253681"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends a log string that was started using log function with $leaveopen. <br /></td></tr>
+<tr class="separator:a864cee0d5c28daab45e267bf2d253681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1220cb4275b815b22ee5c6eeea60758b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d4b/classtool__generator__backend.html#a1220cb4275b815b22ee5c6eeea60758b">log</a> (string $langstring, $a=null, bool $leaveopen=false, string $module='tool_generator')</td></tr>
+<tr class="memdesc:a1220cb4275b815b22ee5c6eeea60758b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays information as part of progress.  <br /></td></tr>
+<tr class="separator:a1220cb4275b815b22ee5c6eeea60758b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -104,19 +113,6 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_SIZE</b> = 5
 int const&#160;</td><td class="memItemRight" valign="bottom"><b>MIN_SIZE</b> = 0</td></tr>
 <tr class="memdesc:aa5b9e85814e9e2251f0695f5a77fb697"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lowest (smallest) size index. <br /></td></tr>
 <tr class="separator:aa5b9e85814e9e2251f0695f5a77fb697"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a805bbae23a0580b8a9e50ab1fdce478c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d4b/classtool__generator__backend.html#a805bbae23a0580b8a9e50ab1fdce478c">dot</a> ($number, $total)</td></tr>
-<tr class="memdesc:a805bbae23a0580b8a9e50ab1fdce478c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs dots.  <br /></td></tr>
-<tr class="separator:a805bbae23a0580b8a9e50ab1fdce478c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a864cee0d5c28daab45e267bf2d253681"><td class="memItemLeft" align="right" valign="top"><a id="a864cee0d5c28daab45e267bf2d253681" name="a864cee0d5c28daab45e267bf2d253681"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>end_log</b> ()</td></tr>
-<tr class="memdesc:a864cee0d5c28daab45e267bf2d253681"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends a log string that was started using log function with $leaveopen. <br /></td></tr>
-<tr class="separator:a864cee0d5c28daab45e267bf2d253681"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5cdf844e2b0f98a1b4281f1800201c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d4b/classtool__generator__backend.html#af5cdf844e2b0f98a1b4281f1800201c9">log</a> ($langstring, $a=null, $leaveopen=false)</td></tr>
-<tr class="memdesc:af5cdf844e2b0f98a1b4281f1800201c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays information as part of progress.  <br /></td></tr>
-<tr class="separator:af5cdf844e2b0f98a1b4281f1800201c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -213,25 +209,22 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$starttime</b></td></t
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a805bbae23a0580b8a9e50ab1fdce478c" name="a805bbae23a0580b8a9e50ab1fdce478c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a805bbae23a0580b8a9e50ab1fdce478c">&#9670;&#160;</a></span>dot()</h2>
+<a id="a5a5e8d07fe077f2935d422b4a1794ad4" name="a5a5e8d07fe077f2935d422b4a1794ad4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a5e8d07fe077f2935d422b4a1794ad4">&#9670;&#160;</a></span>dot()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">tool_generator_backend::dot </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>$number</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>$total</em>&#160;</td>
         </tr>
         <tr>
@@ -240,15 +233,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$starttime</b></td></t
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Outputs dots. </p>
-<p>There is up to one dot per second. Once a minute, it displays a percentage. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>There is up to one dot per second. Once a minute, it displays a percentage.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$number</td><td>Number of completed items </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$total</td><td>Total number of items to complete </td></tr>
@@ -258,19 +247,16 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$starttime</b></td></t
 
 </div>
 </div>
-<a id="af5cdf844e2b0f98a1b4281f1800201c9" name="af5cdf844e2b0f98a1b4281f1800201c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5cdf844e2b0f98a1b4281f1800201c9">&#9670;&#160;</a></span>log()</h2>
+<a id="a1220cb4275b815b22ee5c6eeea60758b" name="a1220cb4275b815b22ee5c6eeea60758b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1220cb4275b815b22ee5c6eeea60758b">&#9670;&#160;</a></span>log()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">tool_generator_backend::log </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$langstring</em>, </td>
         </tr>
         <tr>
@@ -282,8 +268,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$starttime</b></td></t
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$leaveopen</em> = <code>false</code>&#160;</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$leaveopen</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$module</em> = <code>'tool_generator'</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -291,11 +283,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$starttime</b></td></t
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Displays information as part of progress. </p>
@@ -304,6 +291,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$starttime</b></td></t
     <tr><td class="paramtype">string</td><td class="paramname">$langstring</td><td>Part of langstring (after progress_) </td></tr>
     <tr><td class="paramtype">mixed</td><td class="paramname">$a</td><td>Optional lang string parameters </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$leaveopen</td><td>If true, doesn't close LI tag (ready for dots) </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$module</td><td>module for language string </td></tr>
   </table>
   </dd>
 </dl>
@@ -362,7 +350,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$starttime</b></td></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 19 2023 03:16:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Mar 26 2023 03:01:46 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>
