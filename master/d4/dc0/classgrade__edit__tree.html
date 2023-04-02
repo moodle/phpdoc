@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230324) (09fd61415e4)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
   </td>
  </tr>
  </tbody>
@@ -71,12 +71,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae90177817bbce44095c14c0db356b5a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc0/classgrade__edit__tree.html#ae90177817bbce44095c14c0db356b5a1">build_html_tree</a> ($element, $totals, $parents, $level, &amp;$row_count)</td></tr>
 <tr class="memdesc:ae90177817bbce44095c14c0db356b5a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursive function for building the table holding the grade categories and items, with CSS indentation and styles.  <br /></td></tr>
 <tr class="separator:ae90177817bbce44095c14c0db356b5a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cc131540d1b17b75e2f3b895dff977a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc0/classgrade__edit__tree.html#a4cc131540d1b17b75e2f3b895dff977a">element_deletable</a> ($element)</td></tr>
-<tr class="memdesc:a4cc131540d1b17b75e2f3b895dff977a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an element of the grade tree, returns whether it is deletable or not (only manual grade items are deletable)  <br /></td></tr>
-<tr class="separator:a4cc131540d1b17b75e2f3b895dff977a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35b2987823cc114ebcebd3fbecc3b95b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc0/classgrade__edit__tree.html#a35b2987823cc114ebcebd3fbecc3b95b">element_duplicatable</a> ($element)</td></tr>
-<tr class="memdesc:a35b2987823cc114ebcebd3fbecc3b95b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an element of the grade tree, returns whether it is duplicatable or not (only manual grade items are duplicatable)  <br /></td></tr>
-<tr class="separator:a35b2987823cc114ebcebd3fbecc3b95b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57d0f0232b1b80fc4298c219909c31d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc0/classgrade__edit__tree.html#a57d0f0232b1b80fc4298c219909c31d4">get_deepest_level</a> ($element, $level=0, $deepest_level=1)</td></tr>
 <tr class="memdesc:a57d0f0232b1b80fc4298c219909c31d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recurses through the entire grade tree to find and return the maximum depth of the tree.  <br /></td></tr>
 <tr class="separator:a57d0f0232b1b80fc4298c219909c31d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -86,6 +80,12 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ac54119e3fc367d4b622eab3a7cbee177"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc0/classgrade__edit__tree.html#ac54119e3fc367d4b622eab3a7cbee177">element_deletable</a> ($element)</td></tr>
+<tr class="memdesc:ac54119e3fc367d4b622eab3a7cbee177"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an element of the grade tree, returns whether it is deletable or not (only manual grade items are deletable)  <br /></td></tr>
+<tr class="separator:ac54119e3fc367d4b622eab3a7cbee177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba4d07ccda068f43c5683af8c727e180"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc0/classgrade__edit__tree.html#aba4d07ccda068f43c5683af8c727e180">element_duplicatable</a> ($element)</td></tr>
+<tr class="memdesc:aba4d07ccda068f43c5683af8c727e180"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an element of the grade tree, returns whether it is duplicatable or not (only manual grade items are duplicatable)  <br /></td></tr>
+<tr class="separator:aba4d07ccda068f43c5683af8c727e180"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62b3959e1d89ea9cd12daa9aea8ff481"><td class="memItemLeft" align="right" valign="top"><a id="a62b3959e1d89ea9cd12daa9aea8ff481" name="a62b3959e1d89ea9cd12daa9aea8ff481"></a>
 static&#160;</td><td class="memItemRight" valign="bottom"><b>format_number</b> ($number)</td></tr>
 <tr class="separator:a62b3959e1d89ea9cd12daa9aea8ff481"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,20 +186,28 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$moving</b></td></t
 
 </div>
 </div>
-<a id="a4cc131540d1b17b75e2f3b895dff977a" name="a4cc131540d1b17b75e2f3b895dff977a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cc131540d1b17b75e2f3b895dff977a">&#9670;&#160;</a></span>element_deletable()</h2>
+<a id="ac54119e3fc367d4b622eab3a7cbee177" name="ac54119e3fc367d4b622eab3a7cbee177"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac54119e3fc367d4b622eab3a7cbee177">&#9670;&#160;</a></span>element_deletable()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">grade_edit_tree::element_deletable </td>
+          <td class="memname">static grade_edit_tree::element_deletable </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$element</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Given an element of the grade tree, returns whether it is deletable or not (only manual grade items are deletable) </p>
@@ -218,20 +226,28 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$moving</b></td></t
 
 </div>
 </div>
-<a id="a35b2987823cc114ebcebd3fbecc3b95b" name="a35b2987823cc114ebcebd3fbecc3b95b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35b2987823cc114ebcebd3fbecc3b95b">&#9670;&#160;</a></span>element_duplicatable()</h2>
+<a id="aba4d07ccda068f43c5683af8c727e180" name="aba4d07ccda068f43c5683af8c727e180"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba4d07ccda068f43c5683af8c727e180">&#9670;&#160;</a></span>element_duplicatable()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">grade_edit_tree::element_duplicatable </td>
+          <td class="memname">static grade_edit_tree::element_duplicatable </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$element</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Given an element of the grade tree, returns whether it is duplicatable or not (only manual grade items are duplicatable) </p>
@@ -470,7 +486,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$moving</b></td></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 26 2023 03:01:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 2 2023 02:52:57 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

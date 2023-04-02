@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230324) (09fd61415e4)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
   </td>
  </tr>
  </tbody>
@@ -106,6 +106,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a040ab74638fce9e1ad705689a0ecae72"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db9/classcm__info.html#a040ab74638fce9e1ad705689a0ecae72">get_grouping_label</a> ($textclasses='')</td></tr>
 <tr class="separator:a040ab74638fce9e1ad705689a0ecae72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af48e4a2546b57e38425d07fc79e6e3c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db9/classcm__info.html#af48e4a2546b57e38425d07fc79e6e3c0">get_icon_url</a> ($output=null)</td></tr>
+<tr class="memdesc:af48e4a2546b57e38425d07fc79e6e3c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch the module's icon URL.  <br /></td></tr>
 <tr class="separator:af48e4a2546b57e38425d07fc79e6e3c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6ca8ebd101093a682e91d15c708d337"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db9/classcm__info.html#ae6ca8ebd101093a682e91d15c708d337">get_modinfo</a> ()</td></tr>
 <tr class="separator:ae6ca8ebd101093a682e91d15c708d337"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -699,9 +700,12 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_VIEW</b> = 4</
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Fetch the module's icon URL. </p>
+<p>This function fetches the course module instance's icon URL. This method adds a <code>filtericon</code> parameter in the URL when rendering the monologo version of the course module icon or when the plugin declares, via its <code>filtericon</code> custom data, that the icon needs to be filtered. This additional information can be used by plugins when rendering the module icon to determine whether to apply CSS filtering to the icon.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">moodle_core_renderer</td><td class="paramname">$output</td><td>Output render to use, or null for default (global) </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../d4/d7b/classcore__renderer.html">core_renderer</a></td><td class="paramname">$output</td><td>Output render to use, or null for default (global) </td></tr>
   </table>
   </dd>
 </dl>
@@ -1013,7 +1017,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_VIEW</b> = 4</
 </div><div class="memdoc">
 
 <p>Checks whether the module's conditional access settings mean that the user cannot see the activity at all. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000728">Deprecated:</a></b></dt><dd>since 2.7 <a href="https://tracker.moodle.org/browse/MDL-44070" class="el">MDL-44070</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000736">Deprecated:</a></b></dt><dd>since 2.7 <a href="https://tracker.moodle.org/browse/MDL-44070" class="el">MDL-44070</a> </dd></dl>
 
 </div>
 </div>
@@ -1034,7 +1038,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_VIEW</b> = 4</
 
 <p>This method has been deprecated and should not be used. </p>
 <dl class="section see"><dt>See also</dt><dd>$uservisible </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000727">Deprecated:</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000735">Deprecated:</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 </dd></dl>
 
 </div>
 </div>
@@ -1480,7 +1484,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_VIEW</b> = 4</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 26 2023 03:00:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 2 2023 02:51:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

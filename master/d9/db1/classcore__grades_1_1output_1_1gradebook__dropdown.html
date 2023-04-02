@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230324) (09fd61415e4)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
   </td>
  </tr>
  </tbody>
@@ -77,9 +77,9 @@ Inheritance diagram for core_grades\output\gradebook_dropdown:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a55aa13941d467835d016658de3926cd8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classcore__grades_1_1output_1_1gradebook__dropdown.html#a55aa13941d467835d016658de3926cd8">__construct</a> (bool $renderlater, string $buttoncontent, ?string $dropdowncontent=null, ?string $parentclasses=null, ?string $buttonclasses=null, ?string $dropdownclasses=null, ?string $buttonheader=null)</td></tr>
-<tr class="memdesc:a55aa13941d467835d016658de3926cd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class constructor.  <br /></td></tr>
-<tr class="separator:a55aa13941d467835d016658de3926cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53ab5ba198c455ee9f0751fa3028ecbc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classcore__grades_1_1output_1_1gradebook__dropdown.html#a53ab5ba198c455ee9f0751fa3028ecbc">__construct</a> (bool $renderlater, string $buttoncontent, ?string $dropdowncontent=null, ?string $parentclasses=null, ?string $buttonclasses=null, ?string $dropdownclasses=null, ?string $buttonheader=null, ?bool $usebutton=true)</td></tr>
+<tr class="memdesc:a53ab5ba198c455ee9f0751fa3028ecbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class constructor.  <br /></td></tr>
+<tr class="separator:a53ab5ba198c455ee9f0751fa3028ecbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acffde14b4ecfe296e7fa8addafa41fb8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db1/classcore__grades_1_1output_1_1gradebook__dropdown.html#acffde14b4ecfe296e7fa8addafa41fb8">export_for_template</a> (<a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a> $output)</td></tr>
 <tr class="memdesc:acffde14b4ecfe296e7fa8addafa41fb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the data for the mustache template.  <br /></td></tr>
 <tr class="separator:acffde14b4ecfe296e7fa8addafa41fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -117,10 +117,14 @@ null string&#160;</td><td class="memItemRight" valign="bottom"><b>$parentclasses
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>$renderlater</b></td></tr>
 <tr class="memdesc:a6de8b3649e530450fb2890eb5275ba5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">$renderlater Should the dropdown render straightaway? <br /></td></tr>
 <tr class="separator:a6de8b3649e530450fb2890eb5275ba5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9950da7ce2e3c1fbbc62a81cacf15e56"><td class="memItemLeft" align="right" valign="top"><a id="a9950da7ce2e3c1fbbc62a81cacf15e56" name="a9950da7ce2e3c1fbbc62a81cacf15e56"></a>
+boolean&#160;</td><td class="memItemRight" valign="bottom"><b>$usesbutton</b></td></tr>
+<tr class="memdesc:a9950da7ce2e3c1fbbc62a81cacf15e56"><td class="mdescLeft">&#160;</td><td class="mdescRight">$usesbutton Whether to provide a A11y button. <br /></td></tr>
+<tr class="separator:a9950da7ce2e3c1fbbc62a81cacf15e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a55aa13941d467835d016658de3926cd8" name="a55aa13941d467835d016658de3926cd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55aa13941d467835d016658de3926cd8">&#9670;&#160;</a></span>__construct()</h2>
+<a id="a53ab5ba198c455ee9f0751fa3028ecbc" name="a53ab5ba198c455ee9f0751fa3028ecbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53ab5ba198c455ee9f0751fa3028ecbc">&#9670;&#160;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -165,7 +169,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$renderlater</b></td>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">?string&#160;</td>
-          <td class="paramname"><em>$buttonheader</em> = <code>null</code>&#160;</td>
+          <td class="paramname"><em>$buttonheader</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?bool&#160;</td>
+          <td class="paramname"><em>$usebutton</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -185,6 +195,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$renderlater</b></td>
     <tr><td class="paramtype"></td><td class="paramname">?string</td><td>$buttonclasses Any special classes that may be needed. </td></tr>
     <tr><td class="paramtype"></td><td class="paramname">?string</td><td>$dropdownclasses Any special classes that may be needed. </td></tr>
     <tr><td class="paramtype"></td><td class="paramname">?string</td><td>$buttonheader If the button item in the tertiary nav needs an extra top header for context. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$usebutton</td><td>If we want the mustache to add the button roles for us or do we have another aria role node? </td></tr>
   </table>
   </dd>
 </dl>
@@ -263,7 +274,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$renderlater</b></td>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 26 2023 03:02:27 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 2 2023 02:54:05 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

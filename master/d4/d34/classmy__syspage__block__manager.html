@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230324) (09fd61415e4)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
   </td>
  </tr>
  </tbody>
@@ -179,6 +179,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aba2df1489abbc5efc351024e84e6660d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddd/classblock__manager.html#aba2df1489abbc5efc351024e84e6660d">reposition_block</a> ($blockinstanceid, $newregion, $newweight)</td></tr>
 <tr class="memdesc:aba2df1489abbc5efc351024e84e6660d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move a block to a new position on this page.  <br /></td></tr>
 <tr class="separator:aba2df1489abbc5efc351024e84e6660d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af46829dfc9d918b03c008b851004c063"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddd/classblock__manager.html#af46829dfc9d918b03c008b851004c063">save_block_data</a> (<a class="el" href="../../d0/df2/classblock__base.html">block_base</a> $block, stdClass $data)</td></tr>
+<tr class="memdesc:af46829dfc9d918b03c008b851004c063"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates block configuration in the database.  <br /></td></tr>
+<tr class="separator:af46829dfc9d918b03c008b851004c063"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29e5fae3a3693cee526d51e4d4b5d33f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddd/classblock__manager.html#a29e5fae3a3693cee526d51e4d4b5d33f">set_default_region</a> ($defaultregion)</td></tr>
 <tr class="memdesc:a29e5fae3a3693cee526d51e4d4b5d33f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the default region for new blocks on the page.  <br /></td></tr>
 <tr class="separator:a29e5fae3a3693cee526d51e4d4b5d33f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -188,6 +191,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:afe372310da563626e018ec7e1d23d3ee"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddd/classblock__manager.html#afe372310da563626e018ec7e1d23d3ee">get_block_edit_form_class</a> (string $blockname)</td></tr>
+<tr class="memdesc:afe372310da563626e018ec7e1d23d3ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the class for block editing and makes sure it is autoloaded.  <br /></td></tr>
+<tr class="separator:afe372310da563626e018ec7e1d23d3ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4778f1cc276375bfd153f73d6d34b6b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/ddd/classblock__manager.html#ab4778f1cc276375bfd153f73d6d34b6b">get_undeletable_block_types</a> ()</td></tr>
 <tr class="memdesc:ab4778f1cc276375bfd153f73d6d34b6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of "protected" blocks via admin block manager ui.  <br /></td></tr>
 <tr class="separator:ab4778f1cc276375bfd153f73d6d34b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -358,6 +364,12 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$visibleblockcontent
   </table>
   </dd>
 </dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../d0/df2/classblock__base.html" title="Class for describing a moodle block, all Moodle blocks derive from this class.">block_base</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -400,6 +412,12 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$visibleblockcontent
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$blockname</td><td>Name of the block to add. </td></tr>
     <tr><td class="paramtype">null&#160;|&#160;string</td><td class="paramname">$blockregion</td><td>If defined add the new block to the specified region. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">?block_base</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -992,13 +1010,13 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$visibleblockcontent
 <p>Get the appropriate list of editing icons for a block. This is used to set <a class="el" href="../../db/dce/classblock__contents.html#a86f4386ede2fcfebb537f71e246d72ef">block_contents::$controls</a> in <a class="el" href="../../">block_base::get_contents_for_output()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">$output</td><td>The <a class="el" href="../../d4/d7b/classcore__renderer.html">core_renderer</a> to use when generating the output. (Need to get icon paths.) </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../d0/df2/classblock__base.html" title="Class for describing a moodle block, all Moodle blocks derive from this class.">block_base</a></td><td class="paramname">$block</td><td></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">an</td><td>array in the format for <a class="el" href="../../db/dce/classblock__contents.html#a86f4386ede2fcfebb537f71e246d72ef">block_contents::$controls</a> </td></tr>
+    <tr><td class="paramname">array</td><td>an array in the format for <a class="el" href="../../db/dce/classblock__contents.html#a86f4386ede2fcfebb537f71e246d72ef">block_contents::$controls</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -1150,6 +1168,46 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$visibleblockcontent
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td>block name =&gt; record from block table. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afe372310da563626e018ec7e1d23d3ee" name="afe372310da563626e018ec7e1d23d3ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe372310da563626e018ec7e1d23d3ee">&#9670;&#160;</a></span>get_block_edit_form_class()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static block_manager::get_block_edit_form_class </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$blockname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the name of the class for block editing and makes sure it is autoloaded. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$blockname</td><td>name of the block plugin (without block_ prefix) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1494,7 +1552,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$visibleblockcontent
 </div><div class="memdoc">
 
 <p>Convenience function to check whether a block is implementing a secondary nav class and return it initialised to the calling function. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000067">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-74939" class="el">MDL-74939</a> Remove support for old 'local::views::secondary' class location </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000075">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-74939" class="el">MDL-74939</a> Remove support for old 'local::views::secondary' class location </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="../../d0/df2/classblock__base.html" title="Class for describing a moodle block, all Moodle blocks derive from this class.">block_base</a></td><td class="paramname">$block</td><td></td></tr>
@@ -2247,6 +2305,57 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$visibleblockcontent
 
 </div>
 </div>
+<a id="af46829dfc9d918b03c008b851004c063" name="af46829dfc9d918b03c008b851004c063"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af46829dfc9d918b03c008b851004c063">&#9670;&#160;</a></span>save_block_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">block_manager::save_block_data </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/df2/classblock__base.html">block_base</a>&#160;</td>
+          <td class="paramname"><em>$block</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates block configuration in the database. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d0/df2/classblock__base.html" title="Class for describing a moodle block, all Moodle blocks derive from this class.">block_base</a></td><td class="paramname">$block</td><td></td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$data</td><td>data from the block edit form </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a29e5fae3a3693cee526d51e4d4b5d33f" name="a29e5fae3a3693cee526d51e4d4b5d33f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a29e5fae3a3693cee526d51e4d4b5d33f">&#9670;&#160;</a></span>set_default_region()</h2>
 
@@ -2493,7 +2602,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$visibleblockcontent
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 26 2023 03:01:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 2 2023 02:53:07 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

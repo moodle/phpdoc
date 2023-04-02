@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230324) (09fd61415e4)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
   </td>
  </tr>
  </tbody>
@@ -83,6 +83,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab40f2b931bc825a979ca15e2bd28bcbd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d00/classbehat__blocks.html#ab40f2b931bc825a979ca15e2bd28bcbd">i_add_the_block_if_not_present</a> ($blockname)</td></tr>
 <tr class="memdesc:ab40f2b931bc825a979ca15e2bd28bcbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the selected block if it is not already present.  <br /></td></tr>
 <tr class="separator:ab40f2b931bc825a979ca15e2bd28bcbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d9707464b16d7f5d6a513d99faec271"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d00/classbehat__blocks.html#a5d9707464b16d7f5d6a513d99faec271">i_add_the_block_to_the_region</a> (string $blockname, string $region)</td></tr>
+<tr class="memdesc:a5d9707464b16d7f5d6a513d99faec271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the selected block to the specified region.  <br /></td></tr>
+<tr class="separator:a5d9707464b16d7f5d6a513d99faec271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3946f8ca694697efdb714c3355239a89"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d00/classbehat__blocks.html#a3946f8ca694697efdb714c3355239a89">i_add_the_block_to_the_region_with</a> (string $blockname, string $region, TableNode $data)</td></tr>
+<tr class="memdesc:a3946f8ca694697efdb714c3355239a89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the selected block to the specified region and fills configuration form.  <br /></td></tr>
+<tr class="separator:a3946f8ca694697efdb714c3355239a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a366ccdeeba33e15024eebea5a09a4ae4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d00/classbehat__blocks.html#a366ccdeeba33e15024eebea5a09a4ae4">i_configure_the_block</a> ($blockname)</td></tr>
 <tr class="memdesc:a366ccdeeba33e15024eebea5a09a4ae4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clicks on Configure block for specified block.  <br /></td></tr>
 <tr class="separator:a366ccdeeba33e15024eebea5a09a4ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,6 +204,93 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a5d9707464b16d7f5d6a513d99faec271" name="a5d9707464b16d7f5d6a513d99faec271"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d9707464b16d7f5d6a513d99faec271">&#9670;&#160;</a></span>i_add_the_block_to_the_region()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_blocks::i_add_the_block_to_the_region </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$blockname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$region</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds the selected block to the specified region. </p>
+<p>Editing mode must be previously enabled.</p>
+<p>@Given /^I add the "(?P&lt;block_name_string&gt;(?:[^"]|::")*)" block to the "(?P&lt;region_string&gt;(?:[^"]|")*)" region$/ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$blockname</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$region</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../d0/d73/classbehat__theme__classic__behat__blocks.html#a6ef1982d8108e5b65c22aa7f75ea921d">behat_theme_classic_behat_blocks</a>.</p>
+
+</div>
+</div>
+<a id="a3946f8ca694697efdb714c3355239a89" name="a3946f8ca694697efdb714c3355239a89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3946f8ca694697efdb714c3355239a89">&#9670;&#160;</a></span>i_add_the_block_to_the_region_with()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_blocks::i_add_the_block_to_the_region_with </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$blockname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$region</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TableNode&#160;</td>
+          <td class="paramname"><em>$data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds the selected block to the specified region and fills configuration form. </p>
+<p>Editing mode must be previously enabled.</p>
+<p>@Given /^I add the "(?P&lt;block_name_string&gt;(?:[^"]|::")*)" block to the (?P&lt;region_string&gt;(?:[^"]|\")*) region with:$/ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$blockname</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$region</td><td></td></tr>
+    <tr><td class="paramtype">TableNode</td><td class="paramname">$data</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../d0/d73/classbehat__theme__classic__behat__blocks.html#a76a7d9fe951bfb34d8180fbb62788208">behat_theme_classic_behat_blocks</a>.</p>
 
 </div>
 </div>
@@ -352,7 +445,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 26 2023 03:00:10 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 2 2023 02:51:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

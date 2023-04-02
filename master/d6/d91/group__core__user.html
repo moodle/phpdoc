@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230324) (09fd61415e4)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
   </td>
  </tr>
  </tbody>
@@ -758,6 +758,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>USER_SELECTOR_DEFAUL
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="../../d5/def/classinvalid__parameter__exception.html" title="Exception indicating malformed parameter problem.">invalid_parameter_exception</a></td><td></td></tr>
+    <tr><td class="paramname"><a class="el" href="../../d6/da8/classmoodle__exception.html" title="Base Moodle Exception class.">moodle_exception</a></td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1656,8 +1657,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>USER_SELECTOR_DEFAUL
 </div><div class="memdoc">
 
 <p>Edit a category. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001225">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 <a href="https://tracker.moodle.org/browse/MDL-71051" class="el">MDL-71051</a> - please do not use this function any more. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000357">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-71413" class="el">MDL-71413</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001233">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 <a href="https://tracker.moodle.org/browse/MDL-71051" class="el">MDL-71051</a> - please do not use this function any more. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000364">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-71413" class="el">MDL-71413</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d6/d91/group__core__user.html#gaa4c2b160f52626ff6fd8e7a9b7dfef6f" title="Create or update a profile category.">profile_save_category()</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1702,8 +1703,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>USER_SELECTOR_DEFAUL
 </div><div class="memdoc">
 
 <p>Edit a profile field. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001226">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 <a href="https://tracker.moodle.org/browse/MDL-71051" class="el">MDL-71051</a> - please do not use this function any more. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000358">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-71413" class="el">MDL-71413</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001234">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 <a href="https://tracker.moodle.org/browse/MDL-71051" class="el">MDL-71051</a> - please do not use this function any more. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000365">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-71413" class="el">MDL-71413</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d6/d91/group__core__user.html#gabd91738857b86bb6f466b613e9f8db5c" title="Save updated field definition or create a new field.">profile_save_field()</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2538,7 +2539,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>USER_SELECTOR_DEFAUL
 
 <p>Marks user deleted in internal user database and notifies the auth plugin. </p>
 <p>Also unenrols user from all roles and does other cleanup.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000356">Todo:</a></b></dt><dd>Decide if this transaction is really needed (look for internal TODO:) </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000363">Todo:</a></b></dt><dd>Decide if this transaction is really needed (look for internal TODO:) </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">object</td><td class="paramname">$user</td><td>Userobject before delete (without system magic quotes) </td></tr>
@@ -3690,7 +3691,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>USER_SELECTOR_DEFAUL
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001214">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.2 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001222">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.2 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>core_user::update_picture() </dd></dl>
 
 </div>
@@ -4073,7 +4074,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>USER_SELECTOR_DEFAUL
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 26 2023 02:59:56 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 2 2023 02:51:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

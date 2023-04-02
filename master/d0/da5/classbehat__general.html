@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230324) (09fd61415e4)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
   </td>
  </tr>
  </tbody>
@@ -171,6 +171,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8f5223fe140163d587d0ea998823c9dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da5/classbehat__general.html#a8f5223fe140163d587d0ea998823c9dd">i_hover_in_the</a> (string $element, $selectortype, string $containerelement, $containerselectortype)</td></tr>
 <tr class="memdesc:a8f5223fe140163d587d0ea998823c9dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generic mouse over action.  <br /></td></tr>
 <tr class="separator:a8f5223fe140163d587d0ea998823c9dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a293ca0914dad7ea644d3f6696356b4cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da5/classbehat__general.html#a293ca0914dad7ea644d3f6696356b4cb">i_key_click_on_in_the</a> ($modifier, $element, $selectortype, $nodeelement, $nodeselectortype)</td></tr>
+<tr class="memdesc:a293ca0914dad7ea644d3f6696356b4cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Click on the element with some modifier key pressed (alt, shift, meta or control).  <br /></td></tr>
+<tr class="separator:a293ca0914dad7ea644d3f6696356b4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e6c27924ab58dcb27fc426a6861dc8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da5/classbehat__general.html#a0e6c27924ab58dcb27fc426a6861dc8f">i_manually_press_enter</a> ()</td></tr>
 <tr class="memdesc:a0e6c27924ab58dcb27fc426a6861dc8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manually press enter key.  <br /></td></tr>
 <tr class="separator:a0e6c27924ab58dcb27fc426a6861dc8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1629,6 +1632,65 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$selectortype</td><td>The type of what we look for </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$containerelement</td><td>Element we look for </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$containerselectortype</td><td>The type of what we look for </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a293ca0914dad7ea644d3f6696356b4cb" name="a293ca0914dad7ea644d3f6696356b4cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a293ca0914dad7ea644d3f6696356b4cb">&#9670;&#160;</a></span>i_key_click_on_in_the()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_general::i_key_click_on_in_the </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$modifier</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$selectortype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$nodeelement</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$nodeselectortype</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Click on the element with some modifier key pressed (alt, shift, meta or control). </p>
+<p>It is important to note that not all HTML elements are compatible with this step because the webdriver limitations. For example, alt click on checkboxes with a visible label will produce a normal checkbox click without the modifier.</p>
+<p>@When I :modifier click on :element :selectortype in the :nodeelement :nodeselectortype </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$modifier</td><td>the extra modifier to press (for example, alt+shift or shift) </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$element</td><td>Element we look for </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$selectortype</td><td>The type of what we look for </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$nodeelement</td><td>Element we look in </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$nodeselectortype</td><td>The type of selector where we look in </td></tr>
   </table>
   </dd>
 </dl>
@@ -3915,7 +3977,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 26 2023 03:00:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 2 2023 02:51:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

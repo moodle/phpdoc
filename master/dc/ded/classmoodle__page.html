@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230324) (09fd61415e4)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
   </td>
  </tr>
  </tbody>
@@ -55,6 +55,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
@@ -108,6 +109,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5b7f082cfe4585dbd868a0213200168c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/classmoodle__page.html#a5b7f082cfe4585dbd868a0213200168c">force_theme</a> ($themename)</td></tr>
 <tr class="memdesc:a5b7f082cfe4585dbd868a0213200168c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force this page to use a particular theme.  <br /></td></tr>
 <tr class="separator:a5b7f082cfe4585dbd868a0213200168c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05ede00e1990c7c820091300e217667a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/classmoodle__page.html#a05ede00e1990c7c820091300e217667a">get_edited_page_hash</a> ()</td></tr>
+<tr class="memdesc:a05ede00e1990c7c820091300e217667a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows to 'serialize' the edited page information and store it in the session cache.  <br /></td></tr>
+<tr class="separator:a05ede00e1990c7c820091300e217667a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8805ed8133367d4e1c68dec3fbcc759"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/classmoodle__page.html#af8805ed8133367d4e1c68dec3fbcc759">get_header_actions</a> ()</td></tr>
 <tr class="memdesc:af8805ed8133367d4e1c68dec3fbcc759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of HTML for actions to render in the header actions menu.  <br /></td></tr>
 <tr class="separator:af8805ed8133367d4e1c68dec3fbcc759"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -256,6 +260,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afebb2009db681595763efc51bead3a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3230a2772a49a576232fd56e9d7c798"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/classmoodle__page.html#ad3230a2772a49a576232fd56e9d7c798">verify_https_required</a> ()</td></tr>
 <tr class="separator:ad3230a2772a49a576232fd56e9d7c798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a11925d00d5e0832e98443a7b907c5adb"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/classmoodle__page.html#a11925d00d5e0832e98443a7b907c5adb">retrieve_edited_page</a> (string $<a class="el" href="../../dc/d71/group___imap___client.html#gaf5d527ef2a6e3f43563ad4cb15872140">hash</a>, $strictness=<a class="el" href="../../d0/de1/group__core.html#gaffc7005a2da386334d76ec5f85ca2d48">IGNORE_MISSING</a>)</td></tr>
+<tr class="memdesc:a11925d00d5e0832e98443a7b907c5adb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a page that is being edited from the session cache.  <br /></td></tr>
+<tr class="separator:a11925d00d5e0832e98443a7b907c5adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -1188,6 +1198,33 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_subpage</b> = ''<
 
 </div>
 </div>
+<a id="a05ede00e1990c7c820091300e217667a" name="a05ede00e1990c7c820091300e217667a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05ede00e1990c7c820091300e217667a">&#9670;&#160;</a></span>get_edited_page_hash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">moodle_page::get_edited_page_hash </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allows to 'serialize' the edited page information and store it in the session cache. </p>
+<p>Due to <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> architectural decision and non-SPA approach, a lot of page setup is happening in the actual page php file, for example, setting course/cm/context, setting layout and pagetype, requiring capabilities, setting specific block editing capabilities.</p>
+<p>When storing this information in the session cache we can pass the pagehash (cache key) as an argument to web services in AJAX requests and retrieve all data associated with the page without actually executing PHP code on that page.</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string|null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="af8805ed8133367d4e1c68dec3fbcc759" name="af8805ed8133367d4e1c68dec3fbcc759"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8805ed8133367d4e1c68dec3fbcc759">&#9670;&#160;</a></span>get_header_actions()</h2>
 
@@ -1502,7 +1539,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_subpage</b> = ''<
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000763">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000771">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 </dd></dl>
 
 </div>
 </div>
@@ -2868,7 +2905,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_subpage</b> = ''<
 </div><div class="memdoc">
 
 <p>Returns the secondary navigation object. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000168">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-74939" class="el">MDL-74939</a> Remove support for old 'local::views::secondary' class location </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000176">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-74939" class="el">MDL-74939</a> Remove support for old 'local::views::secondary' class location </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">secondary</td><td></td></tr>
@@ -3150,6 +3187,58 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_subpage</b> = ''<
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>the name of the theme that should be used on this page. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a11925d00d5e0832e98443a7b907c5adb" name="a11925d00d5e0832e98443a7b907c5adb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11925d00d5e0832e98443a7b907c5adb">&#9670;&#160;</a></span>retrieve_edited_page()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static moodle_page::retrieve_edited_page </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$hash</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$strictness</em> = <code><a class="el" href="../../d0/de1/group__core.html#gaffc7005a2da386334d76ec5f85ca2d48">IGNORE_MISSING</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieves a page that is being edited from the session cache. </p>
+<p>{</p><dl class="section see"><dt>See also</dt><dd>self::get_edited_page_hash()}</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$hash</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$strictness</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">self|null</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -4182,7 +4271,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_subpage</b> = ''<
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000764">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000772">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 </dd></dl>
 
 </div>
 </div>
@@ -4768,7 +4857,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_subpage</b> = ''<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 26 2023 03:01:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 2 2023 02:53:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>
