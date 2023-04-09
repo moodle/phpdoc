@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -154,7 +154,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga7d76e9c5a8cf563b3e21fc7ab082ed90"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc8/group__core__group.html#ga7d76e9c5a8cf563b3e21fc7ab082ed90">groups_cache_groupdata</a> ($courseid, <a class="el" href="../../d3/d3d/classcache.html">cache</a> $<a class="el" href="../../d3/d3d/classcache.html">cache</a>=null)</td></tr>
 <tr class="memdesc:ga7d76e9c5a8cf563b3e21fc7ab082ed90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Caches group data for a particular course to speed up subsequent requests.  <br /></td></tr>
 <tr class="separator:ga7d76e9c5a8cf563b3e21fc7ab082ed90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaaf3cc0504194309d2e2ce49ec47d5325"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc8/group__core__group.html#gaaf3cc0504194309d2e2ce49ec47d5325">groups_calculate_role_people</a> ($rs, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:gaaf3cc0504194309d2e2ce49ec47d5325"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc8/group__core__group.html#gaaf3cc0504194309d2e2ce49ec47d5325">groups_calculate_role_people</a> ($rs, $context)</td></tr>
 <tr class="memdesc:gaaf3cc0504194309d2e2ce49ec47d5325"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal function used by groups_get_members_by_role to handle the results of a database query that includes a list of users and possible roles on a course.  <br /></td></tr>
 <tr class="separator:gaaf3cc0504194309d2e2ce49ec47d5325"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga91f55b838470e3130743d3f6e0b1de47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc8/group__core__group.html#ga91f55b838470e3130743d3f6e0b1de47">groups_create_group</a> ($data, $editform=false, $editoroptions=false)</td></tr>
@@ -244,10 +244,10 @@ Functions</h2></td></tr>
 <tr class="memitem:gabdad74801ba27c595e7bb1f287d948de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc8/group__core__group.html#gabdad74801ba27c595e7bb1f287d948de">groups_get_members_by_role</a> (int $groupid, int $courseid, string $fields='u.*', ?string $<a class="el" href="../../dc/d71/group___imap___client.html#ga4bd31bcedb7b4943aac2da78d0d84afe">sort</a>=null, string $extrawheretest='', array $whereorsortparams=[], string $joins='')</td></tr>
 <tr class="memdesc:gabdad74801ba27c595e7bb1f287d948de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lists users in a group based on their role on the course.  <br /></td></tr>
 <tr class="separator:gabdad74801ba27c595e7bb1f287d948de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9cbde183ad3cf2528eb421d3dd480e3a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc8/group__core__group.html#ga9cbde183ad3cf2528eb421d3dd480e3a">groups_get_members_ids_sql</a> ($groupids, <a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>=null, $groupsjointype=<a class="el" href="../../de/dc8/group__core__group.html#ga8dd183e2aa18183298d8ce1a1dbfd4d7">GROUPS_JOIN_ANY</a>)</td></tr>
+<tr class="memitem:ga9cbde183ad3cf2528eb421d3dd480e3a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc8/group__core__group.html#ga9cbde183ad3cf2528eb421d3dd480e3a">groups_get_members_ids_sql</a> ($groupids, context $context=null, $groupsjointype=<a class="el" href="../../de/dc8/group__core__group.html#ga8dd183e2aa18183298d8ce1a1dbfd4d7">GROUPS_JOIN_ANY</a>)</td></tr>
 <tr class="memdesc:ga9cbde183ad3cf2528eb421d3dd480e3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get sql and parameters that will return user ids for a group or groups.  <br /></td></tr>
 <tr class="separator:ga9cbde183ad3cf2528eb421d3dd480e3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0043557ec86bdf94ba6f6fc33f18f0e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc8/group__core__group.html#ga0043557ec86bdf94ba6f6fc33f18f0e5">groups_get_members_join</a> ($groupids, $useridcolumn, <a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>=null, int $jointype=<a class="el" href="../../de/dc8/group__core__group.html#ga8dd183e2aa18183298d8ce1a1dbfd4d7">GROUPS_JOIN_ANY</a>)</td></tr>
+<tr class="memitem:ga0043557ec86bdf94ba6f6fc33f18f0e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc8/group__core__group.html#ga0043557ec86bdf94ba6f6fc33f18f0e5">groups_get_members_join</a> ($groupids, $useridcolumn, context $context=null, int $jointype=<a class="el" href="../../de/dc8/group__core__group.html#ga8dd183e2aa18183298d8ce1a1dbfd4d7">GROUPS_JOIN_ANY</a>)</td></tr>
 <tr class="memdesc:ga0043557ec86bdf94ba6f6fc33f18f0e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get sql join to return users in a group.  <br /></td></tr>
 <tr class="separator:ga0043557ec86bdf94ba6f6fc33f18f0e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga350e8fded7850e8645e87060135e891f"><td class="memItemLeft" align="right" valign="top"><a id="ga350e8fded7850e8645e87060135e891f" name="ga350e8fded7850e8645e87060135e891f"></a>
@@ -256,7 +256,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gad0902770bb48c19c6da89ba39d261b14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc8/group__core__group.html#gad0902770bb48c19c6da89ba39d261b14">groups_get_names_concat_sql</a> (int $courseid, string $separator=', ')</td></tr>
 <tr class="memdesc:gad0902770bb48c19c6da89ba39d261b14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns array with SQL and parameters returning userids and concatenated group names for given course.  <br /></td></tr>
 <tr class="separator:gad0902770bb48c19c6da89ba39d261b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6af114a377705c09af4b55aae72b8258"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc8/group__core__group.html#ga6af114a377705c09af4b55aae72b8258">groups_get_possible_roles</a> ($<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:ga6af114a377705c09af4b55aae72b8258"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc8/group__core__group.html#ga6af114a377705c09af4b55aae72b8258">groups_get_possible_roles</a> ($context)</td></tr>
 <tr class="memdesc:ga6af114a377705c09af4b55aae72b8258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains a list of the possible roles that group members might come from, on a course.  <br /></td></tr>
 <tr class="separator:ga6af114a377705c09af4b55aae72b8258"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga950efa3b4c15eb69214cd9f4f29525e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc8/group__core__group.html#ga950efa3b4c15eb69214cd9f4f29525e6">groups_get_potential_members</a> ($courseid, $roleid=null, $source=null, $orderby='lastname ASC, firstname ASC', $notingroup=null, $onlyactiveenrolments=false, $extrafields=[])</td></tr>
@@ -1316,7 +1316,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>VISIBLEGROUPS</b> 2<
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramtype">context&#160;</td>
           <td class="paramname"><em>$context</em> = <code>null</code>, </td>
         </tr>
         <tr>
@@ -1378,7 +1378,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>VISIBLEGROUPS</b> 2<
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramtype">context&#160;</td>
           <td class="paramname"><em>$context</em> = <code>null</code>, </td>
         </tr>
         <tr>
@@ -2180,7 +2180,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>VISIBLEGROUPS</b> 2<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:51:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:52:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

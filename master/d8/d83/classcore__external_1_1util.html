@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -69,13 +69,13 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a25b6c68e8124221fdfa462ee05f4996f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d83/classcore__external_1_1util.html#a25b6c68e8124221fdfa462ee05f4996f">delete_service_descriptions</a> (string $component)</td></tr>
 <tr class="memdesc:a25b6c68e8124221fdfa462ee05f4996f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete all pre-built services, related tokens, and external functions information defined for the specified component.  <br /></td></tr>
 <tr class="separator:a25b6c68e8124221fdfa462ee05f4996f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab847246c4c2266ed55e2f2e47b14f1a4"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d83/classcore__external_1_1util.html#ab847246c4c2266ed55e2f2e47b14f1a4">format_string</a> ( $content, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $striplinks=true, $options=[])</td></tr>
+<tr class="memitem:ab847246c4c2266ed55e2f2e47b14f1a4"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d83/classcore__external_1_1util.html#ab847246c4c2266ed55e2f2e47b14f1a4">format_string</a> ( $content, $context, $striplinks=true, $options=[])</td></tr>
 <tr class="memdesc:ab847246c4c2266ed55e2f2e47b14f1a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format the string to be returned properly as requested by the either the web service server, either by an internally call.  <br /></td></tr>
 <tr class="separator:ab847246c4c2266ed55e2f2e47b14f1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adab6ebdeeb6b344f4731dcbb7a8216a3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d83/classcore__external_1_1util.html#adab6ebdeeb6b344f4731dcbb7a8216a3">format_text</a> ( $text, $textformat, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $component=null, $filearea=null, $itemid=null, $options=null)</td></tr>
+<tr class="memitem:adab6ebdeeb6b344f4731dcbb7a8216a3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d83/classcore__external_1_1util.html#adab6ebdeeb6b344f4731dcbb7a8216a3">format_text</a> ( $text, $textformat, $context, $component=null, $filearea=null, $itemid=null, $options=null)</td></tr>
 <tr class="memdesc:adab6ebdeeb6b344f4731dcbb7a8216a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format the text to be returned properly as requested by the either the web service server, either by an internally call.  <br /></td></tr>
 <tr class="separator:adab6ebdeeb6b344f4731dcbb7a8216a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7df5b93ff65a99676a25df9fbc0157b3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d83/classcore__external_1_1util.html#a7df5b93ff65a99676a25df9fbc0157b3">generate_token</a> (int $tokentype, stdClass $service, int $userid, <a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, int $validuntil=0, string $iprestriction='')</td></tr>
+<tr class="memitem:a7df5b93ff65a99676a25df9fbc0157b3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d83/classcore__external_1_1util.html#a7df5b93ff65a99676a25df9fbc0157b3">generate_token</a> (int $tokentype, stdClass $service, int $userid, context $context, int $validuntil=0, string $iprestriction='')</td></tr>
 <tr class="memdesc:a7df5b93ff65a99676a25df9fbc0157b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and return a session linked token.  <br /></td></tr>
 <tr class="separator:a7df5b93ff65a99676a25df9fbc0157b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35adedeba3f60339c616c3215862a526"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d83/classcore__external_1_1util.html#a35adedeba3f60339c616c3215862a526">generate_token_for_current_user</a> (stdClass $service)</td></tr>
@@ -291,7 +291,7 @@ Options are the same that in {<dl class="section see"><dt>See also</dt><dd> <a c
                      Default (different from <a class="el" href="../../d0/de1/group__core.html#ga9cf34d3f4b1d8960c459d4a66144da8e" title="Given text in a variety of format codings, this function returns the text as safe HTML.">format_text</a>) false.
                      Default changed because div tags are not commonly needed.
      newlines    :   If true then lines newline breaks will be converted to HTML newline breaks. Default true.
-     <a class="el" href="../../da/d04/classcontext.html">context</a>     :   Not used! Using contextid parameter instead.
+     context     :   Not used! Using contextid parameter instead.
      overflowdiv :   If <a class="el" href="../../dc/d71/group___imap___client.html#ga0dae8e91a93f347875c2acc9129ae73b" title="Store information in cache.">set</a> to true the formatted text will be encased in a div with the class no-overflow before being
                      returned. Default false.
      allowid     :   If true then id attributes will not be removed, even when using htmlpurifier. Default (different from
@@ -356,7 +356,7 @@ Options are the same that in {<dl class="section see"><dt>See also</dt><dd> <a c
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramtype">context&#160;</td>
           <td class="paramname"><em>$context</em>, </td>
         </tr>
         <tr>
@@ -763,7 +763,7 @@ Options are the same that in {<dl class="section see"><dt>See also</dt><dd> <a c
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:54:04 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:55:04 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

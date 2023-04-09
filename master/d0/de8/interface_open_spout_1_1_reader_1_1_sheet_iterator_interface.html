@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -69,8 +69,8 @@ Inheritance diagram for OpenSpout\Reader\SheetIteratorInterface:</div>
  <div class="center">
   <img src="../../d0/de8/interface_open_spout_1_1_reader_1_1_sheet_iterator_interface.png" usemap="#OpenSpout_5CReader_5CSheetIteratorInterface_map" alt=""/>
   <map id="OpenSpout_5CReader_5CSheetIteratorInterface_map" name="OpenSpout_5CReader_5CSheetIteratorInterface_map">
-<area href="../../d0/d04/interface_open_spout_1_1_reader_1_1_iterator_interface.html" alt="OpenSpout\Reader\IteratorInterface" shape="rect" coords="0,56,246,80"/>
-<area href="../../de/d6c/class_open_spout_1_1_reader_1_1_c_s_v_1_1_sheet_iterator.html" alt="OpenSpout\Reader\CSV\SheetIterator" shape="rect" coords="0,168,246,192"/>
+<area href="../../de/d6c/class_open_spout_1_1_reader_1_1_c_s_v_1_1_sheet_iterator.html" alt="OpenSpout\Reader\CSV\SheetIterator" shape="rect" coords="0,112,246,136"/>
+<area href="../../df/d67/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_sheet_iterator.html" alt="OpenSpout\Reader\XLSX\SheetIterator" shape="rect" coords="256,112,502,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -78,9 +78,6 @@ Inheritance diagram for OpenSpout\Reader\SheetIteratorInterface:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a172a4e636dc2a6513f1fb7204f2d5897"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de8/interface_open_spout_1_1_reader_1_1_sheet_iterator_interface.html#a172a4e636dc2a6513f1fb7204f2d5897">current</a> ()</td></tr>
 <tr class="separator:a172a4e636dc2a6513f1fb7204f2d5897"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bd2257f0ebf02b25702d74fd4c219f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de8/interface_open_spout_1_1_reader_1_1_sheet_iterator_interface.html#a2bd2257f0ebf02b25702d74fd4c219f9">end</a> ()</td></tr>
-<tr class="memdesc:a2bd2257f0ebf02b25702d74fd4c219f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans up what was created to iterate over the object.  <br /></td></tr>
-<tr class="separator:a2bd2257f0ebf02b25702d74fd4c219f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a172a4e636dc2a6513f1fb7204f2d5897" name="a172a4e636dc2a6513f1fb7204f2d5897"></a>
@@ -99,35 +96,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">null|SheetInterface</td><td></td></tr>
+    <tr><td class="paramname">T</td><td>of SheetInterface </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="../../de/d6c/class_open_spout_1_1_reader_1_1_c_s_v_1_1_sheet_iterator.html#a4f6b9c8b4250077971a0508d672ae472">OpenSpout\Reader\CSV\SheetIterator</a>.</p>
-
-</div>
-</div>
-<a id="a2bd2257f0ebf02b25702d74fd4c219f9" name="a2bd2257f0ebf02b25702d74fd4c219f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bd2257f0ebf02b25702d74fd4c219f9">&#9670;&#160;</a></span>end()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Reader\SheetIteratorInterface::end </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Cleans up what was created to iterate over the object. </p>
-
-<p>Implements <a class="el" href="../../d0/d04/interface_open_spout_1_1_reader_1_1_iterator_interface.html#a1bbc510d3e93c1b3d9e06200a8ad92d7">OpenSpout\Reader\IteratorInterface</a>.</p>
-
-<p>Implemented in <a class="el" href="../../de/d6c/class_open_spout_1_1_reader_1_1_c_s_v_1_1_sheet_iterator.html#a5d7fd88f65355304a10f4dd57b682327">OpenSpout\Reader\CSV\SheetIterator</a>.</p>
+<p>Implemented in <a class="el" href="../../de/d6c/class_open_spout_1_1_reader_1_1_c_s_v_1_1_sheet_iterator.html#a4f6b9c8b4250077971a0508d672ae472">OpenSpout\Reader\CSV\SheetIterator</a>, and <a class="el" href="../../df/d67/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_sheet_iterator.html#a1ec2da1a8c4f4c0e9ceed709ba09eacd">OpenSpout\Reader\XLSX\SheetIterator</a>.</p>
 
 </div>
 </div>
@@ -137,7 +111,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:54:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:55:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

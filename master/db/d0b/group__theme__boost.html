@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -108,7 +108,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga25b96f4158360672f7e9a583d14289de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d0b/group__theme__boost.html#ga25b96f4158360672f7e9a583d14289de">theme_boost_get_precompiled_css</a> ()</td></tr>
 <tr class="memdesc:ga25b96f4158360672f7e9a583d14289de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get compiled css.  <br /></td></tr>
 <tr class="separator:ga25b96f4158360672f7e9a583d14289de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga49f7c3ec5003bf6f350ca2a5d0b060c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d0b/group__theme__boost.html#ga49f7c3ec5003bf6f350ca2a5d0b060c3">theme_boost_pluginfile</a> ($course, $cm, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $filearea, $args, $forcedownload, array $options=array())</td></tr>
+<tr class="memitem:ga49f7c3ec5003bf6f350ca2a5d0b060c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d0b/group__theme__boost.html#ga49f7c3ec5003bf6f350ca2a5d0b060c3">theme_boost_pluginfile</a> ($course, $cm, $context, $filearea, $args, $forcedownload, array $options=array())</td></tr>
 <tr class="memdesc:ga49f7c3ec5003bf6f350ca2a5d0b060c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serves any files associated with the theme settings.  <br /></td></tr>
 <tr class="separator:ga49f7c3ec5003bf6f350ca2a5d0b060c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -569,11 +569,10 @@ $THEME&#160;</td><td class="memItemRight" valign="bottom"><b>yuicssmodules</b> =
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= [</div>
-<div class="line">    <span class="stringliteral">&#39;sitename&#39;</span> =&gt; <a class="code hl_function" href="../../d0/de1/group__core.html#ga5d853ba52ad6e416838c5dcc3680aa80">format_string</a>($SITE-&gt;shortname, <span class="keyword">true</span>, [<span class="stringliteral">&#39;context&#39;</span> =&gt; <a class="code hl_function" href="../../d8/d0a/classcontext__course.html#a471cfe5467fd78bb3b8d3379ba01178b">context_course::instance</a>(SITEID), <span class="stringliteral">&quot;escape&quot;</span> =&gt; <span class="keyword">false</span>]),</div>
+<div class="line">    <span class="stringliteral">&#39;sitename&#39;</span> =&gt; <a class="code hl_function" href="../../d0/de1/group__core.html#ga5d853ba52ad6e416838c5dcc3680aa80">format_string</a>($SITE-&gt;shortname, <span class="keyword">true</span>, [<span class="stringliteral">&#39;context&#39;</span> =&gt; context_course::instance(SITEID), <span class="stringliteral">&quot;escape&quot;</span> =&gt; <span class="keyword">false</span>]),</div>
 <div class="line">    <span class="stringliteral">&#39;output&#39;</span> =&gt; $OUTPUT,</div>
 <div class="line">    <span class="stringliteral">&#39;bodyattributes&#39;</span> =&gt; $bodyattributes,</div>
 <div class="line">]</div>
-<div class="ttc" id="aclasscontext__course_html_a471cfe5467fd78bb3b8d3379ba01178b"><div class="ttname"><a href="../../d8/d0a/classcontext__course.html#a471cfe5467fd78bb3b8d3379ba01178b">context_course\instance</a></div><div class="ttdeci">static instance($courseid, $strictness=MUST_EXIST)</div><div class="ttdoc">Returns course context instance.</div><div class="ttdef"><b>Definition:</b> accesslib.php:7188</div></div>
 <div class="ttc" id="agroup__core_html_ga5d853ba52ad6e416838c5dcc3680aa80"><div class="ttname"><a href="../../d0/de1/group__core.html#ga5d853ba52ad6e416838c5dcc3680aa80">format_string</a></div><div class="ttdeci">format_string($string, $striplinks=true, $options=null)</div><div class="ttdoc">Given a simple string, this function returns the string processed by enabled string filters if $CFG-&gt;...</div><div class="ttdef"><b>Definition:</b> weblib.php:1455</div></div>
 </div><!-- fragment -->
 </div>
@@ -590,7 +589,7 @@ $THEME&#160;</td><td class="memItemRight" valign="bottom"><b>yuicssmodules</b> =
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= [</div>
-<div class="line">    <span class="stringliteral">&#39;sitename&#39;</span> =&gt; <a class="code hl_function" href="../../d0/de1/group__core.html#ga5d853ba52ad6e416838c5dcc3680aa80">format_string</a>($SITE-&gt;shortname, <span class="keyword">true</span>, [<span class="stringliteral">&#39;context&#39;</span> =&gt; <a class="code hl_function" href="../../d8/d0a/classcontext__course.html#a471cfe5467fd78bb3b8d3379ba01178b">context_course::instance</a>(SITEID), <span class="stringliteral">&quot;escape&quot;</span> =&gt; <span class="keyword">false</span>]),</div>
+<div class="line">    <span class="stringliteral">&#39;sitename&#39;</span> =&gt; <a class="code hl_function" href="../../d0/de1/group__core.html#ga5d853ba52ad6e416838c5dcc3680aa80">format_string</a>($SITE-&gt;shortname, <span class="keyword">true</span>, [<span class="stringliteral">&#39;context&#39;</span> =&gt; context_course::instance(SITEID), <span class="stringliteral">&quot;escape&quot;</span> =&gt; <span class="keyword">false</span>]),</div>
 <div class="line">    <span class="stringliteral">&#39;output&#39;</span> =&gt; $OUTPUT,</div>
 <div class="line">    <span class="stringliteral">&#39;sidepreblocks&#39;</span> =&gt; $blockshtml,</div>
 <div class="line">    <span class="stringliteral">&#39;hasblocks&#39;</span> =&gt; $hasblocks,</div>
@@ -621,7 +620,7 @@ $THEME&#160;</td><td class="memItemRight" valign="bottom"><b>yuicssmodules</b> =
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= [</div>
-<div class="line">    <span class="stringliteral">&#39;sitename&#39;</span> =&gt; <a class="code hl_function" href="../../d0/de1/group__core.html#ga5d853ba52ad6e416838c5dcc3680aa80">format_string</a>($SITE-&gt;shortname, <span class="keyword">true</span>, [<span class="stringliteral">&#39;context&#39;</span> =&gt; <a class="code hl_function" href="../../d8/d0a/classcontext__course.html#a471cfe5467fd78bb3b8d3379ba01178b">context_course::instance</a>(SITEID), <span class="stringliteral">&quot;escape&quot;</span> =&gt; <span class="keyword">false</span>]),</div>
+<div class="line">    <span class="stringliteral">&#39;sitename&#39;</span> =&gt; <a class="code hl_function" href="../../d0/de1/group__core.html#ga5d853ba52ad6e416838c5dcc3680aa80">format_string</a>($SITE-&gt;shortname, <span class="keyword">true</span>, [<span class="stringliteral">&#39;context&#39;</span> =&gt; context_course::instance(SITEID), <span class="stringliteral">&quot;escape&quot;</span> =&gt; <span class="keyword">false</span>]),</div>
 <div class="line">    <span class="stringliteral">&#39;output&#39;</span> =&gt; $OUTPUT,</div>
 <div class="line">    <span class="stringliteral">&#39;sidepreblocks&#39;</span> =&gt; $blockshtml,</div>
 <div class="line">    <span class="stringliteral">&#39;hasblocks&#39;</span> =&gt; $hasblocks,</div>
@@ -676,7 +675,7 @@ $THEME&#160;</td><td class="memItemRight" valign="bottom"><b>yuicssmodules</b> =
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= [</div>
-<div class="line">    <span class="stringliteral">&#39;sitename&#39;</span> =&gt; <a class="code hl_function" href="../../d0/de1/group__core.html#ga5d853ba52ad6e416838c5dcc3680aa80">format_string</a>($SITE-&gt;shortname, <span class="keyword">true</span>, [<span class="stringliteral">&#39;context&#39;</span> =&gt; <a class="code hl_function" href="../../d8/d0a/classcontext__course.html#a471cfe5467fd78bb3b8d3379ba01178b">context_course::instance</a>(SITEID), <span class="stringliteral">&quot;escape&quot;</span> =&gt; <span class="keyword">false</span>]),</div>
+<div class="line">    <span class="stringliteral">&#39;sitename&#39;</span> =&gt; <a class="code hl_function" href="../../d0/de1/group__core.html#ga5d853ba52ad6e416838c5dcc3680aa80">format_string</a>($SITE-&gt;shortname, <span class="keyword">true</span>, [<span class="stringliteral">&#39;context&#39;</span> =&gt; context_course::instance(SITEID), <span class="stringliteral">&quot;escape&quot;</span> =&gt; <span class="keyword">false</span>]),</div>
 <div class="line">    <span class="stringliteral">&#39;output&#39;</span> =&gt; $OUTPUT,</div>
 <div class="line">    <span class="stringliteral">&#39;bodyattributes&#39;</span> =&gt; $bodyattributes</div>
 <div class="line">]</div>
@@ -715,7 +714,7 @@ $THEME&#160;</td><td class="memItemRight" valign="bottom"><b>yuicssmodules</b> =
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= [</div>
-<div class="line">    <span class="stringliteral">&#39;sitename&#39;</span> =&gt; <a class="code hl_function" href="../../d0/de1/group__core.html#ga5d853ba52ad6e416838c5dcc3680aa80">format_string</a>($SITE-&gt;shortname, <span class="keyword">true</span>, [<span class="stringliteral">&#39;context&#39;</span> =&gt; <a class="code hl_function" href="../../d8/d0a/classcontext__course.html#a471cfe5467fd78bb3b8d3379ba01178b">context_course::instance</a>(SITEID), <span class="stringliteral">&quot;escape&quot;</span> =&gt; <span class="keyword">false</span>]),</div>
+<div class="line">    <span class="stringliteral">&#39;sitename&#39;</span> =&gt; <a class="code hl_function" href="../../d0/de1/group__core.html#ga5d853ba52ad6e416838c5dcc3680aa80">format_string</a>($SITE-&gt;shortname, <span class="keyword">true</span>, [<span class="stringliteral">&#39;context&#39;</span> =&gt; context_course::instance(SITEID), <span class="stringliteral">&quot;escape&quot;</span> =&gt; <span class="keyword">false</span>]),</div>
 <div class="line">    <span class="stringliteral">&#39;output&#39;</span> =&gt; $OUTPUT,</div>
 <div class="line">    <span class="stringliteral">&#39;bodyattributes&#39;</span> =&gt; $bodyattributes,</div>
 <div class="line">    <span class="stringliteral">&#39;sidepreblocks&#39;</span> =&gt; $blockshtml,</div>
@@ -778,7 +777,7 @@ $THEME&#160;</td><td class="memItemRight" valign="bottom"><b>yuicssmodules</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:51:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:52:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

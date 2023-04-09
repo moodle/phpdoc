@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -184,13 +184,13 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga0a2279b1957116f91e410a63f0e6b648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a course_module object, this function returns any "extra" information that may be needed when printing this activity in a course listing.  <br /></td></tr>
 <tr class="separator:ga0a2279b1957116f91e410a63f0e6b648"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga20af5f143456010ab65647e4d9f119be"><td class="memItemLeft" align="right" valign="top"><a id="ga20af5f143456010ab65647e4d9f119be" name="ga20af5f143456010ab65647e4d9f119be"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>resource_get_file_areas</b> ($course, $cm, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>resource_get_file_areas</b> ($course, $cm, $context)</td></tr>
 <tr class="separator:ga20af5f143456010ab65647e4d9f119be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac2157a1b7b6c34b759a99b7a453c4616"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5b/group__mod__resource.html#gac2157a1b7b6c34b759a99b7a453c4616">resource_get_file_details</a> ($resource, $cm)</td></tr>
 <tr class="memdesc:gac2157a1b7b6c34b759a99b7a453c4616"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets details of the file to cache in course cache to be displayed using <a class="el" href="../../d4/d5b/group__mod__resource.html#ga7408e8101d7f2a066f4ac00c0c1fa17b">resource_get_optional_details()</a>.  <br /></td></tr>
 <tr class="separator:gac2157a1b7b6c34b759a99b7a453c4616"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga14c98e929280041649a246c6f32fb5e5"><td class="memItemLeft" align="right" valign="top"><a id="ga14c98e929280041649a246c6f32fb5e5" name="ga14c98e929280041649a246c6f32fb5e5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>resource_get_file_info</b> ($browser, $areas, $course, $cm, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $filearea, $itemid, $filepath, $filename)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>resource_get_file_info</b> ($browser, $areas, $course, $cm, $context, $filearea, $itemid, $filepath, $filename)</td></tr>
 <tr class="separator:ga14c98e929280041649a246c6f32fb5e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga45d9137f668bb028b0178c22978e7cae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5b/group__mod__resource.html#ga45d9137f668bb028b0178c22978e7cae">resource_get_final_display_type</a> ($resource)</td></tr>
 <tr class="memdesc:ga45d9137f668bb028b0178c22978e7cae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decide the best display format.  <br /></td></tr>
@@ -211,7 +211,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga581290fa0a374ea73c9995d501db51b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of page types.  <br /></td></tr>
 <tr class="separator:ga581290fa0a374ea73c9995d501db51b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1f5bcc62c89afe31c6e240f42c68abc9"><td class="memItemLeft" align="right" valign="top"><a id="ga1f5bcc62c89afe31c6e240f42c68abc9" name="ga1f5bcc62c89afe31c6e240f42c68abc9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>resource_pluginfile</b> ($course, $cm, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $filearea, $args, $forcedownload, array $options=array())</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>resource_pluginfile</b> ($course, $cm, $context, $filearea, $args, $forcedownload, array $options=array())</td></tr>
 <tr class="separator:ga1f5bcc62c89afe31c6e240f42c68abc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac526be0342fa4d7ee713de171d6e989b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5b/group__mod__resource.html#gac526be0342fa4d7ee713de171d6e989b">resource_print_filenotfound</a> ($resource, $cm, $course)</td></tr>
 <tr class="memdesc:gac526be0342fa4d7ee713de171d6e989b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print warning that file can not be found.  <br /></td></tr>
@@ -249,7 +249,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gad2dd9e287e212a1b9c66d8a0883e641c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5b/group__mod__resource.html#gad2dd9e287e212a1b9c66d8a0883e641c">resource_update_instance</a> ($data, $mform)</td></tr>
 <tr class="memdesc:gad2dd9e287e212a1b9c66d8a0883e641c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update resource instance.  <br /></td></tr>
 <tr class="separator:gad2dd9e287e212a1b9c66d8a0883e641c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga394eed6402c3e27df624a40285235db4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5b/group__mod__resource.html#ga394eed6402c3e27df624a40285235db4">resource_view</a> ($resource, $course, $cm, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:ga394eed6402c3e27df624a40285235db4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5b/group__mod__resource.html#ga394eed6402c3e27df624a40285235db4">resource_view</a> ($resource, $course, $cm, $context)</td></tr>
 <tr class="memdesc:ga394eed6402c3e27df624a40285235db4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the activity completed (if required) and trigger the course_module_viewed event.  <br /></td></tr>
 <tr class="separator:ga394eed6402c3e27df624a40285235db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1280b5865f8a0f2ca117372c7c3239f4"><td class="memItemLeft" align="right" valign="top"><a id="ga1280b5865f8a0f2ca117372c7c3239f4" name="ga1280b5865f8a0f2ca117372c7c3239f4"></a>
@@ -1171,7 +1171,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><div class="memdoc">
 
 <p>Print resource heading. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001149">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001150">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">object</td><td class="paramname">$resource</td><td></td></tr>
@@ -1229,7 +1229,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><div class="memdoc">
 
 <p>Print resource introduction. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001150">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001151">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">object</td><td class="paramname">$resource</td><td></td></tr>
@@ -1685,7 +1685,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:51:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:52:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

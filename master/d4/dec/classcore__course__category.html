@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -305,7 +305,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af4c2e4b28f4686387d9f50a446d3e9f1"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dec/classcore__course__category.html#af4c2e4b28f4686387d9f50a446d3e9f1">resort_categories_cleanup</a> ($includecourses=false)</td></tr>
 <tr class="memdesc:af4c2e4b28f4686387d9f50a446d3e9f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans things up after categories have been resorted.  <br /></td></tr>
 <tr class="separator:af4c2e4b28f4686387d9f50a446d3e9f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46c221a5a0eb0044d440397a73837e38"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dec/classcore__course__category.html#a46c221a5a0eb0044d440397a73837e38">role_assignment_changed</a> ($roleid, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:a46c221a5a0eb0044d440397a73837e38"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dec/classcore__course__category.html#a46c221a5a0eb0044d440397a73837e38">role_assignment_changed</a> ($roleid, $context)</td></tr>
 <tr class="memdesc:a46c221a5a0eb0044d440397a73837e38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets course contact caches when role assignments were changed.  <br /></td></tr>
 <tr class="separator:a46c221a5a0eb0044d440397a73837e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c1be977768e004e715e0996a35d55ea"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dec/classcore__course__category.html#a9c1be977768e004e715e0996a35d55ea">search_courses</a> ($<a class="el" href="../../dc/d71/group___imap___client.html#ga51cc7ed42bce580dcc33ed45d9cef0c9">search</a>, $options=array(), $requiredcapabilities=array())</td></tr>
@@ -315,7 +315,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab9e486aa75c9cc29ec1c429bc78a1e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns number of courses in the search results.  <br /></td></tr>
 <tr class="separator:ab9e486aa75c9cc29ec1c429bc78a1e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d6f9f206fdff569d35a07fefe0036f2"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dec/classcore__course__category.html#a1d6f9f206fdff569d35a07fefe0036f2">top</a> ()</td></tr>
-<tr class="memdesc:a1d6f9f206fdff569d35a07fefe0036f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the pseudo-category representing the whole system (id=0, <a class="el" href="../../de/de3/classcontext__system.html">context_system</a>)  <br /></td></tr>
+<tr class="memdesc:a1d6f9f206fdff569d35a07fefe0036f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the pseudo-category representing the whole system (id=0, context_system)  <br /></td></tr>
 <tr class="separator:a1d6f9f206fdff569d35a07fefe0036f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5d9e0c5726e89665a77d811c075af41"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dec/classcore__course__category.html#ae5d9e0c5726e89665a77d811c075af41">user_enrolment_changed</a> ($courseid, $userid, $<a class="el" href="../../dc/d71/group___imap___client.html#ga5bf8518b59eeb46c71681066d12016bd">status</a>, $timestart=null, $timeend=null)</td></tr>
 <tr class="memdesc:ae5d9e0c5726e89665a77d811c075af41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executed when user enrolment was changed to check if course contacts cache needs to be cleared.  <br /></td></tr>
@@ -1865,7 +1865,7 @@ Static Protected Attributes</h2></td></tr>
 <p>Returns the category context. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../d2/d82/classcontext__coursecat.html">context_coursecat</a></td><td></td></tr>
+    <tr><td class="paramname">context_coursecat</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -3462,7 +3462,7 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the pseudo-category representing the whole system (id=0, <a class="el" href="../../de/de3/classcontext__system.html">context_system</a>) </p>
+<p>Returns the pseudo-category representing the whole system (id=0, context_system) </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname"><a class="el" href="../../d4/dec/classcore__course__category.html">core_course_category</a></td><td></td></tr>
@@ -3738,7 +3738,7 @@ Static Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:52:00 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:52:58 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

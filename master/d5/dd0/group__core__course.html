@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -326,7 +326,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gab1040392aff3a21784a2602e5e79ae8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#gab1040392aff3a21784a2602e5e79ae8a">can_delete_course</a> ($courseid)</td></tr>
 <tr class="memdesc:gab1040392aff3a21784a2602e5e79ae8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can the current user delete this course? Course creators have exception, 1 day after the creation they can sill delete the course.  <br /></td></tr>
 <tr class="separator:gab1040392aff3a21784a2602e5e79ae8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6456cd120772136440fe1ba44d9e2c36"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga6456cd120772136440fe1ba44d9e2c36">can_download_from_backup_filearea</a> ($filearea, <a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, stdClass $user=null)</td></tr>
+<tr class="memitem:ga6456cd120772136440fe1ba44d9e2c36"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga6456cd120772136440fe1ba44d9e2c36">can_download_from_backup_filearea</a> ($filearea, context $context, stdClass $user=null)</td></tr>
 <tr class="memdesc:ga6456cd120772136440fe1ba44d9e2c36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether the user can download from the specified backup file area in the given context.  <br /></td></tr>
 <tr class="separator:ga6456cd120772136440fe1ba44d9e2c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gade1cdd21784bb851b51975ab4770b38d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#gade1cdd21784bb851b51975ab4770b38d">can_edit_in_category</a> ($categoryid=0)</td></tr>
@@ -386,7 +386,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa8e6cbbfd2b96a913b7b31de52244137"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#gaa8e6cbbfd2b96a913b7b31de52244137">course_can_delete_section</a> ($course, $section)</td></tr>
 <tr class="memdesc:gaa8e6cbbfd2b96a913b7b31de52244137"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the current user can delete a section (if course format allows it and user has proper permissions).  <br /></td></tr>
 <tr class="separator:gaa8e6cbbfd2b96a913b7b31de52244137"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga48fc3562df258bbca7b262aec492bfce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga48fc3562df258bbca7b262aec492bfce">course_can_view_participants</a> ($<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:ga48fc3562df258bbca7b262aec492bfce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga48fc3562df258bbca7b262aec492bfce">course_can_view_participants</a> ($context)</td></tr>
 <tr class="memdesc:ga48fc3562df258bbca7b262aec492bfce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the user can view the participant page, false otherwise,.  <br /></td></tr>
 <tr class="separator:ga48fc3562df258bbca7b262aec492bfce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga65394bf4fd0976d28f7e462f9b5ec6b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga65394bf4fd0976d28f7e462f9b5ec6b5">course_change_sortorder_after_course</a> ($courseorid, $moveaftercourseid)</td></tr>
@@ -483,10 +483,10 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf12f38c1776843d4d5166d726aaa06c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#gaf12f38c1776843d4d5166d726aaa06c9">course_get_url</a> ($courseorid, $section=null, $options=array())</td></tr>
 <tr class="memdesc:gaf12f38c1776843d4d5166d726aaa06c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The URL to use for the specified course (with section)  <br /></td></tr>
 <tr class="separator:gaf12f38c1776843d4d5166d726aaa06c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad09d2f174b964530ecfbb207357947cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#gad09d2f174b964530ecfbb207357947cc">course_get_user_administration_options</a> ($course, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:gad09d2f174b964530ecfbb207357947cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#gad09d2f174b964530ecfbb207357947cc">course_get_user_administration_options</a> ($course, $context)</td></tr>
 <tr class="memdesc:gad09d2f174b964530ecfbb207357947cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an object with the list of administration options in a course that are available or not for the current user.  <br /></td></tr>
 <tr class="separator:gad09d2f174b964530ecfbb207357947cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga90d5f17606402cc8e2432ea78eca5336"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga90d5f17606402cc8e2432ea78eca5336">course_get_user_navigation_options</a> ($<a class="el" href="../../da/d04/classcontext.html">context</a>, $course=null)</td></tr>
+<tr class="memitem:ga90d5f17606402cc8e2432ea78eca5336"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga90d5f17606402cc8e2432ea78eca5336">course_get_user_navigation_options</a> ($context, $course=null)</td></tr>
 <tr class="memdesc:ga90d5f17606402cc8e2432ea78eca5336"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an object with the list of navigation options in a course that are avaialable or not for the current user.  <br /></td></tr>
 <tr class="separator:ga90d5f17606402cc8e2432ea78eca5336"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac3eee35de5fdf09f68873e416518fda5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#gac3eee35de5fdf09f68873e416518fda5">course_in_management_listing_should_be_dimmed</a> ($idnumber)</td></tr>
@@ -525,7 +525,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gafbd1b9fd339a01339980adbfdfcf7268"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#gafbd1b9fd339a01339980adbfdfcf7268">course_page_type_list</a> ($pagetype, $parentcontext, $currentcontext)</td></tr>
 <tr class="memdesc:gafbd1b9fd339a01339980adbfdfcf7268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of page types.  <br /></td></tr>
 <tr class="separator:gafbd1b9fd339a01339980adbfdfcf7268"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0cdb9b6a5d3f07a92085a404cecbbd5c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga0cdb9b6a5d3f07a92085a404cecbbd5c">course_require_view_participants</a> ($<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:ga0cdb9b6a5d3f07a92085a404cecbbd5c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga0cdb9b6a5d3f07a92085a404cecbbd5c">course_require_view_participants</a> ($context)</td></tr>
 <tr class="memdesc:ga0cdb9b6a5d3f07a92085a404cecbbd5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a user can view the participant page, if not throws an exception.  <br /></td></tr>
 <tr class="separator:ga0cdb9b6a5d3f07a92085a404cecbbd5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaef52a17e3fc1ad7f5dcf5de7ebac541"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#gaaef52a17e3fc1ad7f5dcf5de7ebac541">course_set_marker</a> ($courseid, $marker)</td></tr>
@@ -537,7 +537,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga4789d085d861274fca0bf6211d63e765"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga4789d085d861274fca0bf6211d63e765">course_validate_dates</a> ($coursedata)</td></tr>
 <tr class="memdesc:ga4789d085d861274fca0bf6211d63e765"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates course start and end dates.  <br /></td></tr>
 <tr class="separator:ga4789d085d861274fca0bf6211d63e765"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa2f1df1822c8a0ad73a3deca1d641fc5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#gaa2f1df1822c8a0ad73a3deca1d641fc5">course_view</a> ($<a class="el" href="../../da/d04/classcontext.html">context</a>, $sectionnumber=0)</td></tr>
+<tr class="memitem:gaa2f1df1822c8a0ad73a3deca1d641fc5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#gaa2f1df1822c8a0ad73a3deca1d641fc5">course_view</a> ($context, $sectionnumber=0)</td></tr>
 <tr class="memdesc:gaa2f1df1822c8a0ad73a3deca1d641fc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger course viewed event.  <br /></td></tr>
 <tr class="separator:gaa2f1df1822c8a0ad73a3deca1d641fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafda9757d7f260a7ca9609fef1812453e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#gafda9757d7f260a7ca9609fef1812453e">create_course</a> ($data, $editoroptions=NULL)</td></tr>
@@ -795,7 +795,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2f0b2976dd025752dd188689e2f7a751"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga2f0b2976dd025752dd188689e2f7a751">prepare_new_moduleinfo_data</a> ($course, $modulename, $section)</td></tr>
 <tr class="memdesc:ga2f0b2976dd025752dd188689e2f7a751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare the standard module information for a new module instance.  <br /></td></tr>
 <tr class="separator:ga2f0b2976dd025752dd188689e2f7a751"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga156a4f1131031a7b774ddb77a6ebe6fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga156a4f1131031a7b774ddb77a6ebe6fe">print_course_request_buttons</a> ($<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:ga156a4f1131031a7b774ddb77a6ebe6fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga156a4f1131031a7b774ddb77a6ebe6fe">print_course_request_buttons</a> ($context)</td></tr>
 <tr class="memdesc:ga156a4f1131031a7b774ddb77a6ebe6fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the buttons relating to course requests.  <br /></td></tr>
 <tr class="separator:ga156a4f1131031a7b774ddb77a6ebe6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga08a4c3a9de10a455dc7bc8a2e3d108aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga08a4c3a9de10a455dc7bc8a2e3d108aa">reorder_sections</a> ($sections, $origin_position, $target_position)</td></tr>
@@ -1488,7 +1488,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramtype">context&#160;</td>
           <td class="paramname"><em>$context</em>, </td>
         </tr>
         <tr>
@@ -8605,7 +8605,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:51:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:52:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -129,10 +129,10 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad2a164af9da596563d8342271c2cfd61"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9f/classcore__tag__tag.html#ad2a164af9da596563d8342271c2cfd61">add_item_tag</a> ($component, $itemtype, $itemid, <a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, $tagname, $tiuserid=0)</td></tr>
+<tr class="memitem:ad2a164af9da596563d8342271c2cfd61"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9f/classcore__tag__tag.html#ad2a164af9da596563d8342271c2cfd61">add_item_tag</a> ($component, $itemtype, $itemid, context $context, $tagname, $tiuserid=0)</td></tr>
 <tr class="memdesc:ad2a164af9da596563d8342271c2cfd61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a tag to an item, without overwriting the current tags.  <br /></td></tr>
 <tr class="separator:ad2a164af9da596563d8342271c2cfd61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86480ccee746ee6ecbde25fa0813fc4a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9f/classcore__tag__tag.html#a86480ccee746ee6ecbde25fa0813fc4a">change_instances_context</a> (array $taginstanceids, <a class="el" href="../../da/d04/classcontext.html">context</a> $newcontext)</td></tr>
+<tr class="memitem:a86480ccee746ee6ecbde25fa0813fc4a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9f/classcore__tag__tag.html#a86480ccee746ee6ecbde25fa0813fc4a">change_instances_context</a> (array $taginstanceids, context $newcontext)</td></tr>
 <tr class="memdesc:a86480ccee746ee6ecbde25fa0813fc4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves all of the specified tag instances into a new context.  <br /></td></tr>
 <tr class="separator:a86480ccee746ee6ecbde25fa0813fc4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ff8a552e66011f1faa60a4b1154f90d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9f/classcore__tag__tag.html#a5ff8a552e66011f1faa60a4b1154f90d">change_items_context</a> ($component, $itemtype, $itemids, $newcontext)</td></tr>
@@ -204,7 +204,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a4b615efedbf1c6affb9404ed591ba1ca"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9f/classcore__tag__tag.html#a4b615efedbf1c6affb9404ed591ba1ca">remove_item_tag</a> ($component, $itemtype, $itemid, $tagname, $tiuserid=0)</td></tr>
 <tr class="memdesc:a4b615efedbf1c6affb9404ed591ba1ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the tag from an item without changing the other tags.  <br /></td></tr>
 <tr class="separator:a4b615efedbf1c6affb9404ed591ba1ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a360b26241d874b25a04c4c17a078c861"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9f/classcore__tag__tag.html#a360b26241d874b25a04c4c17a078c861">set_item_tags</a> ($component, $itemtype, $itemid, <a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, $tagnames, $tiuserid=0)</td></tr>
+<tr class="memitem:a360b26241d874b25a04c4c17a078c861"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9f/classcore__tag__tag.html#a360b26241d874b25a04c4c17a078c861">set_item_tags</a> ($component, $itemtype, $itemid, context $context, $tagnames, $tiuserid=0)</td></tr>
 <tr class="memdesc:a360b26241d874b25a04c4c17a078c861"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the list of tag instances for one item (table record).  <br /></td></tr>
 <tr class="separator:a360b26241d874b25a04c4c17a078c861"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -233,7 +233,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a9fc5f05d29c2218ea968b4369d91b4b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9f/classcore__tag__tag.html#a9fc5f05d29c2218ea968b4369d91b4b1">__construct</a> ($record)</td></tr>
 <tr class="memdesc:a9fc5f05d29c2218ea968b4369d91b4b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:a9fc5f05d29c2218ea968b4369d91b4b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74a3bee017ff49ad9d6d22bfdb204fca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9f/classcore__tag__tag.html#a74a3bee017ff49ad9d6d22bfdb204fca">add_instance</a> ($component, $itemtype, $itemid, <a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, $ordering, $tiuserid=0)</td></tr>
+<tr class="memitem:a74a3bee017ff49ad9d6d22bfdb204fca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9f/classcore__tag__tag.html#a74a3bee017ff49ad9d6d22bfdb204fca">add_instance</a> ($component, $itemtype, $itemid, context $context, $ordering, $tiuserid=0)</td></tr>
 <tr class="memdesc:a74a3bee017ff49ad9d6d22bfdb204fca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a tag instance.  <br /></td></tr>
 <tr class="separator:a74a3bee017ff49ad9d6d22bfdb204fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac813376388b1dc11c7bef5ab69be4f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9f/classcore__tag__tag.html#aac813376388b1dc11c7bef5ab69be4f5">combine_correlated_tags</a> ($tags)</td></tr>
@@ -455,7 +455,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$record</b> = nul
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramtype">context&#160;</td>
           <td class="paramname"><em>$context</em>, </td>
         </tr>
         <tr>
@@ -534,7 +534,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$record</b> = nul
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramtype">context&#160;</td>
           <td class="paramname"><em>$context</em>, </td>
         </tr>
         <tr>
@@ -629,7 +629,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$record</b> = nul
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramtype">context&#160;</td>
           <td class="paramname"><em>$newcontext</em>&#160;</td>
         </tr>
         <tr>
@@ -2757,7 +2757,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$record</b> = nul
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramtype">context&#160;</td>
           <td class="paramname"><em>$context</em>, </td>
         </tr>
         <tr>
@@ -2937,7 +2937,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$record</b> = nul
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:52:02 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:53:00 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

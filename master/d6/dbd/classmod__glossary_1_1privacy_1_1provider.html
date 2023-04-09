@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -85,7 +85,7 @@ Inheritance diagram for mod_glossary\privacy\provider:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a822b65200bc845ca656258a464a19da5"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dbd/classmod__glossary_1_1privacy_1_1provider.html#a822b65200bc845ca656258a464a19da5">delete_data_for_all_users_in_context</a> (\<a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:a822b65200bc845ca656258a464a19da5"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dbd/classmod__glossary_1_1privacy_1_1provider.html#a822b65200bc845ca656258a464a19da5">delete_data_for_all_users_in_context</a> (\context $context)</td></tr>
 <tr class="memdesc:a822b65200bc845ca656258a464a19da5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete all data for all users in the specified context.  <br /></td></tr>
 <tr class="separator:a822b65200bc845ca656258a464a19da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bd34d6836acb2cfdcf4e9cab973a034"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dbd/classmod__glossary_1_1privacy_1_1provider.html#a9bd34d6836acb2cfdcf4e9cab973a034">delete_data_for_user</a> (<a class="el" href="../../d9/d39/classcore__privacy_1_1local_1_1request_1_1approved__contextlist.html">approved_contextlist</a> $<a class="el" href="../../d0/de3/classcore__privacy_1_1local_1_1request_1_1contextlist.html">contextlist</a>)</td></tr>
@@ -109,7 +109,7 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:a4017213fcf2acec6e2eb2e549f66865c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dbd/classmod__glossary_1_1privacy_1_1provider.html#a4017213fcf2acec6e2eb2e549f66865c">export_glossary_data_for_user</a> (array $glossarydata, <a class="el" href="../../db/db4/classcontext__module.html">context_module</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, array $subcontext, stdClass $user)</td></tr>
+<tr class="memitem:a4017213fcf2acec6e2eb2e549f66865c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dbd/classmod__glossary_1_1privacy_1_1provider.html#a4017213fcf2acec6e2eb2e549f66865c">export_glossary_data_for_user</a> (array $glossarydata, context_module $context, array $subcontext, stdClass $user)</td></tr>
 <tr class="memdesc:a4017213fcf2acec6e2eb2e549f66865c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the supplied personal data for a single glossary activity, along with any generic data or area files.  <br /></td></tr>
 <tr class="separator:a4017213fcf2acec6e2eb2e549f66865c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -130,7 +130,7 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static mod_glossary\privacy\provider::delete_data_for_all_users_in_context </td>
           <td>(</td>
-          <td class="paramtype">\<a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramtype">\context&#160;</td>
           <td class="paramname"><em>$context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -244,7 +244,7 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../db/db4/classcontext__module.html">context_module</a>&#160;</td>
+          <td class="paramtype">context_module&#160;</td>
           <td class="paramname"><em>$context</em>, </td>
         </tr>
         <tr>
@@ -276,7 +276,7 @@ Static Protected Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$glossarydata</td><td>The personal data to export for the glossary. </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../db/db4/classcontext__module.html">context_module</a></td><td class="paramname">$context</td><td>The context of the glossary. </td></tr>
+    <tr><td class="paramtype">context_module</td><td class="paramname">$context</td><td>The context of the glossary. </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$subcontext</td><td>The location within the current context that this data belongs. </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$user</td><td>the user record </td></tr>
   </table>
@@ -448,7 +448,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:54:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:55:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

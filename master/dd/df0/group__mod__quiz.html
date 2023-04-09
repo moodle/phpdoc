@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -445,7 +445,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1c0c5edf31ae5090422ada2b98ad08cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga1c0c5edf31ae5090422ada2b98ad08cc">mod_quiz::get_version_choices_for_slot</a> (int $slotnumber)</td></tr>
 <tr class="memdesc:ga1c0c5edf31ae5090422ada2b98ad08cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the version options to show on the 'Questions' page for a particular question.  <br /></td></tr>
 <tr class="separator:ga1c0c5edf31ae5090422ada2b98ad08cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae72e44861b65a463cf772279c3ca32fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gae72e44861b65a463cf772279c3ca32fd">mod_quiz_calculate_question_stats</a> (<a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:gae72e44861b65a463cf772279c3ca32fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gae72e44861b65a463cf772279c3ca32fd">mod_quiz_calculate_question_stats</a> (context $context)</td></tr>
 <tr class="memdesc:gae72e44861b65a463cf772279c3ca32fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement the calculate_question_stats callback.  <br /></td></tr>
 <tr class="separator:gae72e44861b65a463cf772279c3ca32fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6d868ab4f93f0b62cb5721bada034f47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga6d868ab4f93f0b62cb5721bada034f47">mod_quiz_cm_info_dynamic</a> (<a class="el" href="../../df/db9/classcm__info.html">cm_info</a> $cm)</td></tr>
@@ -521,7 +521,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga22787a731e46bfcf53c655053eace166"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga22787a731e46bfcf53c655053eace166">quiz_attempt_submitted_handler</a> ($event)</td></tr>
 <tr class="memdesc:ga22787a731e46bfcf53c655053eace166"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle the quiz_attempt_submitted event.  <br /></td></tr>
 <tr class="separator:ga22787a731e46bfcf53c655053eace166"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae94e2b0b7e0cccd0386365a243cde717"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gae94e2b0b7e0cccd0386365a243cde717">quiz_attempt_summary_link_to_reports</a> ($quiz, $cm, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $returnzero=false, $currentgroup=0)</td></tr>
+<tr class="memitem:gae94e2b0b7e0cccd0386365a243cde717"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gae94e2b0b7e0cccd0386365a243cde717">quiz_attempt_summary_link_to_reports</a> ($quiz, $cm, $context, $returnzero=false, $currentgroup=0)</td></tr>
 <tr class="memdesc:gae94e2b0b7e0cccd0386365a243cde717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the same as <a class="el" href="../../dd/df0/group__mod__quiz.html#gad96fe5202ce77e1de7d6bb30a79aac31">quiz_num_attempt_summary()</a> but wrapped in a link to the quiz reports.  <br /></td></tr>
 <tr class="separator:gae94e2b0b7e0cccd0386365a243cde717"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab1e363a718402af898a5b1e598bd7f14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gab1e363a718402af898a5b1e598bd7f14">quiz_calculate_best_attempt</a> ($quiz, $attempts)</td></tr>
@@ -572,7 +572,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gac6325adcab95c7840279843b553de48c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gac6325adcab95c7840279843b553de48c">quiz_extend_settings_navigation</a> (<a class="el" href="../../d8/dca/classsettings__navigation.html">settings_navigation</a> $settings, <a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a> $quiznode)</td></tr>
 <tr class="memdesc:gac6325adcab95c7840279843b553de48c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function extends the settings navigation block for the site.  <br /></td></tr>
 <tr class="separator:gac6325adcab95c7840279843b553de48c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaebb62cf0d1aa9a64077500a28d06dda8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gaebb62cf0d1aa9a64077500a28d06dda8">quiz_feedback_for_grade</a> ($grade, $quiz, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:gaebb62cf0d1aa9a64077500a28d06dda8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gaebb62cf0d1aa9a64077500a28d06dda8">quiz_feedback_for_grade</a> ($grade, $quiz, $context)</td></tr>
 <tr class="memdesc:gaebb62cf0d1aa9a64077500a28d06dda8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the feedback text that should be show to a student who got this grade on this quiz.  <br /></td></tr>
 <tr class="separator:gaebb62cf0d1aa9a64077500a28d06dda8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad53fa11cd679153e2d86ea3181eff4b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gad53fa11cd679153e2d86ea3181eff4b9">quiz_feedback_record_for_grade</a> ($grade, $quiz)</td></tr>
@@ -601,7 +601,7 @@ Functions</h2></td></tr>
 <tr class="separator:gae5975824697f044845dd576ba5d9b788"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6c9cb26156669ade4664e99e5832e3cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga6c9cb26156669ade4664e99e5832e3cb">quiz_get_extra_capabilities</a> ()</td></tr>
 <tr class="separator:ga6c9cb26156669ade4664e99e5832e3cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga557f31dd88f7d86908e633268b83a7b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga557f31dd88f7d86908e633268b83a7b5">quiz_get_flag_option</a> ($attempt, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:ga557f31dd88f7d86908e633268b83a7b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga557f31dd88f7d86908e633268b83a7b5">quiz_get_flag_option</a> ($attempt, $context)</td></tr>
 <tr class="separator:ga557f31dd88f7d86908e633268b83a7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7f0c385f9e738de3c3a02379d0392cb3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga7f0c385f9e738de3c3a02379d0392cb3">quiz_get_grade_format</a> ($quiz)</td></tr>
 <tr class="memdesc:ga7f0c385f9e738de3c3a02379d0392cb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine the correct number of decimal places required to format a grade.  <br /></td></tr>
@@ -627,7 +627,7 @@ Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>quiz_get_recent_mod_activity</b> (&amp;$activities, &amp;$index, $timestart, $courseid, $cmid, $userid=0, $groupid=0)</td></tr>
 <tr class="memdesc:gaab7cb4de19c4de2aa120454023d3b988"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all quiz graded users since a given time for specified quiz. <br /></td></tr>
 <tr class="separator:gaab7cb4de19c4de2aa120454023d3b988"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5199c3add57ed160795ed2437e482801"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga5199c3add57ed160795ed2437e482801">quiz_get_review_options</a> ($quiz, $attempt, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:ga5199c3add57ed160795ed2437e482801"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga5199c3add57ed160795ed2437e482801">quiz_get_review_options</a> ($quiz, $attempt, $context)</td></tr>
 <tr class="memdesc:ga5199c3add57ed160795ed2437e482801"><td class="mdescLeft">&#160;</td><td class="mdescRight">The appropriate display_options object for this attempt at this quiz right now.  <br /></td></tr>
 <tr class="separator:ga5199c3add57ed160795ed2437e482801"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafbf6c545e2777bd1485380c4c1b66af8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gafbf6c545e2777bd1485380c4c1b66af8">quiz_get_user_attempt_unfinished</a> ($quizid, $userid)</td></tr>
@@ -669,7 +669,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga188f4c4f5466d5bd7803b28918b5f213"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga188f4c4f5466d5bd7803b28918b5f213">quiz_is_overriden_calendar_event</a> (\<a class="el" href="../../dd/d35/classcalendar__event.html">calendar_event</a> $event)</td></tr>
 <tr class="memdesc:ga188f4c4f5466d5bd7803b28918b5f213"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the given <a class="el" href="../../dd/d35/classcalendar__event.html">calendar_event</a> is either a user or group override event for quiz.  <br /></td></tr>
 <tr class="separator:ga188f4c4f5466d5bd7803b28918b5f213"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga96da1b117890a07d072fb33c41ac739b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga96da1b117890a07d072fb33c41ac739b">quiz_no_questions_message</a> ($quiz, $cm, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:ga96da1b117890a07d072fb33c41ac739b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga96da1b117890a07d072fb33c41ac739b">quiz_no_questions_message</a> ($quiz, $cm, $context)</td></tr>
 <tr class="memdesc:ga96da1b117890a07d072fb33c41ac739b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a message saying that this quiz has no questions, with a button to go to the edit page, if the user has the right capability.  <br /></td></tr>
 <tr class="separator:ga96da1b117890a07d072fb33c41ac739b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad96fe5202ce77e1de7d6bb30a79aac31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gad96fe5202ce77e1de7d6bb30a79aac31">quiz_num_attempt_summary</a> ($quiz, $cm, $returnzero=false, $currentgroup=0)</td></tr>
@@ -682,7 +682,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gab1a43e6036ba903fc993f94cb4433271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of page types.  <br /></td></tr>
 <tr class="separator:gab1a43e6036ba903fc993f94cb4433271"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4c555dca3ab49a1279583f45a7076862"><td class="memItemLeft" align="right" valign="top"><a id="ga4c555dca3ab49a1279583f45a7076862" name="ga4c555dca3ab49a1279583f45a7076862"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>quiz_pluginfile</b> ($course, $cm, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $filearea, $args, $forcedownload, array $options=[])</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>quiz_pluginfile</b> ($course, $cm, $context, $filearea, $args, $forcedownload, array $options=[])</td></tr>
 <tr class="separator:ga4c555dca3ab49a1279583f45a7076862"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9e202d0759048231086a70e16d26198e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga9e202d0759048231086a70e16d26198e">quiz_prepare_and_start_new_attempt</a> (<a class="el" href="../../db/d84/classmod__quiz_1_1quiz__settings.html">quiz_settings</a> $quizobj, $attemptnumber, $lastattempt, $offlineattempt=false, $forcedrandomquestions=[], $forcedvariants=[], $userid=null)</td></tr>
 <tr class="memdesc:ga9e202d0759048231086a70e16d26198e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare and start a new attempt deleting the previous preview attempts.  <br /></td></tr>
@@ -701,12 +701,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga8d9d9ec3db555b4ebee741e2be16b8d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga8d9d9ec3db555b4ebee741e2be16b8d5">quiz_question_edit_button</a> ($cmid, $question, $returnurl, $contentaftericon='')</td></tr>
 <tr class="separator:ga8d9d9ec3db555b4ebee741e2be16b8d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga875376373850a1f0ffcc65be89472cbe"><td class="memItemLeft" align="right" valign="top"><a id="ga875376373850a1f0ffcc65be89472cbe" name="ga875376373850a1f0ffcc65be89472cbe"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>quiz_question_pluginfile</b> ($course, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $component, $filearea, $qubaid, $slot, $args, $forcedownload, array $options=[])</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>quiz_question_pluginfile</b> ($course, $context, $component, $filearea, $qubaid, $slot, $args, $forcedownload, array $options=[])</td></tr>
 <tr class="separator:ga875376373850a1f0ffcc65be89472cbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa71b9a53e69010cd6b0e8a9ec7a94412"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gaa71b9a53e69010cd6b0e8a9ec7a94412">quiz_question_preview_button</a> ($quiz, $question, $label=false, $variant=null, $random=null)</td></tr>
 <tr class="separator:gaa71b9a53e69010cd6b0e8a9ec7a94412"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga75c93c72b30ab479c52a5e600cf8189e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga75c93c72b30ab479c52a5e600cf8189e">quiz_question_preview_url</a> ($quiz, $question, $variant=null)</td></tr>
-<tr class="separator:ga75c93c72b30ab479c52a5e600cf8189e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ff8a00de4186848290049b9a111f536"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga4ff8a00de4186848290049b9a111f536">quiz_question_preview_url</a> ($quiz, $question, $variant=null, $restartversion=null)</td></tr>
+<tr class="separator:ga4ff8a00de4186848290049b9a111f536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaad169b9a336dffc66af6f90704594d9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gaad169b9a336dffc66af6f90704594d9b">quiz_question_tostring</a> ($question, $showicon=false, $showquestiontext=true, $showidnumber=false, $showtags=false)</td></tr>
 <tr class="memdesc:gaad169b9a336dffc66af6f90704594d9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a textual representation of a question for display.  <br /></td></tr>
 <tr class="separator:gaad169b9a336dffc66af6f90704594d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -723,13 +723,13 @@ Functions</h2></td></tr>
 <tr class="separator:ga7c5d6af24d3d73f8ca27e42fa961e0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab0f66207010e94b9f84a6118a19472d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gab0f66207010e94b9f84a6118a19472d6">quiz_report_can_filter_only_graded</a> ($quiz)</td></tr>
 <tr class="separator:gab0f66207010e94b9f84a6118a19472d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga31df85161a98887550382c4b8c16f4ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga31df85161a98887550382c4b8c16f4ec">quiz_report_default_report</a> ($<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:ga31df85161a98887550382c4b8c16f4ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga31df85161a98887550382c4b8c16f4ec">quiz_report_default_report</a> ($context)</td></tr>
 <tr class="memdesc:ga31df85161a98887550382c4b8c16f4ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default report for the current user.  <br /></td></tr>
 <tr class="separator:ga31df85161a98887550382c4b8c16f4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gade5f2cb86d9e756fbde6c58bd68fb7a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gade5f2cb86d9e756fbde6c58bd68fb7a0">quiz_report_download_filename</a> ($report, $courseshortname, $quizname)</td></tr>
 <tr class="memdesc:gade5f2cb86d9e756fbde6c58bd68fb7a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a filename for use when downloading data from a quiz report.  <br /></td></tr>
 <tr class="separator:gade5f2cb86d9e756fbde6c58bd68fb7a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4f4f7ded6ee38586fa7b19c837931cd6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga4f4f7ded6ee38586fa7b19c837931cd6">quiz_report_feedback_for_grade</a> ($grade, $quizid, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:ga4f4f7ded6ee38586fa7b19c837931cd6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga4f4f7ded6ee38586fa7b19c837931cd6">quiz_report_feedback_for_grade</a> ($grade, $quizid, $context)</td></tr>
 <tr class="memdesc:ga4f4f7ded6ee38586fa7b19c837931cd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the feedback text for a grade on this quiz.  <br /></td></tr>
 <tr class="separator:ga4f4f7ded6ee38586fa7b19c837931cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad83ef056256b8204d5392a7f46b9548f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gad83ef056256b8204d5392a7f46b9548f">quiz_report_get_significant_questions</a> ($quiz)</td></tr>
@@ -747,7 +747,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga097fe450cc81762f167a8960ae2cfed1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga097fe450cc81762f167a8960ae2cfed1">quiz_report_index_by_keys</a> ($datum, $keys, $keysunique=true)</td></tr>
 <tr class="memdesc:ga097fe450cc81762f167a8960ae2cfed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes an array of objects and constructs a multidimensional array keyed by the keys it finds on the object.  <br /></td></tr>
 <tr class="separator:ga097fe450cc81762f167a8960ae2cfed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacc664290ae7dcd41967121ad3f4124b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gacc664290ae7dcd41967121ad3f4124b5">quiz_report_list</a> ($<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:gacc664290ae7dcd41967121ad3f4124b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gacc664290ae7dcd41967121ad3f4124b5">quiz_report_list</a> ($context)</td></tr>
 <tr class="memdesc:gacc664290ae7dcd41967121ad3f4124b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array of reports to which the current user has access to.  <br /></td></tr>
 <tr class="separator:gacc664290ae7dcd41967121ad3f4124b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gabfffe007a863348a702f6908a176cdf8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gabfffe007a863348a702f6908a176cdf8">quiz_report_qm_filter_select</a> ($quiz, $quizattemptsalias='quiza')</td></tr>
@@ -756,7 +756,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gaada08db9044a271097574dbac05ee132"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gaada08db9044a271097574dbac05ee132">quiz_report_scale_summarks_as_percentage</a> ($rawmark, $quiz, $round=true)</td></tr>
 <tr class="memdesc:gaada08db9044a271097574dbac05ee132"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a number as a percentage out of $quiz-&gt;sumgrades.  <br /></td></tr>
 <tr class="separator:gaada08db9044a271097574dbac05ee132"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9eb0051cd0fe4b53168687b0a59a4845"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga9eb0051cd0fe4b53168687b0a59a4845">quiz_report_should_show_grades</a> ($quiz, <a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:ga9eb0051cd0fe4b53168687b0a59a4845"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga9eb0051cd0fe4b53168687b0a59a4845">quiz_report_should_show_grades</a> ($quiz, context $context)</td></tr>
 <tr class="memdesc:ga9eb0051cd0fe4b53168687b0a59a4845"><td class="mdescLeft">&#160;</td><td class="mdescRight">Should the grades be displayed in this report.  <br /></td></tr>
 <tr class="separator:ga9eb0051cd0fe4b53168687b0a59a4845"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad6e264c2f44fa8e163e1b5902600cea7"><td class="memItemLeft" align="right" valign="top"><a id="gad6e264c2f44fa8e163e1b5902600cea7" name="gad6e264c2f44fa8e163e1b5902600cea7"></a>
@@ -795,7 +795,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga38e942d03d46cabe165af95ad5457d33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga38e942d03d46cabe165af95ad5457d33">quiz_send_notification</a> ($recipient, $submitter, $a)</td></tr>
 <tr class="memdesc:ga38e942d03d46cabe165af95ad5457d33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends notification messages to the interested parties that assign the role capability.  <br /></td></tr>
 <tr class="separator:ga38e942d03d46cabe165af95ad5457d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1d008a1af16b328af5e214ce5ea8ef6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga1d008a1af16b328af5e214ce5ea8ef6f">quiz_send_notification_messages</a> ($course, $quiz, $attempt, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $cm, $studentisonline)</td></tr>
+<tr class="memitem:ga1d008a1af16b328af5e214ce5ea8ef6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga1d008a1af16b328af5e214ce5ea8ef6f">quiz_send_notification_messages</a> ($course, $quiz, $attempt, $context, $cm, $studentisonline)</td></tr>
 <tr class="memdesc:ga1d008a1af16b328af5e214ce5ea8ef6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send all the requried messages when a quiz attempt is submitted.  <br /></td></tr>
 <tr class="separator:ga1d008a1af16b328af5e214ce5ea8ef6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga529b372e8fc51bfbe2b063d770159a0a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga529b372e8fc51bfbe2b063d770159a0a">quiz_send_notify_manual_graded_message</a> (<a class="el" href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html">quiz_attempt</a> $attemptobj, object $userto)</td></tr>
@@ -851,7 +851,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga50bb481f032981eec4b6fba7e1d45938"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga50bb481f032981eec4b6fba7e1d45938">quiz_validate_new_attempt</a> (<a class="el" href="../../db/d84/classmod__quiz_1_1quiz__settings.html">quiz_settings</a> $quizobj, <a class="el" href="../../d5/da6/classmod__quiz_1_1access__manager.html">access_manager</a> $accessmanager, $forcenew, $page, $<a class="el" href="../../d0/de1/group__core.html#gaec4eb3b91d16c2b0c75dc2e72cf02d36">redirect</a>)</td></tr>
 <tr class="memdesc:ga50bb481f032981eec4b6fba7e1d45938"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate permissions for creating a new attempt and start a new preview attempt if required.  <br /></td></tr>
 <tr class="separator:ga50bb481f032981eec4b6fba7e1d45938"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa00c9bf5c2f63db7db75a1070719ac1a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gaa00c9bf5c2f63db7db75a1070719ac1a">quiz_view</a> ($quiz, $course, $cm, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:gaa00c9bf5c2f63db7db75a1070719ac1a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gaa00c9bf5c2f63db7db75a1070719ac1a">quiz_view</a> ($quiz, $course, $cm, $context)</td></tr>
 <tr class="memdesc:gaa00c9bf5c2f63db7db75a1070719ac1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the activity completed (if required) and trigger the course_module_viewed event.  <br /></td></tr>
 <tr class="separator:gaa00c9bf5c2f63db7db75a1070719ac1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae56b4412ef8f252f3f3b9a2485969083"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gae56b4412ef8f252f3f3b9a2485969083">mod_quiz::refresh_page_numbers</a> ($slots=[])</td></tr>
@@ -1683,7 +1683,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
   </dd>
 </dl>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001123">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71573" class="el">MDL-71573</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000294">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000293">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
 
 </div>
 </div>
@@ -1760,7 +1760,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
         <tr>
           <td class="memname">mod_quiz_calculate_question_stats </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramtype">context&#160;</td>
           <td class="paramname"><em>$context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2650,7 +2650,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001138">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. No direct replacement. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001139">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. No direct replacement. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000308">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76612" class="el">MDL-76612</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6 </dd></dl>
 
 </div>
@@ -2695,7 +2695,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001137">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. No direct replacement. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001138">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. No direct replacement. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000307">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76612" class="el">MDL-76612</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6 </dd></dl>
 
 </div>
@@ -2779,7 +2779,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 
 <p>Internal function used in quiz_get_completion_state. </p>
 <p>Check minimum attempts requirement for completion.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001126">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001127">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000297">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-71196" class="el">MDL-71196</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d49/classmod__quiz_1_1completion_1_1custom__completion.html">mod_quiz::completion::custom_completion</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -2838,7 +2838,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 
 <p>Internal function used in quiz_get_completion_state. </p>
 <p>Check passing grade (or no attempts left) requirement for completion.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001125">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001126">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000296">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-71196" class="el">MDL-71196</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d49/classmod__quiz_1_1completion_1_1custom__completion.html">mod_quiz::completion::custom_completion</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -3344,7 +3344,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
   <table class="params">
     <tr><td class="paramtype">float</td><td class="paramname">$grade</td><td>a grade on this quiz. </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz settings. </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../db/db4/classcontext__module.html">context_module</a></td><td class="paramname">$context</td><td>the quiz context. </td></tr>
+    <tr><td class="paramtype">context_module</td><td class="paramname">$context</td><td>the quiz context. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3646,7 +3646,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 </div><div class="memdoc">
 
 <p>Obtains the automatic completion state for this quiz on any conditions in quiz settings, such as if all attempts are used or a certain grade is achieved. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001127">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001128">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000298">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-71196" class="el">MDL-71196</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d49/classmod__quiz_1_1completion_1_1custom__completion.html">mod_quiz::completion::custom_completion</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -4374,7 +4374,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 </div><div class="memdoc">
 
 <p>Verify that the question exists, and the user has permission to use it. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001129">Deprecated:</a></b></dt><dd>in 4.1 use mod_quiz::structure::has_use_capability(...) instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001130">Deprecated:</a></b></dt><dd>in 4.1 use mod_quiz::structure::has_use_capability(...) instead.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz settings. </td></tr>
@@ -4968,8 +4968,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 
 </div>
 </div>
-<a id="ga75c93c72b30ab479c52a5e600cf8189e" name="ga75c93c72b30ab479c52a5e600cf8189e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga75c93c72b30ab479c52a5e600cf8189e">&#9670;&#160;</a></span>quiz_question_preview_url()</h2>
+<a id="ga4ff8a00de4186848290049b9a111f536" name="ga4ff8a00de4186848290049b9a111f536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4ff8a00de4186848290049b9a111f536">&#9670;&#160;</a></span>quiz_question_preview_url()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4990,7 +4990,13 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$variant</em> = <code>null</code>&#160;</td>
+          <td class="paramname"><em>$variant</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$restartversion</em> = <code>null</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -5004,6 +5010,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
     <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz settings </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$question</td><td>the question </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$variant</td><td>which question variant to preview (optional). </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$restartversion</td><td>version of the question to use when restarting the preview. </td></tr>
   </table>
   </dd>
 </dl>
@@ -5691,7 +5698,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramtype">context&#160;</td>
           <td class="paramname"><em>$context</em>&#160;</td>
         </tr>
         <tr>
@@ -5948,7 +5955,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001128">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001129">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000299">Todo:</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
 
 </div>
@@ -6037,7 +6044,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001136">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Please use grade_calculator::update_quiz_maximum_grade. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001137">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Please use grade_calculator::update_quiz_maximum_grade. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000306">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76612" class="el">MDL-76612</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6 </dd></dl>
 
 </div>
@@ -6323,7 +6330,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001135">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Please use grade_calculator::update_quiz_maximum_grade. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001136">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Please use grade_calculator::update_quiz_maximum_grade. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000305">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76612" class="el">MDL-76612</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6 </dd></dl>
 
 </div>
@@ -6509,7 +6516,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001133">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Please use grade_calculator::recompute_all_attempt_sumgrades. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001134">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Please use grade_calculator::recompute_all_attempt_sumgrades. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000303">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76612" class="el">MDL-76612</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6 </dd></dl>
 
 </div>
@@ -6538,7 +6545,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001134">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Please use grade_calculator::recompute_all_final_grades. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001135">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Please use grade_calculator::recompute_all_final_grades. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000304">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76612" class="el">MDL-76612</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6 </dd></dl>
 
 </div>
@@ -6771,7 +6778,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001132">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Please use grade_calculator::recompute_quiz_sumgrades. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001133">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Please use grade_calculator::recompute_quiz_sumgrades. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000302">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76612" class="el">MDL-76612</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6 </dd></dl>
 
 </div>
@@ -7685,7 +7692,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:51:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:52:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -59,7 +59,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d4/dab/class_open_spout_1_1_reader_1_1_c_s_v_1_1_sheet-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">OpenSpout\Reader\CSV\Sheet Class Reference</div></div>
 </div><!--header-->
@@ -86,15 +85,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a574c3f3e52f1df67ef5daa940db1dd64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f089338157547bafb19dbbc706d3d5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db4/class_open_spout_1_1_reader_1_1_c_s_v_1_1_sheet.html#a4f089338157547bafb19dbbc706d3d5a">isActive</a> ()</td></tr>
 <tr class="separator:a4f089338157547bafb19dbbc706d3d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96f25d05028c523f2667df52e083b8e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db4/class_open_spout_1_1_reader_1_1_c_s_v_1_1_sheet.html#a96f25d05028c523f2667df52e083b8e3">isVisible</a> ()</td></tr>
-<tr class="separator:a96f25d05028c523f2667df52e083b8e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:ae5cb2bed0ffffa9d0bac6f1559336ff3"><td class="memItemLeft" align="right" valign="top"><a id="ae5cb2bed0ffffa9d0bac6f1559336ff3" name="ae5cb2bed0ffffa9d0bac6f1559336ff3"></a>
-<a class="el" href="../../de/d47/class_open_spout_1_1_reader_1_1_c_s_v_1_1_row_iterator.html">OpenSpout::Reader::CSV::RowIterator</a> file home runner work phpdoc phpdoc moodle lib openspout src <a class="el" href="../../db/db6/class_open_spout_1_1_reader_1_1_c_s_v_1_1_reader.html">Reader</a> CSV <a class="el" href="../../d8/db4/class_open_spout_1_1_reader_1_1_c_s_v_1_1_sheet.html">Sheet</a> php&#160;</td><td class="memItemRight" valign="bottom"><b>$rowIterator</b></td></tr>
-<tr class="memdesc:ae5cb2bed0ffffa9d0bac6f1559336ff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">To iterate over the CSV's rows. <br /></td></tr>
-<tr class="separator:ae5cb2bed0ffffa9d0bac6f1559336ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a88aac8857a531f49b4ad76be3b7c2b65" name="a88aac8857a531f49b4ad76be3b7c2b65"></a>
@@ -188,7 +178,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../de/d47/class_open_spout_1_1_reader_1_1_c_s_v_1_1_row_iterator.html">OpenSpout::Reader::CSV::RowIterator</a></td><td></td></tr>
+    <tr><td class="paramname">T</td><td>iterator to iterate over the sheet's rows </td></tr>
   </table>
   </dd>
 </dl>
@@ -222,38 +212,13 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a96f25d05028c523f2667df52e083b8e3" name="a96f25d05028c523f2667df52e083b8e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96f25d05028c523f2667df52e083b8e3">&#9670;&#160;</a></span>isVisible()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Reader\CSV\Sheet::isVisible </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td>Always TRUE as the only sheet is always visible </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="../../d6/d7a/interface_open_spout_1_1_reader_1_1_sheet_interface.html#a1e5dfe4853c3b73477c59401ff1e3bb6">OpenSpout\Reader\SheetInterface</a>.</p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>lib/openspout/src/Reader/CSV/Sheet.php</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:54:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:55:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

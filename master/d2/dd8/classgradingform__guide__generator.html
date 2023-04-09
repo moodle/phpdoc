@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -73,7 +73,7 @@ Inheritance diagram for gradingform_guide_generator:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acc1c88718cbd123dc1fd54b1e2a2dc73"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd8/classgradingform__guide__generator.html#acc1c88718cbd123dc1fd54b1e2a2dc73">create_instance</a> (<a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, string $component, string $area, string $name, string $description, array $criteria)</td></tr>
+<tr class="memitem:acc1c88718cbd123dc1fd54b1e2a2dc73"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd8/classgradingform__guide__generator.html#acc1c88718cbd123dc1fd54b1e2a2dc73">create_instance</a> (context $context, string $component, string $area, string $name, string $description, array $criteria)</td></tr>
 <tr class="memdesc:acc1c88718cbd123dc1fd54b1e2a2dc73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an instance of a marking guide.  <br /></td></tr>
 <tr class="separator:acc1c88718cbd123dc1fd54b1e2a2dc73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44f6ea4e7d128462a45836288c0c533a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd8/classgradingform__guide__generator.html#a44f6ea4e7d128462a45836288c0c533a">get_criterion_for_values</a> (<a class="el" href="../../d5/d31/classgradingform__controller.html">gradingform_controller</a> $controller, string $shortname)</td></tr>
@@ -85,7 +85,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a98f39adb63c7eb1fcd8b85754a98424b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd8/classgradingform__guide__generator.html#a98f39adb63c7eb1fcd8b85754a98424b">get_test_form_data</a> (<a class="el" href="../../db/d9e/classgradingform__guide__controller.html">gradingform_guide_controller</a> $controller, int $itemid, float $spellingscore, string $spellingremark, float $picturescore, string $pictureremark)</td></tr>
 <tr class="memdesc:a98f39adb63c7eb1fcd8b85754a98424b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch a set of sample data.  <br /></td></tr>
 <tr class="separator:a98f39adb63c7eb1fcd8b85754a98424b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47b01dff51fd0cc0b95ff9e8baed6896"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd8/classgradingform__guide__generator.html#a47b01dff51fd0cc0b95ff9e8baed6896">get_test_guide</a> (<a class="el" href="../../db/db4/classcontext__module.html">context_module</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, string $component='mod_assign', string $areaname='submission')</td></tr>
+<tr class="memitem:a47b01dff51fd0cc0b95ff9e8baed6896"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd8/classgradingform__guide__generator.html#a47b01dff51fd0cc0b95ff9e8baed6896">get_test_guide</a> (context_module $context, string $component='mod_assign', string $areaname='submission')</td></tr>
 <tr class="memdesc:a47b01dff51fd0cc0b95ff9e8baed6896"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a guide controller with sample data required for testing of this class.  <br /></td></tr>
 <tr class="separator:a47b01dff51fd0cc0b95ff9e8baed6896"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81093fef9b263083e0a5b097744c27d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfb/classcomponent__generator__base.html#a81093fef9b263083e0a5b097744c27d1">reset</a> ()</td></tr>
@@ -120,7 +120,7 @@ testing_data_generator&#160;</td><td class="memItemRight" valign="bottom"><b>$da
         <tr>
           <td class="memname">gradingform_guide_generator::create_instance </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramtype">context&#160;</td>
           <td class="paramname"><em>$context</em>, </td>
         </tr>
         <tr>
@@ -467,7 +467,7 @@ testing_data_generator&#160;</td><td class="memItemRight" valign="bottom"><b>$da
         <tr>
           <td class="memname">gradingform_guide_generator::get_test_guide </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../db/db4/classcontext__module.html">context_module</a>&#160;</td>
+          <td class="paramtype">context_module&#160;</td>
           <td class="paramname"><em>$context</em>, </td>
         </tr>
         <tr>
@@ -493,7 +493,7 @@ testing_data_generator&#160;</td><td class="memItemRight" valign="bottom"><b>$da
 <p>Generate a guide controller with sample data required for testing of this class. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../db/db4/classcontext__module.html">context_module</a></td><td class="paramname">$context</td><td></td></tr>
+    <tr><td class="paramtype">context_module</td><td class="paramname">$context</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -582,7 +582,7 @@ testing_data_generator&#160;</td><td class="memItemRight" valign="bottom"><b>$da
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:52:58 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:53:57 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

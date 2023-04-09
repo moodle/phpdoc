@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -235,7 +235,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga4b458a05e698a9f34a589107badaa326"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d74/group__mod__feedback.html#ga4b458a05e698a9f34a589107badaa326">feedback_ajax_saveitemorder</a> ($itemlist, $feedback)</td></tr>
 <tr class="memdesc:ga4b458a05e698a9f34a589107badaa326"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move save the items of the given $feedback in the order of $itemlist.  <br /></td></tr>
 <tr class="separator:ga4b458a05e698a9f34a589107badaa326"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa5a78c538514190c749bffcbf85f736f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d74/group__mod__feedback.html#gaa5a78c538514190c749bffcbf85f736f">feedback_can_view_analysis</a> ($feedback, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $courseid=false)</td></tr>
+<tr class="memitem:gaa5a78c538514190c749bffcbf85f736f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d74/group__mod__feedback.html#gaa5a78c538514190c749bffcbf85f736f">feedback_can_view_analysis</a> ($feedback, $context, $courseid=false)</td></tr>
 <tr class="memdesc:gaa5a78c538514190c749bffcbf85f736f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if current user is able to view feedback on this course.  <br /></td></tr>
 <tr class="separator:gaa5a78c538514190c749bffcbf85f736f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0d4bb1bc98c7296a54b9b0d004171999"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d74/group__mod__feedback.html#ga0d4bb1bc98c7296a54b9b0d004171999">feedback_check_is_switchrole</a> ()</td></tr>
@@ -400,7 +400,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gad0bee4395b7068f4be654431cc4f7c9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of page types.  <br /></td></tr>
 <tr class="separator:gad0bee4395b7068f4be654431cc4f7c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7fe07ea2309f7c06bbc7af1f0e142dba"><td class="memItemLeft" align="right" valign="top"><a id="ga7fe07ea2309f7c06bbc7af1f0e142dba" name="ga7fe07ea2309f7c06bbc7af1f0e142dba"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>feedback_pluginfile</b> ($course, $cm, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $filearea, $args, $forcedownload, array $options=array())</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>feedback_pluginfile</b> ($course, $cm, $context, $filearea, $args, $forcedownload, array $options=array())</td></tr>
 <tr class="separator:ga7fe07ea2309f7c06bbc7af1f0e142dba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf519a312f4bef4cc456d75e7dedd622f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d74/group__mod__feedback.html#gaf519a312f4bef4cc456d75e7dedd622f">feedback_print_item_complete</a> ()</td></tr>
 <tr class="separator:gaf519a312f4bef4cc456d75e7dedd622f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -733,7 +733,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$feedback</td><td></td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../db/db4/classcontext__module.html">context_module</a></td><td class="paramname">$context</td><td></td></tr>
+    <tr><td class="paramtype">context_module</td><td class="paramname">$context</td><td></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$courseid</td><td></td></tr>
   </table>
   </dd>
@@ -837,7 +837,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001026">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001027">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -855,7 +855,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001023">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001024">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -873,7 +873,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001032">Deprecated:</a></b></dt><dd>since 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001033">Deprecated:</a></b></dt><dd>since 3.1 </dd></dl>
 
 </div>
 </div>
@@ -1035,7 +1035,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001017">Deprecated:</a></b></dt><dd>since 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001018">Deprecated:</a></b></dt><dd>since 3.1 </dd></dl>
 
 </div>
 </div>
@@ -1136,7 +1136,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001027">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001028">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -1318,7 +1318,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001021">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001022">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -1785,7 +1785,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><div class="memdoc">
 
 <p>Obtains the automatic completion state for this feedback based on the condition in feedback settings. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001004">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001005">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000277">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-71196" class="el">MDL-71196</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../da/d87/classmod__feedback_1_1completion_1_1custom__completion.html">mod_feedback::completion::custom_completion</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1820,7 +1820,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001016">Deprecated:</a></b></dt><dd>since 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001017">Deprecated:</a></b></dt><dd>since 3.1 </dd></dl>
 
 </div>
 </div>
@@ -1903,7 +1903,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001029">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1. Use feedback_get_current_completed_tmp() or feedback_get_last_completed. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001030">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1. Use feedback_get_current_completed_tmp() or feedback_get_last_completed. </dd></dl>
 
 </div>
 </div>
@@ -2269,7 +2269,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001022">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001023">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -2593,7 +2593,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001030">Deprecated:</a></b></dt><dd>since 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001031">Deprecated:</a></b></dt><dd>since 3.1 </dd></dl>
 
 </div>
 </div>
@@ -2611,7 +2611,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001031">Deprecated:</a></b></dt><dd>since 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001032">Deprecated:</a></b></dt><dd>since 3.1 </dd></dl>
 
 </div>
 </div>
@@ -2882,7 +2882,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001019">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001020">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -2900,7 +2900,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001018">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001019">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -2918,7 +2918,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001020">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001021">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -2936,7 +2936,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001033">Deprecated:</a></b></dt><dd>since 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001034">Deprecated:</a></b></dt><dd>since 3.1 </dd></dl>
 
 </div>
 </div>
@@ -3263,7 +3263,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001025">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001026">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -3324,7 +3324,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001024">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001025">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -3342,7 +3342,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001015">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001016">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8 </dd></dl>
 
 </div>
 </div>
@@ -3828,7 +3828,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001028">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001029">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -4234,7 +4234,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:51:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:52:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

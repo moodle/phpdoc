@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -69,9 +69,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a87847ed502279e2073dc798ce1fb4fb6"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d1a/class_open_spout_1_1_reader_1_1_common_1_1_creator_1_1_reader_factory.html#a87847ed502279e2073dc798ce1fb4fb6">createFromFile</a> (string $path)</td></tr>
 <tr class="memdesc:a87847ed502279e2073dc798ce1fb4fb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a reader by file extension.  <br /></td></tr>
 <tr class="separator:a87847ed502279e2073dc798ce1fb4fb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5eda7f1ca509128e82183444a370ed2"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d1a/class_open_spout_1_1_reader_1_1_common_1_1_creator_1_1_reader_factory.html#aa5eda7f1ca509128e82183444a370ed2">createFromType</a> ($readerType)</td></tr>
-<tr class="memdesc:aa5eda7f1ca509128e82183444a370ed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">This creates an instance of the appropriate reader, given the type of the file to be read.  <br /></td></tr>
-<tr class="separator:aa5eda7f1ca509128e82183444a370ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41a16fad2c9965eedc831b716652152b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d1a/class_open_spout_1_1_reader_1_1_common_1_1_creator_1_1_reader_factory.html#a41a16fad2c9965eedc831b716652152b">createFromFileByMimeType</a> (string $path)</td></tr>
+<tr class="memdesc:a41a16fad2c9965eedc831b716652152b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a reader by mime type.  <br /></td></tr>
+<tr class="separator:a41a16fad2c9965eedc831b716652152b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a87847ed502279e2073dc798ce1fb4fb6" name="a87847ed502279e2073dc798ce1fb4fb6"></a>
@@ -111,17 +111,11 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../d3/d23/interface_reader_interface.html" title="ReaderInterface for cross-reference readers.">ReaderInterface</a></td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
-<a id="aa5eda7f1ca509128e82183444a370ed2" name="aa5eda7f1ca509128e82183444a370ed2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5eda7f1ca509128e82183444a370ed2">&#9670;&#160;</a></span>createFromType()</h2>
+<a id="a41a16fad2c9965eedc831b716652152b" name="a41a16fad2c9965eedc831b716652152b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a41a16fad2c9965eedc831b716652152b">&#9670;&#160;</a></span>createFromFileByMimeType()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -130,10 +124,10 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static OpenSpout\Reader\Common\Creator\ReaderFactory::createFromType </td>
+          <td class="memname">static OpenSpout\Reader\Common\Creator\ReaderFactory::createFromFileByMimeType </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$readerType</em></td><td>)</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$path</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -144,22 +138,17 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>This creates an instance of the appropriate reader, given the type of the file to be read. </p>
+<p>Creates a reader by mime type. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$readerType</td><td>Type of the reader to instantiate</td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$path</td><td>the path to the spreadsheet file</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="../../d5/d03/class_open_spout_1_1_common_1_1_exception_1_1_unsupported_type_exception.html">OpenSpout::Common::Exception::UnsupportedTypeException</a></td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../d3/d23/interface_reader_interface.html" title="ReaderInterface for cross-reference readers.">ReaderInterface</a></td><td></td></tr>
+    <tr><td class="paramname"><a class="el" href="../../db/d1f/class_open_spout_1_1_common_1_1_exception_1_1_i_o_exception.html">OpenSpout::Common::Exception::IOException</a></td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -172,7 +161,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:54:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:55:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

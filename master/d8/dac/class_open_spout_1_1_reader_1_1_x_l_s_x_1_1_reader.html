@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -60,7 +60,6 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../df/d40/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_reader-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">OpenSpout\Reader\XLSX\Reader Class Reference</div></div>
 </div><!--header-->
@@ -71,33 +70,25 @@ Inheritance diagram for OpenSpout\Reader\XLSX\Reader:</div>
  <div class="center">
   <img src="../../d8/dac/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_reader.png" usemap="#OpenSpout_5CReader_5CXLSX_5CReader_map" alt=""/>
   <map id="OpenSpout_5CReader_5CXLSX_5CReader_map" name="OpenSpout_5CReader_5CXLSX_5CReader_map">
-<area href="../../da/dfc/class_open_spout_1_1_reader_1_1_reader_abstract.html" alt="OpenSpout\Reader\ReaderAbstract" shape="rect" coords="0,56,215,80"/>
+<area href="../../d1/dbe/class_open_spout_1_1_reader_1_1_abstract_reader.html" alt="OpenSpout\Reader\AbstractReader" shape="rect" coords="0,56,215,80"/>
 <area href="../../db/d1f/interface_open_spout_1_1_reader_1_1_reader_interface.html" alt="OpenSpout\Reader\ReaderInterface" shape="rect" coords="0,0,215,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac636091127a40d6b77322414533cd84d"><td class="memItemLeft" align="right" valign="top"><a id="ac636091127a40d6b77322414533cd84d" name="ac636091127a40d6b77322414533cd84d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>__construct</b> (<a class="el" href="../../d5/d3a/interface_open_spout_1_1_common_1_1_manager_1_1_options_manager_interface.html">OptionsManagerInterface</a> $optionsManager, <a class="el" href="../../d9/de3/class_open_spout_1_1_common_1_1_helper_1_1_global_functions_helper.html">GlobalFunctionsHelper</a> $globalFunctionsHelper, <a class="el" href="../../d8/df4/interface_open_spout_1_1_reader_1_1_common_1_1_creator_1_1_internal_entity_factory_interface.html">InternalEntityFactoryInterface</a> $entityFactory, <a class="el" href="../../d2/d08/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_creator_1_1_manager_factory.html">ManagerFactory</a> $managerFactory)</td></tr>
-<tr class="separator:ac636091127a40d6b77322414533cd84d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada20ec56621393a2da0997ec6ccc554d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dfc/class_open_spout_1_1_reader_1_1_reader_abstract.html#ada20ec56621393a2da0997ec6ccc554d">close</a> ()</td></tr>
-<tr class="memdesc:ada20ec56621393a2da0997ec6ccc554d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the reader, preventing any additional reading.  <br /></td></tr>
-<tr class="separator:ada20ec56621393a2da0997ec6ccc554d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7a99949ecb95e4c352caa3081c3d43d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dfc/class_open_spout_1_1_reader_1_1_reader_abstract.html#af7a99949ecb95e4c352caa3081c3d43d">getSheetIterator</a> ()</td></tr>
-<tr class="memdesc:af7a99949ecb95e4c352caa3081c3d43d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator to iterate over sheets.  <br /></td></tr>
-<tr class="separator:af7a99949ecb95e4c352caa3081c3d43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a928d52d9d1c71864a13688c361ae28b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dfc/class_open_spout_1_1_reader_1_1_reader_abstract.html#a928d52d9d1c71864a13688c361ae28b1">open</a> ($filePath)</td></tr>
-<tr class="memdesc:a928d52d9d1c71864a13688c361ae28b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepares the reader to read the given file.  <br /></td></tr>
-<tr class="separator:a928d52d9d1c71864a13688c361ae28b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38cf478ca2791f9c5749cefe8ab2bd7c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dfc/class_open_spout_1_1_reader_1_1_reader_abstract.html#a38cf478ca2791f9c5749cefe8ab2bd7c">setShouldFormatDates</a> ($shouldFormatDates)</td></tr>
-<tr class="memdesc:a38cf478ca2791f9c5749cefe8ab2bd7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether date/time values should be returned as PHP objects or be formatted as strings.  <br /></td></tr>
-<tr class="separator:a38cf478ca2791f9c5749cefe8ab2bd7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab598ccbb7612cb9b0ad8129c17fb265e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dfc/class_open_spout_1_1_reader_1_1_reader_abstract.html#ab598ccbb7612cb9b0ad8129c17fb265e">setShouldPreserveEmptyRows</a> ($shouldPreserveEmptyRows)</td></tr>
-<tr class="memdesc:ab598ccbb7612cb9b0ad8129c17fb265e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether empty rows should be returned or skipped.  <br /></td></tr>
-<tr class="separator:ab598ccbb7612cb9b0ad8129c17fb265e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a424a769b9d3578d335a93cbf5866d8b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dac/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_reader.html#a424a769b9d3578d335a93cbf5866d8b6">setTempFolder</a> ($tempFolder)</td></tr>
-<tr class="separator:a424a769b9d3578d335a93cbf5866d8b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9a184e28d49111384aac336bc44d743"><td class="memItemLeft" align="right" valign="top"><a id="ab9a184e28d49111384aac336bc44d743" name="ab9a184e28d49111384aac336bc44d743"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>__construct</b> (?<a class="el" href="../../d9/d17/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_options.html">Options</a> $options=null, ?<a class="el" href="../../dd/d78/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_manager_1_1_shared_strings_caching_1_1_caching_strategy_factory.html">CachingStrategyFactory</a> $cachingStrategyFactory=null)</td></tr>
+<tr class="separator:ab9a184e28d49111384aac336bc44d743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacc1f71bc1175235dc371e54162c69df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dbe/class_open_spout_1_1_reader_1_1_abstract_reader.html#aacc1f71bc1175235dc371e54162c69df">close</a> ()</td></tr>
+<tr class="memdesc:aacc1f71bc1175235dc371e54162c69df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the reader, preventing any additional reading.  <br /></td></tr>
+<tr class="separator:aacc1f71bc1175235dc371e54162c69df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c5fe9a923e2e7dc60b89bf2cf4fd460"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dac/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_reader.html#a6c5fe9a923e2e7dc60b89bf2cf4fd460">getSheetIterator</a> ()</td></tr>
+<tr class="memdesc:a6c5fe9a923e2e7dc60b89bf2cf4fd460"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator to iterate over sheets.  <br /></td></tr>
+<tr class="separator:a6c5fe9a923e2e7dc60b89bf2cf4fd460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75b6ed37cb62eec67328af8d4f8a9b30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dbe/class_open_spout_1_1_reader_1_1_abstract_reader.html#a75b6ed37cb62eec67328af8d4f8a9b30">open</a> (string $filePath)</td></tr>
+<tr class="memdesc:a75b6ed37cb62eec67328af8d4f8a9b30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepares the reader to read the given file.  <br /></td></tr>
+<tr class="separator:a75b6ed37cb62eec67328af8d4f8a9b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -107,64 +98,16 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a3375d99003942882eb757c624bf1d12d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dac/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_reader.html#a3375d99003942882eb757c624bf1d12d">doesSupportStreamWrapper</a> ()</td></tr>
 <tr class="memdesc:a3375d99003942882eb757c624bf1d12d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether stream wrappers are supported.  <br /></td></tr>
 <tr class="separator:a3375d99003942882eb757c624bf1d12d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab792adb82a2dbf062275adb85d6cf137"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dac/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_reader.html#ab792adb82a2dbf062275adb85d6cf137">getConcreteSheetIterator</a> ()</td></tr>
-<tr class="memdesc:ab792adb82a2dbf062275adb85d6cf137"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator to iterate over sheets.  <br /></td></tr>
-<tr class="separator:ab792adb82a2dbf062275adb85d6cf137"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bf24970444eb6b0fae521f7dba1c53d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dfc/class_open_spout_1_1_reader_1_1_reader_abstract.html#a2bf24970444eb6b0fae521f7dba1c53d">getFileRealPath</a> ($filePath)</td></tr>
-<tr class="memdesc:a2bf24970444eb6b0fae521f7dba1c53d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the real path of the given path.  <br /></td></tr>
-<tr class="separator:a2bf24970444eb6b0fae521f7dba1c53d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cfcecbb66688b3e595327f9842a3601"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dfc/class_open_spout_1_1_reader_1_1_reader_abstract.html#a3cfcecbb66688b3e595327f9842a3601">getStreamWrapperScheme</a> ($filePath)</td></tr>
-<tr class="memdesc:a3cfcecbb66688b3e595327f9842a3601"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the scheme of the custom stream wrapper, if the path indicates a stream wrapper is used.  <br /></td></tr>
-<tr class="separator:a3cfcecbb66688b3e595327f9842a3601"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1673769c2f29526196011e65eb98516"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dfc/class_open_spout_1_1_reader_1_1_reader_abstract.html#aa1673769c2f29526196011e65eb98516">isPhpStream</a> ($filePath)</td></tr>
-<tr class="memdesc:aa1673769c2f29526196011e65eb98516"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a path is a PHP stream (like php://output, php://memory, ...).  <br /></td></tr>
-<tr class="separator:aa1673769c2f29526196011e65eb98516"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a143c52a19844a81846ed6b7b5f2f70dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dfc/class_open_spout_1_1_reader_1_1_reader_abstract.html#a143c52a19844a81846ed6b7b5f2f70dc">isStreamWrapper</a> ($filePath)</td></tr>
-<tr class="memdesc:a143c52a19844a81846ed6b7b5f2f70dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given path is an unsupported stream wrapper (like local path, php://temp, mystream://foo/bar...).  <br /></td></tr>
-<tr class="separator:a143c52a19844a81846ed6b7b5f2f70dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f9e9bd2461f3e8a6652b91cba3d8a1b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dfc/class_open_spout_1_1_reader_1_1_reader_abstract.html#a4f9e9bd2461f3e8a6652b91cba3d8a1b">isSupportedStreamWrapper</a> ($filePath)</td></tr>
-<tr class="memdesc:a4f9e9bd2461f3e8a6652b91cba3d8a1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the given path is an supported stream wrapper (like php://temp, mystream://foo/bar...).  <br /></td></tr>
-<tr class="separator:a4f9e9bd2461f3e8a6652b91cba3d8a1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a340606760cf453b65c90614ded525f20"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dac/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_reader.html#a340606760cf453b65c90614ded525f20">openReader</a> ($filePath)</td></tr>
-<tr class="memdesc:a340606760cf453b65c90614ded525f20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the file at the given file path to make it ready to be read.  <br /></td></tr>
-<tr class="separator:a340606760cf453b65c90614ded525f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:ac199c9b81e70dc9bf23c340bff0f71bf"><td class="memItemLeft" align="right" valign="top"><a id="ac199c9b81e70dc9bf23c340bff0f71bf" name="ac199c9b81e70dc9bf23c340bff0f71bf"></a>
-<a class="el" href="../../d8/df4/interface_open_spout_1_1_reader_1_1_common_1_1_creator_1_1_internal_entity_factory_interface.html">InternalEntityFactoryInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$entityFactory</b></td></tr>
-<tr class="memdesc:ac199c9b81e70dc9bf23c340bff0f71bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory to create entities. <br /></td></tr>
-<tr class="separator:ac199c9b81e70dc9bf23c340bff0f71bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a344b8caaeeb55959b9d37d50f19d81e9"><td class="memItemLeft" align="right" valign="top"><a id="a344b8caaeeb55959b9d37d50f19d81e9" name="a344b8caaeeb55959b9d37d50f19d81e9"></a>
-OpenSpout Common Helper <a class="el" href="../../d9/de3/class_open_spout_1_1_common_1_1_helper_1_1_global_functions_helper.html">GlobalFunctionsHelper</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$globalFunctionsHelper</b></td></tr>
-<tr class="memdesc:a344b8caaeeb55959b9d37d50f19d81e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to work with global functions. <br /></td></tr>
-<tr class="separator:a344b8caaeeb55959b9d37d50f19d81e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9eb5ac36e128607600a1acaa4d034c1"><td class="memItemLeft" align="right" valign="top"><a id="af9eb5ac36e128607600a1acaa4d034c1" name="af9eb5ac36e128607600a1acaa4d034c1"></a>
-bool file home runner work phpdoc phpdoc moodle lib openspout src <a class="el" href="../../d8/dac/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_reader.html">Reader</a> <a class="el" href="../../da/dfc/class_open_spout_1_1_reader_1_1_reader_abstract.html">ReaderAbstract</a> php&#160;</td><td class="memItemRight" valign="bottom"><b>$isStreamOpened</b> = false</td></tr>
-<tr class="memdesc:af9eb5ac36e128607600a1acaa4d034c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the stream is currently open. <br /></td></tr>
-<tr class="separator:af9eb5ac36e128607600a1acaa4d034c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb43516380f3f76184450f3a4fd2540c"><td class="memItemLeft" align="right" valign="top"><a id="aeb43516380f3f76184450f3a4fd2540c" name="aeb43516380f3f76184450f3a4fd2540c"></a>
-<a class="el" href="../../d2/d08/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_creator_1_1_manager_factory.html">ManagerFactory</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$managerFactory</b></td></tr>
-<tr class="separator:aeb43516380f3f76184450f3a4fd2540c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d5c80caa74693b49b0b312d820fee6f"><td class="memItemLeft" align="right" valign="top"><a id="a2d5c80caa74693b49b0b312d820fee6f" name="a2d5c80caa74693b49b0b312d820fee6f"></a>
-<a class="el" href="../../d5/d3a/interface_open_spout_1_1_common_1_1_manager_1_1_options_manager_interface.html">OptionsManagerInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$optionsManager</b></td></tr>
-<tr class="memdesc:a2d5c80caa74693b49b0b312d820fee6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writer options manager. <br /></td></tr>
-<tr class="separator:a2d5c80caa74693b49b0b312d820fee6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c9a8c6dec8423ebfc5bffe43f994127"><td class="memItemLeft" align="right" valign="top"><a id="a0c9a8c6dec8423ebfc5bffe43f994127" name="a0c9a8c6dec8423ebfc5bffe43f994127"></a>
-OpenSpout <a class="el" href="../../d8/dac/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_reader.html">Reader</a> XLSX Manager SharedStringsManager&#160;</td><td class="memItemRight" valign="bottom"><b>$sharedStringsManager</b></td></tr>
-<tr class="memdesc:a0c9a8c6dec8423ebfc5bffe43f994127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages shared strings. <br /></td></tr>
-<tr class="separator:a0c9a8c6dec8423ebfc5bffe43f994127"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5214e6626a621d5014d9e5efd7c37bfa"><td class="memItemLeft" align="right" valign="top"><a id="a5214e6626a621d5014d9e5efd7c37bfa" name="a5214e6626a621d5014d9e5efd7c37bfa"></a>
-<a class="el" href="../../df/d67/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_sheet_iterator.html">SheetIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$sheetIterator</b></td></tr>
-<tr class="memdesc:a5214e6626a621d5014d9e5efd7c37bfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">To iterator over the XLSX sheets. <br /></td></tr>
-<tr class="separator:a5214e6626a621d5014d9e5efd7c37bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a50e39d2ef27433b6b84cc2bc542bee0f"><td class="memItemLeft" align="right" valign="top"><a id="a50e39d2ef27433b6b84cc2bc542bee0f" name="a50e39d2ef27433b6b84cc2bc542bee0f"></a>
-ZipArchive&#160;</td><td class="memItemRight" valign="bottom"><b>$zip</b></td></tr>
-<tr class="separator:a50e39d2ef27433b6b84cc2bc542bee0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb1011256f8f8cba08d270303de2de16"><td class="memItemLeft" align="right" valign="top"><a id="adb1011256f8f8cba08d270303de2de16" name="adb1011256f8f8cba08d270303de2de16"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ensureStreamOpened</b> ()</td></tr>
+<tr class="separator:adb1011256f8f8cba08d270303de2de16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab98b88aa4b963cdbd63f7d1deb538721"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dac/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_reader.html#ab98b88aa4b963cdbd63f7d1deb538721">openReader</a> (string $filePath)</td></tr>
+<tr class="memdesc:ab98b88aa4b963cdbd63f7d1deb538721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the file at the given file path to make it ready to be read.  <br /></td></tr>
+<tr class="separator:ab98b88aa4b963cdbd63f7d1deb538721"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ada20ec56621393a2da0997ec6ccc554d" name="ada20ec56621393a2da0997ec6ccc554d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada20ec56621393a2da0997ec6ccc554d">&#9670;&#160;</a></span>close()</h2>
+<a id="aacc1f71bc1175235dc371e54162c69df" name="aacc1f71bc1175235dc371e54162c69df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacc1f71bc1175235dc371e54162c69df">&#9670;&#160;</a></span>close()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -173,7 +116,7 @@ ZipArchive&#160;</td><td class="memItemRight" valign="bottom"><b>$zip</b></td></
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">OpenSpout\Reader\ReaderAbstract::close </td>
+          <td class="memname">OpenSpout\Reader\AbstractReader::close </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -181,7 +124,7 @@ ZipArchive&#160;</td><td class="memItemRight" valign="bottom"><b>$zip</b></td></
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -218,7 +161,7 @@ ZipArchive&#160;</td><td class="memItemRight" valign="bottom"><b>$zip</b></td></
 <p>Closes the reader. </p>
 <p>To be used after reading the file. </p>
 
-<p>Reimplemented from <a class="el" href="../../da/dfc/class_open_spout_1_1_reader_1_1_reader_abstract.html#ac57c15b6607e56d248f44562ebeca3a4">OpenSpout\Reader\ReaderAbstract</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d1/dbe/class_open_spout_1_1_reader_1_1_abstract_reader.html#a4d8ab908338acb9de0fdcc52d0ba3530">OpenSpout\Reader\AbstractReader</a>.</p>
 
 </div>
 </div>
@@ -246,126 +189,36 @@ ZipArchive&#160;</td><td class="memItemRight" valign="bottom"><b>$zip</b></td></
 </div><div class="memdoc">
 
 <p>Returns whether stream wrappers are supported. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 
-<p>Reimplemented from <a class="el" href="../../da/dfc/class_open_spout_1_1_reader_1_1_reader_abstract.html#a3d27f265ca56befa49558a8065ec56fd">OpenSpout\Reader\ReaderAbstract</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d1/dbe/class_open_spout_1_1_reader_1_1_abstract_reader.html#ae23cd9c9119f4790cfa2a92b013c024e">OpenSpout\Reader\AbstractReader</a>.</p>
 
 </div>
 </div>
-<a id="ab792adb82a2dbf062275adb85d6cf137" name="ab792adb82a2dbf062275adb85d6cf137"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab792adb82a2dbf062275adb85d6cf137">&#9670;&#160;</a></span>getConcreteSheetIterator()</h2>
+<a id="a6c5fe9a923e2e7dc60b89bf2cf4fd460" name="a6c5fe9a923e2e7dc60b89bf2cf4fd460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c5fe9a923e2e7dc60b89bf2cf4fd460">&#9670;&#160;</a></span>getSheetIterator()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">OpenSpout\Reader\XLSX\Reader::getConcreteSheetIterator </td>
+          <td class="memname">OpenSpout\Reader\XLSX\Reader::getSheetIterator </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Returns an iterator to iterate over sheets. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">SheetIterator</td><td>To iterate over sheets </td></tr>
+    <tr><td class="paramname">T</td><td></td></tr>
   </table>
   </dd>
 </dl>
-
-<p>Reimplemented from <a class="el" href="../../da/dfc/class_open_spout_1_1_reader_1_1_reader_abstract.html#a50c1e8b04541ad5a471d59cbc8c85b07">OpenSpout\Reader\ReaderAbstract</a>.</p>
-
-</div>
-</div>
-<a id="a2bf24970444eb6b0fae521f7dba1c53d" name="a2bf24970444eb6b0fae521f7dba1c53d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bf24970444eb6b0fae521f7dba1c53d">&#9670;&#160;</a></span>getFileRealPath()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Reader\ReaderAbstract::getFileRealPath </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$filePath</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the real path of the given path. </p>
-<p>If the given path is a valid stream wrapper, returns the path unchanged.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$filePath</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">string</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="af7a99949ecb95e4c352caa3081c3d43d" name="af7a99949ecb95e4c352caa3081c3d43d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7a99949ecb95e4c352caa3081c3d43d">&#9670;&#160;</a></span>getSheetIterator()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Reader\ReaderAbstract::getSheetIterator </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns an iterator to iterate over sheets. </p>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../df/df8/class_open_spout_1_1_reader_1_1_exception_1_1_reader_not_opened_exception.html">OpenSpout::Reader::Exception::ReaderNotOpenedException</a></td><td>If called before opening the reader</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">SheetIteratorInterface</td><td>To iterate over sheets </td></tr>
+    <tr><td class="paramname"><a class="el" href="../../df/df8/class_open_spout_1_1_reader_1_1_exception_1_1_reader_not_opened_exception.html">OpenSpout::Reader::Exception::ReaderNotOpenedException</a></td><td>If called before opening the reader </td></tr>
   </table>
   </dd>
 </dl>
@@ -374,8 +227,8 @@ ZipArchive&#160;</td><td class="memItemRight" valign="bottom"><b>$zip</b></td></
 
 </div>
 </div>
-<a id="a3cfcecbb66688b3e595327f9842a3601" name="a3cfcecbb66688b3e595327f9842a3601"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3cfcecbb66688b3e595327f9842a3601">&#9670;&#160;</a></span>getStreamWrapperScheme()</h2>
+<a id="a75b6ed37cb62eec67328af8d4f8a9b30" name="a75b6ed37cb62eec67328af8d4f8a9b30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75b6ed37cb62eec67328af8d4f8a9b30">&#9670;&#160;</a></span>open()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -384,171 +237,9 @@ ZipArchive&#160;</td><td class="memItemRight" valign="bottom"><b>$zip</b></td></
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">OpenSpout\Reader\ReaderAbstract::getStreamWrapperScheme </td>
+          <td class="memname">OpenSpout\Reader\AbstractReader::open </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$filePath</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the scheme of the custom stream wrapper, if the path indicates a stream wrapper is used. </p>
-<p>For example, php://temp =&gt; php, s3://path/to/file =&gt; s3...</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$filePath</td><td>Path of the file to be read</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">null|string</td><td>The stream wrapper scheme or NULL if not a stream wrapper </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aa1673769c2f29526196011e65eb98516" name="aa1673769c2f29526196011e65eb98516"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1673769c2f29526196011e65eb98516">&#9670;&#160;</a></span>isPhpStream()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Reader\ReaderAbstract::isPhpStream </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$filePath</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Checks if a path is a PHP stream (like php://output, php://memory, ...). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$filePath</td><td>Path of the file to be read</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td>Whether the given path maps to a PHP stream </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a143c52a19844a81846ed6b7b5f2f70dc" name="a143c52a19844a81846ed6b7b5f2f70dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a143c52a19844a81846ed6b7b5f2f70dc">&#9670;&#160;</a></span>isStreamWrapper()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Reader\ReaderAbstract::isStreamWrapper </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$filePath</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Checks if the given path is an unsupported stream wrapper (like local path, php://temp, mystream://foo/bar...). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$filePath</td><td>Path of the file to be read</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td>Whether the given path is an unsupported stream wrapper </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a4f9e9bd2461f3e8a6652b91cba3d8a1b" name="a4f9e9bd2461f3e8a6652b91cba3d8a1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f9e9bd2461f3e8a6652b91cba3d8a1b">&#9670;&#160;</a></span>isSupportedStreamWrapper()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Reader\ReaderAbstract::isSupportedStreamWrapper </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$filePath</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Checks if the given path is an supported stream wrapper (like php://temp, mystream://foo/bar...). </p>
-<p>If the given path is a local path, returns true.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$filePath</td><td>Path of the file to be read</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td>Whether the given path is an supported stream wrapper </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a928d52d9d1c71864a13688c361ae28b1" name="a928d52d9d1c71864a13688c361ae28b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a928d52d9d1c71864a13688c361ae28b1">&#9670;&#160;</a></span>open()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Reader\ReaderAbstract::open </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$filePath</em></td><td>)</td>
           <td></td>
         </tr>
@@ -575,12 +266,12 @@ ZipArchive&#160;</td><td class="memItemRight" valign="bottom"><b>$zip</b></td></
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="../../db/d1f/interface_open_spout_1_1_reader_1_1_reader_interface.html#a884e6487b84dd2be9330c04cac7eff6f">OpenSpout\Reader\ReaderInterface</a>.</p>
+<p>Implements <a class="el" href="../../db/d1f/interface_open_spout_1_1_reader_1_1_reader_interface.html#a12c21511ccf679b1dd5457e6a474e39c">OpenSpout\Reader\ReaderInterface</a>.</p>
 
 </div>
 </div>
-<a id="a340606760cf453b65c90614ded525f20" name="a340606760cf453b65c90614ded525f20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a340606760cf453b65c90614ded525f20">&#9670;&#160;</a></span>openReader()</h2>
+<a id="ab98b88aa4b963cdbd63f7d1deb538721" name="ab98b88aa4b963cdbd63f7d1deb538721"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab98b88aa4b963cdbd63f7d1deb538721">&#9670;&#160;</a></span>openReader()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -591,7 +282,7 @@ ZipArchive&#160;</td><td class="memItemRight" valign="bottom"><b>$zip</b></td></
         <tr>
           <td class="memname">OpenSpout\Reader\XLSX\Reader::openReader </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$filePath</em></td><td>)</td>
           <td></td>
         </tr>
@@ -619,117 +310,7 @@ ZipArchive&#160;</td><td class="memItemRight" valign="bottom"><b>$zip</b></td></
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="../../da/dfc/class_open_spout_1_1_reader_1_1_reader_abstract.html#a4a9c3c367bae5a9ed30d3d84c0ec41c8">OpenSpout\Reader\ReaderAbstract</a>.</p>
-
-</div>
-</div>
-<a id="a38cf478ca2791f9c5749cefe8ab2bd7c" name="a38cf478ca2791f9c5749cefe8ab2bd7c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38cf478ca2791f9c5749cefe8ab2bd7c">&#9670;&#160;</a></span>setShouldFormatDates()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Reader\ReaderAbstract::setShouldFormatDates </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$shouldFormatDates</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets whether date/time values should be returned as PHP objects or be formatted as strings. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">bool</td><td class="paramname">$shouldFormatDates</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">ReaderAbstract</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ab598ccbb7612cb9b0ad8129c17fb265e" name="ab598ccbb7612cb9b0ad8129c17fb265e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab598ccbb7612cb9b0ad8129c17fb265e">&#9670;&#160;</a></span>setShouldPreserveEmptyRows()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Reader\ReaderAbstract::setShouldPreserveEmptyRows </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$shouldPreserveEmptyRows</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets whether empty rows should be returned or skipped. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">bool</td><td class="paramname">$shouldPreserveEmptyRows</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">ReaderAbstract</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a424a769b9d3578d335a93cbf5866d8b6" name="a424a769b9d3578d335a93cbf5866d8b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a424a769b9d3578d335a93cbf5866d8b6">&#9670;&#160;</a></span>setTempFolder()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Reader\XLSX\Reader::setTempFolder </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$tempFolder</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$tempFolder</td><td>Temporary folder where the temporary files will be created</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">Reader</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Reimplemented from <a class="el" href="../../d1/dbe/class_open_spout_1_1_reader_1_1_abstract_reader.html#aafdbbec75bfdc132c9041b7ab45af9e0">OpenSpout\Reader\AbstractReader</a>.</p>
 
 </div>
 </div>
@@ -739,7 +320,7 @@ ZipArchive&#160;</td><td class="memItemRight" valign="bottom"><b>$zip</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:54:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:55:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

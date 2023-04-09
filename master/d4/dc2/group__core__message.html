@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -218,7 +218,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gaaa6160d42af83549005244fc7d457594"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc2/group__core__message.html#gaaa6160d42af83549005244fc7d457594">message_output_fragment_processor_settings</a> ($args=[])</td></tr>
 <tr class="memdesc:gaaa6160d42af83549005244fc7d457594"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles displaying processor settings in a fragment.  <br /></td></tr>
 <tr class="separator:gaaa6160d42af83549005244fc7d457594"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafede6f1b39897fcb95a05d3caf2cdf17"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc2/group__core__message.html#gafede6f1b39897fcb95a05d3caf2cdf17">message_page_type_list</a> (string $pagetype, ?<a class="el" href="../../da/d04/classcontext.html">context</a> $parentcontext, ?<a class="el" href="../../da/d04/classcontext.html">context</a> $currentcontext)</td></tr>
+<tr class="memitem:gafede6f1b39897fcb95a05d3caf2cdf17"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc2/group__core__message.html#gafede6f1b39897fcb95a05d3caf2cdf17">message_page_type_list</a> (string $pagetype, ?context $parentcontext, ?context $currentcontext)</td></tr>
 <tr class="memdesc:gafede6f1b39897fcb95a05d3caf2cdf17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of page types.  <br /></td></tr>
 <tr class="separator:gafede6f1b39897fcb95a05d3caf2cdf17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga98180e88af7a2a50b40606f0e70b162c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc2/group__core__message.html#ga98180e88af7a2a50b40606f0e70b162c">message_post_message</a> ($userfrom, $userto, $message, $format)</td></tr>
@@ -908,13 +908,13 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_TYPE_NOTIFIC
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">?<a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramtype">?context&#160;</td>
           <td class="paramname"><em>$parentcontext</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">?<a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramtype">?context&#160;</td>
           <td class="paramname"><em>$currentcontext</em>&#160;</td>
         </tr>
         <tr>
@@ -1311,7 +1311,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_TYPE_NOTIFIC
 
 <p>Define contants for messaging default settings population. </p>
 <p>For unambiguity of plugin developer intentions we use 4-bit value (LSB numbering): bit 0 - whether to send message (MESSAGE_DEFAULT_ENABLED) bit 1 - Deprecated: whether to send message (MESSAGE_DEFAULT_LOGGEDOFF). Used to mean only when the user is logged off. bit 2..3 - messaging permission (MESSAGE_DISALLOWED|MESSAGE_PERMITTED|MESSAGE_FORCED)</p>
-<p>MESSAGE_PERMITTED_MASK contains the mask we use to distinguish permission setting. </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000958">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0. Use MESSAGE_DEFAULT_ENABLED instead. </dd></dl>
+<p>MESSAGE_PERMITTED_MASK contains the mask we use to distinguish permission setting. </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000959">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0. Use MESSAGE_DEFAULT_ENABLED instead. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000247">Todo:</a></b></dt><dd>Remove on <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
 
 </div>
@@ -1327,7 +1327,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_TYPE_NOTIFIC
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000959">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. Use MESSAGE_DEFAULT_ENABLED instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000960">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. Use MESSAGE_DEFAULT_ENABLED instead. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000248">Todo:</a></b></dt><dd>Remove on <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
 
 </div>
@@ -1345,7 +1345,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_TYPE_NOTIFIC
 </div><div class="memdoc">
 
 <p>Set default value for default outputs permitted setting. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000960">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000961">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000249">Todo:</a></b></dt><dd>Remove on <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
 
 </div>
@@ -1353,7 +1353,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_TYPE_NOTIFIC
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:51:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:52:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -59,7 +59,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="../../dd/d94/class_open_spout_1_1_common_1_1_helper_1_1_string_helper-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">OpenSpout\Common\Helper\StringHelper Class Reference</div></div>
 </div><!--header-->
@@ -67,63 +67,28 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a810274a5ba255ce91c76adfb62f02782"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d53/class_open_spout_1_1_common_1_1_helper_1_1_string_helper.html#a810274a5ba255ce91c76adfb62f02782">formatNumericValue</a> ($numericValue)</td></tr>
-<tr class="memdesc:a810274a5ba255ce91c76adfb62f02782"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats a numeric value (int or float) in a way that's compatible with the expected spreadsheet format.  <br /></td></tr>
-<tr class="separator:a810274a5ba255ce91c76adfb62f02782"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af397064c6655a30f855c41e816094f47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d53/class_open_spout_1_1_common_1_1_helper_1_1_string_helper.html#af397064c6655a30f855c41e816094f47">getCharFirstOccurrencePosition</a> ($char, $string)</td></tr>
-<tr class="memdesc:af397064c6655a30f855c41e816094f47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the position of the first occurrence of the given character/substring within the given string.  <br /></td></tr>
-<tr class="separator:af397064c6655a30f855c41e816094f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78a7531aefab8200135cdabc6caa31c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d53/class_open_spout_1_1_common_1_1_helper_1_1_string_helper.html#a78a7531aefab8200135cdabc6caa31c8">getCharLastOccurrencePosition</a> ($char, $string)</td></tr>
-<tr class="memdesc:a78a7531aefab8200135cdabc6caa31c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the position of the last occurrence of the given character/substring within the given string.  <br /></td></tr>
-<tr class="separator:a78a7531aefab8200135cdabc6caa31c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a827b5ea1502e1cbabfacd3aff7bcb923"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d53/class_open_spout_1_1_common_1_1_helper_1_1_string_helper.html#a827b5ea1502e1cbabfacd3aff7bcb923">getStringLength</a> ($string)</td></tr>
-<tr class="memdesc:a827b5ea1502e1cbabfacd3aff7bcb923"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length of the given string.  <br /></td></tr>
-<tr class="separator:a827b5ea1502e1cbabfacd3aff7bcb923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6620ce5a203ef3eb12541140f7a2bfe7"><td class="memItemLeft" align="right" valign="top"><a id="a6620ce5a203ef3eb12541140f7a2bfe7" name="a6620ce5a203ef3eb12541140f7a2bfe7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>__construct</b> (bool $hasMbstringSupport)</td></tr>
+<tr class="separator:a6620ce5a203ef3eb12541140f7a2bfe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7c20baa0d4d7871417b04f7f8d7f64e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d53/class_open_spout_1_1_common_1_1_helper_1_1_string_helper.html#ac7c20baa0d4d7871417b04f7f8d7f64e">getCharFirstOccurrencePosition</a> (string $char, string $string)</td></tr>
+<tr class="memdesc:ac7c20baa0d4d7871417b04f7f8d7f64e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the position of the first occurrence of the given character/substring within the given string.  <br /></td></tr>
+<tr class="separator:ac7c20baa0d4d7871417b04f7f8d7f64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac841fe1a381b20bb377516158a0e49b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d53/class_open_spout_1_1_common_1_1_helper_1_1_string_helper.html#ac841fe1a381b20bb377516158a0e49b6">getCharLastOccurrencePosition</a> (string $char, string $string)</td></tr>
+<tr class="memdesc:ac841fe1a381b20bb377516158a0e49b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the position of the last occurrence of the given character/substring within the given string.  <br /></td></tr>
+<tr class="separator:ac841fe1a381b20bb377516158a0e49b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a201d68a676dbceaec99c63e3e2871038"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d53/class_open_spout_1_1_common_1_1_helper_1_1_string_helper.html#a201d68a676dbceaec99c63e3e2871038">getStringLength</a> (string $string)</td></tr>
+<tr class="memdesc:a201d68a676dbceaec99c63e3e2871038"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the length of the given string.  <br /></td></tr>
+<tr class="separator:a201d68a676dbceaec99c63e3e2871038"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:adae963885c082f88e0d6d5ba37dda3c4"><td class="memItemLeft" align="right" valign="top"><a id="adae963885c082f88e0d6d5ba37dda3c4" name="adae963885c082f88e0d6d5ba37dda3c4"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>$hasMbstringSupport</b></td></tr>
-<tr class="memdesc:adae963885c082f88e0d6d5ba37dda3c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the mbstring extension is loaded. <br /></td></tr>
-<tr class="separator:adae963885c082f88e0d6d5ba37dda3c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a6298f916db74bc185f06a1d039f31243"><td class="memItemLeft" align="right" valign="top"><a id="a6298f916db74bc185f06a1d039f31243" name="a6298f916db74bc185f06a1d039f31243"></a>
+static&#160;</td><td class="memItemRight" valign="bottom"><b>factory</b> ()</td></tr>
+<tr class="separator:a6298f916db74bc185f06a1d039f31243"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a810274a5ba255ce91c76adfb62f02782" name="a810274a5ba255ce91c76adfb62f02782"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a810274a5ba255ce91c76adfb62f02782">&#9670;&#160;</a></span>formatNumericValue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Common\Helper\StringHelper::formatNumericValue </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$numericValue</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Formats a numeric value (int or float) in a way that's compatible with the expected spreadsheet format. </p>
-<p>Formatting of float values is locale dependent in PHP &lt; 8. Thousands separators and decimal points vary from locale to locale (en_US: 12.34 vs pl_PL: 12,34). However, float values must be formatted with no thousands separator and a "." as decimal point to work properly. This method can be used to convert the value to the correct format before storing it.</p>
-<dl class="section see"><dt>See also</dt><dd><a href="https://wiki.php.net/rfc/locale_independent_float_to_string">https://wiki.php.net/rfc/locale_independent_float_to_string</a> for the changed behavior in PHP8.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">float&#160;|&#160;int</td><td class="paramname">$numericValue</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">float|int|string</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="af397064c6655a30f855c41e816094f47" name="af397064c6655a30f855c41e816094f47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af397064c6655a30f855c41e816094f47">&#9670;&#160;</a></span>getCharFirstOccurrencePosition()</h2>
+<a id="ac7c20baa0d4d7871417b04f7f8d7f64e" name="ac7c20baa0d4d7871417b04f7f8d7f64e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7c20baa0d4d7871417b04f7f8d7f64e">&#9670;&#160;</a></span>getCharFirstOccurrencePosition()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -131,13 +96,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$hasMbstringSupport</
         <tr>
           <td class="memname">OpenSpout\Common\Helper\StringHelper::getCharFirstOccurrencePosition </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$char</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$string</em>&#160;</td>
         </tr>
         <tr>
@@ -169,8 +134,8 @@ mb_strpos</dd></dl>
 
 </div>
 </div>
-<a id="a78a7531aefab8200135cdabc6caa31c8" name="a78a7531aefab8200135cdabc6caa31c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78a7531aefab8200135cdabc6caa31c8">&#9670;&#160;</a></span>getCharLastOccurrencePosition()</h2>
+<a id="ac841fe1a381b20bb377516158a0e49b6" name="ac841fe1a381b20bb377516158a0e49b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac841fe1a381b20bb377516158a0e49b6">&#9670;&#160;</a></span>getCharLastOccurrencePosition()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -178,13 +143,13 @@ mb_strpos</dd></dl>
         <tr>
           <td class="memname">OpenSpout\Common\Helper\StringHelper::getCharLastOccurrencePosition </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$char</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$string</em>&#160;</td>
         </tr>
         <tr>
@@ -216,8 +181,8 @@ mb_strrpos</dd></dl>
 
 </div>
 </div>
-<a id="a827b5ea1502e1cbabfacd3aff7bcb923" name="a827b5ea1502e1cbabfacd3aff7bcb923"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a827b5ea1502e1cbabfacd3aff7bcb923">&#9670;&#160;</a></span>getStringLength()</h2>
+<a id="a201d68a676dbceaec99c63e3e2871038" name="a201d68a676dbceaec99c63e3e2871038"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a201d68a676dbceaec99c63e3e2871038">&#9670;&#160;</a></span>getStringLength()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -225,7 +190,7 @@ mb_strrpos</dd></dl>
         <tr>
           <td class="memname">OpenSpout\Common\Helper\StringHelper::getStringLength </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$string</em></td><td>)</td>
           <td></td>
         </tr>
@@ -236,19 +201,7 @@ mb_strrpos</dd></dl>
 <p>It uses the multi-bytes function is available.</p>
 <dl class="section see"><dt>See also</dt><dd>strlen </dd>
 <dd>
-mb_strlen</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$string</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">int</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+mb_strlen </dd></dl>
 
 </div>
 </div>
@@ -258,7 +211,7 @@ mb_strlen</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:54:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:55:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

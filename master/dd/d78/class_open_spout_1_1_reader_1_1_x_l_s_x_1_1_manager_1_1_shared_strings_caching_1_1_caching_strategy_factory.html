@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -60,7 +60,6 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="../../d9/d8f/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_manager_1_1_shared_strings_caching_1_1_caching_strategy_factory-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">OpenSpout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory Class Reference</div></div>
 </div><!--header-->
@@ -68,34 +67,25 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8441c369025c7473403ece4b2288df6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d78/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_manager_1_1_shared_strings_caching_1_1_caching_strategy_factory.html#a8441c369025c7473403ece4b2288df6b">createBestCachingStrategy</a> ($sharedStringsUniqueCount, $tempFolder, $helperFactory)</td></tr>
-<tr class="memdesc:a8441c369025c7473403ece4b2288df6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the best caching strategy, given the number of unique shared strings and the amount of memory available.  <br /></td></tr>
-<tr class="separator:a8441c369025c7473403ece4b2288df6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae58cbd2894c54a8e3f826037febc3cda"><td class="memItemLeft" align="right" valign="top"><a id="ae58cbd2894c54a8e3f826037febc3cda" name="ae58cbd2894c54a8e3f826037febc3cda"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>__construct</b> (<a class="el" href="../../d6/d18/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_manager_1_1_shared_strings_caching_1_1_memory_limit.html">MemoryLimit</a> $memoryLimit)</td></tr>
+<tr class="separator:ae58cbd2894c54a8e3f826037febc3cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73e16ecbf6dcb85785a2eb93728e7c86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d78/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_manager_1_1_shared_strings_caching_1_1_caching_strategy_factory.html#a73e16ecbf6dcb85785a2eb93728e7c86">createBestCachingStrategy</a> (?int $sharedStringsUniqueCount, string $tempFolder)</td></tr>
+<tr class="memdesc:a73e16ecbf6dcb85785a2eb93728e7c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the best caching strategy, given the number of unique shared strings and the amount of memory available.  <br /></td></tr>
+<tr class="separator:a73e16ecbf6dcb85785a2eb93728e7c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:acbc0e4b0f57742645bd9d55af9aee309"><td class="memItemLeft" align="right" valign="top"><a id="acbc0e4b0f57742645bd9d55af9aee309" name="acbc0e4b0f57742645bd9d55af9aee309"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>AMOUNT_MEMORY_NEEDED_PER_STRING_IN_KB</b> = 12</td></tr>
+<tr class="memitem:acbc0e4b0f57742645bd9d55af9aee309"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d78/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_manager_1_1_shared_strings_caching_1_1_caching_strategy_factory.html#acbc0e4b0f57742645bd9d55af9aee309">AMOUNT_MEMORY_NEEDED_PER_STRING_IN_KB</a> = 12</td></tr>
+<tr class="memdesc:acbc0e4b0f57742645bd9d55af9aee309"><td class="mdescLeft">&#160;</td><td class="mdescRight">The memory amount needed to store a string was obtained empirically from this data:.  <br /></td></tr>
 <tr class="separator:acbc0e4b0f57742645bd9d55af9aee309"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78c2822c66822380192110015c4830cf"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d78/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_manager_1_1_shared_strings_caching_1_1_caching_strategy_factory.html#a78c2822c66822380192110015c4830cf">MAX_NUM_STRINGS_PER_TEMP_FILE</a> = 10000</td></tr>
 <tr class="memdesc:a78c2822c66822380192110015c4830cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">To avoid running out of memory when extracting a huge number of shared strings, they can be saved to temporary files instead of in memory.  <br /></td></tr>
 <tr class="separator:a78c2822c66822380192110015c4830cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a6144bb77314dad2d2d98463fa718bb21"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d78/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_manager_1_1_shared_strings_caching_1_1_caching_strategy_factory.html#a6144bb77314dad2d2d98463fa718bb21">getMemoryLimitFromIni</a> ()</td></tr>
-<tr class="memdesc:a6144bb77314dad2d2d98463fa718bb21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the formatted "memory_limit" value.  <br /></td></tr>
-<tr class="separator:a6144bb77314dad2d2d98463fa718bb21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbce76f246a98de978a0eef113f6ab48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d78/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_manager_1_1_shared_strings_caching_1_1_caching_strategy_factory.html#afbce76f246a98de978a0eef113f6ab48">getMemoryLimitInKB</a> ()</td></tr>
-<tr class="memdesc:afbce76f246a98de978a0eef113f6ab48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the PHP "memory_limit" in Kilobytes.  <br /></td></tr>
-<tr class="separator:afbce76f246a98de978a0eef113f6ab48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c3c24eac1aacc4ad00d3485590babc2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d78/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_manager_1_1_shared_strings_caching_1_1_caching_strategy_factory.html#a7c3c24eac1aacc4ad00d3485590babc2">isInMemoryStrategyUsageSafe</a> ($sharedStringsUniqueCount)</td></tr>
-<tr class="memdesc:a7c3c24eac1aacc4ad00d3485590babc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether it is safe to use in-memory caching, given the number of unique shared strings and the amount of memory available.  <br /></td></tr>
-<tr class="separator:a7c3c24eac1aacc4ad00d3485590babc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8441c369025c7473403ece4b2288df6b" name="a8441c369025c7473403ece4b2288df6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8441c369025c7473403ece4b2288df6b">&#9670;&#160;</a></span>createBestCachingStrategy()</h2>
+<a id="a73e16ecbf6dcb85785a2eb93728e7c86" name="a73e16ecbf6dcb85785a2eb93728e7c86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73e16ecbf6dcb85785a2eb93728e7c86">&#9670;&#160;</a></span>createBestCachingStrategy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -103,20 +93,14 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">OpenSpout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory::createBestCachingStrategy </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">?int&#160;</td>
           <td class="paramname"><em>$sharedStringsUniqueCount</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$tempFolder</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$helperFactory</em>&#160;</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$tempFolder</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -130,8 +114,7 @@ Protected Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">null&#160;|&#160;int</td><td class="paramname">$sharedStringsUniqueCount</td><td>Number of unique shared strings (NULL if unknown) </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$tempFolder</td><td>Temporary folder where the temporary files to store shared strings will be stored </td></tr>
-    <tr><td class="paramtype">HelperFactory</td><td class="paramname">$helperFactory</td><td>Factory to create helpers</td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$tempFolder</td><td>Temporary folder where the temporary files to store shared strings will be stored</td></tr>
   </table>
   </dd>
 </dl>
@@ -144,113 +127,32 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6144bb77314dad2d2d98463fa718bb21" name="a6144bb77314dad2d2d98463fa718bb21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6144bb77314dad2d2d98463fa718bb21">&#9670;&#160;</a></span>getMemoryLimitFromIni()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory::getMemoryLimitFromIni </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the formatted "memory_limit" value. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">string</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="afbce76f246a98de978a0eef113f6ab48" name="afbce76f246a98de978a0eef113f6ab48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbce76f246a98de978a0eef113f6ab48">&#9670;&#160;</a></span>getMemoryLimitInKB()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory::getMemoryLimitInKB </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the PHP "memory_limit" in Kilobytes. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">float</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a7c3c24eac1aacc4ad00d3485590babc2" name="a7c3c24eac1aacc4ad00d3485590babc2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c3c24eac1aacc4ad00d3485590babc2">&#9670;&#160;</a></span>isInMemoryStrategyUsageSafe()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory::isInMemoryStrategyUsageSafe </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$sharedStringsUniqueCount</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns whether it is safe to use in-memory caching, given the number of unique shared strings and the amount of memory available. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">null&#160;|&#160;int</td><td class="paramname">$sharedStringsUniqueCount</td><td>Number of unique shared strings (NULL if unknown)</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="acbc0e4b0f57742645bd9d55af9aee309" name="acbc0e4b0f57742645bd9d55af9aee309"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbc0e4b0f57742645bd9d55af9aee309">&#9670;&#160;</a></span>AMOUNT_MEMORY_NEEDED_PER_STRING_IN_KB</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const OpenSpout\Reader\XLSX\Manager\SharedStringsCaching\CachingStrategyFactory::AMOUNT_MEMORY_NEEDED_PER_STRING_IN_KB = 12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The memory amount needed to store a string was obtained empirically from this data:. </p>
+<hr  />
+ <h2><a class="anchor" id="autotoc_md20"></a>
+| Number of chars⁺ | Memory needed |</h2>
+<p>| 3,000 | 1 MB | | 15,000 | 2 MB | | 30,000 | 5 MB | | 75,000 | 11 MB | | 150,000 | 21 MB | | 300,000 | 43 MB | | 750,000 | 105 MB | | 1,500,000 | 210 MB | | 2,250,000 | 315 MB | | 3,000,000 | 420 MB | </p>
+<h2><a class="anchor" id="autotoc_md21"></a>
+|       4,500,000  |       630 MB  |</h2>
+<p>⁺ All characters were 1 byte long</p>
+<p>This gives a linear graph where each 1-byte character requires about 150 bytes to be stored. Given that some characters can take up to 4 bytes, we need 600 bytes per character to be safe. Also, there is on average about 20 characters per cell (this is entirely empirical data...).</p>
+<p>This means that in order to store one shared string in memory, the memory amount needed is: =&gt; 20 * 600 ≈ 12KB </p>
+
+</div>
+</div>
 <a id="a78c2822c66822380192110015c4830cf" name="a78c2822c66822380192110015c4830cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a78c2822c66822380192110015c4830cf">&#9670;&#160;</a></span>MAX_NUM_STRINGS_PER_TEMP_FILE</h2>
 
@@ -274,7 +176,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:54:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:55:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

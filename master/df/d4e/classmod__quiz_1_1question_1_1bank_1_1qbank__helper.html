@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -66,13 +66,13 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a631a8271ce35c6e5e3297fd9020f54c2"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d4e/classmod__quiz_1_1question_1_1bank_1_1qbank__helper.html#a631a8271ce35c6e5e3297fd9020f54c2">choose_question_for_redo</a> (int $quizid, <a class="el" href="../../db/db4/classcontext__module.html">context_module</a> $quizcontext, int $slotid, <a class="el" href="../../d2/d58/classqubaid__condition.html">qubaid_condition</a> $qubaids)</td></tr>
+<tr class="memitem:a631a8271ce35c6e5e3297fd9020f54c2"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d4e/classmod__quiz_1_1question_1_1bank_1_1qbank__helper.html#a631a8271ce35c6e5e3297fd9020f54c2">choose_question_for_redo</a> (int $quizid, context_module $quizcontext, int $slotid, <a class="el" href="../../d2/d58/classqubaid__condition.html">qubaid_condition</a> $qubaids)</td></tr>
 <tr class="memdesc:a631a8271ce35c6e5e3297fd9020f54c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Choose question for redo in a particular slot.  <br /></td></tr>
 <tr class="separator:a631a8271ce35c6e5e3297fd9020f54c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c749db8d10b0a07efe5876e2d5bd361"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d4e/classmod__quiz_1_1question_1_1bank_1_1qbank__helper.html#a8c749db8d10b0a07efe5876e2d5bd361">describe_random_question</a> (\stdClass $slotdata)</td></tr>
 <tr class="memdesc:a8c749db8d10b0a07efe5876e2d5bd361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a slot from the array returned by get_question_structure, describe the random question it represents.  <br /></td></tr>
 <tr class="separator:a8c749db8d10b0a07efe5876e2d5bd361"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee038d24e0380ccb738bbbb4f83fa6ac"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d4e/classmod__quiz_1_1question_1_1bank_1_1qbank__helper.html#aee038d24e0380ccb738bbbb4f83fa6ac">get_question_structure</a> (int $quizid, <a class="el" href="../../db/db4/classcontext__module.html">context_module</a> $quizcontext, int $slotid=null)</td></tr>
+<tr class="memitem:aee038d24e0380ccb738bbbb4f83fa6ac"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d4e/classmod__quiz_1_1question_1_1bank_1_1qbank__helper.html#aee038d24e0380ccb738bbbb4f83fa6ac">get_question_structure</a> (int $quizid, context_module $quizcontext, int $slotid=null)</td></tr>
 <tr class="memdesc:aee038d24e0380ccb738bbbb4f83fa6ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the information about which questions should be used to create a quiz attempt.  <br /></td></tr>
 <tr class="separator:aee038d24e0380ccb738bbbb4f83fa6ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b7acc2007d8ce8d64dc9deb98325d21"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d4e/classmod__quiz_1_1question_1_1bank_1_1qbank__helper.html#a6b7acc2007d8ce8d64dc9deb98325d21">get_tag_ids_for_slot</a> (\stdClass $slotdata)</td></tr>
@@ -101,7 +101,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../db/db4/classcontext__module.html">context_module</a>&#160;</td>
+          <td class="paramtype">context_module&#160;</td>
           <td class="paramname"><em>$quizcontext</em>, </td>
         </tr>
         <tr>
@@ -133,7 +133,7 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$quizid</td><td>the id of the quiz to load the data for. </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../db/db4/classcontext__module.html">context_module</a></td><td class="paramname">$quizcontext</td><td>the context of this quiz. </td></tr>
+    <tr><td class="paramtype">context_module</td><td class="paramname">$quizcontext</td><td>the context of this quiz. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$slotid</td><td>optional, if passed only load the data for this one slot (if it is in this quiz). </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../d2/d58/classqubaid__condition.html" title="This class represents a restriction on the set of question_usage ids to include in a larger database ...">qubaid_condition</a></td><td class="paramname">$qubaids</td><td>attempts to consider when avoiding picking repeats of random questions. </td></tr>
   </table>
@@ -206,7 +206,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../db/db4/classcontext__module.html">context_module</a>&#160;</td>
+          <td class="paramtype">context_module&#160;</td>
           <td class="paramname"><em>$quizcontext</em>, </td>
         </tr>
         <tr>
@@ -239,7 +239,7 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$quizid</td><td>the id of the quiz to load the data for. </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../db/db4/classcontext__module.html">context_module</a></td><td class="paramname">$quizcontext</td><td>the context of this quiz. </td></tr>
+    <tr><td class="paramtype">context_module</td><td class="paramname">$quizcontext</td><td>the context of this quiz. </td></tr>
     <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$slotid</td><td>optional, if passed only load the data for this one slot (if it is in this quiz). </td></tr>
   </table>
   </dd>
@@ -339,7 +339,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:54:44 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:55:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

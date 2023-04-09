@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -88,7 +88,7 @@ Inheritance diagram for mod_forum\privacy\provider:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a37443f63142b80b70ad75f6997188f65"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d13/classmod__forum_1_1privacy_1_1provider.html#a37443f63142b80b70ad75f6997188f65">delete_data_for_all_users_in_context</a> (\<a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:a37443f63142b80b70ad75f6997188f65"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d13/classmod__forum_1_1privacy_1_1provider.html#a37443f63142b80b70ad75f6997188f65">delete_data_for_all_users_in_context</a> (\context $context)</td></tr>
 <tr class="memdesc:a37443f63142b80b70ad75f6997188f65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete all data for all users in the specified context.  <br /></td></tr>
 <tr class="separator:a37443f63142b80b70ad75f6997188f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a877c2804bc6ed0a774664e0d17e7db4c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d13/classmod__forum_1_1privacy_1_1provider.html#a877c2804bc6ed0a774664e0d17e7db4c">delete_data_for_user</a> (<a class="el" href="../../d9/d39/classcore__privacy_1_1local_1_1request_1_1approved__contextlist.html">approved_contextlist</a> $contextlist)</td></tr>
@@ -118,7 +118,7 @@ Static Protected Member Functions</h2></td></tr>
 <tr class="memitem:a57e19f25e56611a81e473438fa9deabe"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d13/classmod__forum_1_1privacy_1_1provider.html#a57e19f25e56611a81e473438fa9deabe">export_all_posts</a> (int $userid, array $mappings)</td></tr>
 <tr class="memdesc:a57e19f25e56611a81e473438fa9deabe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store all information about all posts that we have detected this user to have access to.  <br /></td></tr>
 <tr class="separator:a57e19f25e56611a81e473438fa9deabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a405e9cd531f5ca4c19c6073c14a766ae"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d13/classmod__forum_1_1privacy_1_1provider.html#a405e9cd531f5ca4c19c6073c14a766ae">export_all_posts_in_discussion</a> (int $userid, <a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, stdClass $discussion)</td></tr>
+<tr class="memitem:a405e9cd531f5ca4c19c6073c14a766ae"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d13/classmod__forum_1_1privacy_1_1provider.html#a405e9cd531f5ca4c19c6073c14a766ae">export_all_posts_in_discussion</a> (int $userid, context $context, stdClass $discussion)</td></tr>
 <tr class="memdesc:a405e9cd531f5ca4c19c6073c14a766ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store all information about all posts that we have detected this user to have access to.  <br /></td></tr>
 <tr class="separator:a405e9cd531f5ca4c19c6073c14a766ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae701ecfb72759fa51fb00ade0b39a4a7"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d13/classmod__forum_1_1privacy_1_1provider.html#ae701ecfb72759fa51fb00ade0b39a4a7">export_digest_data</a> (int $userid, stdClass $forum, int $maildigest)</td></tr>
@@ -127,22 +127,22 @@ Static Protected Member Functions</h2></td></tr>
 <tr class="memitem:a412b62b202062a1f072d2c517d85884f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d13/classmod__forum_1_1privacy_1_1provider.html#a412b62b202062a1f072d2c517d85884f">export_discussion_data</a> (int $userid, array $mappings)</td></tr>
 <tr class="memdesc:a412b62b202062a1f072d2c517d85884f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store all information about all discussions that we have detected this user to have access to.  <br /></td></tr>
 <tr class="separator:a412b62b202062a1f072d2c517d85884f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd9b501256dc8af8c55ec6c81b7f6aba"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d13/classmod__forum_1_1privacy_1_1provider.html#abd9b501256dc8af8c55ec6c81b7f6aba">export_discussion_subscription_data</a> (int $userid, <a class="el" href="../../db/db4/classcontext__module.html">context_module</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, stdClass $discussion)</td></tr>
+<tr class="memitem:abd9b501256dc8af8c55ec6c81b7f6aba"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d13/classmod__forum_1_1privacy_1_1provider.html#abd9b501256dc8af8c55ec6c81b7f6aba">export_discussion_subscription_data</a> (int $userid, context_module $context, stdClass $discussion)</td></tr>
 <tr class="memdesc:abd9b501256dc8af8c55ec6c81b7f6aba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store data about whether the user subscribes to this particular discussion.  <br /></td></tr>
 <tr class="separator:abd9b501256dc8af8c55ec6c81b7f6aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5d3d8b477283679fb779ee343188057"><td class="memItemLeft" align="right" valign="top"><a id="af5d3d8b477283679fb779ee343188057" name="af5d3d8b477283679fb779ee343188057"></a>
-static&#160;</td><td class="memItemRight" valign="bottom"><b>export_grade_data</b> (int $grade, <a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, stdClass $forum, array $path)</td></tr>
+static&#160;</td><td class="memItemRight" valign="bottom"><b>export_grade_data</b> (int $grade, context $context, stdClass $forum, array $path)</td></tr>
 <tr class="separator:af5d3d8b477283679fb779ee343188057"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1c84aba3bed50742c7f8f4467265dd4"><td class="memItemLeft" align="right" valign="top"><a id="af1c84aba3bed50742c7f8f4467265dd4" name="af1c84aba3bed50742c7f8f4467265dd4"></a>
 static&#160;</td><td class="memItemRight" valign="bottom"><b>export_grading_data</b> (int $userid, stdClass $forum, int $grade)</td></tr>
 <tr class="separator:af1c84aba3bed50742c7f8f4467265dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee24adbe74b646190324fb0cfa71a458"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d13/classmod__forum_1_1privacy_1_1provider.html#aee24adbe74b646190324fb0cfa71a458">export_post_data</a> (int $userid, <a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, $postarea, $post)</td></tr>
+<tr class="memitem:aee24adbe74b646190324fb0cfa71a458"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d13/classmod__forum_1_1privacy_1_1provider.html#aee24adbe74b646190324fb0cfa71a458">export_post_data</a> (int $userid, context $context, $postarea, $post)</td></tr>
 <tr class="memdesc:aee24adbe74b646190324fb0cfa71a458"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export all data in the post.  <br /></td></tr>
 <tr class="separator:aee24adbe74b646190324fb0cfa71a458"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a154c9cf59a11964663b7f9f54b03160a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d13/classmod__forum_1_1privacy_1_1provider.html#a154c9cf59a11964663b7f9f54b03160a">export_posts_in_structure</a> (int $userid, <a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, $parentarea, stdClass $structure)</td></tr>
+<tr class="memitem:a154c9cf59a11964663b7f9f54b03160a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d13/classmod__forum_1_1privacy_1_1provider.html#a154c9cf59a11964663b7f9f54b03160a">export_posts_in_structure</a> (int $userid, context $context, $parentarea, stdClass $structure)</td></tr>
 <tr class="memdesc:a154c9cf59a11964663b7f9f54b03160a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export all posts in the provided structure.  <br /></td></tr>
 <tr class="separator:a154c9cf59a11964663b7f9f54b03160a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc406a18022ac870cf183d35cf26b985"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d13/classmod__forum_1_1privacy_1_1provider.html#acc406a18022ac870cf183d35cf26b985">export_read_data</a> (int $userid, <a class="el" href="../../db/db4/classcontext__module.html">context_module</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, array $postarea, stdClass $post)</td></tr>
+<tr class="memitem:acc406a18022ac870cf183d35cf26b985"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d13/classmod__forum_1_1privacy_1_1provider.html#acc406a18022ac870cf183d35cf26b985">export_read_data</a> (int $userid, context_module $context, array $postarea, stdClass $post)</td></tr>
 <tr class="memdesc:acc406a18022ac870cf183d35cf26b985"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store read-tracking information about a particular forum post.  <br /></td></tr>
 <tr class="separator:acc406a18022ac870cf183d35cf26b985"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32417b47ec441774e1aa78a75a708950"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d13/classmod__forum_1_1privacy_1_1provider.html#a32417b47ec441774e1aa78a75a708950">export_subscription_data</a> (int $userid, stdClass $forum, int $subscribed)</td></tr>
@@ -169,7 +169,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>export_grading_data
         <tr>
           <td class="memname">static mod_forum\privacy\provider::delete_data_for_all_users_in_context </td>
           <td>(</td>
-          <td class="paramtype">\<a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramtype">\context&#160;</td>
           <td class="paramname"><em>$context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -334,7 +334,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>export_grading_data
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramtype">context&#160;</td>
           <td class="paramname"><em>$context</em>, </td>
         </tr>
         <tr>
@@ -495,7 +495,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>export_grading_data
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../db/db4/classcontext__module.html">context_module</a>&#160;</td>
+          <td class="paramtype">context_module&#160;</td>
           <td class="paramname"><em>$context</em>, </td>
         </tr>
         <tr>
@@ -521,7 +521,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>export_grading_data
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>The userid of the user whose data is to be exported. </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../db/db4/classcontext__module.html">context_module</a></td><td class="paramname">$context</td><td>The instance of the forum context. </td></tr>
+    <tr><td class="paramtype">context_module</td><td class="paramname">$context</td><td>The instance of the forum context. </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$discussion</td><td>The discussion whose data is being exported. </td></tr>
   </table>
   </dd>
@@ -553,7 +553,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>export_grading_data
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramtype">context&#160;</td>
           <td class="paramname"><em>$context</em>, </td>
         </tr>
         <tr>
@@ -612,7 +612,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>export_grading_data
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramtype">context&#160;</td>
           <td class="paramname"><em>$context</em>, </td>
         </tr>
         <tr>
@@ -671,7 +671,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>export_grading_data
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../db/db4/classcontext__module.html">context_module</a>&#160;</td>
+          <td class="paramtype">context_module&#160;</td>
           <td class="paramname"><em>$context</em>, </td>
         </tr>
         <tr>
@@ -703,7 +703,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>export_grading_data
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>The userid of the user whose data is to be exported. </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../db/db4/classcontext__module.html">context_module</a></td><td class="paramname">$context</td><td>The instance of the forum context. </td></tr>
+    <tr><td class="paramtype">context_module</td><td class="paramname">$context</td><td>The instance of the forum context. </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$postarea</td><td>The subcontext for this post. </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$post</td><td>The post whose data is being exported. </td></tr>
   </table>
@@ -1034,7 +1034,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>export_grading_data
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:54:37 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:55:37 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

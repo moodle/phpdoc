@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -59,7 +59,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d1/d4e/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_sheet-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">OpenSpout\Reader\XLSX\Sheet Class Reference</div></div>
 </div><!--header-->
@@ -70,14 +69,17 @@ Inheritance diagram for OpenSpout\Reader\XLSX\Sheet:</div>
  <div class="center">
   <img src="../../da/d4e/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_sheet.png" usemap="#OpenSpout_5CReader_5CXLSX_5CSheet_map" alt=""/>
   <map id="OpenSpout_5CReader_5CXLSX_5CSheet_map" name="OpenSpout_5CReader_5CXLSX_5CSheet_map">
-<area href="../../d6/d7a/interface_open_spout_1_1_reader_1_1_sheet_interface.html" alt="OpenSpout\Reader\SheetInterface" shape="rect" coords="0,0,206,24"/>
+<area href="../../de/d9c/interface_open_spout_1_1_reader_1_1_sheet_with_visibility_interface.html" alt="OpenSpout\Reader\SheetWithVisibilityInterface" shape="rect" coords="0,56,277,80"/>
+<area href="../../d6/d7a/interface_open_spout_1_1_reader_1_1_sheet_interface.html" alt="OpenSpout\Reader\SheetInterface" shape="rect" coords="0,0,277,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab7fda83003663da1971fc4a006781545"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_sheet.html#ab7fda83003663da1971fc4a006781545">__construct</a> ($rowIterator, $sheetIndex, $sheetName, $isSheetActive, $isSheetVisible)</td></tr>
-<tr class="separator:ab7fda83003663da1971fc4a006781545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab002fc47775be6f607eac85878806936"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_sheet.html#ab002fc47775be6f607eac85878806936">__construct</a> (RowIterator $rowIterator, SheetHeaderReader $headerReader, int $sheetIndex, string $sheetName, bool $isSheetActive, bool $isSheetVisible)</td></tr>
+<tr class="separator:ab002fc47775be6f607eac85878806936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecff2121cbebd3dc672b66268adf647f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_sheet.html#aecff2121cbebd3dc672b66268adf647f">getColumnWidths</a> ()</td></tr>
+<tr class="separator:aecff2121cbebd3dc672b66268adf647f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a659bdfc682fc5e7b27baf40b3097300d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_sheet.html#a659bdfc682fc5e7b27baf40b3097300d">getIndex</a> ()</td></tr>
 <tr class="separator:a659bdfc682fc5e7b27baf40b3097300d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a524b97b15acb25b41d1a7437bb5c4b75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_sheet.html#a524b97b15acb25b41d1a7437bb5c4b75">getName</a> ()</td></tr>
@@ -88,33 +90,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a774a6617db9a9890ffce911145118783"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3f58adb18105b9837aa7e2fac2275f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4e/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_sheet.html#ad3f58adb18105b9837aa7e2fac2275f7">isVisible</a> ()</td></tr>
 <tr class="separator:ad3f58adb18105b9837aa7e2fac2275f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:ab2345eca7f0d4fd9fa546c06feab10ac"><td class="memItemLeft" align="right" valign="top"><a id="ab2345eca7f0d4fd9fa546c06feab10ac" name="ab2345eca7f0d4fd9fa546c06feab10ac"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>$index</b></td></tr>
-<tr class="memdesc:ab2345eca7f0d4fd9fa546c06feab10ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the sheet, based on order in the workbook (zero-based) <br /></td></tr>
-<tr class="separator:ab2345eca7f0d4fd9fa546c06feab10ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44d511907183e9f2df6ebebbc1033c43"><td class="memItemLeft" align="right" valign="top"><a id="a44d511907183e9f2df6ebebbc1033c43" name="a44d511907183e9f2df6ebebbc1033c43"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>$isActive</b></td></tr>
-<tr class="memdesc:a44d511907183e9f2df6ebebbc1033c43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the sheet was the active one. <br /></td></tr>
-<tr class="separator:a44d511907183e9f2df6ebebbc1033c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca00c2bb81405831fe3f5b0ca9cc9e82"><td class="memItemLeft" align="right" valign="top"><a id="aca00c2bb81405831fe3f5b0ca9cc9e82" name="aca00c2bb81405831fe3f5b0ca9cc9e82"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>$isVisible</b></td></tr>
-<tr class="memdesc:aca00c2bb81405831fe3f5b0ca9cc9e82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the sheet is visible. <br /></td></tr>
-<tr class="separator:aca00c2bb81405831fe3f5b0ca9cc9e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d8651054d1a6fd8814f2288f640f16d"><td class="memItemLeft" align="right" valign="top"><a id="a0d8651054d1a6fd8814f2288f640f16d" name="a0d8651054d1a6fd8814f2288f640f16d"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>$name</b></td></tr>
-<tr class="memdesc:a0d8651054d1a6fd8814f2288f640f16d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the sheet. <br /></td></tr>
-<tr class="separator:a0d8651054d1a6fd8814f2288f640f16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a415d7eb4bab326c3e7604d1f5d4c694b"><td class="memItemLeft" align="right" valign="top"><a id="a415d7eb4bab326c3e7604d1f5d4c694b" name="a415d7eb4bab326c3e7604d1f5d4c694b"></a>
-OpenSpout <a class="el" href="../../d8/dac/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_reader.html">Reader</a> XLSX RowIterator&#160;</td><td class="memItemRight" valign="bottom"><b>$rowIterator</b></td></tr>
-<tr class="memdesc:a415d7eb4bab326c3e7604d1f5d4c694b"><td class="mdescLeft">&#160;</td><td class="mdescRight">To iterate over sheet's rows. <br /></td></tr>
-<tr class="separator:a415d7eb4bab326c3e7604d1f5d4c694b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab7fda83003663da1971fc4a006781545" name="ab7fda83003663da1971fc4a006781545"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7fda83003663da1971fc4a006781545">&#9670;&#160;</a></span>__construct()</h2>
+<a id="ab002fc47775be6f607eac85878806936" name="ab002fc47775be6f607eac85878806936"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab002fc47775be6f607eac85878806936">&#9670;&#160;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -122,31 +101,37 @@ OpenSpout <a class="el" href="../../d8/dac/class_open_spout_1_1_reader_1_1_x_l_s
         <tr>
           <td class="memname">OpenSpout\Reader\XLSX\Sheet::__construct </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">RowIterator&#160;</td>
           <td class="paramname"><em>$rowIterator</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">SheetHeaderReader&#160;</td>
+          <td class="paramname"><em>$headerReader</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>$sheetIndex</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$sheetName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>$isSheetActive</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>$isSheetVisible</em>&#160;</td>
         </tr>
         <tr>
@@ -170,6 +155,29 @@ OpenSpout <a class="el" href="../../d8/dac/class_open_spout_1_1_reader_1_1_x_l_s
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aecff2121cbebd3dc672b66268adf647f" name="aecff2121cbebd3dc672b66268adf647f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecff2121cbebd3dc672b66268adf647f">&#9670;&#160;</a></span>getColumnWidths()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">OpenSpout\Reader\XLSX\Sheet::getColumnWidths </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">ColumnWidth[]</td><td>a list of column-widths </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a659bdfc682fc5e7b27baf40b3097300d" name="a659bdfc682fc5e7b27baf40b3097300d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a659bdfc682fc5e7b27baf40b3097300d">&#9670;&#160;</a></span>getIndex()</h2>
 
@@ -236,7 +244,7 @@ OpenSpout <a class="el" href="../../d8/dac/class_open_spout_1_1_reader_1_1_x_l_s
 </div><div class="memdoc">
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">OpenSpout::Reader::XLSX::RowIterator</td><td></td></tr>
+    <tr><td class="paramname">T</td><td>iterator to iterate over the sheet's rows </td></tr>
   </table>
   </dd>
 </dl>
@@ -291,7 +299,7 @@ OpenSpout <a class="el" href="../../d8/dac/class_open_spout_1_1_reader_1_1_x_l_s
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="../../d6/d7a/interface_open_spout_1_1_reader_1_1_sheet_interface.html#a1e5dfe4853c3b73477c59401ff1e3bb6">OpenSpout\Reader\SheetInterface</a>.</p>
+<p>Implements <a class="el" href="../../de/d9c/interface_open_spout_1_1_reader_1_1_sheet_with_visibility_interface.html#a6bf71b73696a8033fcc04640695bf743">OpenSpout\Reader\SheetWithVisibilityInterface</a>.</p>
 
 </div>
 </div>
@@ -301,7 +309,7 @@ OpenSpout <a class="el" href="../../d8/dac/class_open_spout_1_1_reader_1_1_x_l_s
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:54:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:55:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

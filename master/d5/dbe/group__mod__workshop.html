@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -333,10 +333,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:gaa31058b1c6e1ad4aed404f087127d816"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a get_coursemodule_info function in case any feedback type wants to add 'extra' information for the course (see resource).  <br /></td></tr>
 <tr class="separator:gaa31058b1c6e1ad4aed404f087127d816"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa50d3d4fc745f3e8cc5f4d7d7bf09a50"><td class="memItemLeft" align="right" valign="top"><a id="gaa50d3d4fc745f3e8cc5f4d7d7bf09a50" name="gaa50d3d4fc745f3e8cc5f4d7d7bf09a50"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>workshop_get_file_areas</b> ($course, $cm, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>workshop_get_file_areas</b> ($course, $cm, $context)</td></tr>
 <tr class="separator:gaa50d3d4fc745f3e8cc5f4d7d7bf09a50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1d3a8885980b5742d2e4bd25e4694fb0"><td class="memItemLeft" align="right" valign="top"><a id="ga1d3a8885980b5742d2e4bd25e4694fb0" name="ga1d3a8885980b5742d2e4bd25e4694fb0"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>workshop_get_file_info</b> ($browser, $areas, $course, $cm, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $filearea, $itemid, $filepath, $filename)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>workshop_get_file_info</b> ($browser, $areas, $course, $cm, $context, $filearea, $itemid, $filepath, $filename)</td></tr>
 <tr class="separator:ga1d3a8885980b5742d2e4bd25e4694fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2b7c69d8b4d9149d5f70d496478d0435"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dbe/group__mod__workshop.html#ga2b7c69d8b4d9149d5f70d496478d0435">workshop_get_post_actions</a> ()</td></tr>
 <tr class="memdesc:ga2b7c69d8b4d9149d5f70d496478d0435"><td class="mdescLeft">&#160;</td><td class="mdescRight">List the actions that correspond to a post of this module.  <br /></td></tr>
@@ -357,7 +357,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gae56e7d1a5eda1c37e66fcc9d1501ffc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of page types.  <br /></td></tr>
 <tr class="separator:gae56e7d1a5eda1c37e66fcc9d1501ffc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf96e994a5512da0eb573162363d59169"><td class="memItemLeft" align="right" valign="top"><a id="gaf96e994a5512da0eb573162363d59169" name="gaf96e994a5512da0eb573162363d59169"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>workshop_pluginfile</b> ($course, $cm, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $filearea, array $args, $forcedownload, array $options=array())</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>workshop_pluginfile</b> ($course, $cm, $context, $filearea, array $args, $forcedownload, array $options=array())</td></tr>
 <tr class="separator:gaf96e994a5512da0eb573162363d59169"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga44ae72725e485b118c21be85a5346fd9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dbe/group__mod__workshop.html#ga44ae72725e485b118c21be85a5346fd9">workshop_print_recent_activity</a> ($course, $viewfullnames, $timestart)</td></tr>
 <tr class="memdesc:ga44ae72725e485b118c21be85a5346fd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a course and a time, this module should find recent activity that has occurred in workshop activities and print it out.  <br /></td></tr>
@@ -1466,7 +1466,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>WORKSHOP_SUBMISSION_
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001163">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001164">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8 </dd></dl>
 
 </div>
 </div>
@@ -1827,7 +1827,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>WORKSHOP_SUBMISSION_
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:51:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:52:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

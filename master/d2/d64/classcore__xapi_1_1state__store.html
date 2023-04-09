@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -79,6 +79,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5457b1f21832a2bd350b341d305ed5c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d64/classcore__xapi_1_1state__store.html#a5457b1f21832a2bd350b341d305ed5c5">get</a> (<a class="el" href="../../d4/dea/classcore__xapi_1_1local_1_1state.html">state</a> $<a class="el" href="../../d4/dea/classcore__xapi_1_1local_1_1state.html">state</a>)</td></tr>
 <tr class="memdesc:a5457b1f21832a2bd350b341d305ed5c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a state object from the database.  <br /></td></tr>
 <tr class="separator:a5457b1f21832a2bd350b341d305ed5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a937eddb2aff2bccd40016e2f433140b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d64/classcore__xapi_1_1state__store.html#a937eddb2aff2bccd40016e2f433140b0">get_state_ids</a> (?string $itemid=null, ?int $userid=null, ?string $registration=null, ?int $since=null,)</td></tr>
+<tr class="memdesc:a937eddb2aff2bccd40016e2f433140b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all state ids from a specific activity and agent.  <br /></td></tr>
+<tr class="separator:a937eddb2aff2bccd40016e2f433140b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3368913e2022fd8a1e903a933e42df95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d64/classcore__xapi_1_1state__store.html#a3368913e2022fd8a1e903a933e42df95">put</a> (<a class="el" href="../../d4/dea/classcore__xapi_1_1local_1_1state.html">state</a> $<a class="el" href="../../d4/dea/classcore__xapi_1_1local_1_1state.html">state</a>)</td></tr>
 <tr class="memdesc:a3368913e2022fd8a1e903a933e42df95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts an state object into the database.  <br /></td></tr>
 <tr class="separator:a3368913e2022fd8a1e903a933e42df95"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,6 +209,64 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$component</b></td>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">state|null</td><td>the state </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a937eddb2aff2bccd40016e2f433140b0" name="a937eddb2aff2bccd40016e2f433140b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a937eddb2aff2bccd40016e2f433140b0">&#9670;&#160;</a></span>get_state_ids()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_xapi\state_store::get_state_ids </td>
+          <td>(</td>
+          <td class="paramtype">?string&#160;</td>
+          <td class="paramname"><em>$itemid</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int&#160;</td>
+          <td class="paramname"><em>$userid</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?string&#160;</td>
+          <td class="paramname"><em>$registration</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int&#160;</td>
+          <td class="paramname"><em>$since</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get all state ids from a specific activity and agent. </p>
+<p>Plugins may override this method if they store some data in different tables.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$itemid</td><td></td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$userid</td><td></td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$registration</td><td></td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$since</td><td>filter ids updated since a specific timestamp </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string[]</td><td>the state ids values </td></tr>
   </table>
   </dd>
 </dl>
@@ -358,7 +419,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$component</b></td>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:54:16 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:55:16 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

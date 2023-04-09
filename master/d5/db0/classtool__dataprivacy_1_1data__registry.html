@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -75,7 +75,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ad95d7d05b510740bc669d07e1307c9b8"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db0/classtool__dataprivacy_1_1data__registry.html#ad95d7d05b510740bc669d07e1307c9b8">get_defaults</a> ($<a class="el" href="../../d4/de3/classtool__dataprivacy_1_1contextlevel.html">contextlevel</a>, $pluginname='')</td></tr>
 <tr class="memdesc:ad95d7d05b510740bc669d07e1307c9b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the default purpose id and category id for the provided context level.  <br /></td></tr>
 <tr class="separator:ad95d7d05b510740bc669d07e1307c9b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34e8c1e34d14f7f73abbdf273c66332b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db0/classtool__dataprivacy_1_1data__registry.html#a34e8c1e34d14f7f73abbdf273c66332b">get_effective_context_value</a> (\<a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, $element, $forcedvalue=false)</td></tr>
+<tr class="memitem:a34e8c1e34d14f7f73abbdf273c66332b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db0/classtool__dataprivacy_1_1data__registry.html#a34e8c1e34d14f7f73abbdf273c66332b">get_effective_context_value</a> (\context $context, $element, $forcedvalue=false)</td></tr>
 <tr class="memdesc:a34e8c1e34d14f7f73abbdf273c66332b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the effective value given a context instance.  <br /></td></tr>
 <tr class="separator:a34e8c1e34d14f7f73abbdf273c66332b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af80a7e6de57504ebb469b1f96216dbe6"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db0/classtool__dataprivacy_1_1data__registry.html#af80a7e6de57504ebb469b1f96216dbe6">get_effective_contextlevel_value</a> ($<a class="el" href="../../d4/de3/classtool__dataprivacy_1_1contextlevel.html">contextlevel</a>, $element)</td></tr>
@@ -87,7 +87,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ad6c7d3a906ea042dabab217db2e99c51"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db0/classtool__dataprivacy_1_1data__registry.html#ad6c7d3a906ea042dabab217db2e99c51">get_site_categories</a> ()</td></tr>
 <tr class="memdesc:ad6c7d3a906ea042dabab217db2e99c51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all site categories that are visible to the current user.  <br /></td></tr>
 <tr class="separator:ad6c7d3a906ea042dabab217db2e99c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf1a4316deeb1c5d906d006ccff4516d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db0/classtool__dataprivacy_1_1data__registry.html#acf1a4316deeb1c5d906d006ccff4516d">get_subject_scope</a> (\<a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:acf1a4316deeb1c5d906d006ccff4516d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db0/classtool__dataprivacy_1_1data__registry.html#acf1a4316deeb1c5d906d006ccff4516d">get_subject_scope</a> (\context $context)</td></tr>
 <tr class="memdesc:acf1a4316deeb1c5d906d006ccff4516d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the roles assigned to the provided level.  <br /></td></tr>
 <tr class="separator:acf1a4316deeb1c5d906d006ccff4516d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2b5b55d8cbcb2c4b9c73d735c1d346a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db0/classtool__dataprivacy_1_1data__registry.html#ad2b5b55d8cbcb2c4b9c73d735c1d346a">var_names_from_context</a> ($classname, $pluginname='')</td></tr>
@@ -198,7 +198,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static tool_dataprivacy\data_registry::get_effective_context_value </td>
           <td>(</td>
-          <td class="paramtype">\<a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramtype">\context&#160;</td>
           <td class="paramname"><em>$context</em>, </td>
         </tr>
         <tr>
@@ -406,7 +406,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static tool_dataprivacy\data_registry::get_subject_scope </td>
           <td>(</td>
-          <td class="paramtype">\<a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramtype">\context&#160;</td>
           <td class="paramname"><em>$context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -492,7 +492,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:55:04 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:56:04 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

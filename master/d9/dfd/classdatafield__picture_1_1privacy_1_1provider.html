@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -84,10 +84,10 @@ Inheritance diagram for datafield_picture\privacy\provider:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a555f82019f5099b9a03411e296379a77"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dfd/classdatafield__picture_1_1privacy_1_1provider.html#a555f82019f5099b9a03411e296379a77">delete_data_content</a> ($<a class="el" href="../../da/d04/classcontext.html">context</a>, $recordobj, $fieldobj, $contentobj)</td></tr>
+<tr class="memitem:a555f82019f5099b9a03411e296379a77"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dfd/classdatafield__picture_1_1privacy_1_1provider.html#a555f82019f5099b9a03411e296379a77">delete_data_content</a> ($context, $recordobj, $fieldobj, $contentobj)</td></tr>
 <tr class="memdesc:a555f82019f5099b9a03411e296379a77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows plugins to delete locally stored data.  <br /></td></tr>
 <tr class="separator:a555f82019f5099b9a03411e296379a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3263a64424426285b0061042e4367cd6"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dfd/classdatafield__picture_1_1privacy_1_1provider.html#a3263a64424426285b0061042e4367cd6">export_data_content</a> ($<a class="el" href="../../da/d04/classcontext.html">context</a>, $recordobj, $fieldobj, $contentobj, $defaultvalue)</td></tr>
+<tr class="memitem:a3263a64424426285b0061042e4367cd6"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dfd/classdatafield__picture_1_1privacy_1_1provider.html#a3263a64424426285b0061042e4367cd6">export_data_content</a> ($context, $recordobj, $fieldobj, $contentobj, $defaultvalue)</td></tr>
 <tr class="memdesc:a3263a64424426285b0061042e4367cd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports data about one record in {data_content} table.  <br /></td></tr>
 <tr class="separator:a3263a64424426285b0061042e4367cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a506d25ed9bb4443a7e17243a41614f7a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dfd/classdatafield__picture_1_1privacy_1_1provider.html#a506d25ed9bb4443a7e17243a41614f7a">get_reason</a> ()</td></tr>
@@ -148,7 +148,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Allows plugins to delete locally stored data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../db/db4/classcontext__module.html">context_module</a></td><td class="paramname">$context</td><td></td></tr>
+    <tr><td class="paramtype">context_module</td><td class="paramname">$context</td><td></td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$recordobj</td><td>record from <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> table {data_records} </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$fieldobj</td><td>record from <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> table {data_fields} </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$contentobj</td><td>record from <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> table {data_content} </td></tr>
@@ -215,7 +215,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Exports data about one record in {data_content} table. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../db/db4/classcontext__module.html">context_module</a></td><td class="paramname">$context</td><td></td></tr>
+    <tr><td class="paramtype">context_module</td><td class="paramname">$context</td><td></td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$recordobj</td><td>record from <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> table {data_records} </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$fieldobj</td><td>record from <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> table {data_fields} </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$contentobj</td><td>record from <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> table {data_content} </td></tr>
@@ -269,7 +269,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:54:17 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:55:17 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

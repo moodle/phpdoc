@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -82,16 +82,16 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga4e1fe0ccb6e6a5adf73ce196c30db9ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d16/group__booktool__exportimscp.html#ga4e1fe0ccb6e6a5adf73ce196c30db9ac">booktool_exportimscp_build_package</a> ($book, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:ga4e1fe0ccb6e6a5adf73ce196c30db9ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d16/group__booktool__exportimscp.html#ga4e1fe0ccb6e6a5adf73ce196c30db9ac">booktool_exportimscp_build_package</a> ($book, $context)</td></tr>
 <tr class="memdesc:ga4e1fe0ccb6e6a5adf73ce196c30db9ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export one book as IMSCP package.  <br /></td></tr>
 <tr class="separator:ga4e1fe0ccb6e6a5adf73ce196c30db9ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacef0d0578d1fd3dd2447bcb73bc87b66"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d16/group__booktool__exportimscp.html#gacef0d0578d1fd3dd2447bcb73bc87b66">booktool_exportimscp_chapter_content</a> ($chapter, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:gacef0d0578d1fd3dd2447bcb73bc87b66"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d16/group__booktool__exportimscp.html#gacef0d0578d1fd3dd2447bcb73bc87b66">booktool_exportimscp_chapter_content</a> ($chapter, $context)</td></tr>
 <tr class="memdesc:gacef0d0578d1fd3dd2447bcb73bc87b66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the html contents of one book's chapter to be exported as IMSCP.  <br /></td></tr>
 <tr class="separator:gacef0d0578d1fd3dd2447bcb73bc87b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga40ca621a2fb2cebdff09fa053e555230"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d16/group__booktool__exportimscp.html#ga40ca621a2fb2cebdff09fa053e555230">booktool_exportimscp_extend_settings_navigation</a> (<a class="el" href="../../d8/dca/classsettings__navigation.html">settings_navigation</a> $settings, <a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a> $node)</td></tr>
 <tr class="memdesc:ga40ca621a2fb2cebdff09fa053e555230"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds module specific settings to the settings block.  <br /></td></tr>
 <tr class="separator:ga40ca621a2fb2cebdff09fa053e555230"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0c547b1948e833eb3ed53deea8cb3232"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d16/group__booktool__exportimscp.html#ga0c547b1948e833eb3ed53deea8cb3232">booktool_exportimscp_prepare_files</a> ($book, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:ga0c547b1948e833eb3ed53deea8cb3232"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d16/group__booktool__exportimscp.html#ga0c547b1948e833eb3ed53deea8cb3232">booktool_exportimscp_prepare_files</a> ($book, $context)</td></tr>
 <tr class="memdesc:ga0c547b1948e833eb3ed53deea8cb3232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare temp area with the files used by book html contents.  <br /></td></tr>
 <tr class="separator:ga0c547b1948e833eb3ed53deea8cb3232"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -143,7 +143,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$book</td><td>book instance </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../db/db4/classcontext__module.html">context_module</a></td><td class="paramname">$context</td><td></td></tr>
+    <tr><td class="paramtype">context_module</td><td class="paramname">$context</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -186,7 +186,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$chapter</td><td>the chapter to be exported </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../db/db4/classcontext__module.html">context_module</a></td><td class="paramname">$context</td><td>context the chapter belongs to </td></tr>
+    <tr><td class="paramtype">context_module</td><td class="paramname">$context</td><td>context the chapter belongs to </td></tr>
   </table>
   </dd>
 </dl>
@@ -266,7 +266,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$book</td><td>book instance </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../db/db4/classcontext__module.html">context_module</a></td><td class="paramname">$context</td><td></td></tr>
+    <tr><td class="paramtype">context_module</td><td class="paramname">$context</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -315,7 +315,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:51:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:52:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

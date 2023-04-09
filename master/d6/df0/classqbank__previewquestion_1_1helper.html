@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -69,30 +69,33 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a82ac5e8f61e3e16275cba0cf9f94e7d8"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df0/classqbank__previewquestion_1_1helper.html#a82ac5e8f61e3e16275cba0cf9f94e7d8">get_preview_extra_elements</a> (<a class="el" href="../../d7/da5/classquestion__definition.html">question_definition</a> $question, int $courseid)</td></tr>
 <tr class="memdesc:a82ac5e8f61e3e16275cba0cf9f94e7d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the extra elements for preview from qbank plugins.  <br /></td></tr>
 <tr class="separator:a82ac5e8f61e3e16275cba0cf9f94e7d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dcfafa6738be6d1fc9ccc9ae368383e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df0/classqbank__previewquestion_1_1helper.html#a7dcfafa6738be6d1fc9ccc9ae368383e">get_restart_id</a> (array $versions, int $restartversion)</td></tr>
+<tr class="memdesc:a7dcfafa6738be6d1fc9ccc9ae368383e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the question ID from the array of id =&gt; version that corresponds to the requested version.  <br /></td></tr>
+<tr class="separator:a7dcfafa6738be6d1fc9ccc9ae368383e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dd1b7685d3395fcad7e851c79a33c67"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df0/classqbank__previewquestion_1_1helper.html#a3dd1b7685d3395fcad7e851c79a33c67">is_latest</a> (string $version, string $questionbankentryid)</td></tr>
 <tr class="memdesc:a3dd1b7685d3395fcad7e851c79a33c67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if question is the latest version.  <br /></td></tr>
 <tr class="separator:a3dd1b7685d3395fcad7e851c79a33c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d01d4c6f9a8d53568457a1a19ac6db4"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df0/classqbank__previewquestion_1_1helper.html#a4d01d4c6f9a8d53568457a1a19ac6db4">load_versions</a> (string $questionbankentryid)</td></tr>
 <tr class="memdesc:a4d01d4c6f9a8d53568457a1a19ac6db4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads question version ids for current question.  <br /></td></tr>
 <tr class="separator:a4d01d4c6f9a8d53568457a1a19ac6db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a72c621e8297f17f8fb81d82813a41b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df0/classqbank__previewquestion_1_1helper.html#a2a72c621e8297f17f8fb81d82813a41b">question_preview_action_url</a> ($questionid, $qubaid, <a class="el" href="../../d8/db8/classqbank__previewquestion_1_1question__preview__options.html">question_preview_options</a> $options, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $returnurl=null)</td></tr>
-<tr class="memdesc:a2a72c621e8297f17f8fb81d82813a41b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The the URL to use for actions relating to this preview.  <br /></td></tr>
-<tr class="separator:a2a72c621e8297f17f8fb81d82813a41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf53120435c330884999b7ec9a81bcea"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df0/classqbank__previewquestion_1_1helper.html#acf53120435c330884999b7ec9a81bcea">question_preview_form_url</a> ($questionid, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $previewid=null, $returnurl=null)</td></tr>
+<tr class="memitem:a2d318981194e8720a1bf94533ed605c4"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df0/classqbank__previewquestion_1_1helper.html#a2d318981194e8720a1bf94533ed605c4">question_preview_action_url</a> ($questionid, $qubaid, <a class="el" href="../../d8/db8/classqbank__previewquestion_1_1question__preview__options.html">question_preview_options</a> $options, $context, $returnurl=null, $restartversion=null)</td></tr>
+<tr class="memdesc:a2d318981194e8720a1bf94533ed605c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The the URL to use for actions relating to this preview.  <br /></td></tr>
+<tr class="separator:a2d318981194e8720a1bf94533ed605c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf53120435c330884999b7ec9a81bcea"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df0/classqbank__previewquestion_1_1helper.html#acf53120435c330884999b7ec9a81bcea">question_preview_form_url</a> ($questionid, $context, $previewid=null, $returnurl=null)</td></tr>
 <tr class="memdesc:acf53120435c330884999b7ec9a81bcea"><td class="mdescLeft">&#160;</td><td class="mdescRight">The the URL to use for actions relating to this preview.  <br /></td></tr>
 <tr class="separator:acf53120435c330884999b7ec9a81bcea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fda457abcb674798fb73352c7b44eca"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df0/classqbank__previewquestion_1_1helper.html#a7fda457abcb674798fb73352c7b44eca">question_preview_popup_params</a> ()</td></tr>
 <tr class="memdesc:a7fda457abcb674798fb73352c7b44eca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Popup params for the question preview.  <br /></td></tr>
 <tr class="separator:a7fda457abcb674798fb73352c7b44eca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa41f730623f227f59fb28ff09c8eb3ce"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df0/classqbank__previewquestion_1_1helper.html#aa41f730623f227f59fb28ff09c8eb3ce">question_preview_question_pluginfile</a> ($course, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $component, $filearea, $qubaid, $slot, $args, $forcedownload, $fileoptions)</td></tr>
+<tr class="memitem:aa41f730623f227f59fb28ff09c8eb3ce"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df0/classqbank__previewquestion_1_1helper.html#aa41f730623f227f59fb28ff09c8eb3ce">question_preview_question_pluginfile</a> ($course, $context, $component, $filearea, $qubaid, $slot, $args, $forcedownload, $fileoptions)</td></tr>
 <tr class="memdesc:aa41f730623f227f59fb28ff09c8eb3ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called via pluginfile.php -&gt; question_pluginfile to serve files belonging to a question in a <a class="el" href="../../d3/dda/classquestion__attempt.html" title="Tracks an attempt at one particular question in a question_usage_by_activity.">question_attempt</a> when that attempt is a preview.  <br /></td></tr>
 <tr class="separator:aa41f730623f227f59fb28ff09c8eb3ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa6590bfff0232597a7dd63eed2a3daa"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df0/classqbank__previewquestion_1_1helper.html#afa6590bfff0232597a7dd63eed2a3daa">question_preview_url</a> ($questionid, $preferredbehaviour=null, $maxmark=null, $displayoptions=null, $variant=null, $<a class="el" href="../../da/d04/classcontext.html">context</a>=null, $returnurl=null, $version=null)</td></tr>
-<tr class="memdesc:afa6590bfff0232597a7dd63eed2a3daa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the URL for starting a new preview of a given question with the given options.  <br /></td></tr>
-<tr class="separator:afa6590bfff0232597a7dd63eed2a3daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a987f88095bf6b302e34d058e1f261f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df0/classqbank__previewquestion_1_1helper.html#a6a987f88095bf6b302e34d058e1f261f">restart_preview</a> ($previewid, $questionid, $displayoptions, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $returnurl=null, $version=null)</td></tr>
-<tr class="memdesc:a6a987f88095bf6b302e34d058e1f261f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the current preview, if any, and redirect to start a new preview.  <br /></td></tr>
-<tr class="separator:a6a987f88095bf6b302e34d058e1f261f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5260101fd635b3d9eeb2d95f4880b7d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df0/classqbank__previewquestion_1_1helper.html#ab5260101fd635b3d9eeb2d95f4880b7d">question_preview_url</a> ($questionid, $preferredbehaviour=null, $maxmark=null, $displayoptions=null, $variant=null, $context=null, $returnurl=null, $restartversion=null)</td></tr>
+<tr class="memdesc:ab5260101fd635b3d9eeb2d95f4880b7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the URL for starting a new preview of a given question with the given options.  <br /></td></tr>
+<tr class="separator:ab5260101fd635b3d9eeb2d95f4880b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d5a98f86357332e8c0b9f1026a2bf24"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df0/classqbank__previewquestion_1_1helper.html#a8d5a98f86357332e8c0b9f1026a2bf24">restart_preview</a> ($previewid, $questionid, $displayoptions, $context, $returnurl=null, $restartversion=null)</td></tr>
+<tr class="memdesc:a8d5a98f86357332e8c0b9f1026a2bf24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the current preview, if any, and redirect to start a new preview.  <br /></td></tr>
+<tr class="separator:a8d5a98f86357332e8c0b9f1026a2bf24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a82ac5e8f61e3e16275cba0cf9f94e7d8" name="a82ac5e8f61e3e16275cba0cf9f94e7d8"></a>
@@ -140,6 +143,58 @@ Static Public Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7dcfafa6738be6d1fc9ccc9ae368383e" name="a7dcfafa6738be6d1fc9ccc9ae368383e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dcfafa6738be6d1fc9ccc9ae368383e">&#9670;&#160;</a></span>get_restart_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static qbank_previewquestion\helper::get_restart_id </td>
+          <td>(</td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$versions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$restartversion</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the question ID from the array of id =&gt; version that corresponds to the requested version. </p>
+<p>If the requested version is question_preview_options::ALWAYS_LATEST, this will return the latest version.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$versions</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$restartversion</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">?int</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -237,8 +292,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2a72c621e8297f17f8fb81d82813a41b" name="a2a72c621e8297f17f8fb81d82813a41b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a72c621e8297f17f8fb81d82813a41b">&#9670;&#160;</a></span>question_preview_action_url()</h2>
+<a id="a2d318981194e8720a1bf94533ed605c4" name="a2d318981194e8720a1bf94533ed605c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d318981194e8720a1bf94533ed605c4">&#9670;&#160;</a></span>question_preview_action_url()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -274,7 +329,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$returnurl</em> = <code>null</code>&#160;</td>
+          <td class="paramname"><em>$returnurl</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$restartversion</em> = <code>null</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -297,6 +358,7 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramtype">question_preview_options</td><td class="paramname">$options</td><td>the options in use </td></tr>
     <tr><td class="paramtype">context</td><td class="paramname">$context</td><td>context for the question preview </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$returnurl</td><td>url of the page to return to </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$restartversion</td><td>version of the question to use when next restarting the preview. </td></tr>
   </table>
   </dd>
 </dl>
@@ -508,8 +570,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afa6590bfff0232597a7dd63eed2a3daa" name="afa6590bfff0232597a7dd63eed2a3daa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa6590bfff0232597a7dd63eed2a3daa">&#9670;&#160;</a></span>question_preview_url()</h2>
+<a id="ab5260101fd635b3d9eeb2d95f4880b7d" name="ab5260101fd635b3d9eeb2d95f4880b7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5260101fd635b3d9eeb2d95f4880b7d">&#9670;&#160;</a></span>question_preview_url()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -563,7 +625,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$version</em> = <code>null</code>&#160;</td>
+          <td class="paramname"><em>$restartversion</em> = <code>null</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -588,7 +650,7 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$variant</td><td>the variant of the question to preview. If null, one will be picked randomly </td></tr>
     <tr><td class="paramtype">object</td><td class="paramname">$context</td><td>context to run the preview in (affects things like filter settings, theme, lang, etc.) Defaults to $PAGE-&gt;context </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$returnurl</td><td>url of the page to return to </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$version</td><td>version of the question </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$restartversion</td><td>The version of the question to use when restarting the preview. </td></tr>
   </table>
   </dd>
 </dl>
@@ -601,8 +663,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6a987f88095bf6b302e34d058e1f261f" name="a6a987f88095bf6b302e34d058e1f261f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a987f88095bf6b302e34d058e1f261f">&#9670;&#160;</a></span>restart_preview()</h2>
+<a id="a8d5a98f86357332e8c0b9f1026a2bf24" name="a8d5a98f86357332e8c0b9f1026a2bf24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d5a98f86357332e8c0b9f1026a2bf24">&#9670;&#160;</a></span>restart_preview()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -644,7 +706,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$version</em> = <code>null</code>&#160;</td>
+          <td class="paramname"><em>$restartversion</em> = <code>null</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -667,7 +729,13 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramtype">object</td><td class="paramname">$displayoptions</td><td>display options for the question in preview </td></tr>
     <tr><td class="paramtype">object</td><td class="paramname">$context</td><td>context of the question for preview </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$returnurl</td><td>url of the page to return to </td></tr>
-    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$version</td><td>version of the question in preview </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$restartversion</td><td>version of the question to use when next restarting the preview. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -680,7 +748,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:54:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:55:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

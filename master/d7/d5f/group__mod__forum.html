@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -465,7 +465,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga8f01016e6d5c0757b8f1f50e6eea4369"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga8f01016e6d5c0757b8f1f50e6eea4369">forum_add_new_post</a> ($post, $mform, $unused=null)</td></tr>
 <tr class="memdesc:ga8f01016e6d5c0757b8f1f50e6eea4369"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new post in an existing discussion.  <br /></td></tr>
 <tr class="separator:ga8f01016e6d5c0757b8f1f50e6eea4369"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7026d1c00f47f3be17822b6f8b05246a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga7026d1c00f47f3be17822b6f8b05246a">forum_can_create_attachment</a> ($forum, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:ga7026d1c00f47f3be17822b6f8b05246a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga7026d1c00f47f3be17822b6f8b05246a">forum_can_create_attachment</a> ($forum, $context)</td></tr>
 <tr class="memdesc:ga7026d1c00f47f3be17822b6f8b05246a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the user can create attachments in a forum.  <br /></td></tr>
 <tr class="separator:ga7026d1c00f47f3be17822b6f8b05246a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6133f9915abeb1df4aecf76bb78b19ae"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga6133f9915abeb1df4aecf76bb78b19ae">forum_change_discussionid</a> ($postid, $discussionid)</td></tr>
@@ -544,7 +544,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9e1027aa4be120c01f7ea179314c26b2"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga9e1027aa4be120c01f7ea179314c26b2">forum_get_completion_state</a> ($course, $cm, $userid, $type)</td></tr>
 <tr class="memdesc:ga9e1027aa4be120c01f7ea179314c26b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains the automatic completion state for this forum based on any conditions in forum settings.  <br /></td></tr>
 <tr class="separator:ga9e1027aa4be120c01f7ea179314c26b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8d69090ac2fe5742ede298b7470ff2d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga8d69090ac2fe5742ede298b7470ff2d6">forum_get_context</a> ($forumid, $<a class="el" href="../../da/d04/classcontext.html">context</a>=null)</td></tr>
+<tr class="memitem:ga8d69090ac2fe5742ede298b7470ff2d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga8d69090ac2fe5742ede298b7470ff2d6">forum_get_context</a> ($forumid, $context=null)</td></tr>
 <tr class="memdesc:ga8d69090ac2fe5742ede298b7470ff2d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine the current context if one was not already specified.  <br /></td></tr>
 <tr class="separator:ga8d69090ac2fe5742ede298b7470ff2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2f632aae51b5d52a01ff42935e8209ce"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga2f632aae51b5d52a01ff42935e8209ce">forum_get_course_forum</a> ($courseid, $type)</td></tr>
@@ -586,10 +586,10 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga7340c6ba57c39b0f574defd15412a8b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all other caps used in module.  <br /></td></tr>
 <tr class="separator:ga7340c6ba57c39b0f574defd15412a8b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga39570321064f87fb53fcec3968646d83"><td class="memItemLeft" align="right" valign="top"><a id="ga39570321064f87fb53fcec3968646d83" name="ga39570321064f87fb53fcec3968646d83"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>forum_get_file_areas</b> ($course, $cm, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>forum_get_file_areas</b> ($course, $cm, $context)</td></tr>
 <tr class="separator:ga39570321064f87fb53fcec3968646d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac4fa1a97177552884456831d51ce5ee7"><td class="memItemLeft" align="right" valign="top"><a id="gac4fa1a97177552884456831d51ce5ee7" name="gac4fa1a97177552884456831d51ce5ee7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>forum_get_file_info</b> ($browser, $areas, $course, $cm, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $filearea, $itemid, $filepath, $filename)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>forum_get_file_info</b> ($browser, $areas, $course, $cm, $context, $filearea, $itemid, $filepath, $filename)</td></tr>
 <tr class="separator:gac4fa1a97177552884456831d51ce5ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga65278ec718884392fb7a971654634730"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga65278ec718884392fb7a971654634730">forum_get_firstpost_from_discussion</a> ($discussionid)</td></tr>
 <tr class="memdesc:ga65278ec718884392fb7a971654634730"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a discussion id, return the first post from the discussion.  <br /></td></tr>
@@ -634,7 +634,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga48de8314b5a0b1f89e3436ab593391e7"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga48de8314b5a0b1f89e3436ab593391e7">forum_get_recent_mod_activity</a> (&amp;$activities, &amp;$index, $timestart, $courseid, $cmid, $userid=0, $groupid=0)</td></tr>
 <tr class="memdesc:ga48de8314b5a0b1f89e3436ab593391e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all forum posts since a given time in specified forum.  <br /></td></tr>
 <tr class="separator:ga48de8314b5a0b1f89e3436ab593391e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga050a485d3e4e7200cbc8b0d24c3c3163"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga050a485d3e4e7200cbc8b0d24c3c3163">forum_get_subscribe_link</a> ($forum, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $messages=array(), $cantaccessagroup=false, $unused1=true, $backtoindex=false, $unused2=null)</td></tr>
+<tr class="memitem:ga050a485d3e4e7200cbc8b0d24c3c3163"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga050a485d3e4e7200cbc8b0d24c3c3163">forum_get_subscribe_link</a> ($forum, $context, $messages=array(), $cantaccessagroup=false, $unused1=true, $backtoindex=false, $unused2=null)</td></tr>
 <tr class="memdesc:ga050a485d3e4e7200cbc8b0d24c3c3163"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate and return the subscribe or unsubscribe link for a forum.  <br /></td></tr>
 <tr class="separator:ga050a485d3e4e7200cbc8b0d24c3c3163"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7c83f31d58f1436a2ab9da43a9c65a4e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga7c83f31d58f1436a2ab9da43a9c65a4e">forum_get_subscribed_forums</a> ()</td></tr>
@@ -677,7 +677,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gadce3558d207fba87b3ba29aa1341a65d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#gadce3558d207fba87b3ba29aa1341a65d">forum_grading_areas_list</a> ()</td></tr>
 <tr class="memdesc:gadce3558d207fba87b3ba29aa1341a65d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lists all gradable areas for the advanced grading methods gramework.  <br /></td></tr>
 <tr class="separator:gadce3558d207fba87b3ba29aa1341a65d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga80cfd1decc977daac9d71789eba63cf9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga80cfd1decc977daac9d71789eba63cf9">forum_instance_created</a> ($<a class="el" href="../../da/d04/classcontext.html">context</a>, $forum)</td></tr>
+<tr class="memitem:ga80cfd1decc977daac9d71789eba63cf9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga80cfd1decc977daac9d71789eba63cf9">forum_instance_created</a> ($context, $forum)</td></tr>
 <tr class="memdesc:ga80cfd1decc977daac9d71789eba63cf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle changes following the creation of a forum instance.  <br /></td></tr>
 <tr class="separator:ga80cfd1decc977daac9d71789eba63cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9558058baed5d0b4661ac87eeb7b497d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga9558058baed5d0b4661ac87eeb7b497d">forum_is_author_hidden</a> ($post, $forum)</td></tr>
@@ -710,7 +710,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gae303902d297c768e074dc5bed77b809a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of page types.  <br /></td></tr>
 <tr class="separator:gae303902d297c768e074dc5bed77b809a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab687ac5d0c6fbe972e474960aa6675b2"><td class="memItemLeft" align="right" valign="top"><a id="gab687ac5d0c6fbe972e474960aa6675b2" name="gab687ac5d0c6fbe972e474960aa6675b2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>forum_pluginfile</b> ($course, $cm, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $filearea, $args, $forcedownload, array $options=array())</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>forum_pluginfile</b> ($course, $cm, $context, $filearea, $args, $forcedownload, array $options=array())</td></tr>
 <tr class="separator:gab687ac5d0c6fbe972e474960aa6675b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa48789782904e0dae26bc6c5a23b3207"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#gaa48789782904e0dae26bc6c5a23b3207">forum_post_is_visible_privately</a> ($post, $cm)</td></tr>
 <tr class="memdesc:gaa48789782904e0dae26bc6c5a23b3207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the forum post is a private reply visible to this user.  <br /></td></tr>
@@ -777,7 +777,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gad29db410a7776ea87cf2f7f6c9cbd543"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#gad29db410a7776ea87cf2f7f6c9cbd543">forum_rss_delete_file</a> ($forum)</td></tr>
 <tr class="memdesc:gad29db410a7776ea87cf2f7f6c9cbd543"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a forum object, deletes all cached RSS files associated with it.  <br /></td></tr>
 <tr class="separator:gad29db410a7776ea87cf2f7f6c9cbd543"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga15f9396d2c940143d7ed87b3a49248ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga15f9396d2c940143d7ed87b3a49248ae">forum_rss_feed_contents</a> ($forum, $sql, $params, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:ga15f9396d2c940143d7ed87b3a49248ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga15f9396d2c940143d7ed87b3a49248ae">forum_rss_feed_contents</a> ($forum, $sql, $params, $context)</td></tr>
 <tr class="memdesc:ga15f9396d2c940143d7ed87b3a49248ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function return the XML rss contents about the forum It returns false if something is wrong.  <br /></td></tr>
 <tr class="separator:ga15f9396d2c940143d7ed87b3a49248ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad4125116a4c0cc028294addb12fab476"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#gad4125116a4c0cc028294addb12fab476">forum_rss_feed_discussions_sql</a> ($forum, $cm, $newsince=0)</td></tr>
@@ -786,7 +786,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga0e20d4a03b8680869ea19899792b01c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga0e20d4a03b8680869ea19899792b01c1">forum_rss_feed_posts_sql</a> ($forum, $cm, $newsince=0)</td></tr>
 <tr class="memdesc:ga0e20d4a03b8680869ea19899792b01c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the SQL query used to get the Post details from the forum table of the database.  <br /></td></tr>
 <tr class="separator:ga0e20d4a03b8680869ea19899792b01c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga99b46c5875820758306c665c3928e5e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga99b46c5875820758306c665c3928e5e2">forum_rss_get_feed</a> ($<a class="el" href="../../da/d04/classcontext.html">context</a>, $args)</td></tr>
+<tr class="memitem:ga99b46c5875820758306c665c3928e5e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga99b46c5875820758306c665c3928e5e2">forum_rss_get_feed</a> ($context, $args)</td></tr>
 <tr class="memdesc:ga99b46c5875820758306c665c3928e5e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the path to the cached rss feed contents.  <br /></td></tr>
 <tr class="separator:ga99b46c5875820758306c665c3928e5e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaaf247c45ec83f9fe900eb7a3e6f26da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#gaaaf247c45ec83f9fe900eb7a3e6f26da">forum_rss_get_group_sql</a> ($cm, $<a class="el" href="../../d0/de1/group__core.html#ga84b2144b9de9ead7e08f1711b1dca592">groupmode</a>, $currentgroup, $modcontext=null)</td></tr>
@@ -889,7 +889,7 @@ object&#160;</td><td class="memItemRight" valign="bottom"><b>forum_set_return</b
 <tr class="memitem:ga127eab060f200500d44250dc0ba114d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga127eab060f200500d44250dc0ba114d6">forum_trigger_content_uploaded_event</a> ($post, $cm, $name)</td></tr>
 <tr class="memdesc:ga127eab060f200500d44250dc0ba114d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends post content to plagiarism plugin.  <br /></td></tr>
 <tr class="separator:ga127eab060f200500d44250dc0ba114d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga63953ad3a6d5a7e080c2a7ae39f8e75f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga63953ad3a6d5a7e080c2a7ae39f8e75f">forum_trigger_post_updated_event</a> ($post, $discussion, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $forum)</td></tr>
+<tr class="memitem:ga63953ad3a6d5a7e080c2a7ae39f8e75f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga63953ad3a6d5a7e080c2a7ae39f8e75f">forum_trigger_post_updated_event</a> ($post, $discussion, $context, $forum)</td></tr>
 <tr class="memdesc:ga63953ad3a6d5a7e080c2a7ae39f8e75f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger post updated event.  <br /></td></tr>
 <tr class="separator:ga63953ad3a6d5a7e080c2a7ae39f8e75f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga60a78b8a2a6413fa00b971be2da0eaed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga60a78b8a2a6413fa00b971be2da0eaed">forum_unsubscribe</a> ()</td></tr>
@@ -909,24 +909,24 @@ object&#160;</td><td class="memItemRight" valign="bottom"><b>forum_set_return</b
 <tr class="memitem:ga95039dbc84bd2e24c46eac1c186d637f"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga95039dbc84bd2e24c46eac1c186d637f">forum_update_subscriptions_button</a> ($courseid, $forumid)</td></tr>
 <tr class="memdesc:ga95039dbc84bd2e24c46eac1c186d637f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the editing button on subscribers page.  <br /></td></tr>
 <tr class="separator:ga95039dbc84bd2e24c46eac1c186d637f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae38bd07bef53897dfdffadf6ba8e0018"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#gae38bd07bef53897dfdffadf6ba8e0018">forum_user_can_post</a> ($forum, $discussion, $user=NULL, $cm=NULL, $course=NULL, $<a class="el" href="../../da/d04/classcontext.html">context</a>=NULL)</td></tr>
+<tr class="memitem:gae38bd07bef53897dfdffadf6ba8e0018"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#gae38bd07bef53897dfdffadf6ba8e0018">forum_user_can_post</a> ($forum, $discussion, $user=NULL, $cm=NULL, $course=NULL, $context=NULL)</td></tr>
 <tr class="memdesc:gae38bd07bef53897dfdffadf6ba8e0018"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function checks whether the user can reply to posts in a forum discussion.  <br /></td></tr>
 <tr class="separator:gae38bd07bef53897dfdffadf6ba8e0018"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac46d02115ee355e062af4ad5301679fb"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#gac46d02115ee355e062af4ad5301679fb">forum_user_can_post_discussion</a> ($forum, $currentgroup=null, $unused=-1, $cm=NULL, $<a class="el" href="../../da/d04/classcontext.html">context</a>=NULL)</td></tr>
+<tr class="memitem:gac46d02115ee355e062af4ad5301679fb"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#gac46d02115ee355e062af4ad5301679fb">forum_user_can_post_discussion</a> ($forum, $currentgroup=null, $unused=-1, $cm=NULL, $context=NULL)</td></tr>
 <tr class="separator:gac46d02115ee355e062af4ad5301679fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa27e033c1757a312a6f5f7a72818985c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#gaa27e033c1757a312a6f5f7a72818985c">forum_user_can_reply_privately</a> (\<a class="el" href="../../db/db4/classcontext__module.html">context_module</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, stdClass $parent)</td></tr>
+<tr class="memitem:gaa27e033c1757a312a6f5f7a72818985c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#gaa27e033c1757a312a6f5f7a72818985c">forum_user_can_reply_privately</a> (\context_module $context, stdClass $parent)</td></tr>
 <tr class="memdesc:gaa27e033c1757a312a6f5f7a72818985c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the user can reply privately to the parent post.  <br /></td></tr>
 <tr class="separator:gaa27e033c1757a312a6f5f7a72818985c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga87a6d99005e2b9e4c6c1ddc358a00cfc"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga87a6d99005e2b9e4c6c1ddc358a00cfc">forum_user_can_see_discussion</a> ($forum, $discussion, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $user=NULL)</td></tr>
+<tr class="memitem:ga87a6d99005e2b9e4c6c1ddc358a00cfc"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga87a6d99005e2b9e4c6c1ddc358a00cfc">forum_user_can_see_discussion</a> ($forum, $discussion, $context, $user=NULL)</td></tr>
 <tr class="memdesc:ga87a6d99005e2b9e4c6c1ddc358a00cfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">@global object @uses DEBUG_DEVELOPER  <br /></td></tr>
 <tr class="separator:ga87a6d99005e2b9e4c6c1ddc358a00cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga047842ed086351e168026f6f3601828e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga047842ed086351e168026f6f3601828e">forum_user_can_see_group_discussion</a> ($discussion, $cm, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:ga047842ed086351e168026f6f3601828e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga047842ed086351e168026f6f3601828e">forum_user_can_see_group_discussion</a> ($discussion, $cm, $context)</td></tr>
 <tr class="memdesc:ga047842ed086351e168026f6f3601828e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check to ensure a user can view a group discussion.  <br /></td></tr>
 <tr class="separator:ga047842ed086351e168026f6f3601828e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0fec992cb682bc6f424d4cd48adb8f0b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga0fec992cb682bc6f424d4cd48adb8f0b">forum_user_can_see_post</a> ($forum, $discussion, $post, $user=null, $cm=null, $checkdeleted=true)</td></tr>
 <tr class="memdesc:ga0fec992cb682bc6f424d4cd48adb8f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a user can see the specified post.  <br /></td></tr>
 <tr class="separator:ga0fec992cb682bc6f424d4cd48adb8f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab07dabd9ebf4c1d4172553b362fd5a8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#gab07dabd9ebf4c1d4172553b362fd5a8a">forum_user_can_see_timed_discussion</a> ($discussion, $user, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:gab07dabd9ebf4c1d4172553b362fd5a8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#gab07dabd9ebf4c1d4172553b362fd5a8a">forum_user_can_see_timed_discussion</a> ($discussion, $user, $context)</td></tr>
 <tr class="memdesc:gab07dabd9ebf4c1d4172553b362fd5a8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check to ensure a user can view a timed discussion.  <br /></td></tr>
 <tr class="separator:gab07dabd9ebf4c1d4172553b362fd5a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaee86054a904eee3df12ae6bdb766ab39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#gaee86054a904eee3df12ae6bdb766ab39">forum_user_can_view_post</a> ()</td></tr>
@@ -944,7 +944,7 @@ object&#160;</td><td class="memItemRight" valign="bottom"><b>forum_set_return</b
 <tr class="separator:gaba75133fd34cf35ce359973b3e9a11e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaadce7ecc14ba28b91c7e368511651c53"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#gaadce7ecc14ba28b91c7e368511651c53">forum_user_outline</a> ($course, $user, $mod, $forum)</td></tr>
 <tr class="separator:gaadce7ecc14ba28b91c7e368511651c53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga837ced8a703ff88bc01f39165642e9ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga837ced8a703ff88bc01f39165642e9ff">forum_view</a> ($forum, $course, $cm, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:ga837ced8a703ff88bc01f39165642e9ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#ga837ced8a703ff88bc01f39165642e9ff">forum_view</a> ($forum, $course, $cm, $context)</td></tr>
 <tr class="memdesc:ga837ced8a703ff88bc01f39165642e9ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the activity completed (if required) and trigger the course_module_viewed event.  <br /></td></tr>
 <tr class="separator:ga837ced8a703ff88bc01f39165642e9ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac1a48c0f8004c1a9c8700c8c609fe45a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d5f/group__mod__forum.html#gac1a48c0f8004c1a9c8700c8c609fe45a">mod_forum_core_calendar_event_action_shows_item_count</a> (<a class="el" href="../../dd/d35/classcalendar__event.html">calendar_event</a> $event, $itemcount=0)</td></tr>
@@ -1628,7 +1628,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001050">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.0 <a href="https://tracker.moodle.org/browse/MDL-23479" class="el">MDL-23479</a> - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001051">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.0 <a href="https://tracker.moodle.org/browse/MDL-23479" class="el">MDL-23479</a> - please do not use this function any more. </dd></dl>
 
 </div>
 </div>
@@ -1767,7 +1767,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001083">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001084">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
 
 </div>
 </div>
@@ -1785,7 +1785,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001039">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 1.1 - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001040">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 1.1 - please do not use this function any more. </dd></dl>
 
 </div>
 </div>
@@ -1846,7 +1846,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001071">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001072">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
 
 </div>
 </div>
@@ -1864,7 +1864,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001070">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001071">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
 
 </div>
 </div>
@@ -2339,7 +2339,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001091">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3, when the block_course_overview block was removed. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001092">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3, when the block_course_overview block was removed. </dd></dl>
 
 </div>
 </div>
@@ -2368,7 +2368,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001062">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 use <a class="el" href="../../df/dd2/classmod__forum_1_1subscriptions.html#a6c1cecffe6e74b851d97f66fce44efc6" title="Set the forum subscription mode.">mod_forum::subscriptions::set_subscription_mode()</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001063">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 use <a class="el" href="../../df/dd2/classmod__forum_1_1subscriptions.html#a6c1cecffe6e74b851d97f66fce44efc6" title="Set the forum subscription mode.">mod_forum::subscriptions::set_subscription_mode()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -2436,7 +2436,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001045">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 1.9 <a href="https://tracker.moodle.org/browse/MDL-13303" class="el">MDL-13303</a> - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001046">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 1.9 <a href="https://tracker.moodle.org/browse/MDL-13303" class="el">MDL-13303</a> - please do not use this function any more. </dd></dl>
 
 </div>
 </div>
@@ -2479,7 +2479,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><div class="memdoc">
 
 <p>Obtains the automatic completion state for this forum based on any conditions in forum settings. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001086">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001087">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000278">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-71196" class="el">MDL-71196</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d3/d35/classmod__forum_1_1completion_1_1custom__completion.html">mod_forum::completion::custom_completion</a></dd></dl>
 <p>@global object </p><dl class="params"><dt>Parameters</dt><dd>
@@ -2527,17 +2527,17 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><div class="memdoc">
 
 <p>Determine the current context if one was not already specified. </p>
-<p>If a context of type <a class="el" href="../../db/db4/classcontext__module.html">context_module</a> is specified, it is immediately returned and not checked.</p>
+<p>If a context of type context_module is specified, it is immediately returned and not checked.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$forumid</td><td>The ID of the forum </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../db/db4/classcontext__module.html">context_module</a></td><td class="paramname">$context</td><td>The current context. </td></tr>
+    <tr><td class="paramtype">context_module</td><td class="paramname">$context</td><td>The current context. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../db/db4/classcontext__module.html">context_module</a></td><td>The context determined </td></tr>
+    <tr><td class="paramname">context_module</td><td>The context determined </td></tr>
   </table>
   </dd>
 </dl>
@@ -2803,7 +2803,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001046">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 1.9 <a href="https://tracker.moodle.org/browse/MDL-13303" class="el">MDL-13303</a> - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001047">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 1.9 <a href="https://tracker.moodle.org/browse/MDL-13303" class="el">MDL-13303</a> - please do not use this function any more. </dd></dl>
 
 </div>
 </div>
@@ -3166,7 +3166,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001063">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 use <a class="el" href="../../df/dd2/classmod__forum_1_1subscriptions.html#a2317a09c954496470e89ea523e59e82e" title="Returns the current subscription mode for the forum.">mod_forum::subscriptions::get_subscription_mode()</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001064">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 use <a class="el" href="../../df/dd2/classmod__forum_1_1subscriptions.html#a2317a09c954496470e89ea523e59e82e" title="Returns the current subscription mode for the forum.">mod_forum::subscriptions::get_subscription_mode()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -3330,7 +3330,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001044">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 1.7 - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001045">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 1.7 - please do not use this function any more. </dd></dl>
 
 </div>
 </div>
@@ -3348,7 +3348,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001065">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 use <a class="el" href="../../df/dd2/classmod__forum_1_1subscriptions.html#ac96f749d3a57351c6bf516f466a5d7ae" title="Returns an array of forums that the current user is subscribed to and is allowed to unsubscribe from.">mod_forum::subscriptions::get_unsubscribable_forums()</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001066">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 use <a class="el" href="../../df/dd2/classmod__forum_1_1subscriptions.html#ac96f749d3a57351c6bf516f466a5d7ae" title="Returns an array of forums that the current user is subscribed to and is allowed to unsubscribe from.">mod_forum::subscriptions::get_unsubscribable_forums()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -3530,7 +3530,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001066">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 use <a class="el" href="../../df/dd2/classmod__forum_1_1subscriptions.html#ad999db27d8c5e1a0546aca156facf7c2" title="Get the list of potential subscribers to a forum.">mod_forum::subscriptions::get_potential_subscribers()</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001067">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 use <a class="el" href="../../df/dd2/classmod__forum_1_1subscriptions.html#ad999db27d8c5e1a0546aca156facf7c2" title="Get the list of potential subscribers to a forum.">mod_forum::subscriptions::get_potential_subscribers()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -3548,7 +3548,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001047">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.0 <a href="https://tracker.moodle.org/browse/MDL-21657" class="el">MDL-21657</a> - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001048">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.0 <a href="https://tracker.moodle.org/browse/MDL-21657" class="el">MDL-21657</a> - please do not use this function any more. </dd></dl>
 
 </div>
 </div>
@@ -3749,7 +3749,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001064">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 use <a class="el" href="../../df/dd2/classmod__forum_1_1subscriptions.html#adcf3f3abb2349f789bef55c18cc61d97" title="Whether a user is subscribed to this forum, or a discussion within the forum.">mod_forum::subscriptions::is_subscribed</a> in combination wtih <a class="el" href="../../df/dd2/classmod__forum_1_1subscriptions.html#a7c2136a3d8effd6bfd62ffbf7ccb8ce6" title="Fill the forum subscription data for all forums that the specified userid can subscribe to in the spe...">mod_forum::subscriptions::fill_subscription_cache_for_course</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001065">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 use <a class="el" href="../../df/dd2/classmod__forum_1_1subscriptions.html#adcf3f3abb2349f789bef55c18cc61d97" title="Whether a user is subscribed to this forum, or a discussion within the forum.">mod_forum::subscriptions::is_subscribed</a> in combination wtih <a class="el" href="../../df/dd2/classmod__forum_1_1subscriptions.html#a7c2136a3d8effd6bfd62ffbf7ccb8ce6" title="Fill the forum subscription data for all forums that the specified userid can subscribe to in the spe...">mod_forum::subscriptions::fill_subscription_cache_for_course</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -3793,7 +3793,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001048">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.0 <a href="https://tracker.moodle.org/browse/MDL-14632" class="el">MDL-14632</a> - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001049">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.0 <a href="https://tracker.moodle.org/browse/MDL-14632" class="el">MDL-14632</a> - please do not use this function any more. </dd></dl>
 
 </div>
 </div>
@@ -3843,7 +3843,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001041">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 1.5 - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001042">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 1.5 - please do not use this function any more. </dd></dl>
 
 </div>
 </div>
@@ -3861,7 +3861,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001085">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001086">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8 </dd></dl>
 
 </div>
 </div>
@@ -4362,7 +4362,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><div class="memdoc">
 
 <p>Determine whether the forum is force subscribed. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001061">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 use <a class="el" href="../../df/dd2/classmod__forum_1_1subscriptions.html#a65d879630b156bbda348b0ec4e876af5" title="Helper to determine whether a forum has it&#39;s subscription mode set to forced subscription.">mod_forum::subscriptions::is_forcesubscribed()</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001062">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 use <a class="el" href="../../df/dd2/classmod__forum_1_1subscriptions.html#a65d879630b156bbda348b0ec4e876af5" title="Helper to determine whether a forum has it&#39;s subscription mode set to forced subscription.">mod_forum::subscriptions::is_forcesubscribed()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -4380,7 +4380,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001057">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 use <a class="el" href="../../df/dd2/classmod__forum_1_1subscriptions.html#adcf3f3abb2349f789bef55c18cc61d97" title="Whether a user is subscribed to this forum, or a discussion within the forum.">mod_forum::subscriptions::is_subscribed()</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001058">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 use <a class="el" href="../../df/dd2/classmod__forum_1_1subscriptions.html#adcf3f3abb2349f789bef55c18cc61d97" title="Whether a user is subscribed to this forum, or a discussion within the forum.">mod_forum::subscriptions::is_subscribed()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -4442,7 +4442,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001068">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.0 use <a class="el" href="../../d5/da8/classmod__forum_1_1output_1_1forum__post__email.html" title="Forum post renderable for use in e-mail.">mod_forum::output::forum_post_email</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001069">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.0 use <a class="el" href="../../d5/da8/classmod__forum_1_1output_1_1forum__post__email.html" title="Forum post renderable for use in e-mail.">mod_forum::output::forum_post_email</a> instead </dd></dl>
 
 </div>
 </div>
@@ -4460,7 +4460,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001069">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.0 use <a class="el" href="../../d5/da8/classmod__forum_1_1output_1_1forum__post__email.html" title="Forum post renderable for use in e-mail.">mod_forum::output::forum_post_email</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001070">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.0 use <a class="el" href="../../d5/da8/classmod__forum_1_1output_1_1forum__post__email.html" title="Forum post renderable for use in e-mail.">mod_forum::output::forum_post_email</a> instead </dd></dl>
 
 </div>
 </div>
@@ -4478,7 +4478,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001067">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.0 use <a class="el" href="../../d5/da8/classmod__forum_1_1output_1_1forum__post__email.html" title="Forum post renderable for use in e-mail.">mod_forum::output::forum_post_email</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001068">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.0 use <a class="el" href="../../d5/da8/classmod__forum_1_1output_1_1forum__post__email.html" title="Forum post renderable for use in e-mail.">mod_forum::output::forum_post_email</a> instead </dd></dl>
 
 </div>
 </div>
@@ -4633,7 +4633,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001073">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001074">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
 
 </div>
 </div>
@@ -4752,7 +4752,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001072">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001073">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
 
 </div>
 </div>
@@ -4856,7 +4856,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001082">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001083">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
 
 </div>
 </div>
@@ -4918,7 +4918,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001092">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3, when the block_course_overview block was removed. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001093">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3, when the block_course_overview block was removed. </dd></dl>
 
 </div>
 </div>
@@ -4936,7 +4936,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001078">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001079">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
 
 </div>
 </div>
@@ -4954,7 +4954,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001077">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001078">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
 
 </div>
 </div>
@@ -4972,7 +4972,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001076">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001077">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
 
 </div>
 </div>
@@ -4990,7 +4990,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001079">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001080">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
 
 </div>
 </div>
@@ -5008,7 +5008,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001081">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001082">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
 
 </div>
 </div>
@@ -5026,7 +5026,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001080">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001081">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
 
 </div>
 </div>
@@ -5782,7 +5782,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001084">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001085">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8 </dd></dl>
 
 </div>
 </div>
@@ -5996,7 +5996,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001056">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001057">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.6 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>shorten_text() </dd></dl>
 
 </div>
@@ -6015,7 +6015,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001075">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001076">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
 
 </div>
 </div>
@@ -6033,7 +6033,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001074">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001075">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 </dd></dl>
 
 </div>
 </div>
@@ -6051,7 +6051,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001058">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 use <a class="el" href="../../df/dd2/classmod__forum_1_1subscriptions.html#a2f37d2e7037abeb8170d1b55fbc35b6d" title="Adds user to the subscriber list.">mod_forum::subscriptions::subscribe_user()</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001059">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 use <a class="el" href="../../df/dd2/classmod__forum_1_1subscriptions.html#a2f37d2e7037abeb8170d1b55fbc35b6d" title="Adds user to the subscriber list.">mod_forum::subscriptions::subscribe_user()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -6069,7 +6069,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001060">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 use <a class="el" href="../../df/dd2/classmod__forum_1_1subscriptions.html#a345a7e3509f8d4ad02ac383a5e6438c8" title="Returns a list of user objects who are subscribed to this forum.">mod_forum::subscriptions::fetch_subscribed_users()</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001061">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 use <a class="el" href="../../df/dd2/classmod__forum_1_1subscriptions.html#a345a7e3509f8d4ad02ac383a5e6438c8" title="Returns a list of user objects who are subscribed to this forum.">mod_forum::subscriptions::fetch_subscribed_users()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -6225,7 +6225,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001040">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 1.5 - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001041">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 1.5 - please do not use this function any more. </dd></dl>
 
 </div>
 </div>
@@ -6243,7 +6243,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001049">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.0 <a href="https://tracker.moodle.org/browse/MDL-14113" class="el">MDL-14113</a> - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001050">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.0 <a href="https://tracker.moodle.org/browse/MDL-14113" class="el">MDL-14113</a> - please do not use this function any more. </dd></dl>
 
 </div>
 </div>
@@ -6261,7 +6261,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001042">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 1.6 - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001043">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 1.6 - please do not use this function any more. </dd></dl>
 
 </div>
 </div>
@@ -6279,7 +6279,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001043">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 1.6 - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001044">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 1.6 - please do not use this function any more. </dd></dl>
 
 </div>
 </div>
@@ -6449,7 +6449,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001052">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.0 <a href="https://tracker.moodle.org/browse/MDL-14113" class="el">MDL-14113</a> - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001053">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.0 <a href="https://tracker.moodle.org/browse/MDL-14113" class="el">MDL-14113</a> - please do not use this function any more. </dd></dl>
 
 </div>
 </div>
@@ -6467,7 +6467,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001051">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.0 <a href="https://tracker.moodle.org/browse/MDL-14113" class="el">MDL-14113</a> - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001052">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.0 <a href="https://tracker.moodle.org/browse/MDL-14113" class="el">MDL-14113</a> - please do not use this function any more. </dd></dl>
 
 </div>
 </div>
@@ -7011,7 +7011,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001059">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 use <a class="el" href="../../df/dd2/classmod__forum_1_1subscriptions.html#a9aa77a20936d0c9420dc3d284c5f3a65" title="Removes user from the subscriber list.">mod_forum::subscriptions::unsubscribe_user()</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001060">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 use <a class="el" href="../../df/dd2/classmod__forum_1_1subscriptions.html#a9aa77a20936d0c9420dc3d284c5f3a65" title="Removes user from the subscriber list.">mod_forum::subscriptions::unsubscribe_user()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -7214,7 +7214,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><div class="memdoc">
 
 <p>Prints the editing button on subscribers page. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001087">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001088">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000279">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-73956" class="el">MDL-73956</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4</dd></dl>
 <p>@global object </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -7375,7 +7375,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         <tr>
           <td class="memname">forum_user_can_reply_privately </td>
           <td>(</td>
-          <td class="paramtype">\<a class="el" href="../../db/db4/classcontext__module.html">context_module</a>&#160;</td>
+          <td class="paramtype">\context_module&#160;</td>
           <td class="paramname"><em>$context</em>, </td>
         </tr>
         <tr>
@@ -7395,7 +7395,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 <p>Check whether the user can reply privately to the parent post. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../db/db4/classcontext__module.html">context_module</a></td><td class="paramname">$context</td><td></td></tr>
+    <tr><td class="paramtype">context_module</td><td class="paramname">$context</td><td></td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$parent</td><td></td></tr>
   </table>
   </dd>
@@ -7651,7 +7651,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001054">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.4 use <a class="el" href="../../d7/d5f/group__mod__forum.html#ga0fec992cb682bc6f424d4cd48adb8f0b" title="Check whether a user can see the specified post.">forum_user_can_see_post()</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001055">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.4 use <a class="el" href="../../d7/d5f/group__mod__forum.html#ga0fec992cb682bc6f424d4cd48adb8f0b" title="Check whether a user can see the specified post.">forum_user_can_see_post()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -7720,7 +7720,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001053">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.3 <a href="https://tracker.moodle.org/browse/MDL-33166" class="el">MDL-33166</a> - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001054">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.3 <a href="https://tracker.moodle.org/browse/MDL-33166" class="el">MDL-33166</a> - please do not use this function any more. </dd></dl>
 
 </div>
 </div>
@@ -8853,14 +8853,14 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><div class="memdoc">
 
 <p>FORUM_TRACKING_ON - deprecated alias for FORUM_TRACKING_FORCED. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001055">Deprecated:</a></b></dt><dd>since 2.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001056">Deprecated:</a></b></dt><dd>since 2.6 </dd></dl>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:51:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:52:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

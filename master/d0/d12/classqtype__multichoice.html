@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -133,7 +133,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac9b372edf5998eeb1e4c844217bb47a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d04/classquestion__type.html#ac9b372edf5998eeb1e4c844217bb47a6">has_html_answers</a> ()</td></tr>
 <tr class="separator:ac9b372edf5998eeb1e4c844217bb47a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a874c8fc7f56b5c1f5e4ab682eeaa49b0"><td class="memItemLeft" align="right" valign="top"><a id="a874c8fc7f56b5c1f5e4ab682eeaa49b0" name="a874c8fc7f56b5c1f5e4ab682eeaa49b0"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>import_file</b> ($<a class="el" href="../../da/d04/classcontext.html">context</a>, $component, $filearea, $itemid, $file)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>import_file</b> ($context, $component, $filearea, $itemid, $file)</td></tr>
 <tr class="separator:a874c8fc7f56b5c1f5e4ab682eeaa49b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1e89ddfbed5a21719be05fd44348372"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d04/classquestion__type.html#ad1e89ddfbed5a21719be05fd44348372">import_from_xml</a> ($data, $question, <a class="el" href="../../d8/d65/classqformat__xml.html">qformat_xml</a> $format, $extra=null)</td></tr>
 <tr class="separator:ad1e89ddfbed5a21719be05fd44348372"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,16 +224,16 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a43befb11fa674352fab405afef135678"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d04/classquestion__type.html#a43befb11fa674352fab405afef135678">delete_files_in_hints</a> ($questionid, $contextid)</td></tr>
 <tr class="memdesc:a43befb11fa674352fab405afef135678"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete all the files belonging to this question's hints.  <br /></td></tr>
 <tr class="separator:a43befb11fa674352fab405afef135678"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe53368517bffdd5342f8981958cdd48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d04/classquestion__type.html#afe53368517bffdd5342f8981958cdd48">fill_answer_fields</a> ($answer, $questiondata, $key, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:afe53368517bffdd5342f8981958cdd48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d04/classquestion__type.html#afe53368517bffdd5342f8981958cdd48">fill_answer_fields</a> ($answer, $questiondata, $key, $context)</td></tr>
 <tr class="memdesc:afe53368517bffdd5342f8981958cdd48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return $answer, filling necessary fields for the question_answers table.  <br /></td></tr>
 <tr class="separator:afe53368517bffdd5342f8981958cdd48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33dcf8191004c037045a8a910cd677f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d04/classquestion__type.html#a33dcf8191004c037045a8a910cd677f7">fill_extra_answer_fields</a> ($answerextra, $questiondata, $key, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $extraanswerfields)</td></tr>
+<tr class="memitem:a33dcf8191004c037045a8a910cd677f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d04/classquestion__type.html#a33dcf8191004c037045a8a910cd677f7">fill_extra_answer_fields</a> ($answerextra, $questiondata, $key, $context, $extraanswerfields)</td></tr>
 <tr class="memdesc:a33dcf8191004c037045a8a910cd677f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return $answerextra, filling necessary fields for the extra answer fields table.  <br /></td></tr>
 <tr class="separator:a33dcf8191004c037045a8a910cd677f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cf9bef414f4dd58b2ddede4935581cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d04/classquestion__type.html#a5cf9bef414f4dd58b2ddede4935581cb">get_context_by_category_id</a> ($category)</td></tr>
 <tr class="memdesc:a5cf9bef414f4dd58b2ddede4935581cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get question context by category id.  <br /></td></tr>
 <tr class="separator:a5cf9bef414f4dd58b2ddede4935581cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a828f484cd93d464dd9719b29c14c9593"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d04/classquestion__type.html#a828f484cd93d464dd9719b29c14c9593">import_or_save_files</a> ($field, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $component, $filearea, $itemid)</td></tr>
+<tr class="memitem:a828f484cd93d464dd9719b29c14c9593"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d04/classquestion__type.html#a828f484cd93d464dd9719b29c14c9593">import_or_save_files</a> ($field, $context, $component, $filearea, $itemid)</td></tr>
 <tr class="memdesc:a828f484cd93d464dd9719b29c14c9593"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the file belonging to one text field.  <br /></td></tr>
 <tr class="separator:a828f484cd93d464dd9719b29c14c9593"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37b1e2f4c126709011d023440480f81b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d04/classquestion__type.html#a37b1e2f4c126709011d023440480f81b">initialise_combined_feedback</a> (<a class="el" href="../../d7/da5/classquestion__definition.html">question_definition</a> $question, $questiondata, $withparts=false)</td></tr>
@@ -278,7 +278,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aa4cded47a4c537903edc1bc84630b832"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d04/classquestion__type.html#aa4cded47a4c537903edc1bc84630b832">move_files_in_hints</a> ($questionid, $oldcontextid, $newcontextid)</td></tr>
 <tr class="memdesc:aa4cded47a4c537903edc1bc84630b832"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move all the files belonging to this question's hints when the question is moved from one context to another.  <br /></td></tr>
 <tr class="separator:aa4cded47a4c537903edc1bc84630b832"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3de11a248fda9a93fe46710284a86a32"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d04/classquestion__type.html#a3de11a248fda9a93fe46710284a86a32">save_combined_feedback_helper</a> ($options, $formdata, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $withparts=false)</td></tr>
+<tr class="memitem:a3de11a248fda9a93fe46710284a86a32"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d04/classquestion__type.html#a3de11a248fda9a93fe46710284a86a32">save_combined_feedback_helper</a> ($options, $formdata, $context, $withparts=false)</td></tr>
 <tr class="memdesc:a3de11a248fda9a93fe46710284a86a32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can be used to <a class="el" href="../../d1/d04/classquestion__type.html#a19fea09820a3fe5a0a2597e4f0670607">save_question_options()</a> to transfer the combined feedback fields from $formdata to $options.  <br /></td></tr>
 <tr class="separator:a3de11a248fda9a93fe46710284a86a32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab48d7120fffbb5aab2590b9363501b5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d04/classquestion__type.html#ab48d7120fffbb5aab2590b9363501b5f">save_hint_options</a> ($formdata, $number, $withparts)</td></tr>
@@ -3253,7 +3253,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:53:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:54:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

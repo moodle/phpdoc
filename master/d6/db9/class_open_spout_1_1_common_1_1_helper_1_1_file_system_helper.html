@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -59,8 +59,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../db/d2e/class_open_spout_1_1_common_1_1_helper_1_1_file_system_helper-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">OpenSpout\Common\Helper\FileSystemHelper Class Reference</div></div>
 </div><!--header-->
@@ -71,9 +69,7 @@ Inheritance diagram for OpenSpout\Common\Helper\FileSystemHelper:</div>
  <div class="center">
   <img src="../../d6/db9/class_open_spout_1_1_common_1_1_helper_1_1_file_system_helper.png" usemap="#OpenSpout_5CCommon_5CHelper_5CFileSystemHelper_map" alt=""/>
   <map id="OpenSpout_5CCommon_5CHelper_5CFileSystemHelper_map" name="OpenSpout_5CCommon_5CHelper_5CFileSystemHelper_map">
-<area href="../../d1/d1a/interface_open_spout_1_1_common_1_1_helper_1_1_file_system_helper_interface.html" alt="OpenSpout\Common\Helper\FileSystemHelperInterface" shape="rect" coords="166,0,488,24"/>
-<area href="../../dd/d53/class_open_spout_1_1_writer_1_1_o_d_s_1_1_helper_1_1_file_system_helper.html" alt="OpenSpout\Writer\ODS\Helper\FileSystemHelper" shape="rect" coords="0,112,322,136"/>
-<area href="../../d3/dfd/class_open_spout_1_1_writer_1_1_x_l_s_x_1_1_helper_1_1_file_system_helper.html" alt="OpenSpout\Writer\XLSX\Helper\FileSystemHelper" shape="rect" coords="332,112,654,136"/>
+<area href="../../d1/d1a/interface_open_spout_1_1_common_1_1_helper_1_1_file_system_helper_interface.html" alt="OpenSpout\Common\Helper\FileSystemHelperInterface" shape="rect" coords="0,0,322,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -81,31 +77,21 @@ Inheritance diagram for OpenSpout\Common\Helper\FileSystemHelper:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a03761e1c27b6f3192d0dec1a926c5405"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db9/class_open_spout_1_1_common_1_1_helper_1_1_file_system_helper.html#a03761e1c27b6f3192d0dec1a926c5405">__construct</a> (string $baseFolderPath)</td></tr>
 <tr class="separator:a03761e1c27b6f3192d0dec1a926c5405"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58c217c10ecaa896b75a611968ea2ad0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db9/class_open_spout_1_1_common_1_1_helper_1_1_file_system_helper.html#a58c217c10ecaa896b75a611968ea2ad0">createFileWithContents</a> ($parentFolderPath, $fileName, $fileContents)</td></tr>
-<tr class="memdesc:a58c217c10ecaa896b75a611968ea2ad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a file with the given name and content in the given folder.  <br /></td></tr>
-<tr class="separator:a58c217c10ecaa896b75a611968ea2ad0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a566228d5794d9b75e9f456be717ad0c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db9/class_open_spout_1_1_common_1_1_helper_1_1_file_system_helper.html#a566228d5794d9b75e9f456be717ad0c9">createFolder</a> ($parentFolderPath, $folderName)</td></tr>
-<tr class="memdesc:a566228d5794d9b75e9f456be717ad0c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty folder with the given name under the given parent folder.  <br /></td></tr>
-<tr class="separator:a566228d5794d9b75e9f456be717ad0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29dd82e1096ae702491e59003b542f03"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db9/class_open_spout_1_1_common_1_1_helper_1_1_file_system_helper.html#a29dd82e1096ae702491e59003b542f03">deleteFile</a> ($filePath)</td></tr>
-<tr class="memdesc:a29dd82e1096ae702491e59003b542f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the file at the given path.  <br /></td></tr>
-<tr class="separator:a29dd82e1096ae702491e59003b542f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93239ba56929417a92873fc88649b964"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db9/class_open_spout_1_1_common_1_1_helper_1_1_file_system_helper.html#a93239ba56929417a92873fc88649b964">deleteFolderRecursively</a> ($folderPath)</td></tr>
-<tr class="memdesc:a93239ba56929417a92873fc88649b964"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the folder at the given path as well as all its contents.  <br /></td></tr>
-<tr class="separator:a93239ba56929417a92873fc88649b964"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:add6e3dd4e2e6c59c36e8ee7b8752e82a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db9/class_open_spout_1_1_common_1_1_helper_1_1_file_system_helper.html#add6e3dd4e2e6c59c36e8ee7b8752e82a">throwIfOperationNotInBaseFolder</a> (string $operationFolderPath)</td></tr>
-<tr class="memdesc:add6e3dd4e2e6c59c36e8ee7b8752e82a"><td class="mdescLeft">&#160;</td><td class="mdescRight">All I/O operations must occur inside the base folder, for security reasons.  <br /></td></tr>
-<tr class="separator:add6e3dd4e2e6c59c36e8ee7b8752e82a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:ab8ed6cf2d3752f151c3d72b91f8bf0c4"><td class="memItemLeft" align="right" valign="top"><a id="ab8ed6cf2d3752f151c3d72b91f8bf0c4" name="ab8ed6cf2d3752f151c3d72b91f8bf0c4"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>$baseFolderRealPath</b></td></tr>
-<tr class="memdesc:ab8ed6cf2d3752f151c3d72b91f8bf0c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Real path of the base folder where all the I/O can occur. <br /></td></tr>
-<tr class="separator:ab8ed6cf2d3752f151c3d72b91f8bf0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86b5fe01aa45f19f375e2b3666b8efd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db9/class_open_spout_1_1_common_1_1_helper_1_1_file_system_helper.html#a86b5fe01aa45f19f375e2b3666b8efd7">createFileWithContents</a> (string $parentFolderPath, string $fileName, string $fileContents)</td></tr>
+<tr class="memdesc:a86b5fe01aa45f19f375e2b3666b8efd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a file with the given name and content in the given folder.  <br /></td></tr>
+<tr class="separator:a86b5fe01aa45f19f375e2b3666b8efd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6179d33a93d62d568f8d4077c1d5486b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db9/class_open_spout_1_1_common_1_1_helper_1_1_file_system_helper.html#a6179d33a93d62d568f8d4077c1d5486b">createFolder</a> (string $parentFolderPath, string $folderName)</td></tr>
+<tr class="memdesc:a6179d33a93d62d568f8d4077c1d5486b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an empty folder with the given name under the given parent folder.  <br /></td></tr>
+<tr class="separator:a6179d33a93d62d568f8d4077c1d5486b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a136c526bb62527266d711edb5c66c3de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db9/class_open_spout_1_1_common_1_1_helper_1_1_file_system_helper.html#a136c526bb62527266d711edb5c66c3de">deleteFile</a> (string $filePath)</td></tr>
+<tr class="memdesc:a136c526bb62527266d711edb5c66c3de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the file at the given path.  <br /></td></tr>
+<tr class="separator:a136c526bb62527266d711edb5c66c3de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad77635d894ddf211d21bf77085a20266"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db9/class_open_spout_1_1_common_1_1_helper_1_1_file_system_helper.html#ad77635d894ddf211d21bf77085a20266">deleteFolderRecursively</a> (string $folderPath)</td></tr>
+<tr class="memdesc:ad77635d894ddf211d21bf77085a20266"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the folder at the given path as well as all its contents.  <br /></td></tr>
+<tr class="separator:ad77635d894ddf211d21bf77085a20266"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa79e69933dda01f7076d64485251f5dc"><td class="memItemLeft" align="right" valign="top"><a id="aa79e69933dda01f7076d64485251f5dc" name="aa79e69933dda01f7076d64485251f5dc"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>getBaseFolderRealPath</b> ()</td></tr>
+<tr class="separator:aa79e69933dda01f7076d64485251f5dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a03761e1c27b6f3192d0dec1a926c5405" name="a03761e1c27b6f3192d0dec1a926c5405"></a>
@@ -133,8 +119,8 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$baseFolderRealPath
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a58c217c10ecaa896b75a611968ea2ad0" name="a58c217c10ecaa896b75a611968ea2ad0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58c217c10ecaa896b75a611968ea2ad0">&#9670;&#160;</a></span>createFileWithContents()</h2>
+<a id="a86b5fe01aa45f19f375e2b3666b8efd7" name="a86b5fe01aa45f19f375e2b3666b8efd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86b5fe01aa45f19f375e2b3666b8efd7">&#9670;&#160;</a></span>createFileWithContents()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -142,19 +128,19 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$baseFolderRealPath
         <tr>
           <td class="memname">OpenSpout\Common\Helper\FileSystemHelper::createFileWithContents </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$parentFolderPath</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$fileName</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$fileContents</em>&#160;</td>
         </tr>
         <tr>
@@ -175,25 +161,25 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$baseFolderRealPath
   </table>
   </dd>
 </dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../db/d1f/class_open_spout_1_1_common_1_1_exception_1_1_i_o_exception.html">OpenSpout::Common::Exception::IOException</a></td><td>If unable to create the file or if the file path is not inside of the base folder</td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">string</td><td>Path of the created file </td></tr>
+    <tr><td class="paramname">string</td><td>Path of the created file</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../db/d1f/class_open_spout_1_1_common_1_1_exception_1_1_i_o_exception.html">OpenSpout::Common::Exception::IOException</a></td><td>If unable to create the file or if the file path is not inside of the base folder </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="../../d1/d1a/interface_open_spout_1_1_common_1_1_helper_1_1_file_system_helper_interface.html#a5add607e8b4f8bd54d749aedd4406a89">OpenSpout\Common\Helper\FileSystemHelperInterface</a>.</p>
+<p>Implements <a class="el" href="../../d1/d1a/interface_open_spout_1_1_common_1_1_helper_1_1_file_system_helper_interface.html#a44bb82ad38612d83f2f916478d02e0c1">OpenSpout\Common\Helper\FileSystemHelperInterface</a>.</p>
 
 </div>
 </div>
-<a id="a566228d5794d9b75e9f456be717ad0c9" name="a566228d5794d9b75e9f456be717ad0c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a566228d5794d9b75e9f456be717ad0c9">&#9670;&#160;</a></span>createFolder()</h2>
+<a id="a6179d33a93d62d568f8d4077c1d5486b" name="a6179d33a93d62d568f8d4077c1d5486b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6179d33a93d62d568f8d4077c1d5486b">&#9670;&#160;</a></span>createFolder()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -201,13 +187,13 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$baseFolderRealPath
         <tr>
           <td class="memname">OpenSpout\Common\Helper\FileSystemHelper::createFolder </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$parentFolderPath</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$folderName</em>&#160;</td>
         </tr>
         <tr>
@@ -226,25 +212,25 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$baseFolderRealPath
   </table>
   </dd>
 </dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../db/d1f/class_open_spout_1_1_common_1_1_exception_1_1_i_o_exception.html">OpenSpout::Common::Exception::IOException</a></td><td>If unable to create the folder or if the folder path is not inside of the base folder</td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">string</td><td>Path of the created folder </td></tr>
+    <tr><td class="paramname">string</td><td>Path of the created folder</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../db/d1f/class_open_spout_1_1_common_1_1_exception_1_1_i_o_exception.html">OpenSpout::Common::Exception::IOException</a></td><td>If unable to create the folder or if the folder path is not inside of the base folder </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="../../d1/d1a/interface_open_spout_1_1_common_1_1_helper_1_1_file_system_helper_interface.html#a742fae79f447511f6a13efb70612dac3">OpenSpout\Common\Helper\FileSystemHelperInterface</a>.</p>
+<p>Implements <a class="el" href="../../d1/d1a/interface_open_spout_1_1_common_1_1_helper_1_1_file_system_helper_interface.html#a4c74ba5a37ddbf20c10ba1e9ada607cf">OpenSpout\Common\Helper\FileSystemHelperInterface</a>.</p>
 
 </div>
 </div>
-<a id="a29dd82e1096ae702491e59003b542f03" name="a29dd82e1096ae702491e59003b542f03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29dd82e1096ae702491e59003b542f03">&#9670;&#160;</a></span>deleteFile()</h2>
+<a id="a136c526bb62527266d711edb5c66c3de" name="a136c526bb62527266d711edb5c66c3de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a136c526bb62527266d711edb5c66c3de">&#9670;&#160;</a></span>deleteFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -252,7 +238,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$baseFolderRealPath
         <tr>
           <td class="memname">OpenSpout\Common\Helper\FileSystemHelper::deleteFile </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$filePath</em></td><td>)</td>
           <td></td>
         </tr>
@@ -273,12 +259,12 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$baseFolderRealPath
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="../../d1/d1a/interface_open_spout_1_1_common_1_1_helper_1_1_file_system_helper_interface.html#a717c4879d59286c2ee51339e06ff464a">OpenSpout\Common\Helper\FileSystemHelperInterface</a>.</p>
+<p>Implements <a class="el" href="../../d1/d1a/interface_open_spout_1_1_common_1_1_helper_1_1_file_system_helper_interface.html#a31116bcb4ce83c0a5d0270220964445f">OpenSpout\Common\Helper\FileSystemHelperInterface</a>.</p>
 
 </div>
 </div>
-<a id="a93239ba56929417a92873fc88649b964" name="a93239ba56929417a92873fc88649b964"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93239ba56929417a92873fc88649b964">&#9670;&#160;</a></span>deleteFolderRecursively()</h2>
+<a id="ad77635d894ddf211d21bf77085a20266" name="ad77635d894ddf211d21bf77085a20266"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad77635d894ddf211d21bf77085a20266">&#9670;&#160;</a></span>deleteFolderRecursively()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -286,7 +272,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$baseFolderRealPath
         <tr>
           <td class="memname">OpenSpout\Common\Helper\FileSystemHelper::deleteFolderRecursively </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$folderPath</em></td><td>)</td>
           <td></td>
         </tr>
@@ -307,48 +293,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$baseFolderRealPath
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="../../d1/d1a/interface_open_spout_1_1_common_1_1_helper_1_1_file_system_helper_interface.html#a70343bb6f9201f4e3501743758d14d71">OpenSpout\Common\Helper\FileSystemHelperInterface</a>.</p>
-
-</div>
-</div>
-<a id="add6e3dd4e2e6c59c36e8ee7b8752e82a" name="add6e3dd4e2e6c59c36e8ee7b8752e82a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add6e3dd4e2e6c59c36e8ee7b8752e82a">&#9670;&#160;</a></span>throwIfOperationNotInBaseFolder()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Common\Helper\FileSystemHelper::throwIfOperationNotInBaseFolder </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$operationFolderPath</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>All I/O operations must occur inside the base folder, for security reasons. </p>
-<p>This function will throw an exception if the folder where the I/O operation should occur is not inside the base folder.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$operationFolderPath</td><td>The path of the folder where the I/O operation should occur</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../db/d1f/class_open_spout_1_1_common_1_1_exception_1_1_i_o_exception.html">OpenSpout::Common::Exception::IOException</a></td><td>If the folder where the I/O operation should occur is not inside the base folder or the base folder does not exist </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Implements <a class="el" href="../../d1/d1a/interface_open_spout_1_1_common_1_1_helper_1_1_file_system_helper_interface.html#a36853db8ebf36e88d3cf9acadadd1caa">OpenSpout\Common\Helper\FileSystemHelperInterface</a>.</p>
 
 </div>
 </div>
@@ -358,7 +303,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$baseFolderRealPath
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:54:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:55:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

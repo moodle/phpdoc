@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -73,7 +73,7 @@ Inheritance diagram for gradingform_rubric_generator:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7654f75b2051e9cde8f8687375511744"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db5/classgradingform__rubric__generator.html#a7654f75b2051e9cde8f8687375511744">create_instance</a> (<a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, string $component, string $area, string $name, string $description, array $criteria)</td></tr>
+<tr class="memitem:a7654f75b2051e9cde8f8687375511744"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db5/classgradingform__rubric__generator.html#a7654f75b2051e9cde8f8687375511744">create_instance</a> (context $context, string $component, string $area, string $name, string $description, array $criteria)</td></tr>
 <tr class="memdesc:a7654f75b2051e9cde8f8687375511744"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an instance of a rubric.  <br /></td></tr>
 <tr class="separator:a7654f75b2051e9cde8f8687375511744"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c9bc65f29f90528c11c868d9298e267"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db5/classgradingform__rubric__generator.html#a0c9bc65f29f90528c11c868d9298e267">get_level_and_criterion_for_values</a> (<a class="el" href="../../d5/d31/classgradingform__controller.html">gradingform_controller</a> $controller, string $description, float $score)</td></tr>
@@ -85,7 +85,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2db0f4300279370b67be764e04803675"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db5/classgradingform__rubric__generator.html#a2db0f4300279370b67be764e04803675">get_test_form_data</a> (<a class="el" href="../../dc/d1b/classgradingform__rubric__controller.html">gradingform_rubric_controller</a> $controller, int $itemid, float $spellingscore, string $spellingremark, float $picturescore, string $pictureremark)</td></tr>
 <tr class="memdesc:a2db0f4300279370b67be764e04803675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch a set of sample data.  <br /></td></tr>
 <tr class="separator:a2db0f4300279370b67be764e04803675"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae24a6c448893b060dcb9bce89afa9e36"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db5/classgradingform__rubric__generator.html#ae24a6c448893b060dcb9bce89afa9e36">get_test_rubric</a> (<a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, string $component, string $area)</td></tr>
+<tr class="memitem:ae24a6c448893b060dcb9bce89afa9e36"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db5/classgradingform__rubric__generator.html#ae24a6c448893b060dcb9bce89afa9e36">get_test_rubric</a> (context $context, string $component, string $area)</td></tr>
 <tr class="memdesc:ae24a6c448893b060dcb9bce89afa9e36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a rubric controller with sample data required for testing of this class.  <br /></td></tr>
 <tr class="separator:ae24a6c448893b060dcb9bce89afa9e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81093fef9b263083e0a5b097744c27d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfb/classcomponent__generator__base.html#a81093fef9b263083e0a5b097744c27d1">reset</a> ()</td></tr>
@@ -120,7 +120,7 @@ testing_data_generator&#160;</td><td class="memItemRight" valign="bottom"><b>$da
         <tr>
           <td class="memname">gradingform_rubric_generator::create_instance </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramtype">context&#160;</td>
           <td class="paramname"><em>$context</em>, </td>
         </tr>
         <tr>
@@ -461,7 +461,7 @@ testing_data_generator&#160;</td><td class="memItemRight" valign="bottom"><b>$da
         <tr>
           <td class="memname">gradingform_rubric_generator::get_test_rubric </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramtype">context&#160;</td>
           <td class="paramname"><em>$context</em>, </td>
         </tr>
         <tr>
@@ -578,7 +578,7 @@ testing_data_generator&#160;</td><td class="memItemRight" valign="bottom"><b>$da
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:52:58 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:53:57 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

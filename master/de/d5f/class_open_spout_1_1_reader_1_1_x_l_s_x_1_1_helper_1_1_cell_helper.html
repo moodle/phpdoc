@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -59,7 +59,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="../../db/da5/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_helper_1_1_cell_helper-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">OpenSpout\Reader\XLSX\Helper\CellHelper Class Reference</div></div>
 </div><!--header-->
@@ -67,19 +66,13 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac57e55d0fdeaf5bee0a7af041451eb31"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5f/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_helper_1_1_cell_helper.html#ac57e55d0fdeaf5bee0a7af041451eb31">getColumnIndexFromCellIndex</a> ($cellIndex)</td></tr>
-<tr class="memdesc:ac57e55d0fdeaf5bee0a7af041451eb31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the base 10 column index associated to the cell index (base 26).  <br /></td></tr>
-<tr class="separator:ac57e55d0fdeaf5bee0a7af041451eb31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
-Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:affa90bf47eb3c79eff6a57cc2ad149af"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5f/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_helper_1_1_cell_helper.html#affa90bf47eb3c79eff6a57cc2ad149af">isValidCellIndex</a> ($cellIndex)</td></tr>
-<tr class="memdesc:affa90bf47eb3c79eff6a57cc2ad149af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether a cell index is valid, in an Excel world.  <br /></td></tr>
-<tr class="separator:affa90bf47eb3c79eff6a57cc2ad149af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72083293efa19f78ea35cee4c476f61c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d5f/class_open_spout_1_1_reader_1_1_x_l_s_x_1_1_helper_1_1_cell_helper.html#a72083293efa19f78ea35cee4c476f61c">getColumnIndexFromCellIndex</a> (string $cellIndex)</td></tr>
+<tr class="memdesc:a72083293efa19f78ea35cee4c476f61c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the base 10 column index associated to the cell index (base 26).  <br /></td></tr>
+<tr class="separator:a72083293efa19f78ea35cee4c476f61c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac57e55d0fdeaf5bee0a7af041451eb31" name="ac57e55d0fdeaf5bee0a7af041451eb31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac57e55d0fdeaf5bee0a7af041451eb31">&#9670;&#160;</a></span>getColumnIndexFromCellIndex()</h2>
+<a id="a72083293efa19f78ea35cee4c476f61c" name="a72083293efa19f78ea35cee4c476f61c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72083293efa19f78ea35cee4c476f61c">&#9670;&#160;</a></span>getColumnIndexFromCellIndex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -90,7 +83,7 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static OpenSpout\Reader\XLSX\Helper\CellHelper::getColumnIndexFromCellIndex </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$cellIndex</em></td><td>)</td>
           <td></td>
         </tr>
@@ -112,54 +105,7 @@ Static Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../d4/d82/class_open_spout_1_1_common_1_1_exception_1_1_invalid_argument_exception.html">OpenSpout::Common::Exception::InvalidArgumentException</a></td><td>When the given cell index is invalid</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">int</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="affa90bf47eb3c79eff6a57cc2ad149af" name="affa90bf47eb3c79eff6a57cc2ad149af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affa90bf47eb3c79eff6a57cc2ad149af">&#9670;&#160;</a></span>isValidCellIndex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static OpenSpout\Reader\XLSX\Helper\CellHelper::isValidCellIndex </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$cellIndex</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns whether a cell index is valid, in an Excel world. </p>
-<p>To be valid, the cell index should start with capital letters and be followed by numbers. There can only be 3 letters, as there can only be 16,384 rows, which is equivalent to 'XFE'.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$cellIndex</td><td>The Excel cell index ('A1', 'BC13', ...)</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td></td></tr>
+    <tr><td class="paramname"><a class="el" href="../../d4/d82/class_open_spout_1_1_common_1_1_exception_1_1_invalid_argument_exception.html">OpenSpout::Common::Exception::InvalidArgumentException</a></td><td>When the given cell index is invalid </td></tr>
   </table>
   </dd>
 </dl>
@@ -172,7 +118,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:54:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:55:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

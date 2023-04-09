@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -96,7 +96,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a604f064fff09e7ff0390c847ed30d5a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d60/classrenderer__base.html#a604f064fff09e7ff0390c847ed30d5a7">image_url</a> ($imagename, $component='moodle')</td></tr>
 <tr class="memdesc:a604f064fff09e7ff0390c847ed30d5a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the <a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a> for an image.  <br /></td></tr>
 <tr class="separator:a604f064fff09e7ff0390c847ed30d5a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad16c8925fe61838e24fd893918169af5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d24/classcore__grades__renderer.html#ad16c8925fe61838e24fd893918169af5">initials_selector</a> (object $course, <a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, string $slug)</td></tr>
+<tr class="memitem:ad16c8925fe61838e24fd893918169af5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d24/classcore__grades__renderer.html#ad16c8925fe61838e24fd893918169af5">initials_selector</a> (object $course, context $context, string $slug)</td></tr>
 <tr class="memdesc:ad16c8925fe61838e24fd893918169af5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build the data to render the initials bar filter within the gradebook.  <br /></td></tr>
 <tr class="separator:ad16c8925fe61838e24fd893918169af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ee759f6bc32ee4c14634718790c8779"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d60/classrenderer__base.html#a1ee759f6bc32ee4c14634718790c8779">pix_url</a> ($imagename, $component='moodle')</td></tr>
@@ -108,7 +108,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aedd65e46e171cc89767ca9a97d356f16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d24/classcore__grades__renderer.html#aedd65e46e171cc89767ca9a97d356f16">render_action_bar</a> (<a class="el" href="../../dd/d23/classcore__grades_1_1output_1_1action__bar.html">action_bar</a> $actionbar)</td></tr>
 <tr class="memdesc:aedd65e46e171cc89767ca9a97d356f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the action bar for a given page.  <br /></td></tr>
 <tr class="separator:aedd65e46e171cc89767ca9a97d356f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a98f5ab9e94330b1051fb560f789be2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d60/classrenderer__base.html#a2a98f5ab9e94330b1051fb560f789be2">render_from_template</a> ($templatename, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:a2a98f5ab9e94330b1051fb560f789be2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d60/classrenderer__base.html#a2a98f5ab9e94330b1051fb560f789be2">render_from_template</a> ($templatename, $context)</td></tr>
 <tr class="memdesc:a2a98f5ab9e94330b1051fb560f789be2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders a template by name with the given context.  <br /></td></tr>
 <tr class="separator:a2a98f5ab9e94330b1051fb560f789be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63c22538aa43ad9032b63a527b7c0a64"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d60/classrenderer__base.html#a63c22538aa43ad9032b63a527b7c0a64">should_display_main_logo</a> ($headinglevel=1)</td></tr>
@@ -539,7 +539,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramtype">context&#160;</td>
           <td class="paramname"><em>$context</em>, </td>
         </tr>
         <tr>
@@ -611,7 +611,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 
 <p>Return the direct URL for an image from the pix folder. </p>
 <p>Use this function sparingly and never for icons. For icons use <a class="el" href="../../d0/d6e/classpix__icon.html">pix_icon</a> or the pix helper in a mustache template.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000760">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000761">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$imagename</td><td>the name of the icon. </td></tr>
@@ -821,7 +821,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Whether we should display the main logo. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000761">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000762">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000175">Todo:</a></b></dt><dd>final deprecation. To be removed in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-73165" class="el">MDL-73165</a>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -954,7 +954,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:52:00 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:52:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

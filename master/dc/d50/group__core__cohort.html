@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -64,6 +64,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:df/dec/namespacecore__cohort_1_1customfield"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dec/namespacecore__cohort_1_1customfield.html">core_cohort\customfield</a></td></tr>
+<tr class="memdesc:df/dec/namespacecore__cohort_1_1customfield"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#160; <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d1/dee/namespacecore__cohort_1_1external"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dee/namespacecore__cohort_1_1external.html">core_cohort\external</a></td></tr>
 <tr class="memdesc:d1/dee/namespacecore__cohort_1_1external"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#160; <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -97,6 +100,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd0/classcohort__upload__form.html">cohort_upload_form</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cohort upload form class.  <a href="../../da/dd0/classcohort__upload__form.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dbb/classcore__cohort_1_1customfield_1_1cohort__handler.html">core_cohort\customfield\cohort_handler</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d9d/classcore__cohort_1_1external_1_1cohort__summary__exporter.html">core_cohort\external\cohort_summary_exporter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for exporting a cohort summary from an stdClass.  <a href="../../dc/d9d/classcore__cohort_1_1external_1_1cohort__summary__exporter.html#details">More...</a><br /></td></tr>
@@ -136,30 +141,33 @@ Functions</h2></td></tr>
 <tr class="memitem:gabe15dd1d0ea28f888316d604d7cfa647"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d50/group__core__cohort.html#gabe15dd1d0ea28f888316d604d7cfa647">cohort_delete_cohort</a> ($cohort)</td></tr>
 <tr class="memdesc:gabe15dd1d0ea28f888316d604d7cfa647"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete cohort.  <br /></td></tr>
 <tr class="separator:gabe15dd1d0ea28f888316d604d7cfa647"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga870de0d1f326c60c52fbd5ceda378a70"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d50/group__core__cohort.html#ga870de0d1f326c60c52fbd5ceda378a70">cohort_edit_controls</a> (<a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, <a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a> $currenturl)</td></tr>
+<tr class="memitem:ga870de0d1f326c60c52fbd5ceda378a70"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d50/group__core__cohort.html#ga870de0d1f326c60c52fbd5ceda378a70">cohort_edit_controls</a> (context $context, <a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a> $currenturl)</td></tr>
 <tr class="memdesc:ga870de0d1f326c60c52fbd5ceda378a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns navigation controls (tabtree) to be displayed on cohort management pages.  <br /></td></tr>
 <tr class="separator:ga870de0d1f326c60c52fbd5ceda378a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2ff475d985b55ef33f9d6a0d47ec639b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d50/group__core__cohort.html#ga2ff475d985b55ef33f9d6a0d47ec639b">cohort_get_all_cohorts</a> ($page=0, $perpage=25, $<a class="el" href="../../dc/d71/group___imap___client.html#ga51cc7ed42bce580dcc33ed45d9cef0c9">search</a>='')</td></tr>
-<tr class="memdesc:ga2ff475d985b55ef33f9d6a0d47ec639b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the cohorts defined anywhere in system.  <br /></td></tr>
-<tr class="separator:ga2ff475d985b55ef33f9d6a0d47ec639b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4e654713179414c8e3445373acc56d6e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d50/group__core__cohort.html#ga4e654713179414c8e3445373acc56d6e">cohort_get_available_cohorts</a> ($currentcontext, $withmembers=0, $offset=0, $limit=25, $<a class="el" href="../../dc/d71/group___imap___client.html#ga51cc7ed42bce580dcc33ed45d9cef0c9">search</a>='')</td></tr>
-<tr class="memdesc:ga4e654713179414c8e3445373acc56d6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the list of cohorts visible to the current user in the given course.  <br /></td></tr>
-<tr class="separator:ga4e654713179414c8e3445373acc56d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7220eae65497501f7142640ef58e8140"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d50/group__core__cohort.html#ga7220eae65497501f7142640ef58e8140">cohort_get_cohort</a> ($cohortorid, $currentcontext)</td></tr>
-<tr class="memdesc:ga7220eae65497501f7142640ef58e8140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a cohort by id.  <br /></td></tr>
-<tr class="separator:ga7220eae65497501f7142640ef58e8140"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab2f3103c46cdcbf712d358046be510ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d50/group__core__cohort.html#gab2f3103c46cdcbf712d358046be510ef">cohort_get_cohorts</a> ($contextid, $page=0, $perpage=25, $<a class="el" href="../../dc/d71/group___imap___client.html#ga51cc7ed42bce580dcc33ed45d9cef0c9">search</a>='')</td></tr>
-<tr class="memdesc:gab2f3103c46cdcbf712d358046be510ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the cohorts defined in given context.  <br /></td></tr>
-<tr class="separator:gab2f3103c46cdcbf712d358046be510ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf565aa2c0927629f3a61f73a0a582e9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d50/group__core__cohort.html#gaf565aa2c0927629f3a61f73a0a582e9e">cohort_get_all_cohorts</a> ($page=0, $perpage=25, $<a class="el" href="../../dc/d71/group___imap___client.html#ga51cc7ed42bce580dcc33ed45d9cef0c9">search</a>='', $withcustomfields=false)</td></tr>
+<tr class="memdesc:gaf565aa2c0927629f3a61f73a0a582e9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the cohorts defined anywhere in system.  <br /></td></tr>
+<tr class="separator:gaf565aa2c0927629f3a61f73a0a582e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad309bce0549df732c05808765185773e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d50/group__core__cohort.html#gad309bce0549df732c05808765185773e">cohort_get_available_cohorts</a> ($currentcontext, $withmembers=0, $offset=0, $limit=25, $<a class="el" href="../../dc/d71/group___imap___client.html#ga51cc7ed42bce580dcc33ed45d9cef0c9">search</a>='', $withcustomfields=false)</td></tr>
+<tr class="memdesc:gad309bce0549df732c05808765185773e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the list of cohorts visible to the current user in the given course.  <br /></td></tr>
+<tr class="separator:gad309bce0549df732c05808765185773e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a67af21c88e57123566734097fc3128"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d50/group__core__cohort.html#ga4a67af21c88e57123566734097fc3128">cohort_get_cohort</a> ($cohortorid, $currentcontext, $withcustomfields=false)</td></tr>
+<tr class="memdesc:ga4a67af21c88e57123566734097fc3128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a cohort by id.  <br /></td></tr>
+<tr class="separator:ga4a67af21c88e57123566734097fc3128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabce9c4920f09b0711fd266d798963fad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d50/group__core__cohort.html#gabce9c4920f09b0711fd266d798963fad">cohort_get_cohorts</a> ($contextid, $page=0, $perpage=25, $<a class="el" href="../../dc/d71/group___imap___client.html#ga51cc7ed42bce580dcc33ed45d9cef0c9">search</a>='', $withcustomfields=false)</td></tr>
+<tr class="memdesc:gabce9c4920f09b0711fd266d798963fad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the cohorts defined in given context.  <br /></td></tr>
+<tr class="separator:gabce9c4920f09b0711fd266d798963fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b0200a93c9c2f43e281256c32d40c02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d50/group__core__cohort.html#ga4b0200a93c9c2f43e281256c32d40c02">cohort_get_custom_fields_data</a> (array $cohortids)</td></tr>
+<tr class="memdesc:ga4b0200a93c9c2f43e281256c32d40c02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns custom fields data for provided cohorts.  <br /></td></tr>
+<tr class="separator:ga4b0200a93c9c2f43e281256c32d40c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga89267753d277b3ef668755b0e7885846"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d50/group__core__cohort.html#ga89267753d277b3ef668755b0e7885846">cohort_get_list_of_themes</a> ()</td></tr>
 <tr class="memdesc:ga89267753d277b3ef668755b0e7885846"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of valid themes which can be displayed in a selector.  <br /></td></tr>
 <tr class="separator:ga89267753d277b3ef668755b0e7885846"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaefe17f221cf86384b3dcab23b154791f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d50/group__core__cohort.html#gaefe17f221cf86384b3dcab23b154791f">cohort_get_user_cohort_theme</a> ($userid)</td></tr>
 <tr class="memdesc:gaefe17f221cf86384b3dcab23b154791f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the user cohort theme.  <br /></td></tr>
 <tr class="separator:gaefe17f221cf86384b3dcab23b154791f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga43b2a813f1b57413ddc842ac7159913f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d50/group__core__cohort.html#ga43b2a813f1b57413ddc842ac7159913f">cohort_get_user_cohorts</a> ($userid)</td></tr>
-<tr class="memdesc:ga43b2a813f1b57413ddc842ac7159913f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the cohorts where the given user is member of.  <br /></td></tr>
-<tr class="separator:ga43b2a813f1b57413ddc842ac7159913f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1a89dbd375c609ee3c7f93b22b7c3f0d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d50/group__core__cohort.html#ga1a89dbd375c609ee3c7f93b22b7c3f0d">cohort_get_user_cohorts</a> ($userid, $withcustomfields=false)</td></tr>
+<tr class="memdesc:ga1a89dbd375c609ee3c7f93b22b7c3f0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the cohorts where the given user is member of.  <br /></td></tr>
+<tr class="separator:ga1a89dbd375c609ee3c7f93b22b7c3f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaae81e8621f0e3670c1928184cd6409a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d50/group__core__cohort.html#gaae81e8621f0e3670c1928184cd6409a8">cohort_is_member</a> ($cohortid, $userid)</td></tr>
 <tr class="memdesc:gaae81e8621f0e3670c1928184cd6409a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this user a cohort member?  <br /></td></tr>
 <tr class="separator:gaae81e8621f0e3670c1928184cd6409a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -387,7 +395,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COHORT_WITH_NOTENROL
         <tr>
           <td class="memname">cohort_edit_controls </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramtype">context&#160;</td>
           <td class="paramname"><em>$context</em>, </td>
         </tr>
         <tr>
@@ -421,8 +429,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COHORT_WITH_NOTENROL
 
 </div>
 </div>
-<a id="ga2ff475d985b55ef33f9d6a0d47ec639b" name="ga2ff475d985b55ef33f9d6a0d47ec639b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2ff475d985b55ef33f9d6a0d47ec639b">&#9670;&#160;</a></span>cohort_get_all_cohorts()</h2>
+<a id="gaf565aa2c0927629f3a61f73a0a582e9e" name="gaf565aa2c0927629f3a61f73a0a582e9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf565aa2c0927629f3a61f73a0a582e9e">&#9670;&#160;</a></span>cohort_get_all_cohorts()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -443,7 +451,13 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COHORT_WITH_NOTENROL
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$search</em> = <code>''</code>&#160;</td>
+          <td class="paramname"><em>$search</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$withcustomfields</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -460,6 +474,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COHORT_WITH_NOTENROL
     <tr><td class="paramtype">int</td><td class="paramname">$page</td><td>number of the current page </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$perpage</td><td>items per page </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$search</td><td>search string </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$withcustomfields</td><td>if set to yes, then cohort custom fields will be included in the results. </td></tr>
   </table>
   </dd>
 </dl>
@@ -472,8 +487,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COHORT_WITH_NOTENROL
 
 </div>
 </div>
-<a id="ga4e654713179414c8e3445373acc56d6e" name="ga4e654713179414c8e3445373acc56d6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4e654713179414c8e3445373acc56d6e">&#9670;&#160;</a></span>cohort_get_available_cohorts()</h2>
+<a id="gad309bce0549df732c05808765185773e" name="gad309bce0549df732c05808765185773e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad309bce0549df732c05808765185773e">&#9670;&#160;</a></span>cohort_get_available_cohorts()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -506,7 +521,13 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COHORT_WITH_NOTENROL
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$search</em> = <code>''</code>&#160;</td>
+          <td class="paramname"><em>$search</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$withcustomfields</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -525,6 +546,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COHORT_WITH_NOTENROL
     <tr><td class="paramtype">int</td><td class="paramname">$offset</td><td></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$limit</td><td></td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$search</td><td></td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$withcustomfields</td><td>if set to yes, then cohort custom fields will be included in the results. </td></tr>
   </table>
   </dd>
 </dl>
@@ -537,8 +559,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COHORT_WITH_NOTENROL
 
 </div>
 </div>
-<a id="ga7220eae65497501f7142640ef58e8140" name="ga7220eae65497501f7142640ef58e8140"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7220eae65497501f7142640ef58e8140">&#9670;&#160;</a></span>cohort_get_cohort()</h2>
+<a id="ga4a67af21c88e57123566734097fc3128" name="ga4a67af21c88e57123566734097fc3128"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4a67af21c88e57123566734097fc3128">&#9670;&#160;</a></span>cohort_get_cohort()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -553,7 +575,13 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COHORT_WITH_NOTENROL
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$currentcontext</em>&#160;</td>
+          <td class="paramname"><em>$currentcontext</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$withcustomfields</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -569,6 +597,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COHORT_WITH_NOTENROL
   <table class="params">
     <tr><td class="paramtype">stdClass&#160;|&#160;int</td><td class="paramname">$cohortorid</td><td>cohort object or id </td></tr>
     <tr><td class="paramtype">context</td><td class="paramname">$currentcontext</td><td>current context (course) where visibility is checked </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$withcustomfields</td><td>if set to yes, then cohort custom fields will be included in the results. </td></tr>
   </table>
   </dd>
 </dl>
@@ -581,8 +610,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COHORT_WITH_NOTENROL
 
 </div>
 </div>
-<a id="gab2f3103c46cdcbf712d358046be510ef" name="gab2f3103c46cdcbf712d358046be510ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab2f3103c46cdcbf712d358046be510ef">&#9670;&#160;</a></span>cohort_get_cohorts()</h2>
+<a id="gabce9c4920f09b0711fd266d798963fad" name="gabce9c4920f09b0711fd266d798963fad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabce9c4920f09b0711fd266d798963fad">&#9670;&#160;</a></span>cohort_get_cohorts()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -609,7 +638,13 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COHORT_WITH_NOTENROL
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$search</em> = <code>''</code>&#160;</td>
+          <td class="paramname"><em>$search</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$withcustomfields</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -627,12 +662,45 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COHORT_WITH_NOTENROL
     <tr><td class="paramtype">int</td><td class="paramname">$page</td><td>number of the current page </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$perpage</td><td>items per page </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$search</td><td>search string </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$withcustomfields</td><td>if set to yes, then cohort custom fields will be included in the results. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td>Array(totalcohorts =&gt; int, cohorts =&gt; array, allcohorts =&gt; int) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga4b0200a93c9c2f43e281256c32d40c02" name="ga4b0200a93c9c2f43e281256c32d40c02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4b0200a93c9c2f43e281256c32d40c02">&#9670;&#160;</a></span>cohort_get_custom_fields_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cohort_get_custom_fields_data </td>
+          <td>(</td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$cohortids</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns custom fields data for provided cohorts. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$cohortids</td><td>a list of cohort IDs to provide data for. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">core_customfield::data_controller[]</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -697,8 +765,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COHORT_WITH_NOTENROL
 
 </div>
 </div>
-<a id="ga43b2a813f1b57413ddc842ac7159913f" name="ga43b2a813f1b57413ddc842ac7159913f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga43b2a813f1b57413ddc842ac7159913f">&#9670;&#160;</a></span>cohort_get_user_cohorts()</h2>
+<a id="ga1a89dbd375c609ee3c7f93b22b7c3f0d" name="ga1a89dbd375c609ee3c7f93b22b7c3f0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1a89dbd375c609ee3c7f93b22b7c3f0d">&#9670;&#160;</a></span>cohort_get_user_cohorts()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -707,8 +775,18 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COHORT_WITH_NOTENROL
           <td class="memname">cohort_get_user_cohorts </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$userid</em></td><td>)</td>
+          <td class="paramname"><em>$userid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$withcustomfields</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -717,6 +795,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COHORT_WITH_NOTENROL
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td></td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$withcustomfields</td><td>if set to yes, then cohort custom fields will be included in the results. </td></tr>
   </table>
   </dd>
 </dl>
@@ -900,7 +979,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COHORT_WITH_NOTENROL
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:51:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:52:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.7+ (Build: 20230401) (8400206468f)</div>
+   <div id="projectbrief">Moodle 4.0.7+ (Build: 20230406) (7d8f31dbe7b)</div>
   </td>
  </tr>
  </tbody>
@@ -670,8 +670,8 @@ Functions</h2></td></tr>
 <tr class="separator:gabd61284ecfc5e9d2f733d65c5b0774ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa71b9a53e69010cd6b0e8a9ec7a94412"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gaa71b9a53e69010cd6b0e8a9ec7a94412">quiz_question_preview_button</a> ($<a class="el" href="../../dc/d8f/classquiz.html">quiz</a>, $question, $label=false, $variant=null, $random=null)</td></tr>
 <tr class="separator:gaa71b9a53e69010cd6b0e8a9ec7a94412"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga75c93c72b30ab479c52a5e600cf8189e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga75c93c72b30ab479c52a5e600cf8189e">quiz_question_preview_url</a> ($<a class="el" href="../../dc/d8f/classquiz.html">quiz</a>, $question, $variant=null)</td></tr>
-<tr class="separator:ga75c93c72b30ab479c52a5e600cf8189e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4ff8a00de4186848290049b9a111f536"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#ga4ff8a00de4186848290049b9a111f536">quiz_question_preview_url</a> ($<a class="el" href="../../dc/d8f/classquiz.html">quiz</a>, $question, $variant=null, $restartversion=null)</td></tr>
+<tr class="separator:ga4ff8a00de4186848290049b9a111f536"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaad169b9a336dffc66af6f90704594d9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df0/group__mod__quiz.html#gaad169b9a336dffc66af6f90704594d9b">quiz_question_tostring</a> ($question, $showicon=false, $showquestiontext=true, $showidnumber=false, $showtags=false)</td></tr>
 <tr class="memdesc:gaad169b9a336dffc66af6f90704594d9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a textual representation of a question for display.  <br /></td></tr>
 <tr class="separator:gaad169b9a336dffc66af6f90704594d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4502,8 +4502,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 
 </div>
 </div>
-<a id="ga75c93c72b30ab479c52a5e600cf8189e" name="ga75c93c72b30ab479c52a5e600cf8189e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga75c93c72b30ab479c52a5e600cf8189e">&#9670;&#160;</a></span>quiz_question_preview_url()</h2>
+<a id="ga4ff8a00de4186848290049b9a111f536" name="ga4ff8a00de4186848290049b9a111f536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4ff8a00de4186848290049b9a111f536">&#9670;&#160;</a></span>quiz_question_preview_url()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -4524,7 +4524,13 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$variant</em> = <code>null</code>&#160;</td>
+          <td class="paramname"><em>$variant</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$restartversion</em> = <code>null</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -4538,6 +4544,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
     <tr><td class="paramtype">object</td><td class="paramname">$quiz</td><td>the quiz settings </td></tr>
     <tr><td class="paramtype">object</td><td class="paramname">$question</td><td>the question </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$variant</td><td>which question variant to preview (optional). </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$restartversion</td><td>version of the question to use when restarting the preview. </td></tr>
   </table>
   </dd>
 </dl>
@@ -6858,7 +6865,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:39:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:40:27 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

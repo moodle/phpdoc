@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -229,7 +229,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab48c8a71a1bf30b8e76abee5479c6ff3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7b/classcore__renderer.html#ab48c8a71a1bf30b8e76abee5479c6ff3">get_generated_svg_for_id</a> (int $id)</td></tr>
 <tr class="memdesc:ab48c8a71a1bf30b8e76abee5479c6ff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the course pattern in SVG format to show on a course card.  <br /></td></tr>
 <tr class="separator:ab48c8a71a1bf30b8e76abee5479c6ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97704853da97a7817bb0597c813566be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7b/classcore__renderer.html#a97704853da97a7817bb0597c813566be">get_generated_url_for_course</a> (<a class="el" href="../../d8/d0a/classcontext__course.html">context_course</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:a97704853da97a7817bb0597c813566be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7b/classcore__renderer.html#a97704853da97a7817bb0597c813566be">get_generated_url_for_course</a> (context_course $context)</td></tr>
 <tr class="memdesc:a97704853da97a7817bb0597c813566be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the course pattern image URL.  <br /></td></tr>
 <tr class="separator:a97704853da97a7817bb0597c813566be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae06b7128fec95113f194a60e269c2f8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d60/classrenderer__base.html#ae06b7128fec95113f194a60e269c2f8a">get_logo_url</a> ($maxwidth=null, $maxheight=200)</td></tr>
@@ -378,7 +378,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5769d153145be6678008000cac3228c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7b/classcore__renderer.html#a5769d153145be6678008000cac3228c3">render_file_picker</a> (<a class="el" href="../../d3/da1/classfile__picker.html">file_picker</a> $fp)</td></tr>
 <tr class="memdesc:a5769d153145be6678008000cac3228c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal implementation of file picker rendering.  <br /></td></tr>
 <tr class="separator:a5769d153145be6678008000cac3228c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a98f5ab9e94330b1051fb560f789be2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d60/classrenderer__base.html#a2a98f5ab9e94330b1051fb560f789be2">render_from_template</a> ($templatename, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:a2a98f5ab9e94330b1051fb560f789be2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d60/classrenderer__base.html#a2a98f5ab9e94330b1051fb560f789be2">render_from_template</a> ($templatename, $context)</td></tr>
 <tr class="memdesc:a2a98f5ab9e94330b1051fb560f789be2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders a template by name with the given context.  <br /></td></tr>
 <tr class="separator:a2a98f5ab9e94330b1051fb560f789be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afba5ee93d42152b3704566223f99a367"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7b/classcore__renderer.html#afba5ee93d42152b3704566223f99a367">render_inplace_editable</a> (\<a class="el" href="../../d4/d65/classcore_1_1output_1_1inplace__editable.html">core\output\inplace_editable</a> $element)</td></tr>
@@ -3021,7 +3021,7 @@ $OUTPUT-&gt;<a class="el" href="../../d3/da1/classfile__picker.html">file_picker
         <tr>
           <td class="memname">core_renderer::get_generated_url_for_course </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/d0a/classcontext__course.html">context_course</a>&#160;</td>
+          <td class="paramtype">context_course&#160;</td>
           <td class="paramname"><em>$context</em></td><td>)</td>
           <td></td>
         </tr>
@@ -3036,7 +3036,7 @@ $OUTPUT-&gt;<a class="el" href="../../d3/da1/classfile__picker.html">file_picker
 <p>Get the course pattern image URL. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../d8/d0a/classcontext__course.html">context_course</a></td><td class="paramname">$context</td><td>course context object </td></tr>
+    <tr><td class="paramtype">context_course</td><td class="paramname">$context</td><td>course context object </td></tr>
   </table>
   </dd>
 </dl>
@@ -4285,7 +4285,7 @@ $OUTPUT-&gt;<a class="el" href="../../d3/da1/classfile__picker.html">file_picker
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000767">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 <a href="https://tracker.moodle.org/browse/MDL-30811" class="el">MDL-30811</a> - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000768">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 <a href="https://tracker.moodle.org/browse/MDL-30811" class="el">MDL-30811</a> - please do not use this function any more. </dd></dl>
 
 </div>
 </div>
@@ -4311,7 +4311,7 @@ $OUTPUT-&gt;<a class="el" href="../../d3/da1/classfile__picker.html">file_picker
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000765">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 <a href="https://tracker.moodle.org/browse/MDL-30811" class="el">MDL-30811</a> - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000766">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 <a href="https://tracker.moodle.org/browse/MDL-30811" class="el">MDL-30811</a> - please do not use this function any more. </dd></dl>
 
 </div>
 </div>
@@ -4337,7 +4337,7 @@ $OUTPUT-&gt;<a class="el" href="../../d3/da1/classfile__picker.html">file_picker
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000768">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 <a href="https://tracker.moodle.org/browse/MDL-30811" class="el">MDL-30811</a> - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000769">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 <a href="https://tracker.moodle.org/browse/MDL-30811" class="el">MDL-30811</a> - please do not use this function any more. </dd></dl>
 
 </div>
 </div>
@@ -4363,7 +4363,7 @@ $OUTPUT-&gt;<a class="el" href="../../d3/da1/classfile__picker.html">file_picker
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000766">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 <a href="https://tracker.moodle.org/browse/MDL-30811" class="el">MDL-30811</a> - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000767">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 <a href="https://tracker.moodle.org/browse/MDL-30811" class="el">MDL-30811</a> - please do not use this function any more. </dd></dl>
 
 </div>
 </div>
@@ -4414,7 +4414,7 @@ $OUTPUT-&gt;<a class="el" href="../../d3/da1/classfile__picker.html">file_picker
 </div><div class="memdoc">
 
 <p>Returns HTML to display a help icon. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000763">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000764">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.0 </dd></dl>
 
 </div>
 </div>
@@ -4777,7 +4777,7 @@ $OUTPUT-&gt;<a class="el" href="../../d3/da1/classfile__picker.html">file_picker
 
 <p>Return the direct URL for an image from the pix folder. </p>
 <p>Use this function sparingly and never for icons. For icons use <a class="el" href="../../d0/d6e/classpix__icon.html">pix_icon</a> or the pix helper in a mustache template.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000760">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000761">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$imagename</td><td>the name of the icon. </td></tr>
@@ -7120,7 +7120,7 @@ $OUTPUT-&gt;<a class="el" href="../../d3/da1/classfile__picker.html">file_picker
 </div><div class="memdoc">
 
 <p>Whether we should display the main logo. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000761">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000762">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000175">Todo:</a></b></dt><dd>final deprecation. To be removed in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-73165" class="el">MDL-73165</a>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -7920,7 +7920,7 @@ $OUTPUT-&gt;<a class="el" href="../../d3/da1/classfile__picker.html">file_picker
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000764">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.2 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000765">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.2 </dd></dl>
 
 </div>
 </div>
@@ -8138,7 +8138,7 @@ $OUTPUT-&gt;render($userpic);
 </div><div class="memdoc">
 
 <p>Do NOT use, please use &lt;?php echo $OUTPUT-&gt;<a class="el" href="../../d4/d7b/classcore__renderer.html#a5e9ed09f8649cf97a974be8db01d86e5" title="Returns standard main content placeholder.">main_content()</a> ?&gt; in layout files instead. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000762">Deprecated:</a></b></dt><dd>used in <a class="el" href="../../d4/d7b/classcore__renderer.html#aa432e25e7cc1d9742cbf302ceb504f92">core_renderer::header()</a>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000763">Deprecated:</a></b></dt><dd>used in <a class="el" href="../../d4/d7b/classcore__renderer.html#aa432e25e7cc1d9742cbf302ceb504f92">core_renderer::header()</a>. </dd></dl>
 
 </div>
 </div>
@@ -8148,7 +8148,7 @@ $OUTPUT-&gt;render($userpic);
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:52:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:52:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

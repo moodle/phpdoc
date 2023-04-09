@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -59,9 +59,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d8/d58/class_open_spout_1_1_common_1_1_helper_1_1_encoding_helper-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">OpenSpout\Common\Helper\EncodingHelper Class Reference</div></div>
 </div><!--header-->
@@ -69,17 +68,21 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5efb191869aa6a08d0c7afc879f57e97"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2f/class_open_spout_1_1_common_1_1_helper_1_1_encoding_helper.html#a5efb191869aa6a08d0c7afc879f57e97">__construct</a> ($globalFunctionsHelper)</td></tr>
-<tr class="separator:a5efb191869aa6a08d0c7afc879f57e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae33bcae7a0db01635cefbb1149488b96"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2f/class_open_spout_1_1_common_1_1_helper_1_1_encoding_helper.html#ae33bcae7a0db01635cefbb1149488b96">attemptConversionFromUTF8</a> ($string, $targetEncoding)</td></tr>
-<tr class="memdesc:ae33bcae7a0db01635cefbb1149488b96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to convert a UTF-8 string into the given encoding.  <br /></td></tr>
-<tr class="separator:ae33bcae7a0db01635cefbb1149488b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a696dcd54f295720c0b53cb231dc74824"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2f/class_open_spout_1_1_common_1_1_helper_1_1_encoding_helper.html#a696dcd54f295720c0b53cb231dc74824">attemptConversionToUTF8</a> ($string, $sourceEncoding)</td></tr>
-<tr class="memdesc:a696dcd54f295720c0b53cb231dc74824"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to convert a non UTF-8 string into UTF-8.  <br /></td></tr>
-<tr class="separator:a696dcd54f295720c0b53cb231dc74824"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e378945ff73a9df192b88ea55df98b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2f/class_open_spout_1_1_common_1_1_helper_1_1_encoding_helper.html#a5e378945ff73a9df192b88ea55df98b1">getBytesOffsetToSkipBOM</a> ($filePointer, $encoding)</td></tr>
-<tr class="memdesc:a5e378945ff73a9df192b88ea55df98b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of bytes to use as offset in order to skip the BOM.  <br /></td></tr>
-<tr class="separator:a5e378945ff73a9df192b88ea55df98b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af51567c4b85ea094ee308ca87d19336f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2f/class_open_spout_1_1_common_1_1_helper_1_1_encoding_helper.html#af51567c4b85ea094ee308ca87d19336f">attemptConversionFromUTF8</a> (?string $string, string $targetEncoding)</td></tr>
+<tr class="memdesc:af51567c4b85ea094ee308ca87d19336f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to convert a UTF-8 string into the given encoding.  <br /></td></tr>
+<tr class="separator:af51567c4b85ea094ee308ca87d19336f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a573a484fea16c3845ab28700ea8ca669"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2f/class_open_spout_1_1_common_1_1_helper_1_1_encoding_helper.html#a573a484fea16c3845ab28700ea8ca669">attemptConversionToUTF8</a> (?string $string, string $sourceEncoding)</td></tr>
+<tr class="memdesc:a573a484fea16c3845ab28700ea8ca669"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to convert a non UTF-8 string into UTF-8.  <br /></td></tr>
+<tr class="separator:a573a484fea16c3845ab28700ea8ca669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac61803cdb3680ba1944b82d18c63dbc4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2f/class_open_spout_1_1_common_1_1_helper_1_1_encoding_helper.html#ac61803cdb3680ba1944b82d18c63dbc4">getBytesOffsetToSkipBOM</a> ($filePointer, string $encoding)</td></tr>
+<tr class="memdesc:ac61803cdb3680ba1944b82d18c63dbc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of bytes to use as offset in order to skip the BOM.  <br /></td></tr>
+<tr class="separator:ac61803cdb3680ba1944b82d18c63dbc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a1aafa9667eeb1571935163d462684bad"><td class="memItemLeft" align="right" valign="top"><a id="a1aafa9667eeb1571935163d462684bad" name="a1aafa9667eeb1571935163d462684bad"></a>
+static&#160;</td><td class="memItemRight" valign="bottom"><b>factory</b> ()</td></tr>
+<tr class="separator:a1aafa9667eeb1571935163d462684bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -99,6 +102,9 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>BOM_UTF32_LE</b> = &
 const&#160;</td><td class="memItemRight" valign="bottom"><b>BOM_UTF8</b> = &quot;\xEF\xBB\xBF&quot;</td></tr>
 <tr class="memdesc:afe3774008761a3c092e60cea18ff66b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of the BOMs for the different encodings. <br /></td></tr>
 <tr class="separator:afe3774008761a3c092e60cea18ff66b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad30d8742b9311dfc2530279929849004"><td class="memItemLeft" align="right" valign="top"><a id="ad30d8742b9311dfc2530279929849004" name="ad30d8742b9311dfc2530279929849004"></a>
+$this&#160;</td><td class="memItemRight" valign="bottom"><b>canUseMbString</b> = $canUseMbString</td></tr>
+<tr class="separator:ad30d8742b9311dfc2530279929849004"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a9fd74d6cc594ac543faf709069c7e7"><td class="memItemLeft" align="right" valign="top"><a id="a4a9fd74d6cc594ac543faf709069c7e7" name="a4a9fd74d6cc594ac543faf709069c7e7"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>ENCODING_UTF16_BE</b> = 'UTF-16BE'</td></tr>
 <tr class="separator:a4a9fd74d6cc594ac543faf709069c7e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,126 +121,12 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>ENCODING_UTF32_LE</b
 const&#160;</td><td class="memItemRight" valign="bottom"><b>ENCODING_UTF8</b> = 'UTF-8'</td></tr>
 <tr class="memdesc:a57d161c301ca211c081e3bd7e9f98cbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of the encodings that can have a BOM. <br /></td></tr>
 <tr class="separator:a57d161c301ca211c081e3bd7e9f98cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a8981006b1784042151b18085bad66d7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2f/class_open_spout_1_1_common_1_1_helper_1_1_encoding_helper.html#a8981006b1784042151b18085bad66d7d">attemptConversion</a> ($string, $sourceEncoding, $targetEncoding)</td></tr>
-<tr class="memdesc:a8981006b1784042151b18085bad66d7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempts to convert the given string to the given encoding.  <br /></td></tr>
-<tr class="separator:a8981006b1784042151b18085bad66d7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1874b2cc43801dcfdbb523e245aace71"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2f/class_open_spout_1_1_common_1_1_helper_1_1_encoding_helper.html#a1874b2cc43801dcfdbb523e245aace71">canUseIconv</a> ()</td></tr>
-<tr class="memdesc:a1874b2cc43801dcfdbb523e245aace71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether "iconv" can be used.  <br /></td></tr>
-<tr class="separator:a1874b2cc43801dcfdbb523e245aace71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcbd5e1eb0b0eb6705c8bcbd53105174"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2f/class_open_spout_1_1_common_1_1_helper_1_1_encoding_helper.html#afcbd5e1eb0b0eb6705c8bcbd53105174">canUseMbString</a> ()</td></tr>
-<tr class="memdesc:afcbd5e1eb0b0eb6705c8bcbd53105174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether "mb_string" functions can be used.  <br /></td></tr>
-<tr class="separator:afcbd5e1eb0b0eb6705c8bcbd53105174"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a310595ec9484e0069f80625c4f23a492"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2f/class_open_spout_1_1_common_1_1_helper_1_1_encoding_helper.html#a310595ec9484e0069f80625c4f23a492">hasBOM</a> ($filePointer, $encoding)</td></tr>
-<tr class="memdesc:a310595ec9484e0069f80625c4f23a492"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the file identified by the given pointer has a BOM.  <br /></td></tr>
-<tr class="separator:a310595ec9484e0069f80625c4f23a492"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:ab2f75dda0c97f4eb8dc06c1f9a9f6ccf"><td class="memItemLeft" align="right" valign="top"><a id="ab2f75dda0c97f4eb8dc06c1f9a9f6ccf" name="ab2f75dda0c97f4eb8dc06c1f9a9f6ccf"></a>
-OpenSpout Common Helper <a class="el" href="../../d9/de3/class_open_spout_1_1_common_1_1_helper_1_1_global_functions_helper.html">GlobalFunctionsHelper</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$globalFunctionsHelper</b></td></tr>
-<tr class="memdesc:ab2f75dda0c97f4eb8dc06c1f9a9f6ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to work with global functions. <br /></td></tr>
-<tr class="separator:ab2f75dda0c97f4eb8dc06c1f9a9f6ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9be464903794577c8800e8b17b83b116"><td class="memItemLeft" align="right" valign="top"><a id="a9be464903794577c8800e8b17b83b116" name="a9be464903794577c8800e8b17b83b116"></a>
-array&#160;</td><td class="memItemRight" valign="bottom"><b>$supportedEncodingsWithBom</b></td></tr>
-<tr class="memdesc:a9be464903794577c8800e8b17b83b116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map representing the encodings supporting BOMs (key) and their associated BOM (value) <br /></td></tr>
-<tr class="separator:a9be464903794577c8800e8b17b83b116"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07431df6226606b2234555e99b4e3e0e"><td class="memItemLeft" align="right" valign="top">$this&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2f/class_open_spout_1_1_common_1_1_helper_1_1_encoding_helper.html#a07431df6226606b2234555e99b4e3e0e">supportedEncodingsWithBom</a></td></tr>
+<tr class="separator:a07431df6226606b2234555e99b4e3e0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a5efb191869aa6a08d0c7afc879f57e97" name="a5efb191869aa6a08d0c7afc879f57e97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5efb191869aa6a08d0c7afc879f57e97">&#9670;&#160;</a></span>__construct()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Common\Helper\EncodingHelper::__construct </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$globalFunctionsHelper</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../d9/de3/class_open_spout_1_1_common_1_1_helper_1_1_global_functions_helper.html">OpenSpout::Common::Helper::GlobalFunctionsHelper</a></td><td class="paramname">$globalFunctionsHelper</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8981006b1784042151b18085bad66d7d" name="a8981006b1784042151b18085bad66d7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8981006b1784042151b18085bad66d7d">&#9670;&#160;</a></span>attemptConversion()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Common\Helper\EncodingHelper::attemptConversion </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$string</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$sourceEncoding</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$targetEncoding</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Attempts to convert the given string to the given encoding. </p>
-<p>Depending on what is installed on the server, we will try to iconv or mbstring.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$string</td><td>string to be converted </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$sourceEncoding</td><td>The encoding used to encode the source string </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$targetEncoding</td><td>The encoding the string should be re-encoded into</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../dd/d61/class_open_spout_1_1_common_1_1_exception_1_1_encoding_conversion_exception.html">OpenSpout::Common::Exception::EncodingConversionException</a></td><td>If conversion is not supported or if the conversion failed</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">string</td><td>The converted string, encoded with the given encoding </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ae33bcae7a0db01635cefbb1149488b96" name="ae33bcae7a0db01635cefbb1149488b96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae33bcae7a0db01635cefbb1149488b96">&#9670;&#160;</a></span>attemptConversionFromUTF8()</h2>
+<a id="af51567c4b85ea094ee308ca87d19336f" name="af51567c4b85ea094ee308ca87d19336f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af51567c4b85ea094ee308ca87d19336f">&#9670;&#160;</a></span>attemptConversionFromUTF8()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,13 +134,13 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$supportedEncodingsW
         <tr>
           <td class="memname">OpenSpout\Common\Helper\EncodingHelper::attemptConversionFromUTF8 </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">?string&#160;</td>
           <td class="paramname"><em>$string</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$targetEncoding</em>&#160;</td>
         </tr>
         <tr>
@@ -267,23 +159,23 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$supportedEncodingsW
   </table>
   </dd>
 </dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../dd/d61/class_open_spout_1_1_common_1_1_exception_1_1_encoding_conversion_exception.html">OpenSpout::Common::Exception::EncodingConversionException</a></td><td>If conversion is not supported or if the conversion failed</td></tr>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>The converted string, encoded with the given encoding</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">string</td><td>The converted string, encoded with the given encoding </td></tr>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../dd/d61/class_open_spout_1_1_common_1_1_exception_1_1_encoding_conversion_exception.html">OpenSpout::Common::Exception::EncodingConversionException</a></td><td>If conversion is not supported or if the conversion failed </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a696dcd54f295720c0b53cb231dc74824" name="a696dcd54f295720c0b53cb231dc74824"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a696dcd54f295720c0b53cb231dc74824">&#9670;&#160;</a></span>attemptConversionToUTF8()</h2>
+<a id="a573a484fea16c3845ab28700ea8ca669" name="a573a484fea16c3845ab28700ea8ca669"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a573a484fea16c3845ab28700ea8ca669">&#9670;&#160;</a></span>attemptConversionToUTF8()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -291,13 +183,13 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$supportedEncodingsW
         <tr>
           <td class="memname">OpenSpout\Common\Helper\EncodingHelper::attemptConversionToUTF8 </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">?string&#160;</td>
           <td class="paramname"><em>$string</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$sourceEncoding</em>&#160;</td>
         </tr>
         <tr>
@@ -316,90 +208,23 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$supportedEncodingsW
   </table>
   </dd>
 </dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>The converted, UTF-8 string</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../dd/d61/class_open_spout_1_1_common_1_1_exception_1_1_encoding_conversion_exception.html">OpenSpout::Common::Exception::EncodingConversionException</a></td><td>If conversion is not supported or if the conversion failed</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">string</td><td>The converted, UTF-8 string </td></tr>
+    <tr><td class="paramname"><a class="el" href="../../dd/d61/class_open_spout_1_1_common_1_1_exception_1_1_encoding_conversion_exception.html">OpenSpout::Common::Exception::EncodingConversionException</a></td><td>If conversion is not supported or if the conversion failed </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a1874b2cc43801dcfdbb523e245aace71" name="a1874b2cc43801dcfdbb523e245aace71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1874b2cc43801dcfdbb523e245aace71">&#9670;&#160;</a></span>canUseIconv()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Common\Helper\EncodingHelper::canUseIconv </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns whether "iconv" can be used. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td>TRUE if "iconv" is available and can be used, FALSE otherwise </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="afcbd5e1eb0b0eb6705c8bcbd53105174" name="afcbd5e1eb0b0eb6705c8bcbd53105174"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcbd5e1eb0b0eb6705c8bcbd53105174">&#9670;&#160;</a></span>canUseMbString()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Common\Helper\EncodingHelper::canUseMbString </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns whether "mb_string" functions can be used. </p>
-<p>These functions come with the PHP Intl package.</p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td>TRUE if "mb_string" functions are available and can be used, FALSE otherwise </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a5e378945ff73a9df192b88ea55df98b1" name="a5e378945ff73a9df192b88ea55df98b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5e378945ff73a9df192b88ea55df98b1">&#9670;&#160;</a></span>getBytesOffsetToSkipBOM()</h2>
+<a id="ac61803cdb3680ba1944b82d18c63dbc4" name="ac61803cdb3680ba1944b82d18c63dbc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac61803cdb3680ba1944b82d18c63dbc4">&#9670;&#160;</a></span>getBytesOffsetToSkipBOM()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -413,7 +238,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$supportedEncodingsW
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$encoding</em>&#160;</td>
         </tr>
         <tr>
@@ -441,55 +266,27 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$supportedEncodingsW
 
 </div>
 </div>
-<a id="a310595ec9484e0069f80625c4f23a492" name="a310595ec9484e0069f80625c4f23a492"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a310595ec9484e0069f80625c4f23a492">&#9670;&#160;</a></span>hasBOM()</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a07431df6226606b2234555e99b4e3e0e" name="a07431df6226606b2234555e99b4e3e0e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07431df6226606b2234555e99b4e3e0e">&#9670;&#160;</a></span>supportedEncodingsWithBom</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">OpenSpout\Common\Helper\EncodingHelper::hasBOM </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$filePointer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$encoding</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">$this OpenSpout\Common\Helper\EncodingHelper::supportedEncodingsWithBom</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-
-<p>Returns whether the file identified by the given pointer has a BOM. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">resource</td><td class="paramname">$filePointer</td><td>Pointer to the file to check </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$encoding</td><td>Encoding of the file to check</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td>TRUE if the file has a BOM, FALSE otherwise </td></tr>
-  </table>
-  </dd>
-</dl>
-
+<b>Initial value:</b><div class="fragment"><div class="line">= [</div>
+<div class="line">            self::ENCODING_UTF8 =&gt; <a class="code hl_variable" href="../../d0/d2f/class_open_spout_1_1_common_1_1_helper_1_1_encoding_helper.html#afe3774008761a3c092e60cea18ff66b5">self::BOM_UTF8</a>,</div>
+<div class="line">            self::ENCODING_UTF16_LE =&gt; self::BOM_UTF16_LE,</div>
+<div class="line">            self::ENCODING_UTF16_BE =&gt; self::BOM_UTF16_BE,</div>
+<div class="line">            self::ENCODING_UTF32_LE =&gt; self::BOM_UTF32_LE,</div>
+<div class="line">            self::ENCODING_UTF32_BE =&gt; self::BOM_UTF32_BE,</div>
+<div class="line">        ]</div>
+<div class="ttc" id="aclass_open_spout_1_1_common_1_1_helper_1_1_encoding_helper_html_afe3774008761a3c092e60cea18ff66b5"><div class="ttname"><a href="../../d0/d2f/class_open_spout_1_1_common_1_1_helper_1_1_encoding_helper.html#afe3774008761a3c092e60cea18ff66b5">OpenSpout\Common\Helper\EncodingHelper\BOM_UTF8</a></div><div class="ttdeci">const BOM_UTF8</div><div class="ttdoc">Definition of the BOMs for the different encodings.</div><div class="ttdef"><b>Definition:</b> EncodingHelper.php:27</div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -498,7 +295,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$supportedEncodingsW
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:54:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:55:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -60,8 +60,6 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../de/dca/class_open_spout_1_1_reader_1_1_o_d_s_1_1_helper_1_1_cell_value_formatter-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">OpenSpout\Reader\ODS\Helper\CellValueFormatter Class Reference</div></div>
 </div><!--header-->
@@ -69,11 +67,11 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5b793ca28e7466bfe8d966dcb5e63469"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d75/class_open_spout_1_1_reader_1_1_o_d_s_1_1_helper_1_1_cell_value_formatter.html#a5b793ca28e7466bfe8d966dcb5e63469">__construct</a> ($shouldFormatDates, $escaper)</td></tr>
-<tr class="separator:a5b793ca28e7466bfe8d966dcb5e63469"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e51cb158f9ce19e302bbe8c2a61df0a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d75/class_open_spout_1_1_reader_1_1_o_d_s_1_1_helper_1_1_cell_value_formatter.html#a3e51cb158f9ce19e302bbe8c2a61df0a">extractAndFormatNodeValue</a> ($node)</td></tr>
-<tr class="memdesc:a3e51cb158f9ce19e302bbe8c2a61df0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the (unescaped) correctly marshalled, cell value associated to the given XML node.  <br /></td></tr>
-<tr class="separator:a3e51cb158f9ce19e302bbe8c2a61df0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0bc7c8db1b7904075a915688693aae0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d75/class_open_spout_1_1_reader_1_1_o_d_s_1_1_helper_1_1_cell_value_formatter.html#ad0bc7c8db1b7904075a915688693aae0">__construct</a> (bool $shouldFormatDates, <a class="el" href="../../de/d58/class_open_spout_1_1_common_1_1_helper_1_1_escaper_1_1_o_d_s.html">ODS</a> $escaper)</td></tr>
+<tr class="separator:ad0bc7c8db1b7904075a915688693aae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac26a5362ff8a848ff1cee0d4331f8ee0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d75/class_open_spout_1_1_reader_1_1_o_d_s_1_1_helper_1_1_cell_value_formatter.html#ac26a5362ff8a848ff1cee0d4331f8ee0">extractAndFormatNodeValue</a> (DOMElement $node)</td></tr>
+<tr class="memdesc:ac26a5362ff8a848ff1cee0d4331f8ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the (unescaped) correctly marshalled, cell value associated to the given XML node.  <br /></td></tr>
+<tr class="separator:ac26a5362ff8a848ff1cee0d4331f8ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -143,45 +141,10 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>XML_NODE_TEXT_SPAN</
 <tr class="memitem:ae27f54fdb6a03567fd62a7e8c56ad3cd"><td class="memItemLeft" align="right" valign="top"><a id="ae27f54fdb6a03567fd62a7e8c56ad3cd" name="ae27f54fdb6a03567fd62a7e8c56ad3cd"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>XML_NODE_TEXT_TAB</b> = 'text:tab'</td></tr>
 <tr class="separator:ae27f54fdb6a03567fd62a7e8c56ad3cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:af795d1b535c2a254c2b51a9b893b60ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d75/class_open_spout_1_1_reader_1_1_o_d_s_1_1_helper_1_1_cell_value_formatter.html#af795d1b535c2a254c2b51a9b893b60ed">formatBooleanCellValue</a> ($node)</td></tr>
-<tr class="memdesc:af795d1b535c2a254c2b51a9b893b60ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the cell Boolean value from the given node.  <br /></td></tr>
-<tr class="separator:af795d1b535c2a254c2b51a9b893b60ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00f7c6aab5d9f0a1cda200e4012869b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d75/class_open_spout_1_1_reader_1_1_o_d_s_1_1_helper_1_1_cell_value_formatter.html#a00f7c6aab5d9f0a1cda200e4012869b6">formatCurrencyCellValue</a> ($node)</td></tr>
-<tr class="memdesc:a00f7c6aab5d9f0a1cda200e4012869b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the cell Currency value from the given node.  <br /></td></tr>
-<tr class="separator:a00f7c6aab5d9f0a1cda200e4012869b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada92834d2ac52d989b24216b897e0f33"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d75/class_open_spout_1_1_reader_1_1_o_d_s_1_1_helper_1_1_cell_value_formatter.html#ada92834d2ac52d989b24216b897e0f33">formatDateCellValue</a> ($node)</td></tr>
-<tr class="memdesc:ada92834d2ac52d989b24216b897e0f33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the cell <a class="el" href="../../de/db5/class_date.html" title="Date Parser.">Date</a> value from the given node.  <br /></td></tr>
-<tr class="separator:ada92834d2ac52d989b24216b897e0f33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3979511f0d787b781595d4223f1813b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d75/class_open_spout_1_1_reader_1_1_o_d_s_1_1_helper_1_1_cell_value_formatter.html#a3979511f0d787b781595d4223f1813b6">formatFloatCellValue</a> ($node)</td></tr>
-<tr class="memdesc:a3979511f0d787b781595d4223f1813b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the cell Numeric value from the given node.  <br /></td></tr>
-<tr class="separator:a3979511f0d787b781595d4223f1813b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae800333bf59836a8dd3cb5387c8addb5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d75/class_open_spout_1_1_reader_1_1_o_d_s_1_1_helper_1_1_cell_value_formatter.html#ae800333bf59836a8dd3cb5387c8addb5">formatPercentageCellValue</a> ($node)</td></tr>
-<tr class="memdesc:ae800333bf59836a8dd3cb5387c8addb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the cell Percentage value from the given node.  <br /></td></tr>
-<tr class="separator:ae800333bf59836a8dd3cb5387c8addb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90dac6abc53e6796625e61f39e0da84b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d75/class_open_spout_1_1_reader_1_1_o_d_s_1_1_helper_1_1_cell_value_formatter.html#a90dac6abc53e6796625e61f39e0da84b">formatStringCellValue</a> ($node)</td></tr>
-<tr class="memdesc:a90dac6abc53e6796625e61f39e0da84b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the cell String value.  <br /></td></tr>
-<tr class="separator:a90dac6abc53e6796625e61f39e0da84b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a002114bd1a5a17155566d3e82e0db7d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d75/class_open_spout_1_1_reader_1_1_o_d_s_1_1_helper_1_1_cell_value_formatter.html#a002114bd1a5a17155566d3e82e0db7d4">formatTimeCellValue</a> ($node)</td></tr>
-<tr class="memdesc:a002114bd1a5a17155566d3e82e0db7d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the cell Time value from the given node.  <br /></td></tr>
-<tr class="separator:a002114bd1a5a17155566d3e82e0db7d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a121464eca4e778aee8850970aa86a339"><td class="memItemLeft" align="right" valign="top"><a id="a121464eca4e778aee8850970aa86a339" name="a121464eca4e778aee8850970aa86a339"></a>
-OpenSpout Common Helper Escaper ODS&#160;</td><td class="memItemRight" valign="bottom"><b>$escaper</b></td></tr>
-<tr class="memdesc:a121464eca4e778aee8850970aa86a339"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to unescape XML data. <br /></td></tr>
-<tr class="separator:a121464eca4e778aee8850970aa86a339"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9cff59deb318b85566475ea0d751227"><td class="memItemLeft" align="right" valign="top"><a id="ac9cff59deb318b85566475ea0d751227" name="ac9cff59deb318b85566475ea0d751227"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>$shouldFormatDates</b></td></tr>
-<tr class="memdesc:ac9cff59deb318b85566475ea0d751227"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether date/time values should be returned as PHP objects or be formatted as strings. <br /></td></tr>
-<tr class="separator:ac9cff59deb318b85566475ea0d751227"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a5b793ca28e7466bfe8d966dcb5e63469" name="a5b793ca28e7466bfe8d966dcb5e63469"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b793ca28e7466bfe8d966dcb5e63469">&#9670;&#160;</a></span>__construct()</h2>
+<a id="ad0bc7c8db1b7904075a915688693aae0" name="ad0bc7c8db1b7904075a915688693aae0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0bc7c8db1b7904075a915688693aae0">&#9670;&#160;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -189,13 +152,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$shouldFormatDates</b
         <tr>
           <td class="memname">OpenSpout\Reader\ODS\Helper\CellValueFormatter::__construct </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>$shouldFormatDates</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype"><a class="el" href="../../de/d58/class_open_spout_1_1_common_1_1_helper_1_1_escaper_1_1_o_d_s.html">ODS</a>&#160;</td>
           <td class="paramname"><em>$escaper</em>&#160;</td>
         </tr>
         <tr>
@@ -208,7 +171,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$shouldFormatDates</b
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">bool</td><td class="paramname">$shouldFormatDates</td><td>Whether date/time values should be returned as PHP objects or be formatted as strings </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../de/d58/class_open_spout_1_1_common_1_1_helper_1_1_escaper_1_1_o_d_s.html">OpenSpout::Common::Helper::Escaper::ODS</a></td><td class="paramname">$escaper</td><td>Used to unescape XML data </td></tr>
+    <tr><td class="paramtype">ODS</td><td class="paramname">$escaper</td><td>Used to unescape XML data </td></tr>
   </table>
   </dd>
 </dl>
@@ -216,8 +179,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$shouldFormatDates</b
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3e51cb158f9ce19e302bbe8c2a61df0a" name="a3e51cb158f9ce19e302bbe8c2a61df0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e51cb158f9ce19e302bbe8c2a61df0a">&#9670;&#160;</a></span>extractAndFormatNodeValue()</h2>
+<a id="ac26a5362ff8a848ff1cee0d4331f8ee0" name="ac26a5362ff8a848ff1cee0d4331f8ee0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac26a5362ff8a848ff1cee0d4331f8ee0">&#9670;&#160;</a></span>extractAndFormatNodeValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -225,7 +188,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$shouldFormatDates</b
         <tr>
           <td class="memname">OpenSpout\Reader\ODS\Helper\CellValueFormatter::extractAndFormatNodeValue </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">DOMElement&#160;</td>
           <td class="paramname"><em>$node</em></td><td>)</td>
           <td></td>
         </tr>
@@ -234,313 +197,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$shouldFormatDates</b
 
 <p>Returns the (unescaped) correctly marshalled, cell value associated to the given XML node. </p>
 <dl class="section see"><dt>See also</dt><dd><a href="http://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part1.html#refTable13">http://docs.oasis-open.org/office/v1.2/os/OpenDocument-v1.2-os-part1.html#refTable13</a></dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">DOMElement</td><td class="paramname">$node</td><td></td></tr>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool|DateInterval|DateTimeImmutable|float|int|string</td><td>The value associated with the cell, empty string if cell's type is void/undefined</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">InvalidValueException</td><td>If the node value is not valid</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool|DateInterval|DateTime|float|int|string</td><td>The value associated with the cell, empty string if cell's type is void/undefined </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="af795d1b535c2a254c2b51a9b893b60ed" name="af795d1b535c2a254c2b51a9b893b60ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af795d1b535c2a254c2b51a9b893b60ed">&#9670;&#160;</a></span>formatBooleanCellValue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Reader\ODS\Helper\CellValueFormatter::formatBooleanCellValue </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$node</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the cell Boolean value from the given node. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">DOMElement</td><td class="paramname">$node</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td>The value associated with the cell </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a00f7c6aab5d9f0a1cda200e4012869b6" name="a00f7c6aab5d9f0a1cda200e4012869b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00f7c6aab5d9f0a1cda200e4012869b6">&#9670;&#160;</a></span>formatCurrencyCellValue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Reader\ODS\Helper\CellValueFormatter::formatCurrencyCellValue </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$node</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the cell Currency value from the given node. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">DOMElement</td><td class="paramname">$node</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">string</td><td>The value associated with the cell (e.g. "100 USD" or "9.99 EUR") </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ada92834d2ac52d989b24216b897e0f33" name="ada92834d2ac52d989b24216b897e0f33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada92834d2ac52d989b24216b897e0f33">&#9670;&#160;</a></span>formatDateCellValue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Reader\ODS\Helper\CellValueFormatter::formatDateCellValue </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$node</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the cell <a class="el" href="../../de/db5/class_date.html" title="Date Parser.">Date</a> value from the given node. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">DOMElement</td><td class="paramname">$node</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">InvalidValueException</td><td>If the value is not a valid date</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">DateTime|string</td><td>The value associated with the cell </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a3979511f0d787b781595d4223f1813b6" name="a3979511f0d787b781595d4223f1813b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3979511f0d787b781595d4223f1813b6">&#9670;&#160;</a></span>formatFloatCellValue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Reader\ODS\Helper\CellValueFormatter::formatFloatCellValue </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$node</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the cell Numeric value from the given node. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">DOMElement</td><td class="paramname">$node</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">float|int</td><td>The value associated with the cell </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ae800333bf59836a8dd3cb5387c8addb5" name="ae800333bf59836a8dd3cb5387c8addb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae800333bf59836a8dd3cb5387c8addb5">&#9670;&#160;</a></span>formatPercentageCellValue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Reader\ODS\Helper\CellValueFormatter::formatPercentageCellValue </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$node</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the cell Percentage value from the given node. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">DOMElement</td><td class="paramname">$node</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">float|int</td><td>The value associated with the cell </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a90dac6abc53e6796625e61f39e0da84b" name="a90dac6abc53e6796625e61f39e0da84b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90dac6abc53e6796625e61f39e0da84b">&#9670;&#160;</a></span>formatStringCellValue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Reader\ODS\Helper\CellValueFormatter::formatStringCellValue </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$node</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the cell String value. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">DOMElement</td><td class="paramname">$node</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">string</td><td>The value associated with the cell </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a002114bd1a5a17155566d3e82e0db7d4" name="a002114bd1a5a17155566d3e82e0db7d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a002114bd1a5a17155566d3e82e0db7d4">&#9670;&#160;</a></span>formatTimeCellValue()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Reader\ODS\Helper\CellValueFormatter::formatTimeCellValue </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$node</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the cell Time value from the given node. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">DOMElement</td><td class="paramname">$node</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">InvalidValueException</td><td>If the value is not a valid time</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">DateInterval|string</td><td>The value associated with the cell </td></tr>
+    <tr><td class="paramname">InvalidValueException</td><td>If the node value is not valid </td></tr>
   </table>
   </dd>
 </dl>
@@ -553,7 +218,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$shouldFormatDates</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:54:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:55:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

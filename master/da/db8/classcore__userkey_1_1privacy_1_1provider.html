@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -86,13 +86,13 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aa3d077434514e5e6ac262cf5e8e907dd"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcore__userkey_1_1privacy_1_1provider.html#aa3d077434514e5e6ac262cf5e8e907dd">delete_userkeys</a> (string $script, $userid=null, $instance=null)</td></tr>
 <tr class="memdesc:aa3d077434514e5e6ac262cf5e8e907dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes all userkeys for a script.  <br /></td></tr>
 <tr class="separator:aa3d077434514e5e6ac262cf5e8e907dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31cefb6e16df719e01e9e95793d2a22e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcore__userkey_1_1privacy_1_1provider.html#a31cefb6e16df719e01e9e95793d2a22e">export_userkeys</a> (\<a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, array $subcontext, string $script, $instance=null)</td></tr>
+<tr class="memitem:a31cefb6e16df719e01e9e95793d2a22e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcore__userkey_1_1privacy_1_1provider.html#a31cefb6e16df719e01e9e95793d2a22e">export_userkeys</a> (\context $context, array $subcontext, string $script, $instance=null)</td></tr>
 <tr class="memdesc:a31cefb6e16df719e01e9e95793d2a22e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exports the data relating to user keys for the specified scripts and instance, within the specified context/subcontext.  <br /></td></tr>
 <tr class="separator:a31cefb6e16df719e01e9e95793d2a22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fc5532f96d4872e33a898dd8e6f1c19"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcore__userkey_1_1privacy_1_1provider.html#a4fc5532f96d4872e33a898dd8e6f1c19">get_metadata</a> (<a class="el" href="../../df/d2b/classcore__privacy_1_1local_1_1metadata_1_1collection.html">collection</a> $<a class="el" href="../../df/d2b/classcore__privacy_1_1local_1_1metadata_1_1collection.html">collection</a>)</td></tr>
 <tr class="memdesc:a4fc5532f96d4872e33a898dd8e6f1c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns meta data about this system.  <br /></td></tr>
 <tr class="separator:a4fc5532f96d4872e33a898dd8e6f1c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a907a05b48d56e3f851517b62e626e455"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcore__userkey_1_1privacy_1_1provider.html#a907a05b48d56e3f851517b62e626e455">get_user_contexts_with_script</a> (<a class="el" href="../../d9/df1/classcore__privacy_1_1local_1_1request_1_1userlist.html">userlist</a> $<a class="el" href="../../d9/df1/classcore__privacy_1_1local_1_1request_1_1userlist.html">userlist</a>, <a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, string $script, int $instance=null)</td></tr>
+<tr class="memitem:a907a05b48d56e3f851517b62e626e455"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcore__userkey_1_1privacy_1_1provider.html#a907a05b48d56e3f851517b62e626e455">get_user_contexts_with_script</a> (<a class="el" href="../../d9/df1/classcore__privacy_1_1local_1_1request_1_1userlist.html">userlist</a> $<a class="el" href="../../d9/df1/classcore__privacy_1_1local_1_1request_1_1userlist.html">userlist</a>, context $context, string $script, int $instance=null)</td></tr>
 <tr class="memdesc:a907a05b48d56e3f851517b62e626e455"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of users within a specific context for this system.  <br /></td></tr>
 <tr class="separator:a907a05b48d56e3f851517b62e626e455"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -165,7 +165,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static core_userkey\privacy\provider::export_userkeys </td>
           <td>(</td>
-          <td class="paramtype">\<a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramtype">\context&#160;</td>
           <td class="paramname"><em>$context</em>, </td>
         </tr>
         <tr>
@@ -272,7 +272,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramtype">context&#160;</td>
           <td class="paramname"><em>$context</em>, </td>
         </tr>
         <tr>
@@ -319,7 +319,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:54:16 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:55:16 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

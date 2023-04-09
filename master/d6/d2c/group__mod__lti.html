@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -680,7 +680,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga3be56ee76714c7dc940009cff63d4d22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2c/group__mod__lti.html#ga3be56ee76714c7dc940009cff63d4d22">lti_verify_with_keyset</a> ($jwtparam, $keyseturl, $clientid)</td></tr>
 <tr class="memdesc:ga3be56ee76714c7dc940009cff63d4d22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifies the <a class="el" href="../../d8/d39/class_j_w_t.html">JWT</a> signature using a <a class="el" href="../../da/d1d/class_j_w_k.html">JWK</a> keyset.  <br /></td></tr>
 <tr class="separator:ga3be56ee76714c7dc940009cff63d4d22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3b0e7245728fcb271c83849fcd74c53e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2c/group__mod__lti.html#ga3b0e7245728fcb271c83849fcd74c53e">lti_view</a> ($lti, $course, $cm, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:ga3b0e7245728fcb271c83849fcd74c53e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2c/group__mod__lti.html#ga3b0e7245728fcb271c83849fcd74c53e">lti_view</a> ($lti, $course, $cm, $context)</td></tr>
 <tr class="memdesc:ga3b0e7245728fcb271c83849fcd74c53e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the activity completed (if required) and trigger the course_module_viewed event.  <br /></td></tr>
 <tr class="separator:ga3b0e7245728fcb271c83849fcd74c53e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gada960f4e5874ddc16fa000c397bea720"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2c/group__mod__lti.html#gada960f4e5874ddc16fa000c397bea720">mod_lti_core_calendar_provide_event_action</a> (<a class="el" href="../../dd/d35/classcalendar__event.html">calendar_event</a> $event, <a class="el" href="../../d0/d0f/classcore__calendar_1_1action__factory.html">core_calendar\action_factory</a> $factory, int $userid=0)</td></tr>
@@ -699,9 +699,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6ba3b8501e6496ae119d46a07038b2cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2c/group__mod__lti.html#ga6ba3b8501e6496ae119d46a07038b2cd">params_to_string</a> (object $params)</td></tr>
 <tr class="memdesc:ga6ba3b8501e6496ae119d46a07038b2cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an array of custom parameters to a new line separated string.  <br /></td></tr>
 <tr class="separator:ga6ba3b8501e6496ae119d46a07038b2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2791eaa9c096523f0f57806c8328c54d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2c/group__mod__lti.html#ga2791eaa9c096523f0f57806c8328c54d">serialise_tool_proxy</a> (stdClass $proxy)</td></tr>
-<tr class="memdesc:ga2791eaa9c096523f0f57806c8328c54d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialises this tool proxy.  <br /></td></tr>
-<tr class="separator:ga2791eaa9c096523f0f57806c8328c54d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga82504e2f36b6e4442b20f2116567feb7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2c/group__mod__lti.html#ga82504e2f36b6e4442b20f2116567feb7">serialise_tool_type</a> (stdClass $type)</td></tr>
 <tr class="memdesc:ga82504e2f36b6e4442b20f2116567feb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialises this tool type.  <br /></td></tr>
 <tr class="separator:ga82504e2f36b6e4442b20f2116567feb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2050,7 +2047,7 @@ $settings&#160;</td><td class="memItemRight" valign="bottom"><b>visiblename</b> 
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001109">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 <a href="https://tracker.moodle.org/browse/MDL-62599" class="el">MDL-62599</a> - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001110">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.7 <a href="https://tracker.moodle.org/browse/MDL-62599" class="el">MDL-62599</a> - please do not use this function any more. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d6/d2c/group__mod__lti.html#ga2eded00c7001b00c0744cb0a6e5856ab" title="This function builds the standard parameters for an LTI message that must be sent to the tool produce...">lti_build_standard_message()</a> </dd></dl>
 
 </div>
@@ -3479,7 +3476,7 @@ $settings&#160;</td><td class="memItemRight" valign="bottom"><b>visiblename</b> 
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001107">Deprecated:</a></b></dt><dd>since 3.9 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001108">Deprecated:</a></b></dt><dd>since 3.9 </dd></dl>
 
 </div>
 </div>
@@ -4714,7 +4711,7 @@ $settings&#160;</td><td class="memItemRight" valign="bottom"><b>visiblename</b> 
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001108">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001109">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8 </dd></dl>
 
 </div>
 </div>
@@ -5868,40 +5865,6 @@ $settings&#160;</td><td class="memItemRight" valign="bottom"><b>visiblename</b> 
 
 </div>
 </div>
-<a id="ga2791eaa9c096523f0f57806c8328c54d" name="ga2791eaa9c096523f0f57806c8328c54d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2791eaa9c096523f0f57806c8328c54d">&#9670;&#160;</a></span>serialise_tool_proxy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">serialise_tool_proxy </td>
-          <td>(</td>
-          <td class="paramtype">stdClass&#160;</td>
-          <td class="paramname"><em>$proxy</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Serialises this tool proxy. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$proxy</td><td>The tool proxy</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001110">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.10 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000285">Todo:</a></b></dt><dd>This will be finally removed for <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2 as part of <a href="https://tracker.moodle.org/browse/MDL-69976" class="el">MDL-69976</a>. </dd></dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">array</td><td>An array of values representing this type </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="ga82504e2f36b6e4442b20f2116567feb7" name="ga82504e2f36b6e4442b20f2116567feb7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga82504e2f36b6e4442b20f2116567feb7">&#9670;&#160;</a></span>serialise_tool_type()</h2>
 
@@ -6054,7 +6017,7 @@ $settings&#160;</td><td class="memItemRight" valign="bottom"><b>visiblename</b> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:51:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:52:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -61,7 +61,6 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="../../d8/da7/class_open_spout_1_1_writer_1_1_x_l_s_x_1_1_manager_1_1_workbook_manager-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">OpenSpout\Writer\XLSX\Manager\WorkbookManager Class Reference</div></div>
 </div><!--header-->
@@ -72,52 +71,36 @@ Inheritance diagram for OpenSpout\Writer\XLSX\Manager\WorkbookManager:</div>
  <div class="center">
   <img src="../../d8/dab/class_open_spout_1_1_writer_1_1_x_l_s_x_1_1_manager_1_1_workbook_manager.png" usemap="#OpenSpout_5CWriter_5CXLSX_5CManager_5CWorkbookManager_map" alt=""/>
   <map id="OpenSpout_5CWriter_5CXLSX_5CManager_5CWorkbookManager_map" name="OpenSpout_5CWriter_5CXLSX_5CManager_5CWorkbookManager_map">
-<area href="../../df/db1/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_workbook_manager_abstract.html" alt="OpenSpout\Writer\Common\Manager\WorkbookManagerAbstract" shape="rect" coords="0,56,381,80"/>
+<area href="../../d5/d40/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_abstract_workbook_manager.html" alt="OpenSpout\Writer\Common\Manager\AbstractWorkbookManager" shape="rect" coords="0,56,381,80"/>
 <area href="../../df/db8/interface_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_workbook_manager_interface.html" alt="OpenSpout\Writer\Common\Manager\WorkbookManagerInterface" shape="rect" coords="0,0,381,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1a668138f15aa03a4765903d5ef18b6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db1/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_workbook_manager_abstract.html#a1a668138f15aa03a4765903d5ef18b6b">addNewSheetAndMakeItCurrent</a> ()</td></tr>
-<tr class="memdesc:a1a668138f15aa03a4765903d5ef18b6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new sheet in the workbook and make it the current sheet.  <br /></td></tr>
-<tr class="separator:a1a668138f15aa03a4765903d5ef18b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ae0cad967cbb08175f2913d0008911b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db1/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_workbook_manager_abstract.html#a9ae0cad967cbb08175f2913d0008911b">addRowToCurrentWorksheet</a> (<a class="el" href="../../de/d5f/class_open_spout_1_1_common_1_1_entity_1_1_row.html">Row</a> $row)</td></tr>
-<tr class="memdesc:a9ae0cad967cbb08175f2913d0008911b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a row to the current sheet.  <br /></td></tr>
-<tr class="separator:a9ae0cad967cbb08175f2913d0008911b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4653b4febccac439358b3255bd87b9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db1/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_workbook_manager_abstract.html#af4653b4febccac439358b3255bd87b9f">close</a> ($finalFilePointer)</td></tr>
-<tr class="memdesc:af4653b4febccac439358b3255bd87b9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the workbook and all its associated sheets.  <br /></td></tr>
-<tr class="separator:af4653b4febccac439358b3255bd87b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfe89e2dcb6eba27cadbd8e2c282890b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db1/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_workbook_manager_abstract.html#abfe89e2dcb6eba27cadbd8e2c282890b">getCurrentWorksheet</a> ()</td></tr>
-<tr class="memdesc:abfe89e2dcb6eba27cadbd8e2c282890b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current sheet.  <br /></td></tr>
-<tr class="separator:abfe89e2dcb6eba27cadbd8e2c282890b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad51a9f8b83729d4ec4bc2c3ba2145019"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db1/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_workbook_manager_abstract.html#ad51a9f8b83729d4ec4bc2c3ba2145019">getWorkbook</a> ()</td></tr>
-<tr class="separator:ad51a9f8b83729d4ec4bc2c3ba2145019"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8fbd2644880ea93758103fa245639f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dab/class_open_spout_1_1_writer_1_1_x_l_s_x_1_1_manager_1_1_workbook_manager.html#ab8fbd2644880ea93758103fa245639f3">getWorksheetFilePath</a> (<a class="el" href="../../d9/d9a/class_open_spout_1_1_writer_1_1_common_1_1_entity_1_1_sheet.html">Sheet</a> $sheet)</td></tr>
-<tr class="separator:ab8fbd2644880ea93758103fa245639f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f4f18abade58ee884ac58a15389ee2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db1/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_workbook_manager_abstract.html#a8f4f18abade58ee884ac58a15389ee2e">getWorksheets</a> ()</td></tr>
-<tr class="separator:a8f4f18abade58ee884ac58a15389ee2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fa29cffd1a5f093ecb4d43194021594"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db1/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_workbook_manager_abstract.html#a7fa29cffd1a5f093ecb4d43194021594">setColumnWidth</a> (float $width,... $columns)</td></tr>
-<tr class="separator:a7fa29cffd1a5f093ecb4d43194021594"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a178de530d1563fe5713128004eab93ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db1/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_workbook_manager_abstract.html#a178de530d1563fe5713128004eab93ab">setColumnWidthForRange</a> (float $width, int $start, int $<a class="el" href="../../da/d71/group___stream.html#gad6e6111f903c5015b2a69ff96b186cf9">end</a>)</td></tr>
-<tr class="separator:a178de530d1563fe5713128004eab93ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b425a9abbe110084c4d6663f67ac41a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db1/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_workbook_manager_abstract.html#a2b425a9abbe110084c4d6663f67ac41a">setCurrentSheet</a> (<a class="el" href="../../d9/d9a/class_open_spout_1_1_writer_1_1_common_1_1_entity_1_1_sheet.html">Sheet</a> $sheet)</td></tr>
-<tr class="memdesc:a2b425a9abbe110084c4d6663f67ac41a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the given sheet as the current one.  <br /></td></tr>
-<tr class="separator:a2b425a9abbe110084c4d6663f67ac41a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a805973ee278d15e31aeaef553de64855"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db1/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_workbook_manager_abstract.html#a805973ee278d15e31aeaef553de64855">setDefaultColumnWidth</a> (float $width)</td></tr>
-<tr class="separator:a805973ee278d15e31aeaef553de64855"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c7bc18b0bb99a4bf9ff48ff1c929d57"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db1/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_workbook_manager_abstract.html#a9c7bc18b0bb99a4bf9ff48ff1c929d57">setDefaultRowHeight</a> (float $height)</td></tr>
-<tr class="separator:a9c7bc18b0bb99a4bf9ff48ff1c929d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3351a91b588566ac4fd1e786361d0bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db1/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_workbook_manager_abstract.html#aa3351a91b588566ac4fd1e786361d0bb">startCurrentSheet</a> ()</td></tr>
-<tr class="memdesc:aa3351a91b588566ac4fd1e786361d0bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the current sheet and opens the file pointer.  <br /></td></tr>
-<tr class="separator:aa3351a91b588566ac4fd1e786361d0bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef8906de9d5db60ded4e9008a1764204"><td class="memItemLeft" align="right" valign="top"><a id="aef8906de9d5db60ded4e9008a1764204" name="aef8906de9d5db60ded4e9008a1764204"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>__construct</b> (<a class="el" href="../../d0/d64/class_open_spout_1_1_writer_1_1_common_1_1_entity_1_1_workbook.html">Workbook</a> $workbook, <a class="el" href="../../d2/ddd/class_open_spout_1_1_writer_1_1_x_l_s_x_1_1_options.html">Options</a> $options, <a class="el" href="../../d4/d5b/class_open_spout_1_1_writer_1_1_x_l_s_x_1_1_manager_1_1_worksheet_manager.html">WorksheetManager</a> $worksheetManager, <a class="el" href="../../d3/df3/class_open_spout_1_1_writer_1_1_x_l_s_x_1_1_manager_1_1_style_1_1_style_manager.html">StyleManager</a> $styleManager, <a class="el" href="../../d3/d53/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_style_1_1_style_merger.html">StyleMerger</a> $styleMerger, <a class="el" href="../../d3/dfd/class_open_spout_1_1_writer_1_1_x_l_s_x_1_1_helper_1_1_file_system_helper.html">FileSystemHelper</a> $fileSystemHelper)</td></tr>
+<tr class="separator:aef8906de9d5db60ded4e9008a1764204"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afce407ee75b913cec9de7213c59aef63"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d40/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_abstract_workbook_manager.html#afce407ee75b913cec9de7213c59aef63">addNewSheetAndMakeItCurrent</a> ()</td></tr>
+<tr class="memdesc:afce407ee75b913cec9de7213c59aef63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new sheet in the workbook and make it the current sheet.  <br /></td></tr>
+<tr class="separator:afce407ee75b913cec9de7213c59aef63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5cbd4a0d5ffb77760f9241fd9dd63b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d40/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_abstract_workbook_manager.html#ad5cbd4a0d5ffb77760f9241fd9dd63b3">addRowToCurrentWorksheet</a> (<a class="el" href="../../de/d5f/class_open_spout_1_1_common_1_1_entity_1_1_row.html">Row</a> $row)</td></tr>
+<tr class="memdesc:ad5cbd4a0d5ffb77760f9241fd9dd63b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a row to the current sheet.  <br /></td></tr>
+<tr class="separator:ad5cbd4a0d5ffb77760f9241fd9dd63b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9cce73bb05afe5d87e32efc5689bdc4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d40/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_abstract_workbook_manager.html#ad9cce73bb05afe5d87e32efc5689bdc4">close</a> ($finalFilePointer)</td></tr>
+<tr class="memdesc:ad9cce73bb05afe5d87e32efc5689bdc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the workbook and all its associated sheets.  <br /></td></tr>
+<tr class="separator:ad9cce73bb05afe5d87e32efc5689bdc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7d181dc6bc12f2ea13b9337d19deaff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d40/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_abstract_workbook_manager.html#aa7d181dc6bc12f2ea13b9337d19deaff">getCurrentWorksheet</a> ()</td></tr>
+<tr class="memdesc:aa7d181dc6bc12f2ea13b9337d19deaff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current sheet.  <br /></td></tr>
+<tr class="separator:aa7d181dc6bc12f2ea13b9337d19deaff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58dc30cc70c1696bd53102493423ee5a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d40/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_abstract_workbook_manager.html#a58dc30cc70c1696bd53102493423ee5a">getWorksheets</a> ()</td></tr>
+<tr class="separator:a58dc30cc70c1696bd53102493423ee5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5444a2454c1d6ca9283114bffcb39b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d40/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_abstract_workbook_manager.html#ad5444a2454c1d6ca9283114bffcb39b1">setCurrentSheet</a> (<a class="el" href="../../d9/d9a/class_open_spout_1_1_writer_1_1_common_1_1_entity_1_1_sheet.html">Sheet</a> $sheet)</td></tr>
+<tr class="memdesc:ad5444a2454c1d6ca9283114bffcb39b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the given sheet as the current one.  <br /></td></tr>
+<tr class="separator:ad5444a2454c1d6ca9283114bffcb39b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a171bf5ec077736d292cad7b488b18a21"><td class="memItemLeft" align="right" valign="top"><a id="a171bf5ec077736d292cad7b488b18a21" name="a171bf5ec077736d292cad7b488b18a21"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>cleanupTempFolder</b> ()</td></tr>
-<tr class="memdesc:a171bf5ec077736d292cad7b488b18a21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the root folder created in the temp folder and all its contents. <br /></td></tr>
-<tr class="separator:a171bf5ec077736d292cad7b488b18a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2973a1e7fee81db7013ad6f9fffbf1fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dab/class_open_spout_1_1_writer_1_1_x_l_s_x_1_1_manager_1_1_workbook_manager.html#a2973a1e7fee81db7013ad6f9fffbf1fb">closeRemainingObjects</a> ()</td></tr>
 <tr class="memdesc:a2973a1e7fee81db7013ad6f9fffbf1fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes custom objects that are still opened.  <br /></td></tr>
 <tr class="separator:a2973a1e7fee81db7013ad6f9fffbf1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,51 +112,24 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a73e2fc627642a16dbf5e45507bc05b07"><td class="memItemLeft" align="right" valign="top"><a id="a73e2fc627642a16dbf5e45507bc05b07" name="a73e2fc627642a16dbf5e45507bc05b07"></a>
-<a class="el" href="../../df/d1e/class_open_spout_1_1_writer_1_1_common_1_1_entity_1_1_worksheet.html">Worksheet</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$currentWorksheet</b></td></tr>
-<tr class="memdesc:a73e2fc627642a16dbf5e45507bc05b07"><td class="mdescLeft">&#160;</td><td class="mdescRight">The worksheet where data will be written to. <br /></td></tr>
-<tr class="separator:a73e2fc627642a16dbf5e45507bc05b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63ff0b4c65ce8cff9ae65b1044106422"><td class="memItemLeft" align="right" valign="top"><a id="a63ff0b4c65ce8cff9ae65b1044106422" name="a63ff0b4c65ce8cff9ae65b1044106422"></a>
-InternalEntityFactory&#160;</td><td class="memItemRight" valign="bottom"><b>$entityFactory</b></td></tr>
-<tr class="memdesc:a63ff0b4c65ce8cff9ae65b1044106422"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory to create entities. <br /></td></tr>
-<tr class="separator:a63ff0b4c65ce8cff9ae65b1044106422"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8116281fb3eab7f0018a8f89a788b730"><td class="memItemLeft" align="right" valign="top"><a id="a8116281fb3eab7f0018a8f89a788b730" name="a8116281fb3eab7f0018a8f89a788b730"></a>
-<a class="el" href="../../d3/dfd/class_open_spout_1_1_writer_1_1_x_l_s_x_1_1_helper_1_1_file_system_helper.html">FileSystemHelper</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$fileSystemHelper</b></td></tr>
-<tr class="memdesc:a8116281fb3eab7f0018a8f89a788b730"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to perform file system operations. <br /></td></tr>
-<tr class="separator:a8116281fb3eab7f0018a8f89a788b730"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b8580987b7620128ccc56de32f54300"><td class="memItemLeft" align="right" valign="top"><a id="a3b8580987b7620128ccc56de32f54300" name="a3b8580987b7620128ccc56de32f54300"></a>
-<a class="el" href="../../db/d24/interface_open_spout_1_1_writer_1_1_common_1_1_creator_1_1_manager_factory_interface.html">ManagerFactoryInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$managerFactory</b></td></tr>
-<tr class="memdesc:a3b8580987b7620128ccc56de32f54300"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory to create managers. <br /></td></tr>
-<tr class="separator:a3b8580987b7620128ccc56de32f54300"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0b45f70f579f35d1644b163073af01b"><td class="memItemLeft" align="right" valign="top"><a id="af0b45f70f579f35d1644b163073af01b" name="af0b45f70f579f35d1644b163073af01b"></a>
-<a class="el" href="../../d5/d3a/interface_open_spout_1_1_common_1_1_manager_1_1_options_manager_interface.html">OptionsManagerInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$optionsManager</b></td></tr>
-<tr class="separator:af0b45f70f579f35d1644b163073af01b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65df97d57c02c4cacc2919b11b6f33da"><td class="memItemLeft" align="right" valign="top"><a id="a65df97d57c02c4cacc2919b11b6f33da" name="a65df97d57c02c4cacc2919b11b6f33da"></a>
-<a class="el" href="../../d3/df3/class_open_spout_1_1_writer_1_1_x_l_s_x_1_1_manager_1_1_style_1_1_style_manager.html">StyleManager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$styleManager</b></td></tr>
-<tr class="memdesc:a65df97d57c02c4cacc2919b11b6f33da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages styles. <br /></td></tr>
-<tr class="separator:a65df97d57c02c4cacc2919b11b6f33da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34630fe6c668f27e673d19ed31a54921"><td class="memItemLeft" align="right" valign="top"><a id="a34630fe6c668f27e673d19ed31a54921" name="a34630fe6c668f27e673d19ed31a54921"></a>
-<a class="el" href="../../d3/d53/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_style_1_1_style_merger.html">StyleMerger</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$styleMerger</b></td></tr>
-<tr class="memdesc:a34630fe6c668f27e673d19ed31a54921"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to merge styles. <br /></td></tr>
-<tr class="separator:a34630fe6c668f27e673d19ed31a54921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac41ede28e8907606383ab48102beaaf9"><td class="memItemLeft" align="right" valign="top"><a id="ac41ede28e8907606383ab48102beaaf9" name="ac41ede28e8907606383ab48102beaaf9"></a>
-null Workbook&#160;</td><td class="memItemRight" valign="bottom"><b>$workbook</b></td></tr>
-<tr class="memdesc:ac41ede28e8907606383ab48102beaaf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The workbook to manage. <br /></td></tr>
-<tr class="separator:ac41ede28e8907606383ab48102beaaf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abda97549c803020e9813996c332cb148"><td class="memItemLeft" align="right" valign="top"><a id="abda97549c803020e9813996c332cb148" name="abda97549c803020e9813996c332cb148"></a>
-<a class="el" href="../../d4/d5b/class_open_spout_1_1_writer_1_1_x_l_s_x_1_1_manager_1_1_worksheet_manager.html">WorksheetManager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$worksheetManager</b></td></tr>
-<tr class="memdesc:abda97549c803020e9813996c332cb148"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object used to manage worksheets. <br /></td></tr>
-<tr class="separator:abda97549c803020e9813996c332cb148"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
-Static Protected Attributes</h2></td></tr>
-<tr class="memitem:a9b0da036a0db76a26c69d224525debe3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dab/class_open_spout_1_1_writer_1_1_x_l_s_x_1_1_manager_1_1_workbook_manager.html#a9b0da036a0db76a26c69d224525debe3">$maxRowsPerWorksheet</a> = 1048576</td></tr>
-<tr class="memdesc:a9b0da036a0db76a26c69d224525debe3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of rows a XLSX sheet can contain.  <br /></td></tr>
-<tr class="separator:a9b0da036a0db76a26c69d224525debe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a503b37a899197dbbc1df8c0074efd14c"><td class="memItemLeft" align="right" valign="top"><a id="a503b37a899197dbbc1df8c0074efd14c" name="a503b37a899197dbbc1df8c0074efd14c"></a>
+FileSystemWithRootFolderHelperInterface FileSystemWithRootFolderHelperInterface&#160;</td><td class="memItemRight" valign="bottom"><b>$fileSystemHelper</b></td></tr>
+<tr class="memdesc:a503b37a899197dbbc1df8c0074efd14c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to perform file system operations. <br /></td></tr>
+<tr class="separator:a503b37a899197dbbc1df8c0074efd14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91a4c7366307e71bde11ac0164ef686f"><td class="memItemLeft" align="right" valign="top"><a id="a91a4c7366307e71bde11ac0164ef686f" name="a91a4c7366307e71bde11ac0164ef686f"></a>
+<a class="el" href="../../d9/da9/class_open_spout_1_1_writer_1_1_common_1_1_abstract_options.html">AbstractOptions</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$options</b></td></tr>
+<tr class="separator:a91a4c7366307e71bde11ac0164ef686f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87a5a963de69c394b40e6ffec8a0884e"><td class="memItemLeft" align="right" valign="top"><a id="a87a5a963de69c394b40e6ffec8a0884e" name="a87a5a963de69c394b40e6ffec8a0884e"></a>
+StyleManagerInterface StyleManagerInterface&#160;</td><td class="memItemRight" valign="bottom"><b>$styleManager</b></td></tr>
+<tr class="memdesc:a87a5a963de69c394b40e6ffec8a0884e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages styles. <br /></td></tr>
+<tr class="separator:a87a5a963de69c394b40e6ffec8a0884e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed9ad851e233efaa9ceaa28d26c78a9e"><td class="memItemLeft" align="right" valign="top"><a id="aed9ad851e233efaa9ceaa28d26c78a9e" name="aed9ad851e233efaa9ceaa28d26c78a9e"></a>
+<a class="el" href="../../d7/d0f/interface_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_worksheet_manager_interface.html">WorksheetManagerInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$worksheetManager</b></td></tr>
+<tr class="separator:aed9ad851e233efaa9ceaa28d26c78a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1a668138f15aa03a4765903d5ef18b6b" name="a1a668138f15aa03a4765903d5ef18b6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a668138f15aa03a4765903d5ef18b6b">&#9670;&#160;</a></span>addNewSheetAndMakeItCurrent()</h2>
+<a id="afce407ee75b913cec9de7213c59aef63" name="afce407ee75b913cec9de7213c59aef63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afce407ee75b913cec9de7213c59aef63">&#9670;&#160;</a></span>addNewSheetAndMakeItCurrent()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -182,7 +138,7 @@ Static Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">OpenSpout\Writer\Common\Manager\WorkbookManagerAbstract::addNewSheetAndMakeItCurrent </td>
+          <td class="memname">OpenSpout\Writer\Common\Manager\AbstractWorkbookManager::addNewSheetAndMakeItCurrent </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -190,7 +146,7 @@ Static Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -208,8 +164,8 @@ Static Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a9ae0cad967cbb08175f2913d0008911b" name="a9ae0cad967cbb08175f2913d0008911b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ae0cad967cbb08175f2913d0008911b">&#9670;&#160;</a></span>addRowToCurrentWorksheet()</h2>
+<a id="ad5cbd4a0d5ffb77760f9241fd9dd63b3" name="ad5cbd4a0d5ffb77760f9241fd9dd63b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5cbd4a0d5ffb77760f9241fd9dd63b3">&#9670;&#160;</a></span>addRowToCurrentWorksheet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -218,7 +174,7 @@ Static Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">OpenSpout\Writer\Common\Manager\WorkbookManagerAbstract::addRowToCurrentWorksheet </td>
+          <td class="memname">OpenSpout\Writer\Common\Manager\AbstractWorkbookManager::addRowToCurrentWorksheet </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../de/d5f/class_open_spout_1_1_common_1_1_entity_1_1_row.html">Row</a>&#160;</td>
           <td class="paramname"><em>$row</em></td><td>)</td>
@@ -227,7 +183,7 @@ Static Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -252,8 +208,8 @@ Static Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="af4653b4febccac439358b3255bd87b9f" name="af4653b4febccac439358b3255bd87b9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4653b4febccac439358b3255bd87b9f">&#9670;&#160;</a></span>close()</h2>
+<a id="ad9cce73bb05afe5d87e32efc5689bdc4" name="ad9cce73bb05afe5d87e32efc5689bdc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9cce73bb05afe5d87e32efc5689bdc4">&#9670;&#160;</a></span>close()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -262,7 +218,7 @@ Static Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">OpenSpout\Writer\Common\Manager\WorkbookManagerAbstract::close </td>
+          <td class="memname">OpenSpout\Writer\Common\Manager\AbstractWorkbookManager::close </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$finalFilePointer</em></td><td>)</td>
@@ -271,7 +227,7 @@ Static Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -314,12 +270,12 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Closes custom objects that are still opened. </p>
 
-<p>Reimplemented from <a class="el" href="../../df/db1/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_workbook_manager_abstract.html#a3434458caa432f38e370b13f0cfe9099">OpenSpout\Writer\Common\Manager\WorkbookManagerAbstract</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d5/d40/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_abstract_workbook_manager.html#a95d126029b3b4cd2f80aa33f946e3ccb">OpenSpout\Writer\Common\Manager\AbstractWorkbookManager</a>.</p>
 
 </div>
 </div>
-<a id="abfe89e2dcb6eba27cadbd8e2c282890b" name="abfe89e2dcb6eba27cadbd8e2c282890b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abfe89e2dcb6eba27cadbd8e2c282890b">&#9670;&#160;</a></span>getCurrentWorksheet()</h2>
+<a id="aa7d181dc6bc12f2ea13b9337d19deaff" name="aa7d181dc6bc12f2ea13b9337d19deaff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7d181dc6bc12f2ea13b9337d19deaff">&#9670;&#160;</a></span>getCurrentWorksheet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -328,7 +284,7 @@ Static Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">OpenSpout\Writer\Common\Manager\WorkbookManagerAbstract::getCurrentWorksheet </td>
+          <td class="memname">OpenSpout\Writer\Common\Manager\AbstractWorkbookManager::getCurrentWorksheet </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -336,7 +292,7 @@ Static Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -382,12 +338,12 @@ Static Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="../../df/db1/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_workbook_manager_abstract.html#ad2162147e06a36a88af035bdae5fa917">OpenSpout\Writer\Common\Manager\WorkbookManagerAbstract</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d5/d40/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_abstract_workbook_manager.html#a42bfc84e9d83ccdde73d97ea4909804b">OpenSpout\Writer\Common\Manager\AbstractWorkbookManager</a>.</p>
 
 </div>
 </div>
-<a id="ad51a9f8b83729d4ec4bc2c3ba2145019" name="ad51a9f8b83729d4ec4bc2c3ba2145019"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad51a9f8b83729d4ec4bc2c3ba2145019">&#9670;&#160;</a></span>getWorkbook()</h2>
+<a id="a58dc30cc70c1696bd53102493423ee5a" name="a58dc30cc70c1696bd53102493423ee5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58dc30cc70c1696bd53102493423ee5a">&#9670;&#160;</a></span>getWorksheets()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -396,7 +352,7 @@ Static Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">OpenSpout\Writer\Common\Manager\WorkbookManagerAbstract::getWorkbook </td>
+          <td class="memname">OpenSpout\Writer\Common\Manager\AbstractWorkbookManager::getWorksheets </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -404,66 +360,7 @@ Static Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">null|Workbook</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="../../df/db8/interface_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_workbook_manager_interface.html#aaf82d085b0cf7037911f863d2c137eee">OpenSpout\Writer\Common\Manager\WorkbookManagerInterface</a>.</p>
-
-</div>
-</div>
-<a id="ab8fbd2644880ea93758103fa245639f3" name="ab8fbd2644880ea93758103fa245639f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8fbd2644880ea93758103fa245639f3">&#9670;&#160;</a></span>getWorksheetFilePath()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Writer\XLSX\Manager\WorkbookManager::getWorksheetFilePath </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d9/d9a/class_open_spout_1_1_writer_1_1_common_1_1_entity_1_1_sheet.html">Sheet</a>&#160;</td>
-          <td class="paramname"><em>$sheet</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">string</td><td>The file path where the data for the given sheet will be stored </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Reimplemented from <a class="el" href="../../df/db1/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_workbook_manager_abstract.html#ac1e2e2c898e5076cec9083fbf7e94bd9">OpenSpout\Writer\Common\Manager\WorkbookManagerAbstract</a>.</p>
-
-</div>
-</div>
-<a id="a8f4f18abade58ee884ac58a15389ee2e" name="a8f4f18abade58ee884ac58a15389ee2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f4f18abade58ee884ac58a15389ee2e">&#9670;&#160;</a></span>getWorksheets()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Writer\Common\Manager\WorkbookManagerAbstract::getWorksheets </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -478,8 +375,8 @@ Static Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a7fa29cffd1a5f093ecb4d43194021594" name="a7fa29cffd1a5f093ecb4d43194021594"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7fa29cffd1a5f093ecb4d43194021594">&#9670;&#160;</a></span>setColumnWidth()</h2>
+<a id="ad5444a2454c1d6ca9283114bffcb39b1" name="ad5444a2454c1d6ca9283114bffcb39b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5444a2454c1d6ca9283114bffcb39b1">&#9670;&#160;</a></span>setCurrentSheet()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -488,103 +385,7 @@ Static Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">OpenSpout\Writer\Common\Manager\WorkbookManagerAbstract::setColumnWidth </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>$width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$columns</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">int</td><td>...$columns One or more columns with this width </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="../../df/db8/interface_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_workbook_manager_interface.html#a3ee747dfae4c251940aa0192ff5c0f4b">OpenSpout\Writer\Common\Manager\WorkbookManagerInterface</a>.</p>
-
-</div>
-</div>
-<a id="a178de530d1563fe5713128004eab93ab" name="a178de530d1563fe5713128004eab93ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a178de530d1563fe5713128004eab93ab">&#9670;&#160;</a></span>setColumnWidthForRange()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Writer\Common\Manager\WorkbookManagerAbstract::setColumnWidthForRange </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>$width</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>$start</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>$end</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">float</td><td class="paramname">$width</td><td>The width to set </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$start</td><td>First column index of the range </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$end</td><td>Last column index of the range </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="../../df/db8/interface_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_workbook_manager_interface.html#a80932290e9c34eaa57012bc78634c60a">OpenSpout\Writer\Common\Manager\WorkbookManagerInterface</a>.</p>
-
-</div>
-</div>
-<a id="a2b425a9abbe110084c4d6663f67ac41a" name="a2b425a9abbe110084c4d6663f67ac41a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b425a9abbe110084c4d6663f67ac41a">&#9670;&#160;</a></span>setCurrentSheet()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Writer\Common\Manager\WorkbookManagerAbstract::setCurrentSheet </td>
+          <td class="memname">OpenSpout\Writer\Common\Manager\AbstractWorkbookManager::setCurrentSheet </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d9/d9a/class_open_spout_1_1_writer_1_1_common_1_1_entity_1_1_sheet.html">Sheet</a>&#160;</td>
           <td class="paramname"><em>$sheet</em></td><td>)</td>
@@ -593,7 +394,7 @@ Static Protected Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -614,97 +415,6 @@ Static Protected Attributes</h2></td></tr>
 </dl>
 
 <p>Implements <a class="el" href="../../df/db8/interface_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_workbook_manager_interface.html#a63d19598c3acf72404b295915d0fb55c">OpenSpout\Writer\Common\Manager\WorkbookManagerInterface</a>.</p>
-
-</div>
-</div>
-<a id="a805973ee278d15e31aeaef553de64855" name="a805973ee278d15e31aeaef553de64855"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a805973ee278d15e31aeaef553de64855">&#9670;&#160;</a></span>setDefaultColumnWidth()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Writer\Common\Manager\WorkbookManagerAbstract::setDefaultColumnWidth </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>$width</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="../../df/db8/interface_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_workbook_manager_interface.html">OpenSpout\Writer\Common\Manager\WorkbookManagerInterface</a>.</p>
-
-</div>
-</div>
-<a id="a9c7bc18b0bb99a4bf9ff48ff1c929d57" name="a9c7bc18b0bb99a4bf9ff48ff1c929d57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c7bc18b0bb99a4bf9ff48ff1c929d57">&#9670;&#160;</a></span>setDefaultRowHeight()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Writer\Common\Manager\WorkbookManagerAbstract::setDefaultRowHeight </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>$height</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="../../df/db8/interface_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_workbook_manager_interface.html">OpenSpout\Writer\Common\Manager\WorkbookManagerInterface</a>.</p>
-
-</div>
-</div>
-<a id="aa3351a91b588566ac4fd1e786361d0bb" name="aa3351a91b588566ac4fd1e786361d0bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3351a91b588566ac4fd1e786361d0bb">&#9670;&#160;</a></span>startCurrentSheet()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Writer\Common\Manager\WorkbookManagerAbstract::startCurrentSheet </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Starts the current sheet and opens the file pointer. </p>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../de/dab/class_i_o_exception.html">IOException</a></td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="../../df/db8/interface_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_workbook_manager_interface.html#a265bb7f00a1056e6eab3645f2ef0ee75">OpenSpout\Writer\Common\Manager\WorkbookManagerInterface</a>.</p>
 
 </div>
 </div>
@@ -740,33 +450,7 @@ Static Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="../../df/db1/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_workbook_manager_abstract.html#a8253bfb652fc0e2b8d8f4f4ac761cf4d">OpenSpout\Writer\Common\Manager\WorkbookManagerAbstract</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a9b0da036a0db76a26c69d224525debe3" name="a9b0da036a0db76a26c69d224525debe3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b0da036a0db76a26c69d224525debe3">&#9670;&#160;</a></span>$maxRowsPerWorksheet</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Writer\XLSX\Manager\WorkbookManager::$maxRowsPerWorksheet = 1048576</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Maximum number of rows a XLSX sheet can contain. </p>
-<dl class="section see"><dt>See also</dt><dd><a href="http://office.microsoft.com/en-us/excel-help/excel-specifications-and-limits-HP010073849.aspx">http://office.microsoft.com/en-us/excel-help/excel-specifications-and-limits-HP010073849.aspx</a> </dd></dl>
+<p>Reimplemented from <a class="el" href="../../d5/d40/class_open_spout_1_1_writer_1_1_common_1_1_manager_1_1_abstract_workbook_manager.html#a7c48cbaf70abd2aa9131946964430f6d">OpenSpout\Writer\Common\Manager\AbstractWorkbookManager</a>.</p>
 
 </div>
 </div>
@@ -776,7 +460,7 @@ Static Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:54:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:55:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

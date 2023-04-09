@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -84,7 +84,7 @@ Inheritance diagram for gradereport_history\output\tablelog:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae5c8dc00e6518baf934e7a1aa90505bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7e/classgradereport__history_1_1output_1_1tablelog.html#ae5c8dc00e6518baf934e7a1aa90505bf">__construct</a> ($uniqueid, <a class="el" href="../../d8/d0a/classcontext__course.html">context_course</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, $url, $filters=array(), $download='', $page=0, $perpage=100)</td></tr>
+<tr class="memitem:ae5c8dc00e6518baf934e7a1aa90505bf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7e/classgradereport__history_1_1output_1_1tablelog.html#ae5c8dc00e6518baf934e7a1aa90505bf">__construct</a> ($uniqueid, context_course $context, $url, $filters=array(), $download='', $page=0, $perpage=100)</td></tr>
 <tr class="memdesc:ae5c8dc00e6518baf934e7a1aa90505bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up the table_log parameters.  <br /></td></tr>
 <tr class="separator:ae5c8dc00e6518baf934e7a1aa90505bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2f668c7e164577e641c985d199be85d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d18/classflexible__table.html#ae2f668c7e164577e641c985d199be85d">add_data</a> ($row, $classname='')</td></tr>
@@ -554,7 +554,7 @@ Protected Attributes</h2></td></tr>
 <tr class="memdesc:aa97dff74d1e31f9e06dc80337450efa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list of cm instances in course. <br /></td></tr>
 <tr class="separator:aa97dff74d1e31f9e06dc80337450efa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48e329ec493861262300548eef2a3cd0"><td class="memItemLeft" align="right" valign="top"><a id="a48e329ec493861262300548eef2a3cd0" name="a48e329ec493861262300548eef2a3cd0"></a>
-<a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$context</b></td></tr>
+context&#160;</td><td class="memItemRight" valign="bottom"><b>$context</b></td></tr>
 <tr class="memdesc:a48e329ec493861262300548eef2a3cd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">context of the page to be rendered. <br /></td></tr>
 <tr class="separator:a48e329ec493861262300548eef2a3cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c1e1780fb5754a9eaf85ff42eab923f"><td class="memItemLeft" align="right" valign="top"><a id="a4c1e1780fb5754a9eaf85ff42eab923f" name="a4c1e1780fb5754a9eaf85ff42eab923f"></a>
@@ -636,7 +636,7 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$users</b> = []
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d8/d0a/classcontext__course.html">context_course</a>&#160;</td>
+          <td class="paramtype">context_course&#160;</td>
           <td class="paramname"><em>$context</em>, </td>
         </tr>
         <tr>
@@ -681,7 +681,7 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$users</b> = []
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$uniqueid</td><td>unique id of table. </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../d8/d0a/classcontext__course.html">context_course</a></td><td class="paramname">$context</td><td>Context of the report. </td></tr>
+    <tr><td class="paramtype">context_course</td><td class="paramname">$context</td><td>Context of the report. </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$url</td><td>url of the page where this table would be displayed. </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$filters</td><td>options are: userids : limit to specific users (default: none) itemid : limit to specific grade item (default: all) grader : limit to specific graders (default: all) datefrom : start of date range datetill : end of date range revisedonly : only show revised grades (default: false) format : page | csv | excel (default: page) </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$download</td><td>Represents download format, pass '' no download at this time. </td></tr>
@@ -3366,7 +3366,7 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$users</b> = []
 </div><div class="memdoc">
 
 <p>This method is deprecated although the old api is still supported. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000938">Deprecated:</a></b></dt><dd>1.9.2 - Jun 2, 2008 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000939">Deprecated:</a></b></dt><dd>1.9.2 - Jun 2, 2008 </dd></dl>
 
 </div>
 </div>
@@ -3462,7 +3462,7 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$users</b> = []
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000939">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000940">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
 
 </div>
 </div>
@@ -4640,7 +4640,7 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$users</b> = []
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:54:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:55:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

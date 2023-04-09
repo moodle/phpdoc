@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -59,7 +59,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">OpenSpout\Reader\Wrapper Namespace Reference</div></div>
 </div><!--header-->
@@ -73,19 +72,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d5b/class_open_spout_1_1_reader_1_1_wrapper_1_1_x_m_l_reader.html">XMLReader</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ad66b36aabd0746f3dec837fde5ae8cdb"><td class="memItemLeft" align="right" valign="top"><a id="ad66b36aabd0746f3dec837fde5ae8cdb" name="ad66b36aabd0746f3dec837fde5ae8cdb"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>resetXMLInternalErrorsSetting</b> ()</td></tr>
-<tr class="separator:ad66b36aabd0746f3dec837fde5ae8cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ac8360c55478a0112beec09427d6f46"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d62/namespace_open_spout_1_1_reader_1_1_wrapper.html#a6ac8360c55478a0112beec09427d6f46">resetXMLInternalErrorsSettingAndThrowIfXMLErrorOccured</a> ()</td></tr>
-<tr class="memdesc:a6ac8360c55478a0112beec09427d6f46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Throws an XMLProcessingException if an error occured.  <br /></td></tr>
-<tr class="separator:a6ac8360c55478a0112beec09427d6f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae90504b261bed95418db6e3f852161ae"><td class="memItemLeft" align="right" valign="top"><a id="ae90504b261bed95418db6e3f852161ae" name="ae90504b261bed95418db6e3f852161ae"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>useXMLInternalErrors</b> ()</td></tr>
-<tr class="memdesc:ae90504b261bed95418db6e3f852161ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">To avoid displaying lots of warning/error messages on screen, stores errors internally instead. <br /></td></tr>
-<tr class="separator:ae90504b261bed95418db6e3f852161ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:ae52994a2c0ce279beaaf2a85be19aca6"><td class="memItemLeft" align="right" valign="top">trait&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d62/namespace_open_spout_1_1_reader_1_1_wrapper.html#ae52994a2c0ce279beaaf2a85be19aca6">XMLInternalErrorsHelper</a></td></tr>
@@ -93,42 +79,7 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>&#160; </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="a6ac8360c55478a0112beec09427d6f46" name="a6ac8360c55478a0112beec09427d6f46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ac8360c55478a0112beec09427d6f46">&#9670;&#160;</a></span>resetXMLInternalErrorsSettingAndThrowIfXMLErrorOccured()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">OpenSpout\Reader\Wrapper\resetXMLInternalErrorsSettingAndThrowIfXMLErrorOccured </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Throws an XMLProcessingException if an error occured. </p>
-<p>It also always resets the "libxml_use_internal_errors" setting back to its initial value.</p>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../d4/dab/class_open_spout_1_1_reader_1_1_exception_1_1_x_m_l_processing_exception.html">OpenSpout::Reader::Exception::XMLProcessingException</a></td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
+</div><h2 class="groupheader">Variable Documentation</h2>
 <a id="ae52994a2c0ce279beaaf2a85be19aca6" name="ae52994a2c0ce279beaaf2a85be19aca6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae52994a2c0ce279beaaf2a85be19aca6">&#9670;&#160;</a></span>XMLInternalErrorsHelper</h2>
 
@@ -142,14 +93,14 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">{</div>
 <div class="line">    </div>
-<div class="line">    <span class="keyword">protected</span> <span class="keywordtype">bool</span> $initialUseInternalErrorsValue</div>
+<div class="line">    <span class="keyword">private</span> <span class="keywordtype">bool</span> <span class="keywordtype">bool</span> $initialUseInternalErrorsValue</div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:54:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:55:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

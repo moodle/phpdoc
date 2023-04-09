@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -121,7 +121,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4ecc35fb813cc6e9b5bdcea56d227322"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/classlesson__page.html#a4ecc35fb813cc6e9b5bdcea56d227322">earned_score</a> ($answers, $attempt)</td></tr>
 <tr class="memdesc:a4ecc35fb813cc6e9b5bdcea56d227322"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the score for the attempt This may be overridden by page types that require manual grading.  <br /></td></tr>
 <tr class="separator:a4ecc35fb813cc6e9b5bdcea56d227322"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a2a10a19b8aa2d6ff5b7327336afcd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/classlesson__page.html#a5a2a10a19b8aa2d6ff5b7327336afcd7">format_answer</a> ($answer, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $answerformat, $options=[])</td></tr>
+<tr class="memitem:a5a2a10a19b8aa2d6ff5b7327336afcd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/classlesson__page.html#a5a2a10a19b8aa2d6ff5b7327336afcd7">format_answer</a> ($answer, $context, $answerformat, $options=[])</td></tr>
 <tr class="memdesc:a5a2a10a19b8aa2d6ff5b7327336afcd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Formats the answer.  <br /></td></tr>
 <tr class="separator:a5a2a10a19b8aa2d6ff5b7327336afcd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc4afb05adfb35ea347dcb259abd438c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/classlesson__page.html#afc4afb05adfb35ea347dcb259abd438c">get_answers</a> ()</td></tr>
@@ -163,7 +163,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8e733bf5f0882d172e6804e5e6c78ca7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/classlesson__page.html#a8e733bf5f0882d172e6804e5e6c78ca7">properties</a> ()</td></tr>
 <tr class="memdesc:a8e733bf5f0882d172e6804e5e6c78ca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the properties of this lesson page as an object.  <br /></td></tr>
 <tr class="separator:a8e733bf5f0882d172e6804e5e6c78ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39c62f85b791564aa262126427b9da97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classmoodle__database.html">moodle_database</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/classlesson__page.html#a39c62f85b791564aa262126427b9da97">record_attempt</a> ($<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:a39c62f85b791564aa262126427b9da97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classmoodle__database.html">moodle_database</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/classlesson__page.html#a39c62f85b791564aa262126427b9da97">record_attempt</a> ($context)</td></tr>
 <tr class="memdesc:a39c62f85b791564aa262126427b9da97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Records an attempt at this page.  <br /></td></tr>
 <tr class="separator:a39c62f85b791564aa262126427b9da97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91b3aeed8789cfdee2047989a45b3caf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/classlesson__page.html#a91b3aeed8789cfdee2047989a45b3caf">report_answers</a> ($answerpage, $answerdata, $useranswer, $pagestats, &amp;$i, &amp;$n)</td></tr>
@@ -172,13 +172,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac353914975c8f9552929b983c32ccc5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/classlesson__page.html#ac353914975c8f9552929b983c32ccc5f">requires_manual_grading</a> ()</td></tr>
 <tr class="memdesc:ac353914975c8f9552929b983c32ccc5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Informs whether this page type require manual grading or not.  <br /></td></tr>
 <tr class="separator:ac353914975c8f9552929b983c32ccc5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb6e2433d51855323009d4ef42c93fa7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/classlesson__page.html#aeb6e2433d51855323009d4ef42c93fa7">save_answers_files</a> ($<a class="el" href="../../da/d04/classcontext.html">context</a>, $maxbytes, &amp;$answer, $answereditor='', $responseeditor='')</td></tr>
+<tr class="memitem:aeb6e2433d51855323009d4ef42c93fa7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/classlesson__page.html#aeb6e2433d51855323009d4ef42c93fa7">save_answers_files</a> ($context, $maxbytes, &amp;$answer, $answereditor='', $responseeditor='')</td></tr>
 <tr class="memdesc:aeb6e2433d51855323009d4ef42c93fa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">save editor answers files and update answer record  <br /></td></tr>
 <tr class="separator:aeb6e2433d51855323009d4ef42c93fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2170d02517eb46123f9878fbf694adad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/classlesson__page.html#a2170d02517eb46123f9878fbf694adad">stats</a> (array &amp;$pagestats, $tries)</td></tr>
 <tr class="memdesc:a2170d02517eb46123f9878fbf694adad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds stats for this page to the &amp;pagestats object.  <br /></td></tr>
 <tr class="separator:a2170d02517eb46123f9878fbf694adad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3761c509702dd3e77b953987ec1d99cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/classlesson__page.html#a3761c509702dd3e77b953987ec1d99cd">update</a> ($<a class="el" href="../../dc/d90/classlesson__page.html#a8e733bf5f0882d172e6804e5e6c78ca7">properties</a>, $<a class="el" href="../../da/d04/classcontext.html">context</a>=null, $maxbytes=null)</td></tr>
+<tr class="memitem:a3761c509702dd3e77b953987ec1d99cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/classlesson__page.html#a3761c509702dd3e77b953987ec1d99cd">update</a> ($<a class="el" href="../../dc/d90/classlesson__page.html#a8e733bf5f0882d172e6804e5e6c78ca7">properties</a>, $context=null, $maxbytes=null)</td></tr>
 <tr class="memdesc:a3761c509702dd3e77b953987ec1d99cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates a lesson page and its answers within the database.  <br /></td></tr>
 <tr class="separator:a3761c509702dd3e77b953987ec1d99cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac80ec37e32462f5ef2bb41f925508b13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/classlesson__page.html#ac80ec37e32462f5ef2bb41f925508b13">update_form_data</a> (stdClass $data)</td></tr>
@@ -190,7 +190,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a30683e1a9948ef965ccf887823da225a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/classlesson__page.html#a30683e1a9948ef965ccf887823da225a">create</a> ($<a class="el" href="../../dc/d90/classlesson__page.html#a8e733bf5f0882d172e6804e5e6c78ca7">properties</a>, <a class="el" href="../../de/db3/classlesson.html">lesson</a> $<a class="el" href="../../de/db3/classlesson.html">lesson</a>, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $maxbytes)</td></tr>
+<tr class="memitem:a30683e1a9948ef965ccf887823da225a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/classlesson__page.html#a30683e1a9948ef965ccf887823da225a">create</a> ($<a class="el" href="../../dc/d90/classlesson__page.html#a8e733bf5f0882d172e6804e5e6c78ca7">properties</a>, <a class="el" href="../../de/db3/classlesson.html">lesson</a> $<a class="el" href="../../de/db3/classlesson.html">lesson</a>, $context, $maxbytes)</td></tr>
 <tr class="memdesc:a30683e1a9948ef965ccf887823da225a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="../../dc/d90/classlesson__page.html">lesson_page</a> within the database and returns the correct pagetype object to use to interact with the new lesson.  <br /></td></tr>
 <tr class="separator:a30683e1a9948ef965ccf887823da225a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f692a81a5c104ccccf12f3bca5ab143"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/classlesson__page.html#a5f692a81a5c104ccccf12f3bca5ab143">get_jumptooptions</a> ($pageid, <a class="el" href="../../de/db3/classlesson.html">lesson</a> $<a class="el" href="../../de/db3/classlesson.html">lesson</a>)</td></tr>
@@ -2155,7 +2155,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:53:02 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:54:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

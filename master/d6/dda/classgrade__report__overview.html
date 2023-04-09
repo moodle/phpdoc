@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230401) (fba0658777a)</div>
+   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
   </td>
  </tr>
  </tbody>
@@ -78,7 +78,7 @@ Inheritance diagram for grade_report_overview:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6cdd08a842440f52474668dd29160217"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dda/classgrade__report__overview.html#a6cdd08a842440f52474668dd29160217">__construct</a> ($userid, $gpr, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
+<tr class="memitem:a6cdd08a842440f52474668dd29160217"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dda/classgrade__report__overview.html#a6cdd08a842440f52474668dd29160217">__construct</a> ($userid, $gpr, $context)</td></tr>
 <tr class="memdesc:a6cdd08a842440f52474668dd29160217"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:a6cdd08a842440f52474668dd29160217"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65f29ef679741a3ad1d58e0628ae5794"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dda/classgrade__report__overview.html#a65f29ef679741a3ad1d58e0628ae5794">fill_table</a> ($activitylink=false, $studentcoursesonly=false)</td></tr>
@@ -135,16 +135,16 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac8501735aa6d5db79360f94236087695"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#ac8501735aa6d5db79360f94236087695">calculate_average</a> (<a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a> $gradeitem, array $info)</td></tr>
 <tr class="memdesc:ac8501735aa6d5db79360f94236087695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate average grade for a given grade item.  <br /></td></tr>
 <tr class="separator:ac8501735aa6d5db79360f94236087695"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a4e719b50e78f3dea00dfa0892da655"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dda/classgrade__report__overview.html#a0a4e719b50e78f3dea00dfa0892da655">check_access</a> ($systemcontext, $<a class="el" href="../../da/d04/classcontext.html">context</a>, $personalcontext, $course, $userid)</td></tr>
+<tr class="memitem:a0a4e719b50e78f3dea00dfa0892da655"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dda/classgrade__report__overview.html#a0a4e719b50e78f3dea00dfa0892da655">check_access</a> ($systemcontext, $context, $personalcontext, $course, $userid)</td></tr>
 <tr class="memdesc:a0a4e719b50e78f3dea00dfa0892da655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the user can access the report.  <br /></td></tr>
 <tr class="separator:a0a4e719b50e78f3dea00dfa0892da655"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9be66f376b92cf43a7aaf0e51d252c6f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#a9be66f376b92cf43a7aaf0e51d252c6f">get_additional_context</a> (<a class="el" href="../../d8/d0a/classcontext__course.html">context_course</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, int $courseid, array $element, <a class="el" href="../../da/dcc/classgrade__plugin__return.html">grade_plugin_return</a> $gpr, string $mode, stdClass $templatecontext, bool $otherplugins=false)</td></tr>
+<tr class="memitem:a9be66f376b92cf43a7aaf0e51d252c6f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#a9be66f376b92cf43a7aaf0e51d252c6f">get_additional_context</a> (context_course $context, int $courseid, array $element, <a class="el" href="../../da/dcc/classgrade__plugin__return.html">grade_plugin_return</a> $gpr, string $mode, stdClass $templatecontext, bool $otherplugins=false)</td></tr>
 <tr class="memdesc:a9be66f376b92cf43a7aaf0e51d252c6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add additional links specific to plugin.  <br /></td></tr>
 <tr class="separator:a9be66f376b92cf43a7aaf0e51d252c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a581cf425d355ee754b7dd0c2ebd3729e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dda/classgrade__report__overview.html#a581cf425d355ee754b7dd0c2ebd3729e">supports_mygrades</a> ()</td></tr>
 <tr class="memdesc:a581cf425d355ee754b7dd0c2ebd3729e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This report supports being set as the 'grades' report.  <br /></td></tr>
 <tr class="separator:a581cf425d355ee754b7dd0c2ebd3729e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab32ff8c187aa3f2f8ac02165d918daaf"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dda/classgrade__report__overview.html#ab32ff8c187aa3f2f8ac02165d918daaf">viewed</a> ($<a class="el" href="../../da/d04/classcontext.html">context</a>, $courseid, $userid)</td></tr>
+<tr class="memitem:ab32ff8c187aa3f2f8ac02165d918daaf"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dda/classgrade__report__overview.html#ab32ff8c187aa3f2f8ac02165d918daaf">viewed</a> ($context, $courseid, $userid)</td></tr>
 <tr class="memdesc:ab32ff8c187aa3f2f8ac02165d918daaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger the grade_report_viewed event.  <br /></td></tr>
 <tr class="separator:ab32ff8c187aa3f2f8ac02165d918daaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -153,7 +153,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ae3c113912dff349f3a93e1efa14bd9f8"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#ae3c113912dff349f3a93e1efa14bd9f8">$baseurl</a></td></tr>
 <tr class="memdesc:ae3c113912dff349f3a93e1efa14bd9f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">base url for sorting by first/last name.  <br /></td></tr>
 <tr class="separator:ae3c113912dff349f3a93e1efa14bd9f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1167fdee232efe22bdb15126bd722d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#ae1167fdee232efe22bdb15126bd722d6">$context</a></td></tr>
+<tr class="memitem:ae1167fdee232efe22bdb15126bd722d6"><td class="memItemLeft" align="right" valign="top">context&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#ae1167fdee232efe22bdb15126bd722d6">$context</a></td></tr>
 <tr class="memdesc:ae1167fdee232efe22bdb15126bd722d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The context.  <br /></td></tr>
 <tr class="separator:ae1167fdee232efe22bdb15126bd722d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b7b3d8a4168696ca78b3cc75b0cc797"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#a6b7b3d8a4168696ca78b3cc75b0cc797">$course</a></td></tr>
@@ -606,7 +606,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
         <tr>
           <td class="memname">static grade_report::get_additional_context </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/d0a/classcontext__course.html">context_course</a>&#160;</td>
+          <td class="paramtype">context_course&#160;</td>
           <td class="paramname"><em>$context</em>, </td>
         </tr>
         <tr>
@@ -661,7 +661,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 <p>Add additional links specific to plugin. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../d8/d0a/classcontext__course.html">context_course</a></td><td class="paramname">$context</td><td>Course context </td></tr>
+    <tr><td class="paramtype">context_course</td><td class="paramname">$context</td><td>Course context </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$courseid</td><td>Course ID </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$element</td><td>An array representing an element in the <a class="el" href="../../de/d74/classgrade__tree.html" title="This class represents a complete tree of categories, grade_items and final grades,...">grade_tree</a> </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../da/dcc/classgrade__plugin__return.html" title="Utility class used for return tracking when using edit and other forms in grade plugins.">grade_plugin_return</a></td><td class="paramname">$gpr</td><td>A <a class="el" href="../../da/dcc/classgrade__plugin__return.html" title="Utility class used for return tracking when using edit and other forms in grade plugins.">grade_plugin_return</a> object </td></tr>
@@ -1374,7 +1374,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../da/d04/classcontext.html">context</a> grade_report::$context</td>
+          <td class="memname">context grade_report::$context</td>
         </tr>
       </table>
   </td>
@@ -1863,7 +1863,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 2 2023 02:52:58 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 9 2023 02:53:57 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>
