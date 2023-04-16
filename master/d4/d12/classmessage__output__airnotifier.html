@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
+   <div id="projectbrief">Moodle 4.2beta (Build: 20230414) (0e08d0df604)</div>
   </td>
  </tr>
  </tbody>
@@ -55,6 +55,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="../../d8/dcf/classmessage__output__airnotifier-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">message_output_airnotifier Class Reference<div class="ingroups"><a class="el" href="../../d0/d29/group__message__airnotifier.html">message_airnotifier</a></div></div></div>
 </div><!--header-->
@@ -110,6 +111,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae9ceb6d4e12313c1d36439f5866a0a8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d12/classmessage__output__airnotifier.html#ae9ceb6d4e12313c1d36439f5866a0a8b">send_message</a> ($eventdata)</td></tr>
 <tr class="memdesc:ae9ceb6d4e12313c1d36439f5866a0a8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes the message and sends a notification via airnotifier.  <br /></td></tr>
 <tr class="separator:ae9ceb6d4e12313c1d36439f5866a0a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a53411e12a90d5505927a1d5e7f44a5cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d12/classmessage__output__airnotifier.html#a53411e12a90d5505927a1d5e7f44a5cd">encrypt_payload</a> (stdClass $payload, stdClass $devicetoken)</td></tr>
+<tr class="memdesc:a53411e12a90d5505927a1d5e7f44a5cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encrypt the notification payload.  <br /></td></tr>
+<tr class="separator:a53411e12a90d5505927a1d5e7f44a5cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Message processor class. </p>
@@ -259,6 +266,57 @@ Public Member Functions</h2></td></tr>
 </dl>
 
 <p>Reimplemented from <a class="el" href="../../db/d55/classmessage__output.html#a5d026ad62c5fafaf6421a466638f4270">message_output</a>.</p>
+
+</div>
+</div>
+<a id="a53411e12a90d5505927a1d5e7f44a5cd" name="a53411e12a90d5505927a1d5e7f44a5cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53411e12a90d5505927a1d5e7f44a5cd">&#9670;&#160;</a></span>encrypt_payload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">message_output_airnotifier::encrypt_payload </td>
+          <td>(</td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$payload</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$devicetoken</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Encrypt the notification payload. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$payload</td><td>The notification payload. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$devicetoken</td><td>The device token record </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -549,7 +607,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 9 2023 02:54:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 16 2023 02:58:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

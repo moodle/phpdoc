@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
+   <div id="projectbrief">Moodle 4.2beta (Build: 20230414) (0e08d0df604)</div>
   </td>
  </tr>
  </tbody>
@@ -100,24 +100,33 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>cleanup_metadata</b
 <tr class="memitem:af2d4f07b103416e32fcb0d799153c34b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#af2d4f07b103416e32fcb0d799153c34b">ensure_adhoc_task_qos</a> (array $records)</td></tr>
 <tr class="memdesc:af2d4f07b103416e32fcb0d799153c34b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensure quality of service for the ad hoc task queue.  <br /></td></tr>
 <tr class="separator:af2d4f07b103416e32fcb0d799153c34b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5f833b9ddac17e464fde0c93a13c186"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#af5f833b9ddac17e464fde0c93a13c186">get_adhoc_tasks</a> ($classname)</td></tr>
-<tr class="memdesc:af5f833b9ddac17e464fde0c93a13c186"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function load the adhoc tasks for a given classname.  <br /></td></tr>
-<tr class="separator:af5f833b9ddac17e464fde0c93a13c186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a423659fbf4bb113e98ebab0a56600727"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a423659fbf4bb113e98ebab0a56600727">get_adhoc_task</a> (int $taskid)</td></tr>
+<tr class="memdesc:a423659fbf4bb113e98ebab0a56600727"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will get an adhoc task by id.  <br /></td></tr>
+<tr class="separator:a423659fbf4bb113e98ebab0a56600727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9af23d8d09e942d72b3a1fccd9010332"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a9af23d8d09e942d72b3a1fccd9010332">get_adhoc_tasks</a> (string $classname, bool $failedonly=false, bool $skiprunning=false)</td></tr>
+<tr class="memdesc:a9af23d8d09e942d72b3a1fccd9010332"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function load the adhoc tasks for a given classname.  <br /></td></tr>
+<tr class="separator:a9af23d8d09e942d72b3a1fccd9010332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a087bb5ee04e2b5640695ae773682eee0"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a087bb5ee04e2b5640695ae773682eee0">get_adhoc_tasks_summary</a> ()</td></tr>
+<tr class="memdesc:a087bb5ee04e2b5640695ae773682eee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function returns adhoc tasks summary per component classname.  <br /></td></tr>
+<tr class="separator:a087bb5ee04e2b5640695ae773682eee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36b595085f8fbfdcfa9327ddc653ed03"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a36b595085f8fbfdcfa9327ddc653ed03">get_all_scheduled_tasks</a> ()</td></tr>
 <tr class="memdesc:a36b595085f8fbfdcfa9327ddc653ed03"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will return a list of all the scheduled tasks that exist in the database.  <br /></td></tr>
 <tr class="separator:a36b595085f8fbfdcfa9327ddc653ed03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fd88026f893a008e9161bb7f322098c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a6fd88026f893a008e9161bb7f322098c">get_candidate_adhoc_tasks</a> (int $timestart, int $limit, ?int $runmax, array $pertasklimits=[])</td></tr>
 <tr class="memdesc:a6fd88026f893a008e9161bb7f322098c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of candidate adhoc tasks to run.  <br /></td></tr>
 <tr class="separator:a6fd88026f893a008e9161bb7f322098c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21692384ebcf9e99591ac1cafc76c0f5"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a21692384ebcf9e99591ac1cafc76c0f5">get_canonical_class_name</a> ($taskorstring)</td></tr>
+<tr class="memdesc:a21692384ebcf9e99591ac1cafc76c0f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets class name for use in database table.  <br /></td></tr>
+<tr class="separator:a21692384ebcf9e99591ac1cafc76c0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9969f481bc58f670e02257b5419c9c19"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a9969f481bc58f670e02257b5419c9c19">get_default_scheduled_task</a> ($classname, $expandr=true)</td></tr>
 <tr class="memdesc:a9969f481bc58f670e02257b5419c9c19"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function load the default scheduled task details for a given classname.  <br /></td></tr>
 <tr class="separator:a9969f481bc58f670e02257b5419c9c19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1604684b4a4372160cd9d8c8892d98c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#ac1604684b4a4372160cd9d8c8892d98c">get_failed_adhoc_tasks</a> (int $delay=0)</td></tr>
 <tr class="memdesc:ac1604684b4a4372160cd9d8c8892d98c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will return a list of all adhoc tasks that have a faildelay.  <br /></td></tr>
 <tr class="separator:ac1604684b4a4372160cd9d8c8892d98c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bbf1e56f12c96dcd2172b7291db459f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a8bbf1e56f12c96dcd2172b7291db459f">get_next_adhoc_task</a> ($timestart, $checklimits=true)</td></tr>
-<tr class="memdesc:a8bbf1e56f12c96dcd2172b7291db459f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will dispatch the next adhoc task in the queue.  <br /></td></tr>
-<tr class="separator:a8bbf1e56f12c96dcd2172b7291db459f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1a794a1517e071a4d0621a60c99b2cd"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#aa1a794a1517e071a4d0621a60c99b2cd">get_next_adhoc_task</a> (int $timestart, ?bool $checklimits=true, ?string $classname=null)</td></tr>
+<tr class="memdesc:aa1a794a1517e071a4d0621a60c99b2cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will dispatch the next adhoc task in the queue.  <br /></td></tr>
+<tr class="separator:aa1a794a1517e071a4d0621a60c99b2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a683948e2257af3519083594c88832526"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a683948e2257af3519083594c88832526">get_next_scheduled_task</a> ($timestart)</td></tr>
 <tr class="memdesc:a683948e2257af3519083594c88832526"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will dispatch the next scheduled task in the queue.  <br /></td></tr>
 <tr class="separator:a683948e2257af3519083594c88832526"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,9 +160,15 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>cleanup_metadata</b
 <tr class="memitem:a65321a674c4792d4c563a2d3e43027b5"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a65321a674c4792d4c563a2d3e43027b5">reset_scheduled_tasks_for_component</a> ($componentname)</td></tr>
 <tr class="memdesc:a65321a674c4792d4c563a2d3e43027b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the database to contain a list of scheduled task for a component.  <br /></td></tr>
 <tr class="separator:a65321a674c4792d4c563a2d3e43027b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4880ab98d6269ccab5e9e98a9ff59940"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a4880ab98d6269ccab5e9e98a9ff59940">run_from_cli</a> (\<a class="el" href="../../db/dfa/classcore_1_1task_1_1task__base.html">core\task\task_base</a> $task)</td></tr>
-<tr class="memdesc:a4880ab98d6269ccab5e9e98a9ff59940"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a cron from web invocation using PHP CLI.  <br /></td></tr>
-<tr class="separator:a4880ab98d6269ccab5e9e98a9ff59940"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8e25ffd0bb3c1050bea3d6462564ed6"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#af8e25ffd0bb3c1050bea3d6462564ed6">run_adhoc_from_cli</a> (int $taskid)</td></tr>
+<tr class="memdesc:af8e25ffd0bb3c1050bea3d6462564ed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes an ad hoc task from web invocation using PHP CLI.  <br /></td></tr>
+<tr class="separator:af8e25ffd0bb3c1050bea3d6462564ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a450a2edbbafed7656ffd4b941fe054f2"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a450a2edbbafed7656ffd4b941fe054f2">run_all_adhoc_from_cli</a> (?bool $failedonly=false, ?string $classname=null)</td></tr>
+<tr class="memdesc:a450a2edbbafed7656ffd4b941fe054f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes ad hoc tasks from web invocation using PHP CLI.  <br /></td></tr>
+<tr class="separator:a450a2edbbafed7656ffd4b941fe054f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc48f57ee8437222ff9099607444cb8e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#acc48f57ee8437222ff9099607444cb8e">run_from_cli</a> (<a class="el" href="../../de/d87/classcore_1_1task_1_1scheduled__task.html">scheduled_task</a> $task)</td></tr>
+<tr class="memdesc:acc48f57ee8437222ff9099607444cb8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes a cron from web invocation using PHP CLI.  <br /></td></tr>
+<tr class="separator:acc48f57ee8437222ff9099607444cb8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a436cf98af7c451c177ad73969a1492d4"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a436cf98af7c451c177ad73969a1492d4">scheduled_task_complete</a> (<a class="el" href="../../de/d87/classcore_1_1task_1_1scheduled__task.html">scheduled_task</a> $task)</td></tr>
 <tr class="memdesc:a436cf98af7c451c177ad73969a1492d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function indicates that a scheduled task was completed successfully and should be rescheduled.  <br /></td></tr>
 <tr class="separator:a436cf98af7c451c177ad73969a1492d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -207,9 +222,6 @@ Static Protected Member Functions</h2></td></tr>
 <tr class="memitem:a63bd30ae72486b2241b23593e73f60f4"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a63bd30ae72486b2241b23593e73f60f4">find_php_cli_path</a> ()</td></tr>
 <tr class="memdesc:a63bd30ae72486b2241b23593e73f60f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the path of PHP CLI binary.  <br /></td></tr>
 <tr class="separator:a63bd30ae72486b2241b23593e73f60f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21692384ebcf9e99591ac1cafc76c0f5"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a21692384ebcf9e99591ac1cafc76c0f5">get_canonical_class_name</a> ($taskorstring)</td></tr>
-<tr class="memdesc:a21692384ebcf9e99591ac1cafc76c0f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets class name for use in database table.  <br /></td></tr>
-<tr class="separator:a21692384ebcf9e99591ac1cafc76c0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a3313591544e99f8e578bc6ef55237c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a9a3313591544e99f8e578bc6ef55237c">get_concurrent_task_lock</a> (<a class="el" href="../../d4/d91/classcore_1_1task_1_1adhoc__task.html">adhoc_task</a> $task)</td></tr>
 <tr class="memdesc:a9a3313591544e99f8e578bc6ef55237c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the concurrent lock required to run an adhoc task.  <br /></td></tr>
 <tr class="separator:a9a3313591544e99f8e578bc6ef55237c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -330,6 +342,12 @@ Static Protected Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname"><a class="el" href="../../d4/d91/classcore_1_1task_1_1adhoc__task.html" title="Abstract class defining an adhoc task.">core::task::adhoc_task</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../d6/da8/classmoodle__exception.html" title="Base Moodle Exception class.">moodle_exception</a></td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -532,7 +550,7 @@ Static Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000224">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-67648" class="el">MDL-67648</a> - please do not use this method anymore. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000083">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-74843" class="el">MDL-74843</a> This method will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5 </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a8bbf1e56f12c96dcd2172b7291db459f" title="This function will dispatch the next adhoc task in the queue.">core::task::manager::get_next_adhoc_task</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#aa1a794a1517e071a4d0621a60c99b2cd" title="This function will dispatch the next adhoc task in the queue.">core::task::manager::get_next_adhoc_task</a> </dd></dl>
 
 </div>
 </div>
@@ -569,8 +587,57 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af5f833b9ddac17e464fde0c93a13c186" name="af5f833b9ddac17e464fde0c93a13c186"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5f833b9ddac17e464fde0c93a13c186">&#9670;&#160;</a></span>get_adhoc_tasks()</h2>
+<a id="a423659fbf4bb113e98ebab0a56600727" name="a423659fbf4bb113e98ebab0a56600727"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a423659fbf4bb113e98ebab0a56600727">&#9670;&#160;</a></span>get_adhoc_task()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core\task\manager::get_adhoc_task </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$taskid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function will get an adhoc task by id. </p>
+<p>The task will be handed out with an open lock - possibly on the entire cron process. Make sure you call either {</p><dl class="section see"><dt>See also</dt><dd>::adhoc_task_failed} or {</dd>
+<dd>
+::adhoc_task_complete} to release the lock and reschedule the task.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$taskid</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">core::task::adhoc_task|null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../d6/da8/classmoodle__exception.html" title="Base Moodle Exception class.">moodle_exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9af23d8d09e942d72b3a1fccd9010332" name="a9af23d8d09e942d72b3a1fccd9010332"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9af23d8d09e942d72b3a1fccd9010332">&#9670;&#160;</a></span>get_adhoc_tasks()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -581,9 +648,25 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static core\task\manager::get_adhoc_tasks </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$classname</em></td><td>)</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$classname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$failedonly</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$skiprunning</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -597,12 +680,47 @@ Static Protected Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$classname</td><td></td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$failedonly</td><td></td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$skiprunning</td><td>do not return tasks that are in the running state </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">core::task::adhoc_task[]</td><td></td></tr>
+    <tr><td class="paramname">array</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a087bb5ee04e2b5640695ae773682eee0" name="a087bb5ee04e2b5640695ae773682eee0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a087bb5ee04e2b5640695ae773682eee0">&#9670;&#160;</a></span>get_adhoc_tasks_summary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core\task\manager::get_adhoc_tasks_summary </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function returns adhoc tasks summary per component classname. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -726,7 +844,7 @@ Static Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -879,8 +997,8 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8bbf1e56f12c96dcd2172b7291db459f" name="a8bbf1e56f12c96dcd2172b7291db459f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8bbf1e56f12c96dcd2172b7291db459f">&#9670;&#160;</a></span>get_next_adhoc_task()</h2>
+<a id="aa1a794a1517e071a4d0621a60c99b2cd" name="aa1a794a1517e071a4d0621a60c99b2cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1a794a1517e071a4d0621a60c99b2cd">&#9670;&#160;</a></span>get_next_adhoc_task()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -891,14 +1009,20 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static core\task\manager::get_next_adhoc_task </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>$timestart</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$checklimits</em> = <code>true</code>&#160;</td>
+          <td class="paramtype">?bool&#160;</td>
+          <td class="paramname"><em>$checklimits</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?string&#160;</td>
+          <td class="paramname"><em>$classname</em> = <code>null</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -919,12 +1043,13 @@ Static Protected Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$timestart</td><td></td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$checklimits</td><td>Should we check limits? </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$classname</td><td>Return only task of this class </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../d4/d91/classcore_1_1task_1_1adhoc__task.html" title="Abstract class defining an adhoc task.">core::task::adhoc_task</a></td><td>or null if not found </td></tr>
+    <tr><td class="paramname">core::task::adhoc_task|null</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1017,7 +1142,7 @@ Static Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">bool</td><td></td></tr>
+    <tr><td class="paramname">stdClass|false</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1478,8 +1603,99 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4880ab98d6269ccab5e9e98a9ff59940" name="a4880ab98d6269ccab5e9e98a9ff59940"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4880ab98d6269ccab5e9e98a9ff59940">&#9670;&#160;</a></span>run_from_cli()</h2>
+<a id="af8e25ffd0bb3c1050bea3d6462564ed6" name="af8e25ffd0bb3c1050bea3d6462564ed6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8e25ffd0bb3c1050bea3d6462564ed6">&#9670;&#160;</a></span>run_adhoc_from_cli()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core\task\manager::run_adhoc_from_cli </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$taskid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Executes an ad hoc task from web invocation using PHP CLI. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$taskid</td><td>Task to execute via CLI. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../d6/da8/classmoodle__exception.html" title="Base Moodle Exception class.">moodle_exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a450a2edbbafed7656ffd4b941fe054f2" name="a450a2edbbafed7656ffd4b941fe054f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a450a2edbbafed7656ffd4b941fe054f2">&#9670;&#160;</a></span>run_all_adhoc_from_cli()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core\task\manager::run_all_adhoc_from_cli </td>
+          <td>(</td>
+          <td class="paramtype">?bool&#160;</td>
+          <td class="paramname"><em>$failedonly</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?string&#160;</td>
+          <td class="paramname"><em>$classname</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Executes ad hoc tasks from web invocation using PHP CLI. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">bool&#160;|&#160;null</td><td class="paramname">$failedonly</td><td></td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$classname</td><td>Task class to execute via CLI. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../d6/da8/classmoodle__exception.html" title="Base Moodle Exception class.">moodle_exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="acc48f57ee8437222ff9099607444cb8e" name="acc48f57ee8437222ff9099607444cb8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc48f57ee8437222ff9099607444cb8e">&#9670;&#160;</a></span>run_from_cli()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1490,7 +1706,7 @@ Static Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static core\task\manager::run_from_cli </td>
           <td>(</td>
-          <td class="paramtype">\<a class="el" href="../../db/dfa/classcore_1_1task_1_1task__base.html">core\task\task_base</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../de/d87/classcore_1_1task_1_1scheduled__task.html">scheduled_task</a>&#160;</td>
           <td class="paramname"><em>$task</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1505,7 +1721,7 @@ Static Protected Member Functions</h2></td></tr>
 <p>Executes a cron from web invocation using PHP CLI. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../db/dfa/classcore_1_1task_1_1task__base.html" title="Abstract class for common properties of scheduled_task and adhoc_task.">core::task::task_base</a></td><td class="paramname">$task</td><td>Task that be executed via CLI. </td></tr>
+    <tr><td class="paramtype">scheduled_task</td><td class="paramname">$task</td><td>Task that be executed via CLI. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1867,7 +2083,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 9 2023 02:54:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 16 2023 02:59:16 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

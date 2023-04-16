@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
+   <div id="projectbrief">Moodle 4.2beta (Build: 20230414) (0e08d0df604)</div>
   </td>
  </tr>
  </tbody>
@@ -75,9 +75,15 @@ Static Public Member Functions</h2></td></tr>
 static&#160;</td><td class="memItemRight" valign="bottom"><b>reset_user_cache</b> ()</td></tr>
 <tr class="memdesc:a754ef95d51600509b93b96ab8d0de74c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the cache for the cron user used by <code>setup_user()</code>. <br /></td></tr>
 <tr class="separator:a754ef95d51600509b93b96ab8d0de74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2454987856c61d2c1b71417964f65843"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d48/classcore_1_1cron.html#a2454987856c61d2c1b71417964f65843">run_adhoc_tasks</a> (int $startruntime, $keepalive=0, $checklimits=true, ?int $startprocesstime=null,)</td></tr>
-<tr class="memdesc:a2454987856c61d2c1b71417964f65843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute all queued adhoc tasks, applying necessary concurrency limits and time limits.  <br /></td></tr>
-<tr class="separator:a2454987856c61d2c1b71417964f65843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa175538a1b2410d84516cedbfc2bf48c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d48/classcore_1_1cron.html#aa175538a1b2410d84516cedbfc2bf48c">run_adhoc_task</a> (int $taskid)</td></tr>
+<tr class="memdesc:aa175538a1b2410d84516cedbfc2bf48c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute an adhoc task.  <br /></td></tr>
+<tr class="separator:aa175538a1b2410d84516cedbfc2bf48c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21f022c428661bdba87299bf77a39aab"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d48/classcore_1_1cron.html#a21f022c428661bdba87299bf77a39aab">run_adhoc_tasks</a> (int $startruntime, $keepalive=0, $checklimits=true, ?int $startprocesstime=null, ?int $maxtasks=null, ?string $classname=null,)</td></tr>
+<tr class="memdesc:a21f022c428661bdba87299bf77a39aab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute all queued adhoc tasks, applying necessary concurrency limits and time limits.  <br /></td></tr>
+<tr class="separator:a21f022c428661bdba87299bf77a39aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c5f7dfde86e60e1dfaa8a3d29f32bae"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d48/classcore_1_1cron.html#a1c5f7dfde86e60e1dfaa8a3d29f32bae">run_failed_adhoc_tasks</a> (?string $classname=null)</td></tr>
+<tr class="memdesc:a1c5f7dfde86e60e1dfaa8a3d29f32bae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute all failed adhoc tasks.  <br /></td></tr>
+<tr class="separator:a1c5f7dfde86e60e1dfaa8a3d29f32bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a788c5becfca85b58ed3044e4cb1ad213"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d48/classcore_1_1cron.html#a788c5becfca85b58ed3044e4cb1ad213">run_inner_adhoc_task</a> (\<a class="el" href="../../d4/d91/classcore_1_1task_1_1adhoc__task.html">core\task\adhoc_task</a> $task)</td></tr>
 <tr class="memdesc:a788c5becfca85b58ed3044e4cb1ad213"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared code that handles running of a single adhoc task within the cron.  <br /></td></tr>
 <tr class="separator:a788c5becfca85b58ed3044e4cb1ad213"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,8 +163,42 @@ static stdClass stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$
 
 </div>
 </div>
-<a id="a2454987856c61d2c1b71417964f65843" name="a2454987856c61d2c1b71417964f65843"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2454987856c61d2c1b71417964f65843">&#9670;&#160;</a></span>run_adhoc_tasks()</h2>
+<a id="aa175538a1b2410d84516cedbfc2bf48c" name="aa175538a1b2410d84516cedbfc2bf48c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa175538a1b2410d84516cedbfc2bf48c">&#9670;&#160;</a></span>run_adhoc_task()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core\cron::run_adhoc_task </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$taskid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Execute an adhoc task. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$taskid</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a21f022c428661bdba87299bf77a39aab" name="a21f022c428661bdba87299bf77a39aab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21f022c428661bdba87299bf77a39aab">&#9670;&#160;</a></span>run_adhoc_tasks()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,7 +228,19 @@ static stdClass stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">?int&#160;</td>
-          <td class="paramname"><em>$startprocesstime</em> = <code>null</code>&#160;</td>
+          <td class="paramname"><em>$startprocesstime</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int&#160;</td>
+          <td class="paramname"><em>$maxtasks</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?string&#160;</td>
+          <td class="paramname"><em>$classname</em> = <code>null</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -210,12 +262,48 @@ static stdClass stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$
     <tr><td class="paramtype">int</td><td class="paramname">$keepalive</td><td>Keep this public static function alive for N seconds and poll for new adhoc tasks. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$checklimits</td><td>Should we check limits? </td></tr>
     <tr><td class="paramtype">null&#160;|&#160;int</td><td class="paramname">$startprocesstime</td><td>The time this process started. </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$maxtasks</td><td>Limit number of tasks to run` </td></tr>
+    <tr><td class="paramtype">null&#160;|&#160;string</td><td class="paramname">$classname</td><td>Run only tasks of this class </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="../../d6/da8/classmoodle__exception.html" title="Base Moodle Exception class.">moodle_exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1c5f7dfde86e60e1dfaa8a3d29f32bae" name="a1c5f7dfde86e60e1dfaa8a3d29f32bae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c5f7dfde86e60e1dfaa8a3d29f32bae">&#9670;&#160;</a></span>run_failed_adhoc_tasks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core\cron::run_failed_adhoc_tasks </td>
+          <td>(</td>
+          <td class="paramtype">?string&#160;</td>
+          <td class="paramname"><em>$classname</em> = <code>null</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Execute all failed adhoc tasks. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$classname</td><td>Run only tasks of this class </td></tr>
   </table>
   </dd>
 </dl>
@@ -452,7 +540,12 @@ static stdClass stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$
 </div><div class="memdoc">
 
 <p>Sets up a user and course environment in cron. </p>
-<p>Do not use outside of cron script!</p>
+<p>Note: This function is intended only for use in:</p><ul>
+<li>the cron runner scripts</li>
+<li>individual tasks which extend the adhoc_task and scheduled_task classes</li>
+<li>unit tests related to tasks</li>
+<li>other parts of the cron/task system</li>
+</ul>
 <p>Please note that this function stores cache data statically. </p><dl class="section see"><dt>See also</dt><dd>reset_user_cache() to reset this <a class="el" href="../../d3/d3d/classcache.html">cache</a>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -518,7 +611,7 @@ static stdClass stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 9 2023 02:54:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 16 2023 02:58:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

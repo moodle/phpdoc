@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
+   <div id="projectbrief">Moodle 4.2beta (Build: 20230414) (0e08d0df604)</div>
   </td>
  </tr>
  </tbody>
@@ -298,7 +298,7 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$stats</b> = 
 <p>This function explicitly does NOT use core functions as it will in some circumstances be called before <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> has finished initialising. This happens when loading configuration for instance.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">string</td><td></td></tr>
+    <tr><td class="paramname">array</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -933,13 +933,19 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$stats</b> = 
     <tr><td class="paramtype">string</td><td class="paramname">$component</td><td></td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$area</td><td></td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$identifiers</td><td></td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$keys</td><td></td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;string&#160;|&#160;int</td><td class="paramname">$keys</td><td></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">boolean</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1548,7 +1554,7 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$stats</b> = 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 9 2023 02:52:56 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 16 2023 02:57:24 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

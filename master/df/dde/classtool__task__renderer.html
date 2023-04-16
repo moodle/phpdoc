@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
+   <div id="projectbrief">Moodle 4.2beta (Build: 20230414) (0e08d0df604)</div>
   </td>
  </tr>
  </tbody>
@@ -84,6 +84,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7548caf80cb7cc9344d53e688b423ef0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d60/classrenderer__base.html#a7548caf80cb7cc9344d53e688b423ef0">add_action_handler</a> (<a class="el" href="../../d8/d80/classcomponent__action.html">component_action</a> $action, $id=null)</td></tr>
 <tr class="memdesc:a7548caf80cb7cc9344d53e688b423ef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a JS action for the element with the provided id.  <br /></td></tr>
 <tr class="separator:a7548caf80cb7cc9344d53e688b423ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a595b818936b5649fac2238d8ee414710"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dde/classtool__task__renderer.html#a595b818936b5649fac2238d8ee414710">adhoc_task_run</a> ()</td></tr>
+<tr class="memdesc:a595b818936b5649fac2238d8ee414710"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays a notification on ad hoc task run request.  <br /></td></tr>
+<tr class="separator:a595b818936b5649fac2238d8ee414710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6daff566ef95ab7e7cb33ee31c1a1d86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dde/classtool__task__renderer.html#a6daff566ef95ab7e7cb33ee31c1a1d86">adhoc_tasks_class_table</a> (string $classname, array $tasks, ?array $params=[])</td></tr>
+<tr class="memdesc:a6daff566ef95ab7e7cb33ee31c1a1d86"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will render a table with all the adhoc tasks for the class.  <br /></td></tr>
+<tr class="separator:a6daff566ef95ab7e7cb33ee31c1a1d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac28fdc8b6b424f93a5ae1ed0fe46fa58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dde/classtool__task__renderer.html#ac28fdc8b6b424f93a5ae1ed0fe46fa58">adhoc_tasks_simple_table</a> (array $tasks)</td></tr>
+<tr class="memdesc:ac28fdc8b6b424f93a5ae1ed0fe46fa58"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will render a plain adhoc tasks table.  <br /></td></tr>
+<tr class="separator:ac28fdc8b6b424f93a5ae1ed0fe46fa58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5eba35a734f5b749a5f8d4ca1573b551"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dde/classtool__task__renderer.html#a5eba35a734f5b749a5f8d4ca1573b551">adhoc_tasks_summary_table</a> (array $summary)</td></tr>
+<tr class="memdesc:a5eba35a734f5b749a5f8d4ca1573b551"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will render a table with the summary of all adhoc tasks.  <br /></td></tr>
+<tr class="separator:a5eba35a734f5b749a5f8d4ca1573b551"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2740d547660f3b8f9151e5f7c7091e2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dde/classtool__task__renderer.html#a2740d547660f3b8f9151e5f7c7091e2d">component_name</a> (string $component)</td></tr>
 <tr class="memdesc:a2740d547660f3b8f9151e5f7c7091e2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nicely display the name of a component, with its disabled status and internal name.  <br /></td></tr>
 <tr class="separator:a2740d547660f3b8f9151e5f7c7091e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -269,6 +281,145 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>id of element, either original submitted or random new if not supplied </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a595b818936b5649fac2238d8ee414710" name="a595b818936b5649fac2238d8ee414710"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a595b818936b5649fac2238d8ee414710">&#9670;&#160;</a></span>adhoc_task_run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tool_task_renderer::adhoc_task_run </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Displays a notification on ad hoc task run request. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>HTML notification block for task initiated message </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6daff566ef95ab7e7cb33ee31c1a1d86" name="a6daff566ef95ab7e7cb33ee31c1a1d86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6daff566ef95ab7e7cb33ee31c1a1d86">&#9670;&#160;</a></span>adhoc_tasks_class_table()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tool_task_renderer::adhoc_tasks_class_table </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$classname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$tasks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?array&#160;</td>
+          <td class="paramname"><em>$params</em> = <code>[]</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function will render a table with all the adhoc tasks for the class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$classname</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$tasks</td><td>- list of all adhoc tasks. </td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;null</td><td class="paramname">$params</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>HTML to output. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac28fdc8b6b424f93a5ae1ed0fe46fa58" name="ac28fdc8b6b424f93a5ae1ed0fe46fa58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac28fdc8b6b424f93a5ae1ed0fe46fa58">&#9670;&#160;</a></span>adhoc_tasks_simple_table()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tool_task_renderer::adhoc_tasks_simple_table </td>
+          <td>(</td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$tasks</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function will render a plain adhoc tasks table. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$tasks</td><td>- list of adhoc tasks. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>HTML to output. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5eba35a734f5b749a5f8d4ca1573b551" name="a5eba35a734f5b749a5f8d4ca1573b551"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5eba35a734f5b749a5f8d4ca1573b551">&#9670;&#160;</a></span>adhoc_tasks_summary_table()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tool_task_renderer::adhoc_tasks_summary_table </td>
+          <td>(</td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$summary</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This function will render a table with the summary of all adhoc tasks. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$summary</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>HTML to output. </td></tr>
   </table>
   </dd>
 </dl>
@@ -692,7 +843,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 
 <p>Return the direct URL for an image from the pix folder. </p>
 <p>Use this function sparingly and never for icons. For icons use <a class="el" href="../../d0/d6e/classpix__icon.html">pix_icon</a> or the pix helper in a mustache template.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000761">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000762">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$imagename</td><td>the name of the icon. </td></tr>
@@ -913,7 +1064,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Whether we should display the main logo. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000762">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000763">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000175">Todo:</a></b></dt><dd>final deprecation. To be removed in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-73165" class="el">MDL-73165</a>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1047,7 +1198,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 9 2023 02:54:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 16 2023 02:58:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

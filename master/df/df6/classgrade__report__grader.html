@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
+   <div id="projectbrief">Moodle 4.2beta (Build: 20230414) (0e08d0df604)</div>
   </td>
  </tr>
  </tbody>
@@ -85,9 +85,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0dbdceb829d29920749fe790498174b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df6/classgrade__report__grader.html#a0dbdceb829d29920749fe790498174b5">get_category_view_mode_link</a> (<a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a> $url, string $title, string $action, bool $active=false)</td></tr>
 <tr class="memdesc:a0dbdceb829d29920749fe790498174b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns link to change category view mode.  <br /></td></tr>
 <tr class="separator:a0dbdceb829d29920749fe790498174b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b00b8b3d50238bcc64f97b628fdbd4f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df6/classgrade__report__grader.html#a4b00b8b3d50238bcc64f97b628fdbd4f">get_default_sortable</a> ()</td></tr>
+<tr class="memdesc:a4b00b8b3d50238bcc64f97b628fdbd4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the base report link with some default sorting applied.  <br /></td></tr>
+<tr class="separator:a4b00b8b3d50238bcc64f97b628fdbd4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19c5b36475733928252ac50c7639a3f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df6/classgrade__report__grader.html#a19c5b36475733928252ac50c7639a3f1">get_grade_table</a> ($displayaverages=false)</td></tr>
 <tr class="memdesc:a19c5b36475733928252ac50c7639a3f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Depending on the style of report (fixedstudents vs traditional one-table), arranges the rows of data in one or two tables, and returns the output of these tables in HTML.  <br /></td></tr>
 <tr class="separator:a19c5b36475733928252ac50c7639a3f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d04df3014c88eb461e3436249da4ce7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df6/classgrade__report__grader.html#a2d04df3014c88eb461e3436249da4ce7">get_hide_show_link</a> ()</td></tr>
+<tr class="memdesc:a2d04df3014c88eb461e3436249da4ce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the link to allow the field to collapse from the users view.  <br /></td></tr>
+<tr class="separator:a2d04df3014c88eb461e3436249da4ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0150ab3ac9c714ba81b011b3591857c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#a0150ab3ac9c714ba81b011b3591857c6">get_lang_string</a> ($strcode, $section=null)</td></tr>
 <tr class="memdesc:a0150ab3ac9c714ba81b011b3591857c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">First checks the cached language strings, then returns match if found, or uses get_string() to get it from the <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a>, caches it then returns it.  <br /></td></tr>
 <tr class="separator:a0150ab3ac9c714ba81b011b3591857c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,9 +127,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a36cfee1953ece926ab42eb657b62b501"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df6/classgrade__report__grader.html#a36cfee1953ece926ab42eb657b62b501">get_right_rows</a> (bool $displayaverages)</td></tr>
 <tr class="memdesc:a36cfee1953ece926ab42eb657b62b501"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds and returns the rows that will make up the right part of the grader report.  <br /></td></tr>
 <tr class="separator:a36cfee1953ece926ab42eb657b62b501"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab878bb97fade2a1da0435701dce9cb7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df6/classgrade__report__grader.html#ab878bb97fade2a1da0435701dce9cb7b">get_sort_arrows</a> (array $extrafields=array())</td></tr>
-<tr class="memdesc:ab878bb97fade2a1da0435701dce9cb7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refactored function for generating HTML of sorting links with matching arrows.  <br /></td></tr>
-<tr class="separator:ab878bb97fade2a1da0435701dce9cb7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabb3c860bb178278825598870215e1ae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df6/classgrade__report__grader.html#aabb3c860bb178278825598870215e1ae">get_sort_arrows</a> (array $extrafields=[])</td></tr>
+<tr class="memdesc:aabb3c860bb178278825598870215e1ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refactored function for generating HTML of sorting links with matching arrows.  <br /></td></tr>
+<tr class="separator:aabb3c860bb178278825598870215e1ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb87084191717d0ca8e6a33b0fc1f4ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df6/classgrade__report__grader.html#abb87084191717d0ca8e6a33b0fc1f4ee">get_students_per_page</a> ()</td></tr>
 <tr class="memdesc:abb87084191717d0ca8e6a33b0fc1f4ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the maximum number of students to be displayed on each page.  <br /></td></tr>
 <tr class="separator:abb87084191717d0ca8e6a33b0fc1f4ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -952,6 +958,37 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 
 </div>
 </div>
+<a id="a4b00b8b3d50238bcc64f97b628fdbd4f" name="a4b00b8b3d50238bcc64f97b628fdbd4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b00b8b3d50238bcc64f97b628fdbd4f">&#9670;&#160;</a></span>get_default_sortable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">grade_report_grader::get_default_sortable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the base report link with some default sorting applied. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../d6/da8/classmoodle__exception.html" title="Base Moodle Exception class.">moodle_exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a19c5b36475733928252ac50c7639a3f1" name="a19c5b36475733928252ac50c7639a3f1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a19c5b36475733928252ac50c7639a3f1">&#9670;&#160;</a></span>get_grade_table()</h2>
 
@@ -978,6 +1015,38 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>HTML </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2d04df3014c88eb461e3436249da4ce7" name="a2d04df3014c88eb461e3436249da4ce7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d04df3014c88eb461e3436249da4ce7">&#9670;&#160;</a></span>get_hide_show_link()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">grade_report_grader::get_hide_show_link </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the link to allow the field to collapse from the users view. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>Dropdown menu link that'll trigger the collapsing functionality. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td></td></tr>
+    <tr><td class="paramname"><a class="el" href="../../d6/da8/classmoodle__exception.html" title="Base Moodle Exception class.">moodle_exception</a></td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1537,8 +1606,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 
 </div>
 </div>
-<a id="ab878bb97fade2a1da0435701dce9cb7b" name="ab878bb97fade2a1da0435701dce9cb7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab878bb97fade2a1da0435701dce9cb7b">&#9670;&#160;</a></span>get_sort_arrows()</h2>
+<a id="aabb3c860bb178278825598870215e1ae" name="aabb3c860bb178278825598870215e1ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabb3c860bb178278825598870215e1ae">&#9670;&#160;</a></span>get_sort_arrows()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1547,7 +1616,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
           <td class="memname">grade_report_grader::get_sort_arrows </td>
           <td>(</td>
           <td class="paramtype">array&#160;</td>
-          <td class="paramname"><em>$extrafields</em> = <code>array()</code></td><td>)</td>
+          <td class="paramname"><em>$extrafields</em> = <code>[]</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -2560,7 +2629,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 9 2023 02:53:57 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 16 2023 02:58:24 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

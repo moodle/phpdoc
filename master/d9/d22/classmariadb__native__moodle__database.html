@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
+   <div id="projectbrief">Moodle 4.2beta (Build: 20230414) (0e08d0df604)</div>
   </td>
  </tr>
  </tbody>
@@ -2302,7 +2302,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>Returns the localised database description Note: can be used before <a class="el" href="../../d3/d6e/classmoodle__database.html#a05828fac5b359ddbb31e3ed4e40a8dc0" title="Connects to the database.">connect()</a> </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000579">Deprecated:</a></b></dt><dd>since 2.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000580">Deprecated:</a></b></dt><dd>since 2.6 </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td></td></tr>
@@ -6669,7 +6669,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$table</td><td>The database table to be checked against. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$newfield</td><td>the field to set. </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$newvalue</td><td>the value to set the field to. </td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$newvalue</td><td>the value to set the field to. </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$conditions</td><td>optional array $fieldname=&gt;requestedvalue with AND in between </td></tr>
   </table>
   </dd>
@@ -6794,7 +6794,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>Enable/disable detailed sql logging. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000580">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.9 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000581">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.9 </dd></dl>
 
 </div>
 </div>
@@ -6904,8 +6904,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 <p>NOTE: The SQL result is a number and can not be used directly in SQL condition, please compare it to some number to get a bool!!</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$int1</td><td>First integer in the operation. </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$int2</td><td>Second integer in the operation. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$int1</td><td>SQL for the first integer in the operation. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$int2</td><td>SQL for the second integer in the operation. </td></tr>
   </table>
   </dd>
 </dl>
@@ -7095,7 +7095,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>Returns the SQL to be used in order to an UNSIGNED INTEGER column to SIGNED. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000583">Deprecated:</a></b></dt><dd>since 2.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000584">Deprecated:</a></b></dt><dd>since 2.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$fieldname</td><td>The name of the field to be cast </td></tr>
@@ -7476,7 +7476,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>This used to return empty string replacement character. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000582">Deprecated:</a></b></dt><dd>use bound parameter with empty string instead</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000583">Deprecated:</a></b></dt><dd>use bound parameter with empty string instead</dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>An empty string. </td></tr>
@@ -8751,7 +8751,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$table</td><td>The database table to be checked against. </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$dataobject</td><td>An object with contents equal to fieldname=&gt;fieldvalue. Must have an entry for 'id' to map to the table specified. </td></tr>
+    <tr><td class="paramtype">stdClass&#160;|&#160;array</td><td class="paramname">$dataobject</td><td>An object with contents equal to fieldname=&gt;fieldvalue. Must have an entry for 'id' to map to the table specified. </td></tr>
     <tr><td class="paramtype"></td><td class="paramname">bool</td><td>true means repeated updates expected </td></tr>
   </table>
   </dd>
@@ -8817,7 +8817,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$table</td><td>name </td></tr>
-    <tr><td class="paramtype">mixed</td><td class="paramname">$params</td><td>data record as object or array </td></tr>
+    <tr><td class="paramtype">stdClass&#160;|&#160;array</td><td class="paramname">$params</td><td>data record as object or array </td></tr>
     <tr><td class="paramtype"></td><td class="paramname">bool</td><td>true means repeated updates expected </td></tr>
   </table>
   </dd>
@@ -9070,7 +9070,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 9 2023 02:54:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 16 2023 02:58:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

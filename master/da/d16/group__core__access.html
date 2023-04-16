@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
+   <div id="projectbrief">Moodle 4.2beta (Build: 20230414) (0e08d0df604)</div>
   </td>
  </tr>
  </tbody>
@@ -722,7 +722,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>ROLENAME_SHORT</b> 5
 <p>This function helps admin/roles/manage.php etc to detect if a new line should be printed when we read in a new capability. Most of the time, if the 2 components are different we should print a new line, (e.g. course system-&gt;rss client) but when we are in grade, all reports/import/export capabilities should be together</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$cap</td><td>component string a </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$cap</td><td>component string a </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$comp</td><td>component string b </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$contextlevel</td><td></td></tr>
   </table>
@@ -2068,7 +2068,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>ROLENAME_SHORT</b> 5
 <p>If $roleid is an array or is empty (all roles) you need to set $fields (and $sort by extension) params according to it, as the first field returned by the database should be unique (ra.id is the best candidate).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$roleid</td><td>(can also be an array of ints!) </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;array</td><td class="paramname">$roleid</td><td>(can also be an array of ints!) </td></tr>
     <tr><td class="paramtype">context</td><td class="paramname">$context</td><td></td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$parent</td><td>if true, get list of users assigned in higher context too </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$fields</td><td>fields from user (u.) , role assignment (ra) or role (r.) </td></tr>
@@ -2249,7 +2249,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>ROLENAME_SHORT</b> 5
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$capability</td><td>capability name (string) </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$permission</td><td>optional, the permission defined for this capability either CAP_ALLOW, CAP_PREVENT or CAP_PROHIBIT. Defaults to null which means any. </td></tr>
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$context</td><td>null means any </td></tr>
+    <tr><td class="paramtype">context&#160;|&#160;null</td><td class="paramname">$context</td><td>null means any </td></tr>
   </table>
   </dd>
 </dl>
@@ -3685,7 +3685,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>ROLENAME_SHORT</b> 5
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$roleid</td><td></td></tr>
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$context</td><td></td></tr>
+    <tr><td class="paramtype">stdClass&#160;|&#160;context</td><td class="paramname">$context</td><td></td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$capname</td><td>capability name </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$permission</td><td></td></tr>
   </table>
@@ -4424,7 +4424,7 @@ assignment".</p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 9 2023 02:52:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 16 2023 02:57:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

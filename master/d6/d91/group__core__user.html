@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2dev+ (Build: 20230406) (bd2de8edf6a)</div>
+   <div id="projectbrief">Moodle 4.2beta (Build: 20230414) (0e08d0df604)</div>
   </td>
  </tr>
  </tbody>
@@ -455,6 +455,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gab7a16060fb58c7d6b56fc8f8ebdf33c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d91/group__core__user.html#gab7a16060fb58c7d6b56fc8f8ebdf33c5">user_remove_user_device</a> ($uuid, $appid=&quot;&quot;)</td></tr>
 <tr class="memdesc:gab7a16060fb58c7d6b56fc8f8ebdf33c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a user device from the <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> database (for PUSH notifications usually).  <br /></td></tr>
 <tr class="separator:gab7a16060fb58c7d6b56fc8f8ebdf33c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga01afdb27859954ec4e021690ab769d45"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d91/group__core__user.html#ga01afdb27859954ec4e021690ab769d45">user_update_device_public_key</a> (string $uuid, string $appid, string $publickey)</td></tr>
+<tr class="memdesc:ga01afdb27859954ec4e021690ab769d45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the users public key for the specified device and app.  <br /></td></tr>
+<tr class="separator:ga01afdb27859954ec4e021690ab769d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0e1802eddbfc4a072ecd4a9f69246ba2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d91/group__core__user.html#ga0e1802eddbfc4a072ecd4a9f69246ba2">user_update_user</a> ($user, $updatepassword=true, $triggerevent=true)</td></tr>
 <tr class="memdesc:ga0e1802eddbfc4a072ecd4a9f69246ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a user with a user object (will compare against the ID)  <br /></td></tr>
 <tr class="separator:ga0e1802eddbfc4a072ecd4a9f69246ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1066,7 +1069,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>USER_SELECTOR_DEFAUL
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../d4/d65/classcore_1_1output_1_1inplace__editable.html">core::output::inplace_editable</a></td><td></td></tr>
+    <tr><td class="paramname">core::output::inplace_editable|null</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2506,7 +2509,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>USER_SELECTOR_DEFAUL
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$user</td><td>user to create </td></tr>
+    <tr><td class="paramtype">stdClass&#160;|&#160;array</td><td class="paramname">$user</td><td>user to create </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$updatepassword</td><td>if true, authentication plugin will update password. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$triggerevent</td><td>set false if user_created event should not be triggred. This will not affect user_password_updated event triggering. </td></tr>
   </table>
@@ -2588,7 +2591,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>USER_SELECTOR_DEFAUL
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">single_structure_description</td><td></td></tr>
+    <tr><td class="paramname">external_description</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -3340,6 +3343,57 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>USER_SELECTOR_DEFAUL
 
 </div>
 </div>
+<a id="ga01afdb27859954ec4e021690ab769d45" name="ga01afdb27859954ec4e021690ab769d45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga01afdb27859954ec4e021690ab769d45">&#9670;&#160;</a></span>user_update_device_public_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">user_update_device_public_key </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$uuid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$appid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$publickey</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update the users public key for the specified device and app. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$uuid</td><td>The device UUID. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$appid</td><td>The app id, usually something like com.moodle.moodlemobile. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$publickey</td><td>The app generated public key. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2 </dd></dl>
+
+</div>
+</div>
 <a id="ga0e1802eddbfc4a072ecd4a9f69246ba2" name="ga0e1802eddbfc4a072ecd4a9f69246ba2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga0e1802eddbfc4a072ecd4a9f69246ba2">&#9670;&#160;</a></span>user_update_user()</h2>
 
@@ -3381,7 +3435,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>USER_SELECTOR_DEFAUL
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$user</td><td>the user to update </td></tr>
+    <tr><td class="paramtype">stdClass&#160;|&#160;array</td><td class="paramname">$user</td><td>the user to update </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$updatepassword</td><td>if true, authentication plugin will update password. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$triggerevent</td><td>set false if user_updated event should not be triggred. This will not affect user_password_updated event triggering. </td></tr>
   </table>
@@ -3593,7 +3647,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>USER_SELECTOR_DEFAUL
 <p>Powerful function that is used by edit and editadvanced to add common form elements/rules/etc. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">moodleform</td><td class="paramname">$mform</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../d5/d8e/class_moodle_quick_form.html">MoodleQuickForm</a></td><td class="paramname">$mform</td><td></td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$editoroptions</td><td></td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$filemanageroptions</td><td></td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$user</td><td></td></tr>
@@ -4074,7 +4128,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>USER_SELECTOR_DEFAUL
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 9 2023 02:52:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 16 2023 02:57:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>
