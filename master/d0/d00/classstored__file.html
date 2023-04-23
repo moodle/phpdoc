@@ -23,9 +23,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../Moodle-Logo-ReversedWhite_RGB.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
+   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.2beta (Build: 20230414) (0e08d0df604)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230424) (4e632b72518)</div>
   </td>
  </tr>
  </tbody>
@@ -158,6 +158,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2e69a939ab10d14d90021692857128a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d00/classstored__file.html#a2e69a939ab10d14d90021692857128a9">get_pathnamehash</a> ()</td></tr>
 <tr class="memdesc:a2e69a939ab10d14d90021692857128a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns sha1 hash of all file path components sha1("contextid/component/filearea/itemid/dir/dir/filename.ext").  <br /></td></tr>
 <tr class="separator:a2e69a939ab10d14d90021692857128a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c10862e8589ef6c51d4b2947a7add4d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d00/classstored__file.html#a6c10862e8589ef6c51d4b2947a7add4d">get_psr_stream</a> ()</td></tr>
+<tr class="memdesc:a6c10862e8589ef6c51d4b2947a7add4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a read-only PSR-7 stream for this file.  <br /></td></tr>
+<tr class="separator:a6c10862e8589ef6c51d4b2947a7add4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe0985d5e1e54f3a72b2d5ce0ad1a954"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d00/classstored__file.html#afe0985d5e1e54f3a72b2d5ce0ad1a954">get_reference</a> ()</td></tr>
 <tr class="memdesc:afe0985d5e1e54f3a72b2d5ce0ad1a954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns file reference.  <br /></td></tr>
 <tr class="separator:afe0985d5e1e54f3a72b2d5ce0ad1a954"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1251,6 +1254,32 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a6c10862e8589ef6c51d4b2947a7add4d" name="a6c10862e8589ef6c51d4b2947a7add4d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c10862e8589ef6c51d4b2947a7add4d">&#9670;&#160;</a></span>get_psr_stream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">stored_file::get_psr_stream </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a read-only PSR-7 stream for this file. </p>
+<p>Note: This stream is read-only. If you want to modify the file, create a new file and delete the old one. The <a class="el" href="../../d1/d31/class_file.html" title="Caches data to the filesystem.">File</a> API creates immutable files.</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">StreamInterface</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="afe0985d5e1e54f3a72b2d5ce0ad1a954" name="afe0985d5e1e54f3a72b2d5ce0ad1a954"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe0985d5e1e54f3a72b2d5ce0ad1a954">&#9670;&#160;</a></span>get_reference()</h2>
 
@@ -2336,7 +2365,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 16 2023 02:58:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 23 2023 03:03:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>
