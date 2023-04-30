@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230424) (4e632b72518)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230427) (5252124e35b)</div>
   </td>
  </tr>
  </tbody>
@@ -59,8 +59,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="../../d9/db9/class_php_xml_rpc_1_1_encoder-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">PhpXmlRpc\Encoder Class Reference</div></div>
 </div><!--header-->
@@ -69,38 +67,14 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:adb2124abafeb4b7505ef96cf8489d637"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dba/class_php_xml_rpc_1_1_encoder.html#adb2124abafeb4b7505ef96cf8489d637">decode</a> ($xmlrpcVal, $options=array())</td></tr>
-<tr class="memdesc:adb2124abafeb4b7505ef96cf8489d637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes an xmlrpc value in object format and translates it into native PHP types.  <br /></td></tr>
+<tr class="memdesc:adb2124abafeb4b7505ef96cf8489d637"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes an xml-rpc Value in object instance and translates it into native PHP types, recursively.  <br /></td></tr>
 <tr class="separator:adb2124abafeb4b7505ef96cf8489d637"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4856eac7e58113580160b2a6f32ff1e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dba/class_php_xml_rpc_1_1_encoder.html#a4856eac7e58113580160b2a6f32ff1e0">decodeXml</a> ($xmlVal, $options=array())</td></tr>
-<tr class="memdesc:a4856eac7e58113580160b2a6f32ff1e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the xml representation of a method response, method request or single xmlrpc value into the appropriate object (a.k.a.  <br /></td></tr>
+<tr class="memdesc:a4856eac7e58113580160b2a6f32ff1e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the xml representation of a method response, method request or single xml-rpc value into the appropriate object (a.k.a.  <br /></td></tr>
 <tr class="separator:a4856eac7e58113580160b2a6f32ff1e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa60bb4e9ab0b740239030492cc69601a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dba/class_php_xml_rpc_1_1_encoder.html#aa60bb4e9ab0b740239030492cc69601a">encode</a> ($phpVal, $options=array())</td></tr>
-<tr class="memdesc:aa60bb4e9ab0b740239030492cc69601a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes native php types and encodes them into xmlrpc PHP object format.  <br /></td></tr>
+<tr class="memdesc:aa60bb4e9ab0b740239030492cc69601a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes native php types and encodes them into xml-rpc Value objects, recursively.  <br /></td></tr>
 <tr class="separator:aa60bb4e9ab0b740239030492cc69601a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fdedfdd0fab554bdeb864b4049fe4ed"><td class="memItemLeft" align="right" valign="top"><a id="a7fdedfdd0fab554bdeb864b4049fe4ed" name="a7fdedfdd0fab554bdeb864b4049fe4ed"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>getLogger</b> ()</td></tr>
-<tr class="separator:a7fdedfdd0fab554bdeb864b4049fe4ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a930ed37a2c9d4a3d7f4071b2a2526a10"><td class="memItemLeft" align="right" valign="top"><a id="a930ed37a2c9d4a3d7f4071b2a2526a10" name="a930ed37a2c9d4a3d7f4071b2a2526a10"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>getParser</b> ()</td></tr>
-<tr class="separator:a930ed37a2c9d4a3d7f4071b2a2526a10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a263fac8e061421115cbada14d15b9f34"><td class="memItemLeft" align="right" valign="top"><a id="a263fac8e061421115cbada14d15b9f34" name="a263fac8e061421115cbada14d15b9f34"></a>
-static&#160;</td><td class="memItemRight" valign="bottom"><b>setLogger</b> ($logger)</td></tr>
-<tr class="separator:a263fac8e061421115cbada14d15b9f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a325ddcd59d7e082dc1b61b1c20911238"><td class="memItemLeft" align="right" valign="top"><a id="a325ddcd59d7e082dc1b61b1c20911238" name="a325ddcd59d7e082dc1b61b1c20911238"></a>
-static&#160;</td><td class="memItemRight" valign="bottom"><b>setParser</b> ($parser)</td></tr>
-<tr class="separator:a325ddcd59d7e082dc1b61b1c20911238"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
-Static Protected Attributes</h2></td></tr>
-<tr class="memitem:a7b5bc0a8a9261fc42d176bc32bd645cd"><td class="memItemLeft" align="right" valign="top"><a id="a7b5bc0a8a9261fc42d176bc32bd645cd" name="a7b5bc0a8a9261fc42d176bc32bd645cd"></a>
-static&#160;</td><td class="memItemRight" valign="bottom"><b>$logger</b></td></tr>
-<tr class="separator:a7b5bc0a8a9261fc42d176bc32bd645cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf7c4fed4dece5022f3a55af126d9f1d"><td class="memItemLeft" align="right" valign="top"><a id="abf7c4fed4dece5022f3a55af126d9f1d" name="abf7c4fed4dece5022f3a55af126d9f1d"></a>
-static&#160;</td><td class="memItemRight" valign="bottom"><b>$parser</b></td></tr>
-<tr class="separator:abf7c4fed4dece5022f3a55af126d9f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="adb2124abafeb4b7505ef96cf8489d637" name="adb2124abafeb4b7505ef96cf8489d637"></a>
@@ -129,14 +103,18 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$parser</b></td></t
       </table>
 </div><div class="memdoc">
 
-<p>Takes an xmlrpc value in object format and translates it into native PHP types. </p>
-<p>Works with xmlrpc requests objects as input, too.</p>
-<p>Given proper options parameter, can rebuild generic php object instances (provided those have been encoded to xmlrpc format using a corresponding option in php_xmlrpc_encode()) PLEASE NOTE that rebuilding php objects involves calling their constructor function. This means that the remote communication end can decide which php code will get executed on your server, leaving the door possibly open to 'php-injection' style of attacks (provided you have some classes defined on your server that might wreak havoc if instances are built outside an appropriate context). Make sure you trust the remote server/client before enabling this!</p>
-<dl class="section author"><dt>Author</dt><dd>Dan Libby (<a href="#" onclick="location.href='mai'+'lto:'+'dan'+'@l'+'ibb'+'y.'+'com'; return false;">dan@l<span class="obfuscator">.nosp@m.</span>ibby<span class="obfuscator">.nosp@m.</span>.com</a>)</dd></dl>
+<p>Takes an xml-rpc Value in object instance and translates it into native PHP types, recursively. </p>
+<p>Works with xml-rpc Request objects as input, too. Xmlrpc dateTime values will be converted to strings or DateTime objects depending on an $options parameter Supports i8 and NIL xml-rpc values without the need for specific options. Both xml-rpc arrays and structs are decoded into PHP arrays, with the exception described below: Given proper options parameter, can rebuild generic php object instances (provided those have been encoded to xml-rpc format using a corresponding option in php_xmlrpc_encode()). PLEASE NOTE that rebuilding php objects involves calling their constructor function. This means that the remote communication end can decide which php code will get executed on your server, leaving the door possibly open to 'php-injection' style of attacks (provided you have some classes defined on your server that might wreak havoc if instances are built outside an appropriate context). Make sure you trust the remote server/client before enabling this!</p>
+<dl class="section author"><dt>Author</dt><dd>Dan Libby</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">Value&#160;|&#160;Request</td><td class="paramname">$xmlrpcVal</td><td></td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$options</td><td>if 'decode_php_objs' is set in the options array, xmlrpc structs can be decoded into php objects; if 'dates_as_objects' is set xmlrpc datetimes are decoded as php DateTime objects</td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$options</td><td>accepted elements:<ul>
+<li>'decode_php_objs': if set in the options array, xml-rpc structs can be decoded into php objects, see the details above;</li>
+<li>'dates_as_objects': when set xml-rpc dateTimes are decoded as php DateTime objects</li>
+<li>'extension_api': reserved for usage by phpxmlrpc-polyfill </li>
+</ul>
+</td></tr>
   </table>
   </dd>
 </dl>
@@ -146,6 +124,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$parser</b></td></t
   </table>
   </dd>
 </dl>
+<p>Feature creep &ndash; add an option to allow converting xml-rpc dateTime values to unix timestamps (integers) </p>
 
 </div>
 </div>
@@ -175,22 +154,26 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$parser</b></td></t
       </table>
 </div><div class="memdoc">
 
-<p>Convert the xml representation of a method response, method request or single xmlrpc value into the appropriate object (a.k.a. </p>
+<p>Convert the xml representation of a method response, method request or single xml-rpc value into the appropriate object (a.k.a. </p>
 <p>deserialize).</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000187">Todo:</a></b></dt><dd>is this a good name/class for this method? It does something quite different from 'decode' after all (returning objects vs returns plain php values)... In fact it belongs rather to a <a class="el" href="../../dc/db7/class_parser.html" title="HTTP Response Parser.">Parser</a> class</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$xmlVal</td><td></td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$options</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$options</td><td>unused atm </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">Value|Request|Response|false</td><td>false on error, or an instance of either Value, Request or Response </td></tr>
+    <tr><td class="paramname">Value|Request|Response|false</td><td>false on error, or an instance of either Value, Request or Response</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000187">Todo:</a></b></dt><dd><p class="startdd">is this a good name/class for this method? It does something quite different from 'decode' after all (returning objects vs returns plain php values)... In fact, it belongs rather to a <a class="el" href="../../dc/db7/class_parser.html" title="HTTP Response Parser.">Parser</a> class </p>
+<p class="interdd">feature creep &ndash; we should allow an option to return php native types instead of <a class="el" href="../../d5/dac/namespace_php_xml_rpc.html" title="&#160;">PhpXmlRpc</a> objects instances </p>
+<p class="interdd">feature creep &ndash; allow source charset to be passed in as an option, in case the xml misses its declaration </p>
+<p class="enddd">feature creep &ndash; allow expected type (val/req/resp) to be passed in as an option </p>
+</dd></dl>
 
 </div>
 </div>
@@ -220,15 +203,19 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$parser</b></td></t
       </table>
 </div><div class="memdoc">
 
-<p>Takes native php types and encodes them into xmlrpc PHP object format. </p>
-<p>It will not re-encode xmlrpc value objects.</p>
-<p>Feature creep &ndash; could support more types via optional type argument (string =&gt; datetime support has been added, ??? =&gt; base64 not yet)</p>
-<p>If given a proper options parameter, php object instances will be encoded into 'special' xmlrpc values, that can later be decoded into php objects by calling php_xmlrpc_decode() with a corresponding option</p>
-<dl class="section author"><dt>Author</dt><dd>Dan Libby (<a href="#" onclick="location.href='mai'+'lto:'+'dan'+'@l'+'ibb'+'y.'+'com'; return false;">dan@l<span class="obfuscator">.nosp@m.</span>ibby<span class="obfuscator">.nosp@m.</span>.com</a>)</dd></dl>
+<p>Takes native php types and encodes them into xml-rpc Value objects, recursively. </p>
+<p>PHP strings, integers, floats and booleans have a straightforward encoding - note that integers will <em>not</em> be converted to xml-rpc &lt;i8&gt; elements, even if they exceed the 32-bit range. PHP arrays will be encoded to either xml-rpc structs or arrays, depending on whether they are hashes or plain 0..N integer indexed. PHP objects will be encoded into xml-rpc structs, except if they implement DateTimeInterface, in which case they will be encoded as dateTime values. <a class="el" href="../../d0/d9a/class_php_xml_rpc_1_1_value.html">PhpXmlRpc::Value</a> objects will not be double-encoded - which makes it possible to pass in a pre-created base64 Value as part of a php array. If given a proper $options parameter, php object instances will be encoded into 'special' xml-rpc values, that can later be decoded into php object instances by calling php_xmlrpc_decode() with a corresponding option. PHP resource and NULL variables will be converted into uninitialized Value objects (which will lead to invalid xml-rpc when later serialized); to support encoding of the latter use the appropriate $options parameter.</p>
+<dl class="section author"><dt>Author</dt><dd>Dan Libby</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">mixed</td><td class="paramname">$phpVal</td><td>the value to be converted into an xmlrpc value object </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$options</td><td>can include 'encode_php_objs', 'auto_dates', 'null_extension' or 'extension_api'</td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$phpVal</td><td>the value to be converted into an xml-rpc value object </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$options</td><td>can include:<ul>
+<li>'encode_php_objs' when set, some out-of-band info will be added to the xml produced by serializing the built Value, which can later be decoced by this library to rebuild an instance of the same php object</li>
+<li>'auto_dates': when set, any string which respects the xml-rpc datetime format will be converted to a dateTime Value</li>
+<li>'null_extension': when set, php NULL values will be converted to an xml-rpc &lt;NIL&gt; (or &lt;EX:NIL&gt;) Value</li>
+<li>'extension_api': reserved for usage by phpxmlrpc-polyfill </li>
+</ul>
+</td></tr>
   </table>
   </dd>
 </dl>
@@ -238,6 +225,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$parser</b></td></t
   </table>
   </dd>
 </dl>
+<p>Feature creep &ndash; could support more types via optional type argument (string =&gt; datetime support has been added, ??? =&gt; base64 not yet). Also: allow auto-encoding of integers to i8 when too-big to fit into i4 </p>
 
 </div>
 </div>
@@ -247,7 +235,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$parser</b></td></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 23 2023 03:05:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 30 2023 02:56:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

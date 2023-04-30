@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230424) (4e632b72518)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230427) (5252124e35b)</div>
   </td>
  </tr>
  </tbody>
@@ -59,9 +59,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="../../d8/d4e/class_php_xml_rpc_1_1_response-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">PhpXmlRpc\Response Class Reference</div></div>
 </div><!--header-->
@@ -71,9 +69,9 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a23c4658ee3c629d8875112789bfd711a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db7/class_php_xml_rpc_1_1_response.html#a23c4658ee3c629d8875112789bfd711a">__construct</a> ($val, $fCode=0, $fString='', $valType='', $<a class="el" href="../../d9/db7/class_php_xml_rpc_1_1_response.html#a265840e825540c96f231235c48deb986">httpResponse</a>=null)</td></tr>
 <tr class="separator:a23c4658ee3c629d8875112789bfd711a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab472a6dcaacc9f85f26d0969819d33b8"><td class="memItemLeft" align="right" valign="top"><a id="ab472a6dcaacc9f85f26d0969819d33b8" name="ab472a6dcaacc9f85f26d0969819d33b8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>__get</b> ($name)</td></tr>
-<tr class="separator:ab472a6dcaacc9f85f26d0969819d33b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab002a856f1f683230922cd512140540e"><td class="memItemLeft" align="right" valign="top"><a id="ab002a856f1f683230922cd512140540e" name="ab002a856f1f683230922cd512140540e"></a>
+&amp;&#160;</td><td class="memItemRight" valign="bottom"><b>__get</b> ($name)</td></tr>
+<tr class="separator:ab002a856f1f683230922cd512140540e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fbb8e26b147482d454b41cd18da33f1"><td class="memItemLeft" align="right" valign="top"><a id="a4fbb8e26b147482d454b41cd18da33f1" name="a4fbb8e26b147482d454b41cd18da33f1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>__isset</b> ($name)</td></tr>
 <tr class="separator:a4fbb8e26b147482d454b41cd18da33f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -92,52 +90,37 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a78b216be42f181da6041ddc3cf209712"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db7/class_php_xml_rpc_1_1_response.html#a78b216be42f181da6041ddc3cf209712">faultString</a> ()</td></tr>
 <tr class="memdesc:a78b216be42f181da6041ddc3cf209712"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the error code of the response.  <br /></td></tr>
 <tr class="separator:a78b216be42f181da6041ddc3cf209712"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac480afcfedff6e389573bfc70a56f842"><td class="memItemLeft" align="right" valign="top"><a id="ac480afcfedff6e389573bfc70a56f842" name="ac480afcfedff6e389573bfc70a56f842"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>getCharsetEncoder</b> ()</td></tr>
-<tr class="separator:ac480afcfedff6e389573bfc70a56f842"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a265840e825540c96f231235c48deb986"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db7/class_php_xml_rpc_1_1_response.html#a265840e825540c96f231235c48deb986">httpResponse</a> ()</td></tr>
+<tr class="memdesc:a265840e825540c96f231235c48deb986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array with info about the http response received from the server.  <br /></td></tr>
 <tr class="separator:a265840e825540c96f231235c48deb986"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8d54ae68bd6d956bbdebafa66415b28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db7/class_php_xml_rpc_1_1_response.html#af8d54ae68bd6d956bbdebafa66415b28">serialize</a> ($charsetEncoding='')</td></tr>
-<tr class="memdesc:af8d54ae68bd6d956bbdebafa66415b28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns xml representation of the response.  <br /></td></tr>
+<tr class="memdesc:af8d54ae68bd6d956bbdebafa66415b28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns xml representation of the response, XML prologue <em>not</em> included.  <br /></td></tr>
 <tr class="separator:af8d54ae68bd6d956bbdebafa66415b28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88f961f7fa1f86bdc6923b866271e404"><td class="memItemLeft" align="right" valign="top"><a id="a88f961f7fa1f86bdc6923b866271e404" name="a88f961f7fa1f86bdc6923b866271e404"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>setCharsetEncoder</b> ($charsetEncoder)</td></tr>
-<tr class="separator:a88f961f7fa1f86bdc6923b866271e404"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1699191a2184f5791c66c92a41af872"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db7/class_php_xml_rpc_1_1_response.html#aa1699191a2184f5791c66c92a41af872">value</a> ()</td></tr>
 <tr class="memdesc:aa1699191a2184f5791c66c92a41af872"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value received by the server.  <br /></td></tr>
 <tr class="separator:aa1699191a2184f5791c66c92a41af872"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a19cb4693aa224c54856ef1c25b923501"><td class="memItemLeft" align="right" valign="top"><a id="a19cb4693aa224c54856ef1c25b923501" name="a19cb4693aa224c54856ef1c25b923501"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$content_type</b> = 'text/xml'</td></tr>
-<tr class="separator:a19cb4693aa224c54856ef1c25b923501"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8d44bdbe5b58ccef62409e62fb0ba14"><td class="memItemLeft" align="right" valign="top"><a id="ac8d44bdbe5b58ccef62409e62fb0ba14" name="ac8d44bdbe5b58ccef62409e62fb0ba14"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$errno</b> = 0</td></tr>
-<tr class="separator:ac8d44bdbe5b58ccef62409e62fb0ba14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c0f6fc480a11b65a9bfc95303b77c40"><td class="memItemLeft" align="right" valign="top"><a id="a9c0f6fc480a11b65a9bfc95303b77c40" name="a9c0f6fc480a11b65a9bfc95303b77c40"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$errstr</b> = ''</td></tr>
-<tr class="separator:a9c0f6fc480a11b65a9bfc95303b77c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25599750694be93d70c7ce00b70b4a86"><td class="memItemLeft" align="right" valign="top"><a id="a25599750694be93d70c7ce00b70b4a86" name="a25599750694be93d70c7ce00b70b4a86"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$payload</b></td></tr>
-<tr class="separator:a25599750694be93d70c7ce00b70b4a86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4114d3aaca83e836bfd832d161e1671a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db7/class_php_xml_rpc_1_1_response.html#a4114d3aaca83e836bfd832d161e1671a">$val</a> = 0</td></tr>
-<tr class="separator:a4114d3aaca83e836bfd832d161e1671a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa0828122ab0fa64a0f3d3baadb8197d5"><td class="memItemLeft" align="right" valign="top"><a id="aa0828122ab0fa64a0f3d3baadb8197d5" name="aa0828122ab0fa64a0f3d3baadb8197d5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$valtyp</b></td></tr>
-<tr class="separator:aa0828122ab0fa64a0f3d3baadb8197d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37ac81b378866fa4ace5a3e3ddbeddc6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db7/class_php_xml_rpc_1_1_response.html#a37ac81b378866fa4ace5a3e3ddbeddc6">valueType</a> ()</td></tr>
+<tr class="separator:a37ac81b378866fa4ace5a3e3ddbeddc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef77c1bf289ed9ceca0a5d40288664db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/db7/class_php_xml_rpc_1_1_response.html#aef77c1bf289ed9ceca0a5d40288664db">xml_header</a> ($charsetEncoding='')</td></tr>
+<tr class="separator:aef77c1bf289ed9ceca0a5d40288664db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:a50d295cf5f4d762755e2c10cc2fe4b7a"><td class="memItemLeft" align="right" valign="top"><a id="a50d295cf5f4d762755e2c10cc2fe4b7a" name="a50d295cf5f4d762755e2c10cc2fe4b7a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>$errno</b> = 0</td></tr>
+<tr class="separator:a50d295cf5f4d762755e2c10cc2fe4b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5317fb2724d43209fa83be55a3f1f70"><td class="memItemLeft" align="right" valign="top"><a id="ab5317fb2724d43209fa83be55a3f1f70" name="ab5317fb2724d43209fa83be55a3f1f70"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$errstr</b> = ''</td></tr>
+<tr class="separator:ab5317fb2724d43209fa83be55a3f1f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bff0296edbc334bbc5715c15d99c2aa"><td class="memItemLeft" align="right" valign="top"><a id="a5bff0296edbc334bbc5715c15d99c2aa" name="a5bff0296edbc334bbc5715c15d99c2aa"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$httpResponse</b> = array('<a class="el" href="../../dc/d71/group___imap___client.html#gafe94898c7bd186ef2727a4dff03b5109">headers</a>' =&gt; array(), '<a class="el" href="../../d9/db7/class_php_xml_rpc_1_1_response.html#a464d9a67992d10c33e664a0fd28f1ed8">cookies</a>' =&gt; array(), 'raw_data' =&gt; '', 'status_code' =&gt; null)</td></tr>
 <tr class="separator:a5bff0296edbc334bbc5715c15d99c2aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
-Static Protected Attributes</h2></td></tr>
-<tr class="memitem:aa1dcda8a23804d7445c3013d2f381903"><td class="memItemLeft" align="right" valign="top"><a id="aa1dcda8a23804d7445c3013d2f381903" name="aa1dcda8a23804d7445c3013d2f381903"></a>
-static&#160;</td><td class="memItemRight" valign="bottom"><b>$charsetEncoder</b></td></tr>
-<tr class="separator:aa1dcda8a23804d7445c3013d2f381903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e870cbb73b62c785d5a639ec40cbbac"><td class="memItemLeft" align="right" valign="top"><a id="a0e870cbb73b62c785d5a639ec40cbbac" name="a0e870cbb73b62c785d5a639ec40cbbac"></a>
+<a class="el" href="../../d0/d9a/class_php_xml_rpc_1_1_value.html">Value</a> string mixed&#160;</td><td class="memItemRight" valign="bottom"><b>$val</b> = 0</td></tr>
+<tr class="separator:a0e870cbb73b62c785d5a639ec40cbbac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae2129f65435ec28bf71a42ca58daf30"><td class="memItemLeft" align="right" valign="top"><a id="aae2129f65435ec28bf71a42ca58daf30" name="aae2129f65435ec28bf71a42ca58daf30"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$valtyp</b></td></tr>
+<tr class="separator:aae2129f65435ec28bf71a42ca58daf30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a23c4658ee3c629d8875112789bfd711a" name="a23c4658ee3c629d8875112789bfd711a"></a>
@@ -185,15 +168,15 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$charsetEncoder</b>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">Value&#160;|&#160;string&#160;|&#160;mixed</td><td class="paramname">$val</td><td>either a Value object, a php value or the xml serialization of an xmlrpc value (a string) </td></tr>
+    <tr><td class="paramtype">Value&#160;|&#160;string&#160;|&#160;mixed</td><td class="paramname">$val</td><td>either a Value object, a php value or the xml serialization of an xml-rpc value (a string). Note that using anything other than a Value object wll have an impact on serialization. </td></tr>
     <tr><td class="paramtype">integer</td><td class="paramname">$fCode</td><td>set it to anything but 0 to create an error response. In that case, $val is discarded </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$fString</td><td>the error string, in case of an error response </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$valType</td><td>The type of $val passed in. Either 'xmlrpcvals', 'phpvals' or 'xml'. Leave empty to let the code guess the correct type. </td></tr>
-    <tr><td class="paramtype">array&#160;|&#160;null</td><td class="paramname">$httpResponse</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$valType</td><td>The type of $val passed in. Either 'xmlrpcvals', 'phpvals' or 'xml'. Leave empty to let the code guess the correct type by looking at $val - in which case strings are assumed to be serialized xml </td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;null</td><td class="paramname">$httpResponse</td><td>this should be set when the response is being built out of data received from http (i.e. not when programmatically building a Response server-side). Array keys should include, if known: headers, cookies, raw_data, status_code</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000198">Todo:</a></b></dt><dd>add check that $val / $fCode / $fString is of correct type??? NB: as of now we do not do it, since it might be either an xmlrpc value or a plain php val, or a complete xml chunk, depending on usage of Client::send() inside which creator is called... </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000203">Todo:</a></b></dt><dd>add check that $val / $fCode / $fString is of correct type? We could at least log a warning for fishy cases... NB: as of now we do not do it, since it might be either an xml-rpc value or a plain php val, or a complete xml chunk, depending on usage of Client::send() inside which the constructor is called. </dd></dl>
 
 </div>
 </div>
@@ -214,7 +197,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$charsetEncoder</b>
 </div><div class="memdoc">
 
 <p>Returns an array with the cookies received from the server. </p>
-<p>Array has the form: $cookiename =&gt; array ('value' =&gt; $val, $attr1 =&gt; $val1, $attr2 =&gt; $val2, ...) with attributes being e.g. 'expires', 'path', domain'. NB: cookies sent as 'expired' by the server (i.e. with an expiry date in the past) are still present in the array. It is up to the user-defined code to decide how to use the received cookies, and whether they have to be sent back with the next request to the server (using Client::setCookie) or not.</p>
+<p>Array has the form: $cookiename =&gt; array ('value' =&gt; $val, $attr1 =&gt; $val1, $attr2 =&gt; $val2, ...) with attributes being e.g. 'expires', 'path', domain'. NB: cookies sent as 'expired' by the server (i.e. with an expiry date in the past) are still present in the array. It is up to the user-defined code to decide how to use the received cookies, and whether they have to be sent back with the next request to the server (using $client-&gt;setCookie) or not. The values are filled in at constructor time, and might not be set for specific debug values used.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array[]</td><td>array of cookies received from the server </td></tr>
@@ -288,9 +271,12 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$charsetEncoder</b>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns an array with info about the http response received from the server. </p>
+<p>The values are filled in at constructor time, and might not be set for specific debug values used.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array</td><td>array with keys 'headers', 'cookies', 'raw_data' and 'status_code' </td></tr>
+    <tr><td class="paramname">array</td><td>array with keys 'headers', 'cookies', 'raw_data' and 'status_code'. </td></tr>
   </table>
   </dd>
 </dl>
@@ -313,23 +299,23 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$charsetEncoder</b>
       </table>
 </div><div class="memdoc">
 
-<p>Returns xml representation of the response. </p>
-<p>XML prologue not included.</p>
+<p>Returns xml representation of the response, XML prologue <em>not</em> included. </p>
+<p>Sets <code>payload</code> and <code>content_type</code> properties</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$charsetEncoding</td><td>the charset to be used for serialization. If null, US-ASCII is assumed</td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$charsetEncoding</td><td>the charset to be used for serialization. If null, US-ASCII is assumed </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">string</td><td>the xml representation of the response</td></tr>
+    <tr><td class="paramname">string</td><td>the xml representation of the response </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../df/d70/class_exception.html" title="General SimplePie exception class.">Exception</a></td><td></td></tr>
+    <tr><td class="paramname">StateErrorException</td><td>if the response was built out of a value of an unsupported type </td></tr>
   </table>
   </dd>
 </dl>
@@ -362,19 +348,56 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$charsetEncoder</b>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a4114d3aaca83e836bfd832d161e1671a" name="a4114d3aaca83e836bfd832d161e1671a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4114d3aaca83e836bfd832d161e1671a">&#9670;&#160;</a></span>$val</h2>
+<a id="a37ac81b378866fa4ace5a3e3ddbeddc6" name="a37ac81b378866fa4ace5a3e3ddbeddc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37ac81b378866fa4ace5a3e3ddbeddc6">&#9670;&#160;</a></span>valueType()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PhpXmlRpc\Response::$val = 0</td>
+          <td class="memname">PhpXmlRpc\Response::valueType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000197">Todo:</a></b></dt><dd>: do these need to be public? </dd></dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aef77c1bf289ed9ceca0a5d40288664db" name="aef77c1bf289ed9ceca0a5d40288664db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef77c1bf289ed9ceca0a5d40288664db">&#9670;&#160;</a></span>xml_header()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PhpXmlRpc\Response::xml_header </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$charsetEncoding</em> = <code>''</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$charsetEncoding</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -384,7 +407,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>$charsetEncoder</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 23 2023 03:05:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 30 2023 02:56:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

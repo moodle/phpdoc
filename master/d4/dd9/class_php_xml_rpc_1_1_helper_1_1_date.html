@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230424) (4e632b72518)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230427) (5252124e35b)</div>
   </td>
  </tr>
  </tbody>
@@ -67,10 +67,10 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a5ca27cc18859967b5dd3c2b2f215ac36"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd9/class_php_xml_rpc_1_1_helper_1_1_date.html#a5ca27cc18859967b5dd3c2b2f215ac36">iso8601Decode</a> ($idate, $utc=0)</td></tr>
-<tr class="memdesc:a5ca27cc18859967b5dd3c2b2f215ac36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an ISO8601 date string, return a timet in the localtime, or UTC.  <br /></td></tr>
+<tr class="memdesc:a5ca27cc18859967b5dd3c2b2f215ac36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an ISO8601 date string, return a timestamp in the localtime, or UTC.  <br /></td></tr>
 <tr class="separator:a5ca27cc18859967b5dd3c2b2f215ac36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaea0e2d5ab6bb318bfdef8dd33aeae6a"><td class="memItemLeft" align="right" valign="top"><a id="aaea0e2d5ab6bb318bfdef8dd33aeae6a" name="aaea0e2d5ab6bb318bfdef8dd33aeae6a"></a>
-static&#160;</td><td class="memItemRight" valign="bottom"><b>iso8601Encode</b> ($timet, $utc=0)</td></tr>
+<tr class="memitem:aaea0e2d5ab6bb318bfdef8dd33aeae6a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd9/class_php_xml_rpc_1_1_helper_1_1_date.html#aaea0e2d5ab6bb318bfdef8dd33aeae6a">iso8601Encode</a> ($timet, $utc=0)</td></tr>
+<tr class="memdesc:aaea0e2d5ab6bb318bfdef8dd33aeae6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a timestamp, return the corresponding ISO8601 encoded string.  <br /></td></tr>
 <tr class="separator:aaea0e2d5ab6bb318bfdef8dd33aeae6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -108,17 +108,72 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>iso8601Encode</b> (
 </table>
 </div><div class="memdoc">
 
-<p>Given an ISO8601 date string, return a timet in the localtime, or UTC. </p>
+<p>Given an ISO8601 date string, return a timestamp in the localtime, or UTC. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$idate</td><td></td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$utc</td><td>either 0 or 1</td></tr>
+    <tr><td class="paramtype">bool&#160;|&#160;int</td><td class="paramname">$utc</td><td>either 0 (assume date is in local time) or 1 (assume date is in UTC)</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">int</td><td>(datetime) </td></tr>
+    <tr><td class="paramname">int</td><td>(timestamp) 0 if the source string does not match the xml-rpc dateTime format </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aaea0e2d5ab6bb318bfdef8dd33aeae6a" name="aaea0e2d5ab6bb318bfdef8dd33aeae6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaea0e2d5ab6bb318bfdef8dd33aeae6a">&#9670;&#160;</a></span>iso8601Encode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static PhpXmlRpc\Helper\Date::iso8601Encode </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$timet</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$utc</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Given a timestamp, return the corresponding ISO8601 encoded string. </p>
+<p>Really, timezones ought to be supported but the XML-RPC spec says:</p>
+<p>"Don't assume a timezone. It should be specified by the server in its documentation what assumptions it makes
+ about timezones."</p>
+<p>This routine always encodes to local time unless $utc is set to 1, in which case UTC output is produced and an adjustment for the local timezone's offset is made</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int&#160;|&#160;DateTimeInterface</td><td class="paramname">$timet</td><td>timestamp or datetime </td></tr>
+    <tr><td class="paramtype">bool&#160;|&#160;int</td><td class="paramname">$utc</td><td>(0 or 1) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -131,7 +186,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>iso8601Encode</b> (
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 23 2023 03:05:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 30 2023 02:56:35 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

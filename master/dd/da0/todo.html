@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230424) (4e632b72518)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230427) (5252124e35b)</div>
   </td>
  </tr>
  </tbody>
@@ -58,8 +58,8 @@ $(function() {
 <div class="contents">
 <div class="textblock"><dl class="reflist">
 <dt>Member <a class="el" href="../../d7/d30/group___mime.html#gab1547032512bc6dfb7f9ce2d4002d3b6">$defaultCharset</a>  </dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000123"></a>Make this a non-static property or pass as parameter to static methods in Horde 6.</p>
-<p class="enddd"><a class="anchor" id="_todo000125"></a>Make this a non-static property or pass as parameter to static methods in Horde 6. </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000125"></a>Make this a non-static property or pass as parameter to static methods in Horde 6.</p>
+<p class="enddd"><a class="anchor" id="_todo000123"></a>Make this a non-static property or pass as parameter to static methods in Horde 6. </p>
 </dd>
 <dt>Member <a class="el" href="../../dc/d71/group___imap___client.html#ga155074a5f21ca3b3dcc3bf99bc477ba3">$mailbox</a>  </dt>
 <dd><a class="anchor" id="_todo000122"></a>Make this a Horde_Imap_Client_Mailbox object. </dd>
@@ -494,133 +494,116 @@ $(function() {
 <dd><a class="anchor" id="_todo000178"></a><a href="https://tracker.moodle.org/browse/MDL-71067" class="el">MDL-71067</a> - remove in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3  </dd>
 <dt>Member <a class="el" href="../../df/d55/classphpunit__coverage__info.html#a295eb3ba14e8ac8dc1e9b84c4f985869">phpunit_coverage_info::$whitelistfolders</a>  </dt>
 <dd><a class="anchor" id="_todo000177"></a><a href="https://tracker.moodle.org/browse/MDL-71067" class="el">MDL-71067</a> - remove in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3  </dd>
-<dt>Member <a class="el" href="../../d6/d57/class_php_xml_rpc_1_1_client.html#a4261971340f760d15b14a17033fbc241">PhpXmlRpc\Client::$method</a>  </dt>
-<dd><a class="anchor" id="_todo000179"></a>: do these need to be public?  </dd>
+<dt>Member <a class="el" href="../../d0/dad/namespace_php_xml_rpc_1_1_traits.html#a0279b1bd946708fcc373599fee41aed9">PhpXmlRpc::Traits::getParser</a>  ()</dt>
+<dd><a class="anchor" id="_todo000207"></a>feature-creep: allow passing in $options (but then, how to deal with changing options between invocations?)  </dd>
+<dt>Member <a class="el" href="../../d6/d57/class_php_xml_rpc_1_1_client.html#ae18cede24fafae449c3f55ecd356db39">PhpXmlRpc\Client::$method</a>  </dt>
+<dd><a class="anchor" id="_todo000179"></a>: do all the ones below need to be public?  </dd>
+<dt>Member <a class="el" href="../../d6/d57/class_php_xml_rpc_1_1_client.html#abbd155b331be71b1dd0483b5b49737d4">PhpXmlRpc\Client::createCURLHandle</a>  ($req, $method, $server, $port, $path, $opts)</dt>
+<dd><a class="anchor" id="_todo000183"></a>allow this method to either throw or return a <a class="el" href="../../d9/db7/class_php_xml_rpc_1_1_response.html">Response</a>, so that we can pass back to caller more info on errors  </dd>
 <dt>Member <a class="el" href="../../d6/d57/class_php_xml_rpc_1_1_client.html#a6a1cf87a5f253e3060cd08284ed929f4">PhpXmlRpc\Client::send</a>  ($req, $timeout=0, $method='')</dt>
 <dd><p class="startdd"><a class="anchor" id="_todo000181"></a>allow throwing exceptions instead of returning responses in case of failed calls and/or Fault responses </p>
 <p class="interdd"></p>
 <p class="enddd">refactor: we now support many options besides connection timeout and http version to use. Why only privilege those?  </p>
 </dd>
-<dt>Member <a class="el" href="../../d6/d57/class_php_xml_rpc_1_1_client.html#a0b888c37324531861337541694eb5775">PhpXmlRpc\Client::sendPayloadCURL</a>  ($req, $server, $port, $timeout=0, $username='', $password='', $authType=1, $cert='', $certPass='', $caCert='', $caCertDir='', $proxyHost='', $proxyPort=0, $proxyUsername='', $proxyPassword='', $proxyAuthType=1, $method='https', $keepAlive=false, $key='', $keyPass='', $sslVersion=0)</dt>
-<dd><a class="anchor" id="_todo000185"></a>refactor: we get many options for the call passed in, but some we use from $this. We should clean that up  </dd>
 <dt>Member <a class="el" href="../../d6/d57/class_php_xml_rpc_1_1_client.html#aef647b2df30685c8e35c7a5fb191051b">PhpXmlRpc\Client::sendPayloadSocket</a>  ($req, $server, $port, $timeout=0, $username='', $password='', $authType=1, $cert='', $certPass='', $caCert='', $caCertDir='', $proxyHost='', $proxyPort=0, $proxyUsername='', $proxyPassword='', $proxyAuthType=1, $method='http', $key='', $keyPass='', $sslVersion=0)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000182"></a>not implemented yet. </p>
-<p class="interdd"><a class="anchor" id="_todo000183"></a>not implemented yet. See <a href="http://php.net/manual/en/migration56.openssl.php">http://php.net/manual/en/migration56.openssl.php</a> </p>
-<p class="enddd"><a class="anchor" id="_todo000184"></a>refactor: we get many options for the call passed in, but some we use from $this. We should clean that up  </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000184"></a>not implemented yet. </p>
+<p class="enddd"><a class="anchor" id="_todo000185"></a>not implemented yet. See <a href="http://php.net/manual/en/migration56.openssl.php">http://php.net/manual/en/migration56.openssl.php</a>  </p>
 </dd>
+<dt>Member <a class="el" href="../../d6/d57/class_php_xml_rpc_1_1_client.html#a208f162461e2d911f17c54569e4d4f67">PhpXmlRpc\Client::sendViaCURL</a>  ($req, $method, $server, $port, $path, $opts)</dt>
+<dd><a class="anchor" id="_todo000182"></a>the $path arg atm is ignored. What to do if it is != $this-&gt;path?  </dd>
 <dt>Member <a class="el" href="../../d6/d57/class_php_xml_rpc_1_1_client.html#a2198d9feca7b61da52125204040abc74">PhpXmlRpc\Client::setCookie</a>  ($name, $value='', $path='', $domain='', $port=null)</dt>
 <dd><p class="startdd"><a class="anchor" id="_todo000180"></a>check correctness of urlencoding cookie value (copied from php way of doing it, but php is generally sending response not requests. We do the opposite...) </p>
 <p class="interdd"></p>
-<p class="enddd">strip invalid chars from cookie name? As per RFC6265, we should follow RFC2616, Section 2.2  </p>
+<p class="interdd">strip invalid chars from cookie name? As per RFC6265, we should follow RFC2616, Section 2.2 </p>
+<p class="interdd"></p>
+<p class="interdd">drop/rename $port parameter. Cookies are not isolated by port! </p>
+<p class="interdd"></p>
+<p class="enddd">feature-creep allow storing 'expires', 'secure', 'httponly' and 'samesite' cookie attributes (we could do as php, and allow $path to be an array of attributes...)  </p>
 </dd>
 <dt>Member <a class="el" href="../../d1/dba/class_php_xml_rpc_1_1_encoder.html#a4856eac7e58113580160b2a6f32ff1e0">PhpXmlRpc\Encoder::decodeXml</a>  ($xmlVal, $options=array())</dt>
-<dd><a class="anchor" id="_todo000187"></a>is this a good name/class for this method? It does something quite different from 'decode' after all (returning objects vs returns plain php values)... In fact it belongs rather to a <a class="el" href="../../dc/db7/class_parser.html" title="HTTP Response Parser.">Parser</a> class </dd>
+<dd><p class="startdd"><a class="anchor" id="_todo000187"></a>is this a good name/class for this method? It does something quite different from 'decode' after all (returning objects vs returns plain php values)... In fact, it belongs rather to a <a class="el" href="../../dc/db7/class_parser.html" title="HTTP Response Parser.">Parser</a> class </p>
+<p class="interdd"></p>
+<p class="interdd">feature creep &ndash; we should allow an option to return php native types instead of <a class="el" href="../../de/d3b/class_php_xml_rpc_1_1_php_xml_rpc.html">PhpXmlRpc</a> objects instances </p>
+<p class="interdd"></p>
+<p class="interdd">feature creep &ndash; allow source charset to be passed in as an option, in case the xml misses its declaration </p>
+<p class="interdd"></p>
+<p class="enddd">feature creep &ndash; allow expected type (val/req/resp) to be passed in as an option  </p>
+</dd>
 <dt>Member <a class="el" href="../../d2/d44/class_php_xml_rpc_1_1_helper_1_1_charset.html#a521b8d8f937f434d594a3a942b27e3c6">PhpXmlRpc\Helper\Charset::buildConversionTable</a>  ($tableName)</dt>
 <dd><p class="startdd"><a class="anchor" id="_todo000190"></a>add support for cp1252 as well as latin-2 .. latin-10 Optimization creep: instead of building all those tables on load, keep them ready-made php files which are not even included until needed </p>
 <p class="interdd"></p>
-<p class="enddd">should we add to the latin-1 table the characters from cp_1252 range, i.e. 128 to 159 ? Those will NOT be present in true ISO-8859-1, but will save the unwary windows user from sending junk (though no luck when receiving them...) Note also that, apparently, while 'ISO/IEC 8859-1' has no characters defined for bytes 128 to 159, IANA ISO-8859-1 does have well-defined 'C1' control codes for those - wikipedia's page on latin-1 says: "ISO-8859-1 is the IANA preferred name for this standard when supplemented with the C0 and C1 control codes from ISO/IEC 6429." Check what mbstring/iconv do by default with those?  </p>
+<p class="enddd">should we add to the latin-1 table the characters from cp_1252 range, i.e. 128 to 159 ? Those will NOT be present in true ISO-8859-1, but will save the unwary windows user from sending junk (though no luck when receiving them...) Note also that, apparently, while 'ISO/IEC 8859-1' has no characters defined for bytes 128 to 159, IANA ISO-8859-1 does have well-defined 'C1' control codes for those - wikipedia's page on latin-1 says: "ISO-8859-1 is the IANA preferred name for this standard when supplemented with the C0 and C1 control codes
+      from ISO/IEC 6429." Check what mbstring/iconv do by default with those?  </p>
 </dd>
 <dt>Member <a class="el" href="../../d2/d44/class_php_xml_rpc_1_1_helper_1_1_charset.html#abe29989c9bafe9ca30a224958cabef75">PhpXmlRpc\Helper\Charset::encodeEntities</a>  ($data, $srcEncoding='', $destEncoding='')</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000191"></a>do a bit of basic benchmarking (strtr vs. str_replace) </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000191"></a>do a bit of basic benchmarking: strtr vs. str_replace, str_replace vs htmlspecialchars, hand-coded conversion vs mbstring when that is enabled </p>
 <p class="interdd"></p>
-<p class="interdd">make usage of iconv() or mb_string() where available </p>
+<p class="interdd">make use of iconv when it is available and mbstring is not </p>
 <p class="interdd"></p>
-<p class="interdd">support aliases for charset names, eg ASCII, LATIN1, ISO-88591 (see f.e. polyfill-iconv for a list), but then take those into account as well in other methods, ie.isValidCharset) </p>
+<p class="interdd">support aliases for charset names, eg ASCII, LATIN1, ISO-88591 (see f.e. polyfill-iconv for a list), but then take those into account as well in other methods, ie. isValidCharset) </p>
 <p class="interdd"></p>
 <p class="interdd">when converting to ASCII, allow to choose whether to escape the range 0-31,127 (non-print chars) or not </p>
 <p class="interdd"></p>
 <p class="interdd">allow picking different strategies to deal w. invalid chars? eg. source in latin-1 and chars 128-159 </p>
 <p class="interdd"></p>
-<p class="interdd">add support for escaping using CDATA sections? (add cdata start and end tokens, replace only ']]&gt;' with ']]]]&gt;&gt;')</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$data</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$srcEncoding</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$destEncoding</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">string</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p class="enddd">add support for escaping using CDATA sections? (add cdata start and end tokens, replace only ']]&gt;' with ']]]]&gt;&gt;')  </p>
 </dd>
 <dt>Member <a class="el" href="../../d2/d44/class_php_xml_rpc_1_1_helper_1_1_charset.html#a931ea21d4898b61e55b198331f26dcc6">PhpXmlRpc\Helper\Charset::instance</a>  ()</dt>
-<dd><a class="anchor" id="_todo000189"></a>should we just make $xml_iso88591_Entities a static variable instead ? </dd>
+<dd><a class="anchor" id="_todo000189"></a>should we just make $xml_iso88591_Entities a static variable instead ?  </dd>
+<dt>Member <a class="el" href="../../df/de1/class_php_xml_rpc_1_1_helper_1_1_http.html#a72f8f418e0933f9cd135d54e107d75f7">PhpXmlRpc\Helper\Http::parseResponseHeaders</a>  (&amp;$data, $headersProcessed=false, $debug=0)</dt>
+<dd><a class="anchor" id="_todo000192"></a>if $debug is &lt; 0, we could avoid populating 'raw_data' and 'headers' in the returned value - but that would be a weird API...  </dd>
+<dt>Member <a class="el" href="../../d9/dcf/class_php_xml_rpc_1_1_helper_1_1_interop.html#aa99c5657fa8b84325e5b8b96943bfdd7">PhpXmlRpc\Helper\Interop::$xmlrpcerr</a>  </dt>
+<dd><a class="anchor" id="_todo000193"></a>review - should we use the range -32099 .. -32000 for some server erors?  </dd>
 <dt>Member <a class="el" href="../../d2/d0f/class_php_xml_rpc_1_1_helper_1_1_x_m_l_parser.html#abec9f8ca7d27f03c9eeabf05a0c45409">PhpXmlRpc\Helper\XMLParser::guessEncoding</a>  ($httpHeader='', $xmlChunk='', $encodingPrefs=null)</dt>
-<dd><a class="anchor" id="_todo000194"></a>explore usage of mb_http_input(): does it detect http headers + post data? if so, use it instead of hand-detection!!!  </dd>
-<dt>Member <a class="el" href="../../d7/d0f/class_php_xml_rpc_1_1_request.html#a2382af62e21ae17e2c3681557fda8249">PhpXmlRpc\Request::$payload</a>  </dt>
-<dd><a class="anchor" id="_todo000195"></a>: do these need to be public?  </dd>
+<dd><p class="startdd"><a class="anchor" id="_todo000197"></a>explore usage of mb_http_input(): does it detect http headers + post data? if so, use it instead of hand-detection!!! </p>
+<p class="interdd"></p>
+<p class="enddd">feature-creep make it possible to pass in options overriding usage of <a class="el" href="../../de/d3b/class_php_xml_rpc_1_1_php_xml_rpc.html">PhpXmlRpc</a> static variables, to make the method independent of global state  </p>
+</dd>
+<dt>Member <a class="el" href="../../d2/d0f/class_php_xml_rpc_1_1_helper_1_1_x_m_l_parser.html#ab931ae1f2050bfa51eb8c294b555960d">PhpXmlRpc\Helper\XMLParser::parse</a>  ($data, $returnType=self::RETURN_XMLRPCVALS, $accept=3, $options=array())</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000196"></a>refactor? we could 1. return the parsed data structure, and 2. move $returnType and $accept into options </p>
+<p class="interdd"></p>
+<p class="enddd">feature-creep make it possible to pass in options overriding usage of PhpXmlRpc::$xmlrpc_XXX_format, so that parsing will be completely independent of global state. Note that it might incur a small perf hit...  </p>
+</dd>
+<dt>Member <a class="el" href="../../de/d3b/class_php_xml_rpc_1_1_php_xml_rpc.html#ac5688f2cab3692329b2e82d9ec935ab6">PhpXmlRpc\PhpXmlRpc::$xmlpc_double_precision</a>  </dt>
+<dd><a class="anchor" id="_todo000198"></a>rename :'-(  </dd>
+<dt>Member <a class="el" href="../../de/d3b/class_php_xml_rpc_1_1_php_xml_rpc.html#ad58c68977c73076659f853560639c7d3">PhpXmlRpc\PhpXmlRpc::importGlobals</a>  ()</dt>
+<dd><a class="anchor" id="_todo000199"></a>this function does not import back xmlrpc_valid_parents and xml_iso88591_Entities  </dd>
 <dt>Member <a class="el" href="../../d7/d0f/class_php_xml_rpc_1_1_request.html#a286d216d97730f2d984d0e61587bdf14">PhpXmlRpc\Request::parseResponse</a>  ($data='', $headersProcessed=false, $returnType=XMLParser::RETURN_XMLRPCVALS)</dt>
-<dd><a class="anchor" id="_todo000196"></a>parsing Responses is not really the responsibility of the <a class="el" href="../../d7/d0f/class_php_xml_rpc_1_1_request.html">Request</a> class. Maybe of the <a class="el" href="../../d6/d57/class_php_xml_rpc_1_1_client.html">Client</a>...  </dd>
-<dt>Member <a class="el" href="../../d9/db7/class_php_xml_rpc_1_1_response.html#a4114d3aaca83e836bfd832d161e1671a">PhpXmlRpc\Response::$val</a>  </dt>
-<dd><a class="anchor" id="_todo000197"></a>: do these need to be public?  </dd>
+<dd><p class="startdd"><a class="anchor" id="_todo000202"></a>parsing Responses is not really the responsibility of the <a class="el" href="../../d7/d0f/class_php_xml_rpc_1_1_request.html">Request</a> class. Maybe of the <a class="el" href="../../d6/d57/class_php_xml_rpc_1_1_client.html">Client</a>... </p>
+<p class="interdd"></p>
+<p class="interdd">what about only populating 'raw_data' in httpResponse when debug mode is &gt; 0? </p>
+<p class="interdd"></p>
+<p class="enddd">feature creep - allow parsing data gotten from a stream pointer instead of a string: read it piecewise, looking first for separation between headers and body, then for charset indicators, server debug info and &lt;/methodResponse&gt;. That would require a notable increase in code complexity...  </p>
+</dd>
+<dt>Member <a class="el" href="../../d7/d0f/class_php_xml_rpc_1_1_request.html#af655a4dfea609e37fd009038e4e12448">PhpXmlRpc\Request::parseResponseFile</a>  ($fp, $headersProcessed=false, $returnType='xmlrpcvals')</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000201"></a>arsing Responses is not really the responsibility of the <a class="el" href="../../d7/d0f/class_php_xml_rpc_1_1_request.html">Request</a> class. Maybe of the <a class="el" href="../../d6/d57/class_php_xml_rpc_1_1_client.html">Client</a>... </p>
+<p class="interdd"></p>
+<p class="enddd">feature creep - add a flag to disable trying to parse the http headers  </p>
+</dd>
 <dt>Member <a class="el" href="../../d9/db7/class_php_xml_rpc_1_1_response.html#a23c4658ee3c629d8875112789bfd711a">PhpXmlRpc\Response::__construct</a>  ($val, $fCode=0, $fString='', $valType='', $httpResponse=null)</dt>
-<dd><a class="anchor" id="_todo000198"></a>add check that $val / $fCode / $fString is of correct type??? NB: as of now we do not do it, since it might be either an xmlrpc value or a plain php val, or a complete xml chunk, depending on usage of <a class="el" href="../../d6/d57/class_php_xml_rpc_1_1_client.html#a6a1cf87a5f253e3060cd08284ed929f4" title="Send an xmlrpc request to the server.">Client::send()</a> inside which creator is called...  </dd>
-<dt>Member <a class="el" href="../../d1/d10/class_php_xml_rpc_1_1_server.html#aa74c3436f102da31feb7cc3e85f869af">PhpXmlRpc\Server::$functions_parameters_type</a>  </dt>
-<dd><a class="anchor" id="_todo000199"></a>create class constants for these  </dd>
-<dt>Member <a class="el" href="../../d1/d10/class_php_xml_rpc_1_1_server.html#ade4578bbe9dc2e6ceef768ab9b1c9c69">PhpXmlRpc\Server::add_to_map</a>  ($methodName, $function, $sig=null, $doc=false, $sigDoc=false)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000200"></a>raise a warning if the user tries to register a 'system.' method </p>
-<p class="interdd"></p>
-<p class="enddd">allow setting parameters_type  </p>
+<dd><a class="anchor" id="_todo000203"></a>add check that $val / $fCode / $fString is of correct type? We could at least log a warning for fishy cases... NB: as of now we do not do it, since it might be either an xml-rpc value or a plain php val, or a complete xml chunk, depending on usage of <a class="el" href="../../d6/d57/class_php_xml_rpc_1_1_client.html#a6a1cf87a5f253e3060cd08284ed929f4" title="Send an xml-rpc request to the server.">Client::send()</a> inside which the constructor is called.  </dd>
+<dt>Member <a class="el" href="../../d1/d10/class_php_xml_rpc_1_1_server.html#a52fee63968151f7a4d151ddba93a12e0">PhpXmlRpc\Server::$functions_parameters_type</a>  </dt>
+<dd><a class="anchor" id="_todo000204"></a>create class constants for these  </dd>
+<dt>Member <a class="el" href="../../d1/d10/class_php_xml_rpc_1_1_server.html#a113c0d5865c0215c37107db8132ca7d6">PhpXmlRpc\Server::add_to_map</a>  ($methodName, $function, $sig=null, $doc=false, $sigDoc=false, $parametersType=false, $exceptionHandling=false)</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000206"></a>raise a warning if the user tries to register a 'system.' method </p>
+<p class="enddd"></p>
 </dd>
-<dt>Member <a class="el" href="../../d0/d9a/class_php_xml_rpc_1_1_value.html#ae9e91dfe50308d31a2ed7450ec11684a">PhpXmlRpc\Value::$me</a>  </dt>
-<dd><a class="anchor" id="_todo000201"></a>: do these need to be public?  </dd>
+<dt>Member <a class="el" href="../../d1/d10/class_php_xml_rpc_1_1_server.html#a4c0db6cf4dd262fafa575c7aedba87be">PhpXmlRpc\Server::addToMap</a>  ($methodName, $function, $sig=null, $doc=false, $sigDoc=false, $parametersType=false, $exceptionHandling=false)</dt>
+<dd><a class="anchor" id="_todo000205"></a>raise a warning if the user tries to register a 'system.' method  </dd>
 <dt>Member <a class="el" href="../../d0/d9a/class_php_xml_rpc_1_1_value.html#a1c04d0cf249489325e00e85f5b118703">PhpXmlRpc\Value::addArray</a>  ($values)</dt>
-<dd><a class="anchor" id="_todo000202"></a>add some checking for $values to be an array of xmlrpc values?  </dd>
+<dd><p class="startdd"><a class="anchor" id="_todo000209"></a>add some checking for $values to be an array of xml-rpc values? </p>
+<p class="interdd"></p>
+<p class="enddd">rename to addToArray?  </p>
+</dd>
+<dt>Member <a class="el" href="../../d0/d9a/class_php_xml_rpc_1_1_value.html#af4ea7f02eafe86cae30e606831d09bec">PhpXmlRpc\Value::addScalar</a>  ($val, $type='string')</dt>
+<dd><p class="startdd"><a class="anchor" id="_todo000208"></a>arguably, as we have addArray to add elements to an Array value, and addStruct to add elements to a Struct value, we should not allow this method to add values to an Array. The 'scalar' in the method name refers to the expected state of the target object, not to the type of $val. Also, this works differently from addScalar/addStruct in that, when adding an element to an array, it wraps it into a new <a class="el" href="../../d0/d9a/class_php_xml_rpc_1_1_value.html">Value</a> </p>
+<p class="interdd"></p>
+<p class="enddd">rename?  </p>
+</dd>
 <dt>Member <a class="el" href="../../d0/d9a/class_php_xml_rpc_1_1_value.html#a5a6c4c2638bd3e697cd28637c9d4be3d">PhpXmlRpc\Value::addStruct</a>  ($values)</dt>
-<dd><a class="anchor" id="_todo000203"></a>add some checking for $values to be an array?  </dd>
-<dt>Class <a class="el" href="../../df/d84/class_php_xml_rpc_1_1_wrapper.html">PhpXmlRpc\Wrapper</a>  </dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000204"></a>use some better templating system for code generation? </p>
+<dd><p class="startdd"><a class="anchor" id="_todo000210"></a>add some checking for $values to be an array of xml-rpc values? </p>
 <p class="interdd"></p>
-<p class="interdd">implement method wrapping with preservation of php objs in calls </p>
-<p class="interdd"></p>
-<p class="interdd">when wrapping methods without obj rebuilding, use return_type = 'phpvals' (faster) </p>
-<p class="interdd"></p>
-<p class="interdd">add support for 'epivals' mode </p>
-<p class="interdd"></p>
-<p class="enddd">allow setting custom namespace for generated wrapping code  </p>
-</dd>
-<dt>Member <a class="el" href="../../df/d84/class_php_xml_rpc_1_1_wrapper.html#a749b168fd476b1c9247745bd32ea73b2">PhpXmlRpc\Wrapper::buildMethodSignatures</a>  ($funcDesc)</dt>
-<dd><a class="anchor" id="_todo000207"></a>support better docs with multiple types separated by pipes by creating multiple signatures (this is questionable, as it might produce a big matrix of possible signatures with many such occurrences) </dd>
-<dt>Member <a class="el" href="../../df/d84/class_php_xml_rpc_1_1_wrapper.html#af2b7aa8749a3f5d7fc603a22eafe4f2e">PhpXmlRpc\Wrapper::buildWrapFunctionClosure</a>  ($callable, $extraOptions, $plainFuncName, $funcDesc)</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000208"></a>validate params? In theory all validation is left to the dispatch map... </p>
-<p class="interdd"></p>
-<p class="enddd">add support for $catchWarnings </p>
-</dd>
-<dt>Member <a class="el" href="../../df/d84/class_php_xml_rpc_1_1_wrapper.html#a86da2298be48ccc0d232a5537f8f522f">PhpXmlRpc\Wrapper::buildWrapFunctionSource</a>  ($callable, $newFuncName, $extraOptions, $plainFuncName, $funcDesc)</dt>
-<dd><a class="anchor" id="_todo000209"></a>add a nice phpdoc block in the generated source  </dd>
-<dt>Member <a class="el" href="../../df/d84/class_php_xml_rpc_1_1_wrapper.html#a21aa34408791a1c3076c25f4d5aec654">PhpXmlRpc\Wrapper::buildWrapMethodClosure</a>  ($client, $methodName, array $extraOptions, $mSig)</dt>
-<dd><a class="anchor" id="_todo000211"></a>should we allow usage of parameter simple_client_copy to mean 'do not clone' in this case?  </dd>
-<dt>Member <a class="el" href="../../df/d84/class_php_xml_rpc_1_1_wrapper.html#ab32b477d23f32918dc3c9f8040525435">PhpXmlRpc\Wrapper::php2XmlrpcType</a>  ($phpType)</dt>
-<dd><a class="anchor" id="_todo000205"></a>support notation <code>something[]</code> as 'array'  </dd>
-<dt>Member <a class="el" href="../../df/d84/class_php_xml_rpc_1_1_wrapper.html#a73291db6d6867fd93f5f9144ceef41bf">PhpXmlRpc\Wrapper::wrapPhpFunction</a>  ($callable, $newFuncName='', $extraOptions=array())</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000206"></a>decide how to deal with params passed by ref in function definition: bomb out or allow? </p>
-<p class="interdd"></p>
-<p class="interdd">finish using phpdoc info to build method sig if all params are named but out of order </p>
-<p class="interdd"></p>
-<p class="interdd">add a check for params of 'resource' type </p>
-<p class="interdd"></p>
-<p class="interdd">add some trigger_errors / error_log when returning false? </p>
-<p class="interdd"></p>
-<p class="interdd">what to do when the PHP function returns NULL? We are currently returning an empty string value... </p>
-<p class="interdd"></p>
-<p class="interdd">add an option to suppress php warnings in invocation of user function, similar to server debug level 3? </p>
-<p class="interdd"></p>
-<p class="interdd">add a verbatim_object_copy parameter to allow avoiding usage the same obj instance? </p>
-<p class="interdd"></p>
-<p class="enddd">add an option to allow generated function to skip validation of number of parameters, as that is done by the server anyway  </p>
-</dd>
-<dt>Member <a class="el" href="../../df/d84/class_php_xml_rpc_1_1_wrapper.html#a629ae546aa4c711687c299e2b0c65be0">PhpXmlRpc\Wrapper::wrapXmlrpcMethod</a>  ($client, $methodName, $extraOptions=array())</dt>
-<dd><p class="startdd"><a class="anchor" id="_todo000210"></a>allow caller to give us the method signature instead of querying for it, or just say 'skip it' </p>
-<p class="interdd"></p>
-<p class="interdd">if we can not retrieve method signature, create a php function with varargs </p>
-<p class="interdd"></p>
-<p class="interdd">allow the created function to throw exceptions on method calls failures </p>
-<p class="interdd"></p>
-<p class="enddd">if caller did not specify a specific sig, shall we support all of them? It might be hard (hence slow) to match based on type and number of arguments... </p>
+<p class="enddd">rename to addToStruct?  </p>
 </dd>
 <dt>Member <a class="el" href="../../d0/de1/group__core.html#gac701c062bb2cc0a4df27510bb9c80489">plagiarism_get_file_results</a>  ($cmid, $userid, $file)</dt>
 <dd><a class="anchor" id="_todo000212"></a><a href="https://tracker.moodle.org/browse/MDL-71326" class="el">MDL-71326</a> This is to be moved from here to deprecatedlib.php in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4  </dd>
@@ -792,7 +775,7 @@ $(function() {
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 23 2023 03:02:02 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 30 2023 02:53:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>

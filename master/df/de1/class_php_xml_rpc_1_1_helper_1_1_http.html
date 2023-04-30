@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230424) (4e632b72518)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230427) (5252124e35b)</div>
   </td>
  </tr>
  </tbody>
@@ -67,8 +67,11 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a50a40e10e7092c57c885c985800a8eda"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/de1/class_php_xml_rpc_1_1_helper_1_1_http.html#a50a40e10e7092c57c885c985800a8eda">parseAcceptHeader</a> ($header)</td></tr>
+<tr class="memdesc:a50a40e10e7092c57c885c985800a8eda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses one of the http headers which can have a list of values with quality param.  <br /></td></tr>
+<tr class="separator:a50a40e10e7092c57c885c985800a8eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72f8f418e0933f9cd135d54e107d75f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/de1/class_php_xml_rpc_1_1_helper_1_1_http.html#a72f8f418e0933f9cd135d54e107d75f7">parseResponseHeaders</a> (&amp;$data, $headersProcessed=false, $debug=0)</td></tr>
-<tr class="memdesc:a72f8f418e0933f9cd135d54e107d75f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses HTTP an http response headers and separates them from the body.  <br /></td></tr>
+<tr class="memdesc:a72f8f418e0933f9cd135d54e107d75f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses HTTP an http response's headers and separates them from the body.  <br /></td></tr>
 <tr class="separator:a72f8f418e0933f9cd135d54e107d75f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
@@ -78,6 +81,39 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>decodeChunked</b> (
 <tr class="separator:a05240ee9dcde2e138d3fb7448d5a3ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a50a40e10e7092c57c885c985800a8eda" name="a50a40e10e7092c57c885c985800a8eda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50a40e10e7092c57c885c985800a8eda">&#9670;&#160;</a></span>parseAcceptHeader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PhpXmlRpc\Helper\Http::parseAcceptHeader </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$header</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Parses one of the http headers which can have a list of values with quality param. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://www.rfc-editor.org/rfc/rfc7231#section-5.3.1">https://www.rfc-editor.org/rfc/rfc7231#section-5.3.1</a></dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$header</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string[]</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a72f8f418e0933f9cd135d54e107d75f7" name="a72f8f418e0933f9cd135d54e107d75f7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a72f8f418e0933f9cd135d54e107d75f7">&#9670;&#160;</a></span>parseResponseHeaders()</h2>
 
@@ -110,11 +146,12 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>decodeChunked</b> (
       </table>
 </div><div class="memdoc">
 
-<p>Parses HTTP an http response headers and separates them from the body. </p>
+<p>Parses HTTP an http response's headers and separates them from the body. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$data</td><td>the http response, headers and body. It will be stripped of headers </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$headersProcessed</td><td>when true, we assume that response inflating and dechunking has been already carried out</td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$headersProcessed</td><td>when true, we assume that response inflating and dechunking has been already carried out </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$debug</td><td>when &gt; 0, logs to screen messages detailing info about the parsed data </td></tr>
   </table>
   </dd>
 </dl>
@@ -130,6 +167,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>decodeChunked</b> (
   </table>
   </dd>
 </dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000192">Todo:</a></b></dt><dd>if $debug is &lt; 0, we could avoid populating 'raw_data' and 'headers' in the returned value - but that would be a weird API... </dd></dl>
 
 </div>
 </div>
@@ -139,7 +177,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>decodeChunked</b> (
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 23 2023 03:05:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+Generated on Sun Apr 30 2023 02:56:35 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
 </small></address>
 </body>
 </html>
