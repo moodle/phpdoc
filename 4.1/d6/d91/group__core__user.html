@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1.3+ (Build: 20230519) (6ca70dd59f2)</div>
+   <div id="projectbrief">Moodle 4.1.3+ (Build: 20230526) (090baf556eb)</div>
   </td>
  </tr>
  </tbody>
@@ -246,9 +246,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga416a199f2bf24973891c143884c6f9b2"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d91/group__core__user.html#ga416a199f2bf24973891c143884c6f9b2">add_user_device</a> ($appid, $name, $model, $platform, $version, $pushid, $uuid)</td></tr>
-<tr class="memdesc:ga416a199f2bf24973891c143884c6f9b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a user device in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> database (for PUSH notifications usually).  <br /></td></tr>
-<tr class="separator:ga416a199f2bf24973891c143884c6f9b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43167bbc42bf2538d2494bbf77453755"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d91/group__core__user.html#ga43167bbc42bf2538d2494bbf77453755">add_user_device</a> ($appid, $name, $model, $platform, $version, $pushid, $uuid, $publickey=null)</td></tr>
+<tr class="memdesc:ga43167bbc42bf2538d2494bbf77453755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a user device in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> database (for PUSH notifications usually).  <br /></td></tr>
+<tr class="separator:ga43167bbc42bf2538d2494bbf77453755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf5b1d936aa7fce6bcc69a485abaa78f9"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d91/group__core__user.html#gaf5b1d936aa7fce6bcc69a485abaa78f9">add_user_device_parameters</a> ()</td></tr>
 <tr class="memdesc:gaf5b1d936aa7fce6bcc69a485abaa78f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns description of method parameters.  <br /></td></tr>
 <tr class="separator:gaf5b1d936aa7fce6bcc69a485abaa78f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -456,6 +456,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gab7a16060fb58c7d6b56fc8f8ebdf33c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d91/group__core__user.html#gab7a16060fb58c7d6b56fc8f8ebdf33c5">user_remove_user_device</a> ($uuid, $appid=&quot;&quot;)</td></tr>
 <tr class="memdesc:gab7a16060fb58c7d6b56fc8f8ebdf33c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a user device from the <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> database (for PUSH notifications usually).  <br /></td></tr>
 <tr class="separator:gab7a16060fb58c7d6b56fc8f8ebdf33c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga01afdb27859954ec4e021690ab769d45"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d91/group__core__user.html#ga01afdb27859954ec4e021690ab769d45">user_update_device_public_key</a> (string $uuid, string $appid, string $publickey)</td></tr>
+<tr class="memdesc:ga01afdb27859954ec4e021690ab769d45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the users public key for the specified device and app.  <br /></td></tr>
+<tr class="separator:ga01afdb27859954ec4e021690ab769d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0e1802eddbfc4a072ecd4a9f69246ba2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d91/group__core__user.html#ga0e1802eddbfc4a072ecd4a9f69246ba2">user_update_user</a> ($user, $updatepassword=true, $triggerevent=true)</td></tr>
 <tr class="memdesc:ga0e1802eddbfc4a072ecd4a9f69246ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a user with a user object (will compare against the ID)  <br /></td></tr>
 <tr class="separator:ga0e1802eddbfc4a072ecd4a9f69246ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -570,8 +573,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>USER_SELECTOR_DEFAUL
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga416a199f2bf24973891c143884c6f9b2" name="ga416a199f2bf24973891c143884c6f9b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga416a199f2bf24973891c143884c6f9b2">&#9670;&#160;</a></span>add_user_device()</h2>
+<a id="ga43167bbc42bf2538d2494bbf77453755" name="ga43167bbc42bf2538d2494bbf77453755"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga43167bbc42bf2538d2494bbf77453755">&#9670;&#160;</a></span>add_user_device()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -619,7 +622,13 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>USER_SELECTOR_DEFAUL
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$uuid</em>&#160;</td>
+          <td class="paramname"><em>$uuid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$publickey</em> = <code>null</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -650,6 +659,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>USER_SELECTOR_DEFAUL
     <tr><td class="paramtype">string</td><td class="paramname">$version</td><td>The device version 6.1.2 or 4.2.2 etc. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$pushid</td><td>The device PUSH token/key/identifier/registration id. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$uuid</td><td>The device UUID. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$publickey</td><td>The app generated public key </td></tr>
   </table>
   </dd>
 </dl>
@@ -3341,6 +3351,57 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>USER_SELECTOR_DEFAUL
 
 </div>
 </div>
+<a id="ga01afdb27859954ec4e021690ab769d45" name="ga01afdb27859954ec4e021690ab769d45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga01afdb27859954ec4e021690ab769d45">&#9670;&#160;</a></span>user_update_device_public_key()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">user_update_device_public_key </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$uuid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$appid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$publickey</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update the users public key for the specified device and app. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$uuid</td><td>The device UUID. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$appid</td><td>The app id, usually something like com.moodle.moodlemobile. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$publickey</td><td>The app generated public key. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2 </dd></dl>
+
+</div>
+</div>
 <a id="ga0e1802eddbfc4a072ecd4a9f69246ba2" name="ga0e1802eddbfc4a072ecd4a9f69246ba2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga0e1802eddbfc4a072ecd4a9f69246ba2">&#9670;&#160;</a></span>user_update_user()</h2>
 
@@ -4075,7 +4136,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>USER_SELECTOR_DEFAUL
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 21 2023 02:52:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun May 28 2023 02:59:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

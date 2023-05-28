@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230519) (2e1c6fd43e9)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230526) (4ed782dd03a)</div>
   </td>
  </tr>
  </tbody>
@@ -79,9 +79,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abc775af88377bdc89cd16da7269b182f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d60/classmnet__xmlrpc__client.html#abc775af88377bdc89cd16da7269b182f">prepare_http_request</a> ($<a class="el" href="../../d2/dad/classmnet__peer.html">mnet_peer</a>)</td></tr>
 <tr class="memdesc:abc775af88377bdc89cd16da7269b182f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a <a class="el" href="../../d6/d57/class_php_xml_rpc_1_1_client.html">PhpXmlRpc::Client</a> handle and prepare it for sending to an mnet host.  <br /></td></tr>
 <tr class="separator:abc775af88377bdc89cd16da7269b182f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a522122e603bbd7c68d9154a5f7520347"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d60/classmnet__xmlrpc__client.html#a522122e603bbd7c68d9154a5f7520347">send</a> ($<a class="el" href="../../d2/dad/classmnet__peer.html">mnet_peer</a>)</td></tr>
-<tr class="memdesc:a522122e603bbd7c68d9154a5f7520347"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the request to the server - decode and return the response.  <br /></td></tr>
-<tr class="separator:a522122e603bbd7c68d9154a5f7520347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a601af72887657ef5cddfe7bb9e28447a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d60/classmnet__xmlrpc__client.html#a601af72887657ef5cddfe7bb9e28447a">send</a> ($<a class="el" href="../../d2/dad/classmnet__peer.html">mnet_peer</a>, bool $rekey=false)</td></tr>
+<tr class="memdesc:a601af72887657ef5cddfe7bb9e28447a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send the request to the server - decode and return the response.  <br /></td></tr>
+<tr class="separator:a601af72887657ef5cddfe7bb9e28447a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90ae16e9629a4ba08d6f3b7efc33388e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d60/classmnet__xmlrpc__client.html#a90ae16e9629a4ba08d6f3b7efc33388e">set_method</a> ($xmlrpcpath)</td></tr>
 <tr class="memdesc:a90ae16e9629a4ba08d6f3b7efc33388e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the path to the method or function we want to execute on the remote machine.  <br /></td></tr>
 <tr class="separator:a90ae16e9629a4ba08d6f3b7efc33388e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,8 +220,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a522122e603bbd7c68d9154a5f7520347" name="a522122e603bbd7c68d9154a5f7520347"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a522122e603bbd7c68d9154a5f7520347">&#9670;&#160;</a></span>send()</h2>
+<a id="a601af72887657ef5cddfe7bb9e28447a" name="a601af72887657ef5cddfe7bb9e28447a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a601af72887657ef5cddfe7bb9e28447a">&#9670;&#160;</a></span>send()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -230,8 +230,18 @@ Public Attributes</h2></td></tr>
           <td class="memname">mnet_xmlrpc_client::send </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$mnet_peer</em></td><td>)</td>
+          <td class="paramname"><em>$mnet_peer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$rekey</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -240,6 +250,7 @@ Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">object</td><td class="paramname">$mnet_peer</td><td>A <a class="el" href="../../d2/dad/classmnet__peer.html">mnet_peer</a> object with details of the remote host we're connecting to </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$rekey</td><td>The rekey attribute stops us from getting into a loop. </td></tr>
   </table>
   </dd>
 </dl>
@@ -305,7 +316,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 21 2023 02:59:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun May 28 2023 03:05:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230519) (2e1c6fd43e9)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230526) (4ed782dd03a)</div>
   </td>
  </tr>
  </tbody>
@@ -84,9 +84,18 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a61e5004e4b923f77a115a13caf018fa9"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de3/classcore__user.html#a61e5004e4b923f77a115a13caf018fa9">clean_preference</a> ($value, $preferencename)</td></tr>
 <tr class="memdesc:a61e5004e4b923f77a115a13caf018fa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clean value of a user preference.  <br /></td></tr>
 <tr class="separator:a61e5004e4b923f77a115a13caf018fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff730b1f92e43fed2814ff67def50fc5"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de3/classcore__user.html#aff730b1f92e43fed2814ff67def50fc5">get_fullname</a> (stdClass $user, context $context=null, array $options=[])</td></tr>
+<tr class="memdesc:aff730b1f92e43fed2814ff67def50fc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return full name depending on context.  <br /></td></tr>
+<tr class="separator:aff730b1f92e43fed2814ff67def50fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1aaccc0c80dcc345002bb95e82824fd"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de3/classcore__user.html#aa1aaccc0c80dcc345002bb95e82824fd">get_noreply_user</a> ()</td></tr>
 <tr class="memdesc:aa1aaccc0c80dcc345002bb95e82824fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return noreply user record, this is currently used in messaging system only for sending messages from noreply email.  <br /></td></tr>
 <tr class="separator:aa1aaccc0c80dcc345002bb95e82824fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeb9a5c2eb50190324551cabf0ea20a6"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de3/classcore__user.html#afeb9a5c2eb50190324551cabf0ea20a6">get_profile_picture</a> (stdClass $user, context $context=null, array $options=[])</td></tr>
+<tr class="memdesc:afeb9a5c2eb50190324551cabf0ea20a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return user picture depending on context.  <br /></td></tr>
+<tr class="separator:afeb9a5c2eb50190324551cabf0ea20a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae19643c1df57570d04ec5d977a566b88"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de3/classcore__user.html#ae19643c1df57570d04ec5d977a566b88">get_profile_url</a> (stdClass $user, context $context=null)</td></tr>
+<tr class="memdesc:ae19643c1df57570d04ec5d977a566b88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return profile url depending on context.  <br /></td></tr>
+<tr class="separator:ae19643c1df57570d04ec5d977a566b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e64435ead5319123765c231ffbdba6f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de3/classcore__user.html#a3e64435ead5319123765c231ffbdba6f">get_property_choices</a> ($property)</td></tr>
 <tr class="memdesc:a3e64435ead5319123765c231ffbdba6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the choices of the property.  <br /></td></tr>
 <tr class="separator:a3e64435ead5319123765c231ffbdba6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -657,6 +666,65 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$propertiesca
 
 </div>
 </div>
+<a id="aff730b1f92e43fed2814ff67def50fc5" name="aff730b1f92e43fed2814ff67def50fc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff730b1f92e43fed2814ff67def50fc5">&#9670;&#160;</a></span>get_fullname()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_user::get_fullname </td>
+          <td>(</td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">context&#160;</td>
+          <td class="paramname"><em>$context</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$options</em> = <code>[]</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return full name depending on context. </p>
+<p>This function should be used for displaying purposes only as the details may not be the same as it is on database.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$user</td><td>the person to get details of. </td></tr>
+    <tr><td class="paramtype">context&#160;|&#160;null</td><td class="paramname">$context</td><td>The context will be used to determine the visibility of the user's full name. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$options</td><td>can include: override - if true, will not use forced firstname/lastname settings </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>Full name of the user </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aa1aaccc0c80dcc345002bb95e82824fd" name="aa1aaccc0c80dcc345002bb95e82824fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa1aaccc0c80dcc345002bb95e82824fd">&#9670;&#160;</a></span>get_noreply_user()</h2>
 
@@ -725,6 +793,128 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$propertiesca
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afeb9a5c2eb50190324551cabf0ea20a6" name="afeb9a5c2eb50190324551cabf0ea20a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeb9a5c2eb50190324551cabf0ea20a6">&#9670;&#160;</a></span>get_profile_picture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_user::get_profile_picture </td>
+          <td>(</td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">context&#160;</td>
+          <td class="paramname"><em>$context</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$options</em> = <code>[]</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return user picture depending on context. </p>
+<p>This function should be used for displaying purposes only as the details may not be the same as it is on database.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$user</td><td>the person to get details of. </td></tr>
+    <tr><td class="paramtype">context&#160;|&#160;null</td><td class="paramname">$context</td><td>The context will be used to determine the visibility of the user's picture. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$options</td><td>public properties of {</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d4e/classuser__picture.html">user_picture</a>} to be overridden<ul>
+<li>courseid = $this-&gt;page-&gt;course-&gt;id (<a class="el" href="../../da/d7c/group__course.html">course</a> id of user profile in <a class="el" href="../../d6/db1/group__mod__wiki.html#ga18b3d5253ddc6145e9bc81e2337889f6" title="Link internal callback.">link</a>)</li>
+<li>size = 35 (size of image)</li>
+<li><a class="el" href="../../d6/db1/group__mod__wiki.html#ga18b3d5253ddc6145e9bc81e2337889f6" title="Link internal callback.">link</a> = true (make image clickable - the <a class="el" href="../../d6/db1/group__mod__wiki.html#ga18b3d5253ddc6145e9bc81e2337889f6" title="Link internal callback.">link</a> leads to user profile)</li>
+<li>popup = false (open in popup)</li>
+<li>alttext = true (<a class="el" href="../../dc/d71/group___imap___client.html#ga41ec23da3e5ce7ebf35d4fde663cf1db" title="Add an alert.">add</a> image alt attribute)</li>
+<li>class = image class attribute (default 'userpicture')</li>
+<li>visibletoscreenreaders = true (whether to be visible to screen readers)</li>
+<li>includefullname = false (whether to include the user'<a class="el" href="../../d0/d4a/classs.html">s</a> full name together with the user picture)</li>
+<li>includetoken = false (whether to use a token for authentication. True for current user, int value for other user id) </li>
+</ul>
+</dd></dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../d0/d4e/classuser__picture.html">user_picture</a></td><td>User picture object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae19643c1df57570d04ec5d977a566b88" name="ae19643c1df57570d04ec5d977a566b88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae19643c1df57570d04ec5d977a566b88">&#9670;&#160;</a></span>get_profile_url()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_user::get_profile_url </td>
+          <td>(</td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$user</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">context&#160;</td>
+          <td class="paramname"><em>$context</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return profile url depending on context. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$user</td><td>the person to get details of. </td></tr>
+    <tr><td class="paramtype">context&#160;|&#160;null</td><td class="paramname">$context</td><td>The context will be used to determine the visibility of the user's profile url. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td>Profile url of the user </td></tr>
   </table>
   </dd>
 </dl>
@@ -1649,7 +1839,7 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$propertiesca
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 21 2023 02:58:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun May 28 2023 03:04:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>
