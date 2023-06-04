@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1.3+ (Build: 20230526) (090baf556eb)</div>
+   <div id="projectbrief">Moodle 4.1.3+ (Build: 20230602) (03b605f2eb3)</div>
   </td>
  </tr>
  </tbody>
@@ -928,6 +928,7 @@ $(function() {
 <li>$currentgroupname&#160;:&#160;<a class="el" href="da/dd4/classgrade__report.html#af88714f0dc334a8527016ddc8652387e">grade_report</a></li>
 <li>$currentlang&#160;:&#160;<a class="el" href="d9/de9/classcore_1_1output_1_1language__menu.html#abca563d18ef8f9f2e6c5db98ff8d231d">core\output\language_menu</a></li>
 <li>$currentlanguage&#160;:&#160;<a class="el" href="d0/d63/classcustom__menu.html#a9accd3b8807a6d31be03b8b1da3f5dab">custom_menu</a></li>
+<li>$currentlocks&#160;:&#160;<a class="el" href="dc/dea/classcachestore__redis.html#a0aa9980b400d48134f0933d7bc1d705d">cachestore_redis</a></li>
 <li>$currentlyProcessedRow&#160;:&#160;<a class="el" href="d5/de6/class_box_1_1_spout_1_1_reader_1_1_o_d_s_1_1_row_iterator.html#ac405e3a09c8b81bcf29d962e18e85e80">Box\Spout\Reader\ODS\RowIterator</a></li>
 <li>$currentmessagedata&#160;:&#160;<a class="el" href="d0/d82/classtool__messageinbound_1_1manager.html#a54c7f604570b340d4458f08a37907ad5">tool_messageinbound\manager</a></li>
 <li>$currentmod&#160;:&#160;<a class="el" href="d7/dee/classmoodle1__converter.html#a6ebae797055de26eb4c7f2be3685c5e8">moodle1_converter</a>, <a class="el" href="d7/daf/classmoodle1__info__handler.html#a092f9b1362a2c00c48ff7a1f19122756">moodle1_info_handler</a></li>
@@ -1999,7 +2000,8 @@ $(function() {
 <li>$lockretrysleep&#160;:&#160;<a class="el" href="d9/de9/classcore_1_1session_1_1memcached.html#a059eda0a58f692a2e7175b37d1e8325b">core\session\memcached</a></li>
 <li>$locks&#160;:&#160;<a class="el" href="da/dc9/classcache__application.html#a612b4a7bfd88903619160be406b9596c">cache_application</a>, <a class="el" href="d0/dd5/classcachelock__file.html#ab92feaf1918c6046d88a0eee1adc6ae0">cachelock_file</a>, <a class="el" href="da/df9/classcachestore__file.html#af696dc54cbf3b6a20015397a9fcbd134">cachestore_file</a>, <a class="el" href="d0/dd4/classcore_1_1session_1_1redis.html#a2d48b9295057d88089e0358cf7d90f63">core\session\redis</a></li>
 <li>$locktime&#160;:&#160;<a class="el" href="dc/df3/classgrade__grade.html#a70561b6ef95ba761eb2f52d250ab876f">grade_grade</a>, <a class="el" href="d0/d8b/classgrade__item.html#a660d5be30ec4797a454942612b32b48c">grade_item</a></li>
-<li>$lockwait&#160;:&#160;<a class="el" href="da/df9/classcachestore__file.html#ac0452622cdb0e8062766efd284650c73">cachestore_file</a></li>
+<li>$locktimeout&#160;:&#160;<a class="el" href="dc/dea/classcachestore__redis.html#a557a3b1de562c4d79c1219f5a5edd447">cachestore_redis</a></li>
+<li>$lockwait&#160;:&#160;<a class="el" href="da/df9/classcachestore__file.html#ac0452622cdb0e8062766efd284650c73">cachestore_file</a>, <a class="el" href="dc/dea/classcachestore__redis.html#af1a89270508ce1b3a78bbb085094ca2a">cachestore_redis</a></li>
 <li>$log&#160;:&#160;<a class="el" href="dc/d95/classcore__analytics_1_1local_1_1analyser_1_1base.html#ad95243ae94919049e6f29601a0ecdda3">core_analytics\local\analyser\base</a>, <a class="el" href="d9/d9d/classmod__lti_1_1service__exception__handler.html#ac4002dab91bc88bc127e68d80d2318c8">mod_lti\service_exception_handler</a>, <a class="el" href="d7/d87/classxhtml__container__stack.html#a5fc581ebaaf635f794e940ac86071945">xhtml_container_stack</a></li>
 <li>$logextra&#160;:&#160;<a class="el" href="d9/d77/classcore_1_1event_1_1base.html#ae046187e173622a03185c4de23519c92">core\event\base</a></li>
 <li>$logFormat&#160;:&#160;<a class="el" href="d6/d2f/class_google___logger___abstract.html#ae8f8ce3d8eec3da6d40a539b9a1591fa">Google_Logger_Abstract</a></li>
@@ -2909,7 +2911,7 @@ $(function() {
 <li>$sharedStringsManager&#160;:&#160;<a class="el" href="d0/dc5/class_box_1_1_spout_1_1_reader_1_1_x_l_s_x_1_1_helper_1_1_cell_value_formatter.html#ad734952b452a1cc930ec3da9931af438">Box\Spout\Reader\XLSX\Helper\CellValueFormatter</a>, <a class="el" href="d6/da2/class_box_1_1_spout_1_1_reader_1_1_x_l_s_x_1_1_manager_1_1_sheet_manager.html#a6aaa6fafcd1383a7125bdc42e7aec6c7">Box\Spout\Reader\XLSX\Manager\SheetManager</a>, <a class="el" href="d0/dcc/class_box_1_1_spout_1_1_reader_1_1_x_l_s_x_1_1_reader.html#a2784ecbe052442baf11ed52e28ea7e7e">Box\Spout\Reader\XLSX\Reader</a></li>
 <li>$sharekeytable&#160;:&#160;<a class="el" href="da/d29/classenrol__lti_1_1data__connector.html#a95d7d5cedba7a27a3b9064166f2db94b">enrol_lti\data_connector</a></li>
 <li>$sharingoptions&#160;:&#160;<a class="el" href="da/d3f/classcache__definition.html#a9bff3b9229df78502b9ef045d1a33aa4">cache_definition</a></li>
-<li>$sheet&#160;:&#160;<a class="el" href="df/daf/class_box_1_1_spout_1_1_reader_1_1_c_s_v_1_1_sheet_iterator.html#a9d431fb0b667da7a629069260fd65be4">Box\Spout\Reader\CSV\SheetIterator</a></li>
+<li>$sheet&#160;:&#160;<a class="el" href="df/daf/class_box_1_1_spout_1_1_reader_1_1_c_s_v_1_1_sheet_iterator.html#a0c549d111e545c0347503904ce1eed71">Box\Spout\Reader\CSV\SheetIterator</a></li>
 <li>$sheetIterator&#160;:&#160;<a class="el" href="d4/da9/class_box_1_1_spout_1_1_reader_1_1_c_s_v_1_1_reader.html#a3b8776e9e0581a23165bb5b06b308915">Box\Spout\Reader\CSV\Reader</a>, <a class="el" href="d5/dfb/class_box_1_1_spout_1_1_reader_1_1_o_d_s_1_1_reader.html#af980f24b47342848ff3e80727614572a">Box\Spout\Reader\ODS\Reader</a>, <a class="el" href="d0/dcc/class_box_1_1_spout_1_1_reader_1_1_x_l_s_x_1_1_reader.html#a06f1e2dd875da6aa3b78492d31752201">Box\Spout\Reader\XLSX\Reader</a></li>
 <li>$sheets&#160;:&#160;<a class="el" href="d6/da2/class_box_1_1_spout_1_1_reader_1_1_x_l_s_x_1_1_manager_1_1_sheet_manager.html#acb6d3efd1a8cb4b214a3ca39f714c1da">Box\Spout\Reader\XLSX\Manager\SheetManager</a>, <a class="el" href="d6/dd3/class_box_1_1_spout_1_1_reader_1_1_x_l_s_x_1_1_sheet_iterator.html#ab6c1f43746b70be51f38fbf5735c9363">Box\Spout\Reader\XLSX\SheetIterator</a>, <a class="el" href="da/d72/classtheme__config.html#a2d449a22cab738b15cf2f04f92c8bc58">theme_config</a></li>
 <li>$sheetsContentTempFolder&#160;:&#160;<a class="el" href="de/d64/class_box_1_1_spout_1_1_writer_1_1_o_d_s_1_1_helper_1_1_file_system_helper.html#a6ef71c1d8bf1465e5d734c5efec3e245">Box\Spout\Writer\ODS\Helper\FileSystemHelper</a></li>
@@ -3644,7 +3646,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 30 2023 06:14:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jun 4 2023 03:33:35 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

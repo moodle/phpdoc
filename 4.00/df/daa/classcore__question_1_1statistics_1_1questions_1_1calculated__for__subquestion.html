@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.8+ (Build: 20230526) (abb8647b620)</div>
+   <div id="projectbrief">Moodle 4.0.8+ (Build: 20230602) (52a4f2d030f)</div>
   </td>
  </tr>
  </tbody>
@@ -86,9 +86,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adf14710ff64a8a6e5250b031c8cde17a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d42/classcore__question_1_1statistics_1_1questions_1_1calculated.html#adf14710ff64a8a6e5250b031c8cde17a">break_down_by_variant</a> ()</td></tr>
 <tr class="memdesc:adf14710ff64a8a6e5250b031c8cde17a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do we break down the stats for this question by variant or not?  <br /></td></tr>
 <tr class="separator:adf14710ff64a8a6e5250b031c8cde17a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65fb99870b3bbec6bc3560c9991e6211"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d42/classcore__question_1_1statistics_1_1questions_1_1calculated.html#a65fb99870b3bbec6bc3560c9991e6211">cache</a> ($qubaids)</td></tr>
-<tr class="memdesc:a65fb99870b3bbec6bc3560c9991e6211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache calculated stats stored in this object in 'question_statistics' table.  <br /></td></tr>
-<tr class="separator:a65fb99870b3bbec6bc3560c9991e6211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24bd37b467457bad0b30637f80c02b1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d42/classcore__question_1_1statistics_1_1questions_1_1calculated.html#a24bd37b467457bad0b30637f80c02b1f">cache</a> ($qubaids, $timemodified=null)</td></tr>
+<tr class="memdesc:a24bd37b467457bad0b30637f80c02b1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cache calculated stats stored in this object in 'question_statistics' table.  <br /></td></tr>
+<tr class="separator:a24bd37b467457bad0b30637f80c02b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a256fb6d704a8727072d1d021cff0a2c9"><td class="memItemLeft" align="right" valign="top"><a id="a256fb6d704a8727072d1d021cff0a2c9" name="a256fb6d704a8727072d1d021cff0a2c9"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>clear_variants</b> ()</td></tr>
 <tr class="memdesc:a256fb6d704a8727072d1d021cff0a2c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the data structure for storing variant stats. <br /></td></tr>
@@ -328,8 +328,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a65fb99870b3bbec6bc3560c9991e6211" name="a65fb99870b3bbec6bc3560c9991e6211"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65fb99870b3bbec6bc3560c9991e6211">&#9670;&#160;</a></span>cache()</h2>
+<a id="a24bd37b467457bad0b30637f80c02b1f" name="a24bd37b467457bad0b30637f80c02b1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24bd37b467457bad0b30637f80c02b1f">&#9670;&#160;</a></span>cache()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -341,8 +341,18 @@ Protected Attributes</h2></td></tr>
           <td class="memname">core_question\statistics\questions\calculated::cache </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$qubaids</em></td><td>)</td>
+          <td class="paramname"><em>$qubaids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$timemodified</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -356,6 +366,7 @@ Protected Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="../../d2/d58/classqubaid__condition.html" title="This class represents a restriction on the set of question_usage ids to include in a larger database ...">qubaid_condition</a></td><td class="paramname">$qubaids</td><td></td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$timemodified</td><td>the modified time to store. Defaults to the current time. </td></tr>
   </table>
   </dd>
 </dl>
@@ -647,7 +658,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 30 2023 06:07:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jun 4 2023 03:25:27 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

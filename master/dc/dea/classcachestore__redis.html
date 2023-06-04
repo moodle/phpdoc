@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230526) (4ed782dd03a)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230602) (84bb5725f8a)</div>
   </td>
  </tr>
  </tbody>
@@ -173,6 +173,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae89ee5bb0ef0c39ceec85cf974b04787"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dea/classcachestore__redis.html#ae89ee5bb0ef0c39ceec85cf974b04787">set_many</a> (array $keyvaluearray)</td></tr>
 <tr class="memdesc:ae89ee5bb0ef0c39ceec85cf974b04787"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the values of many keys.  <br /></td></tr>
 <tr class="separator:ae89ee5bb0ef0c39ceec85cf974b04787"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eb988a06b2a6006d594743177eaec3a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dea/classcachestore__redis.html#a6eb988a06b2a6006d594743177eaec3a">shutdown_release_locks</a> ()</td></tr>
+<tr class="memdesc:a6eb988a06b2a6006d594743177eaec3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases any locks when the system shuts down, in case there is a crash or somebody forgets to use 'try-finally'.  <br /></td></tr>
+<tr class="separator:a6eb988a06b2a6006d594743177eaec3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a040c28504854e704c17ac4c931fa62f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dea/classcachestore__redis.html#a040c28504854e704c17ac4c931fa62f7">store_total_size</a> ()</td></tr>
 <tr class="memdesc:a040c28504854e704c17ac4c931fa62f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets <a class="el" href="../../d7/d0a/class_redis.html" title="Caches data to redis.">Redis</a> reported memory usage.  <br /></td></tr>
 <tr class="separator:a040c28504854e704c17ac4c931fa62f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -311,6 +314,10 @@ Protected Attributes</h2></td></tr>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>$compressor</b> = self::COMPRESSOR_NONE</td></tr>
 <tr class="memdesc:ad05430f2f841faa7e91b5303fb490adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compressor for this store. <br /></td></tr>
 <tr class="separator:ad05430f2f841faa7e91b5303fb490adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aa9980b400d48134f0933d7bc1d705d"><td class="memItemLeft" align="right" valign="top"><a id="a0aa9980b400d48134f0933d7bc1d705d" name="a0aa9980b400d48134f0933d7bc1d705d"></a>
+array&#160;</td><td class="memItemRight" valign="bottom"><b>$currentlocks</b> = null</td></tr>
+<tr class="memdesc:a0aa9980b400d48134f0933d7bc1d705d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Array of current locks, or null if we haven't registered shutdown function. <br /></td></tr>
+<tr class="separator:a0aa9980b400d48134f0933d7bc1d705d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae13c8d36f1b6209a876c3f54efdecd7e"><td class="memItemLeft" align="right" valign="top"><a id="ae13c8d36f1b6209a876c3f54efdecd7e" name="ae13c8d36f1b6209a876c3f54efdecd7e"></a>
 <a class="el" href="../../da/d3f/classcache__definition.html">cache_definition</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$definition</b> = null</td></tr>
 <tr class="memdesc:ae13c8d36f1b6209a876c3f54efdecd7e"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../dc/d67/class_cache.html" title="Used to create cache objects.">Cache</a> definition for this store. <br /></td></tr>
@@ -325,6 +332,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$compressor</b> = self
 int&#160;</td><td class="memItemRight" valign="bottom"><b>$lastiobytes</b> = 0</td></tr>
 <tr class="memdesc:a0435fa23b70330396923fc33f0a5dcbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bytes read or written by last call to <a class="el" href="../../dc/d71/group___imap___client.html#ga0dae8e91a93f347875c2acc9129ae73b" title="Store information in cache.">set()</a>/get() or set_many()/get_many(). <br /></td></tr>
 <tr class="separator:a0435fa23b70330396923fc33f0a5dcbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a557a3b1de562c4d79c1219f5a5edd447"><td class="memItemLeft" align="right" valign="top"><a id="a557a3b1de562c4d79c1219f5a5edd447" name="a557a3b1de562c4d79c1219f5a5edd447"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>$locktimeout</b> = 600</td></tr>
+<tr class="memdesc:a557a3b1de562c4d79c1219f5a5edd447"><td class="mdescLeft">&#160;</td><td class="mdescRight">Timeout before lock is automatically released (in case of crashes) <br /></td></tr>
+<tr class="separator:a557a3b1de562c4d79c1219f5a5edd447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1a89270508ce1b3a78bbb085094ca2a"><td class="memItemLeft" align="right" valign="top"><a id="af1a89270508ce1b3a78bbb085094ca2a" name="af1a89270508ce1b3a78bbb085094ca2a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>$lockwait</b> = 60</td></tr>
+<tr class="memdesc:af1a89270508ce1b3a78bbb085094ca2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of seconds to wait for a lock before giving up. <br /></td></tr>
+<tr class="separator:af1a89270508ce1b3a78bbb085094ca2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac59102303bcac8192441d6c889a11871"><td class="memItemLeft" align="right" valign="top"><a id="ac59102303bcac8192441d6c889a11871" name="ac59102303bcac8192441d6c889a11871"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$name</b></td></tr>
 <tr class="memdesc:ac59102303bcac8192441d6c889a11871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of this store. <br /></td></tr>
@@ -1983,6 +1998,26 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$serializer</b> = Redi
 
 </div>
 </div>
+<a id="a6eb988a06b2a6006d594743177eaec3a" name="a6eb988a06b2a6006d594743177eaec3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eb988a06b2a6006d594743177eaec3a">&#9670;&#160;</a></span>shutdown_release_locks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cachestore_redis::shutdown_release_locks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Releases any locks when the system shuts down, in case there is a crash or somebody forgets to use 'try-finally'. </p>
+<p>Do not call this function manually (except from unit test). </p>
+
+</div>
+</div>
 <a id="a040c28504854e704c17ac4c931fa62f7" name="a040c28504854e704c17ac4c931fa62f7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a040c28504854e704c17ac4c931fa62f7">&#9670;&#160;</a></span>store_total_size()</h2>
 
@@ -2334,7 +2369,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$serializer</b> = Redi
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 30 2023 06:22:05 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jun 4 2023 03:43:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

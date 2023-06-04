@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1.3+ (Build: 20230526) (090baf556eb)</div>
+   <div id="projectbrief">Moodle 4.1.3+ (Build: 20230602) (03b605f2eb3)</div>
   </td>
  </tr>
  </tbody>
@@ -76,6 +76,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a276b04e0f502523dbe0d4ae7d74f544c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d53/classcore__badges__generator.html#a276b04e0f502523dbe0d4ae7d74f544c">create_badge</a> ($record)</td></tr>
 <tr class="memdesc:a276b04e0f502523dbe0d4ae7d74f544c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create badge.  <br /></td></tr>
 <tr class="separator:a276b04e0f502523dbe0d4ae7d74f544c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30a4e0ccd7db4d49bd224c2b2a41299d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d53/classcore__badges__generator.html#a30a4e0ccd7db4d49bd224c2b2a41299d">create_criteria</a> ($record)</td></tr>
+<tr class="memdesc:a30a4e0ccd7db4d49bd224c2b2a41299d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create badge criteria.  <br /></td></tr>
+<tr class="separator:a30a4e0ccd7db4d49bd224c2b2a41299d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75175dc5adc4c1fbac2d971dd8e2ff0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d53/classcore__badges__generator.html#a75175dc5adc4c1fbac2d971dd8e2ff0f">create_issued_badge</a> ($record)</td></tr>
+<tr class="memdesc:a75175dc5adc4c1fbac2d971dd8e2ff0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create issued badge to a user.  <br /></td></tr>
+<tr class="separator:a75175dc5adc4c1fbac2d971dd8e2ff0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81093fef9b263083e0a5b097744c27d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfb/classcomponent__generator__base.html#a81093fef9b263083e0a5b097744c27d1">reset</a> ()</td></tr>
 <tr class="memdesc:a81093fef9b263083e0a5b097744c27d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be called from data reset code only, do not use in tests.  <br /></td></tr>
 <tr class="separator:a81093fef9b263083e0a5b097744c27d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,10 +116,80 @@ testing_data_generator&#160;</td><td class="memItemRight" valign="bottom"><b>$da
 </div><div class="memdoc">
 
 <p>Create badge. </p>
-<p>TODO: <a href="https://tracker.moodle.org/browse/MDL-73648" class="el">MDL-73648</a> Use from Behat too</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array&#160;|&#160;stdClass</td><td class="paramname">$record</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">badge</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a30a4e0ccd7db4d49bd224c2b2a41299d" name="a30a4e0ccd7db4d49bd224c2b2a41299d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30a4e0ccd7db4d49bd224c2b2a41299d">&#9670;&#160;</a></span>create_criteria()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_badges_generator::create_criteria </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$record</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create badge criteria. </p>
+<p>Note that only manual criteria issues by role is currently supported</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array&#160;|&#160;stdClass</td><td class="paramname">$record</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a75175dc5adc4c1fbac2d971dd8e2ff0f" name="a75175dc5adc4c1fbac2d971dd8e2ff0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75175dc5adc4c1fbac2d971dd8e2ff0f">&#9670;&#160;</a></span>create_issued_badge()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_badges_generator::create_issued_badge </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$record</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create issued badge to a user. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array&#160;|&#160;stdClass</td><td class="paramname">$record</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -196,7 +272,7 @@ testing_data_generator&#160;</td><td class="memItemRight" valign="bottom"><b>$da
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 30 2023 06:11:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jun 4 2023 03:29:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>
