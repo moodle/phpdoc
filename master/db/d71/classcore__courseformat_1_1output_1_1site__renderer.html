@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230602) (84bb5725f8a)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230609) (71c36d2de16)</div>
   </td>
  </tr>
  </tbody>
@@ -126,9 +126,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abc8c44752a43db71553c294dac55c832"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db2/classcore__course__renderer.html#abc8c44752a43db71553c294dac55c832">course_section_cm_availability</a> (<a class="el" href="../../df/db9/classcm__info.html">cm_info</a> $mod, $displayoptions=array())</td></tr>
 <tr class="memdesc:abc8c44752a43db71553c294dac55c832"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders HTML to show course module availability information (for someone who isn't allowed to see the activity itself, or for staff)  <br /></td></tr>
 <tr class="separator:abc8c44752a43db71553c294dac55c832"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef38fc49b705fa01801ef4cee48d45f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db2/classcore__course__renderer.html#aef38fc49b705fa01801ef4cee48d45f9">course_section_cm_completion</a> ($course, &amp;$completioninfo, <a class="el" href="../../df/db9/classcm__info.html">cm_info</a> $mod, $displayoptions=array())</td></tr>
-<tr class="memdesc:aef38fc49b705fa01801ef4cee48d45f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders html for completion box on course page.  <br /></td></tr>
-<tr class="separator:aef38fc49b705fa01801ef4cee48d45f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29f41d7e13a30ce10df8ef039991a706"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db2/classcore__course__renderer.html#a29f41d7e13a30ce10df8ef039991a706">course_section_cm_completion</a> ()</td></tr>
+<tr class="separator:a29f41d7e13a30ce10df8ef039991a706"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdebd302378578fb7101d01acc6042da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db2/classcore__course__renderer.html#acdebd302378578fb7101d01acc6042da">course_section_cm_edit_actions</a> ($actions, <a class="el" href="../../df/db9/classcm__info.html">cm_info</a> $mod=null, $displayoptions=array())</td></tr>
 <tr class="memdesc:acdebd302378578fb7101d01acc6042da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders HTML for displaying the sequence of course module editing buttons.  <br /></td></tr>
 <tr class="separator:acdebd302378578fb7101d01acc6042da"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1711,8 +1710,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 
 </div>
 </div>
-<a id="aef38fc49b705fa01801ef4cee48d45f9" name="aef38fc49b705fa01801ef4cee48d45f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef38fc49b705fa01801ef4cee48d45f9">&#9670;&#160;</a></span>course_section_cm_completion()</h2>
+<a id="a29f41d7e13a30ce10df8ef039991a706" name="a29f41d7e13a30ce10df8ef039991a706"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29f41d7e13a30ce10df8ef039991a706">&#9670;&#160;</a></span>course_section_cm_completion()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1723,31 +1722,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
         <tr>
           <td class="memname">core_course_renderer::course_section_cm_completion </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$course</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">&amp;&#160;</td>
-          <td class="paramname"><em>$completioninfo</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a>&#160;</td>
-          <td class="paramname"><em>$mod</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$displayoptions</em> = <code>array()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -1756,27 +1732,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Renders html for completion box on course page. </p>
-<p>If completion is disabled, returns empty string If completion is automatic, returns an icon of the current completion state If completion is manual, returns a form (with an icon inside) that allows user to toggle completion</p>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000099">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000037">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-71183" class="el">MDL-71183</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3. </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d4/d7b/classcore__renderer.html#ab8d0c89303e7396b8ba81bb60b42b211" title="Returns information about an activity.">core_renderer::activity_information</a></dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>course object </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../d0/dd8/classcompletion__info.html">completion_info</a></td><td class="paramname">$completioninfo</td><td>completion info for the course, it is recommended to fetch once for all modules in course/section for performance </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a></td><td class="paramname">$mod</td><td>module to show completion for </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$displayoptions</td><td>display options, not used in core </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">string</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -3741,7 +3697,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 
 <p>Return the direct URL for an image from the pix folder. </p>
 <p>Use this function sparingly and never for icons. For icons use <a class="el" href="../../d0/d6e/classpix__icon.html">pix_icon</a> or the pix helper in a mustache template.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000755">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000754">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$imagename</td><td>the name of the icon. </td></tr>
@@ -5071,8 +5027,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Whether we should display the main logo. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000756">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000174">Todo:</a></b></dt><dd>final deprecation. To be removed in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-73165" class="el">MDL-73165</a>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000755">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000172">Todo:</a></b></dt><dd>final deprecation. To be removed in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-73165" class="el">MDL-73165</a>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$headinglevel</td><td>The heading level we want to check against. </td></tr>
@@ -5412,7 +5368,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 4 2023 03:46:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jun 11 2023 03:32:27 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

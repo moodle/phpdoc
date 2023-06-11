@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2+ (Build: 20230602) (20302d4f864)</div>
+   <div id="projectbrief">Moodle 4.2.1 (Build: 20230612) (8c989335be7)</div>
   </td>
  </tr>
  </tbody>
@@ -263,9 +263,17 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a847eea3a88da7a874cd8441d837e2d55"><td class="memItemLeft" align="right" valign="top"><a id="a847eea3a88da7a874cd8441d837e2d55" name="a847eea3a88da7a874cd8441d837e2d55"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>$aggregateAssets</b></td></tr>
+<tr class="memdesc:a847eea3a88da7a874cd8441d837e2d55"><td class="mdescLeft">&#160;</td><td class="mdescRight">aggregated files for assets. <br /></td></tr>
+<tr class="separator:a847eea3a88da7a874cd8441d837e2d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50f9ddcf402000ce278d8c756eea6868"><td class="memItemLeft" align="right" valign="top"><a id="a50f9ddcf402000ce278d8c756eea6868" name="a50f9ddcf402000ce278d8c756eea6868"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$contentJsonData</b></td></tr>
 <tr class="separator:a50f9ddcf402000ce278d8c756eea6868"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1d0080efd99ac927bab40d68de00861"><td class="memItemLeft" align="right" valign="top"><a id="ae1d0080efd99ac927bab40d68de00861" name="ae1d0080efd99ac927bab40d68de00861"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>$development_mode</b></td></tr>
+<tr class="memdesc:ae1d0080efd99ac927bab40d68de00861"><td class="mdescLeft">&#160;</td><td class="mdescRight">evelopment mode. <br /></td></tr>
+<tr class="separator:ae1d0080efd99ac927bab40d68de00861"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41918b7535934c28d43fd6a599eff067"><td class="memItemLeft" align="right" valign="top"><a id="a41918b7535934c28d43fd6a599eff067" name="a41918b7535934c28d43fd6a599eff067"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$disableFileCheck</b></td></tr>
 <tr class="separator:a41918b7535934c28d43fd6a599eff067"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -284,6 +292,14 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ac4f6a8969fe8ddb8127221b4f93693cf"><td class="memItemLeft" align="right" valign="top"><a id="ac4f6a8969fe8ddb8127221b4f93693cf" name="ac4f6a8969fe8ddb8127221b4f93693cf"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$mainJsonData</b></td></tr>
 <tr class="separator:ac4f6a8969fe8ddb8127221b4f93693cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a908a59ca4e2971308cbd1fea16214564"><td class="memItemLeft" align="right" valign="top"><a id="a908a59ca4e2971308cbd1fea16214564" name="a908a59ca4e2971308cbd1fea16214564"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$relativePathRegExp</b></td></tr>
+<tr class="memdesc:a908a59ca4e2971308cbd1fea16214564"><td class="mdescLeft">&#160;</td><td class="mdescRight">regex for converting copied files paths. <br /></td></tr>
+<tr class="separator:a908a59ca4e2971308cbd1fea16214564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a421600032425a63f479e6086300fe815"><td class="memItemLeft" align="right" valign="top"><a id="a421600032425a63f479e6086300fe815" name="a421600032425a63f479e6086300fe815"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$url</b></td></tr>
+<tr class="memdesc:a421600032425a63f479e6086300fe815"><td class="mdescLeft">&#160;</td><td class="mdescRight">To file storage directory. <br /></td></tr>
+<tr class="separator:a421600032425a63f479e6086300fe815"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a510eee0ca8259b0f3a8b1d152c118ba0"><td class="memItemLeft" align="right" valign="top"><a id="a510eee0ca8259b0f3a8b1d152c118ba0" name="a510eee0ca8259b0f3a8b1d152c118ba0"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>DISABLE_ABOUT</b> = 16</td></tr>
 <tr class="separator:a510eee0ca8259b0f3a8b1d152c118ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -354,6 +370,10 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:a482d21b31d3e290bb1a667032631f2b1"><td class="memItemLeft" align="right" valign="top"><a id="a482d21b31d3e290bb1a667032631f2b1" name="a482d21b31d3e290bb1a667032631f2b1"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$fullPluginPath</b></td></tr>
+<tr class="memdesc:a482d21b31d3e290bb1a667032631f2b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">full path of plugin. <br /></td></tr>
+<tr class="separator:a482d21b31d3e290bb1a667032631f2b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af11ce016ffcc8309eb34e56f697f88c1"><td class="memItemLeft" align="right" valign="top"><a id="af11ce016ffcc8309eb34e56f697f88c1" name="af11ce016ffcc8309eb34e56f697f88c1"></a>
 array&#160;</td><td class="memItemRight" valign="bottom"><b>$libraries</b></td></tr>
 <tr class="memdesc:af11ce016ffcc8309eb34e56f697f88c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The array containing all the present libraries. <br /></td></tr>
@@ -2976,7 +2996,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$libraries</b></td><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 4 2023 03:39:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jun 11 2023 03:27:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

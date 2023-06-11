@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.8+ (Build: 20230602) (52a4f2d030f)</div>
+   <div id="projectbrief">Moodle 4.0.9 (Build: 20230612) (19c271d45ee)</div>
   </td>
  </tr>
  </tbody>
@@ -91,6 +91,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/df1/classtool__cohortroles_1_1form_1_1assign__role__cohort.html">tool_cohortroles\form\assign_role_cohort</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign role to cohort form.  <a href="../../d6/df1/classtool__cohortroles_1_1form_1_1assign__role__cohort.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da9/classtool__cohortroles_1_1observers.html">tool_cohortroles\observers</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d6a/classtool__cohortroles_1_1output_1_1cohort__role__assignments__table.html">tool_cohortroles\output\cohort_role_assignments_table</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cohort role assignments table.  <a href="../../d6/d6a/classtool__cohortroles_1_1output_1_1cohort__role__assignments__table.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,6 +122,8 @@ Variables</h2></td></tr>
 <tr class="memitem:gaad31327fa662a2b714b5926472228c8b"><td class="memItemLeft" align="right" valign="top"><a id="gaad31327fa662a2b714b5926472228c8b" name="gaad31327fa662a2b714b5926472228c8b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$hasaccess</b> = has_all_capabilities($capabilities, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
 <tr class="separator:gaad31327fa662a2b714b5926472228c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ed57b12acd2e13b148c558ea8cf9262"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/group__tool__cohortroles.html#ga0ed57b12acd2e13b148c558ea8cf9262">$observers</a></td></tr>
+<tr class="separator:ga0ed57b12acd2e13b148c558ea8cf9262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gada8a7130088351710bb02ed622d6bf65"><td class="memItemLeft" align="right" valign="top"><a id="gada8a7130088351710bb02ed622d6bf65" name="gada8a7130088351710bb02ed622d6bf65"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$plugin</b> = 2022041200</td></tr>
 <tr class="separator:gada8a7130088351710bb02ed622d6bf65"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,7 +135,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>component</b> = 't
 <tr class="memitem:ga816e85fbd31aa493f1f3c61082b10b1a"><td class="memItemLeft" align="right" valign="top">$plugin&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/group__tool__cohortroles.html#ga816e85fbd31aa493f1f3c61082b10b1a">dependencies</a></td></tr>
 <tr class="separator:ga816e85fbd31aa493f1f3c61082b10b1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memItemLeft" align="right" valign="top"><a id="ga92a3fd99b37c9cbd65c4aead816b3a83" name="ga92a3fd99b37c9cbd65c4aead816b3a83"></a>
-$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022041900</td></tr>
+$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022041901</td></tr>
 <tr class="separator:ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -187,6 +191,26 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><!-- fragment -->
 </div>
 </div>
+<a id="ga0ed57b12acd2e13b148c558ea8cf9262" name="ga0ed57b12acd2e13b148c558ea8cf9262"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0ed57b12acd2e13b148c558ea8cf9262">&#9670;&#160;</a></span>$observers</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$observers</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= [</div>
+<div class="line">    [</div>
+<div class="line">        <span class="stringliteral">&#39;eventname&#39;</span> =&gt; <span class="stringliteral">&#39;\core\event\user_deleted&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;callback&#39;</span> =&gt; <span class="stringliteral">&#39;\tool_cohortroles\observers::user_deleted&#39;</span>,</div>
+<div class="line">    ],</div>
+<div class="line">]</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="gaebdff6d420d3918695f9e95bc01a4d38" name="gaebdff6d420d3918695f9e95bc01a4d38"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaebdff6d420d3918695f9e95bc01a4d38">&#9670;&#160;</a></span>$tasks</h2>
 
@@ -234,7 +258,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2022
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 4 2023 03:22:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jun 11 2023 03:13:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

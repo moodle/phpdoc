@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230602) (84bb5725f8a)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230609) (71c36d2de16)</div>
   </td>
  </tr>
  </tbody>
@@ -87,6 +87,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1f7d58a951e9872ce50d33e56d3cec18"><td class="memItemLeft" align="right" valign="top"><a id="a1f7d58a951e9872ce50d33e56d3cec18" name="a1f7d58a951e9872ce50d33e56d3cec18"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>add_task</b> ($task)</td></tr>
 <tr class="separator:a1f7d58a951e9872ce50d33e56d3cec18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a801d26c894e4fc4875ee47eabba1ebb9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d03/classrestore__plan.html#a801d26c894e4fc4875ee47eabba1ebb9">backup_release_compare</a> (string $release, string $operator)</td></tr>
+<tr class="memdesc:a801d26c894e4fc4875ee47eabba1ebb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the provided moodle release with the one the backup was taken from.  <br /></td></tr>
+<tr class="separator:a801d26c894e4fc4875ee47eabba1ebb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7bb16cc98d86900c25dc595470a5f6e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d03/classrestore__plan.html#ad7bb16cc98d86900c25dc595470a5f6e">backup_version_compare</a> (int $version, string $operator)</td></tr>
+<tr class="memdesc:ad7bb16cc98d86900c25dc595470a5f6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the provided moodle version with the one the backup was taken from.  <br /></td></tr>
+<tr class="separator:ad7bb16cc98d86900c25dc595470a5f6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac938f320fbdc0e1e4cef84a1aee71756"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d03/classrestore__plan.html#ac938f320fbdc0e1e4cef84a1aee71756">build</a> ()</td></tr>
 <tr class="memdesc:ac938f320fbdc0e1e4cef84a1aee71756"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function responsible for building the tasks of any plan with their corresponding settings (must set the $built property to true)  <br /></td></tr>
 <tr class="separator:ac938f320fbdc0e1e4cef84a1aee71756"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -278,6 +284,94 @@ Protected Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$result</td><td>associative array describing a result of a task/step </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a801d26c894e4fc4875ee47eabba1ebb9" name="a801d26c894e4fc4875ee47eabba1ebb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a801d26c894e4fc4875ee47eabba1ebb9">&#9670;&#160;</a></span>backup_release_compare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">restore_plan::backup_release_compare </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$release</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$operator</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compares the provided moodle release with the one the backup was taken from. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$release</td><td><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> release (X.Y or X.Y.Z) </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$operator</td><td>Operator to compare the provided release to the backup release. {</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>version_compare()} </dd></dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>True if the comparison passes. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad7bb16cc98d86900c25dc595470a5f6e" name="ad7bb16cc98d86900c25dc595470a5f6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7bb16cc98d86900c25dc595470a5f6e">&#9670;&#160;</a></span>backup_version_compare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">restore_plan::backup_version_compare </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$version</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$operator</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compares the provided moodle version with the one the backup was taken from. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$version</td><td><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> version number (YYYYMMDD or YYYYMMDDXX) </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$operator</td><td>Operator to compare the provided version to the backup version. {</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd>version_compare()} </dd></dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>True if the comparison passes. </td></tr>
   </table>
   </dd>
 </dl>
@@ -604,7 +698,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 4 2023 03:45:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jun 11 2023 03:31:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

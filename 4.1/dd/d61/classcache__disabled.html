@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1.3+ (Build: 20230602) (03b605f2eb3)</div>
+   <div id="projectbrief">Moodle 4.1.4 (Build: 20230612) (76fe404dd5f)</div>
   </td>
  </tr>
  </tbody>
@@ -74,8 +74,9 @@ Inheritance diagram for cache_disabled:</div>
  <div class="center">
   <img src="../../dd/d61/classcache__disabled.png" usemap="#cache_5Fdisabled_map" alt=""/>
   <map id="cache_5Fdisabled_map" name="cache_5Fdisabled_map">
-<area href="../../d3/d3d/classcache.html" alt="cache" shape="rect" coords="0,56,101,80"/>
-<area href="../../d5/d0c/interfacecache__loader.html" title="Cache Loader." alt="cache_loader" shape="rect" coords="0,0,101,24"/>
+<area href="../../d3/d3d/classcache.html" alt="cache" shape="rect" coords="0,56,166,80"/>
+<area href="../../d4/d33/interfacecache__loader__with__locking.html" title="Cache Loader supporting locking." alt="cache_loader_with_locking" shape="rect" coords="176,56,342,80"/>
+<area href="../../d5/d0c/interfacecache__loader.html" title="Cache Loader." alt="cache_loader" shape="rect" coords="0,0,166,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -84,9 +85,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae5debe65def25ab1e36b08d430385f62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d61/classcache__disabled.html#ae5debe65def25ab1e36b08d430385f62">__construct</a> (<a class="el" href="../../da/d3f/classcache__definition.html">cache_definition</a> $definition, <a class="el" href="../../d0/d4b/classcache__store.html">cache_store</a> $store, $loader=null)</td></tr>
 <tr class="memdesc:ae5debe65def25ab1e36b08d430385f62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs the cache.  <br /></td></tr>
 <tr class="separator:ae5debe65def25ab1e36b08d430385f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb333bb2b7540936dab6c2a2115c7ae7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d61/classcache__disabled.html#aeb333bb2b7540936dab6c2a2115c7ae7">acquire_lock</a> (string $key)</td></tr>
-<tr class="memdesc:aeb333bb2b7540936dab6c2a2115c7ae7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pretend that we got a lock to avoid errors.  <br /></td></tr>
-<tr class="separator:aeb333bb2b7540936dab6c2a2115c7ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac23646d662a920d247c186cc7651738"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d61/classcache__disabled.html#aac23646d662a920d247c186cc7651738">acquire_lock</a> ($key)</td></tr>
+<tr class="memdesc:aac23646d662a920d247c186cc7651738"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pretend that we got a lock to avoid errors.  <br /></td></tr>
+<tr class="separator:aac23646d662a920d247c186cc7651738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a923b75e3c07371c0e21207d44a185846"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d61/classcache__disabled.html#a923b75e3c07371c0e21207d44a185846">check_lock_state</a> ($key)</td></tr>
+<tr class="memdesc:a923b75e3c07371c0e21207d44a185846"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pretend that we have a lock to avoid errors.  <br /></td></tr>
+<tr class="separator:a923b75e3c07371c0e21207d44a185846"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cf8d9e512f5cd60beca273eed560736"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d61/classcache__disabled.html#a4cf8d9e512f5cd60beca273eed560736">delete</a> ($key, $recurse=true)</td></tr>
 <tr class="memdesc:a4cf8d9e512f5cd60beca273eed560736"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes an item from the cache.  <br /></td></tr>
 <tr class="separator:a4cf8d9e512f5cd60beca273eed560736"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,9 +124,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad8bf17b46aa8e91f1184de92002ecc5d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d3d/classcache.html#ad8bf17b46aa8e91f1184de92002ecc5d">purge_current_user</a> ()</td></tr>
 <tr class="memdesc:ad8bf17b46aa8e91f1184de92002ecc5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subclasses may support purging cache of all data belonging to the current user.  <br /></td></tr>
 <tr class="separator:ad8bf17b46aa8e91f1184de92002ecc5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afce0c2f25af439a58bc9f6721da06d1e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d61/classcache__disabled.html#afce0c2f25af439a58bc9f6721da06d1e">release_lock</a> (string $key)</td></tr>
-<tr class="memdesc:afce0c2f25af439a58bc9f6721da06d1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pretend that we released a lock to avoid errors.  <br /></td></tr>
-<tr class="separator:afce0c2f25af439a58bc9f6721da06d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a2d246390b99391639c9f25fe6fde5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d61/classcache__disabled.html#a8a2d246390b99391639c9f25fe6fde5b">release_lock</a> ($key)</td></tr>
+<tr class="memdesc:a8a2d246390b99391639c9f25fe6fde5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pretend that we released a lock to avoid errors.  <br /></td></tr>
+<tr class="separator:a8a2d246390b99391639c9f25fe6fde5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cb6a4e41566132182fcfceac80b9c3f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d3d/classcache.html#a3cb6a4e41566132182fcfceac80b9c3f">set</a> ($key, $data)</td></tr>
 <tr class="memdesc:a3cb6a4e41566132182fcfceac80b9c3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a key =&gt; value pair to the cache.  <br /></td></tr>
 <tr class="separator:a3cb6a4e41566132182fcfceac80b9c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -329,8 +333,8 @@ Static Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aeb333bb2b7540936dab6c2a2115c7ae7" name="aeb333bb2b7540936dab6c2a2115c7ae7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb333bb2b7540936dab6c2a2115c7ae7">&#9670;&#160;</a></span>acquire_lock()</h2>
+<a id="aac23646d662a920d247c186cc7651738" name="aac23646d662a920d247c186cc7651738"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac23646d662a920d247c186cc7651738">&#9670;&#160;</a></span>acquire_lock()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -338,7 +342,7 @@ Static Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">cache_disabled::acquire_lock </td>
           <td>(</td>
-          <td class="paramtype">string&#160;</td>
+          <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$key</em></td><td>)</td>
           <td></td>
         </tr>
@@ -348,7 +352,7 @@ Static Protected Attributes</h2></td></tr>
 <p>Pretend that we got a lock to avoid errors. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$key</td><td></td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;string</td><td class="paramname">$key</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -358,6 +362,42 @@ Static Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Implements <a class="el" href="../../d4/d33/interfacecache__loader__with__locking.html#a2148e559027cbd264c3fe9b9ef917a7f">cache_loader_with_locking</a>.</p>
+
+</div>
+</div>
+<a id="a923b75e3c07371c0e21207d44a185846" name="a923b75e3c07371c0e21207d44a185846"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a923b75e3c07371c0e21207d44a185846">&#9670;&#160;</a></span>check_lock_state()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">cache_disabled::check_lock_state </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pretend that we have a lock to avoid errors. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int&#160;|&#160;string</td><td class="paramname">$key</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="../../d4/d33/interfacecache__loader__with__locking.html#a84b509f1921394363f34b400eb288630">cache_loader_with_locking</a>.</p>
 
 </div>
 </div>
@@ -1638,8 +1678,8 @@ Attempt to set the information </li>
 
 </div>
 </div>
-<a id="afce0c2f25af439a58bc9f6721da06d1e" name="afce0c2f25af439a58bc9f6721da06d1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afce0c2f25af439a58bc9f6721da06d1e">&#9670;&#160;</a></span>release_lock()</h2>
+<a id="a8a2d246390b99391639c9f25fe6fde5b" name="a8a2d246390b99391639c9f25fe6fde5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a2d246390b99391639c9f25fe6fde5b">&#9670;&#160;</a></span>release_lock()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1647,7 +1687,7 @@ Attempt to set the information </li>
         <tr>
           <td class="memname">cache_disabled::release_lock </td>
           <td>(</td>
-          <td class="paramtype">string&#160;</td>
+          <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$key</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1657,16 +1697,18 @@ Attempt to set the information </li>
 <p>Pretend that we released a lock to avoid errors. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$key</td><td></td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;string</td><td class="paramname">$key</td><td></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">void</td><td></td></tr>
+    <tr><td class="paramname">bool</td><td></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Implements <a class="el" href="../../d4/d33/interfacecache__loader__with__locking.html#ada462e21ecf0e018304cef1cc521e9a8">cache_loader_with_locking</a>.</p>
 
 </div>
 </div>
@@ -2534,7 +2576,7 @@ Attempt to set the information </li>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 4 2023 03:29:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jun 11 2023 03:19:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>
