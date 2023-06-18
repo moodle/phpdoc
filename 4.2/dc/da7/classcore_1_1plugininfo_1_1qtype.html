@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2.1 (Build: 20230612) (8c989335be7)</div>
+   <div id="projectbrief">Moodle 4.2.1+ (Build: 20230616) (95e0d9ce669)</div>
   </td>
  </tr>
  </tbody>
@@ -196,6 +196,10 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:ab2518693cd6ae3cd291dc2ca0aedb2a3"><td class="memItemLeft" align="right" valign="top"><a id="ab2518693cd6ae3cd291dc2ca0aedb2a3" name="ab2518693cd6ae3cd291dc2ca0aedb2a3"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$component</b></td></tr>
+<tr class="memdesc:ab2518693cd6ae3cd291dc2ca0aedb2a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the plugin. <br /></td></tr>
+<tr class="separator:ab2518693cd6ae3cd291dc2ca0aedb2a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae88d1f075112e26006722729bc41df3b"><td class="memItemLeft" align="right" valign="top"><a id="ae88d1f075112e26006722729bc41df3b" name="ae88d1f075112e26006722729bc41df3b"></a>
 array&#160;</td><td class="memItemRight" valign="bottom"><b>$dependencies</b></td></tr>
 <tr class="memdesc:ae88d1f075112e26006722729bc41df3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">other plugins that this one depends on, lazy-loaded by <a class="el" href="../../">get_other_required_plugins()</a> <br /></td></tr>
@@ -204,6 +208,11 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$dependencies</b></t
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$displayname</b></td></tr>
 <tr class="memdesc:a283491aa8bd23e27bacf2d0634bad289"><td class="mdescLeft">&#160;</td><td class="mdescRight">the localized plugin name <br /></td></tr>
 <tr class="separator:a283491aa8bd23e27bacf2d0634bad289"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae97ad37350ca5d27e8225bd4c4657f43"><td class="memItemLeft" align="right" valign="top"><a id="ae97ad37350ca5d27e8225bd4c4657f43" name="ae97ad37350ca5d27e8225bd4c4657f43"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>$incompatible</b></td></tr>
+<tr class="memdesc:ae97ad37350ca5d27e8225bd4c4657f43"><td class="mdescLeft">&#160;</td><td class="mdescRight">hold $plugin-&gt;incompatible in version.php <br  />
+ <br /></td></tr>
+<tr class="separator:ae97ad37350ca5d27e8225bd4c4657f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02d57f67ae77281e99eecde4a057dab7"><td class="memItemLeft" align="right" valign="top"><a id="a02d57f67ae77281e99eecde4a057dab7" name="a02d57f67ae77281e99eecde4a057dab7"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>$instances</b></td></tr>
 <tr class="memdesc:a02d57f67ae77281e99eecde4a057dab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of instances of the plugin - not supported yet <br /></td></tr>
@@ -241,6 +250,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$sortorder</b></td></t
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$source</b></td></tr>
 <tr class="memdesc:ae2dd89a55e5ede525e3112d95fbfb512"><td class="mdescLeft">&#160;</td><td class="mdescRight">the plugin source, one of core_plugin_manager::PLUGIN_SOURCE_xxx constants <br /></td></tr>
 <tr class="separator:ae2dd89a55e5ede525e3112d95fbfb512"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63cd02ca7dc18c3385103c87d4b5d5d7"><td class="memItemLeft" align="right" valign="top"><a id="a63cd02ca7dc18c3385103c87d4b5d5d7" name="a63cd02ca7dc18c3385103c87d4b5d5d7"></a>
+array&#160;</td><td class="memItemRight" valign="bottom"><b>$supported</b></td></tr>
+<tr class="memdesc:a63cd02ca7dc18c3385103c87d4b5d5d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">hold $plugin-&gt;supported in version.php <br /></td></tr>
+<tr class="separator:a63cd02ca7dc18c3385103c87d4b5d5d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74005ea9d5b107a3748f1943a9059b41"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7d/classcore_1_1plugininfo_1_1base.html#a74005ea9d5b107a3748f1943a9059b41">$type</a></td></tr>
 <tr class="memdesc:a74005ea9d5b107a3748f1943a9059b41"><td class="mdescLeft">&#160;</td><td class="mdescRight">the plugintype name, eg.  <br /></td></tr>
 <tr class="separator:a74005ea9d5b107a3748f1943a9059b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1725,7 +1738,7 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$availableupdat
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 11 2023 03:26:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jun 18 2023 03:19:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

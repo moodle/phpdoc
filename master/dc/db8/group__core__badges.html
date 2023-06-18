@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230609) (71c36d2de16)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230616) (1b1a15a3087)</div>
   </td>
  </tr>
  </tbody>
@@ -187,6 +187,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga7d126561e661c53acf428fa158a04120"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db8/group__core__badges.html#ga7d126561e661c53acf428fa158a04120">badge_get_tagged_badges</a> (object $tag, bool $exclusivemode=false, null|int $fromctx=0, null|int $ctx=0, bool $rec=true, int $page=0)</td></tr>
+<tr class="memdesc:ga7d126561e661c53acf428fa158a04120"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns badges tagged with a specified tag.  <br /></td></tr>
+<tr class="separator:ga7d126561e661c53acf428fa158a04120"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7d171a9e1405a9a2efcb255971c53b52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/db8/group__core__badges.html#ga7d171a9e1405a9a2efcb255971c53b52">badges_install_default_backpacks</a> ()</td></tr>
 <tr class="memdesc:ga7d171a9e1405a9a2efcb255971c53b52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called on install or upgrade to create default list of backpacks a user can connect to.  <br /></td></tr>
 <tr class="separator:ga7d171a9e1405a9a2efcb255971c53b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,6 +232,77 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>core_badges::BADGE_U
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga7d126561e661c53acf428fa158a04120" name="ga7d126561e661c53acf428fa158a04120"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7d126561e661c53acf428fa158a04120">&#9670;&#160;</a></span>badge_get_tagged_badges()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">badge_get_tagged_badges </td>
+          <td>(</td>
+          <td class="paramtype">object&#160;</td>
+          <td class="paramname"><em>$tag</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$exclusivemode</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">null|int&#160;</td>
+          <td class="paramname"><em>$fromctx</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">null|int&#160;</td>
+          <td class="paramname"><em>$ctx</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$rec</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$page</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns badges tagged with a specified tag. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">object</td><td class="paramname">$tag</td><td></td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$exclusivemode</td><td>if set to true it means that no other entities tagged with this tag are displayed on the page and the per-page limit may be bigger </td></tr>
+    <tr><td class="paramtype">null&#160;|&#160;int</td><td class="paramname">$fromctx</td><td>context id where the link was displayed, may be used by callbacks to display items in the same context first </td></tr>
+    <tr><td class="paramtype">null&#160;|&#160;int</td><td class="paramname">$ctx</td><td>context id where to search for records </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$rec</td><td>search in subcontexts as well </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$page</td><td>0-based number of page being displayed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../d4/d0c/classcore__tag_1_1output_1_1tagindex.html" title="Class to display items tagged with a specific tag.">core_tag::output::tagindex</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga7d171a9e1405a9a2efcb255971c53b52" name="ga7d171a9e1405a9a2efcb255971c53b52"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga7d171a9e1405a9a2efcb255971c53b52">&#9670;&#160;</a></span>badges_install_default_backpacks()</h2>
 
@@ -315,7 +389,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>core_badges::BADGE_U
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 11 2023 03:30:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jun 18 2023 03:23:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

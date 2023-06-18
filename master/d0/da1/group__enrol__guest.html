@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230609) (71c36d2de16)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230616) (1b1a15a3087)</div>
   </td>
  </tr>
  </tbody>
@@ -64,12 +64,17 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:d3/dfb/namespaceenrol__guest_1_1external"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dfb/namespaceenrol__guest_1_1external.html">enrol_guest\external</a></td></tr>
+<tr class="memdesc:d3/dfb/namespaceenrol__guest_1_1external"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#160; <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d4/d21/namespaceenrol__guest_1_1privacy"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d21/namespaceenrol__guest_1_1privacy.html">enrol_guest\privacy</a></td></tr>
 <tr class="memdesc:d4/d21/namespaceenrol__guest_1_1privacy"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#160; <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/ded/classenrol__guest_1_1external_1_1validate__password.html">enrol_guest\external\validate_password</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dfa/classenrol__guest_1_1privacy_1_1provider.html">enrol_guest\privacy\provider</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Privacy Subsystem for enrol_guest implementing null_provider.  <a href="../../d2/dfa/classenrol__guest_1_1privacy_1_1provider.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -104,7 +109,7 @@ Variables</h2></td></tr>
 $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>component</b> = 'enrol_guest'</td></tr>
 <tr class="separator:ga27dc7e2c13f48a05e56e0d3138fe3c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memItemLeft" align="right" valign="top"><a id="ga92a3fd99b37c9cbd65c4aead816b3a83" name="ga92a3fd99b37c9cbd65c4aead816b3a83"></a>
-$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023042400</td></tr>
+$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023042401</td></tr>
 <tr class="separator:ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -157,6 +162,13 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 <div class="line">        <span class="stringliteral">&#39;type&#39;</span>        =&gt; <span class="stringliteral">&#39;read&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;services&#39;</span>    =&gt; array(<a class="code hl_variable" href="../../d0/de1/group__core.html#gaf6fb70f9486cdc497645d14d9afc9a89">MOODLE_OFFICIAL_MOBILE_SERVICE</a>),</div>
 <div class="line">    ),</div>
+<div class="line"> </div>
+<div class="line">    <span class="stringliteral">&#39;enrol_guest_validate_password&#39;</span> =&gt; [</div>
+<div class="line">        <span class="stringliteral">&#39;classname&#39;</span> =&gt; <span class="stringliteral">&#39;enrol_guest\external\validate_password&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;description&#39;</span> =&gt; <span class="stringliteral">&#39;Perform password validation.&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;type&#39;</span> =&gt; <span class="stringliteral">&#39;write&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;services&#39;</span> =&gt; [<a class="code hl_variable" href="../../d0/de1/group__core.html#gaf6fb70f9486cdc497645d14d9afc9a89">MOODLE_OFFICIAL_MOBILE_SERVICE</a>],</div>
+<div class="line">    ],</div>
 <div class="line">)</div>
 <div class="ttc" id="agroup__core_html_gaf6fb70f9486cdc497645d14d9afc9a89"><div class="ttname"><a href="../../d0/de1/group__core.html#gaf6fb70f9486cdc497645d14d9afc9a89">MOODLE_OFFICIAL_MOBILE_SERVICE</a></div><div class="ttdeci">const MOODLE_OFFICIAL_MOBILE_SERVICE</div><div class="ttdoc">Moodle mobile app service name.</div><div class="ttdef"><b>Definition</b> moodlelib.php:530</div></div>
 </div><!-- fragment -->
@@ -165,7 +177,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 11 2023 03:30:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jun 18 2023 03:23:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

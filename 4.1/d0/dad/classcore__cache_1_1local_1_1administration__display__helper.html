@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1.4 (Build: 20230612) (76fe404dd5f)</div>
+   <div id="projectbrief">Moodle 4.1.4+ (Build: 20230616) (64b701190d3)</div>
   </td>
  </tr>
  </tbody>
@@ -250,6 +250,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>cron</b> ()</td></t
 <tr class="memitem:a84ac5714c9fe6549c95b25bb207b300d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d62/classcache__helper.html#a84ac5714c9fe6549c95b25bb207b300d">record_cache_set</a> ($store, $definition, int $sets=1, int $writebytes=<a class="el" href="../../d0/d4b/classcache__store.html#a8ef0d56b45d0475128f312a3cb1e4c67">cache_store::IO_BYTES_NOT_SUPPORTED</a>)</td></tr>
 <tr class="memdesc:a84ac5714c9fe6549c95b25bb207b300d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Record a cache set in the stats for the given store and definition.  <br /></td></tr>
 <tr class="separator:a84ac5714c9fe6549c95b25bb207b300d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a791919ee394bcfea9ab982f258e4343d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d62/classcache__helper.html#a791919ee394bcfea9ab982f258e4343d">result_found</a> ($<a class="el" href="../../d8/ded/group___simple_pie.html#gaefbfa229f1c9e1fc967bff724a010f9e">value</a>)</td></tr>
+<tr class="memdesc:a791919ee394bcfea9ab982f258e4343d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A helper to determine whether a result was found.  <br /></td></tr>
+<tr class="separator:a791919ee394bcfea9ab982f258e4343d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41ec4be54e6f94e4b1984fb114156d07"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d62/classcache__helper.html#a41ec4be54e6f94e4b1984fb114156d07">update_definitions</a> ($coreonly=false)</td></tr>
 <tr class="memdesc:a41ec4be54e6f94e4b1984fb114156d07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds all definitions and updates them within the cache config file.  <br /></td></tr>
 <tr class="separator:a41ec4be54e6f94e4b1984fb114156d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2625,6 +2628,47 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$stats</b> = 
 
 </div>
 </div>
+<a id="a791919ee394bcfea9ab982f258e4343d" name="a791919ee394bcfea9ab982f258e4343d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a791919ee394bcfea9ab982f258e4343d">&#9670;&#160;</a></span>result_found()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static cache_helper::result_found </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A helper to determine whether a result was found. </p>
+<p>This has been deemed required after people have been confused by the fact that [] == false.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">mixed</td><td class="paramname">$value</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a41ec4be54e6f94e4b1984fb114156d07" name="a41ec4be54e6f94e4b1984fb114156d07"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a41ec4be54e6f94e4b1984fb114156d07">&#9670;&#160;</a></span>update_definitions()</h2>
 
@@ -2772,7 +2816,7 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$stats</b> = 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 11 2023 03:21:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jun 18 2023 03:14:03 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

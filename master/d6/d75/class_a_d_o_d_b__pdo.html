@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230609) (71c36d2de16)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230616) (1b1a15a3087)</div>
   </td>
  </tr>
  </tbody>
@@ -70,7 +70,7 @@ Inheritance diagram for ADODB_pdo:</div>
   <img src="../../d6/d75/class_a_d_o_d_b__pdo.png" usemap="#ADODB_5Fpdo_map" alt=""/>
   <map id="ADODB_5Fpdo_map" name="ADODB_5Fpdo_map">
 <area href="../../d4/dbd/class_a_d_o_connection.html" title="Connection object." alt="ADOConnection" shape="rect" coords="0,0,119,24"/>
-<area href="../../d9/d68/class_a_d_o_d_b__pdo__base.html" alt="ADODB_pdo_base" shape="rect" coords="0,112,119,136"/>
+<area href="../../d9/d68/class_a_d_o_d_b__pdo__base.html" title="Base class for Database-specific PDO drivers." alt="ADODB_pdo_base" shape="rect" coords="0,112,119,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -120,9 +120,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a633393e0608f11472afc0f9adf61a03a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55e5c29688ab88542bb41e97a152ddcc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbd/class_a_d_o_connection.html#a55e5c29688ab88542bb41e97a152ddcc">Affected_Rows</a> ()</td></tr>
 <tr class="separator:a55e5c29688ab88542bb41e97a152ddcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91bd719d2040b8602084471239b0c3a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbd/class_a_d_o_connection.html#a91bd719d2040b8602084471239b0c3a4">AutoExecute</a> ($table, $fields_values, $mode='INSERT', $where=false, $forceUpdate=true, $magic_quotes=false)</td></tr>
-<tr class="memdesc:a91bd719d2040b8602084471239b0c3a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar to PEAR <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a>'s autoExecute(), except that $mode can be 'INSERT' or 'UPDATE' or DB_AUTOQUERY_INSERT or DB_AUTOQUERY_UPDATE.  <br /></td></tr>
-<tr class="separator:a91bd719d2040b8602084471239b0c3a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f210a2a822087a3880b8b680c7d81b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbd/class_a_d_o_connection.html#a1f210a2a822087a3880b8b680c7d81b3">autoExecute</a> ($table, $fields_values, $mode='INSERT', $where='', $forceUpdate=true, $magic_quotes=false)</td></tr>
+<tr class="memdesc:a1f210a2a822087a3880b8b680c7d81b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple interface to insert and update records.  <br /></td></tr>
+<tr class="separator:a1f210a2a822087a3880b8b680c7d81b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adee3a7d394471e519ede24b77233c649"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbd/class_a_d_o_connection.html#adee3a7d394471e519ede24b77233c649">BeginTrans</a> ()</td></tr>
 <tr class="memdesc:adee3a7d394471e519ede24b77233c649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begin a Transaction.  <br /></td></tr>
 <tr class="separator:adee3a7d394471e519ede24b77233c649"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -510,32 +510,27 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a1375fa30fe6fecbfab60ff21f72a6b65"><td class="memItemLeft" align="right" valign="top"><a id="a1375fa30fe6fecbfab60ff21f72a6b65" name="a1375fa30fe6fecbfab60ff21f72a6b65"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$_bindInputArray</b> = true</td></tr>
 <tr class="separator:a1375fa30fe6fecbfab60ff21f72a6b65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a057d5e09bef9d20bf3f04630b52b6c6f"><td class="memItemLeft" align="right" valign="top"><a id="a057d5e09bef9d20bf3f04630b52b6c6f" name="a057d5e09bef9d20bf3f04630b52b6c6f"></a>
-resource&#160;</td><td class="memItemRight" valign="bottom"><b>$_connectionID</b> = false</td></tr>
-<tr class="memdesc:a057d5e09bef9d20bf3f04630b52b6c6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifier for the native database connection. <br /></td></tr>
-<tr class="separator:a057d5e09bef9d20bf3f04630b52b6c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5ab3574a1db4b561092242cb14d590e"><td class="memItemLeft" align="right" valign="top"><a id="ae5ab3574a1db4b561092242cb14d590e" name="ae5ab3574a1db4b561092242cb14d590e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$_driver</b></td></tr>
-<tr class="separator:ae5ab3574a1db4b561092242cb14d590e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61d681f7983356a40128987e7863e82d"><td class="memItemLeft" align="right" valign="top"><a id="a61d681f7983356a40128987e7863e82d" name="a61d681f7983356a40128987e7863e82d"></a>
+PDO&#160;</td><td class="memItemRight" valign="bottom"><b>$_connectionID</b></td></tr>
+<tr class="separator:a61d681f7983356a40128987e7863e82d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa8baeec6917b91244019063d9937526"><td class="memItemLeft" align="right" valign="top"><a id="aaa8baeec6917b91244019063d9937526" name="aaa8baeec6917b91244019063d9937526"></a>
+<a class="el" href="../../d9/d68/class_a_d_o_d_b__pdo__base.html">ADODB_pdo_base</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$_driver</b></td></tr>
+<tr class="separator:aaa8baeec6917b91244019063d9937526"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fec7dc704f03a7828cf00c8d6cff153"><td class="memItemLeft" align="right" valign="top"><a id="a5fec7dc704f03a7828cf00c8d6cff153" name="a5fec7dc704f03a7828cf00c8d6cff153"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$_dropSeqSQL</b></td></tr>
 <tr class="separator:a5fec7dc704f03a7828cf00c8d6cff153"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e41818e96c0b59f868ddad84ad9cc2f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbd/class_a_d_o_connection.html#a8e41818e96c0b59f868ddad84ad9cc2f">$_errorCode</a> = false</td></tr>
-<tr class="memdesc:a8e41818e96c0b59f868ddad84ad9cc2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A variable which was used to keep the returned last error message.  <br /></td></tr>
-<tr class="separator:a8e41818e96c0b59f868ddad84ad9cc2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a483aa85da55d92c3f90b032f36b2577d"><td class="memItemLeft" align="right" valign="top"><a id="a483aa85da55d92c3f90b032f36b2577d" name="a483aa85da55d92c3f90b032f36b2577d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$_errorMsg</b> = false</td></tr>
-<tr class="separator:a483aa85da55d92c3f90b032f36b2577d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a644003b3b07acdc2b1568676492c5314"><td class="memItemLeft" align="right" valign="top">int false&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbd/class_a_d_o_connection.html#a644003b3b07acdc2b1568676492c5314">$_errorCode</a> = false</td></tr>
+<tr class="memdesc:a644003b3b07acdc2b1568676492c5314"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the last returned error code.  <br /></td></tr>
+<tr class="separator:a644003b3b07acdc2b1568676492c5314"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6314ee9282492f63ac548e80dd083241"><td class="memItemLeft" align="right" valign="top">string false&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbd/class_a_d_o_connection.html#a6314ee9282492f63ac548e80dd083241">$_errorMsg</a> = false</td></tr>
+<tr class="memdesc:a6314ee9282492f63ac548e80dd083241"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the last returned error message.  <br /></td></tr>
+<tr class="separator:a6314ee9282492f63ac548e80dd083241"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af88bf3ffd8597e3d9fa0b0a18113676e"><td class="memItemLeft" align="right" valign="top"><a id="af88bf3ffd8597e3d9fa0b0a18113676e" name="af88bf3ffd8597e3d9fa0b0a18113676e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$_errormsg</b> = false</td></tr>
 <tr class="separator:af88bf3ffd8597e3d9fa0b0a18113676e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d7b6d9a30350705ef78095afc322433"><td class="memItemLeft" align="right" valign="top"><a id="a3d7b6d9a30350705ef78095afc322433" name="a3d7b6d9a30350705ef78095afc322433"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$_errorno</b> = false</td></tr>
 <tr class="separator:a3d7b6d9a30350705ef78095afc322433"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b165bb22867964584dc627becb0dd07"><td class="memItemLeft" align="right" valign="top"><a id="a5b165bb22867964584dc627becb0dd07" name="a5b165bb22867964584dc627becb0dd07"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$_evalAll</b> = false</td></tr>
-<tr class="memdesc:a5b165bb22867964584dc627becb0dd07"><td class="mdescLeft">&#160;</td><td class="mdescRight">set to true if <a class="el" href="../../d4/dbd/class_a_d_o_connection.html#a54e6cf4e62eeca3f316ac4930f20f40a" title="Execute SQL.">ADOConnection.Execute()</a> permits binding of array parameters. <br /></td></tr>
-<tr class="separator:a5b165bb22867964584dc627becb0dd07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0d053af70d813af4eb65c2dee1063bf"><td class="memItemLeft" align="right" valign="top"><a id="ae0d053af70d813af4eb65c2dee1063bf" name="ae0d053af70d813af4eb65c2dee1063bf"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$_genIDSQL</b></td></tr>
 <tr class="separator:ae0d053af70d813af4eb65c2dee1063bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -552,13 +547,19 @@ resource&#160;</td><td class="memItemRight" valign="bottom"><b>$_connectionID</b
 <tr class="memitem:a8f60f1be4fe5ddc697595506d4266239"><td class="memItemLeft" align="right" valign="top"><a id="a8f60f1be4fe5ddc697595506d4266239" name="a8f60f1be4fe5ddc697595506d4266239"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$_logsql</b> = false</td></tr>
 <tr class="separator:a8f60f1be4fe5ddc697595506d4266239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7348c6a6c0903ef857af930e0b2a8b5b"><td class="memItemLeft" align="right" valign="top"><a id="a7348c6a6c0903ef857af930e0b2a8b5b" name="a7348c6a6c0903ef857af930e0b2a8b5b"></a>
+<a class="el" href="../../d2/de1/class_a_d_o_record_set.html">ADORecordSet</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$_metars</b></td></tr>
+<tr class="memdesc:a7348c6a6c0903ef857af930e0b2a8b5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recordset used to retrieve MetaType information. <br /></td></tr>
+<tr class="separator:a7348c6a6c0903ef857af930e0b2a8b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ae80ef4fe619bb6e2d7caf23dc5caaa"><td class="memItemLeft" align="right" valign="top"><a id="a1ae80ef4fe619bb6e2d7caf23dc5caaa" name="a1ae80ef4fe619bb6e2d7caf23dc5caaa"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$_oldRaiseFn</b> = false</td></tr>
 <tr class="separator:a1ae80ef4fe619bb6e2d7caf23dc5caaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec8499b140f5d4896eca05ec6b1d3fb1"><td class="memItemLeft" align="right" valign="top"><a id="aec8499b140f5d4896eca05ec6b1d3fb1" name="aec8499b140f5d4896eca05ec6b1d3fb1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$_queryID</b> = false</td></tr>
-<tr class="memdesc:aec8499b140f5d4896eca05ec6b1d3fb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last error code, not guaranteed to be used - only by oci8. <br /></td></tr>
-<tr class="separator:aec8499b140f5d4896eca05ec6b1d3fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92ff29d003ccb32d937f441cdd04926b"><td class="memItemLeft" align="right" valign="top"><a id="a92ff29d003ccb32d937f441cdd04926b" name="a92ff29d003ccb32d937f441cdd04926b"></a>
+PDOStatement&#160;</td><td class="memItemRight" valign="bottom"><b>$_queryID</b></td></tr>
+<tr class="separator:a92ff29d003ccb32d937f441cdd04926b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac72f6316beccc7e84e2ffe5976efb4cb"><td class="memItemLeft" align="right" valign="top"><a id="ac72f6316beccc7e84e2ffe5976efb4cb" name="ac72f6316beccc7e84e2ffe5976efb4cb"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$_stmt</b> = false</td></tr>
+<tr class="separator:ac72f6316beccc7e84e2ffe5976efb4cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b17bdac2bd3d56ad8acb654a8b33880"><td class="memItemLeft" align="right" valign="top"><a id="a0b17bdac2bd3d56ad8acb654a8b33880" name="a0b17bdac2bd3d56ad8acb654a8b33880"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$_transmode</b> = ''</td></tr>
 <tr class="separator:a0b17bdac2bd3d56ad8acb654a8b33880"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -597,16 +598,19 @@ resource&#160;</td><td class="memItemRight" valign="bottom"><b>$_connectionID</b
 &#160;</td><td class="memItemRight" valign="bottom"><b>$concat_operator</b> = '+'</td></tr>
 <tr class="memdesc:a5014cfd695b75448ff108357a555e185"><td class="mdescLeft">&#160;</td><td class="mdescRight">maximum size of blobs or large text fields (262144 = 256K)&ndash; some db's die otherwise like foxpro <br /></td></tr>
 <tr class="separator:a5014cfd695b75448ff108357a555e185"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ac1ab5589dd3f2072f502e167d068a7"><td class="memItemLeft" align="right" valign="top"><a id="a5ac1ab5589dd3f2072f502e167d068a7" name="a5ac1ab5589dd3f2072f502e167d068a7"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$connectStmt</b> = ''</td></tr>
+<tr class="memdesc:a5ac1ab5589dd3f2072f502e167d068a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">SQL statement executed by some drivers after successful connection. <br /></td></tr>
+<tr class="separator:a5ac1ab5589dd3f2072f502e167d068a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a602bf172b2bfedb031879cbd09004aed"><td class="memItemLeft" align="right" valign="top"><a id="a602bf172b2bfedb031879cbd09004aed" name="a602bf172b2bfedb031879cbd09004aed"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$customActualTypes</b> = array()</td></tr>
 <tr class="separator:a602bf172b2bfedb031879cbd09004aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6fa05f335f94b2d27bf339dcd53831a3"><td class="memItemLeft" align="right" valign="top"><a id="a6fa05f335f94b2d27bf339dcd53831a3" name="a6fa05f335f94b2d27bf339dcd53831a3"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$customMetaTypes</b> = array()</td></tr>
 <tr class="separator:a6fa05f335f94b2d27bf339dcd53831a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c8f94905218a04112b20ba17ec56077"><td class="memItemLeft" align="right" valign="top"><a id="a5c8f94905218a04112b20ba17ec56077" name="a5c8f94905218a04112b20ba17ec56077"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$database</b> = ''</td></tr>
-<tr class="memdesc:a5c8f94905218a04112b20ba17ec56077"><td class="mdescLeft">&#160;</td><td class="mdescRight">RDBMS currently in use, eg. odbc, mysql, mssql. <br /></td></tr>
-<tr class="separator:a5c8f94905218a04112b20ba17ec56077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4dfd7e2cae8fe29942fe7b2e29c759f"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbd/class_a_d_o_connection.html#ac4dfd7e2cae8fe29942fe7b2e29c759f">$database</a> = ''</td></tr>
+<tr class="memdesc:ac4dfd7e2cae8fe29942fe7b2e29c759f"><td class="mdescLeft">&#160;</td><td class="mdescRight">RDBMS currently in use, eg. odbc, mysql, mssql.  <br /></td></tr>
+<tr class="separator:ac4dfd7e2cae8fe29942fe7b2e29c759f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6d03060ff6602f5da31e0ebf33bbded"><td class="memItemLeft" align="right" valign="top"><a id="ab6d03060ff6602f5da31e0ebf33bbded" name="ab6d03060ff6602f5da31e0ebf33bbded"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$databaseType</b> = &quot;pdo&quot;</td></tr>
 <tr class="separator:ab6d03060ff6602f5da31e0ebf33bbded"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -618,7 +622,7 @@ resource&#160;</td><td class="memItemRight" valign="bottom"><b>$_connectionID</b
 <tr class="memdesc:adb9abb3658a51b2a40cff07dabcee260"><td class="mdescLeft">&#160;</td><td class="mdescRight">Password for the username. For security, we no longer store it. <br /></td></tr>
 <tr class="separator:adb9abb3658a51b2a40cff07dabcee260"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c33cf127a547ff2ac8051f6b49aa73e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbd/class_a_d_o_connection.html#a6c33cf127a547ff2ac8051f6b49aa73e">$dsnType</a> = ''</td></tr>
-<tr class="memdesc:a6c33cf127a547ff2ac8051f6b49aa73e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of database to be used.  <br /></td></tr>
+<tr class="memdesc:a6c33cf127a547ff2ac8051f6b49aa73e"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the driver is PDO, then the dsnType is e.g.  <br /></td></tr>
 <tr class="separator:a6c33cf127a547ff2ac8051f6b49aa73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a601078552ecdf0831eb56cd408626db0"><td class="memItemLeft" align="right" valign="top"><a id="a601078552ecdf0831eb56cd408626db0" name="a601078552ecdf0831eb56cd408626db0"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$emptyDate</b> = '&amp;nbsp;'</td></tr>
@@ -627,6 +631,9 @@ resource&#160;</td><td class="memItemRight" valign="bottom"><b>$_connectionID</b
 <tr class="memitem:a6e8179a118e35f93b6e27a31d95f3637"><td class="memItemLeft" align="right" valign="top"><a id="a6e8179a118e35f93b6e27a31d95f3637" name="a6e8179a118e35f93b6e27a31d95f3637"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$emptyTimeStamp</b> = '&amp;nbsp;'</td></tr>
 <tr class="separator:a6e8179a118e35f93b6e27a31d95f3637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94e86fb130f4ebc3ce0939255c084a19"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbd/class_a_d_o_connection.html#a94e86fb130f4ebc3ce0939255c084a19">$evalAll</a> = false</td></tr>
+<tr class="memdesc:a94e86fb130f4ebc3ce0939255c084a19"><td class="mdescLeft">&#160;</td><td class="mdescRight">set to true if <a class="el" href="../../d4/dbd/class_a_d_o_connection.html#a54e6cf4e62eeca3f316ac4930f20f40a" title="Execute SQL.">ADOConnection.Execute()</a> permits binding of array parameters.  <br /></td></tr>
+<tr class="separator:a94e86fb130f4ebc3ce0939255c084a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cc456e19cf1ac7d38514582ff4a3d8a"><td class="memItemLeft" align="right" valign="top"><a id="a0cc456e19cf1ac7d38514582ff4a3d8a" name="a0cc456e19cf1ac7d38514582ff4a3d8a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$false</b> = '0'</td></tr>
 <tr class="memdesc:a0cc456e19cf1ac7d38514582ff4a3d8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">string that represents TRUE for a database <br /></td></tr>
@@ -682,6 +689,9 @@ bool callable&#160;</td><td class="memItemRight" valign="bottom"><b>$fnExecute</
 <tr class="memitem:ae813ace9a0b1d44bd0bc663b02e9a014"><td class="memItemLeft" align="right" valign="top"><a id="ae813ace9a0b1d44bd0bc663b02e9a014" name="ae813ace9a0b1d44bd0bc663b02e9a014"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$host</b> = ''</td></tr>
 <tr class="separator:ae813ace9a0b1d44bd0bc663b02e9a014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52da1db036bc67c16d6b1f4decf0e4f4"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbd/class_a_d_o_connection.html#a52da1db036bc67c16d6b1f4decf0e4f4">$identitySQL</a></td></tr>
+<tr class="memdesc:a52da1db036bc67c16d6b1f4decf0e4f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">SQL statement to get the last IDENTITY value inserted into an IDENTITY column in the same scope.  <br /></td></tr>
+<tr class="separator:a52da1db036bc67c16d6b1f4decf0e4f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51c96a6e24301e8529e2c9f6046d75a3"><td class="memItemLeft" align="right" valign="top"><a id="a51c96a6e24301e8529e2c9f6046d75a3" name="a51c96a6e24301e8529e2c9f6046d75a3"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$isoDates</b> = false</td></tr>
 <tr class="separator:a51c96a6e24301e8529e2c9f6046d75a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -700,6 +710,10 @@ bool callable&#160;</td><td class="memItemRight" valign="bottom"><b>$fnExecute</
 &#160;</td><td class="memItemRight" valign="bottom"><b>$length</b> = '<a class="el" href="../../dc/d71/group___imap___client.html#ga5facb816a7ce2173a30db9b0bc8ecf75">length</a>'</td></tr>
 <tr class="memdesc:a44c59e21bed53993dbeee067b32bb7c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">substring operator <br /></td></tr>
 <tr class="separator:a44c59e21bed53993dbeee067b32bb7c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf52538ffee5f7dd6bb028402c26e27f"><td class="memItemLeft" align="right" valign="top"><a id="aaf52538ffee5f7dd6bb028402c26e27f" name="aaf52538ffee5f7dd6bb028402c26e27f"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$locale</b></td></tr>
+<tr class="memdesc:aaf52538ffee5f7dd6bb028402c26e27f"><td class="mdescLeft">&#160;</td><td class="mdescRight">a specified locale. <br /></td></tr>
+<tr class="separator:aaf52538ffee5f7dd6bb028402c26e27f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa08b2d03597f33abb411a4e21e8935aa"><td class="memItemLeft" align="right" valign="top"><a id="aa08b2d03597f33abb411a4e21e8935aa" name="aa08b2d03597f33abb411a4e21e8935aa"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$maxblobsize</b> = 262144</td></tr>
 <tr class="memdesc:aa08b2d03597f33abb411a4e21e8935aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">if set to true will output sql statements <br /></td></tr>
@@ -719,13 +733,17 @@ bool callable&#160;</td><td class="memItemRight" valign="bottom"><b>$fnExecute</
 <tr class="memitem:a03dfce375e391b140bf832db1e8fb4a2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbd/class_a_d_o_connection.html#a03dfce375e391b140bf832db1e8fb4a2">$memCachePort</a> = 11211</td></tr>
 <tr class="memdesc:a03dfce375e391b140bf832db1e8fb4a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default port number.  <br /></td></tr>
 <tr class="separator:a03dfce375e391b140bf832db1e8fb4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba8d6df5e69990666986230e422bd644"><td class="memItemLeft" align="right" valign="top"><a id="aba8d6df5e69990666986230e422bd644" name="aba8d6df5e69990666986230e422bd644"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$metaDatabasesSQL</b> = ''</td></tr>
-<tr class="memdesc:aba8d6df5e69990666986230e422bd644"><td class="mdescLeft">&#160;</td><td class="mdescRight">character set to use - only for interbase, postgres and oci8 <br /></td></tr>
-<tr class="separator:aba8d6df5e69990666986230e422bd644"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18575e5264b052e5d3ac9c13836198df"><td class="memItemLeft" align="right" valign="top"><a id="a18575e5264b052e5d3ac9c13836198df" name="a18575e5264b052e5d3ac9c13836198df"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$metaTablesSQL</b> = ''</td></tr>
-<tr class="separator:a18575e5264b052e5d3ac9c13836198df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06b28d0d344ed274423a2152cb47e46e"><td class="memItemLeft" align="right" valign="top"><a id="a06b28d0d344ed274423a2152cb47e46e" name="a06b28d0d344ed274423a2152cb47e46e"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$metaColumnsSQL</b></td></tr>
+<tr class="memdesc:a06b28d0d344ed274423a2152cb47e46e"><td class="mdescLeft">&#160;</td><td class="mdescRight">SQL statement to get table columns. <br /></td></tr>
+<tr class="separator:a06b28d0d344ed274423a2152cb47e46e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8e8e915c088ef823b83448832fd786a"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbd/class_a_d_o_connection.html#ad8e8e915c088ef823b83448832fd786a">$metaDatabasesSQL</a> = ''</td></tr>
+<tr class="memdesc:ad8e8e915c088ef823b83448832fd786a"><td class="mdescLeft">&#160;</td><td class="mdescRight">character set to use - only for interbase, postgres and oci8  <br /></td></tr>
+<tr class="separator:ad8e8e915c088ef823b83448832fd786a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4d5cb9f61b52ebc361cd9037be42407"><td class="memItemLeft" align="right" valign="top"><a id="aa4d5cb9f61b52ebc361cd9037be42407" name="aa4d5cb9f61b52ebc361cd9037be42407"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$metaTablesSQL</b> = ''</td></tr>
+<tr class="memdesc:aa4d5cb9f61b52ebc361cd9037be42407"><td class="mdescLeft">&#160;</td><td class="mdescRight">SQL statement to get database tables. <br /></td></tr>
+<tr class="separator:aa4d5cb9f61b52ebc361cd9037be42407"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a8ad5211d2889929d50ec70d56d1c20"><td class="memItemLeft" align="right" valign="top"><a id="a4a8ad5211d2889929d50ec70d56d1c20" name="a4a8ad5211d2889929d50ec70d56d1c20"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$nameQuote</b> = '&quot;'</td></tr>
 <tr class="memdesc:a4a8ad5211d2889929d50ec70d56d1c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">string to use to replace quotes <br /></td></tr>
@@ -786,9 +804,6 @@ bool callable&#160;</td><td class="memItemRight" valign="bottom"><b>$fnExecute</
 <tr class="memitem:a90786af399bda3f21f5db988a5ae9760"><td class="memItemLeft" align="right" valign="top"><a id="a90786af399bda3f21f5db988a5ae9760" name="a90786af399bda3f21f5db988a5ae9760"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$rsPrefix</b> = &quot;ADORecordSet_&quot;</td></tr>
 <tr class="separator:a90786af399bda3f21f5db988a5ae9760"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98769eb2635487c0f24c8e8eb9ca74fd"><td class="memItemLeft" align="right" valign="top"><a id="a98769eb2635487c0f24c8e8eb9ca74fd" name="a98769eb2635487c0f24c8e8eb9ca74fd"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$stmt</b> = false</td></tr>
-<tr class="separator:a98769eb2635487c0f24c8e8eb9ca74fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba7203b8e46cf2c1cd6f974e2ef119ab"><td class="memItemLeft" align="right" valign="top"><a id="aba7203b8e46cf2c1cd6f974e2ef119ab" name="aba7203b8e46cf2c1cd6f974e2ef119ab"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$substr</b> = 'substr'</td></tr>
 <tr class="memdesc:aba7203b8e46cf2c1cd6f974e2ef119ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">default concat operator &ndash; change to || for Oracle/Interbase <br /></td></tr>
@@ -964,7 +979,7 @@ Protected Attributes</h2></td></tr>
 <li>userid</li>
 <li>setFetchMode (adodb 4.23)</li>
 </ul>
-<p>When not in safe mode, we create 256 sub-directories in the cache directory ($ADODB_CACHE_DIR). Assuming that we can have 50,000 files per directory with good performance, then we can scale to 12.8 million unique cached recordsets. Wow! </p>
+<p>We create 256 sub-directories in the cache directory ($ADODB_CACHE_DIR). Assuming that we can have 50,000 files per directory with good performance, then we can scale to 12.8 million unique cached recordsets. Wow! </p>
 
 </div>
 </div>
@@ -1237,8 +1252,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a91bd719d2040b8602084471239b0c3a4" name="a91bd719d2040b8602084471239b0c3a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91bd719d2040b8602084471239b0c3a4">&#9670;&#160;</a></span>AutoExecute()</h2>
+<a id="a1f210a2a822087a3880b8b680c7d81b3" name="a1f210a2a822087a3880b8b680c7d81b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f210a2a822087a3880b8b680c7d81b3">&#9670;&#160;</a></span>autoExecute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1247,7 +1262,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ADOConnection::AutoExecute </td>
+          <td class="memname">ADOConnection::autoExecute </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$table</em>, </td>
@@ -1268,7 +1283,7 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$where</em> = <code>false</code>, </td>
+          <td class="paramname"><em>$where</em> = <code>''</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1295,15 +1310,15 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Similar to PEAR <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a>'s autoExecute(), except that $mode can be 'INSERT' or 'UPDATE' or DB_AUTOQUERY_INSERT or DB_AUTOQUERY_UPDATE. </p>
-<p>If $mode == 'UPDATE', then $where is compulsory as a safety measure.</p>
+<p>Simple interface to insert and update records. </p>
+<p>Automatically generate and execute INSERT and UPDATE statements on a given table, similar to PEAR <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a>'s autoExecute().</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"></td><td class="paramname">$table</td><td></td></tr>
-    <tr><td class="paramtype"></td><td class="paramname">$fields_values</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$mode</td><td></td></tr>
-    <tr><td class="paramtype">false</td><td class="paramname">$where</td><td></td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$forceUpdate</td><td>If true, perform update even if the data has not changed. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$table</td><td>Name of the table to process. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$fields_values</td><td>Associative array of field names =&gt; values. </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;int</td><td class="paramname">$mode</td><td>Execution mode: 'INSERT' (default), 'UPDATE' or one of the DB_AUTOQUERY_xx constants. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$where</td><td>SQL where clause (mandatory in UPDATE mode as a safety measure) </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$forceUpdate</td><td>If true, update all provided fields, even if they have not changed; otherwise only modified fields are updated. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$magic_quotes</td><td>This param is not used since 5.21.0. It remains for backwards compatibility.</td></tr>
   </table>
   </dd>
@@ -2306,7 +2321,7 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000167">Deprecated:</a></b></dt><dd>5.21.0 @noinspection PhpUnusedParameterInspection </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000176">Deprecated:</a></b></dt><dd>5.21.0 @noinspection PhpUnusedParameterInspection </dd></dl>
 
 </div>
 </div>
@@ -6106,8 +6121,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a8e41818e96c0b59f868ddad84ad9cc2f" name="a8e41818e96c0b59f868ddad84ad9cc2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e41818e96c0b59f868ddad84ad9cc2f">&#9670;&#160;</a></span>$_errorCode</h2>
+<a id="a644003b3b07acdc2b1568676492c5314" name="a644003b3b07acdc2b1568676492c5314"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a644003b3b07acdc2b1568676492c5314">&#9670;&#160;</a></span>$_errorCode</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -6116,7 +6131,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ADOConnection::$_errorCode = false</td>
+          <td class="memname">int false ADOConnection::$_errorCode = false</td>
         </tr>
       </table>
   </td>
@@ -6126,8 +6141,33 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>A variable which was used to keep the returned last error message. </p>
-<p>The value will then returned by the errorMsg() function </p>
+<p>Stores the last returned error code. </p>
+<p>Not guaranteed to be used. Only some drivers actually populate it. </p>
+
+</div>
+</div>
+<a id="a6314ee9282492f63ac548e80dd083241" name="a6314ee9282492f63ac548e80dd083241"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6314ee9282492f63ac548e80dd083241">&#9670;&#160;</a></span>$_errorMsg</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string false ADOConnection::$_errorMsg = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stores the last returned error message. </p>
+<dl class="section see"><dt>See also</dt><dd>ADOConnection::errorMsg() </dd></dl>
 
 </div>
 </div>
@@ -6158,6 +6198,32 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ac4dfd7e2cae8fe29942fe7b2e29c759f" name="ac4dfd7e2cae8fe29942fe7b2e29c759f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4dfd7e2cae8fe29942fe7b2e29c759f">&#9670;&#160;</a></span>$database</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string ADOConnection::$database = ''</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>RDBMS currently in use, eg. odbc, mysql, mssql. </p>
+<p>Current database name.</p>
+<p>This used to be stored in the $databaseName property, which was marked as deprecated in 4.66 and removed in 5.22.5. </p>
+
+</div>
+</div>
 <a id="a6c33cf127a547ff2ac8051f6b49aa73e" name="a6c33cf127a547ff2ac8051f6b49aa73e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6c33cf127a547ff2ac8051f6b49aa73e">&#9670;&#160;</a></span>$dsnType</h2>
 
@@ -6178,8 +6244,58 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Name of database to be used. </p>
-<p>If the driver is PDO, then the dsnType is e.g. sqlsrv, otherwise empty </p>
+<p>If the driver is PDO, then the dsnType is e.g. </p>
+<p>sqlsrv, otherwise empty </p>
+
+</div>
+</div>
+<a id="a94e86fb130f4ebc3ce0939255c084a19" name="a94e86fb130f4ebc3ce0939255c084a19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94e86fb130f4ebc3ce0939255c084a19">&#9670;&#160;</a></span>$evalAll</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string ADOConnection::$evalAll = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>set to true if <a class="el" href="../../d4/dbd/class_a_d_o_connection.html#a54e6cf4e62eeca3f316ac4930f20f40a" title="Execute SQL.">ADOConnection.Execute()</a> permits binding of array parameters. </p>
+<p>Eval string used to filter data. Only used in the deprecated <a class="el" href="../../da/d0e/class_text.html">Text</a> driver. </p><dl class="section see"><dt>See also</dt><dd><a href="https://adodb.org/dokuwiki/doku.php?id=v5:database:text#workaround">https://adodb.org/dokuwiki/doku.php?id=v5:database:text#workaround</a> </dd></dl>
+
+</div>
+</div>
+<a id="a52da1db036bc67c16d6b1f4decf0e4f4" name="a52da1db036bc67c16d6b1f4decf0e4f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52da1db036bc67c16d6b1f4decf0e4f4">&#9670;&#160;</a></span>$identitySQL</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string ADOConnection::$identitySQL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>SQL statement to get the last IDENTITY value inserted into an IDENTITY column in the same scope. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://learn.microsoft.com/en-us/sql/t-sql/functions/scope-identity-transact-sql">https://learn.microsoft.com/en-us/sql/t-sql/functions/scope-identity-transact-sql</a> </dd></dl>
 
 </div>
 </div>
@@ -6312,6 +6428,31 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ad8e8e915c088ef823b83448832fd786a" name="ad8e8e915c088ef823b83448832fd786a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8e8e915c088ef823b83448832fd786a">&#9670;&#160;</a></span>$metaDatabasesSQL</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string ADOConnection::$metaDatabasesSQL = ''</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>character set to use - only for interbase, postgres and oci8 </p>
+<p>SQL statement to get databases </p>
+
+</div>
+</div>
 <a id="ad852c0925f4fcb716b9593218f07cd0d" name="ad852c0925f4fcb716b9593218f07cd0d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad852c0925f4fcb716b9593218f07cd0d">&#9670;&#160;</a></span>$raiseErrorFn</h2>
 
@@ -6343,7 +6484,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 11 2023 03:30:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jun 18 2023 03:23:07 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

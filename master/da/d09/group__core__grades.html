@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230609) (71c36d2de16)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230616) (1b1a15a3087)</div>
   </td>
  </tr>
  </tbody>
@@ -252,6 +252,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:gad74544c1faf5f3e1537881180fcede76"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d09/group__core__grades.html#gad74544c1faf5f3e1537881180fcede76">get_gradable_users</a> (int $courseid, ?int $groupid=null)</td></tr>
+<tr class="memdesc:gad74544c1faf5f3e1537881180fcede76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a valid list of gradable users in a course.  <br /></td></tr>
+<tr class="separator:gad74544c1faf5f3e1537881180fcede76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5df1cf2cd0695c5054492c2a0edbf682"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d09/group__core__grades.html#ga5df1cf2cd0695c5054492c2a0edbf682">grade_build_nav</a> ($path, $pagename=null, $id=null)</td></tr>
 <tr class="memdesc:ga5df1cf2cd0695c5054492c2a0edbf682"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function central to gradebook for building and printing the navigation (breadcrumb trail).  <br /></td></tr>
 <tr class="separator:ga5df1cf2cd0695c5054492c2a0edbf682"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -643,6 +646,49 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>GRADE_UPDATE_OK</b> 
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="gad74544c1faf5f3e1537881180fcede76" name="gad74544c1faf5f3e1537881180fcede76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad74544c1faf5f3e1537881180fcede76">&#9670;&#160;</a></span>get_gradable_users()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">get_gradable_users </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$courseid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int&#160;</td>
+          <td class="paramname"><em>$groupid</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load a valid list of gradable users in a course. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$courseid</td><td>The course ID. </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$groupid</td><td>The group ID (optional). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array::$users</td><td>A list of enrolled gradable users. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga5df1cf2cd0695c5054492c2a0edbf682" name="ga5df1cf2cd0695c5054492c2a0edbf682"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5df1cf2cd0695c5054492c2a0edbf682">&#9670;&#160;</a></span>grade_build_nav()</h2>
 
@@ -2763,7 +2809,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>GRADE_UPDATE_OK</b> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 11 2023 03:30:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jun 18 2023 03:23:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

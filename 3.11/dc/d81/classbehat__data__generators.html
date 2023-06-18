@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;3.11</span>
    </div>
-   <div id="projectbrief">Moodle 3.11.15 (Build: 20230612) (bfbae65caa)</div>
+   <div id="projectbrief">Moodle 3.11.15+ (Build: 20230616) (6e54dc5203)</div>
   </td>
  </tr>
  </tbody>
@@ -88,8 +88,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a5832fcc066b00ac85594ee4ecb17b917"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the specified elements.  <br /></td></tr>
 <tr class="separator:a5832fcc066b00ac85594ee4ecb17b917"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb22ae4a4dbfdd1ff6568b396203c0f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d81/classbehat__data__generators.html#adb22ae4a4dbfdd1ff6568b396203c0f0">the_following_entity_exists</a> ($entitytype, TableNode $data)</td></tr>
-<tr class="memdesc:adb22ae4a4dbfdd1ff6568b396203c0f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the specified element.  <br /></td></tr>
+<tr class="memdesc:adb22ae4a4dbfdd1ff6568b396203c0f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the specified (singular) element.  <br /></td></tr>
 <tr class="separator:adb22ae4a4dbfdd1ff6568b396203c0f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef8e407e459fcfc536ecedfdc6918913"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d81/classbehat__data__generators.html#aef8e407e459fcfc536ecedfdc6918913">the_following_repeated_entities_exist</a> (string $entitytype, int $count, TableNode $data)</td></tr>
+<tr class="memdesc:aef8e407e459fcfc536ecedfdc6918913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create multiple entities of one entity type.  <br /></td></tr>
+<tr class="separator:aef8e407e459fcfc536ecedfdc6918913"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -370,12 +373,57 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Creates the specified element. </p>
+<p>Creates the specified (singular) element. </p>
 <p>See the class comment for an overview.</p>
 <p>@Given the following :entitytype exists:</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$entitytype</td><td>The name of the type entity to add </td></tr>
+    <tr><td class="paramtype">TableNode</td><td class="paramname">$data</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aef8e407e459fcfc536ecedfdc6918913" name="aef8e407e459fcfc536ecedfdc6918913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef8e407e459fcfc536ecedfdc6918913">&#9670;&#160;</a></span>the_following_repeated_entities_exist()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_data_generators::the_following_repeated_entities_exist </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$entitytype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TableNode&#160;</td>
+          <td class="paramname"><em>$data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create multiple entities of one entity type. </p>
+<p>@Given :count :entitytype exist with the following data:</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$entitytype</td><td>The name of the type entity to add </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$count</td><td></td></tr>
     <tr><td class="paramtype">TableNode</td><td class="paramname">$data</td><td></td></tr>
   </table>
   </dd>
@@ -447,7 +495,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 11 2023 03:08:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jun 18 2023 03:01:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

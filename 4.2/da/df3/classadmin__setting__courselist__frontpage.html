@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2.1 (Build: 20230612) (8c989335be7)</div>
+   <div id="projectbrief">Moodle 4.2.1+ (Build: 20230616) (95e0d9ce669)</div>
   </td>
  </tr>
  </tbody>
@@ -116,6 +116,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2b6a1ff7d20bcc75e19852247c7c1933"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df5/classadmin__setting.html#a2b6a1ff7d20bcc75e19852247c7c1933">has_custom_form_control</a> ()</td></tr>
 <tr class="memdesc:a2b6a1ff7d20bcc75e19852247c7c1933"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this setting uses a custom form control.  <br /></td></tr>
 <tr class="separator:a2b6a1ff7d20bcc75e19852247c7c1933"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c5f31e76ebec357df1de829ecc388af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df5/classadmin__setting.html#a2c5f31e76ebec357df1de829ecc388af">is_forceable</a> ()</td></tr>
+<tr class="memdesc:a2c5f31e76ebec357df1de829ecc388af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the setting can be overridden in config.php.  <br /></td></tr>
+<tr class="separator:a2c5f31e76ebec357df1de829ecc388af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5734524ba1b50221c962f8ea5ae55371"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df5/classadmin__setting.html#a5734524ba1b50221c962f8ea5ae55371">is_readonly</a> ()</td></tr>
 <tr class="memdesc:a5734524ba1b50221c962f8ea5ae55371"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this option forced in config.php?  <br /></td></tr>
 <tr class="separator:a5734524ba1b50221c962f8ea5ae55371"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -725,6 +728,42 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$customcontrol</b> = 
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a2c5f31e76ebec357df1de829ecc388af" name="a2c5f31e76ebec357df1de829ecc388af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c5f31e76ebec357df1de829ecc388af">&#9670;&#160;</a></span>is_forceable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">admin_setting::is_forceable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether the setting can be overridden in config.php. </p>
+<p>Returning true will allow the setting to be defined and overridden in config.php. Returning false will prevent the config setting from being overridden even when it gets defined in config.php.</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../da/d3b/classadmin__setting__sitesetselect.html#ab6b0d619f27ddf9aed6c8e7c4c6ce0ec">admin_setting_sitesetselect</a>, <a class="el" href="../../d9/de2/classadmin__setting__sitesetcheckbox.html#ac5ce2c9eefb1c73e22e5ce7362289bc9">admin_setting_sitesetcheckbox</a>, <a class="el" href="../../d5/d32/classadmin__setting__sitesettext.html#a0c700bc2083b89787316a9338cc96c17">admin_setting_sitesettext</a>, and <a class="el" href="../../d8/d60/classadmin__setting__special__frontpagedesc.html#a50467f6d7dcd1abc6de8653692fbbf01">admin_setting_special_frontpagedesc</a>.</p>
 
 </div>
 </div>
@@ -1406,7 +1445,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$customcontrol</b> = 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 11 2023 03:24:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jun 18 2023 03:17:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>
