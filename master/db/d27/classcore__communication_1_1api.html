@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230616) (1b1a15a3087)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230623) (3cd84747cb0)</div>
   </td>
  </tr>
  </tbody>
@@ -76,9 +76,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7dd53d89619d0139d3fabcede6391aae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d27/classcore__communication_1_1api.html#a7dd53d89619d0139d3fabcede6391aae">delete_room</a> ()</td></tr>
 <tr class="memdesc:a7dd53d89619d0139d3fabcede6391aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a communication ad-hoc task for delete operation.  <br /></td></tr>
 <tr class="separator:a7dd53d89619d0139d3fabcede6391aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad29819e245b8608d26ff8e78e7c1b706"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d27/classcore__communication_1_1api.html#ad29819e245b8608d26ff8e78e7c1b706">form_definition</a> (\<a class="el" href="../../d5/d8e/class_moodle_quick_form.html">MoodleQuickForm</a> $mform)</td></tr>
-<tr class="memdesc:ad29819e245b8608d26ff8e78e7c1b706"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the form elements for the communication api.  <br /></td></tr>
-<tr class="separator:ad29819e245b8608d26ff8e78e7c1b706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8e46b1f6262e3a8ff91751f1726e135"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d27/classcore__communication_1_1api.html#af8e46b1f6262e3a8ff91751f1726e135">form_definition</a> (<a class="el" href="../../d5/d8e/class_moodle_quick_form.html">MoodleQuickForm</a> $mform, string $selectdefaultcommunication=<a class="el" href="../../d8/d1f/classcore__communication_1_1processor.html#a021210a79874ad5ab4070bc1afae4509">processor::PROVIDER_NONE</a>)</td></tr>
+<tr class="memdesc:af8e46b1f6262e3a8ff91751f1726e135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the form elements for the communication api.  <br /></td></tr>
+<tr class="separator:af8e46b1f6262e3a8ff91751f1726e135"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33e1332bbabb2845acb687c9d0d4889c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d27/classcore__communication_1_1api.html#a33e1332bbabb2845acb687c9d0d4889c">form_definition_for_provider</a> (\<a class="el" href="../../d5/d8e/class_moodle_quick_form.html">MoodleQuickForm</a> $mform)</td></tr>
 <tr class="memdesc:a33e1332bbabb2845acb687c9d0d4889c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the form definitions for the plugins.  <br /></td></tr>
 <tr class="separator:a33e1332bbabb2845acb687c9d0d4889c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,6 +113,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac93b040c8f694fa487945e674bcfc350"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d27/classcore__communication_1_1api.html#ac93b040c8f694fa487945e674bcfc350">get_communication_plugin_list_for_form</a> ()</td></tr>
 <tr class="memdesc:ac93b040c8f694fa487945e674bcfc350"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of plugins for form selection.  <br /></td></tr>
 <tr class="separator:ac93b040c8f694fa487945e674bcfc350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e57b8be91ad2bf8419eb135777ee3bb"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d27/classcore__communication_1_1api.html#a0e57b8be91ad2bf8419eb135777ee3bb">get_enabled_providers_and_default</a> (string $selecteddefaulprovider=null)</td></tr>
+<tr class="memdesc:a0e57b8be91ad2bf8419eb135777ee3bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the enabled communication providers and default provider according to the selected provider.  <br /></td></tr>
+<tr class="separator:a0e57b8be91ad2bf8419eb135777ee3bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd8a2724f57257feeae9acbc619cf168"><td class="memItemLeft" align="right" valign="top"><a id="acd8a2724f57257feeae9acbc619cf168" name="acd8a2724f57257feeae9acbc619cf168"></a>
 static&#160;</td><td class="memItemRight" valign="bottom"><b>is_available</b> ()</td></tr>
 <tr class="memdesc:acd8a2724f57257feeae9acbc619cf168"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the communication api is enabled. <br /></td></tr>
@@ -232,8 +235,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>is_available</b> ()
 
 </div>
 </div>
-<a id="ad29819e245b8608d26ff8e78e7c1b706" name="ad29819e245b8608d26ff8e78e7c1b706"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad29819e245b8608d26ff8e78e7c1b706">&#9670;&#160;</a></span>form_definition()</h2>
+<a id="af8e46b1f6262e3a8ff91751f1726e135" name="af8e46b1f6262e3a8ff91751f1726e135"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8e46b1f6262e3a8ff91751f1726e135">&#9670;&#160;</a></span>form_definition()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -241,9 +244,19 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>is_available</b> ()
         <tr>
           <td class="memname">core_communication\api::form_definition </td>
           <td>(</td>
-          <td class="paramtype">\<a class="el" href="../../d5/d8e/class_moodle_quick_form.html">MoodleQuickForm</a>&#160;</td>
-          <td class="paramname"><em>$mform</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d5/d8e/class_moodle_quick_form.html">MoodleQuickForm</a>&#160;</td>
+          <td class="paramname"><em>$mform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$selectdefaultcommunication</em> = <code><a class="el" href="../../d8/d1f/classcore__communication_1_1processor.html#a021210a79874ad5ab4070bc1afae4509">processor::PROVIDER_NONE</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -253,6 +266,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>is_available</b> ()
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="../../d5/d8e/class_moodle_quick_form.html">MoodleQuickForm</a></td><td class="paramname">$mform</td><td>The form element </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$selectdefaultcommunication</td><td>The default selected communication provider in the form field </td></tr>
   </table>
   </dd>
 </dl>
@@ -375,6 +389,46 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>is_available</b> ()
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string|null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0e57b8be91ad2bf8419eb135777ee3bb" name="a0e57b8be91ad2bf8419eb135777ee3bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e57b8be91ad2bf8419eb135777ee3bb">&#9670;&#160;</a></span>get_enabled_providers_and_default()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_communication\api::get_enabled_providers_and_default </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$selecteddefaulprovider</em> = <code>null</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the enabled communication providers and default provider according to the selected provider. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$selecteddefaulprovider</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -619,7 +673,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>is_available</b> ()
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 18 2023 03:25:05 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jun 25 2023 03:47:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

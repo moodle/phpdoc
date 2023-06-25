@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1.4+ (Build: 20230616) (64b701190d3)</div>
+   <div id="projectbrief">Moodle 4.1.4+ (Build: 20230623) (eb1fab720a6)</div>
   </td>
  </tr>
  </tbody>
@@ -89,6 +89,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:ad303a839240b01b2d14b0ee0b07acdbb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfb/classcomponent__generator__base.html#ad303a839240b01b2d14b0ee0b07acdbb">insert_files</a> (stdClass $instance, stdClass $record, string $table, <a class="el" href="../../da/d04/classcontext.html">context</a> $<a class="el" href="../../da/d04/classcontext.html">context</a>, string $component, string $filearea, int $targetitemid)</td></tr>
+<tr class="memdesc:ad303a839240b01b2d14b0ee0b07acdbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the instance record, inserting any files that are referenced.  <br /></td></tr>
+<tr class="separator:ad303a839240b01b2d14b0ee0b07acdbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a329f03482f108614994d88593d1cf71a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfb/classcomponent__generator__base.html#a329f03482f108614994d88593d1cf71a">set_user</a> (?stdClass $user=null)</td></tr>
 <tr class="memdesc:a329f03482f108614994d88593d1cf71a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current user during data generation.  <br /></td></tr>
 <tr class="separator:a329f03482f108614994d88593d1cf71a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -234,6 +237,92 @@ testing_data_generator&#160;</td><td class="memItemRight" valign="bottom"><b>$da
 
 </div>
 </div>
+<a id="ad303a839240b01b2d14b0ee0b07acdbb" name="ad303a839240b01b2d14b0ee0b07acdbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad303a839240b01b2d14b0ee0b07acdbb">&#9670;&#160;</a></span>insert_files()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">component_generator_base::insert_files </td>
+          <td>(</td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$instance</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$record</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../da/d04/classcontext.html">context</a>&#160;</td>
+          <td class="paramname"><em>$context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$component</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$filearea</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$targetitemid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update the instance record, inserting any files that are referenced. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$instance</td><td>The instance record of the already-created record </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$record</td><td>The data passed in to create the instance </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$table</td><td>The table that the data exists in </td></tr>
+    <tr><td class="paramtype">context</td><td class="paramname">$context</td><td>The context of the instance </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$component</td><td>The component of the owning plugin </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$filearea</td><td>The name of the file area </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$targetitemid</td><td>The itemid to use when saving the files </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass</td><td>The updated instance record </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a81093fef9b263083e0a5b097744c27d1" name="a81093fef9b263083e0a5b097744c27d1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a81093fef9b263083e0a5b097744c27d1">&#9670;&#160;</a></span>reset()</h2>
 
@@ -310,7 +399,7 @@ testing_data_generator&#160;</td><td class="memItemRight" valign="bottom"><b>$da
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 18 2023 03:12:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jun 25 2023 03:32:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

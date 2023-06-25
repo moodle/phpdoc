@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230616) (1b1a15a3087)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230623) (3cd84747cb0)</div>
   </td>
  </tr>
  </tbody>
@@ -207,6 +207,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ac69813cc97faf4bc38e64d1f5c33088b"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d72/classtheme__config.html#ac69813cc97faf4bc38e64d1f5c33088b">$activityheaderconfig</a> = []</td></tr>
 <tr class="memdesc:ac69813cc97faf4bc38e64d1f5c33088b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for the page activity header.  <br /></td></tr>
 <tr class="separator:ac69813cc97faf4bc38e64d1f5c33088b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac665c645d9577b3705d90a2c7a68b986"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d72/classtheme__config.html#ac665c645d9577b3705d90a2c7a68b986">$addblockposition</a></td></tr>
+<tr class="memdesc:ac665c645d9577b3705d90a2c7a68b986"><td class="mdescLeft">&#160;</td><td class="mdescRight">For backward compatibility with old themes.  <br /></td></tr>
+<tr class="separator:ac665c645d9577b3705d90a2c7a68b986"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09b029b553add7f8068df8a0478e65e6"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d72/classtheme__config.html#a09b029b553add7f8068df8a0478e65e6">$blockrendermethod</a> = null</td></tr>
 <tr class="memdesc:a09b029b553add7f8068df8a0478e65e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the render method that should be used for rendering custom block regions by scripts such as my/index.php Defaults to <a class="el" href="../../d4/d7b/classcore__renderer.html#a8b2de18f2a13ac380d33a2619da2dc82">core_renderer::blocks_for_region()</a>.  <br /></td></tr>
 <tr class="separator:a09b029b553add7f8068df8a0478e65e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -228,6 +231,10 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a3b557a69432c4349b48d4816d3d93801"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d72/classtheme__config.html#a3b557a69432c4349b48d4816d3d93801">$doctype</a> = 'html5'</td></tr>
 <tr class="memdesc:a3b557a69432c4349b48d4816d3d93801"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines served document types.  <br /></td></tr>
 <tr class="separator:a3b557a69432c4349b48d4816d3d93801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4a9b69ebfd22e1e4f79de60e3aed938"><td class="memItemLeft" align="right" valign="top"><a id="ae4a9b69ebfd22e1e4f79de60e3aed938" name="ae4a9b69ebfd22e1e4f79de60e3aed938"></a>
+array&#160;</td><td class="memItemRight" valign="bottom"><b>$editor_scss</b></td></tr>
+<tr class="memdesc:ae4a9b69ebfd22e1e4f79de60e3aed938"><td class="mdescLeft">&#160;</td><td class="mdescRight">editor_scss file(s) provided by this theme. <br /></td></tr>
+<tr class="separator:ae4a9b69ebfd22e1e4f79de60e3aed938"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a284d0ad68b584a468e78b86d753d7e60"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d72/classtheme__config.html#a284d0ad68b584a468e78b86d753d7e60">$editor_sheets</a> = array()</td></tr>
 <tr class="memdesc:a284d0ad68b584a468e78b86d753d7e60"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of style sheets that are included in the text editor bodies.  <br /></td></tr>
 <tr class="separator:a284d0ad68b584a468e78b86d753d7e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -243,10 +250,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$enablecourseajax</b>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$extrascsscallback</b> = null</td></tr>
 <tr class="memdesc:a8ffa60723f61c6c9f251ad15b7d16aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name of the function to call to get the SCSS code to inject. <br /></td></tr>
 <tr class="separator:a8ffa60723f61c6c9f251ad15b7d16aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83e0510bf0c0ac2170cb62dbfc15ff14"><td class="memItemLeft" align="right" valign="top"><a id="a83e0510bf0c0ac2170cb62dbfc15ff14" name="a83e0510bf0c0ac2170cb62dbfc15ff14"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>$haseditswitch</b> = false</td></tr>
+<tr class="memdesc:a83e0510bf0c0ac2170cb62dbfc15ff14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Theme defines its own editing mode switch. <br /></td></tr>
+<tr class="separator:a83e0510bf0c0ac2170cb62dbfc15ff14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad94e622c4c665597173d3e01f85bb45d"><td class="memItemLeft" align="right" valign="top"><a id="ad94e622c4c665597173d3e01f85bb45d" name="ad94e622c4c665597173d3e01f85bb45d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>$hidefromselector</b> = false</td></tr>
 <tr class="memdesc:ad94e622c4c665597173d3e01f85bb45d"><td class="mdescLeft">&#160;</td><td class="mdescRight">If set to true then this theme will not be shown in the theme selector unless theme designer mode is turned on. <br /></td></tr>
 <tr class="separator:ad94e622c4c665597173d3e01f85bb45d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadad22aa13c5081e0452df5e8cfde90d"><td class="memItemLeft" align="right" valign="top"><a id="aadad22aa13c5081e0452df5e8cfde90d" name="aadad22aa13c5081e0452df5e8cfde90d"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$iconsystem</b></td></tr>
+<tr class="memdesc:aadad22aa13c5081e0452df5e8cfde90d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the class extending <a class="el" href="../../d6/de5/classcore_1_1output_1_1icon__system.html">core::output::icon_system</a>. <br /></td></tr>
+<tr class="separator:aadad22aa13c5081e0452df5e8cfde90d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad76a4a4fb6156363c04f3271ed9fdc69"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d72/classtheme__config.html#ad76a4a4fb6156363c04f3271ed9fdc69">$javascripts</a> = array()</td></tr>
 <tr class="memdesc:ad76a4a4fb6156363c04f3271ed9fdc69"><td class="mdescLeft">&#160;</td><td class="mdescRight">The names of all the javascript files this theme that you would like included from head, in order.  <br /></td></tr>
 <tr class="separator:ad76a4a4fb6156363c04f3271ed9fdc69"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1556,7 +1571,7 @@ false array&#160;</td><td class="memItemRight" valign="bottom"><b>$scsscache</b>
 
 <p>Return the direct URL for an image from the pix folder. </p>
 <p>Use this function sparingly and never for icons. For icons use <a class="el" href="../../d0/d6e/classpix__icon.html">pix_icon</a> or the pix helper in a mustache template.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000757">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000761">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$imagename</td><td>the name of the icon. </td></tr>
@@ -2090,6 +2105,23 @@ false array&#160;</td><td class="memItemRight" valign="bottom"><b>$scsscache</b>
 
 </div>
 </div>
+<a id="ac665c645d9577b3705d90a2c7a68b986" name="ac665c645d9577b3705d90a2c7a68b986"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac665c645d9577b3705d90a2c7a68b986">&#9670;&#160;</a></span>$addblockposition</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int theme_config::$addblockposition</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>For backward compatibility with old themes. </p>
+<p>BLOCK_ADDBLOCK_POSITION_DEFAULT, BLOCK_ADDBLOCK_POSITION_FLATNAV. </p>
+
+</div>
+</div>
 <a id="a09b029b553add7f8068df8a0478e65e6" name="a09b029b553add7f8068df8a0478e65e6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a09b029b553add7f8068df8a0478e65e6">&#9670;&#160;</a></span>$blockrendermethod</h2>
 
@@ -2578,7 +2610,7 @@ false array&#160;</td><td class="memItemRight" valign="bottom"><b>$scsscache</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 18 2023 03:24:35 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jun 25 2023 03:47:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230616) (1b1a15a3087)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230623) (3cd84747cb0)</div>
   </td>
  </tr>
  </tbody>
@@ -56,6 +56,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d7/d95/class_moodle_quick_form__radio-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">MoodleQuickForm_radio Class Reference<div class="ingroups"><a class="el" href="../../d6/d9c/group__core__form.html">core_form</a></div></div></div>
 </div><!--header-->
@@ -90,6 +91,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2601397379156c63f1797f06d2cc0b8e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d6d/class_moodle_quick_form__radio.html#a2601397379156c63f1797f06d2cc0b8e">MoodleQuickForm_radio</a> ($elementName=null, $elementLabel=null, $text=null, $value=null, $attributes=null)</td></tr>
 <tr class="memdesc:a2601397379156c63f1797f06d2cc0b8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Old syntax of class constructor.  <br /></td></tr>
 <tr class="separator:a2601397379156c63f1797f06d2cc0b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56a32b93b072e12e911d58b767c8819c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d6d/class_moodle_quick_form__radio.html#a56a32b93b072e12e911d58b767c8819c">setHiddenLabel</a> ($hiddenLabel)</td></tr>
+<tr class="memdesc:a56a32b93b072e12e911d58b767c8819c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets label to be hidden.  <br /></td></tr>
+<tr class="separator:a56a32b93b072e12e911d58b767c8819c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6660038ca212ad8928a0f5b050ec43f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d6d/class_moodle_quick_form__radio.html#a6660038ca212ad8928a0f5b050ec43f7">toHtml</a> ()</td></tr>
 <tr class="memdesc:a6660038ca212ad8928a0f5b050ec43f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns HTML for advchecbox form element.  <br /></td></tr>
 <tr class="separator:a6660038ca212ad8928a0f5b050ec43f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,6 +104,13 @@ Public Attributes</h2></td></tr>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$_helpbutton</b> =''</td></tr>
 <tr class="memdesc:a7d393e81987e1af86d69ec5fc630159f"><td class="mdescLeft">&#160;</td><td class="mdescRight">html for help button, if empty then no help <br /></td></tr>
 <tr class="separator:a7d393e81987e1af86d69ec5fc630159f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:aacfb6d4a8a16b545f81b074f8f4f9273"><td class="memItemLeft" align="right" valign="top"><a id="aacfb6d4a8a16b545f81b074f8f4f9273" name="aacfb6d4a8a16b545f81b074f8f4f9273"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>$_hiddenLabel</b> = false</td></tr>
+<tr class="memdesc:aacfb6d4a8a16b545f81b074f8f4f9273"><td class="mdescLeft">&#160;</td><td class="mdescRight">if true label will be hidden. <br /></td></tr>
+<tr class="separator:aacfb6d4a8a16b545f81b074f8f4f9273"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a458c13c6ac7eff5c1a00a590a365dc83" name="a458c13c6ac7eff5c1a00a590a365dc83"></a>
@@ -329,7 +340,33 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_helpbutton</b> ='
 
 <p>Old syntax of class constructor. </p>
 <p>Deprecated in PHP7.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000622">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000626">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+
+</div>
+</div>
+<a id="a56a32b93b072e12e911d58b767c8819c" name="a56a32b93b072e12e911d58b767c8819c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56a32b93b072e12e911d58b767c8819c">&#9670;&#160;</a></span>setHiddenLabel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MoodleQuickForm_radio::setHiddenLabel </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$hiddenLabel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets label to be hidden. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">bool</td><td class="paramname">$hiddenLabel</td><td>sets if label should be hidden </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -364,7 +401,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_helpbutton</b> ='
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 18 2023 03:24:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jun 25 2023 03:46:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

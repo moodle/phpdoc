@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;3.11</span>
    </div>
-   <div id="projectbrief">Moodle 3.11.15+ (Build: 20230616) (6e54dc5203)</div>
+   <div id="projectbrief">Moodle 3.11.15+ (Build: 20230623) (785d7cee58)</div>
   </td>
  </tr>
  </tbody>
@@ -3720,6 +3720,18 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>fill_classmap_renam
 <tr class="memitem:ga89f29a31d16123c217594447ebf88ef1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de1/group__core.html#ga89f29a31d16123c217594447ebf88ef1">moodle_text_filter::filter</a> ($<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>, array $options=array())</td></tr>
 <tr class="memdesc:ga89f29a31d16123c217594447ebf88ef1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this function to actually implement the filtering.  <br /></td></tr>
 <tr class="separator:ga89f29a31d16123c217594447ebf88ef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga918863e6540de64a1e2860aae0ad1813"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de1/group__core.html#ga918863e6540de64a1e2860aae0ad1813">moodle_text_filter::filter_stage_post_clean</a> (string $<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>, array $options)</td></tr>
+<tr class="memdesc:ga918863e6540de64a1e2860aae0ad1813"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter HTML text at the very end after text is sanitised.  <br /></td></tr>
+<tr class="separator:ga918863e6540de64a1e2860aae0ad1813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga12a32f831563f68fce8daf58f13388e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de1/group__core.html#ga12a32f831563f68fce8daf58f13388e6">moodle_text_filter::filter_stage_pre_clean</a> (string $<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>, array $options)</td></tr>
+<tr class="memdesc:ga12a32f831563f68fce8daf58f13388e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter HTML text before sanitising text.  <br /></td></tr>
+<tr class="separator:ga12a32f831563f68fce8daf58f13388e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba793afedcaf3123f0f8a158ba38b400"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de1/group__core.html#gaba793afedcaf3123f0f8a158ba38b400">moodle_text_filter::filter_stage_pre_format</a> (string $<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>, array $options)</td></tr>
+<tr class="memdesc:gaba793afedcaf3123f0f8a158ba38b400"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter text before changing format to HTML.  <br /></td></tr>
+<tr class="separator:gaba793afedcaf3123f0f8a158ba38b400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7d2bac8d62f3aaccbdeebbcad278da6c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de1/group__core.html#ga7d2bac8d62f3aaccbdeebbcad278da6c">moodle_text_filter::filter_stage_string</a> (string $<a class="el" href="../../dc/d71/group___imap___client.html#ga4f86edc037388594e41bba183da5192a">text</a>, array $options)</td></tr>
+<tr class="memdesc:ga7d2bac8d62f3aaccbdeebbcad278da6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter simple text coming from <a class="el" href="../../d0/de1/group__core.html#ga5d853ba52ad6e416838c5dcc3680aa80" title="Given a simple string, this function returns the string processed by enabled string filters if $CFG-&gt;...">format_string()</a>.  <br /></td></tr>
+<tr class="separator:ga7d2bac8d62f3aaccbdeebbcad278da6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga43709614eef755bcd3ed2d3fc1b6d86b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de1/group__core.html#ga43709614eef755bcd3ed2d3fc1b6d86b">filter_manager::filter_string</a> ($string, $<a class="el" href="../../da/d04/classcontext.html">context</a>)</td></tr>
 <tr class="memdesc:ga43709614eef755bcd3ed2d3fc1b6d86b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Filter a piece of string.  <br /></td></tr>
 <tr class="separator:ga43709614eef755bcd3ed2d3fc1b6d86b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -6067,7 +6079,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>filterobject::$phra
 <tr class="memitem:ga4ab51386acb82cd0a0066eac2567b2bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de1/group__core.html#ga4ab51386acb82cd0a0066eac2567b2bd">$plugins</a></td></tr>
 <tr class="separator:ga4ab51386acb82cd0a0066eac2567b2bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga63c5d6a8a9f1768ea926cee666dc991b"><td class="memItemLeft" align="right" valign="top"><a id="ga63c5d6a8a9f1768ea926cee666dc991b" name="ga63c5d6a8a9f1768ea926cee666dc991b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$release</b> = '3.11.15+ (Build: 20230616)'</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$release</b> = '3.11.15+ (Build: 20230623)'</td></tr>
 <tr class="separator:ga63c5d6a8a9f1768ea926cee666dc991b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga21ea4dae509fad0a8aec221e2f095886"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de1/group__core.html#ga21ea4dae509fad0a8aec221e2f095886">$renamedclasses</a></td></tr>
 <tr class="separator:ga21ea4dae509fad0a8aec221e2f095886"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -6132,7 +6144,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>core\task::$trace
 global&#160;</td><td class="memItemRight" valign="bottom"><b>$USER</b></td></tr>
 <tr class="separator:ga6e76f75e2c700b871e9e622e51598180"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga17c8948c68aa44fa9961ae169b6a8961"><td class="memItemLeft" align="right" valign="top"><a id="ga17c8948c68aa44fa9961ae169b6a8961" name="ga17c8948c68aa44fa9961ae169b6a8961"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$version</b> = 2021051715.01</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$version</b> = 2021051715.02</td></tr>
 <tr class="separator:ga17c8948c68aa44fa9961ae169b6a8961"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga25a973d9316abf0df9c8c8d269f8bdf1"><td class="memItemLeft" align="right" valign="top"><a id="ga25a973d9316abf0df9c8c8d269f8bdf1" name="ga25a973d9316abf0df9c8c8d269f8bdf1"></a>
 null string&#160;</td><td class="memItemRight" valign="bottom"><b>filterobject::$workregexp</b> = null</td></tr>
@@ -19916,6 +19928,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
 </div><div class="memdoc">
 
 <p>Override this function to actually implement the filtering. </p>
+<p>Filter developers must make sure that filtering done after text cleaning does not introduce security vulnerabilities.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$text</td><td>some HTML content to process. </td></tr>
@@ -20940,6 +20953,181 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>YEARSECS</b> 3153600
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga918863e6540de64a1e2860aae0ad1813" name="ga918863e6540de64a1e2860aae0ad1813"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga918863e6540de64a1e2860aae0ad1813">&#9670;&#160;</a></span>filter_stage_post_clean()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">moodle_text_filter::filter_stage_post_clean </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$options</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Filter HTML text at the very end after text is sanitised. </p>
+<p>NOTE: this is called even if $options['noclean'] is true and text is not cleaned.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$text</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$options</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga12a32f831563f68fce8daf58f13388e6" name="ga12a32f831563f68fce8daf58f13388e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga12a32f831563f68fce8daf58f13388e6">&#9670;&#160;</a></span>filter_stage_pre_clean()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">moodle_text_filter::filter_stage_pre_clean </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$options</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Filter HTML text before sanitising text. </p>
+<p>NOTE: this is called even if $options['noclean'] is true and text is not cleaned.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$text</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$options</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gaba793afedcaf3123f0f8a158ba38b400" name="gaba793afedcaf3123f0f8a158ba38b400"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaba793afedcaf3123f0f8a158ba38b400">&#9670;&#160;</a></span>filter_stage_pre_format()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">moodle_text_filter::filter_stage_pre_format </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$options</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Filter text before changing format to HTML. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$text</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$options</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga7d2bac8d62f3aaccbdeebbcad278da6c" name="ga7d2bac8d62f3aaccbdeebbcad278da6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7d2bac8d62f3aaccbdeebbcad278da6c">&#9670;&#160;</a></span>filter_stage_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">moodle_text_filter::filter_stage_string </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$options</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Filter simple text coming from <a class="el" href="../../d0/de1/group__core.html#ga5d853ba52ad6e416838c5dcc3680aa80" title="Given a simple string, this function returns the string processed by enabled string filters if $CFG-&gt;...">format_string()</a>. </p>
+<p>Note that unless $CFG-&gt;formatstringstriptags is disabled HTML tags are not expected in returned value.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$text</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$options</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -46795,7 +46983,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 <div class="line"> </div>
 <div class="line">    </div>
 <div class="line">    <span class="keyword">protected</span> <a class="code hl_class" href="../../dd/d5e/classprogress__trace.html">progress_trace</a> $trace = <span class="keyword">null</span></div>
-<div class="ttc" id="aclassprogress__trace_html"><div class="ttname"><a href="../../dd/d5e/classprogress__trace.html">progress_trace</a></div><div class="ttdoc">Progress trace class.</div><div class="ttdef"><b>Definition</b> weblib.php:3353</div></div>
+<div class="ttc" id="aclassprogress__trace_html"><div class="ttname"><a href="../../dd/d5e/classprogress__trace.html">progress_trace</a></div><div class="ttdoc">Progress trace class.</div><div class="ttdef"><b>Definition</b> weblib.php:3369</div></div>
 </div><!-- fragment -->
 <p>This trait includes functions to assist with logging in tasks. </p>
 <dl class="section copyright"><dt>Copyright</dt><dd>2018 Andrew Nicols <a href="#" onclick="location.href='mai'+'lto:'+'and'+'re'+'w@n'+'ic'+'ols'+'.c'+'o.u'+'k'; return false;">andre<span class="obfuscator">.nosp@m.</span>w@ni<span class="obfuscator">.nosp@m.</span>cols.<span class="obfuscator">.nosp@m.</span>co.u<span class="obfuscator">.nosp@m.</span>k</a> </dd></dl>
@@ -47342,7 +47530,7 @@ config-dist.php @global stdClass $DB The global <a class="el" href="../../d3/d6e
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 18 2023 03:01:09 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jun 25 2023 03:19:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

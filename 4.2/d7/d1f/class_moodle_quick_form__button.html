@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2.1+ (Build: 20230616) (95e0d9ce669)</div>
+   <div id="projectbrief">Moodle 4.2.1+ (Build: 20230623) (56c8910c4b6)</div>
   </td>
  </tr>
  </tbody>
@@ -56,6 +56,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d1/d4c/class_moodle_quick_form__button-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">MoodleQuickForm_button Class Reference<div class="ingroups"><a class="el" href="../../d6/d9c/group__core__form.html">core_form</a></div></div></div>
 </div><!--header-->
@@ -87,6 +88,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a51e55a39f20118868246501b7b69eab8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1f/class_moodle_quick_form__button.html#a51e55a39f20118868246501b7b69eab8">MoodleQuickForm_button</a> ($elementName=null, $value=null, $attributes=null)</td></tr>
 <tr class="memdesc:a51e55a39f20118868246501b7b69eab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Old syntax of class constructor.  <br /></td></tr>
 <tr class="separator:a51e55a39f20118868246501b7b69eab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5e64f018400942810fd89262f7494fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d1f/class_moodle_quick_form__button.html#aa5e64f018400942810fd89262f7494fe">setHiddenLabel</a> ($hiddenLabel)</td></tr>
+<tr class="memdesc:aa5e64f018400942810fd89262f7494fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets label to be hidden.  <br /></td></tr>
+<tr class="separator:aa5e64f018400942810fd89262f7494fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -94,6 +98,13 @@ Public Attributes</h2></td></tr>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$_helpbutton</b> =''</td></tr>
 <tr class="memdesc:af2e4e8c5f06d96d01edbd350c498aa22"><td class="mdescLeft">&#160;</td><td class="mdescRight">html for help button, if empty then no help <br /></td></tr>
 <tr class="separator:af2e4e8c5f06d96d01edbd350c498aa22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:aeba5f8382571f5a2a275c8cc626bc9af"><td class="memItemLeft" align="right" valign="top"><a id="aeba5f8382571f5a2a275c8cc626bc9af" name="aeba5f8382571f5a2a275c8cc626bc9af"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>$_hiddenLabel</b> = false</td></tr>
+<tr class="memdesc:aeba5f8382571f5a2a275c8cc626bc9af"><td class="mdescLeft">&#160;</td><td class="mdescRight">if true label will be hidden. <br /></td></tr>
+<tr class="separator:aeba5f8382571f5a2a275c8cc626bc9af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac29e9cf2c8da15e558285e8038f7e8c8" name="ac29e9cf2c8da15e558285e8038f7e8c8"></a>
@@ -275,13 +286,39 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_helpbutton</b> ='
 
 </div>
 </div>
+<a id="aa5e64f018400942810fd89262f7494fe" name="aa5e64f018400942810fd89262f7494fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5e64f018400942810fd89262f7494fe">&#9670;&#160;</a></span>setHiddenLabel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MoodleQuickForm_button::setHiddenLabel </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$hiddenLabel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets label to be hidden. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">bool</td><td class="paramname">$hiddenLabel</td><td>sets if label should be hidden </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>lib/form/button.php</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 18 2023 03:18:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jun 25 2023 03:40:36 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

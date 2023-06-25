@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230616) (1b1a15a3087)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230623) (3cd84747cb0)</div>
   </td>
  </tr>
  </tbody>
@@ -100,6 +100,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:a016a082583f15385b4cac3be80f8e3de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2f/classcore__courseformat_1_1output_1_1local_1_1content_1_1cm_1_1cmname.html#a016a082583f15385b4cac3be80f8e3de">get_icon_data</a> (\<a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a> $output)</td></tr>
+<tr class="memdesc:a016a082583f15385b4cac3be80f8e3de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the icon data.  <br /></td></tr>
+<tr class="separator:a016a082583f15385b4cac3be80f8e3de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5363a9368318613a158d10ffea21a21e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d2f/classcore__courseformat_1_1output_1_1local_1_1content_1_1cm_1_1cmname.html#a5363a9368318613a158d10ffea21a21e">get_title_data</a> (\<a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a> $output)</td></tr>
 <tr class="memdesc:a5363a9368318613a158d10ffea21a21e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the title data.  <br /></td></tr>
 <tr class="separator:a5363a9368318613a158d10ffea21a21e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,6 +117,10 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$displayoptions</b><
 course_format&#160;</td><td class="memItemRight" valign="bottom"><b>$format</b></td></tr>
 <tr class="memdesc:aa565c8c8887ad2a7aea87a2f95216cc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">the course format <br /></td></tr>
 <tr class="separator:aa565c8c8887ad2a7aea87a2f95216cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3274388329db2ed3234270a932255a47"><td class="memItemLeft" align="right" valign="top"><a id="a3274388329db2ed3234270a932255a47" name="a3274388329db2ed3234270a932255a47"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$iconclass</b></td></tr>
+<tr class="memdesc:a3274388329db2ed3234270a932255a47"><td class="mdescLeft">&#160;</td><td class="mdescRight">the activity icon output class name <br /></td></tr>
+<tr class="separator:a3274388329db2ed3234270a932255a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dc2a92ad53257a4d1fc807f54bc2d3f"><td class="memItemLeft" align="right" valign="top"><a id="a7dc2a92ad53257a4d1fc807f54bc2d3f" name="a7dc2a92ad53257a4d1fc807f54bc2d3f"></a>
 <a class="el" href="../../df/db9/classcm__info.html">cm_info</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$mod</b></td></tr>
 <tr class="memdesc:a7dc2a92ad53257a4d1fc807f54bc2d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">the course module instance <br /></td></tr>
@@ -265,6 +272,46 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$titleclass</b></td
 
 </div>
 </div>
+<a id="a016a082583f15385b4cac3be80f8e3de" name="a016a082583f15385b4cac3be80f8e3de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a016a082583f15385b4cac3be80f8e3de">&#9670;&#160;</a></span>get_icon_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\output\local\content\cm\cmname::get_icon_data </td>
+          <td>(</td>
+          <td class="paramtype">\<a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a>&#160;</td>
+          <td class="paramname"><em>$output</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the icon data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a></td><td class="paramname">$output</td><td>typically, the renderer that's calling this function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>data context for a mustache template </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a506d57fa69d885a28fba756b1d9b80e8" name="a506d57fa69d885a28fba756b1d9b80e8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a506d57fa69d885a28fba756b1d9b80e8">&#9670;&#160;</a></span>get_template_name()</h2>
 
@@ -378,7 +425,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$titleclass</b></td
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 18 2023 03:25:09 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jun 25 2023 03:47:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

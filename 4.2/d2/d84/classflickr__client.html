@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2.1+ (Build: 20230616) (95e0d9ce669)</div>
+   <div id="projectbrief">Moodle 4.2.1+ (Build: 20230623) (56c8910c4b6)</div>
   </td>
  </tr>
  </tbody>
@@ -176,9 +176,17 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>UPLOAD_ROOT</b> = 'h
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:a4af6f8038c99a65525856309e6053d77"><td class="memItemLeft" align="right" valign="top"><a id="a4af6f8038c99a65525856309e6053d77" name="a4af6f8038c99a65525856309e6053d77"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$access_token</b></td></tr>
+<tr class="memdesc:a4af6f8038c99a65525856309e6053d77"><td class="mdescLeft">&#160;</td><td class="mdescRight">access token. <br /></td></tr>
+<tr class="separator:a4af6f8038c99a65525856309e6053d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85e03f2a6937d852ca01b05dc6b3b64c"><td class="memItemLeft" align="right" valign="top"><a id="a85e03f2a6937d852ca01b05dc6b3b64c" name="a85e03f2a6937d852ca01b05dc6b3b64c"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$access_token_api</b></td></tr>
 <tr class="separator:a85e03f2a6937d852ca01b05dc6b3b64c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9061f65ea59c8750c0fd0301c09c021e"><td class="memItemLeft" align="right" valign="top"><a id="a9061f65ea59c8750c0fd0301c09c021e" name="a9061f65ea59c8750c0fd0301c09c021e"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$access_token_secret</b></td></tr>
+<tr class="memdesc:a9061f65ea59c8750c0fd0301c09c021e"><td class="mdescLeft">&#160;</td><td class="mdescRight">access secret token. <br /></td></tr>
+<tr class="separator:a9061f65ea59c8750c0fd0301c09c021e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3722e9fbfb3f3c82032d530519425e2"><td class="memItemLeft" align="right" valign="top"><a id="ae3722e9fbfb3f3c82032d530519425e2" name="ae3722e9fbfb3f3c82032d530519425e2"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$api_root</b></td></tr>
 <tr class="memdesc:ae3722e9fbfb3f3c82032d530519425e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">oauth root <br /></td></tr>
@@ -205,10 +213,26 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$consumer_secret</b
 array&#160;</td><td class="memItemRight" valign="bottom"><b>$http_options</b></td></tr>
 <tr class="memdesc:ae3ad185080d56a85c7ca137a6e0afc56"><td class="mdescLeft">&#160;</td><td class="mdescRight">options to pass to the next curl request <br /></td></tr>
 <tr class="separator:ae3ad185080d56a85c7ca137a6e0afc56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68acd320b496a97c6d3db91251ab4383"><td class="memItemLeft" align="right" valign="top"><a id="a68acd320b496a97c6d3db91251ab4383" name="a68acd320b496a97c6d3db91251ab4383"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$nonce</b></td></tr>
+<tr class="memdesc:a68acd320b496a97c6d3db91251ab4383"><td class="mdescLeft">&#160;</td><td class="mdescRight">nonce. <br /></td></tr>
+<tr class="separator:a68acd320b496a97c6d3db91251ab4383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a50745687e0f5dc15bdb7a7f9968b51"><td class="memItemLeft" align="right" valign="top"><a id="a5a50745687e0f5dc15bdb7a7f9968b51" name="a5a50745687e0f5dc15bdb7a7f9968b51"></a>
+<a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$oauth_callback</b></td></tr>
+<tr class="memdesc:a5a50745687e0f5dc15bdb7a7f9968b51"><td class="mdescLeft">&#160;</td><td class="mdescRight">oauth callback URL. <br /></td></tr>
+<tr class="separator:a5a50745687e0f5dc15bdb7a7f9968b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a163b21d31d97272b5d2ea490df540a75"><td class="memItemLeft" align="right" valign="top"><a id="a163b21d31d97272b5d2ea490df540a75" name="a163b21d31d97272b5d2ea490df540a75"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$request_token_api</b></td></tr>
 <tr class="memdesc:a163b21d31d97272b5d2ea490df540a75"><td class="mdescLeft">&#160;</td><td class="mdescRight">request token url <br /></td></tr>
 <tr class="separator:a163b21d31d97272b5d2ea490df540a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a765f8087439b8d3e4768bc3ada7bea76"><td class="memItemLeft" align="right" valign="top"><a id="a765f8087439b8d3e4768bc3ada7bea76" name="a765f8087439b8d3e4768bc3ada7bea76"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$sign_secret</b></td></tr>
+<tr class="memdesc:a765f8087439b8d3e4768bc3ada7bea76"><td class="mdescLeft">&#160;</td><td class="mdescRight">sign secret. <br /></td></tr>
+<tr class="separator:a765f8087439b8d3e4768bc3ada7bea76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5555c0cea0a3a263e2647bb007d6b1cc"><td class="memItemLeft" align="right" valign="top"><a id="a5555c0cea0a3a263e2647bb007d6b1cc" name="a5555c0cea0a3a263e2647bb007d6b1cc"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>$timestamp</b></td></tr>
+<tr class="memdesc:a5555c0cea0a3a263e2647bb007d6b1cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">timestamp. <br /></td></tr>
+<tr class="separator:a5555c0cea0a3a263e2647bb007d6b1cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Simple Flickr API client implementing the features needed by <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a>. </p>
@@ -958,7 +982,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$request_token_api<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 18 2023 03:17:58 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jun 25 2023 03:39:33 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>
