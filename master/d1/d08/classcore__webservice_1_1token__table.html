@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230623) (3cd84747cb0)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230629) (8dbb6183ff4)</div>
   </td>
  </tr>
  </tbody>
@@ -109,6 +109,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a03291e01bfb136adc13b4b341500eaaa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d08/classcore__webservice_1_1token__table.html#a03291e01bfb136adc13b4b341500eaaa">col_fullname</a> ($data)</td></tr>
 <tr class="memdesc:a03291e01bfb136adc13b4b341500eaaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the fullname column.  <br /></td></tr>
 <tr class="separator:a03291e01bfb136adc13b4b341500eaaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af731c87eaf95c4e5204fd364eec9582c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d08/classcore__webservice_1_1token__table.html#af731c87eaf95c4e5204fd364eec9582c">col_name</a> ($data)</td></tr>
+<tr class="memdesc:af731c87eaf95c4e5204fd364eec9582c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the name column.  <br /></td></tr>
+<tr class="separator:af731c87eaf95c4e5204fd364eec9582c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0a1cf0d2fe57f97aa0434d481486b0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d08/classcore__webservice_1_1token__table.html#ad0a1cf0d2fe57f97aa0434d481486b0e">col_operation</a> ($data)</td></tr>
 <tr class="memdesc:ad0a1cf0d2fe57f97aa0434d481486b0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the operation column.  <br /></td></tr>
 <tr class="separator:ad0a1cf0d2fe57f97aa0434d481486b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -851,6 +854,38 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userextrafields</b>
 
 </div>
 </div>
+<a id="af731c87eaf95c4e5204fd364eec9582c" name="af731c87eaf95c4e5204fd364eec9582c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af731c87eaf95c4e5204fd364eec9582c">&#9670;&#160;</a></span>col_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_webservice\token_table::col_name </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate the name column. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$data</td><td>Data for the current row </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>Content for the column </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad0a1cf0d2fe57f97aa0434d481486b0e" name="ad0a1cf0d2fe57f97aa0434d481486b0e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad0a1cf0d2fe57f97aa0434d481486b0e">&#9670;&#160;</a></span>col_operation()</h2>
 
@@ -940,10 +975,12 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userextrafields</b>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">string</td><td>Content for the column </td></tr>
+    <tr><td class="paramname">string</td><td>Content for the column</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001268">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 <a href="https://tracker.moodle.org/browse/MDL-76656" class="el">MDL-76656</a>. Please do not use this function anymore. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000367">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-78605" class="el">MDL-78605</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.7. </dd></dl>
 
 </div>
 </div>
@@ -4315,7 +4352,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userextrafields</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 25 2023 03:47:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 2 2023 03:39:56 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

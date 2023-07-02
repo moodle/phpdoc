@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230623) (3cd84747cb0)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230629) (8dbb6183ff4)</div>
   </td>
  </tr>
  </tbody>
@@ -78,6 +78,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a73473402edf49cfc12f441da7e969796"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d40/classassign__files.html#a73473402edf49cfc12f441da7e969796">__construct</a> (context $context, $sid, $filearea, $component, $course=null, $cm=null)</td></tr>
 <tr class="memdesc:a73473402edf49cfc12f441da7e969796"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor.  <br /></td></tr>
 <tr class="separator:a73473402edf49cfc12f441da7e969796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae382df8681b06ef20410d6f3ff092640"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d40/classassign__files.html#ae382df8681b06ef20410d6f3ff092640">get_file_url</a> (<a class="el" href="../../d0/d00/classstored__file.html">stored_file</a> $file)</td></tr>
+<tr class="memdesc:ae382df8681b06ef20410d6f3ff092640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the URL used to view the file.  <br /></td></tr>
+<tr class="separator:ae382df8681b06ef20410d6f3ff092640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6eda5235afa9c2f230a4dd379a3ff85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d40/classassign__files.html#af6eda5235afa9c2f230a4dd379a3ff85">get_modified_time</a> (<a class="el" href="../../d0/d00/classstored__file.html">stored_file</a> $file)</td></tr>
+<tr class="memdesc:af6eda5235afa9c2f230a4dd379a3ff85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the modified time of the specified file.  <br /></td></tr>
+<tr class="separator:af6eda5235afa9c2f230a4dd379a3ff85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcae2fb4aba8d2bd34d306ca0d4ec18d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d40/classassign__files.html#adcae2fb4aba8d2bd34d306ca0d4ec18d">preprocess</a> ($dir, $filearea, $component)</td></tr>
 <tr class="memdesc:adcae2fb4aba8d2bd34d306ca0d4ec18d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preprocessing the file list to add the portfolio links if required.  <br /></td></tr>
 <tr class="separator:adcae2fb4aba8d2bd34d306ca0d4ec18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,6 +182,70 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$dir</b></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae382df8681b06ef20410d6f3ff092640" name="ae382df8681b06ef20410d6f3ff092640"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae382df8681b06ef20410d6f3ff092640">&#9670;&#160;</a></span>get_file_url()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">assign_files::get_file_url </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d00/classstored__file.html">stored_file</a>&#160;</td>
+          <td class="paramname"><em>$file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the URL used to view the file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="../../d0/d00/classstored__file.html">stored_file</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af6eda5235afa9c2f230a4dd379a3ff85" name="af6eda5235afa9c2f230a4dd379a3ff85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6eda5235afa9c2f230a4dd379a3ff85">&#9670;&#160;</a></span>get_modified_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">assign_files::get_modified_time </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d00/classstored__file.html">stored_file</a>&#160;</td>
+          <td class="paramname"><em>$file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the modified time of the specified file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d0/d00/classstored__file.html">stored_file</a></td><td class="paramname">$file</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="adcae2fb4aba8d2bd34d306ca0d4ec18d" name="adcae2fb4aba8d2bd34d306ca0d4ec18d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adcae2fb4aba8d2bd34d306ca0d4ec18d">&#9670;&#160;</a></span>preprocess()</h2>
 
@@ -217,12 +287,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$dir</b></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000991">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
 
 </div>
 </div>
@@ -232,7 +297,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$dir</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 25 2023 03:45:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 2 2023 03:37:32 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

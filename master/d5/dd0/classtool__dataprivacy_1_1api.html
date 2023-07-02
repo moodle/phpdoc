@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230623) (3cd84747cb0)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230629) (8dbb6183ff4)</div>
   </td>
  </tr>
  </tbody>
@@ -70,9 +70,15 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac124395d10c354340f02722ab1a99604"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/classtool__dataprivacy_1_1api.html#ac124395d10c354340f02722ab1a99604">approve_data_request</a> ($requestid)</td></tr>
-<tr class="memdesc:ac124395d10c354340f02722ab1a99604"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approves a data request based on the request ID.  <br /></td></tr>
-<tr class="separator:ac124395d10c354340f02722ab1a99604"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef81e3eda68e2af79a8c30ed9fd81246"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/classtool__dataprivacy_1_1api.html#aef81e3eda68e2af79a8c30ed9fd81246">add_request_contexts_with_status</a> (<a class="el" href="../../dd/dfc/classcore__privacy_1_1local_1_1request_1_1contextlist__collection.html">contextlist_collection</a> $clcollection, int $requestid, int $<a class="el" href="../../dc/d71/group___imap___client.html#ga5bf8518b59eeb46c71681066d12016bd">status</a>)</td></tr>
+<tr class="memdesc:aef81e3eda68e2af79a8c30ed9fd81246"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the contexts from the contextlist_collection to the request with the status provided.  <br /></td></tr>
+<tr class="separator:aef81e3eda68e2af79a8c30ed9fd81246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0657e47bdddaa9f430caf850607baac2"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/classtool__dataprivacy_1_1api.html#a0657e47bdddaa9f430caf850607baac2">approve_contexts_belonging_to_request</a> (int $requestid, array $coursecontextids=[])</td></tr>
+<tr class="memdesc:a0657e47bdddaa9f430caf850607baac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only approve the contexts which are children of the provided course contexts.  <br /></td></tr>
+<tr class="separator:a0657e47bdddaa9f430caf850607baac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe069360aabe6e0b13724158e30fb6ad"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/classtool__dataprivacy_1_1api.html#abe069360aabe6e0b13724158e30fb6ad">approve_data_request</a> ($requestid, $filtercoursecontexts=[])</td></tr>
+<tr class="memdesc:abe069360aabe6e0b13724158e30fb6ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Approves a data request based on the request ID.  <br /></td></tr>
+<tr class="separator:abe069360aabe6e0b13724158e30fb6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefe7e373b652e30498c17eec4abde18c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/classtool__dataprivacy_1_1api.html#aefe7e373b652e30498c17eec4abde18c">can_contact_dpo</a> ()</td></tr>
 <tr class="memdesc:aefe7e373b652e30498c17eec4abde18c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether the user can contact the site's Data Protection Officer via <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a>.  <br /></td></tr>
 <tr class="separator:aefe7e373b652e30498c17eec4abde18c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,12 +139,18 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a61998f7d234d9219058f6e1a9a21265d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/classtool__dataprivacy_1_1api.html#a61998f7d234d9219058f6e1a9a21265d">get_approved_contextlist_collection_for_collection</a> (<a class="el" href="../../dd/dfc/classcore__privacy_1_1local_1_1request_1_1contextlist__collection.html">contextlist_collection</a> $collection, stdClass $foruser, int $<a class="el" href="../../dd/d59/interfacecore__privacy_1_1local_1_1metadata_1_1types_1_1type.html">type</a>)</td></tr>
 <tr class="memdesc:a61998f7d234d9219058f6e1a9a21265d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds all contextlists having at least one approved context, and returns them as in a contextlist_collection.  <br /></td></tr>
 <tr class="separator:a61998f7d234d9219058f6e1a9a21265d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc79862dbd766038ebea079caf209c09"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/classtool__dataprivacy_1_1api.html#adc79862dbd766038ebea079caf209c09">get_approved_contextlist_collection_for_request</a> (<a class="el" href="../../de/dd1/classtool__dataprivacy_1_1data__request.html">data_request</a> $request)</td></tr>
+<tr class="memdesc:adc79862dbd766038ebea079caf209c09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds all request contextlists having at least on approved context, and returns them as in a contextlist_collection.  <br /></td></tr>
+<tr class="separator:adc79862dbd766038ebea079caf209c09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a360d89d801560355969f20572b796780"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/classtool__dataprivacy_1_1api.html#a360d89d801560355969f20572b796780">get_assigned_privacy_officer_roles</a> ()</td></tr>
 <tr class="memdesc:a360d89d801560355969f20572b796780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches the list of configured privacy officer roles.  <br /></td></tr>
 <tr class="separator:a360d89d801560355969f20572b796780"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f9338fc40f85380a5e294f279a17a4c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/classtool__dataprivacy_1_1api.html#a2f9338fc40f85380a5e294f279a17a4c">get_categories</a> ()</td></tr>
 <tr class="memdesc:a2f9338fc40f85380a5e294f279a17a4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all system data categories.  <br /></td></tr>
 <tr class="separator:a2f9338fc40f85380a5e294f279a17a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a807e3156e494b002bfb11a5d49f1b520"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/classtool__dataprivacy_1_1api.html#a807e3156e494b002bfb11a5d49f1b520">get_course_contexts_for_view_filter</a> (int $requestid)</td></tr>
+<tr class="memdesc:a807e3156e494b002bfb11a5d49f1b520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get list of course context for user to filter.  <br /></td></tr>
+<tr class="separator:a807e3156e494b002bfb11a5d49f1b520"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b6299e1fef9b549d0edc5e5baad0f3b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/classtool__dataprivacy_1_1api.html#a5b6299e1fef9b549d0edc5e5baad0f3b">get_data_requests</a> ($userid=0, $statuses=[], $types=[], $creationmethods=[], $<a class="el" href="../../dc/d71/group___imap___client.html#ga4bd31bcedb7b4943aac2da78d0d84afe">sort</a>='', $offset=0, $limit=0)</td></tr>
 <tr class="memdesc:a5b6299e1fef9b549d0edc5e5baad0f3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetches the list of the data requests.  <br /></td></tr>
 <tr class="separator:a5b6299e1fef9b549d0edc5e5baad0f3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,6 +227,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>get_site_dpos</b> (
 <tr class="memitem:a5a06b64ddc32b90a9cbf2fd6328d0955"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/classtool__dataprivacy_1_1api.html#a5a06b64ddc32b90a9cbf2fd6328d0955">update_purpose</a> (stdClass $record)</td></tr>
 <tr class="memdesc:a5a06b64ddc32b90a9cbf2fd6328d0955"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates an existing data purpose.  <br /></td></tr>
 <tr class="separator:a5a06b64ddc32b90a9cbf2fd6328d0955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a4b13343f53c5408487771a002a5e60"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/classtool__dataprivacy_1_1api.html#a4a4b13343f53c5408487771a002a5e60">update_request_contexts_with_status</a> (int $requestid, int $<a class="el" href="../../dc/d71/group___imap___client.html#ga5bf8518b59eeb46c71681066d12016bd">status</a>)</td></tr>
+<tr class="memdesc:a4a4b13343f53c5408487771a002a5e60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the status of all contexts associated with the request.  <br /></td></tr>
+<tr class="separator:a4a4b13343f53c5408487771a002a5e60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97069f6384aba842bb616d2cab57511f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/classtool__dataprivacy_1_1api.html#a97069f6384aba842bb616d2cab57511f">update_request_status</a> ($requestid, $<a class="el" href="../../dc/d71/group___imap___client.html#ga5bf8518b59eeb46c71681066d12016bd">status</a>, $dpoid=0, $<a class="el" href="../../da/d73/classcomment.html">comment</a>='')</td></tr>
 <tr class="memdesc:a97069f6384aba842bb616d2cab57511f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancels the data request for a given request ID.  <br /></td></tr>
 <tr class="separator:a97069f6384aba842bb616d2cab57511f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,6 +276,10 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>DATAREQUEST_STATUS_E
 const&#160;</td><td class="memItemRight" valign="bottom"><b>DATAREQUEST_STATUS_PENDING</b> = 0</td></tr>
 <tr class="memdesc:affefa45e697ffc00fa480864cc9f9673"><td class="mdescLeft">&#160;</td><td class="mdescRight">Newly submitted and we haven't yet started finding out where they have data. <br /></td></tr>
 <tr class="separator:affefa45e697ffc00fa480864cc9f9673"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0244bb5eacfe7ac607bbe4c4f966f10"><td class="memItemLeft" align="right" valign="top"><a id="aa0244bb5eacfe7ac607bbe4c4f966f10" name="aa0244bb5eacfe7ac607bbe4c4f966f10"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>DATAREQUEST_STATUS_PREPROCESSING</b> = 1</td></tr>
+<tr class="memdesc:aa0244bb5eacfe7ac607bbe4c4f966f10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Newly submitted and we have started to find the location of data. <br /></td></tr>
+<tr class="separator:aa0244bb5eacfe7ac607bbe4c4f966f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65309520b4e9d6172ecf83b633f19c3a"><td class="memItemLeft" align="right" valign="top"><a id="a65309520b4e9d6172ecf83b633f19c3a" name="a65309520b4e9d6172ecf83b633f19c3a"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>DATAREQUEST_STATUS_PROCESSING</b> = 4</td></tr>
 <tr class="memdesc:a65309520b4e9d6172ecf83b633f19c3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The request is now being processed. <br /></td></tr>
@@ -286,8 +305,115 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>DATAREQUEST_TYPE_EXP
 <dl class="section copyright"><dt>Copyright</dt><dd>2018 Jun Pataleta </dd></dl>
 <dl class="section user"><dt>License</dt><dd><a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a> GNU GPL v3 or later </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac124395d10c354340f02722ab1a99604" name="ac124395d10c354340f02722ab1a99604"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac124395d10c354340f02722ab1a99604">&#9670;&#160;</a></span>approve_data_request()</h2>
+<a id="aef81e3eda68e2af79a8c30ed9fd81246" name="aef81e3eda68e2af79a8c30ed9fd81246"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef81e3eda68e2af79a8c30ed9fd81246">&#9670;&#160;</a></span>add_request_contexts_with_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static tool_dataprivacy\api::add_request_contexts_with_status </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dd/dfc/classcore__privacy_1_1local_1_1request_1_1contextlist__collection.html">contextlist_collection</a>&#160;</td>
+          <td class="paramname"><em>$clcollection</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$requestid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds the contexts from the contextlist_collection to the request with the status provided. </p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">contextlist_collection</td><td class="paramname">$clcollection</td><td>a collection of contextlists for all components. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$requestid</td><td>the id of the request. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$status</td><td>the status to set the contexts to. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0657e47bdddaa9f430caf850607baac2" name="a0657e47bdddaa9f430caf850607baac2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0657e47bdddaa9f430caf850607baac2">&#9670;&#160;</a></span>approve_contexts_belonging_to_request()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static tool_dataprivacy\api::approve_contexts_belonging_to_request </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$requestid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$coursecontextids</em> = <code>[]</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Only approve the contexts which are children of the provided course contexts. </p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$requestid</td><td>Request identifier </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$coursecontextids</td><td>List of course context identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../d2/d42/classdml__transaction__exception.html">dml_transaction_exception</a></td><td></td></tr>
+    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td></td></tr>
+    <tr><td class="paramname"><a class="el" href="../../d5/d5c/classdml__exception.html">dml_exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abe069360aabe6e0b13724158e30fb6ad" name="abe069360aabe6e0b13724158e30fb6ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe069360aabe6e0b13724158e30fb6ad">&#9670;&#160;</a></span>approve_data_request()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -299,8 +425,18 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>DATAREQUEST_TYPE_EXP
           <td class="memname">static tool_dataprivacy\api::approve_data_request </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$requestid</em></td><td>)</td>
+          <td class="paramname"><em>$requestid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$filtercoursecontexts</em> = <code>[]</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -314,6 +450,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>DATAREQUEST_TYPE_EXP
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$requestid</td><td>The request identifier </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$filtercoursecontexts</td><td>Apply to export request, only approve contexts belong to these courses. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1273,6 +1410,55 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>DATAREQUEST_TYPE_EXP
 
 </div>
 </div>
+<a id="adc79862dbd766038ebea079caf209c09" name="adc79862dbd766038ebea079caf209c09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc79862dbd766038ebea079caf209c09">&#9670;&#160;</a></span>get_approved_contextlist_collection_for_request()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static tool_dataprivacy\api::get_approved_contextlist_collection_for_request </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/dd1/classtool__dataprivacy_1_1data__request.html">data_request</a>&#160;</td>
+          <td class="paramname"><em>$request</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Finds all request contextlists having at least on approved context, and returns them as in a contextlist_collection. </p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">data_request</td><td class="paramname">$request</td><td>the data request with which the contextlists are associated. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">contextlist_collection</td><td>the collection of approved_contextlist objects. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td></td></tr>
+    <tr><td class="paramname"><a class="el" href="../../d5/d5c/classdml__exception.html">dml_exception</a></td><td></td></tr>
+    <tr><td class="paramname"><a class="el" href="../../d6/da8/classmoodle__exception.html" title="Base Moodle Exception class.">moodle_exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a360d89d801560355969f20572b796780" name="a360d89d801560355969f20572b796780"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a360d89d801560355969f20572b796780">&#9670;&#160;</a></span>get_assigned_privacy_officer_roles()</h2>
 
@@ -1340,6 +1526,54 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>DATAREQUEST_TYPE_EXP
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">tool_dataprivacy::category[]</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a807e3156e494b002bfb11a5d49f1b520" name="a807e3156e494b002bfb11a5d49f1b520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a807e3156e494b002bfb11a5d49f1b520">&#9670;&#160;</a></span>get_course_contexts_for_view_filter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static tool_dataprivacy\api::get_course_contexts_for_view_filter </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$requestid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get list of course context for user to filter. </p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$requestid</td><td>Request identifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../d5/d5c/classdml__exception.html">dml_exception</a></td><td></td></tr>
+    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2529,6 +2763,59 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>DATAREQUEST_TYPE_EXP
 
 </div>
 </div>
+<a id="a4a4b13343f53c5408487771a002a5e60" name="a4a4b13343f53c5408487771a002a5e60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a4b13343f53c5408487771a002a5e60">&#9670;&#160;</a></span>update_request_contexts_with_status()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static tool_dataprivacy\api::update_request_contexts_with_status </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$requestid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$status</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the status of all contexts associated with the request. </p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$requestid</td><td>the requestid to which the contexts belong. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$status</td><td>the status to set to. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../d5/d5c/classdml__exception.html">dml_exception</a></td><td>if the requestid is invalid. </td></tr>
+    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td>if the status is invalid. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a97069f6384aba842bb616d2cab57511f" name="a97069f6384aba842bb616d2cab57511f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a97069f6384aba842bb616d2cab57511f">&#9670;&#160;</a></span>update_request_status()</h2>
 
@@ -2625,7 +2912,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>DATAREQUEST_TYPE_EXP
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 25 2023 03:48:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 2 2023 03:40:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230623) (3cd84747cb0)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230629) (8dbb6183ff4)</div>
   </td>
  </tr>
  </tbody>
@@ -77,12 +77,16 @@ Inheritance diagram for core_external\external_single_structure:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0265d50d1d6918d5842307c09be9555a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d02/classcore__external_1_1external__single__structure.html#a0265d50d1d6918d5842307c09be9555a">__construct</a> (array $keys, $desc='', $required=<a class="el" href="../../d0/de1/group__core.html#ga510123bada780ab49c0cce819b1a74b5">VALUE_REQUIRED</a>, $default=null)</td></tr>
-<tr class="memdesc:a0265d50d1d6918d5842307c09be9555a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
-<tr class="separator:a0265d50d1d6918d5842307c09be9555a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08ea55725f5dd5e141b02efed990c947"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d02/classcore__external_1_1external__single__structure.html#a08ea55725f5dd5e141b02efed990c947">__construct</a> (array $keys, $desc='', $required=<a class="el" href="../../d0/de1/group__core.html#ga510123bada780ab49c0cce819b1a74b5">VALUE_REQUIRED</a>, $default=null, $allownull=<a class="el" href="../../d0/de1/group__core.html#ga4180c4f16172fd98b2735875352991aa">NULL_NOT_ALLOWED</a>)</td></tr>
+<tr class="memdesc:a08ea55725f5dd5e141b02efed990c947"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
+<tr class="separator:a08ea55725f5dd5e141b02efed990c947"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a48425dfdfe253ba6423fd53519f6e5cd"><td class="memItemLeft" align="right" valign="top"><a id="a48425dfdfe253ba6423fd53519f6e5cd" name="a48425dfdfe253ba6423fd53519f6e5cd"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>$allownull</b></td></tr>
+<tr class="memdesc:a48425dfdfe253ba6423fd53519f6e5cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow null values. <br /></td></tr>
+<tr class="separator:a48425dfdfe253ba6423fd53519f6e5cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada860ab9de5bbc13f0192a44f280774f"><td class="memItemLeft" align="right" valign="top"><a id="ada860ab9de5bbc13f0192a44f280774f" name="ada860ab9de5bbc13f0192a44f280774f"></a>
 mixed&#160;</td><td class="memItemRight" valign="bottom"><b>$default</b></td></tr>
 <tr class="memdesc:ada860ab9de5bbc13f0192a44f280774f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default value. <br /></td></tr>
@@ -101,8 +105,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$required</b></td></t
 <tr class="separator:ab51c6a25e23914f7141e72eb34bf0972"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0265d50d1d6918d5842307c09be9555a" name="a0265d50d1d6918d5842307c09be9555a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0265d50d1d6918d5842307c09be9555a">&#9670;&#160;</a></span>__construct()</h2>
+<a id="a08ea55725f5dd5e141b02efed990c947" name="a08ea55725f5dd5e141b02efed990c947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08ea55725f5dd5e141b02efed990c947">&#9670;&#160;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -129,7 +133,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$required</b></td></t
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$default</em> = <code>null</code>&#160;</td>
+          <td class="paramname"><em>$default</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$allownull</em> = <code><a class="el" href="../../d0/de1/group__core.html#ga4180c4f16172fd98b2735875352991aa">NULL_NOT_ALLOWED</a></code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -146,11 +156,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$required</b></td></t
     <tr><td class="paramtype">string</td><td class="paramname">$desc</td><td></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$required</td><td></td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$default</td><td></td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$allownull</td><td></td></tr>
   </table>
   </dd>
 </dl>
-
-<p>Reimplemented in <a class="el" href="../../d7/ddb/classcore__external_1_1external__function__parameters.html#a858a8f88cca650dbef706a6218d3c8f5">core_external\external_function_parameters</a>.</p>
 
 </div>
 </div>
@@ -160,7 +169,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$required</b></td></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 25 2023 03:47:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 2 2023 03:39:44 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

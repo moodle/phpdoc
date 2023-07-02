@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230623) (3cd84747cb0)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230629) (8dbb6183ff4)</div>
   </td>
  </tr>
  </tbody>
@@ -295,9 +295,9 @@ string const&#160;</td><td class="memItemRight" valign="bottom"><b>TTL_SUFFIX</b
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a7c44cad3f2d835ec34d5bab16fb0993a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dea/classcachestore__redis.html#a7c44cad3f2d835ec34d5bab16fb0993a">new_redis</a> ($<a class="el" href="../../dc/d71/group___imap___client.html#gaa7cf0dd2417970c0d8ade087cb1dc7f8">server</a>, $prefix='', $password='')</td></tr>
-<tr class="memdesc:a7c44cad3f2d835ec34d5bab16fb0993a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="../../d7/d0a/class_redis.html" title="Caches data to redis.">Redis</a> instance and connect to the server.  <br /></td></tr>
-<tr class="separator:a7c44cad3f2d835ec34d5bab16fb0993a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb86b0a11f6deb84cb1ca4391ad0f839"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dea/classcachestore__redis.html#abb86b0a11f6deb84cb1ca4391ad0f839">new_redis</a> (array $configuration)</td></tr>
+<tr class="memdesc:abb86b0a11f6deb84cb1ca4391ad0f839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="../../d7/d0a/class_redis.html" title="Caches data to redis.">Redis</a> instance and connect to the server.  <br /></td></tr>
+<tr class="separator:abb86b0a11f6deb84cb1ca4391ad0f839"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bccd8689a4993fde577cfbf25281afd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dea/classcachestore__redis.html#a5bccd8689a4993fde577cfbf25281afd">ping</a> (<a class="el" href="../../d7/d0a/class_redis.html">Redis</a> $redis)</td></tr>
 <tr class="memdesc:a5bccd8689a4993fde577cfbf25281afd"><td class="mdescLeft">&#160;</td><td class="mdescRight">See if we can ping <a class="el" href="../../d7/d0a/class_redis.html" title="Caches data to redis.">Redis</a> server.  <br /></td></tr>
 <tr class="separator:a5bccd8689a4993fde577cfbf25281afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1677,8 +1677,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$serializer</b> = Redi
 
 </div>
 </div>
-<a id="a7c44cad3f2d835ec34d5bab16fb0993a" name="a7c44cad3f2d835ec34d5bab16fb0993a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c44cad3f2d835ec34d5bab16fb0993a">&#9670;&#160;</a></span>new_redis()</h2>
+<a id="abb86b0a11f6deb84cb1ca4391ad0f839" name="abb86b0a11f6deb84cb1ca4391ad0f839"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb86b0a11f6deb84cb1ca4391ad0f839">&#9670;&#160;</a></span>new_redis()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1689,25 +1689,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$serializer</b> = Redi
         <tr>
           <td class="memname">cachestore_redis::new_redis </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$server</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$configuration</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$prefix</em> = <code>''</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$password</em> = <code>''</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -1720,9 +1704,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$serializer</b> = Redi
 <p>Create a new <a class="el" href="../../d7/d0a/class_redis.html" title="Caches data to redis.">Redis</a> instance and connect to the server. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$server</td><td>The server connection string </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$prefix</td><td>The key prefix </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$password</td><td>The server connection password </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$configuration</td><td>The server configuration </td></tr>
   </table>
   </dd>
 </dl>
@@ -2369,7 +2351,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$serializer</b> = Redi
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 25 2023 03:45:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 2 2023 03:37:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>
