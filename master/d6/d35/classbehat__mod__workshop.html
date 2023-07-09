@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230629) (8dbb6183ff4)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230707) (ef93325f271)</div>
   </td>
  </tr>
  </tbody>
@@ -171,7 +171,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Adds or edits a student workshop submission. </p>
-<p>@When /^I add a submission in workshop "(?P&lt;workshop_name_string&gt;(?:[^"]|::")*)" as:"$/ </p><dl class="params"><dt>Parameters</dt><dd>
+<p>@When /^I add a submission in workshop "(?P&lt;workshop_name_string&gt;(?:[^"]|::")*)" as:$/ @When /^I add a submission in workshop "(?P&lt;workshop_name_string&gt;(?:[^"]|::")*)" as:"$/ </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$workshopname</td><td></td></tr>
     <tr><td class="paramtype">TableNode</td><td class="paramname">$table</td><td>data to fill the submission form with, must contain 'Title' </td></tr>
@@ -214,7 +214,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Peer-assesses a workshop submission. </p>
-<p>@When /^I assess submission "(?P&lt;submission_string&gt;(?:[^"]|::")*)" in workshop "(?P&lt;workshop_name_string&gt;(?:[^"]|")*)" as:"$/ </p><dl class="params"><dt>Parameters</dt><dd>
+<p>@When /^I assess submission "(?P&lt;submission_string&gt;(?:[^"]|::")*)" in workshop "(?P&lt;workshop_name_string&gt;(?:[^"]|")*)" as:$/
+@When /^I assess submission "(?P&lt;submission_string&gt;(?:[^"]|::")*)" in workshop "(?P&lt;workshop_name_string&gt;(?:[^"]|\")*)" as:"$/ </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$submission</td><td></td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$workshopname</td><td></td></tr>
@@ -289,7 +290,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets the workshop assessment form. </p>
-<p>@When /^I edit assessment form in workshop "(?P&lt;workshop_name_string&gt;(?:[^"]|::")*)" as:"$/ </p><dl class="params"><dt>Parameters</dt><dd>
+<p>@When /^I edit assessment form in workshop "(?P&lt;workshop_name_string&gt;(?:[^"]|::")*)" as:$/ @When /^I edit assessment form in workshop "(?P&lt;workshop_name_string&gt;(?:[^"]|::")*)" as:"$/ </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$workshopname</td><td></td></tr>
     <tr><td class="paramtype">TableNode</td><td class="paramname">$table</td><td>data to fill the submission form with, must contain 'Title' </td></tr>
@@ -415,7 +416,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 2 2023 03:37:37 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 9 2023 03:40:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

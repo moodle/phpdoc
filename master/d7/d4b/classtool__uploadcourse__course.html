@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230629) (8dbb6183ff4)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230707) (ef93325f271)</div>
   </td>
  </tr>
  </tbody>
@@ -165,9 +165,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ad145b0d6096f85314e2c5cf62315a43b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4b/classtool__uploadcourse__course.html#ad145b0d6096f85314e2c5cf62315a43b">validate_enrolment_data</a> (int $courseid, array $enrolmentdata)</td></tr>
 <tr class="memdesc:ad145b0d6096f85314e2c5cf62315a43b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate passed enrolment data against an existing course.  <br /></td></tr>
 <tr class="separator:ad145b0d6096f85314e2c5cf62315a43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d3e5dd7b37aac21b5bb1d8e3c3eaa5e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4b/classtool__uploadcourse__course.html#a7d3e5dd7b37aac21b5bb1d8e3c3eaa5e">validate_role_context</a> (int $courseid, string $role)</td></tr>
-<tr class="memdesc:a7d3e5dd7b37aac21b5bb1d8e3c3eaa5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if role is allowed in course context.  <br /></td></tr>
-<tr class="separator:a7d3e5dd7b37aac21b5bb1d8e3c3eaa5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f1906e31834f0d27dcec01aa3806a9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4b/classtool__uploadcourse__course.html#a5f1906e31834f0d27dcec01aa3806a9a">validate_role_context</a> (int $courseid, int $roleid)</td></tr>
+<tr class="memdesc:a5f1906e31834f0d27dcec01aa3806a9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if role is allowed in course context.  <br /></td></tr>
+<tr class="separator:a5f1906e31834f0d27dcec01aa3806a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0deaa92bc3e59dbbb62318681cd10068"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4b/classtool__uploadcourse__course.html#a0deaa92bc3e59dbbb62318681cd10068">validate_role_context_level</a> (int $roleid)</td></tr>
 <tr class="memdesc:a0deaa92bc3e59dbbb62318681cd10068"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if role is allowed at this context level.  <br /></td></tr>
 <tr class="separator:a0deaa92bc3e59dbbb62318681cd10068"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1148,8 +1148,8 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$mandatoryfie
 
 </div>
 </div>
-<a id="a7d3e5dd7b37aac21b5bb1d8e3c3eaa5e" name="a7d3e5dd7b37aac21b5bb1d8e3c3eaa5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d3e5dd7b37aac21b5bb1d8e3c3eaa5e">&#9670;&#160;</a></span>validate_role_context()</h2>
+<a id="a5f1906e31834f0d27dcec01aa3806a9a" name="a5f1906e31834f0d27dcec01aa3806a9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f1906e31834f0d27dcec01aa3806a9a">&#9670;&#160;</a></span>validate_role_context()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1166,8 +1166,8 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$mandatoryfie
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$role</em>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$roleid</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1186,7 +1186,7 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$mandatoryfie
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$courseid</td><td>course context. </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$role</td><td>Role. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$roleid</td><td>Role ID. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1375,7 +1375,7 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$mandatoryfie
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 2 2023 03:39:05 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 9 2023 03:41:56 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

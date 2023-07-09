@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230629) (8dbb6183ff4)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230707) (ef93325f271)</div>
   </td>
  </tr>
  </tbody>
@@ -68,9 +68,9 @@ Inheritance diagram for core_backup_external:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a3d77b098816997a3dcbe3ee56029d242"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d68/classcore__backup__external.html#a3d77b098816997a3dcbe3ee56029d242">get_async_backup_links_backup</a> ($filename, $contextid)</td></tr>
-<tr class="memdesc:a3d77b098816997a3dcbe3ee56029d242"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the data to be used when generating the table row for an asynchronous backup, the table row updates via ajax when backup is complete.  <br /></td></tr>
-<tr class="separator:a3d77b098816997a3dcbe3ee56029d242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abde30064352828e22d59c776a302d60a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d68/classcore__backup__external.html#abde30064352828e22d59c776a302d60a">get_async_backup_links_backup</a> ($filename, $contextid, $backupid)</td></tr>
+<tr class="memdesc:abde30064352828e22d59c776a302d60a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the data to be used when generating the table row for an asynchronous backup, the table row updates via ajax when backup is complete.  <br /></td></tr>
+<tr class="separator:abde30064352828e22d59c776a302d60a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc1961fd99e691747081b78a599a26e2"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d68/classcore__backup__external.html#afc1961fd99e691747081b78a599a26e2">get_async_backup_links_backup_parameters</a> ()</td></tr>
 <tr class="memdesc:afc1961fd99e691747081b78a599a26e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns description of method parameters.  <br /></td></tr>
 <tr class="separator:afc1961fd99e691747081b78a599a26e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -115,8 +115,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a6b86c85f178f412345eabda674ac8262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3d77b098816997a3dcbe3ee56029d242" name="a3d77b098816997a3dcbe3ee56029d242"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d77b098816997a3dcbe3ee56029d242">&#9670;&#160;</a></span>get_async_backup_links_backup()</h2>
+<a id="abde30064352828e22d59c776a302d60a" name="abde30064352828e22d59c776a302d60a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abde30064352828e22d59c776a302d60a">&#9670;&#160;</a></span>get_async_backup_links_backup()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -134,7 +134,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$contextid</em>&#160;</td>
+          <td class="paramname"><em>$contextid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$backupid</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -154,6 +160,7 @@ Static Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$filename</td><td>The file name of the backup file. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$contextid</td><td>The context the backup relates to. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$backupid</td><td>The backup ID to get the backup settings. </td></tr>
   </table>
   </dd>
 </dl>
@@ -692,7 +699,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 2 2023 03:37:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 9 2023 03:40:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

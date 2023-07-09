@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230629) (8dbb6183ff4)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230707) (ef93325f271)</div>
   </td>
  </tr>
  </tbody>
@@ -2302,7 +2302,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>Returns the localised database description Note: can be used before <a class="el" href="../../d3/d6e/classmoodle__database.html#a05828fac5b359ddbb31e3ed4e40a8dc0" title="Connects to the database.">connect()</a> </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000580">Deprecated:</a></b></dt><dd>since 2.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000586">Deprecated:</a></b></dt><dd>since 2.6 </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td></td></tr>
@@ -3354,7 +3354,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000092">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-30407" class="el">MDL-30407</a> MUST_EXIST option should not throw a <a class="el" href="../../d5/d5c/classdml__exception.html">dml_exception</a>, it should throw a different exception as it's a requested check. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000098">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-30407" class="el">MDL-30407</a> MUST_EXIST option should not throw a <a class="el" href="../../d5/d5c/classdml__exception.html">dml_exception</a>, it should throw a different exception as it's a requested check. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">mixed</td><td>a fieldset object containing the first matching record, false or exception if error not found depending on mode </td></tr>
@@ -6050,6 +6050,13 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
   </table>
   </dd>
 </dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../d6/da8/classmoodle__exception.html" title="Base Moodle Exception class.">moodle_exception</a></td><td></td></tr>
+    <tr><td class="paramname"><a class="el" href="../../d5/d8d/classdml__connection__exception.html">dml_connection_exception</a></td><td>if error </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -6794,7 +6801,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>Enable/disable detailed sql logging. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000581">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.9 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000587">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.9 </dd></dl>
 
 </div>
 </div>
@@ -7095,7 +7102,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>Returns the SQL to be used in order to an UNSIGNED INTEGER column to SIGNED. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000584">Deprecated:</a></b></dt><dd>since 2.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000590">Deprecated:</a></b></dt><dd>since 2.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$fieldname</td><td>The name of the field to be cast </td></tr>
@@ -7476,7 +7483,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>This used to return empty string replacement character. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000583">Deprecated:</a></b></dt><dd>use bound parameter with empty string instead</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000589">Deprecated:</a></b></dt><dd>use bound parameter with empty string instead</dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>An empty string. </td></tr>
@@ -7597,7 +7604,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>Returns the proper SQL (for the dbms in use) to concatenate $firstname and $lastname. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000093">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-31233" class="el">MDL-31233</a> This may not be needed here.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000099">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-31233" class="el">MDL-31233</a> This may not be needed here.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$first</td><td>User's first name (default:'firstname'). </td></tr>
@@ -9070,7 +9077,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 2 2023 03:38:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 9 2023 03:41:33 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

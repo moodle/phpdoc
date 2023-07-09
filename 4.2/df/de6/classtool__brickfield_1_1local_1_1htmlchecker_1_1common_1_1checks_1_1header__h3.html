@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2.1+ (Build: 20230629) (b509652427a)</div>
+   <div id="projectbrief">Moodle 4.2.1+ (Build: 20230707) (2ef6a3b9b9e)</div>
   </td>
  </tr>
  </tbody>
@@ -61,6 +61,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="../../d2/d92/classtool__brickfield_1_1local_1_1htmlchecker_1_1common_1_1checks_1_1header__h3-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">tool_brickfield\local\htmlchecker\common\checks\header_h3 Class Reference<div class="ingroups"><a class="el" href="../../d1/dd3/group__tool__brickfield.html">tool_brickfield</a></div></div></div>
 </div><!--header-->
@@ -130,6 +131,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae1367e8781d86dc651875c3497311b13"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d84/classtool__brickfield_1_1local_1_1htmlchecker_1_1common_1_1brickfield__accessibility__test.html#ae1367e8781d86dc651875c3497311b13">get_all_invalidlinkphrases</a> ()</td></tr>
 <tr class="memdesc:ae1367e8781d86dc651875c3497311b13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array of the invalidlinkphrases for all enabled language packs.  <br /></td></tr>
 <tr class="separator:ae1367e8781d86dc651875c3497311b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fc2baf3abd02d5cd61116db4a9e5b24"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d84/classtool__brickfield_1_1local_1_1htmlchecker_1_1common_1_1brickfield__accessibility__test.html#a9fc2baf3abd02d5cd61116db4a9e5b24">get_all_newwindowphrases</a> ()</td></tr>
+<tr class="memdesc:a9fc2baf3abd02d5cd61116db4a9e5b24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array of the newwindowphrases for all enabled language packs.  <br /></td></tr>
+<tr class="separator:a9fc2baf3abd02d5cd61116db4a9e5b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab43c2f9048e93273181b3f908ed9f4d6"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d84/classtool__brickfield_1_1local_1_1htmlchecker_1_1common_1_1brickfield__accessibility__test.html#ab43c2f9048e93273181b3f908ed9f4d6">is_text_readable</a> (string $text)</td></tr>
+<tr class="memdesc:ab43c2f9048e93273181b3f908ed9f4d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assesses whether a string contains any readable text, which is text that contains any characters other than whitespace characters.  <br /></td></tr>
+<tr class="separator:ab43c2f9048e93273181b3f908ed9f4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -185,6 +192,12 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$strings</b> = array
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$tag</b> = 'h3'</td></tr>
 <tr class="memdesc:a035d6aa5c6ed2e1150715c88c11a88f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">The tag this test will fire on. <br /></td></tr>
 <tr class="separator:a035d6aa5c6ed2e1150715c88c11a88f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:aeb149df961e1acfd5b339498e60dfdb3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d84/classtool__brickfield_1_1local_1_1htmlchecker_1_1common_1_1brickfield__accessibility__test.html#aeb149df961e1acfd5b339498e60dfdb3">get_all_phrases</a> (string $stringname)</td></tr>
+<tr class="memdesc:aeb149df961e1acfd5b339498e60dfdb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array of the relevant phrases for all enabled language packs.  <br /></td></tr>
+<tr class="separator:aeb149df961e1acfd5b339498e60dfdb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="acc64ae1d1d9d0439b51610fcec03aa2a" name="acc64ae1d1d9d0439b51610fcec03aa2a"></a>
@@ -426,6 +439,79 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$tag</b> = 'h3'</td
 </div><div class="memdoc">
 
 <p>Returns an array of the invalidlinkphrases for all enabled language packs. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>of the invalidlinkphrases for all enabled language packs. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9fc2baf3abd02d5cd61116db4a9e5b24" name="a9fc2baf3abd02d5cd61116db4a9e5b24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fc2baf3abd02d5cd61116db4a9e5b24">&#9670;&#160;</a></span>get_all_newwindowphrases()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static tool_brickfield\local\htmlchecker\common\brickfield_accessibility_test::get_all_newwindowphrases </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an array of the newwindowphrases for all enabled language packs. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>of the newwindowphrases for all enabled language packs. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aeb149df961e1acfd5b339498e60dfdb3" name="aeb149df961e1acfd5b339498e60dfdb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb149df961e1acfd5b339498e60dfdb3">&#9670;&#160;</a></span>get_all_phrases()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static tool_brickfield\local\htmlchecker\common\brickfield_accessibility_test::get_all_phrases </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$stringname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an array of the relevant phrases for all enabled language packs. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$stringname</td><td>the language string identifier you want get the phrases for. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td>of the invalidlinkphrases for all enabled language packs. </td></tr>
@@ -795,6 +881,46 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$tag</b> = 'h3'</td
 
 </div>
 </div>
+<a id="ab43c2f9048e93273181b3f908ed9f4d6" name="ab43c2f9048e93273181b3f908ed9f4d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab43c2f9048e93273181b3f908ed9f4d6">&#9670;&#160;</a></span>is_text_readable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static tool_brickfield\local\htmlchecker\common\brickfield_accessibility_test::is_text_readable </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$text</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assesses whether a string contains any readable text, which is text that contains any characters other than whitespace characters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$text</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a047269626b6817906ee60efeac1a65d8" name="a047269626b6817906ee60efeac1a65d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a047269626b6817906ee60efeac1a65d8">&#9670;&#160;</a></span>property_is_equal()</h2>
 
@@ -906,7 +1032,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$tag</b> = 'h3'</td
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 2 2023 03:34:36 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 9 2023 03:37:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

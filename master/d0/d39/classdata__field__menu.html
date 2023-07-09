@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230629) (8dbb6183ff4)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230707) (ef93325f271)</div>
   </td>
  </tr>
  </tbody>
@@ -100,9 +100,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a935f7c5ea3ebe8042f2112f7eda09d57"><td class="memItemLeft" align="right" valign="top"><a id="a935f7c5ea3ebe8042f2112f7eda09d57" name="a935f7c5ea3ebe8042f2112f7eda09d57"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>display_search_field</b> ($content='')</td></tr>
 <tr class="separator:a935f7c5ea3ebe8042f2112f7eda09d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f35855e847fbb59f1613e0e990a5001"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/classdata__field__base.html#a9f35855e847fbb59f1613e0e990a5001">export_text_value</a> ($record)</td></tr>
-<tr class="memdesc:a9f35855e847fbb59f1613e0e990a5001"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per default, return the record's text value only from the "content" field.  <br /></td></tr>
-<tr class="separator:a9f35855e847fbb59f1613e0e990a5001"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b8319d6205bf8fa0c8539f9dcc7df2f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/classdata__field__base.html#a6b8319d6205bf8fa0c8539f9dcc7df2f">export_file_value</a> (stdClass $record)</td></tr>
+<tr class="memdesc:a6b8319d6205bf8fa0c8539f9dcc7df2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per default, does not return a file (just null).  <br /></td></tr>
+<tr class="separator:a6b8319d6205bf8fa0c8539f9dcc7df2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af919e07fe3ead1bf5a9ce998c04cb9ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/classdata__field__base.html#af919e07fe3ead1bf5a9ce998c04cb9ef">export_text_value</a> (stdClass $record)</td></tr>
+<tr class="memdesc:af919e07fe3ead1bf5a9ce998c04cb9ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per default, return the record's text value only from the "content" field.  <br /></td></tr>
+<tr class="separator:af919e07fe3ead1bf5a9ce998c04cb9ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15a892617d42134900185dfa6b4959b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/classdata__field__base.html#a15a892617d42134900185dfa6b4959b7">file_export_supported</a> ()</td></tr>
+<tr class="memdesc:a15a892617d42134900185dfa6b4959b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per default, it is assumed that fields do not support file exporting.  <br /></td></tr>
+<tr class="separator:a15a892617d42134900185dfa6b4959b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8eec1016cd0d2946b7446c0e43d2c2a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/classdata__field__base.html#a8eec1016cd0d2946b7446c0e43d2c2a8">file_import_supported</a> ()</td></tr>
+<tr class="memdesc:a8eec1016cd0d2946b7446c0e43d2c2a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Per default, a field does not support the import of files.  <br /></td></tr>
+<tr class="separator:a8eec1016cd0d2946b7446c0e43d2c2a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a814eb5559a82a278b8e4578ead124e17"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/classdata__field__base.html#a814eb5559a82a278b8e4578ead124e17">file_ok</a> ($relativepath)</td></tr>
 <tr class="separator:a814eb5559a82a278b8e4578ead124e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae252fad57254c3c319fad6c8ece1e418"><td class="memItemLeft" align="right" valign="top"><a id="ae252fad57254c3c319fad6c8ece1e418" name="ae252fad57254c3c319fad6c8ece1e418"></a>
@@ -129,6 +138,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7793183b666de26bb44247ce9edde5d6"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/classdata__field__base.html#a7793183b666de26bb44247ce9edde5d6">image</a> ()</td></tr>
 <tr class="memdesc:a7793183b666de26bb44247ce9edde5d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the respective type icon.  <br /></td></tr>
 <tr class="separator:a7793183b666de26bb44247ce9edde5d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af16d7879919825aec4979cf9dd4c7d86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/classdata__field__base.html#af16d7879919825aec4979cf9dd4c7d86">import_file_value</a> (int $contentid, string $filecontent, string $filename)</td></tr>
+<tr class="memdesc:af16d7879919825aec4979cf9dd4c7d86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <a class="el" href="../../d0/d00/classstored__file.html">stored_file</a> object for exporting a file of a given record.  <br /></td></tr>
+<tr class="separator:af16d7879919825aec4979cf9dd4c7d86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13bd9fc5e755cc98b121eb85eebe7ae2"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d88/classdata__field__base.html#a13bd9fc5e755cc98b121eb85eebe7ae2">insert_field</a> ()</td></tr>
 <tr class="memdesc:a13bd9fc5e755cc98b121eb85eebe7ae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a new field in the database We assume the field object is already defined as $this-&gt;field.  <br /></td></tr>
 <tr class="separator:a13bd9fc5e755cc98b121eb85eebe7ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -517,8 +529,51 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$priority</b> =
 
 </div>
 </div>
-<a id="a9f35855e847fbb59f1613e0e990a5001" name="a9f35855e847fbb59f1613e0e990a5001"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f35855e847fbb59f1613e0e990a5001">&#9670;&#160;</a></span>export_text_value()</h2>
+<a id="a6b8319d6205bf8fa0c8539f9dcc7df2f" name="a6b8319d6205bf8fa0c8539f9dcc7df2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b8319d6205bf8fa0c8539f9dcc7df2f">&#9670;&#160;</a></span>export_file_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">data_field_base::export_file_value </td>
+          <td>(</td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$record</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Per default, does not return a file (just null). </p>
+<p>Override this in fields class, if you want your field to export a file content. In case you are exporting a file value, <a class="el" href="../../d7/d88/classdata__field__base.html#af919e07fe3ead1bf5a9ce998c04cb9ef" title="Per default, return the record&#39;s text value only from the &quot;content&quot; field.">export_text_value()</a> should return the corresponding file name.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$record</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">null|string</td><td>the file content as string or null, if no file content is being provided </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../d3/d21/classdata__field__file.html#a3846d22792fd7f6aa575f9eca9615d81">data_field_file</a>, and <a class="el" href="../../de/d6a/classdata__field__picture.html#a4b913a698e1dc8a877155dfc0a79a42e">data_field_picture</a>.</p>
+
+</div>
+</div>
+<a id="af919e07fe3ead1bf5a9ce998c04cb9ef" name="af919e07fe3ead1bf5a9ce998c04cb9ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af919e07fe3ead1bf5a9ce998c04cb9ef">&#9670;&#160;</a></span>export_text_value()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -529,7 +584,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$priority</b> =
         <tr>
           <td class="memname">data_field_base::export_text_value </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">stdClass&#160;</td>
           <td class="paramname"><em>$record</em></td><td>)</td>
           <td></td>
         </tr>
@@ -542,10 +597,10 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$priority</b> =
 </div><div class="memdoc">
 
 <p>Per default, return the record's text value only from the "content" field. </p>
-<p>Override this in fields class if necesarry.</p>
+<p>Override this in fields class if necessary.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$record</td><td></td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$record</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -556,7 +611,79 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$priority</b> =
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../db/daf/classdata__field__latlong.html#ae8b394c9dfbda39053751a7a8667f0aa">data_field_latlong</a>, and <a class="el" href="../../d1/d9b/classdata__field__url.html#aa56f4114a8b3e857bcfa5c4e36029dc2">data_field_url</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d3/d21/classdata__field__file.html#a4e144f683a1577c347ac72cd2b263b2b">data_field_file</a>, and <a class="el" href="../../de/d6a/classdata__field__picture.html#ab807d22840d7e71f555f46d488eb6999">data_field_picture</a>.</p>
+
+</div>
+</div>
+<a id="a15a892617d42134900185dfa6b4959b7" name="a15a892617d42134900185dfa6b4959b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15a892617d42134900185dfa6b4959b7">&#9670;&#160;</a></span>file_export_supported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">data_field_base::file_export_supported </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Per default, it is assumed that fields do not support file exporting. </p>
+<p>Override this (return true) on fields supporting file export. You will also have to implement <a class="el" href="../../d7/d88/classdata__field__base.html#a6b8319d6205bf8fa0c8539f9dcc7df2f" title="Per default, does not return a file (just null).">export_file_value()</a>.</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>true if field will export a file, false otherwise </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../d3/d21/classdata__field__file.html#ae8b3080a21a2f665fbd7466f1968e79f">data_field_file</a>, and <a class="el" href="../../de/d6a/classdata__field__picture.html#a9d870f336f80a1a4f4d5eb4ae5aaf1b1">data_field_picture</a>.</p>
+
+</div>
+</div>
+<a id="a8eec1016cd0d2946b7446c0e43d2c2a8" name="a8eec1016cd0d2946b7446c0e43d2c2a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8eec1016cd0d2946b7446c0e43d2c2a8">&#9670;&#160;</a></span>file_import_supported()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">data_field_base::file_import_supported </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Per default, a field does not support the import of files. </p>
+<p>A field type can overwrite this function and return true. In this case it also has to implement the function <a class="el" href="../../d7/d88/classdata__field__base.html#af16d7879919825aec4979cf9dd4c7d86" title="Returns a stored_file object for exporting a file of a given record.">import_file_value()</a>.</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">false</td><td>means file imports are not supported </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../d3/d21/classdata__field__file.html#a82c31d14389033c2831657f255c203a0">data_field_file</a>, and <a class="el" href="../../de/d6a/classdata__field__picture.html#abe3e9ab8bcfbfd8e61db229ad7e91770">data_field_picture</a>.</p>
 
 </div>
 </div>
@@ -955,6 +1082,60 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$priority</b> =
 
 </div>
 </div>
+<a id="af16d7879919825aec4979cf9dd4c7d86" name="af16d7879919825aec4979cf9dd4c7d86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af16d7879919825aec4979cf9dd4c7d86">&#9670;&#160;</a></span>import_file_value()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">data_field_base::import_file_value </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$contentid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$filecontent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a <a class="el" href="../../d0/d00/classstored__file.html">stored_file</a> object for exporting a file of a given record. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$contentid</td><td>content id </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$filecontent</td><td>the content of the file as string </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$filename</td><td>the filename the file should have </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../d3/d21/classdata__field__file.html#a98b89e9b46ff90cd2a1dd35a8510a92a">data_field_file</a>, and <a class="el" href="../../de/d6a/classdata__field__picture.html#ad402333361ca2afdff387ec8d88e4eb8">data_field_picture</a>.</p>
+
+</div>
+</div>
 <a id="a13bd9fc5e755cc98b121eb85eebe7ae2" name="a13bd9fc5e755cc98b121eb85eebe7ae2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a13bd9fc5e755cc98b121eb85eebe7ae2">&#9670;&#160;</a></span>insert_field()</h2>
 
@@ -1189,8 +1370,6 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$priority</b> =
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d3/d21/classdata__field__file.html#a23247b00cee3a56c1f6299432d2001d3">data_field_file</a>, and <a class="el" href="../../de/d6a/classdata__field__picture.html#a3f060ed7b5f1db909846506cb5971704">data_field_picture</a>.</p>
-
 </div>
 </div>
 <a id="ad71b9ab3d54b2e9838341d64221af51b" name="ad71b9ab3d54b2e9838341d64221af51b"></a>
@@ -1338,7 +1517,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$priority</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 2 2023 03:37:44 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 9 2023 03:40:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

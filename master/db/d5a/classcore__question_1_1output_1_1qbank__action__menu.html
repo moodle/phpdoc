@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230629) (8dbb6183ff4)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230707) (ef93325f271)</div>
   </td>
  </tr>
  </tbody>
@@ -59,6 +59,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../df/da7/classcore__question_1_1output_1_1qbank__action__menu-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">core_question\output\qbank_action_menu Class Reference<div class="ingroups"><a class="el" href="../../de/d37/group__core__question.html">core_question</a></div></div></div>
 </div><!--header-->
@@ -82,6 +83,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad76e004555abcaefaaa52a5493222279"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5a/classcore__question_1_1output_1_1qbank__action__menu.html#ad76e004555abcaefaaa52a5493222279">export_for_template</a> (<a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a> $output)</td></tr>
 <tr class="memdesc:ad76e004555abcaefaaa52a5493222279"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides the data for the template.  <br /></td></tr>
 <tr class="separator:ad76e004555abcaefaaa52a5493222279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7c98144cc716af026caf4ade3f20a2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5a/classcore__question_1_1output_1_1qbank__action__menu.html#ac7c98144cc716af026caf4ade3f20a2a">set_action_button</a> (<a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a> $url, string $label)</td></tr>
+<tr class="memdesc:ac7c98144cc716af026caf4ade3f20a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the properties of an additional action button specific to the current page.  <br /></td></tr>
+<tr class="separator:ac7c98144cc716af026caf4ade3f20a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a1c9010222c093af604badfde55086fe9"><td class="memItemLeft" align="right" valign="top"><a id="a1c9010222c093af604badfde55086fe9" name="a1c9010222c093af604badfde55086fe9"></a>
+string string&#160;</td><td class="memItemRight" valign="bottom"><b>$actionlabel</b> = null</td></tr>
+<tr class="memdesc:a1c9010222c093af604badfde55086fe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">$actionlabel Label for additional action button <br  />
+ <br /></td></tr>
+<tr class="separator:a1c9010222c093af604badfde55086fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afab3b69fbeaa4e9579491febe19695fc"><td class="memItemLeft" align="right" valign="top"><a id="afab3b69fbeaa4e9579491febe19695fc" name="afab3b69fbeaa4e9579491febe19695fc"></a>
+<a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a> <a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$actionurl</b> = null</td></tr>
+<tr class="memdesc:afab3b69fbeaa4e9579491febe19695fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">$actionurl URL for additional action button <br /></td></tr>
+<tr class="separator:afab3b69fbeaa4e9579491febe19695fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aca46920b9bfdbb8668fc321c342f1f78" name="aca46920b9bfdbb8668fc321c342f1f78"></a>
@@ -145,13 +161,56 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ac7c98144cc716af026caf4ade3f20a2a" name="ac7c98144cc716af026caf4ade3f20a2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7c98144cc716af026caf4ade3f20a2a">&#9670;&#160;</a></span>set_action_button()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_question\output\qbank_action_menu::set_action_button </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a>&#160;</td>
+          <td class="paramname"><em>$url</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$label</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the properties of an additional action button specific to the current page. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$url</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$label</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>question/classes/output/qbank_action_menu.php</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 2 2023 03:39:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 9 2023 03:42:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

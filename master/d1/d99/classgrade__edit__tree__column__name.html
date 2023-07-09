@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230629) (8dbb6183ff4)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230707) (ef93325f271)</div>
   </td>
  </tr>
  </tbody>
@@ -57,6 +57,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="../../d7/d2e/classgrade__edit__tree__column__name-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">grade_edit_tree_column_name Class Reference<div class="ingroups"><a class="el" href="../../da/d09/group__core__grades.html">core_grades</a></div></div></div>
 </div><!--header-->
@@ -121,6 +122,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ae83288e806c7fda88281e3cb6326d7dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d94/classhtml__table__cell.html">html_table_cell</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db6/classgrade__edit__tree__column.html#ae83288e806c7fda88281e3cb6326d7dd">$itemcell</a></td></tr>
 <tr class="memdesc:ae83288e806c7fda88281e3cb6326d7dd"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d6/d94/classhtml__table__cell.html">html_table_cell</a> object used as a template for item cells in all categories.  <br /></td></tr>
 <tr class="separator:ae83288e806c7fda88281e3cb6326d7dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:abb7eca9e5844bbb7f0a886ba9a08d089"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d99/classgrade__edit__tree__column__name.html#abb7eca9e5844bbb7f0a886ba9a08d089">get_checkbox_togglegroup</a> (<a class="el" href="../../d9/d8f/classgrade__category.html">grade_category</a> $category)</td></tr>
+<tr class="memdesc:abb7eca9e5844bbb7f0a886ba9a08d089"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a toggle group name for a bulk-action checkbox based on the given grade category.  <br /></td></tr>
+<tr class="separator:abb7eca9e5844bbb7f0a886ba9a08d089"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class <a class="el" href="../../d1/d99/classgrade__edit__tree__column__name.html" title="Class grade_edit_tree_column_name.">grade_edit_tree_column_name</a>. </p>
@@ -159,6 +166,46 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="../../de/db6/classgrade__edit__tree__column.html">grade_edit_tree_column</a>.</p>
+
+</div>
+</div>
+<a id="abb7eca9e5844bbb7f0a886ba9a08d089" name="abb7eca9e5844bbb7f0a886ba9a08d089"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb7eca9e5844bbb7f0a886ba9a08d089">&#9670;&#160;</a></span>get_checkbox_togglegroup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">grade_edit_tree_column_name::get_checkbox_togglegroup </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d8f/classgrade__category.html">grade_category</a>&#160;</td>
+          <td class="paramname"><em>$category</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generates a toggle group name for a bulk-action checkbox based on the given grade category. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d9/d8f/classgrade__category.html">grade_category</a></td><td class="paramname">$category</td><td>The grade category. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -293,7 +340,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 2 2023 03:38:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 9 2023 03:41:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

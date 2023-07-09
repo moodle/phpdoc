@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230629) (8dbb6183ff4)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230707) (ef93325f271)</div>
   </td>
  </tr>
  </tbody>
@@ -121,6 +121,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a44b4d73e3e74d9d36439bc15ab5b8315"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d84/classcore__courseformat_1_1output_1_1local_1_1content_1_1cm.html#a44b4d73e3e74d9d36439bc15ab5b8315">add_format_data</a> (stdClass &amp;$data, array $haspartials, <a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a> $output)</td></tr>
 <tr class="memdesc:a44b4d73e3e74d9d36439bc15ab5b8315"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add activity information to the data structure.  <br /></td></tr>
 <tr class="separator:a44b4d73e3e74d9d36439bc15ab5b8315"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa85120de924678f4861364f834de6126"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d84/classcore__courseformat_1_1output_1_1local_1_1content_1_1cm.html#aa85120de924678f4861364f834de6126">add_groupmode_data</a> (stdClass &amp;$data, <a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a> $output)</td></tr>
+<tr class="memdesc:aa85120de924678f4861364f834de6126"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add group mode information to the data structure.  <br /></td></tr>
+<tr class="separator:aa85120de924678f4861364f834de6126"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac546d5e5a2cb72cb89efe5eb85b3746d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d84/classcore__courseformat_1_1output_1_1local_1_1content_1_1cm.html#ac546d5e5a2cb72cb89efe5eb85b3746d">load_classes</a> ()</td></tr>
 <tr class="memdesc:ac546d5e5a2cb72cb89efe5eb85b3746d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the CSS classes for the activity name/content.  <br /></td></tr>
 <tr class="separator:ac546d5e5a2cb72cb89efe5eb85b3746d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -522,6 +525,57 @@ course_format&#160;</td><td class="memItemRight" valign="bottom"><b>$format</b><
 
 </div>
 </div>
+<a id="aa85120de924678f4861364f834de6126" name="aa85120de924678f4861364f834de6126"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa85120de924678f4861364f834de6126">&#9670;&#160;</a></span>add_groupmode_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\output\local\content\cm::add_groupmode_data </td>
+          <td>(</td>
+          <td class="paramtype">stdClass &amp;&#160;</td>
+          <td class="paramname"><em>$data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a>&#160;</td>
+          <td class="paramname"><em>$output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add group mode information to the data structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$data</td><td>the current cm data reference </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a></td><td class="paramname">$output</td><td>typically, the renderer that's calling this function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>the module has group mode information </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a3ea2e5f4eb0dd1e1521bfae99571dbec" name="a3ea2e5f4eb0dd1e1521bfae99571dbec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3ea2e5f4eb0dd1e1521bfae99571dbec">&#9670;&#160;</a></span>export_for_template()</h2>
 
@@ -706,7 +760,7 @@ course_format&#160;</td><td class="memItemRight" valign="bottom"><b>$format</b><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 2 2023 03:39:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 9 2023 03:42:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

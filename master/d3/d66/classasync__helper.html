@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230629) (8dbb6183ff4)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230707) (ef93325f271)</div>
   </td>
  </tr>
  </tbody>
@@ -76,9 +76,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a515874010967d49ca58cc640574eae2b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d66/classasync__helper.html#a515874010967d49ca58cc640574eae2b">get_async_backups</a> ($renderer, $instanceid)</td></tr>
-<tr class="memdesc:a515874010967d49ca58cc640574eae2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get markup for in progress async backups, to use in backup table UI.  <br /></td></tr>
-<tr class="separator:a515874010967d49ca58cc640574eae2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33edf305c0958128969844f607d9960f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d66/classasync__helper.html#a33edf305c0958128969844f607d9960f">get_async_backups</a> ($filearea, $instanceid)</td></tr>
+<tr class="memdesc:a33edf305c0958128969844f607d9960f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get markup for in progress async backups, to use in backup table UI.  <br /></td></tr>
+<tr class="separator:a33edf305c0958128969844f607d9960f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a052c9a2b45c3030972151d18c5e7d651"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d66/classasync__helper.html#a052c9a2b45c3030972151d18c5e7d651">get_async_restores</a> ($userid)</td></tr>
 <tr class="memdesc:a052c9a2b45c3030972151d18c5e7d651"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the current in progress async restores for a user.  <br /></td></tr>
 <tr class="separator:a052c9a2b45c3030972151d18c5e7d651"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -94,6 +94,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a5ce3d713a6e37eca9f40c200cb9fdba6"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d66/classasync__helper.html#a5ce3d713a6e37eca9f40c200cb9fdba6">get_restore_url</a> ($backupid)</td></tr>
 <tr class="memdesc:a5ce3d713a6e37eca9f40c200cb9fdba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the url of a restored backup item based on the backup ID.  <br /></td></tr>
 <tr class="separator:a5ce3d713a6e37eca9f40c200cb9fdba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad92db11319ce57430d3656a3a8b29fe0"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d66/classasync__helper.html#ad92db11319ce57430d3656a3a8b29fe0">get_userdata_backup_settings</a> (\<a class="el" href="../../d3/ddf/classbackup__controller.html">backup_controller</a> $backupcontroller)</td></tr>
+<tr class="memdesc:ad92db11319ce57430d3656a3a8b29fe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the user data settings for backups.  <br /></td></tr>
+<tr class="separator:ad92db11319ce57430d3656a3a8b29fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f79a1c1a0b71c76bdcd178bed699733"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d66/classasync__helper.html#a5f79a1c1a0b71c76bdcd178bed699733">is_async_enabled</a> ()</td></tr>
 <tr class="memdesc:a5f79a1c1a0b71c76bdcd178bed699733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if asynchronous backup and restore mode is enabled at system level.  <br /></td></tr>
 <tr class="separator:a5f79a1c1a0b71c76bdcd178bed699733"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,8 +166,8 @@ object&#160;</td><td class="memItemRight" valign="bottom"><b>$user</b></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a515874010967d49ca58cc640574eae2b" name="a515874010967d49ca58cc640574eae2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a515874010967d49ca58cc640574eae2b">&#9670;&#160;</a></span>get_async_backups()</h2>
+<a id="a33edf305c0958128969844f607d9960f" name="a33edf305c0958128969844f607d9960f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33edf305c0958128969844f607d9960f">&#9670;&#160;</a></span>get_async_backups()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -176,7 +179,7 @@ object&#160;</td><td class="memItemRight" valign="bottom"><b>$user</b></td></tr>
           <td class="memname">static async_helper::get_async_backups </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$renderer</em>, </td>
+          <td class="paramname"><em>$filearea</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -200,7 +203,7 @@ object&#160;</td><td class="memItemRight" valign="bottom"><b>$user</b></td></tr>
 <p>Get markup for in progress async backups, to use in backup table UI. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../de/dcc/classcore__backup__renderer.html" title="The primary renderer for the backup.">core_backup_renderer</a></td><td class="paramname">$renderer</td><td>The backup renderer object. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$filearea</td><td>The filearea to get backup data for. </td></tr>
     <tr><td class="paramtype">integer</td><td class="paramname">$instanceid</td><td>The context id to get backup data for. </td></tr>
   </table>
   </dd>
@@ -433,6 +436,46 @@ object&#160;</td><td class="memItemRight" valign="bottom"><b>$user</b></td></tr>
 
 </div>
 </div>
+<a id="ad92db11319ce57430d3656a3a8b29fe0" name="ad92db11319ce57430d3656a3a8b29fe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad92db11319ce57430d3656a3a8b29fe0">&#9670;&#160;</a></span>get_userdata_backup_settings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static async_helper::get_userdata_backup_settings </td>
+          <td>(</td>
+          <td class="paramtype">\<a class="el" href="../../d3/ddf/classbackup__controller.html">backup_controller</a>&#160;</td>
+          <td class="paramname"><em>$backupcontroller</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the user data settings for backups. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d3/ddf/classbackup__controller.html" title="Class implementing the controller of any backup process.">backup_controller</a></td><td class="paramname">$backupcontroller</td><td>The backup controller object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>Array of user data settings. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a5f79a1c1a0b71c76bdcd178bed699733" name="a5f79a1c1a0b71c76bdcd178bed699733"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5f79a1c1a0b71c76bdcd178bed699733">&#9670;&#160;</a></span>is_async_enabled()</h2>
 
@@ -555,7 +598,7 @@ object&#160;</td><td class="memItemRight" valign="bottom"><b>$user</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 2 2023 03:37:32 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 9 2023 03:40:21 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

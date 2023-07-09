@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230629) (8dbb6183ff4)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230707) (ef93325f271)</div>
   </td>
  </tr>
  </tbody>
@@ -93,14 +93,14 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a4f5affdaa7ff1cf578c5cecc3e9bf2b7"><td class="memItemLeft" align="right" valign="top"><a id="a4f5affdaa7ff1cf578c5cecc3e9bf2b7" name="a4f5affdaa7ff1cf578c5cecc3e9bf2b7"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>DISABLED</b> = false</td></tr>
-<tr class="memdesc:a4f5affdaa7ff1cf578c5cecc3e9bf2b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">@const Checkbox for this flag is not displayed in admin page <br /></td></tr>
-<tr class="separator:a4f5affdaa7ff1cf578c5cecc3e9bf2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a191a0478ddf7d9d058f8ead748443766"><td class="memItemLeft" align="right" valign="top"><a id="a191a0478ddf7d9d058f8ead748443766" name="a191a0478ddf7d9d058f8ead748443766"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>ENABLED</b> = true</td></tr>
-<tr class="memdesc:a191a0478ddf7d9d058f8ead748443766"><td class="mdescLeft">&#160;</td><td class="mdescRight">@const Checkbox for this flag is displayed in admin page <br /></td></tr>
-<tr class="separator:a191a0478ddf7d9d058f8ead748443766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a760639cb55a1a87cca3383a245c3a772"><td class="memItemLeft" align="right" valign="top"><a id="a760639cb55a1a87cca3383a245c3a772" name="a760639cb55a1a87cca3383a245c3a772"></a>
+Checkbox const&#160;</td><td class="memItemRight" valign="bottom"><b>DISABLED</b> = false</td></tr>
+<tr class="memdesc:a760639cb55a1a87cca3383a245c3a772"><td class="mdescLeft">&#160;</td><td class="mdescRight">for this flag is not displayed in admin page <br /></td></tr>
+<tr class="separator:a760639cb55a1a87cca3383a245c3a772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66aff249f9b315171b7cf50608ab420f"><td class="memItemLeft" align="right" valign="top"><a id="a66aff249f9b315171b7cf50608ab420f" name="a66aff249f9b315171b7cf50608ab420f"></a>
+Checkbox const&#160;</td><td class="memItemRight" valign="bottom"><b>ENABLED</b> = true</td></tr>
+<tr class="memdesc:a66aff249f9b315171b7cf50608ab420f"><td class="mdescLeft">&#160;</td><td class="mdescRight">for this flag is displayed in admin page <br /></td></tr>
+<tr class="separator:a66aff249f9b315171b7cf50608ab420f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An additional option that can be applied to an admin setting. </p>
@@ -148,7 +148,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>ENABLED</b> = true</
 <p>Constructor. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">bool</td><td class="paramname">$enabled</td><td>Can this option can be toggled. Should be one of <a class="el" href="../../d8/d15/classadmin__setting__flag.html#a191a0478ddf7d9d058f8ead748443766" title="@const Checkbox for this flag is displayed in admin page">admin_setting_flag::ENABLED</a> or <a class="el" href="../../d8/d15/classadmin__setting__flag.html#a4f5affdaa7ff1cf578c5cecc3e9bf2b7" title="@const Checkbox for this flag is not displayed in admin page">admin_setting_flag::DISABLED</a>. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$enabled</td><td>Can this option can be toggled. Should be one of <a class="el" href="../../d8/d15/classadmin__setting__flag.html#a66aff249f9b315171b7cf50608ab420f" title="for this flag is displayed in admin page">admin_setting_flag::ENABLED</a> or <a class="el" href="../../d8/d15/classadmin__setting__flag.html#a760639cb55a1a87cca3383a245c3a772" title="for this flag is not displayed in admin page">admin_setting_flag::DISABLED</a>. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$default</td><td>The default checked state for this setting option. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$shortname</td><td>The shortname of this flag. Currently supported flags are 'locked' and 'adv' </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$displayname</td><td>The displayname of this flag. Used as a label for the flag. </td></tr>
@@ -323,7 +323,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>ENABLED</b> = true</
 <p>Update the values of this setting options class. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">bool</td><td class="paramname">$enabled</td><td>Can this option can be toggled. Should be one of <a class="el" href="../../d8/d15/classadmin__setting__flag.html#a191a0478ddf7d9d058f8ead748443766" title="@const Checkbox for this flag is displayed in admin page">admin_setting_flag::ENABLED</a> or <a class="el" href="../../d8/d15/classadmin__setting__flag.html#a4f5affdaa7ff1cf578c5cecc3e9bf2b7" title="@const Checkbox for this flag is not displayed in admin page">admin_setting_flag::DISABLED</a>. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$enabled</td><td>Can this option can be toggled. Should be one of <a class="el" href="../../d8/d15/classadmin__setting__flag.html#a66aff249f9b315171b7cf50608ab420f" title="for this flag is displayed in admin page">admin_setting_flag::ENABLED</a> or <a class="el" href="../../d8/d15/classadmin__setting__flag.html#a760639cb55a1a87cca3383a245c3a772" title="for this flag is not displayed in admin page">admin_setting_flag::DISABLED</a>. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$default</td><td>The default checked state for this setting option. </td></tr>
   </table>
   </dd>
@@ -380,7 +380,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>ENABLED</b> = true</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 2 2023 03:37:25 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 9 2023 03:40:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

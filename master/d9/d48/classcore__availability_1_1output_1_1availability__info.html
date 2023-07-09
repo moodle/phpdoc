@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230629) (8dbb6183ff4)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230707) (ef93325f271)</div>
   </td>
  </tr>
  </tbody>
@@ -96,6 +96,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a8ec75570266587a0a018bde7d4b15c03"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d48/classcore__availability_1_1output_1_1availability__info.html#a8ec75570266587a0a018bde7d4b15c03">get_item_base_template</a> ()</td></tr>
 <tr class="memdesc:a8ec75570266587a0a018bde7d4b15c03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the item base template.  <br /></td></tr>
 <tr class="separator:a8ec75570266587a0a018bde7d4b15c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad529a4efb10a72af595df880c7669e48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d48/classcore__availability_1_1output_1_1availability__info.html#ad529a4efb10a72af595df880c7669e48">get_item_header</a> (<a class="el" href="../../d5/d20/classcore__availability__multiple__messages.html">core_availability_multiple_messages</a> $availability)</td></tr>
+<tr class="memdesc:ad529a4efb10a72af595df880c7669e48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the item header.  <br /></td></tr>
+<tr class="separator:ad529a4efb10a72af595df880c7669e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d468e6f734cf29c8e4f9820709e78c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d48/classcore__availability_1_1output_1_1availability__info.html#a1d468e6f734cf29c8e4f9820709e78c4">get_item_template</a> (<a class="el" href="../../d5/d20/classcore__availability__multiple__messages.html">core_availability_multiple_messages</a> $availability)</td></tr>
 <tr class="memdesc:a1d468e6f734cf29c8e4f9820709e78c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the item template.  <br /></td></tr>
 <tr class="separator:a1d468e6f734cf29c8e4f9820709e78c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,14 +109,6 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="../../d5/d20/classcore__availability__multiple__messages.html">core_availability_multiple_messages</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$availabilitymessages</b></td></tr>
 <tr class="memdesc:a0411164431ab65f84919ac643f2ef2da"><td class="mdescLeft">&#160;</td><td class="mdescRight">availabilitymessages the course format class <br /></td></tr>
 <tr class="separator:a0411164431ab65f84919ac643f2ef2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ba84b40358da15ec00720d2f5840261"><td class="memItemLeft" align="right" valign="top"><a id="a6ba84b40358da15ec00720d2f5840261" name="a6ba84b40358da15ec00720d2f5840261"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>$count</b> = 0</td></tr>
-<tr class="memdesc:a6ba84b40358da15ec00720d2f5840261"><td class="mdescLeft">&#160;</td><td class="mdescRight">counts number of conditions <br /></td></tr>
-<tr class="separator:a6ba84b40358da15ec00720d2f5840261"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e7e826017e45015165012b303a77c6d"><td class="memItemLeft" align="right" valign="top"><a id="a1e7e826017e45015165012b303a77c6d" name="a1e7e826017e45015165012b303a77c6d"></a>
-int const&#160;</td><td class="memItemRight" valign="bottom"><b>MAXVISIBLE</b> = 4</td></tr>
-<tr class="memdesc:a1e7e826017e45015165012b303a77c6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of lines of availability info. <br /></td></tr>
-<tr class="separator:a1e7e826017e45015165012b303a77c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="../../d9/da0/interface_base.html" title="Base for cache objects.">Base</a> class to render availability info. </p>
@@ -258,6 +253,47 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>MAXVISIBLE</b> =
 
 </div>
 </div>
+<a id="ad529a4efb10a72af595df880c7669e48" name="ad529a4efb10a72af595df880c7669e48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad529a4efb10a72af595df880c7669e48">&#9670;&#160;</a></span>get_item_header()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_availability\output\availability_info::get_item_header </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d20/classcore__availability__multiple__messages.html">core_availability_multiple_messages</a>&#160;</td>
+          <td class="paramname"><em>$availability</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the item header. </p>
+<p>Depending on availability configuration this will return a string from a combined string identifier. For example: list_root_and_hidden, list_and, list_root_or_hidden, list_root_or, etc.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d5/d20/classcore__availability__multiple__messages.html" title="Represents multiple availability messages.">core_availability_multiple_messages</a></td><td class="paramname">$availability</td><td>the availability messages </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>the item header </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a1d468e6f734cf29c8e4f9820709e78c4" name="a1d468e6f734cf29c8e4f9820709e78c4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1d468e6f734cf29c8e4f9820709e78c4">&#9670;&#160;</a></span>get_item_template()</h2>
 
@@ -304,7 +340,7 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>MAXVISIBLE</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 2 2023 03:39:33 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 9 2023 03:42:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

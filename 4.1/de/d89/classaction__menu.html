@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1.4+ (Build: 20230629) (66288450875)</div>
+   <div id="projectbrief">Moodle 4.1.4+ (Build: 20230707) (f29f757f5f9)</div>
   </td>
  </tr>
  </tbody>
@@ -114,6 +114,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a35b9473344ac62fa4ac0ece39580b4d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d89/classaction__menu.html#a35b9473344ac62fa4ac0ece39580b4d2">set_alignment</a> ($dialogue, $button)</td></tr>
 <tr class="memdesc:a35b9473344ac62fa4ac0ece39580b4d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the alignment of the dialogue in relation to button used to toggle it.  <br /></td></tr>
 <tr class="separator:a35b9473344ac62fa4ac0ece39580b4d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a7ee5860732cc7a7aef14f42376a7a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d89/classaction__menu.html#a2a7ee5860732cc7a7aef14f42376a7a2">set_boundary</a> (string $boundary)</td></tr>
+<tr class="memdesc:a2a7ee5860732cc7a7aef14f42376a7a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the overflow constraint boundary of the dropdown menu.  <br /></td></tr>
+<tr class="separator:a2a7ee5860732cc7a7aef14f42376a7a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4eaa50a3b36b8bc1262f9e6fd614662"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d89/classaction__menu.html#ad4eaa50a3b36b8bc1262f9e6fd614662">set_constraint</a> ($ancestorselector)</td></tr>
 <tr class="memdesc:ad4eaa50a3b36b8bc1262f9e6fd614662"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a constraint for the dialogue.  <br /></td></tr>
 <tr class="separator:ad4eaa50a3b36b8bc1262f9e6fd614662"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,6 +172,10 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$menutrigger</b> = 
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>$prioritise</b> = false</td></tr>
 <tr class="memdesc:ad05f5a78c1d4013b9dde50fb045dc02b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Place the action menu before all other actions. <br /></td></tr>
 <tr class="separator:ad05f5a78c1d4013b9dde50fb045dc02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b5d612e3dcb8d31b7220acc3393e412"><td class="memItemLeft" align="right" valign="top"><a id="a4b5d612e3dcb8d31b7220acc3393e412" name="a4b5d612e3dcb8d31b7220acc3393e412"></a>
+array&#160;</td><td class="memItemRight" valign="bottom"><b>$triggerattributes</b> = []</td></tr>
+<tr class="memdesc:a4b5d612e3dcb8d31b7220acc3393e412"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of attributes added to the trigger element of the secondary menu. <br /></td></tr>
+<tr class="separator:a4b5d612e3dcb8d31b7220acc3393e412"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42162b14ac3140c63932c1fe80f1bad8"><td class="memItemLeft" align="right" valign="top"><a id="a42162b14ac3140c63932c1fe80f1bad8" name="a42162b14ac3140c63932c1fe80f1bad8"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$triggerextraclasses</b> = ''</td></tr>
 <tr class="memdesc:a42162b14ac3140c63932c1fe80f1bad8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Any extra classes for toggling to the secondary menu. <br /></td></tr>
@@ -608,6 +615,39 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a2a7ee5860732cc7a7aef14f42376a7a2" name="a2a7ee5860732cc7a7aef14f42376a7a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a7ee5860732cc7a7aef14f42376a7a2">&#9670;&#160;</a></span>set_boundary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">action_menu::set_boundary </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$boundary</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the overflow constraint boundary of the dropdown menu. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://getbootstrap.com/docs/4.6/components/dropdowns/#options">https://getbootstrap.com/docs/4.6/components/dropdowns/#options</a> The 'boundary' option in the Bootstrap documentation</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$boundary</td><td>Accepts the values of 'viewport', 'window', or 'scrollParent'. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad4eaa50a3b36b8bc1262f9e6fd614662" name="ad4eaa50a3b36b8bc1262f9e6fd614662"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad4eaa50a3b36b8bc1262f9e6fd614662">&#9670;&#160;</a></span>set_constraint()</h2>
 
@@ -885,7 +925,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 2 2023 03:25:00 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 9 2023 03:27:32 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>
