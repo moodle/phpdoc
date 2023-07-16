@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230707) (ef93325f271)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230714) (e77452220b2)</div>
   </td>
  </tr>
  </tbody>
@@ -80,9 +80,9 @@ Inheritance diagram for qbank_usage\tables\question_usage_table:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a30e8f10e8d1820b19330cc7ef5c73a18"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db1/classqbank__usage_1_1tables_1_1question__usage__table.html#a30e8f10e8d1820b19330cc7ef5c73a18">__construct</a> (string $uniqueid, <a class="el" href="../../d7/da5/classquestion__definition.html">question_definition</a> $question)</td></tr>
-<tr class="memdesc:a30e8f10e8d1820b19330cc7ef5c73a18"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor.  <br /></td></tr>
-<tr class="separator:a30e8f10e8d1820b19330cc7ef5c73a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03a76f5d7e8c1e58304a858ccbc75039"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db1/classqbank__usage_1_1tables_1_1question__usage__table.html#a03a76f5d7e8c1e58304a858ccbc75039">__construct</a> (string $uniqueid, <a class="el" href="../../d7/da5/classquestion__definition.html">question_definition</a> $question, bool $specificversion=false)</td></tr>
+<tr class="memdesc:a03a76f5d7e8c1e58304a858ccbc75039"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructor.  <br /></td></tr>
+<tr class="separator:a03a76f5d7e8c1e58304a858ccbc75039"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2f668c7e164577e641c985d199be85d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d18/classflexible__table.html#ae2f668c7e164577e641c985d199be85d">add_data</a> ($row, $classname='')</td></tr>
 <tr class="memdesc:ae2f668c7e164577e641c985d199be85d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method actually directly echoes the row passed to it now or adds it to the download.  <br /></td></tr>
 <tr class="separator:ae2f668c7e164577e641c985d199be85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -268,9 +268,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a35451db430deb354b9ac1b3590a84de9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db1/classqbank__usage_1_1tables_1_1question__usage__table.html#a35451db430deb354b9ac1b3590a84de9">query_db</a> ($<a class="el" href="../../d3/d18/classflexible__table.html#a9e1703b8c842bf13049521e4ff729c8e">pagesize</a>, $useinitialsbar=true)</td></tr>
 <tr class="memdesc:a35451db430deb354b9ac1b3590a84de9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the db.  <br /></td></tr>
 <tr class="separator:a35451db430deb354b9ac1b3590a84de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71a76accfd349c982242624a5f2c7108"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d18/classflexible__table.html#a71a76accfd349c982242624a5f2c7108">render_caption</a> ()</td></tr>
+<tr class="memdesc:a71a76accfd349c982242624a5f2c7108"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function renders a table caption.  <br /></td></tr>
+<tr class="separator:a71a76accfd349c982242624a5f2c7108"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c6033caf2f8eac44ba128714ab134a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d18/classflexible__table.html#a1c6033caf2f8eac44ba128714ab134a7">set_attribute</a> ($attribute, $value)</td></tr>
 <tr class="memdesc:a1c6033caf2f8eac44ba128714ab134a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gives the given $value to the $attribute index of $this-&gt;attributes.  <br /></td></tr>
 <tr class="separator:a1c6033caf2f8eac44ba128714ab134a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab014b51f4e0c7141616247e15cde361b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d18/classflexible__table.html#ab014b51f4e0c7141616247e15cde361b">set_caption</a> (string $caption, ?array $captionattributes)</td></tr>
+<tr class="memdesc:ab014b51f4e0c7141616247e15cde361b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function set caption for table.  <br /></td></tr>
+<tr class="separator:ab014b51f4e0c7141616247e15cde361b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f93225ce69b33c29d928396d0e9420e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d18/classflexible__table.html#a4f93225ce69b33c29d928396d0e9420e">set_columnsattributes</a> (array $attributes)</td></tr>
 <tr class="memdesc:a4f93225ce69b33c29d928396d0e9420e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the given $attributes to $this-&gt;columnsattributes.  <br /></td></tr>
 <tr class="separator:a4f93225ce69b33c29d928396d0e9420e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -349,6 +355,14 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a09861d43c4216827789e7452ca1a76a2"><td class="memItemLeft" align="right" valign="top"><a id="a09861d43c4216827789e7452ca1a76a2" name="a09861d43c4216827789e7452ca1a76a2"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$baseurl</b> = NULL</td></tr>
 <tr class="separator:a09861d43c4216827789e7452ca1a76a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad116f8c81e86bcd2497901da7fa9c074"><td class="memItemLeft" align="right" valign="top"><a id="ad116f8c81e86bcd2497901da7fa9c074" name="ad116f8c81e86bcd2497901da7fa9c074"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$caption</b></td></tr>
+<tr class="memdesc:ad116f8c81e86bcd2497901da7fa9c074"><td class="mdescLeft">&#160;</td><td class="mdescRight">$caption The caption of table <br /></td></tr>
+<tr class="separator:ad116f8c81e86bcd2497901da7fa9c074"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85d33c30050ce88f110e81e1404262b9"><td class="memItemLeft" align="right" valign="top"><a id="a85d33c30050ce88f110e81e1404262b9" name="a85d33c30050ce88f110e81e1404262b9"></a>
+array&#160;</td><td class="memItemRight" valign="bottom"><b>$captionattributes</b></td></tr>
+<tr class="memdesc:a85d33c30050ce88f110e81e1404262b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">$captionattributes The caption attributes of table <br /></td></tr>
+<tr class="separator:a85d33c30050ce88f110e81e1404262b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88fc592e91185a539eb1b9e6bfc62bfa"><td class="memItemLeft" align="right" valign="top"><a id="a88fc592e91185a539eb1b9e6bfc62bfa" name="a88fc592e91185a539eb1b9e6bfc62bfa"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$column_class</b> = array()</td></tr>
 <tr class="separator:a88fc592e91185a539eb1b9e6bfc62bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -559,13 +573,17 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$sheettitle</b></td
 array&#160;</td><td class="memItemRight" valign="bottom"><b>$sortdata</b></td></tr>
 <tr class="memdesc:a2cf87064920f0e07597d6d3e6af331e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The fields to sort. <br /></td></tr>
 <tr class="separator:a2cf87064920f0e07597d6d3e6af331e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02f8ef65413d76739bb98f426d16ee31"><td class="memItemLeft" align="right" valign="top"><a id="a02f8ef65413d76739bb98f426d16ee31" name="a02f8ef65413d76739bb98f426d16ee31"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>$specificversion</b></td></tr>
+<tr class="memdesc:a02f8ef65413d76739bb98f426d16ee31"><td class="mdescLeft">&#160;</td><td class="mdescRight">$specificversion Are we displaying the usage for a specific version, rather than all versions of the question? <br /></td></tr>
+<tr class="separator:a02f8ef65413d76739bb98f426d16ee31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a225ec1432087463911706bbd927abd53"><td class="memItemLeft" align="right" valign="top">string[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d18/classflexible__table.html#a225ec1432087463911706bbd927abd53">$userfullnamecolumns</a> = ['<a class="el" href="../../d0/de1/group__core.html#ga22ae943f55a27f3b9cca15f8ddd05db7">fullname</a>']</td></tr>
 <tr class="memdesc:a225ec1432087463911706bbd927abd53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Columns that are expected to contain a users fullname.  <br /></td></tr>
 <tr class="separator:a225ec1432087463911706bbd927abd53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a30e8f10e8d1820b19330cc7ef5c73a18" name="a30e8f10e8d1820b19330cc7ef5c73a18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30e8f10e8d1820b19330cc7ef5c73a18">&#9670;&#160;</a></span>__construct()</h2>
+<a id="a03a76f5d7e8c1e58304a858ccbc75039" name="a03a76f5d7e8c1e58304a858ccbc75039"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03a76f5d7e8c1e58304a858ccbc75039">&#9670;&#160;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -580,7 +598,13 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$sortdata</b></td></
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="../../d7/da5/classquestion__definition.html">question_definition</a>&#160;</td>
-          <td class="paramname"><em>$question</em>&#160;</td>
+          <td class="paramname"><em>$question</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$specificversion</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3036,6 +3060,39 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$sortdata</b></td></
 
 </div>
 </div>
+<a id="a71a76accfd349c982242624a5f2c7108" name="a71a76accfd349c982242624a5f2c7108"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71a76accfd349c982242624a5f2c7108">&#9670;&#160;</a></span>render_caption()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">flexible_table::render_caption </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function renders a table caption. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string::$output</td><td><a class="el" href="../../d1/d8e/class_caption.html" title="Handles &lt;media:text&gt; captions as defined in Media RSS.">Caption</a> of table. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ae6e296da82047cab7bbc3569e92600ce" name="ae6e296da82047cab7bbc3569e92600ce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae6e296da82047cab7bbc3569e92600ce">&#9670;&#160;</a></span>render_reset_button()</h2>
 
@@ -3148,6 +3205,51 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$sortdata</b></td></
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab014b51f4e0c7141616247e15cde361b" name="ab014b51f4e0c7141616247e15cde361b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab014b51f4e0c7141616247e15cde361b">&#9670;&#160;</a></span>set_caption()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">flexible_table::set_caption </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$caption</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?array&#160;</td>
+          <td class="paramname"><em>$captionattributes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function set caption for table. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$caption</td><td><a class="el" href="../../d1/d8e/class_caption.html" title="Handles &lt;media:text&gt; captions as defined in Media RSS.">Caption</a> of table. </td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;null</td><td class="paramname">$captionattributes</td><td><a class="el" href="../../d1/d8e/class_caption.html" title="Handles &lt;media:text&gt; captions as defined in Media RSS.">Caption</a> attributes of table. </td></tr>
   </table>
   </dd>
 </dl>
@@ -4199,7 +4301,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$sortdata</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 9 2023 03:43:21 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 16 2023 03:51:03 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

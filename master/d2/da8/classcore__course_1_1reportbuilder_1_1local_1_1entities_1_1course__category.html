@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230707) (ef93325f271)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230714) (e77452220b2)</div>
   </td>
  </tr>
  </tbody>
@@ -151,6 +151,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a72b61e7b99b2c1e46b51f09fef1aff52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da8/classcore__course_1_1reportbuilder_1_1local_1_1entities_1_1course__category.html#a72b61e7b99b2c1e46b51f09fef1aff52">get_default_table_aliases</a> ()</td></tr>
 <tr class="memdesc:a72b61e7b99b2c1e46b51f09fef1aff52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Database tables that this entity uses and their default aliases.  <br /></td></tr>
 <tr class="separator:a72b61e7b99b2c1e46b51f09fef1aff52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c07576ca1bdd01fbaabaccc749f70b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dba/classcore__reportbuilder_1_1local_1_1entities_1_1base.html#a7c07576ca1bdd01fbaabaccc749f70b6">get_tag_joins_for_entity</a> (string $component, string $itemtype, string $itemidfield)</td></tr>
+<tr class="memdesc:a7c07576ca1bdd01fbaabaccc749f70b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper method for returning joins necessary for retrieving tags related to the current entity.  <br /></td></tr>
+<tr class="separator:a7c07576ca1bdd01fbaabaccc749f70b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2c70d0a78c7771d6191309d7b9bd75c8" name="a2c70d0a78c7771d6191309d7b9bd75c8"></a>
@@ -872,6 +875,65 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a7c07576ca1bdd01fbaabaccc749f70b6" name="a7c07576ca1bdd01fbaabaccc749f70b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c07576ca1bdd01fbaabaccc749f70b6">&#9670;&#160;</a></span>get_tag_joins_for_entity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_reportbuilder\local\entities\base::get_tag_joins_for_entity </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$component</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$itemtype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$itemidfield</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper method for returning joins necessary for retrieving tags related to the current entity. </p>
+<p>Both 'tag' and 'tag_instance' aliases must be returned by the entity {</p><dl class="section see"><dt>See also</dt><dd>get_default_table_aliases} method</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$component</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$itemtype</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$itemidfield</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string[]</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ac25dfb21ee47f327fdc1f985314f580c" name="ac25dfb21ee47f327fdc1f985314f580c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac25dfb21ee47f327fdc1f985314f580c">&#9670;&#160;</a></span>initialise()</h2>
 
@@ -1083,7 +1145,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 9 2023 03:42:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 16 2023 03:50:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

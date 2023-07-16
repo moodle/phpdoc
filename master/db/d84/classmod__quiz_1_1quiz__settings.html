@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230707) (ef93325f271)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230714) (e77452220b2)</div>
   </td>
  </tr>
  </tbody>
@@ -118,9 +118,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab44167450e53a9bbad20c8291e4cc8d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d84/classmod__quiz_1_1quiz__settings.html#ab44167450e53a9bbad20c8291e4cc8d4">get_question</a> ($id)</td></tr>
 <tr class="memdesc:ab44167450e53a9bbad20c8291e4cc8d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a particular question in this quiz, by its id.  <br /></td></tr>
 <tr class="separator:ab44167450e53a9bbad20c8291e4cc8d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7aff50eac1838e222bfb3f78cb2676ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d84/classmod__quiz_1_1quiz__settings.html#a7aff50eac1838e222bfb3f78cb2676ec">get_questions</a> ($questionids=null)</td></tr>
-<tr class="memdesc:a7aff50eac1838e222bfb3f78cb2676ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get some of the question in this quiz.  <br /></td></tr>
-<tr class="separator:a7aff50eac1838e222bfb3f78cb2676ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b63d383c32acc9c2b8d6fcded7b8ad6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d84/classmod__quiz_1_1quiz__settings.html#a1b63d383c32acc9c2b8d6fcded7b8ad6">get_questions</a> (?array $questionids=null, bool $requirequestionfullyloaded=true)</td></tr>
+<tr class="memdesc:a1b63d383c32acc9c2b8d6fcded7b8ad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get some of the question in this quiz.  <br /></td></tr>
+<tr class="separator:a1b63d383c32acc9c2b8d6fcded7b8ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ed48d5bf93e648fe4e16a3ba66a06a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d84/classmod__quiz_1_1quiz__settings.html#a6ed48d5bf93e648fe4e16a3ba66a06a1">get_quiz</a> ()</td></tr>
 <tr class="memdesc:a6ed48d5bf93e648fe4e16a3ba66a06a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the quiz settings object.  <br /></td></tr>
 <tr class="separator:a6ed48d5bf93e648fe4e16a3ba66a06a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -927,8 +927,8 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$sections</b> =
 
 </div>
 </div>
-<a id="a7aff50eac1838e222bfb3f78cb2676ec" name="a7aff50eac1838e222bfb3f78cb2676ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7aff50eac1838e222bfb3f78cb2676ec">&#9670;&#160;</a></span>get_questions()</h2>
+<a id="a1b63d383c32acc9c2b8d6fcded7b8ad6" name="a1b63d383c32acc9c2b8d6fcded7b8ad6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b63d383c32acc9c2b8d6fcded7b8ad6">&#9670;&#160;</a></span>get_questions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -936,9 +936,19 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$sections</b> =
         <tr>
           <td class="memname">mod_quiz\quiz_settings::get_questions </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$questionids</em> = <code>null</code></td><td>)</td>
+          <td class="paramtype">?array&#160;</td>
+          <td class="paramname"><em>$questionids</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$requirequestionfullyloaded</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -947,6 +957,7 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$sections</b> =
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array&#160;|&#160;null</td><td class="paramname">$questionids</td><td>question ids of the questions to load. null for all. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$requirequestionfullyloaded</td><td>Whether to require that a particular question is fully loaded. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1498,7 +1509,7 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$sections</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 9 2023 03:43:10 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 16 2023 03:50:51 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

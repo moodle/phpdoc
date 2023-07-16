@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230707) (ef93325f271)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230714) (e77452220b2)</div>
   </td>
  </tr>
  </tbody>
@@ -81,11 +81,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8cd89d5725f93cda3cc35af2912e1c56"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d70/classcore__question_1_1local_1_1bank_1_1plugin__features__base.html#a8cd89d5725f93cda3cc35af2912e1c56">get_navigation_node</a> ()</td></tr>
 <tr class="memdesc:a8cd89d5725f93cda3cc35af2912e1c56"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method will return the object for the navigation node.  <br /></td></tr>
 <tr class="separator:a8cd89d5725f93cda3cc35af2912e1c56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c8c5cbc75209281808337041398083e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d70/classcore__question_1_1local_1_1bank_1_1plugin__features__base.html#a9c8c5cbc75209281808337041398083e">get_question_actions</a> (view $qbank)</td></tr>
+<tr class="memdesc:a9c8c5cbc75209281808337041398083e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method will return the array of objects to be rendered as a part of question bank actions.  <br /></td></tr>
+<tr class="separator:a9c8c5cbc75209281808337041398083e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbd4837f6a942c1eaccdfa1799dd1913"><td class="memItemLeft" align="right" valign="top"><a id="afbd4837f6a942c1eaccdfa1799dd1913" name="afbd4837f6a942c1eaccdfa1799dd1913"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>get_question_columns</b> ($qbank)</td></tr>
 <tr class="separator:afbd4837f6a942c1eaccdfa1799dd1913"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab82a0a6ca17b01854cace9c23dd83aeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d70/classcore__question_1_1local_1_1bank_1_1plugin__features__base.html#ab82a0a6ca17b01854cace9c23dd83aeb">get_question_columns</a> (view $qbank)</td></tr>
-<tr class="memdesc:ab82a0a6ca17b01854cace9c23dd83aeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method will return the array of objects to be rendered as a part of question bank columns/actions.  <br /></td></tr>
+<tr class="memdesc:ab82a0a6ca17b01854cace9c23dd83aeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method will return the array of objects to be rendered as a part of question bank columns.  <br /></td></tr>
 <tr class="separator:ab82a0a6ca17b01854cace9c23dd83aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -159,6 +162,48 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a9c8c5cbc75209281808337041398083e" name="a9c8c5cbc75209281808337041398083e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c8c5cbc75209281808337041398083e">&#9670;&#160;</a></span>get_question_actions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_question\local\bank\plugin_features_base::get_question_actions </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/da7/classcore__question_1_1local_1_1bank_1_1view.html">view</a>&#160;</td>
+          <td class="paramname"><em>$qbank</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method will return the array of objects to be rendered as a part of question bank actions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">view</td><td class="paramname">$qbank</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">question_action_base[]</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../d3/d4b/classqbank__editquestion_1_1plugin__feature.html#a946e8279a2d0b62586a71384670760e0">qbank_editquestion\plugin_feature</a>, and <a class="el" href="../../d7/d44/classqbank__history_1_1plugin__feature.html#aede11433bddc054874ac0c03e391b0f3">qbank_history\plugin_feature</a>.</p>
+
+</div>
+</div>
 <a id="ab82a0a6ca17b01854cace9c23dd83aeb" name="ab82a0a6ca17b01854cace9c23dd83aeb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab82a0a6ca17b01854cace9c23dd83aeb">&#9670;&#160;</a></span>get_question_columns()</h2>
 
@@ -183,7 +228,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>This method will return the array of objects to be rendered as a part of question bank columns/actions. </p>
+<p>This method will return the array of objects to be rendered as a part of question bank columns. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">view</td><td class="paramname">$qbank</td><td></td></tr>
@@ -207,7 +252,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 9 2023 03:43:21 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 16 2023 03:51:03 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

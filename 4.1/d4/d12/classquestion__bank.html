@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1.4+ (Build: 20230707) (f29f757f5f9)</div>
+   <div id="projectbrief">Moodle 4.1.4+ (Build: 20230714) (272fdb321a4)</div>
   </td>
  </tr>
  </tbody>
@@ -82,6 +82,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a683e3674715f5c918483fb420a50b89d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d12/classquestion__bank.html#a683e3674715f5c918483fb420a50b89d">get_all_versions_of_question</a> (int $questionid)</td></tr>
 <tr class="memdesc:a683e3674715f5c918483fb420a50b89d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the versions of a particular question.  <br /></td></tr>
 <tr class="separator:a683e3674715f5c918483fb420a50b89d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61866869fb866ea451470ad0a86b9577"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d12/classquestion__bank.html#a61866869fb866ea451470ad0a86b9577">get_all_versions_of_questions</a> (array $questionids)</td></tr>
+<tr class="memdesc:a61866869fb866ea451470ad0a86b9577"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the versions of questions.  <br /></td></tr>
+<tr class="separator:a61866869fb866ea451470ad0a86b9577"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeeed90ad08fff463f25fd9d3b72f6f61"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d12/classquestion__bank.html#aeeed90ad08fff463f25fd9d3b72f6f61">get_config</a> ()</td></tr>
 <tr class="memdesc:aeeed90ad08fff463f25fd9d3b72f6f61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the question configuration data from config_plugins.  <br /></td></tr>
 <tr class="separator:aeeed90ad08fff463f25fd9d3b72f6f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -340,6 +343,46 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>ensure_fraction_opt
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td>The array keys are version number, and the values are objects with three int fields version (same as array key), versionid and questionid. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a61866869fb866ea451470ad0a86b9577" name="a61866869fb866ea451470ad0a86b9577"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61866869fb866ea451470ad0a86b9577">&#9670;&#160;</a></span>get_all_versions_of_questions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static question_bank::get_all_versions_of_questions </td>
+          <td>(</td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$questionids</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get all the versions of questions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$questionids</td><td>Array of question ids. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>two dimensional array question_bank_entries.id =&gt; version number =&gt; question.id. Versions in descending order. </td></tr>
   </table>
   </dd>
 </dl>
@@ -927,7 +970,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>ensure_fraction_opt
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 9 2023 03:29:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 16 2023 03:35:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>
