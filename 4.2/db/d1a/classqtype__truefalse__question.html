@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2.1+ (Build: 20230714) (0ac092cc926)</div>
+   <div id="projectbrief">Moodle 4.2.1+ (Build: 20230721) (acf600a9b47)</div>
   </td>
  </tr>
  </tbody>
@@ -202,16 +202,20 @@ integer&#160;</td><td class="memItemRight" valign="bottom"><b>$createdby</b></td
 array&#160;</td><td class="memItemRight" valign="bottom"><b>$customfields</b> = array()</td></tr>
 <tr class="memdesc:ad228edcc752c23b1b1a2bfafd8e2eb17"><td class="mdescLeft">&#160;</td><td class="mdescRight">of array of <a class="el" href="../../d8/d36/classcore__customfield_1_1data__controller.html" title="Base class for custom fields data controllers.">core_customfield::data_controller</a> objects indexed by fieldid for the questions custom fields. <br /></td></tr>
 <tr class="separator:ad228edcc752c23b1b1a2bfafd8e2eb17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd2523970711c2c9041d10d3bfc21987"><td class="memItemLeft" align="right" valign="top"><a id="abd2523970711c2c9041d10d3bfc21987" name="abd2523970711c2c9041d10d3bfc21987"></a>
-number&#160;</td><td class="memItemRight" valign="bottom"><b>$defaultmark</b> = 1</td></tr>
-<tr class="memdesc:abd2523970711c2c9041d10d3bfc21987"><td class="mdescLeft">&#160;</td><td class="mdescRight">what this quetsion is marked out of, by default. <br /></td></tr>
-<tr class="separator:abd2523970711c2c9041d10d3bfc21987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08bcef9ed7e7c603d399879230e1914c"><td class="memItemLeft" align="right" valign="top"><a id="a08bcef9ed7e7c603d399879230e1914c" name="a08bcef9ed7e7c603d399879230e1914c"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>$defaultmark</b> = 1</td></tr>
+<tr class="memdesc:a08bcef9ed7e7c603d399879230e1914c"><td class="mdescLeft">&#160;</td><td class="mdescRight">what this quetsion is marked out of, by default. <br /></td></tr>
+<tr class="separator:a08bcef9ed7e7c603d399879230e1914c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac93d0b5d1030b0faf205661e0b5d8d3e"><td class="memItemLeft" align="right" valign="top"><a id="ac93d0b5d1030b0faf205661e0b5d8d3e" name="ac93d0b5d1030b0faf205661e0b5d8d3e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$falseanswerid</b></td></tr>
 <tr class="separator:ac93d0b5d1030b0faf205661e0b5d8d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c0399c48e1668e8f6018c1e65c1ac78"><td class="memItemLeft" align="right" valign="top"><a id="a2c0399c48e1668e8f6018c1e65c1ac78" name="a2c0399c48e1668e8f6018c1e65c1ac78"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$falsefeedback</b></td></tr>
 <tr class="separator:a2c0399c48e1668e8f6018c1e65c1ac78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad345a347181d763d5a2fe9f9531b80e1"><td class="memItemLeft" align="right" valign="top"><a id="ad345a347181d763d5a2fe9f9531b80e1" name="ad345a347181d763d5a2fe9f9531b80e1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>$falsefeedbackformat</b></td></tr>
+<tr class="memdesc:ad345a347181d763d5a2fe9f9531b80e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">the format of the false feedback. <br /></td></tr>
+<tr class="separator:ad345a347181d763d5a2fe9f9531b80e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a613422494139b8e5edc6748335f93edd"><td class="memItemLeft" align="right" valign="top"><a id="a613422494139b8e5edc6748335f93edd" name="a613422494139b8e5edc6748335f93edd"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$generalfeedback</b></td></tr>
 <tr class="memdesc:a613422494139b8e5edc6748335f93edd"><td class="mdescLeft">&#160;</td><td class="mdescRight">question general feedback. <br /></td></tr>
@@ -275,6 +279,10 @@ integer&#160;</td><td class="memItemRight" valign="bottom"><b>$questiontextforma
 Some&#160;</td><td class="memItemRight" valign="bottom"><b>$shownumcorrect</b> = false</td></tr>
 <tr class="memdesc:ac20a50db26de17a5cc3add24da401b57"><td class="mdescLeft">&#160;</td><td class="mdescRight">question types have the option to show the number of sub-parts correct. <br /></td></tr>
 <tr class="separator:ac20a50db26de17a5cc3add24da401b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ec6f1fc21fc8b7b5bd723cbe3d6aee4"><td class="memItemLeft" align="right" valign="top"><a id="a8ec6f1fc21fc8b7b5bd723cbe3d6aee4" name="a8ec6f1fc21fc8b7b5bd723cbe3d6aee4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>$showstandardinstruction</b></td></tr>
+<tr class="memdesc:a8ec6f1fc21fc8b7b5bd723cbe3d6aee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">true to show the standard instruction, otherwise hide it. <br /></td></tr>
+<tr class="separator:a8ec6f1fc21fc8b7b5bd723cbe3d6aee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1a8eebcb58b0a8512cc2798729b10a2"><td class="memItemLeft" align="right" valign="top"><a id="ae1a8eebcb58b0a8512cc2798729b10a2" name="ae1a8eebcb58b0a8512cc2798729b10a2"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$stamp</b></td></tr>
 <tr class="memdesc:ae1a8eebcb58b0a8512cc2798729b10a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">unique identifier of this question. <br /></td></tr>
@@ -297,6 +305,10 @@ integer&#160;</td><td class="memItemRight" valign="bottom"><b>$timemodified</b><
 <tr class="memitem:ae1bcdb4fd3c83327f0f8d76ab4db5be8"><td class="memItemLeft" align="right" valign="top"><a id="ae1bcdb4fd3c83327f0f8d76ab4db5be8" name="ae1bcdb4fd3c83327f0f8d76ab4db5be8"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$truefeedback</b></td></tr>
 <tr class="separator:ae1bcdb4fd3c83327f0f8d76ab4db5be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f41dd69d72023711856e52c139d377f"><td class="memItemLeft" align="right" valign="top"><a id="a3f41dd69d72023711856e52c139d377f" name="a3f41dd69d72023711856e52c139d377f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>$truefeedbackformat</b></td></tr>
+<tr class="memdesc:a3f41dd69d72023711856e52c139d377f"><td class="mdescLeft">&#160;</td><td class="mdescRight">the format of the true feedback. <br /></td></tr>
+<tr class="separator:a3f41dd69d72023711856e52c139d377f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1821fc98964b40d512bf12730ccf45f"><td class="memItemLeft" align="right" valign="top"><a id="ab1821fc98964b40d512bf12730ccf45f" name="ab1821fc98964b40d512bf12730ccf45f"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>$version</b></td></tr>
 <tr class="memdesc:ab1821fc98964b40d512bf12730ccf45f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Version number of the question in a question bank. <br /></td></tr>
@@ -1918,7 +1930,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 16 2023 03:42:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 23 2023 03:05:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

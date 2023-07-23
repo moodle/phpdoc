@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230714) (e77452220b2)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230721) (b4cd63746a7)</div>
   </td>
  </tr>
  </tbody>
@@ -183,7 +183,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Checks if the activity with specified name is maked as complete. </p>
-<p>@Given /^the "(?P&lt;conditionname&gt;(?:[^"]|::")*)" completion condition of "(?P&lt;activityname&gt;(?:[^"]|")*)" is displayed as "(?P&lt;completionstatus&gt;(?:[^"]|::")*)"$/ </p><dl class="params"><dt>Parameters</dt><dd>
+<p>@When the :conditionname completion condition of :activityname is displayed as :completionstatus </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$conditionname</td><td>The completion condition text. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$activityname</td><td>The activity name. </td></tr>
@@ -470,7 +470,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check that the activity has the given automatic completion condition. </p>
-<p>@Given /^"(?P&lt;activityname&gt;(?:[^"]|::")*)" should have the "(?P&lt;conditionname&gt;(?:[^"]|")*)" completion condition$/ </p><dl class="params"><dt>Parameters</dt><dd>
+<p>@When :activityname should have the :conditionname completion condition </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$activityname</td><td>The activity name. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$conditionname</td><td>The automatic condition name. </td></tr>
@@ -669,7 +669,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Checks if the activity with specified name is maked as complete. </p>
-<p>@Given /^the "(?P&lt;conditionname&gt;(?:[^"]|::")*)" completion condition of "(?P&lt;activityname&gt;(?:[^"]|")*)" overridden by "(?P&lt;username&gt;(?:[^"]|::")*)" is displayed as "(?P&lt;completionstatus&gt;(?:[^"]|\")*)"$/ </p><dl class="params"><dt>Parameters</dt><dd>
+<p>@When the :conditionname completion condition of :activityname overridden by :username is displayed as :completionstatus </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$conditionname</td><td>The completion condition text. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$activityname</td><td>The activity name. </td></tr>
@@ -1028,7 +1028,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 16 2023 03:47:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 23 2023 03:09:25 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230714) (e77452220b2)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230721) (b4cd63746a7)</div>
   </td>
  </tr>
  </tbody>
@@ -85,6 +85,9 @@ Inheritance diagram for qtype_calculatedmulti_multi_question:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ac9d96028c988bb57680d87d33cfc19d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da5/classquestion__definition.html#ac9d96028c988bb57680d87d33cfc19d7">__get</a> ($name)</td></tr>
+<tr class="memdesc:ac9d96028c988bb57680d87d33cfc19d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">When a pending definition tries to read its latest version, fill in the latest version for all pending definitions.  <br /></td></tr>
+<tr class="separator:ac9d96028c988bb57680d87d33cfc19d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81e516858d10169a18928aa62e336140"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4a/classqtype__calculatedmulti__multi__question.html#a81e516858d10169a18928aa62e336140">apply_attempt_state</a> (<a class="el" href="../../df/db2/classquestion__attempt__step.html">question_attempt_step</a> $step)</td></tr>
 <tr class="memdesc:a81e516858d10169a18928aa62e336140"><td class="mdescLeft">&#160;</td><td class="mdescRight">When an in-progress <a class="el" href="../../d3/dda/classquestion__attempt.html">question_attempt</a> is re-loaded from the database, this method is called so that the question can re-initialise its internal state as needed by this attempt.  <br /></td></tr>
 <tr class="separator:a81e516858d10169a18928aa62e336140"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -186,6 +189,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8122fc20c007f743300dc57673029697"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dff/classqtype__multichoice__multi__question.html#a8122fc20c007f743300dc57673029697">prepare_simulated_post_data</a> ($simulatedresponse)</td></tr>
 <tr class="memdesc:a8122fc20c007f743300dc57673029697"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes an array of values representing a student response represented in a way that is understandable by a human and transforms that to the response as the POST values returned from the HTML form that takes the student response during a student attempt.  <br /></td></tr>
 <tr class="separator:a8122fc20c007f743300dc57673029697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a1a676ee300144649dfc8c13c1e5bfd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da5/classquestion__definition.html#a2a1a676ee300144649dfc8c13c1e5bfd">set_latest_version</a> (int $latestversion)</td></tr>
+<tr class="memdesc:a2a1a676ee300144649dfc8c13c1e5bfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the latest version.  <br /></td></tr>
+<tr class="separator:a2a1a676ee300144649dfc8c13c1e5bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30791135b5d3ce554ceae9aed94f7962"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d4a/classqtype__calculatedmulti__multi__question.html#a30791135b5d3ce554ceae9aed94f7962">start_attempt</a> (<a class="el" href="../../df/db2/classquestion__attempt__step.html">question_attempt_step</a> $step, $variant)</td></tr>
 <tr class="memdesc:a30791135b5d3ce554ceae9aed94f7962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a new attempt at this question, storing any information that will be needed later in the step.  <br /></td></tr>
 <tr class="separator:a30791135b5d3ce554ceae9aed94f7962"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -236,10 +242,10 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$customfields</b> = 
 <a class="el" href="../../d3/d50/classqtype__calculated__dataset__loader.html">qtype_calculated_dataset_loader</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$datasetloader</b></td></tr>
 <tr class="memdesc:a4fa775123df4950993aaa4f0e496611f"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper for loading the dataset. <br /></td></tr>
 <tr class="separator:a4fa775123df4950993aaa4f0e496611f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd2523970711c2c9041d10d3bfc21987"><td class="memItemLeft" align="right" valign="top"><a id="abd2523970711c2c9041d10d3bfc21987" name="abd2523970711c2c9041d10d3bfc21987"></a>
-number&#160;</td><td class="memItemRight" valign="bottom"><b>$defaultmark</b> = 1</td></tr>
-<tr class="memdesc:abd2523970711c2c9041d10d3bfc21987"><td class="mdescLeft">&#160;</td><td class="mdescRight">what this quetsion is marked out of, by default. <br /></td></tr>
-<tr class="separator:abd2523970711c2c9041d10d3bfc21987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08bcef9ed7e7c603d399879230e1914c"><td class="memItemLeft" align="right" valign="top"><a id="a08bcef9ed7e7c603d399879230e1914c" name="a08bcef9ed7e7c603d399879230e1914c"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>$defaultmark</b> = 1</td></tr>
+<tr class="memdesc:a08bcef9ed7e7c603d399879230e1914c"><td class="mdescLeft">&#160;</td><td class="mdescRight">what this quetsion is marked out of, by default. <br /></td></tr>
+<tr class="separator:a08bcef9ed7e7c603d399879230e1914c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a613422494139b8e5edc6748335f93edd"><td class="memItemLeft" align="right" valign="top"><a id="a613422494139b8e5edc6748335f93edd" name="a613422494139b8e5edc6748335f93edd"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$generalfeedback</b></td></tr>
 <tr class="memdesc:a613422494139b8e5edc6748335f93edd"><td class="mdescLeft">&#160;</td><td class="mdescRight">question general feedback. <br /></td></tr>
@@ -383,6 +389,9 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:a8c0ef67a0aa885b7c78ca507abd9137f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da5/classquestion__definition.html#a8c0ef67a0aa885b7c78ca507abd9137f">$latestversion</a> = null</td></tr>
+<tr class="memdesc:a8c0ef67a0aa885b7c78ca507abd9137f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The latest version of the question.  <br /></td></tr>
+<tr class="separator:a8c0ef67a0aa885b7c78ca507abd9137f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4f650ecb02b05cd697d065b3631959c"><td class="memItemLeft" align="right" valign="top"><a id="aa4f650ecb02b05cd697d065b3631959c" name="aa4f650ecb02b05cd697d065b3631959c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$order</b> = null</td></tr>
 <tr class="separator:aa4f650ecb02b05cd697d065b3631959c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -392,6 +401,46 @@ Protected Attributes</h2></td></tr>
 <dl class="section copyright"><dt>Copyright</dt><dd>2011 The Open University </dd></dl>
 <dl class="section user"><dt>License</dt><dd><a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a> GNU GPL v3 or later </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac9d96028c988bb57680d87d33cfc19d7" name="ac9d96028c988bb57680d87d33cfc19d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9d96028c988bb57680d87d33cfc19d7">&#9670;&#160;</a></span>__get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">question_definition::__get </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>When a pending definition tries to read its latest version, fill in the latest version for all pending definitions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$name</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">mixed</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a81e516858d10169a18928aa62e336140" name="a81e516858d10169a18928aa62e336140"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a81e516858d10169a18928aa62e336140">&#9670;&#160;</a></span>apply_attempt_state()</h2>
 
@@ -2023,6 +2072,47 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a2a1a676ee300144649dfc8c13c1e5bfd" name="a2a1a676ee300144649dfc8c13c1e5bfd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a1a676ee300144649dfc8c13c1e5bfd">&#9670;&#160;</a></span>set_latest_version()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">question_definition::set_latest_version </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$latestversion</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the latest version. </p>
+<p>Making $this-&gt;latestversion public would break the magic <a class="el" href="../../dc/d2c/group___a_d_odb.html#ga6481e8cfc93c80885b3d72a6e1f15a1f" title="Magic method to proxy property getter calls back to the proper ADODB object currently in use.">__get()</a> behaviour above, so allow it to be set externally.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$latestversion</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a30791135b5d3ce554ceae9aed94f7962" name="a30791135b5d3ce554ceae9aed94f7962"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a30791135b5d3ce554ceae9aed94f7962">&#9670;&#160;</a></span>start_attempt()</h2>
 
@@ -2264,13 +2354,39 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a8c0ef67a0aa885b7c78ca507abd9137f" name="a8c0ef67a0aa885b7c78ca507abd9137f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c0ef67a0aa885b7c78ca507abd9137f">&#9670;&#160;</a></span>$latestversion</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int question_definition::$latestversion = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The latest version of the question. </p>
+<p>null if we haven't checked yet. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>question/type/calculatedmulti/question.php</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 16 2023 03:49:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 23 2023 03:10:33 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

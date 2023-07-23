@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2.1+ (Build: 20230714) (0ac092cc926)</div>
+   <div id="projectbrief">Moodle 4.2.1+ (Build: 20230721) (acf600a9b47)</div>
   </td>
  </tr>
  </tbody>
@@ -177,6 +177,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a259432cd1c5d2b9c32b1cbb66aea9d01"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d88/classqtype__numerical__question.html#a259432cd1c5d2b9c32b1cbb66aea9d01">is_same_response</a> (array $prevresponse, array $newresponse)</td></tr>
 <tr class="memdesc:a259432cd1c5d2b9c32b1cbb66aea9d01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use by many of the behaviours to determine whether the student's response has changed.  <br /></td></tr>
 <tr class="separator:a259432cd1c5d2b9c32b1cbb66aea9d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66e7c0e0af123703bd83daedcdefe75e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d88/classqtype__numerical__question.html#a66e7c0e0af123703bd83daedcdefe75e">is_unit_right</a> (<a class="el" href="../../de/d7f/classqtype__numerical__answer.html">qtype_numerical_answer</a> $answer, float $value, ?float $multiplier)</td></tr>
+<tr class="memdesc:a66e7c0e0af123703bd83daedcdefe75e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the provided $multiplier is appropriate for the unit of the given $value, ensuring that multiplying $value by the $multiplier yields the expected $answer.  <br /></td></tr>
+<tr class="separator:a66e7c0e0af123703bd83daedcdefe75e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54f0e85eb32c6c87689fd5d758cb4655"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da5/classquestion__definition.html#a54f0e85eb32c6c87689fd5d758cb4655">make_behaviour</a> (<a class="el" href="../../d3/dda/classquestion__attempt.html">question_attempt</a> $qa, $preferredbehaviour)</td></tr>
 <tr class="memdesc:a54f0e85eb32c6c87689fd5d758cb4655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creat the appropriate behaviour for an attempt at this quetsion, given the desired (archetypal) behaviour.  <br /></td></tr>
 <tr class="separator:a54f0e85eb32c6c87689fd5d758cb4655"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,10 +234,10 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$customfields</b> = 
 <a class="el" href="../../d3/d50/classqtype__calculated__dataset__loader.html">qtype_calculated_dataset_loader</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$datasetloader</b></td></tr>
 <tr class="memdesc:a31b99a8d553510231da058d9ae8e4eda"><td class="mdescLeft">&#160;</td><td class="mdescRight">helper for loading the dataset. <br /></td></tr>
 <tr class="separator:a31b99a8d553510231da058d9ae8e4eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd2523970711c2c9041d10d3bfc21987"><td class="memItemLeft" align="right" valign="top"><a id="abd2523970711c2c9041d10d3bfc21987" name="abd2523970711c2c9041d10d3bfc21987"></a>
-number&#160;</td><td class="memItemRight" valign="bottom"><b>$defaultmark</b> = 1</td></tr>
-<tr class="memdesc:abd2523970711c2c9041d10d3bfc21987"><td class="mdescLeft">&#160;</td><td class="mdescRight">what this quetsion is marked out of, by default. <br /></td></tr>
-<tr class="separator:abd2523970711c2c9041d10d3bfc21987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08bcef9ed7e7c603d399879230e1914c"><td class="memItemLeft" align="right" valign="top"><a id="a08bcef9ed7e7c603d399879230e1914c" name="a08bcef9ed7e7c603d399879230e1914c"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>$defaultmark</b> = 1</td></tr>
+<tr class="memdesc:a08bcef9ed7e7c603d399879230e1914c"><td class="mdescLeft">&#160;</td><td class="mdescRight">what this quetsion is marked out of, by default. <br /></td></tr>
+<tr class="separator:a08bcef9ed7e7c603d399879230e1914c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a613422494139b8e5edc6748335f93edd"><td class="memItemLeft" align="right" valign="top"><a id="a613422494139b8e5edc6748335f93edd" name="a613422494139b8e5edc6748335f93edd"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$generalfeedback</b></td></tr>
 <tr class="memdesc:a613422494139b8e5edc6748335f93edd"><td class="mdescLeft">&#160;</td><td class="mdescRight">question general feedback. <br /></td></tr>
@@ -1772,6 +1775,64 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a66e7c0e0af123703bd83daedcdefe75e" name="a66e7c0e0af123703bd83daedcdefe75e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66e7c0e0af123703bd83daedcdefe75e">&#9670;&#160;</a></span>is_unit_right()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">qtype_numerical_question::is_unit_right </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d7f/classqtype__numerical__answer.html">qtype_numerical_answer</a>&#160;</td>
+          <td class="paramname"><em>$answer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>$value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?float&#160;</td>
+          <td class="paramname"><em>$multiplier</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the provided $multiplier is appropriate for the unit of the given $value, ensuring that multiplying $value by the $multiplier yields the expected $answer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../de/d7f/classqtype__numerical__answer.html" title="Subclass of question_answer with the extra information required by the numerical question type.">qtype_numerical_answer</a></td><td class="paramname">$answer</td><td>The expected result when multiplying $value by the appropriate $multiplier. </td></tr>
+    <tr><td class="paramtype">float</td><td class="paramname">$value</td><td>The provided value </td></tr>
+    <tr><td class="paramtype">float&#160;|&#160;null</td><td class="paramname">$multiplier</td><td>The multiplier value for the unit of $value. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>Returns true if the $multiplier is correct for the unit of $value, false otherwise. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a54f0e85eb32c6c87689fd5d758cb4655" name="a54f0e85eb32c6c87689fd5d758cb4655"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a54f0e85eb32c6c87689fd5d758cb4655">&#9670;&#160;</a></span>make_behaviour()</h2>
 
@@ -2173,7 +2234,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 16 2023 03:42:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 23 2023 03:05:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

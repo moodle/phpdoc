@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230714) (e77452220b2)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230721) (b4cd63746a7)</div>
   </td>
  </tr>
  </tbody>
@@ -67,9 +67,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aacf6a14526058978d4f4c5242eddec54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbf/classmod__bigbluebuttonbn_1_1settings.html#aacf6a14526058978d4f4c5242eddec54">__construct</a> (<a class="el" href="../../d0/d41/classadmin__category.html">admin_category</a> $admin, <a class="el" href="../../d8/dec/classcore_1_1plugininfo_1_1mod.html">core\plugininfo\mod</a> $module, string $categoryname)</td></tr>
-<tr class="memdesc:aacf6a14526058978d4f4c5242eddec54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the bigbluebuttonbn settings.  <br /></td></tr>
-<tr class="separator:aacf6a14526058978d4f4c5242eddec54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04cad55a09a688ebf677eb1f04b99a28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbf/classmod__bigbluebuttonbn_1_1settings.html#a04cad55a09a688ebf677eb1f04b99a28">__construct</a> (<a class="el" href="../../d0/d41/classadmin__category.html">admin_category</a> $admin, <a class="el" href="../../d8/dec/classcore_1_1plugininfo_1_1mod.html">core\plugininfo\mod</a> $module, string $categoryname, bool $hassiteconfig)</td></tr>
+<tr class="memdesc:a04cad55a09a688ebf677eb1f04b99a28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the bigbluebuttonbn settings.  <br /></td></tr>
+<tr class="separator:a04cad55a09a688ebf677eb1f04b99a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad08e6a7b54526dd8ea9c0efa61d54c4a"><td class="memItemLeft" align="right" valign="top"><a id="ad08e6a7b54526dd8ea9c0efa61d54c4a" name="ad08e6a7b54526dd8ea9c0efa61d54c4a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>add_all_settings</b> ()</td></tr>
 <tr class="memdesc:ad08e6a7b54526dd8ea9c0efa61d54c4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add all settings. <br /></td></tr>
@@ -144,8 +144,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:abf933909b10fd9f410d3984a58869908"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aacf6a14526058978d4f4c5242eddec54" name="aacf6a14526058978d4f4c5242eddec54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aacf6a14526058978d4f4c5242eddec54">&#9670;&#160;</a></span>__construct()</h2>
+<a id="a04cad55a09a688ebf677eb1f04b99a28" name="a04cad55a09a688ebf677eb1f04b99a28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04cad55a09a688ebf677eb1f04b99a28">&#9670;&#160;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,7 +166,13 @@ Protected Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$categoryname</em>&#160;</td>
+          <td class="paramname"><em>$categoryname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$hassiteconfig</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -182,6 +188,7 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype"><a class="el" href="../../d0/d41/classadmin__category.html" title="The object used to represent folders (a.k.a.">admin_category</a></td><td class="paramname">$admin</td><td></td></tr>
     <tr><td class="paramtype"><a class="el" href="../../d8/dec/classcore_1_1plugininfo_1_1mod.html" title="Class for activity modules.">core::plugininfo::mod</a></td><td class="paramname">$module</td><td></td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$categoryname</td><td>for the plugin setting (main setting page) </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$hassiteconfig</td><td>whether the current user has moodle/site:config capability </td></tr>
   </table>
   </dd>
 </dl>
@@ -331,7 +338,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 16 2023 03:50:36 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 23 2023 03:11:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>
