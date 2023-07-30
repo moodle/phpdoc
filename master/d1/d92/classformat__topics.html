@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230721) (b4cd63746a7)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230728) (a1d5d1b2f75)</div>
   </td>
  </tr>
  </tbody>
@@ -174,6 +174,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab6fb2d33e0eb3df84823c1c1aa499698"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#ab6fb2d33e0eb3df84823c1c1aa499698">get_modinfo</a> ()</td></tr>
 <tr class="memdesc:ab6fb2d33e0eb3df84823c1c1aa499698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current course modinfo.  <br /></td></tr>
 <tr class="separator:ab6fb2d33e0eb3df84823c1c1aa499698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f4445c1b8d99d0c6ff355d9d65de201"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a4f4445c1b8d99d0c6ff355d9d65de201">get_non_ajax_cm_action_url</a> (string $action, <a class="el" href="../../df/db9/classcm__info.html">cm_info</a> $cm)</td></tr>
+<tr class="memdesc:a4f4445c1b8d99d0c6ff355d9d65de201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the old non-ajax activity action url.  <br /></td></tr>
+<tr class="separator:a4f4445c1b8d99d0c6ff355d9d65de201"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10a7a94a6a9598e409d42d5e19eee88c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a10a7a94a6a9598e409d42d5e19eee88c">get_output_classname</a> (string $outputname)</td></tr>
 <tr class="memdesc:a10a7a94a6a9598e409d42d5e19eee88c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns instance of output component used by this plugin.  <br /></td></tr>
 <tr class="separator:a10a7a94a6a9598e409d42d5e19eee88c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -249,6 +252,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a66c61e0a265c36b541bcfb428cf715bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a66c61e0a265c36b541bcfb428cf715bc">show_editor</a> (?array $capabilities=['moodle/course:manageactivities'])</td></tr>
 <tr class="memdesc:a66c61e0a265c36b541bcfb428cf715bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">return true if the course editor must be displayed.  <br /></td></tr>
 <tr class="separator:a66c61e0a265c36b541bcfb428cf715bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af137fafafaa336909cbe04fda267cba6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#af137fafafaa336909cbe04fda267cba6">show_groupmode</a> (<a class="el" href="../../df/db9/classcm__info.html">cm_info</a> $cm)</td></tr>
+<tr class="memdesc:af137fafafaa336909cbe04fda267cba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the group mode can be displayed.  <br /></td></tr>
+<tr class="separator:af137fafafaa336909cbe04fda267cba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70826be053e47b3e38103ad4f31aa1bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d92/classformat__topics.html#a70826be053e47b3e38103ad4f31aa1bd">supports_ajax</a> ()</td></tr>
 <tr class="memdesc:a70826be053e47b3e38103ad4f31aa1bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the information about the ajax support in the given source format.  <br /></td></tr>
 <tr class="separator:a70826be053e47b3e38103ad4f31aa1bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1720,6 +1726,58 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesection</b> = 0
 
 </div>
 </div>
+<a id="a4f4445c1b8d99d0c6ff355d9d65de201" name="a4f4445c1b8d99d0c6ff355d9d65de201"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f4445c1b8d99d0c6ff355d9d65de201">&#9670;&#160;</a></span>get_non_ajax_cm_action_url()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\base::get_non_ajax_cm_action_url </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$action</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a>&#160;</td>
+          <td class="paramname"><em>$cm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the old non-ajax activity action url. </p>
+<p>Goutte behats tests cannot trigger javascript events, so we must translate to an old non-ajax url while non-ajax course editing is still supported.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$action</td><td>action name the reactive action </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a></td><td class="paramname">$cm</td><td>course module </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a10a7a94a6a9598e409d42d5e19eee88c" name="a10a7a94a6a9598e409d42d5e19eee88c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a10a7a94a6a9598e409d42d5e19eee88c">&#9670;&#160;</a></span>get_output_classname()</h2>
 
@@ -3016,6 +3074,46 @@ course_modinfo::get_section_info_all()</dd></dl>
 
 </div>
 </div>
+<a id="af137fafafaa336909cbe04fda267cba6" name="af137fafafaa336909cbe04fda267cba6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af137fafafaa336909cbe04fda267cba6">&#9670;&#160;</a></span>show_groupmode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\base::show_groupmode </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a>&#160;</td>
+          <td class="paramname"><em>$cm</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if the group mode can be displayed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a></td><td class="paramname">$cm</td><td>the activity module </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a70826be053e47b3e38103ad4f31aa1bd" name="a70826be053e47b3e38103ad4f31aa1bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a70826be053e47b3e38103ad4f31aa1bd">&#9670;&#160;</a></span>supports_ajax()</h2>
 
@@ -3444,7 +3542,7 @@ course_modinfo::get_section_info_all()</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 23 2023 03:09:35 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 30 2023 02:59:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

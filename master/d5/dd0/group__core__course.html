@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230721) (b4cd63746a7)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230728) (a1d5d1b2f75)</div>
   </td>
  </tr>
  </tbody>
@@ -555,6 +555,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga3150a59be2bd6ce48a106f56f92a9130"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga3150a59be2bd6ce48a106f56f92a9130">expand_value</a> (array &amp;$dest, array $source, array $option, string $optionname)</td></tr>
 <tr class="memdesc:ga3150a59be2bd6ce48a106f56f92a9130"><td class="mdescLeft">&#160;</td><td class="mdescRight">'Converts' a value from what is used in edit forms into a value(s) to be stored in the database.  <br /></td></tr>
 <tr class="separator:ga3150a59be2bd6ce48a106f56f92a9130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf923a7208a18c20320f3ef80291e69c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#gaf923a7208a18c20320f3ef80291e69c2">get_activity_action_menu_node</a> ($activityname)</td></tr>
+<tr class="memdesc:gaf923a7208a18c20320f3ef80291e69c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the DOM node of the activity action menu.  <br /></td></tr>
+<tr class="separator:gaf923a7208a18c20320f3ef80291e69c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6f4d2c841693437c44c6fc1bbaee7caf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga6f4d2c841693437c44c6fc1bbaee7caf">get_activity_element</a> ($element, $selectortype, $activityname)</td></tr>
 <tr class="memdesc:ga6f4d2c841693437c44c6fc1bbaee7caf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clicks on the specified element inside the activity container.  <br /></td></tr>
 <tr class="separator:ga6f4d2c841693437c44c6fc1bbaee7caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -4856,6 +4859,52 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 
 </div>
 </div>
+<a id="gaf923a7208a18c20320f3ef80291e69c2" name="gaf923a7208a18c20320f3ef80291e69c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf923a7208a18c20320f3ef80291e69c2">&#9670;&#160;</a></span>get_activity_action_menu_node()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">get_activity_action_menu_node </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$activityname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the DOM node of the activity action menu. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ElementNotFoundException</td><td>Thrown by behat_base::find </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$activityname</td><td>The activity name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Behat::Mink::Element::NodeElement</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga6f4d2c841693437c44c6fc1bbaee7caf" name="ga6f4d2c841693437c44c6fc1bbaee7caf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga6f4d2c841693437c44c6fc1bbaee7caf">&#9670;&#160;</a></span>get_activity_element()</h2>
 
@@ -8602,7 +8651,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 23 2023 03:09:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 30 2023 02:59:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230721) (b4cd63746a7)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230728) (a1d5d1b2f75)</div>
   </td>
  </tr>
  </tbody>
@@ -9674,7 +9674,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>UTF7IMAP_CONVERSION<
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array</td><td>See array return for <a class="el" href="../../dc/d71/group___imap___client.html#ga5bf8518b59eeb46c71681066d12016bd" title="Obtain status information for a mailbox.">status()</a>.</td></tr>
+    <tr><td class="paramname">array</td><td>See array return for status().</td></tr>
   </table>
   </dd>
 </dl>
@@ -14750,7 +14750,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>UTF7IMAP_CONVERSION<
 <li>delimiter: (string) The delimiter for the mailbox.</li>
 <li>extended: (TODO) TODO [only if 'recursivematch' option is true and LIST-EXTENDED extension is supported on the server].</li>
 <li>mailbox: (Horde_Imap_Client_Mailbox) The mailbox object.</li>
-<li>status: (array) See <a class="el" href="../../dc/d71/group___imap___client.html#ga5bf8518b59eeb46c71681066d12016bd" title="Obtain status information for a mailbox.">status()</a> [only if 'status' option is true].</li>
+<li>status: (array) See status() [only if 'status' option is true].</li>
 </ul>
 </td></tr>
   </table>
@@ -17383,11 +17383,11 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>UTF7IMAP_CONVERSION<
 
 <p>Perform a STATUS call on multiple mailboxes at the same time. </p>
 <p>This method leverages the LIST-EXTENDED and LIST-STATUS extensions on the IMAP server to improve the efficiency of this operation.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000703">Deprecated:</a></b></dt><dd>Use <a class="el" href="../../dc/d71/group___imap___client.html#ga5bf8518b59eeb46c71681066d12016bd" title="Obtain status information for a mailbox.">status()</a> instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000703">Deprecated:</a></b></dt><dd>Use status() instead.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$mailboxes</td><td>The mailboxes to query. Either Horde_Imap_Client_Mailbox objects, strings (UTF-8), or a combination of the two. </td></tr>
-    <tr><td class="paramtype">integer</td><td class="paramname">$flags</td><td>See <a class="el" href="../../dc/d71/group___imap___client.html#ga5bf8518b59eeb46c71681066d12016bd" title="Obtain status information for a mailbox.">status()</a>. </td></tr>
+    <tr><td class="paramtype">integer</td><td class="paramname">$flags</td><td>See status(). </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$opts</td><td>Additional options:<ul>
 <li>sort: (boolean) If true, sort the list of mailboxes? DEFAULT: Do not sort the list.</li>
 <li>sort_delimiter: (string) If 'sort' is true, this is the delimiter used to sort the mailboxes. DEFAULT: '.'</li>
@@ -19052,7 +19052,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>UTF7IMAP_CONVERSION<
 </div><div class="memdoc">
 
 <p>Horde_Imap_Client is optimized for short (i.e. </p>
-<p>1 seconds) scripts. It makes heavy use of mailbox caching to save on server accesses. This property should be set to false for long-running scripts, or else <a class="el" href="../../dc/d71/group___imap___client.html#ga5bf8518b59eeb46c71681066d12016bd" title="Obtain status information for a mailbox.">status()</a> data may not reflect the current state of the mailbox on the server.</p>
+<p>1 seconds) scripts. It makes heavy use of mailbox caching to save on server accesses. This property should be set to false for long-running scripts, or else status() data may not reflect the current state of the mailbox on the server.</p>
 <dl class="section since"><dt>Since</dt><dd>2.14.0 </dd></dl>
 
 </div>
@@ -19453,7 +19453,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>UTF7IMAP_CONVERSION<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 23 2023 03:09:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Jul 30 2023 02:59:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>
