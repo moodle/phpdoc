@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230728) (a1d5d1b2f75)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230804) (1474f74687d)</div>
   </td>
  </tr>
  </tbody>
@@ -165,6 +165,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa4b575f695b6a237ac849f99684aab9c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5b/classbehat__navigation.html#aa4b575f695b6a237ac849f99684aab9c">should_exist_in_current_page_administration</a> ($element, $selectortype)</td></tr>
 <tr class="memdesc:aa4b575f695b6a237ac849f99684aab9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks that current page administration contains text.  <br /></td></tr>
 <tr class="separator:aa4b575f695b6a237ac849f99684aab9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d3c8a9caab517608a6811eb17aac750"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5b/classbehat__navigation.html#a3d3c8a9caab517608a6811eb17aac750">should_exist_in_dropdown</a> (string $item, bool $not, string $dropdown, string $container=null, string $containertype=null,)</td></tr>
+<tr class="memdesc:a3d3c8a9caab517608a6811eb17aac750"><td class="mdescLeft">&#160;</td><td class="mdescRight">The named item should exist in the named dropdown.  <br /></td></tr>
+<tr class="separator:a3d3c8a9caab517608a6811eb17aac750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a803158ba303648b4a68b372eeb07981b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5b/classbehat__navigation.html#a803158ba303648b4a68b372eeb07981b">should_exist_in_dropdown_in</a> (string $item, string $dropdown, null|NodeElement $container, bool $not,)</td></tr>
+<tr class="memdesc:a803158ba303648b4a68b372eeb07981b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper to check whether an item exists in a dropdown.  <br /></td></tr>
+<tr class="separator:a803158ba303648b4a68b372eeb07981b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a913693f490b831bf9a349f91815e70f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dbb/classbehat__theme__boost__behat__navigation.html#a913693f490b831bf9a349f91815e70f5">should_exist_in_lang_menu</a> ($itemtext, $selectortype, $not=null)</td></tr>
 <tr class="memdesc:a913693f490b831bf9a349f91815e70f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether an item exists in the language selector menu.  <br /></td></tr>
 <tr class="separator:a913693f490b831bf9a349f91815e70f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2383,6 +2389,130 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a3d3c8a9caab517608a6811eb17aac750" name="a3d3c8a9caab517608a6811eb17aac750"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d3c8a9caab517608a6811eb17aac750">&#9670;&#160;</a></span>should_exist_in_dropdown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_navigation::should_exist_in_dropdown </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$not</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$dropdown</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$container</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$containertype</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The named item should exist in the named dropdown. </p>
+<p>@Then /^the "(?P&lt;item_string&gt;[^"]*)" item should (?P&lt;not_bool&gt;not )?exist in the "(?P&lt;dropdown_string&gt;[^"]*)" dropdown$/ @Then /^the "(?P&lt;item_string&gt;[^"]*)" item should (?P&lt;not_bool&gt;not )?exist in the "(?P&lt;dropdown_string&gt;[^"]*)" dropdown of the "(?P&lt;container_string&gt;[^"]*)" "(?P&lt;containertype_string&gt;[^"]*)"$/ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$item</td><td>The text on the dropdown menu item </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$not</td><td>Whether to negate this search </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$dropdown</td><td>The name of the dropdown </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$container</td><td>The name of the container </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$containertype</td><td>The type of the container </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a803158ba303648b4a68b372eeb07981b" name="a803158ba303648b4a68b372eeb07981b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a803158ba303648b4a68b372eeb07981b">&#9670;&#160;</a></span>should_exist_in_dropdown_in()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_navigation::should_exist_in_dropdown_in </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$item</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$dropdown</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">null|NodeElement&#160;</td>
+          <td class="paramname"><em>$container</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$not</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Helper to check whether an item exists in a dropdown. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$item</td><td>The text of the item to look for </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$dropdown</td><td>The name of the dropdown </td></tr>
+    <tr><td class="paramtype">null&#160;|&#160;NodeElement</td><td class="paramname">$container</td><td>The container to look within </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a913693f490b831bf9a349f91815e70f5" name="a913693f490b831bf9a349f91815e70f5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a913693f490b831bf9a349f91815e70f5">&#9670;&#160;</a></span>should_exist_in_lang_menu()</h2>
 
@@ -2700,7 +2830,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 30 2023 02:59:36 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Aug 6 2023 02:47:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

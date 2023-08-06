@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230728) (a1d5d1b2f75)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230804) (1474f74687d)</div>
   </td>
  </tr>
  </tbody>
@@ -84,6 +84,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afb78104912cb53d78fb4745d2448eb0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de2/classcore__contentbank_1_1contenttype.html#afb78104912cb53d78fb4745d2448eb0f">can_access</a> ()</td></tr>
 <tr class="memdesc:afb78104912cb53d78fb4745d2448eb0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns user has access capability for the main content bank and the content itself (base on is_access_allowed from plugin).  <br /></td></tr>
 <tr class="separator:afb78104912cb53d78fb4745d2448eb0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac93f17f584c080c47a012c3d923c45b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de2/classcore__contentbank_1_1contenttype.html#ac93f17f584c080c47a012c3d923c45b7">can_copy</a> (<a class="el" href="../../d6/d89/classcontenttype__h5p_1_1content.html">content</a> $<a class="el" href="../../d6/d89/classcontenttype__h5p_1_1content.html">content</a>)</td></tr>
+<tr class="memdesc:ac93f17f584c080c47a012c3d923c45b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether or not the user has permission to copy the content.  <br /></td></tr>
+<tr class="separator:ac93f17f584c080c47a012c3d923c45b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba82e36f83653387855316655c41ac19"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de2/classcore__contentbank_1_1contenttype.html#aba82e36f83653387855316655c41ac19">can_delete</a> (<a class="el" href="../../d6/d89/classcontenttype__h5p_1_1content.html">content</a> $<a class="el" href="../../d6/d89/classcontenttype__h5p_1_1content.html">content</a>)</td></tr>
 <tr class="memdesc:aba82e36f83653387855316655c41ac19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the user can delete this content.  <br /></td></tr>
 <tr class="separator:aba82e36f83653387855316655c41ac19"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,6 +159,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a43b66d5c660eee7df768d0c322c6c0a3"><td class="memItemLeft" align="right" valign="top">string const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de2/classcore__contentbank_1_1contenttype.html#a43b66d5c660eee7df768d0c322c6c0a3">CAN_COPY</a> = 'copy'</td></tr>
+<tr class="memdesc:a43b66d5c660eee7df768d0c322c6c0a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant representing whether the plugin implements copy feature.  <br /></td></tr>
+<tr class="separator:a43b66d5c660eee7df768d0c322c6c0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae541da5641faf199df49141efd37763"><td class="memItemLeft" align="right" valign="top">string const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de2/classcore__contentbank_1_1contenttype.html#aae541da5641faf199df49141efd37763">CAN_DOWNLOAD</a> = 'download'</td></tr>
 <tr class="memdesc:aae541da5641faf199df49141efd37763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant representing whether the plugin implements download feature.  <br /></td></tr>
 <tr class="separator:aae541da5641faf199df49141efd37763"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -176,6 +182,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a5d089fd53baea0745ea4cb659c94d7d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d2e/classcontenttype__h5p_1_1contenttype.html#a5d089fd53baea0745ea4cb659c94d7d1">is_access_allowed</a> ()</td></tr>
 <tr class="memdesc:a5d089fd53baea0745ea4cb659c94d7d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns user has access capability for the content itself.  <br /></td></tr>
 <tr class="separator:a5d089fd53baea0745ea4cb659c94d7d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a706e2a018a23211a20128f5870b6b966"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de2/classcore__contentbank_1_1contenttype.html#a706e2a018a23211a20128f5870b6b966">is_copy_allowed</a> (<a class="el" href="../../d6/d89/classcontenttype__h5p_1_1content.html">content</a> $<a class="el" href="../../d6/d89/classcontenttype__h5p_1_1content.html">content</a>)</td></tr>
+<tr class="memdesc:a706e2a018a23211a20128f5870b6b966"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns plugin allows copying.  <br /></td></tr>
+<tr class="separator:a706e2a018a23211a20128f5870b6b966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac176b48ba500fb42f6e33410cfeca941"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de2/classcore__contentbank_1_1contenttype.html#ac176b48ba500fb42f6e33410cfeca941">is_delete_allowed</a> (<a class="el" href="../../d6/d89/classcontenttype__h5p_1_1content.html">content</a> $<a class="el" href="../../d6/d89/classcontenttype__h5p_1_1content.html">content</a>)</td></tr>
 <tr class="memdesc:ac176b48ba500fb42f6e33410cfeca941"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if content allows deleting.  <br /></td></tr>
 <tr class="separator:ac176b48ba500fb42f6e33410cfeca941"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,6 +240,47 @@ context&#160;</td><td class="memItemRight" valign="bottom"><b>$context</b> = nul
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td>True if content could be accessed. False otherwise. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac93f17f584c080c47a012c3d923c45b7" name="ac93f17f584c080c47a012c3d923c45b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac93f17f584c080c47a012c3d923c45b7">&#9670;&#160;</a></span>can_copy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_contentbank\contenttype::can_copy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/da7/classcore__contentbank_1_1content.html">content</a>&#160;</td>
+          <td class="paramname"><em>$content</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">final</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns whether or not the user has permission to copy the content. </p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">content</td><td class="paramname">$content</td><td>The content to be copied. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>True if the user can copy the content. False otherwise. </td></tr>
   </table>
   </dd>
 </dl>
@@ -971,6 +1021,47 @@ context&#160;</td><td class="memItemRight" valign="bottom"><b>$context</b> = nul
 
 </div>
 </div>
+<a id="a706e2a018a23211a20128f5870b6b966" name="a706e2a018a23211a20128f5870b6b966"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a706e2a018a23211a20128f5870b6b966">&#9670;&#160;</a></span>is_copy_allowed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_contentbank\contenttype::is_copy_allowed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/da7/classcore__contentbank_1_1content.html">content</a>&#160;</td>
+          <td class="paramname"><em>$content</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns plugin allows copying. </p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">content</td><td class="paramname">$content</td><td>The content to be copied. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>True if plugin allows copying. False otherwise. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ac176b48ba500fb42f6e33410cfeca941" name="ac176b48ba500fb42f6e33410cfeca941"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac176b48ba500fb42f6e33410cfeca941">&#9670;&#160;</a></span>is_delete_allowed()</h2>
 
@@ -1426,6 +1517,31 @@ context&#160;</td><td class="memItemRight" valign="bottom"><b>$context</b> = nul
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a43b66d5c660eee7df768d0c322c6c0a3" name="a43b66d5c660eee7df768d0c322c6c0a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43b66d5c660eee7df768d0c322c6c0a3">&#9670;&#160;</a></span>CAN_COPY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string const core_contentbank\contenttype::CAN_COPY = 'copy'</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constant representing whether the plugin implements copy feature. </p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
+
+</div>
+</div>
 <a id="aae541da5641faf199df49141efd37763" name="aae541da5641faf199df49141efd37763"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aae541da5641faf199df49141efd37763">&#9670;&#160;</a></span>CAN_DOWNLOAD</h2>
 
@@ -1457,7 +1573,7 @@ context&#160;</td><td class="memItemRight" valign="bottom"><b>$context</b> = nul
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 30 2023 03:01:09 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Aug 6 2023 02:49:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

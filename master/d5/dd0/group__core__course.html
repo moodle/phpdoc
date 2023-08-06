@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230728) (a1d5d1b2f75)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230804) (1474f74687d)</div>
   </td>
  </tr>
  </tbody>
@@ -453,12 +453,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ga0705ef528fbeb23d7acbb6b81758704b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga0705ef528fbeb23d7acbb6b81758704b">course_get_cm_move</a> (<a class="el" href="../../df/db9/classcm__info.html">cm_info</a> $mod, $sr=null)</td></tr>
 <tr class="memdesc:ga0705ef528fbeb23d7acbb6b81758704b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the move action.  <br /></td></tr>
 <tr class="separator:ga0705ef528fbeb23d7acbb6b81758704b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadcbdbb51f66bf6dd31ca541aa307537d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#gadcbdbb51f66bf6dd31ca541aa307537d">course_get_communication_instance_data</a> (int $courseid)</td></tr>
+<tr class="memdesc:gadcbdbb51f66bf6dd31ca541aa307537d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get course specific data for configuring a communication instance.  <br /></td></tr>
+<tr class="separator:gadcbdbb51f66bf6dd31ca541aa307537d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga95e1a50b98aba8cb83a0b51e2b397765"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga95e1a50b98aba8cb83a0b51e2b397765">course_get_course_dates_for_user_id</a> (stdClass $course, int $userid)</td></tr>
 <tr class="memdesc:ga95e1a50b98aba8cb83a0b51e2b397765"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the course start date and offset for the given user id.  <br /></td></tr>
 <tr class="separator:ga95e1a50b98aba8cb83a0b51e2b397765"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8f338f377f21f12cce08e1c1b2c4d9c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga8f338f377f21f12cce08e1c1b2c4d9c2">course_get_course_dates_for_user_ids</a> (stdClass $course, array $userids)</td></tr>
 <tr class="memdesc:ga8f338f377f21f12cce08e1c1b2c4d9c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the course start date and offset for the given user ids.  <br /></td></tr>
 <tr class="separator:ga8f338f377f21f12cce08e1c1b2c4d9c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7ceb0931716644c2254466f5e17cf771"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga7ceb0931716644c2254466f5e17cf771">course_get_courseimage</a> (\stdClass $course)</td></tr>
+<tr class="memdesc:ga7ceb0931716644c2254466f5e17cf771"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current course image for the given course.  <br /></td></tr>
+<tr class="separator:ga7ceb0931716644c2254466f5e17cf771"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac2add1188e45770c1c1878ff4465e3b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#gac2add1188e45770c1c1878ff4465e3b7">course_get_enrolled_courses_for_logged_in_user</a> (int $limit=0, int $offset=0, string $<a class="el" href="../../dc/d71/group___imap___client.html#ga4bd31bcedb7b4943aac2da78d0d84afe">sort</a>=null, string $fields=null, int $dbquerylimit=COURSE_DB_QUERY_LIMIT, array $includecourses=[], array $hiddencourses=[])</td></tr>
 <tr class="memdesc:gac2add1188e45770c1c1878ff4465e3b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of enrolled courses for the current user.  <br /></td></tr>
 <tr class="separator:gac2add1188e45770c1c1878ff4465e3b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -528,6 +534,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gaaef52a17e3fc1ad7f5dcf5de7ebac541"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#gaaef52a17e3fc1ad7f5dcf5de7ebac541">course_set_marker</a> ($courseid, $marker)</td></tr>
 <tr class="memdesc:gaaef52a17e3fc1ad7f5dcf5de7ebac541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set highlighted section.  <br /></td></tr>
 <tr class="separator:gaaef52a17e3fc1ad7f5dcf5de7ebac541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8af2b4de594fc14fd9b054618d5c9acd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga8af2b4de594fc14fd9b054618d5c9acd">course_update_communication_instance_data</a> (stdClass $data)</td></tr>
+<tr class="memdesc:ga8af2b4de594fc14fd9b054618d5c9acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a course using communication configuration data.  <br /></td></tr>
+<tr class="separator:ga8af2b4de594fc14fd9b054618d5c9acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae892809aa96f5d27395f67e00a27d6a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#gae892809aa96f5d27395f67e00a27d6a5">course_update_section</a> ($course, $section, $data)</td></tr>
 <tr class="memdesc:gae892809aa96f5d27395f67e00a27d6a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the course section.  <br /></td></tr>
 <tr class="separator:gae892809aa96f5d27395f67e00a27d6a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3287,6 +3296,38 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 
 </div>
 </div>
+<a id="gadcbdbb51f66bf6dd31ca541aa307537d" name="gadcbdbb51f66bf6dd31ca541aa307537d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadcbdbb51f66bf6dd31ca541aa307537d">&#9670;&#160;</a></span>course_get_communication_instance_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">course_get_communication_instance_data </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$courseid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get course specific data for configuring a communication instance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">integer</td><td class="paramname">$courseid</td><td>The course id. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>Returns course data, context and heading. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga95e1a50b98aba8cb83a0b51e2b397765" name="ga95e1a50b98aba8cb83a0b51e2b397765"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga95e1a50b98aba8cb83a0b51e2b397765">&#9670;&#160;</a></span>course_get_course_dates_for_user_id()</h2>
 
@@ -3376,6 +3417,38 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga7ceb0931716644c2254466f5e17cf771" name="ga7ceb0931716644c2254466f5e17cf771"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7ceb0931716644c2254466f5e17cf771">&#9670;&#160;</a></span>course_get_courseimage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">course_get_courseimage </td>
+          <td>(</td>
+          <td class="paramtype">\stdClass&#160;</td>
+          <td class="paramname"><em>$course</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the current course image for the given course. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">null|stored_file</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -4487,6 +4560,32 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga8af2b4de594fc14fd9b054618d5c9acd" name="ga8af2b4de594fc14fd9b054618d5c9acd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8af2b4de594fc14fd9b054618d5c9acd">&#9670;&#160;</a></span>course_update_communication_instance_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">course_update_communication_instance_data </td>
+          <td>(</td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update a course using communication configuration data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$data</td><td>The data to update the course with. </td></tr>
   </table>
   </dd>
 </dl>
@@ -8651,7 +8750,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 30 2023 02:59:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Aug 6 2023 02:47:35 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

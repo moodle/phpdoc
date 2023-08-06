@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230728) (a1d5d1b2f75)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230804) (1474f74687d)</div>
   </td>
  </tr>
  </tbody>
@@ -92,7 +92,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a127cb18af70ef67372cfa2f3b3293f2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define simple "field = value" clause to apply to the report query.  <br /></td></tr>
 <tr class="separator:a127cb18af70ef67372cfa2f3b3293f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a398cd3d5d6c779b7c0511fbb51abbe26"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/classcore__reportbuilder_1_1local_1_1report_1_1base.html#a398cd3d5d6c779b7c0511fbb51abbe26">add_base_condition_sql</a> (string $where, array $params=[])</td></tr>
-<tr class="memdesc:a398cd3d5d6c779b7c0511fbb51abbe26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define more complex clause that will always be applied to the report query.  <br /></td></tr>
+<tr class="memdesc:a398cd3d5d6c779b7c0511fbb51abbe26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define more complex/non-empty clause to apply to the report query.  <br /></td></tr>
 <tr class="separator:a398cd3d5d6c779b7c0511fbb51abbe26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a0a8a14ac3b4404d1ce8b0669a31a99"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d60/classcore__admin_1_1reportbuilder_1_1local_1_1systemreports_1_1task__logs.html#a2a0a8a14ac3b4404d1ce8b0669a31a99">add_columns</a> ()</td></tr>
 <tr class="memdesc:a2a0a8a14ac3b4404d1ce8b0669a31a99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the columns we want to display in the report.  <br /></td></tr>
@@ -151,6 +151,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3354d175ec04c9601ecead875f333016"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/classcore__reportbuilder_1_1local_1_1report_1_1base.html#a3354d175ec04c9601ecead875f333016">get_context</a> ()</td></tr>
 <tr class="memdesc:a3354d175ec04c9601ecead875f333016"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the report context.  <br /></td></tr>
 <tr class="separator:a3354d175ec04c9601ecead875f333016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22769bf67767630b58778fb55c16beca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/classcore__reportbuilder_1_1local_1_1report_1_1base.html#a22769bf67767630b58778fb55c16beca">get_default_no_results_notice</a> ()</td></tr>
+<tr class="memdesc:a22769bf67767630b58778fb55c16beca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default lang string for the notice used when no results are found.  <br /></td></tr>
+<tr class="separator:a22769bf67767630b58778fb55c16beca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cdd4ff81ed8b6d702bb40394ffde149"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/classcore__reportbuilder_1_1local_1_1report_1_1base.html#a4cdd4ff81ed8b6d702bb40394ffde149">get_default_per_page</a> ()</td></tr>
 <tr class="memdesc:a4cdd4ff81ed8b6d702bb40394ffde149"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default 'per page' size.  <br /></td></tr>
 <tr class="separator:a4cdd4ff81ed8b6d702bb40394ffde149"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -226,6 +229,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6d2ef3f05fff545c84b1cde1b33e2ce1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/classcore__reportbuilder_1_1local_1_1report_1_1base.html#a6d2ef3f05fff545c84b1cde1b33e2ce1">set_condition_values</a> (array $values)</td></tr>
 <tr class="memdesc:a6d2ef3f05fff545c84b1cde1b33e2ce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the condition values of the report.  <br /></td></tr>
 <tr class="separator:a6d2ef3f05fff545c84b1cde1b33e2ce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f22e830dcd785acd743ea14ce63d4d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/classcore__reportbuilder_1_1local_1_1report_1_1base.html#a9f22e830dcd785acd743ea14ce63d4d8">set_default_no_results_notice</a> (?<a class="el" href="../../d1/d21/classlang__string.html">lang_string</a> $notice)</td></tr>
+<tr class="memdesc:a9f22e830dcd785acd743ea14ce63d4d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the default lang string for the notice used when no results are found.  <br /></td></tr>
+<tr class="separator:a9f22e830dcd785acd743ea14ce63d4d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa747417465443863fdccdce09060fc2b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/classcore__reportbuilder_1_1local_1_1report_1_1base.html#aa747417465443863fdccdce09060fc2b">set_default_per_page</a> (int $defaultperpage)</td></tr>
 <tr class="memdesc:aa747417465443863fdccdce09060fc2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the default 'per page' size.  <br /></td></tr>
 <tr class="separator:aa747417465443863fdccdce09060fc2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -551,7 +557,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Define more complex clause that will always be applied to the report query. </p>
+<p>Define more complex/non-empty clause to apply to the report query. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$where</td><td></td></tr>
@@ -1818,6 +1824,39 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a22769bf67767630b58778fb55c16beca" name="a22769bf67767630b58778fb55c16beca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22769bf67767630b58778fb55c16beca">&#9670;&#160;</a></span>get_default_no_results_notice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_reportbuilder\local\report\base::get_default_no_results_notice </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the default lang string for the notice used when no results are found. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">lang_string|null</td><td>the <a class="el" href="../../d1/d21/classlang__string.html">lang_string</a> instance or null if the report prefers not to use one. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a4cdd4ff81ed8b6d702bb40394ffde149" name="a4cdd4ff81ed8b6d702bb40394ffde149"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4cdd4ff81ed8b6d702bb40394ffde149">&#9670;&#160;</a></span>get_default_per_page()</h2>
 
@@ -2919,6 +2958,46 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a9f22e830dcd785acd743ea14ce63d4d8" name="a9f22e830dcd785acd743ea14ce63d4d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f22e830dcd785acd743ea14ce63d4d8">&#9670;&#160;</a></span>set_default_no_results_notice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_reportbuilder\local\report\base::set_default_no_results_notice </td>
+          <td>(</td>
+          <td class="paramtype">?<a class="el" href="../../d1/d21/classlang__string.html">lang_string</a>&#160;</td>
+          <td class="paramname"><em>$notice</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the default lang string for the notice used when no results are found. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d1/d21/classlang__string.html">lang_string</a>&#160;|&#160;null</td><td class="paramname">$notice</td><td>string, or null to tell the report to omit the notice entirely. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aa747417465443863fdccdce09060fc2b" name="aa747417465443863fdccdce09060fc2b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa747417465443863fdccdce09060fc2b">&#9670;&#160;</a></span>set_default_per_page()</h2>
 
@@ -3284,7 +3363,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 30 2023 03:01:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Aug 6 2023 02:49:35 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

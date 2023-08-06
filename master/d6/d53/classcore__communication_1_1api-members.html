@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230728) (a1d5d1b2f75)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230804) (1474f74687d)</div>
   </td>
  </tr>
  </tbody>
@@ -64,7 +64,7 @@ $(function() {
 <p>This is the complete list of members for <a class="el" href="../../db/d27/classcore__communication_1_1api.html">core_communication\api</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html#acfc4b722ad8fc1e96a08b527d6f30c3d">add_members_to_room</a>(array $userids, bool $queue=true)</td><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html">core_communication\api</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html#a3eb26292fe60c686294f384b41f45305">create_and_configure_room</a>(string $selectedcommunication, string $communicationroomname, ?string $avatarurl=null, ?\stdClass $instance=null,)</td><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html">core_communication\api</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html#a5edc471013ee6c8348091c27874c2c6e">create_and_configure_room</a>(string $selectedcommunication, string $communicationroomname, ?\stored_file $avatar=null, ?\stdClass $instance=null,)</td><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html">core_communication\api</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html#a7dd53d89619d0139d3fabcede6391aae">delete_room</a>()</td><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html">core_communication\api</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html#af8e46b1f6262e3a8ff91751f1726e135">form_definition</a>(MoodleQuickForm $mform, string $selectdefaultcommunication=processor::PROVIDER_NONE)</td><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html">core_communication\api</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html#a33e1332bbabb2845acb687c9d0d4889c">form_definition_for_provider</a>(\MoodleQuickForm $mform)</td><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html">core_communication\api</a></td><td class="entry"></td></tr>
@@ -76,14 +76,14 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html#acd8a2724f57257feeae9acbc619cf168">is_available</a>()</td><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html">core_communication\api</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html#a320e6f0de5b505d3496c31aab006246c">load_by_instance</a>(string $component, string $instancetype, int $instanceid)</td><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html">core_communication\api</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html#ad67ddb7644955478d8e755087980b795">remove_members_from_room</a>(array $userids, bool $queue=true)</td><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html">core_communication\api</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html#abfe6774b0696d176f5ac98efb684c479">set_avatar_from_datauri_or_filepath</a>(?string $datauri)</td><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html">core_communication\api</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html#a553e3386f284099f672cc01edd51556f">set_avatar</a>(?\stored_file $avatar)</td><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html">core_communication\api</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html#a77c25e8671ac034c2fa77d94e6a1c7d5">set_data</a>(\stdClass $instance)</td><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html">core_communication\api</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html#a3e951521ed0377ca4b887ac72b89e2d1">show_communication_room_status_notification</a>()</td><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html">core_communication\api</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html#a6d63f3520335f0bc068ba2d3795da665">update_room</a>(string $selectedprovider, string $communicationroomname, ?string $avatarurl=null, ?\stdClass $instance=null,)</td><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html">core_communication\api</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html#ac34fb557d5c28ae3dc211d04efc80a06">update_room</a>(string $selectedprovider, string $communicationroomname, ?\stored_file $avatar=null, ?\stdClass $instance=null,)</td><td class="entry"><a class="el" href="../../db/d27/classcore__communication_1_1api.html">core_communication\api</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 30 2023 03:01:36 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Aug 6 2023 02:49:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>
