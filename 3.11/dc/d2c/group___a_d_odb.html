@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;3.11</span>
    </div>
-   <div id="projectbrief">Moodle 3.11.15+ (Build: 20230804) (30844ce06e)</div>
+   <div id="projectbrief">Moodle 3.11.16 (Build: 20230814) (37b991918e)</div>
   </td>
  </tr>
  </tbody>
@@ -87,7 +87,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5e21842a7a858c38f72e03722cf98fc3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2c/group___a_d_odb.html#ga5e21842a7a858c38f72e03722cf98fc3">execute</a> ($sql, $inputarr=false)</td></tr>
 <tr class="memdesc:ga5e21842a7a858c38f72e03722cf98fc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this instead of <a class="el" href="../../dc/d2c/group___a_d_odb.html#ga9f1179240d068c94a040021326032bed" title="Magic method to intercept method and callback to the proper ADODB object for write/readonly connectio...">__call()</a> as it significantly reduces the overhead of call_user_func_array().  <br /></td></tr>
 <tr class="separator:ga5e21842a7a858c38f72e03722cf98fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad78532440717db93ea23780edf2a4f9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2c/group___a_d_odb.html#gad78532440717db93ea23780edf2a4f9a">getConnection</a> ($type='<a class="el" href="../../d6/d34/group___php_c_a_s.html#gaa2fec9b50cea025fd164361cb0a1ff53">write</a>', $pin_connection=null)</td></tr>
+<tr class="memitem:gad78532440717db93ea23780edf2a4f9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2c/group___a_d_odb.html#gad78532440717db93ea23780edf2a4f9a">getConnection</a> ($type='<a class="el" href="../../dc/d71/group___imap___client.html#gaea09d1ed6a1a3aa8fca59357baa9af80">write</a>', $pin_connection=null)</td></tr>
 <tr class="memdesc:gad78532440717db93ea23780edf2a4f9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ADODB connection object by database type.  <br /></td></tr>
 <tr class="separator:gad78532440717db93ea23780edf2a4f9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0af9a6f29e8b0d767ac17cb307c4f64a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2c/group___a_d_odb.html#ga0af9a6f29e8b0d767ac17cb307c4f64a">getLoadBalancedConnection</a> ($type)</td></tr>
@@ -121,7 +121,7 @@ bool array&#160;</td><td class="memItemRight" valign="bottom"><b>$connections_wr
 <tr class="memdesc:gacd3ab46c60a8b684de913316a139c3c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Just connections to the write capable database. <br /></td></tr>
 <tr class="separator:gacd3ab46c60a8b684de913316a139c3c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1fb7c1f1f9c4aaee0f9efefdb24676f6"><td class="memItemLeft" align="right" valign="top"><a id="ga1fb7c1f1f9c4aaee0f9efefdb24676f6" name="ga1fb7c1f1f9c4aaee0f9efefdb24676f6"></a>
-array&#160;</td><td class="memItemRight" valign="bottom"><b>$last_connection_id</b> = array('<a class="el" href="../../d6/d34/group___php_c_a_s.html#gaa2fec9b50cea025fd164361cb0a1ff53">write</a>' =&gt; false, 'readonly' =&gt; false, 'all' =&gt; false)</td></tr>
+array&#160;</td><td class="memItemRight" valign="bottom"><b>$last_connection_id</b> = array('<a class="el" href="../../dc/d71/group___imap___client.html#gaea09d1ed6a1a3aa8fca59357baa9af80">write</a>' =&gt; false, 'readonly' =&gt; false, 'all' =&gt; false)</td></tr>
 <tr class="memdesc:ga1fb7c1f1f9c4aaee0f9efefdb24676f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last connection_id for each database type. <br /></td></tr>
 <tr class="separator:ga1fb7c1f1f9c4aaee0f9efefdb24676f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8a199f4f286fe2e68345313fa810ca80"><td class="memItemLeft" align="right" valign="top"><a id="ga8a199f4f286fe2e68345313fa810ca80" name="ga8a199f4f286fe2e68345313fa810ca80"></a>
@@ -133,11 +133,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$session_variables</b
 <tr class="memdesc:ga055071e4c5d3839aaacbef75f5d87d18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Session variables that must be maintained across all connections, ie: SET TIME ZONE. <br /></td></tr>
 <tr class="separator:ga055071e4c5d3839aaacbef75f5d87d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga450ae009626356a186ebeab0e9394060"><td class="memItemLeft" align="right" valign="top"><a id="ga450ae009626356a186ebeab0e9394060" name="ga450ae009626356a186ebeab0e9394060"></a>
-array&#160;</td><td class="memItemRight" valign="bottom"><b>$total_connection_weights</b> = array('all' =&gt; 0, '<a class="el" href="../../d6/d34/group___php_c_a_s.html#gaa2fec9b50cea025fd164361cb0a1ff53">write</a>' =&gt; 0, 'readonly' =&gt; 0)</td></tr>
+array&#160;</td><td class="memItemRight" valign="bottom"><b>$total_connection_weights</b> = array('all' =&gt; 0, '<a class="el" href="../../dc/d71/group___imap___client.html#gaea09d1ed6a1a3aa8fca59357baa9af80">write</a>' =&gt; 0, 'readonly' =&gt; 0)</td></tr>
 <tr class="memdesc:ga450ae009626356a186ebeab0e9394060"><td class="mdescLeft">&#160;</td><td class="mdescRight">Weights of all connections for each type. <br /></td></tr>
 <tr class="separator:ga450ae009626356a186ebeab0e9394060"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0b662a3d3f258d92c1ae1a118b59462b"><td class="memItemLeft" align="right" valign="top"><a id="ga0b662a3d3f258d92c1ae1a118b59462b" name="ga0b662a3d3f258d92c1ae1a118b59462b"></a>
-array&#160;</td><td class="memItemRight" valign="bottom"><b>$total_connections</b> = array('all' =&gt; 0, '<a class="el" href="../../d6/d34/group___php_c_a_s.html#gaa2fec9b50cea025fd164361cb0a1ff53">write</a>' =&gt; 0, 'readonly' =&gt; 0)</td></tr>
+array&#160;</td><td class="memItemRight" valign="bottom"><b>$total_connections</b> = array('all' =&gt; 0, '<a class="el" href="../../dc/d71/group___imap___client.html#gaea09d1ed6a1a3aa8fca59357baa9af80">write</a>' =&gt; 0, 'readonly' =&gt; 0)</td></tr>
 <tr class="memdesc:ga0b662a3d3f258d92c1ae1a118b59462b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts of all connections and their types. <br /></td></tr>
 <tr class="separator:ga0b662a3d3f258d92c1ae1a118b59462b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeaa7cea36fd484e7699e80393c2fd3fe"><td class="memItemLeft" align="right" valign="top"><a id="gaeaa7cea36fd484e7699e80393c2fd3fe" name="gaeaa7cea36fd484e7699e80393c2fd3fe"></a>
@@ -145,10 +145,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$user_defined_session
 <tr class="memdesc:gaeaa7cea36fd484e7699e80393c2fd3fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called immediately after connecting to any <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a>. <br /></td></tr>
 <tr class="separator:gaeaa7cea36fd484e7699e80393c2fd3fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf27eb91d5da79eae4566c2c28aa158c6"><td class="memItemLeft" align="right" valign="top"><a id="gaf27eb91d5da79eae4566c2c28aa158c6" name="gaf27eb91d5da79eae4566c2c28aa158c6"></a>
-*ADOdbLoadBalancer is a class that allows the user to do <a class="el" href="../../d6/d34/group___php_c_a_s.html#ga8729171399e7f79583e7b65710e16daa">read</a> <a class="el" href="../../d6/d34/group___php_c_a_s.html#gaa2fec9b50cea025fd164361cb0a1ff53">write</a> splitting *and <a class="el" href="../../d8/ded/group___simple_pie.html#ga4dcaa8f72c8423d4de25a9e87fa6f3e4">load</a> balancing across multiple servers It can handle and <a class="el" href="../../d8/ded/group___simple_pie.html#ga4dcaa8f72c8423d4de25a9e87fa6f3e4">load</a> balance *any number of <a class="el" href="../../d6/d34/group___php_c_a_s.html#gaa2fec9b50cea025fd164361cb0a1ff53">write</a> capable *(AKA:master) or readonly(AKA including dealing with connection failures and retrying queries on a different *connection instead **Released under both BSD license and Lesser GPL library license *Whenever there is any discrepancy between the two *the BSD license will take precedence See LICENSE md **Latest version is available at&#160;</td><td class="memItemRight" valign="bottom"><b>https</b></td></tr>
+*ADOdbLoadBalancer is a class that allows the user to do <a class="el" href="../../dc/d71/group___imap___client.html#ga8b4d018315b064203885d534978b5aa4">read</a> <a class="el" href="../../dc/d71/group___imap___client.html#gaea09d1ed6a1a3aa8fca59357baa9af80">write</a> splitting *and <a class="el" href="../../d8/ded/group___simple_pie.html#ga4dcaa8f72c8423d4de25a9e87fa6f3e4">load</a> balancing across multiple servers It can handle and <a class="el" href="../../d8/ded/group___simple_pie.html#ga4dcaa8f72c8423d4de25a9e87fa6f3e4">load</a> balance *any number of <a class="el" href="../../dc/d71/group___imap___client.html#gaea09d1ed6a1a3aa8fca59357baa9af80">write</a> capable *(AKA:master) or readonly(AKA including dealing with connection failures and retrying queries on a different *connection instead **Released under both BSD license and Lesser GPL library license *Whenever there is any discrepancy between the two *the BSD license will take precedence See LICENSE md **Latest version is available at&#160;</td><td class="memItemRight" valign="bottom"><b>https</b></td></tr>
 <tr class="separator:gaf27eb91d5da79eae4566c2c28aa158c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac24dde0ae3bec8fa1dad5fbd06a03c4f"><td class="memItemLeft" align="right" valign="top"><a id="gac24dde0ae3bec8fa1dad5fbd06a03c4f" name="gac24dde0ae3bec8fa1dad5fbd06a03c4f"></a>
-*ADOdbLoadBalancer is a class that allows the user to do <a class="el" href="../../d6/d34/group___php_c_a_s.html#ga8729171399e7f79583e7b65710e16daa">read</a> <a class="el" href="../../d6/d34/group___php_c_a_s.html#gaa2fec9b50cea025fd164361cb0a1ff53">write</a> splitting *and <a class="el" href="../../d8/ded/group___simple_pie.html#ga4dcaa8f72c8423d4de25a9e87fa6f3e4">load</a> balancing across multiple servers It can handle and <a class="el" href="../../d8/ded/group___simple_pie.html#ga4dcaa8f72c8423d4de25a9e87fa6f3e4">load</a> balance *any number of <a class="el" href="../../d6/d34/group___php_c_a_s.html#gaa2fec9b50cea025fd164361cb0a1ff53">write</a> capable *(AKA:master) or readonly(AKA including dealing with connection failures and retrying queries on a different *connection instead **Released under both BSD license and Lesser GPL library license *Whenever there is any discrepancy between the two&#160;</td><td class="memItemRight" valign="bottom"><b>licenses</b></td></tr>
+*ADOdbLoadBalancer is a class that allows the user to do <a class="el" href="../../dc/d71/group___imap___client.html#ga8b4d018315b064203885d534978b5aa4">read</a> <a class="el" href="../../dc/d71/group___imap___client.html#gaea09d1ed6a1a3aa8fca59357baa9af80">write</a> splitting *and <a class="el" href="../../d8/ded/group___simple_pie.html#ga4dcaa8f72c8423d4de25a9e87fa6f3e4">load</a> balancing across multiple servers It can handle and <a class="el" href="../../d8/ded/group___simple_pie.html#ga4dcaa8f72c8423d4de25a9e87fa6f3e4">load</a> balance *any number of <a class="el" href="../../dc/d71/group___imap___client.html#gaea09d1ed6a1a3aa8fca59357baa9af80">write</a> capable *(AKA:master) or readonly(AKA including dealing with connection failures and retrying queries on a different *connection instead **Released under both BSD license and Lesser GPL library license *Whenever there is any discrepancy between the two&#160;</td><td class="memItemRight" valign="bottom"><b>licenses</b></td></tr>
 <tr class="separator:gac24dde0ae3bec8fa1dad5fbd06a03c4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -450,7 +450,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$user_defined_session
           <td class="memname">getConnection </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$type</em> = <code>'<a class="el" href="../../d6/d34/group___php_c_a_s.html#gaa2fec9b50cea025fd164361cb0a1ff53">write</a>'</code>, </td>
+          <td class="paramname"><em>$type</em> = <code>'<a class="el" href="../../dc/d71/group___imap___client.html#gaea09d1ed6a1a3aa8fca59357baa9af80">write</a>'</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -678,7 +678,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$user_defined_session
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 6 2023 02:25:21 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Aug 13 2023 02:21:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

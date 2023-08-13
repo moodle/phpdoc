@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230804) (1474f74687d)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230810) (57ae65f5149)</div>
   </td>
  </tr>
  </tbody>
@@ -106,7 +106,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a904c031228d291abf8cb160dde881d64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows modules to modify the data returned by form <a class="el" href="../../d2/d19/classmoodleform__mod.html#aafca0a5a73c77a71dd9ff6bcbb77135d" title="Return submitted data if properly submitted or returns NULL if validation fails or if there is no sub...">get_data()</a>.  <br /></td></tr>
 <tr class="separator:a904c031228d291abf8cb160dde881d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92992b5cfc847ac0431e772d700ef67d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d19/classmoodleform__mod.html#a92992b5cfc847ac0431e772d700ef67d">data_preprocessing</a> (&amp;$default_values)</td></tr>
-<tr class="memdesc:a92992b5cfc847ac0431e772d700ef67d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows module to modify data returned by <a class="el" href="../../d5/dd0/group__core__course.html#gaf8c1dc2beab7f37216a260bde6d7201b" title="Get module information data required for updating the module.">get_moduleinfo_data()</a> or <a class="el" href="../../d5/dd0/group__core__course.html#ga2f0b2976dd025752dd188689e2f7a751" title="Prepare the standard module information for a new module instance.">prepare_new_moduleinfo_data()</a> before calling <a class="el" href="../../d2/d19/classmoodleform__mod.html#ac6fd07e2bf474423fa84df791f2b8722" title="Load in existing data as form defaults.">set_data()</a> This method is also called in the bulk activity completion form.  <br /></td></tr>
+<tr class="memdesc:a92992b5cfc847ac0431e772d700ef67d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows module to modify data returned by <a class="el" href="../../d5/dd0/group__core__course.html#gaf8c1dc2beab7f37216a260bde6d7201b" title="Get module information data required for updating the module.">get_moduleinfo_data()</a> or <a class="el" href="../../d5/dd0/group__core__course.html#gaba03421533d420383e763c17799ddb06" title="Prepare the standard module information for a new module instance.">prepare_new_moduleinfo_data()</a> before calling <a class="el" href="../../d2/d19/classmoodleform__mod.html#ac6fd07e2bf474423fa84df791f2b8722" title="Load in existing data as form defaults.">set_data()</a> This method is also called in the bulk activity completion form.  <br /></td></tr>
 <tr class="separator:a92992b5cfc847ac0431e772d700ef67d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafe19da9a3d8d6b99230cdcb465a59a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d19/classmoodleform__mod.html#aafe19da9a3d8d6b99230cdcb465a59a6">definition_after_data</a> ()</td></tr>
 <tr class="memdesc:aafe19da9a3d8d6b99230cdcb465a59a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Each module which defines <a class="el" href="../../d2/d19/classmoodleform__mod.html#aafe19da9a3d8d6b99230cdcb465a59a6" title="Each module which defines definition_after_data() must call this method using parent::definition_afte...">definition_after_data()</a> must call this method using parent::definition_after_data();.  <br /></td></tr>
@@ -491,7 +491,7 @@ object&#160;</td><td class="memItemRight" valign="bottom"><b>$courseformat</b></
 </div><div class="memdoc">
 
 <p>Add an editor for an activity's introduction field. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000093">Deprecated:</a></b></dt><dd>since <a href="https://tracker.moodle.org/browse/MDL-49101" class="el">MDL-49101</a> - use <a class="el" href="../../d2/d19/classmoodleform__mod.html#a2a5c6838f92b5e644e3291e4964a6654" title="Add an editor for an activity&#39;s introduction field.">moodleform_mod::standard_intro_elements()</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000094">Deprecated:</a></b></dt><dd>since <a href="https://tracker.moodle.org/browse/MDL-49101" class="el">MDL-49101</a> - use <a class="el" href="../../d2/d19/classmoodleform__mod.html#a2a5c6838f92b5e644e3291e4964a6654" title="Add an editor for an activity&#39;s introduction field.">moodleform_mod::standard_intro_elements()</a> instead. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">null</td><td class="paramname">$required</td><td>Override system default for requiremodintro </td></tr>
@@ -732,7 +732,7 @@ object&#160;</td><td class="memItemRight" valign="bottom"><b>$courseformat</b></
 </table>
 </div><div class="memdoc">
 
-<p>Allows module to modify data returned by <a class="el" href="../../d5/dd0/group__core__course.html#gaf8c1dc2beab7f37216a260bde6d7201b" title="Get module information data required for updating the module.">get_moduleinfo_data()</a> or <a class="el" href="../../d5/dd0/group__core__course.html#ga2f0b2976dd025752dd188689e2f7a751" title="Prepare the standard module information for a new module instance.">prepare_new_moduleinfo_data()</a> before calling <a class="el" href="../../d2/d19/classmoodleform__mod.html#ac6fd07e2bf474423fa84df791f2b8722" title="Load in existing data as form defaults.">set_data()</a> This method is also called in the bulk activity completion form. </p>
+<p>Allows module to modify data returned by <a class="el" href="../../d5/dd0/group__core__course.html#gaf8c1dc2beab7f37216a260bde6d7201b" title="Get module information data required for updating the module.">get_moduleinfo_data()</a> or <a class="el" href="../../d5/dd0/group__core__course.html#gaba03421533d420383e763c17799ddb06" title="Prepare the standard module information for a new module instance.">prepare_new_moduleinfo_data()</a> before calling <a class="el" href="../../d2/d19/classmoodleform__mod.html#ac6fd07e2bf474423fa84df791f2b8722" title="Load in existing data as form defaults.">set_data()</a> This method is also called in the bulk activity completion form. </p>
 <p>Only available on <a class="el" href="../../d2/d19/classmoodleform__mod.html">moodleform_mod</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -741,7 +741,7 @@ object&#160;</td><td class="memItemRight" valign="bottom"><b>$courseformat</b></
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d7/d70/classmod__workshop__mod__form.html#ad45446a080752e306340c70c38466f58">mod_workshop_mod_form</a>, <a class="el" href="../../dc/d15/classmod__choice__mod__form.html#ab49c388b626d3db3d5b79c96a5c20ad1">mod_choice_mod_form</a>, <a class="el" href="../../d6/d02/classmod__feedback__mod__form.html#a047193dfa669e24e50b0367bef5119ea">mod_feedback_mod_form</a>, <a class="el" href="../../d6/dcc/classmod__folder__mod__form.html#a8e720af1f571dedcd731f87553accb13">mod_folder_mod_form</a>, <a class="el" href="../../de/df9/classmod__forum__mod__form.html#a8c0a30f239a96ecc8191556e852b0b13">mod_forum_mod_form</a>, <a class="el" href="../../dc/dae/classmod__glossary__mod__form.html#aff2178fc30f6047c3d3fb2fdae534d26">mod_glossary_mod_form</a>, <a class="el" href="../../de/de2/classmod__resource__mod__form.html#a281f021104fa29b22bb41361e227994d">mod_resource_mod_form</a>, <a class="el" href="../../d0/ddb/classmod__url__mod__form.html#a3009a91c47faec71e76b101f5c989c1f">mod_url_mod_form</a>, <a class="el" href="../../d7/d6a/classmod__assign__mod__form.html#a4ef87f8240fdacb73b9616e1ae040bcd">mod_assign_mod_form</a>, <a class="el" href="../../d7/db1/classmod__bigbluebuttonbn__mod__form.html#a5cf52d6e288b1e1435462547771f4c4f">mod_bigbluebuttonbn_mod_form</a>, <a class="el" href="../../da/d36/classmod__data__mod__form.html#a7938759d550e57957c6888b6ca5b523e">mod_data_mod_form</a>, <a class="el" href="../../d8/d6b/classmod__h5pactivity__mod__form.html#ad2424d4464b98afaf92595379a575129">mod_h5pactivity_mod_form</a>, <a class="el" href="../../d5/dd7/classmod__lesson__mod__form.html#ae573d10ff890fbc59d45664060a7efd6">mod_lesson_mod_form</a>, <a class="el" href="../../db/d86/classmod__page__mod__form.html#ae5a434e5410935e16041d59f88ebe8ac">mod_page_mod_form</a>, <a class="el" href="../../d3/ddc/classmod__scorm__mod__form.html#aa939c42106d6a9c07d58c6acf28c4c62">mod_scorm_mod_form</a>, and <a class="el" href="../../d4/de5/classmod__quiz__mod__form.html#a9e73a708213ff089dff41ee419a31381">mod_quiz_mod_form</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d7/d70/classmod__workshop__mod__form.html#ad45446a080752e306340c70c38466f58">mod_workshop_mod_form</a>, <a class="el" href="../../dc/d15/classmod__choice__mod__form.html#ab49c388b626d3db3d5b79c96a5c20ad1">mod_choice_mod_form</a>, <a class="el" href="../../d6/d02/classmod__feedback__mod__form.html#a047193dfa669e24e50b0367bef5119ea">mod_feedback_mod_form</a>, <a class="el" href="../../d6/dcc/classmod__folder__mod__form.html#a8e720af1f571dedcd731f87553accb13">mod_folder_mod_form</a>, <a class="el" href="../../de/de2/classmod__resource__mod__form.html#a281f021104fa29b22bb41361e227994d">mod_resource_mod_form</a>, <a class="el" href="../../d0/ddb/classmod__url__mod__form.html#a3009a91c47faec71e76b101f5c989c1f">mod_url_mod_form</a>, <a class="el" href="../../d7/d6a/classmod__assign__mod__form.html#a4ef87f8240fdacb73b9616e1ae040bcd">mod_assign_mod_form</a>, <a class="el" href="../../d7/db1/classmod__bigbluebuttonbn__mod__form.html#a5cf52d6e288b1e1435462547771f4c4f">mod_bigbluebuttonbn_mod_form</a>, <a class="el" href="../../da/d36/classmod__data__mod__form.html#a7938759d550e57957c6888b6ca5b523e">mod_data_mod_form</a>, <a class="el" href="../../de/df9/classmod__forum__mod__form.html#ace65e9cc3d2e06fb626b00908eb7dbd6">mod_forum_mod_form</a>, <a class="el" href="../../dc/dae/classmod__glossary__mod__form.html#aabfcd2b7c534236eebfed465877da9a7">mod_glossary_mod_form</a>, <a class="el" href="../../d8/d6b/classmod__h5pactivity__mod__form.html#ad2424d4464b98afaf92595379a575129">mod_h5pactivity_mod_form</a>, <a class="el" href="../../d5/dd7/classmod__lesson__mod__form.html#ae573d10ff890fbc59d45664060a7efd6">mod_lesson_mod_form</a>, <a class="el" href="../../db/d86/classmod__page__mod__form.html#ae5a434e5410935e16041d59f88ebe8ac">mod_page_mod_form</a>, <a class="el" href="../../d3/ddc/classmod__scorm__mod__form.html#aa939c42106d6a9c07d58c6acf28c4c62">mod_scorm_mod_form</a>, and <a class="el" href="../../d4/de5/classmod__quiz__mod__form.html#a9e73a708213ff089dff41ee419a31381">mod_quiz_mod_form</a>.</p>
 
 </div>
 </div>
@@ -1123,7 +1123,7 @@ object&#160;</td><td class="memItemRight" valign="bottom"><b>$courseformat</b></
 
 <p>Old syntax of class constructor. </p>
 <p>Deprecated in PHP7.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000092">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000093">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -1385,7 +1385,7 @@ object&#160;</td><td class="memItemRight" valign="bottom"><b>$courseformat</b></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 6 2023 02:48:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Aug 13 2023 02:45:10 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2.1+ (Build: 20230804) (6f40d9ffd73)</div>
+   <div id="projectbrief">Moodle 4.2.2 (Build: 20230814) (91e6642f164)</div>
   </td>
  </tr>
  </tbody>
@@ -59,7 +59,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="../../db/d73/classcore__grades_1_1external_1_1get__groups__for__search__widget-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">core_grades\external\get_groups_for_search_widget Class Reference<div class="ingroups"><a class="el" href="../../da/d09/group__core__grades.html">core_grades</a></div></div></div>
 </div><!--header-->
@@ -73,6 +72,9 @@ Inheritance diagram for core_grades\external\get_groups_for_search_widget:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aa46fc29b21da204eb786444a7d1778e6"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd8/classcore__grades_1_1external_1_1get__groups__for__search__widget.html#aa46fc29b21da204eb786444a7d1778e6">execute</a> (int $courseid, string $actionbaseurl)</td></tr>
+<tr class="memdesc:aa46fc29b21da204eb786444a7d1778e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a course ID find the existing user groups and map some fields to the returned array of group objects.  <br /></td></tr>
+<tr class="separator:aa46fc29b21da204eb786444a7d1778e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f0b71d23a497f5715f78474f5fa7695"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd8/classcore__grades_1_1external_1_1get__groups__for__search__widget.html#a8f0b71d23a497f5715f78474f5fa7695">execute_is_deprecated</a> ()</td></tr>
 <tr class="memdesc:a8f0b71d23a497f5715f78474f5fa7695"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mark the function as deprecated.  <br /></td></tr>
 <tr class="separator:a8f0b71d23a497f5715f78474f5fa7695"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -85,12 +87,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a8a7c0250ed4253d92599bf6ed42e4d95"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd8/classcore__grades_1_1external_1_1get__groups__for__search__widget.html#a8a7c0250ed4253d92599bf6ed42e4d95">group_description</a> ()</td></tr>
 <tr class="memdesc:a8a7c0250ed4253d92599bf6ed42e4d95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create group return value description.  <br /></td></tr>
 <tr class="separator:a8a7c0250ed4253d92599bf6ed42e4d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
-Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:aa46fc29b21da204eb786444a7d1778e6"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd8/classcore__grades_1_1external_1_1get__groups__for__search__widget.html#aa46fc29b21da204eb786444a7d1778e6">execute</a> (int $courseid, string $actionbaseurl)</td></tr>
-<tr class="memdesc:aa46fc29b21da204eb786444a7d1778e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a course ID find the existing user groups and map some fields to the returned array of group objects.  <br /></td></tr>
-<tr class="separator:aa46fc29b21da204eb786444a7d1778e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="aa46fc29b21da204eb786444a7d1778e6" name="aa46fc29b21da204eb786444a7d1778e6"></a>
@@ -122,7 +118,7 @@ Static Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -138,15 +134,6 @@ Static Protected Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td>Groups and warnings to pass back to the calling widget. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td></td></tr>
-    <tr><td class="paramname"><a class="el" href="../../d5/def/classinvalid__parameter__exception.html" title="Exception indicating malformed parameter problem.">invalid_parameter_exception</a></td><td></td></tr>
-    <tr><td class="paramname"><a class="el" href="../../d6/da8/classmoodle__exception.html" title="Base Moodle Exception class.">moodle_exception</a></td><td></td></tr>
-    <tr><td class="paramname">restricted_context_exception</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -294,7 +281,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 6 2023 02:44:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Aug 13 2023 02:40:33 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

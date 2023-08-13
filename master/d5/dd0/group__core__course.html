@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230804) (1474f74687d)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230810) (57ae65f5149)</div>
   </td>
  </tr>
  </tbody>
@@ -801,9 +801,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9ea00bbbbc9205435753af17e3c59bf3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga9ea00bbbbc9205435753af17e3c59bf3">plugin_extend_coursemodule_edit_post_actions</a> ($moduleinfo, $course)</td></tr>
 <tr class="memdesc:ga9ea00bbbbc9205435753af17e3c59bf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hook for plugins to take action when a module is created or updated.  <br /></td></tr>
 <tr class="separator:ga9ea00bbbbc9205435753af17e3c59bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2f0b2976dd025752dd188689e2f7a751"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga2f0b2976dd025752dd188689e2f7a751">prepare_new_moduleinfo_data</a> ($course, $modulename, $section)</td></tr>
-<tr class="memdesc:ga2f0b2976dd025752dd188689e2f7a751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare the standard module information for a new module instance.  <br /></td></tr>
-<tr class="separator:ga2f0b2976dd025752dd188689e2f7a751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaba03421533d420383e763c17799ddb06"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#gaba03421533d420383e763c17799ddb06">prepare_new_moduleinfo_data</a> ($course, $modulename, $section, string $suffix='')</td></tr>
+<tr class="memdesc:gaba03421533d420383e763c17799ddb06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare the standard module information for a new module instance.  <br /></td></tr>
+<tr class="separator:gaba03421533d420383e763c17799ddb06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga156a4f1131031a7b774ddb77a6ebe6fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga156a4f1131031a7b774ddb77a6ebe6fe">print_course_request_buttons</a> ($context)</td></tr>
 <tr class="memdesc:ga156a4f1131031a7b774ddb77a6ebe6fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the buttons relating to course requests.  <br /></td></tr>
 <tr class="separator:ga156a4f1131031a7b774ddb77a6ebe6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -7778,8 +7778,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 
 </div>
 </div>
-<a id="ga2f0b2976dd025752dd188689e2f7a751" name="ga2f0b2976dd025752dd188689e2f7a751"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2f0b2976dd025752dd188689e2f7a751">&#9670;&#160;</a></span>prepare_new_moduleinfo_data()</h2>
+<a id="gaba03421533d420383e763c17799ddb06" name="gaba03421533d420383e763c17799ddb06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaba03421533d420383e763c17799ddb06">&#9670;&#160;</a></span>prepare_new_moduleinfo_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -7800,7 +7800,13 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$section</em>&#160;</td>
+          <td class="paramname"><em>$section</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$suffix</em> = <code>''</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -7816,6 +7822,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>course object </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$modulename</td><td>module name </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$section</td><td>section number </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$suffix</td><td>the suffix to add to the name of the completion rules. </td></tr>
   </table>
   </dd>
 </dl>
@@ -7852,8 +7859,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000091">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000036">Todo:</a></b></dt><dd>Final deprecation <a href="https://tracker.moodle.org/browse/MDL-73976" class="el">MDL-73976</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000092">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000037">Todo:</a></b></dt><dd>Final deprecation <a href="https://tracker.moodle.org/browse/MDL-73976" class="el">MDL-73976</a> </dd></dl>
 
 </div>
 </div>
@@ -8743,14 +8750,14 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 </div><div class="memdoc">
 
 <p>Number of courses to display when summaries are included. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000090">Deprecated:</a></b></dt><dd>since 2.4, use $CFG-&gt;courseswithsummarieslimit instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000091">Deprecated:</a></b></dt><dd>since 2.4, use $CFG-&gt;courseswithsummarieslimit instead. </dd></dl>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 6 2023 02:47:35 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Aug 13 2023 02:43:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

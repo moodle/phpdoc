@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230804) (1474f74687d)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230810) (57ae65f5149)</div>
   </td>
  </tr>
  </tbody>
@@ -87,6 +87,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a85888d46342d98bf5d4786c82b0adebe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d89/classaction__menu.html#a85888d46342d98bf5d4786c82b0adebe">add_secondary_action</a> ($action)</td></tr>
 <tr class="memdesc:a85888d46342d98bf5d4786c82b0adebe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a secondary action to the action menu.  <br /></td></tr>
 <tr class="separator:a85888d46342d98bf5d4786c82b0adebe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec915e267a06e01dee22ae17d704747c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d89/classaction__menu.html#aec915e267a06e01dee22ae17d704747c">add_secondary_subpanel</a> (<a class="el" href="../../d9/d99/classcore_1_1output_1_1local_1_1action__menu_1_1subpanel.html">subpanel</a> $<a class="el" href="../../d9/d99/classcore_1_1output_1_1local_1_1action__menu_1_1subpanel.html">subpanel</a>)</td></tr>
+<tr class="memdesc:aec915e267a06e01dee22ae17d704747c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a secondary subpanel.  <br /></td></tr>
+<tr class="separator:aec915e267a06e01dee22ae17d704747c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8193f9337885d98adca71ec024a8fde"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d89/classaction__menu.html#af8193f9337885d98adca71ec024a8fde">do_not_enhance</a> ()</td></tr>
 <tr class="memdesc:af8193f9337885d98adca71ec024a8fde"><td class="mdescLeft">&#160;</td><td class="mdescRight">If you call this method the action menu will be displayed but will not be enhanced.  <br /></td></tr>
 <tr class="separator:af8193f9337885d98adca71ec024a8fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -206,6 +209,12 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TR</b> = 2</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:a9b5821f0b1cd88f456080152c22e3bbd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d89/classaction__menu.html#a9b5821f0b1cd88f456080152c22e3bbd">export_primary_actions_for_template</a> (<a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a> $output)</td></tr>
+<tr class="memdesc:a9b5821f0b1cd88f456080152c22e3bbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the primary actions for the template.  <br /></td></tr>
+<tr class="separator:a9b5821f0b1cd88f456080152c22e3bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64d2ed26552ba8402e193b08f57982b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d89/classaction__menu.html#a64d2ed26552ba8402e193b08f57982b8">export_secondary_actions_for_template</a> (<a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a> $output)</td></tr>
+<tr class="memdesc:a64d2ed26552ba8402e193b08f57982b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the secondary actions for the template.  <br /></td></tr>
+<tr class="separator:a64d2ed26552ba8402e193b08f57982b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88e8641918a3807e218ac8ac60640593"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d89/classaction__menu.html#a88e8641918a3807e218ac8ac60640593">get_align_string</a> ($align)</td></tr>
 <tr class="memdesc:a88e8641918a3807e218ac8ac60640593"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string to describe the alignment.  <br /></td></tr>
 <tr class="separator:a88e8641918a3807e218ac8ac60640593"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -269,7 +278,7 @@ Protected Attributes</h2></td></tr>
 <p>Adds an action to this action menu. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../d7/df5/classaction__menu__link.html">action_menu_link</a>&#160;|&#160;<a class="el" href="../../d0/d6e/classpix__icon.html">pix_icon</a>&#160;|&#160;string</td><td class="paramname">$action</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../d7/df5/classaction__menu__link.html">action_menu_link</a>&#160;|&#160;<a class="el" href="../../d0/d6e/classpix__icon.html">pix_icon</a>&#160;|&#160;subpanel&#160;|&#160;string</td><td class="paramname">$action</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -328,6 +337,32 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aec915e267a06e01dee22ae17d704747c" name="aec915e267a06e01dee22ae17d704747c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec915e267a06e01dee22ae17d704747c">&#9670;&#160;</a></span>add_secondary_subpanel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">action_menu::add_secondary_subpanel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d99/classcore_1_1output_1_1local_1_1action__menu_1_1subpanel.html">subpanel</a>&#160;</td>
+          <td class="paramname"><em>$subpanel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a secondary subpanel. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">subpanel</td><td class="paramname">$subpanel</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="af8193f9337885d98adca71ec024a8fde" name="af8193f9337885d98adca71ec024a8fde"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8193f9337885d98adca71ec024a8fde">&#9670;&#160;</a></span>do_not_enhance()</h2>
 
@@ -345,7 +380,7 @@ Protected Attributes</h2></td></tr>
 
 <p>If you call this method the action menu will be displayed but will not be enhanced. </p>
 <p>By not displaying the menu enhanced all items will be displayed in a single row.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000769">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.2 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000771">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.2 </dd></dl>
 
 </div>
 </div>
@@ -380,6 +415,86 @@ Protected Attributes</h2></td></tr>
 </dl>
 
 <p>Implements <a class="el" href="../../d8/d34/interfacetemplatable.html#a569151cf997eb2bb240cdd79d7475219">templatable</a>.</p>
+
+</div>
+</div>
+<a id="a9b5821f0b1cd88f456080152c22e3bbd" name="a9b5821f0b1cd88f456080152c22e3bbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b5821f0b1cd88f456080152c22e3bbd">&#9670;&#160;</a></span>export_primary_actions_for_template()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">action_menu::export_primary_actions_for_template </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a>&#160;</td>
+          <td class="paramname"><em>$output</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Export the primary actions for the template. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a></td><td class="paramname">$output</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a64d2ed26552ba8402e193b08f57982b8" name="a64d2ed26552ba8402e193b08f57982b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64d2ed26552ba8402e193b08f57982b8">&#9670;&#160;</a></span>export_secondary_actions_for_template()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">action_menu::export_secondary_actions_for_template </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a>&#160;</td>
+          <td class="paramname"><em>$output</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Export the secondary actions for the template. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a></td><td class="paramname">$output</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -611,7 +726,7 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets the alignment of the dialogue in relation to button used to toggle it. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000767">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000769">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$dialogue</td><td>One of action_menu::TL, action_menu::TR, action_menu::BL, action_menu::BR. </td></tr>
@@ -674,7 +789,7 @@ Protected Attributes</h2></td></tr>
 <p>Sets a constraint for the dialogue. </p>
 <p>The constraint is applied when the dialogue is shown and limits the display of the dialogue to within the element the constraint identifies.</p>
 <p>This is required whenever the action menu is displayed inside any CSS element with the .no-overflow class (<a class="el" href="../../d3/d18/classflexible__table.html">flexible_table</a> and any of it's child classes are a likely candidate).</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000768">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000770">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$ancestorselector</td><td>A snippet of CSS used to identify the ancestor to contrain the dialogue to. </td></tr>
@@ -984,7 +1099,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 6 2023 02:47:37 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Aug 13 2023 02:43:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230804) (1474f74687d)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230810) (57ae65f5149)</div>
   </td>
  </tr>
  </tbody>
@@ -59,7 +59,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="../../da/d15/classgradereport__grader_1_1external_1_1get__users__in__report-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">gradereport_grader\external\get_users_in_report Class Reference<div class="ingroups"><a class="el" href="../../db/dab/group__gradereport__grader.html">gradereport_grader</a></div></div></div>
 </div><!--header-->
@@ -73,18 +72,15 @@ Inheritance diagram for gradereport_grader\external\get_users_in_report:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a4007ac08da82d7b85421b022c403422f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d69/classgradereport__grader_1_1external_1_1get__users__in__report.html#a4007ac08da82d7b85421b022c403422f">execute</a> (int $courseid)</td></tr>
+<tr class="memdesc:a4007ac08da82d7b85421b022c403422f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a course ID find Fetch the grader report and add some fields to the returned users.  <br /></td></tr>
+<tr class="separator:a4007ac08da82d7b85421b022c403422f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefabc3786537af97209c40f2b0a8bc5b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d69/classgradereport__grader_1_1external_1_1get__users__in__report.html#aefabc3786537af97209c40f2b0a8bc5b">execute_parameters</a> ()</td></tr>
 <tr class="memdesc:aefabc3786537af97209c40f2b0a8bc5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the parameters for get_users_in_report.  <br /></td></tr>
 <tr class="separator:aefabc3786537af97209c40f2b0a8bc5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae87b12fec2e0cd539ed975424ede2d7e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d69/classgradereport__grader_1_1external_1_1get__users__in__report.html#ae87b12fec2e0cd539ed975424ede2d7e">execute_returns</a> ()</td></tr>
 <tr class="memdesc:ae87b12fec2e0cd539ed975424ede2d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns description of what the users &amp; warnings should return.  <br /></td></tr>
 <tr class="separator:ae87b12fec2e0cd539ed975424ede2d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
-Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:a4007ac08da82d7b85421b022c403422f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d69/classgradereport__grader_1_1external_1_1get__users__in__report.html#a4007ac08da82d7b85421b022c403422f">execute</a> (int $courseid)</td></tr>
-<tr class="memdesc:a4007ac08da82d7b85421b022c403422f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a course ID find Fetch the grader report and add some fields to the returned users.  <br /></td></tr>
-<tr class="separator:a4007ac08da82d7b85421b022c403422f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4007ac08da82d7b85421b022c403422f" name="a4007ac08da82d7b85421b022c403422f"></a>
@@ -106,7 +102,7 @@ Static Protected Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -121,15 +117,6 @@ Static Protected Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td>Users and warnings to pass back to the calling widget. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td></td></tr>
-    <tr><td class="paramname"><a class="el" href="../../d5/def/classinvalid__parameter__exception.html" title="Exception indicating malformed parameter problem.">invalid_parameter_exception</a></td><td></td></tr>
-    <tr><td class="paramname"><a class="el" href="../../d6/da8/classmoodle__exception.html" title="Base Moodle Exception class.">moodle_exception</a></td><td></td></tr>
-    <tr><td class="paramname">restricted_context_exception</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -208,7 +195,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 6 2023 02:50:02 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Aug 13 2023 02:46:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

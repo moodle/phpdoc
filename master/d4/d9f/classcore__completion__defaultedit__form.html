@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230804) (1474f74687d)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230810) (57ae65f5149)</div>
   </td>
  </tr>
  </tbody>
@@ -75,6 +75,9 @@ Inheritance diagram for core_completion_defaultedit_form:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:af4349c3537ed740f92747f9c4e523e61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d9f/classcore__completion__defaultedit__form.html#af4349c3537ed740f92747f9c4e523e61">__construct</a> ( $action=null, $customdata=null, $method='post', $target='', $attributes=null, $editable=true, $ajaxformdata=null)</td></tr>
+<tr class="memdesc:af4349c3537ed740f92747f9c4e523e61"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor function calls the abstract function <a class="el" href="../../d4/d9f/classcore__completion__defaultedit__form.html#aa5ab46d9238b3e7d8f5fd1c4bb430663" title="Form definition,.">definition()</a> and it will then process and clean and attempt to validate incoming data.  <br /></td></tr>
+<tr class="separator:af4349c3537ed740f92747f9c4e523e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga594cb9d675e5d847bfc39b001e02e752"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9c/group__core__form.html#ga594cb9d675e5d847bfc39b001e02e752">_process_submission</a> ($method)</td></tr>
 <tr class="memdesc:ga594cb9d675e5d847bfc39b001e02e752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal method.  <br /></td></tr>
 <tr class="separator:ga594cb9d675e5d847bfc39b001e02e752"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,9 +219,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ga5e46298834215f851999cff554fb6f2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9c/group__core__form.html#ga5e46298834215f851999cff554fb6f2d">get_draft_files</a> ($elname)</td></tr>
 <tr class="memdesc:ga5e46298834215f851999cff554fb6f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get draft files of a form element This is a protected method which will be used only inside moodleforms.  <br /></td></tr>
 <tr class="separator:ga5e46298834215f851999cff554fb6f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga289ef158d3e27958bc06321320fb5069"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9c/group__core__form.html#ga289ef158d3e27958bc06321320fb5069">get_form_identifier</a> ()</td></tr>
-<tr class="memdesc:ga289ef158d3e27958bc06321320fb5069"><td class="mdescLeft">&#160;</td><td class="mdescRight">It should returns unique identifier for the form.  <br /></td></tr>
-<tr class="separator:ga289ef158d3e27958bc06321320fb5069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a261d2650ef18ceb12bfcbb946fceb176"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d9f/classcore__completion__defaultedit__form.html#a261d2650ef18ceb12bfcbb946fceb176">get_form_identifier</a> ()</td></tr>
+<tr class="memdesc:a261d2650ef18ceb12bfcbb946fceb176"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method has been overridden because the form identifier must be unique for each module type.  <br /></td></tr>
+<tr class="separator:a261d2650ef18ceb12bfcbb946fceb176"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd1d4351e0a0c4c7a22d9a09f520f6b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d9f/classcore__completion__defaultedit__form.html#abd1d4351e0a0c4c7a22d9a09f520f6b9">get_module_form</a> ()</td></tr>
 <tr class="memdesc:abd1d4351e0a0c4c7a22d9a09f520f6b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an instance of component-specific module form for the first selected module.  <br /></td></tr>
 <tr class="separator:abd1d4351e0a0c4c7a22d9a09f520f6b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -284,6 +287,83 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$hascustomrules</b> =
 array&#160;</td><td class="memItemRight" valign="bottom"><b>$modules</b></td></tr>
 <tr class="separator:a7cd8d60da81df36c2cf90fe3bed8e415"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="af4349c3537ed740f92747f9c4e523e61" name="af4349c3537ed740f92747f9c4e523e61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4349c3537ed740f92747f9c4e523e61">&#9670;&#160;</a></span>__construct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_completion_defaultedit_form::__construct </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$action</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$customdata</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$method</em> = <code>'post'</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$target</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$attributes</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$editable</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$ajaxformdata</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The constructor function calls the abstract function <a class="el" href="../../d4/d9f/classcore__completion__defaultedit__form.html#aa5ab46d9238b3e7d8f5fd1c4bb430663" title="Form definition,.">definition()</a> and it will then process and clean and attempt to validate incoming data. </p>
+<p>It will call your custom validate method to validate data and will also check any rules you have specified in definition using addRule</p>
+<p>The name of the form (id attribute of the form) is automatically generated depending on the name you gave the class extending moodleform. You should call your class something like</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">mixed</td><td class="paramname">$action</td><td>the action attribute for the form. If empty defaults to auto detect the current url. If a <a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a> object then outputs params as hidden variables. </td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$customdata</td><td>if your form defintion method needs access to data such as $course $cm, etc. to construct the form definition then pass it in this array. You can use globals for somethings. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$method</td><td>if you set this to anything other than 'post' then _GET and _POST will be merged and used as incoming data to the form. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$target</td><td>target frame for form submission. You will rarely use this. Don't use it if you don't need to as the target attribute is deprecated in xhtml strict. </td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$attributes</td><td>you can pass a string of html attributes here or an array. Special attribute 'data-random-ids' will randomise generated elements ids. This is necessary when there are several forms on the same page. Special attribute 'data-double-submit-protection' set to 'off' will turn off double-submit protection JavaScript - this may be necessary if your form sends downloadable files in response to a submit button, and can't call <a class="el" href="../../d2/d1c/classcore__form_1_1util.html#adbbd851ce6e94313c9612d5ba117f308" title="This function should be called if a form submit results in a file download (i.e.">core_form::util::form_download_complete()</a>; </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$editable</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$ajaxformdata</td><td>Forms submitted via ajax, must pass their data here, instead of relying on _GET and _POST. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="../../d6/d9c/group__core__form.html#ga7a730294e547df8e38efd8ba25bdb680">moodleform</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a69e8ed0d0aaa35a7d54553d9a73dddcf" name="a69e8ed0d0aaa35a7d54553d9a73dddcf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a69e8ed0d0aaa35a7d54553d9a73dddcf">&#9670;&#160;</a></span>add_completion_rules()</h2>
@@ -474,6 +554,36 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$modules</b></td></t
 </dl>
 
 <p>Reimplemented from <a class="el" href="../../d6/d9c/group__core__form.html#ga381e23f9e3fee00c66fd44f821fdbcd9">moodleform</a>.</p>
+
+</div>
+</div>
+<a id="a261d2650ef18ceb12bfcbb946fceb176" name="a261d2650ef18ceb12bfcbb946fceb176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a261d2650ef18ceb12bfcbb946fceb176">&#9670;&#160;</a></span>get_form_identifier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_completion_defaultedit_form::get_form_identifier </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method has been overridden because the form identifier must be unique for each module type. </p>
+<p>Otherwise, the form will display the same data for each module type once it's submitted. </p>
+
+<p>Reimplemented from <a class="el" href="../../d6/d9c/group__core__form.html#ga289ef158d3e27958bc06321320fb5069">moodleform</a>.</p>
 
 </div>
 </div>
@@ -775,7 +885,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$modules</b></td></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 6 2023 02:47:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Aug 13 2023 02:44:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

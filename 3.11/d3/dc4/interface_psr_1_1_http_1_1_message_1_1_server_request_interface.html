@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;3.11</span>
    </div>
-   <div id="projectbrief">Moodle 3.11.15+ (Build: 20230804) (30844ce06e)</div>
+   <div id="projectbrief">Moodle 3.11.16 (Build: 20230814) (37b991918e)</div>
   </td>
  </tr>
  </tbody>
@@ -195,9 +195,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieve a single derived request attribute. </p>
-<p>Retrieves a single derived request attribute as described in <a class="el" href="../../dc/dea/group__internal_authentication.html#gafbe85ec4b9947cc951c67d63911cf0a4" title="Get an key values arry of attributes.">getAttributes()</a>. If the attribute has not been previously set, returns the default value as provided.</p>
-<p>This method obviates the need for a <a class="el" href="../../dc/dea/group__internal_authentication.html#ga3e6426768578a54507bbaf25c183997c" title="Check whether a specific attribute with a name is available.">hasAttribute()</a> method, as it allows specifying a default value to return if the attribute is not found.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dc/dea/group__internal_authentication.html#gafbe85ec4b9947cc951c67d63911cf0a4" title="Get an key values arry of attributes.">getAttributes()</a> </dd></dl>
+<p>Retrieves a single derived request attribute as described in getAttributes(). If the attribute has not been previously set, returns the default value as provided.</p>
+<p>This method obviates the need for a hasAttribute() method, as it allows specifying a default value to return if the attribute is not found.</p>
+<dl class="section see"><dt>See also</dt><dd>getAttributes() </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$name</td><td>The attribute name. </td></tr>
@@ -800,9 +800,9 @@ foreach ($message-&gt;getHeaders() as $name =&gt; $values) {
 </div><div class="memdoc">
 
 <p>Return an instance with the specified derived request attribute. </p>
-<p>This method allows setting a single derived request attribute as described in <a class="el" href="../../dc/dea/group__internal_authentication.html#gafbe85ec4b9947cc951c67d63911cf0a4" title="Get an key values arry of attributes.">getAttributes()</a>.</p>
+<p>This method allows setting a single derived request attribute as described in getAttributes().</p>
 <p>This method MUST be implemented in such a way as to retain the immutability of the message, and MUST return an instance that has the updated attribute.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dc/dea/group__internal_authentication.html#gafbe85ec4b9947cc951c67d63911cf0a4" title="Get an key values arry of attributes.">getAttributes()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>getAttributes() </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$name</td><td>The attribute name. </td></tr>
@@ -1026,9 +1026,9 @@ foreach ($message-&gt;getHeaders() as $name =&gt; $values) {
 </div><div class="memdoc">
 
 <p>Return an instance that removes the specified derived request attribute. </p>
-<p>This method allows removing a single derived request attribute as described in <a class="el" href="../../dc/dea/group__internal_authentication.html#gafbe85ec4b9947cc951c67d63911cf0a4" title="Get an key values arry of attributes.">getAttributes()</a>.</p>
+<p>This method allows removing a single derived request attribute as described in getAttributes().</p>
 <p>This method MUST be implemented in such a way as to retain the immutability of the message, and MUST return an instance that removes the attribute.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dc/dea/group__internal_authentication.html#gafbe85ec4b9947cc951c67d63911cf0a4" title="Get an key values arry of attributes.">getAttributes()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>getAttributes() </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$name</td><td>The attribute name. </td></tr>
@@ -1352,7 +1352,7 @@ foreach ($message-&gt;getHeaders() as $name =&gt; $values) {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 6 2023 02:27:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Aug 13 2023 02:24:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

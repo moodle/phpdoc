@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;3.11</span>
    </div>
-   <div id="projectbrief">Moodle 3.11.15+ (Build: 20230804) (30844ce06e)</div>
+   <div id="projectbrief">Moodle 3.11.16 (Build: 20230814) (37b991918e)</div>
   </td>
  </tr>
  </tbody>
@@ -1838,7 +1838,7 @@ $this&#160;</td><td class="memItemRight" valign="bottom"><b>curl</b> = new <a cl
 const&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_QUESTIONS_PER_PAGE</b> 20</td></tr>
 <tr class="separator:gac875d7818a38a2edc37da002f11106d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab2ef84a04901d84307fdd1b36f501b5e"><td class="memItemLeft" align="right" valign="top"><a id="gab2ef84a04901d84307fdd1b36f501b5e" name="gab2ef84a04901d84307fdd1b36f501b5e"></a>
-*Sourceforge Project *visit&lt; a class=&quot;el externalurl&quot; href=&quot;http: * * For installation instructions, <a class="el" href="../../d6/d34/group___php_c_a_s.html#ga44a2ac59a3b91f8c18905dce700934d6">open</a> the README.txt file packaged with this * class. If you don'<a class="el" href="../../d1/d65/group___translation.html#gab016495bb070691ef345c26974d81c4f">t</a> have a copy, you can see it at: * &lt;a class=&quot;el externalurl&quot; href=&quot;http:**Please submit all problems or questions to the Help Forum on my project page:*&lt; a class=&quot;el externalurl&quot; href=&quot;http: * * Modified by Dongsheng Cai &lt;dongsheng@moodle.com&gt; * ChangeLog: * 1. Remove PEAR HTTP LIB, use curl.class.php (created by myself) * 2. Remove PEAR <a class="el" href="../../d1/dc8/class_d_b.html">DB</a> LIB * 3. Remove all <a class="el" href="../../d3/d3d/classcache.html">cache</a> code, it will implement in <a class="el" href="../../da/d9f/classcurl.html">curl</a> class. * 4. Clean up session code * * Modified by David Mudrak &lt;david@moodle.com&gt; * ChangeLog: * 1. <a class="el" href="../../d6/d9f/group__moodlecore.html#gaeb1ca17ad54d80ab7a6d47c741a1c680">upload</a>() method uses Moodle <a class="el" href="../../d0/d00/classstored__file.html">stored_file</a> * 2. <a class="el" href="../../d6/d9f/group__moodlecore.html#gaeb1ca17ad54d80ab7a6d47c741a1c680">upload</a>() method supports all params provided by http: * 3. auth() method shows <a class="el" href="../../d0/de1/group__core.html#ga1fdef564b77d3a23cf15e73c0962bf14">debugging</a> warning as this library cannot be used any * more for calling Flickr API that requires authentication. * * @ingroup moodlecore * @subpackage 3rd-party */<a class="el" href="../../d0/de1/group__core.html#ga4806e88f79ea3f4220bb2e1bc67ed1a2">defined</a>('<a class="el" href="../../d0/de1/group__core.html#ga4a87e5b19cb6b7e3148f68a819ff0790">MOODLE_INTERNAL</a>') || die();global $CFG;require_once(&quot;{ $CFG-&gt;libdir}/flickrclient.php&quot;);class phpFlickr { var $api_key; var $secret; var $REST = 'https: var $Upload = 'https: var $Replace = 'https: var $req; var $response; var $parsed_response; var $die_on_error; var $error_code; var $error_msg; var $token; var $php_version; object function __construct ($api_key, $secret = NULL, $token = '') { global $CFG; $this-&gt;api_key = $api_key; $this-&gt;secret = $secret; $this-&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>die_on_error</b> = false</td></tr>
+*Sourceforge Project *visit&lt; a class=&quot;el externalurl&quot; href=&quot;http: * * For installation instructions, open the README.txt file packaged with this * class. If you don'<a class="el" href="../../d1/d65/group___translation.html#gab016495bb070691ef345c26974d81c4f">t</a> have a copy, you can see it at: * &lt;a class=&quot;el externalurl&quot; href=&quot;http:**Please submit all problems or questions to the Help Forum on my project page:*&lt; a class=&quot;el externalurl&quot; href=&quot;http: * * Modified by Dongsheng Cai &lt;dongsheng@moodle.com&gt; * ChangeLog: * 1. Remove PEAR HTTP LIB, use curl.class.php (created by myself) * 2. Remove PEAR <a class="el" href="../../d1/dc8/class_d_b.html">DB</a> LIB * 3. Remove all <a class="el" href="../../d3/d3d/classcache.html">cache</a> code, it will implement in <a class="el" href="../../da/d9f/classcurl.html">curl</a> class. * 4. Clean up session code * * Modified by David Mudrak &lt;david@moodle.com&gt; * ChangeLog: * 1. <a class="el" href="../../d6/d9f/group__moodlecore.html#gaeb1ca17ad54d80ab7a6d47c741a1c680">upload</a>() method uses Moodle <a class="el" href="../../d0/d00/classstored__file.html">stored_file</a> * 2. <a class="el" href="../../d6/d9f/group__moodlecore.html#gaeb1ca17ad54d80ab7a6d47c741a1c680">upload</a>() method supports all params provided by http: * 3. auth() method shows <a class="el" href="../../d0/de1/group__core.html#ga1fdef564b77d3a23cf15e73c0962bf14">debugging</a> warning as this library cannot be used any * more for calling Flickr API that requires authentication. * * @ingroup moodlecore * @subpackage 3rd-party */<a class="el" href="../../d0/de1/group__core.html#ga4806e88f79ea3f4220bb2e1bc67ed1a2">defined</a>('<a class="el" href="../../d0/de1/group__core.html#ga4a87e5b19cb6b7e3148f68a819ff0790">MOODLE_INTERNAL</a>') || die();global $CFG;require_once(&quot;{ $CFG-&gt;libdir}/flickrclient.php&quot;);class phpFlickr { var $api_key; var $secret; var $REST = 'https: var $Upload = 'https: var $Replace = 'https: var $req; var $response; var $parsed_response; var $die_on_error; var $error_code; var $error_msg; var $token; var $php_version; object function __construct ($api_key, $secret = NULL, $token = '') { global $CFG; $this-&gt;api_key = $api_key; $this-&gt;secret = $secret; $this-&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>die_on_error</b> = false</td></tr>
 <tr class="separator:gab2ef84a04901d84307fdd1b36f501b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafbb64d65fd4f2a0684da2e0bdc1db931"><td class="memItemLeft" align="right" valign="top"><a id="gafbb64d65fd4f2a0684da2e0bdc1db931" name="gafbb64d65fd4f2a0684da2e0bdc1db931"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>END_DELIM</b> &quot;\xc3\x91\xc3\x91\xce\xa9&quot;</td></tr>
@@ -3770,7 +3770,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UNKNOWN</b> '[<
 
 <p>Old syntax of class constructor. </p>
 <p>Deprecated in PHP7.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000613">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000608">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -3972,7 +3972,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UNKNOWN</b> '[<
 
 <p>Old syntax of class constructor. </p>
 <p>Deprecated in PHP7.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000611">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000606">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -6460,7 +6460,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UNKNOWN</b> '[<
 
 <p>Old syntax of class constructor. </p>
 <p>Deprecated in PHP7.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000612">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000607">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -6850,7 +6850,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UNKNOWN</b> '[<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 6 2023 02:25:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Aug 13 2023 02:21:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

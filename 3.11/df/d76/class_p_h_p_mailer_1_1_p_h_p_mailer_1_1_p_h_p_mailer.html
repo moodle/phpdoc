@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;3.11</span>
    </div>
-   <div id="projectbrief">Moodle 3.11.15+ (Build: 20230804) (30844ce06e)</div>
+   <div id="projectbrief">Moodle 3.11.16 (Build: 20230814) (37b991918e)</div>
   </td>
  </tr>
  </tbody>
@@ -886,7 +886,7 @@ Brent R. Matzelle (original founder) </dd></dl>
 </div><div class="memdoc">
 
 <p>Add an address to one of the recipient arrays or to the ReplyTo array. </p>
-<p>Because PHPMailer can't validate addresses with an IDN without knowing the PHPMailer::$CharSet (that can still be modified after calling this function), addition of such addresses is delayed until <a class="el" href="../../d6/d34/group___php_c_a_s.html#ga12bcef5130168b80d3d52dc82213f19a" title="Perform the request.">send()</a>. Addresses that have been added already return false, but do not throw exceptions.</p>
+<p>Because PHPMailer can't validate addresses with an IDN without knowing the PHPMailer::$CharSet (that can still be modified after calling this function), addition of such addresses is delayed until send(). Addresses that have been added already return false, but do not throw exceptions.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$kind</td><td>One of 'to', 'cc', 'bcc', or 'ReplyTo' </td></tr>
@@ -1843,7 +1843,7 @@ PHPMailer::$SMTPDebug</dd></dl>
 </div><div class="memdoc">
 
 <p>Callback Action function name. </p>
-<p>The function that handles the result of the send email action. It is called out by <a class="el" href="../../d6/d34/group___php_c_a_s.html#ga12bcef5130168b80d3d52dc82213f19a" title="Perform the request.">send()</a> for each email sent.</p>
+<p>The function that handles the result of the send email action. It is called out by send() for each email sent.</p>
 <p>Value can be any php callable: <a href="http://www.php.net/is_callable">http://www.php.net/is_callable</a></p>
 <p>Parameters: bool $result result of the send action array $to email addresses of the recipients array $cc cc email addresses array $bcc bcc email addresses string $subject the subject string $body the email body string $from email address of sender string $extra extra information of possible use "smtp_transaction_id' =&gt; last smtp transaction id </p>
 
@@ -2258,7 +2258,7 @@ PHPMailer::$bcc </dd></dl>
 </div><div class="memdoc">
 
 <p>An array of names and addresses queued for validation. </p>
-<p>In <a class="el" href="../../d6/d34/group___php_c_a_s.html#ga12bcef5130168b80d3d52dc82213f19a" title="Perform the request.">send()</a>, valid and non duplicate entries are moved to $all_recipients and one of $to, $cc, or $bcc. This array is used only for addresses with IDN.</p>
+<p>In send(), valid and non duplicate entries are moved to $all_recipients and one of $to, $cc, or $bcc. This array is used only for addresses with IDN.</p>
 <dl class="section see"><dt>See also</dt><dd>PHPMailer::$to </dd>
 <dd>
 PHPMailer::$cc </dd>
@@ -2290,7 +2290,7 @@ PHPMailer::$all_recipients </dd></dl>
 </div><div class="memdoc">
 
 <p>An array of reply-to names and addresses queued for validation. </p>
-<p>In <a class="el" href="../../d6/d34/group___php_c_a_s.html#ga12bcef5130168b80d3d52dc82213f19a" title="Perform the request.">send()</a>, valid and non duplicate entries are moved to $ReplyTo. This array is used only for addresses with IDN.</p>
+<p>In send(), valid and non duplicate entries are moved to $ReplyTo. This array is used only for addresses with IDN.</p>
 <dl class="section see"><dt>See also</dt><dd>PHPMailer::$ReplyTo </dd></dl>
 
 </div>
@@ -2351,7 +2351,7 @@ PHPMailer::$all_recipients </dd></dl>
 
 <p>Whether to split multiple to addresses into multiple messages or send them all in one message. </p>
 <p>Only supported in <code>mail</code> and <code>sendmail</code> transports, not in SMTP.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000656">Deprecated:</a></b></dt><dd>6.0.0 PHPMailer isn't a mailing list manager! </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000651">Deprecated:</a></b></dt><dd>6.0.0 PHPMailer isn't a mailing list manager! </dd></dl>
 
 </div>
 </div>
@@ -2605,7 +2605,7 @@ SMTP::$do_debug </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 6 2023 02:27:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Aug 13 2023 02:24:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

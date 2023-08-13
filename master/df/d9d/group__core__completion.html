@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230804) (1474f74687d)</div>
+   <div id="projectbrief">Moodle 4.3dev (Build: 20230810) (57ae65f5149)</div>
   </td>
  </tr>
  </tbody>
@@ -158,6 +158,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga3acf06fbfcf58e94a27fe5710cf4ca60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9d/group__core__completion.html#ga3acf06fbfcf58e94a27fe5710cf4ca60">completion_cron_aggregate</a> ($method, $data, &amp;$state)</td></tr>
 <tr class="memdesc:ga3acf06fbfcf58e94a27fe5710cf4ca60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aggregate criteria status's as per configured aggregation method.  <br /></td></tr>
 <tr class="separator:ga3acf06fbfcf58e94a27fe5710cf4ca60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9b15ff2b2371892ab427dad5a1b04479"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9d/group__core__completion.html#ga9b15ff2b2371892ab427dad5a1b04479">core_completion\form::completion_rule_enabled</a> ($data)</td></tr>
+<tr class="memdesc:ga9b15ff2b2371892ab427dad5a1b04479"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called during validation.  <br /></td></tr>
+<tr class="separator:ga9b15ff2b2371892ab427dad5a1b04479"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac791610e5ee5bc65c40831fe4437cf37"><td class="memItemLeft" align="right" valign="top"><a id="gac791610e5ee5bc65c40831fe4437cf37" name="gac791610e5ee5bc65c40831fe4437cf37"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>core_completion\form::definition_after_data_completion</b> ()</td></tr>
 <tr class="memdesc:gac791610e5ee5bc65c40831fe4437cf37"><td class="mdescLeft">&#160;</td><td class="mdescRight">It should be called from the definition_after_data() to setup the completion settings in the form. <br /></td></tr>
@@ -168,6 +171,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gac5c0addaa08a1fe81342445a1f50d737"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9d/group__core__completion.html#gac5c0addaa08a1fe81342445a1f50d737">core_completion\form::get_form</a> ()</td></tr>
 <tr class="memdesc:gac5c0addaa08a1fe81342445a1f50d737"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the form associated to this class, where the completion elements will be added.  <br /></td></tr>
 <tr class="separator:gac5c0addaa08a1fe81342445a1f50d737"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab4a802ba2c99d0718c840c2d05a22f40"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9d/group__core__completion.html#gab4a802ba2c99d0718c840c2d05a22f40">core_completion\form::get_suffix</a> ()</td></tr>
+<tr class="memdesc:gab4a802ba2c99d0718c840c2d05a22f40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the suffix to be added to the completion elements when creating them (for example, 'completion_assign').  <br /></td></tr>
+<tr class="separator:gab4a802ba2c99d0718c840c2d05a22f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6a74f068a59206ab08ffcab33e0d10fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9d/group__core__completion.html#ga6a74f068a59206ab08ffcab33e0d10fd">core_completion\form::set_suffix</a> (string $suffix)</td></tr>
+<tr class="memdesc:ga6a74f068a59206ab08ffcab33e0d10fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the suffix to be added to the completion elements when creating them (for example, 'completion_assign').  <br /></td></tr>
+<tr class="separator:ga6a74f068a59206ab08ffcab33e0d10fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaee1c10ae228a758bf3664537b61102e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9d/group__core__completion.html#gaee1c10ae228a758bf3664537b61102e4">core_completion\form::validate_completion</a> (array $data)</td></tr>
 <tr class="memdesc:gaee1c10ae228a758bf3664537b61102e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform some extra validation for completion settings.  <br /></td></tr>
 <tr class="separator:gaee1c10ae228a758bf3664537b61102e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -572,6 +581,47 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COMPLETION_VIEW_NOT_
 
 </div>
 </div>
+<a id="ga9b15ff2b2371892ab427dad5a1b04479" name="ga9b15ff2b2371892ab427dad5a1b04479"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9b15ff2b2371892ab427dad5a1b04479">&#9670;&#160;</a></span>completion_rule_enabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_completion\form\completion_rule_enabled </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">abstract</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called during validation. </p>
+<p>Override this method to indicate, based on the data, whether a custom completion rule is selected or not.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>Input data (not yet validated) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>True if one or more rules are enabled; false if none are. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="gaca67c799d5231878e3e736784cc87c2e" name="gaca67c799d5231878e3e736784cc87c2e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaca67c799d5231878e3e736784cc87c2e">&#9670;&#160;</a></span>get_cm()</h2>
 
@@ -646,6 +696,57 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COMPLETION_VIEW_NOT_
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td>If the class does not have a _form property. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gab4a802ba2c99d0718c840c2d05a22f40" name="gab4a802ba2c99d0718c840c2d05a22f40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab4a802ba2c99d0718c840c2d05a22f40">&#9670;&#160;</a></span>get_suffix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_completion\form\get_suffix </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the suffix to be added to the completion elements when creating them (for example, 'completion_assign'). </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>The suffix </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga6a74f068a59206ab08ffcab33e0d10fd" name="ga6a74f068a59206ab08ffcab33e0d10fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6a74f068a59206ab08ffcab33e0d10fd">&#9670;&#160;</a></span>set_suffix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_completion\form\set_suffix </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$suffix</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the suffix to be added to the completion elements when creating them (for example, 'completion_assign'). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$suffix</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -912,14 +1013,14 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COMPLETION_VIEW_NOT_
 <b>Initial value:</b><div class="fragment"><div class="line">{</div>
 <div class="line"> </div>
 <div class="line">    </div>
-<div class="line">    <span class="keyword">abstract</span> <span class="keyword">protected</span> <span class="keyword">function</span> completion_rule_enabled($data)</div>
+<div class="line">    <span class="keyword">protected</span> <span class="keywordtype">string</span> $suffix = <span class="stringliteral">&#39;&#39;</span></div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 6 2023 02:47:35 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Aug 13 2023 02:43:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>
