@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230810) (57ae65f5149)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230818) (e998f140618)</div>
   </td>
  </tr>
  </tbody>
@@ -69,9 +69,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:af736de30d4cd9566d969322441e62530"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d7c/classcore__course_1_1reportbuilder_1_1local_1_1formatters_1_1enrolment.html#af736de30d4cd9566d969322441e62530">enrolment_name</a> (?string $value, stdClass $row)</td></tr>
 <tr class="memdesc:af736de30d4cd9566d969322441e62530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return enrolment plugin instance name.  <br /></td></tr>
 <tr class="separator:af736de30d4cd9566d969322441e62530"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d31af68d20ec147e14033ba51b27f1a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d7c/classcore__course_1_1reportbuilder_1_1local_1_1formatters_1_1enrolment.html#a4d31af68d20ec147e14033ba51b27f1a">enrolment_status</a> (string $value, stdClass $row)</td></tr>
-<tr class="memdesc:a4d31af68d20ec147e14033ba51b27f1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return enrolment status for user.  <br /></td></tr>
-<tr class="separator:a4d31af68d20ec147e14033ba51b27f1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09241fa70126c3ea87334582d9226467"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d7c/classcore__course_1_1reportbuilder_1_1local_1_1formatters_1_1enrolment.html#a09241fa70126c3ea87334582d9226467">enrolment_status</a> (?string $value)</td></tr>
+<tr class="memdesc:a09241fa70126c3ea87334582d9226467"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return enrolment status for user.  <br /></td></tr>
+<tr class="separator:a09241fa70126c3ea87334582d9226467"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aa9ecc2fff8dc06242370b19574fa38"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d7c/classcore__course_1_1reportbuilder_1_1local_1_1formatters_1_1enrolment.html#a6aa9ecc2fff8dc06242370b19574fa38">enrolment_values</a> ()</td></tr>
 <tr class="memdesc:a6aa9ecc2fff8dc06242370b19574fa38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns list of enrolment statuses.  <br /></td></tr>
 <tr class="separator:a6aa9ecc2fff8dc06242370b19574fa38"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,8 +129,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4d31af68d20ec147e14033ba51b27f1a" name="a4d31af68d20ec147e14033ba51b27f1a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d31af68d20ec147e14033ba51b27f1a">&#9670;&#160;</a></span>enrolment_status()</h2>
+<a id="a09241fa70126c3ea87334582d9226467" name="a09241fa70126c3ea87334582d9226467"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09241fa70126c3ea87334582d9226467">&#9670;&#160;</a></span>enrolment_status()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,19 +141,9 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static core_course\reportbuilder\local\formatters\enrolment::enrolment_status </td>
           <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>$value</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">?string&#160;</td>
+          <td class="paramname"><em>$value</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">stdClass&#160;</td>
-          <td class="paramname"><em>$row</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -166,8 +156,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Return enrolment status for user. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$value</td><td></td></tr>
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$row</td><td></td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$value</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -219,7 +208,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 13 2023 02:46:00 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Aug 20 2023 02:43:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

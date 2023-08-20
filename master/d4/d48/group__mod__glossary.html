@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230810) (57ae65f5149)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230818) (e998f140618)</div>
   </td>
  </tr>
  </tbody>
@@ -276,9 +276,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ga1139fddfe54e3eac10d6875f0975ba20"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d48/group__mod__glossary.html#ga1139fddfe54e3eac10d6875f0975ba20">glossary_get_categories</a> ($glossary, $from, $limit)</td></tr>
 <tr class="memdesc:ga1139fddfe54e3eac10d6875f0975ba20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the categories of a glossary.  <br /></td></tr>
 <tr class="separator:ga1139fddfe54e3eac10d6875f0975ba20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1e8c31344f5ec92916fed50f797911d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d48/group__mod__glossary.html#ga1e8c31344f5ec92916fed50f797911d4">glossary_get_completion_state</a> ($course, $cm, $userid, $type)</td></tr>
-<tr class="memdesc:ga1e8c31344f5ec92916fed50f797911d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains the automatic completion state for this glossary based on any conditions in glossary settings.  <br /></td></tr>
-<tr class="separator:ga1e8c31344f5ec92916fed50f797911d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaec24a16eb0de78f60c59ff0395cc2efc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d48/group__mod__glossary.html#gaec24a16eb0de78f60c59ff0395cc2efc">glossary_get_completion_state</a> ()</td></tr>
+<tr class="separator:gaec24a16eb0de78f60c59ff0395cc2efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7ee48014951d31260a4240b83e80de52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d48/group__mod__glossary.html#ga7ee48014951d31260a4240b83e80de52">glossary_get_coursemodule_info</a> ($coursemodule)</td></tr>
 <tr class="memdesc:ga7ee48014951d31260a4240b83e80de52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a get_coursemodule_info function in case any glossary type wants to add 'extra' information for the course (see resource).  <br /></td></tr>
 <tr class="separator:ga7ee48014951d31260a4240b83e80de52"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1449,8 +1448,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 
 </div>
 </div>
-<a id="ga1e8c31344f5ec92916fed50f797911d4" name="ga1e8c31344f5ec92916fed50f797911d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1e8c31344f5ec92916fed50f797911d4">&#9670;&#160;</a></span>glossary_get_completion_state()</h2>
+<a id="gaec24a16eb0de78f60c59ff0395cc2efc" name="gaec24a16eb0de78f60c59ff0395cc2efc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaec24a16eb0de78f60c59ff0395cc2efc">&#9670;&#160;</a></span>glossary_get_completion_state()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1458,54 +1457,12 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
         <tr>
           <td class="memname">glossary_get_completion_state </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$course</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$cm</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$userid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$type</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Obtains the automatic completion state for this glossary based on any conditions in glossary settings. </p>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001131">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000282">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-71196" class="el">MDL-71196</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../db/d53/classmod__glossary_1_1completion_1_1custom__completion.html">mod_glossary::completion::custom_completion</a> </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>Course </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a>&#160;|&#160;stdClass</td><td class="paramname">$cm</td><td>Course-module </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>User ID </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$type</td><td>Type of comparison (or/and; can be used as return value if no conditions) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td>True if completed, false if not. (If no conditions, then return value depends on comparison type) </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -5923,7 +5880,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 13 2023 02:43:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Aug 20 2023 02:41:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

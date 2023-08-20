@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230810) (57ae65f5149)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230818) (e998f140618)</div>
   </td>
  </tr>
  </tbody>
@@ -152,10 +152,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a3354d175ec04c9601ecead875f333016"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the report context.  <br /></td></tr>
 <tr class="separator:a3354d175ec04c9601ecead875f333016"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a341168a1c7ecb9b1fb4a0ce110ff2976"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4a/classcore__reportbuilder_1_1datasource.html#a341168a1c7ecb9b1fb4a0ce110ff2976">get_default_column_sorting</a> ()</td></tr>
-<tr class="memdesc:a341168a1c7ecb9b1fb4a0ce110ff2976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the default sorting that will be added to the report once it is created.  <br /></td></tr>
+<tr class="memdesc:a341168a1c7ecb9b1fb4a0ce110ff2976"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the default column sorting that will be set for the report upon creation, by {.  <br /></td></tr>
 <tr class="separator:a341168a1c7ecb9b1fb4a0ce110ff2976"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0a2aaa40eef14fef21f892fd1ca1f85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4a/classcore__reportbuilder_1_1datasource.html#aa0a2aaa40eef14fef21f892fd1ca1f85">get_default_columns</a> ()</td></tr>
-<tr class="memdesc:aa0a2aaa40eef14fef21f892fd1ca1f85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the columns that will be added to the report once is created.  <br /></td></tr>
+<tr class="memdesc:aa0a2aaa40eef14fef21f892fd1ca1f85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the default columns that will be added to the report upon creation, by {.  <br /></td></tr>
 <tr class="separator:aa0a2aaa40eef14fef21f892fd1ca1f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0195f8f89030a30881ef0337f62c319a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4a/classcore__reportbuilder_1_1datasource.html#a0195f8f89030a30881ef0337f62c319a">get_default_condition_values</a> ()</td></tr>
 <tr class="memdesc:a0195f8f89030a30881ef0337f62c319a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the default condition values that will be added to the report once is created.  <br /></td></tr>
@@ -866,7 +866,15 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Add default datasource columns to the report. </p>
-<p>This method is optional and can be called when the report is created to add the default columns defined in the selected datasource. </p>
+<p>Uses column data returned by the source {</p><dl class="section see"><dt>See also</dt><dd>get_default_columns} and {</dd>
+<dd>
+get_default_column_sorting} methods</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td>If default column sorting refers to an invalid column </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1701,7 +1709,9 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Return the default sorting that will be added to the report once it is created. </p>
+<p>Return the default column sorting that will be set for the report upon creation, by {. </p>
+<dl class="section see"><dt>See also</dt><dd>add_default_columns}</dd></dl>
+<p>When overriding this method in child classes, column identifiers specified must refer to default columns returned from the {</p><dl class="section see"><dt>See also</dt><dd>get_default_columns} method</dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">int[]</td><td>array [column identifier =&gt; SORT_ASC/SORT_DESC] </td></tr>
@@ -1736,7 +1746,8 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Return the columns that will be added to the report once is created. </p>
+<p>Return the default columns that will be added to the report upon creation, by {. </p>
+<dl class="section see"><dt>See also</dt><dd>add_default_columns}</dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string[]</td><td></td></tr>
@@ -2883,7 +2894,7 @@ To add content to the report use:</li>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 13 2023 02:46:10 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Aug 20 2023 02:44:04 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

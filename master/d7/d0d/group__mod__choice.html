@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230810) (57ae65f5149)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230818) (e998f140618)</div>
   </td>
  </tr>
  </tbody>
@@ -169,9 +169,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ga4f2d8ded1a5396e5e0e71d7ab26e4152"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0d/group__mod__choice.html#ga4f2d8ded1a5396e5e0e71d7ab26e4152">choice_get_choice</a> ($choiceid)</td></tr>
 <tr class="memdesc:ga4f2d8ded1a5396e5e0e71d7ab26e4152"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a full choice record.  <br /></td></tr>
 <tr class="separator:ga4f2d8ded1a5396e5e0e71d7ab26e4152"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga839131047e43545f54e8e344f36d988c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0d/group__mod__choice.html#ga839131047e43545f54e8e344f36d988c">choice_get_completion_state</a> ($course, $cm, $userid, $type)</td></tr>
-<tr class="memdesc:ga839131047e43545f54e8e344f36d988c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains the automatic completion state for this choice based on any conditions in forum settings.  <br /></td></tr>
-<tr class="separator:ga839131047e43545f54e8e344f36d988c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea258f3bb85c289a5fcfcdd70357c89f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0d/group__mod__choice.html#gaea258f3bb85c289a5fcfcdd70357c89f">choice_get_completion_state</a> ()</td></tr>
+<tr class="separator:gaea258f3bb85c289a5fcfcdd70357c89f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3f4fdb4c3914223cff9c31a00aad3eb2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d0d/group__mod__choice.html#ga3f4fdb4c3914223cff9c31a00aad3eb2">choice_get_coursemodule_info</a> ($coursemodule)</td></tr>
 <tr class="memdesc:ga3f4fdb4c3914223cff9c31a00aad3eb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a get_coursemodule_info function in case any choice type wants to add 'extra' information for the course (see resource).  <br /></td></tr>
 <tr class="separator:ga3f4fdb4c3914223cff9c31a00aad3eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -687,8 +686,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 
 </div>
 </div>
-<a id="ga839131047e43545f54e8e344f36d988c" name="ga839131047e43545f54e8e344f36d988c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga839131047e43545f54e8e344f36d988c">&#9670;&#160;</a></span>choice_get_completion_state()</h2>
+<a id="gaea258f3bb85c289a5fcfcdd70357c89f" name="gaea258f3bb85c289a5fcfcdd70357c89f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaea258f3bb85c289a5fcfcdd70357c89f">&#9670;&#160;</a></span>choice_get_completion_state()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -696,54 +695,12 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
         <tr>
           <td class="memname">choice_get_completion_state </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$course</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$cm</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$userid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$type</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Obtains the automatic completion state for this choice based on any conditions in forum settings. </p>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001012">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000258">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-71196" class="el">MDL-71196</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d76/classmod__choice_1_1completion_1_1custom__completion.html">mod_choice::completion::custom_completion</a> </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$course</td><td>Course </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$cm</td><td>Course-module </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>User ID </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$type</td><td>Type of comparison (or/and; can be used as return value if no conditions) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td>True if completed, false if not, $type if conditions not set. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -2034,7 +1991,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 13 2023 02:43:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Aug 20 2023 02:41:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

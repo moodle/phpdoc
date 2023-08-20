@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230810) (57ae65f5149)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230818) (e998f140618)</div>
   </td>
  </tr>
  </tbody>
@@ -259,9 +259,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab1b042a05ebd747c992285613a0f550d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7b/classcore__renderer.html#ab1b042a05ebd747c992285613a0f550d">heading_with_help</a> ($text, $helpidentifier, $component='moodle', $icon='', $iconalt='', $level=2, $classnames=null)</td></tr>
 <tr class="memdesc:ab1b042a05ebd747c992285613a0f550d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Centered heading with attached help button (same title text) and optional icon attached.  <br /></td></tr>
 <tr class="separator:ab1b042a05ebd747c992285613a0f550d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd4120c7b34ffd6a67df79459130ad68"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7b/classcore__renderer.html#acd4120c7b34ffd6a67df79459130ad68">help_icon</a> ($identifier, $component='moodle', $linktext='')</td></tr>
-<tr class="memdesc:acd4120c7b34ffd6a67df79459130ad68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns HTML to display a help icon.  <br /></td></tr>
-<tr class="separator:acd4120c7b34ffd6a67df79459130ad68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15eb0acb06de00538fa8fba165f8109c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7b/classcore__renderer.html#a15eb0acb06de00538fa8fba165f8109c">help_icon</a> ($identifier, $component='moodle', $linktext='', $a=null)</td></tr>
+<tr class="memdesc:a15eb0acb06de00538fa8fba165f8109c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns HTML to display a help icon.  <br /></td></tr>
+<tr class="separator:a15eb0acb06de00538fa8fba165f8109c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56999b8513780e4d03855fbf4b3baa86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7b/classcore__renderer.html#a56999b8513780e4d03855fbf4b3baa86">help_icon_scale</a> ($courseid, stdClass $scale)</td></tr>
 <tr class="memdesc:a56999b8513780e4d03855fbf4b3baa86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns HTML to display a scale help icon.  <br /></td></tr>
 <tr class="separator:a56999b8513780e4d03855fbf4b3baa86"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -3473,8 +3473,8 @@ $OUTPUT-&gt;<a class="el" href="../../d3/da1/classfile__picker.html">file_picker
 
 </div>
 </div>
-<a id="acd4120c7b34ffd6a67df79459130ad68" name="acd4120c7b34ffd6a67df79459130ad68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd4120c7b34ffd6a67df79459130ad68">&#9670;&#160;</a></span>help_icon()</h2>
+<a id="a15eb0acb06de00538fa8fba165f8109c" name="a15eb0acb06de00538fa8fba165f8109c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15eb0acb06de00538fa8fba165f8109c">&#9670;&#160;</a></span>help_icon()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3498,7 +3498,13 @@ $OUTPUT-&gt;<a class="el" href="../../d3/da1/classfile__picker.html">file_picker
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$linktext</em> = <code>''</code>&#160;</td>
+          <td class="paramname"><em>$linktext</em> = <code>''</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$a</em> = <code>null</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3520,6 +3526,7 @@ $OUTPUT-&gt;<a class="el" href="../../d3/da1/classfile__picker.html">file_picker
     <tr><td class="paramtype">string</td><td class="paramname">$identifier</td><td>The keyword that defines a help page </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$component</td><td>component name </td></tr>
     <tr><td class="paramtype">string&#160;|&#160;bool</td><td class="paramname">$linktext</td><td>true means use $title as link text, string means link text value </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;object&#160;|&#160;array&#160;|&#160;int</td><td class="paramname">$a</td><td>An object, string or number that can be used within translation strings </td></tr>
   </table>
   </dd>
 </dl>
@@ -7276,7 +7283,7 @@ $OUTPUT-&gt;<a class="el" href="../../d3/da1/classfile__picker.html">file_picker
 
 <p>Whether we should display the main logo. </p>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000774">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000176">Todo:</a></b></dt><dd>final deprecation. To be removed in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-73165" class="el">MDL-73165</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000175">Todo:</a></b></dt><dd>final deprecation. To be removed in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-73165" class="el">MDL-73165</a>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$headinglevel</td><td>The heading level we want to check against. </td></tr>
@@ -8343,7 +8350,7 @@ $OUTPUT-&gt;render($userpic);
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 13 2023 02:44:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Aug 20 2023 02:42:03 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

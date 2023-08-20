@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230810) (57ae65f5149)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230818) (e998f140618)</div>
   </td>
  </tr>
  </tbody>
@@ -311,9 +311,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ga21839505f114a0e364f50517820393a2"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d74/group__mod__feedback.html#ga21839505f114a0e364f50517820393a2">feedback_get_completeds_group_count</a> ($feedback, $groupid=false, $courseid=false)</td></tr>
 <tr class="memdesc:ga21839505f114a0e364f50517820393a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the count of completeds depending on the given groupid.  <br /></td></tr>
 <tr class="separator:ga21839505f114a0e364f50517820393a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac09113d743fe633b13d0570e0e5a90b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d74/group__mod__feedback.html#gac09113d743fe633b13d0570e0e5a90b3">feedback_get_completion_state</a> ($course, $cm, $userid, $type)</td></tr>
-<tr class="memdesc:gac09113d743fe633b13d0570e0e5a90b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains the automatic completion state for this feedback based on the condition in feedback settings.  <br /></td></tr>
-<tr class="separator:gac09113d743fe633b13d0570e0e5a90b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab01c2ffbe1201f082d5149fffdd6ee9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d74/group__mod__feedback.html#gab01c2ffbe1201f082d5149fffdd6ee9e">feedback_get_completion_state</a> ()</td></tr>
+<tr class="separator:gab01c2ffbe1201f082d5149fffdd6ee9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1656adfba2051701b07ffd5d39bdd038"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d74/group__mod__feedback.html#ga1656adfba2051701b07ffd5d39bdd038">feedback_get_context</a> ()</td></tr>
 <tr class="separator:ga1656adfba2051701b07ffd5d39bdd038"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2d3058d9bd564859a35bd230d254e425"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d74/group__mod__feedback.html#ga2d3058d9bd564859a35bd230d254e425">feedback_get_coursemodule_info</a> ($coursemodule)</td></tr>
@@ -1746,8 +1745,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 
 </div>
 </div>
-<a id="gac09113d743fe633b13d0570e0e5a90b3" name="gac09113d743fe633b13d0570e0e5a90b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac09113d743fe633b13d0570e0e5a90b3">&#9670;&#160;</a></span>feedback_get_completion_state()</h2>
+<a id="gab01c2ffbe1201f082d5149fffdd6ee9e" name="gab01c2ffbe1201f082d5149fffdd6ee9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab01c2ffbe1201f082d5149fffdd6ee9e">&#9670;&#160;</a></span>feedback_get_completion_state()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1755,54 +1754,12 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
         <tr>
           <td class="memname">feedback_get_completion_state </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$course</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$cm</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$userid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$type</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Obtains the automatic completion state for this feedback based on the condition in feedback settings. </p>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001041">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000277">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-71196" class="el">MDL-71196</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../da/d87/classmod__feedback_1_1completion_1_1custom__completion.html">mod_feedback::completion::custom_completion</a> </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$course</td><td>Course </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$cm</td><td>Course-module </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>User ID </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$type</td><td>Type of comparison (or/and; can be used as return value if no conditions) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td>True if completed, false if not, $type if conditions not set. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -4234,7 +4191,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 13 2023 02:43:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Aug 20 2023 02:41:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>

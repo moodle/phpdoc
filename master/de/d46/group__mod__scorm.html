@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev (Build: 20230810) (57ae65f5149)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230818) (e998f140618)</div>
   </td>
  </tr>
  </tbody>
@@ -341,9 +341,8 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa087521164b9b395b6901ba05ade1dfb"><td class="memItemLeft" align="right" valign="top"><a id="gaa087521164b9b395b6901ba05ade1dfb" name="gaa087521164b9b395b6901ba05ade1dfb"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>scorm_get_children</b> ($sco)</td></tr>
 <tr class="separator:gaa087521164b9b395b6901ba05ade1dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaecd9877b7f12c0ee7aafcf0231fa451a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d46/group__mod__scorm.html#gaecd9877b7f12c0ee7aafcf0231fa451a">scorm_get_completion_state</a> ($course, $cm, $userid, $type)</td></tr>
-<tr class="memdesc:gaecd9877b7f12c0ee7aafcf0231fa451a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains the automatic completion state for this scorm based on any conditions in scorm settings.  <br /></td></tr>
-<tr class="separator:gaecd9877b7f12c0ee7aafcf0231fa451a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa29421971d8d70f44ad03ad1d9272360"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d46/group__mod__scorm.html#gaa29421971d8d70f44ad03ad1d9272360">scorm_get_completion_state</a> ()</td></tr>
+<tr class="separator:gaa29421971d8d70f44ad03ad1d9272360"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae6f80c330ecd4fd77fef5459b598959b"><td class="memItemLeft" align="right" valign="top"><a id="gae6f80c330ecd4fd77fef5459b598959b" name="gae6f80c330ecd4fd77fef5459b598959b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>scorm_get_count_users</b> ($scormid, $groupingid=null)</td></tr>
 <tr class="separator:gae6f80c330ecd4fd77fef5459b598959b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2406,8 +2405,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 
 </div>
 </div>
-<a id="gaecd9877b7f12c0ee7aafcf0231fa451a" name="gaecd9877b7f12c0ee7aafcf0231fa451a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaecd9877b7f12c0ee7aafcf0231fa451a">&#9670;&#160;</a></span>scorm_get_completion_state()</h2>
+<a id="gaa29421971d8d70f44ad03ad1d9272360" name="gaa29421971d8d70f44ad03ad1d9272360"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa29421971d8d70f44ad03ad1d9272360">&#9670;&#160;</a></span>scorm_get_completion_state()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2415,54 +2414,12 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
         <tr>
           <td class="memname">scorm_get_completion_state </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$course</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$cm</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$userid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$type</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Obtains the automatic completion state for this scorm based on any conditions in scorm settings. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001192">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000317">Todo:</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-71196" class="el">MDL-71196</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/de0/classmod__scorm_1_1completion_1_1custom__completion.html">mod_scorm::completion::custom_completion</a> </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>Course </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a>&#160;|&#160;stdClass</td><td class="paramname">$cm</td><td>Course-module </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>User ID </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$type</td><td>Type of comparison (or/and; can be used as return value if no conditions) </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td>True if completed, false if not. (If no conditions, then return value depends on comparison type) </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001190">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
 
 </div>
 </div>
@@ -3722,7 +3679,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001193">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3, when the block_course_overview block was removed. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001191">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3, when the block_course_overview block was removed. </dd></dl>
 
 </div>
 </div>
@@ -4550,7 +4507,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 13 2023 02:43:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+Generated on Sun Aug 20 2023 02:41:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
 </small></address>
 </body>
 </html>
