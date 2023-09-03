@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230826) (9bfcd77d51b)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230902) (206c3a66e77)</div>
   </td>
  </tr>
  </tbody>
@@ -99,7 +99,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a215b01b73b5e6b15a2eff531351fe9ca" id="r_a215b01b73b5e6b15a2eff531351fe9ca"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd5/classcore__completion_1_1manager.html#a215b01b73b5e6b15a2eff531351fe9ca">get_available_completion_tabs</a> ($courseorid)</td></tr>
 <tr class="memdesc:a215b01b73b5e6b15a2eff531351fe9ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the available completion tabs for the current course and user.  <br /></td></tr>
 <tr class="separator:a215b01b73b5e6b15a2eff531351fe9ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca79a954d1d713850b0812f5021d3490" id="r_aca79a954d1d713850b0812f5021d3490"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd5/classcore__completion_1_1manager.html#aca79a954d1d713850b0812f5021d3490">get_default_completion</a> ($course, $module, $flatten=true, string $suffix='')</td></tr>
+<tr class="memitem:aca79a954d1d713850b0812f5021d3490" id="r_aca79a954d1d713850b0812f5021d3490"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd5/classcore__completion_1_1manager.html#aca79a954d1d713850b0812f5021d3490">get_default_completion</a> ($<a class="el" href="../../de/d1c/classcore_1_1context_1_1course.html">course</a>, $<a class="el" href="../../df/dfc/classcore_1_1context_1_1module.html">module</a>, $flatten=true, string $suffix='')</td></tr>
 <tr class="memdesc:aca79a954d1d713850b0812f5021d3490"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns default completion rules for given module type in the given course.  <br /></td></tr>
 <tr class="separator:aca79a954d1d713850b0812f5021d3490"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -111,6 +111,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ad9cf2a05a6b3f9ee3039f73bf83a2fbd" id="r_ad9cf2a05a6b3f9ee3039f73bf83a2fbd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd5/classcore__completion_1_1manager.html#ad9cf2a05a6b3f9ee3039f73bf83a2fbd">get_completion_active_rule_descriptions</a> ($moduledata)</td></tr>
 <tr class="memdesc:ad9cf2a05a6b3f9ee3039f73bf83a2fbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the descriptions for all active conditional completion rules for the current module.  <br /></td></tr>
 <tr class="separator:ad9cf2a05a6b3f9ee3039f73bf83a2fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e1d1409e55b0d55a15eb06082124cc7" id="r_a5e1d1409e55b0d55a15eb06082124cc7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd5/classcore__completion_1_1manager.html#a5e1d1409e55b0d55a15eb06082124cc7">get_context</a> ()</td></tr>
+<tr class="memdesc:a5e1d1409e55b0d55a15eb06082124cc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns current course context or system level for $SITE courseid.  <br /></td></tr>
+<tr class="separator:a5e1d1409e55b0d55a15eb06082124cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -552,6 +555,39 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$courseid</b></td></tr
 
 </div>
 </div>
+<a id="a5e1d1409e55b0d55a15eb06082124cc7" name="a5e1d1409e55b0d55a15eb06082124cc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e1d1409e55b0d55a15eb06082124cc7">&#9670;&#160;</a></span>get_context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_completion\manager::get_context </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns current course context or system level for $SITE courseid. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">context</td><td>The course based on current courseid or system context. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aca79a954d1d713850b0812f5021d3490" name="aca79a954d1d713850b0812f5021d3490"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aca79a954d1d713850b0812f5021d3490">&#9670;&#160;</a></span>get_default_completion()</h2>
 
@@ -623,7 +659,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$courseid</b></td></tr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 27 2023 02:52:51 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 3 2023 02:46:56 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230826) (9bfcd77d51b)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230902) (206c3a66e77)</div>
   </td>
  </tr>
  </tbody>
@@ -134,12 +134,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adf5b279c625e0a5cca5be60e2af18119" id="r_adf5b279c625e0a5cca5be60e2af18119"><td class="memItemLeft" align="right" valign="top"><a id="adf5b279c625e0a5cca5be60e2af18119" name="adf5b279c625e0a5cca5be60e2af18119"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>process_group</b> ($data)</td></tr>
 <tr class="separator:adf5b279c625e0a5cca5be60e2af18119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec4ed1eb24101b2dbc1dbebb4e7b453d" id="r_aec4ed1eb24101b2dbc1dbebb4e7b453d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df8/classrestore__groups__structure__step.html#aec4ed1eb24101b2dbc1dbebb4e7b453d">process_groupcustomfield</a> ($data)</td></tr>
+<tr class="memdesc:aec4ed1eb24101b2dbc1dbebb4e7b453d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restore group custom field values.  <br /></td></tr>
+<tr class="separator:aec4ed1eb24101b2dbc1dbebb4e7b453d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a967873188a77b8f5d9f2f6565cddaffb" id="r_a967873188a77b8f5d9f2f6565cddaffb"><td class="memItemLeft" align="right" valign="top"><a id="a967873188a77b8f5d9f2f6565cddaffb" name="a967873188a77b8f5d9f2f6565cddaffb"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>process_grouping</b> ($data)</td></tr>
 <tr class="separator:a967873188a77b8f5d9f2f6565cddaffb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29982aa41e3e30bd4e2af0146bba88e9" id="r_a29982aa41e3e30bd4e2af0146bba88e9"><td class="memItemLeft" align="right" valign="top"><a id="a29982aa41e3e30bd4e2af0146bba88e9" name="a29982aa41e3e30bd4e2af0146bba88e9"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>process_grouping_group</b> ($data)</td></tr>
 <tr class="separator:a29982aa41e3e30bd4e2af0146bba88e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ac5efa20d40f48d635dbc8c90dc657e" id="r_a1ac5efa20d40f48d635dbc8c90dc657e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df8/classrestore__groups__structure__step.html#a1ac5efa20d40f48d635dbc8c90dc657e">process_groupingcustomfield</a> ($data)</td></tr>
+<tr class="memdesc:a1ac5efa20d40f48d635dbc8c90dc657e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restore grouping custom field values.  <br /></td></tr>
+<tr class="separator:a1ac5efa20d40f48d635dbc8c90dc657e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad82dabee427613b2d9bbfa1e9dd28dd" id="r_aad82dabee427613b2d9bbfa1e9dd28dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dcb/classrestore__structure__step.html#aad82dabee427613b2d9bbfa1e9dd28dd">set_mapping</a> ($itemname, $oldid, $newid, $restorefiles=false, $filesctxid=null, $parentid=null)</td></tr>
 <tr class="memdesc:aad82dabee427613b2d9bbfa1e9dd28dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">To send ids pairs to backup_ids_table and to store them into paths.  <br /></td></tr>
 <tr class="separator:aad82dabee427613b2d9bbfa1e9dd28dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -864,6 +870,70 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$name</b></td></tr>
 
 </div>
 </div>
+<a id="aec4ed1eb24101b2dbc1dbebb4e7b453d" name="aec4ed1eb24101b2dbc1dbebb4e7b453d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec4ed1eb24101b2dbc1dbebb4e7b453d">&#9670;&#160;</a></span>process_groupcustomfield()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">restore_groups_structure_step::process_groupcustomfield </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Restore group custom field values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>data for group custom field </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1ac5efa20d40f48d635dbc8c90dc657e" name="a1ac5efa20d40f48d635dbc8c90dc657e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ac5efa20d40f48d635dbc8c90dc657e">&#9670;&#160;</a></span>process_groupingcustomfield()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">restore_groups_structure_step::process_groupingcustomfield </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Restore grouping custom field values. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>data for grouping custom field </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aad82dabee427613b2d9bbfa1e9dd28dd" name="aad82dabee427613b2d9bbfa1e9dd28dd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aad82dabee427613b2d9bbfa1e9dd28dd">&#9670;&#160;</a></span>set_mapping()</h2>
 
@@ -933,7 +1003,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$name</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 27 2023 02:52:10 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 3 2023 02:46:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230826) (9bfcd77d51b)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230902) (206c3a66e77)</div>
   </td>
  </tr>
  </tbody>
@@ -94,6 +94,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acabda3d6501b55674ecf496251848b60" id="r_acabda3d6501b55674ecf496251848b60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d62/classbehat__core__question.html#acabda3d6501b55674ecf496251848b60">i_add_a_question_filling_the_form_with</a> ($questiontypename, TableNode $questiondata)</td></tr>
 <tr class="memdesc:acabda3d6501b55674ecf496251848b60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a question in the current course questions bank with the provided data.  <br /></td></tr>
 <tr class="separator:acabda3d6501b55674ecf496251848b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad26db85675944cded60a95f998dfa168" id="r_ad26db85675944cded60a95f998dfa168"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d62/classbehat__core__question.html#ad26db85675944cded60a95f998dfa168">i_add_question_bank_filter</a> (string $filtertype)</td></tr>
+<tr class="memdesc:ad26db85675944cded60a95f998dfa168"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a question bank filter.  <br /></td></tr>
+<tr class="separator:ad26db85675944cded60a95f998dfa168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c32d6e8208bc823425302fcd11f3a72" id="r_a7c32d6e8208bc823425302fcd11f3a72"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d62/classbehat__core__question.html#a7c32d6e8208bc823425302fcd11f3a72">i_apply_question_bank_filter</a> (string $filtertype, string $value)</td></tr>
+<tr class="memdesc:a7c32d6e8208bc823425302fcd11f3a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply question bank filter.  <br /></td></tr>
+<tr class="separator:a7c32d6e8208bc823425302fcd11f3a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fb9a2553a1743caac5435d60350eb3c" id="r_a7fb9a2553a1743caac5435d60350eb3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d62/classbehat__core__question.html#a7fb9a2553a1743caac5435d60350eb3c">i_click_on_question_bulk_action</a> ($action)</td></tr>
 <tr class="memdesc:a7fb9a2553a1743caac5435d60350eb3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A click on a particular bulk action in the question bank UI.  <br /></td></tr>
 <tr class="separator:a7fb9a2553a1743caac5435d60350eb3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -439,6 +445,71 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad26db85675944cded60a95f998dfa168" name="ad26db85675944cded60a95f998dfa168"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad26db85675944cded60a95f998dfa168">&#9670;&#160;</a></span>i_add_question_bank_filter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_core_question::i_add_question_bank_filter </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$filtertype</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a question bank filter. </p>
+<p>This will add the filter if it does not exist, but leave the value empty.</p>
+<p>@When I add question bank filter :filtertype </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$filtertype</td><td>The filter we are adding </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7c32d6e8208bc823425302fcd11f3a72" name="a7c32d6e8208bc823425302fcd11f3a72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c32d6e8208bc823425302fcd11f3a72">&#9670;&#160;</a></span>i_apply_question_bank_filter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_core_question::i_apply_question_bank_filter </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$filtertype</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Apply question bank filter. </p>
+<p>This will change the existing value of the specified filter, or add the filter and set its value if it doesn't already exist.</p>
+<p>@When I apply question bank filter :filtertype with value :value </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$filtertype</td><td>The filter to apply. This should match the get_title() return value from the filter's condition class. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$value</td><td>The value to set for the condition. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a7fb9a2553a1743caac5435d60350eb3c" name="a7fb9a2553a1743caac5435d60350eb3c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7fb9a2553a1743caac5435d60350eb3c">&#9670;&#160;</a></span>i_click_on_question_bulk_action()</h2>
 
@@ -729,7 +800,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 27 2023 02:50:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 3 2023 02:45:00 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

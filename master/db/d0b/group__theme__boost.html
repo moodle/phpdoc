@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230826) (9bfcd77d51b)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230902) (206c3a66e77)</div>
   </td>
  </tr>
  </tbody>
@@ -111,6 +111,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga49f7c3ec5003bf6f350ca2a5d0b060c3" id="r_ga49f7c3ec5003bf6f350ca2a5d0b060c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d0b/group__theme__boost.html#ga49f7c3ec5003bf6f350ca2a5d0b060c3">theme_boost_pluginfile</a> ($course, $cm, $context, $filearea, $args, $forcedownload, array $options=array())</td></tr>
 <tr class="memdesc:ga49f7c3ec5003bf6f350ca2a5d0b060c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serves any files associated with the theme settings.  <br /></td></tr>
 <tr class="separator:ga49f7c3ec5003bf6f350ca2a5d0b060c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga76896ebf4ed24e0335c68ae0b707176f" id="r_ga76896ebf4ed24e0335c68ae0b707176f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d0b/group__theme__boost.html#ga76896ebf4ed24e0335c68ae0b707176f">theme_boost_user_preferences</a> ()</td></tr>
+<tr class="memdesc:ga76896ebf4ed24e0335c68ae0b707176f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current user preferences that are available.  <br /></td></tr>
+<tr class="separator:ga76896ebf4ed24e0335c68ae0b707176f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -446,7 +449,7 @@ $THEME&#160;</td><td class="memItemRight" valign="bottom"><b>yuicssmodules</b> =
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array</td><td></td></tr>
+    <tr><td class="paramname">string</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -550,6 +553,31 @@ $THEME&#160;</td><td class="memItemRight" valign="bottom"><b>yuicssmodules</b> =
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga76896ebf4ed24e0335c68ae0b707176f" name="ga76896ebf4ed24e0335c68ae0b707176f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga76896ebf4ed24e0335c68ae0b707176f">&#9670;&#160;</a></span>theme_boost_user_preferences()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">theme_boost_user_preferences </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the current user preferences that are available. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array[]</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -770,14 +798,14 @@ $THEME&#160;</td><td class="memItemRight" valign="bottom"><b>yuicssmodules</b> =
 <b>Initial value:</b><div class="fragment"><div class="line">= <span class="keyword">function</span>($theme) {</div>
 <div class="line">    <span class="keywordflow">return</span> <a class="code hl_function" href="../../db/d0b/group__theme__boost.html#gae7755b93d17864edfa801eb3a831a9ee">theme_boost_get_main_scss_content</a>($theme);</div>
 <div class="line">}</div>
-<div class="ttc" id="agroup__theme__boost_html_gae7755b93d17864edfa801eb3a831a9ee"><div class="ttname"><a href="../../db/d0b/group__theme__boost.html#gae7755b93d17864edfa801eb3a831a9ee">theme_boost_get_main_scss_content</a></div><div class="ttdeci">theme_boost_get_main_scss_content($theme)</div><div class="ttdoc">Returns the main SCSS content.</div><div class="ttdef"><b>Definition</b> lib.php:102</div></div>
+<div class="ttc" id="agroup__theme__boost_html_gae7755b93d17864edfa801eb3a831a9ee"><div class="ttname"><a href="../../db/d0b/group__theme__boost.html#gae7755b93d17864edfa801eb3a831a9ee">theme_boost_get_main_scss_content</a></div><div class="ttdeci">theme_boost_get_main_scss_content($theme)</div><div class="ttdoc">Returns the main SCSS content.</div><div class="ttdef"><b>Definition</b> lib.php:124</div></div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 27 2023 02:50:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 3 2023 02:44:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

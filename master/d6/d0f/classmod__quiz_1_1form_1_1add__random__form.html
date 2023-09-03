@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230826) (9bfcd77d51b)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230902) (206c3a66e77)</div>
   </td>
  </tr>
  </tbody>
@@ -62,6 +62,7 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="../../de/d1d/classmod__quiz_1_1form_1_1add__random__form-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">mod_quiz\form\add_random_form Class Reference<div class="ingroups"><a class="el" href="../../dd/df0/group__mod__quiz.html">mod_quiz</a></div></div></div>
 </div><!--header-->
@@ -172,7 +173,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:gaf3ef8403402c885e7e823843dcb2a244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate the form.  <br /></td></tr>
 <tr class="separator:gaf3ef8403402c885e7e823843dcb2a244"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a87060b4ac5a33e301f3e5e9ed67300" id="r_a6a87060b4ac5a33e301f3e5e9ed67300"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0f/classmod__quiz_1_1form_1_1add__random__form.html#a6a87060b4ac5a33e301f3e5e9ed67300">validation</a> ($fromform, $files)</td></tr>
-<tr class="memdesc:a6a87060b4ac5a33e301f3e5e9ed67300"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dummy stub method - override if you needed to perform some extra validation.  <br /></td></tr>
+<tr class="memdesc:a6a87060b4ac5a33e301f3e5e9ed67300"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated.  <br /></td></tr>
 <tr class="separator:a6a87060b4ac5a33e301f3e5e9ed67300"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
@@ -199,7 +200,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:gabb857bc47c6cb9a56d3a0c090ba652c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">After definition hook.  <br /></td></tr>
 <tr class="separator:gabb857bc47c6cb9a56d3a0c090ba652c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a326c2e12415898d09794bdad4bdae407" id="r_a326c2e12415898d09794bdad4bdae407"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0f/classmod__quiz_1_1form_1_1add__random__form.html#a326c2e12415898d09794bdad4bdae407">definition</a> ()</td></tr>
-<tr class="memdesc:a326c2e12415898d09794bdad4bdae407"><td class="mdescLeft">&#160;</td><td class="mdescRight">Form definition.  <br /></td></tr>
+<tr class="memdesc:a326c2e12415898d09794bdad4bdae407"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated.  <br /></td></tr>
 <tr class="separator:a326c2e12415898d09794bdad4bdae407"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga87ff3ae1b2bcec06efb04bbaed1d776a" id="r_ga87ff3ae1b2bcec06efb04bbaed1d776a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9c/group__core__form.html#ga87ff3ae1b2bcec06efb04bbaed1d776a">get_array_value_by_keys</a> (array $array, array $keys)</td></tr>
 <tr class="memdesc:ga87ff3ae1b2bcec06efb04bbaed1d776a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an element of multi-dimensional array given the list of keys.  <br /></td></tr>
@@ -240,6 +241,13 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_formname</b></td>
 bool null&#160;</td><td class="memItemRight" valign="bottom"><b>$_validated</b> = null</td></tr>
 <tr class="memdesc:gadd11374abd1cecb490ff9aaef934f201"><td class="mdescLeft">&#160;</td><td class="mdescRight">stores the validation result of this form or null if not yet validated <br /></td></tr>
 <tr class="separator:gadd11374abd1cecb490ff9aaef934f201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:ga0fb2cb8cf89a202ddf553b70f1e2646b" id="r_ga0fb2cb8cf89a202ddf553b70f1e2646b"><td class="memItemLeft" align="right" valign="top">
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> = 0</td></tr>
+<tr class="memdesc:ga0fb2cb8cf89a202ddf553b70f1e2646b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique identifier to be used for action buttons. <br /></td></tr>
+<tr class="separator:ga0fb2cb8cf89a202ddf553b70f1e2646b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a326c2e12415898d09794bdad4bdae407" name="a326c2e12415898d09794bdad4bdae407"></a>
@@ -265,8 +273,15 @@ bool null&#160;</td><td class="memItemRight" valign="bottom"><b>$_validated</b> 
 </table>
 </div><div class="memdoc">
 
-<p>Form definition. </p>
-<p>Abstract method - always override! </p>
+<p>Deprecated. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001167">Deprecated:</a></b></dt><dd><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 <a href="https://tracker.moodle.org/browse/MDL-72321" class="el">MDL-72321</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000288">Todo:</a></b></dt><dd>Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.7 <a href="https://tracker.moodle.org/browse/MDL-78091" class="el">MDL-78091</a> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d6/d9c/group__core__form.html#ga0af963aa4577ee681d62775e2b1fb2a6">moodleform</a>.</p>
 
@@ -282,7 +297,7 @@ bool null&#160;</td><td class="memItemRight" valign="bottom"><b>$_validated</b> 
           <td class="memname">mod_quiz\form\add_random_form::validation </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$data</em>, </td>
+          <td class="paramname"><em>$fromform</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -298,22 +313,22 @@ bool null&#160;</td><td class="memItemRight" valign="bottom"><b>$_validated</b> 
       </table>
 </div><div class="memdoc">
 
-<p>Dummy stub method - override if you needed to perform some extra validation. </p>
-<p>If there are errors return array of errors ("fieldname"=&gt;"error message"), otherwise true if ok.</p>
-<p>Server side rules do not work for uploaded files, implement serverside rules here if needed.</p>
+<p>Deprecated. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>array of ("fieldname"=&gt;value) of submitted data </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$files</td><td>array of uploaded files "element_name"=&gt;tmp_file_path </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$fromform</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$files</td><td></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array</td><td>of "element_name"=&gt;"error_description" if there are errors, or an empty array if everything is OK (true allowed for backwards compatibility too). </td></tr>
+    <tr><td class="paramname">array</td><td></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001168">Deprecated:</a></b></dt><dd><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 <a href="https://tracker.moodle.org/browse/MDL-72321" class="el">MDL-72321</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000289">Todo:</a></b></dt><dd>Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.7 <a href="https://tracker.moodle.org/browse/MDL-78091" class="el">MDL-78091</a> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d6/d9c/group__core__form.html#ga78804d4a6734d8166cd0b32a3c02c946">moodleform</a>.</p>
 
@@ -325,7 +340,7 @@ bool null&#160;</td><td class="memItemRight" valign="bottom"><b>$_validated</b> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 27 2023 02:53:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 3 2023 02:47:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230826) (9bfcd77d51b)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230902) (206c3a66e77)</div>
   </td>
  </tr>
  </tbody>
@@ -71,6 +71,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a99707e1ab5e3cc9943dc90bb1b2ed0e3" id="r_a99707e1ab5e3cc9943dc90bb1b2ed0e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d12/classbehat__mod__lti__generator.html#a99707e1ab5e3cc9943dc90bb1b2ed0e3">get_creatable_entities</a> ()</td></tr>
 <tr class="memdesc:a99707e1ab5e3cc9943dc90bb1b2ed0e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get list of entities for <a class="el" href="../../de/d0c/namespacemod__lti.html" title="&#160;">mod_lti</a> behat tests.  <br /></td></tr>
 <tr class="separator:a99707e1ab5e3cc9943dc90bb1b2ed0e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9af970e3eb572afc0b25edb0ede52436" id="r_a9af970e3eb572afc0b25edb0ede52436"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d12/classbehat__mod__lti__generator.html#a9af970e3eb572afc0b25edb0ede52436">get_lti_coursecategories_id</a> (string $idnumbers)</td></tr>
+<tr class="memdesc:a9af970e3eb572afc0b25edb0ede52436"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the switchid ['lti_coursecategories' =&gt; 'lti_coursecategories'] for restricting a tool to certain categories.  <br /></td></tr>
+<tr class="separator:a9af970e3eb572afc0b25edb0ede52436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a950fea5150031f8c944a80c196977953" id="r_a950fea5150031f8c944a80c196977953"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d12/classbehat__mod__lti__generator.html#a950fea5150031f8c944a80c196977953">get_tool_id</a> (string $name)</td></tr>
+<tr class="memdesc:a950fea5150031f8c944a80c196977953"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the switchid ['tool' =&gt; 'typeid'] for finding a tool by name.  <br /></td></tr>
+<tr class="separator:a950fea5150031f8c944a80c196977953"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a99707e1ab5e3cc9943dc90bb1b2ed0e3" name="a99707e1ab5e3cc9943dc90bb1b2ed0e3"></a>
@@ -106,13 +112,99 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a9af970e3eb572afc0b25edb0ede52436" name="a9af970e3eb572afc0b25edb0ede52436"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9af970e3eb572afc0b25edb0ede52436">&#9670;&#160;</a></span>get_lti_coursecategories_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_mod_lti_generator::get_lti_coursecategories_id </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$idnumbers</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles the switchid ['lti_coursecategories' =&gt; 'lti_coursecategories'] for restricting a tool to certain categories. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$idnumbers</td><td>a comma-separated string containing the course category id numbers, e.g. 'cata, catb, catc'. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>a comma-separated string containing the course category ids. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td>if one or more of the categories is unable to be matched by its idnumber. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a950fea5150031f8c944a80c196977953" name="a950fea5150031f8c944a80c196977953"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a950fea5150031f8c944a80c196977953">&#9670;&#160;</a></span>get_tool_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_mod_lti_generator::get_tool_id </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles the switchid ['tool' =&gt; 'typeid'] for finding a tool by name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$name</td><td>the name of the tool. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td>the id of the tool type identified by the name $name. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>mod/lti/tests/generator/<b>behat_mod_lti_generator.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 27 2023 02:50:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 3 2023 02:45:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230826) (9bfcd77d51b)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230902) (206c3a66e77)</div>
   </td>
  </tr>
  </tbody>
@@ -59,6 +59,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../df/d5e/classcore__user_1_1output_1_1participants__filter-members.html">List of all members</a>  </div>
@@ -86,6 +87,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa847cea702f3dbd8bb62f5f444830d83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export the renderer data in a mustache template friendly format.  <br /></td></tr>
 <tr class="separator:aa847cea702f3dbd8bb62f5f444830d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a8c0468a708112322883eb511faba45da" id="r_a8c0468a708112322883eb511faba45da"><td class="memItemLeft" align="right" valign="top"><a id="a8c0468a708112322883eb511faba45da" name="a8c0468a708112322883eb511faba45da"></a>
+int const&#160;</td><td class="memItemRight" valign="bottom"><b>JOINTYPE_ALL</b> = 2</td></tr>
+<tr class="memdesc:a8c0468a708112322883eb511faba45da"><td class="mdescLeft">&#160;</td><td class="mdescRight">All of the following match. <br /></td></tr>
+<tr class="separator:a8c0468a708112322883eb511faba45da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ff4f7427ce6f282a3d8aeef30dae2ba" id="r_a1ff4f7427ce6f282a3d8aeef30dae2ba"><td class="memItemLeft" align="right" valign="top"><a id="a1ff4f7427ce6f282a3d8aeef30dae2ba" name="a1ff4f7427ce6f282a3d8aeef30dae2ba"></a>
+int const&#160;</td><td class="memItemRight" valign="bottom"><b>JOINTYPE_ANY</b> = 1</td></tr>
+<tr class="memdesc:a1ff4f7427ce6f282a3d8aeef30dae2ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Any of the following match. <br /></td></tr>
+<tr class="separator:a1ff4f7427ce6f282a3d8aeef30dae2ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7c5b3c8a7585d1cbe7210a968e357d1" id="r_ae7c5b3c8a7585d1cbe7210a968e357d1"><td class="memItemLeft" align="right" valign="top"><a id="ae7c5b3c8a7585d1cbe7210a968e357d1" name="ae7c5b3c8a7585d1cbe7210a968e357d1"></a>
+int const&#160;</td><td class="memItemRight" valign="bottom"><b>JOINTYPE_NONE</b> = 0</td></tr>
+<tr class="memdesc:ae7c5b3c8a7585d1cbe7210a968e357d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">None of the following match. <br /></td></tr>
+<tr class="separator:ae7c5b3c8a7585d1cbe7210a968e357d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a6ac2e41046b8f038603cd188525966a7" id="r_a6ac2e41046b8f038603cd188525966a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d05/classcore__user_1_1output_1_1participants__filter.html#a6ac2e41046b8f038603cd188525966a7">get_accesssince_filter</a> ()</td></tr>
@@ -100,9 +116,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aa82316115577407d9473e5e95fd38308" id="r_aa82316115577407d9473e5e95fd38308"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d05/classcore__user_1_1output_1_1participants__filter.html#aa82316115577407d9473e5e95fd38308">get_enrolmentstatus_filter</a> ()</td></tr>
 <tr class="memdesc:aa82316115577407d9473e5e95fd38308"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get data for the enrolment status filter.  <br /></td></tr>
 <tr class="separator:aa82316115577407d9473e5e95fd38308"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dc1843b25ae82cf56867e43d42462c9" id="r_a3dc1843b25ae82cf56867e43d42462c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1d/classcore_1_1output_1_1datafilter.html#a3dc1843b25ae82cf56867e43d42462c9">get_filter_object</a> (string $name, string $title, bool $custom, bool $multiple, ?string $filterclass, array $values, bool $allowempty=false)</td></tr>
-<tr class="memdesc:a3dc1843b25ae82cf56867e43d42462c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a standardised filter object.  <br /></td></tr>
-<tr class="separator:a3dc1843b25ae82cf56867e43d42462c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a484f6097dfd695b7ca1f3dde3b645788" id="r_a484f6097dfd695b7ca1f3dde3b645788"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d1d/classcore_1_1output_1_1datafilter.html#a484f6097dfd695b7ca1f3dde3b645788">get_filter_object</a> (string $name, string $title, bool $custom, bool $multiple, ?string $filterclass, array $values, bool $allowempty=false, ?stdClass $filteroptions=null, bool $required=false, array $joinlist=[self::JOINTYPE_NONE, self::JOINTYPE_ANY, self::JOINTYPE_ALL])</td></tr>
+<tr class="memdesc:a484f6097dfd695b7ca1f3dde3b645788"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a standardised filter object.  <br /></td></tr>
+<tr class="separator:a484f6097dfd695b7ca1f3dde3b645788"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bdc86c415edd4df7734d8b2f5e03f95" id="r_a9bdc86c415edd4df7734d8b2f5e03f95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d05/classcore__user_1_1output_1_1participants__filter.html#a9bdc86c415edd4df7734d8b2f5e03f95">get_filtertypes</a> ()</td></tr>
 <tr class="memdesc:a9bdc86c415edd4df7734d8b2f5e03f95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get data for all filter types.  <br /></td></tr>
 <tr class="separator:a9bdc86c415edd4df7734d8b2f5e03f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -302,8 +318,8 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$tableregionid</b><
 
 </div>
 </div>
-<a id="a3dc1843b25ae82cf56867e43d42462c9" name="a3dc1843b25ae82cf56867e43d42462c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3dc1843b25ae82cf56867e43d42462c9">&#9670;&#160;</a></span>get_filter_object()</h2>
+<a id="a484f6097dfd695b7ca1f3dde3b645788" name="a484f6097dfd695b7ca1f3dde3b645788"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a484f6097dfd695b7ca1f3dde3b645788">&#9670;&#160;</a></span>get_filter_object()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -351,7 +367,25 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$tableregionid</b><
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>$allowempty</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>$allowempty</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?stdClass&#160;</td>
+          <td class="paramname"><em>$filteroptions</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$required</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$joinlist</em> = <code>[self::JOINTYPE_NONE,&#160;self::JOINTYPE_ANY,&#160;self::JOINTYPE_ALL]</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -528,7 +562,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$tableregionid</b><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 27 2023 02:53:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 3 2023 02:47:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

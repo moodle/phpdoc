@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230826) (9bfcd77d51b)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230902) (206c3a66e77)</div>
   </td>
  </tr>
  </tbody>
@@ -70,9 +70,6 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af1c45cfe167306d31be48799814d7886" id="r_af1c45cfe167306d31be48799814d7886"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html#af1c45cfe167306d31be48799814d7886">__construct</a> (<a class="el" href="../../df/db9/classcm__info.html">cm_info</a> $cm, stdClass $course, stdClass $instancedata, ?int $groupid=null)</td></tr>
-<tr class="memdesc:af1c45cfe167306d31be48799814d7886"><td class="mdescLeft">&#160;</td><td class="mdescRight">instance constructor.  <br /></td></tr>
-<tr class="separator:af1c45cfe167306d31be48799814d7886"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6dbced595d871ed3166f74b13f89d253" id="r_a6dbced595d871ed3166f74b13f89d253"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html#a6dbced595d871ed3166f74b13f89d253">allow_recording_start_stop</a> ()</td></tr>
 <tr class="memdesc:a6dbced595d871ed3166f74b13f89d253"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether recording can be started and stopped.  <br /></td></tr>
 <tr class="separator:a6dbced595d871ed3166f74b13f89d253"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -316,6 +313,14 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a476922984dece5c15710034eb7d7987e" id="r_a476922984dece5c15710034eb7d7987e"><td class="memItemLeft" align="right" valign="top"><a id="a476922984dece5c15710034eb7d7987e" name="a476922984dece5c15710034eb7d7987e"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>IDTYPE_CMID</b> = 0</td></tr>
+<tr class="memdesc:a476922984dece5c15710034eb7d7987e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the instance information from a cmid. <br /></td></tr>
+<tr class="separator:a476922984dece5c15710034eb7d7987e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a405ea70aa68af1369701dab16452e294" id="r_a405ea70aa68af1369701dab16452e294"><td class="memItemLeft" align="right" valign="top"><a id="a405ea70aa68af1369701dab16452e294" name="a405ea70aa68af1369701dab16452e294"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>IDTYPE_INSTANCEID</b> = 1</td></tr>
+<tr class="memdesc:a405ea70aa68af1369701dab16452e294"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the instance information from an id. <br /></td></tr>
+<tr class="separator:a405ea70aa68af1369701dab16452e294"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01b054402699a7524378532ab7e524eb" id="r_a01b054402699a7524378532ab7e524eb"><td class="memItemLeft" align="right" valign="top"><a id="a01b054402699a7524378532ab7e524eb" name="a01b054402699a7524378532ab7e524eb"></a>
 int const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_ALL</b> = 0</td></tr>
 <tr class="memdesc:a01b054402699a7524378532ab7e524eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines an instance type that includes room and recordings. <br /></td></tr>
@@ -341,6 +346,10 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="../../df/db9/classcm__info.html">cm_info</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$cm</b></td></tr>
 <tr class="memdesc:a9161fbf5c5e05aba9a0bda98a6ff429f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="../../df/db9/classcm__info.html">cm_info</a> object relating to the instance. <br /></td></tr>
 <tr class="separator:a9161fbf5c5e05aba9a0bda98a6ff429f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a021ce2c7419f718fc557ee3d49b14762" id="r_a021ce2c7419f718fc557ee3d49b14762"><td class="memItemLeft" align="right" valign="top"><a id="a021ce2c7419f718fc557ee3d49b14762" name="a021ce2c7419f718fc557ee3d49b14762"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>$cmid</b></td></tr>
+<tr class="memdesc:a021ce2c7419f718fc557ee3d49b14762"><td class="mdescLeft">&#160;</td><td class="mdescRight">The course module id. <br /></td></tr>
+<tr class="separator:a021ce2c7419f718fc557ee3d49b14762"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08ec5e4d6e4d13835f89887152eef0af" id="r_a08ec5e4d6e4d13835f89887152eef0af"><td class="memItemLeft" align="right" valign="top"><a id="a08ec5e4d6e4d13835f89887152eef0af" name="a08ec5e4d6e4d13835f89887152eef0af"></a>
 context&#160;</td><td class="memItemRight" valign="bottom"><b>$context</b></td></tr>
 <tr class="memdesc:a08ec5e4d6e4d13835f89887152eef0af"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current context. <br /></td></tr>
@@ -362,58 +371,6 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$participantlist</b>
 <tr class="memdesc:a99f8cd67f105d8f271a947b20677ef11"><td class="mdescLeft">&#160;</td><td class="mdescRight">The list of participants. <br /></td></tr>
 <tr class="separator:a99f8cd67f105d8f271a947b20677ef11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af1c45cfe167306d31be48799814d7886" name="af1c45cfe167306d31be48799814d7886"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1c45cfe167306d31be48799814d7886">&#9670;&#160;</a></span>__construct()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">mod_bigbluebuttonbn\instance::__construct </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a>&#160;</td>
-          <td class="paramname"><em>$cm</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">stdClass&#160;</td>
-          <td class="paramname"><em>$course</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">stdClass&#160;</td>
-          <td class="paramname"><em>$instancedata</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">?int&#160;</td>
-          <td class="paramname"><em>$groupid</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>instance constructor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a></td><td class="paramname">$cm</td><td></td></tr>
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td></td></tr>
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$instancedata</td><td></td></tr>
-    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$groupid</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6dbced595d871ed3166f74b13f89d253" name="a6dbced595d871ed3166f74b13f89d253"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6dbced595d871ed3166f74b13f89d253">&#9670;&#160;</a></span>allow_recording_start_stop()</h2>
@@ -2627,7 +2584,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$participantlist</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 27 2023 02:53:24 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 3 2023 02:47:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

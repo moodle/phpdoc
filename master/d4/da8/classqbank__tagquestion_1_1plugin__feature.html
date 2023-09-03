@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230826) (9bfcd77d51b)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230902) (206c3a66e77)</div>
   </td>
  </tr>
  </tbody>
@@ -84,12 +84,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a57e4c5cfee6e8a51f10e2533e5b77cf5" id="r_a57e4c5cfee6e8a51f10e2533e5b77cf5"><td class="memItemLeft" align="right" valign="top"><a id="a57e4c5cfee6e8a51f10e2533e5b77cf5" name="a57e4c5cfee6e8a51f10e2533e5b77cf5"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>get_question_actions</b> ($qbank)</td></tr>
 <tr class="separator:a57e4c5cfee6e8a51f10e2533e5b77cf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c8c5cbc75209281808337041398083e" id="r_a9c8c5cbc75209281808337041398083e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d70/classcore__question_1_1local_1_1bank_1_1plugin__features__base.html#a9c8c5cbc75209281808337041398083e">get_question_actions</a> (view $qbank)</td></tr>
+<tr class="memitem:a9c8c5cbc75209281808337041398083e" id="r_a9c8c5cbc75209281808337041398083e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d70/classcore__question_1_1local_1_1bank_1_1plugin__features__base.html#a9c8c5cbc75209281808337041398083e">get_question_actions</a> (<a class="el" href="../../da/da7/classcore__question_1_1local_1_1bank_1_1view.html">view</a> $qbank)</td></tr>
 <tr class="memdesc:a9c8c5cbc75209281808337041398083e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method will return the array of objects to be rendered as a part of question bank actions.  <br /></td></tr>
 <tr class="separator:a9c8c5cbc75209281808337041398083e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab82a0a6ca17b01854cace9c23dd83aeb" id="r_ab82a0a6ca17b01854cace9c23dd83aeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d70/classcore__question_1_1local_1_1bank_1_1plugin__features__base.html#ab82a0a6ca17b01854cace9c23dd83aeb">get_question_columns</a> (view $qbank)</td></tr>
+<tr class="memitem:ab82a0a6ca17b01854cace9c23dd83aeb" id="r_ab82a0a6ca17b01854cace9c23dd83aeb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d70/classcore__question_1_1local_1_1bank_1_1plugin__features__base.html#ab82a0a6ca17b01854cace9c23dd83aeb">get_question_columns</a> (<a class="el" href="../../da/da7/classcore__question_1_1local_1_1bank_1_1view.html">view</a> $qbank)</td></tr>
 <tr class="memdesc:ab82a0a6ca17b01854cace9c23dd83aeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method will return the array of objects to be rendered as a part of question bank columns.  <br /></td></tr>
 <tr class="separator:ab82a0a6ca17b01854cace9c23dd83aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14e361666f77b868e1b7cca54dd421ad" id="r_a14e361666f77b868e1b7cca54dd421ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da8/classqbank__tagquestion_1_1plugin__feature.html#a14e361666f77b868e1b7cca54dd421ad">get_question_filters</a> (<a class="el" href="../../da/da7/classcore__question_1_1local_1_1bank_1_1view.html">view</a> $qbank=null)</td></tr>
+<tr class="memdesc:a14e361666f77b868e1b7cca54dd421ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return search conditions for the plugin.  <br /></td></tr>
+<tr class="separator:a14e361666f77b868e1b7cca54dd421ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac64ce00233360c1d5161f0a2ea088efb" name="ac64ce00233360c1d5161f0a2ea088efb"></a>
@@ -246,13 +249,47 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a14e361666f77b868e1b7cca54dd421ad" name="a14e361666f77b868e1b7cca54dd421ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14e361666f77b868e1b7cca54dd421ad">&#9670;&#160;</a></span>get_question_filters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">qbank_tagquestion\plugin_feature::get_question_filters </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/da7/classcore__question_1_1local_1_1bank_1_1view.html">view</a>&#160;</td>
+          <td class="paramname"><em>$qbank</em> = <code>null</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return search conditions for the plugin. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">view&#160;|&#160;null</td><td class="paramname">$qbank</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">condition[]</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="../../dd/d70/classcore__question_1_1local_1_1bank_1_1plugin__features__base.html#a71917dd49ab7c10ce6148def62b9980e">core_question\local\bank\plugin_features_base</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>question/bank/tagquestion/classes/<b>plugin_feature.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 27 2023 02:53:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 3 2023 02:47:51 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

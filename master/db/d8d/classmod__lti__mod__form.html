@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230826) (9bfcd77d51b)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230902) (206c3a66e77)</div>
   </td>
  </tr>
  </tbody>
@@ -58,6 +58,7 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="../../d1/d68/classmod__lti__mod__form-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">mod_lti_mod_form Class Reference<div class="ingroups"><a class="el" href="../../d6/d2c/group__mod__lti.html">mod_lti</a></div></div></div>
 </div><!--header-->
@@ -75,6 +76,9 @@ Inheritance diagram for mod_lti_mod_form:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ae0fc6c67dcda259288df42f5988e2ef6" id="r_ae0fc6c67dcda259288df42f5988e2ef6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d8d/classmod__lti__mod__form.html#ae0fc6c67dcda259288df42f5988e2ef6">__construct</a> ($current, $section, $cm, $course)</td></tr>
+<tr class="memdesc:ae0fc6c67dcda259288df42f5988e2ef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
+<tr class="separator:ae0fc6c67dcda259288df42f5988e2ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga594cb9d675e5d847bfc39b001e02e752" id="r_ga594cb9d675e5d847bfc39b001e02e752"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9c/group__core__form.html#ga594cb9d675e5d847bfc39b001e02e752">_process_submission</a> ($method)</td></tr>
 <tr class="memdesc:ga594cb9d675e5d847bfc39b001e02e752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal method.  <br /></td></tr>
 <tr class="separator:ga594cb9d675e5d847bfc39b001e02e752"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -360,7 +364,83 @@ object&#160;</td><td class="memItemRight" valign="bottom"><b>$courseformat</b></
 &#160;</td><td class="memItemRight" valign="bottom"><b>$current</b></td></tr>
 <tr class="memdesc:a597a954855b621fac455a93b03875c21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current data. <br /></td></tr>
 <tr class="separator:a597a954855b621fac455a93b03875c21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13b3c6fe5184b7a6a8195142f6a90e99" id="r_a13b3c6fe5184b7a6a8195142f6a90e99"><td class="memItemLeft" align="right" valign="top"><a id="a13b3c6fe5184b7a6a8195142f6a90e99" name="a13b3c6fe5184b7a6a8195142f6a90e99"></a>
+string null string&#160;</td><td class="memItemRight" valign="bottom"><b>$type</b></td></tr>
+<tr class="memdesc:a13b3c6fe5184b7a6a8195142f6a90e99"><td class="mdescLeft">&#160;</td><td class="mdescRight">type <br /></td></tr>
+<tr class="separator:a13b3c6fe5184b7a6a8195142f6a90e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e5c479fa0c2e6a804833501cc815eb3" id="r_a7e5c479fa0c2e6a804833501cc815eb3"><td class="memItemLeft" align="right" valign="top"><a id="a7e5c479fa0c2e6a804833501cc815eb3" name="a7e5c479fa0c2e6a804833501cc815eb3"></a>
+int null int&#160;</td><td class="memItemRight" valign="bottom"><b>$typeid</b></td></tr>
+<tr class="memdesc:a7e5c479fa0c2e6a804833501cc815eb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">the typeid or null if the instance form is being created for a manually configured tool instance. <br /></td></tr>
+<tr class="separator:a7e5c479fa0c2e6a804833501cc815eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:ga0fb2cb8cf89a202ddf553b70f1e2646b" id="r_ga0fb2cb8cf89a202ddf553b70f1e2646b"><td class="memItemLeft" align="right" valign="top">
+static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> = 0</td></tr>
+<tr class="memdesc:ga0fb2cb8cf89a202ddf553b70f1e2646b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unique identifier to be used for action buttons. <br /></td></tr>
+<tr class="separator:ga0fb2cb8cf89a202ddf553b70f1e2646b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ae0fc6c67dcda259288df42f5988e2ef6" name="ae0fc6c67dcda259288df42f5988e2ef6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0fc6c67dcda259288df42f5988e2ef6">&#9670;&#160;</a></span>__construct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_lti_mod_form::__construct </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$current</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$section</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$cm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$course</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<p>Throws an exception if trying to init the form for a new manual instance of a tool, which is not supported in 4.3 onward.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$current</td><td>the current form data. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$section</td><td>the section number. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$cm</td><td>the course module object. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../d6/da8/classmoodle__exception.html" title="Base Moodle Exception class.">moodle_exception</a></td><td>if trying to init the form for the creation of a manual instance, which is no longer supported. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="../../d2/d19/classmoodleform__mod.html">moodleform_mod</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a1f93599f2743d576b1ab0ac206718563" name="a1f93599f2743d576b1ab0ac206718563"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1f93599f2743d576b1ab0ac206718563">&#9670;&#160;</a></span>add_action_buttons()</h2>
@@ -1366,7 +1446,7 @@ object&#160;</td><td class="memItemRight" valign="bottom"><b>$courseformat</b></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 27 2023 02:51:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 3 2023 02:46:05 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230826) (9bfcd77d51b)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230902) (206c3a66e77)</div>
   </td>
  </tr>
  </tbody>
@@ -66,11 +66,55 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a99ffeb4806ec8b5723161bf333b031d3" id="r_a99ffeb4806ec8b5723161bf333b031d3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcore__question_1_1question__reference__manager.html#a99ffeb4806ec8b5723161bf333b031d3">convert_legacy_set_reference_filter_condition</a> (array $filtercondition)</td></tr>
+<tr class="memdesc:a99ffeb4806ec8b5723161bf333b031d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This will transform set reference filter conditions to use the new filter structure.  <br /></td></tr>
+<tr class="separator:a99ffeb4806ec8b5723161bf333b031d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6f6f147d348b81a92aa228cb6915e8c" id="r_af6f6f147d348b81a92aa228cb6915e8c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d33/classcore__question_1_1question__reference__manager.html#af6f6f147d348b81a92aa228cb6915e8c">questions_with_references</a> (array $questionids)</td></tr>
 <tr class="memdesc:af6f6f147d348b81a92aa228cb6915e8c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a list of those questions from the list passed in, which are referenced.  <br /></td></tr>
 <tr class="separator:af6f6f147d348b81a92aa228cb6915e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a99ffeb4806ec8b5723161bf333b031d3" name="a99ffeb4806ec8b5723161bf333b031d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99ffeb4806ec8b5723161bf333b031d3">&#9670;&#160;</a></span>convert_legacy_set_reference_filter_condition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_question\question_reference_manager::convert_legacy_set_reference_filter_condition </td>
+          <td>(</td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$filtercondition</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This will transform set reference filter conditions to use the new filter structure. </p>
+<p>Previously filterconditions had questioncategoryid, includesubcategories and tags options. These have been replaced by the new category and tags filters. This function convers the old pre-4.3 filter condition structure to the new one.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$filtercondition</td><td>Pre-4.3 filter condition. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>Post-4.3 filter condition. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="af6f6f147d348b81a92aa228cb6915e8c" name="af6f6f147d348b81a92aa228cb6915e8c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af6f6f147d348b81a92aa228cb6915e8c">&#9670;&#160;</a></span>questions_with_references()</h2>
 
@@ -121,7 +165,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Aug 27 2023 02:53:04 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 3 2023 02:47:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
