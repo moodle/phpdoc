@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230902) (206c3a66e77)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230908) (b4c6ed36503)</div>
   </td>
  </tr>
  </tbody>
@@ -115,6 +115,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:af608d29cf38d98eee22a6e5dc2915fd0" id="r_af608d29cf38d98eee22a6e5dc2915fd0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d84/classcore__courseformat_1_1output_1_1local_1_1content_1_1cm.html#af608d29cf38d98eee22a6e5dc2915fd0">add_completion_data</a> (stdClass &amp;$data, <a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a> $output)</td></tr>
 <tr class="memdesc:af608d29cf38d98eee22a6e5dc2915fd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add activity completion information to the data structure.  <br /></td></tr>
 <tr class="separator:af608d29cf38d98eee22a6e5dc2915fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15936d6555cec465bf0da3bc0a210e2f" id="r_a15936d6555cec465bf0da3bc0a210e2f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d84/classcore__courseformat_1_1output_1_1local_1_1content_1_1cm.html#a15936d6555cec465bf0da3bc0a210e2f">add_dates_data</a> (stdClass &amp;$data, <a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a> $output)</td></tr>
+<tr class="memdesc:a15936d6555cec465bf0da3bc0a210e2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add activity dates information to the data structure.  <br /></td></tr>
+<tr class="separator:a15936d6555cec465bf0da3bc0a210e2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89464ac70cb7200c52d1ccdb00587655" id="r_a89464ac70cb7200c52d1ccdb00587655"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d84/classcore__courseformat_1_1output_1_1local_1_1content_1_1cm.html#a89464ac70cb7200c52d1ccdb00587655">add_editor_data</a> (stdClass &amp;$data, <a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a> $output)</td></tr>
 <tr class="memdesc:a89464ac70cb7200c52d1ccdb00587655"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add course editor attributes to the data structure.  <br /></td></tr>
 <tr class="separator:a89464ac70cb7200c52d1ccdb00587655"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -416,6 +419,57 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$visibilityclass</b
 </div><div class="memdoc">
 
 <p>Add activity completion information to the data structure. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$data</td><td>the current cm data reference </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a></td><td class="paramname">$output</td><td>typically, the renderer that's calling this function </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>the module has completion information </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a15936d6555cec465bf0da3bc0a210e2f" name="a15936d6555cec465bf0da3bc0a210e2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15936d6555cec465bf0da3bc0a210e2f">&#9670;&#160;</a></span>add_dates_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\output\local\content\cm::add_dates_data </td>
+          <td>(</td>
+          <td class="paramtype">stdClass &amp;&#160;</td>
+          <td class="paramname"><em>$data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a>&#160;</td>
+          <td class="paramname"><em>$output</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add activity dates information to the data structure. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$data</td><td>the current cm data reference </td></tr>
@@ -800,7 +854,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$visibilityclass</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 3 2023 02:46:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 10 2023 02:43:46 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

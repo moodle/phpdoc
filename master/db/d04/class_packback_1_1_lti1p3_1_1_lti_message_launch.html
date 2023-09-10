@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230902) (206c3a66e77)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230908) (b4c6ed36503)</div>
   </td>
  </tr>
  </tbody>
@@ -116,9 +116,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a74f0dd0f04ae8951650950f7c41bb021" id="r_a74f0dd0f04ae8951650950f7c41bb021"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d04/class_packback_1_1_lti1p3_1_1_lti_message_launch.html#a74f0dd0f04ae8951650950f7c41bb021">fromCache</a> ( $launch_id, <a class="el" href="../../d6/d74/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_database.html">IDatabase</a> $database, <a class="el" href="../../de/df3/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_cache.html">ICache</a> $<a class="el" href="../../d3/d3d/classcache.html">cache</a>=null, <a class="el" href="../../df/d0f/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_lti_service_connector.html">ILtiServiceConnector</a> $serviceConnector=null)</td></tr>
 <tr class="memdesc:a74f0dd0f04ae8951650950f7c41bb021"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load an LtiMessageLaunch from a <a class="el" href="../../dc/d67/class_cache.html" title="Used to create cache objects.">Cache</a> using a launch id.  <br /></td></tr>
 <tr class="separator:a74f0dd0f04ae8951650950f7c41bb021"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addaaa0db57e3bda189c7e4c2d0855a6e" id="r_addaaa0db57e3bda189c7e4c2d0855a6e"><td class="memItemLeft" align="right" valign="top"><a id="addaaa0db57e3bda189c7e4c2d0855a6e" name="addaaa0db57e3bda189c7e4c2d0855a6e"></a>
-static&#160;</td><td class="memItemRight" valign="bottom"><b>getMissingRegistrationErrorMsg</b> (string $issuerUrl, ?string $clientId=null)</td></tr>
-<tr class="separator:addaaa0db57e3bda189c7e4c2d0855a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acefe32135d81513ab9af218d3cea04d5" id="r_acefe32135d81513ab9af218d3cea04d5"><td class="memItemLeft" align="right" valign="top"><a id="acefe32135d81513ab9af218d3cea04d5" name="acefe32135d81513ab9af218d3cea04d5"></a>
+static&#160;</td><td class="memItemRight" valign="bottom"><b>getMissingRegistrationErrorMsg</b> (string $issuerUrl, string $clientId=null)</td></tr>
+<tr class="separator:acefe32135d81513ab9af218d3cea04d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af506d82a371945fe44f2aaff0b1c462c" id="r_af506d82a371945fe44f2aaff0b1c462c"><td class="memItemLeft" align="right" valign="top"><a id="af506d82a371945fe44f2aaff0b1c462c" name="af506d82a371945fe44f2aaff0b1c462c"></a>
 static&#160;</td><td class="memItemRight" valign="bottom"><b>new</b> (<a class="el" href="../../d6/d74/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_database.html">IDatabase</a> $database, <a class="el" href="../../de/df3/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_cache.html">ICache</a> $<a class="el" href="../../d3/d3d/classcache.html">cache</a>=null, <a class="el" href="../../db/d88/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_cookie.html">ICookie</a> $cookie=null, <a class="el" href="../../df/d0f/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_lti_service_connector.html">ILtiServiceConnector</a> $serviceConnector=null)</td></tr>
 <tr class="memdesc:af506d82a371945fe44f2aaff0b1c462c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static function to allow for method chaining without having to assign to a variable first. <br /></td></tr>
@@ -171,6 +171,9 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>ERR_NO_DEPLOYMENT</b
 <tr class="memitem:a7b4c0baf6ccdb879971359a969ee8687" id="r_a7b4c0baf6ccdb879971359a969ee8687"><td class="memItemLeft" align="right" valign="top"><a id="a7b4c0baf6ccdb879971359a969ee8687" name="a7b4c0baf6ccdb879971359a969ee8687"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>ERR_NO_KID</b> = 'No KID specified in the <a class="el" href="../../d8/d39/class_j_w_t.html">JWT</a> Header.'</td></tr>
 <tr class="separator:a7b4c0baf6ccdb879971359a969ee8687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19ecce98797e3394a298e5fb20b72291" id="r_a19ecce98797e3394a298e5fb20b72291"><td class="memItemLeft" align="right" valign="top"><a id="a19ecce98797e3394a298e5fb20b72291" name="a19ecce98797e3394a298e5fb20b72291"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>ERR_NO_MATCHING_PUBLIC_KEY</b> = 'Unable to find a public key which matches your JWT.'</td></tr>
+<tr class="separator:a19ecce98797e3394a298e5fb20b72291"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad240d03e93e3d0f3e2714193dfa49f83" id="r_ad240d03e93e3d0f3e2714193dfa49f83"><td class="memItemLeft" align="right" valign="top"><a id="ad240d03e93e3d0f3e2714193dfa49f83" name="ad240d03e93e3d0f3e2714193dfa49f83"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>ERR_NO_PUBLIC_KEY</b> = 'Unable to find public key.'</td></tr>
 <tr class="separator:ad240d03e93e3d0f3e2714193dfa49f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -294,19 +297,19 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_SUBMISSIONREVIE
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$launch_id</td><td>The launch id of the LtiMessageLaunch object that is being pulled from the cache </td></tr>
     <tr><td class="paramtype">IDatabase</td><td class="paramname">$database</td><td>Instance of the database interface used for looking up registrations and deployments </td></tr>
-    <tr><td class="paramtype">ICache</td><td class="paramname">$cache</td><td>Instance of the <a class="el" href="../../dc/d67/class_cache.html" title="Used to create cache objects.">Cache</a> interface used to loading and storing launches. If non is provided launch data will be store in $_SESSION.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">LtiException</td><td>Will throw an LtiException if validation fails or launch cannot be found</td></tr>
+    <tr><td class="paramtype">ICache</td><td class="paramname">$cache</td><td>Instance of the <a class="el" href="../../dc/d67/class_cache.html" title="Used to create cache objects.">Cache</a> interface used to loading and storing launches. If non is provided launch data will be store in $_SESSION. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">LtiMessageLaunch</td><td>A populated and validated LtiMessageLaunch </td></tr>
+    <tr><td class="paramname">LtiMessageLaunch</td><td>A populated and validated LtiMessageLaunch</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">LtiException</td><td>Will throw an LtiException if validation fails or launch cannot be found </td></tr>
   </table>
   </dd>
 </dl>
@@ -632,19 +635,19 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_SUBMISSIONREVIE
 <p>Validates all aspects of an incoming LTI message launch and caches the launch if successful. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array&#160;|&#160;string</td><td class="paramname">$request</td><td>An array of post request parameters. If not set will default to $_POST.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">LtiException</td><td>Will throw an LtiException if validation fails</td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;string</td><td class="paramname">$request</td><td>An array of post request parameters. If not set will default to $_POST. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">LtiMessageLaunch</td><td>Will return $this if validation is successful </td></tr>
+    <tr><td class="paramname">LtiMessageLaunch</td><td>Will return $this if validation is successful</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">LtiException</td><td>Will throw an LtiException if validation fails </td></tr>
   </table>
   </dd>
 </dl>
@@ -657,7 +660,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_SUBMISSIONREVIE
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 3 2023 02:47:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 10 2023 02:44:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

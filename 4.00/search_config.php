@@ -16,7 +16,7 @@ $translator = array(
   'search_matches' => "Matches:",
   'search' => "Search",
   'split_bar' => "",
-  'logo' => "Generated on Sun Sep 3 2023 02:31:16 for Moodle PHP Documentation by&#160;\n<a href=\"https://www.doxygen.org/index.html\">\n<img class=\"footer\" src=\"doxygen.svg\" width=\"104\" height=\"31\" alt=\"doxygen\"/></a> 1.9.8 ",
+  'logo' => "Generated on Sun Sep 10 2023 02:29:52 for Moodle PHP Documentation by&#160;\n<a href=\"https://www.doxygen.org/index.html\">\n<img class=\"footer\" src=\"doxygen.svg\" width=\"104\" height=\"31\" alt=\"doxygen\"/></a> 1.9.8 ",
 );
 
 ?>

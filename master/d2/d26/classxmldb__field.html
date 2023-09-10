@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230902) (206c3a66e77)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230908) (b4c6ed36503)</div>
   </td>
  </tr>
  </tbody>
@@ -228,9 +228,9 @@ max const&#160;</td><td class="memItemRight" valign="bottom"><b>FLOAT_MAX_LENGTH
 maximum const&#160;</td><td class="memItemRight" valign="bottom"><b>INTEGER_MAX_LENGTH</b> = 20</td></tr>
 <tr class="memdesc:ad61f04f1aa31a8b5edde21ab78c3676e"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of digits of integers <br /></td></tr>
 <tr class="separator:ad61f04f1aa31a8b5edde21ab78c3676e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade09fe87de06f2c3365812ef353a92c3" id="r_ade09fe87de06f2c3365812ef353a92c3"><td class="memItemLeft" align="right" valign="top">maximumn const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d26/classxmldb__field.html#ade09fe87de06f2c3365812ef353a92c3">NAME_MAX_LENGTH</a> = 30</td></tr>
-<tr class="memdesc:ade09fe87de06f2c3365812ef353a92c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Note:  <br /></td></tr>
-<tr class="separator:ade09fe87de06f2c3365812ef353a92c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e10f61b9b178c210fb10e0c52f9916d" id="r_a9e10f61b9b178c210fb10e0c52f9916d"><td class="memItemLeft" align="right" valign="top">int const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d26/classxmldb__field.html#a9e10f61b9b178c210fb10e0c52f9916d">NAME_MAX_LENGTH</a> = 63</td></tr>
+<tr class="memdesc:a9e10f61b9b178c210fb10e0c52f9916d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Note:  <br /></td></tr>
+<tr class="separator:a9e10f61b9b178c210fb10e0c52f9916d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa91cd4a36bd29c5012a92389ac33b6ab" id="r_aa91cd4a36bd29c5012a92389ac33b6ab"><td class="memItemLeft" align="right" valign="top"><a id="aa91cd4a36bd29c5012a92389ac33b6ab" name="aa91cd4a36bd29c5012a92389ac33b6ab"></a>
 max const&#160;</td><td class="memItemRight" valign="bottom"><b>NUMBER_MAX_LENGTH</b> = 38</td></tr>
 <tr class="memdesc:aa91cd4a36bd29c5012a92389ac33b6ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">length (precision, the total number of digits) of decimals <br /></td></tr>
@@ -1073,7 +1073,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$type</b></td></tr>
 </div><div class="memdoc">
 
 <p>Get the unsigned. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000987">Deprecated:</a></b></dt><dd>since moodle 2.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000996">Deprecated:</a></b></dt><dd>since moodle 2.3 </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td></td></tr>
@@ -1795,7 +1795,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$type</b></td></tr>
 </div><div class="memdoc">
 
 <p>Set the field unsigned. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000988">Deprecated:</a></b></dt><dd>since moodle 2.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000997">Deprecated:</a></b></dt><dd>since moodle 2.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">bool</td><td class="paramname">$unsigned</td><td></td></tr>
@@ -1889,23 +1889,23 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$type</b></td></tr>
 
 </div>
 </div>
-<a id="ade09fe87de06f2c3365812ef353a92c3" name="ade09fe87de06f2c3365812ef353a92c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade09fe87de06f2c3365812ef353a92c3">&#9670;&#160;</a></span>NAME_MAX_LENGTH</h2>
+<a id="a9e10f61b9b178c210fb10e0c52f9916d" name="a9e10f61b9b178c210fb10e0c52f9916d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e10f61b9b178c210fb10e0c52f9916d">&#9670;&#160;</a></span>NAME_MAX_LENGTH</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">maximumn const xmldb_field::NAME_MAX_LENGTH = 30</td>
+          <td class="memname">int const xmldb_field::NAME_MAX_LENGTH = 63</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Note: </p>
 <ul>
-<li>Oracle has 30 chars limit for all names</li>
+<li>PostgreSQL has a limit of 63 ascii chars (bytes) for table names. Others have greater limits.</li>
 </ul>
-<p>length of field names </p>
+<p>max length of field names. </p>
 
 </div>
 </div>
@@ -1915,7 +1915,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$type</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 3 2023 02:46:25 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 10 2023 02:43:17 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

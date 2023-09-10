@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230902) (206c3a66e77)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230908) (b4c6ed36503)</div>
   </td>
  </tr>
  </tbody>
@@ -74,6 +74,9 @@ Inheritance diagram for behat_transformations:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:add03a815becbe2bb79e6a19ae0afc14c" id="r_add03a815becbe2bb79e6a19ae0afc14c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6a/classbehat__transformations.html#add03a815becbe2bb79e6a19ae0afc14c">arg_insert_wwwroot</a> (string $string)</td></tr>
+<tr class="memdesc:add03a815becbe2bb79e6a19ae0afc14c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert wwwroot# to the wwwroot config value, so it is possible to reference fully qualified URLs within the site.  <br /></td></tr>
+<tr class="separator:add03a815becbe2bb79e6a19ae0afc14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac81d534766a74fc89c2b8d6f988b2581" id="r_ac81d534766a74fc89c2b8d6f988b2581"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6a/classbehat__transformations.html#ac81d534766a74fc89c2b8d6f988b2581">arg_replace_nasty_strings</a> ($argument)</td></tr>
 <tr class="memdesc:ac81d534766a74fc89c2b8d6f988b2581"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces $NASTYSTRING vars for a nasty string.  <br /></td></tr>
 <tr class="separator:ac81d534766a74fc89c2b8d6f988b2581"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -106,8 +109,43 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a68ec0b18d8f0b3c52bb8a4e2998bf867" id="r_a68ec0b18d8f0b3c52bb8a4e2998bf867"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6a/classbehat__transformations.html#a68ec0b18d8f0b3c52bb8a4e2998bf867">get_transformed_timestamp</a> ($time)</td></tr>
 <tr class="memdesc:a68ec0b18d8f0b3c52bb8a4e2998bf867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return timestamp for the time passed.  <br /></td></tr>
 <tr class="separator:a68ec0b18d8f0b3c52bb8a4e2998bf867"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a6c7f039a68301b767de8a20cecfebd" id="r_a5a6c7f039a68301b767de8a20cecfebd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d6a/classbehat__transformations.html#a5a6c7f039a68301b767de8a20cecfebd">replace_wwwroot</a> (string $string)</td></tr>
+<tr class="memdesc:a5a6c7f039a68301b767de8a20cecfebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace wwwroot# with the actual wwwroot config value.  <br /></td></tr>
+<tr class="separator:a5a6c7f039a68301b767de8a20cecfebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="add03a815becbe2bb79e6a19ae0afc14c" name="add03a815becbe2bb79e6a19ae0afc14c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add03a815becbe2bb79e6a19ae0afc14c">&#9670;&#160;</a></span>arg_insert_wwwroot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_transformations::arg_insert_wwwroot </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert wwwroot# to the wwwroot config value, so it is possible to reference fully qualified URLs within the site. </p>
+<p>@Transform /^((.*)wwwroot#(.*))$/ </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ac81d534766a74fc89c2b8d6f988b2581" name="ac81d534766a74fc89c2b8d6f988b2581"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac81d534766a74fc89c2b8d6f988b2581">&#9670;&#160;</a></span>arg_replace_nasty_strings()</h2>
 
@@ -304,7 +342,7 @@ with a backslash, this method removes this backslash.
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000982">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.2 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000991">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.2 </dd></dl>
 
 </div>
 </div>
@@ -329,6 +367,46 @@ with a backslash, this method removes this backslash.
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5a6c7f039a68301b767de8a20cecfebd" name="a5a6c7f039a68301b767de8a20cecfebd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a6c7f039a68301b767de8a20cecfebd">&#9670;&#160;</a></span>replace_wwwroot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_transformations::replace_wwwroot </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Replace wwwroot# with the actual wwwroot config value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$string</td><td>String to attempt the replacement in. </td></tr>
   </table>
   </dd>
 </dl>
@@ -409,7 +487,7 @@ with a backslash, this method removes this backslash.
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 3 2023 02:45:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 10 2023 02:42:05 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
