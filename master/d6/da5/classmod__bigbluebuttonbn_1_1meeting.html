@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230908) (b4c6ed36503)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230916) (ecddfa6ccd8)</div>
   </td>
  </tr>
  </tbody>
@@ -157,9 +157,9 @@ Static Protected Member Functions</h2></td></tr>
 <tr class="memitem:a4e4d2192f9507eac60b1a2d681fd25b5" id="r_a4e4d2192f9507eac60b1a2d681fd25b5"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da5/classmod__bigbluebuttonbn_1_1meeting.html#a4e4d2192f9507eac60b1a2d681fd25b5">process_meeting_events</a> (<a class="el" href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html">instance</a> $<a class="el" href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html">instance</a>, stdClass $jsonobj)</td></tr>
 <tr class="memdesc:a4e4d2192f9507eac60b1a2d681fd25b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function enqueues list of meeting events to be stored and processed as for completion.  <br /></td></tr>
 <tr class="separator:a4e4d2192f9507eac60b1a2d681fd25b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acedbfa5af803ebf62d9076cb2afa977c" id="r_acedbfa5af803ebf62d9076cb2afa977c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da5/classmod__bigbluebuttonbn_1_1meeting.html#acedbfa5af803ebf62d9076cb2afa977c">retrieve_cached_meeting_info</a> ($meetingid, $updatecache=false)</td></tr>
-<tr class="memdesc:acedbfa5af803ebf62d9076cb2afa977c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a meeting info object cached or fetched from the live session.  <br /></td></tr>
-<tr class="separator:acedbfa5af803ebf62d9076cb2afa977c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ca170795bc87daf93022e25b15c5fa" id="r_af4ca170795bc87daf93022e25b15c5fa"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da5/classmod__bigbluebuttonbn_1_1meeting.html#af4ca170795bc87daf93022e25b15c5fa">retrieve_cached_meeting_info</a> (<a class="el" href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html">instance</a> $<a class="el" href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html">instance</a>, $updatecache=false)</td></tr>
+<tr class="memdesc:af4ca170795bc87daf93022e25b15c5fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a meeting info object cached or fetched from the live session.  <br /></td></tr>
+<tr class="separator:af4ca170795bc87daf93022e25b15c5fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -935,8 +935,8 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$meetinginfo</b> 
 
 </div>
 </div>
-<a id="acedbfa5af803ebf62d9076cb2afa977c" name="acedbfa5af803ebf62d9076cb2afa977c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acedbfa5af803ebf62d9076cb2afa977c">&#9670;&#160;</a></span>retrieve_cached_meeting_info()</h2>
+<a id="af4ca170795bc87daf93022e25b15c5fa" name="af4ca170795bc87daf93022e25b15c5fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4ca170795bc87daf93022e25b15c5fa">&#9670;&#160;</a></span>retrieve_cached_meeting_info()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -947,8 +947,8 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$meetinginfo</b> 
         <tr>
           <td class="memname">static mod_bigbluebuttonbn\meeting::retrieve_cached_meeting_info </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$meetingid</em>, </td>
+          <td class="paramtype"><a class="el" href="../../dd/d8e/classmod__bigbluebuttonbn_1_1instance.html">instance</a>&#160;</td>
+          <td class="paramname"><em>$instance</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -972,7 +972,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$meetinginfo</b> 
 <p>Gets a meeting info object cached or fetched from the live session. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$meetingid</td><td></td></tr>
+    <tr><td class="paramtype">instance</td><td class="paramname">$instance</td><td></td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$updatecache</td><td></td></tr>
   </table>
   </dd>
@@ -1017,7 +1017,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$meetinginfo</b> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 10 2023 02:44:10 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 17 2023 02:47:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

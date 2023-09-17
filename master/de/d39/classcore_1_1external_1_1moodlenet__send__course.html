@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230908) (b4c6ed36503)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230916) (ecddfa6ccd8)</div>
   </td>
  </tr>
  </tbody>
@@ -73,9 +73,9 @@ Inheritance diagram for core\external\moodlenet_send_course:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a87016e86f15ca1816a999c763250fa67" id="r_a87016e86f15ca1816a999c763250fa67"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d39/classcore_1_1external_1_1moodlenet__send__course.html#a87016e86f15ca1816a999c763250fa67">execute</a> (int $issuerid, int $courseid, int $shareformat)</td></tr>
-<tr class="memdesc:a87016e86f15ca1816a999c763250fa67"><td class="mdescLeft">&#160;</td><td class="mdescRight">External function to send the course to MoodleNet.  <br /></td></tr>
-<tr class="separator:a87016e86f15ca1816a999c763250fa67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc96a7dfa15d9199f0ee1f7c8d2a64a7" id="r_acc96a7dfa15d9199f0ee1f7c8d2a64a7"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d39/classcore_1_1external_1_1moodlenet__send__course.html#acc96a7dfa15d9199f0ee1f7c8d2a64a7">execute</a> (int $issuerid, int $courseid, int $shareformat, array $cmids=[],)</td></tr>
+<tr class="memdesc:acc96a7dfa15d9199f0ee1f7c8d2a64a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">External function to send the course to MoodleNet.  <br /></td></tr>
+<tr class="separator:acc96a7dfa15d9199f0ee1f7c8d2a64a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb30c9cf3d223c119191fc03f423d782" id="r_adb30c9cf3d223c119191fc03f423d782"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d39/classcore_1_1external_1_1moodlenet__send__course.html#adb30c9cf3d223c119191fc03f423d782">execute_parameters</a> ()</td></tr>
 <tr class="memdesc:adb30c9cf3d223c119191fc03f423d782"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the parameters for sending the course.  <br /></td></tr>
 <tr class="separator:adb30c9cf3d223c119191fc03f423d782"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -90,8 +90,8 @@ Static Protected Member Functions</h2></td></tr>
 <tr class="separator:acf147d3443ad99223cd650ea65e0b2e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a87016e86f15ca1816a999c763250fa67" name="a87016e86f15ca1816a999c763250fa67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87016e86f15ca1816a999c763250fa67">&#9670;&#160;</a></span>execute()</h2>
+<a id="acc96a7dfa15d9199f0ee1f7c8d2a64a7" name="acc96a7dfa15d9199f0ee1f7c8d2a64a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc96a7dfa15d9199f0ee1f7c8d2a64a7">&#9670;&#160;</a></span>execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -115,7 +115,13 @@ Static Protected Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>$shareformat</em>&#160;</td>
+          <td class="paramname"><em>$shareformat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$cmids</em> = <code>[]</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -136,6 +142,7 @@ Static Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$issuerid</td><td>The MoodleNet OAuth 2 issuer ID </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$courseid</td><td>The course ID </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$shareformat</td><td>The share format being used, as defined by <a class="el" href="../../da/d96/classcore_1_1moodlenet_1_1course__sender.html">core::moodlenet::course_sender</a> </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$cmids</td><td>The course module ids </td></tr>
   </table>
   </dd>
 </dl>
@@ -278,7 +285,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 10 2023 02:43:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 17 2023 02:46:44 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

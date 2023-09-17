@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230908) (b4c6ed36503)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230916) (ecddfa6ccd8)</div>
   </td>
  </tr>
  </tbody>
@@ -126,9 +126,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aa436a894777bec2a96ee2caa1c80e9ce" id="r_aa436a894777bec2a96ee2caa1c80e9ce"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d26/classcourse__modinfo.html#aa436a894777bec2a96ee2caa1c80e9ce">build_section_cache</a> ($courseid)</td></tr>
 <tr class="memdesc:aa436a894777bec2a96ee2caa1c80e9ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method can not be used anymore.  <br /></td></tr>
 <tr class="separator:aa436a894777bec2a96ee2caa1c80e9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31c028883e0cea94dc375238393b9f58" id="r_a31c028883e0cea94dc375238393b9f58"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d26/classcourse__modinfo.html#a31c028883e0cea94dc375238393b9f58">clear_instance_cache</a> ($courseorid=null)</td></tr>
-<tr class="memdesc:a31c028883e0cea94dc375238393b9f58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the cache used in course_modinfo::instance()  <br /></td></tr>
-<tr class="separator:a31c028883e0cea94dc375238393b9f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdc5d6bba457d84cd2d2b589e9c13072" id="r_abdc5d6bba457d84cd2d2b589e9c13072"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d26/classcourse__modinfo.html#abdc5d6bba457d84cd2d2b589e9c13072">clear_instance_cache</a> ($courseorid=null, int $newcacherev=0)</td></tr>
+<tr class="memdesc:abdc5d6bba457d84cd2d2b589e9c13072"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the cache used in course_modinfo::instance()  <br /></td></tr>
+<tr class="separator:abdc5d6bba457d84cd2d2b589e9c13072"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32c5e13a092b974c069c8024172c4708" id="r_a32c5e13a092b974c069c8024172c4708"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d26/classcourse__modinfo.html#a32c5e13a092b974c069c8024172c4708">get_array_of_activities</a> (stdClass $course, bool $usecache=false)</td></tr>
 <tr class="memdesc:a32c5e13a092b974c069c8024172c4708"><td class="mdescLeft">&#160;</td><td class="mdescRight">For a given course, returns an array of course activity objects.  <br /></td></tr>
 <tr class="separator:a32c5e13a092b974c069c8024172c4708"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,6 +182,9 @@ Static Protected Attributes</h2></td></tr>
 <tr class="memitem:ae08321e8c0a80f5e89851949ad25152b" id="r_ae08321e8c0a80f5e89851949ad25152b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d5/d26/classcourse__modinfo.html">course_modinfo</a>[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d26/classcourse__modinfo.html#ae08321e8c0a80f5e89851949ad25152b">$instancecache</a> = array()</td></tr>
 <tr class="memdesc:ae08321e8c0a80f5e89851949ad25152b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Static cache for generated <a class="el" href="../../d5/d26/classcourse__modinfo.html">course_modinfo</a> instances.  <br /></td></tr>
 <tr class="separator:ae08321e8c0a80f5e89851949ad25152b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5100c3b8331fc54b08d79212ad091bba" id="r_a5100c3b8331fc54b08d79212ad091bba"><td class="memItemLeft" align="right" valign="top">static int[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d26/classcourse__modinfo.html#a5100c3b8331fc54b08d79212ad091bba">$mincacherevs</a> = []</td></tr>
+<tr class="memdesc:a5100c3b8331fc54b08d79212ad091bba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store a list of known course cacherev values.  <br /></td></tr>
+<tr class="separator:a5100c3b8331fc54b08d79212ad091bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae93c087067c4c98542b0e1a8c60bf6f6" name="ae93c087067c4c98542b0e1a8c60bf6f6"></a>
@@ -497,12 +500,12 @@ Static Protected Attributes</h2></td></tr>
 
 <p>This method can not be used anymore. </p>
 <dl class="section see"><dt>See also</dt><dd>course_modinfo::build_course_cache() </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000760">Deprecated:</a></b></dt><dd>since 2.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000761">Deprecated:</a></b></dt><dd>since 2.6 </dd></dl>
 
 </div>
 </div>
-<a id="a31c028883e0cea94dc375238393b9f58" name="a31c028883e0cea94dc375238393b9f58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31c028883e0cea94dc375238393b9f58">&#9670;&#160;</a></span>clear_instance_cache()</h2>
+<a id="abdc5d6bba457d84cd2d2b589e9c13072" name="abdc5d6bba457d84cd2d2b589e9c13072"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdc5d6bba457d84cd2d2b589e9c13072">&#9670;&#160;</a></span>clear_instance_cache()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -514,8 +517,18 @@ Static Protected Attributes</h2></td></tr>
           <td class="memname">static course_modinfo::clear_instance_cache </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$courseorid</em> = <code>null</code></td><td>)</td>
+          <td class="paramname"><em>$courseorid</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$newcacherev</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -527,9 +540,11 @@ Static Protected Attributes</h2></td></tr>
 
 <p>Clears the cache used in course_modinfo::instance() </p>
 <p>Used in <a class="el" href="../../d0/de1/group__core.html#ga30c04da283d2e3d9b0acd2eb34b90829">get_fast_modinfo()</a> when called with argument $reset = true and in <a class="el" href="../../d0/de1/group__core.html#ga9872e9f78d04008393ff45e78ddba9d7">rebuild_course_cache()</a></p>
+<p>If the cacherev for the course is known to have updated (i.e. when doing rebuild_course_cache), it should be specified here.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">null&#160;|&#160;int&#160;|&#160;stdClass</td><td class="paramname">$courseorid</td><td>if specified removes only cached value for this course </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$newcacherev</td><td>If specified, the known cache rev for this course id will be updated </td></tr>
   </table>
   </dd>
 </dl>
@@ -1327,13 +1342,38 @@ course_modinfo::clear_instance_cache() </dd></dl>
 
 </div>
 </div>
+<a id="a5100c3b8331fc54b08d79212ad091bba" name="a5100c3b8331fc54b08d79212ad091bba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5100c3b8331fc54b08d79212ad091bba">&#9670;&#160;</a></span>$mincacherevs</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int [] course_modinfo::$mincacherevs = []</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Store a list of known course cacherev values. </p>
+<p>This is in case people reuse a course object (with an old cacherev value) within the same request when calling things like get_fast_modinfo, after rebuild_course_cache. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>lib/<b>modinfolib.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 10 2023 02:42:10 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 17 2023 02:45:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

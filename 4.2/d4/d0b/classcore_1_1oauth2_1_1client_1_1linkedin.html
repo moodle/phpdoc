@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2.2+ (Build: 20230908) (f1116b10f1f)</div>
+   <div id="projectbrief">Moodle 4.2.2+ (Build: 20230915) (88f4aafad92)</div>
   </td>
  </tr>
  </tbody>
@@ -137,7 +137,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad5e3f1fd9567b1e161349ea14c3b44c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current curl security helper.  <br /></td></tr>
 <tr class="separator:ad5e3f1fd9567b1e161349ea14c3b44c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7df12acf0a02646a2e2eb826a035a903" id="r_a7df12acf0a02646a2e2eb826a035a903"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d0b/classcore_1_1oauth2_1_1client_1_1linkedin.html#a7df12acf0a02646a2e2eb826a035a903">get_userinfo</a> ()</td></tr>
-<tr class="memdesc:a7df12acf0a02646a2e2eb826a035a903"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch the user info from the userinfo and email endpoint and map fields back.  <br /></td></tr>
+<tr class="memdesc:a7df12acf0a02646a2e2eb826a035a903"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override to handle LinkedIn's non-spec-compliant 'locale' field, which isn't a string (e.g.  <br /></td></tr>
 <tr class="separator:a7df12acf0a02646a2e2eb826a035a903"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff03f38f97065f07b65ffd6b551ec89c" id="r_aff03f38f97065f07b65ffd6b551ec89c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d9f/classcurl.html#aff03f38f97065f07b65ffd6b551ec89c">getResponse</a> ()</td></tr>
 <tr class="memdesc:aff03f38f97065f07b65ffd6b551ec89c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get HTTP Response Headers.  <br /></td></tr>
@@ -1369,7 +1369,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$system</b> = false</
       </table>
 </div><div class="memdoc">
 
-<p>Fetch the user info from the userinfo and email endpoint and map fields back. </p>
+<p>Override to handle LinkedIn's non-spec-compliant 'locale' field, which isn't a string (e.g. </p>
+<p>'en-US') but an object.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array|false</td><td></td></tr>
@@ -2540,7 +2541,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$system</b> = false</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 10 2023 02:38:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 17 2023 02:41:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230908) (b4c6ed36503)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230916) (ecddfa6ccd8)</div>
   </td>
  </tr>
  </tbody>
@@ -69,6 +69,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a5cff2a3ea28957543b1734f279acd769" id="r_a5cff2a3ea28957543b1734f279acd769"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de6/classmod__lti_1_1local_1_1types__helper.html#a5cff2a3ea28957543b1734f279acd769">get_lti_types_by_course</a> (int $courseid, int $userid, array $coursevisible=[])</td></tr>
 <tr class="memdesc:a5cff2a3ea28957543b1734f279acd769"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all LTI tool types (preconfigured tools) visible in the given course and for the given user.  <br /></td></tr>
 <tr class="separator:a5cff2a3ea28957543b1734f279acd769"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a737b67a96e6e548e1fcf28f074b6f29a" id="r_a737b67a96e6e548e1fcf28f074b6f29a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de6/classmod__lti_1_1local_1_1types__helper.html#a737b67a96e6e548e1fcf28f074b6f29a">override_type_showinactivitychooser</a> (int $tooltypeid, int $courseid, <a class="el" href="../../de/d1c/classcore_1_1context_1_1course.html">core\context\course</a> $context, bool $showinactivitychooser)</td></tr>
+<tr class="memdesc:a737b67a96e6e548e1fcf28f074b6f29a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override coursevisible for a given tool on course level.  <br /></td></tr>
+<tr class="separator:a737b67a96e6e548e1fcf28f074b6f29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a5cff2a3ea28957543b1734f279acd769" name="a5cff2a3ea28957543b1734f279acd769"></a>
@@ -130,13 +133,78 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a737b67a96e6e548e1fcf28f074b6f29a" name="a737b67a96e6e548e1fcf28f074b6f29a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a737b67a96e6e548e1fcf28f074b6f29a">&#9670;&#160;</a></span>override_type_showinactivitychooser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static mod_lti\local\types_helper::override_type_showinactivitychooser </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$tooltypeid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$courseid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d1c/classcore_1_1context_1_1course.html">core\context\course</a>&#160;</td>
+          <td class="paramname"><em>$context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$showinactivitychooser</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Override coursevisible for a given tool on course level. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$tooltypeid</td><td>Type ID </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$courseid</td><td>Course ID </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../de/d1c/classcore_1_1context_1_1course.html">core::context::course</a></td><td class="paramname">$context</td><td>Course context </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$showinactivitychooser</td><td>Show or not show in activity chooser </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>True if the coursevisible was changed, false otherwise. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>mod/lti/classes/local/<b>types_helper.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 10 2023 02:44:21 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 17 2023 02:47:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

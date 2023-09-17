@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230908) (b4c6ed36503)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230916) (ecddfa6ccd8)</div>
   </td>
  </tr>
  </tbody>
@@ -108,6 +108,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Acquires a lock for the given key. </p>
 <p>Please note that this happens automatically if the cache definition requires locking. it is still made a public method so that adhoc caches can use it if they choose. However this doesn't guarantee consistent access. It will become the responsibility of the calling code to ensure locks are acquired, checked, and released.</p>
+<p>Prior to <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4,3 this function used to return false if the lock cannot be obtained. It now always returns true, and throws an exception if the lock cannot be obtained.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string&#160;|&#160;int</td><td class="paramname">$key</td><td></td></tr>
@@ -116,7 +117,13 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">bool</td><td>True if the lock could be acquired, false otherwise. </td></tr>
+    <tr><td class="paramname">bool</td><td>Always returns true (for backwards compatibility) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../d6/da8/classmoodle__exception.html" title="Base Moodle Exception class.">moodle_exception</a></td><td>If the lock cannot be obtained after a timeout </td></tr>
   </table>
   </dd>
 </dl>
@@ -201,7 +208,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 10 2023 02:42:07 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 17 2023 02:45:09 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

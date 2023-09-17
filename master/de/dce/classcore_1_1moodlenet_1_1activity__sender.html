@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230908) (b4c6ed36503)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230916) (ecddfa6ccd8)</div>
   </td>
  </tr>
  </tbody>
@@ -108,9 +108,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a2b11bb2d44facfa0592d84d387bcd7eb" id="r_a2b11bb2d44facfa0592d84d387bcd7eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dce/classcore_1_1moodlenet_1_1activity__sender.html#a2b11bb2d44facfa0592d84d387bcd7eb">log_event</a> (<a class="el" href="../../d1/d90/classcore_1_1context.html">core\context</a> $coursecontext, int $cmid, string $resourceurl, int $responsecode,)</td></tr>
 <tr class="memdesc:a2b11bb2d44facfa0592d84d387bcd7eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log an event to the admin logs for an outbound share attempt.  <br /></td></tr>
 <tr class="separator:a2b11bb2d44facfa0592d84d387bcd7eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa806c1e14c65738ed77174576b744085" id="r_aa806c1e14c65738ed77174576b744085"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dce/classcore_1_1moodlenet_1_1activity__sender.html#aa806c1e14c65738ed77174576b744085">prepare_share_contents</a> ()</td></tr>
-<tr class="memdesc:aa806c1e14c65738ed77174576b744085"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare the data for sharing, in the format specified.  <br /></td></tr>
-<tr class="separator:aa806c1e14c65738ed77174576b744085"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0f4ae15b66ab014144a2ee186c60c78" id="r_af0f4ae15b66ab014144a2ee186c60c78"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d05/classcore_1_1moodlenet_1_1resource__sender.html#af0f4ae15b66ab014144a2ee186c60c78">prepare_share_contents</a> ()</td></tr>
+<tr class="memdesc:af0f4ae15b66ab014144a2ee186c60c78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare the data for sharing, in the format specified.  <br /></td></tr>
+<tr class="separator:af0f4ae15b66ab014144a2ee186c60c78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
@@ -128,6 +128,10 @@ Protected Attributes</h2></td></tr>
 stdClass stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$course</b></td></tr>
 <tr class="memdesc:a0559f85388fea229552ad3df98c2d9a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The course where the activity is located. <br /></td></tr>
 <tr class="separator:a0559f85388fea229552ad3df98c2d9a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ad5d2b46d387c8204039aaadd13a024" id="r_a5ad5d2b46d387c8204039aaadd13a024"><td class="memItemLeft" align="right" valign="top"><a id="a5ad5d2b46d387c8204039aaadd13a024" name="a5ad5d2b46d387c8204039aaadd13a024"></a>
+<a class="el" href="../../dd/ddb/classcore_1_1moodlenet_1_1resource__packager.html">resource_packager</a> <a class="el" href="../../dd/ddb/classcore_1_1moodlenet_1_1resource__packager.html">resource_packager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$packager</b></td></tr>
+<tr class="memdesc:a5ad5d2b46d387c8204039aaadd13a024"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resource packager. <br /></td></tr>
+<tr class="separator:a5ad5d2b46d387c8204039aaadd13a024"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a38b19826f8deb5e7fb2339cf91b3554b" name="a38b19826f8deb5e7fb2339cf91b3554b"></a>
@@ -331,8 +335,8 @@ stdClass stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$course<
 
 </div>
 </div>
-<a id="aa806c1e14c65738ed77174576b744085" name="aa806c1e14c65738ed77174576b744085"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa806c1e14c65738ed77174576b744085">&#9670;&#160;</a></span>prepare_share_contents()</h2>
+<a id="af0f4ae15b66ab014144a2ee186c60c78" name="af0f4ae15b66ab014144a2ee186c60c78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0f4ae15b66ab014144a2ee186c60c78">&#9670;&#160;</a></span>prepare_share_contents()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -341,7 +345,7 @@ stdClass stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$course<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">core\moodlenet\activity_sender::prepare_share_contents </td>
+          <td class="memname">core\moodlenet\resource_sender::prepare_share_contents </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -349,7 +353,7 @@ stdClass stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$course<
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -361,8 +365,6 @@ stdClass stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$course<
   </table>
   </dd>
 </dl>
-
-<p>Reimplemented from <a class="el" href="../../dc/d05/classcore_1_1moodlenet_1_1resource__sender.html#af0f4ae15b66ab014144a2ee186c60c78">core\moodlenet\resource_sender</a>.</p>
 
 </div>
 </div>
@@ -388,7 +390,7 @@ stdClass stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$course<
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000232">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000233">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000090">Todo:</a></b></dt><dd>Final deprecation <a href="https://tracker.moodle.org/browse/MDL-79086" class="el">MDL-79086</a> </dd></dl>
 
 </div>
@@ -426,7 +428,7 @@ stdClass stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$course<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 10 2023 02:43:32 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 17 2023 02:46:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

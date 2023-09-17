@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230908) (b4c6ed36503)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230916) (ecddfa6ccd8)</div>
   </td>
  </tr>
  </tbody>
@@ -94,6 +94,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2005c1310879e9ab4922664dc60b35c3" id="r_a2005c1310879e9ab4922664dc60b35c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d19/classmoodleform__mod.html#a2005c1310879e9ab4922664dc60b35c3">add_completion_rules</a> ()</td></tr>
 <tr class="memdesc:a2005c1310879e9ab4922664dc60b35c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can be overridden to add custom completion rules if the module wishes them.  <br /></td></tr>
 <tr class="separator:a2005c1310879e9ab4922664dc60b35c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a272d5ccf4134173aca99250e10dce5e9" id="r_a272d5ccf4134173aca99250e10dce5e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d19/classmoodleform__mod.html#a272d5ccf4134173aca99250e10dce5e9">add_completiongrade_rules</a> ()</td></tr>
+<tr class="memdesc:a272d5ccf4134173aca99250e10dce5e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add completion grading elements to the form and return the list of element ids.  <br /></td></tr>
+<tr class="separator:a272d5ccf4134173aca99250e10dce5e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf0ef5769b5b417de449f46f3d0cac4d1" id="r_gaf0ef5769b5b417de449f46f3d0cac4d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9c/group__core__form.html#gaf0ef5769b5b417de449f46f3d0cac4d1">add_sticky_action_buttons</a> (bool $cancel=true, ?string $submitlabel=null)</td></tr>
 <tr class="memdesc:gaf0ef5769b5b417de449f46f3d0cac4d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use this method to make a sticky submit/cancel button at the end of your form.  <br /></td></tr>
 <tr class="separator:gaf0ef5769b5b417de449f46f3d0cac4d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,9 +223,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:gaf3ef8403402c885e7e823843dcb2a244" id="r_gaf3ef8403402c885e7e823843dcb2a244"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9c/group__core__form.html#gaf3ef8403402c885e7e823843dcb2a244">validate_defined_fields</a> ($validateonnosubmit=false)</td></tr>
 <tr class="memdesc:gaf3ef8403402c885e7e823843dcb2a244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate the form.  <br /></td></tr>
 <tr class="separator:gaf3ef8403402c885e7e823843dcb2a244"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a890458bd85ae206e76cf548d774a9f95" id="r_a890458bd85ae206e76cf548d774a9f95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d19/classmoodleform__mod.html#a890458bd85ae206e76cf548d774a9f95">validation</a> ($data, $files)</td></tr>
-<tr class="memdesc:a890458bd85ae206e76cf548d774a9f95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dummy stub method - override if you needed to perform some extra validation.  <br /></td></tr>
-<tr class="separator:a890458bd85ae206e76cf548d774a9f95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51c2d663805f0f5bfe133c3c70a5852f" id="r_a51c2d663805f0f5bfe133c3c70a5852f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d7a/classmod__label__mod__form.html#a51c2d663805f0f5bfe133c3c70a5852f">validation</a> ($data, $files)</td></tr>
+<tr class="memdesc:a51c2d663805f0f5bfe133c3c70a5852f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override validation in order to make name field non-required.  <br /></td></tr>
+<tr class="separator:a51c2d663805f0f5bfe133c3c70a5852f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -464,6 +467,41 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
 
 </div>
 </div>
+<a id="a272d5ccf4134173aca99250e10dce5e9" name="a272d5ccf4134173aca99250e10dce5e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a272d5ccf4134173aca99250e10dce5e9">&#9670;&#160;</a></span>add_completiongrade_rules()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">moodleform_mod::add_completiongrade_rules </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add completion grading elements to the form and return the list of element ids. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>Array of string IDs of added items, empty array if none </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../d4/de5/classmod__quiz__mod__form.html#acb5faa9b17f48bf47a81c36db3c48b56">mod_quiz_mod_form</a>.</p>
+
+</div>
+</div>
 <a id="a85f06d58f5c331b8d6caa1723ee7ad10" name="a85f06d58f5c331b8d6caa1723ee7ad10"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a85f06d58f5c331b8d6caa1723ee7ad10">&#9670;&#160;</a></span>add_intro_editor()</h2>
 
@@ -499,7 +537,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
 </div><div class="memdoc">
 
 <p>Add an editor for an activity's introduction field. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000101">Deprecated:</a></b></dt><dd>since <a href="https://tracker.moodle.org/browse/MDL-49101" class="el">MDL-49101</a> - use <a class="el" href="../../d2/d19/classmoodleform__mod.html#a2a5c6838f92b5e644e3291e4964a6654" title="Add an editor for an activity&#39;s introduction field.">moodleform_mod::standard_intro_elements()</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000102">Deprecated:</a></b></dt><dd>since <a href="https://tracker.moodle.org/browse/MDL-49101" class="el">MDL-49101</a> - use <a class="el" href="../../d2/d19/classmoodleform__mod.html#a2a5c6838f92b5e644e3291e4964a6654" title="Add an editor for an activity&#39;s introduction field.">moodleform_mod::standard_intro_elements()</a> instead. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">null</td><td class="paramname">$required</td><td>Override system default for requiremodintro </td></tr>
@@ -1123,7 +1161,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
 
 <p>Old syntax of class constructor. </p>
 <p>Deprecated in PHP7.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000100">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000101">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -1246,17 +1284,14 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
 
 </div>
 </div>
-<a id="a890458bd85ae206e76cf548d774a9f95" name="a890458bd85ae206e76cf548d774a9f95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a890458bd85ae206e76cf548d774a9f95">&#9670;&#160;</a></span>validation()</h2>
+<a id="a51c2d663805f0f5bfe133c3c70a5852f" name="a51c2d663805f0f5bfe133c3c70a5852f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51c2d663805f0f5bfe133c3c70a5852f">&#9670;&#160;</a></span>validation()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">moodleform_mod::validation </td>
+          <td class="memname">mod_label_mod_form::validation </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$data</em>, </td>
@@ -1273,33 +1308,24 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Dummy stub method - override if you needed to perform some extra validation. </p>
-<p>If there are errors return array of errors ("fieldname"=&gt;"error message"), otherwise true if ok.</p>
-<p>Server side rules do not work for uploaded files, implement serverside rules here if needed.</p>
+<p>Override validation in order to make name field non-required. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>array of ("fieldname"=&gt;value) of submitted data </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$files</td><td>array of uploaded files "element_name"=&gt;tmp_file_path </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$files</td><td></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array</td><td>of "element_name"=&gt;"error_description" if there are errors, or an empty array if everything is OK (true allowed for backwards compatibility too). </td></tr>
+    <tr><td class="paramname">array</td><td></td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="../../d6/d9c/group__core__form.html#ga78804d4a6734d8166cd0b32a3c02c946">moodleform</a>.</p>
-
-<p>Reimplemented in <a class="el" href="../../d7/d6a/classmod__assign__mod__form.html#af1e48efda7128e4bbf77be25c1ef114a">mod_assign_mod_form</a>, <a class="el" href="../../d7/db1/classmod__bigbluebuttonbn__mod__form.html#acc471cfd3e73d725351535beaf8f44d1">mod_bigbluebuttonbn_mod_form</a>, <a class="el" href="../../dc/d15/classmod__choice__mod__form.html#a434f3f2f3ada8d2b9e780ad05ae2218a">mod_choice_mod_form</a>, <a class="el" href="../../da/d36/classmod__data__mod__form.html#a4ee11daf5133da2edb8393ea5b319826">mod_data_mod_form</a>, <a class="el" href="../../d6/d02/classmod__feedback__mod__form.html#a6784dbdb779dcb81d0bacb7f07c2fe5b">mod_feedback_mod_form</a>, <a class="el" href="../../d6/dcc/classmod__folder__mod__form.html#ac036756c1fb3463b2d818b0b3ae282be">mod_folder_mod_form</a>, <a class="el" href="../../de/df9/classmod__forum__mod__form.html#ab9dd7d9d4efaebdc377ad70981c6dfae">mod_forum_mod_form</a>, <a class="el" href="../../d8/d6b/classmod__h5pactivity__mod__form.html#a5c3f353d0e700ccbd26167e158d9d531">mod_h5pactivity_mod_form</a>, <a class="el" href="../../da/d54/classmod__imscp__mod__form.html#a4fd5f7f9595ea9c7a33dfcb8aadbfa77">mod_imscp_mod_form</a>, <a class="el" href="../../d5/dd7/classmod__lesson__mod__form.html#aa0a0f2106ddbfa96594e9d319c92a303">mod_lesson_mod_form</a>, <a class="el" href="../../d4/de5/classmod__quiz__mod__form.html#abd415fc9f5d26cc321392be25af7c4ca">mod_quiz_mod_form</a>, <a class="el" href="../../de/de2/classmod__resource__mod__form.html#a318b525911bdb435b274ba7ad12975eb">mod_resource_mod_form</a>, <a class="el" href="../../d3/ddc/classmod__scorm__mod__form.html#a8380153163e1f0070e03a973ce7f157a">mod_scorm_mod_form</a>, <a class="el" href="../../d0/ddb/classmod__url__mod__form.html#a74371cf06cdf39cfefb664dc7f1468b6">mod_url_mod_form</a>, and <a class="el" href="../../d7/d70/classmod__workshop__mod__form.html#aca99b2c05fc843b9312c2a1f4ec61801">mod_workshop_mod_form</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d2/d19/classmoodleform__mod.html#a890458bd85ae206e76cf548d774a9f95">moodleform_mod</a>.</p>
 
 </div>
 </div>
@@ -1385,7 +1411,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 10 2023 02:43:00 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 17 2023 02:46:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

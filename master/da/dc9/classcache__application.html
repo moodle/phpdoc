@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230908) (b4c6ed36503)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230916) (ecddfa6ccd8)</div>
   </td>
  </tr>
  </tbody>
@@ -95,12 +95,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6a4712cc630585d28723968a76271a36" id="r_a6a4712cc630585d28723968a76271a36"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dc9/classcache__application.html#a6a4712cc630585d28723968a76271a36">check_lock_state</a> ($key)</td></tr>
 <tr class="memdesc:a6a4712cc630585d28723968a76271a36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if this cache has a lock on the given key.  <br /></td></tr>
 <tr class="separator:a6a4712cc630585d28723968a76271a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21111f872a40116d9c6995103f7a6154" id="r_a21111f872a40116d9c6995103f7a6154"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d3d/classcache.html#a21111f872a40116d9c6995103f7a6154">delete</a> ($key, $recurse=true)</td></tr>
-<tr class="memdesc:a21111f872a40116d9c6995103f7a6154"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the given key from the cache.  <br /></td></tr>
-<tr class="separator:a21111f872a40116d9c6995103f7a6154"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0b53d904a6de1535b6bd3992a04ed1c" id="r_ae0b53d904a6de1535b6bd3992a04ed1c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d3d/classcache.html#ae0b53d904a6de1535b6bd3992a04ed1c">delete_many</a> (array $keys, $recurse=true)</td></tr>
-<tr class="memdesc:ae0b53d904a6de1535b6bd3992a04ed1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete all of the given keys from the cache.  <br /></td></tr>
-<tr class="separator:ae0b53d904a6de1535b6bd3992a04ed1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a615641c9bf468e884ccd395385d2b506" id="r_a615641c9bf468e884ccd395385d2b506"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dc9/classcache__application.html#a615641c9bf468e884ccd395385d2b506">delete</a> ($key, $recurse=true)</td></tr>
+<tr class="memdesc:a615641c9bf468e884ccd395385d2b506"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete the given key from the cache.  <br /></td></tr>
+<tr class="separator:a615641c9bf468e884ccd395385d2b506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe4174e3669417d4a404502608211b3b" id="r_abe4174e3669417d4a404502608211b3b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dc9/classcache__application.html#abe4174e3669417d4a404502608211b3b">delete_many</a> (array $keys, $recurse=true)</td></tr>
+<tr class="memdesc:abe4174e3669417d4a404502608211b3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete all of the given keys from the cache.  <br /></td></tr>
+<tr class="separator:abe4174e3669417d4a404502608211b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a4b08857c8cadf70d7f9225edc90b64" id="r_a0a4b08857c8cadf70d7f9225edc90b64"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d3d/classcache.html#a0a4b08857c8cadf70d7f9225edc90b64">get</a> ($key, $strictness=<a class="el" href="../../d0/de1/group__core.html#gaffc7005a2da386334d76ec5f85ca2d48">IGNORE_MISSING</a>)</td></tr>
 <tr class="memdesc:a0a4b08857c8cadf70d7f9225edc90b64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the value for the given key from the cache.  <br /></td></tr>
 <tr class="separator:a0a4b08857c8cadf70d7f9225edc90b64"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -390,7 +390,13 @@ Static Protected Attributes</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">bool</td><td>Returns true if the lock could be acquired, false otherwise. </td></tr>
+    <tr><td class="paramname">bool</td><td>Always returns true </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../d6/da8/classmoodle__exception.html" title="Base Moodle Exception class.">moodle_exception</a></td><td>If the lock cannot be obtained </td></tr>
   </table>
   </dd>
 </dl>
@@ -584,17 +590,14 @@ Static Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a21111f872a40116d9c6995103f7a6154" name="a21111f872a40116d9c6995103f7a6154"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21111f872a40116d9c6995103f7a6154">&#9670;&#160;</a></span>delete()</h2>
+<a id="a615641c9bf468e884ccd395385d2b506" name="a615641c9bf468e884ccd395385d2b506"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a615641c9bf468e884ccd395385d2b506">&#9670;&#160;</a></span>delete()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">cache::delete </td>
+          <td class="memname">cache_application::delete </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$key</em>, </td>
@@ -611,11 +614,6 @@ Static Protected Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Delete the given key from the cache. </p>
@@ -632,10 +630,14 @@ Static Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td>If a required lock has not beeen acquired </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Implements <a class="el" href="../../d5/d0c/interfacecache__loader.html#aa083bb6d046156111f9cedce8ae8aac5">cache_loader</a>.</p>
-
-<p>Reimplemented in <a class="el" href="../../de/dcd/classcache__session.html#aa6fe1c51e98394dfd28b7de4495b89d6">cache_session</a>, and <a class="el" href="../../dd/d61/classcache__disabled.html#a4cf8d9e512f5cd60beca273eed560736">cache_disabled</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d3/d3d/classcache.html#a21111f872a40116d9c6995103f7a6154">cache</a>.</p>
 
 </div>
 </div>
@@ -666,17 +668,14 @@ Static Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ae0b53d904a6de1535b6bd3992a04ed1c" name="ae0b53d904a6de1535b6bd3992a04ed1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0b53d904a6de1535b6bd3992a04ed1c">&#9670;&#160;</a></span>delete_many()</h2>
+<a id="abe4174e3669417d4a404502608211b3b" name="abe4174e3669417d4a404502608211b3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe4174e3669417d4a404502608211b3b">&#9670;&#160;</a></span>delete_many()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">cache::delete_many </td>
+          <td class="memname">cache_application::delete_many </td>
           <td>(</td>
           <td class="paramtype">array&#160;</td>
           <td class="paramname"><em>$keys</em>, </td>
@@ -693,11 +692,6 @@ Static Protected Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Delete all of the given keys from the cache. </p>
@@ -714,10 +708,14 @@ Static Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td>If a required lock has not beeen acquired </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Implements <a class="el" href="../../d5/d0c/interfacecache__loader.html#aaf25103ceafba6995df479edeeeb882a">cache_loader</a>.</p>
-
-<p>Reimplemented in <a class="el" href="../../de/dcd/classcache__session.html#a9178c1b4477c67813d97e7a3d9b4c81a">cache_session</a>, and <a class="el" href="../../dd/d61/classcache__disabled.html#a4932a1b0a846d730cb17c03c6f7e8335">cache_disabled</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d3/d3d/classcache.html#ae0b53d904a6de1535b6bd3992a04ed1c">cache</a>.</p>
 
 </div>
 </div>
@@ -2266,6 +2264,12 @@ Attempt to set the information </li>
   </table>
   </dd>
 </dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td>If a required lock has not beeen acquired </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Reimplemented from <a class="el" href="../../d3/d3d/classcache.html#a1fc181f3543f9a7bb7e575be949555b5">cache</a>.</p>
 
@@ -2837,7 +2841,7 @@ Attempt to set the information </li>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 10 2023 02:42:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 17 2023 02:45:09 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

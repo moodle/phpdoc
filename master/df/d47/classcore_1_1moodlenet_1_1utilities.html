@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230908) (b4c6ed36503)</div>
+   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230916) (ecddfa6ccd8)</div>
   </td>
  </tr>
  </tbody>
@@ -69,6 +69,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a1f6dffb2fe41b0d8ecaefe8718e3f176" id="r_a1f6dffb2fe41b0d8ecaefe8718e3f176"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d47/classcore_1_1moodlenet_1_1utilities.html#a1f6dffb2fe41b0d8ecaefe8718e3f176">can_user_share</a> (\<a class="el" href="../../de/d1c/classcore_1_1context_1_1course.html">core\context\course</a> $coursecontext, int $userid, string $type='activity')</td></tr>
 <tr class="memdesc:a1f6dffb2fe41b0d8ecaefe8718e3f176"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a user has the capabilities required to share activities or courses to MoodleNet.  <br /></td></tr>
 <tr class="separator:a1f6dffb2fe41b0d8ecaefe8718e3f176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedaf34616112ead78d7f9917a76c222d" id="r_aedaf34616112ead78d7f9917a76c222d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d47/classcore_1_1moodlenet_1_1utilities.html#aedaf34616112ead78d7f9917a76c222d">does_user_have_capability_in_any_course</a> (int $userid)</td></tr>
+<tr class="memdesc:aedaf34616112ead78d7f9917a76c222d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the user has a valid capability in any course they are enrolled in.  <br /></td></tr>
+<tr class="separator:aedaf34616112ead78d7f9917a76c222d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ea66121e9349c9ac3d0f1a073543b9b" id="r_a3ea66121e9349c9ac3d0f1a073543b9b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d47/classcore_1_1moodlenet_1_1utilities.html#a3ea66121e9349c9ac3d0f1a073543b9b">get_support_url</a> ()</td></tr>
 <tr class="memdesc:a3ea66121e9349c9ac3d0f1a073543b9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the support url.  <br /></td></tr>
 <tr class="separator:a3ea66121e9349c9ac3d0f1a073543b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,6 +138,46 @@ Static Public Member Functions</h2></td></tr>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td>If an invalid resource type is provided. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aedaf34616112ead78d7f9917a76c222d" name="aedaf34616112ead78d7f9917a76c222d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedaf34616112ead78d7f9917a76c222d">&#9670;&#160;</a></span>does_user_have_capability_in_any_course()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core\moodlenet\utilities::does_user_have_capability_in_any_course </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$userid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check the user has a valid capability in any course they are enrolled in. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>The user id to query </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>Returns 'yes' if capability found, 'no' if not </td></tr>
   </table>
   </dd>
 </dl>
@@ -220,7 +263,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 10 2023 02:43:32 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 17 2023 02:46:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

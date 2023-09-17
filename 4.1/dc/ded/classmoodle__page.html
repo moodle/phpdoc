@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1.5+ (Build: 20230908) (d1bc94905e2)</div>
+   <div id="projectbrief">Moodle 4.1.5+ (Build: 20230915) (0a09e482e4a)</div>
   </td>
  </tr>
  </tbody>
@@ -236,9 +236,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8062c3f4c36a63ce82d6dae1f432d58a" id="r_a8062c3f4c36a63ce82d6dae1f432d58a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/classmoodle__page.html#a8062c3f4c36a63ce82d6dae1f432d58a">set_subpage</a> ($subpage)</td></tr>
 <tr class="memdesc:a8062c3f4c36a63ce82d6dae1f432d58a"><td class="mdescLeft">&#160;</td><td class="mdescRight">If context-&gt;id and pagetype are not enough to uniquely identify this page, then you can set a subpage id as well.  <br /></td></tr>
 <tr class="separator:a8062c3f4c36a63ce82d6dae1f432d58a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abea7925de4a0f19d3215316f5654f6d9" id="r_abea7925de4a0f19d3215316f5654f6d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/classmoodle__page.html#abea7925de4a0f19d3215316f5654f6d9">set_title</a> ($title)</td></tr>
-<tr class="memdesc:abea7925de4a0f19d3215316f5654f6d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the title for the page.  <br /></td></tr>
-<tr class="separator:abea7925de4a0f19d3215316f5654f6d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13715286b0e7a822a0e9ae7f607395cb" id="r_a13715286b0e7a822a0e9ae7f607395cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/classmoodle__page.html#a13715286b0e7a822a0e9ae7f607395cb">set_title</a> ($title, bool $appendsitename=true)</td></tr>
+<tr class="memdesc:a13715286b0e7a822a0e9ae7f607395cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the title for the page.  <br /></td></tr>
+<tr class="separator:a13715286b0e7a822a0e9ae7f607395cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68187fac6de54210e77e17c1fd05cb2e" id="r_a68187fac6de54210e77e17c1fd05cb2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/classmoodle__page.html#a68187fac6de54210e77e17c1fd05cb2e">set_url</a> ($url, array $params=null)</td></tr>
 <tr class="memdesc:a68187fac6de54210e77e17c1fd05cb2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">You should call this method from every page to set the URL that should be used to return to this page.  <br /></td></tr>
 <tr class="separator:a68187fac6de54210e77e17c1fd05cb2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -275,6 +275,10 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_IN_BODY</b> = 
 const&#160;</td><td class="memItemRight" valign="bottom"><b>STATE_PRINTING_HEADER</b> = 1</td></tr>
 <tr class="memdesc:a0b0261ef1088a03cb77cedc730e665ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The state the page is in temporarily while the header is being printed. <br /></td></tr>
 <tr class="separator:a0b0261ef1088a03cb77cedc730e665ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74399040cd4cc27c1626278001d1d11e" id="r_a74399040cd4cc27c1626278001d1d11e"><td class="memItemLeft" align="right" valign="top"><a id="a74399040cd4cc27c1626278001d1d11e" name="a74399040cd4cc27c1626278001d1d11e"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>TITLE_SEPARATOR</b> = ' | '</td></tr>
+<tr class="memdesc:a74399040cd4cc27c1626278001d1d11e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The separator used for separating page title elements. <br /></td></tr>
+<tr class="separator:a74399040cd4cc27c1626278001d1d11e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -3932,8 +3936,8 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_subpage</b> = ''<
 
 </div>
 </div>
-<a id="abea7925de4a0f19d3215316f5654f6d9" name="abea7925de4a0f19d3215316f5654f6d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abea7925de4a0f19d3215316f5654f6d9">&#9670;&#160;</a></span>set_title()</h2>
+<a id="a13715286b0e7a822a0e9ae7f607395cb" name="a13715286b0e7a822a0e9ae7f607395cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13715286b0e7a822a0e9ae7f607395cb">&#9670;&#160;</a></span>set_title()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3942,17 +3946,36 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_subpage</b> = ''<
           <td class="memname">moodle_page::set_title </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$title</em></td><td>)</td>
+          <td class="paramname"><em>$title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$appendsitename</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Sets the title for the page. </p>
 <p>This is normally used within the title tag in the head of the page.</p>
+<p>Some tips for providing a meaningful page title:</p><ul>
+<li>The page title must be accurate and informative.</li>
+<li>If the page causes a change of context (e.g. a search functionality), it should describe the result or change of context to the user.</li>
+<li>It should be concise.</li>
+<li>If possible, it should uniquely identify the page.</li>
+<li>The most identifying information should come first. (e.g. Submit assignment | Assignment | <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a>)</li>
+</ul>
+<p>For more information, see <code><a class="el" href="../../">Understanding Success Criterion 2.4.2: Page Titled</a></code></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$title</td><td>the title that should go in the &lt;head&gt; section of the HTML of this page. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$appendsitename</td><td>Appends site name at the end of the given title. It is encouraged to append the site name as this especially helps with accessibility. If it's necessary to override this, please keep in mind to ensure that the title provides a concise summary of the page being displayed. </td></tr>
   </table>
   </dd>
 </dl>
@@ -4768,7 +4791,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_subpage</b> = ''<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 10 2023 02:33:07 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 17 2023 02:35:21 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
