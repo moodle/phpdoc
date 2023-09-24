@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230916) (ecddfa6ccd8)</div>
+   <div id="projectbrief">Moodle 4.3beta (Build: 20230923) (83b4c96cad3)</div>
   </td>
  </tr>
  </tbody>
@@ -107,6 +107,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d8a/classcommunication__matrix_1_1matrix__client.html">communication_matrix\matrix_client</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7c/classcommunication__matrix_1_1matrix__constants.html">communication_matrix\matrix_constants</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d25/classcommunication__matrix_1_1matrix__room.html">communication_matrix\matrix_room</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d09/classcommunication__matrix_1_1matrix__user__manager.html">communication_matrix\matrix_user_manager</a></td></tr>
@@ -164,6 +166,8 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:ga3bd1a55d998861e02e56c127f4b46c94" id="r_ga3bd1a55d998861e02e56c127f4b46c94"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de2/group__communication__matrix.html#ga3bd1a55d998861e02e56c127f4b46c94">$capabilities</a></td></tr>
+<tr class="separator:ga3bd1a55d998861e02e56c127f4b46c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac8133dac47f7c0c4f1608117f3e3a667" id="r_gac8133dac47f7c0c4f1608117f3e3a667"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de2/group__communication__matrix.html#gac8133dac47f7c0c4f1608117f3e3a667">$definitions</a></td></tr>
 <tr class="separator:gac8133dac47f7c0c4f1608117f3e3a667"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga466f1cc7d9af6da76963cd679a6acd5c" id="r_ga466f1cc7d9af6da76963cd679a6acd5c"><td class="memItemLeft" align="right" valign="top"><a id="ga466f1cc7d9af6da76963cd679a6acd5c" name="ga466f1cc7d9af6da76963cd679a6acd5c"></a>
@@ -182,7 +186,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>component</b> = 'c
 $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>maturity</b> = <a class="el" href="../../d0/de1/group__core.html#gaedf7fa158b65a12f680daf95c5994bf2">MATURITY_ALPHA</a></td></tr>
 <tr class="separator:ga32ceacc498b265853073aba2281015e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga92a3fd99b37c9cbd65c4aead816b3a83" id="r_ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memItemLeft" align="right" valign="top"><a id="ga92a3fd99b37c9cbd65c4aead816b3a83" name="ga92a3fd99b37c9cbd65c4aead816b3a83"></a>
-$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023071900</td></tr>
+$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023090600</td></tr>
 <tr class="separator:ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -711,6 +715,35 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="ga3bd1a55d998861e02e56c127f4b46c94" name="ga3bd1a55d998861e02e56c127f4b46c94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3bd1a55d998861e02e56c127f4b46c94">&#9670;&#160;</a></span>$capabilities</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$capabilities</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= [</div>
+<div class="line"> </div>
+<div class="line">    </div>
+<div class="line">    <span class="stringliteral">&#39;communication/matrix:moderator&#39;</span> =&gt; [</div>
+<div class="line">        <span class="stringliteral">&#39;captype&#39;</span> =&gt; <span class="stringliteral">&#39;read&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;contextlevel&#39;</span> =&gt; <a class="code hl_variable" href="../../da/d16/group__core__access.html#ga6793164cc4e484b90054c9938b7689ed">CONTEXT_COURSE</a>,</div>
+<div class="line">        <span class="stringliteral">&#39;archetypes&#39;</span> =&gt; [</div>
+<div class="line">            <span class="stringliteral">&#39;editingteacher&#39;</span> =&gt; <a class="code hl_variable" href="../../da/d16/group__core__access.html#gacc879f41ad412efa2fc8022359b3ebfb">CAP_ALLOW</a>,</div>
+<div class="line">            <span class="stringliteral">&#39;manager&#39;</span> =&gt; <a class="code hl_variable" href="../../da/d16/group__core__access.html#gacc879f41ad412efa2fc8022359b3ebfb">CAP_ALLOW</a>,</div>
+<div class="line">            <span class="stringliteral">&#39;teacher&#39;</span> =&gt; <a class="code hl_variable" href="../../da/d16/group__core__access.html#gacc879f41ad412efa2fc8022359b3ebfb">CAP_ALLOW</a>,</div>
+<div class="line">        ],</div>
+<div class="line">    ],</div>
+<div class="line">]</div>
+<div class="ttc" id="agroup__core__access_html_ga6793164cc4e484b90054c9938b7689ed"><div class="ttname"><a href="../../da/d16/group__core__access.html#ga6793164cc4e484b90054c9938b7689ed">CONTEXT_COURSE</a></div><div class="ttdeci">const CONTEXT_COURSE</div><div class="ttdoc">Course context level - one instances for each course.</div><div class="ttdef"><b>Definition</b> accesslib.php:128</div></div>
+<div class="ttc" id="agroup__core__access_html_gacc879f41ad412efa2fc8022359b3ebfb"><div class="ttname"><a href="../../da/d16/group__core__access.html#gacc879f41ad412efa2fc8022359b3ebfb">CAP_ALLOW</a></div><div class="ttdeci">const CAP_ALLOW</div><div class="ttdoc">Allow permission, overrides CAP_PREVENT defined in parent contexts.</div><div class="ttdef"><b>Definition</b> accesslib.php:115</div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="gac8133dac47f7c0c4f1608117f3e3a667" name="gac8133dac47f7c0c4f1608117f3e3a667"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac8133dac47f7c0c4f1608117f3e3a667">&#9670;&#160;</a></span>$definitions</h2>
 
@@ -752,7 +785,6 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">{</div>
-<div class="line"> </div>
 <div class="line">    </div>
 <div class="line">    <span class="keyword">protected</span> <span class="keywordtype">string</span> <span class="keywordtype">string</span> $accesstoken</div>
 </div><!-- fragment -->
@@ -761,7 +793,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 17 2023 02:44:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 24 2023 02:53:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

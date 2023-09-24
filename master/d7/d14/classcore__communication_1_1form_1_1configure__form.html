@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230916) (ecddfa6ccd8)</div>
+   <div id="projectbrief">Moodle 4.3beta (Build: 20230923) (83b4c96cad3)</div>
   </td>
  </tr>
  </tbody>
@@ -82,6 +82,9 @@ Inheritance diagram for core_communication\form\configure_form:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a5342a897f1d72d8b0ea7afc8e8fb6da4" id="r_a5342a897f1d72d8b0ea7afc8e8fb6da4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d14/classcore__communication_1_1form_1_1configure__form.html#a5342a897f1d72d8b0ea7afc8e8fb6da4">__construct</a> (stdClass $course, ?int $instanceid=null, ?string $instancetype=null, ?string $component=null, ?string $selectedcommunication=null,)</td></tr>
+<tr class="memdesc:a5342a897f1d72d8b0ea7afc8e8fb6da4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor.  <br /></td></tr>
+<tr class="separator:a5342a897f1d72d8b0ea7afc8e8fb6da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga594cb9d675e5d847bfc39b001e02e752" id="r_ga594cb9d675e5d847bfc39b001e02e752"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9c/group__core__form.html#ga594cb9d675e5d847bfc39b001e02e752">_process_submission</a> ($method)</td></tr>
 <tr class="memdesc:ga594cb9d675e5d847bfc39b001e02e752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal method.  <br /></td></tr>
 <tr class="separator:ga594cb9d675e5d847bfc39b001e02e752"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,9 +103,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae217d5a0d4158de772480ff882e7b8a1" id="r_ae217d5a0d4158de772480ff882e7b8a1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d14/classcore__communication_1_1form_1_1configure__form.html#ae217d5a0d4158de772480ff882e7b8a1">definition</a> ()</td></tr>
 <tr class="memdesc:ae217d5a0d4158de772480ff882e7b8a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the form fields.  <br /></td></tr>
 <tr class="separator:ae217d5a0d4158de772480ff882e7b8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8806b96bf1801e3766e930b4a24ed1cd" id="r_a8806b96bf1801e3766e930b4a24ed1cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d14/classcore__communication_1_1form_1_1configure__form.html#a8806b96bf1801e3766e930b4a24ed1cd">definition_after_data</a> ()</td></tr>
-<tr class="memdesc:a8806b96bf1801e3766e930b4a24ed1cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill in the communication page data depending on provider selected.  <br /></td></tr>
-<tr class="separator:a8806b96bf1801e3766e930b4a24ed1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5ccc3aeffce27e3335c4fbc26b857563" id="r_ga5ccc3aeffce27e3335c4fbc26b857563"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9c/group__core__form.html#ga5ccc3aeffce27e3335c4fbc26b857563">definition_after_data</a> ()</td></tr>
+<tr class="memdesc:ga5ccc3aeffce27e3335c4fbc26b857563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dummy stub method - override if you need to setup the form depending on current values.  <br /></td></tr>
+<tr class="separator:ga5ccc3aeffce27e3335c4fbc26b857563"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8070116639d10b49ff37aea6d0cfd6e2" id="r_ga8070116639d10b49ff37aea6d0cfd6e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9c/group__core__form.html#ga8070116639d10b49ff37aea6d0cfd6e2">display</a> ()</td></tr>
 <tr class="memdesc:ga8070116639d10b49ff37aea6d0cfd6e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print html form.  <br /></td></tr>
 <tr class="separator:ga8070116639d10b49ff37aea6d0cfd6e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,7 +261,66 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Defines the configure communication form. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a5342a897f1d72d8b0ea7afc8e8fb6da4" name="a5342a897f1d72d8b0ea7afc8e8fb6da4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5342a897f1d72d8b0ea7afc8e8fb6da4">&#9670;&#160;</a></span>__construct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_communication\form\configure_form::__construct </td>
+          <td>(</td>
+          <td class="paramtype">stdClass&#160;</td>
+          <td class="paramname"><em>$course</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int&#160;</td>
+          <td class="paramname"><em>$instanceid</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?string&#160;</td>
+          <td class="paramname"><em>$instancetype</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?string&#160;</td>
+          <td class="paramname"><em>$component</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?string&#160;</td>
+          <td class="paramname"><em>$selectedcommunication</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Class constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>Course object </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$instanceid</td><td>Instance ID </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$instancetype</td><td>Instance type </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$component</td><td>Component name </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$selectedcommunication</td><td>Selected communication service (provider) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae217d5a0d4158de772480ff882e7b8a1" name="ae217d5a0d4158de772480ff882e7b8a1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae217d5a0d4158de772480ff882e7b8a1">&#9670;&#160;</a></span>definition()</h2>
 
@@ -280,34 +342,13 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
 
 </div>
 </div>
-<a id="a8806b96bf1801e3766e930b4a24ed1cd" name="a8806b96bf1801e3766e930b4a24ed1cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8806b96bf1801e3766e930b4a24ed1cd">&#9670;&#160;</a></span>definition_after_data()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">core_communication\form\configure_form::definition_after_data </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Fill in the communication page data depending on provider selected. </p>
-
-<p>Reimplemented from <a class="el" href="../../d6/d9c/group__core__form.html#ga5ccc3aeffce27e3335c4fbc26b857563">moodleform</a>.</p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>communication/classes/form/<b>configure_form.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 17 2023 02:46:57 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 24 2023 02:56:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

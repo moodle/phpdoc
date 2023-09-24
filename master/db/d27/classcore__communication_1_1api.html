@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230916) (ecddfa6ccd8)</div>
+   <div id="projectbrief">Moodle 4.3beta (Build: 20230923) (83b4c96cad3)</div>
   </td>
  </tr>
  </tbody>
@@ -80,9 +80,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af8e46b1f6262e3a8ff91751f1726e135" id="r_af8e46b1f6262e3a8ff91751f1726e135"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d27/classcore__communication_1_1api.html#af8e46b1f6262e3a8ff91751f1726e135">form_definition</a> (<a class="el" href="../../d5/d8e/class_moodle_quick_form.html">MoodleQuickForm</a> $mform, string $selectdefaultcommunication=<a class="el" href="../../d8/d1f/classcore__communication_1_1processor.html#a021210a79874ad5ab4070bc1afae4509">processor::PROVIDER_NONE</a>)</td></tr>
 <tr class="memdesc:af8e46b1f6262e3a8ff91751f1726e135"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the form elements for the communication api.  <br /></td></tr>
 <tr class="separator:af8e46b1f6262e3a8ff91751f1726e135"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33e1332bbabb2845acb687c9d0d4889c" id="r_a33e1332bbabb2845acb687c9d0d4889c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d27/classcore__communication_1_1api.html#a33e1332bbabb2845acb687c9d0d4889c">form_definition_for_provider</a> (\<a class="el" href="../../d5/d8e/class_moodle_quick_form.html">MoodleQuickForm</a> $mform)</td></tr>
-<tr class="memdesc:a33e1332bbabb2845acb687c9d0d4889c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the form definitions for the plugins.  <br /></td></tr>
-<tr class="separator:a33e1332bbabb2845acb687c9d0d4889c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3a002b5fb5f13345168295b9f43d26d" id="r_ad3a002b5fb5f13345168295b9f43d26d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d27/classcore__communication_1_1api.html#ad3a002b5fb5f13345168295b9f43d26d">form_definition_for_provider</a> (\<a class="el" href="../../d5/d8e/class_moodle_quick_form.html">MoodleQuickForm</a> $mform, string $provider=<a class="el" href="../../d8/d1f/classcore__communication_1_1processor.html#a021210a79874ad5ab4070bc1afae4509">processor::PROVIDER_NONE</a>)</td></tr>
+<tr class="memdesc:ad3a002b5fb5f13345168295b9f43d26d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the form definitions for the plugins.  <br /></td></tr>
+<tr class="separator:ad3a002b5fb5f13345168295b9f43d26d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae896fee1559291f180592870f7d1d98f" id="r_ae896fee1559291f180592870f7d1d98f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d27/classcore__communication_1_1api.html#ae896fee1559291f180592870f7d1d98f">get_avatar</a> ()</td></tr>
 <tr class="memdesc:ae896fee1559291f180592870f7d1d98f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the avatar file.  <br /></td></tr>
 <tr class="separator:ae896fee1559291f180592870f7d1d98f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,6 +130,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a23e9f4aead5ead3b3afb02f0eb178836" id="r_a23e9f4aead5ead3b3afb02f0eb178836"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d27/classcore__communication_1_1api.html#a23e9f4aead5ead3b3afb02f0eb178836">update_room</a> (?string $selectedprovider=null, ?string $communicationroomname=null, ?\<a class="el" href="../../d0/d00/classstored__file.html">stored_file</a> $avatar=null, ?\stdClass $instance=null,)</td></tr>
 <tr class="memdesc:a23e9f4aead5ead3b3afb02f0eb178836"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a communication ad-hoc task for update operation.  <br /></td></tr>
 <tr class="separator:a23e9f4aead5ead3b3afb02f0eb178836"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a406266a344a7c6ffbc897b4cf9c47020" id="r_a406266a344a7c6ffbc897b4cf9c47020"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d27/classcore__communication_1_1api.html#a406266a344a7c6ffbc897b4cf9c47020">update_room_membership</a> (array $userids, bool $queue=true)</td></tr>
+<tr class="memdesc:a406266a344a7c6ffbc897b4cf9c47020"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a communication ad-hoc task for updating members operation and update the user mapping.  <br /></td></tr>
+<tr class="separator:a406266a344a7c6ffbc897b4cf9c47020"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -302,8 +305,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a33e1332bbabb2845acb687c9d0d4889c" name="a33e1332bbabb2845acb687c9d0d4889c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33e1332bbabb2845acb687c9d0d4889c">&#9670;&#160;</a></span>form_definition_for_provider()</h2>
+<a id="ad3a002b5fb5f13345168295b9f43d26d" name="ad3a002b5fb5f13345168295b9f43d26d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3a002b5fb5f13345168295b9f43d26d">&#9670;&#160;</a></span>form_definition_for_provider()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -312,8 +315,18 @@ Protected Member Functions</h2></td></tr>
           <td class="memname">core_communication\api::form_definition_for_provider </td>
           <td>(</td>
           <td class="paramtype">\<a class="el" href="../../d5/d8e/class_moodle_quick_form.html">MoodleQuickForm</a>&#160;</td>
-          <td class="paramname"><em>$mform</em></td><td>)</td>
+          <td class="paramname"><em>$mform</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$provider</em> = <code><a class="el" href="../../d8/d1f/classcore__communication_1_1processor.html#a021210a79874ad5ab4070bc1afae4509">processor::PROVIDER_NONE</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -321,13 +334,8 @@ Protected Member Functions</h2></td></tr>
 <p>Set the form definitions for the plugins. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../d5/d8e/class_moodle_quick_form.html">MoodleQuickForm</a></td><td class="paramname">$mform</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">void</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../d5/d8e/class_moodle_quick_form.html">MoodleQuickForm</a></td><td class="paramname">$mform</td><td>The moodle form </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$provider</td><td>The provider name </td></tr>
   </table>
   </dd>
 </dl>
@@ -879,13 +887,51 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a406266a344a7c6ffbc897b4cf9c47020" name="a406266a344a7c6ffbc897b4cf9c47020"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a406266a344a7c6ffbc897b4cf9c47020">&#9670;&#160;</a></span>update_room_membership()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_communication\api::update_room_membership </td>
+          <td>(</td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$userids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$queue</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a communication ad-hoc task for updating members operation and update the user mapping. </p>
+<p>This method will add a task to the queue to update the room users.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$userids</td><td>The user ids to add to the room </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$queue</td><td>Whether to queue the task or not </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>communication/classes/<b>api.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 17 2023 02:46:57 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 24 2023 02:56:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

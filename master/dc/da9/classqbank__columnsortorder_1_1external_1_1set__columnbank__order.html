@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230916) (ecddfa6ccd8)</div>
+   <div id="projectbrief">Moodle 4.3beta (Build: 20230923) (83b4c96cad3)</div>
   </td>
  </tr>
  </tbody>
@@ -72,9 +72,9 @@ Inheritance diagram for qbank_columnsortorder\external\set_columnbank_order:</di
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8e9779714bc48f3773c48a567a5ce044" id="r_a8e9779714bc48f3773c48a567a5ce044"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/da9/classqbank__columnsortorder_1_1external_1_1set__columnbank__order.html#a8e9779714bc48f3773c48a567a5ce044">execute</a> (array $columns)</td></tr>
-<tr class="memdesc:a8e9779714bc48f3773c48a567a5ce044"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the columns plugin order.  <br /></td></tr>
-<tr class="separator:a8e9779714bc48f3773c48a567a5ce044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c647720f8fb85055fa831c75a56cd70" id="r_a3c647720f8fb85055fa831c75a56cd70"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/da9/classqbank__columnsortorder_1_1external_1_1set__columnbank__order.html#a3c647720f8fb85055fa831c75a56cd70">execute</a> (?array $columns, bool $global=false)</td></tr>
+<tr class="memdesc:a3c647720f8fb85055fa831c75a56cd70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set columns order.  <br /></td></tr>
+<tr class="separator:a3c647720f8fb85055fa831c75a56cd70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ef16051f844dad2ec670e8ac78a49a8" id="r_a3ef16051f844dad2ec670e8ac78a49a8"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/da9/classqbank__columnsortorder_1_1external_1_1set__columnbank__order.html#a3ef16051f844dad2ec670e8ac78a49a8">execute_parameters</a> ()</td></tr>
 <tr class="memdesc:a3ef16051f844dad2ec670e8ac78a49a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns description of method parameters.  <br /></td></tr>
 <tr class="separator:a3ef16051f844dad2ec670e8ac78a49a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -84,8 +84,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>execute_returns</b>
 <tr class="separator:a21e1690a384ddc74980970955f7499d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8e9779714bc48f3773c48a567a5ce044" name="a8e9779714bc48f3773c48a567a5ce044"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e9779714bc48f3773c48a567a5ce044">&#9670;&#160;</a></span>execute()</h2>
+<a id="a3c647720f8fb85055fa831c75a56cd70" name="a3c647720f8fb85055fa831c75a56cd70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c647720f8fb85055fa831c75a56cd70">&#9670;&#160;</a></span>execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -96,9 +96,19 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>execute_returns</b>
         <tr>
           <td class="memname">static qbank_columnsortorder\external\set_columnbank_order::execute </td>
           <td>(</td>
-          <td class="paramtype">array&#160;</td>
-          <td class="paramname"><em>$columns</em></td><td>)</td>
+          <td class="paramtype">?array&#160;</td>
+          <td class="paramname"><em>$columns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$global</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -108,10 +118,11 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>execute_returns</b>
 </table>
 </div><div class="memdoc">
 
-<p>Returns the columns plugin order. </p>
+<p>Set columns order. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$columns</td><td>json string representing new column order. </td></tr>
+    <tr><td class="paramtype"></td><td class="paramname">?array</td><td>$columns List of column names in the desired order. Null value clears the setting. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$global</td><td>Set global config setting, rather than user preference </td></tr>
   </table>
   </dd>
 </dl>
@@ -157,7 +168,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>execute_returns</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 17 2023 02:47:51 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 24 2023 02:57:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

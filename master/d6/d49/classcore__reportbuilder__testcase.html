@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230916) (ecddfa6ccd8)</div>
+   <div id="projectbrief">Moodle 4.3beta (Build: 20230923) (83b4c96cad3)</div>
   </td>
  </tr>
  </tbody>
@@ -114,6 +114,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aed3522f07b2d71a1b4953cb503aaace9" id="r_aed3522f07b2d71a1b4953cb503aaace9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/daf/classadvanced__testcase.html#aed3522f07b2d71a1b4953cb503aaace9">redirectEvents</a> ()</td></tr>
 <tr class="memdesc:aed3522f07b2d71a1b4953cb503aaace9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts event redirection.  <br /></td></tr>
 <tr class="separator:aed3522f07b2d71a1b4953cb503aaace9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74e305d3c5dd0a005a2e84ef07f22963" id="r_a74e305d3c5dd0a005a2e84ef07f22963"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/daf/classadvanced__testcase.html#a74e305d3c5dd0a005a2e84ef07f22963">redirectHook</a> (string $hookname, callable $callback)</td></tr>
+<tr class="memdesc:a74e305d3c5dd0a005a2e84ef07f22963"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override hook callbacks.  <br /></td></tr>
+<tr class="separator:a74e305d3c5dd0a005a2e84ef07f22963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c942c2f45ea1d5a4bd2b51ee2c3f143" id="r_a1c942c2f45ea1d5a4bd2b51ee2c3f143"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/daf/classadvanced__testcase.html#a1c942c2f45ea1d5a4bd2b51ee2c3f143">redirectMessages</a> ()</td></tr>
 <tr class="memdesc:a1c942c2f45ea1d5a4bd2b51ee2c3f143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts message redirection.  <br /></td></tr>
 <tr class="separator:a1c942c2f45ea1d5a4bd2b51ee2c3f143"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,6 +136,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa9d592acb97e0b524cb59c9a9b502ffc" id="r_aa9d592acb97e0b524cb59c9a9b502ffc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/daf/classadvanced__testcase.html#aa9d592acb97e0b524cb59c9a9b502ffc">setInIsolation</a> (bool $inisolation)</td></tr>
 <tr class="memdesc:aa9d592acb97e0b524cb59c9a9b502ffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hook into the setInIsolation method to define an optional constant.  <br /></td></tr>
 <tr class="separator:aa9d592acb97e0b524cb59c9a9b502ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9870606340296b925fc0b6fb9b9288c7" id="r_a9870606340296b925fc0b6fb9b9288c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/daf/classadvanced__testcase.html#a9870606340296b925fc0b6fb9b9288c7">stopHookRedirections</a> ()</td></tr>
+<tr class="memdesc:a9870606340296b925fc0b6fb9b9288c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all hook overrides.  <br /></td></tr>
+<tr class="separator:a9870606340296b925fc0b6fb9b9288c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aced7d3b722bb1546c87dd198cad6428b" id="r_aced7d3b722bb1546c87dd198cad6428b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/daf/classadvanced__testcase.html#aced7d3b722bb1546c87dd198cad6428b">waitForSecond</a> ()</td></tr>
 <tr class="memdesc:aced7d3b722bb1546c87dd198cad6428b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a second to roll over, ensures future calls to time() return a different result.  <br /></td></tr>
 <tr class="separator:aced7d3b722bb1546c87dd198cad6428b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1678,6 +1684,57 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a74e305d3c5dd0a005a2e84ef07f22963" name="a74e305d3c5dd0a005a2e84ef07f22963"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74e305d3c5dd0a005a2e84ef07f22963">&#9670;&#160;</a></span>redirectHook()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">advanced_testcase::redirectHook </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$hookname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">callable&#160;</td>
+          <td class="paramname"><em>$callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Override hook callbacks. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$hookname</td><td></td></tr>
+    <tr><td class="paramtype">callable</td><td class="paramname">$callback</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a1c942c2f45ea1d5a4bd2b51ee2c3f143" name="a1c942c2f45ea1d5a4bd2b51ee2c3f143"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1c942c2f45ea1d5a4bd2b51ee2c3f143">&#9670;&#160;</a></span>redirectMessages()</h2>
 
@@ -2088,6 +2145,39 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a9870606340296b925fc0b6fb9b9288c7" name="a9870606340296b925fc0b6fb9b9288c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9870606340296b925fc0b6fb9b9288c7">&#9670;&#160;</a></span>stopHookRedirections()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">advanced_testcase::stopHookRedirections </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove all hook overrides. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aced7d3b722bb1546c87dd198cad6428b" name="aced7d3b722bb1546c87dd198cad6428b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aced7d3b722bb1546c87dd198cad6428b">&#9670;&#160;</a></span>waitForSecond()</h2>
 
@@ -2122,7 +2212,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 17 2023 02:45:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 24 2023 02:54:03 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

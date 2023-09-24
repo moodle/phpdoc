@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230916) (ecddfa6ccd8)</div>
+   <div id="projectbrief">Moodle 4.3beta (Build: 20230923) (83b4c96cad3)</div>
   </td>
  </tr>
  </tbody>
@@ -98,6 +98,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a337c01ecdc9191040b800e317904de44" id="r_a337c01ecdc9191040b800e317904de44"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db4/classcore_1_1hook_1_1manager.html#a337c01ecdc9191040b800e317904de44">is_deprecating_hook_present</a> (string $component, string $plugincallback)</td></tr>
 <tr class="memdesc:a337c01ecdc9191040b800e317904de44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is there a hook callback in component that deprecates given lib.php plugin callback?  <br /></td></tr>
 <tr class="separator:a337c01ecdc9191040b800e317904de44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d4745e94abff25fd5962517a650b39d" id="r_a6d4745e94abff25fd5962517a650b39d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db4/classcore_1_1hook_1_1manager.html#a6d4745e94abff25fd5962517a650b39d">phpunit_redirect_hook</a> (string $hookname, callable $callback)</td></tr>
+<tr class="memdesc:a6d4745e94abff25fd5962517a650b39d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override hook callbacks for testing purposes.  <br /></td></tr>
+<tr class="separator:a6d4745e94abff25fd5962517a650b39d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a304676e0256e7c8ad36367045c7452e1" id="r_a304676e0256e7c8ad36367045c7452e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/db4/classcore_1_1hook_1_1manager.html#a304676e0256e7c8ad36367045c7452e1">phpunit_stop_redirections</a> ()</td></tr>
+<tr class="memdesc:a304676e0256e7c8ad36367045c7452e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancel all redirections of hook callbacks.  <br /></td></tr>
+<tr class="separator:a304676e0256e7c8ad36367045c7452e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -446,13 +452,81 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a6d4745e94abff25fd5962517a650b39d" name="a6d4745e94abff25fd5962517a650b39d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d4745e94abff25fd5962517a650b39d">&#9670;&#160;</a></span>phpunit_redirect_hook()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core\hook\manager::phpunit_redirect_hook </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$hookname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">callable&#160;</td>
+          <td class="paramname"><em>$callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Override hook callbacks for testing purposes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$hookname</td><td></td></tr>
+    <tr><td class="paramtype">callable</td><td class="paramname">$callback</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a304676e0256e7c8ad36367045c7452e1" name="a304676e0256e7c8ad36367045c7452e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a304676e0256e7c8ad36367045c7452e1">&#9670;&#160;</a></span>phpunit_stop_redirections()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core\hook\manager::phpunit_stop_redirections </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Cancel all redirections of hook callbacks. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>lib/classes/hook/<b>manager.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 17 2023 02:46:44 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 24 2023 02:55:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

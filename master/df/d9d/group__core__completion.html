@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3dev+ (Build: 20230916) (ecddfa6ccd8)</div>
+   <div id="projectbrief">Moodle 4.3beta (Build: 20230923) (83b4c96cad3)</div>
   </td>
  </tr>
  </tbody>
@@ -168,13 +168,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9b15ff2b2371892ab427dad5a1b04479" id="r_ga9b15ff2b2371892ab427dad5a1b04479"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9d/group__core__completion.html#ga9b15ff2b2371892ab427dad5a1b04479">core_completion\form::completion_rule_enabled</a> ($data)</td></tr>
 <tr class="memdesc:ga9b15ff2b2371892ab427dad5a1b04479"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called during validation.  <br /></td></tr>
 <tr class="separator:ga9b15ff2b2371892ab427dad5a1b04479"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac791610e5ee5bc65c40831fe4437cf37" id="r_gac791610e5ee5bc65c40831fe4437cf37"><td class="memItemLeft" align="right" valign="top"><a id="gac791610e5ee5bc65c40831fe4437cf37" name="gac791610e5ee5bc65c40831fe4437cf37"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>core_completion\form::definition_after_data_completion</b> ()</td></tr>
-<tr class="memdesc:gac791610e5ee5bc65c40831fe4437cf37"><td class="mdescLeft">&#160;</td><td class="mdescRight">It should be called from the definition_after_data() to setup the completion settings in the form. <br /></td></tr>
-<tr class="separator:gac791610e5ee5bc65c40831fe4437cf37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaca67c799d5231878e3e736784cc87c2e" id="r_gaca67c799d5231878e3e736784cc87c2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9d/group__core__completion.html#gaca67c799d5231878e3e736784cc87c2e">core_completion\form::get_cm</a> ()</td></tr>
-<tr class="memdesc:gaca67c799d5231878e3e736784cc87c2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the cm (course module) associated to this class.  <br /></td></tr>
-<tr class="separator:gaca67c799d5231878e3e736784cc87c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga05e679680daa04948893c08bda848bc1" id="r_ga05e679680daa04948893c08bda848bc1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9d/group__core__completion.html#ga05e679680daa04948893c08bda848bc1">core_completion\form::definition_after_data_completion</a> (?<a class="el" href="../../df/db9/classcm__info.html">cm_info</a> $cm=null)</td></tr>
+<tr class="memdesc:ga05e679680daa04948893c08bda848bc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">It should be called from the definition_after_data() to setup the completion settings in the form.  <br /></td></tr>
+<tr class="separator:ga05e679680daa04948893c08bda848bc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac5c0addaa08a1fe81342445a1f50d737" id="r_gac5c0addaa08a1fe81342445a1f50d737"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9d/group__core__completion.html#gac5c0addaa08a1fe81342445a1f50d737">core_completion\form::get_form</a> ()</td></tr>
 <tr class="memdesc:gac5c0addaa08a1fe81342445a1f50d737"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the form associated to this class, where the completion elements will be added.  <br /></td></tr>
 <tr class="separator:gac5c0addaa08a1fe81342445a1f50d737"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -662,8 +658,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COMPLETION_VIEW_NOT_
 
 </div>
 </div>
-<a id="gaca67c799d5231878e3e736784cc87c2e" name="gaca67c799d5231878e3e736784cc87c2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaca67c799d5231878e3e736784cc87c2e">&#9670;&#160;</a></span>get_cm()</h2>
+<a id="ga05e679680daa04948893c08bda848bc1" name="ga05e679680daa04948893c08bda848bc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga05e679680daa04948893c08bda848bc1">&#9670;&#160;</a></span>definition_after_data_completion()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -672,9 +668,10 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COMPLETION_VIEW_NOT_
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">core_completion\form\get_cm </td>
+          <td class="memname">core_completion\form\definition_after_data_completion </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">?<a class="el" href="../../df/db9/classcm__info.html">cm_info</a>&#160;</td>
+          <td class="paramname"><em>$cm</em> = <code>null</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -685,17 +682,10 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COMPLETION_VIEW_NOT_
 </table>
 </div><div class="memdoc">
 
-<p>Get the cm (course module) associated to this class. </p>
-<p>This method must be overriden by the class using this trait if it doesn't include a _cm property.</p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">stdClass|null</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td>If the class does not have a _cm property. </td></tr>
+<p>It should be called from the definition_after_data() to setup the completion settings in the form. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a>&#160;|&#160;null</td><td class="paramname">$cm</td><td>The course module associated to this form. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1060,7 +1050,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COMPLETION_VIEW_NOT_
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 17 2023 02:44:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Sep 24 2023 02:53:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
