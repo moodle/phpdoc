@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2.2+ (Build: 20230923) (3070f8e760a)</div>
+   <div id="projectbrief">Moodle 4.2.2+ (Build: 20230929) (48d464516a0)</div>
   </td>
  </tr>
  </tbody>
@@ -968,7 +968,7 @@ Functions</h2></td></tr>
 <p>Main post-install tasks to be executed after the BD schema is available. </p>
 <p>This function is automatically executed after <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> core <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> has been created at initial install. It's in charge of perform the initial tasks not covered by the <a class="el" href="../../">install.xml</a> file, like create initial users, roles, templates, moving stuff from other plugins...</p>
 <p>Note that the function is only invoked once, at install time, so if new tasks are needed in the future, they will need to be added both here (for new sites) and in the corresponding <a class="el" href="../../">upgrade.php</a> file (for existing sites).</p>
-<p>All plugins within <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> (modules, blocks, reports...) support the existence of their own install.php file, using the "Frankenstyle" component name as defined at <a href="http://docs.moodle.org/dev/Frankenstyle" class="el externalurl"></a>, for example:</p><ul>
+<p>All plugins within <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> (modules, blocks, reports...) support the existence of their own install.php file, using the "Frankenstyle" component name as defined at <a href="https://moodledev.io/general/development/policies/codingstyle/frankenstyle" class="el externalurl"></a>, for example:</p><ul>
 <li><a class="el" href="../../#ga3b8e33d3ec6d8584f24695c7b24a0e1e">xmldb_page_install()</a>. (modules don't require the plugintype ("mod_") to be used.</li>
 <li><a class="el" href="../../#gaffdc7828c9464a5163c7e25e20f3ab55">xmldb_enrol_meta_install()</a>.</li>
 <li><a class="el" href="../../d3/db3/group__workshopform__accumulative.html#ga6de608e3de848f23ae22ce0623e0de25">xmldb_workshopform_accumulative_install()</a>.</li>
@@ -998,8 +998,8 @@ Functions</h2></td></tr>
 <p>This function is automatically executed after one bump in the <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> core version is detected. It's in charge of performing the required tasks to raise core from the previous version to the next one.</p>
 <p>It's a collection of ordered blocks of code, named "upgrade steps", each one performing one isolated (from the rest of steps) task. Usually tasks involve creating new <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> objects or performing manipulation of the information for cleanup/fixup purposes.</p>
 <p>Each upgrade step has a fixed structure, that can be summarised as follows:</p>
-<p>if ($oldversion &lt; XXXXXXXXXX.XX) { // Explanation of the update step, linking to issue in the Tracker if necessary upgrade_set_timeout(XX); // Optional for big tasks // Code to execute goes here, usually the XMLDB Editor will // help you here. See <a href="http://docs.moodle.org/dev/XMLDB_editor" class="el externalurl"></a>. upgrade_main_savepoint(true, XXXXXXXXXX.XX); }</p>
-<p>All plugins within <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> (modules, blocks, reports...) support the existence of their own upgrade.php file, using the "Frankenstyle" component name as defined at <a href="http://docs.moodle.org/dev/Frankenstyle" class="el externalurl"></a>, for example:</p><ul>
+<p>if ($oldversion &lt; XXXXXXXXXX.XX) { // Explanation of the update step, linking to issue in the Tracker if necessary upgrade_set_timeout(XX); // Optional for big tasks // Code to execute goes here, usually the XMLDB Editor will // help you here. See <a href="https://moodledev.io/general/development/tools/xmldb" class="el externalurl"></a>. upgrade_main_savepoint(true, XXXXXXXXXX.XX); }</p>
+<p>All plugins within <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> (modules, blocks, reports...) support the existence of their own upgrade.php file, using the "Frankenstyle" component name as defined at <a href="https://moodledev.io/general/development/policies/codingstyle/frankenstyle" class="el externalurl"></a>, for example:</p><ul>
 <li><a class="el" href="../../#gacca69703b8f5bad61afd0a4031d6a677">xmldb_page_upgrade($oldversion)</a>. (modules don't require the plugintype ("mod_") to be used.</li>
 <li><a class="el" href="../../d4/ded/group__auth__manual.html#gaa544352ec504d681dec483767a5c4a89">xmldb_auth_manual_upgrade($oldversion)</a>.</li>
 <li><a class="el" href="../../d3/db3/group__workshopform__accumulative.html#ga8693abd970ca21bd6c529b6e5652ad5b">xmldb_workshopform_accumulative_upgrade($oldversion)</a>.</li>
@@ -1007,8 +1007,8 @@ Functions</h2></td></tr>
 </ul>
 <p>In order to keep the contents of this file reduced, it's allowed to create some helper functions to be used here in the <a class="el" href="../../">upgradelib.php</a> file at the same directory. Note that such a file must be manually included from upgrade.php, and there are some restrictions about what can be used within it.</p>
 <p>For more information, take a look to the documentation available:</p><ul>
-<li>Data definition API: <a href="http://docs.moodle.org/dev/Data_definition_API" class="el externalurl"></a></li>
-<li>Upgrade API: <a href="http://docs.moodle.org/dev/Upgrade_API" class="el externalurl"></a></li>
+<li>Data definition API: <a href="https://moodledev.io/docs/apis/core/dml/ddl" class="el externalurl"></a></li>
+<li>Upgrade API: <a href="https://moodledev.io/docs/guides/upgrade" class="el externalurl"></a></li>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1028,7 +1028,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 24 2023 02:47:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Oct 1 2023 02:47:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

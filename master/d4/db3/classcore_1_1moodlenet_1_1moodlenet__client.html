@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3beta (Build: 20230923) (83b4c96cad3)</div>
+   <div id="projectbrief">Moodle 4.3beta+ (Build: 20230929) (43d5aec47ef)</div>
   </td>
  </tr>
  </tbody>
@@ -85,9 +85,9 @@ string const&#160;</td><td class="memItemRight" valign="bottom"><b>API_SCOPE_CRE
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:aff556b9b3534a433ad1d5c18fa399e4b" id="r_aff556b9b3534a433ad1d5c18fa399e4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db3/classcore_1_1moodlenet_1_1moodlenet__client.html#aff556b9b3534a433ad1d5c18fa399e4b">prepare_file_share_request_data</a> (string $filename, string $mimetype, <a class="el" href="../../d8/d24/interface_psr_1_1_http_1_1_message_1_1_stream_interface.html">StreamInterface</a> $stream, string $resourcename, $resourcedescription,)</td></tr>
-<tr class="memdesc:aff556b9b3534a433ad1d5c18fa399e4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare the request data required for sharing a file to MoodleNet.  <br /></td></tr>
-<tr class="separator:aff556b9b3534a433ad1d5c18fa399e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7039ae3d6aee0f460de575269d398645" id="r_a7039ae3d6aee0f460de575269d398645"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db3/classcore_1_1moodlenet_1_1moodlenet__client.html#a7039ae3d6aee0f460de575269d398645">prepare_file_share_request_data</a> (string $filename, string $mimetype, <a class="el" href="../../d8/d24/interface_psr_1_1_http_1_1_message_1_1_stream_interface.html">StreamInterface</a> $stream, string $resourcename, string $resourcedescription,)</td></tr>
+<tr class="memdesc:a7039ae3d6aee0f460de575269d398645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare the request data required for sharing a file to MoodleNet.  <br /></td></tr>
+<tr class="separator:a7039ae3d6aee0f460de575269d398645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -185,8 +185,8 @@ string const&#160;</td><td class="memItemRight" valign="bottom"><b>API_CREATE_RE
 
 </div>
 </div>
-<a id="aff556b9b3534a433ad1d5c18fa399e4b" name="aff556b9b3534a433ad1d5c18fa399e4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff556b9b3534a433ad1d5c18fa399e4b">&#9670;&#160;</a></span>prepare_file_share_request_data()</h2>
+<a id="a7039ae3d6aee0f460de575269d398645" name="a7039ae3d6aee0f460de575269d398645"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7039ae3d6aee0f460de575269d398645">&#9670;&#160;</a></span>prepare_file_share_request_data()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -221,7 +221,7 @@ string const&#160;</td><td class="memItemRight" valign="bottom"><b>API_CREATE_RE
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>$resourcedescription</em>&#160;</td>
         </tr>
         <tr>
@@ -241,7 +241,9 @@ string const&#160;</td><td class="memItemRight" valign="bottom"><b>API_CREATE_RE
 <p>This creates an array in the format used by core::httpclient options to send a multipart request.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$filedata</td><td>An array of data relating to the file being shared (as prepared by ::prepare_share_contents). </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$filename</td><td>Name of the file being shared. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$mimetype</td><td>Mime type of the file being shared. </td></tr>
+    <tr><td class="paramtype">StreamInterface</td><td class="paramname">$stream</td><td>Stream of the file being shared. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$resourcename</td><td>The name of the resource being shared. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$resourcedescription</td><td>A description of the resource being shared. </td></tr>
   </table>
@@ -262,7 +264,7 @@ string const&#160;</td><td class="memItemRight" valign="bottom"><b>API_CREATE_RE
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Sep 24 2023 02:55:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Oct 1 2023 02:55:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
