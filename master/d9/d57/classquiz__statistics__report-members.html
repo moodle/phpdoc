@@ -23,9 +23,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../Moodle-Logo-ReversedWhite_RGB.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
+   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.3beta+ (Build: 20230929) (43d5aec47ef)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20231009) (769c67045fe)</div>
   </td>
  </tr>
  </tbody>
@@ -64,12 +64,12 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html#a843e9da351fe55d615f9552155a22800">$table</a></td><td class="entry"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html">quiz_statistics_report</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html#ac8f4edef07135f8b5ca5166204aa312e">analyse_responses_for_all_questions_and_subquestions</a>($questions, $subquestions, $qubaids, $whichtries, $progress=null)</td><td class="entry"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html">quiz_statistics_report</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html#a5906b5bb8446c27e0d5ab4f386f904fe">analyse_responses_for_questions</a>($questions, $qubaids, $whichtries, $progress=null, $done=[])</td><td class="entry"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html">quiz_statistics_report</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html#a74da98d78d5795a71d24b0a835482e9e">calculate_questions_stats_for_question_bank</a>(int $quizid, bool $calculateifrequired=true)</td><td class="entry"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html">quiz_statistics_report</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html#a02414bc29ab84474eb794c3a567eb804">calculate_questions_stats_for_question_bank</a>(int $quizid, bool $calculateifrequired=true, bool $performanalysis=true,)</td><td class="entry"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html">quiz_statistics_report</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html#a16ab4d5bf2c777cb6ef5015bf3545af7">clear_cached_data</a>($qubaids)</td><td class="entry"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html">quiz_statistics_report</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html#abc47ce56bd694b4c166c42819720953f">display</a>($quiz, $cm, $course)</td><td class="entry"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html">quiz_statistics_report</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html#a0f78e62717b7e205e2676d4e8c3b2c1a">download_quiz_info_table</a>($quizinfo)</td><td class="entry"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html">quiz_statistics_report</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html#a43ad034dae717f3db7ca02e636e7102c">everything_download_options</a>(moodle_url $reporturl)</td><td class="entry"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html">quiz_statistics_report</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html#aa0f956a02367372b148c979a47967bca">get_all_stats_and_analysis</a>( $quiz, $whichattempts, $whichtries, core\dml\sql_join $groupstudentsjoins, $questions, $progress=null, bool $calculateifrequired=true)</td><td class="entry"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html">quiz_statistics_report</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html#a568d694797cb837f7d312cbb06294df5">get_all_stats_and_analysis</a>( $quiz, $whichattempts, $whichtries, core\dml\sql_join $groupstudentsjoins, $questions, $progress=null, bool $calculateifrequired=true, bool $performanalysis=true)</td><td class="entry"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html">quiz_statistics_report</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../d3/d86/classmod__quiz_1_1local_1_1reports_1_1report__base.html#afde3dca4c2e277d0f6d74dc55be6295e">get_current_group</a>($cm, $course, $context)</td><td class="entry"><a class="el" href="../../d3/d86/classmod__quiz_1_1local_1_1reports_1_1report__base.html">mod_quiz\local\reports\report_base</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html#a51f45333ae079d8bef1738902f92a062">get_progress_trace_instance</a>()</td><td class="entry"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html">quiz_statistics_report</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html#ad8cdb40d75b6ac870e68c0b17d993e00">load_and_initialise_questions_for_calculations</a>($quiz)</td><td class="entry"><a class="el" href="../../d2/dc2/classquiz__statistics__report.html">quiz_statistics_report</a></td><td class="entry"></td></tr>
@@ -86,7 +86,7 @@ $(function() {
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 1 2023 02:54:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Oct 8 2023 02:48:56 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

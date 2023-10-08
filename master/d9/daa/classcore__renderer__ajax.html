@@ -23,9 +23,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../Moodle-Logo-ReversedWhite_RGB.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
+   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.3beta+ (Build: 20230929) (43d5aec47ef)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20231009) (769c67045fe)</div>
   </td>
  </tr>
  </tbody>
@@ -130,6 +130,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a258bd154716c935d005f42cf9eff4d58" id="r_a258bd154716c935d005f42cf9eff4d58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7b/classcore__renderer.html#a258bd154716c935d005f42cf9eff4d58">check_result</a> (<a class="el" href="../../d5/d0d/classcore_1_1check_1_1result.html">core\check\result</a> $result)</td></tr>
 <tr class="memdesc:a258bd154716c935d005f42cf9eff4d58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders a Check API result.  <br /></td></tr>
 <tr class="separator:a258bd154716c935d005f42cf9eff4d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcae42e6efa2a6419452363ed2972287" id="r_afcae42e6efa2a6419452363ed2972287"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7b/classcore__renderer.html#afcae42e6efa2a6419452363ed2972287">close_element_for_append</a> ()</td></tr>
+<tr class="memdesc:afcae42e6efa2a6419452363ed2972287"><td class="mdescLeft">&#160;</td><td class="mdescRight">This closes any opened stream elements.  <br /></td></tr>
+<tr class="separator:afcae42e6efa2a6419452363ed2972287"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7c97fac22eff045fdb97e28171d25e9" id="r_ab7c97fac22eff045fdb97e28171d25e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d7b/classcore__renderer.html#ab7c97fac22eff045fdb97e28171d25e9">close_window_button</a> ($text='')</td></tr>
 <tr class="memdesc:ab7c97fac22eff045fdb97e28171d25e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns HTML to display a simple button to close a window.  <br /></td></tr>
 <tr class="separator:ab7c97fac22eff045fdb97e28171d25e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -617,6 +620,14 @@ Protected Attributes</h2></td></tr>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$contenttype</b></td></tr>
 <tr class="memdesc:a0fd4b65b0d885c968783114d53e6050c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to pass information from <a class="el" href="../../d4/d7b/classcore__renderer.html#ad282464b186bd3bbfbc6702f85ecdda1">core_renderer::doctype()</a> to <a class="el" href="../../d4/d7b/classcore__renderer.html#ac94d7ff4a03c2a9ccab0819292f889cd">core_renderer::standard_head_html()</a>. <br /></td></tr>
 <tr class="separator:a0fd4b65b0d885c968783114d53e6050c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a310fcc2380f06148eadd2170aa1d85c1" id="r_a310fcc2380f06148eadd2170aa1d85c1"><td class="memItemLeft" align="right" valign="top"><a id="a310fcc2380f06148eadd2170aa1d85c1" name="a310fcc2380f06148eadd2170aa1d85c1"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$currentelement</b> = ''</td></tr>
+<tr class="memdesc:a310fcc2380f06148eadd2170aa1d85c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current element tag which is being streamed into. <br /></td></tr>
+<tr class="separator:a310fcc2380f06148eadd2170aa1d85c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70ae63db158b079a1c39f25b907eee52" id="r_a70ae63db158b079a1c39f25b907eee52"><td class="memItemLeft" align="right" valign="top"><a id="a70ae63db158b079a1c39f25b907eee52" name="a70ae63db158b079a1c39f25b907eee52"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$currentselector</b> = ''</td></tr>
+<tr class="memdesc:a70ae63db158b079a1c39f25b907eee52"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current selector for an element being streamed into. <br /></td></tr>
+<tr class="separator:a70ae63db158b079a1c39f25b907eee52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96bac8533acdd5ca7d049fe26f84f0ca" id="r_a96bac8533acdd5ca7d049fe26f84f0ca"><td class="memItemLeft" align="right" valign="top"><a id="a96bac8533acdd5ca7d049fe26f84f0ca" name="a96bac8533acdd5ca7d049fe26f84f0ca"></a>
 <a class="el" href="../../d6/de1/classcustom__menu__item.html">custom_menu_item</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$language</b> = null</td></tr>
 <tr class="memdesc:a96bac8533acdd5ca7d049fe26f84f0ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">language The language menu if created <br /></td></tr>
@@ -1661,6 +1672,39 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$unique_performance
 </dl>
 
 <p>Reimplemented in <a class="el" href="../../d9/d5d/classcore__renderer__cli.html#a6ef28b9bd080a7b23cc5a9144aec0fb4">core_renderer_cli</a>.</p>
+
+</div>
+</div>
+<a id="afcae42e6efa2a6419452363ed2972287" name="afcae42e6efa2a6419452363ed2972287"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcae42e6efa2a6419452363ed2972287">&#9670;&#160;</a></span>close_element_for_append()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_renderer::close_element_for_append </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This closes any opened stream elements. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>html to be written </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -7279,6 +7323,12 @@ $OUTPUT-&gt;<a class="el" href="../../d3/da1/classfile__picker.html">file_picker
   </table>
   </dd>
 </dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>html to be written </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -7330,6 +7380,12 @@ $OUTPUT-&gt;<a class="el" href="../../d3/da1/classfile__picker.html">file_picker
     <tr><td class="paramtype">string</td><td class="paramname">$selector</td><td>where new content should be replaced </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$html</td><td>A chunk of well formed html </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$outer</td><td>Wether it replaces the innerHTML or the outerHTML </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>html to be written </td></tr>
   </table>
   </dd>
 </dl>
@@ -8473,7 +8529,7 @@ $OUTPUT-&gt;render($userpic);
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 1 2023 02:53:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Oct 8 2023 02:47:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
