@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20231020) (d76e211be6a)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20231027) (859df15e73a)</div>
   </td>
  </tr>
  </tbody>
@@ -145,9 +145,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac97a2dd3e9fb4f376ad85d6002c348fc" id="r_ac97a2dd3e9fb4f376ad85d6002c348fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d69/classcore__cohort_1_1reportbuilder_1_1datasource_1_1cohorts.html#ac97a2dd3e9fb4f376ad85d6002c348fc">get_default_columns</a> ()</td></tr>
 <tr class="memdesc:ac97a2dd3e9fb4f376ad85d6002c348fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the columns that will be added to the report as part of default setup.  <br /></td></tr>
 <tr class="separator:ac97a2dd3e9fb4f376ad85d6002c348fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0195f8f89030a30881ef0337f62c319a" id="r_a0195f8f89030a30881ef0337f62c319a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d4a/classcore__reportbuilder_1_1datasource.html#a0195f8f89030a30881ef0337f62c319a">get_default_condition_values</a> ()</td></tr>
-<tr class="memdesc:a0195f8f89030a30881ef0337f62c319a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the default condition values that will be added to the report once is created.  <br /></td></tr>
-<tr class="separator:a0195f8f89030a30881ef0337f62c319a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39336c3760fbcc9704e35ef988db2a3f" id="r_a39336c3760fbcc9704e35ef988db2a3f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d69/classcore__cohort_1_1reportbuilder_1_1datasource_1_1cohorts.html#a39336c3760fbcc9704e35ef988db2a3f">get_default_condition_values</a> ()</td></tr>
+<tr class="memdesc:a39336c3760fbcc9704e35ef988db2a3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the condition values that will be set for the report upon creation.  <br /></td></tr>
+<tr class="separator:a39336c3760fbcc9704e35ef988db2a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa60a27e7a16f9d76c1ee86249baf5496" id="r_aa60a27e7a16f9d76c1ee86249baf5496"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d69/classcore__cohort_1_1reportbuilder_1_1datasource_1_1cohorts.html#aa60a27e7a16f9d76c1ee86249baf5496">get_default_conditions</a> ()</td></tr>
 <tr class="memdesc:aa60a27e7a16f9d76c1ee86249baf5496"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the conditions that will be added to the report once is created.  <br /></td></tr>
 <tr class="separator:aa60a27e7a16f9d76c1ee86249baf5496"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1784,31 +1784,22 @@ get_default_column_sorting} methods</dd></dl>
 
 </div>
 </div>
-<a id="a0195f8f89030a30881ef0337f62c319a" name="a0195f8f89030a30881ef0337f62c319a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0195f8f89030a30881ef0337f62c319a">&#9670;&#160;</a></span>get_default_condition_values()</h2>
+<a id="a39336c3760fbcc9704e35ef988db2a3f" name="a39336c3760fbcc9704e35ef988db2a3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39336c3760fbcc9704e35ef988db2a3f">&#9670;&#160;</a></span>get_default_condition_values()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">core_reportbuilder\datasource::get_default_condition_values </td>
+          <td class="memname">core_cohort\reportbuilder\datasource\cohorts::get_default_condition_values </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Return the default condition values that will be added to the report once is created. </p>
-<p>For any of the default conditions returned by the method {</p><dl class="section see"><dt>See also</dt><dd>get_default_conditions} is possible to <a class="el" href="../../dc/d71/group___imap___client.html#ga0dae8e91a93f347875c2acc9129ae73b" title="Store information in cache.">set</a> the initial values.</dd></dl>
+<p>Return the condition values that will be set for the report upon creation. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td></td></tr>
@@ -1816,7 +1807,7 @@ get_default_column_sorting} methods</dd></dl>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d6/d48/classcore__admin_1_1reportbuilder_1_1datasource_1_1task__logs.html#a94afd58475f8ad319750cd8147f8bcec">core_admin\reportbuilder\datasource\task_logs</a>, <a class="el" href="../../d4/d16/classcore__course_1_1reportbuilder_1_1datasource_1_1participants.html#ae32f2cb6a8964f74014e0b074b3b51ff">core_course\reportbuilder\datasource\participants</a>, <a class="el" href="../../d4/d07/classcore__files_1_1reportbuilder_1_1datasource_1_1files.html#a16f1bf5746ee18cf9289ca59babd7621">core_files\reportbuilder\datasource\files</a>, and <a class="el" href="../../d3/d9c/classcore__user_1_1reportbuilder_1_1datasource_1_1users.html#a29c3dd8726b7b03954dfaf80c5e85cff">core_user\reportbuilder\datasource\users</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d7/d4a/classcore__reportbuilder_1_1datasource.html#a0195f8f89030a30881ef0337f62c319a">core_reportbuilder\datasource</a>.</p>
 
 </div>
 </div>
@@ -2893,7 +2884,7 @@ get_default_column_sorting} methods</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 22 2023 03:06:51 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Oct 29 2023 02:55:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;3.11</span>
    </div>
-   <div id="projectbrief">Moodle 3.11.17+ (Build: 20231020) (0db96976f2)</div>
+   <div id="projectbrief">Moodle 3.11.17+ (Build: 20231027) (f4877790f9)</div>
   </td>
  </tr>
  </tbody>
@@ -57,7 +57,7 @@ main();
 ?>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 22 2023 02:36:05 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Oct 29 2023 02:29:09 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
