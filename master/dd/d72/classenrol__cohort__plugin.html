@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20231027) (859df15e73a)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20231102) (e4d1369475e)</div>
   </td>
  </tr>
  </tbody>
@@ -148,6 +148,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a71697026a15c9d5af85e4734fb50f478" id="r_a71697026a15c9d5af85e4734fb50f478"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d72/classenrol__cohort__plugin.html#a71697026a15c9d5af85e4734fb50f478">fill_enrol_custom_fields</a> (array $enrolmentdata, int $courseid)</td></tr>
 <tr class="memdesc:a71697026a15c9d5af85e4734fb50f478"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill custom fields data for a given enrolment plugin.  <br /></td></tr>
 <tr class="separator:a71697026a15c9d5af85e4734fb50f478"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31f8709d899a039a3bf06e1f6c0df5f2" id="r_a31f8709d899a039a3bf06e1f6c0df5f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d72/classenrol__cohort__plugin.html#a31f8709d899a039a3bf06e1f6c0df5f2">find_instance</a> (array $enrolmentdata, int $courseid)</td></tr>
+<tr class="memdesc:a31f8709d899a039a3bf06e1f6c0df5f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds matching instances for a given course.  <br /></td></tr>
+<tr class="separator:a31f8709d899a039a3bf06e1f6c0df5f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38d743697cb01f30be67cad2e48dffb2" id="r_a38d743697cb01f30be67cad2e48dffb2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/classenrol__plugin.html#a38d743697cb01f30be67cad2e48dffb2">get_action_icons</a> (stdClass $instance)</td></tr>
 <tr class="memdesc:a38d743697cb01f30be67cad2e48dffb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns edit icons for the page with list of instances.  <br /></td></tr>
 <tr class="separator:a38d743697cb01f30be67cad2e48dffb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1453,6 +1456,51 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a31f8709d899a039a3bf06e1f6c0df5f2" name="a31f8709d899a039a3bf06e1f6c0df5f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31f8709d899a039a3bf06e1f6c0df5f2">&#9670;&#160;</a></span>find_instance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enrol_cohort_plugin::find_instance </td>
+          <td>(</td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$enrolmentdata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$courseid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Finds matching instances for a given course. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$enrolmentdata</td><td>enrolment data. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$courseid</td><td>Course ID. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass|null</td><td>Matching instance </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="../../d6/d0e/classenrol__plugin.html#accac30e332c851772bb66d62beba340a">enrol_plugin</a>.</p>
+
+</div>
+</div>
 <a id="a38d743697cb01f30be67cad2e48dffb2" name="a38d743697cb01f30be67cad2e48dffb2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a38d743697cb01f30be67cad2e48dffb2">&#9670;&#160;</a></span>get_action_icons()</h2>
 
@@ -2320,7 +2368,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000615">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 <a href="https://tracker.moodle.org/browse/MDL-35864" class="el">MDL-35864</a> - please use <a class="el" href="../../dd/d72/classenrol__cohort__plugin.html#a4d2da735cf08f533abf170978379629a" title="Is it possible to delete enrol instance via standard UI?">can_delete_instance()</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000619">Deprecated:</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 <a href="https://tracker.moodle.org/browse/MDL-35864" class="el">MDL-35864</a> - please use <a class="el" href="../../dd/d72/classenrol__cohort__plugin.html#a4d2da735cf08f533abf170978379629a" title="Is it possible to delete enrol instance via standard UI?">can_delete_instance()</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -3660,7 +3708,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 29 2023 02:53:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Nov 5 2023 03:08:56 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

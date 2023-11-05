@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20231027) (859df15e73a)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20231102) (e4d1369475e)</div>
   </td>
  </tr>
  </tbody>
@@ -137,6 +137,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad0b27ea5cf6d893e7795e3f8b8068e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b390c0365b8c8d89e17821043330e8a" id="r_a8b390c0365b8c8d89e17821043330e8a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df5/classadmin__setting.html#a8b390c0365b8c8d89e17821043330e8a">set_affects_modinfo</a> ($affectsmodinfo)</td></tr>
 <tr class="separator:a8b390c0365b8c8d89e17821043330e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8bb589801d7f62e372b467408869c20" id="r_ad8bb589801d7f62e372b467408869c20"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d76/classadmin__setting__configtext.html#ad8bb589801d7f62e372b467408869c20">set_data_attribute</a> (string $key, string $value)</td></tr>
+<tr class="memdesc:ad8bb589801d7f62e372b467408869c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set arbitrary data attributes for template.  <br /></td></tr>
+<tr class="separator:ad8bb589801d7f62e372b467408869c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70e01e762849fb1f4ddb9ba06cbdf5b7" id="r_a70e01e762849fb1f4ddb9ba06cbdf5b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df5/classadmin__setting.html#a70e01e762849fb1f4ddb9ba06cbdf5b7">set_enabled_flag_options</a> ($enabled, $default)</td></tr>
 <tr class="memdesc:a70e01e762849fb1f4ddb9ba06cbdf5b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the enabled options flag on this admin setting.  <br /></td></tr>
 <tr class="separator:a70e01e762849fb1f4ddb9ba06cbdf5b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,6 +221,10 @@ Protected Attributes</h2></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>$customcontrol</b> = false</td></tr>
 <tr class="memdesc:aa7db838e59bbefa82f3fa5d7ef6ff103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this setting uses a custom form control. <br /></td></tr>
 <tr class="separator:aa7db838e59bbefa82f3fa5d7ef6ff103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeffd50ea35d9e9160ca5c687f565457" id="r_afeffd50ea35d9e9160ca5c687f565457"><td class="memItemLeft" align="right" valign="top"><a id="afeffd50ea35d9e9160ca5c687f565457" name="afeffd50ea35d9e9160ca5c687f565457"></a>
+array&#160;</td><td class="memItemRight" valign="bottom"><b>$datavalues</b> = []</td></tr>
+<tr class="memdesc:afeffd50ea35d9e9160ca5c687f565457"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of arbitrary data attributes. <br /></td></tr>
+<tr class="separator:afeffd50ea35d9e9160ca5c687f565457"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Special setting for auth_ldap that lowercases values on save. </p>
@@ -869,7 +876,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$customcontrol</b> = 
 
 <p>Reimplemented from <a class="el" href="../../de/df5/classadmin__setting.html#a63ca92d43118c0c9ed4ea1cb73e200dd">admin_setting</a>.</p>
 
-<p>Reimplemented in <a class="el" href="../../d8/d94/classadmin__setting__configtextarea.html#a0fc7488c9589ff5896b2055b09f41209">admin_setting_configtextarea</a>, <a class="el" href="../../d9/dcd/classadmin__setting__confightmleditor.html#ac5ca7b14e390e98711a65726c2558162">admin_setting_confightmleditor</a>, <a class="el" href="../../d5/d2d/classadmin__setting__configpasswordunmask.html#a00711dee53f72b8f1312a3aaad6af86f">admin_setting_configpasswordunmask</a>, <a class="el" href="../../dd/d50/classadmin__setting__configempty.html#a144e6c91198567cbe6a39f2c9f033e74">admin_setting_configempty</a>, <a class="el" href="../../d7/d84/classadmin__setting__configfile.html#a2d33f0e2e53130dd56fd0f67d74248e1">admin_setting_configfile</a>, <a class="el" href="../../df/d76/classadmin__setting__configexecutable.html#ac36a767fde0505fa579871bd569b01e0">admin_setting_configexecutable</a>, <a class="el" href="../../d2/d22/classadmin__setting__configdirectory.html#ac8025e0c630c3bace4dbf1638a068924">admin_setting_configdirectory</a>, <a class="el" href="../../d9/d50/classadmin__setting__special__gradepointmax.html#a5eebb8d4da5a0ae910bd4ff6be9d43b6">admin_setting_special_gradepointmax</a>, and <a class="el" href="../../d6/dc1/classadmin__setting__filetypes.html#a63b6c574828636c7e70ac874792e8816">admin_setting_filetypes</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d4/d3c/classadmin__setting__configtext__with__maxlength.html#a17ddb3db14322a944be157a01e63a4ff">admin_setting_configtext_with_maxlength</a>, <a class="el" href="../../d8/d94/classadmin__setting__configtextarea.html#a0fc7488c9589ff5896b2055b09f41209">admin_setting_configtextarea</a>, <a class="el" href="../../d9/dcd/classadmin__setting__confightmleditor.html#ac5ca7b14e390e98711a65726c2558162">admin_setting_confightmleditor</a>, <a class="el" href="../../d5/d2d/classadmin__setting__configpasswordunmask.html#a00711dee53f72b8f1312a3aaad6af86f">admin_setting_configpasswordunmask</a>, <a class="el" href="../../dd/d50/classadmin__setting__configempty.html#a144e6c91198567cbe6a39f2c9f033e74">admin_setting_configempty</a>, <a class="el" href="../../d7/d84/classadmin__setting__configfile.html#a2d33f0e2e53130dd56fd0f67d74248e1">admin_setting_configfile</a>, <a class="el" href="../../df/d76/classadmin__setting__configexecutable.html#ac36a767fde0505fa579871bd569b01e0">admin_setting_configexecutable</a>, <a class="el" href="../../d2/d22/classadmin__setting__configdirectory.html#ac8025e0c630c3bace4dbf1638a068924">admin_setting_configdirectory</a>, <a class="el" href="../../d9/d50/classadmin__setting__special__gradepointmax.html#a5eebb8d4da5a0ae910bd4ff6be9d43b6">admin_setting_special_gradepointmax</a>, and <a class="el" href="../../d6/dc1/classadmin__setting__filetypes.html#a63b6c574828636c7e70ac874792e8816">admin_setting_filetypes</a>.</p>
 
 </div>
 </div>
@@ -1026,6 +1033,51 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$customcontrol</b> = 
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">bool</td><td class="paramname">$affectsmodinfo</td><td>If true, changes to this setting will cause the course cache to be rebuilt </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad8bb589801d7f62e372b467408869c20" name="ad8bb589801d7f62e372b467408869c20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8bb589801d7f62e372b467408869c20">&#9670;&#160;</a></span>set_data_attribute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">admin_setting_configtext::set_data_attribute </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set arbitrary data attributes for template. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$key</td><td>Attribute key for template. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$value</td><td>Attribute value for template. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1448,7 +1500,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$customcontrol</b> = 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Oct 29 2023 02:53:33 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Nov 5 2023 03:08:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
