@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20231102) (e4d1369475e)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20231110) (14414fe253f)</div>
   </td>
  </tr>
  </tbody>
@@ -108,9 +108,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2a98f5ab9e94330b1051fb560f789be2" id="r_a2a98f5ab9e94330b1051fb560f789be2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d60/classrenderer__base.html#a2a98f5ab9e94330b1051fb560f789be2">render_from_template</a> ($templatename, $context)</td></tr>
 <tr class="memdesc:a2a98f5ab9e94330b1051fb560f789be2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders a template by name with the given context.  <br /></td></tr>
 <tr class="separator:a2a98f5ab9e94330b1051fb560f789be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3a8bbf4d8f74ef98ff0d407e035b457" id="r_af3a8bbf4d8f74ef98ff0d407e035b457"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d38/classquiz__grading__renderer.html#af3a8bbf4d8f74ef98ff0d407e035b457">render_grade_link</a> ($counts, $type, $gradestring, $gradequestionurl)</td></tr>
-<tr class="memdesc:af3a8bbf4d8f74ef98ff0d407e035b457"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render grade link for question.  <br /></td></tr>
-<tr class="separator:af3a8bbf4d8f74ef98ff0d407e035b457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff8fed369f19ad925d10c9a281e8aef6" id="r_aff8fed369f19ad925d10c9a281e8aef6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d38/classquiz__grading__renderer.html#aff8fed369f19ad925d10c9a281e8aef6">render_grade_link</a> ($counts, $type, $string, $component, $gradequestionurl)</td></tr>
+<tr class="memdesc:aff8fed369f19ad925d10c9a281e8aef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render grade link for question.  <br /></td></tr>
+<tr class="separator:aff8fed369f19ad925d10c9a281e8aef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a026479c959f88917af105fcfc5e96bae" id="r_a026479c959f88917af105fcfc5e96bae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d38/classquiz__grading__renderer.html#a026479c959f88917af105fcfc5e96bae">render_grade_question</a> ($questionusage, $slot, $displayoptions, $questionnumber, $heading)</td></tr>
 <tr class="memdesc:a026479c959f88917af105fcfc5e96bae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render grade question content.  <br /></td></tr>
 <tr class="separator:a026479c959f88917af105fcfc5e96bae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -738,8 +738,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 
 </div>
 </div>
-<a id="af3a8bbf4d8f74ef98ff0d407e035b457" name="af3a8bbf4d8f74ef98ff0d407e035b457"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af3a8bbf4d8f74ef98ff0d407e035b457">&#9670;&#160;</a></span>render_grade_link()</h2>
+<a id="aff8fed369f19ad925d10c9a281e8aef6" name="aff8fed369f19ad925d10c9a281e8aef6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff8fed369f19ad925d10c9a281e8aef6">&#9670;&#160;</a></span>render_grade_link()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -760,7 +760,13 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$gradestring</em>, </td>
+          <td class="paramname"><em>$string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$component</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -781,7 +787,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$counts</td><td></td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$type</td><td>Type of grade. </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$gradestring</td><td>Lang string. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$string</td><td>Lang string. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$component</td><td>Lang string component. </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$gradequestionurl</td><td>Url to grade question. </td></tr>
   </table>
   </dd>
@@ -1228,7 +1235,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 5 2023 03:10:17 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Nov 12 2023 02:58:10 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

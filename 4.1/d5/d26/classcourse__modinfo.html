@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1.6+ (Build: 20231102) (dd115e572a0)</div>
+   <div id="projectbrief">Moodle 4.1.6+ (Build: 20231110) (8ad91140508)</div>
   </td>
  </tr>
  </tbody>
@@ -141,6 +141,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a18b2327bb7fc63679f3e3abe326c8ae2" id="r_a18b2327bb7fc63679f3e3abe326c8ae2"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d26/classcourse__modinfo.html#a18b2327bb7fc63679f3e3abe326c8ae2">purge_course_module_cache</a> (int $courseid, int $cmid)</td></tr>
 <tr class="memdesc:a18b2327bb7fc63679f3e3abe326c8ae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Purge the cache of a course module.  <br /></td></tr>
 <tr class="separator:a18b2327bb7fc63679f3e3abe326c8ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a302ec902b4a2cf45d3b1e4e11459e18a" id="r_a302ec902b4a2cf45d3b1e4e11459e18a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d26/classcourse__modinfo.html#a302ec902b4a2cf45d3b1e4e11459e18a">purge_course_modules_cache</a> (int $courseid, array $cmids)</td></tr>
+<tr class="memdesc:a302ec902b4a2cf45d3b1e4e11459e18a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Purge the cache of multiple course modules.  <br /></td></tr>
+<tr class="separator:a302ec902b4a2cf45d3b1e4e11459e18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c169486d360138e2413ab5f0b9bd4eb" id="r_a3c169486d360138e2413ab5f0b9bd4eb"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d26/classcourse__modinfo.html#a3c169486d360138e2413ab5f0b9bd4eb">purge_course_section_cache_by_id</a> (int $courseid, int $sectionid)</td></tr>
 <tr class="memdesc:a3c169486d360138e2413ab5f0b9bd4eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Purge the cache of a course section by its id.  <br /></td></tr>
 <tr class="separator:a3c169486d360138e2413ab5f0b9bd4eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1158,6 +1161,57 @@ Static Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a302ec902b4a2cf45d3b1e4e11459e18a" name="a302ec902b4a2cf45d3b1e4e11459e18a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a302ec902b4a2cf45d3b1e4e11459e18a">&#9670;&#160;</a></span>purge_course_modules_cache()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static course_modinfo::purge_course_modules_cache </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$courseid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$cmids</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Purge the cache of multiple course modules. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$courseid</td><td>Course id </td></tr>
+    <tr><td class="paramtype">int[]</td><td class="paramname">$cmids</td><td>List of course module ids </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a3c169486d360138e2413ab5f0b9bd4eb" name="a3c169486d360138e2413ab5f0b9bd4eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c169486d360138e2413ab5f0b9bd4eb">&#9670;&#160;</a></span>purge_course_section_cache_by_id()</h2>
 
@@ -1334,7 +1388,7 @@ course_modinfo::clear_instance_cache() </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 5 2023 02:47:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Nov 12 2023 02:40:05 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

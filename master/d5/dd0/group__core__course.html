@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20231102) (e4d1369475e)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20231110) (14414fe253f)</div>
   </td>
  </tr>
  </tbody>
@@ -846,9 +846,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gab4626e903b3b9002477b50c7912a6f78" id="r_gab4626e903b3b9002477b50c7912a6f78"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#gab4626e903b3b9002477b50c7912a6f78">set_coursemodule_name</a> ($id, $name)</td></tr>
 <tr class="memdesc:gab4626e903b3b9002477b50c7912a6f78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the course module name.  <br /></td></tr>
 <tr class="separator:gab4626e903b3b9002477b50c7912a6f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad04125882c115845ca0d0ab5331ac32d" id="r_gad04125882c115845ca0d0ab5331ac32d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#gad04125882c115845ca0d0ab5331ac32d">set_coursemodule_visible</a> ($id, $visible, $visibleoncoursepage=1)</td></tr>
-<tr class="memdesc:gad04125882c115845ca0d0ab5331ac32d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the visibility of a module and inherent properties.  <br /></td></tr>
-<tr class="separator:gad04125882c115845ca0d0ab5331ac32d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5d157658686364e7c497e1f05970e68e" id="r_ga5d157658686364e7c497e1f05970e68e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#ga5d157658686364e7c497e1f05970e68e">set_coursemodule_visible</a> ($id, $visible, $visibleoncoursepage=1, bool $rebuildcache=true)</td></tr>
+<tr class="memdesc:ga5d157658686364e7c497e1f05970e68e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the visibility of a module and inherent properties.  <br /></td></tr>
+<tr class="separator:ga5d157658686364e7c497e1f05970e68e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae9cc7ed48bde8dcc4664eb1770cc036a" id="r_gae9cc7ed48bde8dcc4664eb1770cc036a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dd0/group__core__course.html#gae9cc7ed48bde8dcc4664eb1770cc036a">set_downloadcontent</a> (int $id, bool $downloadcontent)</td></tr>
 <tr class="memdesc:gae9cc7ed48bde8dcc4664eb1770cc036a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set downloadcontent value to course module.  <br /></td></tr>
 <tr class="separator:gae9cc7ed48bde8dcc4664eb1770cc036a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -8258,8 +8258,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 
 </div>
 </div>
-<a id="gad04125882c115845ca0d0ab5331ac32d" name="gad04125882c115845ca0d0ab5331ac32d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad04125882c115845ca0d0ab5331ac32d">&#9670;&#160;</a></span>set_coursemodule_visible()</h2>
+<a id="ga5d157658686364e7c497e1f05970e68e" name="ga5d157658686364e7c497e1f05970e68e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5d157658686364e7c497e1f05970e68e">&#9670;&#160;</a></span>set_coursemodule_visible()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -8280,7 +8280,13 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$visibleoncoursepage</em> = <code>1</code>&#160;</td>
+          <td class="paramname"><em>$visibleoncoursepage</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$rebuildcache</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -8293,11 +8299,13 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 <p>Set the visibility of a module and inherent properties. </p>
 <p>Note: Do not forget to trigger the event core::event::course_module_updated as it needs to be triggered manually, refer to <a class="el" href="../../">core::event::course_module_updated::create_from_cm()</a>.</p>
 <p>From 2.4 the parameter $prevstateoverrides has been removed, the logic it triggered has been moved to <a class="el" href="../../d5/dd0/group__core__course.html#ga2d73538bddc0878f479736889d0270c7">set_section_visible()</a> which was the only place from which the parameter was used.</p>
+<p>If $rebuildcache is set to false, the calling code is responsible for ensuring the cache is purged and rebuilt as appropriate. Consider using this if set_coursemodule_visible is called multiple times (e.g. in a loop).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$id</td><td>of the module </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$visible</td><td>state of the module </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$visibleoncoursepage</td><td>state of the module on the course page </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$rebuildcache</td><td>If true (default), perform a partial cache purge and rebuild. </td></tr>
   </table>
   </dd>
 </dl>
@@ -8763,7 +8771,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 5 2023 03:08:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Nov 12 2023 02:56:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
