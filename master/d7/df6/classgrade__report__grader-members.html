@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20231110) (14414fe253f)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20231116) (b58d1fd4e20)</div>
   </td>
  </tr>
  </tbody>
@@ -101,6 +101,8 @@ $(function() {
   <tr class="odd"><td class="entry"><a class="el" href="../../da/dd4/classgrade__report.html#ac8501735aa6d5db79360f94236087695">calculate_average</a>(grade_item $gradeitem, array $info)</td><td class="entry"><a class="el" href="../../da/dd4/classgrade__report.html">grade_report</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../df/df6/classgrade__report__grader.html#af13775ceac95f1f34fc5cdfbd8c38a3c">do_process_action</a>($target, $action, $courseid=null)</td><td class="entry"><a class="el" href="../../df/df6/classgrade__report__grader.html">grade_report_grader</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../df/df6/classgrade__report__grader.html#abeaa8d50a171fa61274eca90bc0dc96d">filter_collapsed_categories</a>($courseid, $collapsed)</td><td class="entry"><a class="el" href="../../df/df6/classgrade__report__grader.html">grade_report_grader</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../df/df6/classgrade__report__grader.html#a87cf7547165817e8a52fc8adc0fcf333">format_average_cell</a>(grade_item $gradeitem, ?array $aggr=null, ?bool $shownumberofgrades=null)</td><td class="entry"><a class="el" href="../../df/df6/classgrade__report__grader.html">grade_report_grader</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../da/dd4/classgrade__report.html#ab686adb0e19412b5143c3ad11b49d357">format_averages</a>(array $ungradedcounts)</td><td class="entry"><a class="el" href="../../da/dd4/classgrade__report.html">grade_report</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../da/dd4/classgrade__report.html#a9be66f376b92cf43a7aaf0e51d252c6f">get_additional_context</a>(context_course $context, int $courseid, array $element, grade_plugin_return $gpr, string $mode, stdClass $templatecontext, bool $otherplugins=false)</td><td class="entry"><a class="el" href="../../da/dd4/classgrade__report.html">grade_report</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../df/df6/classgrade__report__grader.html#a720aeee0c0ffac68ad56172125704ecf">get_allgradeitems</a>()</td><td class="entry"><a class="el" href="../../df/df6/classgrade__report__grader.html">grade_report_grader</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../df/df6/classgrade__report__grader.html#a0dbdceb829d29920749fe790498174b5">get_category_view_mode_link</a>(moodle_url $url, string $title, string $action, bool $active=false)</td><td class="entry"><a class="el" href="../../df/df6/classgrade__report__grader.html">grade_report_grader</a></td><td class="entry"></td></tr>
@@ -140,12 +142,13 @@ $(function() {
   <tr class="even"><td class="entry"><a class="el" href="../../da/dd4/classgrade__report.html#a722b5d92e25661d6e68f53574fac8daf">set_pref</a>($pref, $pref_value='default', $itemid=null)</td><td class="entry"><a class="el" href="../../da/dd4/classgrade__report.html">grade_report</a></td><td class="entry"></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="../../da/dd4/classgrade__report.html#a514c305126cd4ef6a87b1cc2d0effe52">setup_groups</a>()</td><td class="entry"><a class="el" href="../../da/dd4/classgrade__report.html">grade_report</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../da/dd4/classgrade__report.html#ad29290fc3aab2bc324648eb3861c2c0b">setup_users</a>()</td><td class="entry"><a class="el" href="../../da/dd4/classgrade__report.html">grade_report</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../da/dd4/classgrade__report.html#ad8a1e24bf5abf31f796823a7c5a99bde">supports_mygrades</a>()</td><td class="entry"><a class="el" href="../../da/dd4/classgrade__report.html">grade_report</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../da/dd4/classgrade__report.html#a9408d6f895346c6ae5246c428c70f62f">ungraded_counts</a>()</td><td class="entry"><a class="el" href="../../da/dd4/classgrade__report.html">grade_report</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../da/dd4/classgrade__report.html#a45ca725d27cf3431a105b92f9507283c">show_only_active</a>()</td><td class="entry"><a class="el" href="../../da/dd4/classgrade__report.html">grade_report</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../da/dd4/classgrade__report.html#ad8a1e24bf5abf31f796823a7c5a99bde">supports_mygrades</a>()</td><td class="entry"><a class="el" href="../../da/dd4/classgrade__report.html">grade_report</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="../../da/dd4/classgrade__report.html#a1e92f74565263286c45766f29061937e">ungraded_counts</a>(bool $grouponly=false, bool $includehiddengrades=false, $showonlyactiveenrol=true)</td><td class="entry"><a class="el" href="../../da/dd4/classgrade__report.html">grade_report</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 12 2023 02:57:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Nov 19 2023 02:45:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

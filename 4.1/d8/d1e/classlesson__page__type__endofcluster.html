@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1.6+ (Build: 20231110) (8ad91140508)</div>
+   <div id="projectbrief">Moodle 4.1.6+ (Build: 20231116) (94ad185d090)</div>
   </td>
  </tr>
  </tbody>
@@ -94,9 +94,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a64715ee265e2ab0ff8e7ad931f3a10a9" id="r_a64715ee265e2ab0ff8e7ad931f3a10a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/classlesson__page.html#a64715ee265e2ab0ff8e7ad931f3a10a9">check_answer</a> ()</td></tr>
 <tr class="memdesc:a64715ee265e2ab0ff8e7ad931f3a10a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method MUST be overridden by all question page types, or page types that wish to score a page.  <br /></td></tr>
 <tr class="separator:a64715ee265e2ab0ff8e7ad931f3a10a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09e44e2e8a8e9ba0eb57bd275922e18e" id="r_a09e44e2e8a8e9ba0eb57bd275922e18e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/classlesson__page.html#a09e44e2e8a8e9ba0eb57bd275922e18e">create_answers</a> ($<a class="el" href="../../dc/d90/classlesson__page.html#a8e733bf5f0882d172e6804e5e6c78ca7">properties</a>)</td></tr>
-<tr class="memdesc:a09e44e2e8a8e9ba0eb57bd275922e18e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates answers within the database for this <a class="el" href="../../dc/d90/classlesson__page.html">lesson_page</a>.  <br /></td></tr>
-<tr class="separator:a09e44e2e8a8e9ba0eb57bd275922e18e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6f795a8eb16bed79947d09035ec59fc" id="r_ae6f795a8eb16bed79947d09035ec59fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1e/classlesson__page__type__endofcluster.html#ae6f795a8eb16bed79947d09035ec59fc">create_answers</a> ($<a class="el" href="../../dc/d90/classlesson__page.html#a8e733bf5f0882d172e6804e5e6c78ca7">properties</a>)</td></tr>
+<tr class="memdesc:ae6f795a8eb16bed79947d09035ec59fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates answers within the database for this end of cluster page.  <br /></td></tr>
+<tr class="separator:ae6f795a8eb16bed79947d09035ec59fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac133e1602510daa11d8a274e0528ef7e" id="r_ac133e1602510daa11d8a274e0528ef7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d90/classlesson__page.html#ac133e1602510daa11d8a274e0528ef7e">delete</a> ()</td></tr>
 <tr class="memdesc:ac133e1602510daa11d8a274e0528ef7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a <a class="el" href="../../dc/d90/classlesson__page.html">lesson_page</a> from the database as well as any associated records.  <br /></td></tr>
 <tr class="separator:ac133e1602510daa11d8a274e0528ef7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -573,32 +573,24 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$properties</b></
 
 </div>
 </div>
-<a id="a09e44e2e8a8e9ba0eb57bd275922e18e" name="a09e44e2e8a8e9ba0eb57bd275922e18e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09e44e2e8a8e9ba0eb57bd275922e18e">&#9670;&#160;</a></span>create_answers()</h2>
+<a id="ae6f795a8eb16bed79947d09035ec59fc" name="ae6f795a8eb16bed79947d09035ec59fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6f795a8eb16bed79947d09035ec59fc">&#9670;&#160;</a></span>create_answers()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">lesson_page::create_answers </td>
+          <td class="memname">lesson_page_type_endofcluster::create_answers </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>$properties</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Creates answers within the database for this <a class="el" href="../../dc/d90/classlesson__page.html">lesson_page</a>. </p>
-<p>Usually only ever called when creating a new page instance </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Creates answers within the database for this end of cluster page. </p>
+<p>Usually only ever called when creating a new page instance. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">object</td><td class="paramname">$properties</td><td></td></tr>
   </table>
@@ -611,7 +603,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$properties</b></
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../da/ddd/classlesson__page__type__essay.html#ade66ef4c4fcfe785ffaeafea62051bec">lesson_page_type_essay</a>, <a class="el" href="../../d9/d1e/classlesson__page__type__matching.html#ae26e60526dd7ba6fb0e2e3f7da832576">lesson_page_type_matching</a>, <a class="el" href="../../d6/d37/classlesson__page__type__numerical.html#ad1db10ff86948fd5cb22f2fb56ed9394">lesson_page_type_numerical</a>, and <a class="el" href="../../d3/dbb/classlesson__page__type__shortanswer.html#ae7a34e57092122ce3037faa3341e05a0">lesson_page_type_shortanswer</a>.</p>
+<p>Reimplemented from <a class="el" href="../../dc/d90/classlesson__page.html#a09e44e2e8a8e9ba0eb57bd275922e18e">lesson_page</a>.</p>
 
 </div>
 </div>
@@ -2165,7 +2157,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$properties</b></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 12 2023 02:41:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Nov 19 2023 02:34:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

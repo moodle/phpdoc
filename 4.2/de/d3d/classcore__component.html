@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2.3+ (Build: 20231110) (d7e3b07082b)</div>
+   <div id="projectbrief">Moodle 4.2.3+ (Build: 20231116) (3790c0a8fe2)</div>
   </td>
  </tr>
  </tbody>
@@ -169,9 +169,9 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$plugintypes<
 <tr class="memitem:a57d851c9f9d5ff1c390c0448307d6b8e" id="r_a57d851c9f9d5ff1c390c0448307d6b8e"><td class="memItemLeft" align="right" valign="top">static array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d3d/classcore__component.html#a57d851c9f9d5ff1c390c0448307d6b8e">$psr0namespaces</a></td></tr>
 <tr class="memdesc:a57d851c9f9d5ff1c390c0448307d6b8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">associative array of PSR-0 namespaces and corresponding paths.  <br /></td></tr>
 <tr class="separator:a57d851c9f9d5ff1c390c0448307d6b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17a60a560486304c5e70ecabba2f086f" id="r_a17a60a560486304c5e70ecabba2f086f"><td class="memItemLeft" align="right" valign="top">static array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d3d/classcore__component.html#a17a60a560486304c5e70ecabba2f086f">$psr4namespaces</a></td></tr>
-<tr class="memdesc:a17a60a560486304c5e70ecabba2f086f"><td class="mdescLeft">&#160;</td><td class="mdescRight">associative array of PRS-4 namespaces and corresponding paths.  <br /></td></tr>
-<tr class="separator:a17a60a560486304c5e70ecabba2f086f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f30bb68dbba50853ea298b8d67998bf" id="r_a0f30bb68dbba50853ea298b8d67998bf"><td class="memItemLeft" align="right" valign="top">static array&lt; string|array&lt; string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d3d/classcore__component.html#a0f30bb68dbba50853ea298b8d67998bf">$psr4namespaces</a></td></tr>
+<tr class="memdesc:a0f30bb68dbba50853ea298b8d67998bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">associative array of PRS-4 namespaces and corresponding paths.  <br /></td></tr>
+<tr class="separator:a0f30bb68dbba50853ea298b8d67998bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41017ef9ae1ddcca9211c41904de21a5" id="r_a41017ef9ae1ddcca9211c41904de21a5"><td class="memItemLeft" align="right" valign="top"><a id="a41017ef9ae1ddcca9211c41904de21a5" name="a41017ef9ae1ddcca9211c41904de21a5"></a>
 static array&#160;</td><td class="memItemRight" valign="bottom"><b>$subplugins</b> = null</td></tr>
 <tr class="memdesc:a41017ef9ae1ddcca9211c41904de21a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">subplugins <br /></td></tr>
@@ -817,8 +817,8 @@ static int float&#160;</td><td class="memItemRight" valign="bottom"><b>$version<
 
 </div>
 </div>
-<a id="a17a60a560486304c5e70ecabba2f086f" name="a17a60a560486304c5e70ecabba2f086f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17a60a560486304c5e70ecabba2f086f">&#9670;&#160;</a></span>$psr4namespaces</h2>
+<a id="a0f30bb68dbba50853ea298b8d67998bf" name="a0f30bb68dbba50853ea298b8d67998bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f30bb68dbba50853ea298b8d67998bf">&#9670;&#160;</a></span>$psr4namespaces</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -827,7 +827,7 @@ static int float&#160;</td><td class="memItemRight" valign="bottom"><b>$version<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">array core_component::$psr4namespaces</td>
+          <td class="memname">array&lt;string|array&lt;string&gt; &gt; core_component::$psr4namespaces</td>
         </tr>
       </table>
   </td>
@@ -836,7 +836,7 @@ static int float&#160;</td><td class="memItemRight" valign="bottom"><b>$version<
   </tr>
 </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= array(</div>
+<b>Initial value:</b><div class="fragment"><div class="line">= [</div>
 <div class="line">        <span class="stringliteral">&#39;MaxMind&#39;</span> =&gt; <span class="stringliteral">&#39;lib/maxmind/MaxMind&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;GeoIp2&#39;</span> =&gt; <span class="stringliteral">&#39;lib/maxmind/GeoIp2&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;Sabberworm\\CSS&#39;</span> =&gt; <span class="stringliteral">&#39;lib/php-css-parser&#39;</span>,</div>
@@ -855,13 +855,16 @@ static int float&#160;</td><td class="memItemRight" valign="bottom"><b>$version<
 <div class="line">        <span class="stringliteral">&#39;MyCLabs\\Enum&#39;</span> =&gt; <span class="stringliteral">&#39;lib/php-enum/src&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;PhpXmlRpc&#39;</span> =&gt; <span class="stringliteral">&#39;lib/phpxmlrpc&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;Psr\\Http\\Client&#39;</span> =&gt; <span class="stringliteral">&#39;lib/psr/http-client/src&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;Psr\\Http\\Factory&#39;</span> =&gt; <span class="stringliteral">&#39;lib/psr/http-factory/src&#39;</span>,</div>
-<div class="line">        <span class="stringliteral">&#39;Psr\\Http\\Message&#39;</span> =&gt; <span class="stringliteral">&#39;lib/psr/http-message/src&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;Psr\\Http\\Message&#39;</span> =&gt; [</div>
+<div class="line">            <span class="stringliteral">&#39;lib/psr/http-message/src&#39;</span>,</div>
+<div class="line">            <span class="stringliteral">&#39;lib/psr/http-factory/src&#39;</span>,</div>
+<div class="line">        ],</div>
+<div class="line">        <span class="stringliteral">&#39;Psr\\EventDispatcher&#39;</span> =&gt; <span class="stringliteral">&#39;lib/psr/event-dispatcher/src&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;GuzzleHttp\\Psr7&#39;</span> =&gt; <span class="stringliteral">&#39;lib/guzzlehttp/psr7/src&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;GuzzleHttp\\Promise&#39;</span> =&gt; <span class="stringliteral">&#39;lib/guzzlehttp/promises/src&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;GuzzleHttp&#39;</span> =&gt; <span class="stringliteral">&#39;lib/guzzlehttp/guzzle/src&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;Kevinrob\\GuzzleCache&#39;</span> =&gt; <span class="stringliteral">&#39;lib/guzzlehttp/kevinrob/guzzlecache/src&#39;</span>,</div>
-<div class="line">    )</div>
+<div class="line">    ]</div>
 </div><!-- fragment -->
 <p>associative array of PRS-4 namespaces and corresponding paths. </p>
 
@@ -873,7 +876,7 @@ static int float&#160;</td><td class="memItemRight" valign="bottom"><b>$version<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 12 2023 02:45:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Nov 19 2023 02:37:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
