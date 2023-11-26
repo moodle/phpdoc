@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20231116) (b58d1fd4e20)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20231124) (6374475dc3c)</div>
   </td>
  </tr>
  </tbody>
@@ -435,9 +435,9 @@ Functions</h2></td></tr>
 <tr class="separator:ga7bc8eac322517d09a421157e968f2b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga26430c68e9343ac3ce7e538b45260da7" id="r_ga26430c68e9343ac3ce7e538b45260da7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d74/group__mod__feedback.html#ga26430c68e9343ac3ce7e538b45260da7">feedback_save_guest_values</a> ()</td></tr>
 <tr class="separator:ga26430c68e9343ac3ce7e538b45260da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga31117cf3c6d17e77d863de8edcebe9c7" id="r_ga31117cf3c6d17e77d863de8edcebe9c7"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d74/group__mod__feedback.html#ga31117cf3c6d17e77d863de8edcebe9c7">feedback_save_tmp_values</a> ($feedbackcompletedtmp, $feedbackcompleted)</td></tr>
-<tr class="memdesc:ga31117cf3c6d17e77d863de8edcebe9c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">this saves the temporary saved values permanently  <br /></td></tr>
-<tr class="separator:ga31117cf3c6d17e77d863de8edcebe9c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabbfec02790e055e182f555656c20bff0" id="r_gabbfec02790e055e182f555656c20bff0"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d74/group__mod__feedback.html#gabbfec02790e055e182f555656c20bff0">feedback_save_tmp_values</a> ($feedbackcompletedtmp, ?stdClass $feedbackcompleted=null)</td></tr>
+<tr class="memdesc:gabbfec02790e055e182f555656c20bff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">this saves the temporary saved values permanently  <br /></td></tr>
+<tr class="separator:gabbfec02790e055e182f555656c20bff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6dfe105aa4576fe55c7e24c30855c754" id="r_ga6dfe105aa4576fe55c7e24c30855c754"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d74/group__mod__feedback.html#ga6dfe105aa4576fe55c7e24c30855c754">feedback_save_values</a> ()</td></tr>
 <tr class="separator:ga6dfe105aa4576fe55c7e24c30855c754"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafa4f21771fcb1a0ac8107ac871772887" id="r_gafa4f21771fcb1a0ac8107ac871772887"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d74/group__mod__feedback.html#gafa4f21771fcb1a0ac8107ac871772887">feedback_scale_used</a> ()</td></tr>
@@ -3224,8 +3224,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 
 </div>
 </div>
-<a id="ga31117cf3c6d17e77d863de8edcebe9c7" name="ga31117cf3c6d17e77d863de8edcebe9c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga31117cf3c6d17e77d863de8edcebe9c7">&#9670;&#160;</a></span>feedback_save_tmp_values()</h2>
+<a id="gabbfec02790e055e182f555656c20bff0" name="gabbfec02790e055e182f555656c20bff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabbfec02790e055e182f555656c20bff0">&#9670;&#160;</a></span>feedback_save_tmp_values()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3239,8 +3239,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$feedbackcompleted</em>&#160;</td>
+          <td class="paramtype">?stdClass&#160;</td>
+          <td class="paramname"><em>$feedbackcompleted</em> = <code>null</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -3254,7 +3254,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">object</td><td class="paramname">$feedbackcompletedtmp</td><td>the temporary completed </td></tr>
-    <tr><td class="paramtype">object</td><td class="paramname">$feedbackcompleted</td><td>the target completed </td></tr>
+    <tr><td class="paramtype">stdClass&#160;|&#160;null</td><td class="paramname">$feedbackcompleted</td><td>the target completed </td></tr>
   </table>
   </dd>
 </dl>
@@ -4199,7 +4199,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 19 2023 02:44:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Nov 26 2023 02:42:05 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

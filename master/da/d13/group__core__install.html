@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20231116) (b58d1fd4e20)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20231124) (6374475dc3c)</div>
   </td>
  </tr>
  </tbody>
@@ -1000,12 +1000,15 @@ Functions</h2></td></tr>
 <p>Each upgrade step has a fixed structure, that can be summarised as follows:</p>
 <p>if ($oldversion &lt; XXXXXXXXXX.XX) { // Explanation of the update step, linking to issue in the Tracker if necessary upgrade_set_timeout(XX); // Optional for big tasks // Code to execute goes here, usually the XMLDB Editor will // help you here. See <a href="https://moodledev.io/general/development/tools/xmldb" class="el externalurl"></a>. upgrade_main_savepoint(true, XXXXXXXXXX.XX); }</p>
 <p>All plugins within <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> (modules, blocks, reports...) support the existence of their own upgrade.php file, using the "Frankenstyle" component name as defined at <a href="https://moodledev.io/general/development/policies/codingstyle/frankenstyle" class="el externalurl"></a>, for example:</p><ul>
-<li><a class="el" href="../../#gacca69703b8f5bad61afd0a4031d6a677">xmldb_page_upgrade($oldversion)</a>. (modules don't require the plugintype ("mod_") to be used.</li>
-<li><a class="el" href="../../d4/ded/group__auth__manual.html#gaa544352ec504d681dec483767a5c4a89">xmldb_auth_manual_upgrade($oldversion)</a>.</li>
-<li><a class="el" href="../../d3/db3/group__workshopform__accumulative.html#ga8693abd970ca21bd6c529b6e5652ad5b">xmldb_workshopform_accumulative_upgrade($oldversion)</a>.</li>
+<li>{<dl class="section see"><dt>See also</dt><dd>xmldb_page_upgrade($oldversion)}. (<a class="el" href="../../dc/dd2/group__modules.html">::h5peditor::h5peditor modules::h5peditor::h5peditor</a> don't require the <a class="el" href="../../de/d84/group__plugintype.html">plugintype</a> ("mod_") to be used.</dd></dl>
+</li>
+<li>{<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d4/ded/group__auth__manual.html#gaa544352ec504d681dec483767a5c4a89" title="Function to upgrade auth_manual.">xmldb_auth_manual_upgrade</a>($oldversion)}.</dd></dl>
+</li>
+<li>{<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d3/db3/group__workshopform__accumulative.html#ga8693abd970ca21bd6c529b6e5652ad5b" title="Performs upgrade of the database structure and data.">xmldb_workshopform_accumulative_upgrade</a>($oldversion)}.</dd></dl>
+</li>
 <li>....</li>
 </ul>
-<p>In order to keep the contents of this file reduced, it's allowed to create some helper functions to be used here in the <a class="el" href="../../">upgradelib.php</a> file at the same directory. Note that such a file must be manually included from upgrade.php, and there are some restrictions about what can be used within it.</p>
+<p>In order to keep the contents of this file reduced, it's allowed to create some helper functions to be used here in the {</p><dl class="section see"><dt>See also</dt><dd>upgradelib.php} file at the same directory. Note that such a file must be manually included from upgrade.php, and there are some restrictions about what can be used within it.</dd></dl>
 <p>For more information, take a look to the documentation available:</p><ul>
 <li>Data definition API: <a href="https://moodledev.io/docs/apis/core/dml/ddl" class="el externalurl"></a></li>
 <li>Upgrade API: <a href="https://moodledev.io/docs/guides/upgrade" class="el externalurl"></a></li>
@@ -1028,7 +1031,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 19 2023 02:44:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Nov 26 2023 02:42:05 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1.6+ (Build: 20231116) (94ad185d090)</div>
+   <div id="projectbrief">Moodle 4.1.6+ (Build: 20231124) (b1bb5671df7)</div>
   </td>
  </tr>
  </tbody>
@@ -268,9 +268,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ae934f24c6e3dd5d7d4da17f401b8f0f0" id="r_ae934f24c6e3dd5d7d4da17f401b8f0f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df9/classcachestore__file.html#ae934f24c6e3dd5d7d4da17f401b8f0f0">glob_keys_pattern</a> ($prefix='')</td></tr>
 <tr class="memdesc:ae934f24c6e3dd5d7d4da17f401b8f0f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a pattern suitable for use with glob to find all keys in the cache.  <br /></td></tr>
 <tr class="separator:ae934f24c6e3dd5d7d4da17f401b8f0f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9af6660ce1d6c3be1369d56c2d511ed6" id="r_a9af6660ce1d6c3be1369d56c2d511ed6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df9/classcachestore__file.html#a9af6660ce1d6c3be1369d56c2d511ed6">prep_data_after_read</a> ($data)</td></tr>
-<tr class="memdesc:a9af6660ce1d6c3be1369d56c2d511ed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepares the data it has been read from the cache.  <br /></td></tr>
-<tr class="separator:a9af6660ce1d6c3be1369d56c2d511ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add4e07eb4c99cd44a7d5e27f1b42b0db" id="r_add4e07eb4c99cd44a7d5e27f1b42b0db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df9/classcachestore__file.html#add4e07eb4c99cd44a7d5e27f1b42b0db">prep_data_after_read</a> ($data, $path)</td></tr>
+<tr class="memdesc:add4e07eb4c99cd44a7d5e27f1b42b0db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepares the data it has been read from the cache.  <br /></td></tr>
+<tr class="separator:add4e07eb4c99cd44a7d5e27f1b42b0db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3394972b3c697c65ec857c827ec269a3" id="r_a3394972b3c697c65ec857c827ec269a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df9/classcachestore__file.html#a3394972b3c697c65ec857c827ec269a3">prep_data_before_save</a> ($data)</td></tr>
 <tr class="memdesc:a3394972b3c697c65ec857c827ec269a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepares data to be stored in a file.  <br /></td></tr>
 <tr class="separator:a3394972b3c697c65ec857c827ec269a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1653,8 +1653,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$prescan</b> = false<
 
 </div>
 </div>
-<a id="a9af6660ce1d6c3be1369d56c2d511ed6" name="a9af6660ce1d6c3be1369d56c2d511ed6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9af6660ce1d6c3be1369d56c2d511ed6">&#9670;&#160;</a></span>prep_data_after_read()</h2>
+<a id="add4e07eb4c99cd44a7d5e27f1b42b0db" name="add4e07eb4c99cd44a7d5e27f1b42b0db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add4e07eb4c99cd44a7d5e27f1b42b0db">&#9670;&#160;</a></span>prep_data_after_read()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1666,8 +1666,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$prescan</b> = false<
           <td class="memname">cachestore_file::prep_data_after_read </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$data</em></td><td>)</td>
+          <td class="paramname"><em>$data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -1682,18 +1692,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$prescan</b> = false<
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$data</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$path</td><td></td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">mixed</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2411,7 +2416,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$prescan</b> = false<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 19 2023 02:33:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Nov 26 2023 02:31:21 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
