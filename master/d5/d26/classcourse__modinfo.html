@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20231124) (6374475dc3c)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20231201) (abba174fe12)</div>
   </td>
  </tr>
  </tbody>
@@ -463,14 +463,14 @@ Static Protected Attributes</h2></td></tr>
 <p>(Does not include information that is already cached in some other way.)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>Course object (must contain fields </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>Course object (must contain fields id and cacherev) </td></tr>
     <tr><td class="paramtype">boolean</td><td class="paramname">$usecache</td><td>use cached section info if exists, use true for partial course rebuild </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array</td><td>Information about sections, indexed by section number (not id) </td></tr>
+    <tr><td class="paramname">array</td><td>Information about sections, indexed by section id (not number) </td></tr>
   </table>
   </dd>
 </dl>
@@ -503,7 +503,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>This method can not be used anymore. </p>
 <dl class="section see"><dt>See also</dt><dd>course_modinfo::build_course_cache() </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000768">Deprecated:</a></b></dt><dd>since 2.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000769">Deprecated:</a></b></dt><dd>since 2.6 </dd></dl>
 
 </div>
 </div>
@@ -1427,7 +1427,7 @@ course_modinfo::clear_instance_cache() </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 26 2023 02:42:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Dec 3 2023 02:42:36 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

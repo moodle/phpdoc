@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20231124) (6374475dc3c)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20231201) (abba174fe12)</div>
   </td>
  </tr>
  </tbody>
@@ -113,9 +113,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a323f7275856de91379191acb2ca36a9a" id="r_a323f7275856de91379191acb2ca36a9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/daf/classcore__reportbuilder_1_1local_1_1entities_1_1user.html#a323f7275856de91379191acb2ca36a9a">get_identity_column</a> (string $identityfield)</td></tr>
 <tr class="memdesc:a323f7275856de91379191acb2ca36a9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns column that corresponds to the given identity field, profile field identifiers will be converted to those used by the {.  <br /></td></tr>
 <tr class="separator:a323f7275856de91379191acb2ca36a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e6cc2848a3fa6e6528ba02ee444198d" id="r_a2e6cc2848a3fa6e6528ba02ee444198d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/daf/classcore__reportbuilder_1_1local_1_1entities_1_1user.html#a2e6cc2848a3fa6e6528ba02ee444198d">get_identity_columns</a> (<a class="el" href="../../d1/d90/classcore_1_1context.html">context</a> $<a class="el" href="../../d1/d90/classcore_1_1context.html">context</a>, array $excluding=[])</td></tr>
+<tr class="memdesc:a2e6cc2848a3fa6e6528ba02ee444198d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns columns that correspond to the site configured identity fields.  <br /></td></tr>
+<tr class="separator:a2e6cc2848a3fa6e6528ba02ee444198d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a617bdf5a8358d36ab51b9ad8d1206777" id="r_a617bdf5a8358d36ab51b9ad8d1206777"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/daf/classcore__reportbuilder_1_1local_1_1entities_1_1user.html#a617bdf5a8358d36ab51b9ad8d1206777">get_identity_filter</a> (string $identityfield)</td></tr>
 <tr class="memdesc:a617bdf5a8358d36ab51b9ad8d1206777"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns filter that corresponds to the given identity field, profile field identifiers will be converted to those used by the {.  <br /></td></tr>
 <tr class="separator:a617bdf5a8358d36ab51b9ad8d1206777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa46c3d97ed1dd5fdb6af7eebf75c996" id="r_afa46c3d97ed1dd5fdb6af7eebf75c996"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/daf/classcore__reportbuilder_1_1local_1_1entities_1_1user.html#afa46c3d97ed1dd5fdb6af7eebf75c996">get_identity_filters</a> (<a class="el" href="../../d1/d90/classcore_1_1context.html">context</a> $<a class="el" href="../../d1/d90/classcore_1_1context.html">context</a>, array $excluding=[])</td></tr>
+<tr class="memdesc:afa46c3d97ed1dd5fdb6af7eebf75c996"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns filters that correspond to the site configured identity fields.  <br /></td></tr>
+<tr class="separator:afa46c3d97ed1dd5fdb6af7eebf75c996"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7e15d03f1eb67d24ab2623a8d54b29d" id="r_aa7e15d03f1eb67d24ab2623a8d54b29d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dba/classcore__reportbuilder_1_1local_1_1entities_1_1base.html#aa7e15d03f1eb67d24ab2623a8d54b29d">get_joins</a> ()</td></tr>
 <tr class="memdesc:aa7e15d03f1eb67d24ab2623a8d54b29d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return entity joins.  <br /></td></tr>
 <tr class="separator:aa7e15d03f1eb67d24ab2623a8d54b29d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -920,6 +926,49 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a2e6cc2848a3fa6e6528ba02ee444198d" name="a2e6cc2848a3fa6e6528ba02ee444198d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e6cc2848a3fa6e6528ba02ee444198d">&#9670;&#160;</a></span>get_identity_columns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_reportbuilder\local\entities\user::get_identity_columns </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d90/classcore_1_1context.html">context</a>&#160;</td>
+          <td class="paramname"><em>$context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$excluding</em> = <code>[]</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns columns that correspond to the site configured identity fields. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">context</td><td class="paramname">$context</td><td></td></tr>
+    <tr><td class="paramtype">string[]</td><td class="paramname">$excluding</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">column[]</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a617bdf5a8358d36ab51b9ad8d1206777" name="a617bdf5a8358d36ab51b9ad8d1206777"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a617bdf5a8358d36ab51b9ad8d1206777">&#9670;&#160;</a></span>get_identity_filter()</h2>
 
@@ -947,6 +996,49 @@ Protected Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">filter</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afa46c3d97ed1dd5fdb6af7eebf75c996" name="afa46c3d97ed1dd5fdb6af7eebf75c996"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa46c3d97ed1dd5fdb6af7eebf75c996">&#9670;&#160;</a></span>get_identity_filters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_reportbuilder\local\entities\user::get_identity_filters </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/d90/classcore_1_1context.html">context</a>&#160;</td>
+          <td class="paramname"><em>$context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array&#160;</td>
+          <td class="paramname"><em>$excluding</em> = <code>[]</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns filters that correspond to the site configured identity fields. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">context</td><td class="paramname">$context</td><td></td></tr>
+    <tr><td class="paramtype">string[]</td><td class="paramname">$excluding</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">filter[]</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1640,7 +1732,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Nov 26 2023 02:43:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Dec 3 2023 02:43:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
