@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20231201) (abba174fe12)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20231207) (a891866cbd1)</div>
   </td>
  </tr>
  </tbody>
@@ -110,9 +110,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a30d5b24a264bb6d66c6df23132e07c35" id="r_a30d5b24a264bb6d66c6df23132e07c35"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d09/classgradeimport__csv__load__data.html#a30d5b24a264bb6d66c6df23132e07c35">import_new_grade_item</a> ($header, $key, $value)</td></tr>
 <tr class="memdesc:a30d5b24a264bb6d66c6df23132e07c35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert the new grade into the grade item buffer table.  <br /></td></tr>
 <tr class="separator:a30d5b24a264bb6d66c6df23132e07c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a599fe3cba090c76fe8d035bb1d47544f" id="r_a599fe3cba090c76fe8d035bb1d47544f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d09/classgradeimport__csv__load__data.html#a599fe3cba090c76fe8d035bb1d47544f">insert_grade_record</a> ($record, $studentid)</td></tr>
-<tr class="memdesc:a599fe3cba090c76fe8d035bb1d47544f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts a record into the grade_import_values table.  <br /></td></tr>
-<tr class="separator:a599fe3cba090c76fe8d035bb1d47544f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9826f6b23a342efb8ad64cc52c2e5ab2" id="r_a9826f6b23a342efb8ad64cc52c2e5ab2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d09/classgradeimport__csv__load__data.html#a9826f6b23a342efb8ad64cc52c2e5ab2">insert_grade_record</a> (stdClass $record, int $studentid, <a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a> $gradeitem)</td></tr>
+<tr class="memdesc:a9826f6b23a342efb8ad64cc52c2e5ab2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts a record into the grade_import_values table.  <br /></td></tr>
+<tr class="separator:a9826f6b23a342efb8ad64cc52c2e5ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91f66f83e8c03541194d70c2e54edd95" id="r_a91f66f83e8c03541194d70c2e54edd95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d09/classgradeimport__csv__load__data.html#a91f66f83e8c03541194d70c2e54edd95">map_user_data_with_value</a> ($mappingidentifier, $value, $header, $map, $key, $courseid, $feedbackgradeid, $verbosescales)</td></tr>
 <tr class="memdesc:a91f66f83e8c03541194d70c2e54edd95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check user mapping.  <br /></td></tr>
 <tr class="separator:a91f66f83e8c03541194d70c2e54edd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -546,8 +546,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$studentid</b></td></t
 
 </div>
 </div>
-<a id="a599fe3cba090c76fe8d035bb1d47544f" name="a599fe3cba090c76fe8d035bb1d47544f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a599fe3cba090c76fe8d035bb1d47544f">&#9670;&#160;</a></span>insert_grade_record()</h2>
+<a id="a9826f6b23a342efb8ad64cc52c2e5ab2" name="a9826f6b23a342efb8ad64cc52c2e5ab2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9826f6b23a342efb8ad64cc52c2e5ab2">&#9670;&#160;</a></span>insert_grade_record()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -558,14 +558,20 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$studentid</b></td></t
         <tr>
           <td class="memname">gradeimport_csv_load_data::insert_grade_record </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">stdClass&#160;</td>
           <td class="paramname"><em>$record</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$studentid</em>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$studentid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a>&#160;</td>
+          <td class="paramname"><em>$gradeitem</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -584,14 +590,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$studentid</b></td></t
 <p>This also adds common record information.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$record</td><td>The grade record being inserted into the database. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$record</td><td>The grade record being inserted into the database. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$studentid</td><td>The student ID. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a></td><td class="paramname">$gradeitem</td><td>Grade item. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">bool|int</td><td>true or insert id on success. Null if the grade value is too high. </td></tr>
+    <tr><td class="paramname">mixed</td><td>true or insert id on success. Null if the grade value is too high or too low or grade item not exist. </td></tr>
   </table>
   </dd>
 </dl>
@@ -918,7 +925,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$studentid</b></td></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 3 2023 02:43:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Dec 10 2023 02:48:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3+ (Build: 20231201) (a418e9e53ae)</div>
+   <div id="projectbrief">Moodle 4.3.1 (Build: 20231211) (fe8d759b175)</div>
   </td>
  </tr>
  </tbody>
@@ -145,6 +145,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>cleanup_metadata</b
 <tr class="memitem:a708c2c32bb554073c66772f9cd82268e" id="r_a708c2c32bb554073c66772f9cd82268e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a708c2c32bb554073c66772f9cd82268e">load_scheduled_tasks_for_component</a> ($componentname)</td></tr>
 <tr class="memdesc:a708c2c32bb554073c66772f9cd82268e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a component name, will load the list of tasks from the scheduled_tasks table for that component.  <br /></td></tr>
 <tr class="separator:a708c2c32bb554073c66772f9cd82268e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66017831758fe5871a3dfb3a293e3ecd" id="r_a66017831758fe5871a3dfb3a293e3ecd"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#a66017831758fe5871a3dfb3a293e3ecd">passthru_via_mtrace</a> (string $command)</td></tr>
+<tr class="memdesc:a66017831758fe5871a3dfb3a293e3ecd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This behaves similar to passthru but filters every line via the mtrace function so it can be post processed.  <br /></td></tr>
+<tr class="separator:a66017831758fe5871a3dfb3a293e3ecd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2135dc09e1f28231e9c166ff96ad255" id="r_ad2135dc09e1f28231e9c166ff96ad255"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d2e/classcore_1_1task_1_1manager.html#ad2135dc09e1f28231e9c166ff96ad255">queue_adhoc_task</a> (<a class="el" href="../../d4/d91/classcore_1_1task_1_1adhoc__task.html">adhoc_task</a> $task, $checkforexisting=false)</td></tr>
 <tr class="memdesc:ad2135dc09e1f28231e9c166ff96ad255"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue an adhoc task to run in the background.  <br /></td></tr>
 <tr class="separator:ad2135dc09e1f28231e9c166ff96ad255"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1401,6 +1404,46 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a66017831758fe5871a3dfb3a293e3ecd" name="a66017831758fe5871a3dfb3a293e3ecd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66017831758fe5871a3dfb3a293e3ecd">&#9670;&#160;</a></span>passthru_via_mtrace()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core\task\manager::passthru_via_mtrace </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>$command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This behaves similar to passthru but filters every line via the mtrace function so it can be post processed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$command</td><td>to run </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad2135dc09e1f28231e9c166ff96ad255" name="ad2135dc09e1f28231e9c166ff96ad255"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad2135dc09e1f28231e9c166ff96ad255">&#9670;&#160;</a></span>queue_adhoc_task()</h2>
 
@@ -2083,7 +2126,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 3 2023 02:40:00 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Dec 10 2023 02:45:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20231201) (abba174fe12)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20231207) (a891866cbd1)</div>
   </td>
  </tr>
  </tbody>
@@ -93,6 +93,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8f426e97f2af461a4f99f7966d1abb2c" id="r_a8f426e97f2af461a4f99f7966d1abb2c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc2/classcore__completion_1_1cm__completion__details.html#a8f426e97f2af461a4f99f7966d1abb2c">is_manual</a> ()</td></tr>
 <tr class="memdesc:a8f426e97f2af461a4f99f7966d1abb2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this activity module instance tracks completion manually.  <br /></td></tr>
 <tr class="separator:a8f426e97f2af461a4f99f7966d1abb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad73bd2824bd5379e64d006636bd71f01" id="r_ad73bd2824bd5379e64d006636bd71f01"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc2/classcore__completion_1_1cm__completion__details.html#ad73bd2824bd5379e64d006636bd71f01">is_overall_complete</a> ()</td></tr>
+<tr class="memdesc:ad73bd2824bd5379e64d006636bd71f01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the overall completion state of this course module should be marked as complete or not.  <br /></td></tr>
+<tr class="separator:ad73bd2824bd5379e64d006636bd71f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60f9755b25fda7be14bd268247648cbd" id="r_a60f9755b25fda7be14bd268247648cbd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc2/classcore__completion_1_1cm__completion__details.html#a60f9755b25fda7be14bd268247648cbd">is_tracked_user</a> ()</td></tr>
 <tr class="memdesc:a60f9755b25fda7be14bd268247648cbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether completion is being tracked for this user.  <br /></td></tr>
 <tr class="separator:a60f9755b25fda7be14bd268247648cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -413,6 +416,32 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$userid</b> = 0</td></
 
 </div>
 </div>
+<a id="ad73bd2824bd5379e64d006636bd71f01" name="ad73bd2824bd5379e64d006636bd71f01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad73bd2824bd5379e64d006636bd71f01">&#9670;&#160;</a></span>is_overall_complete()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_completion\cm_completion_details::is_overall_complete </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns whether the overall completion state of this course module should be marked as complete or not. </p>
+<p>This is based on the completion settings of the course module, so when the course module requires a passing grade, it will only be marked as complete when the user has passed the course module. Otherwise, it will be marked as complete even when the user has failed the course module.</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>True when the module can be marked as completed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a60f9755b25fda7be14bd268247648cbd" name="a60f9755b25fda7be14bd268247648cbd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a60f9755b25fda7be14bd268247648cbd">&#9670;&#160;</a></span>is_tracked_user()</h2>
 
@@ -540,7 +569,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$userid</b> = 0</td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 3 2023 02:43:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Dec 10 2023 02:49:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

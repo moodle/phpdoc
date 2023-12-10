@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1.6+ (Build: 20231201) (76ff7600e4d)</div>
+   <div id="projectbrief">Moodle 4.1.7 (Build: 20231211) (86716dc1201)</div>
   </td>
  </tr>
  </tbody>
@@ -60,6 +60,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="../../dc/d05/classquiz__statistics_1_1task_1_1recalculate-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">quiz_statistics\task\recalculate Class Reference<div class="ingroups"><a class="el" href="../../da/d9e/group__quiz__statistics.html">quiz_statistics</a></div></div></div>
@@ -181,6 +182,16 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab4b1a655983911f764313bf0cfd09e2d" id="r_ab4b1a655983911f764313bf0cfd09e2d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d72/classquiz__statistics_1_1task_1_1recalculate.html#ab4b1a655983911f764313bf0cfd09e2d">instance</a> (int $quizid)</td></tr>
 <tr class="memdesc:ab4b1a655983911f764313bf0cfd09e2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new instance of the task.  <br /></td></tr>
 <tr class="separator:ab4b1a655983911f764313bf0cfd09e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a506250e2ec194d28295e937b6fa7eee3" id="r_a506250e2ec194d28295e937b6fa7eee3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d72/classquiz__statistics_1_1task_1_1recalculate.html#a506250e2ec194d28295e937b6fa7eee3">queue_future_run</a> (int $quizid)</td></tr>
+<tr class="memdesc:a506250e2ec194d28295e937b6fa7eee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue an instance of this task to happen after a delay.  <br /></td></tr>
+<tr class="separator:a506250e2ec194d28295e937b6fa7eee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a70173cee3232e59c9b0f7740fc9ed5f8" id="r_a70173cee3232e59c9b0f7740fc9ed5f8"><td class="memItemLeft" align="right" valign="top"><a id="a70173cee3232e59c9b0f7740fc9ed5f8" name="a70173cee3232e59c9b0f7740fc9ed5f8"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>DELAY</b> = <a class="el" href="../../d0/de1/group__core.html#gac8ced3d58f3912364d2057965f8c292a">HOURSECS</a></td></tr>
+<tr class="memdesc:a70173cee3232e59c9b0f7740fc9ed5f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The time to delay queued runs by, to prevent repeated recalculations. <br /></td></tr>
+<tr class="separator:a70173cee3232e59c9b0f7740fc9ed5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -808,6 +819,47 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a506250e2ec194d28295e937b6fa7eee3" name="a506250e2ec194d28295e937b6fa7eee3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a506250e2ec194d28295e937b6fa7eee3">&#9670;&#160;</a></span>queue_future_run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static quiz_statistics\task\recalculate::queue_future_run </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$quizid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Queue an instance of this task to happen after a delay. </p>
+<p>Multiple events may happen over a short period that require a recalculation. Rather than run the recalculation each time, this will queue a single run of the task for a given quiz, within the delay period.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$quizid</td><td>The quiz to run the recalculation for. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>true of the task was queued. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a60d42beebd8a1709caae1f46ff2eb846" name="a60d42beebd8a1709caae1f46ff2eb846"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a60d42beebd8a1709caae1f46ff2eb846">&#9670;&#160;</a></span>set_blocking()</h2>
 
@@ -1290,7 +1342,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 3 2023 02:33:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Dec 10 2023 02:38:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

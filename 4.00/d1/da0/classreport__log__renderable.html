@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.0</span>
    </div>
-   <div id="projectbrief">Moodle 4.0.11+ (Build: 20231201) (55be12a2213)</div>
+   <div id="projectbrief">Moodle 4.0.12 (Build: 20231211) (b5f4e0ce3dd)</div>
   </td>
  </tr>
  </tbody>
@@ -99,7 +99,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ad3526f5d47b48afadaf54899e22bf060"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return list of edulevel.  <br /></td></tr>
 <tr class="separator:ad3526f5d47b48afadaf54899e22bf060"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4aa9242bcd8b1081dd971fe523b968bb" id="r_a4aa9242bcd8b1081dd971fe523b968bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da0/classreport__log__renderable.html#a4aa9242bcd8b1081dd971fe523b968bb">get_group_list</a> ()</td></tr>
-<tr class="memdesc:a4aa9242bcd8b1081dd971fe523b968bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return list of groups.  <br /></td></tr>
+<tr class="memdesc:a4aa9242bcd8b1081dd971fe523b968bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return list of groups that are used in this course.  <br /></td></tr>
 <tr class="separator:a4aa9242bcd8b1081dd971fe523b968bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affdab74771af3117d51ac0a9eeeacd02" id="r_affdab74771af3117d51ac0a9eeeacd02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da0/classreport__log__renderable.html#affdab74771af3117d51ac0a9eeeacd02">get_origin_options</a> ()</td></tr>
 <tr class="memdesc:affdab74771af3117d51ac0a9eeeacd02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return list of components to show in selector.  <br /></td></tr>
@@ -143,6 +143,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$edulevel</b></td></tr
 int&#160;</td><td class="memItemRight" valign="bottom"><b>$groupid</b></td></tr>
 <tr class="memdesc:a3c53fce9e03718cd129c89d907ecd567"><td class="mdescLeft">&#160;</td><td class="mdescRight">group id <br /></td></tr>
 <tr class="separator:a3c53fce9e03718cd129c89d907ecd567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74ee7a776b4826bff067b5117b650ea5" id="r_a74ee7a776b4826bff067b5117b650ea5"><td class="memItemLeft" align="right" valign="top"><a id="a74ee7a776b4826bff067b5117b650ea5" name="a74ee7a776b4826bff067b5117b650ea5"></a>
+array&#160;</td><td class="memItemRight" valign="bottom"><b>$grouplist</b></td></tr>
+<tr class="memdesc:a74ee7a776b4826bff067b5117b650ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">group ids <br /></td></tr>
+<tr class="separator:a74ee7a776b4826bff067b5117b650ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afaf620cebef9615ecf2325dc9cb4a347" id="r_afaf620cebef9615ecf2325dc9cb4a347"><td class="memItemLeft" align="right" valign="top"><a id="afaf620cebef9615ecf2325dc9cb4a347" name="afaf620cebef9615ecf2325dc9cb4a347"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$logformat</b></td></tr>
 <tr class="memdesc:afaf620cebef9615ecf2325dc9cb4a347"><td class="mdescLeft">&#160;</td><td class="mdescRight">selected log format <br /></td></tr>
@@ -503,7 +507,8 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Return list of groups. </p>
+<p>Return list of groups that are used in this course. </p>
+<p>This is done when groups are used in the course and the user is allowed to see all groups or groups are visible anyway. If groups are used but the mode is separate groups and the user is not allowed to see all groups, the list contains the groups only, where the user is member. If the course uses no groups, the list is empty.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td>list of groups. </td></tr>
@@ -651,7 +656,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 3 2023 02:28:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Dec 10 2023 02:34:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

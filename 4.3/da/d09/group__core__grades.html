@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3+ (Build: 20231201) (a418e9e53ae)</div>
+   <div id="projectbrief">Moodle 4.3.1 (Build: 20231211) (fe8d759b175)</div>
   </td>
  </tr>
  </tbody>
@@ -110,6 +110,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d42/classcore__grades_1_1external_1_1get__enrolled__users__for__selector.html">core_grades\external\get_enrolled_users_for_selector</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db6/classcore__grades_1_1external_1_1get__feedback.html">core_grades\external\get_feedback</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d5e/classcore__grades_1_1external_1_1get__gradable__users.html">core_grades\external\get_gradable_users</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d45/classcore__grades_1_1external_1_1get__grade__tree.html">core_grades\external\get_grade_tree</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,9 +263,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gad74544c1faf5f3e1537881180fcede76" id="r_gad74544c1faf5f3e1537881180fcede76"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d09/group__core__grades.html#gad74544c1faf5f3e1537881180fcede76">get_gradable_users</a> (int $courseid, ?int $groupid=null)</td></tr>
-<tr class="memdesc:gad74544c1faf5f3e1537881180fcede76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a valid list of gradable users in a course.  <br /></td></tr>
-<tr class="separator:gad74544c1faf5f3e1537881180fcede76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga967f52d94481dd7d8077a6a2645ca4fd" id="r_ga967f52d94481dd7d8077a6a2645ca4fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d09/group__core__grades.html#ga967f52d94481dd7d8077a6a2645ca4fd">get_gradable_users</a> (int $courseid, ?int $groupid=null, bool $onlyactiveenrol=false)</td></tr>
+<tr class="memdesc:ga967f52d94481dd7d8077a6a2645ca4fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a valid list of gradable users in a course.  <br /></td></tr>
+<tr class="separator:ga967f52d94481dd7d8077a6a2645ca4fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5df1cf2cd0695c5054492c2a0edbf682" id="r_ga5df1cf2cd0695c5054492c2a0edbf682"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d09/group__core__grades.html#ga5df1cf2cd0695c5054492c2a0edbf682">grade_build_nav</a> ($path, $pagename=null, $id=null)</td></tr>
 <tr class="memdesc:ga5df1cf2cd0695c5054492c2a0edbf682"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function central to gradebook for building and printing the navigation (breadcrumb trail).  <br /></td></tr>
 <tr class="separator:ga5df1cf2cd0695c5054492c2a0edbf682"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -655,8 +657,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>GRADE_UPDATE_OK</b> 
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gad74544c1faf5f3e1537881180fcede76" name="gad74544c1faf5f3e1537881180fcede76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad74544c1faf5f3e1537881180fcede76">&#9670;&#160;</a></span>get_gradable_users()</h2>
+<a id="ga967f52d94481dd7d8077a6a2645ca4fd" name="ga967f52d94481dd7d8077a6a2645ca4fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga967f52d94481dd7d8077a6a2645ca4fd">&#9670;&#160;</a></span>get_gradable_users()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -671,7 +673,13 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>GRADE_UPDATE_OK</b> 
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">?int&#160;</td>
-          <td class="paramname"><em>$groupid</em> = <code>null</code>&#160;</td>
+          <td class="paramname"><em>$groupid</em> = <code>null</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>$onlyactiveenrol</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -686,6 +694,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>GRADE_UPDATE_OK</b> 
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$courseid</td><td>The course ID. </td></tr>
     <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$groupid</td><td>The group ID (optional). </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$onlyactiveenrol</td><td>Include only active enrolments. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2818,7 +2827,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>GRADE_UPDATE_OK</b> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 3 2023 02:38:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Dec 10 2023 02:44:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

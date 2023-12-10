@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20231201) (abba174fe12)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20231207) (a891866cbd1)</div>
   </td>
  </tr>
  </tbody>
@@ -186,6 +186,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a15a5c856d5ca1994799d150b211b8d58" id="r_a15a5c856d5ca1994799d150b211b8d58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a15a5c856d5ca1994799d150b211b8d58">get_renderer</a> (<a class="el" href="../../dc/ded/classmoodle__page.html">moodle_page</a> $page)</td></tr>
 <tr class="memdesc:a15a5c856d5ca1994799d150b211b8d58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns instance of page renderer used by this plugin.  <br /></td></tr>
 <tr class="separator:a15a5c856d5ca1994799d150b211b8d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26b91a05e3cb7813f4f2a1bf9adb1352" id="r_a26b91a05e3cb7813f4f2a1bf9adb1352"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a26b91a05e3cb7813f4f2a1bf9adb1352">get_required_jsfiles</a> ()</td></tr>
+<tr class="memdesc:a26b91a05e3cb7813f4f2a1bf9adb1352"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the required javascript files for the course format.  <br /></td></tr>
+<tr class="separator:a26b91a05e3cb7813f4f2a1bf9adb1352"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6d9320a29b48674923d011142fc15b0" id="r_aa6d9320a29b48674923d011142fc15b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#aa6d9320a29b48674923d011142fc15b0">get_section</a> ($section, $strictness=<a class="el" href="../../d0/de1/group__core.html#gaffc7005a2da386334d76ec5f85ca2d48">IGNORE_MISSING</a>)</td></tr>
 <tr class="memdesc:aa6d9320a29b48674923d011142fc15b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns information about section used in course.  <br /></td></tr>
 <tr class="separator:aa6d9320a29b48674923d011142fc15b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2035,6 +2038,41 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesection</b> = 0
 
 </div>
 </div>
+<a id="a26b91a05e3cb7813f4f2a1bf9adb1352" name="a26b91a05e3cb7813f4f2a1bf9adb1352"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26b91a05e3cb7813f4f2a1bf9adb1352">&#9670;&#160;</a></span>get_required_jsfiles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\base::get_required_jsfiles </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the required javascript files for the course format. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>The list of javascript files required by the course format. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../d1/d92/classformat__topics.html#adf8484a32fffc57eb9d07626d059fb13">format_topics</a>, and <a class="el" href="../../d5/d8d/classformat__weeks.html#ac5f999d1975b115d44861d349571e765">format_weeks</a>.</p>
+
+</div>
+</div>
 <a id="aa6d9320a29b48674923d011142fc15b0" name="aa6d9320a29b48674923d011142fc15b0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa6d9320a29b48674923d011142fc15b0">&#9670;&#160;</a></span>get_section()</h2>
 
@@ -2406,7 +2444,7 @@ course_modinfo::get_section_info_all()</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int&#160;|&#160;stdClass</td><td class="paramname">$section</td><td>Section object from database or just field course_sections.section if null the course view page is returned </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$options</td><td>options for view URL. At the moment core uses: 'navigation' (bool) if true and section has no separate page, the function returns null 'sr' (int) used by multipage formats to specify to which section to return </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$options</td><td>options for view URL. At the moment core uses: 'navigation' (bool) ignored by this format 'sr' (int) ignored by this format </td></tr>
   </table>
   </dd>
 </dl>
@@ -3890,7 +3928,7 @@ course_modinfo::get_section_info_all()</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 3 2023 02:42:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Dec 10 2023 02:48:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

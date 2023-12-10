@@ -25,7 +25,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3+ (Build: 20231201) (a418e9e53ae)</div>
+   <div id="projectbrief">Moodle 4.3.1 (Build: 20231211) (fe8d759b175)</div>
   </td>
  </tr>
  </tbody>
@@ -180,6 +180,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a9be66f376b92cf43a7aaf0e51d252c6f" id="r_a9be66f376b92cf43a7aaf0e51d252c6f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#a9be66f376b92cf43a7aaf0e51d252c6f">get_additional_context</a> (context_course $context, int $courseid, array $element, <a class="el" href="../../da/dcc/classgrade__plugin__return.html">grade_plugin_return</a> $gpr, string $mode, stdClass $templatecontext, bool $otherplugins=false)</td></tr>
 <tr class="memdesc:a9be66f376b92cf43a7aaf0e51d252c6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add additional links specific to plugin.  <br /></td></tr>
 <tr class="separator:a9be66f376b92cf43a7aaf0e51d252c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3360bce3be7023619081dff7c2dc2098" id="r_a3360bce3be7023619081dff7c2dc2098"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#a3360bce3be7023619081dff7c2dc2098">get_gradable_users</a> (int $courseid, ?int $groupid=null)</td></tr>
+<tr class="memdesc:a3360bce3be7023619081dff7c2dc2098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a valid list of gradable users in a course.  <br /></td></tr>
+<tr class="separator:a3360bce3be7023619081dff7c2dc2098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8a1e24bf5abf31f796823a7c5a99bde" id="r_ad8a1e24bf5abf31f796823a7c5a99bde"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dd4/classgrade__report.html#ad8a1e24bf5abf31f796823a7c5a99bde">supports_mygrades</a> ()</td></tr>
 <tr class="memdesc:ad8a1e24bf5abf31f796823a7c5a99bde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows support for being used as a 'Grades' report.  <br /></td></tr>
 <tr class="separator:ad8a1e24bf5abf31f796823a7c5a99bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1017,6 +1020,57 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="../../d6/da8/classmoodle__exception.html" title="Base Moodle Exception class.">moodle_exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3360bce3be7023619081dff7c2dc2098" name="a3360bce3be7023619081dff7c2dc2098"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3360bce3be7023619081dff7c2dc2098">&#9670;&#160;</a></span>get_gradable_users()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static grade_report::get_gradable_users </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>$courseid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int&#160;</td>
+          <td class="paramname"><em>$groupid</em> = <code>null</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Load a valid list of gradable users in a course. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$courseid</td><td>The course ID. </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$groupid</td><td>The group ID (optional). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>A list of enrolled gradable users. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2689,7 +2743,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$userwheresql_params
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Dec 3 2023 02:39:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Sun Dec 10 2023 02:45:10 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
