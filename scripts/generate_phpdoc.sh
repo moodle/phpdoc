@@ -44,6 +44,9 @@ echo "EXCLUDE_PATTERNS += */vendor/*" >> "${INCLUDEFILE}"
 echo "EXCLUDE_PATTERNS += */amd/*" >> "${INCLUDEFILE}"
 echo "EXCLUDE_PATTERNS += */yui/*" >> "${INCLUDEFILE}"
 
+# Exclude the AWS SDK.
+echo "EXCLUDE_PATTERNS += */lib/aws-sdk/*" >> "${INCLUDEFILE}"
+
 # Calculate PROJECT_NUMBER, PROJECT_BRIEF and PROJECT BUILD from version.php (-- if not found)
 export PROJECT_BRIEF="--"
 export PROJECT_NUMBER="--"
