@@ -87,4 +87,4 @@ echo "    - Project brief: ${PROJECT_BRIEF}"
 echo "    - Using Doxyfile: ${DOXYFILE}"
 
 mkdir -p "${OUTPUT}" "${BUILDLOGS}"
-(cat "${PHPDOCROOT}/${DOXYFILE}"; echo @INCLUDE = "${INCLUDEFILE}") | doxygen - > "${BUILDLOGS}/Doxygen.out" 2>&1
+(cat "${PHPDOCROOT}/${DOXYFILE}"; echo @INCLUDE = "${INCLUDEFILE}") | doxygen - > "${BUILDLOGS}/${VERSION}.out" 2>&1
