@@ -19,12 +19,14 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          show-progress: ''
 
       - name: Checkout Moodle
         uses: actions/checkout@v4
         with:
           repository: moodle/moodle
           path: .moodle
+          show-progress: ''
 
       - name: Setup Node
         uses: actions/setup-node@v4
