@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240104) (9587029a460)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240112) (580c009cacb)</div>
   </td>
  </tr>
  </tbody>
@@ -177,6 +177,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af83f232d8f595ee714d2ee94275c4e49" id="r_af83f232d8f595ee714d2ee94275c4e49"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#af83f232d8f595ee714d2ee94275c4e49">get_field_sql</a> ($sql, array $params=null, $strictness=<a class="el" href="../../d0/de1/group__core.html#gaffc7005a2da386334d76ec5f85ca2d48">IGNORE_MISSING</a>)</td></tr>
 <tr class="memdesc:af83f232d8f595ee714d2ee94275c4e49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a single field value (first field) using a SQL statement.  <br /></td></tr>
 <tr class="separator:af83f232d8f595ee714d2ee94275c4e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67e401e2ead09ea810af3b42c7932437" id="r_a67e401e2ead09ea810af3b42c7932437"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#a67e401e2ead09ea810af3b42c7932437">get_fieldset</a> (string $table, string $return, ?array $conditions=null)</td></tr>
+<tr class="memdesc:a67e401e2ead09ea810af3b42c7932437"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects records and return values of chosen field as an array where all the given conditions met.  <br /></td></tr>
+<tr class="separator:a67e401e2ead09ea810af3b42c7932437"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a373b3369eaa4cd6f4fa60d684eb070f0" id="r_a373b3369eaa4cd6f4fa60d684eb070f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d6e/classmoodle__database.html#a373b3369eaa4cd6f4fa60d684eb070f0">get_fieldset_select</a> ($table, $return, $select, array $params=null)</td></tr>
 <tr class="memdesc:a373b3369eaa4cd6f4fa60d684eb070f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects records and return values of chosen field as an array which match a particular WHERE clause.  <br /></td></tr>
 <tr class="separator:a373b3369eaa4cd6f4fa60d684eb070f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2606,6 +2609,62 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 
 </div>
 </div>
+<a id="a67e401e2ead09ea810af3b42c7932437" name="a67e401e2ead09ea810af3b42c7932437"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67e401e2ead09ea810af3b42c7932437">&#9670;&#160;</a></span>get_fieldset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">moodle_database::get_fieldset </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$table</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$return</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?array</td>          <td class="paramname"><span class="paramname"><em>$conditions</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Selects records and return values of chosen field as an array where all the given conditions met. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$table</td><td>the table to query. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$return</td><td>the field we are intered in </td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;null</td><td class="paramname">$conditions</td><td>optional array $fieldname=&gt;requestedvalue with AND in between </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>of values </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../d5/d5c/classdml__exception.html">dml_exception</a></td><td>A DML specific exception is thrown for any errors. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a373b3369eaa4cd6f4fa60d684eb070f0" name="a373b3369eaa4cd6f4fa60d684eb070f0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a373b3369eaa4cd6f4fa60d684eb070f0">&#9670;&#160;</a></span>get_fieldset_select()</h2>
 
@@ -3052,7 +3111,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000113">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-30407" class="el">MDL-30407</a> MUST_EXIST option should not throw a <a class="el" href="../../d5/d5c/classdml__exception.html">dml_exception</a>, it should throw a different exception as it's a requested check. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000110">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-30407" class="el">MDL-30407</a> MUST_EXIST option should not throw a <a class="el" href="../../d5/d5c/classdml__exception.html">dml_exception</a>, it should throw a different exception as it's a requested check. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">mixed</td><td>a fieldset object containing the first matching record, false or exception if error not found depending on mode </td></tr>
@@ -6724,7 +6783,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><div class="memdoc">
 
 <p>Returns the proper SQL (for the dbms in use) to concatenate $firstname and $lastname. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000114">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-31233" class="el">MDL-31233</a> This may not be needed here.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000111">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-31233" class="el">MDL-31233</a> This may not be needed here.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$first</td><td>User's first name (default:'firstname'). </td></tr>
@@ -7867,15 +7926,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
   </table>
   </dd>
 </dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../d5/d5c/classdml__exception.html">dml_exception</a></td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td>An array list containing sql 'where' part and 'params'. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../d5/d5c/classdml__exception.html">dml_exception</a></td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -7983,7 +8042,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 7 2024 02:43:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Jan 14 2024 02:44:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240104) (9587029a460)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240112) (580c009cacb)</div>
   </td>
  </tr>
  </tbody>
@@ -1171,7 +1171,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_TYPE_NOTIFIC
 </div><div class="memdoc">
 
 <p>Translate message default settings from binary value to the array of string representing the settings to be stored. </p>
-<p>Also validate the provided value and use default if it is malformed. </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000265">Todo</a></b></dt><dd>Remove usage of MESSAGE_DEFAULT_LOGGEDOFF on <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>.</dd></dl>
+<p>Also validate the provided value and use default if it is malformed. </p><dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000262">Todo</a></b></dt><dd>Remove usage of MESSAGE_DEFAULT_LOGGEDOFF on <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$plugindefault</td><td>Default setting suggested by plugin </td></tr>
@@ -1223,8 +1223,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_TYPE_NOTIFIC
 
 <p>Define contants for messaging default settings population. </p>
 <p>For unambiguity of plugin developer intentions we use 4-bit value (LSB numbering): bit 0 - whether to send message (MESSAGE_DEFAULT_ENABLED) bit 1 - Deprecated: whether to send message (MESSAGE_DEFAULT_LOGGEDOFF). Used to mean only when the user is logged off. bit 2..3 - messaging permission (MESSAGE_DISALLOWED|MESSAGE_PERMITTED|MESSAGE_FORCED)</p>
-<p>MESSAGE_PERMITTED_MASK contains the mask we use to distinguish permission setting. </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001010">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0. Use MESSAGE_DEFAULT_ENABLED instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000262">Todo</a></b></dt><dd>Remove on <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
+<p>MESSAGE_PERMITTED_MASK contains the mask we use to distinguish permission setting. </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001009">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0. Use MESSAGE_DEFAULT_ENABLED instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000259">Todo</a></b></dt><dd>Remove on <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
 
 </div>
 </div>
@@ -1239,8 +1239,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_TYPE_NOTIFIC
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001011">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. Use MESSAGE_DEFAULT_ENABLED instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000263">Todo</a></b></dt><dd>Remove on <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001010">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. Use MESSAGE_DEFAULT_ENABLED instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000260">Todo</a></b></dt><dd>Remove on <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
 
 </div>
 </div>
@@ -1257,15 +1257,15 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_TYPE_NOTIFIC
 </div><div class="memdoc">
 
 <p>Set default value for default outputs permitted setting. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001012">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000264">Todo</a></b></dt><dd>Remove on <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001011">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000261">Todo</a></b></dt><dd>Remove on <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 7 2024 02:42:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Jan 14 2024 02:43:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>
