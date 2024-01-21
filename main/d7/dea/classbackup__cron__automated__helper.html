@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240112) (580c009cacb)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240119) (810554ee838)</div>
   </td>
  </tr>
  </tbody>
@@ -93,6 +93,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a792dd012acb645e4e60102a585c8341c" id="r_a792dd012acb645e4e60102a585c8341c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a792dd012acb645e4e60102a585c8341c">run_automated_backup</a> ($rundirective=self::RUN_ON_SCHEDULE)</td></tr>
 <tr class="memdesc:a792dd012acb645e4e60102a585c8341c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the automated backups if required.  <br /></td></tr>
 <tr class="separator:a792dd012acb645e4e60102a585c8341c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8896b33b92253681856d780f32316ff9" id="r_a8896b33b92253681856d780f32316ff9"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8896b33b92253681856d780f32316ff9">send_backup_status_to_admin</a> ($admin)</td></tr>
+<tr class="memdesc:a8896b33b92253681856d780f32316ff9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Collect details for all statuses of the courses and send report to admin.  <br /></td></tr>
+<tr class="separator:a8896b33b92253681856d780f32316ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -717,6 +720,45 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a8896b33b92253681856d780f32316ff9" name="a8896b33b92253681856d780f32316ff9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8896b33b92253681856d780f32316ff9">&#9670;&#160;</a></span>send_backup_status_to_admin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static backup_cron_automated_helper::send_backup_status_to_admin </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$admin</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Collect details for all statuses of the courses and send report to admin. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$admin</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a842f4d0d6999ba9dff888de0c6e34b29" name="a842f4d0d6999ba9dff888de0c6e34b29"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a842f4d0d6999ba9dff888de0c6e34b29">&#9670;&#160;</a></span>RUN_ON_SCHEDULE</h2>
@@ -741,7 +783,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 14 2024 02:43:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Jan 21 2024 02:44:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

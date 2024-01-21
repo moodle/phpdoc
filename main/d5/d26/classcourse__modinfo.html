@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240112) (580c009cacb)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240119) (810554ee838)</div>
   </td>
  </tr>
  </tbody>
@@ -109,6 +109,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad799e51438dedfd894d4fd40f3292fa0" id="r_ad799e51438dedfd894d4fd40f3292fa0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad799e51438dedfd894d4fd40f3292fa0">get_section_info_all</a> ()</td></tr>
 <tr class="memdesc:ad799e51438dedfd894d4fd40f3292fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets all sections as array from section number =&gt; data about section.  <br /></td></tr>
 <tr class="separator:ad799e51438dedfd894d4fd40f3292fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af65db9a5a54bf10b2d6260ac7ae50721" id="r_af65db9a5a54bf10b2d6260ac7ae50721"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af65db9a5a54bf10b2d6260ac7ae50721">get_section_info_by_component</a> (string $component, int $itemid, int $strictness=<a class="el" href="../../d0/de1/group__core.html#gaffc7005a2da386334d76ec5f85ca2d48">IGNORE_MISSING</a>)</td></tr>
+<tr class="memdesc:af65db9a5a54bf10b2d6260ac7ae50721"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets data about specific delegated section.  <br /></td></tr>
+<tr class="separator:af65db9a5a54bf10b2d6260ac7ae50721"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a501651d437cdef7536b8db472b8b205b" id="r_a501651d437cdef7536b8db472b8b205b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a501651d437cdef7536b8db472b8b205b">get_section_info_by_id</a> (int $sectionid, int $strictness=<a class="el" href="../../d0/de1/group__core.html#gaffc7005a2da386334d76ec5f85ca2d48">IGNORE_MISSING</a>)</td></tr>
 <tr class="memdesc:a501651d437cdef7536b8db472b8b205b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets data about specific section ID.  <br /></td></tr>
 <tr class="separator:a501651d437cdef7536b8db472b8b205b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,6 +122,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a031d322929fb04b6873b0bfea50f96ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30f26152321b5e84cbd038bbb0b1d996" id="r_a30f26152321b5e84cbd038bbb0b1d996"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30f26152321b5e84cbd038bbb0b1d996">get_user_id</a> ()</td></tr>
 <tr class="separator:a30f26152321b5e84cbd038bbb0b1d996"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09789ab187836ec45bc9e0dc162148f9" id="r_a09789ab187836ec45bc9e0dc162148f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09789ab187836ec45bc9e0dc162148f9">has_delegated_sections</a> ()</td></tr>
+<tr class="memdesc:a09789ab187836ec45bc9e0dc162148f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the course has delegated sections.  <br /></td></tr>
+<tr class="separator:a09789ab187836ec45bc9e0dc162148f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -473,7 +479,7 @@ Static Protected Attributes</h2></td></tr>
 
 <p>This method can not be used anymore. </p>
 <dl class="section see"><dt>See also</dt><dd>course_modinfo::build_course_cache() </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000765">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000772">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
 
 </div>
 </div>
@@ -818,6 +824,48 @@ Static Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="af65db9a5a54bf10b2d6260ac7ae50721" name="af65db9a5a54bf10b2d6260ac7ae50721"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af65db9a5a54bf10b2d6260ac7ae50721">&#9670;&#160;</a></span>get_section_info_by_component()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">course_modinfo::get_section_info_by_component </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$component</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$itemid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$strictness</em><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d0/de1/group__core.html#gaffc7005a2da386334d76ec5f85ca2d48">IGNORE_MISSING</a></span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets data about specific delegated section. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$component</td><td>Component name </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$itemid</td><td><a class="el" href="../../dc/d32/class_item.html" title="Manages all item-related data.">Item</a> id </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$strictness</td><td>Use MUST_EXIST to throw exception if it doesn't </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">section_info|null</td><td>Information for numbered section or null if not found </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a501651d437cdef7536b8db472b8b205b" name="a501651d437cdef7536b8db472b8b205b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a501651d437cdef7536b8db472b8b205b">&#9670;&#160;</a></span>get_section_info_by_id()</h2>
 
@@ -925,6 +973,31 @@ Static Protected Attributes</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">int</td><td>User ID </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a09789ab187836ec45bc9e0dc162148f9" name="a09789ab187836ec45bc9e0dc162148f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09789ab187836ec45bc9e0dc162148f9">&#9670;&#160;</a></span>has_delegated_sections()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">course_modinfo::has_delegated_sections </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if the course has delegated sections. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1322,7 +1395,7 @@ course_modinfo::clear_instance_cache() </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 14 2024 02:44:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Jan 21 2024 02:44:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

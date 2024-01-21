@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240112) (580c009cacb)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240119) (810554ee838)</div>
   </td>
  </tr>
  </tbody>
@@ -103,10 +103,6 @@ Variables</h2></td></tr>
 <tr class="memitem:ga27dc7e2c13f48a05e56e0d3138fe3c82" id="r_ga27dc7e2c13f48a05e56e0d3138fe3c82"><td class="memItemLeft" align="right" valign="top"><a id="ga27dc7e2c13f48a05e56e0d3138fe3c82" name="ga27dc7e2c13f48a05e56e0d3138fe3c82"></a>
 $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>component</b> = 'tool_phpunit'</td></tr>
 <tr class="separator:ga27dc7e2c13f48a05e56e0d3138fe3c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac211b7b65c9be4c07ae4fd1c99b369ea" id="r_gac211b7b65c9be4c07ae4fd1c99b369ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d07/categoryif.html">if</a>($code==0) else <a class="el" href="../../d8/d07/categoryif.html">if</a>( $code==PHPUNIT_EXITCODE_INSTALL) else <a class="el" href="../../d8/d07/categoryif.html">if</a>($code==PHPUNIT_EXITCODE_REINSTALL)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac211b7b65c9be4c07ae4fd1c99b369ea">else</a></td></tr>
-<tr class="separator:gac211b7b65c9be4c07ae4fd1c99b369ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga12112b3501a32ada647f09441d9e02f7" id="r_ga12112b3501a32ada647f09441d9e02f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d07/categoryif.html">if</a>(file_exists(__DIR__.'/../../../../vendor/phpunit/phpunit/composer.json'))&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga12112b3501a32ada647f09441d9e02f7">else</a></td></tr>
-<tr class="separator:ga12112b3501a32ada647f09441d9e02f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8e9f6864484658ce361b75ea0af4dd23" id="r_ga8e9f6864484658ce361b75ea0af4dd23"><td class="memItemLeft" align="right" valign="top"><a id="ga8e9f6864484658ce361b75ea0af4dd23" name="ga8e9f6864484658ce361b75ea0af4dd23"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>if</b> (!empty( $options[ 'help']))</td></tr>
 <tr class="separator:ga8e9f6864484658ce361b75ea0af4dd23"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,44 +157,10 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 </div><!-- fragment -->
 </div>
 </div>
-<a id="gac211b7b65c9be4c07ae4fd1c99b369ea" name="gac211b7b65c9be4c07ae4fd1c99b369ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac211b7b65c9be4c07ae4fd1c99b369ea">&#9670;&#160;</a></span>else <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d8/d07/categoryif.html">if</a>( $code==0) else <a class="el" href="../../d8/d07/categoryif.html">if</a>($code==PHPUNIT_EXITCODE_INSTALL) else <a class="el" href="../../d8/d07/categoryif.html">if</a> ( $code==PHPUNIT_EXITCODE_REINSTALL) else</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div>
-<div class="line">    echo implode(<span class="stringliteral">&quot;\n&quot;</span>, $output).<span class="stringliteral">&quot;\n&quot;</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ga12112b3501a32ada647f09441d9e02f7" name="ga12112b3501a32ada647f09441d9e02f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga12112b3501a32ada647f09441d9e02f7">&#9670;&#160;</a></span>else <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d8/d07/categoryif.html">if</a> (file_exists(__DIR__.'/../../../../vendor/phpunit/phpunit/composer.json')) else</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div>
-<div class="line">    </div>
-<div class="line">    <a class="code hl_function" href="../../d0/de1/group__core.html#gae815871a566c749ce217106faa4da91a">phpunit_bootstrap_error</a>(PHPUNIT_EXITCODE_PHPUNITMISSING)</div>
-<div class="ttc" id="agroup__core_html_gae815871a566c749ce217106faa4da91a"><div class="ttname"><a href="../../d0/de1/group__core.html#gae815871a566c749ce217106faa4da91a">phpunit_bootstrap_error</a></div><div class="ttdeci">phpunit_bootstrap_error($errorcode, $text='')</div><div class="ttdoc">Print error and stop execution.</div><div class="ttdef"><b>Definition</b> bootstraplib.php:44</div></div>
-</div><!-- fragment -->
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 14 2024 02:43:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Jan 21 2024 02:44:32 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240112) (580c009cacb)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240119) (810554ee838)</div>
   </td>
  </tr>
  </tbody>
@@ -122,9 +122,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8fd8dabe9920e6a1c90c99354ab6ae30" id="r_a8fd8dabe9920e6a1c90c99354ab6ae30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fd8dabe9920e6a1c90c99354ab6ae30">delete_module</a> (<a class="el" href="../../df/db9/classcm__info.html">cm_info</a> $cm, bool $async=false)</td></tr>
 <tr class="memdesc:a8fd8dabe9920e6a1c90c99354ab6ae30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wrapper for course_delete_module method.  <br /></td></tr>
 <tr class="separator:a8fd8dabe9920e6a1c90c99354ab6ae30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5593bf6fdaf28135f42b737bbdfcced" id="r_ab5593bf6fdaf28135f42b737bbdfcced"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5593bf6fdaf28135f42b737bbdfcced">delete_section</a> ($section, $forcedeleteifnotempty=false)</td></tr>
-<tr class="memdesc:ab5593bf6fdaf28135f42b737bbdfcced"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a section.  <br /></td></tr>
-<tr class="separator:ab5593bf6fdaf28135f42b737bbdfcced"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad28e80657d44a1e90ff438de7d2efc86" id="r_ad28e80657d44a1e90ff438de7d2efc86"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad28e80657d44a1e90ff438de7d2efc86">delete_section</a> ($sectionornum, $forcedeleteifnotempty=false)</td></tr>
+<tr class="memdesc:ad28e80657d44a1e90ff438de7d2efc86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes a section.  <br /></td></tr>
+<tr class="separator:ad28e80657d44a1e90ff438de7d2efc86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb972b8c93a8d2170c0de8d84da783f7" id="r_abb972b8c93a8d2170c0de8d84da783f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb972b8c93a8d2170c0de8d84da783f7">duplicate_section</a> (<a class="el" href="../../d1/db5/classsection__info.html">section_info</a> $originalsection)</td></tr>
 <tr class="memdesc:abb972b8c93a8d2170c0de8d84da783f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Duplicate a section.  <br /></td></tr>
 <tr class="separator:abb972b8c93a8d2170c0de8d84da783f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -767,8 +767,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesection</b> = 0
 
 </div>
 </div>
-<a id="ab5593bf6fdaf28135f42b737bbdfcced" name="ab5593bf6fdaf28135f42b737bbdfcced"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5593bf6fdaf28135f42b737bbdfcced">&#9670;&#160;</a></span>delete_section()</h2>
+<a id="ad28e80657d44a1e90ff438de7d2efc86" name="ad28e80657d44a1e90ff438de7d2efc86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad28e80657d44a1e90ff438de7d2efc86">&#9670;&#160;</a></span>delete_section()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -776,7 +776,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesection</b> = 0
         <tr>
           <td class="memname">core_courseformat\base::delete_section </td>
           <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$section</em>, </span></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$sectionornum</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -787,10 +787,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesection</b> = 0
 </div><div class="memdoc">
 
 <p>Deletes a section. </p>
-<p>Do not call this function directly, instead call <a class="el" href="../../d5/dd0/group__core__course.html#ga889cbef774f7f9a817e1c4fec50315cd" title="This method will delete a course section and may delete all modules inside it.">course_delete_section()</a></p>
+<p>Do not call this function directly, instead call <a class="el" href="../../d5/dd0/group__core__course.html#gacee82f5d00f99dd7a37a5e28ec1bb919" title="This method will delete a course section and may delete all modules inside it.">course_delete_section()</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">int&#160;|&#160;stdClass&#160;|&#160;<a class="el" href="../../d1/db5/classsection__info.html">section_info</a></td><td class="paramname">$section</td><td></td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;stdClass&#160;|&#160;<a class="el" href="../../d1/db5/classsection__info.html">section_info</a></td><td class="paramname">$sectionornum</td><td></td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$forcedeleteifnotempty</td><td>if set to false section will not be deleted if it has modules in it. </td></tr>
   </table>
   </dd>
@@ -1830,7 +1830,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesection</b> = 0
 <p>Returns the display name of the given section that the course prefers. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">int&#160;|&#160;stdClass</td><td class="paramname">$section</td><td>Section object from database or just field course_sections.section </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;stdClass&#160;|&#160;<a class="el" href="../../d1/db5/classsection__info.html">section_info</a></td><td class="paramname">$section</td><td>Section object from database or just field course_sections.section </td></tr>
   </table>
   </dd>
 </dl>
@@ -2160,7 +2160,7 @@ course_modinfo::get_section_info_all()</dd></dl>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">course_format</td><td></td></tr>
+    <tr><td class="paramname">base</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -3129,7 +3129,7 @@ course_modinfo::get_section_info_all()</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 14 2024 02:45:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Jan 21 2024 02:46:02 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240112) (580c009cacb)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240119) (810554ee838)</div>
   </td>
  </tr>
  </tbody>
@@ -427,9 +427,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gac48a69ac6d1be1d0258e379bba2c6111" id="r_gac48a69ac6d1be1d0258e379bba2c6111"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac48a69ac6d1be1d0258e379bba2c6111">course_delete_module</a> ($cmid, $async=false)</td></tr>
 <tr class="memdesc:gac48a69ac6d1be1d0258e379bba2c6111"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will handle the whole deletion process of a module.  <br /></td></tr>
 <tr class="separator:gac48a69ac6d1be1d0258e379bba2c6111"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga889cbef774f7f9a817e1c4fec50315cd" id="r_ga889cbef774f7f9a817e1c4fec50315cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga889cbef774f7f9a817e1c4fec50315cd">course_delete_section</a> ($course, $section, $forcedeleteifnotempty=true, $async=false)</td></tr>
-<tr class="memdesc:ga889cbef774f7f9a817e1c4fec50315cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method will delete a course section and may delete all modules inside it.  <br /></td></tr>
-<tr class="separator:ga889cbef774f7f9a817e1c4fec50315cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacee82f5d00f99dd7a37a5e28ec1bb919" id="r_gacee82f5d00f99dd7a37a5e28ec1bb919"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gacee82f5d00f99dd7a37a5e28ec1bb919">course_delete_section</a> ($course, $sectionornum, $forcedeleteifnotempty=true, $async=false)</td></tr>
+<tr class="memdesc:gacee82f5d00f99dd7a37a5e28ec1bb919"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method will delete a course section and may delete all modules inside it.  <br /></td></tr>
+<tr class="separator:gacee82f5d00f99dd7a37a5e28ec1bb919"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7b4447c682e089bd996f1fa2ead7394e" id="r_ga7b4447c682e089bd996f1fa2ead7394e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7b4447c682e089bd996f1fa2ead7394e">course_delete_section_async</a> ($section, $forcedeleteifnotempty=true)</td></tr>
 <tr class="memdesc:ga7b4447c682e089bd996f1fa2ead7394e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Course section deletion, using an adhoc task for deletion of the modules it contains.  <br /></td></tr>
 <tr class="separator:ga7b4447c682e089bd996f1fa2ead7394e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2653,8 +2653,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 
 </div>
 </div>
-<a id="ga889cbef774f7f9a817e1c4fec50315cd" name="ga889cbef774f7f9a817e1c4fec50315cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga889cbef774f7f9a817e1c4fec50315cd">&#9670;&#160;</a></span>course_delete_section()</h2>
+<a id="gacee82f5d00f99dd7a37a5e28ec1bb919" name="gacee82f5d00f99dd7a37a5e28ec1bb919"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacee82f5d00f99dd7a37a5e28ec1bb919">&#9670;&#160;</a></span>course_delete_section()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2667,7 +2667,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$section</em>, </span></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$sectionornum</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2687,7 +2687,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int&#160;|&#160;stdClass</td><td class="paramname">$course</td><td></td></tr>
-    <tr><td class="paramtype">int&#160;|&#160;stdClass&#160;|&#160;<a class="el" href="../../d1/db5/classsection__info.html">section_info</a></td><td class="paramname">$section</td><td></td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;stdClass&#160;|&#160;<a class="el" href="../../d1/db5/classsection__info.html">section_info</a></td><td class="paramname">$sectionornum</td><td></td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$forcedeleteifnotempty</td><td>if set to false section will not be deleted if it has modules in it. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$async</td><td>whether or not to try to delete the section using an adhoc task. Async also depends on a plugin hook. </td></tr>
   </table>
@@ -7919,7 +7919,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 14 2024 02:43:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Jan 21 2024 02:44:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

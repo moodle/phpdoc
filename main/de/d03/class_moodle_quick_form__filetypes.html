@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240112) (580c009cacb)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240119) (810554ee838)</div>
   </td>
  </tr>
  </tbody>
@@ -114,6 +114,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:affdfadb5f9d45befd0fa2c5bcdfee722" id="r_affdfadb5f9d45befd0fa2c5bcdfee722"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d80/class_moodle_quick_form__group.html#affdfadb5f9d45befd0fa2c5bcdfee722">setElements</a> ($elements)</td></tr>
 <tr class="memdesc:affdfadb5f9d45befd0fa2c5bcdfee722"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the grouped elements and hides label.  <br /></td></tr>
 <tr class="separator:affdfadb5f9d45befd0fa2c5bcdfee722"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0b6d3836585b75472c73415f9f7f083" id="r_ad0b6d3836585b75472c73415f9f7f083"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d80/class_moodle_quick_form__group.html#ad0b6d3836585b75472c73415f9f7f083">setHiddenLabel</a> ($hiddenLabel)</td></tr>
+<tr class="memdesc:ad0b6d3836585b75472c73415f9f7f083"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets label to be hidden.  <br /></td></tr>
+<tr class="separator:ad0b6d3836585b75472c73415f9f7f083"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d914dc455f86590f3f34e839a9a305a" id="r_a0d914dc455f86590f3f34e839a9a305a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d80/class_moodle_quick_form__group.html#a0d914dc455f86590f3f34e839a9a305a">setMoodleForm</a> ($mform)</td></tr>
 <tr class="memdesc:a0d914dc455f86590f3f34e839a9a305a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the form this element was added to This object is later used by <a class="el" href="">MoodleQuickForm_group::createElement()</a>.  <br /></td></tr>
 <tr class="separator:a0d914dc455f86590f3f34e839a9a305a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,6 +133,10 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_helpbutton</b> ='
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:a7fdaec5b50839e43712f689f1ad59617" id="r_a7fdaec5b50839e43712f689f1ad59617"><td class="memItemLeft" align="right" valign="top"><a id="a7fdaec5b50839e43712f689f1ad59617" name="a7fdaec5b50839e43712f689f1ad59617"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>$_hiddenLabel</b> = false</td></tr>
+<tr class="memdesc:a7fdaec5b50839e43712f689f1ad59617"><td class="mdescLeft">&#160;</td><td class="mdescRight">if true label will be hidden. <br /></td></tr>
+<tr class="separator:a7fdaec5b50839e43712f689f1ad59617"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab908629fbeeadc013d3112846e117fe9" id="r_ab908629fbeeadc013d3112846e117fe9"><td class="memItemLeft" align="right" valign="top"><a id="ab908629fbeeadc013d3112846e117fe9" name="ab908629fbeeadc013d3112846e117fe9"></a>
 <a class="el" href="../../d5/d8e/class_moodle_quick_form.html">MoodleQuickForm</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$_mform</b> = null</td></tr>
 <tr class="separator:ab908629fbeeadc013d3112846e117fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -457,7 +464,7 @@ core_form <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.ht
 
 <p>Old syntax of class constructor. </p>
 <p>Deprecated in PHP7.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000646">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000653">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.1 </dd></dl>
 
 </div>
 </div>
@@ -538,6 +545,39 @@ core_form <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.ht
 
 </div>
 </div>
+<a id="ad0b6d3836585b75472c73415f9f7f083" name="ad0b6d3836585b75472c73415f9f7f083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0b6d3836585b75472c73415f9f7f083">&#9670;&#160;</a></span>setHiddenLabel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">MoodleQuickForm_group::setHiddenLabel </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$hiddenLabel</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets label to be hidden. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">bool</td><td class="paramname">$hiddenLabel</td><td>sets if label should be hidden </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a0d914dc455f86590f3f34e839a9a305a" name="a0d914dc455f86590f3f34e839a9a305a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0d914dc455f86590f3f34e839a9a305a">&#9670;&#160;</a></span>setMoodleForm()</h2>
 
@@ -611,7 +651,7 @@ core_form <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.ht
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 14 2024 02:44:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Jan 21 2024 02:45:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>
