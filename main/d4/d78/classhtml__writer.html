@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240119) (810554ee838)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240125) (f30110b5ebf)</div>
   </td>
  </tr>
  </tbody>
@@ -115,9 +115,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a365cc551d84baa015c82b8c007abeca0" id="r_a365cc551d84baa015c82b8c007abeca0"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a365cc551d84baa015c82b8c007abeca0">select</a> (array $options, $name, $selected='', $nothing=array(''=&gt; 'choosedots'), array $attributes=null)</td></tr>
 <tr class="memdesc:a365cc551d84baa015c82b8c007abeca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a simple select form field.  <br /></td></tr>
 <tr class="separator:a365cc551d84baa015c82b8c007abeca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba6244758dfa4f36735bec6100bef099" id="r_aba6244758dfa4f36735bec6100bef099"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba6244758dfa4f36735bec6100bef099">select_time</a> ($type, $name, $currenttime=0, $step=5, array $attributes=null)</td></tr>
-<tr class="memdesc:aba6244758dfa4f36735bec6100bef099"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a shortcut for making an hour selector menu.  <br /></td></tr>
-<tr class="separator:aba6244758dfa4f36735bec6100bef099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c50e80db99b5c9e4fc44a8861af35a3" id="r_a6c50e80db99b5c9e4fc44a8861af35a3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c50e80db99b5c9e4fc44a8861af35a3">select_time</a> ($type, $name, $currenttime=0, $step=5, array $attributes=null, $timezone=99)</td></tr>
+<tr class="memdesc:a6c50e80db99b5c9e4fc44a8861af35a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a shortcut for making an hour selector menu.  <br /></td></tr>
+<tr class="separator:a6c50e80db99b5c9e4fc44a8861af35a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c0f94f92e792274d66e50cdcbccfca9" id="r_a2c0f94f92e792274d66e50cdcbccfca9"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c0f94f92e792274d66e50cdcbccfca9">select_yes_no</a> ($name, $selected=true, array $attributes=null)</td></tr>
 <tr class="memdesc:a2c0f94f92e792274d66e50cdcbccfca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a simple select yes/no form field.  <br /></td></tr>
 <tr class="separator:a2c0f94f92e792274d66e50cdcbccfca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -941,8 +941,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aba6244758dfa4f36735bec6100bef099" name="aba6244758dfa4f36735bec6100bef099"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba6244758dfa4f36735bec6100bef099">&#9670;&#160;</a></span>select_time()</h2>
+<a id="a6c50e80db99b5c9e4fc44a8861af35a3" name="a6c50e80db99b5c9e4fc44a8861af35a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c50e80db99b5c9e4fc44a8861af35a3">&#9670;&#160;</a></span>select_time()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -973,7 +973,12 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$attributes</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span></span>&#160;)</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$attributes</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$timezone</em><span class="paramdefsep"> = </span><span class="paramdefval">99</span></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -991,12 +996,13 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$currenttime</td><td>A default timestamp in GMT </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$step</td><td>minute spacing </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$attributes</td><td>- html select element attributes </td></tr>
+    <tr><td class="paramtype">float&#160;|&#160;int&#160;|&#160;string</td><td class="paramname">$timezone</td><td>the timezone to use to calculate the time <a href="https://moodledev.io/docs/apis/subsystems/time#timezone" class="el externalurl"></a> </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">HTML</td><td>fragment </td></tr>
+    <tr><td class="paramname">string</td><td>HTML fragment </td></tr>
   </table>
   </dd>
 </dl>
@@ -1333,7 +1339,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 21 2024 02:45:21 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Jan 28 2024 02:31:35 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

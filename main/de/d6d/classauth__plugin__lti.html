@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240119) (810554ee838)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240125) (f30110b5ebf)</div>
   </td>
  </tr>
  </tbody>
@@ -114,9 +114,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa004b95d95943e16ee51d40129235a01" id="r_aa004b95d95943e16ee51d40129235a01"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7a/classauth__plugin__base.html#aa004b95d95943e16ee51d40129235a01">edit_profile_url</a> ()</td></tr>
 <tr class="memdesc:aa004b95d95943e16ee51d40129235a01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the URL for editing the users' profile, or empty if the default URL can be used.  <br /></td></tr>
 <tr class="separator:aa004b95d95943e16ee51d40129235a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55a6447f25c3fca4c4a8869677325a4b" id="r_a55a6447f25c3fca4c4a8869677325a4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55a6447f25c3fca4c4a8869677325a4b">find_or_create_user_from_launch</a> (array $launchdata, bool $syncpicture=false, array $legacyconsumersecrets=[])</td></tr>
-<tr class="memdesc:a55a6447f25c3fca4c4a8869677325a4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> user account for the LTI user corresponding to the user defined in a link launch.  <br /></td></tr>
-<tr class="separator:a55a6447f25c3fca4c4a8869677325a4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae6108bd0446cc563b4e3ae6e89882b5" id="r_aae6108bd0446cc563b4e3ae6e89882b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae6108bd0446cc563b4e3ae6e89882b5">find_or_create_user_from_launch</a> (array $launchdata, array $legacyconsumersecrets=[])</td></tr>
+<tr class="memdesc:aae6108bd0446cc563b4e3ae6e89882b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> user account for the LTI user corresponding to the user defined in a link launch.  <br /></td></tr>
+<tr class="separator:aae6108bd0446cc563b4e3ae6e89882b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91a12f126292940c27c0361b70881745" id="r_a91a12f126292940c27c0361b70881745"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91a12f126292940c27c0361b70881745">find_or_create_user_from_membership</a> (array $member, string $iss, string $legacyconsumerkey='')</td></tr>
 <tr class="memdesc:a91a12f126292940c27c0361b70881745"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> user account for the LTI user based on the user details returned by a NRPS 2 membership call.  <br /></td></tr>
 <tr class="separator:a91a12f126292940c27c0361b70881745"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,6 +195,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6ff25d207596f3e682e2d152eb5cbf6e" id="r_a6ff25d207596f3e682e2d152eb5cbf6e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7a/classauth__plugin__base.html#a6ff25d207596f3e682e2d152eb5cbf6e">sync_roles</a> ($user)</td></tr>
 <tr class="memdesc:a6ff25d207596f3e682e2d152eb5cbf6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sync roles for this user - usually creator.  <br /></td></tr>
 <tr class="separator:a6ff25d207596f3e682e2d152eb5cbf6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b75a2df4fc2bb6689a488bfe43bb3c5" id="r_a8b75a2df4fc2bb6689a488bfe43bb3c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b75a2df4fc2bb6689a488bfe43bb3c5">update_user_account</a> (stdClass $user, array $userdata, string $iss)</td></tr>
+<tr class="memdesc:a8b75a2df4fc2bb6689a488bfe43bb3c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the personal fields of the user account, based on data present in either a launch of member sync call.  <br /></td></tr>
+<tr class="separator:a8b75a2df4fc2bb6689a488bfe43bb3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f41448612b93e326f25264a8a197e39" id="r_a0f41448612b93e326f25264a8a197e39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d7a/classauth__plugin__base.html#a0f41448612b93e326f25264a8a197e39">user_authenticated_hook</a> (&amp;$user, $username, $password)</td></tr>
 <tr class="memdesc:a0f41448612b93e326f25264a8a197e39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post authentication hook.  <br /></td></tr>
 <tr class="separator:a0f41448612b93e326f25264a8a197e39"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -260,12 +263,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ab13ba2ae4b250d00cbf1b7d7981d4258" id="r_ab13ba2ae4b250d00cbf1b7d7981d4258"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab13ba2ae4b250d00cbf1b7d7981d4258">create_new_account</a> (array $userdata, string $iss)</td></tr>
 <tr class="memdesc:ab13ba2ae4b250d00cbf1b7d7981d4258"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new user account based on the user data either in the launch <a class="el" href="../../d8/d39/class_j_w_t.html">JWT</a> or from a membership call.  <br /></td></tr>
 <tr class="separator:ab13ba2ae4b250d00cbf1b7d7981d4258"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb746b947dcef5683f98ce64c36edb63" id="r_acb746b947dcef5683f98ce64c36edb63"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb746b947dcef5683f98ce64c36edb63">empty_session</a> ()</td></tr>
+<tr class="memdesc:acb746b947dcef5683f98ce64c36edb63"><td class="mdescLeft">&#160;</td><td class="mdescRight">If there's an existing session, inits an empty session.  <br /></td></tr>
+<tr class="separator:acb746b947dcef5683f98ce64c36edb63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b1dffca18aa79c096403093197d6d14" id="r_a1b1dffca18aa79c096403093197d6d14"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b1dffca18aa79c096403093197d6d14">is_valid_provisioning_mode</a> (int $mode)</td></tr>
 <tr class="memdesc:a1b1dffca18aa79c096403093197d6d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a provisioning mode is valid or not.  <br /></td></tr>
 <tr class="separator:a1b1dffca18aa79c096403093197d6d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b75a2df4fc2bb6689a488bfe43bb3c5" id="r_a8b75a2df4fc2bb6689a488bfe43bb3c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b75a2df4fc2bb6689a488bfe43bb3c5">update_user_account</a> (stdClass $user, array $userdata, string $iss)</td></tr>
-<tr class="memdesc:a8b75a2df4fc2bb6689a488bfe43bb3c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the personal fields of the user account, based on data present in either a launch of member sync call.  <br /></td></tr>
-<tr class="separator:a8b75a2df4fc2bb6689a488bfe43bb3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c26f96388a2da0fdc87c4ab3d80c40c" id="r_a3c26f96388a2da0fdc87c4ab3d80c40c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c26f96388a2da0fdc87c4ab3d80c40c">update_user_picture</a> (int $userid, string $url)</td></tr>
 <tr class="memdesc:a3c26f96388a2da0fdc87c4ab3d80c40c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the user's picture with the image stored at $url.  <br /></td></tr>
 <tr class="separator:a3c26f96388a2da0fdc87c4ab3d80c40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -630,7 +633,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$extrauserinfo</b> =
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000204">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000206">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
 
 </div>
 </div>
@@ -748,8 +751,41 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$extrauserinfo</b> =
 
 </div>
 </div>
-<a id="a55a6447f25c3fca4c4a8869677325a4b" name="a55a6447f25c3fca4c4a8869677325a4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55a6447f25c3fca4c4a8869677325a4b">&#9670;&#160;</a></span>find_or_create_user_from_launch()</h2>
+<a id="acb746b947dcef5683f98ce64c36edb63" name="acb746b947dcef5683f98ce64c36edb63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb746b947dcef5683f98ce64c36edb63">&#9670;&#160;</a></span>empty_session()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auth_plugin_lti::empty_session </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>If there's an existing session, inits an empty session. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aae6108bd0446cc563b4e3ae6e89882b5" name="aae6108bd0446cc563b4e3ae6e89882b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae6108bd0446cc563b4e3ae6e89882b5">&#9670;&#160;</a></span>find_or_create_user_from_launch()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -758,11 +794,6 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$extrauserinfo</b> =
           <td class="memname">auth_plugin_lti::find_or_create_user_from_launch </td>
           <td>(</td>
           <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$launchdata</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$syncpicture</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -777,7 +808,6 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$extrauserinfo</b> =
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$launchdata</td><td>all data in the decoded <a class="el" href="../../d8/d39/class_j_w_t.html">JWT</a> including iss and sub. </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$syncpicture</td><td>whether to sync the user's picture with the picture sent in the launch. </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$legacyconsumersecrets</td><td>all secrets found for the legacy consumer, facilitating user migration. </td></tr>
   </table>
   </dd>
@@ -1039,7 +1069,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$extrauserinfo</b> =
 </div><div class="memdoc">
 
 <p>Return the properly translated human-friendly title of this auth plugin. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000090">Todo</a></b></dt><dd>Document this function </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000092">Todo</a></b></dt><dd>Document this function </dd></dl>
 
 </div>
 </div>
@@ -1753,7 +1783,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$extrauserinfo</b> =
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000206">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000208">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
 
 </div>
 </div>
@@ -1869,9 +1899,6 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$extrauserinfo</b> =
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">auth_plugin_lti::update_user_account </td>
@@ -1889,11 +1916,6 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$extrauserinfo</b> =
           <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$iss</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Update the personal fields of the user account, based on data present in either a launch of member sync call. </p>
@@ -2383,7 +2405,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$extrauserinfo</b> =
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000205">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000207">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
 
 </div>
 </div>
@@ -2445,7 +2467,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$extrauserinfo</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 21 2024 02:44:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Jan 28 2024 02:30:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

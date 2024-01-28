@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240119) (810554ee838)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240125) (f30110b5ebf)</div>
   </td>
  </tr>
  </tbody>
@@ -121,6 +121,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a486587136bb0a47babbd26f8968c4cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0579284265aa6b1130be687b24e29397" id="r_a0579284265aa6b1130be687b24e29397"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0579284265aa6b1130be687b24e29397">isComparableTo</a> (<a class="el" href="../../d8/dc3/class_scss_php_1_1_scss_php_1_1_node_1_1_number.html">Number</a> $other)</td></tr>
 <tr class="separator:a0579284265aa6b1130be687b24e29397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a441bebbe9087ad5836c7cc575f0b5af5" id="r_a441bebbe9087ad5836c7cc575f0b5af5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a441bebbe9087ad5836c7cc575f0b5af5">jsonSerialize</a> ()</td></tr>
+<tr class="separator:a441bebbe9087ad5836c7cc575f0b5af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbbf7d0d6445ca38607038410ff150a2" id="r_acbbf7d0d6445ca38607038410ff150a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbbf7d0d6445ca38607038410ff150a2">lessThan</a> (<a class="el" href="../../d8/dc3/class_scss_php_1_1_scss_php_1_1_node_1_1_number.html">Number</a> $other)</td></tr>
 <tr class="separator:acbbf7d0d6445ca38607038410ff150a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3eb5e19bc0c4eab779bd55fcf5ca2fa0" id="r_a3eb5e19bc0c4eab779bd55fcf5ca2fa0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3eb5e19bc0c4eab779bd55fcf5ca2fa0">lessThanOrEqual</a> (<a class="el" href="../../d8/dc3/class_scss_php_1_1_scss_php_1_1_node_1_1_number.html">Number</a> $other)</td></tr>
@@ -437,7 +439,7 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">string[]</td><td></td></tr>
+    <tr><td class="paramname">list&lt;string&gt;</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -483,7 +485,7 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">string[]</td><td></td></tr>
+    <tr><td class="paramname">list&lt;string&gt;</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -627,6 +629,29 @@ Static Protected Attributes</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a441bebbe9087ad5836c7cc575f0b5af5" name="a441bebbe9087ad5836c7cc575f0b5af5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a441bebbe9087ad5836c7cc575f0b5af5">&#9670;&#160;</a></span>jsonSerialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ScssPhp\ScssPhp\Node\Number::jsonSerialize </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">mixed</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1125,7 +1150,7 @@ Static Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000905">Deprecated</a></b></dt><dd>use {Number::PRECISION} instead to read the precision. Configuring it is not supported anymore. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000908">Deprecated</a></b></dt><dd>use {Number::PRECISION} instead to read the precision. Configuring it is not supported anymore. </dd></dl>
 
 </div>
 </div>
@@ -1189,7 +1214,7 @@ Static Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 21 2024 02:46:44 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Jan 28 2024 02:32:56 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

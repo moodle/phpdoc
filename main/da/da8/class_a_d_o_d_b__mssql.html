@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240119) (810554ee838)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240125) (f30110b5ebf)</div>
   </td>
  </tr>
  </tbody>
@@ -109,8 +109,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a22c1d351ba6f6ab6d9489003c41fe15e" id="r_a22c1d351ba6f6ab6d9489003c41fe15e"><td class="memItemLeft" align="right" valign="top"><a id="a22c1d351ba6f6ab6d9489003c41fe15e" name="a22c1d351ba6f6ab6d9489003c41fe15e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>_pconnect</b> ($argHostname, $argUsername, $argPassword, $argDatabasename)</td></tr>
 <tr class="separator:a22c1d351ba6f6ab6d9489003c41fe15e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06711e4dca27412d23b363696f42248a" id="r_a06711e4dca27412d23b363696f42248a"><td class="memItemLeft" align="right" valign="top"><a id="a06711e4dca27412d23b363696f42248a" name="a06711e4dca27412d23b363696f42248a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>_query</b> ($sql, $inputarr=false)</td></tr>
+<tr class="memitem:a06711e4dca27412d23b363696f42248a" id="r_a06711e4dca27412d23b363696f42248a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06711e4dca27412d23b363696f42248a">_query</a> ($sql, $inputarr=false)</td></tr>
+<tr class="memdesc:a06711e4dca27412d23b363696f42248a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute a query.  <br /></td></tr>
 <tr class="separator:a06711e4dca27412d23b363696f42248a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02b336cf092b8ffc8f3b3512603e54ad" id="r_a02b336cf092b8ffc8f3b3512603e54ad"><td class="memItemLeft" align="right" valign="top">&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbd/class_a_d_o_connection.html#a02b336cf092b8ffc8f3b3512603e54ad">_rs2rs</a> (&amp;$rs, $nrows=-1, $offset=-1, $<a class="el" href="../../dc/d71/group___imap___client.html#gad143006a10e442e41927c54a678b625d">close</a>=true)</td></tr>
 <tr class="memdesc:a02b336cf092b8ffc8f3b3512603e54ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a database recordset to an array recordset.  <br /></td></tr>
@@ -348,7 +348,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a953460e6baa227d6e6a4cd408f5c18a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Self-documenting version of <a class="el" href="../../d4/dbd/class_a_d_o_connection.html#a139d0646aa8470bd4c21ddf996558248" title="Usage in oracle $stmt = $db-&gt;Prepare(&#39;select * from table where id =:myid and group=:group&#39;); $db-&gt;Pa...">Parameter()</a>.  <br /></td></tr>
 <tr class="separator:a953460e6baa227d6e6a4cd408f5c18a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8392dc0dadb85c185766caa13fd38998" id="r_a8392dc0dadb85c185766caa13fd38998"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbd/class_a_d_o_connection.html#a8392dc0dadb85c185766caa13fd38998">PageExecute</a> ($sql, $nrows, $page, $inputarr=false, $secs2cache=0)</td></tr>
-<tr class="memdesc:a8392dc0dadb85c185766caa13fd38998"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will select the supplied $page number from a recordset, given that it is paginated in pages of $nrows rows per page.  <br /></td></tr>
+<tr class="memdesc:a8392dc0dadb85c185766caa13fd38998"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute query with pagination.  <br /></td></tr>
 <tr class="separator:a8392dc0dadb85c185766caa13fd38998"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35e53cb72a7ba03e90ff8e4f60fe1f28" id="r_a35e53cb72a7ba03e90ff8e4f60fe1f28"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dbd/class_a_d_o_connection.html#a35e53cb72a7ba03e90ff8e4f60fe1f28">Param</a> ($name, $type='C')</td></tr>
 <tr class="memdesc:a35e53cb72a7ba03e90ff8e4f60fe1f28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a placeholder for query parameters.  <br /></td></tr>
@@ -1021,6 +1021,46 @@ Protected Attributes</h2></td></tr>
 </dl>
 
 <p>Reimplemented from <a class="el" href="../../d4/dbd/class_a_d_o_connection.html#a4a98abd0adb18efffaeb8bd6fcee2019">ADOConnection</a>.</p>
+
+</div>
+</div>
+<a id="a06711e4dca27412d23b363696f42248a" name="a06711e4dca27412d23b363696f42248a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06711e4dca27412d23b363696f42248a">&#9670;&#160;</a></span>_query()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ADODB_mssql::_query </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$sql</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$inputarr</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Execute a query. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$sql</td><td>Query to execute. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$inputarr</td><td>An optional array of parameters.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">mixed|bool</td><td>Query identifier or true if execution successful, false if failed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="../../d4/dbd/class_a_d_o_connection.html#a43a9b2088b31665f67ccff5a479cf044">ADOConnection</a>.</p>
+
+<p>Reimplemented in <a class="el" href="../../dd/d5c/class_a_d_o_d_b__mssql__n.html#a81d0ef4c5ffb9ccfbd979ded0c6e04e7">ADODB_mssql_n</a>, and <a class="el" href="../../d6/dbc/class_a_d_o_d_b__mssqlpo.html#acf82e16e3ab0ed0a8b961e8442dda41e">ADODB_mssqlpo</a>.</p>
 
 </div>
 </div>
@@ -2113,7 +2153,7 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000198">Deprecated</a></b></dt><dd>5.21.0 @noinspection PhpUnusedParameterInspection </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000200">Deprecated</a></b></dt><dd>5.21.0 @noinspection PhpUnusedParameterInspection </dd></dl>
 
 </div>
 </div>
@@ -2154,7 +2194,7 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">ADORecordSet|bool</td><td></td></tr>
+    <tr><td class="paramname">ADORecordSet|false</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -3621,25 +3661,25 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Will select the supplied $page number from a recordset, given that it is paginated in pages of $nrows rows per page. </p>
-<p>It also saves two boolean values saying if the given page is the first and/or last one of the recordset. Added by Iván Oliva to provide recordset pagination.</p>
-<p>See docs-adodb.htm#ex8 for an example of usage. NOTE: phpLens uses a different algorithm and does not use <a class="el" href="../../d4/dbd/class_a_d_o_connection.html#a8392dc0dadb85c185766caa13fd38998" title="Will select the supplied $page number from a recordset, given that it is paginated in pages of $nrows...">PageExecute()</a>.</p>
+<p>Execute query with pagination. </p>
+<p>Will select the supplied $page number from a recordset, divided in pages of $nrows rows each. It also saves two boolean values saying if the given page is the first and/or last one of the recordset.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$sql</td><td></td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$nrows</td><td>Number of rows per page to get </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$page</td><td><a class="el" href="../../db/d2f/class_page.html" title="Class representing a page of a PDF document.">Page</a> number to get (1-based) </td></tr>
-    <tr><td class="paramtype">mixed[]&#160;|&#160;bool</td><td class="paramname">$inputarr</td><td>Array of bind variables </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$secs2cache</td><td>Private parameter only used by jlim</td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$sql</td><td>Query to execute </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$nrows</td><td>Number of rows per page </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$page</td><td><a class="el" href="../../db/d2f/class_page.html" title="Class representing a page of a PDF document.">Page</a> number to retrieve (1-based) </td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;bool</td><td class="paramname">$inputarr</td><td>Array of bind variables </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$secs2cache</td><td>Time-to-live of the cache (in seconds), 0 to force query execution</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">mixed</td><td>the recordset ($rs-&gt;databaseType == 'array') </td></tr>
+    <tr><td class="paramname">ADORecordSet|bool</td><td>the recordset ($rs-&gt;databaseType == 'array')</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section author"><dt>Author</dt><dd>Iván Oliva </dd></dl>
 
 </div>
 </div>
@@ -5677,7 +5717,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 21 2024 02:44:35 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Jan 28 2024 02:30:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

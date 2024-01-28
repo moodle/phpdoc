@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240119) (810554ee838)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240125) (f30110b5ebf)</div>
   </td>
  </tr>
  </tbody>
@@ -60,12 +60,22 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="../../dd/d59/class_scss_php_1_1_scss_php_1_1_output_style-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">ScssPhp\ScssPhp\OutputStyle Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a89e29c6b198b282df5b38fc940f0c951" id="r_a89e29c6b198b282df5b38fc940f0c951"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89e29c6b198b282df5b38fc940f0c951">fromString</a> ($string)</td></tr>
+<tr class="memdesc:a89e29c6b198b282df5b38fc940f0c951"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a string to an output style.  <br /></td></tr>
+<tr class="separator:a89e29c6b198b282df5b38fc940f0c951"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6edec1a1ccdff74a0e65310bd2bd2379" id="r_a6edec1a1ccdff74a0e65310bd2bd2379"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6edec1a1ccdff74a0e65310bd2bd2379">toString</a> ($outputStyle)</td></tr>
+<tr class="memdesc:a6edec1a1ccdff74a0e65310bd2bd2379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an output style to a string supported by {.  <br /></td></tr>
+<tr class="separator:a6edec1a1ccdff74a0e65310bd2bd2379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a8244ab47bd643a3a780dd9e52731da02" id="r_a8244ab47bd643a3a780dd9e52731da02"><td class="memItemLeft" align="right" valign="top"><a id="a8244ab47bd643a3a780dd9e52731da02" name="a8244ab47bd643a3a780dd9e52731da02"></a>
@@ -75,13 +85,95 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COMPRESSED</b> = 'co
 const&#160;</td><td class="memItemRight" valign="bottom"><b>EXPANDED</b> = 'expanded'</td></tr>
 <tr class="separator:a34411542e14e87846e3654d4117ab8b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a89e29c6b198b282df5b38fc940f0c951" name="a89e29c6b198b282df5b38fc940f0c951"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89e29c6b198b282df5b38fc940f0c951">&#9670;&#160;</a></span>fromString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static ScssPhp\ScssPhp\OutputStyle::fromString </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$string</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts a string to an output style. </p>
+<p>Using this method allows to write code which will support both versions 1.12+ and 2.0 of Scssphp. In 2.0, OutputStyle will be an enum instead of using string constants.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">self::*</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6edec1a1ccdff74a0e65310bd2bd2379" name="a6edec1a1ccdff74a0e65310bd2bd2379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6edec1a1ccdff74a0e65310bd2bd2379">&#9670;&#160;</a></span>toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static ScssPhp\ScssPhp\OutputStyle::toString </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$outputStyle</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Converts an output style to a string supported by {. </p>
+<dl class="section see"><dt>See also</dt><dd>OutputStyle::fromString()}.</dd></dl>
+<p>Using this method allows to write code which will support both versions 1.12+ and 2.0 of Scssphp. In 2.0, OutputStyle will be an enum instead of using string constants. The returned string representation is guaranteed to be compatible between 1.12 and 2.0.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self::*</td><td>$outputStyle</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>lib/scssphp/<b>OutputStyle.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 21 2024 02:46:44 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Jan 28 2024 02:32:56 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2.5+ (Build: 20240119) (72c1d1921fa)</div>
+   <div id="projectbrief">Moodle 4.2.5+ (Build: 20240125) (3958f68d9be)</div>
   </td>
  </tr>
  </tbody>
@@ -608,6 +608,15 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf1f00cf921de6d9f5724ac1160955d29" id="r_gaf1f00cf921de6d9f5724ac1160955d29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf1f00cf921de6d9f5724ac1160955d29">hide_section_link_exists</a> ($sectionnumber)</td></tr>
 <tr class="memdesc:gaf1f00cf921de6d9f5724ac1160955d29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the hide section icon link if it exists or throws exception.  <br /></td></tr>
 <tr class="separator:gaf1f00cf921de6d9f5724ac1160955d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga330bcc68eeb9285d131f859b5e69eeae" id="r_ga330bcc68eeb9285d131f859b5e69eeae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga330bcc68eeb9285d131f859b5e69eeae">i_add_to_course_section</a> (string $activity, string $coursefullname, string $sectionnum)</td></tr>
+<tr class="memdesc:ga330bcc68eeb9285d131f859b5e69eeae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a add activity form page.  <br /></td></tr>
+<tr class="separator:ga330bcc68eeb9285d131f859b5e69eeae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga730e7fafd3ef6dc21571401f0f73d845" id="r_ga730e7fafd3ef6dc21571401f0f73d845"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga730e7fafd3ef6dc21571401f0f73d845">i_add_to_course_section_and_i_fill_the_form_with</a> ($activity, $coursefullname, $section, TableNode $data)</td></tr>
+<tr class="memdesc:ga730e7fafd3ef6dc21571401f0f73d845"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the selected activity/resource filling the form data with the specified field/value pairs.  <br /></td></tr>
+<tr class="separator:ga730e7fafd3ef6dc21571401f0f73d845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd1dd99fa75c383d1a844a7b5a0d0018" id="r_gabd1dd99fa75c383d1a844a7b5a0d0018"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gabd1dd99fa75c383d1a844a7b5a0d0018">i_add_to_section_using_the_activity_chooser</a> ($activityname, $sectionnum)</td></tr>
+<tr class="memdesc:gabd1dd99fa75c383d1a844a7b5a0d0018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the activity chooser and opens the activity/resource link form page.  <br /></td></tr>
+<tr class="separator:gabd1dd99fa75c383d1a844a7b5a0d0018"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac49803e3bf5f33b47e043eb9b99f4d73" id="r_gac49803e3bf5f33b47e043eb9b99f4d73"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac49803e3bf5f33b47e043eb9b99f4d73">i_change_activity_name_to</a> ($activityname, $newactivityname)</td></tr>
 <tr class="memdesc:gac49803e3bf5f33b47e043eb9b99f4d73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Edits the activity name through the edit activity; this step only works with Javascript enabled.  <br /></td></tr>
 <tr class="separator:gac49803e3bf5f33b47e043eb9b99f4d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5017,6 +5026,129 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 
 </div>
 </div>
+<a id="ga330bcc68eeb9285d131f859b5e69eeae" name="ga330bcc68eeb9285d131f859b5e69eeae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga330bcc68eeb9285d131f859b5e69eeae">&#9670;&#160;</a></span>i_add_to_course_section()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">i_add_to_course_section </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$activity</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$coursefullname</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$sectionnum</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Open a add activity form page. </p>
+<p>@Given I add a :activity activity to course :coursefullname section :sectionnum @Given I add an :activity activity to course :coursefullname section :sectionnum </p><dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$activity</td><td>The activity name. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$coursefullname</td><td>The course full name of the course. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$sectionnum</td><td>The section number. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga730e7fafd3ef6dc21571401f0f73d845" name="ga730e7fafd3ef6dc21571401f0f73d845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga730e7fafd3ef6dc21571401f0f73d845">&#9670;&#160;</a></span>i_add_to_course_section_and_i_fill_the_form_with()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">i_add_to_course_section_and_i_fill_the_form_with </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$activity</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$coursefullname</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$section</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TableNode</td>          <td class="paramname"><span class="paramname"><em>$data</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds the selected activity/resource filling the form data with the specified field/value pairs. </p>
+<p>Sections 0 and 1 are also allowed on frontpage.</p>
+<p>@Given I add a :activity activity to course :coursefullname section :sectionnum and I fill the form with: @Given I add an :activity activity to course :coursefullname section :sectionnum and I fill the form with: </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$activity</td><td>The activity name </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$coursefullname</td><td>The course full name of the course. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$section</td><td>The section number </td></tr>
+    <tr><td class="paramtype">TableNode</td><td class="paramname">$data</td><td>The activity field/value data </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gabd1dd99fa75c383d1a844a7b5a0d0018" name="gabd1dd99fa75c383d1a844a7b5a0d0018"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabd1dd99fa75c383d1a844a7b5a0d0018">&#9670;&#160;</a></span>i_add_to_section_using_the_activity_chooser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">i_add_to_section_using_the_activity_chooser </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$activityname</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$sectionnum</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Opens the activity chooser and opens the activity/resource link form page. </p>
+<p>Sections 0 and 1 are also allowed on frontpage.</p>
+<p>This step require javascript enabled and it is used mainly to click activities or resources by name, not by plugin name. Use the standard behat_course::i_add_to_course_section step instead unless the plugin create extra entries into the activity chooser (like LTI).</p>
+<p>@Given I add a :activityname to section :sectionnum using the activity chooser @Given I add an :activityname to section :sectionnum using the activity chooser </p><dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">ElementNotFoundException</td><td>Thrown by behat_base::find </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$activityname</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$sectionnum</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="gac49803e3bf5f33b47e043eb9b99f4d73" name="gac49803e3bf5f33b47e043eb9b99f4d73"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac49803e3bf5f33b47e043eb9b99f4d73">&#9670;&#160;</a></span>i_change_activity_name_to()</h2>
 
@@ -7769,7 +7901,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 21 2024 02:37:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Jan 28 2024 02:23:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

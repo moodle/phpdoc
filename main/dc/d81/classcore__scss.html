@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240119) (810554ee838)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240125) (f30110b5ebf)</div>
   </td>
  </tr>
  </tbody>
@@ -122,8 +122,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3512eae452af72669e27619a2d3cf8ce" id="r_a3512eae452af72669e27619a2d3cf8ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3512eae452af72669e27619a2d3cf8ce">compile</a> ($code, $path=null)</td></tr>
 <tr class="memdesc:a3512eae452af72669e27619a2d3cf8ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile scss.  <br /></td></tr>
 <tr class="separator:a3512eae452af72669e27619a2d3cf8ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89645fd4817f492bc545ed645917a243" id="r_a89645fd4817f492bc545ed645917a243"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dab/class_scss_php_1_1_scss_php_1_1_compiler.html#a89645fd4817f492bc545ed645917a243">compileFile</a> ($path)</td></tr>
+<tr class="memdesc:a89645fd4817f492bc545ed645917a243"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compiles the provided scss file into CSS.  <br /></td></tr>
+<tr class="separator:a89645fd4817f492bc545ed645917a243"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03b2b29ffb71307a4a1307613457dbed" id="r_a03b2b29ffb71307a4a1307613457dbed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dab/class_scss_php_1_1_scss_php_1_1_compiler.html#a03b2b29ffb71307a4a1307613457dbed">compileString</a> ($source, $path=null)</td></tr>
-<tr class="memdesc:a03b2b29ffb71307a4a1307613457dbed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compile scss.  <br /></td></tr>
+<tr class="memdesc:a03b2b29ffb71307a4a1307613457dbed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compiles the provided scss source code into CSS.  <br /></td></tr>
 <tr class="separator:a03b2b29ffb71307a4a1307613457dbed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac280518c475c7bc05bfc177124365e62" id="r_ac280518c475c7bc05bfc177124365e62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dab/class_scss_php_1_1_scss_php_1_1_compiler.html#ac280518c475c7bc05bfc177124365e62">compileValue</a> ($value, $quote=true)</td></tr>
 <tr class="memdesc:ac280518c475c7bc05bfc177124365e62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compiles a primitive value into a CSS property value.  <br /></td></tr>
@@ -1368,7 +1371,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000892">Deprecated</a></b></dt><dd>Registering additional features is deprecated. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000895">Deprecated</a></b></dt><dd>Registering additional features is deprecated. </dd></dl>
 
 </div>
 </div>
@@ -2530,7 +2533,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000898">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000901">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -3278,6 +3281,51 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
 
 </div>
 </div>
+<a id="a89645fd4817f492bc545ed645917a243" name="a89645fd4817f492bc545ed645917a243"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89645fd4817f492bc545ed645917a243">&#9670;&#160;</a></span>compileFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ScssPhp\ScssPhp\Compiler::compileFile </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$path</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Compiles the provided scss file into CSS. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$path</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">CompilationResult</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">SassException</td><td>when the source fails to compile </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a6dd98c9e3e77937c498f8bf3d47fa7bb" name="a6dd98c9e3e77937c498f8bf3d47fa7bb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6dd98c9e3e77937c498f8bf3d47fa7bb">&#9670;&#160;</a></span>compileImport()</h2>
 
@@ -3767,11 +3815,12 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
 </table>
 </div><div class="memdoc">
 
-<p>Compile scss. </p>
+<p>Compiles the provided scss source code into CSS. </p>
+<p>If provided, the path is considered to be the path from which the source code comes from, which will be used to resolve relative imports.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$source</td><td></td></tr>
-    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$path</td><td></td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$path</td><td>The path for the source, used to resolve relative imports</td></tr>
   </table>
   </dd>
 </dl>
@@ -4058,7 +4107,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000897">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000900">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -4741,7 +4790,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000886">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000889">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -5091,7 +5140,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
 </div><div class="memdoc">
 
 <p>Returns list of parsed files. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000888">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000891">Deprecated</a></b></dt><dd></dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array&lt;string,int&gt;</td><td></td></tr>
@@ -5182,7 +5231,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000895">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000898">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -6254,7 +6303,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000899">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000902">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -8404,7 +8453,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000893">Deprecated</a></b></dt><dd>Non-compliant support for other encodings than UTF-8 is deprecated. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000896">Deprecated</a></b></dt><dd>Non-compliant support for other encodings than UTF-8 is deprecated. </dd></dl>
 
 </div>
 </div>
@@ -8444,7 +8493,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000884">Deprecated</a></b></dt><dd>Use {</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000887">Deprecated</a></b></dt><dd>Use {</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../db/dab/class_scss_php_1_1_scss_php_1_1_compiler.html#a25b29ac446c490b34612ec565f73b036" title="Sets an alternative logger.">setLogger</a>} instead </dd></dl>
 
 </div>
@@ -8542,7 +8591,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000890">Deprecated</a></b></dt><dd>Use {</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000893">Deprecated</a></b></dt><dd>Use {</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../db/dab/class_scss_php_1_1_scss_php_1_1_compiler.html#a79bd1de8465f70a2636a05c9abfd4122" title="Sets the output style.">setOutputStyle</a>} instead.</dd></dl>
 <p>@phpstan-param class-string&lt;Formatter&gt; $formatterName </p>
 
@@ -8585,7 +8634,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000894">Deprecated</a></b></dt><dd>Ignoring Sass errors is not longer supported. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000897">Deprecated</a></b></dt><dd>Ignoring Sass errors is not longer supported. </dd></dl>
 
 </div>
 </div>
@@ -8666,7 +8715,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000891">Deprecated</a></b></dt><dd>The line number output is not supported anymore. Use source maps instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000894">Deprecated</a></b></dt><dd>The line number output is not supported anymore. Use source maps instead. </dd></dl>
 
 </div>
 </div>
@@ -8747,7 +8796,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000889">Deprecated</a></b></dt><dd>The number precision is not configurable anymore. The default is enough for all browsers. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000892">Deprecated</a></b></dt><dd>The number precision is not configurable anymore. The default is enough for all browsers. </dd></dl>
 
 </div>
 </div>
@@ -8967,7 +9016,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000887">Deprecated</a></b></dt><dd>Use "addVariables" or "replaceVariables" instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000890">Deprecated</a></b></dt><dd>Use "addVariables" or "replaceVariables" instead. </dd></dl>
 
 </div>
 </div>
@@ -9236,7 +9285,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000896">Deprecated</a></b></dt><dd>use "error" and throw the exception in the caller instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000899">Deprecated</a></b></dt><dd>use "error" and throw the exception in the caller instead. </dd></dl>
 
 </div>
 </div>
@@ -9449,7 +9498,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000883">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000886">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -9472,7 +9521,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000881">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000884">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -9814,7 +9863,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000882">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000885">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -9837,7 +9886,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000880">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000883">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -9897,7 +9946,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000875">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000878">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -9920,7 +9969,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000874">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000877">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -9943,7 +9992,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000879">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000882">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -9966,7 +10015,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000877">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000880">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -9989,7 +10038,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000876">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000879">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -10012,7 +10061,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000878">Deprecated</a></b></dt><dd></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000881">Deprecated</a></b></dt><dd></dd></dl>
 
 </div>
 </div>
@@ -10022,7 +10071,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>array&lt; string, $
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 21 2024 02:44:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Jan 28 2024 02:30:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>
