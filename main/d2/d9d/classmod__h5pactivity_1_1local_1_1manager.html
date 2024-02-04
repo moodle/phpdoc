@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240125) (f30110b5ebf)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240202) (3fc907e3d86)</div>
   </td>
  </tr>
  </tbody>
@@ -76,6 +76,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a55fa7eb52fc50a231257d79e0a1992f0" id="r_a55fa7eb52fc50a231257d79e0a1992f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a55fa7eb52fc50a231257d79e0a1992f0">__construct</a> (<a class="el" href="../../df/db9/classcm__info.html">cm_info</a> $coursemodule, stdClass $instance)</td></tr>
 <tr class="memdesc:a55fa7eb52fc50a231257d79e0a1992f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class contructor.  <br /></td></tr>
 <tr class="separator:a55fa7eb52fc50a231257d79e0a1992f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb78aec6fd1206a9f3d2334cf16435fe" id="r_aeb78aec6fd1206a9f3d2334cf16435fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeb78aec6fd1206a9f3d2334cf16435fe">can_submit</a> (stdClass $user=null)</td></tr>
+<tr class="memdesc:aeb78aec6fd1206a9f3d2334cf16435fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the user has permission to submit a particular h5pactivity for a specific user.  <br /></td></tr>
+<tr class="separator:aeb78aec6fd1206a9f3d2334cf16435fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d22f4048aa39de36aa39e673c80d102" id="r_a7d22f4048aa39de36aa39e673c80d102"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d22f4048aa39de36aa39e673c80d102">can_view_all_attempts</a> (stdClass $user=null)</td></tr>
 <tr class="memdesc:a7d22f4048aa39de36aa39e673c80d102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a user can see the activity attempts list.  <br /></td></tr>
 <tr class="separator:a7d22f4048aa39de36aa39e673c80d102"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,9 +121,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a36e825d2dd325a4a86dd37563de3a4c9" id="r_a36e825d2dd325a4a86dd37563de3a4c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a36e825d2dd325a4a86dd37563de3a4c9">get_users_scaled_score</a> (int $userid=0)</td></tr>
 <tr class="memdesc:a36e825d2dd325a4a86dd37563de3a4c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a relation of userid and the valid attempt's scaled score.  <br /></td></tr>
 <tr class="separator:a36e825d2dd325a4a86dd37563de3a4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a695770b05fc5bc67b8ba7f52d66876c2" id="r_a695770b05fc5bc67b8ba7f52d66876c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a695770b05fc5bc67b8ba7f52d66876c2">is_tracking_enabled</a> (stdClass $user=null)</td></tr>
-<tr class="memdesc:a695770b05fc5bc67b8ba7f52d66876c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if tracking is enabled in a particular h5pactivity for a specific user.  <br /></td></tr>
-<tr class="separator:a695770b05fc5bc67b8ba7f52d66876c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa693a51978b497632797b9aa86b46e72" id="r_aa693a51978b497632797b9aa86b46e72"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa693a51978b497632797b9aa86b46e72">is_tracking_enabled</a> ()</td></tr>
+<tr class="memdesc:aa693a51978b497632797b9aa86b46e72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if tracking is enabled in a particular h5pactivity for a specific user.  <br /></td></tr>
+<tr class="separator:aa693a51978b497632797b9aa86b46e72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a938f6a441a3f2e059cc82447ced992f7" id="r_a938f6a441a3f2e059cc82447ced992f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a938f6a441a3f2e059cc82447ced992f7">set_module_viewed</a> (stdClass $course)</td></tr>
 <tr class="memdesc:a938f6a441a3f2e059cc82447ced992f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger module viewed event and set the module viewed for completion.  <br /></td></tr>
 <tr class="separator:a938f6a441a3f2e059cc82447ced992f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -208,6 +211,37 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REVIEWNONE</b> = 0</
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aeb78aec6fd1206a9f3d2334cf16435fe" name="aeb78aec6fd1206a9f3d2334cf16435fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb78aec6fd1206a9f3d2334cf16435fe">&#9670;&#160;</a></span>can_submit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_h5pactivity\local\manager::can_submit </td>
+          <td>(</td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$user</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if the user has permission to submit a particular h5pactivity for a specific user. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass&#160;|&#160;null</td><td class="paramname">$user</td><td>user record (default $USER) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>if the user has permission to submit in this activity </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a7d22f4048aa39de36aa39e673c80d102" name="a7d22f4048aa39de36aa39e673c80d102"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7d22f4048aa39de36aa39e673c80d102">&#9670;&#160;</a></span>can_view_all_attempts()</h2>
 
@@ -773,8 +807,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REVIEWNONE</b> = 0</
 
 </div>
 </div>
-<a id="a695770b05fc5bc67b8ba7f52d66876c2" name="a695770b05fc5bc67b8ba7f52d66876c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a695770b05fc5bc67b8ba7f52d66876c2">&#9670;&#160;</a></span>is_tracking_enabled()</h2>
+<a id="aa693a51978b497632797b9aa86b46e72" name="aa693a51978b497632797b9aa86b46e72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa693a51978b497632797b9aa86b46e72">&#9670;&#160;</a></span>is_tracking_enabled()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -782,19 +816,13 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REVIEWNONE</b> = 0</
         <tr>
           <td class="memname">mod_h5pactivity\local\manager::is_tracking_enabled </td>
           <td>(</td>
-          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$user</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span></span></td><td>)</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Check if tracking is enabled in a particular h5pactivity for a specific user. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">stdClass&#160;|&#160;null</td><td class="paramname">$user</td><td>user record (default $USER) </td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td>if tracking is enabled in this activity </td></tr>
@@ -841,7 +869,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REVIEWNONE</b> = 0</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 28 2024 02:32:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 4 2024 02:38:00 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

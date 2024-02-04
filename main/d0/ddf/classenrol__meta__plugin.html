@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240125) (f30110b5ebf)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240202) (3fc907e3d86)</div>
   </td>
  </tr>
  </tbody>
@@ -3314,6 +3314,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check if plugin custom data is allowed in relevant context. </p>
+<p>This is called from the <a class="el" href="../../d5/d49/namespacetool__uploadcourse.html" title="&#160;">tool_uploadcourse</a> if the plugin supports instance creation in upload course ({</p><dl class="section see"><dt>See also</dt><dd>self::is_csv_upload_supported()})</dd></dl>
+<p>The fallback is to call the <a class="el" href="#a84ffb4e890ff4954532ed147a2d7b85a" title="Perform custom validation of the data used to edit the instance.">edit_instance_validation()</a> but it will be better if the plugins implement this method to return better error messages.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$enrolmentdata</td><td>enrolment data to validate. </td></tr>
@@ -3338,7 +3340,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 28 2024 02:31:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 4 2024 02:36:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

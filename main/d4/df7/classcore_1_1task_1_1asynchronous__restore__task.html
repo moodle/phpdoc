@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240125) (f30110b5ebf)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240202) (3fc907e3d86)</div>
   </td>
  </tr>
  </tbody>
@@ -146,9 +146,9 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>release_concurrency_lock</b> ()</td></tr>
 <tr class="memdesc:ac87bf56658eb73f6a83b1e52cdbbb416"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release the concurrency lock for this task type. <br /></td></tr>
 <tr class="separator:ac87bf56658eb73f6a83b1e52cdbbb416"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e35ed89429e2f72550bfa41003dca37" id="r_a6e35ed89429e2f72550bfa41003dca37"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/classcore_1_1task_1_1adhoc__task.html#a6e35ed89429e2f72550bfa41003dca37">retry_until_success</a> ()</td></tr>
-<tr class="memdesc:a6e35ed89429e2f72550bfa41003dca37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to indicate if the task should be re-run if it fails.  <br /></td></tr>
-<tr class="separator:a6e35ed89429e2f72550bfa41003dca37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa84ea1d14fd81789b3e1e0cf8628bfe6" id="r_aa84ea1d14fd81789b3e1e0cf8628bfe6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa84ea1d14fd81789b3e1e0cf8628bfe6">retry_until_success</a> ()</td></tr>
+<tr class="memdesc:aa84ea1d14fd81789b3e1e0cf8628bfe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets attemptsavailable to false.  <br /></td></tr>
+<tr class="separator:aa84ea1d14fd81789b3e1e0cf8628bfe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae64a5238ce063e362f71a11613f0480b" id="r_ae64a5238ce063e362f71a11613f0480b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d91/classcore_1_1task_1_1adhoc__task.html#ae64a5238ce063e362f71a11613f0480b">set_attempts_available</a> (?int $attemptsavailable)</td></tr>
 <tr class="memdesc:ae64a5238ce063e362f71a11613f0480b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the remaining attempts of the task.  <br /></td></tr>
 <tr class="separator:ae64a5238ce063e362f71a11613f0480b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -892,37 +892,30 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6e35ed89429e2f72550bfa41003dca37" name="a6e35ed89429e2f72550bfa41003dca37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e35ed89429e2f72550bfa41003dca37">&#9670;&#160;</a></span>retry_until_success()</h2>
+<a id="aa84ea1d14fd81789b3e1e0cf8628bfe6" name="aa84ea1d14fd81789b3e1e0cf8628bfe6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa84ea1d14fd81789b3e1e0cf8628bfe6">&#9670;&#160;</a></span>retry_until_success()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">core\task\adhoc_task::retry_until_success </td>
+          <td class="memname">core\task\asynchronous_restore_task::retry_until_success </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Used to indicate if the task should be re-run if it fails. </p>
-<p>By default, tasks will be retried until they succeed, other tasks can override this method to change this behaviour.</p>
+<p>Sets attemptsavailable to false. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">bool</td><td>true if the task should be retried until it succeeds, false otherwise. </td></tr>
+    <tr><td class="paramname">boolean</td><td></td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Reimplemented from <a class="el" href="../../d4/d91/classcore_1_1task_1_1adhoc__task.html#a6e35ed89429e2f72550bfa41003dca37">core\task\adhoc_task</a>.</p>
 
 </div>
 </div>
@@ -1427,7 +1420,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 28 2024 02:32:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 4 2024 02:37:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240125) (f30110b5ebf)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240202) (3fc907e3d86)</div>
   </td>
  </tr>
  </tbody>
@@ -109,7 +109,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>store_default_php_t
 <tr class="memdesc:ae07a81a48a48749f10ae4fdd32099706"><td class="mdescLeft">&#160;</td><td class="mdescRight">To be called from lib/setup.php only! <br /></td></tr>
 <tr class="separator:ae07a81a48a48749f10ae4fdd32099706"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ec0901daee19fa000cc165918e65b15" id="r_a3ec0901daee19fa000cc165918e65b15"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ec0901daee19fa000cc165918e65b15">strftime</a> (string $format, $timestamp=null, ?string $locale=null)</td></tr>
-<tr class="memdesc:a3ec0901daee19fa000cc165918e65b15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locale-formatted strftime using IntlDateFormatter (PHP 8.1 compatible) This provides a cross-platform alternative to <a class="el" href="#a3ec0901daee19fa000cc165918e65b15" title="Locale-formatted strftime using IntlDateFormatter (PHP 8.1 compatible) This provides a cross-platform...">strftime()</a> for when it will be removed from PHP.  <br /></td></tr>
+<tr class="memdesc:a3ec0901daee19fa000cc165918e65b15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Locale-formatted strftime using IntlDateFormatter (PHP 8.1 compatible) This provides a cross-platform alternative to strftime() for when it will be removed from PHP.  <br /></td></tr>
 <tr class="separator:a3ec0901daee19fa000cc165918e65b15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
@@ -352,7 +352,7 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$goodzones</b
 
 <p>Returns user timezone. </p>
 <p>Ideally the parameter should be a real user record, unfortunately the legacy code is using 99 for both server and default value.</p>
-<p>Example of using legacy API: // <a class="el" href="../../de/db5/class_date.html" title="Date Parser.">Date</a> for other user via legacy API. $datestr = userdate($time, <a class="el" href="#a2aa4a4e3b508b2f5140dbea29401a9d8" title="Returns user timezone.">core_date::get_user_timezone</a>($user));</p>
+<p>Example of using legacy API: // <a class="el" href="../../de/db5/class_date.html" title="Date Parser.">Date</a> for other user via legacy API. $datestr = userdate($time, core_date::get_user_timezone($user));</p>
 <p>The coding style rules in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> are moronic, why cannot the parameter names have underscores in them?</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -513,7 +513,7 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$goodzones</b
 </table>
 </div><div class="memdoc">
 
-<p>Locale-formatted strftime using IntlDateFormatter (PHP 8.1 compatible) This provides a cross-platform alternative to <a class="el" href="#a3ec0901daee19fa000cc165918e65b15" title="Locale-formatted strftime using IntlDateFormatter (PHP 8.1 compatible) This provides a cross-platform...">strftime()</a> for when it will be removed from PHP. </p>
+<p>Locale-formatted strftime using IntlDateFormatter (PHP 8.1 compatible) This provides a cross-platform alternative to strftime() for when it will be removed from PHP. </p>
 <p>Note that output can be slightly different between libc sprintf and this function as it is using ICU.</p>
 <p>From: <a href="https://github.com/alphp/strftime">https://github.com/alphp/strftime</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -540,7 +540,7 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$goodzones</b
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 28 2024 02:30:58 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 4 2024 02:36:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

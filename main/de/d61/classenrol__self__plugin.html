@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240125) (f30110b5ebf)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240202) (3fc907e3d86)</div>
   </td>
  </tr>
  </tbody>
@@ -153,9 +153,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a65d34f7444d177420d15a37b240ffaaf" id="r_a65d34f7444d177420d15a37b240ffaaf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65d34f7444d177420d15a37b240ffaaf">extend_assignable_roles</a> ($context, $defaultrole)</td></tr>
 <tr class="memdesc:a65d34f7444d177420d15a37b240ffaaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a list of roles that this user can assign for the course as the default for self-enrolment.  <br /></td></tr>
 <tr class="separator:a65d34f7444d177420d15a37b240ffaaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ad333c8916855a55fb47d22844bc6d5" id="r_a2ad333c8916855a55fb47d22844bc6d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/classenrol__plugin.html#a2ad333c8916855a55fb47d22844bc6d5">fill_enrol_custom_fields</a> (array $enrolmentdata, int $courseid)</td></tr>
-<tr class="memdesc:a2ad333c8916855a55fb47d22844bc6d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill custom fields data for a given enrolment plugin.  <br /></td></tr>
-<tr class="separator:a2ad333c8916855a55fb47d22844bc6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8cbdf028d0d6a35bd437701fdaba95a" id="r_ab8cbdf028d0d6a35bd437701fdaba95a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8cbdf028d0d6a35bd437701fdaba95a">fill_enrol_custom_fields</a> (array $enrolmentdata, int $courseid)</td></tr>
+<tr class="memdesc:ab8cbdf028d0d6a35bd437701fdaba95a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill custom fields data for a given enrolment plugin.  <br /></td></tr>
+<tr class="separator:ab8cbdf028d0d6a35bd437701fdaba95a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa736da24ca30b7c1d7237efddfbe6896" id="r_aa736da24ca30b7c1d7237efddfbe6896"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa736da24ca30b7c1d7237efddfbe6896">find_instance</a> (array $enrolmentdata, int $courseid)</td></tr>
 <tr class="memdesc:aa736da24ca30b7c1d7237efddfbe6896"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds matching instances for a given course.  <br /></td></tr>
 <tr class="separator:aa736da24ca30b7c1d7237efddfbe6896"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1430,17 +1430,14 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a2ad333c8916855a55fb47d22844bc6d5" name="a2ad333c8916855a55fb47d22844bc6d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2ad333c8916855a55fb47d22844bc6d5">&#9670;&#160;</a></span>fill_enrol_custom_fields()</h2>
+<a id="ab8cbdf028d0d6a35bd437701fdaba95a" name="ab8cbdf028d0d6a35bd437701fdaba95a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8cbdf028d0d6a35bd437701fdaba95a">&#9670;&#160;</a></span>fill_enrol_custom_fields()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enrol_plugin::fill_enrol_custom_fields </td>
+          <td class="memname">enrol_self_plugin::fill_enrol_custom_fields </td>
           <td>(</td>
           <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$enrolmentdata</em>, </span></td>
         </tr>
@@ -1450,11 +1447,6 @@ Protected Attributes</h2></td></tr>
           <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$courseid</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Fill custom fields data for a given enrolment plugin. </p>
@@ -1472,7 +1464,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../dd/d72/classenrol__cohort__plugin.html#a71697026a15c9d5af85e4734fb50f478">enrol_cohort_plugin</a>, and <a class="el" href="../../d0/ddf/classenrol__meta__plugin.html#acf0f2d6196b3143e0e30b8331e088bb0">enrol_meta_plugin</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d6/d0e/classenrol__plugin.html#a2ad333c8916855a55fb47d22844bc6d5">enrol_plugin</a>.</p>
 
 </div>
 </div>
@@ -3566,6 +3558,8 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check if plugin custom data is allowed in relevant context. </p>
+<p>This is called from the <a class="el" href="../../d5/d49/namespacetool__uploadcourse.html" title="&#160;">tool_uploadcourse</a> if the plugin supports instance creation in upload course ({</p><dl class="section see"><dt>See also</dt><dd>self::is_csv_upload_supported()})</dd></dl>
+<p>The fallback is to call the <a class="el" href="#a866f6d8dec9731cf823b1e8303e00008" title="Perform custom validation of the data used to edit the instance.">edit_instance_validation()</a> but it will be better if the plugins implement this method to return better error messages.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$enrolmentdata</td><td>enrolment data to validate. </td></tr>
@@ -3590,7 +3584,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jan 28 2024 02:31:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 4 2024 02:36:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>
