@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2.5+ (Build: 20240202) (44fd4d7dc0c)</div>
+   <div id="projectbrief">Moodle 4.2.6 (Build: 20240212) (6acc0648d89)</div>
   </td>
  </tr>
  </tbody>
@@ -78,9 +78,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0db01c436b647f808279caead3aa43e7" id="r_a0db01c436b647f808279caead3aa43e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0db01c436b647f808279caead3aa43e7">attempt_url</a> ($attemptid, $page=0)</td></tr>
 <tr class="memdesc:a0db01c436b647f808279caead3aa43e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the URL of a particular page within an attempt.  <br /></td></tr>
 <tr class="separator:a0db01c436b647f808279caead3aa43e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6dec150d627756e4ea0a171c4949918" id="r_ad6dec150d627756e4ea0a171c4949918"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6dec150d627756e4ea0a171c4949918">cannot_review_message</a> ($when, $short=false)</td></tr>
-<tr class="memdesc:ad6dec150d627756e4ea0a171c4949918"><td class="mdescLeft">&#160;</td><td class="mdescRight">If $reviewoptions-&gt;attempt is false, meaning that students can't review this attempt at the moment, return an appropriate string explaining why.  <br /></td></tr>
-<tr class="separator:ad6dec150d627756e4ea0a171c4949918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad12fb317db1b97a73ddb2242b7c7bede" id="r_ad12fb317db1b97a73ddb2242b7c7bede"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad12fb317db1b97a73ddb2242b7c7bede">cannot_review_message</a> ($when, $short=false, int $attemptsubmittime=null)</td></tr>
+<tr class="memdesc:ad12fb317db1b97a73ddb2242b7c7bede"><td class="mdescLeft">&#160;</td><td class="mdescRight">If $reviewoptions-&gt;attempt is false, meaning that students can't review this attempt at the moment, return an appropriate string explaining why.  <br /></td></tr>
+<tr class="separator:ad12fb317db1b97a73ddb2242b7c7bede"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0eff058e5745df1430bf88f784e303f" id="r_af0eff058e5745df1430bf88f784e303f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0eff058e5745df1430bf88f784e303f">create_attempt_object</a> ($attemptdata)</td></tr>
 <tr class="memdesc:af0eff058e5745df1430bf88f784e303f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a {.  <br /></td></tr>
 <tr class="separator:af0eff058e5745df1430bf88f784e303f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -314,8 +314,8 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$sections</b> =
 
 </div>
 </div>
-<a id="ad6dec150d627756e4ea0a171c4949918" name="ad6dec150d627756e4ea0a171c4949918"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6dec150d627756e4ea0a171c4949918">&#9670;&#160;</a></span>cannot_review_message()</h2>
+<a id="ad12fb317db1b97a73ddb2242b7c7bede" name="ad12fb317db1b97a73ddb2242b7c7bede"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad12fb317db1b97a73ddb2242b7c7bede">&#9670;&#160;</a></span>cannot_review_message()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -328,7 +328,12 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$sections</b> =
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$short</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span></span>&#160;)</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$short</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$attemptsubmittime</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -338,6 +343,7 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$sections</b> =
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$when</td><td>One of the display_options::DURING, IMMEDIATELY_AFTER, LATER_WHILE_OPEN or AFTER_CLOSE constants. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$short</td><td>if true, return a shorter string. </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$attemptsubmittime</td><td>time this attempt was submitted. (Optional, but should be given.) </td></tr>
   </table>
   </dd>
 </dl>
@@ -1426,7 +1432,7 @@ stdClass[]&#160;</td><td class="memItemRight" valign="bottom"><b>$sections</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 4 2024 02:30:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 11 2024 02:24:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

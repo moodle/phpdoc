@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.1</span>
    </div>
-   <div id="projectbrief">Moodle 4.1.8+ (Build: 20240125) (560f4d895b)</div>
+   <div id="projectbrief">Moodle 4.1.9 (Build: 20240212) (8a38a37f1f)</div>
   </td>
  </tr>
  </tbody>
@@ -174,9 +174,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a33254ccbc7f878cd4474d4bf6452723d" id="r_a33254ccbc7f878cd4474d4bf6452723d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classmoodle__database.html">moodle_database</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33254ccbc7f878cd4474d4bf6452723d">search_other_users</a> ($<a class="el" href="../../dc/d71/group___imap___client.html#ga51cc7ed42bce580dcc33ed45d9cef0c9">search</a>='', $searchanywhere=false, $page=0, $perpage=25, $returnexactcount=false)</td></tr>
 <tr class="memdesc:a33254ccbc7f878cd4474d4bf6452723d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches other users and returns paginated results.  <br /></td></tr>
 <tr class="separator:a33254ccbc7f878cd4474d4bf6452723d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a606f8ca02a0aa6a2f1fb972e215540e2" id="r_a606f8ca02a0aa6a2f1fb972e215540e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a606f8ca02a0aa6a2f1fb972e215540e2">search_users</a> (string $<a class="el" href="../../dc/d71/group___imap___client.html#ga51cc7ed42bce580dcc33ed45d9cef0c9">search</a>='', bool $searchanywhere=false, int $page=0, int $perpage=25, bool $returnexactcount=false)</td></tr>
-<tr class="memdesc:a606f8ca02a0aa6a2f1fb972e215540e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches through the enrolled users in this course.  <br /></td></tr>
-<tr class="separator:a606f8ca02a0aa6a2f1fb972e215540e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a192a119eb07b358c5c5a48890aaf9068" id="r_a192a119eb07b358c5c5a48890aaf9068"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a192a119eb07b358c5c5a48890aaf9068">search_users</a> (string $<a class="el" href="../../dc/d71/group___imap___client.html#ga51cc7ed42bce580dcc33ed45d9cef0c9">search</a>='', bool $searchanywhere=false, int $page=0, int $perpage=25, bool $returnexactcount=false, ?int $contextid=null)</td></tr>
+<tr class="memdesc:a192a119eb07b358c5c5a48890aaf9068"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches through the enrolled users in this course.  <br /></td></tr>
+<tr class="separator:a192a119eb07b358c5c5a48890aaf9068"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abafca521c66c6c5785579d0928222a1c" id="r_abafca521c66c6c5785579d0928222a1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d6e/classmoodle__database.html">moodle_database</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abafca521c66c6c5785579d0928222a1c">unassign_role_from_user</a> ($userid, $roleid)</td></tr>
 <tr class="memdesc:abafca521c66c6c5785579d0928222a1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an assigned role from a user.  <br /></td></tr>
 <tr class="separator:abafca521c66c6c5785579d0928222a1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1624,8 +1624,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$users</b> = array()
 
 </div>
 </div>
-<a id="a606f8ca02a0aa6a2f1fb972e215540e2" name="a606f8ca02a0aa6a2f1fb972e215540e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a606f8ca02a0aa6a2f1fb972e215540e2">&#9670;&#160;</a></span>search_users()</h2>
+<a id="a192a119eb07b358c5c5a48890aaf9068" name="a192a119eb07b358c5c5a48890aaf9068"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a192a119eb07b358c5c5a48890aaf9068">&#9670;&#160;</a></span>search_users()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1653,7 +1653,12 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$users</b> = array()
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$returnexactcount</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span></span>&#160;)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$returnexactcount</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int</td>          <td class="paramname"><span class="paramname"><em>$contextid</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1666,6 +1671,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$users</b> = array()
     <tr><td class="paramtype">int</td><td class="paramname">$page</td><td>Starting at 0. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$perpage</td><td>Number of users returned per page. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$returnexactcount</td><td>Return the exact total users using count_record or not. </td></tr>
+    <tr><td class="paramtype">?int</td><td class="paramname">$contextid</td><td>Context ID we are in - we might use search on activity level and its group mode can be different from course group mode. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1751,7 +1757,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$users</b> = array()
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 4 2024 02:24:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 11 2024 02:19:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

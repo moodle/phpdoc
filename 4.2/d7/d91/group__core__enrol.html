@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2.5+ (Build: 20240202) (44fd4d7dc0c)</div>
+   <div id="projectbrief">Moodle 4.2.6 (Build: 20240212) (6acc0648d89)</div>
   </td>
  </tr>
  </tbody>
@@ -153,9 +153,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6bf4c09d705caf668abe1cbb76b2c6a4" id="r_ga6bf4c09d705caf668abe1cbb76b2c6a4"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga6bf4c09d705caf668abe1cbb76b2c6a4">get_potential_users_returns</a> ()</td></tr>
 <tr class="memdesc:ga6bf4c09d705caf668abe1cbb76b2c6a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns description of method result value.  <br /></td></tr>
 <tr class="separator:ga6bf4c09d705caf668abe1cbb76b2c6a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab995dbecbb5ef5fe2df0343ba25288aa" id="r_gab995dbecbb5ef5fe2df0343ba25288aa"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gab995dbecbb5ef5fe2df0343ba25288aa">search_users</a> (int $courseid, string $<a class="el" href="../../dc/d71/group___imap___client.html#ga51cc7ed42bce580dcc33ed45d9cef0c9">search</a>, bool $searchanywhere, int $page, int $perpage)</td></tr>
-<tr class="memdesc:gab995dbecbb5ef5fe2df0343ba25288aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search course participants.  <br /></td></tr>
-<tr class="separator:gab995dbecbb5ef5fe2df0343ba25288aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacc0d7c63bf3533b80f2c8fd72851f1fd" id="r_gacc0d7c63bf3533b80f2c8fd72851f1fd"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gacc0d7c63bf3533b80f2c8fd72851f1fd">search_users</a> (int $courseid, string $<a class="el" href="../../dc/d71/group___imap___client.html#ga51cc7ed42bce580dcc33ed45d9cef0c9">search</a>, bool $searchanywhere, int $page, int $perpage, ?int $contextid=null)</td></tr>
+<tr class="memdesc:gacc0d7c63bf3533b80f2c8fd72851f1fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search course participants.  <br /></td></tr>
+<tr class="separator:gacc0d7c63bf3533b80f2c8fd72851f1fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8987673ae3d49efac276cd12571aa415" id="r_ga8987673ae3d49efac276cd12571aa415"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8987673ae3d49efac276cd12571aa415">search_users_parameters</a> ()</td></tr>
 <tr class="memdesc:ga8987673ae3d49efac276cd12571aa415"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns description of method parameters.  <br /></td></tr>
 <tr class="separator:ga8987673ae3d49efac276cd12571aa415"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -473,8 +473,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="gab995dbecbb5ef5fe2df0343ba25288aa" name="gab995dbecbb5ef5fe2df0343ba25288aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab995dbecbb5ef5fe2df0343ba25288aa">&#9670;&#160;</a></span>search_users()</h2>
+<a id="gacc0d7c63bf3533b80f2c8fd72851f1fd" name="gacc0d7c63bf3533b80f2c8fd72851f1fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacc0d7c63bf3533b80f2c8fd72851f1fd">&#9670;&#160;</a></span>search_users()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -505,7 +505,12 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$perpage</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$perpage</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?int</td>          <td class="paramname"><span class="paramname"><em>$contextid</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -523,6 +528,7 @@ Functions</h2></td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$searchanywhere</td><td>Match anywhere in the string </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$page</td><td><a class="el" href="../../db/d2f/class_page.html" title="Class representing a page of a PDF document.">Page</a> number </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$perpage</td><td>Max per page </td></tr>
+    <tr><td class="paramtype">?int</td><td class="paramname">$contextid</td><td>Context ID we are in - we might use search on activity level and its group mode can be different from course group mode. </td></tr>
   </table>
   </dd>
 </dl>
@@ -820,7 +826,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 4 2024 02:28:21 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 11 2024 02:22:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

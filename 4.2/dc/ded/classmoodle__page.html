@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2.5+ (Build: 20240202) (44fd4d7dc0c)</div>
+   <div id="projectbrief">Moodle 4.2.6 (Build: 20240212) (6acc0648d89)</div>
   </td>
  </tr>
  </tbody>
@@ -192,7 +192,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a77c880026c270cc6bba066e415fa83e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current course.  <br /></td></tr>
 <tr class="separator:a77c880026c270cc6bba066e415fa83e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cb88e9cc34af194f435e1a9c09ff2d4" id="r_a8cb88e9cc34af194f435e1a9c09ff2d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8cb88e9cc34af194f435e1a9c09ff2d4">set_docs_path</a> ($path)</td></tr>
-<tr class="memdesc:a8cb88e9cc34af194f435e1a9c09ff2d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a different path to use for the 'Help and documentation' link.  <br /></td></tr>
+<tr class="memdesc:a8cb88e9cc34af194f435e1a9c09ff2d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a different path to use for the 'Documentation for this page' link.  <br /></td></tr>
 <tr class="separator:a8cb88e9cc34af194f435e1a9c09ff2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4125b71aa9adab8b46a0acbc42251da2" id="r_a4125b71aa9adab8b46a0acbc42251da2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4125b71aa9adab8b46a0acbc42251da2">set_focuscontrol</a> ($controlid)</td></tr>
 <tr class="memdesc:a4125b71aa9adab8b46a0acbc42251da2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify a form control should be focused when the page has loaded.  <br /></td></tr>
@@ -506,7 +506,7 @@ context&#160;</td><td class="memItemRight" valign="bottom"><b>$_context</b> = nu
 <tr class="memdesc:ae66bf81b88fbeca208306767aeaed9a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is set to the name of the device type in use.  <br /></td></tr>
 <tr class="separator:ae66bf81b88fbeca208306767aeaed9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a99529bc91815c7970e282b9b25366e" id="r_a0a99529bc91815c7970e282b9b25366e"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a99529bc91815c7970e282b9b25366e">$_docspath</a> = null</td></tr>
-<tr class="memdesc:a0a99529bc91815c7970e282b9b25366e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a different path to use for the 'Help and documentation' link.  <br /></td></tr>
+<tr class="memdesc:a0a99529bc91815c7970e282b9b25366e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a different path to use for the 'Documentation for this page' link.  <br /></td></tr>
 <tr class="separator:a0a99529bc91815c7970e282b9b25366e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d6e99c8fb3eada07e1e2eefac840f50" id="r_a1d6e99c8fb3eada07e1e2eefac840f50"><td class="memItemLeft" align="right" valign="top"><a id="a1d6e99c8fb3eada07e1e2eefac840f50" name="a1d6e99c8fb3eada07e1e2eefac840f50"></a>
 <a class="el" href="../../d0/d23/classflat__navigation.html">flat_navigation</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$_flatnav</b> = null</td></tr>
@@ -2278,7 +2278,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_subpage</b> = ''<
 <p>Please do not call this method directly, use the -&gt;docspath syntax. </p>
 <p><a class="el" href="">moodle_page::__get()</a>. </p><dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">string</td><td>the path to the Help and documentation. </td></tr>
+    <tr><td class="paramname">string</td><td>the path to the Documentation for this page. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3491,7 +3491,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_subpage</b> = ''<
       </table>
 </div><div class="memdoc">
 
-<p>Set a different path to use for the 'Help and documentation' link. </p>
+<p>Set a different path to use for the 'Documentation for this page' link. </p>
 <p>By default, it uses the pagetype, which is normally the same as the script name. So, for example, for mod/quiz/attempt.php, pagetype is mod-quiz-attempt, and so docspath is mod/quiz/attempt.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -4414,7 +4414,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_subpage</b> = ''<
 </table>
 </div><div class="memdoc">
 
-<p>Set a different path to use for the 'Help and documentation' link. </p>
+<p>Set a different path to use for the 'Documentation for this page' link. </p>
 <p>By default, it uses the path of the file for instance mod/quiz/attempt. </p>
 
 </div>
@@ -4775,7 +4775,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_subpage</b> = ''<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 4 2024 02:29:17 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 11 2024 02:23:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3.2+ (Build: 20240202) (48fbf7ed142)</div>
+   <div id="projectbrief">Moodle 4.3.3 (Build: 20240212) (0f84dd778b2)</div>
   </td>
  </tr>
  </tbody>
@@ -78,9 +78,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af8af6f3dcedc3b4d2e824c6093952d6f" id="r_af8af6f3dcedc3b4d2e824c6093952d6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8af6f3dcedc3b4d2e824c6093952d6f">count</a> ()</td></tr>
 <tr class="memdesc:af8af6f3dcedc3b4d2e824c6093952d6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of messages redirected to this sink.  <br /></td></tr>
 <tr class="separator:af8af6f3dcedc3b4d2e824c6093952d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cb6f3bc2bfb22744695aa412830b998" id="r_a5cb6f3bc2bfb22744695aa412830b998"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cb6f3bc2bfb22744695aa412830b998">get_messages</a> ()</td></tr>
-<tr class="memdesc:a5cb6f3bc2bfb22744695aa412830b998"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all redirected messages.  <br /></td></tr>
-<tr class="separator:a5cb6f3bc2bfb22744695aa412830b998"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ebac39cd3cba6746d0e3a5c79df71bb" id="r_a6ebac39cd3cba6746d0e3a5c79df71bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ebac39cd3cba6746d0e3a5c79df71bb">get_messages</a> (?callable $filter=null)</td></tr>
+<tr class="memdesc:a6ebac39cd3cba6746d0e3a5c79df71bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all redirected messages.  <br /></td></tr>
+<tr class="separator:a6ebac39cd3cba6746d0e3a5c79df71bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3eb6efa021c361b0f81cb47f124f56e3" id="r_a3eb6efa021c361b0f81cb47f124f56e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3eb6efa021c361b0f81cb47f124f56e3">get_messages_by_component</a> (string $component)</td></tr>
+<tr class="memdesc:a3eb6efa021c361b0f81cb47f124f56e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all redirected messages for a given component.  <br /></td></tr>
+<tr class="separator:a3eb6efa021c361b0f81cb47f124f56e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39d7bcd987861679bcdc332d80cc4cd0" id="r_a39d7bcd987861679bcdc332d80cc4cd0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39d7bcd987861679bcdc332d80cc4cd0">get_messages_by_component_and_type</a> (string $component, string $type,)</td></tr>
+<tr class="memdesc:a39d7bcd987861679bcdc332d80cc4cd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return all redirected messages for a given component and type.  <br /></td></tr>
+<tr class="separator:a39d7bcd987861679bcdc332d80cc4cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -160,8 +166,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$messages</b> = arra
 
 </div>
 </div>
-<a id="a5cb6f3bc2bfb22744695aa412830b998" name="a5cb6f3bc2bfb22744695aa412830b998"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5cb6f3bc2bfb22744695aa412830b998">&#9670;&#160;</a></span>get_messages()</h2>
+<a id="a6ebac39cd3cba6746d0e3a5c79df71bb" name="a6ebac39cd3cba6746d0e3a5c79df71bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ebac39cd3cba6746d0e3a5c79df71bb">&#9670;&#160;</a></span>get_messages()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -169,7 +175,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$messages</b> = arra
         <tr>
           <td class="memname">phpunit_message_sink::get_messages </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td class="paramtype">?callable</td>          <td class="paramname"><span class="paramname"><em>$filter</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -177,9 +183,82 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$messages</b> = arra
 
 <p>Returns all redirected messages. </p>
 <p>The instances are records from the messages table. The array indexes are numbered from 0 and the order is matching the creation of events.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">callable&#160;|&#160;null</td><td class="paramname">$filter</td><td>Use to filter the messages. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3eb6efa021c361b0f81cb47f124f56e3" name="a3eb6efa021c361b0f81cb47f124f56e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eb6efa021c361b0f81cb47f124f56e3">&#9670;&#160;</a></span>get_messages_by_component()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">phpunit_message_sink::get_messages_by_component </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$component</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return all redirected messages for a given component. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$component</td><td>Component name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>List of messages. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a39d7bcd987861679bcdc332d80cc4cd0" name="a39d7bcd987861679bcdc332d80cc4cd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39d7bcd987861679bcdc332d80cc4cd0">&#9670;&#160;</a></span>get_messages_by_component_and_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">phpunit_message_sink::get_messages_by_component_and_type </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$component</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$type</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return all redirected messages for a given component and type. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$component</td><td>Component name. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$type</td><td>Message type. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>List of messages. </td></tr>
   </table>
   </dd>
 </dl>
@@ -192,7 +271,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$messages</b> = arra
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 4 2024 02:33:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 11 2024 02:27:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

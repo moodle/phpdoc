@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240202) (3fc907e3d86)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240208) (328b48ebc59)</div>
   </td>
  </tr>
  </tbody>
@@ -233,13 +233,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9a5216049c56fde6953a7d5460089a46" id="r_a9a5216049c56fde6953a7d5460089a46"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a5216049c56fde6953a7d5460089a46">sync_roles</a> ($user)</td></tr>
 <tr class="memdesc:a9a5216049c56fde6953a7d5460089a46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sync roles for this user.  <br /></td></tr>
 <tr class="separator:a9a5216049c56fde6953a7d5460089a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7de82dc5528603692f4a3d8a52dc5068" id="r_a7de82dc5528603692f4a3d8a52dc5068"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7de82dc5528603692f4a3d8a52dc5068">sync_users</a> ($do_updates=true)</td></tr>
-<tr class="memdesc:a7de82dc5528603692f4a3d8a52dc5068"><td class="mdescLeft">&#160;</td><td class="mdescRight">Syncronizes user fron external LDAP server to moodle user table.  <br /></td></tr>
-<tr class="separator:a7de82dc5528603692f4a3d8a52dc5068"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2d9d5bdf8db42243ee5af97e607b9fd" id="r_ac2d9d5bdf8db42243ee5af97e607b9fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2d9d5bdf8db42243ee5af97e607b9fd">sync_users</a> ($doupdates=true)</td></tr>
+<tr class="memdesc:ac2d9d5bdf8db42243ee5af97e607b9fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronise users from the external LDAP server to <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a>'s user table.  <br /></td></tr>
+<tr class="separator:ac2d9d5bdf8db42243ee5af97e607b9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5502163b04e03fa00f6ef1f8438fd6a" id="r_ac5502163b04e03fa00f6ef1f8438fd6a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5502163b04e03fa00f6ef1f8438fd6a">sync_users_update_callback</a> (?callable $updatecallback=null)</td></tr>
+<tr class="memdesc:ac5502163b04e03fa00f6ef1f8438fd6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronise users from the external LDAP server to <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a>'s user table (callback).  <br /></td></tr>
+<tr class="separator:ac5502163b04e03fa00f6ef1f8438fd6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f90b37b3034ca19e92d8940dfb84aa5" id="r_a8f90b37b3034ca19e92d8940dfb84aa5"><td class="memItemLeft" align="right" valign="top"><a id="a8f90b37b3034ca19e92d8940dfb84aa5" name="a8f90b37b3034ca19e92d8940dfb84aa5"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>test_settings</b> ()</td></tr>
 <tr class="memdesc:a8f90b37b3034ca19e92d8940dfb84aa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test if settings are correct, print info to output. <br /></td></tr>
 <tr class="separator:a8f90b37b3034ca19e92d8940dfb84aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a1813545d74b9e6e96bc03cd87992ee" id="r_a2a1813545d74b9e6e96bc03cd87992ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a1813545d74b9e6e96bc03cd87992ee">update_users</a> (array $users, array $updatekeys)</td></tr>
+<tr class="memdesc:a2a1813545d74b9e6e96bc03cd87992ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update users from the external LDAP server into <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a>'s user table.  <br /></td></tr>
+<tr class="separator:a2a1813545d74b9e6e96bc03cd87992ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65ae815dd73c5abd74fb7ef45d6d8a25" id="r_a65ae815dd73c5abd74fb7ef45d6d8a25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65ae815dd73c5abd74fb7ef45d6d8a25">user_activate</a> ($username)</td></tr>
 <tr class="memdesc:a65ae815dd73c5abd74fb7ef45d6d8a25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Activates (enables) user in external LDAP so user can login.  <br /></td></tr>
 <tr class="separator:a65ae815dd73c5abd74fb7ef45d6d8a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2122,8 +2128,8 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$roleauth</b></td><
 
 </div>
 </div>
-<a id="a7de82dc5528603692f4a3d8a52dc5068" name="a7de82dc5528603692f4a3d8a52dc5068"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7de82dc5528603692f4a3d8a52dc5068">&#9670;&#160;</a></span>sync_users()</h2>
+<a id="ac2d9d5bdf8db42243ee5af97e607b9fd" name="ac2d9d5bdf8db42243ee5af97e607b9fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2d9d5bdf8db42243ee5af97e607b9fd">&#9670;&#160;</a></span>sync_users()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2131,23 +2137,61 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$roleauth</b></td><
         <tr>
           <td class="memname">auth_plugin_ldap::sync_users </td>
           <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$do_updates</em><span class="paramdefsep"> = </span><span class="paramdefval">true</span></span></td><td>)</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$doupdates</em><span class="paramdefsep"> = </span><span class="paramdefval">true</span></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Syncronizes user fron external LDAP server to moodle user table. </p>
-<p>Sync is now using username attribute.</p>
-<p>Syncing users removes or suspends users that dont exists anymore in external LDAP. Creates new users and updates coursecreator status of users.</p>
+<p>Synchronise users from the external LDAP server to <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a>'s user table. </p>
+<p>Calls <a class="el" href="#ac5502163b04e03fa00f6ef1f8438fd6a" title="Synchronise users from the external LDAP server to Moodle&#39;s user table (callback).">sync_users_update_callback()</a> with default callback if appropriate.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">bool</td><td class="paramname">$do_updates</td><td>will do pull in data updates from LDAP if relevant </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$doupdates</td><td>will do pull in data updates from LDAP if relevant </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>success </td></tr>
   </table>
   </dd>
 </dl>
 
 <p>Reimplemented in <a class="el" href="../../dc/daf/classauth__plugin__cas.html#a9e9e31f96e93de11f2bbf4547770190d">auth_plugin_cas</a>.</p>
+
+</div>
+</div>
+<a id="ac5502163b04e03fa00f6ef1f8438fd6a" name="ac5502163b04e03fa00f6ef1f8438fd6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5502163b04e03fa00f6ef1f8438fd6a">&#9670;&#160;</a></span>sync_users_update_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auth_plugin_ldap::sync_users_update_callback </td>
+          <td>(</td>
+          <td class="paramtype">?callable</td>          <td class="paramname"><span class="paramname"><em>$updatecallback</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Synchronise users from the external LDAP server to <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a>'s user table (callback). </p>
+<p>Sync is now using username attribute.</p>
+<p>Syncing users removes or suspends users that dont exists anymore in external LDAP. Creates new users and updates coursecreator status of users.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">callable&#160;|&#160;null</td><td class="paramname">$updatecallback</td><td>will do pull in data updates from LDAP if relevant </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>success </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -2202,6 +2246,37 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$roleauth</b></td><
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">stdClass|bool</td><td>updated user record or false if there is no new info to update. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2a1813545d74b9e6e96bc03cd87992ee" name="a2a1813545d74b9e6e96bc03cd87992ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a1813545d74b9e6e96bc03cd87992ee">&#9670;&#160;</a></span>update_users()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auth_plugin_ldap::update_users </td>
+          <td>(</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$users</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$updatekeys</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update users from the external LDAP server into <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a>'s user table. </p>
+<p>Sync helper</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$users</td><td>chunk of users to update </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$updatekeys</td><td>fields to update </td></tr>
   </table>
   </dd>
 </dl>
@@ -2616,7 +2691,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$roleauth</b></td><
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 4 2024 02:36:05 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 11 2024 02:30:24 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

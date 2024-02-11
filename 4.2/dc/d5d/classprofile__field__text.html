@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2.5+ (Build: 20240202) (44fd4d7dc0c)</div>
+   <div id="projectbrief">Moodle 4.2.6 (Build: 20240212) (6acc0648d89)</div>
   </td>
  </tr>
  </tbody>
@@ -73,6 +73,9 @@ Inheritance diagram for profile_field_text:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a23ffe21d5111a07547e4b1ad66aeed1c" id="r_a23ffe21d5111a07547e4b1ad66aeed1c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a23ffe21d5111a07547e4b1ad66aeed1c">convert_external_data</a> ($data)</td></tr>
+<tr class="memdesc:a23ffe21d5111a07547e4b1ad66aeed1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert external data (csv file) from value to key for processing later by edit_save_data_preprocess.  <br /></td></tr>
+<tr class="separator:a23ffe21d5111a07547e4b1ad66aeed1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a460977e34e889989a99f5493e339285a" id="r_a460977e34e889989a99f5493e339285a"><td class="memItemLeft" align="right" valign="top"><a id="a460977e34e889989a99f5493e339285a" name="a460977e34e889989a99f5493e339285a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>display_data</b> ()</td></tr>
 <tr class="memdesc:a460977e34e889989a99f5493e339285a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwrite the base class to display the data for this field. <br /></td></tr>
@@ -80,6 +83,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a59eed898dd6cc93f6729b0ff54468cee" id="r_a59eed898dd6cc93f6729b0ff54468cee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59eed898dd6cc93f6729b0ff54468cee">edit_field_add</a> ($mform)</td></tr>
 <tr class="memdesc:a59eed898dd6cc93f6729b0ff54468cee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add fields for editing a text profile field.  <br /></td></tr>
 <tr class="separator:a59eed898dd6cc93f6729b0ff54468cee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a083e833d4fa17c991d2a1a833fc8b533" id="r_a083e833d4fa17c991d2a1a833fc8b533"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a083e833d4fa17c991d2a1a833fc8b533">edit_save_data_preprocess</a> ($data, $datarecord)</td></tr>
+<tr class="memdesc:a083e833d4fa17c991d2a1a833fc8b533"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process the data before it gets saved in database.  <br /></td></tr>
+<tr class="separator:a083e833d4fa17c991d2a1a833fc8b533"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6da6f008ab93675e76bd0c4c72b51d4" id="r_ae6da6f008ab93675e76bd0c4c72b51d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6da6f008ab93675e76bd0c4c72b51d4">get_field_properties</a> ()</td></tr>
 <tr class="memdesc:ae6da6f008ab93675e76bd0c4c72b51d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the field type and null properties.  <br /></td></tr>
 <tr class="separator:ae6da6f008ab93675e76bd0c4c72b51d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -89,6 +95,37 @@ Public Member Functions</h2></td></tr>
 <dl class="section copyright"><dt>Copyright</dt><dd>2007 onwards Shane Elliot <a href="http://pukunui.com" class="el externalurl"></a> </dd></dl>
 <dl class="section user"><dt>License</dt><dd><a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a> GNU GPL v3 or later </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a23ffe21d5111a07547e4b1ad66aeed1c" name="a23ffe21d5111a07547e4b1ad66aeed1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23ffe21d5111a07547e4b1ad66aeed1c">&#9670;&#160;</a></span>convert_external_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">profile_field_text::convert_external_data </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert external data (csv file) from value to key for processing later by edit_save_data_preprocess. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$data</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string|null</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a59eed898dd6cc93f6729b0ff54468cee" name="a59eed898dd6cc93f6729b0ff54468cee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a59eed898dd6cc93f6729b0ff54468cee">&#9670;&#160;</a></span>edit_field_add()</h2>
 
@@ -108,6 +145,42 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">moodleform</td><td class="paramname">$mform</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a083e833d4fa17c991d2a1a833fc8b533" name="a083e833d4fa17c991d2a1a833fc8b533"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a083e833d4fa17c991d2a1a833fc8b533">&#9670;&#160;</a></span>edit_save_data_preprocess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">profile_field_text::edit_save_data_preprocess </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$data</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$datarecord</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Process the data before it gets saved in database. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$data</td><td></td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$datarecord</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string|null</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -147,7 +220,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 4 2024 02:29:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 11 2024 02:23:44 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

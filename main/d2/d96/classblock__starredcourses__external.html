@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240202) (3fc907e3d86)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240208) (328b48ebc59)</div>
   </td>
  </tr>
  </tbody>
@@ -239,6 +239,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aa588dda6bf85be94070bfd6c4f68148f" id="r_aa588dda6bf85be94070bfd6c4f68148f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d98/classcore__course__external.html#aa588dda6bf85be94070bfd6c4f68148f">get_courses_returns</a> ()</td></tr>
 <tr class="memdesc:aa588dda6bf85be94070bfd6c4f68148f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns description of method result value.  <br /></td></tr>
 <tr class="separator:aa588dda6bf85be94070bfd6c4f68148f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47028add7160e53858f1df80b0aae2da" id="r_a47028add7160e53858f1df80b0aae2da"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d98/classcore__course__external.html#a47028add7160e53858f1df80b0aae2da">get_editable_customfields</a> (\context $context, int $courseid=0)</td></tr>
+<tr class="memdesc:a47028add7160e53858f1df80b0aae2da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return array of all editable course custom fields indexed by their shortname.  <br /></td></tr>
+<tr class="separator:a47028add7160e53858f1df80b0aae2da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ff6c300ae392b2a32cdcb76ebb43504" id="r_a3ff6c300ae392b2a32cdcb76ebb43504"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d98/classcore__course__external.html#a3ff6c300ae392b2a32cdcb76ebb43504">get_enrolled_courses_by_timeline_classification</a> (string $classification, int $limit=0, int $offset=0, string $<a class="el" href="../../dc/d71/group___imap___client.html#ga4bd31bcedb7b4943aac2da78d0d84afe">sort</a>=null, string $customfieldname=null, string $customfieldvalue=null, string $searchvalue=null)</td></tr>
 <tr class="memdesc:a3ff6c300ae392b2a32cdcb76ebb43504"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get courses matching the given timeline classification.  <br /></td></tr>
 <tr class="separator:a3ff6c300ae392b2a32cdcb76ebb43504"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2572,6 +2575,50 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a47028add7160e53858f1df80b0aae2da" name="a47028add7160e53858f1df80b0aae2da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47028add7160e53858f1df80b0aae2da">&#9670;&#160;</a></span>get_editable_customfields()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_course_external::get_editable_customfields </td>
+          <td>(</td>
+          <td class="paramtype">\context</td>          <td class="paramname"><span class="paramname"><em>$context</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$courseid</em><span class="paramdefsep"> = </span><span class="paramdefval">0</span></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return array of all editable course custom fields indexed by their shortname. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">context</td><td class="paramname">$context</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$courseid</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">core_customfield::field_controller[]</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a3ff6c300ae392b2a32cdcb76ebb43504" name="a3ff6c300ae392b2a32cdcb76ebb43504"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3ff6c300ae392b2a32cdcb76ebb43504">&#9670;&#160;</a></span>get_enrolled_courses_by_timeline_classification()</h2>
 
@@ -4518,7 +4565,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 4 2024 02:36:09 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 11 2024 02:30:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

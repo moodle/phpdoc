@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240202) (3fc907e3d86)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240208) (328b48ebc59)</div>
   </td>
  </tr>
  </tbody>
@@ -79,6 +79,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab3029a661704a948190e0fa4315210f2" id="r_ab3029a661704a948190e0fa4315210f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3029a661704a948190e0fa4315210f2">get_field_properties</a> ()</td></tr>
 <tr class="memdesc:ab3029a661704a948190e0fa4315210f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the field type and null properties.  <br /></td></tr>
 <tr class="separator:ab3029a661704a948190e0fa4315210f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1aeb03ef714fd2f9d7995bf594054c0" id="r_ae1aeb03ef714fd2f9d7995bf594054c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1aeb03ef714fd2f9d7995bf594054c0">is_empty</a> ()</td></tr>
+<tr class="memdesc:ae1aeb03ef714fd2f9d7995bf594054c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override parent {.  <br /></td></tr>
+<tr class="separator:ae1aeb03ef714fd2f9d7995bf594054c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a542b095586f70a9b943c3e5a47c530" id="r_a6a542b095586f70a9b943c3e5a47c530"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a542b095586f70a9b943c3e5a47c530">show_field_content</a> (?context $context=null)</td></tr>
+<tr class="memdesc:a6a542b095586f70a9b943c3e5a47c530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override parent {.  <br /></td></tr>
+<tr class="separator:a6a542b095586f70a9b943c3e5a47c530"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a41605b43b1b164e8cdf31f2dce7306ab" name="a41605b43b1b164e8cdf31f2dce7306ab"></a>
@@ -158,13 +164,73 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ae1aeb03ef714fd2f9d7995bf594054c0" name="ae1aeb03ef714fd2f9d7995bf594054c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1aeb03ef714fd2f9d7995bf594054c0">&#9670;&#160;</a></span>is_empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">profile_field_checkbox::is_empty </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Override parent {. </p>
+<dl class="section see"><dt>See also</dt><dd>profile_field_base::is_empty} check</dd></dl>
+<p>We can't check the "data" property, because if not set by the user then it's populated by "defaultdata" of the field, which can also be 0 (false) therefore ensuring the parent class check could never return true for this comparison</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6a542b095586f70a9b943c3e5a47c530" name="a6a542b095586f70a9b943c3e5a47c530"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a542b095586f70a9b943c3e5a47c530">&#9670;&#160;</a></span>show_field_content()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">profile_field_checkbox::show_field_content </td>
+          <td>(</td>
+          <td class="paramtype">?context</td>          <td class="paramname"><span class="paramname"><em>$context</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Override parent {. </p>
+<dl class="section see"><dt>See also</dt><dd>profile_field_base::show_field_content} check</dd></dl>
+<p>We only need to determine whether the field is visible, because we also want to show the "defaultdata" of the field, even if the user hasn't explicitly filled it in</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">context&#160;|&#160;null</td><td class="paramname">$context</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>user/profile/field/checkbox/<b>field.class.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 4 2024 02:36:57 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 11 2024 02:31:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>
