@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240208) (328b48ebc59)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
   </td>
  </tr>
  </tbody>
@@ -235,6 +235,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>get_site_dpos</b> (
 <tr class="memitem:a97069f6384aba842bb616d2cab57511f" id="r_a97069f6384aba842bb616d2cab57511f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a97069f6384aba842bb616d2cab57511f">update_request_status</a> ($requestid, $status, $dpoid=0, $<a class="el" href="../../da/d73/classcomment.html">comment</a>='')</td></tr>
 <tr class="memdesc:a97069f6384aba842bb616d2cab57511f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cancels the data request for a given request ID.  <br /></td></tr>
 <tr class="separator:a97069f6384aba842bb616d2cab57511f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03ca10677ab48f09f0f782e660a20c2d" id="r_a03ca10677ab48f09f0f782e660a20c2d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03ca10677ab48f09f0f782e660a20c2d">validate_create_data_request</a> (stdClass $data)</td></tr>
+<tr class="memdesc:a03ca10677ab48f09f0f782e660a20c2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates a data request creation.  <br /></td></tr>
+<tr class="separator:a03ca10677ab48f09f0f782e660a20c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -2692,6 +2695,45 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>DATAREQUEST_TYPE_EXP
 
 </div>
 </div>
+<a id="a03ca10677ab48f09f0f782e660a20c2d" name="a03ca10677ab48f09f0f782e660a20c2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03ca10677ab48f09f0f782e660a20c2d">&#9670;&#160;</a></span>validate_create_data_request()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static tool_dataprivacy\api::validate_create_data_request </td>
+          <td>(</td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Validates a data request creation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$data</td><td>the data request information, including userid and type </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>array of errors, empty if everything went ok </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a12a2e74fbd16022326d7051783b0cdb3" name="a12a2e74fbd16022326d7051783b0cdb3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a12a2e74fbd16022326d7051783b0cdb3">&#9670;&#160;</a></span>DATAREQUEST_TYPE_OTHERS</h2>
@@ -2716,7 +2758,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>DATAREQUEST_TYPE_EXP
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 11 2024 02:32:35 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 18 2024 02:34:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

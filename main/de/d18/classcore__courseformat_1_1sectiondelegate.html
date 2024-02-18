@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240208) (328b48ebc59)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
   </td>
  </tr>
  </tbody>
@@ -62,6 +62,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="../../dd/da3/classcore__courseformat_1_1sectiondelegate-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">core_courseformat\sectiondelegate Class Reference<div class="ingroups"><a class="el" href="../../db/d92/group__core__courseformat.html">core_courseformat</a></div></div></div>
 </div><!--header-->
@@ -75,9 +76,18 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a6f711b1f1581547f6c5c00b86022e806" id="r_a6f711b1f1581547f6c5c00b86022e806"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f711b1f1581547f6c5c00b86022e806">has_delegate_class</a> (string $pluginname)</td></tr>
+<tr class="memdesc:a6f711b1f1581547f6c5c00b86022e806"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a plugin has a delegate class.  <br /></td></tr>
+<tr class="separator:a6f711b1f1581547f6c5c00b86022e806"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66c3d1ab58bcf2c1dfc85bbbe03ccd78" id="r_a66c3d1ab58bcf2c1dfc85bbbe03ccd78"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66c3d1ab58bcf2c1dfc85bbbe03ccd78">instance</a> (<a class="el" href="../../d1/db5/classsection__info.html">section_info</a> $sectioninfo)</td></tr>
 <tr class="memdesc:a66c3d1ab58bcf2c1dfc85bbbe03ccd78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the section info instance if available.  <br /></td></tr>
 <tr class="separator:a66c3d1ab58bcf2c1dfc85bbbe03ccd78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:a3531bae7b45af37d2d0c3e411bb4d5f1" id="r_a3531bae7b45af37d2d0c3e411bb4d5f1"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3531bae7b45af37d2d0c3e411bb4d5f1">get_delegate_class_name</a> (string $pluginname)</td></tr>
+<tr class="memdesc:a3531bae7b45af37d2d0c3e411bb4d5f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the delgate class name of a plugin, if any.  <br /></td></tr>
+<tr class="separator:a3531bae7b45af37d2d0c3e411bb4d5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="accbf655c73016004346573fa05857696" name="accbf655c73016004346573fa05857696"></a>
@@ -106,6 +116,84 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3531bae7b45af37d2d0c3e411bb4d5f1" name="a3531bae7b45af37d2d0c3e411bb4d5f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3531bae7b45af37d2d0c3e411bb4d5f1">&#9670;&#160;</a></span>get_delegate_class_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_courseformat\sectiondelegate::get_delegate_class_name </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$pluginname</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the delgate class name of a plugin, if any. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$pluginname</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string|null</td><td>the delegate class name or null if not found. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6f711b1f1581547f6c5c00b86022e806" name="a6f711b1f1581547f6c5c00b86022e806"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f711b1f1581547f6c5c00b86022e806">&#9670;&#160;</a></span>has_delegate_class()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_courseformat\sectiondelegate::has_delegate_class </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$pluginname</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if a plugin has a delegate class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$pluginname</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a66c3d1ab58bcf2c1dfc85bbbe03ccd78" name="a66c3d1ab58bcf2c1dfc85bbbe03ccd78"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a66c3d1ab58bcf2c1dfc85bbbe03ccd78">&#9670;&#160;</a></span>instance()</h2>
 
@@ -151,7 +239,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 11 2024 02:31:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 18 2024 02:33:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

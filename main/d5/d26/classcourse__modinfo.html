@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240208) (328b48ebc59)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
   </td>
  </tr>
  </tbody>
@@ -103,6 +103,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac35f3a9b7d3d79b6e36c158e354698f9" id="r_ac35f3a9b7d3d79b6e36c158e354698f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac35f3a9b7d3d79b6e36c158e354698f9">get_instances_of</a> ($modname)</td></tr>
 <tr class="memdesc:ac35f3a9b7d3d79b6e36c158e354698f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains all instances of a particular module on this course.  <br /></td></tr>
 <tr class="separator:ac35f3a9b7d3d79b6e36c158e354698f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29c83b4e254872093c5b72006d5420a2" id="r_a29c83b4e254872093c5b72006d5420a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a29c83b4e254872093c5b72006d5420a2">get_listed_section_info_all</a> ()</td></tr>
+<tr class="memdesc:a29c83b4e254872093c5b72006d5420a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets all sections listed in course page as array from section number =&gt; data about section.  <br /></td></tr>
+<tr class="separator:a29c83b4e254872093c5b72006d5420a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa761c38075a0520fd447e5143d7a365" id="r_afa761c38075a0520fd447e5143d7a365"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa761c38075a0520fd447e5143d7a365">get_section_info</a> ($sectionnumber, $strictness=<a class="el" href="../../d0/de1/group__core.html#gaffc7005a2da386334d76ec5f85ca2d48">IGNORE_MISSING</a>)</td></tr>
 <tr class="memdesc:afa761c38075a0520fd447e5143d7a365"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets data about specific numbered section.  <br /></td></tr>
 <tr class="separator:afa761c38075a0520fd447e5143d7a365"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -763,6 +766,32 @@ Static Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a29c83b4e254872093c5b72006d5420a2" name="a29c83b4e254872093c5b72006d5420a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29c83b4e254872093c5b72006d5420a2">&#9670;&#160;</a></span>get_listed_section_info_all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">course_modinfo::get_listed_section_info_all </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets all sections listed in course page as array from section number =&gt; data about section. </p>
+<p>The method is similar to get_section_info_all but filtering all sections delegated to components.</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">section_info[]</td><td>Array of <a class="el" href="../../d1/db5/classsection__info.html">section_info</a> objects organised by section number </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="afa761c38075a0520fd447e5143d7a365" name="afa761c38075a0520fd447e5143d7a365"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afa761c38075a0520fd447e5143d7a365">&#9670;&#160;</a></span>get_section_info()</h2>
 
@@ -815,6 +844,7 @@ Static Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets all sections as array from section number =&gt; data about section. </p>
+<p>The method will return all sections of the course, including the ones delegated to a component.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">section_info[]</td><td>Array of <a class="el" href="../../d1/db5/classsection__info.html">section_info</a> objects organised by section number </td></tr>
@@ -1395,7 +1425,7 @@ course_modinfo::clear_instance_cache() </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 11 2024 02:30:32 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 18 2024 02:32:36 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

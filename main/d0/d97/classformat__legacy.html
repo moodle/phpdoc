@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240208) (328b48ebc59)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
   </td>
  </tr>
  </tbody>
@@ -89,6 +89,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7287098ef9e44286a2edd86efb85c6f9" id="r_a7287098ef9e44286a2edd86efb85c6f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a7287098ef9e44286a2edd86efb85c6f9">can_delete_section</a> ($section)</td></tr>
 <tr class="memdesc:a7287098ef9e44286a2edd86efb85c6f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this format allows to delete sections.  <br /></td></tr>
 <tr class="separator:a7287098ef9e44286a2edd86efb85c6f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a592f3a30cf5a2ca91ef93e29848bba" id="r_a6a592f3a30cf5a2ca91ef93e29848bba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a6a592f3a30cf5a2ca91ef93e29848bba">can_sections_be_removed_from_navigation</a> ()</td></tr>
+<tr class="memdesc:a6a592f3a30cf5a2ca91ef93e29848bba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether section items can be removed from the navigation, just like the breadcrumb feature seen on activity pages.  <br /></td></tr>
+<tr class="separator:a6a592f3a30cf5a2ca91ef93e29848bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6296eba16769c89d0e09feb92d80dea" id="r_ad6296eba16769c89d0e09feb92d80dea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#ad6296eba16769c89d0e09feb92d80dea">course_content_footer</a> ()</td></tr>
 <tr class="memdesc:ad6296eba16769c89d0e09feb92d80dea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Course-specific information to be output immediately below content on any course page.  <br /></td></tr>
 <tr class="separator:ad6296eba16769c89d0e09feb92d80dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -492,6 +495,40 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
 </dl>
 
 <p>Reimplemented in <a class="el" href="../../d1/d92/classformat__topics.html#ae110643d297bacbbfc774ed654de9350">format_topics</a>, and <a class="el" href="../../d5/d8d/classformat__weeks.html#a91d4c229f1f6f550b5cf0f36522fd653">format_weeks</a>.</p>
+
+</div>
+</div>
+<a id="a6a592f3a30cf5a2ca91ef93e29848bba" name="a6a592f3a30cf5a2ca91ef93e29848bba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a592f3a30cf5a2ca91ef93e29848bba">&#9670;&#160;</a></span>can_sections_be_removed_from_navigation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\base::can_sections_be_removed_from_navigation </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determines whether section items can be removed from the navigation, just like the breadcrumb feature seen on activity pages. </p>
+<p>By default, it returns false but can be overridden by the course format to change the behaviour.</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>True if sections can be removed, false otherwise. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -3651,7 +3688,7 @@ course_modinfo::get_section_info_all()</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 11 2024 02:30:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 18 2024 02:32:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>
