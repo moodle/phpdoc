@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
   </td>
  </tr>
  </tbody>
@@ -254,7 +254,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$sourceCacheNamespa
 <p>You must have APCu enabled to use it.</p>
 <p>Before using this feature, you should try these steps first:</p><ul>
 <li>enable compilation if not already done (see <code>enableCompilation()</code>)</li>
-<li>if you use autowiring or attributes, add all the classes you are using into your configuration so that PHP-DI knows about them and compiles them Once this is done, you can try to optimize performances further with APCu. It can also be useful if you use <code>Container::make()</code> instead of <code><a class="el" href="../../dc/d71/group___imap___client.html#gafcf303080696d20cffeed262f4ebc4bb" title="Get information from the cache.">get()</a></code> (<code>make()</code> calls cannot be compiled so they are not optimized).</li>
+<li>if you use autowiring or attributes, add all the classes you are using into your configuration so that PHP-DI knows about them and compiles them Once this is done, you can try to optimize performances further with APCu. It can also be useful if you use <code>Container::make()</code> instead of <code>get()</code> (<code>make()</code> calls cannot be compiled so they are not optimized).</li>
 </ul>
 <p>Remember to clear APCu on each deploy else your application will have a stale cache. Do not enable the cache in development environment: any change you will make to the code will be ignored because of the cache.</p>
 <dl class="section see"><dt>See also</dt><dd><a href="https://php-di.org/doc/performances.html">https://php-di.org/doc/performances.html</a></dd></dl>
@@ -400,7 +400,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$sourceCacheNamespa
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 18 2024 02:34:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 25 2024 02:32:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

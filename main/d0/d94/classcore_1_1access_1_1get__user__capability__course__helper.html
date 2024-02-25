@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
   </td>
  </tr>
  </tbody>
@@ -72,7 +72,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ac12387c4b6b09f3762f466f142427304" id="r_ac12387c4b6b09f3762f466f142427304"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac12387c4b6b09f3762f466f142427304">get_sql</a> ($userid, $<a class="el" href="../../dc/d71/group___imap___client.html#gab2c24006bbccb7984767e680dc4c3e92">capability</a>)</td></tr>
+<tr class="memitem:ac12387c4b6b09f3762f466f142427304" id="r_ac12387c4b6b09f3762f466f142427304"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac12387c4b6b09f3762f466f142427304">get_sql</a> ($userid, $capability)</td></tr>
 <tr class="memdesc:ac12387c4b6b09f3762f466f142427304"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets SQL to restrict a query to contexts in which the user has a capability.  <br /></td></tr>
 <tr class="separator:ac12387c4b6b09f3762f466f142427304"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c01eb017cf5fb0d0b84f47dac0694f8" id="r_a1c01eb017cf5fb0d0b84f47dac0694f8"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c01eb017cf5fb0d0b84f47dac0694f8">map_fieldnames</a> (string $fieldsexceptid='')</td></tr>
@@ -90,10 +90,10 @@ Static Protected Member Functions</h2></td></tr>
 <tr class="memitem:abad6aa3f6d0a88e9aa84dc0559ca34be" id="r_abad6aa3f6d0a88e9aa84dc0559ca34be"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abad6aa3f6d0a88e9aa84dc0559ca34be">create_sql</a> ($parent)</td></tr>
 <tr class="memdesc:abad6aa3f6d0a88e9aa84dc0559ca34be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates SQL suitable for restricting by contexts listed in the given permission tree.  <br /></td></tr>
 <tr class="separator:abad6aa3f6d0a88e9aa84dc0559ca34be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8b30cc31ef32d6a83ad14352f69b00d" id="r_af8b30cc31ef32d6a83ad14352f69b00d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8b30cc31ef32d6a83ad14352f69b00d">get_capability_info_at_each_context</a> ($userid, $<a class="el" href="../../dc/d71/group___imap___client.html#gab2c24006bbccb7984767e680dc4c3e92">capability</a>)</td></tr>
+<tr class="memitem:af8b30cc31ef32d6a83ad14352f69b00d" id="r_af8b30cc31ef32d6a83ad14352f69b00d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8b30cc31ef32d6a83ad14352f69b00d">get_capability_info_at_each_context</a> ($userid, $capability)</td></tr>
 <tr class="memdesc:af8b30cc31ef32d6a83ad14352f69b00d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Based on the given user's access data (roles) and system role definitions, works out an array of capability values at each relevant context for the given user and capability.  <br /></td></tr>
 <tr class="separator:af8b30cc31ef32d6a83ad14352f69b00d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e289d5d09da0b2eb3e61c9a357525cc" id="r_a5e289d5d09da0b2eb3e61c9a357525cc"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e289d5d09da0b2eb3e61c9a357525cc">get_tree</a> ($userid, $<a class="el" href="../../dc/d71/group___imap___client.html#gab2c24006bbccb7984767e680dc4c3e92">capability</a>)</td></tr>
+<tr class="memitem:a5e289d5d09da0b2eb3e61c9a357525cc" id="r_a5e289d5d09da0b2eb3e61c9a357525cc"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5e289d5d09da0b2eb3e61c9a357525cc">get_tree</a> ($userid, $capability)</td></tr>
 <tr class="memdesc:a5e289d5d09da0b2eb3e61c9a357525cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a permission tree for the given user and capability, representing the value of that capability at different contexts across the system.  <br /></td></tr>
 <tr class="separator:a5e289d5d09da0b2eb3e61c9a357525cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91697557792749b02c54d5111f825b6b" id="r_a91697557792749b02c54d5111f825b6b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91697557792749b02c54d5111f825b6b">path_is_above</a> ($parentpath, $otherpath)</td></tr>
@@ -535,7 +535,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 18 2024 02:33:37 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 25 2024 02:32:03 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

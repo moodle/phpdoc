@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
   </td>
  </tr>
  </tbody>
@@ -182,7 +182,7 @@ $(function() {
 <div class="line">        $tracer = (string) substr($tracer,0,500);</div>
 <div class="line"> </div>
 <div class="line">        <span class="keywordflow">if</span> (is_array($inputarr)) {</div>
-<div class="line">            <span class="keywordflow">if</span> (is_array(<a class="code hl_function" href="../../dc/d71/group___imap___client.html#ga4a20559544fdf4dcb457e258dc976cf8">reset</a>($inputarr))) $params = <span class="stringliteral">&#39;Array sizeof=&#39;</span>.<span class="keyword">sizeof</span>($inputarr);</div>
+<div class="line">            <span class="keywordflow">if</span> (is_array(<a class="code hl_function" href="../../d2/d5d/namespace_phpml_1_1_helper.html#acb3c8c60cc116f09ba34c6254625ccae">reset</a>($inputarr))) $params = <span class="stringliteral">&#39;Array sizeof=&#39;</span>.<span class="keyword">sizeof</span>($inputarr);</div>
 <div class="line">            <span class="keywordflow">else</span> {</div>
 <div class="line">                <span class="comment">// Quote string parameters so we can see them in the</span></div>
 <div class="line">                <span class="comment">// performance stats. This helps spot disabled indexes.</span></div>
@@ -365,7 +365,7 @@ $(function() {
 <div class="line">        $statfile = <span class="stringliteral">&#39;/proc/stat&#39;</span>;</div>
 <div class="line">        <span class="keywordflow">if</span> (!file_exists($statfile)) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"> </div>
-<div class="line">        $fd = <a id="a4" name="a4"></a><a class="code hl_function" href="../../d5/d41/group___support.html#ga4f0f28af205235b0726da91caf226b9f">fopen</a>($statfile,<span class="stringliteral">&quot;r&quot;</span>);</div>
+<div class="line">        $fd = fopen($statfile,<span class="stringliteral">&quot;r&quot;</span>);</div>
 <div class="line">        <span class="keywordflow">if</span> (!$fd) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"> </div>
 <div class="line">        $statinfo = explode(<span class="stringliteral">&quot;\n&quot;</span>,fgets($fd, 1024));</div>
@@ -482,7 +482,7 @@ $(function() {
 <div class="line"><span class="comment">        If only a snippet of the $sql is passed in, then $partial will hold the crc32 of the</span></div>
 <div class="line"><span class="comment">            actual sql.</span></div>
 <div class="line"><span class="comment">    */</span></div>
-<div class="line">    <span class="keyword">function</span> Explain($sql,<a id="a5" name="a5"></a><a class="code hl_variable" href="../../dc/d71/group___imap___client.html#ga4927115ba2fb10567f7ea8241f6b1909">$partial</a>=<span class="keyword">false</span>)</div>
+<div class="line">    <span class="keyword">function</span> Explain($sql,$partial=<span class="keyword">false</span>)</div>
 <div class="line">    {</div>
 <div class="line">        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line">    }</div>
@@ -518,8 +518,8 @@ $(function() {
 <div class="line">            $this-&gt;conn-&gt;fnExecute = <span class="keyword">false</span>;</div>
 <div class="line"> </div>
 <div class="line">            <span class="keywordflow">if</span> (isset($_GET[<span class="stringliteral">&#39;exps&#39;</span>]) &amp;&amp; isset($_GET[<span class="stringliteral">&#39;sql&#39;</span>])) {</div>
-<div class="line">                <a class="code hl_variable" href="../../dc/d71/group___imap___client.html#ga4927115ba2fb10567f7ea8241f6b1909">$partial</a> = !empty($_GET[<span class="stringliteral">&#39;part&#39;</span>]);</div>
-<div class="line">                echo <span class="stringliteral">&quot;&lt;a name=explain&gt;&lt;/a&gt;&quot;</span>.$this-&gt;Explain($_GET[<span class="stringliteral">&#39;sql&#39;</span>],<a class="code hl_variable" href="../../dc/d71/group___imap___client.html#ga4927115ba2fb10567f7ea8241f6b1909">$partial</a>).<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line">                $partial = !empty($_GET[<span class="stringliteral">&#39;part&#39;</span>]);</div>
+<div class="line">                echo <span class="stringliteral">&quot;&lt;a name=explain&gt;&lt;/a&gt;&quot;</span>.$this-&gt;Explain($_GET[<span class="stringliteral">&#39;sql&#39;</span>],$partial).<span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line">            }</div>
 <div class="line"> </div>
 <div class="line">            <span class="keywordflow">if</span> (isset($_GET[<span class="stringliteral">&#39;sql&#39;</span>])) <span class="keywordflow">return</span>;</div>
@@ -597,8 +597,8 @@ $(function() {
 <div class="line">            $this-&gt;conn-&gt;fnExecute = <span class="keyword">false</span>;</div>
 <div class="line"> </div>
 <div class="line">            <span class="keywordflow">if</span> (isset($_GET[<span class="stringliteral">&#39;expe&#39;</span>]) &amp;&amp; isset($_GET[<span class="stringliteral">&#39;sql&#39;</span>])) {</div>
-<div class="line">                <a class="code hl_variable" href="../../dc/d71/group___imap___client.html#ga4927115ba2fb10567f7ea8241f6b1909">$partial</a> = !empty($_GET[<span class="stringliteral">&#39;part&#39;</span>]);</div>
-<div class="line">                echo <span class="stringliteral">&quot;&lt;a name=explain&gt;&lt;/a&gt;&quot;</span>.$this-&gt;Explain($_GET[<span class="stringliteral">&#39;sql&#39;</span>],<a class="code hl_variable" href="../../dc/d71/group___imap___client.html#ga4927115ba2fb10567f7ea8241f6b1909">$partial</a>).<span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line">                $partial = !empty($_GET[<span class="stringliteral">&#39;part&#39;</span>]);</div>
+<div class="line">                echo <span class="stringliteral">&quot;&lt;a name=explain&gt;&lt;/a&gt;&quot;</span>.$this-&gt;Explain($_GET[<span class="stringliteral">&#39;sql&#39;</span>],$partial).<span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line">            }</div>
 <div class="line"> </div>
 <div class="line">            <span class="keywordflow">if</span> (isset($_GET[<span class="stringliteral">&#39;sql&#39;</span>])) <span class="keywordflow">return</span>;</div>
@@ -676,7 +676,7 @@ $(function() {
 <div class="line">        global $ADODB_FETCH_MODE;</div>
 <div class="line"> </div>
 <div class="line">            $sql1 = $sql[0];</div>
-<div class="line">            <a id="a6" name="a6"></a><a class="code hl_variable" href="../../d9/d9d/group___crypt___blowfish.html#gaf1b7751b6c09e2d3124df5828a7b6490">$key</a> = $sql[1];</div>
+<div class="line">            $key = $sql[1];</div>
 <div class="line">            <span class="keywordflow">if</span> (<span class="keyword">sizeof</span>($sql)&gt;2) $pos = $sql[2];</div>
 <div class="line">            <span class="keywordflow">else</span> $pos = 1;</div>
 <div class="line">            <span class="keywordflow">if</span> (<span class="keyword">sizeof</span>($sql)&gt;3) $coef = $sql[3];</div>
@@ -692,8 +692,8 @@ $(function() {
 <div class="line">            $ADODB_FETCH_MODE = $save;</div>
 <div class="line">            <span class="keywordflow">if</span> ($rs) {</div>
 <div class="line">                <span class="keywordflow">while</span> (!$rs-&gt;EOF) {</div>
-<div class="line">                    $keyf = <a class="code hl_function" href="../../dc/d71/group___imap___client.html#ga4a20559544fdf4dcb457e258dc976cf8">reset</a>($rs-&gt;fields);</div>
-<div class="line">                    <span class="keywordflow">if</span> (trim($keyf) == <a class="code hl_variable" href="../../d9/d9d/group___crypt___blowfish.html#gaf1b7751b6c09e2d3124df5828a7b6490">$key</a>) {</div>
+<div class="line">                    $keyf = <a class="code hl_function" href="../../d2/d5d/namespace_phpml_1_1_helper.html#acb3c8c60cc116f09ba34c6254625ccae">reset</a>($rs-&gt;fields);</div>
+<div class="line">                    <span class="keywordflow">if</span> (trim($keyf) == $key) {</div>
 <div class="line">                        $ret = $rs-&gt;fields[$pos];</div>
 <div class="line">                        <span class="keywordflow">if</span> ($coef) $ret *= $coef;</div>
 <div class="line">                        <span class="keywordflow">break</span>;</div>
@@ -822,7 +822,7 @@ $(function() {
 <div class="line">        <span class="keywordflow">case</span> <span class="stringliteral">&#39;tables&#39;</span>:</div>
 <div class="line">            echo $this-&gt;Tables(); <span class="keywordflow">break</span>;</div>
 <div class="line">        }</div>
-<div class="line">        global <a id="a7" name="a7"></a><a class="code hl_variable" href="../../dc/d2c/group___a_d_odb.html#gabebde3934156634d30698df19db6401a">$ADODB_vers</a>;</div>
+<div class="line">        global <a id="a4" name="a4"></a><a class="code hl_variable" href="../../dc/d2c/group___a_d_odb.html#gabebde3934156634d30698df19db6401a">$ADODB_vers</a>;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">/*</span></div>
@@ -1076,13 +1076,13 @@ $(function() {
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">function</span> <a id="a8" name="a8"></a><a class="code hl_function" href="../../de/d06/classadodb__perf.html#ad4f9952aee2039976255eed5c577354f">OptimizeTable</a>( $table, $mode = ADODB_OPT_LOW)</div>
+<div class="line">    <span class="keyword">function</span> <a id="a5" name="a5"></a><a class="code hl_function" href="../../de/d06/classadodb__perf.html#ad4f9952aee2039976255eed5c577354f">OptimizeTable</a>( $table, $mode = ADODB_OPT_LOW)</div>
 <div class="line">    {</div>
 <div class="line">        <a class="code hl_function" href="../../d4/dbd/class_a_d_o_connection.html#afc26fd0394260eb534f90429ae00707c">ADOConnection::outp</a>( sprintf( <span class="stringliteral">&quot;&lt;p&gt;%s: &#39;%s&#39; not implemented for driver &#39;%s&#39;&lt;/p&gt;&quot;</span>, __CLASS__, __FUNCTION__, $this-&gt;conn-&gt;databaseType));</div>
 <div class="line">        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line">    }</div>
 <div class="line"> </div>
-<div class="line">    <span class="keyword">function</span> <a id="a9" name="a9"></a><a class="code hl_function" href="../../de/d06/classadodb__perf.html#a66be832c08d14e3af1eb2772f917403c">optimizeDatabase</a>()</div>
+<div class="line">    <span class="keyword">function</span> <a id="a6" name="a6"></a><a class="code hl_function" href="../../de/d06/classadodb__perf.html#a66be832c08d14e3af1eb2772f917403c">optimizeDatabase</a>()</div>
 <div class="line">    {</div>
 <div class="line">        $conn = $this-&gt;conn;</div>
 <div class="line">        <span class="keywordflow">if</span> ( !$conn) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
@@ -1101,21 +1101,18 @@ $(function() {
 <div class="line">    <span class="comment">// end hack</span></div>
 <div class="line">}</div>
 <div class="ttc" id="aclass_a_d_o_connection_html_afc26fd0394260eb534f90429ae00707c"><div class="ttname"><a href="../../d4/dbd/class_a_d_o_connection.html#afc26fd0394260eb534f90429ae00707c">ADOConnection\outp</a></div><div class="ttdeci">static outp($msg, $newline=true)</div><div class="ttdoc">All error messages go through this bottleneck function.</div><div class="ttdef"><b>Definition</b> adodb.inc.php:845</div></div>
-<div class="ttc" id="aclass_exception_html"><div class="ttname"><a href="../../df/d70/class_exception.html">Exception</a></div><div class="ttdoc">General SimplePie exception class.</div><div class="ttdef"><b>Definition</b> Exception.php:27</div></div>
+<div class="ttc" id="aclass_exception_html"><div class="ttname"><a href="../../df/d70/class_exception.html">Exception</a></div><div class="ttdoc">General SimplePie exception class.</div><div class="ttdef"><b>Definition</b> Exception.php:56</div></div>
 <div class="ttc" id="aclassadodb__perf_html"><div class="ttname"><a href="../../de/d06/classadodb__perf.html">adodb_perf</a></div><div class="ttdef"><b>Definition</b> adodb-perf.inc.php:226</div></div>
 <div class="ttc" id="aclassadodb__perf_html_a66be832c08d14e3af1eb2772f917403c"><div class="ttname"><a href="../../de/d06/classadodb__perf.html#a66be832c08d14e3af1eb2772f917403c">adodb_perf\optimizeDatabase</a></div><div class="ttdeci">optimizeDatabase()</div><div class="ttdoc">Reorganise current database.</div><div class="ttdef"><b>Definition</b> adodb-perf.inc.php:1067</div></div>
 <div class="ttc" id="aclassadodb__perf_html_aa150ca7da00bc016e8e599c7ebe6e12f"><div class="ttname"><a href="../../de/d06/classadodb__perf.html#aa150ca7da00bc016e8e599c7ebe6e12f">adodb_perf\$settings</a></div><div class="ttdeci">array $settings</div><div class="ttdoc">Settings data.</div><div class="ttdef"><b>Definition</b> adodb-perf.inc.php:241</div></div>
 <div class="ttc" id="aclassadodb__perf_html_ad4f9952aee2039976255eed5c577354f"><div class="ttname"><a href="../../de/d06/classadodb__perf.html#ad4f9952aee2039976255eed5c577354f">adodb_perf\OptimizeTable</a></div><div class="ttdeci">OptimizeTable( $table, $mode=ADODB_OPT_LOW)</div><div class="ttdoc">Reorganise the table-indices/statistics/.</div><div class="ttdef"><b>Definition</b> adodb-perf.inc.php:1053</div></div>
 <div class="ttc" id="agroup___a_d_odb_html_gabebde3934156634d30698df19db6401a"><div class="ttname"><a href="../../dc/d2c/group___a_d_odb.html#gabebde3934156634d30698df19db6401a">$ADODB_vers</a></div><div class="ttdeci">if(defined( 'ADODB_EXTENSION')) if(!defined('ADODB_DIR')) GLOBAL $ADODB_vers</div><div class="ttdoc">Set ADODB_DIR to the directory where this file resides... This constant was formerly called $ADODB_Ro...</div><div class="ttdef"><b>Definition</b> adodb.inc.php:49</div></div>
-<div class="ttc" id="agroup___crypt___blowfish_html_gaf1b7751b6c09e2d3124df5828a7b6490"><div class="ttname"><a href="../../d9/d9d/group___crypt___blowfish.html#gaf1b7751b6c09e2d3124df5828a7b6490">$key</a></div><div class="ttdeci">string $key</div><div class="ttdoc">Encryption key.</div><div class="ttdef"><b>Definition</b> Base.php:44</div></div>
-<div class="ttc" id="agroup___imap___client_html_ga4927115ba2fb10567f7ea8241f6b1909"><div class="ttname"><a href="../../dc/d71/group___imap___client.html#ga4927115ba2fb10567f7ea8241f6b1909">$partial</a></div><div class="ttdeci">string $partial</div><div class="ttdoc">A byte range for use with IMAP FETCH.</div><div class="ttdef"><b>Definition</b> Url.php:56</div></div>
-<div class="ttc" id="agroup___imap___client_html_ga4a20559544fdf4dcb457e258dc976cf8"><div class="ttname"><a href="../../dc/d71/group___imap___client.html#ga4a20559544fdf4dcb457e258dc976cf8">reset</a></div><div class="ttdeci">reset()</div><div class="ttdoc">Reset the mailbox information.</div><div class="ttdef"><b>Definition</b> Mailbox.php:171</div></div>
-<div class="ttc" id="agroup___support_html_ga4f0f28af205235b0726da91caf226b9f"><div class="ttname"><a href="../../d5/d41/group___support.html#ga4f0f28af205235b0726da91caf226b9f">fopen</a></div><div class="ttdeci">fopen()</div><div class="ttdoc">Return a stream handle to this stream.</div><div class="ttdef"><b>Definition</b> CombineStream.php:46</div></div>
 <div class="ttc" id="agroup__tool__log_html_ga7543e29bf5065f86f5b6ec5145aacc77"><div class="ttname"><a href="../../d7/d02/group__tool__log.html#ga7543e29bf5065f86f5b6ec5145aacc77">tool_log\helper\flush</a></div><div class="ttdeci">flush()</div><div class="ttdoc">Flush event buffer.</div><div class="ttdef"><b>Definition</b> buffered_writer.php:99</div></div>
+<div class="ttc" id="anamespace_phpml_1_1_helper_html_acb3c8c60cc116f09ba34c6254625ccae"><div class="ttname"><a href="../../d2/d5d/namespace_phpml_1_1_helper.html#acb3c8c60cc116f09ba34c6254625ccae">Phpml\Helper\reset</a></div><div class="ttdeci">reset()</div><div class="ttdoc">Resets the classifier and the vars internally used by OneVsRest to create multiple classifiers.</div><div class="ttdef"><b>Definition</b> OneVsRest.php:42</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 18 2024 02:32:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 25 2024 02:30:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

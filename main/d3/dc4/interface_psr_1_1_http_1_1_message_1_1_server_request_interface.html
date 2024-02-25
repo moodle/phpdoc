@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
   </td>
  </tr>
  </tbody>
@@ -157,7 +157,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a63bd49651348e467eb17abce422f325e" id="r_a63bd49651348e467eb17abce422f325e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de0/interface_psr_1_1_http_1_1_message_1_1_message_interface.html#a63bd49651348e467eb17abce422f325e">withProtocolVersion</a> ($version)</td></tr>
 <tr class="memdesc:a63bd49651348e467eb17abce422f325e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an instance with the specified HTTP protocol version.  <br /></td></tr>
 <tr class="separator:a63bd49651348e467eb17abce422f325e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa291bcf612e3f975b929eeb6a23afbf6" id="r_aa291bcf612e3f975b929eeb6a23afbf6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa291bcf612e3f975b929eeb6a23afbf6">withQueryParams</a> (array $<a class="el" href="../../dc/d71/group___imap___client.html#gae0ccb7bceda061e460576520b09aa443">query</a>)</td></tr>
+<tr class="memitem:aa291bcf612e3f975b929eeb6a23afbf6" id="r_aa291bcf612e3f975b929eeb6a23afbf6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa291bcf612e3f975b929eeb6a23afbf6">withQueryParams</a> (array $query)</td></tr>
 <tr class="memdesc:aa291bcf612e3f975b929eeb6a23afbf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an instance with the specified query string arguments.  <br /></td></tr>
 <tr class="separator:aa291bcf612e3f975b929eeb6a23afbf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26d10ad91bf93238d7aa64d5469e06be" id="r_a26d10ad91bf93238d7aa64d5469e06be"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db5/interface_psr_1_1_http_1_1_message_1_1_request_interface.html#a26d10ad91bf93238d7aa64d5469e06be">withRequestTarget</a> ($requestTarget)</td></tr>
@@ -368,7 +368,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Retrieves a comma-separated string of the values for a single header. </p>
 <p>This method returns all of the header values of the given case-insensitive header name as a string concatenated together using a comma.</p>
-<p>NOTE: Not all header values may be appropriately represented using comma concatenation. For such headers, use <a class="el" href="../../d7/d30/group___mime.html#gaab81e43916cdc2d7c29fd4beb9f52519" title="Get a header from the header array.">getHeader()</a> instead and supply your own delimiter when concatenating.</p>
+<p>NOTE: Not all header values may be appropriately represented using comma concatenation. For such headers, use getHeader() instead and supply your own delimiter when concatenating.</p>
 <p>If the header does not appear in the message, this method MUST return an empty string.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -420,7 +420,7 @@ foreach ($message-&gt;getHeaders() as $name =&gt; $values) {
         header(sprintf('%s: %s', $name, $value), false);
     }
 }
-</pre><p> While header names are not case-sensitive, <a class="el" href="../../dc/d71/group___imap___client.html#gaa328f0eeaa6faed57055952c001ab641" title="Get a header entry.">getHeaders()</a> will preserve the exact case in which headers were originally specified.</p>
+</pre><p> While header names are not case-sensitive, getHeaders() will preserve the exact case in which headers were originally specified.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string[][]</td><td>Returns an associative array of the message's headers. Each key MUST be a header name, and each value MUST be an array of strings for that header. </td></tr>
@@ -931,7 +931,7 @@ foreach ($message-&gt;getHeaders() as $name =&gt; $values) {
 </div><div class="memdoc">
 
 <p>Return an instance with the provided value replacing the specified header. </p>
-<p>While header names are case-insensitive, the casing of the header will be preserved by this function, and returned from <a class="el" href="../../dc/d71/group___imap___client.html#gaa328f0eeaa6faed57055952c001ab641" title="Get a header entry.">getHeaders()</a>.</p>
+<p>While header names are case-insensitive, the casing of the header will be preserved by this function, and returned from getHeaders().</p>
 <p>This method MUST be implemented in such a way as to retain the immutability of the message, and MUST return an instance that has the new and/or updated header and value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1345,7 +1345,7 @@ foreach ($message-&gt;getHeaders() as $name =&gt; $values) {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 18 2024 02:34:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 25 2024 02:33:03 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

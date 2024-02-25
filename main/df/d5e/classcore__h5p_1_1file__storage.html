@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
   </td>
  </tr>
  </tbody>
@@ -61,6 +61,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d7/def/classcore__h5p_1_1file__storage-members.html">List of all members</a>  </div>
@@ -167,6 +168,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab3eb9723cd34321dd56961e44a629a8d" id="r_ab3eb9723cd34321dd56961e44a629a8d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3eb9723cd34321dd56961e44a629a8d">saveLibrary</a> ($library)</td></tr>
 <tr class="memdesc:ab3eb9723cd34321dd56961e44a629a8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores a H5P library in the <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> filesystem.  <br /></td></tr>
 <tr class="separator:ab3eb9723cd34321dd56961e44a629a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a1824d3d58fccad19fab0eb48b63873c4" id="r_a1824d3d58fccad19fab0eb48b63873c4"><td class="memItemLeft" align="right" valign="top"><a id="a1824d3d58fccad19fab0eb48b63873c4" name="a1824d3d58fccad19fab0eb48b63873c4"></a>
+static&#160;</td><td class="memItemRight" valign="bottom"><b>generate_custom_styles</b> ()</td></tr>
+<tr class="memdesc:a1824d3d58fccad19fab0eb48b63873c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate H5P custom styles if any. <br /></td></tr>
+<tr class="separator:a1824d3d58fccad19fab0eb48b63873c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8d9586adfb15385bc67b184f4a3a301" id="r_ad8d9586adfb15385bc67b184f4a3a301"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8d9586adfb15385bc67b184f4a3a301">get_custom_styles</a> ()</td></tr>
+<tr class="memdesc:ad8d9586adfb15385bc67b184f4a3a301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get H5P custom styles if any.  <br /></td></tr>
+<tr class="separator:ad8d9586adfb15385bc67b184f4a3a301"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -517,6 +528,45 @@ Protected Attributes</h2></td></tr>
 </dl>
 
 <p>Implements <a class="el" href="../../de/de8/interface_moodle_1_1_h5_p_file_storage.html#af3418ca01ca30d6ca0a4a8a3ac2604ad">Moodle\H5PFileStorage</a>.</p>
+
+</div>
+</div>
+<a id="ad8d9586adfb15385bc67b184f4a3a301" name="ad8d9586adfb15385bc67b184f4a3a301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8d9586adfb15385bc67b184f4a3a301">&#9670;&#160;</a></span>get_custom_styles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_h5p\file_storage::get_custom_styles </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get H5P custom styles if any. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../d6/da8/classmoodle__exception.html" title="Base Moodle Exception class.">moodle_exception</a></td><td>If the CSS setting is empty but there is a file to serve or there is no file but the CSS setting is not empty. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array|null</td><td>If there is CSS then an array with the keys 'cssurl' and 'cssversion' is returned otherwise null. 'cssurl' is a link to the generated 'custom_h5p.css' file and 'cssversion' the md5 hash of its contents. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1150,7 +1200,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 18 2024 02:34:04 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 25 2024 02:32:29 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

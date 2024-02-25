@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
   </td>
  </tr>
  </tbody>
@@ -238,9 +238,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa747417465443863fdccdce09060fc2b" id="r_aa747417465443863fdccdce09060fc2b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/classcore__reportbuilder_1_1local_1_1report_1_1base.html#aa747417465443863fdccdce09060fc2b">set_default_per_page</a> (int $defaultperpage)</td></tr>
 <tr class="memdesc:aa747417465443863fdccdce09060fc2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the default 'per page' size.  <br /></td></tr>
 <tr class="separator:aa747417465443863fdccdce09060fc2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb61d893c746a91212b65bb76a4c1196" id="r_adb61d893c746a91212b65bb76a4c1196"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/classcore__reportbuilder_1_1local_1_1report_1_1base.html#adb61d893c746a91212b65bb76a4c1196">set_downloadable</a> (bool $downloadable, string $downloadfilename='export')</td></tr>
-<tr class="memdesc:adb61d893c746a91212b65bb76a4c1196"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set if the report can be downloaded.  <br /></td></tr>
-<tr class="separator:adb61d893c746a91212b65bb76a4c1196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2edc307a7171b8be6709f17899455bd4" id="r_a2edc307a7171b8be6709f17899455bd4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d1d/classcore__reportbuilder_1_1local_1_1report_1_1base.html#a2edc307a7171b8be6709f17899455bd4">set_downloadable</a> (bool $downloadable, ?string $downloadfilename=null)</td></tr>
+<tr class="memdesc:a2edc307a7171b8be6709f17899455bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set if the report can be downloaded.  <br /></td></tr>
+<tr class="separator:a2edc307a7171b8be6709f17899455bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a177029e6cd34e7467e57de88f5d2348b" id="r_a177029e6cd34e7467e57de88f5d2348b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da7/classcore__reportbuilder_1_1system__report.html#a177029e6cd34e7467e57de88f5d2348b">set_filter_form_default</a> (bool $filterformdefault=true)</td></tr>
 <tr class="memdesc:a177029e6cd34e7467e57de88f5d2348b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override whether to use the default system report filters form, for instance this can be disabled if the UI requires it's own custom filter management form for a specific report.  <br /></td></tr>
 <tr class="separator:a177029e6cd34e7467e57de88f5d2348b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -664,7 +664,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Adds the columns we want to display in the report. </p>
-<p>They are all provided by the entities we previously added in the {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d9/d9e/group__mnet.html#gadd9ac7773eb89aae31cd23749e15d817" title="Set default element handlers and initialise properties to empty.">initialise</a>} method, referencing each by their <a class="el" href="../../d7/de4/group___mail.html#ga4687cd60c977d2d7171628bc42c81129" title="Removes duplicate addresses from list.">unique</a> identifier </dd></dl>
+<p>They are all provided by the entities we previously added in the {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d9/d9e/group__mnet.html#gadd9ac7773eb89aae31cd23749e15d817" title="Set default element handlers and initialise properties to empty.">initialise</a>} method, referencing each by their unique identifier </dd></dl>
 
 </div>
 </div>
@@ -963,7 +963,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Adds the filters we want to display in the report. </p>
-<p>They are all provided by the entities we previously added in the {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d9/d9e/group__mnet.html#gadd9ac7773eb89aae31cd23749e15d817" title="Set default element handlers and initialise properties to empty.">initialise</a>} method, referencing each by their <a class="el" href="../../d7/de4/group___mail.html#ga4687cd60c977d2d7171628bc42c81129" title="Removes duplicate addresses from list.">unique</a> identifier </dd></dl>
+<p>They are all provided by the entities we previously added in the {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d9/d9e/group__mnet.html#gadd9ac7773eb89aae31cd23749e15d817" title="Set default element handlers and initialise properties to empty.">initialise</a>} method, referencing each by their unique identifier </dd></dl>
 
 </div>
 </div>
@@ -2372,6 +2372,8 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
+<p>Reimplemented from <a class="el" href="../../d0/da7/classcore__reportbuilder_1_1system__report.html#a8bd46455dcc4fd0a558bf861dffb8629">core_reportbuilder\system_report</a>.</p>
+
 </div>
 </div>
 <a id="aea78fe51822f132b94af72b946454f6d" name="aea78fe51822f132b94af72b946454f6d"></a>
@@ -2940,8 +2942,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="adb61d893c746a91212b65bb76a4c1196" name="adb61d893c746a91212b65bb76a4c1196"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb61d893c746a91212b65bb76a4c1196">&#9670;&#160;</a></span>set_downloadable()</h2>
+<a id="a2edc307a7171b8be6709f17899455bd4" name="a2edc307a7171b8be6709f17899455bd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2edc307a7171b8be6709f17899455bd4">&#9670;&#160;</a></span>set_downloadable()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2957,7 +2959,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$downloadfilename</em><span class="paramdefsep"> = </span><span class="paramdefval">'export'</span></span>&#160;)</td>
+          <td class="paramtype">?string</td>          <td class="paramname"><span class="paramname"><em>$downloadfilename</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -2971,7 +2973,7 @@ Protected Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">bool</td><td class="paramname">$downloadable</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$downloadfilename</td><td>If the report is downloadable, then a filename should be provided here </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$downloadfilename</td><td>If downloadable, then the name of the file (defaults to the name of the current report) </td></tr>
   </table>
   </dd>
 </dl>
@@ -3246,7 +3248,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 18 2024 02:33:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 25 2024 02:32:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

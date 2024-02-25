@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
   </td>
  </tr>
  </tbody>
@@ -133,7 +133,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae406539d162955d4601c48587f7468b9" id="r_ae406539d162955d4601c48587f7468b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae406539d162955d4601c48587f7468b9">get_gmdate</a> ($date_format='j F Y, g:i a')</td></tr>
 <tr class="memdesc:ae406539d162955d4601c48587f7468b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the posting date/time for the item (UTC time)  <br /></td></tr>
 <tr class="separator:ae406539d162955d4601c48587f7468b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a444f3b4f68b3db30aac293d55a45d8" id="r_a1a444f3b4f68b3db30aac293d55a45d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a444f3b4f68b3db30aac293d55a45d8">get_id</a> ($<a class="el" href="../../dc/d71/group___imap___client.html#gaf5d527ef2a6e3f43563ad4cb15872140">hash</a>=false, $fn='md5')</td></tr>
+<tr class="memitem:a1a444f3b4f68b3db30aac293d55a45d8" id="r_a1a444f3b4f68b3db30aac293d55a45d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a444f3b4f68b3db30aac293d55a45d8">get_id</a> ($hash=false, $fn='md5')</td></tr>
 <tr class="memdesc:a1a444f3b4f68b3db30aac293d55a45d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the unique identifier for the item.  <br /></td></tr>
 <tr class="separator:a1a444f3b4f68b3db30aac293d55a45d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac938c63dbc4d3d9b74d4c07be11637d7" id="r_ac938c63dbc4d3d9b74d4c07be11637d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac938c63dbc4d3d9b74d4c07be11637d7">get_item_tags</a> ($namespace, $tag)</td></tr>
@@ -569,7 +569,7 @@ SimplePie::SimplePie::get_item}. Avoid creating this manually.</dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a href="http://php.net/date">http://php.net/date</a>} (empty for the <a class="el" href="../../dc/d71/group___imap___client.html#ga8a03e6a8fd3f706f27dac399e7fa44e9" title="Write server output to debug log.">raw</a> data) </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="http://php.net/date">http://php.net/date</a>} (empty for the raw data) </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">int|string|null</td><td></td></tr>
@@ -636,7 +636,7 @@ SimplePie::SimplePie::get_item}. Avoid creating this manually.</dd></dl>
 <p>Get an enclosure from the item. </p>
 <p>Supports the &lt;enclosure&gt; RSS tag, as well as Media RSS and iTunes RSS.</p>
 <dl class="section since"><dt>Since</dt><dd>Beta 2 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000252">Todo</a></b></dt><dd>Add ability to prefer one type of content over another (in a media group). </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000243">Todo</a></b></dt><dd>Add ability to prefer one type of content over another (in a media group). </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$key</td><td>The enclosure that you want to return. Remember that arrays begin with 0, not 1 </td></tr>
@@ -671,7 +671,7 @@ SimplePie::SimplePie::get_item}. Avoid creating this manually.</dd></dl>
 <p>Supports the &lt;enclosure&gt; RSS tag, as well as Media RSS and iTunes RSS.</p>
 <p>At this point, we're pretty much assuming that all enclosures for an item are the same content. Anything else is too complicated to properly support.</p>
 <dl class="section since"><dt>Since</dt><dd>Beta 2 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000253">Todo</a></b></dt><dd><p class="startdd">Add support for end-user defined sorting of enclosures by type/handler (so we can prefer the faster-loading FLV over MP4). </p>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000244">Todo</a></b></dt><dd><p class="startdd">Add support for end-user defined sorting of enclosures by type/handler (so we can prefer the faster-loading FLV over MP4). </p>
 <p class="enddd">If an element exists at a level, but its value is empty, we should fall back to the value from the parent (if it exists). </p>
 </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
@@ -948,7 +948,7 @@ SimplePie::SimplePie::get_item}. Avoid creating this manually.</dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a href="http://php.net/strftime">http://php.net/strftime</a>} (empty for the <a class="el" href="../../dc/d71/group___imap___client.html#ga8a03e6a8fd3f706f27dac399e7fa44e9" title="Write server output to debug log.">raw</a> data) </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="http://php.net/strftime">http://php.net/strftime</a>} (empty for the raw data) </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">int|string|null</td><td></td></tr>
@@ -1122,7 +1122,7 @@ get_link </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a href="http://php.net/date">http://php.net/date</a>} (empty for the <a class="el" href="../../dc/d71/group___imap___client.html#ga8a03e6a8fd3f706f27dac399e7fa44e9" title="Write server output to debug log.">raw</a> data) </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="http://php.net/date">http://php.net/date</a>} (empty for the raw data) </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">int|string|null</td><td></td></tr>
@@ -1310,7 +1310,7 @@ get_link </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 18 2024 02:33:17 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 25 2024 02:31:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

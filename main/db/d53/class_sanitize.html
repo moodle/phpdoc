@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
   </td>
  </tr>
  </tbody>
@@ -82,7 +82,7 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>add_attributes</b> ($attribs=['audio'=&gt;['preload'=&gt; 'none'], 'iframe'=&gt;['sandbox'=&gt; 'allow-scripts allow-same-origin'], 'video'=&gt;['preload'=&gt; 'none']])</td></tr>
 <tr class="separator:a7a1fb46dbcbcb91048f67f0803681cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aceb13133f3fc870f4d6a618704007b7a" id="r_aceb13133f3fc870f4d6a618704007b7a"><td class="memItemLeft" align="right" valign="top"><a id="aceb13133f3fc870f4d6a618704007b7a" name="aceb13133f3fc870f4d6a618704007b7a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>do_strip_htmltags</b> ($<a class="el" href="../../d7/de4/group___mail.html#gad6ffdd5d243a28fa33bc9d39f06aaceb">match</a>)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>do_strip_htmltags</b> ($<a class="el" href="../../d6/d9f/group__moodlecore.html#gae093ae79ce05f269ba1c09ce92b3d6b9">match</a>)</td></tr>
 <tr class="separator:aceb13133f3fc870f4d6a618704007b7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa22e35dc38bbdda5312117fb6891b4b1" id="r_aa22e35dc38bbdda5312117fb6891b4b1"><td class="memItemLeft" align="right" valign="top"><a id="aa22e35dc38bbdda5312117fb6891b4b1" name="aa22e35dc38bbdda5312117fb6891b4b1"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>encode_instead_of_strip</b> ($encode=false)</td></tr>
@@ -98,7 +98,7 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>pass_file_data</b> ($file_class='SimplePie\File', $timeout=10, $useragent='', $force_fsockopen=false)</td></tr>
 <tr class="separator:a3d3ab98fc2c880efb9908b4a2881fc4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12b895269a26a4fa9a0a59bf21005b16" id="r_a12b895269a26a4fa9a0a59bf21005b16"><td class="memItemLeft" align="right" valign="top"><a id="a12b895269a26a4fa9a0a59bf21005b16" name="a12b895269a26a4fa9a0a59bf21005b16"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>remove_div</b> ($<a class="el" href="../../dc/d71/group___imap___client.html#ga68faa3ca4a47d5ac68642aa45e94c035">enable</a>=true)</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>remove_div</b> ($enable=true)</td></tr>
 <tr class="separator:a12b895269a26a4fa9a0a59bf21005b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dce3450069def4a5629d6a66a24cc6e" id="r_a1dce3450069def4a5629d6a66a24cc6e"><td class="memItemLeft" align="right" valign="top"><a id="a1dce3450069def4a5629d6a66a24cc6e" name="a1dce3450069def4a5629d6a66a24cc6e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>rename_attributes</b> ($attribs=[])</td></tr>
@@ -222,7 +222,7 @@ Protected Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Used for data cleanup and post-processing. </p>
 <p>This class can be overloaded with {</p><dl class="section see"><dt>See also</dt><dd>SimplePie::SimplePie::set_sanitize_class()}</dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000254">Todo</a></b></dt><dd>Move to using an actual HTML parser (this will allow tags to be properly stripped, and to switch between HTML and XHTML), this will also make it easier to shorten a string while preserving HTML tags </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000245">Todo</a></b></dt><dd>Move to using an actual HTML parser (this will allow tags to be properly stripped, and to switch between HTML and XHTML), this will also make it easier to shorten a string while preserving HTML tags </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a7bbece9b49e6d3da285b19a4bd882637" name="a7bbece9b49e6d3da285b19a4bd882637"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7bbece9b49e6d3da285b19a4bd882637">&#9670;&#160;</a></span>set_https_domains()</h2>
@@ -317,7 +317,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>List of domains for which to force HTTPS. </p>
-<dl class="section see"><dt>See also</dt><dd>SimplePie::Sanitize::set_https_domains() Array is a tree <a class="el" href="../../dc/d71/group___imap___client.html#gaba971481314d429b6b0bc31b22330c6d" title="Split the sequence string at an approximate length.">split</a> at DNS levels. Example: array('biz' =&gt; true, '<a class="el" href="../../dd/d10/group__com.html">.tecnick.tcpdf com.tecnick.tcpdf</a>' =&gt; array('example' =&gt; true), 'net' =&gt; array('example' =&gt; array('www' =&gt; true))) </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>SimplePie::Sanitize::set_https_domains() Array is a tree split at DNS levels. Example: array('biz' =&gt; true, '<a class="el" href="../../dd/d10/group__com.html">.tecnick.tcpdf com.tecnick.tcpdf</a>' =&gt; array('example' =&gt; true), 'net' =&gt; array('example' =&gt; array('www' =&gt; true))) </dd></dl>
 
 </div>
 </div>
@@ -327,7 +327,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 18 2024 02:33:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 25 2024 02:31:58 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

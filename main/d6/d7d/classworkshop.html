@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
   </td>
  </tr>
  </tbody>
@@ -597,7 +597,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a9583089686aa893780510b61105910d4" id="r_a9583089686aa893780510b61105910d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9583089686aa893780510b61105910d4">get_participants_sql</a> ($musthavesubmission=false, $groupid=0)</td></tr>
 <tr class="memdesc:a9583089686aa893780510b61105910d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns SQL statement that can be used to fetch all actively enrolled participants in the workshop.  <br /></td></tr>
 <tr class="separator:a9583089686aa893780510b61105910d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f3d8328bd18a32c847b3d9233cd8c9b" id="r_a8f3d8328bd18a32c847b3d9233cd8c9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f3d8328bd18a32c847b3d9233cd8c9b">get_users_with_capability_sql</a> ($<a class="el" href="../../dc/d71/group___imap___client.html#gab2c24006bbccb7984767e680dc4c3e92">capability</a>, $musthavesubmission, $groupid)</td></tr>
+<tr class="memitem:a8f3d8328bd18a32c847b3d9233cd8c9b" id="r_a8f3d8328bd18a32c847b3d9233cd8c9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8f3d8328bd18a32c847b3d9233cd8c9b">get_users_with_capability_sql</a> ($capability, $musthavesubmission, $groupid)</td></tr>
 <tr class="memdesc:a8f3d8328bd18a32c847b3d9233cd8c9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns SQL to fetch all enrolled users with the given capability in the current workshop.  <br /></td></tr>
 <tr class="separator:a8f3d8328bd18a32c847b3d9233cd8c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa40c68f356bb72cef195c68c8fee60d4" id="r_aa40c68f356bb72cef195c68c8fee60d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa40c68f356bb72cef195c68c8fee60d4">get_users_with_initial_filtering_sql_where</a> ()</td></tr>
@@ -1509,7 +1509,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$initialbarprefs</b>
 </div><div class="memdoc">
 
 <p>Cleans the user provided list of file extensions. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001243">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 <a href="https://tracker.moodle.org/browse/MDL-56486" class="el">MDL-56486</a> - please use the <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.html">core_form::filetypes_util</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001210">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 <a href="https://tracker.moodle.org/browse/MDL-56486" class="el">MDL-56486</a> - please use the <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.html">core_form::filetypes_util</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$extensions</td><td></td></tr>
@@ -1845,7 +1845,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$initialbarprefs</b>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000326">Todo</a></b></dt><dd>Give grading strategy plugins a chance to clean up their data, too. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000317">Todo</a></b></dt><dd>Give grading strategy plugins a chance to clean up their data, too. </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td>true </td></tr>
@@ -3370,7 +3370,7 @@ self::get_potential_reviewers() </dd></dl>
 
 <p>Check given file types and return invalid/unknown ones. </p>
 <p>Empty allowlist is interpretted as "any extension is valid".</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001244">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 <a href="https://tracker.moodle.org/browse/MDL-56486" class="el">MDL-56486</a> - please use the <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.html">core_form::filetypes_util</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001211">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 <a href="https://tracker.moodle.org/browse/MDL-56486" class="el">MDL-56486</a> - please use the <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.html">core_form::filetypes_util</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$extensions</td><td>list of file extensions </td></tr>
@@ -3416,7 +3416,7 @@ self::get_potential_reviewers() </dd></dl>
 
 <p>Is the file have allowed to be uploaded to the workshop? </p>
 <p>Empty allowlist is interpretted as "any file type is allowed" rather than "no file can be uploaded".</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001245">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 <a href="https://tracker.moodle.org/browse/MDL-56486" class="el">MDL-56486</a> - please use the <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.html">core_form::filetypes_util</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001212">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 <a href="https://tracker.moodle.org/browse/MDL-56486" class="el">MDL-56486</a> - please use the <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.html">core_form::filetypes_util</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$filename</td><td>the file name </td></tr>
@@ -3539,7 +3539,7 @@ self::get_potential_reviewers() </dd></dl>
 
 <p>Workshop wrapper around {. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/de1/group__core.html#gad98490c571dc40b4ba2801777d422796">add_to_log()</a>} </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001246">Deprecated</a></b></dt><dd>since 2.7 Please use the provided event classes for logging actions.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001213">Deprecated</a></b></dt><dd>since 2.7 Please use the provided event classes for logging actions.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$action</td><td>to be logged </td></tr>
@@ -3660,7 +3660,7 @@ self::get_potential_reviewers() </dd></dl>
 
 <p>Converts the argument into an array (list) of file extensions. </p>
 <p>The list can be separated by whitespace, end of lines, commas colons and semicolons. Empty values are not returned. Values are converted to lowercase. Duplicates are removed. Glob evaluation is not supported.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001242">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 <a href="https://tracker.moodle.org/browse/MDL-56486" class="el">MDL-56486</a> - please use the <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.html">core_form::filetypes_util</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001209">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 <a href="https://tracker.moodle.org/browse/MDL-56486" class="el">MDL-56486</a> - please use the <a class="el" href="../../db/dd3/classcore__form_1_1filetypes__util.html">core_form::filetypes_util</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$extensions</td><td>list of file extensions </td></tr>
@@ -4774,7 +4774,7 @@ self::get_potential_reviewers() </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 18 2024 02:33:33 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 25 2024 02:32:00 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

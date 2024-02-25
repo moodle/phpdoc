@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
   </td>
  </tr>
  </tbody>
@@ -87,7 +87,7 @@ Inheritance diagram for repository_dropbox\dropbox:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a48eacc199071e7f794a01e2e3b38c5f1" id="r_a48eacc199071e7f794a01e2e3b38c5f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48eacc199071e7f794a01e2e3b38c5f1">__construct</a> (<a class="el" href="../../d4/d24/classcore_1_1oauth2_1_1issuer.html">issuer</a> $<a class="el" href="../../d4/d24/classcore_1_1oauth2_1_1issuer.html">issuer</a>, $<a class="el" href="#a1be76310e0c483751791e4f560510822">callback</a>)</td></tr>
-<tr class="memdesc:a48eacc199071e7f794a01e2e3b38c5f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the DropBox API <a class="el" href="../../d3/d7a/class_client.html">Client</a>.  <br /></td></tr>
+<tr class="memdesc:a48eacc199071e7f794a01e2e3b38c5f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the DropBox API Client.  <br /></td></tr>
 <tr class="separator:a48eacc199071e7f794a01e2e3b38c5f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cc04f17c7eed51d2913b97d45aadce8" id="r_a1cc04f17c7eed51d2913b97d45aadce8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/classoauth2__client.html#a1cc04f17c7eed51d2913b97d45aadce8">build_post_data</a> ($params)</td></tr>
 <tr class="memdesc:a1cc04f17c7eed51d2913b97d45aadce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an array of name value pairs - build a valid HTTP POST application/x-www-form-urlencoded string.  <br /></td></tr>
@@ -202,7 +202,7 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>resetopt</b> ()</td></tr>
 <tr class="memdesc:a6aa6fed3ee693078adcdbe0a9dad17a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the CURL options that have already been set. <br /></td></tr>
 <tr class="separator:a6aa6fed3ee693078adcdbe0a9dad17a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd7e81fb87bc08fa9aeac307918d1240" id="r_acd7e81fb87bc08fa9aeac307918d1240"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd7e81fb87bc08fa9aeac307918d1240">search</a> ($<a class="el" href="../../dc/d71/group___imap___client.html#gae0ccb7bceda061e460576520b09aa443">query</a>='')</td></tr>
+<tr class="memitem:acd7e81fb87bc08fa9aeac307918d1240" id="r_acd7e81fb87bc08fa9aeac307918d1240"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acd7e81fb87bc08fa9aeac307918d1240">search</a> ($query='')</td></tr>
 <tr class="memdesc:acd7e81fb87bc08fa9aeac307918d1240"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get file search results from dropbox.  <br /></td></tr>
 <tr class="separator:acd7e81fb87bc08fa9aeac307918d1240"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59f351999096ccd25c945065f32c8711" id="r_a59f351999096ccd25c945065f32c8711"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d9f/classcurl.html#a59f351999096ccd25c945065f32c8711">set_security</a> ($securityobject)</td></tr>
@@ -418,7 +418,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$system</b> = false</
       </table>
 </div><div class="memdoc">
 
-<p>Create the DropBox API <a class="el" href="../../d3/d7a/class_client.html">Client</a>. </p>
+<p>Create the DropBox API Client. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">issuer</td><td class="paramname">$issuer</td><td>The dropbox issuer </td></tr>
@@ -1789,7 +1789,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$system</b> = false</
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d8/db9/classcore_1_1oauth2_1_1client_1_1clever.html#a07c937192460e86ca4471f80106b0250">core\oauth2\client\clever</a>, and <a class="el" href="../../d4/d0b/classcore_1_1oauth2_1_1client_1_1linkedin.html#a7df12acf0a02646a2e2eb826a035a903">core\oauth2\client\linkedin</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d4/d0b/classcore_1_1oauth2_1_1client_1_1linkedin.html#a7df12acf0a02646a2e2eb826a035a903">core\oauth2\client\linkedin</a>.</p>
 
 </div>
 </div>
@@ -3030,7 +3030,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$system</b> = false</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 18 2024 02:34:44 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 25 2024 02:33:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

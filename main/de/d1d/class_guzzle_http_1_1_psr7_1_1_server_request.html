@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
   </td>
  </tr>
  </tbody>
@@ -83,7 +83,7 @@ Inheritance diagram for GuzzleHttp\Psr7\ServerRequest:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afc6ca7b7aeedb30152cf9a1d37437fba" id="r_afc6ca7b7aeedb30152cf9a1d37437fba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc6ca7b7aeedb30152cf9a1d37437fba">__construct</a> (string $method, $uri, array $<a class="el" href="../../dc/d71/group___imap___client.html#gafe94898c7bd186ef2727a4dff03b5109">headers</a>=[], $body=null, string $version='1.1', array $serverParams=[])</td></tr>
+<tr class="memitem:afc6ca7b7aeedb30152cf9a1d37437fba" id="r_afc6ca7b7aeedb30152cf9a1d37437fba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc6ca7b7aeedb30152cf9a1d37437fba">__construct</a> (string $method, $uri, array $headers=[], $body=null, string $version='1.1', array $serverParams=[])</td></tr>
 <tr class="separator:afc6ca7b7aeedb30152cf9a1d37437fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92cc29d8e646a36435d09488e82c2ed9" id="r_a92cc29d8e646a36435d09488e82c2ed9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92cc29d8e646a36435d09488e82c2ed9">getAttribute</a> ($attribute, $default=null)</td></tr>
 <tr class="memdesc:a92cc29d8e646a36435d09488e82c2ed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">{Retrieve a single derived request attribute.Retrieves a single derived request attribute as described in <a class="el" href="../../d3/dc4/interface_psr_1_1_http_1_1_message_1_1_server_request_interface.html#a0cda25a9b297c86e7813ffcb98ceb3df" title="Retrieve attributes derived from the request.">getAttributes()</a>. If the attribute has not been previously set, returns the default value as provided.This method obviates the need for a hasAttribute() method, as it allows specifying a default value to return if the attribute is not found.<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d3/dc4/interface_psr_1_1_http_1_1_message_1_1_server_request_interface.html#a0cda25a9b297c86e7813ffcb98ceb3df" title="Retrieve attributes derived from the request.">getAttributes()</a> </dd></dl>
@@ -183,7 +183,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a63bd49651348e467eb17abce422f325e" id="r_a63bd49651348e467eb17abce422f325e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de0/interface_psr_1_1_http_1_1_message_1_1_message_interface.html#a63bd49651348e467eb17abce422f325e">withProtocolVersion</a> ($version)</td></tr>
 <tr class="memdesc:a63bd49651348e467eb17abce422f325e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an instance with the specified HTTP protocol version.  <br /></td></tr>
 <tr class="separator:a63bd49651348e467eb17abce422f325e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba139e3a3df11236f0ee70c1571dbf4a" id="r_aba139e3a3df11236f0ee70c1571dbf4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba139e3a3df11236f0ee70c1571dbf4a">withQueryParams</a> (array $<a class="el" href="../../dc/d71/group___imap___client.html#gae0ccb7bceda061e460576520b09aa443">query</a>)</td></tr>
+<tr class="memitem:aba139e3a3df11236f0ee70c1571dbf4a" id="r_aba139e3a3df11236f0ee70c1571dbf4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba139e3a3df11236f0ee70c1571dbf4a">withQueryParams</a> (array $query)</td></tr>
 <tr class="memdesc:aba139e3a3df11236f0ee70c1571dbf4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an instance with the specified query string arguments.  <br /></td></tr>
 <tr class="separator:aba139e3a3df11236f0ee70c1571dbf4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa05ac6946c5b3f50b5b136142ccf193f" id="r_aa05ac6946c5b3f50b5b136142ccf193f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d6c/class_guzzle_http_1_1_psr7_1_1_request.html#aa05ac6946c5b3f50b5b136142ccf193f">withRequestTarget</a> ($requestTarget)</td></tr>
@@ -465,7 +465,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>getUriFromGlobals</
 
 <p>Retrieves a comma-separated string of the values for a single header. </p>
 <p>This method returns all of the header values of the given case-insensitive header name as a string concatenated together using a comma.</p>
-<p>NOTE: Not all header values may be appropriately represented using comma concatenation. For such headers, use <a class="el" href="../../d7/d30/group___mime.html#gaab81e43916cdc2d7c29fd4beb9f52519" title="Get a header from the header array.">getHeader()</a> instead and supply your own delimiter when concatenating.</p>
+<p>NOTE: Not all header values may be appropriately represented using comma concatenation. For such headers, use getHeader() instead and supply your own delimiter when concatenating.</p>
 <p>If the header does not appear in the message, this method MUST return an empty string.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -517,7 +517,7 @@ foreach ($message-&gt;getHeaders() as $name =&gt; $values) {
         header(sprintf('%s: %s', $name, $value), false);
     }
 }
-</pre><p> While header names are not case-sensitive, <a class="el" href="../../dc/d71/group___imap___client.html#gaa328f0eeaa6faed57055952c001ab641" title="Get a header entry.">getHeaders()</a> will preserve the exact case in which headers were originally specified.</p>
+</pre><p> While header names are not case-sensitive, getHeaders() will preserve the exact case in which headers were originally specified.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string[][]</td><td>Returns an associative array of the message's headers. Each key MUST be a header name, and each value MUST be an array of strings for that header. </td></tr>
@@ -1071,7 +1071,7 @@ foreach ($message-&gt;getHeaders() as $name =&gt; $values) {
 </div><div class="memdoc">
 
 <p>Return an instance with the provided value replacing the specified header. </p>
-<p>While header names are case-insensitive, the casing of the header will be preserved by this function, and returned from <a class="el" href="../../dc/d71/group___imap___client.html#gaa328f0eeaa6faed57055952c001ab641" title="Get a header entry.">getHeaders()</a>.</p>
+<p>While header names are case-insensitive, the casing of the header will be preserved by this function, and returned from getHeaders().</p>
 <p>This method MUST be implemented in such a way as to retain the immutability of the message, and MUST return an instance that has the new and/or updated header and value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1485,7 +1485,7 @@ foreach ($message-&gt;getHeaders() as $name =&gt; $values) {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 18 2024 02:34:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 25 2024 02:32:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

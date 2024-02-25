@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
   </td>
  </tr>
  </tbody>
@@ -121,7 +121,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a21003853260ac7b465ff1bb0b81e4d5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves an item from the cache store given its key.  <br /></td></tr>
 <tr class="separator:a21003853260ac7b465ff1bb0b81e4d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd3628777e08caadae1600093b922e02" id="r_afd3628777e08caadae1600093b922e02"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd3628777e08caadae1600093b922e02">get_last_io_bytes</a> ()</td></tr>
-<tr class="memdesc:afd3628777e08caadae1600093b922e02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets bytes read by last <a class="el" href="../../dc/d71/group___imap___client.html#gafcf303080696d20cffeed262f4ebc4bb" title="Get information from the cache.">get()</a> or get_many(), or written by <a class="el" href="../../dc/d71/group___imap___client.html#ga0dae8e91a93f347875c2acc9129ae73b" title="Store information in cache.">set()</a> or set_many().  <br /></td></tr>
+<tr class="memdesc:afd3628777e08caadae1600093b922e02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets bytes read by last get() or get_many(), or written by set() or set_many().  <br /></td></tr>
 <tr class="separator:afd3628777e08caadae1600093b922e02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada13c8c88aac8200eb9d73d2d60e80ad" id="r_ada13c8c88aac8200eb9d73d2d60e80ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada13c8c88aac8200eb9d73d2d60e80ad">get_many</a> ($keys)</td></tr>
 <tr class="memdesc:ada13c8c88aac8200eb9d73d2d60e80ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves several items from the cache store in a single transaction.  <br /></td></tr>
@@ -264,7 +264,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:abec27caf9d163cd6b0c0cfe1f6e8b81d" id="r_abec27caf9d163cd6b0c0cfe1f6e8b81d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abec27caf9d163cd6b0c0cfe1f6e8b81d">ensure_path_exists</a> ()</td></tr>
 <tr class="memdesc:abec27caf9d163cd6b0c0cfe1f6e8b81d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks to make sure that the path for the file cache exists.  <br /></td></tr>
 <tr class="separator:abec27caf9d163cd6b0c0cfe1f6e8b81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fb9c00ff72df804942fafb595873780" id="r_a3fb9c00ff72df804942fafb595873780"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fb9c00ff72df804942fafb595873780">file_path_for_key</a> ($key, $<a class="el" href="../../dc/d71/group___imap___client.html#ga20c8526c113ba4b815387edcbfc74db5">create</a>=false)</td></tr>
+<tr class="memitem:a3fb9c00ff72df804942fafb595873780" id="r_a3fb9c00ff72df804942fafb595873780"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fb9c00ff72df804942fafb595873780">file_path_for_key</a> ($key, $create=false)</td></tr>
 <tr class="memdesc:a3fb9c00ff72df804942fafb595873780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the file path to use for the given key.  <br /></td></tr>
 <tr class="separator:a3fb9c00ff72df804942fafb595873780"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae934f24c6e3dd5d7d4da17f401b8f0f0" id="r_ae934f24c6e3dd5d7d4da17f401b8f0f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae934f24c6e3dd5d7d4da17f401b8f0f0">glob_keys_pattern</a> ($prefix='')</td></tr>
@@ -318,7 +318,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$keys</b> = array()<
 <tr class="separator:a57e5fd1df77a1060b435685632fa4a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a468979f0ff2dce0a968b94ef7ca7a035" id="r_a468979f0ff2dce0a968b94ef7ca7a035"><td class="memItemLeft" align="right" valign="top"><a id="a468979f0ff2dce0a968b94ef7ca7a035" name="a468979f0ff2dce0a968b94ef7ca7a035"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>$lastiobytes</b> = 0</td></tr>
-<tr class="memdesc:a468979f0ff2dce0a968b94ef7ca7a035"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bytes read or written by last call to <a class="el" href="../../dc/d71/group___imap___client.html#ga0dae8e91a93f347875c2acc9129ae73b" title="Store information in cache.">set()</a>/get() or set_many()/get_many(). <br /></td></tr>
+<tr class="memdesc:a468979f0ff2dce0a968b94ef7ca7a035"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bytes read or written by last call to set()/get() or set_many()/get_many(). <br /></td></tr>
 <tr class="separator:a468979f0ff2dce0a968b94ef7ca7a035"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a543026c27719e2b217f79cf1aaa6b054" id="r_a543026c27719e2b217f79cf1aaa6b054"><td class="memItemLeft" align="right" valign="top">core lock file_lock_factory&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a543026c27719e2b217f79cf1aaa6b054">$lockfactory</a> = null</td></tr>
 <tr class="memdesc:a543026c27719e2b217f79cf1aaa6b054"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instance of file_lock_factory configured to create locks in the cache directory.  <br /></td></tr>
@@ -1022,7 +1022,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$prescan</b> = false<
       </table>
 </div><div class="memdoc">
 
-<p>Gets bytes read by last <a class="el" href="../../dc/d71/group___imap___client.html#gafcf303080696d20cffeed262f4ebc4bb" title="Get information from the cache.">get()</a> or get_many(), or written by <a class="el" href="../../dc/d71/group___imap___client.html#ga0dae8e91a93f347875c2acc9129ae73b" title="Store information in cache.">set()</a> or set_many(). </p>
+<p>Gets bytes read by last get() or get_many(), or written by set() or set_many(). </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">int</td><td>Bytes read or written </td></tr>
@@ -2327,7 +2327,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$prescan</b> = false<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 18 2024 02:32:33 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 25 2024 02:31:04 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
   </td>
  </tr>
  </tbody>
@@ -313,7 +313,7 @@ Functions</h2></td></tr>
 		/**
 		 * Hashify HTML blocks:
 		 *
-		 * We only want to do this for block-level HTML tags, such as <a class="el" href="../../dc/d71/group___imap___client.html#gafe94898c7bd186ef2727a4dff03b5109">headers</a>,
+		 * We only want to do this for block-level HTML tags, such as headers,
 		 * lists, and tables. That'<a class="el" href="../../d0/d4a/classs.html">s</a> because we still want to wrap &lt;<a class="el" href="../../d0/de1/group__core.html#ga687f341dfcc0cc4f715a5fd2424d61e5">p</a>&gt;<a class="el" href="../../d0/d4a/classs.html">s</a> around
 		 * &quot;paragraphs&quot; that are wrapped in non-block-level tags, such as
 		 * anchors, phrase emphasis, and spans. The list of tags we're looking
@@ -353,7 +353,7 @@ Functions</h2></td></tr>
 					(?&gt;
 					  /&gt;
 					|
-					  &gt;', $nested_tags_level).	// <a class="el" href="../../da/d71/group___stream.html#gad6e6111f903c5015b2a69ff96b186cf9">end</a> of opening tag
+					  &gt;', $nested_tags_level).	// end of opening tag
 					  '.*?'.					// last level nested tag content
 			str_repeat('
 					  &lt;/\2\<a class="el" href="../../d0/d4a/classs.html">s</a>*&gt;	# closing nested tag
@@ -373,11 +373,11 @@ Functions</h2></td></tr>
 		 * 		&lt;/div&gt;
 		 * 	&lt;/div&gt;
 		 *
-		 * The outermost tags must start at the left margin for this to <a class="el" href="../../d7/de4/group___mail.html#gad6ffdd5d243a28fa33bc9d39f06aaceb">match</a>,
+		 * The outermost tags must start at the left margin for this to <a class="el" href="../../d6/d9f/group__moodlecore.html#gae093ae79ce05f269ba1c09ce92b3d6b9">match</a>,
 		 * and the inner nested divs must be indented.
-		 * We need to do this before the next, more liberal <a class="el" href="../../d7/de4/group___mail.html#gad6ffdd5d243a28fa33bc9d39f06aaceb">match</a>, because the
-		 * next <a class="el" href="../../d7/de4/group___mail.html#gad6ffdd5d243a28fa33bc9d39f06aaceb">match</a> will start at the <a class="el" href="../../dc/d71/group___imap___client.html#gac73eef9ff76ea330c0dab36ca448b90d">first</a> `&lt;div&gt;` and stop at the
-		 * <a class="el" href="../../dc/d71/group___imap___client.html#gac73eef9ff76ea330c0dab36ca448b90d">first</a> `&lt;/div&gt;`.
+		 * We need to do this before the next, more liberal <a class="el" href="../../d6/d9f/group__moodlecore.html#gae093ae79ce05f269ba1c09ce92b3d6b9">match</a>, because the
+		 * next <a class="el" href="../../d6/d9f/group__moodlecore.html#gae093ae79ce05f269ba1c09ce92b3d6b9">match</a> will start at the first `&lt;div&gt;` and stop at the
+		 * first `&lt;/div&gt;`.
 		 */
 		$text = preg_replace_callback('{(?&gt;
 			(?&gt;
@@ -385,7 +385,7 @@ Functions</h2></td></tr>
 				|				# or
 				A\n?			# the at beginning of the doc
 			)
-			(						# <a class="el" href="../../dc/d71/group___imap___client.html#gafc8a3c62679cf00ade9f15fb2a6d6132">save</a> in $1
+			(						# save in $1
 
 			  # Match from `\n&lt;tag&gt;` to `&lt;/tag&gt;\n`, handling nested tags
 			  # in between.
@@ -394,9 +394,9 @@ Functions</h2></td></tr>
 						&lt;('.$block_tags_b_re.')# start tag = $2
 						'.$attr.'&gt;			# attributes followed by &gt; and n
 						'.$content.'		# content, support nesting
-						&lt;/\2&gt;				# the matching <a class="el" href="../../da/d71/group___stream.html#gad6e6111f903c5015b2a69ff96b186cf9">end</a> tag
+						&lt;/\2&gt;				# the matching end tag
 						[ ]*				# trailing spaces/tabs
-						(?=\n+|Z)	# followed by a newline or <a class="el" href="../../da/d71/group___stream.html#gad6e6111f903c5015b2a69ff96b186cf9">end</a> of document
+						(?=\n+|Z)	# followed by a newline or end of document
 
 			| # Special version for tags of group a.
 
@@ -404,9 +404,9 @@ Functions</h2></td></tr>
 						&lt;('.$block_tags_a_re.')# start tag = $3
 						'.$attr.'&gt;[ ]*::n	# attributes followed by &gt;
 						'.$content2.'		# content, support nesting
-						&lt;/\3&gt;				# the matching <a class="el" href="../../da/d71/group___stream.html#gad6e6111f903c5015b2a69ff96b186cf9">end</a> tag
+						&lt;/\3&gt;				# the matching end tag
 						[ ]*				# trailing spaces/tabs
-						(?=\n+|Z)	# followed by a newline or <a class="el" href="../../da/d71/group___stream.html#gad6e6111f903c5015b2a69ff96b186cf9">end</a> of document
+						(?=\n+|Z)	# followed by a newline or end of document
 
 			| # Special case just for &lt;hr /&gt;. It was easier to make a special
 			  # case than to make the other regex more complicated.
@@ -414,9 +414,9 @@ Functions</h2></td></tr>
 						[ ]{0,'.$less_than_tab.'}
 						&lt;(hr)				# start tag = $2
 						'.$attr.'			# attributes
-						/?&gt;					# the matching <a class="el" href="../../da/d71/group___stream.html#gad6e6111f903c5015b2a69ff96b186cf9">end</a> tag
+						/?&gt;					# the matching end tag
 						[ ]*
-						(?=\n{2,}|Z)		# followed by a blank line or <a class="el" href="../../da/d71/group___stream.html#gad6e6111f903c5015b2a69ff96b186cf9">end</a> of document
+						(?=\n{2,}|Z)		# followed by a blank line or end of document
 
 			| # Special case for standalone HTML comments:
 
@@ -425,7 +425,7 @@ Functions</h2></td></tr>
 						&lt;!-- .*? --&gt;
 					)
 					[ ]*
-					(?=\n{2,}|Z)		# followed by a blank line or <a class="el" href="../../da/d71/group___stream.html#gad6e6111f903c5015b2a69ff96b186cf9">end</a> of document
+					(?=\n{2,}|Z)		# followed by a blank line or end of document
 
 			| # PHP and ASP-style processor instructions (&lt;? and &lt;%)
 
@@ -436,7 +436,7 @@ Functions</h2></td></tr>
 						2&gt;
 					)
 					[ ]*
-					(?=\n{2,}|Z)		# followed by a blank line or <a class="el" href="../../da/d71/group___stream.html#gad6e6111f903c5015b2a69ff96b186cf9">end</a> of document
+					(?=\n{2,}|Z)		# followed by a blank line or end of document
 
 			)
 			)}Sxmi',
@@ -461,11 +461,11 @@ Functions</h2></td></tr>
 	/**
 	 * Called whenever a tag must be hashed when a function insert an atomic
 	 * element in the text stream. Passing $text to through this function gives
-	 * a <a class="el" href="../../d7/de4/group___mail.html#ga4687cd60c977d2d7171628bc42c81129">unique</a> text-token which will be reverted back when calling unhash.
+	 * a unique text-token which will be reverted back when calling unhash.
 	 *
 	 * The $boundary argument specify what character should be used to surround
 	 * the token. By convension, &quot;B&quot; is used for block elements that needs not
-	 * to be wrapped into paragraph tags at the <a class="el" href="../../da/d71/group___stream.html#gad6e6111f903c5015b2a69ff96b186cf9">end</a>, &quot;:&quot; is used for elements
+	 * to be wrapped into paragraph tags at the end, &quot;:&quot; is used for elements
 	 * that are word separators and &quot;X&quot; is used in the general case.
 	 *
 	 * @<a class="el" href="../../dc/d2c/group___a_d_odb.html#gab8352647a3ae7b9c49099dad81017def">param</a>  string $text
@@ -473,11 +473,11 @@ Functions</h2></td></tr>
 	 * @retval string
 	 */
 	protected function hashPart($text, $boundary = 'X') {
-		// Swap back any tag <a class="el" href="../../dc/d71/group___imap___client.html#gaf5d527ef2a6e3f43563ad4cb15872140">hash</a> found in $text so we do not have to `<a class="el" href="#ga74a30de7b2718fcc0b4e024a42d86c4b">unhash</a>`
+		// Swap back any tag hash found in $text so we do not have to `<a class="el" href="#ga74a30de7b2718fcc0b4e024a42d86c4b">unhash</a>`
 		// multiple times at the end.
 		$text = $this-&gt;<a class="el" href="#ga74a30de7b2718fcc0b4e024a42d86c4b">unhash</a>($text);
 
-		// Then <a class="el" href="../../dc/d71/group___imap___client.html#gaf5d527ef2a6e3f43563ad4cb15872140">hash</a> the block.
+		// Then hash the block.
 		static $i = 0;
 		$key = &quot; $boundary\x1A&quot; . ++$i . $boundary;
 		$this-&gt;html_hashes[$key] = $text;
@@ -495,7 +495,7 @@ Functions</h2></td></tr>
 
 	/**
 	 * Define the block gamut - these are all the transformations that form
-	 * block-level tags like paragraphs, <a class="el" href="../../dc/d71/group___imap___client.html#gafe94898c7bd186ef2727a4dff03b5109">headers</a>, and list items.
+	 * block-level tags like paragraphs, headers, and list items.
 	 */
 	protected array $block_gamut = array(
 		&quot;doHeaders&quot;         =&gt; 10,
@@ -508,7 +508,7 @@ Functions</h2></td></tr>
 	/**
 	 * Run block gamut tranformations.
 	 *
-	 * We need to <a class="el" href="../../dc/d71/group___imap___client.html#gab4e6060d5b0dd93113194ba83534d385">escape</a> <a class="el" href="../../dc/d71/group___imap___client.html#ga8a03e6a8fd3f706f27dac399e7fa44e9">raw</a> HTML in Markdown source before doing anything
+	 * We need to escape raw HTML in Markdown source before doing anything
 	 * else. This need to be done for each block, and not only at the
 	 * begining in the Markdown function since hashed blocks can be part of
 	 * list items and could have been indented. Indented blocks would have
@@ -524,7 +524,7 @@ Functions</h2></td></tr>
 
 	/**
 	 * Run block gamut tranformations, without hashing HTML blocks. This is
-	 * useful when HTML blocks are known to be already hashed, like in the <a class="el" href="../../dc/d71/group___imap___client.html#gac73eef9ff76ea330c0dab36ca448b90d">first</a>
+	 * useful when HTML blocks are known to be already hashed, like in the first
 	 * whole-document pass.
 	 *
 	 * @<a class="el" href="../../dc/d2c/group___a_d_odb.html#gab8352647a3ae7b9c49099dad81017def">param</a>  string $text
@@ -566,13 +566,13 @@ Functions</h2></td></tr>
 
 	/**
 	 * These are all the transformations that occur *within* block-level
-	 * tags like paragraphs, <a class="el" href="../../dc/d71/group___imap___client.html#gafe94898c7bd186ef2727a4dff03b5109">headers</a>, and list items.
+	 * tags like paragraphs, headers, and list items.
 	 */
 	protected array $span_gamut = array(
 		// Process character escapes, code spans, and inline HTML
 		// in one shot.
 		&quot;parseSpan&quot;           =&gt; -30,
-		// Process anchor and image tags. Images must come <a class="el" href="../../dc/d71/group___imap___client.html#gac73eef9ff76ea330c0dab36ca448b90d">first</a>,
+		// Process anchor and image tags. Images must come first,
 		// because ![foo][f] looks like an anchor.
 		&quot;doImages&quot;            =&gt;  10,
 		&quot;doAnchors&quot;           =&gt;  20,
@@ -635,7 +635,7 @@ Functions</h2></td></tr>
 
 		// First, handle reference-style links: [<a class="el" href="../../d6/db1/group__mod__wiki.html#ga18b3d5253ddc6145e9bc81e2337889f6">link</a> text] [id]
 		$text = preg_replace_callback('{
-			(					# wrap whole <a class="el" href="../../d7/de4/group___mail.html#gad6ffdd5d243a28fa33bc9d39f06aaceb">match</a> in $1
+			(					# wrap whole <a class="el" href="../../d6/d9f/group__moodlecore.html#gae093ae79ce05f269ba1c09ce92b3d6b9">match</a> in $1
 			  [
 				('.$this-&gt;nested_brackets_re.')	# <a class="el" href="../../d6/db1/group__mod__wiki.html#ga18b3d5253ddc6145e9bc81e2337889f6">link</a> text = $2
 			  ]
@@ -652,11 +652,11 @@ Functions</h2></td></tr>
 
 		// Next, inline-style links: [<a class="el" href="../../d6/db1/group__mod__wiki.html#ga18b3d5253ddc6145e9bc81e2337889f6">link</a> text](url &quot;optional title&quot;)
 		$text = preg_replace_callback('{
-			(				# wrap whole <a class="el" href="../../d7/de4/group___mail.html#gad6ffdd5d243a28fa33bc9d39f06aaceb">match</a> in $1
+			(				# wrap whole <a class="el" href="../../d6/d9f/group__moodlecore.html#gae093ae79ce05f269ba1c09ce92b3d6b9">match</a> in $1
 			  [
 				('.$this-&gt;nested_brackets_re.')	# <a class="el" href="../../d6/db1/group__mod__wiki.html#ga18b3d5253ddc6145e9bc81e2337889f6">link</a> text = $2
 			  ]
-			  (			# <a class="el" href="../../dc/d71/group___imap___client.html#ga7cae715d5982cd839c0d2f725e958c46">literal</a> paren
+			  (			# literal paren
 				[ n]*
 				(?:
 					&lt;(.+?)&gt;	# href = $3
@@ -3857,7 +3857,7 @@ $this&#160;</td><td class="memItemRight" valign="bottom"><b>in_anchor</b> = fals
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 18 2024 02:32:22 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 25 2024 02:30:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
   </td>
  </tr>
  </tbody>
@@ -206,7 +206,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieves the value of the item from the cache associated with this object's key. </p>
-<p>The value returned must be identical to the value originally stored by <a class="el" href="../../dc/d71/group___imap___client.html#ga0dae8e91a93f347875c2acc9129ae73b" title="Store information in cache.">set()</a>.</p>
+<p>The value returned must be identical to the value originally stored by set().</p>
 <p>If isHit() returns false, this method MUST return null. Note that null is a legitimate cache value, so the isHit() method SHOULD be used to differentiate between "null value was found" and "no value was found."</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -259,7 +259,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Confirms if the cache item lookup resulted in a cache hit. </p>
-<p>Note: This method MUST NOT have a race condition between calling isHit() and calling <a class="el" href="../../dc/d71/group___imap___client.html#gafcf303080696d20cffeed262f4ebc4bb" title="Get information from the cache.">get()</a>.</p>
+<p>Note: This method MUST NOT have a race condition between calling isHit() and calling get().</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td>True if the request resulted in a cache hit. False otherwise. </td></tr>
@@ -307,7 +307,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 18 2024 02:33:46 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 25 2024 02:32:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

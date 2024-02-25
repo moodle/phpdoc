@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
   </td>
  </tr>
  </tbody>
@@ -168,7 +168,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a6f89dbfadb825aaf98a4589da298a20e" id="r_a6f89dbfadb825aaf98a4589da298a20e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d76/class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer.html#a6f89dbfadb825aaf98a4589da298a20e">idnSupported</a> ()</td></tr>
 <tr class="memdesc:a6f89dbfadb825aaf98a4589da298a20e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells whether IDNs (Internationalized Domain Names) are supported or not.  <br /></td></tr>
 <tr class="separator:a6f89dbfadb825aaf98a4589da298a20e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abad0b575eddce5def4c8775f3c81425d" id="r_abad0b575eddce5def4c8775f3c81425d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d76/class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer.html#abad0b575eddce5def4c8775f3c81425d">parseAddresses</a> ($addrstr, $useimap=true, $<a class="el" href="../../dc/d71/group___imap___client.html#gaa4b4442e4a5063e66fbe827b5d8e5827">charset</a>=self::CHARSET_ISO88591)</td></tr>
+<tr class="memitem:abad0b575eddce5def4c8775f3c81425d" id="r_abad0b575eddce5def4c8775f3c81425d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d76/class_p_h_p_mailer_1_1_p_h_p_mailer_1_1_p_h_p_mailer.html#abad0b575eddce5def4c8775f3c81425d">parseAddresses</a> ($addrstr, $useimap=true, $charset=self::CHARSET_ISO88591)</td></tr>
 <tr class="memdesc:abad0b575eddce5def4c8775f3c81425d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse and validate a string containing one or more RFC822-style comma-separated email addresses of the form "display name &lt;address&gt;" into an array of name/address pairs.  <br /></td></tr>
 <tr class="separator:abad0b575eddce5def4c8775f3c81425d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b4e3e4fd46b79925f7f312beb136873" id="r_a5b4e3e4fd46b79925f7f312beb136873"><td class="memItemLeft" align="right" valign="top"><a id="a5b4e3e4fd46b79925f7f312beb136873" name="a5b4e3e4fd46b79925f7f312beb136873"></a>
@@ -387,7 +387,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>ENCODING_BASE64</b> 
 const&#160;</td><td class="memItemRight" valign="bottom"><b>ENCODING_BINARY</b> = 'binary'</td></tr>
 <tr class="separator:adff19061934cb1a20740b5abee1920ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55bfd5c0778354dc6e094805652c6de1" id="r_a55bfd5c0778354dc6e094805652c6de1"><td class="memItemLeft" align="right" valign="top"><a id="a55bfd5c0778354dc6e094805652c6de1" name="a55bfd5c0778354dc6e094805652c6de1"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>ENCODING_QUOTED_PRINTABLE</b> = '<a class="el" href="../../dc/d71/group___imap___client.html#gad7223440805eea0f04d0c414f98ea643">quoted</a>-printable'</td></tr>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>ENCODING_QUOTED_PRINTABLE</b> = 'quoted-printable'</td></tr>
 <tr class="separator:a55bfd5c0778354dc6e094805652c6de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a922eeb6827be0787c5cf824651bc494b" id="r_a922eeb6827be0787c5cf824651bc494b"><td class="memItemLeft" align="right" valign="top"><a id="a922eeb6827be0787c5cf824651bc494b" name="a922eeb6827be0787c5cf824651bc494b"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>ENCRYPTION_SMTPS</b> = 'ssl'</td></tr>
@@ -2561,7 +2561,7 @@ PHPMailer::$all_recipients </dd></dl>
 
 <p>Whether to split multiple to addresses into multiple messages or send them all in one message. </p>
 <p>Only supported in <code>mail</code> and <code>sendmail</code> transports, not in SMTP.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000824">Deprecated</a></b></dt><dd>6.0.0 PHPMailer isn't a mailing list manager! </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000791">Deprecated</a></b></dt><dd>6.0.0 PHPMailer isn't a mailing list manager! </dd></dl>
 
 </div>
 </div>
@@ -2641,9 +2641,9 @@ PHPMailer::$Password </dd></dl>
 <p>SMTP class debug output mode. </p>
 <p>Debug output level. Options: </p><dl class="section see"><dt>See also</dt><dd>SMTP::DEBUG_OFF: No output </dd>
 <dd>
-SMTP::DEBUG_CLIENT: <a class="el" href="../../d3/d7a/class_client.html">Client</a> messages </dd>
+SMTP::DEBUG_CLIENT: Client messages </dd>
 <dd>
-SMTP::DEBUG_SERVER: <a class="el" href="../../d3/d7a/class_client.html">Client</a> and <a class="el" href="../../dc/d71/group___imap___client.html#gaa7cf0dd2417970c0d8ade087cb1dc7f8" title="Write server output to debug log.">server</a> messages </dd>
+SMTP::DEBUG_SERVER: Client and server messages </dd>
 <dd>
 SMTP::DEBUG_CONNECTION: As SERVER plus connection status </dd>
 <dd>
@@ -2911,7 +2911,7 @@ SMTP::$do_debug </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 18 2024 02:33:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 25 2024 02:31:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

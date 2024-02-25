@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
   </td>
  </tr>
  </tbody>
@@ -74,15 +74,19 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ad9af5467d8b10cc44720704a38a676fe" id="r_ad9af5467d8b10cc44720704a38a676fe"><td class="memItemLeft" align="right" valign="top"><a id="ad9af5467d8b10cc44720704a38a676fe" name="ad9af5467d8b10cc44720704a38a676fe"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>__construct</b> ()</td></tr>
+<tr class="memdesc:ad9af5467d8b10cc44720704a38a676fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mail Pickup Manager. <br /></td></tr>
+<tr class="separator:ad9af5467d8b10cc44720704a38a676fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a779db234d3c5f3516889bd92da799ce7" id="r_a779db234d3c5f3516889bd92da799ce7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a779db234d3c5f3516889bd92da799ce7">pickup_messages</a> ()</td></tr>
 <tr class="memdesc:a779db234d3c5f3516889bd92da799ce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Execute the main Inbound Message pickup task.  <br /></td></tr>
 <tr class="separator:a779db234d3c5f3516889bd92da799ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f19b092bd8ba5d52d3dd02004e38a9e" id="r_a6f19b092bd8ba5d52d3dd02004e38a9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f19b092bd8ba5d52d3dd02004e38a9e">process_existing_message</a> (\stdClass $maildata)</td></tr>
-<tr class="memdesc:a6f19b092bd8ba5d52d3dd02004e38a9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process a message received and validated by the Inbound Message processor.  <br /></td></tr>
-<tr class="separator:a6f19b092bd8ba5d52d3dd02004e38a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a263fd1c1a490af0847491bd35701dafa" id="r_a263fd1c1a490af0847491bd35701dafa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a263fd1c1a490af0847491bd35701dafa">process_message</a> (Horde_Imap_Client_Data_Fetch $message, $viewreadmessages=false, $skipsenderverification=false)</td></tr>
-<tr class="memdesc:a263fd1c1a490af0847491bd35701dafa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process a message and pass it through the Inbound Message handling systems.  <br /></td></tr>
-<tr class="separator:a263fd1c1a490af0847491bd35701dafa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab369844872185cd5af1cf218e945dd60" id="r_ab369844872185cd5af1cf218e945dd60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab369844872185cd5af1cf218e945dd60">process_existing_message</a> (stdClass $maildata,)</td></tr>
+<tr class="memdesc:ab369844872185cd5af1cf218e945dd60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process a message received and validated by the Inbound Message processor.  <br /></td></tr>
+<tr class="separator:ab369844872185cd5af1cf218e945dd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9f5058187d3d16203858f5097d667ff" id="r_ab9f5058187d3d16203858f5097d667ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9f5058187d3d16203858f5097d667ff">process_message</a> (int $messageuid, bool $viewreadmessages=false, bool $skipsenderverification=false,)</td></tr>
+<tr class="memdesc:ab9f5058187d3d16203858f5097d667ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process a message and pass it through the Inbound Message handling systems.  <br /></td></tr>
+<tr class="separator:ab9f5058187d3d16203858f5097d667ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8afa297df065f3f4975b60e0e9cda9bd" id="r_a8afa297df065f3f4975b60e0e9cda9bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8afa297df065f3f4975b60e0e9cda9bd">tidy_old_messages</a> ()</td></tr>
 <tr class="memdesc:a8afa297df065f3f4975b60e0e9cda9bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tidy up old messages in the confirmation folder.  <br /></td></tr>
 <tr class="separator:a8afa297df065f3f4975b60e0e9cda9bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,15 +123,27 @@ Protected Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>close_connection</b> ()</td></tr>
 <tr class="memdesc:a18cdd50662df186ee973da685088f718"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shutdown and close the connection to the IMAP client. <br /></td></tr>
 <tr class="separator:a18cdd50662df186ee973da685088f718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c569422264d248c7ab778a15379cb07" id="r_a6c569422264d248c7ab778a15379cb07"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c569422264d248c7ab778a15379cb07">get_address_from_envelope</a> (array $addresslist)</td></tr>
+<tr class="memdesc:a6c569422264d248c7ab778a15379cb07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse the address from the envelope.  <br /></td></tr>
+<tr class="separator:a6c569422264d248c7ab778a15379cb07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ab53087358a54586e8ddd901a302baf" id="r_a7ab53087358a54586e8ddd901a302baf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ab53087358a54586e8ddd901a302baf">get_confirmation_folder</a> ()</td></tr>
 <tr class="memdesc:a7ab53087358a54586e8ddd901a302baf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the confirmation folder imap name.  <br /></td></tr>
 <tr class="separator:a7ab53087358a54586e8ddd901a302baf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa2e7b7644b279347175da4724cc6fe2" id="r_aaa2e7b7644b279347175da4724cc6fe2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa2e7b7644b279347175da4724cc6fe2">get_imap_client</a> ()</td></tr>
-<tr class="memdesc:aaa2e7b7644b279347175da4724cc6fe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the connection to the IMAP client.  <br /></td></tr>
-<tr class="separator:aaa2e7b7644b279347175da4724cc6fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae546472e5f9b4763b3ae375836522bdd" id="r_ae546472e5f9b4763b3ae375836522bdd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae546472e5f9b4763b3ae375836522bdd">get_imap_client</a> (string $mailbox=self::MAILBOX,)</td></tr>
+<tr class="memdesc:ae546472e5f9b4763b3ae375836522bdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the connection to the IMAP client.  <br /></td></tr>
+<tr class="separator:ae546472e5f9b4763b3ae375836522bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa310750e23c2c05870af69c49605d52b" id="r_aa310750e23c2c05870af69c49605d52b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa310750e23c2c05870af69c49605d52b">get_mailbox</a> ()</td></tr>
-<tr class="memdesc:aa310750e23c2c05870af69c49605d52b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current mailbox information.  <br /></td></tr>
+<tr class="memdesc:aa310750e23c2c05870af69c49605d52b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current mailbox name.  <br /></td></tr>
 <tr class="separator:aa310750e23c2c05870af69c49605d52b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4c4d9b0f960106c7d42453841285af5" id="r_ad4c4d9b0f960106c7d42453841285af5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4c4d9b0f960106c7d42453841285af5">get_message_sequence_from_uid</a> (int $messageuid,)</td></tr>
+<tr class="memdesc:ad4c4d9b0f960106c7d42453841285af5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the message sequence number from the message uid.  <br /></td></tr>
+<tr class="separator:ad4c4d9b0f960106c7d42453841285af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3a4cf4a7c3c684bcfd634519412719b" id="r_aa3a4cf4a7c3c684bcfd634519412719b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa3a4cf4a7c3c684bcfd634519412719b">load_dependencies</a> ()</td></tr>
+<tr class="memdesc:aa3a4cf4a7c3c684bcfd634519412719b"><td class="mdescLeft">&#160;</td><td class="mdescRight">We use Roundcube Framework to receive the emails.  <br /></td></tr>
+<tr class="separator:aa3a4cf4a7c3c684bcfd634519412719b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6936af52f8caeaf114bd7afcf9d07876" id="r_a6936af52f8caeaf114bd7afcf9d07876"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6936af52f8caeaf114bd7afcf9d07876">select_mailbox</a> (string $mailbox,)</td></tr>
+<tr class="memdesc:a6936af52f8caeaf114bd7afcf9d07876"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switch mailbox.  <br /></td></tr>
+<tr class="separator:a6936af52f8caeaf114bd7afcf9d07876"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -135,10 +151,10 @@ Protected Attributes</h2></td></tr>
 core message inbound address_manager&#160;</td><td class="memItemRight" valign="bottom"><b>$addressmanager</b> = null</td></tr>
 <tr class="memdesc:ae6a82300d9c05d82ca75a958d524b80c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A reference to the Inbound Message Address Manager instance. <br /></td></tr>
 <tr class="separator:ae6a82300d9c05d82ca75a958d524b80c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59a8207d8f70ede96f61bd4f3c406772" id="r_a59a8207d8f70ede96f61bd4f3c406772"><td class="memItemLeft" align="right" valign="top"><a id="a59a8207d8f70ede96f61bd4f3c406772" name="a59a8207d8f70ede96f61bd4f3c406772"></a>
-Horde_Imap_Client_Socket&#160;</td><td class="memItemRight" valign="bottom"><b>$client</b> = null</td></tr>
-<tr class="memdesc:a59a8207d8f70ede96f61bd4f3c406772"><td class="mdescLeft">&#160;</td><td class="mdescRight">A reference to the IMAP client. <br /></td></tr>
-<tr class="separator:a59a8207d8f70ede96f61bd4f3c406772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dc4f4f8422c776a4f21b3ebb19d63c8" id="r_a9dc4f4f8422c776a4f21b3ebb19d63c8"><td class="memItemLeft" align="right" valign="top"><a id="a9dc4f4f8422c776a4f21b3ebb19d63c8" name="a9dc4f4f8422c776a4f21b3ebb19d63c8"></a>
+rcube_imap_generic&#160;</td><td class="memItemRight" valign="bottom"><b>$client</b> = null</td></tr>
+<tr class="memdesc:a9dc4f4f8422c776a4f21b3ebb19d63c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A reference to the IMAP client. <br /></td></tr>
+<tr class="separator:a9dc4f4f8422c776a4f21b3ebb19d63c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54c7f604570b340d4458f08a37907ad5" id="r_a54c7f604570b340d4458f08a37907ad5"><td class="memItemLeft" align="right" valign="top"><a id="a54c7f604570b340d4458f08a37907ad5" name="a54c7f604570b340d4458f08a37907ad5"></a>
 stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$currentmessagedata</b> = null</td></tr>
 <tr class="memdesc:a54c7f604570b340d4458f08a37907ad5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The data for the current message being processed. <br /></td></tr>
@@ -153,6 +169,45 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$imapnamespace</b> 
 <dl class="section copyright"><dt>Copyright</dt><dd>2014 Andrew Nicols </dd></dl>
 <dl class="section user"><dt>License</dt><dd><a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a> GNU GPL v3 or later </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6c569422264d248c7ab778a15379cb07" name="a6c569422264d248c7ab778a15379cb07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c569422264d248c7ab778a15379cb07">&#9670;&#160;</a></span>get_address_from_envelope()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tool_messageinbound\manager::get_address_from_envelope </td>
+          <td>(</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$addresslist</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parse the address from the envelope. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$addresslist</td><td>List of email addresses to parse. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array|null</td><td>List of parsed email addresses. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a7ab53087358a54586e8ddd901a302baf" name="a7ab53087358a54586e8ddd901a302baf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7ab53087358a54586e8ddd901a302baf">&#9670;&#160;</a></span>get_confirmation_folder()</h2>
 
@@ -186,8 +241,8 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$imapnamespace</b> 
 
 </div>
 </div>
-<a id="aaa2e7b7644b279347175da4724cc6fe2" name="aaa2e7b7644b279347175da4724cc6fe2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa2e7b7644b279347175da4724cc6fe2">&#9670;&#160;</a></span>get_imap_client()</h2>
+<a id="ae546472e5f9b4763b3ae375836522bdd" name="ae546472e5f9b4763b3ae375836522bdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae546472e5f9b4763b3ae375836522bdd">&#9670;&#160;</a></span>get_imap_client()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -198,7 +253,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$imapnamespace</b> 
         <tr>
           <td class="memname">tool_messageinbound\manager::get_imap_client </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$mailbox</em><span class="paramdefsep"> = </span><span class="paramdefval">self::MAILBOX</span></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -210,6 +265,12 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$imapnamespace</b> 
 </div><div class="memdoc">
 
 <p>Retrieve the connection to the IMAP client. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$mailbox</td><td>The mailbox to connect to.</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td>Whether a connection was successfully established. </td></tr>
@@ -242,10 +303,10 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$imapnamespace</b> 
 </table>
 </div><div class="memdoc">
 
-<p>Get the current mailbox information. </p>
+<p>Get the current mailbox name. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">Horde_Imap_Client_Mailbox</td><td></td></tr>
+    <tr><td class="paramname">string</td><td>The current mailbox name. </td></tr>
   </table>
   </dd>
 </dl>
@@ -255,6 +316,73 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$imapnamespace</b> 
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ad4c4d9b0f960106c7d42453841285af5" name="ad4c4d9b0f960106c7d42453841285af5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4c4d9b0f960106c7d42453841285af5">&#9670;&#160;</a></span>get_message_sequence_from_uid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tool_messageinbound\manager::get_message_sequence_from_uid </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$messageuid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the message sequence number from the message uid. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$messageuid</td><td>The message uid to process. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td>The message sequence number. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa3a4cf4a7c3c684bcfd634519412719b" name="aa3a4cf4a7c3c684bcfd634519412719b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3a4cf4a7c3c684bcfd634519412719b">&#9670;&#160;</a></span>load_dependencies()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tool_messageinbound\manager::load_dependencies </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>We use Roundcube Framework to receive the emails. </p>
+<p>This method will load the required dependencies. </p>
 
 </div>
 </div>
@@ -283,8 +411,8 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$imapnamespace</b> 
 
 </div>
 </div>
-<a id="a6f19b092bd8ba5d52d3dd02004e38a9e" name="a6f19b092bd8ba5d52d3dd02004e38a9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f19b092bd8ba5d52d3dd02004e38a9e">&#9670;&#160;</a></span>process_existing_message()</h2>
+<a id="ab369844872185cd5af1cf218e945dd60" name="ab369844872185cd5af1cf218e945dd60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab369844872185cd5af1cf218e945dd60">&#9670;&#160;</a></span>process_existing_message()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -292,7 +420,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$imapnamespace</b> 
         <tr>
           <td class="memname">tool_messageinbound\manager::process_existing_message </td>
           <td>(</td>
-          <td class="paramtype">\stdClass</td>          <td class="paramname"><span class="paramname"><em>$maildata</em></span></td><td>)</td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$maildata</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -320,8 +448,8 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$imapnamespace</b> 
 
 </div>
 </div>
-<a id="a263fd1c1a490af0847491bd35701dafa" name="a263fd1c1a490af0847491bd35701dafa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a263fd1c1a490af0847491bd35701dafa">&#9670;&#160;</a></span>process_message()</h2>
+<a id="ab9f5058187d3d16203858f5097d667ff" name="ab9f5058187d3d16203858f5097d667ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9f5058187d3d16203858f5097d667ff">&#9670;&#160;</a></span>process_message()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -329,17 +457,17 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$imapnamespace</b> 
         <tr>
           <td class="memname">tool_messageinbound\manager::process_message </td>
           <td>(</td>
-          <td class="paramtype">Horde_Imap_Client_Data_Fetch</td>          <td class="paramname"><span class="paramname"><em>$message</em>, </span></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$messageuid</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$viewreadmessages</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </span></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$viewreadmessages</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$skipsenderverification</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span></span>&#160;)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$skipsenderverification</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -347,9 +475,42 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$imapnamespace</b> 
 <p>Process a message and pass it through the Inbound Message handling systems. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">Horde_Imap_Client_Data_Fetch</td><td class="paramname">$message</td><td>The message to process </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$messageuid</td><td>The message uid to process </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$viewreadmessages</td><td>Whether to also look at messages which have been marked as read </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$skipsenderverification</td><td>Whether to skip the sender verification stage </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6936af52f8caeaf114bd7afcf9d07876" name="a6936af52f8caeaf114bd7afcf9d07876"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6936af52f8caeaf114bd7afcf9d07876">&#9670;&#160;</a></span>select_mailbox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">tool_messageinbound\manager::select_mailbox </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$mailbox</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Switch mailbox. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$mailbox</td><td>The mailbox to switch to. </td></tr>
   </table>
   </dd>
 </dl>
@@ -412,7 +573,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$imapnamespace</b> 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 18 2024 02:34:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 25 2024 02:33:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
   </td>
  </tr>
  </tbody>
@@ -82,6 +82,9 @@ Inheritance diagram for qbank_customfields\customfield\question_handler:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a9bd4aa8fdd5a83a699dfff8c26cb45e8" id="r_a9bd4aa8fdd5a83a699dfff8c26cb45e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df1/classcore__customfield_1_1handler.html#a9bd4aa8fdd5a83a699dfff8c26cb45e8">backup_define_structure</a> (int $instanceid, <a class="el" href="../../db/daa/classbackup__nested__element.html">backup_nested_element</a> $customfieldselement)</td></tr>
+<tr class="memdesc:a9bd4aa8fdd5a83a699dfff8c26cb45e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the custom field backup callback for each controller.  <br /></td></tr>
+<tr class="separator:a9bd4aa8fdd5a83a699dfff8c26cb45e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa45d3eb851b7a931823045bf044a347b" id="r_aa45d3eb851b7a931823045bf044a347b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa45d3eb851b7a931823045bf044a347b">can_configure</a> ()</td></tr>
 <tr class="memdesc:aa45d3eb851b7a931823045bf044a347b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current user can configure custom fields on this component.  <br /></td></tr>
 <tr class="separator:aa45d3eb851b7a931823045bf044a347b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,6 +203,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab2bafd7595f39da5f7139762433c134d" id="r_ab2bafd7595f39da5f7139762433c134d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df1/classcore__customfield_1_1handler.html#ab2bafd7595f39da5f7139762433c134d">rename_category</a> (category_controller $category, string $name)</td></tr>
 <tr class="memdesc:ab2bafd7595f39da5f7139762433c134d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change name for a field category.  <br /></td></tr>
 <tr class="separator:ab2bafd7595f39da5f7139762433c134d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62207345e3288af08e65ce1b60870632" id="r_a62207345e3288af08e65ce1b60870632"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df1/classcore__customfield_1_1handler.html#a62207345e3288af08e65ce1b60870632">restore_define_structure</a> (\<a class="el" href="../../d9/dcb/classrestore__structure__step.html">restore_structure_step</a> $step, int $newid, int $oldid)</td></tr>
+<tr class="memdesc:a62207345e3288af08e65ce1b60870632"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run the custom field restore callback for each controller.  <br /></td></tr>
+<tr class="separator:a62207345e3288af08e65ce1b60870632"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f8fed262d45e80cf0ef58753a9c4fef" id="r_a3f8fed262d45e80cf0ef58753a9c4fef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f8fed262d45e80cf0ef58753a9c4fef">restore_instance_data_from_backup</a> (\<a class="el" href="../../d5/dc0/classrestore__task.html">restore_task</a> $task, array $data)</td></tr>
 <tr class="memdesc:a3f8fed262d45e80cf0ef58753a9c4fef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates or updates the question custom field data when restoring from a backup.  <br /></td></tr>
 <tr class="separator:a3f8fed262d45e80cf0ef58753a9c4fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -282,6 +288,44 @@ static <a class="el" href="../../dd/dfd/classqbank__customfields_1_1customfield_
 <tr class="separator:a6176e9f57e327b76d4bcc2c624681826"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9bd4aa8fdd5a83a699dfff8c26cb45e8" name="a9bd4aa8fdd5a83a699dfff8c26cb45e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bd4aa8fdd5a83a699dfff8c26cb45e8">&#9670;&#160;</a></span>backup_define_structure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_customfield\handler::backup_define_structure </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$instanceid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/daa/classbackup__nested__element.html">backup_nested_element</a></td>          <td class="paramname"><span class="paramname"><em>$customfieldselement</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Run the custom field backup callback for each controller. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$instanceid</td><td>The instance ID. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../db/daa/classbackup__nested__element.html" title="Instantiable class representing one nestable element (non final) piece of information on backup.">backup_nested_element</a></td><td class="paramname">$customfieldselement</td><td>The custom field element to be backed up. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="af88b6fc3912fc06239396f50c12c0562" name="af88b6fc3912fc06239396f50c12c0562"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af88b6fc3912fc06239396f50c12c0562">&#9670;&#160;</a></span>can_backup()</h2>
 
@@ -1936,6 +1980,50 @@ static <a class="el" href="../../dd/dfd/classqbank__customfields_1_1customfield_
 
 </div>
 </div>
+<a id="a62207345e3288af08e65ce1b60870632" name="a62207345e3288af08e65ce1b60870632"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62207345e3288af08e65ce1b60870632">&#9670;&#160;</a></span>restore_define_structure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_customfield\handler::restore_define_structure </td>
+          <td>(</td>
+          <td class="paramtype">\<a class="el" href="../../d9/dcb/classrestore__structure__step.html">restore_structure_step</a></td>          <td class="paramname"><span class="paramname"><em>$step</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$newid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$oldid</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Run the custom field restore callback for each controller. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d9/dcb/classrestore__structure__step.html" title="Abstract class defining the needed stuff to restore one xml file.">restore_structure_step</a></td><td class="paramname">$step</td><td>The restore step instance. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$newid</td><td>The new ID for the custom field data after restore. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$oldid</td><td>The original ID of the custom field data before backup. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a3f8fed262d45e80cf0ef58753a9c4fef" name="a3f8fed262d45e80cf0ef58753a9c4fef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3f8fed262d45e80cf0ef58753a9c4fef">&#9670;&#160;</a></span>restore_instance_data_from_backup()</h2>
 
@@ -1960,6 +2048,12 @@ static <a class="el" href="../../dd/dfd/classqbank__customfields_1_1customfield_
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="../../d5/dc0/classrestore__task.html" title="Abstract class defining the needed stuf for one restore task (a collection of steps)">restore_task</a></td><td class="paramname">$task</td><td></td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$data</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int|void</td><td>Conditionally returns the ID of the created or updated record. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2161,7 +2255,7 @@ static <a class="el" href="../../dd/dfd/classqbank__customfields_1_1customfield_
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 18 2024 02:34:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 25 2024 02:33:04 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
   </td>
  </tr>
  </tbody>
@@ -121,6 +121,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a2525db9bb64ab42fbb607b2a333e494b" id="r_a2525db9bb64ab42fbb607b2a333e494b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2525db9bb64ab42fbb607b2a333e494b">is_course_editor</a> ()</td></tr>
 <tr class="memdesc:a2525db9bb64ab42fbb607b2a333e494b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the user has permission to modify this course.  <br /></td></tr>
 <tr class="separator:a2525db9bb64ab42fbb607b2a333e494b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e6a5179e21309c9e19bb8fd8bc5506a" id="r_a4e6a5179e21309c9e19bb8fd8bc5506a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/db0/classbehat__course.html#a4e6a5179e21309c9e19bb8fd8bc5506a">resolve_page_instance_url</a> (string $type, string $identifier)</td></tr>
+<tr class="memdesc:a4e6a5179e21309c9e19bb8fd8bc5506a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert page names to URLs for steps like 'When I am on the "[identifier]" "[page type]" page'.  <br /></td></tr>
+<tr class="separator:a4e6a5179e21309c9e19bb8fd8bc5506a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="aab784c6a0f1d0da4d6e112ac7dd5668a" name="aab784c6a0f1d0da4d6e112ac7dd5668a"></a>
@@ -473,6 +476,53 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a4e6a5179e21309c9e19bb8fd8bc5506a" name="a4e6a5179e21309c9e19bb8fd8bc5506a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e6a5179e21309c9e19bb8fd8bc5506a">&#9670;&#160;</a></span>resolve_page_instance_url()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_course::resolve_page_instance_url </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$type</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$identifier</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convert page names to URLs for steps like 'When I am on the "[identifier]" "[page type]" page'. </p>
+<p>Recognised page names are: | Section | coursename &gt; section name | The selected section of the course |</p>
+<p>Examples:</p>
+<p>When I am on the "Course 1 &gt; Topic 1" "course &gt; section" page logged in as "admin"</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$type</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$identifier</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a1493fb96a85bfb906ba5468330de76c0" name="a1493fb96a85bfb906ba5468330de76c0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1493fb96a85bfb906ba5468330de76c0">&#9670;&#160;</a></span>PAGE_READY_JS</h2>
@@ -508,7 +558,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 18 2024 02:32:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 25 2024 02:31:02 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

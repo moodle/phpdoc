@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
   </td>
  </tr>
  </tbody>
@@ -62,8 +62,8 @@ $(function() {
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
+<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
 <a href="../../d3/d46/classcore_1_1task_1_1manager-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">core\task\manager Class Reference<div class="ingroups"><a class="el" href="../../d0/de1/group__core.html">core</a></div></div></div>
 </div><!--header-->
@@ -136,7 +136,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>cleanup_metadata</b
 <tr class="memitem:a683948e2257af3519083594c88832526" id="r_a683948e2257af3519083594c88832526"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a683948e2257af3519083594c88832526">get_next_scheduled_task</a> ($timestart)</td></tr>
 <tr class="memdesc:a683948e2257af3519083594c88832526"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will dispatch the next scheduled task in the queue.  <br /></td></tr>
 <tr class="separator:a683948e2257af3519083594c88832526"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89f79ec0e5542cadab7ac4ed95f080c1" id="r_a89f79ec0e5542cadab7ac4ed95f080c1"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89f79ec0e5542cadab7ac4ed95f080c1">get_running_tasks</a> ($<a class="el" href="../../dc/d71/group___imap___client.html#ga4bd31bcedb7b4943aac2da78d0d84afe">sort</a>='')</td></tr>
+<tr class="memitem:a89f79ec0e5542cadab7ac4ed95f080c1" id="r_a89f79ec0e5542cadab7ac4ed95f080c1"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89f79ec0e5542cadab7ac4ed95f080c1">get_running_tasks</a> ($sort='')</td></tr>
 <tr class="memdesc:a89f79ec0e5542cadab7ac4ed95f080c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets a list of currently-running tasks.  <br /></td></tr>
 <tr class="separator:a89f79ec0e5542cadab7ac4ed95f080c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a4052f6e6fc122d164acdf83f9676a6" id="r_a0a4052f6e6fc122d164acdf83f9676a6"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a4052f6e6fc122d164acdf83f9676a6">get_scheduled_task</a> ($classname)</td></tr>
@@ -169,6 +169,10 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>cleanup_metadata</b
 <tr class="memitem:a65321a674c4792d4c563a2d3e43027b5" id="r_a65321a674c4792d4c563a2d3e43027b5"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65321a674c4792d4c563a2d3e43027b5">reset_scheduled_tasks_for_component</a> ($componentname)</td></tr>
 <tr class="memdesc:a65321a674c4792d4c563a2d3e43027b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the database to contain a list of scheduled task for a component.  <br /></td></tr>
 <tr class="separator:a65321a674c4792d4c563a2d3e43027b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a619769fa31a47279a471b9c2d4779350" id="r_a619769fa31a47279a471b9c2d4779350"><td class="memItemLeft" align="right" valign="top"><a id="a619769fa31a47279a471b9c2d4779350" name="a619769fa31a47279a471b9c2d4779350"></a>
+static&#160;</td><td class="memItemRight" valign="bottom"><b>reset_state</b> ()</td></tr>
+<tr class="memdesc:a619769fa31a47279a471b9c2d4779350"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the state of the task manager. <br /></td></tr>
+<tr class="separator:a619769fa31a47279a471b9c2d4779350"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8e25ffd0bb3c1050bea3d6462564ed6" id="r_af8e25ffd0bb3c1050bea3d6462564ed6"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8e25ffd0bb3c1050bea3d6462564ed6">run_adhoc_from_cli</a> (int $taskid)</td></tr>
 <tr class="memdesc:af8e25ffd0bb3c1050bea3d6462564ed6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes an ad hoc task from web invocation using PHP CLI.  <br /></td></tr>
 <tr class="separator:af8e25ffd0bb3c1050bea3d6462564ed6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,21 +222,6 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_RETRY</b> = 
 <tr class="memdesc:a8ece4632beb250f1bee02b7b37afcd11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used for max retry. <br /></td></tr>
 <tr class="separator:a8ece4632beb250f1bee02b7b37afcd11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a589267b48e5ab47be84fdca1bb9dfe57" id="r_a589267b48e5ab47be84fdca1bb9dfe57"><td class="memItemLeft" align="right" valign="top"><a id="a589267b48e5ab47be84fdca1bb9dfe57" name="a589267b48e5ab47be84fdca1bb9dfe57"></a>
-static array&#160;</td><td class="memItemRight" valign="bottom"><b>$miniqueue</b></td></tr>
-<tr class="memdesc:a589267b48e5ab47be84fdca1bb9dfe57"><td class="mdescLeft">&#160;</td><td class="mdescRight">A cached queue of adhoc tasks. <br /></td></tr>
-<tr class="separator:a589267b48e5ab47be84fdca1bb9dfe57"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95d9e3b57264f5872570f98587362956" id="r_a95d9e3b57264f5872570f98587362956"><td class="memItemLeft" align="right" valign="top"><a id="a95d9e3b57264f5872570f98587362956" name="a95d9e3b57264f5872570f98587362956"></a>
-static string&#160;</td><td class="memItemRight" valign="bottom"><b>$mode</b></td></tr>
-<tr class="memdesc:a95d9e3b57264f5872570f98587362956"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to determine if the adhoc task queue is distributing or filling capacity. <br /></td></tr>
-<tr class="separator:a95d9e3b57264f5872570f98587362956"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12d9541e038314c893a3f83486eed172" id="r_a12d9541e038314c893a3f83486eed172"><td class="memItemLeft" align="right" valign="top"><a id="a12d9541e038314c893a3f83486eed172" name="a12d9541e038314c893a3f83486eed172"></a>
-static int&#160;</td><td class="memItemRight" valign="bottom"><b>$numtasks</b></td></tr>
-<tr class="memdesc:a12d9541e038314c893a3f83486eed172"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last recorded number of unique adhoc tasks. <br /></td></tr>
-<tr class="separator:a12d9541e038314c893a3f83486eed172"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
 <tr class="memitem:a63bd30ae72486b2241b23593e73f60f4" id="r_a63bd30ae72486b2241b23593e73f60f4"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63bd30ae72486b2241b23593e73f60f4">find_php_cli_path</a> ()</td></tr>
@@ -250,6 +239,21 @@ Static Protected Member Functions</h2></td></tr>
 <tr class="memitem:aa03cb85b2d7489b1736d16a396704840" id="r_aa03cb85b2d7489b1736d16a396704840"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa03cb85b2d7489b1736d16a396704840">task_is_scheduled</a> ($task)</td></tr>
 <tr class="memdesc:aa03cb85b2d7489b1736d16a396704840"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the task with the same classname, component and customdata is already scheduled.  <br /></td></tr>
 <tr class="separator:aa03cb85b2d7489b1736d16a396704840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
+Static Protected Attributes</h2></td></tr>
+<tr class="memitem:a9cd6972e06ee01c857c771a60cd42f5b" id="r_a9cd6972e06ee01c857c771a60cd42f5b"><td class="memItemLeft" align="right" valign="top"><a id="a9cd6972e06ee01c857c771a60cd42f5b" name="a9cd6972e06ee01c857c771a60cd42f5b"></a>
+static array array&#160;</td><td class="memItemRight" valign="bottom"><b>$miniqueue</b> = []</td></tr>
+<tr class="memdesc:a9cd6972e06ee01c857c771a60cd42f5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A cached queue of adhoc tasks. <br /></td></tr>
+<tr class="separator:a9cd6972e06ee01c857c771a60cd42f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b78258bdef6a86582d7bc7ca65d5adf" id="r_a8b78258bdef6a86582d7bc7ca65d5adf"><td class="memItemLeft" align="right" valign="top"><a id="a8b78258bdef6a86582d7bc7ca65d5adf" name="a8b78258bdef6a86582d7bc7ca65d5adf"></a>
+static null int int&#160;</td><td class="memItemRight" valign="bottom"><b>$mode</b> = null</td></tr>
+<tr class="memdesc:a8b78258bdef6a86582d7bc7ca65d5adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to determine if the adhoc task queue is distributing or filling capacity. <br /></td></tr>
+<tr class="separator:a8b78258bdef6a86582d7bc7ca65d5adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3d37606fc9229b89c629b7a9dde970f" id="r_aa3d37606fc9229b89c629b7a9dde970f"><td class="memItemLeft" align="right" valign="top"><a id="aa3d37606fc9229b89c629b7a9dde970f" name="aa3d37606fc9229b89c629b7a9dde970f"></a>
+static int int&#160;</td><td class="memItemRight" valign="bottom"><b>$numtasks</b> = 0</td></tr>
+<tr class="memdesc:aa3d37606fc9229b89c629b7a9dde970f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The last recorded number of unique adhoc tasks. <br /></td></tr>
+<tr class="separator:aa3d37606fc9229b89c629b7a9dde970f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Collection of task related methods. </p>
@@ -2053,7 +2057,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 18 2024 02:33:51 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 25 2024 02:32:17 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

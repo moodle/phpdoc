@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
   </td>
  </tr>
  </tbody>
@@ -90,6 +90,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2ca916421ca8073cbec40822f279f6f1" id="r_a2ca916421ca8073cbec40822f279f6f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ca916421ca8073cbec40822f279f6f1">__construct</a> (int $id, stdClass $record)</td></tr>
 <tr class="memdesc:a2ca916421ca8073cbec40822f279f6f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">data_controller constructor.  <br /></td></tr>
 <tr class="separator:a2ca916421ca8073cbec40822f279f6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19ea92d27b091cc06dc2d0e2b73a15fe" id="r_a19ea92d27b091cc06dc2d0e2b73a15fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19ea92d27b091cc06dc2d0e2b73a15fe">backup_define_structure</a> (<a class="el" href="../../db/daa/classbackup__nested__element.html">backup_nested_element</a> $customfieldelement)</td></tr>
+<tr class="memdesc:a19ea92d27b091cc06dc2d0e2b73a15fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for backup, allowing custom fields to add additional data to the backup.  <br /></td></tr>
+<tr class="separator:a19ea92d27b091cc06dc2d0e2b73a15fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e6371127cb19867852d13d17874e272" id="r_a8e6371127cb19867852d13d17874e272"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e6371127cb19867852d13d17874e272">datafield</a> ()</td></tr>
 <tr class="memdesc:a8e6371127cb19867852d13d17874e272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the name of the field in the db table {customfield_data} where the data is stored.  <br /></td></tr>
 <tr class="separator:a8e6371127cb19867852d13d17874e272"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,6 +138,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac6658669ffaae414dc4f4b3944dbb50a" id="r_ac6658669ffaae414dc4f4b3944dbb50a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6658669ffaae414dc4f4b3944dbb50a">instance_form_validation</a> (array $<a class="el" href="../../d3/d55/classcore__customfield_1_1data.html">data</a>, array $files)</td></tr>
 <tr class="memdesc:ac6658669ffaae414dc4f4b3944dbb50a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called from instance edit form in validation()  <br /></td></tr>
 <tr class="separator:ac6658669ffaae414dc4f4b3944dbb50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a918bace35a5e976079048723c48ad2b0" id="r_a918bace35a5e976079048723c48ad2b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a918bace35a5e976079048723c48ad2b0">restore_define_structure</a> (\<a class="el" href="../../d9/dcb/classrestore__structure__step.html">restore_structure_step</a> $step, int $newid, int $oldid)</td></tr>
+<tr class="memdesc:a918bace35a5e976079048723c48ad2b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for restore, allowing custom fields to restore additional data from the backup.  <br /></td></tr>
+<tr class="separator:a918bace35a5e976079048723c48ad2b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a937cf86f4290508d3e1a03e098ecb7de" id="r_a937cf86f4290508d3e1a03e098ecb7de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a937cf86f4290508d3e1a03e098ecb7de">save</a> ()</td></tr>
 <tr class="memdesc:a937cf86f4290508d3e1a03e098ecb7de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Persistent save parser.  <br /></td></tr>
 <tr class="separator:a937cf86f4290508d3e1a03e098ecb7de"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -209,6 +215,34 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a19ea92d27b091cc06dc2d0e2b73a15fe" name="a19ea92d27b091cc06dc2d0e2b73a15fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19ea92d27b091cc06dc2d0e2b73a15fe">&#9670;&#160;</a></span>backup_define_structure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_customfield\data_controller::backup_define_structure </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/daa/classbackup__nested__element.html">backup_nested_element</a></td>          <td class="paramname"><span class="paramname"><em>$customfieldelement</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback for backup, allowing custom fields to add additional data to the backup. </p>
+<p>It is not an abstract method for backward compatibility reasons.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../db/daa/classbackup__nested__element.html" title="Instantiable class representing one nestable element (non final) piece of information on backup.">backup_nested_element</a></td><td class="paramname">$customfieldelement</td><td>The custom field element to be backed up. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../d4/d18/classcustomfield__textarea_1_1data__controller.html#aa18ae9298dcd8eae51376638fd8e7181">customfield_textarea\data_controller</a>.</p>
+
+</div>
+</div>
 <a id="a514f80f008c38939c0d8270f52ca75e4" name="a514f80f008c38939c0d8270f52ca75e4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a514f80f008c38939c0d8270f52ca75e4">&#9670;&#160;</a></span>create()</h2>
 
@@ -796,6 +830,45 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a918bace35a5e976079048723c48ad2b0" name="a918bace35a5e976079048723c48ad2b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a918bace35a5e976079048723c48ad2b0">&#9670;&#160;</a></span>restore_define_structure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_customfield\data_controller::restore_define_structure </td>
+          <td>(</td>
+          <td class="paramtype">\<a class="el" href="../../d9/dcb/classrestore__structure__step.html">restore_structure_step</a></td>          <td class="paramname"><span class="paramname"><em>$step</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$newid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$oldid</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback for restore, allowing custom fields to restore additional data from the backup. </p>
+<p>It is not an abstract method for backward compatibility reasons.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d9/dcb/classrestore__structure__step.html" title="Abstract class defining the needed stuff to restore one xml file.">restore_structure_step</a></td><td class="paramname">$step</td><td>The restore step instance. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$newid</td><td>The new ID for the custom field data after restore. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$oldid</td><td>The original ID of the custom field data before backup. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../d4/d18/classcustomfield__textarea_1_1data__controller.html#ae0647295e2da380e2fb85ebbaa6c3585">customfield_textarea\data_controller</a>.</p>
+
+</div>
+</div>
 <a id="a937cf86f4290508d3e1a03e098ecb7de" name="a937cf86f4290508d3e1a03e098ecb7de"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a937cf86f4290508d3e1a03e098ecb7de">&#9670;&#160;</a></span>save()</h2>
 
@@ -904,7 +977,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 18 2024 02:34:02 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 25 2024 02:32:27 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

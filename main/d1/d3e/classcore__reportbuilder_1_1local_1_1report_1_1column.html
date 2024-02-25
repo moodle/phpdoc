@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
   </td>
  </tr>
  </tbody>
@@ -343,7 +343,7 @@ column_model&#160;</td><td class="memItemRight" valign="bottom"><b>$persistent</
 <p>Adds column callback (in the case there are multiple, they will be called iteratively - the result of each passed along to the next in the chain) </p>
 <p>The callback should implement the following signature (where $value is the first column field, $row is all column fields, $additionalarguments are those passed to this method, and $aggregation indicates the current aggregation type being applied to the column):</p>
 <p>function($value, stdClass $row, $additionalarguments, ?string $aggregation): string</p>
-<p>The type of the $value parameter passed to the callback is determined by calling {</p><dl class="section see"><dt>See also</dt><dd>set_type}, this type is preserved <a class="el" href="../../d8/d07/categoryif.html" title="Advance grading form element.">if</a> the column is part of a <a class="el" href="../../d1/dc3/group__report.html">report</a> source and is being aggregated. For <a class="el" href="../../df/db1/classentities.html">entities</a> that can be left joined to a <a class="el" href="../../d1/dc3/group__report.html">report</a>, the <a class="el" href="../../dc/d71/group___imap___client.html#gac73eef9ff76ea330c0dab36ca448b90d" title="Return the first fetch object in the results, if there is only one object.">first</a> argument of the callback must be nullable (as it should also be <a class="el" href="../../d8/d07/categoryif.html" title="Advance grading form element.">if</a> the <a class="el" href="../../dc/d71/group___imap___client.html#gac73eef9ff76ea330c0dab36ca448b90d" title="Return the first fetch object in the results, if there is only one object.">first</a> column field is itself nullable).</dd></dl>
+<p>The type of the $value parameter passed to the callback is determined by calling {</p><dl class="section see"><dt>See also</dt><dd>set_type}, this type is preserved <a class="el" href="../../d8/d07/categoryif.html" title="Advance grading form element.">if</a> the column is part of a <a class="el" href="../../d1/dc3/group__report.html">report</a> source and is being aggregated. For <a class="el" href="../../df/db1/classentities.html">entities</a> that can be left joined to a <a class="el" href="../../d1/dc3/group__report.html">report</a>, the first argument of the callback must be nullable (as it should also be <a class="el" href="../../d8/d07/categoryif.html" title="Advance grading form element.">if</a> the first column field is itself nullable).</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">callable</td><td class="paramname">$callable</td><td></td></tr>
@@ -1239,7 +1239,7 @@ column_model&#160;</td><td class="memItemRight" valign="bottom"><b>$persistent</
 </div><div class="memdoc">
 
 <p>Define suitable SQL fragment for grouping by the columns fields. </p>
-<p>This will be returned from {</p><dl class="section see"><dt>See also</dt><dd>get_groupby_sql} <a class="el" href="../../d8/d07/categoryif.html" title="Advance grading form element.">if</a> <a class="el" href="../../dc/d71/group___imap___client.html#ga0dae8e91a93f347875c2acc9129ae73b" title="Store information in cache.">set</a></dd></dl>
+<p>This will be returned from {</p><dl class="section see"><dt>See also</dt><dd>get_groupby_sql} <a class="el" href="../../d8/d07/categoryif.html" title="Advance grading form element.">if</a> set</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$groupbysql</td><td></td></tr>
@@ -1375,7 +1375,7 @@ column_model&#160;</td><td class="memItemRight" valign="bottom"><b>$persistent</
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd>add_field}. If omitted then the <a class="el" href="../../dc/d71/group___imap___client.html#gac73eef9ff76ea330c0dab36ca448b90d" title="Return the first fetch object in the results, if there is only one object.">first</a> selected field is used </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>add_field}. If omitted then the first selected field is used </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">self</td><td></td></tr>
@@ -1523,7 +1523,7 @@ column_model&#160;</td><td class="memItemRight" valign="bottom"><b>$persistent</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 18 2024 02:34:09 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 25 2024 02:32:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

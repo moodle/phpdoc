@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
   </td>
  </tr>
  </tbody>
@@ -141,10 +141,10 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ac342dff2a9ac0a218f4dcf5df14442be" id="r_ac342dff2a9ac0a218f4dcf5df14442be"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9f/classcore_1_1persistent.html#ac342dff2a9ac0a218f4dcf5df14442be">get_record</a> (array $filters=[], int $strictness=<a class="el" href="../../d0/de1/group__core.html#gaffc7005a2da386334d76ec5f85ca2d48">IGNORE_MISSING</a>)</td></tr>
 <tr class="memdesc:ac342dff2a9ac0a218f4dcf5df14442be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a single record.  <br /></td></tr>
 <tr class="separator:ac342dff2a9ac0a218f4dcf5df14442be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa964375ea83be287776d144294abc972" id="r_aa964375ea83be287776d144294abc972"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9f/classcore_1_1persistent.html#aa964375ea83be287776d144294abc972">get_records</a> ($filters=array(), $<a class="el" href="../../dc/d71/group___imap___client.html#ga4bd31bcedb7b4943aac2da78d0d84afe">sort</a>='', $order='ASC', $skip=0, $limit=0)</td></tr>
+<tr class="memitem:aa964375ea83be287776d144294abc972" id="r_aa964375ea83be287776d144294abc972"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9f/classcore_1_1persistent.html#aa964375ea83be287776d144294abc972">get_records</a> ($filters=array(), $sort='', $order='ASC', $skip=0, $limit=0)</td></tr>
 <tr class="memdesc:aa964375ea83be287776d144294abc972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a list of records.  <br /></td></tr>
 <tr class="separator:aa964375ea83be287776d144294abc972"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08627a333c74170b34cb84f6ee54a1ec" id="r_a08627a333c74170b34cb84f6ee54a1ec"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9f/classcore_1_1persistent.html#a08627a333c74170b34cb84f6ee54a1ec">get_records_select</a> ($select, $params=null, $<a class="el" href="../../dc/d71/group___imap___client.html#ga4bd31bcedb7b4943aac2da78d0d84afe">sort</a>='', $<a class="el" href="../../df/d37/classcore__user_1_1fields.html">fields</a>=' *', $limitfrom=0, $limitnum=0)</td></tr>
+<tr class="memitem:a08627a333c74170b34cb84f6ee54a1ec" id="r_a08627a333c74170b34cb84f6ee54a1ec"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9f/classcore_1_1persistent.html#a08627a333c74170b34cb84f6ee54a1ec">get_records_select</a> ($select, $params=null, $sort='', $<a class="el" href="../../df/d37/classcore__user_1_1fields.html">fields</a>=' *', $limitfrom=0, $limitnum=0)</td></tr>
 <tr class="memdesc:a08627a333c74170b34cb84f6ee54a1ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a list of records based on a select query.  <br /></td></tr>
 <tr class="separator:a08627a333c74170b34cb84f6ee54a1ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace3757f3a4f187594cef9019d2222e77" id="r_ace3757f3a4f187594cef9019d2222e77"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9f/classcore_1_1persistent.html#ace3757f3a4f187594cef9019d2222e77">get_sql_fields</a> ($alias, $prefix=null)</td></tr>
@@ -1625,7 +1625,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Saves the record to the database. </p>
-<p>If this record has an ID, then <a class="el" href="">self::update()</a> is called, otherwise <a class="el" href="">self::create()</a> is called. Before and after hooks for <a class="el" href="../../d7/d30/group___mime.html#ga239b1c70258014a86569483c2d009de6" title="Creates a default Content-Type header, conforming to the MIME specification as detailed in RFC 2045.">create()</a> or update() will be called appropriately.</p>
+<p>If this record has an ID, then <a class="el" href="">self::update()</a> is called, otherwise <a class="el" href="">self::create()</a> is called. Before and after hooks for create() or update() will be called appropriately.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">void</td><td></td></tr>
@@ -1709,7 +1709,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Data setter for multiple properties. </p>
-<p>Internally calls {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dc/d71/group___imap___client.html#ga0dae8e91a93f347875c2acc9129ae73b" title="Store information in cache.">set</a>} on each property</dd></dl>
+<p>Internally calls {</p><dl class="section see"><dt>See also</dt><dd>set} on each property</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$values</td><td>Array of property =&gt; value elements </td></tr>
@@ -1864,7 +1864,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 18 2024 02:34:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 25 2024 02:33:16 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

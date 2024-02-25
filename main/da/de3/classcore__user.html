@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
   </td>
  </tr>
  </tbody>
@@ -143,7 +143,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a9ebce63098d14b03f910eedff464c913" id="r_a9ebce63098d14b03f910eedff464c913"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ebce63098d14b03f910eedff464c913">reset_internal_users</a> ()</td></tr>
 <tr class="memdesc:a9ebce63098d14b03f910eedff464c913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset self::$noreplyuser and self::$supportuser.  <br /></td></tr>
 <tr class="separator:a9ebce63098d14b03f910eedff464c913"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb36cc1142e536cd55972511c28ccdaf" id="r_adb36cc1142e536cd55972511c28ccdaf"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb36cc1142e536cd55972511c28ccdaf">search</a> ($<a class="el" href="../../dc/d71/group___imap___client.html#gae0ccb7bceda061e460576520b09aa443">query</a>, context_course $coursecontext=null, $max=30, $querylimit=5)</td></tr>
+<tr class="memitem:adb36cc1142e536cd55972511c28ccdaf" id="r_adb36cc1142e536cd55972511c28ccdaf"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb36cc1142e536cd55972511c28ccdaf">search</a> ($query, context_course $coursecontext=null, $max=30, $querylimit=5)</td></tr>
 <tr class="memdesc:adb36cc1142e536cd55972511c28ccdaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Searches for users by name, possibly within a specified context, with current user's access.  <br /></td></tr>
 <tr class="separator:adb36cc1142e536cd55972511c28ccdaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a390c4f3e97afc1cdcefa7195c7d38989" id="r_a390c4f3e97afc1cdcefa7195c7d38989"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a390c4f3e97afc1cdcefa7195c7d38989">update_picture</a> (stdClass $usernew, $filemanageroptions=array())</td></tr>
@@ -219,7 +219,7 @@ Static Protected Member Functions</h2></td></tr>
 <tr class="memitem:aa82b4831583a4c34852a9e817a104ea6" id="r_aa82b4831583a4c34852a9e817a104ea6"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa82b4831583a4c34852a9e817a104ea6">get_dummy_user_record</a> ()</td></tr>
 <tr class="memdesc:aa82b4831583a4c34852a9e817a104ea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to return dummy noreply user record.  <br /></td></tr>
 <tr class="separator:aa82b4831583a4c34852a9e817a104ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae91942708ddbc8102708b1798819e4bd" id="r_ae91942708ddbc8102708b1798819e4bd"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae91942708ddbc8102708b1798819e4bd">get_enrolled_sql_on_courses_with_capability</a> ($<a class="el" href="../../dc/d71/group___imap___client.html#gab2c24006bbccb7984767e680dc4c3e92">capability</a>)</td></tr>
+<tr class="memitem:ae91942708ddbc8102708b1798819e4bd" id="r_ae91942708ddbc8102708b1798819e4bd"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae91942708ddbc8102708b1798819e4bd">get_enrolled_sql_on_courses_with_capability</a> ($capability)</td></tr>
 <tr class="memdesc:ae91942708ddbc8102708b1798819e4bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an SQL query that lists all enrolled user ids on any course where the current user has the specified capability.  <br /></td></tr>
 <tr class="separator:ae91942708ddbc8102708b1798819e4bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0910047da34b9ff5573b4a17c539f3a3" id="r_a0910047da34b9ff5573b4a17c539f3a3"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0910047da34b9ff5573b4a17c539f3a3">get_preference_definition</a> ($preferencename)</td></tr>
@@ -850,7 +850,7 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$propertiesca
 <li>size = 35 (size of image)</li>
 <li><a class="el" href="../../d6/db1/group__mod__wiki.html#ga18b3d5253ddc6145e9bc81e2337889f6" title="Link internal callback.">link</a> = true (make image clickable - the <a class="el" href="../../d6/db1/group__mod__wiki.html#ga18b3d5253ddc6145e9bc81e2337889f6" title="Link internal callback.">link</a> leads to user profile)</li>
 <li>popup = false (open in popup)</li>
-<li>alttext = true (<a class="el" href="../../dc/d71/group___imap___client.html#ga41ec23da3e5ce7ebf35d4fde663cf1db" title="Add an alert.">add</a> image alt attribute)</li>
+<li>alttext = true (add image alt attribute)</li>
 <li>class = image class attribute (default 'userpicture')</li>
 <li>visibletoscreenreaders = true (whether to be visible to screen readers)</li>
 <li>includefullname = false (whether to include the user'<a class="el" href="../../d0/d4a/classs.html">s</a> full name together with the user picture)</li>
@@ -1764,7 +1764,7 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$propertiesca
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 18 2024 02:32:35 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 25 2024 02:31:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

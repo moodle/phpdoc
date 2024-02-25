@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
   </td>
  </tr>
  </tbody>
@@ -353,7 +353,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf1a8f99f45a823b9e66439e54ea803b3" id="r_gaf1a8f99f45a823b9e66439e54ea803b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf1a8f99f45a823b9e66439e54ea803b3">data_get_advance_search_ids</a> ($recordids, $searcharray, $dataid)</td></tr>
 <tr class="memdesc:gaf1a8f99f45a823b9e66439e54ea803b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ids of all the records that match that advanced search criteria This goes and loops through each criterion one at a time until it either runs out of records or returns a subset of records.  <br /></td></tr>
 <tr class="separator:gaf1a8f99f45a823b9e66439e54ea803b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga18f2841e3ff17b3fa64bcc55ca55311b" id="r_ga18f2841e3ff17b3fa64bcc55ca55311b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga18f2841e3ff17b3fa64bcc55ca55311b">data_get_advanced_search_sql</a> ($<a class="el" href="../../dc/d71/group___imap___client.html#ga4bd31bcedb7b4943aac2da78d0d84afe">sort</a>, $data, $recordids, $selectdata, $sortorder)</td></tr>
+<tr class="memitem:ga18f2841e3ff17b3fa64bcc55ca55311b" id="r_ga18f2841e3ff17b3fa64bcc55ca55311b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga18f2841e3ff17b3fa64bcc55ca55311b">data_get_advanced_search_sql</a> ($sort, $data, $recordids, $selectdata, $sortorder)</td></tr>
 <tr class="memdesc:ga18f2841e3ff17b3fa64bcc55ca55311b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an array with an sql string for advanced searches and the parameters that go with them.  <br /></td></tr>
 <tr class="separator:ga18f2841e3ff17b3fa64bcc55ca55311b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4107591ccc94acb69a40b4363609ba50" id="r_ga4107591ccc94acb69a40b4363609ba50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4107591ccc94acb69a40b4363609ba50">data_get_all_recordids</a> ($dataid, $selectdata='', $params=null)</td></tr>
@@ -467,13 +467,13 @@ Functions</h2></td></tr>
 <tr class="memitem:ga7bb5cfc0fd7879edbc8fecfeed3c7146" id="r_ga7bb5cfc0fd7879edbc8fecfeed3c7146"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga7bb5cfc0fd7879edbc8fecfeed3c7146">data_print_header</a> ($course, $cm, $data, $currenttab='', string $actionbar='')</td></tr>
 <tr class="memdesc:ga7bb5cfc0fd7879edbc8fecfeed3c7146"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the heads for a page.  <br /></td></tr>
 <tr class="separator:ga7bb5cfc0fd7879edbc8fecfeed3c7146"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaab5cbaf20284dca2c4bc15358cd2b718" id="r_gaab5cbaf20284dca2c4bc15358cd2b718"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaab5cbaf20284dca2c4bc15358cd2b718">data_print_preference_form</a> ($data, $perpage, $<a class="el" href="../../dc/d71/group___imap___client.html#ga51cc7ed42bce580dcc33ed45d9cef0c9">search</a>, $<a class="el" href="../../dc/d71/group___imap___client.html#ga4bd31bcedb7b4943aac2da78d0d84afe">sort</a>='', $order='ASC', $search_array='', $advanced=0, $mode='')</td></tr>
+<tr class="memitem:gaab5cbaf20284dca2c4bc15358cd2b718" id="r_gaab5cbaf20284dca2c4bc15358cd2b718"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaab5cbaf20284dca2c4bc15358cd2b718">data_print_preference_form</a> ($data, $perpage, $search, $sort='', $order='ASC', $search_array='', $advanced=0, $mode='')</td></tr>
 <tr class="memdesc:gaab5cbaf20284dca2c4bc15358cd2b718"><td class="mdescLeft">&#160;</td><td class="mdescRight">function that takes in the current data, number of items per page, a search string and prints a preference box in view.php  <br /></td></tr>
 <tr class="separator:gaab5cbaf20284dca2c4bc15358cd2b718"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga52af14a73c0687fc70674c0fefe27ce4" id="r_ga52af14a73c0687fc70674c0fefe27ce4"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga52af14a73c0687fc70674c0fefe27ce4">data_print_ratings</a> ($data, $record, bool $print=true)</td></tr>
 <tr class="memdesc:ga52af14a73c0687fc70674c0fefe27ce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">@global object  <br /></td></tr>
 <tr class="separator:ga52af14a73c0687fc70674c0fefe27ce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9048775a2cd512b81683a5c139fe4a5f" id="r_ga9048775a2cd512b81683a5c139fe4a5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9048775a2cd512b81683a5c139fe4a5f">data_print_template</a> ($templatename, $records, $data, $<a class="el" href="../../dc/d71/group___imap___client.html#ga51cc7ed42bce580dcc33ed45d9cef0c9">search</a>='', $page=0, $return=false, <a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a> $jumpurl=null)</td></tr>
+<tr class="memitem:ga9048775a2cd512b81683a5c139fe4a5f" id="r_ga9048775a2cd512b81683a5c139fe4a5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9048775a2cd512b81683a5c139fe4a5f">data_print_template</a> ($templatename, $records, $data, $search='', $page=0, $return=false, <a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a> $jumpurl=null)</td></tr>
 <tr class="memdesc:ga9048775a2cd512b81683a5c139fe4a5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">takes a list of records, the current data, a search string, and mode to display prints the translated template  <br /></td></tr>
 <tr class="separator:ga9048775a2cd512b81683a5c139fe4a5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2427c932cd5b0818f1787a3a27aafca1" id="r_ga2427c932cd5b0818f1787a3a27aafca1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga2427c932cd5b0818f1787a3a27aafca1">data_process_submission</a> (stdClass $mod, $fields, stdClass $datarecord)</td></tr>
@@ -518,7 +518,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga612f04acfaed4eb2e1360f352ee3acda" id="r_ga612f04acfaed4eb2e1360f352ee3acda"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga612f04acfaed4eb2e1360f352ee3acda">data_rss_newstuff</a> ($data, $time)</td></tr>
 <tr class="memdesc:ga612f04acfaed4eb2e1360f352ee3acda"><td class="mdescLeft">&#160;</td><td class="mdescRight">If there is new stuff in since $time this returns true Otherwise it returns false.  <br /></td></tr>
 <tr class="separator:ga612f04acfaed4eb2e1360f352ee3acda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga47608d26eb565d51d28344d13b66cfae" id="r_ga47608d26eb565d51d28344d13b66cfae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga47608d26eb565d51d28344d13b66cfae">data_search_entries</a> ($data, $cm, $context, $mode, $currentgroup, $<a class="el" href="../../dc/d71/group___imap___client.html#ga51cc7ed42bce580dcc33ed45d9cef0c9">search</a>='', $<a class="el" href="../../dc/d71/group___imap___client.html#ga4bd31bcedb7b4943aac2da78d0d84afe">sort</a>=null, $order=null, $page=0, $perpage=0, $advanced=null, $searcharray=null, $record=null)</td></tr>
+<tr class="memitem:ga47608d26eb565d51d28344d13b66cfae" id="r_ga47608d26eb565d51d28344d13b66cfae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga47608d26eb565d51d28344d13b66cfae">data_search_entries</a> ($data, $cm, $context, $mode, $currentgroup, $search='', $sort=null, $order=null, $page=0, $perpage=0, $advanced=null, $searcharray=null, $record=null)</td></tr>
 <tr class="memdesc:ga47608d26eb565d51d28344d13b66cfae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search entries in a database.  <br /></td></tr>
 <tr class="separator:ga47608d26eb565d51d28344d13b66cfae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3193233dee018bd4acedee7be8330d58" id="r_ga3193233dee018bd4acedee7be8330d58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga3193233dee018bd4acedee7be8330d58">data_set_config</a> (&amp;$database, $key, $value)</td></tr>
@@ -622,7 +622,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>DATA_APPROVED</b> -3
 const&#160;</td><td class="memItemRight" valign="bottom"><b>DATA_CAP_EXPORT</b> 'mod/data:viewalluserpresets'</td></tr>
 <tr class="separator:gaba39707b454cc0645d4b4f27ea86f1d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab178de52fac9f2b2fede6dcd3b7adfc5" id="r_gab178de52fac9f2b2fede6dcd3b7adfc5"><td class="memItemLeft" align="right" valign="top"><a id="gab178de52fac9f2b2fede6dcd3b7adfc5" name="gab178de52fac9f2b2fede6dcd3b7adfc5"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>DATA_EVENT_TYPE_CLOSE</b> '<a class="el" href="../../dc/d71/group___imap___client.html#gad143006a10e442e41927c54a678b625d">close</a>'</td></tr>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>DATA_EVENT_TYPE_CLOSE</b> 'close'</td></tr>
 <tr class="separator:gab178de52fac9f2b2fede6dcd3b7adfc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf8d1e330316698cca86c47b19002a671" id="r_gaf8d1e330316698cca86c47b19002a671"><td class="memItemLeft" align="right" valign="top"><a id="gaf8d1e330316698cca86c47b19002a671" name="gaf8d1e330316698cca86c47b19002a671"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>DATA_EVENT_TYPE_OPEN</b> 'open'</td></tr>
@@ -1188,8 +1188,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001062">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75187" class="el">MDL-75187</a> - please, use the preset::delete() function instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000276">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001029">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75187" class="el">MDL-75187</a> - please, use the preset::delete() function instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000267">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>preset::delete() </dd></dl>
 
 </div>
@@ -1227,7 +1227,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001053">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3, exporting is now being done by <a class="el" href="../../d8/d94/classmod__data_1_1local_1_1exporter_1_1csv__entries__exporter.html">mod_data::local::exporter::csv_entries_exporter</a></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001020">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3, exporting is now being done by <a class="el" href="../../d8/d94/classmod__data_1_1local_1_1exporter_1_1csv__entries__exporter.html">mod_data::local::exporter::csv_entries_exporter</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$export</td><td></td></tr>
@@ -1270,7 +1270,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001054">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3, exporting is now being done by <a class="el" href="../../d2/d3b/classmod__data_1_1local_1_1exporter_1_1ods__entries__exporter.html">mod_data::local::exporter::ods_entries_exporter</a></dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001021">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3, exporting is now being done by <a class="el" href="../../d2/d3b/classmod__data_1_1local_1_1exporter_1_1ods__entries__exporter.html">mod_data::local::exporter::ods_entries_exporter</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$export</td><td></td></tr>
@@ -1306,7 +1306,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001052">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001019">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$export</td><td></td></tr>
@@ -1644,8 +1644,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001060">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75148" class="el">MDL-75148</a> - please, use the manager::get_available_presets() function instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000274">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001027">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75148" class="el">MDL-75148</a> - please, use the manager::get_available_presets() function instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000265">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>manager::get_available_presets() </dd></dl>
 
 </div>
@@ -1683,8 +1683,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001061">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75148" class="el">MDL-75148</a> - please, use the manager::get_available_saved_presets() function instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000275">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001028">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75148" class="el">MDL-75148</a> - please, use the manager::get_available_saved_presets() function instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000266">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>manager::get_available_saved_presets() </dd></dl>
 
 </div>
@@ -1703,7 +1703,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001051">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001018">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
 
 </div>
 </div>
@@ -1920,7 +1920,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001055">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3, use <a class="el" href="../../d2/d92/classmod__data_1_1local_1_1exporter_1_1utils.html#a2b4177941a23119f6f0511417ce936c2" title="Exports the data of the mod_data instance to an entries_exporter object which then can export it to a...">mod_data::local::exporter::utils::data_exportdata</a> with a <a class="el" href="../../d9/dad/namespacemod__data.html" title="&#160;">mod_data</a>\local\exporter\entries_exporter object</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001022">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3, use <a class="el" href="../../d2/d92/classmod__data_1_1local_1_1exporter_1_1utils.html#a2b4177941a23119f6f0511417ce936c2" title="Exports the data of the mod_data instance to an entries_exporter object which then can export it to a...">mod_data::local::exporter::utils::data_exportdata</a> with a <a class="el" href="../../d9/dad/namespacemod__data.html" title="&#160;">mod_data</a>\local\exporter\entries_exporter object</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$dataid</td><td></td></tr>
@@ -2510,7 +2510,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001056">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3, importing is now being done by mod_data::local::importer::csv_importer::import_csv Import records for a data instance from csv data.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001023">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3, importing is now being done by mod_data::local::importer::csv_importer::import_csv Import records for a data instance from csv data.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">object</td><td class="paramname">$cm</td><td>Course module of the data instance. </td></tr>
@@ -2696,8 +2696,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001059">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75148" class="el">MDL-75148</a> - please, use the preset::get_name_from_plugin() function instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000273">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001026">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75148" class="el">MDL-75148</a> - please, use the preset::get_name_from_plugin() function instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000264">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>preset::get_name_from_plugin() </dd></dl>
 
 </div>
@@ -2789,8 +2789,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001069">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75142" class="el">MDL-75142</a> - please, use the preset::export() function instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000283">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001036">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75142" class="el">MDL-75142</a> - please, use the preset::export() function instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000274">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>preset::export() </dd></dl>
 
 </div>
@@ -2834,8 +2834,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001068">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75142" class="el">MDL-75142</a> - please, use the protected preset::generate_preset_xml() function instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000282">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001035">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75142" class="el">MDL-75142</a> - please, use the protected preset::generate_preset_xml() function instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000273">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>preset::generate_preset_xml() </dd></dl>
 
 </div>
@@ -2885,8 +2885,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001067">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75142" class="el">MDL-75142</a> - please, use the preset::save() function instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000281">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001034">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75142" class="el">MDL-75142</a> - please, use the preset::save() function instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000272">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>preset::save() </dd></dl>
 
 </div>
@@ -3099,8 +3099,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 </div><div class="memdoc">
 
 <p>takes a list of records, the current data, a search string, and mode to display prints the translated template </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001058">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75146" class="el">MDL-75146</a> - please do not use this function any more. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000272">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001025">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75146" class="el">MDL-75146</a> - please do not use this function any more. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000263">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$templatename</td><td>the template name </td></tr>
@@ -4049,8 +4049,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001070">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75187" class="el">MDL-75187</a> - please, use the preset::can_manage() function instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000284">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001037">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75187" class="el">MDL-75187</a> - please, use the preset::can_manage() function instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000275">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>preset::can_manage() </dd></dl>
 
 </div>
@@ -4217,8 +4217,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 </div><div class="memdoc">
 
 <p>Mark the activity completed (if required) and trigger the course_module_viewed event. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001071">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75146" class="el">MDL-75146</a> - please do not use this function any more. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000285">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001038">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75146" class="el">MDL-75146</a> - please do not use this function any more. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000276">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$data</td><td>data object </td></tr>
@@ -4254,8 +4254,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001063">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75148" class="el">MDL-75148</a> - please, use the preset::is_directory_a_preset() function instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000277">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001030">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.1 <a href="https://tracker.moodle.org/browse/MDL-75148" class="el">MDL-75148</a> - please, use the preset::is_directory_a_preset() function instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000268">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-75189" class="el">MDL-75189</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.5. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd>manager::is_directory_a_preset() </dd></dl>
 
 </div>
@@ -4590,7 +4590,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 18 2024 02:32:21 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 25 2024 02:30:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

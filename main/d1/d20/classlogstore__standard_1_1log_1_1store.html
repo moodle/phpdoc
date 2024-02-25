@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240215) (d3ad77e4762)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
   </td>
  </tr>
  </tbody>
@@ -92,7 +92,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a83273d101fe1e7fa308a8ac809a4a2d4" id="r_a83273d101fe1e7fa308a8ac809a4a2d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d57/interfacecore_1_1log_1_1reader.html#a83273d101fe1e7fa308a8ac809a4a2d4">get_description</a> ()</td></tr>
 <tr class="memdesc:a83273d101fe1e7fa308a8ac809a4a2d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Longer description of the log data source.  <br /></td></tr>
 <tr class="separator:a83273d101fe1e7fa308a8ac809a4a2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37bfe6f5092f1899deada251263c032f" id="r_a37bfe6f5092f1899deada251263c032f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37bfe6f5092f1899deada251263c032f">get_events_select</a> ($selectwhere, array $params, $<a class="el" href="../../dc/d71/group___imap___client.html#ga4bd31bcedb7b4943aac2da78d0d84afe">sort</a>, $limitfrom, $limitnum)</td></tr>
+<tr class="memitem:a37bfe6f5092f1899deada251263c032f" id="r_a37bfe6f5092f1899deada251263c032f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a37bfe6f5092f1899deada251263c032f">get_events_select</a> ($selectwhere, array $params, $sort, $limitfrom, $limitnum)</td></tr>
 <tr class="memdesc:a37bfe6f5092f1899deada251263c032f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch records using given criteria.  <br /></td></tr>
 <tr class="separator:a37bfe6f5092f1899deada251263c032f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a274050bf1b9fb17566f1119a80ef786b" id="r_a274050bf1b9fb17566f1119a80ef786b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a274050bf1b9fb17566f1119a80ef786b">get_events_select_count</a> ($selectwhere, array $params)</td></tr>
@@ -101,7 +101,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac828643e0f9c4fed20555aac3a1328a7" id="r_ac828643e0f9c4fed20555aac3a1328a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac828643e0f9c4fed20555aac3a1328a7">get_events_select_exists</a> (string $selectwhere, array $params)</td></tr>
 <tr class="memdesc:ac828643e0f9c4fed20555aac3a1328a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get whether events are present for the given select clause.  <br /></td></tr>
 <tr class="separator:ac828643e0f9c4fed20555aac3a1328a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43cfe7622a3451d8b4708c1c5b64bf85" id="r_a43cfe7622a3451d8b4708c1c5b64bf85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43cfe7622a3451d8b4708c1c5b64bf85">get_events_select_iterator</a> ($selectwhere, array $params, $<a class="el" href="../../dc/d71/group___imap___client.html#ga4bd31bcedb7b4943aac2da78d0d84afe">sort</a>, $limitfrom, $limitnum)</td></tr>
+<tr class="memitem:a43cfe7622a3451d8b4708c1c5b64bf85" id="r_a43cfe7622a3451d8b4708c1c5b64bf85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a43cfe7622a3451d8b4708c1c5b64bf85">get_events_select_iterator</a> ($selectwhere, array $params, $sort, $limitfrom, $limitnum)</td></tr>
 <tr class="memdesc:a43cfe7622a3451d8b4708c1c5b64bf85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch records using given criteria returning a Traversable object.  <br /></td></tr>
 <tr class="separator:a43cfe7622a3451d8b4708c1c5b64bf85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aae6d2c27c0a50a05e3ad8ed0da509d4e" id="r_aae6d2c27c0a50a05e3ad8ed0da509d4e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae6d2c27c0a50a05e3ad8ed0da509d4e">get_internal_log_table_name</a> ()</td></tr>
@@ -372,7 +372,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$logguests</b></td>
 </div><div class="memdoc">
 
 <p>Fetch records using given criteria returning a Traversable object. </p>
-<p>Note that the traversable object contains a <a class="el" href="../../d6/d34/classmoodle__recordset.html" title="Abstract class for resultsets returned from database functions.">moodle_recordset</a>, so remember that is important that you call <a class="el" href="../../da/d71/group___stream.html#gaa69c8bf1f1dcf4e72552efff1fe3e87e" title="Close the stream.">close()</a> once you finish using it.</p>
+<p>Note that the traversable object contains a <a class="el" href="../../d6/d34/classmoodle__recordset.html" title="Abstract class for resultsets returned from database functions.">moodle_recordset</a>, so remember that is important that you call close() once you finish using it.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$selectwhere</td><td></td></tr>
@@ -633,7 +633,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$logguests</b></td>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 18 2024 02:34:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Feb 25 2024 02:32:44 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>
