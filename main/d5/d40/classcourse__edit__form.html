@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240301) (debed3eace9)</div>
   </td>
  </tr>
  </tbody>
@@ -107,6 +107,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ga523a0de68ba31d13579137105b7f514c" id="r_ga523a0de68ba31d13579137105b7f514c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9c/group__core__form.html#ga523a0de68ba31d13579137105b7f514c">focus</a> ($name=NULL)</td></tr>
 <tr class="memdesc:ga523a0de68ba31d13579137105b7f514c"><td class="mdescLeft">&#160;</td><td class="mdescRight">To autofocus on first form element or first element with error.  <br /></td></tr>
 <tr class="separator:ga523a0de68ba31d13579137105b7f514c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a601538596a212aeac240c78410f39a49" id="r_a601538596a212aeac240c78410f39a49"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a601538596a212aeac240c78410f39a49">get_context</a> ()</td></tr>
+<tr class="memdesc:a601538596a212aeac240c78410f39a49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns context.  <br /></td></tr>
+<tr class="separator:a601538596a212aeac240c78410f39a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a938dcde2c652cd68088e714a6a700dc7" id="r_a938dcde2c652cd68088e714a6a700dc7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a938dcde2c652cd68088e714a6a700dc7">get_course</a> ()</td></tr>
+<tr class="memdesc:a938dcde2c652cd68088e714a6a700dc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns course object.  <br /></td></tr>
+<tr class="separator:a938dcde2c652cd68088e714a6a700dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga381e23f9e3fee00c66fd44f821fdbcd9" id="r_ga381e23f9e3fee00c66fd44f821fdbcd9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9c/group__core__form.html#ga381e23f9e3fee00c66fd44f821fdbcd9">get_data</a> ()</td></tr>
 <tr class="memdesc:ga381e23f9e3fee00c66fd44f821fdbcd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return submitted data if properly submitted or returns NULL if validation fails or if there is no submitted data.  <br /></td></tr>
 <tr class="separator:ga381e23f9e3fee00c66fd44f821fdbcd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -296,6 +302,56 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
 
 </div>
 </div>
+<a id="a601538596a212aeac240c78410f39a49" name="a601538596a212aeac240c78410f39a49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a601538596a212aeac240c78410f39a49">&#9670;&#160;</a></span>get_context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">course_edit_form::get_context </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns context. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../d1/d90/classcore_1_1context.html">core::context</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a938dcde2c652cd68088e714a6a700dc7" name="a938dcde2c652cd68088e714a6a700dc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a938dcde2c652cd68088e714a6a700dc7">&#9670;&#160;</a></span>get_course()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">course_edit_form::get_course </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns course object. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a7982665f573f24568f180d3821213c85" name="a7982665f573f24568f180d3821213c85"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7982665f573f24568f180d3821213c85">&#9670;&#160;</a></span>validation()</h2>
 
@@ -340,7 +396,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 25 2024 02:31:07 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 3 2024 02:31:25 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

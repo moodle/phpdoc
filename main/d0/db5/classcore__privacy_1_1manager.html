@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240301) (debed3eace9)</div>
   </td>
  </tr>
  </tbody>
@@ -156,14 +156,14 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p>The <a class="el" href="../../d0/db5/classcore__privacy_1_1manager.html" title="The core_privacy::manager class, providing a facade to describe, export and delete personal data acro...">core_privacy::manager</a> class, providing a facade to describe, export and delete personal data across <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> and its components. </p>
 <p>This class is responsible for communicating with and collating privacy data from all relevant components, where relevance is determined through implementations of specific marker interfaces. These marker interfaces describe the responsibilities (in terms of personal data storage) as well as the relationship between the component and the <a class="el" href="../../d3/d51/namespacecore__privacy.html" title="&#160;">core_privacy</a> subsystem.</p>
 <p>The interface hierarchy is as follows: ├── local::metadata::null_provider ├── local::metadata::provider ├── local::request::data_provider └── local::request::core_data_provider └── local::request::core_user_data_provider └── local::request::plugin::provider └── local::request::subsystem::provider └── local::request::user_preference_provider └── local::request::shared_data_provider └── local::request::plugin::subsystem_provider └── local::request::plugin::subplugin_provider └── local::request::subsystem::plugin_provider</p>
-<h2><a class="anchor" id="autotoc_md27"></a>
+<h2><a class="anchor" id="autotoc_md41"></a>
 Describing personal data:</h2>
 <p>All components must state whether they store personal data (and DESCRIBE it) by implementing one of the metadata providers:</p><ul>
 <li>local::metadata::null_provider (indicating they don't store personal data)</li>
 <li>local::metadata::provider (indicating they do store personal data, and describing it)</li>
 </ul>
 <p>The manager requests metadata for all <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> components implementing the local::metadata::provider interface.</p>
-<h2><a class="anchor" id="autotoc_md28"></a>
+<h2><a class="anchor" id="autotoc_md42"></a>
 Export and deletion of personal data:</h2>
 <p>Those components storing personal data need to provide EXPORT and DELETION of this data by implementing a request provider. Which provider implementation depends on the nature of the component; whether it's a sub-component and which components it stores data for.</p>
 <p>Export and deletion for sub-components (or any component storing data on behalf of another component) is managed by the parent component. If a component contains sub-components, it must ask those sub-components to provide the relevant data. Only certain 'core provider' components are called directly from the manager and these must provide the personal data stored by both themselves, and by all sub-components. Because of this hierarchical structure, the <a class="el" href="../../d0/db5/classcore__privacy_1_1manager.html" title="The core_privacy::manager class, providing a facade to describe, export and delete personal data acro...">core_privacy::manager</a> needs to know which components are to be called directly by core: these are called core data providers. The providers implemented by sub-components are called shared data providers.</p>
@@ -936,7 +936,7 @@ Export and deletion of personal data:</h2>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 25 2024 02:32:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 3 2024 02:32:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

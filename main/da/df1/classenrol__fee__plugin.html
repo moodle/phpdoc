@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240301) (debed3eace9)</div>
   </td>
  </tr>
  </tbody>
@@ -287,9 +287,15 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:a9441d9c87464b078ac0a40874089eb44" id="r_a9441d9c87464b078ac0a40874089eb44"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/classenrol__plugin.html#a9441d9c87464b078ac0a40874089eb44">fetch_users_and_notify_expiry</a> (int $timenow, string $name, <a class="el" href="../../dd/d5e/classprogress__trace.html">progress_trace</a> $trace)</td></tr>
+<tr class="memdesc:a9441d9c87464b078ac0a40874089eb44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify users about enrolment expiration.  <br /></td></tr>
+<tr class="separator:a9441d9c87464b078ac0a40874089eb44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a329a03e7f19b9a1bcdf1f21562061d9b" id="r_a329a03e7f19b9a1bcdf1f21562061d9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/classenrol__plugin.html#a329a03e7f19b9a1bcdf1f21562061d9b">get_enroller</a> ($instanceid)</td></tr>
 <tr class="memdesc:a329a03e7f19b9a1bcdf1f21562061d9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the user who is responsible for enrolments for given instance.  <br /></td></tr>
 <tr class="separator:a329a03e7f19b9a1bcdf1f21562061d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4284eb1b015fa65e2e2d0c89ae0a3357" id="r_a4284eb1b015fa65e2e2d0c89ae0a3357"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/classenrol__plugin.html#a4284eb1b015fa65e2e2d0c89ae0a3357">get_expiry_message_body</a> (stdClass $user, stdClass $ue, string $name, stdClass $enroller, context $context)</td></tr>
+<tr class="memdesc:a4284eb1b015fa65e2e2d0c89ae0a3357"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate subject and body messages for enrolment expiration notification.  <br /></td></tr>
+<tr class="separator:a4284eb1b015fa65e2e2d0c89ae0a3357"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84403285c2a040b0210a89cf4ea5678f" id="r_a84403285c2a040b0210a89cf4ea5678f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84403285c2a040b0210a89cf4ea5678f">get_roleid_options</a> ($instance, $context)</td></tr>
 <tr class="memdesc:a84403285c2a040b0210a89cf4ea5678f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an array of valid options for the roleid.  <br /></td></tr>
 <tr class="separator:a84403285c2a040b0210a89cf4ea5678f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1307,6 +1313,59 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a9441d9c87464b078ac0a40874089eb44" name="a9441d9c87464b078ac0a40874089eb44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9441d9c87464b078ac0a40874089eb44">&#9670;&#160;</a></span>fetch_users_and_notify_expiry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enrol_plugin::fetch_users_and_notify_expiry </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$timenow</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$name</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dd/d5e/classprogress__trace.html">progress_trace</a></td>          <td class="paramname"><span class="paramname"><em>$trace</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Notify users about enrolment expiration. </p>
+<p>Retrieves enrolment data from the database and notifies users about their upcoming course enrolment expiration based on expiry thresholds and notification settings.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$timenow</td><td>Current time. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$name</td><td>Name of this enrol plugin. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../dd/d5e/classprogress__trace.html" title="Progress trace class.">progress_trace</a></td><td class="paramname">$trace</td><td>(accepts bool for backwards compatibility only). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../de/d61/classenrol__self__plugin.html#a65fd3547df2e81a64224a026fd447826">enrol_self_plugin</a>.</p>
+
+</div>
+</div>
 <a id="a2ad333c8916855a55fb47d22844bc6d5" name="a2ad333c8916855a55fb47d22844bc6d5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2ad333c8916855a55fb47d22844bc6d5">&#9670;&#160;</a></span>fill_enrol_custom_fields()</h2>
 
@@ -1640,6 +1699,70 @@ Protected Attributes</h2></td></tr>
 </dl>
 
 <p>Reimplemented in <a class="el" href="../../d4/d52/classenrol__flatfile__plugin.html#a322ea945d8e91e71803536939efa7c44">enrol_flatfile_plugin</a>, <a class="el" href="../../d5/de9/classenrol__manual__plugin.html#aad09930ee62659fbbe0b6b19ecb82f5a">enrol_manual_plugin</a>, and <a class="el" href="../../de/d61/classenrol__self__plugin.html#a98a822c4b3bc495933d7cbd4adb7c365">enrol_self_plugin</a>.</p>
+
+</div>
+</div>
+<a id="a4284eb1b015fa65e2e2d0c89ae0a3357" name="a4284eb1b015fa65e2e2d0c89ae0a3357"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4284eb1b015fa65e2e2d0c89ae0a3357">&#9670;&#160;</a></span>get_expiry_message_body()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enrol_plugin::get_expiry_message_body </td>
+          <td>(</td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$user</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$ue</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$name</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$enroller</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">context</td>          <td class="paramname"><span class="paramname"><em>$context</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generate subject and body messages for enrolment expiration notification. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$user</td><td>An object representing the user. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$ue</td><td>An object containing enrolment data. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$name</td><td>Name of this enrol plugin. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$enroller</td><td>The user who is responsible for enrolments. </td></tr>
+    <tr><td class="paramtype">context</td><td class="paramname">$context</td><td>The context object. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>Return the body message. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../de/d61/classenrol__self__plugin.html#a425910a9fe566e32f32a0ac3a03f5386">enrol_self_plugin</a>.</p>
 
 </div>
 </div>
@@ -3426,7 +3549,7 @@ self::validate_plugin_data_context()}</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 25 2024 02:31:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 3 2024 02:31:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

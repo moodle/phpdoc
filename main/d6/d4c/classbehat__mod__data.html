@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240223) (e567c21d6ed)</div>
+   <div id="projectbrief">Moodle 4.4dev (Build: 20240301) (debed3eace9)</div>
   </td>
  </tr>
  </tbody>
@@ -79,12 +79,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abc6cbc428b83d6bca71aaffbd15da4ab" id="r_abc6cbc428b83d6bca71aaffbd15da4ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d6d/interfacebehat__session__interface.html#abc6cbc428b83d6bca71aaffbd15da4ab">getSession</a> ($name=null)</td></tr>
 <tr class="memdesc:abc6cbc428b83d6bca71aaffbd15da4ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Mink session.  <br /></td></tr>
 <tr class="separator:abc6cbc428b83d6bca71aaffbd15da4ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d88c8377a6ad89e0165ddcc0b71bd87" id="r_a9d88c8377a6ad89e0165ddcc0b71bd87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d88c8377a6ad89e0165ddcc0b71bd87">i_add_a_field_to_database_and_i_fill_the_form_with</a> ($fieldtype, $activityname, TableNode $fielddata)</td></tr>
-<tr class="memdesc:a9d88c8377a6ad89e0165ddcc0b71bd87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new field to a database.  <br /></td></tr>
-<tr class="separator:a9d88c8377a6ad89e0165ddcc0b71bd87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b264985e1e166d14319178def60e72b" id="r_a4b264985e1e166d14319178def60e72b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b264985e1e166d14319178def60e72b">i_add_an_entry_to_database_with</a> ($activityname, TableNode $entrydata)</td></tr>
-<tr class="memdesc:a4b264985e1e166d14319178def60e72b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an entry to a database.  <br /></td></tr>
-<tr class="separator:a4b264985e1e166d14319178def60e72b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -137,74 +131,6 @@ Protected Member Functions</h2></td></tr>
 </dl>
 
 <p>Implemented in <a class="el" href="../../d7/d4b/classbehat__form__field.html#a5c29122daa8103d8280ecf8fd7d441d5">behat_form_field</a>.</p>
-
-</div>
-</div>
-<a id="a9d88c8377a6ad89e0165ddcc0b71bd87" name="a9d88c8377a6ad89e0165ddcc0b71bd87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d88c8377a6ad89e0165ddcc0b71bd87">&#9670;&#160;</a></span>i_add_a_field_to_database_and_i_fill_the_form_with()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">behat_mod_data::i_add_a_field_to_database_and_i_fill_the_form_with </td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$fieldtype</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$activityname</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TableNode</td>          <td class="paramname"><span class="paramname"><em>$fielddata</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Adds a new field to a database. </p>
-<p>@Given /^I add a "(?P&lt;fieldtype_string&gt;(?:[^"]|::")*)" field to "(?P&lt;activityname_string&gt;(?:[^"]|")*)" database and I fill the form with:$/</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$fieldtype</td><td></td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$activityname</td><td></td></tr>
-    <tr><td class="paramtype">TableNode</td><td class="paramname">$fielddata</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a4b264985e1e166d14319178def60e72b" name="a4b264985e1e166d14319178def60e72b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b264985e1e166d14319178def60e72b">&#9670;&#160;</a></span>i_add_an_entry_to_database_with()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">behat_mod_data::i_add_an_entry_to_database_with </td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$activityname</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TableNode</td>          <td class="paramname"><span class="paramname"><em>$entrydata</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Adds an entry to a database. </p>
-<p>@Given /^I add an entry to "(?P&lt;activityname_string&gt;(?:[^"]|::")*)" database with:$/</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$activityname</td><td></td></tr>
-    <tr><td class="paramtype">TableNode</td><td class="paramname">$entrydata</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -294,7 +220,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Feb 25 2024 02:31:02 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 3 2024 02:31:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>
