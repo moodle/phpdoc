@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240301) (debed3eace9)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240308) (38a3310c927)</div>
   </td>
  </tr>
  </tbody>
@@ -125,6 +125,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ga89f98331f4c7f3c93afc87d052f86430" id="r_ga89f98331f4c7f3c93afc87d052f86430"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9c/group__core__form.html#ga89f98331f4c7f3c93afc87d052f86430">get_submitted_data</a> ()</td></tr>
 <tr class="memdesc:ga89f98331f4c7f3c93afc87d052f86430"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return submitted data without validation or NULL if there is no submitted data.  <br /></td></tr>
 <tr class="separator:ga89f98331f4c7f3c93afc87d052f86430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3601cd864f23161344ba1374bd9eeb5e" id="r_a3601cd864f23161344ba1374bd9eeb5e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3601cd864f23161344ba1374bd9eeb5e">has_bulk_actions</a> ()</td></tr>
+<tr class="memdesc:a3601cd864f23161344ba1374bd9eeb5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is there at least one available bulk action in this form.  <br /></td></tr>
+<tr class="separator:a3601cd864f23161344ba1374bd9eeb5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga76eef193c16d30566b530bccbf5cce59" id="r_ga76eef193c16d30566b530bccbf5cce59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9c/group__core__form.html#ga76eef193c16d30566b530bccbf5cce59">init_javascript_enhancement</a> ($element, $enhancement, array $options=array(), array $strings=null)</td></tr>
 <tr class="memdesc:ga76eef193c16d30566b530bccbf5cce59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an initialisation call for a standard JavaScript enhancement.  <br /></td></tr>
 <tr class="separator:ga76eef193c16d30566b530bccbf5cce59"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -245,6 +248,9 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_formname</b></td>
 bool null&#160;</td><td class="memItemRight" valign="bottom"><b>$_validated</b> = null</td></tr>
 <tr class="memdesc:gadd11374abd1cecb490ff9aaef934f201"><td class="mdescLeft">&#160;</td><td class="mdescRight">stores the validation result of this form or null if not yet validated <br /></td></tr>
 <tr class="separator:gadd11374abd1cecb490ff9aaef934f201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a072a4d171a8197e540caf730c922a28f" id="r_a072a4d171a8197e540caf730c922a28f"><td class="memItemLeft" align="right" valign="top"><a id="a072a4d171a8197e540caf730c922a28f" name="a072a4d171a8197e540caf730c922a28f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>$hasbulkactions</b> = false</td></tr>
+<tr class="separator:a072a4d171a8197e540caf730c922a28f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
@@ -304,13 +310,38 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
 
 </div>
 </div>
+<a id="a3601cd864f23161344ba1374bd9eeb5e" name="a3601cd864f23161344ba1374bd9eeb5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3601cd864f23161344ba1374bd9eeb5e">&#9670;&#160;</a></span>has_bulk_actions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">user_bulk_action_form::has_bulk_actions </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Is there at least one available bulk action in this form. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>admin/user/<b>user_bulk_forms.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 02:32:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 10 2024 02:34:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

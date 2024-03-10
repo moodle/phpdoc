@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240301) (debed3eace9)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240308) (38a3310c927)</div>
   </td>
  </tr>
  </tbody>
@@ -78,11 +78,13 @@ Inheritance diagram for Packback\Lti1p3\ServiceRequest:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0a1d0859e4eac45f6978a4789f66aa36" id="r_a0a1d0859e4eac45f6978a4789f66aa36"><td class="memItemLeft" align="right" valign="top"><a id="a0a1d0859e4eac45f6978a4789f66aa36" name="a0a1d0859e4eac45f6978a4789f66aa36"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>__construct</b> (string $method, string $url, $type=self::UNSUPPORTED)</td></tr>
-<tr class="separator:a0a1d0859e4eac45f6978a4789f66aa36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a958ca2c0836387d45902cd4cd3336f85" id="r_a958ca2c0836387d45902cd4cd3336f85"><td class="memItemLeft" align="right" valign="top"><a id="a958ca2c0836387d45902cd4cd3336f85" name="a958ca2c0836387d45902cd4cd3336f85"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>__construct</b> (private string $method, private string $url, private string $type=self::TYPE_UNSUPPORTED)</td></tr>
+<tr class="separator:a958ca2c0836387d45902cd4cd3336f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ddf02ebfe1bcd7a1f2563e9ce0676f1" id="r_a4ddf02ebfe1bcd7a1f2563e9ce0676f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ddf02ebfe1bcd7a1f2563e9ce0676f1">getErrorPrefix</a> ()</td></tr>
 <tr class="separator:a4ddf02ebfe1bcd7a1f2563e9ce0676f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3e24b7de74fd78fbba66a873d113309" id="r_af3e24b7de74fd78fbba66a873d113309"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3e24b7de74fd78fbba66a873d113309">getMaskResponseLogs</a> ()</td></tr>
+<tr class="separator:af3e24b7de74fd78fbba66a873d113309"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf4230f802ef3620b7a5a628416a4750" id="r_acf4230f802ef3620b7a5a628416a4750"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf4230f802ef3620b7a5a628416a4750">getMethod</a> ()</td></tr>
 <tr class="separator:acf4230f802ef3620b7a5a628416a4750"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e026fa52e364cf694e040288579d08c" id="r_a9e026fa52e364cf694e040288579d08c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e026fa52e364cf694e040288579d08c">getPayload</a> ()</td></tr>
@@ -97,8 +99,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae75f643786b88720cedc647a61c768ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc09cf350573bf19d88cb8c9bf70d35d" id="r_adc09cf350573bf19d88cb8c9bf70d35d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adc09cf350573bf19d88cb8c9bf70d35d">setContentType</a> (string $contentType)</td></tr>
 <tr class="separator:adc09cf350573bf19d88cb8c9bf70d35d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d7d9df9e5be82f8553e76197be384d7" id="r_a3d7d9df9e5be82f8553e76197be384d7"><td class="memItemLeft" align="right" valign="top"><a id="a3d7d9df9e5be82f8553e76197be384d7" name="a3d7d9df9e5be82f8553e76197be384d7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>setPayload</b> (array $payload)</td></tr>
+<tr class="memitem:ab6b5ae1d761f73b775fb2adbe87655b9" id="r_ab6b5ae1d761f73b775fb2adbe87655b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6b5ae1d761f73b775fb2adbe87655b9">setMaskResponseLogs</a> (bool $shouldMask)</td></tr>
+<tr class="separator:ab6b5ae1d761f73b775fb2adbe87655b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d7d9df9e5be82f8553e76197be384d7" id="r_a3d7d9df9e5be82f8553e76197be384d7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d7d9df9e5be82f8553e76197be384d7">setPayload</a> (array $payload)</td></tr>
 <tr class="separator:a3d7d9df9e5be82f8553e76197be384d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a769fd5147a761efabcc0146a5f5756d4" id="r_a769fd5147a761efabcc0146a5f5756d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a769fd5147a761efabcc0146a5f5756d4">setUrl</a> (string $url)</td></tr>
 <tr class="separator:a769fd5147a761efabcc0146a5f5756d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,6 +169,25 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UPDATE_LINEITEM
       <table class="memname">
         <tr>
           <td class="memname">Packback\Lti1p3\ServiceRequest::getErrorPrefix </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../d5/de3/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_service_request.html">Packback\Lti1p3\Interfaces\IServiceRequest</a>.</p>
+
+</div>
+</div>
+<a id="af3e24b7de74fd78fbba66a873d113309" name="af3e24b7de74fd78fbba66a873d113309"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3e24b7de74fd78fbba66a873d113309">&#9670;&#160;</a></span>getMaskResponseLogs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Packback\Lti1p3\ServiceRequest::getMaskResponseLogs </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -310,6 +332,44 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UPDATE_LINEITEM
 
 </div>
 </div>
+<a id="ab6b5ae1d761f73b775fb2adbe87655b9" name="ab6b5ae1d761f73b775fb2adbe87655b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6b5ae1d761f73b775fb2adbe87655b9">&#9670;&#160;</a></span>setMaskResponseLogs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Packback\Lti1p3\ServiceRequest::setMaskResponseLogs </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$shouldMask</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../d5/de3/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_service_request.html">Packback\Lti1p3\Interfaces\IServiceRequest</a>.</p>
+
+</div>
+</div>
+<a id="a3d7d9df9e5be82f8553e76197be384d7" name="a3d7d9df9e5be82f8553e76197be384d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d7d9df9e5be82f8553e76197be384d7">&#9670;&#160;</a></span>setPayload()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Packback\Lti1p3\ServiceRequest::setPayload </td>
+          <td>(</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$payload</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../d5/de3/interface_packback_1_1_lti1p3_1_1_interfaces_1_1_i_service_request.html">Packback\Lti1p3\Interfaces\IServiceRequest</a>.</p>
+
+</div>
+</div>
 <a id="a769fd5147a761efabcc0146a5f5756d4" name="a769fd5147a761efabcc0146a5f5756d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a769fd5147a761efabcc0146a5f5756d4">&#9670;&#160;</a></span>setUrl()</h2>
 
@@ -335,7 +395,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UPDATE_LINEITEM
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 02:33:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 10 2024 02:35:35 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2.6+ (Build: 20240301) (7e1ddefbd85)</div>
+   <div id="projectbrief">Moodle 4.2.6+ (Build: 20240308) (58e84e19b2a)</div>
   </td>
  </tr>
  </tbody>
@@ -82,9 +82,6 @@ Inheritance diagram for quiz_overview_report:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a40f3ee08da41ceab955aa8a3a1af86d2" id="r_a40f3ee08da41ceab955aa8a3a1af86d2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40f3ee08da41ceab955aa8a3a1af86d2">clear_regrade_date_cache</a> ()</td></tr>
-<tr class="memdesc:a40f3ee08da41ceab955aa8a3a1af86d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">For use in tests only.  <br /></td></tr>
-<tr class="separator:a40f3ee08da41ceab955aa8a3a1af86d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8166fa7d04d05dd640ecfd9336b9d77f" id="r_a8166fa7d04d05dd640ecfd9336b9d77f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8166fa7d04d05dd640ecfd9336b9d77f">display</a> ($quiz, $cm, $course)</td></tr>
 <tr class="memdesc:a8166fa7d04d05dd640ecfd9336b9d77f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override this function to display the report.  <br /></td></tr>
 <tr class="separator:a8166fa7d04d05dd640ecfd9336b9d77f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,9 +166,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a894b1e6198ac4cb9f5081b0a4d5bf66f" id="r_a894b1e6198ac4cb9f5081b0a4d5bf66f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfd/classmod__quiz_1_1local_1_1reports_1_1attempts__report.html#a894b1e6198ac4cb9f5081b0a4d5bf66f">get_base_url</a> ()</td></tr>
 <tr class="memdesc:a894b1e6198ac4cb9f5081b0a4d5bf66f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the base URL for this report.  <br /></td></tr>
 <tr class="separator:a894b1e6198ac4cb9f5081b0a4d5bf66f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6019592762b0109664782d99aa988e5" id="r_ae6019592762b0109664782d99aa988e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6019592762b0109664782d99aa988e5">get_new_question_for_regrade</a> (stdClass $attempt, <a class="el" href="../../d6/dc0/classquestion__usage__by__activity.html">question_usage_by_activity</a> $quba, int $slot)</td></tr>
-<tr class="memdesc:ae6019592762b0109664782d99aa988e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Work out of we should be using a new question version for a particular slot in a regrade.  <br /></td></tr>
-<tr class="separator:ae6019592762b0109664782d99aa988e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7d7ed8fc6523a6b1e76d3921a1c6115" id="r_af7d7ed8fc6523a6b1e76d3921a1c6115"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfd/classmod__quiz_1_1local_1_1reports_1_1attempts__report.html#af7d7ed8fc6523a6b1e76d3921a1c6115">get_students_joins</a> ($cm, $course=null)</td></tr>
 <tr class="memdesc:af7d7ed8fc6523a6b1e76d3921a1c6115"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get sql fragments (joins) which can be used to build queries that will select an appropriate set of students to show in the reports.  <br /></td></tr>
 <tr class="separator:af7d7ed8fc6523a6b1e76d3921a1c6115"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,9 +224,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$hasgroupstudents</b>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$mode</b></td></tr>
 <tr class="memdesc:ad148849cf4530ef2a9d1ebad00803dfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">the mode this report is. <br /></td></tr>
 <tr class="separator:ad148849cf4530ef2a9d1ebad00803dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7073fdef98e01090a387f4bddb4a151" id="r_ab7073fdef98e01090a387f4bddb4a151"><td class="memItemLeft" align="right" valign="top">array null&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7073fdef98e01090a387f4bddb4a151">$newquestionidsforold</a> = null</td></tr>
-<tr class="memdesc:ab7073fdef98e01090a387f4bddb4a151"><td class="mdescLeft">&#160;</td><td class="mdescRight">used during regrades, to cache which new questionid to use for each old on.  <br /></td></tr>
-<tr class="separator:ab7073fdef98e01090a387f4bddb4a151"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8beabb1e3c9042788a471a9263b80f0" id="r_ac8beabb1e3c9042788a471a9263b80f0"><td class="memItemLeft" align="right" valign="top"><a id="ac8beabb1e3c9042788a471a9263b80f0" name="ac8beabb1e3c9042788a471a9263b80f0"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$qmsubselect</b></td></tr>
 <tr class="memdesc:ac8beabb1e3c9042788a471a9263b80f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">SQL fragment for selecting the attempt that gave the final grade, if applicable. <br /></td></tr>
@@ -243,10 +234,6 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$qmsubselect</b></t
 <tr class="memitem:ae1bd01400347e30f6983a207c52d3127" id="r_ae1bd01400347e30f6983a207c52d3127"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfd/classmod__quiz_1_1local_1_1reports_1_1attempts__report.html#ae1bd01400347e30f6983a207c52d3127">$showgrades</a> = null</td></tr>
 <tr class="memdesc:ae1bd01400347e30f6983a207c52d3127"><td class="mdescLeft">&#160;</td><td class="mdescRight">caches the results of {  <br /></td></tr>
 <tr class="separator:ae1bd01400347e30f6983a207c52d3127"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97b18cf81f33db5648d1fd346bacbe5b" id="r_a97b18cf81f33db5648d1fd346bacbe5b"><td class="memItemLeft" align="right" valign="top"><a id="a97b18cf81f33db5648d1fd346bacbe5b" name="a97b18cf81f33db5648d1fd346bacbe5b"></a>
-array null&#160;</td><td class="memItemRight" valign="bottom"><b>$structureforregrade</b> = null</td></tr>
-<tr class="memdesc:a97b18cf81f33db5648d1fd346bacbe5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">cached copy of qbank_helper::get_question_structure for use during regrades. <br /></td></tr>
-<tr class="separator:a97b18cf81f33db5648d1fd346bacbe5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Quiz report subclass for the overview (grades) report. </p>
@@ -426,26 +413,6 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$structureforre
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a40f3ee08da41ceab955aa8a3a1af86d2" name="a40f3ee08da41ceab955aa8a3a1af86d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40f3ee08da41ceab955aa8a3a1af86d2">&#9670;&#160;</a></span>clear_regrade_date_cache()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">quiz_overview_report::clear_regrade_date_cache </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>For use in tests only. </p>
-<p>Clear the cached regrade data. </p>
 
 </div>
 </div>
@@ -898,56 +865,6 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$structureforre
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">int</td><td>the current group id, if applicable. 0 for all users, NO_GROUPS_ALLOWED if the user cannot see any group. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ae6019592762b0109664782d99aa988e5" name="ae6019592762b0109664782d99aa988e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6019592762b0109664782d99aa988e5">&#9670;&#160;</a></span>get_new_question_for_regrade()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">quiz_overview_report::get_new_question_for_regrade </td>
-          <td>(</td>
-          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$attempt</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d6/dc0/classquestion__usage__by__activity.html">question_usage_by_activity</a></td>          <td class="paramname"><span class="paramname"><em>$quba</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$slot</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Work out of we should be using a new question version for a particular slot in a regrade. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$attempt</td><td>the attempt being regraded. </td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../d6/dc0/classquestion__usage__by__activity.html" title="This class keeps track of a group of questions that are being attempted, and which state,...">question_usage_by_activity</a></td><td class="paramname">$quba</td><td>the question_usage corresponding to that. </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$slot</td><td>which slot is currently being regraded. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../d7/da5/classquestion__definition.html" title="The definition of a question of a particular type.">question_definition</a></td><td>other question version to use for this slot. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1613,31 +1530,6 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$structureforre
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ab7073fdef98e01090a387f4bddb4a151" name="ab7073fdef98e01090a387f4bddb4a151"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7073fdef98e01090a387f4bddb4a151">&#9670;&#160;</a></span>$newquestionidsforold</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">array null quiz_overview_report::$newquestionidsforold = null</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>used during regrades, to cache which new questionid to use for each old on. </p>
-<p>for random questions, stores oldquestionid =&gt; newquestionid. See get_new_question_for_regrade. </p>
-
-</div>
-</div>
 <a id="a23c94f377155a77744c801a44757ea1a" name="a23c94f377155a77744c801a44757ea1a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a23c94f377155a77744c801a44757ea1a">&#9670;&#160;</a></span>$quizobj</h2>
 
@@ -1694,7 +1586,7 @@ array null&#160;</td><td class="memItemRight" valign="bottom"><b>$structureforre
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 02:24:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 10 2024 02:26:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

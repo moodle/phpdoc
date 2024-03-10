@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240301) (debed3eace9)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240308) (38a3310c927)</div>
   </td>
  </tr>
  </tbody>
@@ -398,6 +398,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab838b6c7e629fdd1da198457a24d2317" id="r_ab838b6c7e629fdd1da198457a24d2317"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab838b6c7e629fdd1da198457a24d2317">summary_url</a> ()</td></tr>
 <tr class="memdesc:ab838b6c7e629fdd1da198457a24d2317"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the URL of the summary page of this attempt.  <br /></td></tr>
 <tr class="separator:ab838b6c7e629fdd1da198457a24d2317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0240d19f88d5321a56297e1ac16366c7" id="r_a0240d19f88d5321a56297e1ac16366c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0240d19f88d5321a56297e1ac16366c7">update_questions_to_new_version_if_changed</a> ()</td></tr>
+<tr class="memdesc:a0240d19f88d5321a56297e1ac16366c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">If any questions in this attempt have changed, update the attempts.  <br /></td></tr>
+<tr class="separator:a0240d19f88d5321a56297e1ac16366c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa0a9e85e9b2e901be0c889cca41b9ed" id="r_aaa0a9e85e9b2e901be0c889cca41b9ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa0a9e85e9b2e901be0c889cca41b9ed">update_timecheckstate</a> ($time)</td></tr>
 <tr class="memdesc:aaa0a9e85e9b2e901be0c889cca41b9ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update this attempt timecheckstate if necessary.  <br /></td></tr>
 <tr class="separator:aaa0a9e85e9b2e901be0c889cca41b9ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1308,6 +1311,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$sections</b></td></
 <p>Get extra summary information about this attempt. </p>
 <p>Some behaviours may be able to provide interesting summary information about the attempt as a whole, and this method provides access to that data. To see how this works, try setting a quiz to one of the CBM behaviours, and then look at the extra information displayed at the top of the quiz review page once you have submitted an attempt.</p>
 <p>In the return value, the array keys are identifiers of the form qbehaviour_behaviourname_meaningfullkey. For qbehaviour_deferredcbm_highsummary. The values are arrays with two items, title and content. Each of these will be either a string, or a renderable.</p>
+<p>If this method is called before load_questions() is called, then an empty array is returned.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="../../d8/d05/classquestion__display__options.html" title="This class contains all the options that controls how a question is displayed.">question_display_options</a></td><td class="paramname">$options</td><td>the display options for this quiz attempt at this time. </td></tr>
@@ -2138,7 +2142,7 @@ display_options::AFTER_CLOSE}. </dd></dl>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">string</td><td>the formatted grade, to the number of decimal places specified by the quiz. </td></tr>
+    <tr><td class="paramname">string</td><td>the name of the question. Must be output through format_string. </td></tr>
   </table>
   </dd>
 </dl>
@@ -4077,6 +4081,27 @@ render_question_at_step()}.</dd></dl>
 
 </div>
 </div>
+<a id="a0240d19f88d5321a56297e1ac16366c7" name="a0240d19f88d5321a56297e1ac16366c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0240d19f88d5321a56297e1ac16366c7">&#9670;&#160;</a></span>update_questions_to_new_version_if_changed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\quiz_attempt::update_questions_to_new_version_if_changed </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If any questions in this attempt have changed, update the attempts. </p>
+<p>For now, this should only be done for previews.</p>
+<p>When we update the question, we keep the same question (in the case of random questions) and the same variant (if this question has variants). If possible, we use regrade to preserve any interaction that has been had with this question (e.g. a saved answer) but if that is not possible, we put in a newly started attempt. </p>
+
+</div>
+</div>
 <a id="aaa0a9e85e9b2e901be0c889cca41b9ed" name="aaa0a9e85e9b2e901be0c889cca41b9ed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaa0a9e85e9b2e901be0c889cca41b9ed">&#9670;&#160;</a></span>update_timecheckstate()</h2>
 
@@ -4184,7 +4209,7 @@ render_question_at_step()}.</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 02:33:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 10 2024 02:35:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

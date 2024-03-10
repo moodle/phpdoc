@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240301) (debed3eace9)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240308) (38a3310c927)</div>
   </td>
  </tr>
  </tbody>
@@ -993,6 +993,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga4768b76f9e32e9a2fa72223baa114d87" id="r_ga4768b76f9e32e9a2fa72223baa114d87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga4768b76f9e32e9a2fa72223baa114d87">blog_get_associated_count</a> ($courseid, $cmid=null)</td></tr>
 <tr class="memdesc:ga4768b76f9e32e9a2fa72223baa114d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shortcut function for getting a count of blog entries associated with a course or a module.  <br /></td></tr>
 <tr class="separator:ga4768b76f9e32e9a2fa72223baa114d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga22208c0927beb7c84e544f91642d6e77" id="r_ga22208c0927beb7c84e544f91642d6e77"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga22208c0927beb7c84e544f91642d6e77">blog_get_editor_options</a> (mixed $entry=null)</td></tr>
+<tr class="memdesc:ga22208c0927beb7c84e544f91642d6e77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get blog editor and attachment options for when creating or updating an entry.  <br /></td></tr>
+<tr class="separator:ga22208c0927beb7c84e544f91642d6e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacec9a8353d053a28e301a32599daa909" id="r_gacec9a8353d053a28e301a32599daa909"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gacec9a8353d053a28e301a32599daa909">blog_get_headers</a> ($courseid=null, $groupid=null, $userid=null, $tagid=null, $tag=null, $modid=null, $entryid=null, $search=null)</td></tr>
 <tr class="memdesc:gacec9a8353d053a28e301a32599daa909"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function encapsulates all the logic behind the complex navigation, titles and headings of the blog listing page, depending on URL params.  <br /></td></tr>
 <tr class="separator:gacec9a8353d053a28e301a32599daa909"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1618,9 +1621,9 @@ $this&#160;</td><td class="memItemRight" valign="bottom"><b>curl</b> = new curl(
 <tr class="memitem:gac875d7818a38a2edc37da002f11106d8" id="r_gac875d7818a38a2edc37da002f11106d8"><td class="memItemLeft" align="right" valign="top"><a id="gac875d7818a38a2edc37da002f11106d8" name="gac875d7818a38a2edc37da002f11106d8"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_QUESTIONS_PER_PAGE</b> 100</td></tr>
 <tr class="separator:gac875d7818a38a2edc37da002f11106d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacfba7d81fc2a6c85921361c0266abe2c" id="r_gacfba7d81fc2a6c85921361c0266abe2c"><td class="memItemLeft" align="right" valign="top"><a id="gacfba7d81fc2a6c85921361c0266abe2c" name="gacfba7d81fc2a6c85921361c0266abe2c"></a>
-*Sourceforge Project *visit&lt; a class=&quot;el externalurl&quot; href=&quot;http: * * For installation instructions, open the README.txt file packaged with this * class. If you don't have a copy, you can see it at: * &lt;a class=&quot;el externalurl&quot; href=&quot;http:**Please submit all problems or questions to the Help Forum on my project page:*&lt; a class=&quot;el externalurl&quot; href=&quot;http: * * Modified by Dongsheng Cai &lt;dongsheng@moodle.com&gt; * ChangeLog: * 1. Remove PEAR HTTP LIB, use curl.class.php (created by myself) * 2. Remove PEAR <a class="el" href="../../d1/dc8/class_d_b.html">DB</a> LIB * 3. Remove all <a class="el" href="../../d3/d3d/classcache.html">cache</a> code, it will implement in <a class="el" href="../../da/d9f/classcurl.html">curl</a> class. * 4. Clean up session code * * Modified by David Mudrak &lt;david@moodle.com&gt; * ChangeLog: * 1. <a class="el" href="#gaeb1ca17ad54d80ab7a6d47c741a1c680">upload</a>() method uses Moodle <a class="el" href="../../d0/d00/classstored__file.html">stored_file</a> * 2. <a class="el" href="#gaeb1ca17ad54d80ab7a6d47c741a1c680">upload</a>() method supports all params provided by http: * 3. auth() method shows debugging warning as this library cannot be used any * more for calling Flickr API that requires authentication. * * @ingroup moodlecore * @subpackage 3rd-party */defined('<a class="el" href="../../d0/de1/group__core.html#ga4a87e5b19cb6b7e3148f68a819ff0790">MOODLE_INTERNAL</a>') || die();global $CFG;require_once(&quot;{ $CFG-&gt;libdir}/flickrclient.php&quot;);class phpFlickr { var $api_key; var $secret; var $REST = 'https: var $Upload = 'https: var $Replace = 'https: var $req; var $response; var $parsed_response; var $die_on_error; var $error_code; var $error_msg; var $token; var $php_version; private <a class="el" href="../../da/d9f/classcurl.html">curl</a> $<a class="el" href="../../da/d9f/classcurl.html">curl</a>; object function __construct ($api_key, $secret = NULL, $token = '') { global $CFG; $this-&gt;api_key = $api_key; $this-&gt;secret = $secret; $this-&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>die_on_error</b> = false</td></tr>
-<tr class="separator:gacfba7d81fc2a6c85921361c0266abe2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga64f5f9363862e61933c366b9fc08acab" id="r_ga64f5f9363862e61933c366b9fc08acab"><td class="memItemLeft" align="right" valign="top"><a id="ga64f5f9363862e61933c366b9fc08acab" name="ga64f5f9363862e61933c366b9fc08acab"></a>
+*Sourceforge Project *visit&lt; a class=&quot;el externalurl&quot; href=&quot;http: * * For installation instructions, open the README.txt file packaged with this * class. If you don't have a copy, you can see it at: * &lt;a class=&quot;el externalurl&quot; href=&quot;http:**Please submit all problems or questions to the Help Forum on my project page:*&lt; a class=&quot;el externalurl&quot; href=&quot;http: * * Modified by Dongsheng Cai &lt;dongsheng@moodle.com&gt; * ChangeLog: * 1. Remove PEAR HTTP LIB, use curl.class.php (created by myself) * 2. Remove PEAR <a class="el" href="../../d1/dc8/class_d_b.html">DB</a> LIB * 3. Remove all <a class="el" href="../../d3/d3d/classcache.html">cache</a> code, it will implement in <a class="el" href="../../da/d9f/classcurl.html">curl</a> class. * 4. Clean up session code * * Modified by David Mudrak &lt;david@moodle.com&gt; * ChangeLog: * 1. <a class="el" href="#gaeb1ca17ad54d80ab7a6d47c741a1c680">upload</a>() method uses Moodle <a class="el" href="../../d0/d00/classstored__file.html">stored_file</a> * 2. <a class="el" href="#gaeb1ca17ad54d80ab7a6d47c741a1c680">upload</a>() method supports all params provided by http: * 3. auth() method shows debugging warning as this library cannot be used any * more for calling Flickr API that requires authentication. * * @ingroup moodlecore * @subpackage 3rd-party */defined('<a class="el" href="../../d0/de1/group__core.html#ga4a87e5b19cb6b7e3148f68a819ff0790">MOODLE_INTERNAL</a>') || die();global $CFG;require_once(&quot;{ $CFG-&gt;libdir}/flickrclient.php&quot;);class phpFlickr { var $api_key; var $secret; var $REST = 'https: var $Upload = 'https: var $Replace = 'https: var $req; var $response; var $parsed_response; var $die_on_error; var $error_code; var $error_msg; var $token; var $php_version; private <a class="el" href="../../da/d9f/classcurl.html">curl</a> $<a class="el" href="../../da/d9f/classcurl.html">curl</a>; object function __construct($api_key, $secret = NULL, $token = '') { global $CFG; $this-&gt;api_key = $api_key; $this-&gt;secret = $secret; $this-&gt;&#160;</td><td class="memItemRight" valign="bottom"><b>die_on_error</b> = false</td></tr>
+<tr class="separator:ga64f5f9363862e61933c366b9fc08acab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafbb64d65fd4f2a0684da2e0bdc1db931" id="r_gafbb64d65fd4f2a0684da2e0bdc1db931"><td class="memItemLeft" align="right" valign="top"><a id="gafbb64d65fd4f2a0684da2e0bdc1db931" name="gafbb64d65fd4f2a0684da2e0bdc1db931"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>END_DELIM</b> &quot;\xc3\x91\xc3\x91\xce\xa9&quot;</td></tr>
 <tr class="separator:gafbb64d65fd4f2a0684da2e0bdc1db931"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2237,6 +2240,37 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UNKNOWN</b> '[U
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>The number of associated entries </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga22208c0927beb7c84e544f91642d6e77" name="ga22208c0927beb7c84e544f91642d6e77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga22208c0927beb7c84e544f91642d6e77">&#9670;&#160;</a></span>blog_get_editor_options()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">blog_get_editor_options </td>
+          <td>(</td>
+          <td class="paramtype">mixed</td>          <td class="paramname"><span class="paramname"><em>$entry</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get blog editor and attachment options for when creating or updating an entry. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">mixed</td><td class="paramname">$entry</td><td>The entry object (can be null) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>editor and attachment options </td></tr>
   </table>
   </dd>
 </dl>
@@ -2874,9 +2908,9 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UNKNOWN</b> '[U
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001280">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001281">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../da/de7/classqbank__editquestion_1_1editquestion__helper.html#a37f92ef5fab8d956e0b10a8025cb0ac5" title="Print a button for creating a new question.">qbank_editquestion::editquestion_helper::create_new_question_button()</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000380">Todo</a></b></dt><dd>Final deprecation of this class in moodle 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000378">Todo</a></b></dt><dd>Final deprecation of this class in moodle 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
 
 </div>
 </div>
@@ -3363,9 +3397,9 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UNKNOWN</b> '[U
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001279">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001280">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../da/de7/classqbank__editquestion_1_1editquestion__helper.html#aa528aaaaa780708e8edab3cb6bb2693e" title="Print a form to let the user choose which question type to add.">qbank_editquestion::editquestion_helper::print_choose_qtype_to_add_form()</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000379">Todo</a></b></dt><dd>Final deprecation of this class in moodle 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000377">Todo</a></b></dt><dd>Final deprecation of this class in moodle 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
 
 </div>
 </div>
@@ -3441,9 +3475,9 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UNKNOWN</b> '[U
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001278">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001279">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d82/classqbank__managecategories_1_1helper.html">qbank_managecategories::helper</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000378">Todo</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000376">Todo</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
 
 </div>
 </div>
@@ -3623,9 +3657,9 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UNKNOWN</b> '[U
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001276">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001277">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d82/classqbank__managecategories_1_1helper.html">qbank_managecategories::helper</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000376">Todo</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000374">Todo</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
 
 </div>
 </div>
@@ -3657,9 +3691,9 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UNKNOWN</b> '[U
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001277">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001278">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71585" class="el">MDL-71585</a> </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/d82/classqbank__managecategories_1_1helper.html">qbank_managecategories::helper</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000377">Todo</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000375">Todo</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
 
 </div>
 </div>
@@ -4093,7 +4127,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>TYPE_UNKNOWN</b> '[U
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 02:31:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 10 2024 02:33:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

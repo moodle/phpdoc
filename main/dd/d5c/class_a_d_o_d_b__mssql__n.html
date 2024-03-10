@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240301) (debed3eace9)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240308) (38a3310c927)</div>
   </td>
  </tr>
  </tbody>
@@ -840,7 +840,7 @@ Protected Attributes</h2></td></tr>
 
 <p>This function will intercept all the literals used in the SQL, prepending the "N" char to them in order to allow mssql to store properly data sent in the correct UCS-2 encoding (by freeTDS and ODBTP) keeping SQL compatibility at ADOdb level (instead of hacking every project to add the "N" notation when working against MSSQL. </p>
 <p>The original note indicated that this hack should only be used if ALL the char-based columns in your <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> are of type nchar, nvarchar and ntext, but testing seems to indicate that SQL server doesn't seem to care if the statement is used against char etc fields.</p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000091">Todo</a></b></dt><dd>This function should raise an ADOdb error if one of the transformations fail</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000090">Todo</a></b></dt><dd>This function should raise an ADOdb error if one of the transformations fail</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">mixed</td><td class="paramname">$inboundData</td><td>Either a string containing an SQL statement or an array with resources from prepared statements</td></tr>
@@ -5974,7 +5974,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 02:31:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 10 2024 02:33:17 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

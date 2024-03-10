@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240301) (debed3eace9)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240308) (38a3310c927)</div>
   </td>
  </tr>
  </tbody>
@@ -115,6 +115,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adff8bb4130985629d622c96be58c43d5" id="r_adff8bb4130985629d622c96be58c43d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adff8bb4130985629d622c96be58c43d5">during_attempt_tertiary_nav</a> ($quizviewurl)</td></tr>
 <tr class="memdesc:adff8bb4130985629d622c96be58c43d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the tertiary navigation for pages during the attempt.  <br /></td></tr>
 <tr class="separator:adff8bb4130985629d622c96be58c43d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa89a4a040b07b5586d89a7afec39c6e9" id="r_aa89a4a040b07b5586d89a7afec39c6e9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa89a4a040b07b5586d89a7afec39c6e9">filter_review_attempt_summary</a> (<a class="el" href="../../d4/d33/classmod__quiz_1_1output_1_1attempt__summary__information.html">attempt_summary_information</a> $summarydata, int $page)</td></tr>
+<tr class="memdesc:aa89a4a040b07b5586d89a7afec39c6e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A chance to filter the information before display.  <br /></td></tr>
+<tr class="separator:aa89a4a040b07b5586d89a7afec39c6e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe93fa2c1540823ee790a9704d858876" id="r_afe93fa2c1540823ee790a9704d858876"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe93fa2c1540823ee790a9704d858876">finish_review_link</a> (<a class="el" href="../../d8/d14/classmod__quiz_1_1quiz__attempt.html">quiz_attempt</a> $attemptobj)</td></tr>
 <tr class="memdesc:afe93fa2c1540823ee790a9704d858876"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns either a link or button.  <br /></td></tr>
 <tr class="separator:afe93fa2c1540823ee790a9704d858876"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,6 +178,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5eac19450d283fb748ecb07c269a8282" id="r_a5eac19450d283fb748ecb07c269a8282"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5eac19450d283fb748ecb07c269a8282">restart_preview_button</a> ($url)</td></tr>
 <tr class="memdesc:a5eac19450d283fb748ecb07c269a8282"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a preview link.  <br /></td></tr>
 <tr class="separator:a5eac19450d283fb748ecb07c269a8282"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d17d6d0a291b5dacbe2cfdbf1f8072f" id="r_a2d17d6d0a291b5dacbe2cfdbf1f8072f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2d17d6d0a291b5dacbe2cfdbf1f8072f">review_attempt_summary</a> (<a class="el" href="../../d4/d33/classmod__quiz_1_1output_1_1attempt__summary__information.html">attempt_summary_information</a> $summarydata, int $page)</td></tr>
+<tr class="memdesc:a2d17d6d0a291b5dacbe2cfdbf1f8072f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Outputs the overall summary of the attempt at the top of the review page.  <br /></td></tr>
+<tr class="separator:a2d17d6d0a291b5dacbe2cfdbf1f8072f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea38ed7e84db32926f7c34ffcd0c2d7c" id="r_aea38ed7e84db32926f7c34ffcd0c2d7c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea38ed7e84db32926f7c34ffcd0c2d7c">review_form</a> ($page, $showall, $displayoptions, $content, $attemptobj)</td></tr>
 <tr class="memdesc:aea38ed7e84db32926f7c34ffcd0c2d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the main bit of the review page.  <br /></td></tr>
 <tr class="separator:aea38ed7e84db32926f7c34ffcd0c2d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -765,6 +771,37 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 
 </div>
 </div>
+<a id="aa89a4a040b07b5586d89a7afec39c6e9" name="aa89a4a040b07b5586d89a7afec39c6e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa89a4a040b07b5586d89a7afec39c6e9">&#9670;&#160;</a></span>filter_review_attempt_summary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\output\renderer::filter_review_attempt_summary </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d33/classmod__quiz_1_1output_1_1attempt__summary__information.html">attempt_summary_information</a></td>          <td class="paramname"><span class="paramname"><em>$summarydata</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$page</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A chance to filter the information before display. </p>
+<p><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> core uses this to display less infomrmation on pages after the first. This is a separate method, becaus it is a useful hook where themes can overrid things.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">attempt_summary_information</td><td class="paramname">$summarydata</td><td>the data that will be displayed. Modify as desired. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$page</td><td>contains the current page number </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a8831186870e4c0575cdfa2b5be9f83a2" name="a8831186870e4c0575cdfa2b5be9f83a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8831186870e4c0575cdfa2b5be9f83a2">&#9670;&#160;</a></span>filter_review_summary_table()</h2>
 
@@ -806,6 +843,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001161">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4. Replaced by filter_review_attempt_summary. </dd></dl>
 
 </div>
 </div>
@@ -1223,7 +1261,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 
 <p>Return the direct URL for an image from the pix folder. </p>
 <p>Use this function sparingly and never for icons. For icons use <a class="el" href="../../d0/d6e/classpix__icon.html">pix_icon</a> or the pix helper in a mustache template.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000773">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000771">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$imagename</td><td>the name of the icon. </td></tr>
@@ -1690,8 +1728,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001164">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Please use render_links_to_other_attempts instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000293">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76612" class="el">MDL-76612</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001165">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Please use render_links_to_other_attempts instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000291">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76612" class="el">MDL-76612</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6 </dd></dl>
 
 </div>
 </div>
@@ -1809,8 +1847,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001165">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Please use render_links_to_other_attempts instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000294">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76612" class="el">MDL-76612</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001166">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Please use render_links_to_other_attempts instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000292">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76612" class="el">MDL-76612</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6 </dd></dl>
 
 </div>
 </div>
@@ -1850,8 +1888,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001166">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Please use render_links_to_other_attempts instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000295">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76612" class="el">MDL-76612</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001167">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Please use render_links_to_other_attempts instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000293">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76612" class="el">MDL-76612</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6 </dd></dl>
 
 </div>
 </div>
@@ -1874,6 +1912,42 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$url</td><td>URL to restart the attempt. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2d17d6d0a291b5dacbe2cfdbf1f8072f" name="a2d17d6d0a291b5dacbe2cfdbf1f8072f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d17d6d0a291b5dacbe2cfdbf1f8072f">&#9670;&#160;</a></span>review_attempt_summary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\output\renderer::review_attempt_summary </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d33/classmod__quiz_1_1output_1_1attempt__summary__information.html">attempt_summary_information</a></td>          <td class="paramname"><span class="paramname"><em>$summarydata</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$page</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Outputs the overall summary of the attempt at the top of the review page. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">attempt_summary_information</td><td class="paramname">$summarydata</td><td>contains row data for table. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$page</td><td>contains the current page number </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>HTML to display. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2078,7 +2152,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
     <tr><td class="paramtype">bool</td><td class="paramname">$showall</td><td>whether to show entire attempt on one page. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$lastpage</td><td>if true the current page is the last page. </td></tr>
     <tr><td class="paramtype">display_options</td><td class="paramname">$displayoptions</td><td>instance of display_options. </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$summarydata</td><td>contains all table data </td></tr>
+    <tr><td class="paramtype">attempt_summary_information&#160;|&#160;array</td><td class="paramname">$summarydata</td><td>summary information about the attempt. Passing an array is deprecated. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2168,7 +2242,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
     <tr><td class="paramtype">int</td><td class="paramname">$slot</td><td>which question to display. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$seq</td><td>which step of the question attempt to show. null = latest. </td></tr>
     <tr><td class="paramtype">display_options</td><td class="paramname">$displayoptions</td><td>instance of display_options. </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$summarydata</td><td>contains all table data </td></tr>
+    <tr><td class="paramtype">attempt_summary_information&#160;|&#160;array</td><td class="paramname">$summarydata</td><td>summary information about the attempt. Passing an array is deprecated. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2214,6 +2288,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001162">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4. Replaced by review_attempt_summary. </dd></dl>
 
 </div>
 </div>
@@ -2241,8 +2316,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Whether we should display the main logo. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000774">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000181">Todo</a></b></dt><dd>final deprecation. To be removed in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-73165" class="el">MDL-73165</a>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000772">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000179">Todo</a></b></dt><dd>final deprecation. To be removed in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-73165" class="el">MDL-73165</a>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$headinglevel</td><td>The heading level we want to check against. </td></tr>
@@ -2827,6 +2902,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001164">Deprecated</a></b></dt><dd>Since 4.4 please use the {</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>list_of_attempts} <a class="el" href="../../da/d17/interfacerenderable.html">renderable</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -2862,7 +2939,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 02:33:17 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 10 2024 02:35:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

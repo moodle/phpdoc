@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240301) (debed3eace9)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240308) (38a3310c927)</div>
   </td>
  </tr>
  </tbody>
@@ -113,9 +113,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3a6a28d10f44bea26d04fb03b2d09eb1" id="r_a3a6a28d10f44bea26d04fb03b2d09eb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a6a28d10f44bea26d04fb03b2d09eb1">print_badge_table_actions</a> ($badge, $context)</td></tr>
 <tr class="memdesc:a3a6a28d10f44bea26d04fb03b2d09eb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints action icons for the badge.  <br /></td></tr>
 <tr class="separator:a3a6a28d10f44bea26d04fb03b2d09eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab253e782321247a46dc6f553b08abe32" id="r_ab253e782321247a46dc6f553b08abe32"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab253e782321247a46dc6f553b08abe32">print_badge_tabs</a> ($badgeid, $context, $current='overview')</td></tr>
-<tr class="memdesc:ab253e782321247a46dc6f553b08abe32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints tabs for badge editing.  <br /></td></tr>
-<tr class="separator:ab253e782321247a46dc6f553b08abe32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75edfa6c39a42c08b7aa991dc05cd6e8" id="r_a75edfa6c39a42c08b7aa991dc05cd6e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75edfa6c39a42c08b7aa991dc05cd6e8">print_badge_tabs</a> ()</td></tr>
+<tr class="separator:a75edfa6c39a42c08b7aa991dc05cd6e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf962c1e77099bfa323b9e6838f5798e" id="r_abf962c1e77099bfa323b9e6838f5798e"><td class="memItemLeft" align="right" valign="top"><a id="abf962c1e77099bfa323b9e6838f5798e" name="abf962c1e77099bfa323b9e6838f5798e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>print_badges_list</b> ($badges, $userid, $profile=false, $external=false)</td></tr>
 <tr class="separator:abf962c1e77099bfa323b9e6838f5798e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -718,7 +717,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 
 <p>Return the direct URL for an image from the pix folder. </p>
 <p>Use this function sparingly and never for icons. For icons use <a class="el" href="../../d0/d6e/classpix__icon.html">pix_icon</a> or the pix helper in a mustache template.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000773">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000771">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$imagename</td><td>the name of the icon. </td></tr>
@@ -995,8 +994,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 
 </div>
 </div>
-<a id="ab253e782321247a46dc6f553b08abe32" name="ab253e782321247a46dc6f553b08abe32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab253e782321247a46dc6f553b08abe32">&#9670;&#160;</a></span>print_badge_tabs()</h2>
+<a id="a75edfa6c39a42c08b7aa991dc05cd6e8" name="a75edfa6c39a42c08b7aa991dc05cd6e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75edfa6c39a42c08b7aa991dc05cd6e8">&#9670;&#160;</a></span>print_badge_tabs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1004,38 +1003,12 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
         <tr>
           <td class="memname">core_badges_renderer::print_badge_tabs </td>
           <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$badgeid</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$context</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$current</em><span class="paramdefsep"> = </span><span class="paramdefval">'overview'</span></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Prints tabs for badge editing. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000032">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000023">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-73426" class="el">MDL-73426</a> Final deprecation. </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">integer</td><td class="paramname">$badgeid</td><td>The badgeid to edit. </td></tr>
-    <tr><td class="paramtype">context</td><td class="paramname">$context</td><td>The current context. </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$current</td><td>The currently selected tab. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">string</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000032">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 - Use the manage_badge_action_bar tertiary navigation instead. </dd></dl>
 
 </div>
 </div>
@@ -1271,7 +1244,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
   </dd>
 </dl>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000033">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000024">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-80455" class="el">MDL-80455</a> this will be removed in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000023">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-80455" class="el">MDL-80455</a> this will be removed in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8 </dd></dl>
 
 </div>
 </div>
@@ -1637,8 +1610,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Whether we should display the main logo. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000774">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000181">Todo</a></b></dt><dd>final deprecation. To be removed in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-73165" class="el">MDL-73165</a>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000772">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000179">Todo</a></b></dt><dd>final deprecation. To be removed in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-73165" class="el">MDL-73165</a>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$headinglevel</td><td>The heading level we want to check against. </td></tr>
@@ -1720,7 +1693,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 02:31:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 10 2024 02:33:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

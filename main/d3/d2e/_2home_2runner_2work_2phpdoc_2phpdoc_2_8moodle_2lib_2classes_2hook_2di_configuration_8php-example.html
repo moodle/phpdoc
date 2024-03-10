@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240301) (debed3eace9)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240308) (38a3310c927)</div>
   </td>
  </tr>
  </tbody>
@@ -94,9 +94,11 @@ $(function() {
 <div class="line"><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d7/d71/namespacecore_1_1hook.html">core\hook</a>;</div>
 <div class="line"> </div>
 <div class="line">use <a id="_a0" name="_a0"></a><a class="code hl_class" href="../../d3/d21/class_d_i_1_1_container_builder.html">DI\ContainerBuilder</a>;</div>
+<div class="line">use <a id="_a1" name="_a1"></a><a class="code hl_class" href="../../d8/d3d/classcore_1_1attribute_1_1label.html">core\attribute\label</a>;</div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">class </span>di_configuration <span class="keyword">implements</span> described_hook {</div>
-<div class="line">    <span class="keyword">public</span> <span class="keyword">function</span> <a id="a1" name="a1"></a><a class="code hl_function" href="../../d9/d9e/group__mnet.html#ga095c5d389db211932136b53f25f39685">__construct</a>(</div>
+<div class="line"><span class="preprocessor">#[label(&#39;The DI container, which allows plugins to register any service requiring configuration or initialisation.&#39;)]</span></div>
+<div class="line"><span class="keyword">class </span>di_configuration {</div>
+<div class="line">    <span class="keyword">public</span> <span class="keyword">function</span> <a id="a2" name="a2"></a><a class="code hl_function" href="../../d9/d9e/group__mnet.html#ga095c5d389db211932136b53f25f39685">__construct</a>(</div>
 <div class="line">        <span class="keyword">protected</span> ContainerBuilder $builder,</div>
 <div class="line">    ) {</div>
 <div class="line">    }</div>
@@ -111,22 +113,15 @@ $(function() {
 <div class="line"> </div>
 <div class="line">        <span class="keywordflow">return</span> $this;</div>
 <div class="line">    }</div>
-<div class="line"> </div>
-<div class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> get_hook_description(): string {</div>
-<div class="line">        return <span class="stringliteral">&#39;The DI container, which allows plugins to register any service requiring configuration or initialisation.&#39;</span>;</div>
-<div class="line">    }</div>
-<div class="line"> </div>
-<div class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> get_hook_tags(): array {</div>
-<div class="line">        return [];</div>
-<div class="line">    }</div>
 <div class="line">}</div>
 <div class="ttc" id="aclass_d_i_1_1_container_builder_html"><div class="ttname"><a href="../../d3/d21/class_d_i_1_1_container_builder.html">DI\ContainerBuilder</a></div><div class="ttdef"><b>Definition</b> ContainerBuilder.php:38</div></div>
+<div class="ttc" id="aclasscore_1_1attribute_1_1label_html"><div class="ttname"><a href="../../d8/d3d/classcore_1_1attribute_1_1label.html">core\attribute\label</a></div><div class="ttdef"><b>Definition</b> label.php:27</div></div>
 <div class="ttc" id="agroup__mnet_html_ga095c5d389db211932136b53f25f39685"><div class="ttname"><a href="../../d9/d9e/group__mnet.html#ga095c5d389db211932136b53f25f39685">__construct</a></div><div class="ttdeci">__construct()</div><div class="ttdoc">Constructor creates and initialises parser resource and calls initialise.</div><div class="ttdef"><b>Definition</b> xmlparser.php:60</div></div>
-<div class="ttc" id="anamespacecore_1_1hook_html"><div class="ttname"><a href="../../d7/d71/namespacecore_1_1hook.html">core\hook</a></div><div class="ttdoc">&amp;#160;</div></div>
+<div class="ttc" id="anamespacecore_1_1hook_html"><div class="ttname"><a href="../../d7/d71/namespacecore_1_1hook.html">core\hook</a></div><div class="ttdoc">&amp;#160;</div><div class="ttdef"><b>Definition</b> deprecated_callback_replacement.php:17</div></div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 02:31:10 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 10 2024 02:33:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

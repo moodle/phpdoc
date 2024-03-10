@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3.3+ (Build: 20240301) (994a21d4ff7)</div>
+   <div id="projectbrief">Moodle 4.3.3+ (Build: 20240308) (fde6c3c7efa)</div>
   </td>
  </tr>
  </tbody>
@@ -76,9 +76,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a24f382ccf4be54b7f594b78e2e0770d8" id="r_a24f382ccf4be54b7f594b78e2e0770d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24f382ccf4be54b7f594b78e2e0770d8">add_question</a> (<a class="el" href="../../d7/da5/classquestion__definition.html">question_definition</a> $question, $maxmark=null)</td></tr>
 <tr class="memdesc:a24f382ccf4be54b7f594b78e2e0770d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add another question to this usage.  <br /></td></tr>
 <tr class="separator:a24f382ccf4be54b7f594b78e2e0770d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a133d5b7fc4b86f4f3bd7f9e2e8c76bcf" id="r_a133d5b7fc4b86f4f3bd7f9e2e8c76bcf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a133d5b7fc4b86f4f3bd7f9e2e8c76bcf">add_question_in_place_of_other</a> ($slot, <a class="el" href="../../d7/da5/classquestion__definition.html">question_definition</a> $question, $maxmark=null)</td></tr>
-<tr class="memdesc:a133d5b7fc4b86f4f3bd7f9e2e8c76bcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add another question to this usage, in the place of an existing slot.  <br /></td></tr>
-<tr class="separator:a133d5b7fc4b86f4f3bd7f9e2e8c76bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9ff625dd0c9a0b40c555f1a330106ca" id="r_af9ff625dd0c9a0b40c555f1a330106ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af9ff625dd0c9a0b40c555f1a330106ca">add_question_in_place_of_other</a> ( $slot, <a class="el" href="../../d7/da5/classquestion__definition.html">question_definition</a> $question, $maxmark=null, bool $keepoldquestionattempt=true,)</td></tr>
+<tr class="memdesc:af9ff625dd0c9a0b40c555f1a330106ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add another question to this usage, in the place of an existing slot.  <br /></td></tr>
+<tr class="separator:af9ff625dd0c9a0b40c555f1a330106ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acce542cfc0c8b2673d8b8961c346d018" id="r_acce542cfc0c8b2673d8b8961c346d018"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acce542cfc0c8b2673d8b8961c346d018">can_question_finish_during_attempt</a> ($slot)</td></tr>
 <tr class="memdesc:acce542cfc0c8b2673d8b8961c346d018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this attempt at a given question could be completed just by the student interacting with the question, before <a class="el" href="">finish_question()</a> is called.  <br /></td></tr>
 <tr class="separator:acce542cfc0c8b2673d8b8961c346d018"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -366,8 +366,8 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$preferredbehaviour
 
 </div>
 </div>
-<a id="a133d5b7fc4b86f4f3bd7f9e2e8c76bcf" name="a133d5b7fc4b86f4f3bd7f9e2e8c76bcf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a133d5b7fc4b86f4f3bd7f9e2e8c76bcf">&#9670;&#160;</a></span>add_question_in_place_of_other()</h2>
+<a id="af9ff625dd0c9a0b40c555f1a330106ca" name="af9ff625dd0c9a0b40c555f1a330106ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9ff625dd0c9a0b40c555f1a330106ca">&#9670;&#160;</a></span>add_question_in_place_of_other()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -385,19 +385,25 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$preferredbehaviour
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$maxmark</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span></span>&#160;)</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$maxmark</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$keepoldquestionattempt</em><span class="paramdefsep"> = </span><span class="paramdefval">true</span></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Add another question to this usage, in the place of an existing slot. </p>
-<p>The <a class="el" href="../../d3/dda/classquestion__attempt.html" title="Tracks an attempt at one particular question in a question_usage_by_activity.">question_attempt</a> that was in that slot is moved to the end at a new slot number, which is returned.</p>
+<p>Depending on $keepoldquestionattempt, the <a class="el" href="../../d3/dda/classquestion__attempt.html" title="Tracks an attempt at one particular question in a question_usage_by_activity.">question_attempt</a> that was in that slot is moved to the end at a new slot number, which is returned. Otherwise the existing attempt is completely removed and replaced.</p>
 <p>The added question is not started until you call <a class="el" href="">start_question()</a> on it.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$slot</td><td>the slot-number of the question to replace. </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../d7/da5/classquestion__definition.html" title="The definition of a question of a particular type.">question_definition</a></td><td class="paramname">$question</td><td>the question to add. </td></tr>
     <tr><td class="paramtype">number</td><td class="paramname">$maxmark</td><td>the maximum this question will be marked out of in this attempt (optional). If not given, the max mark from the $qa we are replacing is used. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$keepoldquestionattempt</td><td>if true (the default) we keep the existing <a class="el" href="../../d3/dda/classquestion__attempt.html" title="Tracks an attempt at one particular question in a question_usage_by_activity.">question_attempt</a>, moving it to a new slot </td></tr>
   </table>
   </dd>
 </dl>
@@ -2384,7 +2390,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$preferredbehaviour
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 02:28:24 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 10 2024 02:30:24 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

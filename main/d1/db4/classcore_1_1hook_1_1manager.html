@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240301) (debed3eace9)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240308) (38a3310c927)</div>
   </td>
  </tr>
  </tbody>
@@ -115,6 +115,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a8bbdccb0734bbb89bd15b87dad60dd19" id="r_a8bbdccb0734bbb89bd15b87dad60dd19"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8bbdccb0734bbb89bd15b87dad60dd19">get_instance</a> ()</td></tr>
 <tr class="memdesc:a8bbdccb0734bbb89bd15b87dad60dd19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory method, returns instance of manager that serves as hook dispatcher and callback provider.  <br /></td></tr>
 <tr class="separator:a8bbdccb0734bbb89bd15b87dad60dd19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa61f8d47b602c2cd9159fa8b5a4630ab" id="r_aa61f8d47b602c2cd9159fa8b5a4630ab"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa61f8d47b602c2cd9159fa8b5a4630ab">get_replaced_callbacks</a> (string $hookclassname)</td></tr>
+<tr class="memdesc:aa61f8d47b602c2cd9159fa8b5a4630ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of callbacks that the given hook class replaces (if any).  <br /></td></tr>
+<tr class="separator:aa61f8d47b602c2cd9159fa8b5a4630ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cd9e60cc20bf011a140107bddc1ec1b" id="r_a0cd9e60cc20bf011a140107bddc1ec1b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cd9e60cc20bf011a140107bddc1ec1b">phpunit_get_instance</a> (array $componentfiles)</td></tr>
 <tr class="memdesc:a0cd9e60cc20bf011a140107bddc1ec1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory method for testing of hook manager in PHPUnit tests.  <br /></td></tr>
 <tr class="separator:a0cd9e60cc20bf011a140107bddc1ec1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -296,6 +299,45 @@ Static Public Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">self</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa61f8d47b602c2cd9159fa8b5a4630ab" name="aa61f8d47b602c2cd9159fa8b5a4630ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa61f8d47b602c2cd9159fa8b5a4630ab">&#9670;&#160;</a></span>get_replaced_callbacks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core\hook\manager::get_replaced_callbacks </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$hookclassname</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the list of callbacks that the given hook class replaces (if any). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$hookclassname</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -509,7 +551,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 02:32:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 10 2024 02:34:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

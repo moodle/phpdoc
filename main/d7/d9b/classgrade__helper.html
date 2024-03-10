@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240301) (debed3eace9)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240308) (38a3310c927)</div>
   </td>
  </tr>
  </tbody>
@@ -72,7 +72,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a54cb8d4f0e2e13b8686ca14e424bcf07"><td class="mdescLeft">&#160;</td><td class="mdescRight">This helper method gets a snapshot of all the weights for a course.  <br /></td></tr>
 <tr class="separator:a54cb8d4f0e2e13b8686ca14e424bcf07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a948eb7fd17e4e24b868d262e6369f648" id="r_a948eb7fd17e4e24b868d262e6369f648"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a948eb7fd17e4e24b868d262e6369f648">get_activity_link</a> (array $element)</td></tr>
-<tr class="memdesc:a948eb7fd17e4e24b868d262e6369f648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a link to grading page if grade.php exists in the module or link to activity.  <br /></td></tr>
+<tr class="memdesc:a948eb7fd17e4e24b868d262e6369f648"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a link to activity.  <br /></td></tr>
 <tr class="separator:a948eb7fd17e4e24b868d262e6369f648"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c0507d398b1189a3bbd38cc2a92ff7f" id="r_a8c0507d398b1189a3bbd38cc2a92ff7f"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8c0507d398b1189a3bbd38cc2a92ff7f">get_aggregation_strings</a> ()</td></tr>
 <tr class="memdesc:a8c0507d398b1189a3bbd38cc2a92ff7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets strings describing the available aggregation methods.  <br /></td></tr>
@@ -230,16 +230,16 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$pluginstring
 </table>
 </div><div class="memdoc">
 
-<p>Returns a link to grading page if grade.php exists in the module or link to activity. </p>
+<p>Returns a link to activity. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$element</td><td>An array representing an element in the <a class="el" href="../../de/d74/classgrade__tree.html" title="This class represents a complete tree of categories, grade_items and final grades,...">grade_tree</a></td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$element</td><td>An array representing an element in the <a class="el" href="../../de/d74/classgrade__tree.html" title="This class represents a complete tree of categories, grade_items and final grades,...">grade_tree</a> </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">string|null</td><td>link to grading page|activity or null if not found </td></tr>
+    <tr><td class="paramname">moodle_url|null</td><td>link to activity or null if not found </td></tr>
   </table>
   </dd>
 </dl>
@@ -621,7 +621,7 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$pluginstring
 
 <p>First checks the cached language strings, then returns match if found, or uses get_string() to get it from the <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a>, caches it then returns it. </p>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000154">Deprecated</a></b></dt><dd>since 4.3 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000062">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-78780" class="el">MDL-78780</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.7. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000061">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-78780" class="el">MDL-78780</a> This will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.7. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$strcode</td><td></td></tr>
@@ -1117,7 +1117,7 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$pluginstring
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 02:32:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 10 2024 02:34:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

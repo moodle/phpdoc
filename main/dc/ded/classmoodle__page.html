@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240301) (debed3eace9)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240308) (38a3310c927)</div>
   </td>
  </tr>
  </tbody>
@@ -132,6 +132,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a509377593810b5b822c4ff7abff92260" id="r_a509377593810b5b822c4ff7abff92260"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a509377593810b5b822c4ff7abff92260">get_secondary_active_tab</a> ()</td></tr>
 <tr class="memdesc:a509377593810b5b822c4ff7abff92260"><td class="mdescLeft">&#160;</td><td class="mdescRight">The key of secondary nav node to activate.  <br /></td></tr>
 <tr class="separator:a509377593810b5b822c4ff7abff92260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad34d5cc533fd8597d57a12964de81738" id="r_ad34d5cc533fd8597d57a12964de81738"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad34d5cc533fd8597d57a12964de81738">get_show_course_index</a> ()</td></tr>
+<tr class="memdesc:ad34d5cc533fd8597d57a12964de81738"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current status for displaying the course index.  <br /></td></tr>
+<tr class="separator:ad34d5cc533fd8597d57a12964de81738"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52b6f97dbddca1e48d385c49ad2dfc6a" id="r_a52b6f97dbddca1e48d385c49ad2dfc6a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52b6f97dbddca1e48d385c49ad2dfc6a">get_where_theme_was_initialised</a> ()</td></tr>
 <tr class="memdesc:a52b6f97dbddca1e48d385c49ad2dfc6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">For diagnostic/debugging purposes, find where the theme setup was triggered.  <br /></td></tr>
 <tr class="separator:a52b6f97dbddca1e48d385c49ad2dfc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -236,6 +239,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1d82f0c7579d9d046281f18a8457716e" id="r_a1d82f0c7579d9d046281f18a8457716e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d82f0c7579d9d046281f18a8457716e">set_secondarynav</a> (<a class="el" href="../../d0/dd2/classcore_1_1navigation_1_1views_1_1secondary.html">secondary</a> $nav)</td></tr>
 <tr class="memdesc:a1d82f0c7579d9d046281f18a8457716e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force set secondary_nav.  <br /></td></tr>
 <tr class="separator:a1d82f0c7579d9d046281f18a8457716e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a542e7806b0b57bd371ab0e407368ac53" id="r_a542e7806b0b57bd371ab0e407368ac53"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a542e7806b0b57bd371ab0e407368ac53">set_show_course_index</a> (bool $state)</td></tr>
+<tr class="memdesc:a542e7806b0b57bd371ab0e407368ac53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the status for displaying the course index.  <br /></td></tr>
+<tr class="separator:a542e7806b0b57bd371ab0e407368ac53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a506d0508ff6759879b4313e6fd52caab" id="r_a506d0508ff6759879b4313e6fd52caab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a506d0508ff6759879b4313e6fd52caab">set_state</a> ($state)</td></tr>
 <tr class="memdesc:a506d0508ff6759879b4313e6fd52caab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the state.  <br /></td></tr>
 <tr class="separator:a506d0508ff6759879b4313e6fd52caab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -615,6 +621,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$_regionmainsettingsi
 <a class="el" href="../../d8/dca/classsettings__navigation.html">settings_navigation</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$_settingsnav</b> = null</td></tr>
 <tr class="memdesc:a5ebf4e4a3143f7e50f2b4337e28dde14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains the settings navigation structure. <br /></td></tr>
 <tr class="separator:a5ebf4e4a3143f7e50f2b4337e28dde14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1e53b57d3f6b5b317f1e005c8a6b511" id="r_ad1e53b57d3f6b5b317f1e005c8a6b511"><td class="memItemLeft" align="right" valign="top"><a id="ad1e53b57d3f6b5b317f1e005c8a6b511" name="ad1e53b57d3f6b5b317f1e005c8a6b511"></a>
+bool bool&#160;</td><td class="memItemRight" valign="bottom"><b>$_showcourseindex</b> = true</td></tr>
+<tr class="memdesc:ad1e53b57d3f6b5b317f1e005c8a6b511"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the course index drawer should be shown. <br /></td></tr>
+<tr class="separator:ad1e53b57d3f6b5b317f1e005c8a6b511"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ab3ceea3740f674197410d8e062172e" id="r_a0ab3ceea3740f674197410d8e062172e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ab3ceea3740f674197410d8e062172e">$_state</a> = self::STATE_BEFORE_HEADER</td></tr>
 <tr class="memdesc:a0ab3ceea3740f674197410d8e062172e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current state of the page.  <br /></td></tr>
 <tr class="separator:a0ab3ceea3740f674197410d8e062172e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1368,6 +1378,31 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_subpage</b> = ''<
 
 </div>
 </div>
+<a id="ad34d5cc533fd8597d57a12964de81738" name="ad34d5cc533fd8597d57a12964de81738"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad34d5cc533fd8597d57a12964de81738">&#9670;&#160;</a></span>get_show_course_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">moodle_page::get_show_course_index </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the current status for displaying the course index. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a52b6f97dbddca1e48d385c49ad2dfc6a" name="a52b6f97dbddca1e48d385c49ad2dfc6a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a52b6f97dbddca1e48d385c49ad2dfc6a">&#9670;&#160;</a></span>get_where_theme_was_initialised()</h2>
 
@@ -1507,7 +1542,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_subpage</b> = ''<
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000786">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000784">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 </dd></dl>
 
 </div>
 </div>
@@ -2871,7 +2906,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_subpage</b> = ''<
 </div><div class="memdoc">
 
 <p>Returns the secondary navigation object. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000183">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-74939" class="el">MDL-74939</a> Remove support for old 'local::views::secondary' class location </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000181">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-74939" class="el">MDL-74939</a> Remove support for old 'local::views::secondary' class location </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">secondary</td><td></td></tr>
@@ -3883,6 +3918,35 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_subpage</b> = ''<
 
 </div>
 </div>
+<a id="a542e7806b0b57bd371ab0e407368ac53" name="a542e7806b0b57bd371ab0e407368ac53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a542e7806b0b57bd371ab0e407368ac53">&#9670;&#160;</a></span>set_show_course_index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">moodle_page::set_show_course_index </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the status for displaying the course index. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">bool</td><td class="paramname">$state</td><td><ul>
+<li><code>true</code> (default) if the course index should be shown.</li>
+<li><code>false</code> if the course index should be hidden. </li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a506d0508ff6759879b4313e6fd52caab" name="a506d0508ff6759879b4313e6fd52caab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a506d0508ff6759879b4313e6fd52caab">&#9670;&#160;</a></span>set_state()</h2>
 
@@ -4195,7 +4259,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_subpage</b> = ''<
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000787">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000785">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.4 </dd></dl>
 
 </div>
 </div>
@@ -4781,7 +4845,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$_subpage</b> = ''<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 02:32:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 10 2024 02:34:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

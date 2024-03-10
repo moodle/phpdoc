@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev (Build: 20240301) (debed3eace9)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240308) (38a3310c927)</div>
   </td>
  </tr>
  </tbody>
@@ -69,9 +69,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a09c8a9a27fa8c3b3579fcfcc56839ed1" id="r_a09c8a9a27fa8c3b3579fcfcc56839ed1"><td class="memItemLeft" align="right" valign="top"><a id="a09c8a9a27fa8c3b3579fcfcc56839ed1" name="a09c8a9a27fa8c3b3579fcfcc56839ed1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>__construct</b> ($linkname, $urltemplate, $mappings)</td></tr>
-<tr class="separator:a09c8a9a27fa8c3b3579fcfcc56839ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94856e19f96bebb3b03d7f6048225538" id="r_a94856e19f96bebb3b03d7f6048225538"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94856e19f96bebb3b03d7f6048225538">__construct</a> (string $linkname, string $urltemplate, $mappings, bool $urlencoded=false)</td></tr>
+<tr class="memdesc:a94856e19f96bebb3b03d7f6048225538"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
+<tr class="separator:a94856e19f96bebb3b03d7f6048225538"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a17b020545f77a97903d0ee046b14f7" id="r_a2a17b020545f77a97903d0ee046b14f7"><td class="memItemLeft" align="right" valign="top"><a id="a2a17b020545f77a97903d0ee046b14f7" name="a2a17b020545f77a97903d0ee046b14f7"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>decode</b> ($content)</td></tr>
 <tr class="separator:a2a17b020545f77a97903d0ee046b14f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -120,6 +120,10 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a17f5c8625d27128a6f1380d833e07778" id="r_a17f5c8625d27128a6f1380d833e07778"><td class="memItemLeft" align="right" valign="top"><a id="a17f5c8625d27128a6f1380d833e07778" name="a17f5c8625d27128a6f1380d833e07778"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$targetwwwroot</b></td></tr>
 <tr class="separator:a17f5c8625d27128a6f1380d833e07778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59cf5d9585921e6df296a40fa47057fc" id="r_a59cf5d9585921e6df296a40fa47057fc"><td class="memItemLeft" align="right" valign="top"><a id="a59cf5d9585921e6df296a40fa47057fc" name="a59cf5d9585921e6df296a40fa47057fc"></a>
+bool bool&#160;</td><td class="memItemRight" valign="bottom"><b>$urlencoded</b></td></tr>
+<tr class="memdesc:a59cf5d9585921e6df296a40fa47057fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">$urlencoded Whether to use urlencode() on the final URL. <br /></td></tr>
+<tr class="separator:a59cf5d9585921e6df296a40fa47057fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60ebed559c33c5416d9d8b4a9e175093" id="r_a60ebed559c33c5416d9d8b4a9e175093"><td class="memItemLeft" align="right" valign="top"><a id="a60ebed559c33c5416d9d8b4a9e175093" name="a60ebed559c33c5416d9d8b4a9e175093"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$urltemplate</b></td></tr>
 <tr class="separator:a60ebed559c33c5416d9d8b4a9e175093"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,7 +132,50 @@ Protected Attributes</h2></td></tr>
 <div class="textblock"><p>Helper class used to decode links back to their original form. </p>
 <p>This class allows each restore task to specify the changes that will be applied to any encoded (by backup) link to revert it back to its original form, recoding any parameter as needed.</p>
 <p>TODO: Complete phpdocs </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a94856e19f96bebb3b03d7f6048225538" name="a94856e19f96bebb3b03d7f6048225538"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94856e19f96bebb3b03d7f6048225538">&#9670;&#160;</a></span>__construct()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">restore_decode_rule::__construct </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$linkname</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$urltemplate</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$mappings</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$urlencoded</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$linkname</td><td>How the link has been encoded in backup (CHOICEVIEWBYID, COURSEVIEWBYID...) </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$urltemplate</td><td>How the original URL looks like, with dollar placeholders </td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;string</td><td class="paramname">$mappings</td><td>Which backup_ids mappings do we need to apply for replacing the placeholders </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$urlencoded</td><td>Whether to use urlencode() on the final URL (defaults to false) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a86e8ba246422dcfbdf604f8745b8fa50" name="a86e8ba246422dcfbdf604f8745b8fa50"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a86e8ba246422dcfbdf604f8745b8fa50">&#9670;&#160;</a></span>apply_modifications()</h2>
 
@@ -167,7 +214,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 3 2024 02:32:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 10 2024 02:34:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>
