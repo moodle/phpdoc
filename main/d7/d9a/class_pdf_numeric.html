@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240308) (38a3310c927)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240315) (757be30c390)</div>
   </td>
  </tr>
  </tbody>
@@ -84,6 +84,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae9b23d73b64350f04a88a5d6e5f9cc43" id="r_ae9b23d73b64350f04a88a5d6e5f9cc43"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9b23d73b64350f04a88a5d6e5f9cc43">ensure</a> ($value)</td></tr>
 <tr class="memdesc:ae9b23d73b64350f04a88a5d6e5f9cc43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensures that the passed value is a <a class="el" href="../../d7/d9a/class_pdf_numeric.html" title="Class representing a numeric PDF object.">PdfNumeric</a> instance.  <br /></td></tr>
 <tr class="separator:ae9b23d73b64350f04a88a5d6e5f9cc43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43e7af3dcb921d0c67d2501b9a2cb567" id="r_a43e7af3dcb921d0c67d2501b9a2cb567"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfb/class_pdf_type.html#a43e7af3dcb921d0c67d2501b9a2cb567">flatten</a> (<a class="el" href="../../df/dfb/class_pdf_type.html">PdfType</a> $value, <a class="el" href="../../de/daf/class_pdf_parser.html">PdfParser</a> $parser)</td></tr>
+<tr class="memdesc:a43e7af3dcb921d0c67d2501b9a2cb567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flatten indirect object references to direct objects.  <br /></td></tr>
+<tr class="separator:a43e7af3dcb921d0c67d2501b9a2cb567"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1081968aa9ac86529d661b2f719345a" id="r_af1081968aa9ac86529d661b2f719345a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dfb/class_pdf_type.html#af1081968aa9ac86529d661b2f719345a">resolve</a> (<a class="el" href="../../df/dfb/class_pdf_type.html">PdfType</a> $value, <a class="el" href="../../de/daf/class_pdf_parser.html">PdfParser</a> $parser, $stopAtIndirectObject=false)</td></tr>
 <tr class="memdesc:af1081968aa9ac86529d661b2f719345a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves a <a class="el" href="../../df/dfb/class_pdf_type.html" title="A class defining a PDF data type.">PdfType</a> value to its value.  <br /></td></tr>
 <tr class="separator:af1081968aa9ac86529d661b2f719345a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,6 +247,57 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a43e7af3dcb921d0c67d2501b9a2cb567" name="a43e7af3dcb921d0c67d2501b9a2cb567"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43e7af3dcb921d0c67d2501b9a2cb567">&#9670;&#160;</a></span>flatten()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static PdfType::flatten </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../df/dfb/class_pdf_type.html">PdfType</a></td>          <td class="paramname"><span class="paramname"><em>$value</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/daf/class_pdf_parser.html">PdfParser</a></td>          <td class="paramname"><span class="paramname"><em>$parser</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Flatten indirect object references to direct objects. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../df/dfb/class_pdf_type.html" title="A class defining a PDF data type.">PdfType</a></td><td class="paramname">$value</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../de/daf/class_pdf_parser.html" title="A PDF parser class.">PdfParser</a></td><td class="paramname">$parser</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname"><a class="el" href="../../df/dfb/class_pdf_type.html" title="A class defining a PDF data type.">PdfType</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../d2/de5/class_cross_reference_exception.html" title="Exception used by the CrossReference and Reader classes.">CrossReferenceException</a></td><td></td></tr>
+    <tr><td class="paramname"><a class="el" href="../../d0/d48/class_pdf_parser_exception.html" title="Exception for the pdf parser class.">PdfParserException</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="af1081968aa9ac86529d661b2f719345a" name="af1081968aa9ac86529d661b2f719345a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af1081968aa9ac86529d661b2f719345a">&#9670;&#160;</a></span>resolve()</h2>
 
@@ -308,7 +362,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 10 2024 02:34:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 17 2024 02:34:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

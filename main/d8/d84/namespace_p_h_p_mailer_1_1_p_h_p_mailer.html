@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240308) (38a3310c927)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240315) (757be30c390)</div>
   </td>
  </tr>
  </tbody>
@@ -149,6 +149,9 @@ Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>clearCCs</b> ()</td></tr>
 <tr class="memdesc:aa0b362ab069b7f7a59bff1ed66016291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all CC recipients. <br /></td></tr>
 <tr class="separator:aa0b362ab069b7f7a59bff1ed66016291"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4ec4d817528e9e6afa1e37ac1b59eb8" id="r_ad4ec4d817528e9e6afa1e37ac1b59eb8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4ec4d817528e9e6afa1e37ac1b59eb8">clearCustomHeader</a> ($name, $value=null)</td></tr>
+<tr class="memdesc:ad4ec4d817528e9e6afa1e37ac1b59eb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear a specific custom header by name or name and value.  <br /></td></tr>
+<tr class="separator:ad4ec4d817528e9e6afa1e37ac1b59eb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c0e1d84a79e4e867ab4fcfbc38972ec" id="r_a9c0e1d84a79e4e867ab4fcfbc38972ec"><td class="memItemLeft" align="right" valign="top"><a id="a9c0e1d84a79e4e867ab4fcfbc38972ec" name="a9c0e1d84a79e4e867ab4fcfbc38972ec"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>clearCustomHeaders</b> ()</td></tr>
 <tr class="memdesc:a9c0e1d84a79e4e867ab4fcfbc38972ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all custom headers. <br /></td></tr>
@@ -289,6 +292,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a14697394ef691a8ea113e4a6cdb1b8ce" id="r_a14697394ef691a8ea113e4a6cdb1b8ce"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14697394ef691a8ea113e4a6cdb1b8ce">quotedString</a> ($str)</td></tr>
 <tr class="memdesc:a14697394ef691a8ea113e4a6cdb1b8ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a string contains any "special" characters, double-quote the name, and escape any double quotes with a backslash.  <br /></td></tr>
 <tr class="separator:a14697394ef691a8ea113e4a6cdb1b8ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a802c3b0d78ff042e625965ecfd718e" id="r_a5a802c3b0d78ff042e625965ecfd718e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a802c3b0d78ff042e625965ecfd718e">replaceCustomHeader</a> ($name, $value=null)</td></tr>
+<tr class="memdesc:a5a802c3b0d78ff042e625965ecfd718e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace a custom header.  <br /></td></tr>
+<tr class="separator:a5a802c3b0d78ff042e625965ecfd718e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0e2b47c990e285ec8b9846c5a013b87" id="r_ac0e2b47c990e285ec8b9846c5a013b87"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac0e2b47c990e285ec8b9846c5a013b87">rfcDate</a> ()</td></tr>
 <tr class="memdesc:ac0e2b47c990e285ec8b9846c5a013b87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an RFC 822 formatted date.  <br /></td></tr>
 <tr class="separator:ac0e2b47c990e285ec8b9846c5a013b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -929,6 +935,43 @@ $this&#160;</td><td class="memItemRight" valign="bottom"><b>Body</b> = static::n
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad4ec4d817528e9e6afa1e37ac1b59eb8" name="ad4ec4d817528e9e6afa1e37ac1b59eb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4ec4d817528e9e6afa1e37ac1b59eb8">&#9670;&#160;</a></span>clearCustomHeader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PHPMailer\PHPMailer\clearCustomHeader </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$name</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$value</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clear a specific custom header by name or name and value. </p>
+<p>$name value can be overloaded to contain both header name and value (name:value).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$name</td><td>Custom header name </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$value</td><td>Header value</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>True if a header was replaced successfully </td></tr>
   </table>
   </dd>
 </dl>
@@ -2466,6 +2509,49 @@ $this&#160;</td><td class="memItemRight" valign="bottom"><b>Body</b> = static::n
 
 </div>
 </div>
+<a id="a5a802c3b0d78ff042e625965ecfd718e" name="a5a802c3b0d78ff042e625965ecfd718e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a802c3b0d78ff042e625965ecfd718e">&#9670;&#160;</a></span>replaceCustomHeader()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PHPMailer\PHPMailer\replaceCustomHeader </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$name</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$value</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Replace a custom header. </p>
+<p>$name value can be overloaded to contain both header name and value (name:value).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$name</td><td>Custom header name </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$value</td><td>Header value</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>True if a header was replaced successfully </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="../../df/d70/class_exception.html" title="General SimplePie exception class.">Exception</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ac0e2b47c990e285ec8b9846c5a013b87" name="ac0e2b47c990e285ec8b9846c5a013b87"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac0e2b47c990e285ec8b9846c5a013b87">&#9670;&#160;</a></span>rfcDate()</h2>
 
@@ -2989,7 +3075,7 @@ $this&#160;</td><td class="memItemRight" valign="bottom"><b>Body</b> = static::n
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 10 2024 02:35:35 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 17 2024 02:35:22 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240308) (38a3310c927)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240315) (757be30c390)</div>
   </td>
  </tr>
  </tbody>
@@ -107,9 +107,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2e19f4ac8529561b526d681a0da4b435" id="r_a2e19f4ac8529561b526d681a0da4b435"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e19f4ac8529561b526d681a0da4b435">question</a> (<a class="el" href="../../d3/dda/classquestion__attempt.html">question_attempt</a> $qa, <a class="el" href="../../df/d07/classqbehaviour__renderer.html">qbehaviour_renderer</a> $behaviouroutput, <a class="el" href="../../db/db0/classqtype__renderer.html">qtype_renderer</a> $qtoutput, <a class="el" href="../../d8/d05/classquestion__display__options.html">question_display_options</a> $options, $<a class="el" href="#a996a8751455607c6027274d2db681887">number</a>)</td></tr>
 <tr class="memdesc:a2e19f4ac8529561b526d681a0da4b435"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the display of a question in a particular state, and with certain display options.  <br /></td></tr>
 <tr class="separator:a2e19f4ac8529561b526d681a0da4b435"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ba4cdd0b5ae1af239d982af5d962488" id="r_a7ba4cdd0b5ae1af239d982af5d962488"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7ba4cdd0b5ae1af239d982af5d962488">question_preview_link</a> ($questionid, context $context, $showlabel)</td></tr>
-<tr class="memdesc:a7ba4cdd0b5ae1af239d982af5d962488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render an icon, optionally with the word 'Preview' beside it, to preview a given question.  <br /></td></tr>
-<tr class="separator:a7ba4cdd0b5ae1af239d982af5d962488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7cecdbea0aa0c19b1045cd934237e30" id="r_ab7cecdbea0aa0c19b1045cd934237e30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7cecdbea0aa0c19b1045cd934237e30">question_preview_link</a> ()</td></tr>
+<tr class="separator:ab7cecdbea0aa0c19b1045cd934237e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2ecf5952db09f7d75e0357e200de6b4" id="r_ad2ecf5952db09f7d75e0357e200de6b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d94/classplugin__renderer__base.html#ad2ecf5952db09f7d75e0357e200de6b4">render</a> (<a class="el" href="../../da/d17/interfacerenderable.html">renderable</a> $widget)</td></tr>
 <tr class="memdesc:ad2ecf5952db09f7d75e0357e200de6b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders the provided widget and returns the HTML to display it.  <br /></td></tr>
 <tr class="separator:ad2ecf5952db09f7d75e0357e200de6b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -974,7 +973,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 
 <p>Return the direct URL for an image from the pix folder. </p>
 <p>Use this function sparingly and never for icons. For icons use <a class="el" href="../../d0/d6e/classpix__icon.html">pix_icon</a> or the pix helper in a mustache template.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000771">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000787">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$imagename</td><td>the name of the icon. </td></tr>
@@ -1162,8 +1161,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 
 </div>
 </div>
-<a id="a7ba4cdd0b5ae1af239d982af5d962488" name="a7ba4cdd0b5ae1af239d982af5d962488"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ba4cdd0b5ae1af239d982af5d962488">&#9670;&#160;</a></span>question_preview_link()</h2>
+<a id="ab7cecdbea0aa0c19b1045cd934237e30" name="ab7cecdbea0aa0c19b1045cd934237e30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7cecdbea0aa0c19b1045cd934237e30">&#9670;&#160;</a></span>question_preview_link()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1171,33 +1170,12 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
         <tr>
           <td class="memname">core_question_renderer::question_preview_link </td>
           <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$questionid</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">context</td>          <td class="paramname"><span class="paramname"><em>$context</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$showlabel</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Render an icon, optionally with the word 'Preview' beside it, to preview a given question. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$questionid</td><td>the id of the question to be previewed. </td></tr>
-    <tr><td class="paramtype">context</td><td class="paramname">$context</td><td>the context in which the preview is happening. Must be a course or category context. </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$showlabel</td><td>if true, show the word 'Preview' after the icon. If false, just show the icon. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001285">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../da/d13/classqbank__previewquestion_1_1output_1_1renderer.html">qbank_previewquestion::output::renderer</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000381">Todo</a></b></dt><dd>Final deprecation on <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-72438" class="el">MDL-72438</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001288">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 
 </div>
 </div>
@@ -1370,8 +1348,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Whether we should display the main logo. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000772">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000179">Todo</a></b></dt><dd>final deprecation. To be removed in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-73165" class="el">MDL-73165</a>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000788">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000178">Todo</a></b></dt><dd>final deprecation. To be removed in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-73165" class="el">MDL-73165</a>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$headinglevel</td><td>The heading level we want to check against. </td></tr>
@@ -1616,7 +1594,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 10 2024 02:33:27 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 17 2024 02:33:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

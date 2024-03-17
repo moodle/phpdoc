@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240308) (38a3310c927)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240315) (757be30c390)</div>
   </td>
  </tr>
  </tbody>
@@ -69,9 +69,6 @@ $(function() {
   <div class="headertitle"><div class="title">tool_usertours\tour Class Reference<div class="ingroups"><a class="el" href="../../d9/d9d/group__tool__usertours.html">tool_usertours</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Tour class.  
- <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -132,6 +129,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a182f2acddf95487f9ae777b4d0a956c2" id="r_a182f2acddf95487f9ae777b4d0a956c2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a182f2acddf95487f9ae777b4d0a956c2">get_reset_link</a> ()</td></tr>
 <tr class="memdesc:a182f2acddf95487f9ae777b4d0a956c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The link to reset the state of this tour for all users.  <br /></td></tr>
 <tr class="separator:a182f2acddf95487f9ae777b4d0a956c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3870ef5a913d3c49ad42b913a40c4228" id="r_a3870ef5a913d3c49ad42b913a40c4228"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3870ef5a913d3c49ad42b913a40c4228">get_showtourwhen</a> ()</td></tr>
+<tr class="memdesc:a3870ef5a913d3c49ad42b913a40c4228"><td class="mdescLeft">&#160;</td><td class="mdescRight">When to show the tour.  <br /></td></tr>
+<tr class="separator:a3870ef5a913d3c49ad42b913a40c4228"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42855a8a6d594b82434e65b330fe0a42" id="r_a42855a8a6d594b82434e65b330fe0a42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42855a8a6d594b82434e65b330fe0a42">get_sortorder</a> ()</td></tr>
 <tr class="memdesc:a42855a8a6d594b82434e65b330fe0a42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current sortorder for this tour.  <br /></td></tr>
 <tr class="separator:a42855a8a6d594b82434e65b330fe0a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,6 +202,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0c438b202deb105fda9948de5aa81ecc" id="r_a0c438b202deb105fda9948de5aa81ecc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c438b202deb105fda9948de5aa81ecc">set_pathmatch</a> ($value)</td></tr>
 <tr class="memdesc:a0c438b202deb105fda9948de5aa81ecc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the patchmatch of the tour to the specified value.  <br /></td></tr>
 <tr class="separator:a0c438b202deb105fda9948de5aa81ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2896725580ad6d16c49cd4f3eac02b00" id="r_a2896725580ad6d16c49cd4f3eac02b00"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2896725580ad6d16c49cd4f3eac02b00">set_showtourwhen</a> (int $value)</td></tr>
+<tr class="memdesc:a2896725580ad6d16c49cd4f3eac02b00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the value for the when to show the tour.  <br /></td></tr>
+<tr class="separator:a2896725580ad6d16c49cd4f3eac02b00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b73bedfad9085bcf8ce8f5776bc0968" id="r_a9b73bedfad9085bcf8ce8f5776bc0968"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b73bedfad9085bcf8ce8f5776bc0968">set_sortorder</a> ($value)</td></tr>
 <tr class="memdesc:a9b73bedfad9085bcf8ce8f5776bc0968"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the sortorder for this tour.  <br /></td></tr>
 <tr class="separator:a9b73bedfad9085bcf8ce8f5776bc0968"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,6 +234,14 @@ DISABLED const&#160;</td><td class="memItemRight" valign="bottom"><b>DISABLED</b
 <a class="el" href="#a01505ce9312b78834f1b3faaa8efd1e9">DISABLED</a> const&#160;</td><td class="memItemRight" valign="bottom"><b>ENABLED</b> = 1</td></tr>
 <tr class="memdesc:aae5336c1bdf1b4ed67a5298ff6ee277d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The tour is currently disabled. <br /></td></tr>
 <tr class="separator:aae5336c1bdf1b4ed67a5298ff6ee277d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab948b28b512bb988d1cffafaf027f393" id="r_ab948b28b512bb988d1cffafaf027f393"><td class="memItemLeft" align="right" valign="top"><a id="ab948b28b512bb988d1cffafaf027f393" name="ab948b28b512bb988d1cffafaf027f393"></a>
+int const&#160;</td><td class="memItemRight" valign="bottom"><b>SHOW_TOUR_ON_EACH_PAGE_VISIT</b> = 2</td></tr>
+<tr class="memdesc:ab948b28b512bb988d1cffafaf027f393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to show the tour every time a page matches. <br /></td></tr>
+<tr class="separator:ab948b28b512bb988d1cffafaf027f393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c6a544b925e9142d194950fcac1c201" id="r_a0c6a544b925e9142d194950fcac1c201"><td class="memItemLeft" align="right" valign="top"><a id="a0c6a544b925e9142d194950fcac1c201" name="a0c6a544b925e9142d194950fcac1c201"></a>
+int const&#160;</td><td class="memItemRight" valign="bottom"><b>SHOW_TOUR_UNTIL_COMPLETE</b> = 1</td></tr>
+<tr class="memdesc:a0c6a544b925e9142d194950fcac1c201"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to show the tour only until it has been marked complete. <br /></td></tr>
+<tr class="separator:a0c6a544b925e9142d194950fcac1c201"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f3fc10f0f4adc5718b91f312fbadb82" id="r_a6f3fc10f0f4adc5718b91f312fbadb82"><td class="memItemLeft" align="right" valign="top"><a id="a6f3fc10f0f4adc5718b91f312fbadb82" name="a6f3fc10f0f4adc5718b91f312fbadb82"></a>
 TOUR_LAST_COMPLETED_BY_USER const&#160;</td><td class="memItemRight" valign="bottom"><b>TOUR_LAST_COMPLETED_BY_USER</b> = 'tool_usertours_tour_completion_time_'</td></tr>
 <tr class="memdesc:a6f3fc10f0f4adc5718b91f312fbadb82"><td class="mdescLeft">&#160;</td><td class="mdescRight">The user preference value to indicate the time of completion of the tour for a user. <br /></td></tr>
@@ -313,11 +324,7 @@ $steps&#160;</td><td class="memItemRight" valign="bottom"><b>$steps</b> = []</td
 <tr class="memdesc:a135b5508d3465fc6db19ee259cbe7d26"><td class="mdescLeft">&#160;</td><td class="mdescRight">The steps in this tour. <br /></td></tr>
 <tr class="separator:a135b5508d3465fc6db19ee259cbe7d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Tour class. </p>
-<dl class="section copyright"><dt>Copyright</dt><dd>2016 Andrew Nicols <a href="#" onclick="location.href='mai'+'lto:'+'and'+'re'+'w@n'+'ic'+'ols'+'.c'+'o.u'+'k'; return false;">andre<span class="obfuscator">.nosp@m.</span>w@ni<span class="obfuscator">.nosp@m.</span>cols.<span class="obfuscator">.nosp@m.</span>co.u<span class="obfuscator">.nosp@m.</span>k</a> </dd></dl>
-<dl class="section user"><dt>License</dt><dd><a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a> GNU GPL v3 or later </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a92139d8651653cb31d774b1eac2cca63" name="a92139d8651653cb31d774b1eac2cca63"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a92139d8651653cb31d774b1eac2cca63">&#9670;&#160;</a></span>add_config_field_to_form()</h2>
 
@@ -932,6 +939,34 @@ $steps&#160;</td><td class="memItemRight" valign="bottom"><b>$steps</b> = []</td
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3870ef5a913d3c49ad42b913a40c4228" name="a3870ef5a913d3c49ad42b913a40c4228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3870ef5a913d3c49ad42b913a40c4228">&#9670;&#160;</a></span>get_showtourwhen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tool_usertours\tour::get_showtourwhen </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>When to show the tour. </p>
+<dl class="section see"><dt>See also</dt><dd>self::SHOW_TOUR_UNTIL_COMPLETE </dd>
+<dd>
+self::SHOW_TOUR_ON_EACH_PAGE_VISIT</dd></dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1725,6 +1760,40 @@ $steps&#160;</td><td class="memItemRight" valign="bottom"><b>$steps</b> = []</td
 
 </div>
 </div>
+<a id="a2896725580ad6d16c49cd4f3eac02b00" name="a2896725580ad6d16c49cd4f3eac02b00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2896725580ad6d16c49cd4f3eac02b00">&#9670;&#160;</a></span>set_showtourwhen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">tool_usertours\tour::set_showtourwhen </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the value for the when to show the tour. </p>
+<dl class="section see"><dt>See also</dt><dd>self::SHOW_TOUR_UNTIL_COMPLETE </dd>
+<dd>
+self::SHOW_TOUR_ON_EACH_PAGE_VISIT</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$value</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">self</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a9b73bedfad9085bcf8ce8f5776bc0968" name="a9b73bedfad9085bcf8ce8f5776bc0968"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9b73bedfad9085bcf8ce8f5776bc0968">&#9670;&#160;</a></span>set_sortorder()</h2>
 
@@ -1812,7 +1881,7 @@ $steps&#160;</td><td class="memItemRight" valign="bottom"><b>$steps</b> = []</td
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 10 2024 02:35:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 17 2024 02:35:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>
