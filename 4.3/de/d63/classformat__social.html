@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3.3+ (Build: 20240315) (45ad566de9a)</div>
+   <div id="projectbrief">Moodle 4.3.3+ (Build: 20240322) (74d3c961496)</div>
   </td>
  </tr>
  </tbody>
@@ -164,9 +164,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a04e92e8cc34f7835adcba95aba783661" id="r_a04e92e8cc34f7835adcba95aba783661"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a04e92e8cc34f7835adcba95aba783661">get_format_options</a> ($section=null)</td></tr>
 <tr class="memdesc:a04e92e8cc34f7835adcba95aba783661"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the format options stored for this course or course section.  <br /></td></tr>
 <tr class="separator:a04e92e8cc34f7835adcba95aba783661"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebe29ba1954d518f6090b0f7996868fa" id="r_aebe29ba1954d518f6090b0f7996868fa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#aebe29ba1954d518f6090b0f7996868fa">get_format_string</a> (string $key, $data=null, $lang=null)</td></tr>
-<tr class="memdesc:aebe29ba1954d518f6090b0f7996868fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the proper format plugin string if it exists.  <br /></td></tr>
-<tr class="separator:aebe29ba1954d518f6090b0f7996868fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecfc5742d16113b5045e74089d29af5d" id="r_aecfc5742d16113b5045e74089d29af5d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#aecfc5742d16113b5045e74089d29af5d">get_format_string</a> (string $key, $data=null)</td></tr>
+<tr class="memdesc:aecfc5742d16113b5045e74089d29af5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the proper format plugin string if it exists.  <br /></td></tr>
+<tr class="separator:aecfc5742d16113b5045e74089d29af5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f95b73922f79e67198dfe3f271514d0" id="r_a7f95b73922f79e67198dfe3f271514d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a7f95b73922f79e67198dfe3f271514d0">get_last_section_number</a> ()</td></tr>
 <tr class="memdesc:a7f95b73922f79e67198dfe3f271514d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method used in the rendered and during backup instead of legacy 'numsections'.  <br /></td></tr>
 <tr class="separator:a7f95b73922f79e67198dfe3f271514d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1521,8 +1521,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesection</b> = 0
 
 </div>
 </div>
-<a id="aebe29ba1954d518f6090b0f7996868fa" name="aebe29ba1954d518f6090b0f7996868fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebe29ba1954d518f6090b0f7996868fa">&#9670;&#160;</a></span>get_format_string()</h2>
+<a id="aecfc5742d16113b5045e74089d29af5d" name="aecfc5742d16113b5045e74089d29af5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecfc5742d16113b5045e74089d29af5d">&#9670;&#160;</a></span>get_format_string()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1538,12 +1538,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesection</b> = 0
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$data</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$lang</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span></span>&#160;)</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$data</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -1558,8 +1553,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesection</b> = 0
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$key</td><td>the string key </td></tr>
-    <tr><td class="paramtype">string&#160;|&#160;object&#160;|&#160;array</td><td class="paramname">$data</td><td>extra data that can be used within translation strings </td></tr>
-    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$lang</td><td>moodle translation language, null means use current </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;object&#160;|&#160;array&#160;|&#160;int</td><td class="paramname">$data</td><td>extra data that can be used within translation strings </td></tr>
   </table>
   </dd>
 </dl>
@@ -3464,7 +3458,7 @@ course_modinfo::get_section_info_all()</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 17 2024 02:29:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 24 2024 02:39:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

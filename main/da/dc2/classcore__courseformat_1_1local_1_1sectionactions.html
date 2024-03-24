@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240315) (757be30c390)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240322) (342319339fe)</div>
   </td>
  </tr>
  </tbody>
@@ -91,6 +91,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab9a4f4f9e97979cb4d99f0415e46ea16" id="r_ab9a4f4f9e97979cb4d99f0415e46ea16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9a4f4f9e97979cb4d99f0415e46ea16">delete</a> (<a class="el" href="../../d1/db5/classsection__info.html">section_info</a> $sectioninfo, bool $forcedeleteifnotempty=true, bool $async=false)</td></tr>
 <tr class="memdesc:ab9a4f4f9e97979cb4d99f0415e46ea16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a course section.  <br /></td></tr>
 <tr class="separator:ab9a4f4f9e97979cb4d99f0415e46ea16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcada28d7212ce94a8977c6ad9cbddd7" id="r_adcada28d7212ce94a8977c6ad9cbddd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adcada28d7212ce94a8977c6ad9cbddd7">update</a> (<a class="el" href="../../d1/db5/classsection__info.html">section_info</a> $sectioninfo, array|stdClass $fields)</td></tr>
+<tr class="memdesc:adcada28d7212ce94a8977c6ad9cbddd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a course section.  <br /></td></tr>
+<tr class="separator:adcada28d7212ce94a8977c6ad9cbddd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -121,6 +124,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a053f0a27707c5aa686ecccb1a002c84d" id="r_a053f0a27707c5aa686ecccb1a002c84d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d40/classcore__courseformat_1_1local_1_1baseactions.html#a053f0a27707c5aa686ecccb1a002c84d">get_section_info</a> ($sectionid, int $strictness=<a class="el" href="../../d0/de1/group__core.html#gaffc7005a2da386334d76ec5f85ca2d48">IGNORE_MISSING</a>)</td></tr>
 <tr class="memdesc:a053f0a27707c5aa686ecccb1a002c84d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the section info.  <br /></td></tr>
 <tr class="separator:a053f0a27707c5aa686ecccb1a002c84d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d884f8906c8c2ab5d9617301d60668b" id="r_a4d884f8906c8c2ab5d9617301d60668b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d884f8906c8c2ab5d9617301d60668b">preprocess_delegated_section_fields</a> (<a class="el" href="../../d1/db5/classsection__info.html">section_info</a> $sectioninfo, array $fields)</td></tr>
+<tr class="memdesc:a4d884f8906c8c2ab5d9617301d60668b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preprocess the section fields before updating a delegated section.  <br /></td></tr>
+<tr class="separator:a4d884f8906c8c2ab5d9617301d60668b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cb71309316f620bdefb67f81af0ce9b" id="r_a0cb71309316f620bdefb67f81af0ce9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cb71309316f620bdefb67f81af0ce9b">transfer_visibility_to_cms</a> (<a class="el" href="../../d1/db5/classsection__info.html">section_info</a> $sectioninfo, bool $visibility)</td></tr>
+<tr class="memdesc:a0cb71309316f620bdefb67f81af0ce9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transfer the visibility of the section to the course modules.  <br /></td></tr>
+<tr class="separator:a0cb71309316f620bdefb67f81af0ce9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -655,13 +664,131 @@ stdClass stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$course<
 
 </div>
 </div>
+<a id="a4d884f8906c8c2ab5d9617301d60668b" name="a4d884f8906c8c2ab5d9617301d60668b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d884f8906c8c2ab5d9617301d60668b">&#9670;&#160;</a></span>preprocess_delegated_section_fields()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\local\sectionactions::preprocess_delegated_section_fields </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/db5/classsection__info.html">section_info</a></td>          <td class="paramname"><span class="paramname"><em>$sectioninfo</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$fields</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Preprocess the section fields before updating a delegated section. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d1/db5/classsection__info.html">section_info</a></td><td class="paramname">$sectioninfo</td><td>the section info or database record to update. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$fields</td><td>the fields to update. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>the updated fields </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0cb71309316f620bdefb67f81af0ce9b" name="a0cb71309316f620bdefb67f81af0ce9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cb71309316f620bdefb67f81af0ce9b">&#9670;&#160;</a></span>transfer_visibility_to_cms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\local\sectionactions::transfer_visibility_to_cms </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/db5/classsection__info.html">section_info</a></td>          <td class="paramname"><span class="paramname"><em>$sectioninfo</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$visibility</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Transfer the visibility of the section to the course modules. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d1/db5/classsection__info.html">section_info</a></td><td class="paramname">$sectioninfo</td><td>the section info or database record to update. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$visibility</td><td>the new visibility of the section. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adcada28d7212ce94a8977c6ad9cbddd7" name="adcada28d7212ce94a8977c6ad9cbddd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcada28d7212ce94a8977c6ad9cbddd7">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\local\sectionactions::update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/db5/classsection__info.html">section_info</a></td>          <td class="paramname"><span class="paramname"><em>$sectioninfo</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array|stdClass</td>          <td class="paramname"><span class="paramname"><em>$fields</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Update a course section. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d1/db5/classsection__info.html">section_info</a></td><td class="paramname">$sectioninfo</td><td>the section info or database record to update. </td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;stdClass</td><td class="paramname">$fields</td><td>the fields to update. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>whether section was updated </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>course/format/classes/local/<b>sectionactions.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 17 2024 02:34:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 24 2024 02:44:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

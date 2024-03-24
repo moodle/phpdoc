@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240315) (757be30c390)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240322) (342319339fe)</div>
   </td>
  </tr>
  </tbody>
@@ -200,7 +200,6 @@ Functions</h2></td></tr>
 <tr class="memdesc:gadabce3630a3e1965d1b4e2575ec94282"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns list of available navigation link CSS classes.  <br /></td></tr>
 <tr class="separator:gadabce3630a3e1965d1b4e2575ec94282"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga794e3b28f1b9fbe16a96f99e4b7c5fab" id="r_ga794e3b28f1b9fbe16a96f99e4b7c5fab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga794e3b28f1b9fbe16a96f99e4b7c5fab">book_get_nav_types</a> ()</td></tr>
-<tr class="memdesc:ga794e3b28f1b9fbe16a96f99e4b7c5fab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns list of available navigation link types.  <br /></td></tr>
 <tr class="separator:ga794e3b28f1b9fbe16a96f99e4b7c5fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad0a3a30e4991246f73a24ec89d1c5e7b" id="r_gad0a3a30e4991246f73a24ec89d1c5e7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad0a3a30e4991246f73a24ec89d1c5e7b">book_get_numbering_types</a> ()</td></tr>
 <tr class="memdesc:gad0a3a30e4991246f73a24ec89d1c5e7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns list of available numbering types.  <br /></td></tr>
@@ -277,15 +276,6 @@ Variables</h2></td></tr>
 <tr class="separator:gada8a7130088351710bb02ed622d6bf65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga62d505d3f427f89bb437ec9dd9342314" id="r_ga62d505d3f427f89bb437ec9dd9342314"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga62d505d3f427f89bb437ec9dd9342314">$tagareas</a></td></tr>
 <tr class="separator:ga62d505d3f427f89bb437ec9dd9342314"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5f9df34a1e0b12dc2a1dd4f9d08b66d5" id="r_ga5f9df34a1e0b12dc2a1dd4f9d08b66d5"><td class="memItemLeft" align="right" valign="top"><a id="ga5f9df34a1e0b12dc2a1dd4f9d08b66d5" name="ga5f9df34a1e0b12dc2a1dd4f9d08b66d5"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>BOOK_LINK_IMAGE</b> '1'</td></tr>
-<tr class="separator:ga5f9df34a1e0b12dc2a1dd4f9d08b66d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8b3c777a0d1849489c856190febc887c" id="r_ga8b3c777a0d1849489c856190febc887c"><td class="memItemLeft" align="right" valign="top"><a id="ga8b3c777a0d1849489c856190febc887c" name="ga8b3c777a0d1849489c856190febc887c"></a>
-const&#160;</td><td class="memItemRight" valign="bottom"><b>BOOK_LINK_TEXT</b> '2'</td></tr>
-<tr class="separator:ga8b3c777a0d1849489c856190febc887c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8b06df7870dbac054bc6205b5535b6a0" id="r_ga8b06df7870dbac054bc6205b5535b6a0"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga8b06df7870dbac054bc6205b5535b6a0">BOOK_LINK_TOCONLY</a> '0'</td></tr>
-<tr class="memdesc:ga8b06df7870dbac054bc6205b5535b6a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The following defines are used to define the navigation style used within a book.  <br /></td></tr>
-<tr class="separator:ga8b06df7870dbac054bc6205b5535b6a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga567731e16a53b0e281a66b9d165a9603" id="r_ga567731e16a53b0e281a66b9d165a9603"><td class="memItemLeft" align="right" valign="top"><a id="ga567731e16a53b0e281a66b9d165a9603" name="ga567731e16a53b0e281a66b9d165a9603"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>BOOK_NUM_BULLETS</b> '2'</td></tr>
 <tr class="separator:ga567731e16a53b0e281a66b9d165a9603"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -772,15 +762,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Returns list of available navigation link types. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001008">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0. <a href="https://tracker.moodle.org/browse/MDL-72376" class="el">MDL-72376</a>. </dd></dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">array</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001010">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 
 </div>
 </div>
@@ -1573,23 +1555,6 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ga8b06df7870dbac054bc6205b5535b6a0" name="ga8b06df7870dbac054bc6205b5535b6a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8b06df7870dbac054bc6205b5535b6a0">&#9670;&#160;</a></span>BOOK_LINK_TOCONLY</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const BOOK_LINK_TOCONLY '0'</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The following defines are used to define the navigation style used within a book. </p>
-<p>BOOK_LINK_TOCONLY Only the table of contents is shown, in a side region. BOOK_LINK_IMAGE Arrows link to previous/next/exit pages, in addition to the TOC. BOOK_LINK_TEXT <a class="el" href="../../db/d2f/class_page.html" title="Class representing a page of a PDF document.">Page</a> names and arrows link to previous/next/exit pages, in addition to the TOC. </p>
-
-</div>
-</div>
 <a id="gaca3626782bace390e76f4c23b20dcf04" name="gaca3626782bace390e76f4c23b20dcf04"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaca3626782bace390e76f4c23b20dcf04">&#9670;&#160;</a></span>BOOK_NUM_NONE</h2>
 
@@ -1610,7 +1575,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 17 2024 02:32:58 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 24 2024 02:43:07 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

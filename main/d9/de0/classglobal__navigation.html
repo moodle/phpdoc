@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240315) (757be30c390)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240322) (342319339fe)</div>
   </td>
  </tr>
  </tbody>
@@ -100,6 +100,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab47735c40077a563ce24851cde75784d" id="r_ab47735c40077a563ce24851cde75784d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de3/classnavigation__node.html#ab47735c40077a563ce24851cde75784d">add</a> ($text, $<a class="el" href="../../dd/de3/classnavigation__node.html#a913e1de5f7df091e809182da66d31b85">action</a>=null, $type=self::TYPE_CUSTOM, $shorttext=null, $key=null, <a class="el" href="../../d0/d6e/classpix__icon.html">pix_icon</a> $icon=null)</td></tr>
 <tr class="memdesc:ab47735c40077a563ce24851cde75784d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a navigation node as a child of this node.  <br /></td></tr>
 <tr class="separator:ab47735c40077a563ce24851cde75784d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9184ad623c286c9df75afc8e8cea6e57" id="r_a9184ad623c286c9df75afc8e8cea6e57"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de3/classnavigation__node.html#a9184ad623c286c9df75afc8e8cea6e57">add_attribute</a> (string $name, string $value)</td></tr>
+<tr class="memdesc:a9184ad623c286c9df75afc8e8cea6e57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an HTML attribute to this node.  <br /></td></tr>
+<tr class="separator:a9184ad623c286c9df75afc8e8cea6e57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5e78df6303161bd4eb81642fdf2ed3f" id="r_af5e78df6303161bd4eb81642fdf2ed3f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de3/classnavigation__node.html#af5e78df6303161bd4eb81642fdf2ed3f">add_class</a> ($class)</td></tr>
 <tr class="memdesc:af5e78df6303161bd4eb81642fdf2ed3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a CSS class to this node.  <br /></td></tr>
 <tr class="separator:af5e78df6303161bd4eb81642fdf2ed3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,6 +264,10 @@ Public Attributes</h2></td></tr>
 <a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a> <a class="el" href="../../dd/da1/classaction__link.html">action_link</a> null&#160;</td><td class="memItemRight" valign="bottom"><b>$action</b> = null</td></tr>
 <tr class="memdesc:a35e41d09f3b071e9125fb2e3122637da"><td class="mdescLeft">&#160;</td><td class="mdescRight">An action for the node (link) <br /></td></tr>
 <tr class="separator:a35e41d09f3b071e9125fb2e3122637da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af27b2a12ce76763d259f613cba6d8ea5" id="r_af27b2a12ce76763d259f613cba6d8ea5"><td class="memItemLeft" align="right" valign="top"><a id="af27b2a12ce76763d259f613cba6d8ea5" name="af27b2a12ce76763d259f613cba6d8ea5"></a>
+array&#160;</td><td class="memItemRight" valign="bottom"><b>$attributes</b> = []</td></tr>
+<tr class="memdesc:af27b2a12ce76763d259f613cba6d8ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of HTML attributes for the node. <br /></td></tr>
+<tr class="separator:af27b2a12ce76763d259f613cba6d8ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6afe0b92f9c04eac06d2bc39e938349d" id="r_a6afe0b92f9c04eac06d2bc39e938349d"><td class="memItemLeft" align="right" valign="top"><a id="a6afe0b92f9c04eac06d2bc39e938349d" name="a6afe0b92f9c04eac06d2bc39e938349d"></a>
 <a class="el" href="../../de/d1c/classnavigation__node__collection.html">navigation_node_collection</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$children</b> = array()</td></tr>
 <tr class="memdesc:a6afe0b92f9c04eac06d2bc39e938349d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of child nodes. <br /></td></tr>
@@ -808,6 +815,44 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>$loadadmintree
 
 </div>
 </div>
+<a id="a9184ad623c286c9df75afc8e8cea6e57" name="a9184ad623c286c9df75afc8e8cea6e57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9184ad623c286c9df75afc8e8cea6e57">&#9670;&#160;</a></span>add_attribute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">navigation_node::add_attribute </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$name</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$value</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds an HTML attribute to this node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$name</td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$value</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="af32a794413a4b13cfa87511b806e1552" name="af32a794413a4b13cfa87511b806e1552"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af32a794413a4b13cfa87511b806e1552">&#9670;&#160;</a></span>add_category()</h2>
 
@@ -1128,7 +1173,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>$loadadmintree
 </div><div class="memdoc">
 
 <p>Walk the tree building up a list of all the flat navigation nodes. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000769">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000772">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="../../d0/d23/classflat__navigation.html" title="Class used to generate a collection of navigation nodes most closely related to the current page.">flat_navigation</a></td><td class="paramname">$nodes</td><td>List of the found flat navigation nodes. </td></tr>
@@ -2752,7 +2797,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>$loadadmintree
 </div><div class="memdoc">
 
 <p>This method simply checks to see if a given module can extend the navigation. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000177">Todo</a></b></dt><dd>(<a href="https://tracker.moodle.org/browse/MDL-25290" class="el">MDL-25290</a>) A shared caching solution should be used to save details on what extends navigation.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000178">Todo</a></b></dt><dd>(<a href="https://tracker.moodle.org/browse/MDL-25290" class="el">MDL-25290</a>) A shared caching solution should be used to save details on what extends navigation.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$modname</td><td></td></tr>
@@ -3296,7 +3341,7 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>$loadadmintree
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 17 2024 02:33:16 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 24 2024 02:43:24 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

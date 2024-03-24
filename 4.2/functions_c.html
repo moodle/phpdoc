@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2.6+ (Build: 20240315) (87a08ab1574)</div>
+   <div id="projectbrief">Moodle 4.2.6+ (Build: 20240322) (23b110b28b0)</div>
   </td>
  </tr>
  </tbody>
@@ -221,12 +221,12 @@ $(function() {
 <li>can_delete_user()&#160;:&#160;<a class="el" href="dc/d7b/classcore__competency_1_1evidence.html#ab4bc1cc5f43664b50ddb822d81ae87d0">core_competency\evidence</a></li>
 <li>can_delete_version()&#160;:&#160;<a class="el" href="da/de0/classtool__policy_1_1api.html#a6f29cfddcae0a6e70fb630e9fb2f30c5">tool_policy\api</a></li>
 <li>can_display_number_be_customised()&#160;:&#160;<a class="el" href="d1/d5e/classmod__quiz_1_1structure.html#ad449df3d3124be0668e0a33f8db2ddad">mod_quiz\structure</a></li>
-<li>can_download()&#160;:&#160;<a class="el" href="d0/de2/classcore__contentbank_1_1contenttype.html#a5073abccbb84feeec50ca86d972fed44">core_contentbank\contenttype</a></li>
 <li>CAN_DOWNLOAD&#160;:&#160;<a class="el" href="d0/de2/classcore__contentbank_1_1contenttype.html#aae541da5641faf199df49141efd37763">core_contentbank\contenttype</a></li>
+<li>can_download()&#160;:&#160;<a class="el" href="d0/de2/classcore__contentbank_1_1contenttype.html#a5073abccbb84feeec50ca86d972fed44">core_contentbank\contenttype</a></li>
 <li>can_download_data_request_for_user()&#160;:&#160;<a class="el" href="d5/dd0/classtool__dataprivacy_1_1api.html#acd5340454a58c8061dc38c7cd9e90905">tool_dataprivacy\api</a></li>
-<li>can_edit()&#160;:&#160;<a class="el" href="dd/dbb/classcore__cohort_1_1customfield_1_1cohort__handler.html#af49e7b184ed44b283d244ef24b652294">core_cohort\customfield\cohort_handler</a></li>
+<li>can_edit()&#160;:&#160;<a class="el" href="dd/dbb/classcore__cohort_1_1customfield_1_1cohort__handler.html#af49e7b184ed44b283d244ef24b652294">core_cohort\customfield\cohort_handler</a>, <a class="el" href="d0/de2/classcore__contentbank_1_1contenttype.html#adda9e4f4cb473dae2fc3414101aa1035">core_contentbank\contenttype</a></li>
 <li>CAN_EDIT&#160;:&#160;<a class="el" href="d0/de2/classcore__contentbank_1_1contenttype.html#a14e682cd99532fc0374408b5c9fee9b9">core_contentbank\contenttype</a></li>
-<li>can_edit()&#160;:&#160;<a class="el" href="d0/de2/classcore__contentbank_1_1contenttype.html#adda9e4f4cb473dae2fc3414101aa1035">core_contentbank\contenttype</a>, <a class="el" href="d7/d93/classcore__course_1_1customfield_1_1course__handler.html#a81d37463bafd88d3b7103e660627fafd">core_course\customfield\course_handler</a>, <a class="el" href="d4/dec/classcore__course__category.html#ac5f64164d984b2b7a7ab0bf8845590d7">core_course_category</a>, <a class="el" href="d8/db9/classcore__course__list__element.html#a28214870c0e20fcf9e0758ea3f1660aa">core_course_list_element</a>, <a class="el" href="d2/df1/classcore__customfield_1_1handler.html#ae7d3882dcc1ef19a207584efbcb2adc0">core_customfield\handler</a>, <a class="el" href="dd/dfd/classqbank__customfields_1_1customfield_1_1question__handler.html#a2e3a9c5b39455fef152dd7e8e27c4350">qbank_customfields\customfield\question_handler</a></li>
+<li>can_edit()&#160;:&#160;<a class="el" href="d7/d93/classcore__course_1_1customfield_1_1course__handler.html#a81d37463bafd88d3b7103e660627fafd">core_course\customfield\course_handler</a>, <a class="el" href="d4/dec/classcore__course__category.html#ac5f64164d984b2b7a7ab0bf8845590d7">core_course_category</a>, <a class="el" href="d8/db9/classcore__course__list__element.html#a28214870c0e20fcf9e0758ea3f1660aa">core_course_list_element</a>, <a class="el" href="d2/df1/classcore__customfield_1_1handler.html#ae7d3882dcc1ef19a207584efbcb2adc0">core_customfield\handler</a>, <a class="el" href="dd/dfd/classqbank__customfields_1_1customfield_1_1question__handler.html#a2e3a9c5b39455fef152dd7e8e27c4350">qbank_customfields\customfield\question_handler</a></li>
 <li>can_edit_bulk_completion()&#160;:&#160;<a class="el" href="dd/dd5/classcore__completion_1_1manager.html#a7cb4415e6a140f7ad89603f0ac47db64">core_completion\manager</a></li>
 <li>can_edit_content()&#160;:&#160;<a class="el" href="d2/d15/classcore__h5p_1_1api.html#a4e5f43fdc04af051c2d1c94517fa81d4">core_h5p\api</a>, <a class="el" href="d0/d39/classmod__forum_1_1h5p_1_1canedit.html#adef4694cc5d2b6271e53461a89cd78ed">mod_forum\h5p\canedit</a></li>
 <li>can_edit_group_submission()&#160;:&#160;<a class="el" href="db/d8f/classassign.html#a772252d7488d6d85234325a1abbeef57">assign</a></li>
@@ -1190,15 +1190,20 @@ $(function() {
 <li>convertHTMLColorToDec()&#160;:&#160;<a class="el" href="d7/d2b/class_t_c_p_d_f___c_o_l_o_r_s.html#aa43cf6183f84357bb3b7aa70f75fe9a3">TCPDF_COLORS</a></li>
 <li>ConvertSchemaFile()&#160;:&#160;<a class="el" href="d7/d67/classado_schema.html#a31941552dcc75874b3e12c9de9fa4ae8">adoSchema</a></li>
 <li>convertSchemaFile()&#160;:&#160;<a class="el" href="d7/d67/classado_schema.html#a997703fb33cede96f288d54156be358d">adoSchema</a></li>
-<li>ConvertSchemaString()&#160;:&#160;<a class="el" href="d7/d67/classado_schema.html#a4a6025080a7970cba81eef383c8db4b3">adoSchema</a></li>
 <li>convertSchemaString()&#160;:&#160;<a class="el" href="d7/d67/classado_schema.html#a59427a78b2bf9c11b23ff4f20602bd9f">adoSchema</a></li>
+<li>ConvertSchemaString()&#160;:&#160;<a class="el" href="d7/d67/classado_schema.html#a4a6025080a7970cba81eef383c8db4b3">adoSchema</a></li>
 <li>convertStringToHexString()&#160;:&#160;<a class="el" href="d2/d31/class_t_c_p_d_f___s_t_a_t_i_c.html#a89884a1487619a6aa202a6c400a2791c">TCPDF_STATIC</a></li>
 <li>convertToASCIIDumbLossless()&#160;:&#160;<a class="el" href="da/d86/class_h_t_m_l_purifier___encoder.html#a60bc1be93b691bc03b1205103c839f7b">HTMLPurifier_Encoder</a></li>
 <li>convertToLookup()&#160;:&#160;<a class="el" href="df/de1/class_h_t_m_l_purifier___content_sets.html#a7d70a53edcd7b107f1961053edf1eeef">HTMLPurifier_ContentSets</a></li>
 <li>convertToUTF8()&#160;:&#160;<a class="el" href="da/d86/class_h_t_m_l_purifier___encoder.html#a6876fc3fbf0ae1ce1d06bd127fb55886">HTMLPurifier_Encoder</a></li>
+<li>COOKIE_METHOD_EXPLICIT_PARTITIONING&#160;:&#160;<a class="el" href="da/dec/classauth__lti_1_1local_1_1ltiadvantage_1_1utility_1_1cookie__helper.html#aa588a4373f7d05d08e31a7fed448a955">auth_lti\local\ltiadvantage\utility\cookie_helper</a></li>
+<li>COOKIE_METHOD_NO_PARTITIONING&#160;:&#160;<a class="el" href="da/dec/classauth__lti_1_1local_1_1ltiadvantage_1_1utility_1_1cookie__helper.html#a2fe086fb26545d69e2964a10762c7ac3">auth_lti\local\ltiadvantage\utility\cookie_helper</a></li>
+<li>COOKIE_METHOD_NOT_SUPPORTED&#160;:&#160;<a class="el" href="da/dec/classauth__lti_1_1local_1_1ltiadvantage_1_1utility_1_1cookie__helper.html#ab09e485b5c1780141a6bdaaded68d086">auth_lti\local\ltiadvantage\utility\cookie_helper</a></li>
+<li>cookie_response_headers_add_attributes()&#160;:&#160;<a class="el" href="da/dec/classauth__lti_1_1local_1_1ltiadvantage_1_1utility_1_1cookie__helper.html#afe3455cd7017f16e5595496ea7b2431d">auth_lti\local\ltiadvantage\utility\cookie_helper</a></li>
 <li>cookies()&#160;:&#160;<a class="el" href="d1/dad/class_guzzle_http_1_1_middleware.html#abb0cd141fa9bbd10ee7beda7c521a215">GuzzleHttp\Middleware</a></li>
 <li>COOKIES&#160;:&#160;<a class="el" href="d3/d92/class_guzzle_http_1_1_request_options.html#a000c2e4aacadb24f50bdbe8b9de7d66b">GuzzleHttp\RequestOptions</a></li>
 <li>cookies()&#160;:&#160;<a class="el" href="d9/db7/class_php_xml_rpc_1_1_response.html#a464d9a67992d10c33e664a0fd28f1ed8">PhpXmlRpc\Response</a></li>
+<li>cookies_supported()&#160;:&#160;<a class="el" href="da/dec/classauth__lti_1_1local_1_1ltiadvantage_1_1utility_1_1cookie__helper.html#a84a0b69a708e027c967e7e43aac32bcc">auth_lti\local\ltiadvantage\utility\cookie_helper</a></li>
 <li>COORDINATE&#160;:&#160;<a class="el" href="db/d33/class_google___service___coordinate.html#a9a1191290b9d53e4fe46bc5cadcaab1c">Google_Service_Coordinate</a></li>
 <li>COORDINATE_READONLY&#160;:&#160;<a class="el" href="db/d33/class_google___service___coordinate.html#a35a097fe3ce7b587dcc897825911ebce">Google_Service_Coordinate</a></li>
 <li>copy()&#160;:&#160;<a class="el" href="da/d8f/class_google___service___drive___files___resource.html#a572915d4de6488888c4fab9c507dcd6d">Google_Service_Drive_Files_Resource</a>, <a class="el" href="df/d0c/class_google___service___fusiontables___table___resource.html#a23f650f57de6c118cc5066fb4d88365b">Google_Service_Fusiontables_Table_Resource</a>, <a class="el" href="db/d92/class_google___service___storage___objects___resource.html#a62743a975b92b27591b1658050fefaab">Google_Service_Storage_Objects_Resource</a>, <a class="el" href="d3/d08/classgradingform__guide__instance.html#ab127f83a017d622e5cbd6845975a43f4">gradingform_guide_instance</a>, <a class="el" href="dc/d63/classgradingform__instance.html#aa6277d231e2eb8352f83ac287e320f6c">gradingform_instance</a>, <a class="el" href="d3/d6e/classgradingform__rubric__instance.html#aedc7dc3bc4be42a86212efaf1ac05d71">gradingform_rubric_instance</a>, <a class="el" href="d2/d6b/class_h_t_m_l_purifier___definition_cache___decorator.html#aa9915b657c65ce426ea9145d6eb39fa2">HTMLPurifier_DefinitionCache_Decorator</a>, <a class="el" href="d4/df5/class_h_t_m_l_purifier___definition_cache___decorator___cleanup.html#ac22c785877455f3ecd59f078a67be179">HTMLPurifier_DefinitionCache_Decorator_Cleanup</a>, <a class="el" href="d2/d0e/class_h_t_m_l_purifier___definition_cache___decorator___memory.html#a5ac4268e2b1a7e6d8170b978438e51c0">HTMLPurifier_DefinitionCache_Decorator_Memory</a></li>
@@ -1866,7 +1871,7 @@ $(function() {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 17 2024 02:27:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 24 2024 02:37:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

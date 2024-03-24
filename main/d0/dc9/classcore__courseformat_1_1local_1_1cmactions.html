@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240315) (757be30c390)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240322) (342319339fe)</div>
   </td>
  </tr>
  </tbody>
@@ -60,6 +60,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d2/d5d/classcore__courseformat_1_1local_1_1cmactions-members.html">List of all members</a>  </div>
@@ -76,6 +77,12 @@ Inheritance diagram for core_courseformat\local\cmactions:</div>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a69f11051d3b5f34b3ab3efb028327834" id="r_a69f11051d3b5f34b3ab3efb028327834"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a69f11051d3b5f34b3ab3efb028327834">rename</a> (int $cmid, string $name)</td></tr>
+<tr class="memdesc:a69f11051d3b5f34b3ab3efb028327834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rename a course module.  <br /></td></tr>
+<tr class="separator:a69f11051d3b5f34b3ab3efb028327834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:af7b596df4bd68999fb6a97df7d177906" id="r_af7b596df4bd68999fb6a97df7d177906"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d40/classcore__courseformat_1_1local_1_1baseactions.html#af7b596df4bd68999fb6a97df7d177906">get_cm_info</a> ($cmid)</td></tr>
@@ -248,13 +255,49 @@ stdClass stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$course<
 
 </div>
 </div>
+<a id="a69f11051d3b5f34b3ab3efb028327834" name="a69f11051d3b5f34b3ab3efb028327834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69f11051d3b5f34b3ab3efb028327834">&#9670;&#160;</a></span>rename()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\local\cmactions::rename </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$cmid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rename a course module. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$cmid</td><td>the course module id. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$name</td><td>the new name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>true if the course module was renamed, false otherwise. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>course/format/classes/local/<b>cmactions.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 17 2024 02:34:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 24 2024 02:44:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

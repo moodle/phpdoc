@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240315) (757be30c390)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240322) (342319339fe)</div>
   </td>
  </tr>
  </tbody>
@@ -73,6 +73,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:accbf655c73016004346573fa05857696" id="r_accbf655c73016004346573fa05857696"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accbf655c73016004346573fa05857696">__construct</a> (protected <a class="el" href="../../d1/db5/classsection__info.html">section_info</a> $sectioninfo)</td></tr>
 <tr class="memdesc:accbf655c73016004346573fa05857696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:accbf655c73016004346573fa05857696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a026256ddf3dd3af868222a83db3fd232" id="r_a026256ddf3dd3af868222a83db3fd232"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a026256ddf3dd3af868222a83db3fd232">preprocess_section_name</a> (<a class="el" href="../../d1/db5/classsection__info.html">section_info</a> $section, ?string $newname)</td></tr>
+<tr class="memdesc:a026256ddf3dd3af868222a83db3fd232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the section final name.  <br /></td></tr>
+<tr class="separator:a026256ddf3dd3af868222a83db3fd232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a0183b2ccf1778da4e5bcb93143720d" id="r_a4a0183b2ccf1778da4e5bcb93143720d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a0183b2ccf1778da4e5bcb93143720d">put_section_state_extra_updates</a> (<a class="el" href="../../d1/db5/classsection__info.html">section_info</a> $section, <a class="el" href="../../d5/df4/classcore__courseformat_1_1stateupdates.html">stateupdates</a> $updates)</td></tr>
+<tr class="memdesc:a4a0183b2ccf1778da4e5bcb93143720d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add extra state updates when put or create a section.  <br /></td></tr>
+<tr class="separator:a4a0183b2ccf1778da4e5bcb93143720d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -233,13 +239,81 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a026256ddf3dd3af868222a83db3fd232" name="a026256ddf3dd3af868222a83db3fd232"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a026256ddf3dd3af868222a83db3fd232">&#9670;&#160;</a></span>preprocess_section_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\sectiondelegate::preprocess_section_name </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/db5/classsection__info.html">section_info</a></td>          <td class="paramname"><span class="paramname"><em>$section</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?string</td>          <td class="paramname"><span class="paramname"><em>$newname</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Define the section final name. </p>
+<p>This method can process the section name and return the validated new name.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d1/db5/classsection__info.html">section_info</a></td><td class="paramname">$section</td><td></td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;null</td><td class="paramname">$newname</td><td>the new name value to store in the database </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string|null</td><td>the name value to store in the database </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4a0183b2ccf1778da4e5bcb93143720d" name="a4a0183b2ccf1778da4e5bcb93143720d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a0183b2ccf1778da4e5bcb93143720d">&#9670;&#160;</a></span>put_section_state_extra_updates()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\sectiondelegate::put_section_state_extra_updates </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d1/db5/classsection__info.html">section_info</a></td>          <td class="paramname"><span class="paramname"><em>$section</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d5/df4/classcore__courseformat_1_1stateupdates.html">stateupdates</a></td>          <td class="paramname"><span class="paramname"><em>$updates</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add extra state updates when put or create a section. </p>
+<p>This method is called every time the backend sends a delegated section state update to the UI.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d1/db5/classsection__info.html">section_info</a></td><td class="paramname">$section</td><td>the affected section. </td></tr>
+    <tr><td class="paramtype">stateupdates</td><td class="paramname">$updates</td><td>the state updates object to notify the UI. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>course/format/classes/<b>sectiondelegate.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 17 2024 02:34:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 24 2024 02:44:44 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

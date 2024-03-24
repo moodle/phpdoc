@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240315) (757be30c390)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240322) (342319339fe)</div>
   </td>
  </tr>
  </tbody>
@@ -88,6 +88,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3c0e8b13abd8db8ced165b5ddc51f923" id="r_a3c0e8b13abd8db8ced165b5ddc51f923"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c0e8b13abd8db8ced165b5ddc51f923">get_callbacks_for_hook</a> (string $hookclassname)</td></tr>
 <tr class="memdesc:a3c0e8b13abd8db8ced165b5ddc51f923"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns list of callbacks for given hook name.  <br /></td></tr>
 <tr class="separator:a3c0e8b13abd8db8ced165b5ddc51f923"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ba7865df6733cb43735e8a712312c92" id="r_a0ba7865df6733cb43735e8a712312c92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ba7865df6733cb43735e8a712312c92">get_hooks_deprecating_plugin_callback</a> (string $plugincallback)</td></tr>
+<tr class="memdesc:a0ba7865df6733cb43735e8a712312c92"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the plugin callback from lib.php is deprecated by any hooks, return the hooks' classnames.  <br /></td></tr>
+<tr class="separator:a0ba7865df6733cb43735e8a712312c92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61ebb2aec5bf26350ef3740412e5a18a" id="r_a61ebb2aec5bf26350ef3740412e5a18a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a61ebb2aec5bf26350ef3740412e5a18a">get_hooks_with_callbacks</a> ()</td></tr>
 <tr class="memdesc:a61ebb2aec5bf26350ef3740412e5a18a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the list of Hook class names that have registered callbacks.  <br /></td></tr>
 <tr class="separator:a61ebb2aec5bf26350ef3740412e5a18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,9 +121,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aa61f8d47b602c2cd9159fa8b5a4630ab" id="r_aa61f8d47b602c2cd9159fa8b5a4630ab"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa61f8d47b602c2cd9159fa8b5a4630ab">get_replaced_callbacks</a> (string $hookclassname)</td></tr>
 <tr class="memdesc:aa61f8d47b602c2cd9159fa8b5a4630ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of callbacks that the given hook class replaces (if any).  <br /></td></tr>
 <tr class="separator:aa61f8d47b602c2cd9159fa8b5a4630ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cd9e60cc20bf011a140107bddc1ec1b" id="r_a0cd9e60cc20bf011a140107bddc1ec1b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cd9e60cc20bf011a140107bddc1ec1b">phpunit_get_instance</a> (array $componentfiles)</td></tr>
-<tr class="memdesc:a0cd9e60cc20bf011a140107bddc1ec1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory method for testing of hook manager in PHPUnit tests.  <br /></td></tr>
-<tr class="separator:a0cd9e60cc20bf011a140107bddc1ec1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade83c97ca6447719e704dfb23afde2bb" id="r_ade83c97ca6447719e704dfb23afde2bb"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade83c97ca6447719e704dfb23afde2bb">phpunit_get_instance</a> (array $componentfiles, bool $persist=false)</td></tr>
+<tr class="memdesc:ade83c97ca6447719e704dfb23afde2bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory method for testing of hook manager in PHPUnit tests.  <br /></td></tr>
+<tr class="separator:ade83c97ca6447719e704dfb23afde2bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0880afda05a38df1be91a484aed94d0d" id="r_a0880afda05a38df1be91a484aed94d0d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0880afda05a38df1be91a484aed94d0d">phpunit_reset_instance</a> ()</td></tr>
+<tr class="memdesc:a0880afda05a38df1be91a484aed94d0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset self::$instance so that future calls to ::get_instance() will return a regular instance.  <br /></td></tr>
+<tr class="separator:a0880afda05a38df1be91a484aed94d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a4fdd27791babd17f1879d9cf8accda42" name="a4fdd27791babd17f1879d9cf8accda42"></a>
@@ -241,6 +247,37 @@ Static Public Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td>list of callback definitions </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0ba7865df6733cb43735e8a712312c92" name="a0ba7865df6733cb43735e8a712312c92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ba7865df6733cb43735e8a712312c92">&#9670;&#160;</a></span>get_hooks_deprecating_plugin_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core\hook\manager::get_hooks_deprecating_plugin_callback </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$plugincallback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If the plugin callback from lib.php is deprecated by any hooks, return the hooks' classnames. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$plugincallback</td><td>short callback name without the component prefix </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">?array</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -405,6 +442,8 @@ Static Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000219">Deprecated</a></b></dt><dd>in favour of get_hooks_deprecating_plugin_callback since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000093">Todo</a></b></dt><dd>Remove in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8 (<a href="https://tracker.moodle.org/browse/MDL-80327" class="el">MDL-80327</a>). </dd></dl>
 
 </div>
 </div>
@@ -445,8 +484,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a0cd9e60cc20bf011a140107bddc1ec1b" name="a0cd9e60cc20bf011a140107bddc1ec1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0cd9e60cc20bf011a140107bddc1ec1b">&#9670;&#160;</a></span>phpunit_get_instance()</h2>
+<a id="ade83c97ca6447719e704dfb23afde2bb" name="ade83c97ca6447719e704dfb23afde2bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade83c97ca6447719e704dfb23afde2bb">&#9670;&#160;</a></span>phpunit_get_instance()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -457,8 +496,12 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">static core\hook\manager::phpunit_get_instance </td>
           <td>(</td>
-          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$componentfiles</em></span></td><td>)</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$componentfiles</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$persist</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -472,6 +515,7 @@ Static Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$componentfiles</td><td>list of hook callback files for each component. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$persist</td><td>If true, the test instance will be stored in self::$instance. Be sure to call $this-&gt;resetAfterTest() in your test if you use this. </td></tr>
   </table>
   </dd>
 </dl>
@@ -520,6 +564,39 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a0880afda05a38df1be91a484aed94d0d" name="a0880afda05a38df1be91a484aed94d0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0880afda05a38df1be91a484aed94d0d">&#9670;&#160;</a></span>phpunit_reset_instance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core\hook\manager::phpunit_reset_instance </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reset self::$instance so that future calls to ::get_instance() will return a regular instance. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a304676e0256e7c8ad36367045c7452e1" name="a304676e0256e7c8ad36367045c7452e1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a304676e0256e7c8ad36367045c7452e1">&#9670;&#160;</a></span>phpunit_stop_redirections()</h2>
 
@@ -551,7 +628,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 17 2024 02:34:27 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 24 2024 02:44:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>
