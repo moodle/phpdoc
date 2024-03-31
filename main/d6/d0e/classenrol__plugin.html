@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240322) (342319339fe)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240326) (c895def59b1)</div>
   </td>
  </tr>
  </tbody>
@@ -264,9 +264,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa4b79087279be01dd92550d8f3aa93ed" id="r_aa4b79087279be01dd92550d8f3aa93ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa4b79087279be01dd92550d8f3aa93ed">unenrol_user</a> (stdClass $instance, $userid)</td></tr>
 <tr class="memdesc:aa4b79087279be01dd92550d8f3aa93ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unenrol user from course, the last unenrolment removes all remaining roles.  <br /></td></tr>
 <tr class="separator:aa4b79087279be01dd92550d8f3aa93ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03fbd82b33ba3d4a0c40ce8b29e01b47" id="r_a03fbd82b33ba3d4a0c40ce8b29e01b47"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03fbd82b33ba3d4a0c40ce8b29e01b47">update_communication</a> (int $instanceid, string $action, int $courseid)</td></tr>
-<tr class="memdesc:a03fbd82b33ba3d4a0c40ce8b29e01b47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update instance members.  <br /></td></tr>
-<tr class="separator:a03fbd82b33ba3d4a0c40ce8b29e01b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaafc60926e75e29b49851b1b836f719b" id="r_aaafc60926e75e29b49851b1b836f719b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaafc60926e75e29b49851b1b836f719b">update_communication</a> (int $enrolmentinstanceid, string $action, stdClass $course)</td></tr>
+<tr class="memdesc:aaafc60926e75e29b49851b1b836f719b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update instance members.  <br /></td></tr>
+<tr class="separator:aaafc60926e75e29b49851b1b836f719b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9f4bd94d400a79147666c7b46dde297" id="r_ad9f4bd94d400a79147666c7b46dde297"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad9f4bd94d400a79147666c7b46dde297">update_instance</a> ($instance, $data)</td></tr>
 <tr class="memdesc:ad9f4bd94d400a79147666c7b46dde297"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update instance of enrol plugin.  <br /></td></tr>
 <tr class="separator:ad9f4bd94d400a79147666c7b46dde297"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2667,8 +2667,8 @@ self::validate_plugin_data_context()}</dd></dl>
 
 </div>
 </div>
-<a id="a03fbd82b33ba3d4a0c40ce8b29e01b47" name="a03fbd82b33ba3d4a0c40ce8b29e01b47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03fbd82b33ba3d4a0c40ce8b29e01b47">&#9670;&#160;</a></span>update_communication()</h2>
+<a id="aaafc60926e75e29b49851b1b836f719b" name="aaafc60926e75e29b49851b1b836f719b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaafc60926e75e29b49851b1b836f719b">&#9670;&#160;</a></span>update_communication()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2676,7 +2676,7 @@ self::validate_plugin_data_context()}</dd></dl>
         <tr>
           <td class="memname">enrol_plugin::update_communication </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$instanceid</em>, </span></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$enrolmentinstanceid</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2686,7 +2686,7 @@ self::validate_plugin_data_context()}</dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$courseid</em></span>&#160;)</td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$course</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2695,9 +2695,9 @@ self::validate_plugin_data_context()}</dd></dl>
 <p>Update communication room membership for an instance action being performed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">int</td><td class="paramname">$instanceid</td><td>ID of the enrolment instance </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$enrolmentinstanceid</td><td>ID of the enrolment instance </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$action</td><td>The update action being performed </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$courseid</td><td>The id of the course </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>The course object </td></tr>
   </table>
   </dd>
 </dl>
@@ -2707,6 +2707,9 @@ self::validate_plugin_data_context()}</dd></dl>
   </table>
   </dd>
 </dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000644">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4.0. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dd/d42/classcore__communication_1_1hook__listener.html#ad6d543a7f1ddb71d47e0a3571b2d9c39" title="Update the communication memberships for enrol status change.">core_communication::hook_listener::update_communication_memberships_for_enrol_status_change()</a> </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000114">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-80491" class="el">MDL-80491</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8.</dd></dl>
 
 </div>
 </div>
@@ -3022,7 +3025,7 @@ self::validate_plugin_data_context()}</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 24 2024 02:43:23 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 31 2024 02:32:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

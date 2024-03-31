@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240322) (342319339fe)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240326) (c895def59b1)</div>
   </td>
  </tr>
  </tbody>
@@ -73,9 +73,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acfc4b722ad8fc1e96a08b527d6f30c3d" id="r_acfc4b722ad8fc1e96a08b527d6f30c3d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfc4b722ad8fc1e96a08b527d6f30c3d">add_members_to_room</a> (array $userids, bool $queue=true)</td></tr>
 <tr class="memdesc:acfc4b722ad8fc1e96a08b527d6f30c3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a communication ad-hoc task for add members operation and add the user mapping.  <br /></td></tr>
 <tr class="separator:acfc4b722ad8fc1e96a08b527d6f30c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada7f3a5d5aba5d572c94357d2decfd3c" id="r_ada7f3a5d5aba5d572c94357d2decfd3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada7f3a5d5aba5d572c94357d2decfd3c">create_and_configure_room</a> (string $communicationroomname, ?\<a class="el" href="../../d0/d00/classstored__file.html">stored_file</a> $avatar=null, ?\stdClass $instance=null,)</td></tr>
-<tr class="memdesc:ada7f3a5d5aba5d572c94357d2decfd3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a communication ad-hoc task for create operation.  <br /></td></tr>
-<tr class="separator:ada7f3a5d5aba5d572c94357d2decfd3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a421eebcd35db8502b3f2ad61bcc1c9ca" id="r_a421eebcd35db8502b3f2ad61bcc1c9ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a421eebcd35db8502b3f2ad61bcc1c9ca">configure_room_and_membership_by_provider</a> (string $provider, stdClass $instance, string $communicationroomname, array $users, ?\<a class="el" href="../../d0/d00/classstored__file.html">stored_file</a> $instanceimage=null,)</td></tr>
+<tr class="memdesc:a421eebcd35db8502b3f2ad61bcc1c9ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the room and membership by provider selected for the communication instance.  <br /></td></tr>
+<tr class="separator:a421eebcd35db8502b3f2ad61bcc1c9ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d27265fb5f17acefdef6e0f4aa2cffc" id="r_a7d27265fb5f17acefdef6e0f4aa2cffc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d27265fb5f17acefdef6e0f4aa2cffc">create_and_configure_room</a> (string $communicationroomname, ?\<a class="el" href="../../d0/d00/classstored__file.html">stored_file</a> $avatar=null, ?\stdClass $instance=null, bool $queue=true,)</td></tr>
+<tr class="memdesc:a7d27265fb5f17acefdef6e0f4aa2cffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a communication ad-hoc task for create operation.  <br /></td></tr>
+<tr class="separator:a7d27265fb5f17acefdef6e0f4aa2cffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dd53d89619d0139d3fabcede6391aae" id="r_a7dd53d89619d0139d3fabcede6391aae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7dd53d89619d0139d3fabcede6391aae">delete_room</a> ()</td></tr>
 <tr class="memdesc:a7dd53d89619d0139d3fabcede6391aae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a communication ad-hoc task for delete operation.  <br /></td></tr>
 <tr class="separator:a7dd53d89619d0139d3fabcede6391aae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,6 +119,9 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>reload</b> ()</td></tr>
 <tr class="memdesc:a6dd80c16216a8b204e1f9819e7ac17d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reload in the internal instance data. <br /></td></tr>
 <tr class="separator:a6dd80c16216a8b204e1f9819e7ac17d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2088e98d0307b2b3c7fcf662d8ccfcc" id="r_ad2088e98d0307b2b3c7fcf662d8ccfcc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2088e98d0307b2b3c7fcf662d8ccfcc">remove_all_members_from_room</a> (bool $queue=true)</td></tr>
+<tr class="memdesc:ad2088e98d0307b2b3c7fcf662d8ccfcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all users from the room.  <br /></td></tr>
+<tr class="separator:ad2088e98d0307b2b3c7fcf662d8ccfcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad67ddb7644955478d8e755087980b795" id="r_ad67ddb7644955478d8e755087980b795"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad67ddb7644955478d8e755087980b795">remove_members_from_room</a> (array $userids, bool $queue=true)</td></tr>
 <tr class="memdesc:ad67ddb7644955478d8e755087980b795"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a communication ad-hoc task for remove members operation or action immediately.  <br /></td></tr>
 <tr class="separator:ad67ddb7644955478d8e755087980b795"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,9 +139,9 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>sync_provider</b> ()</td></tr>
 <tr class="memdesc:ad524b27a6c17079060c86ad7df80c7a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the task to sync the provider data with local <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> data. <br /></td></tr>
 <tr class="separator:ad524b27a6c17079060c86ad7df80c7a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af53ebfed1f586cbdff88b9b2d74f4bc2" id="r_af53ebfed1f586cbdff88b9b2d74f4bc2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af53ebfed1f586cbdff88b9b2d74f4bc2">update_room</a> (?int $active=null, ?string $communicationroomname=null, ?\<a class="el" href="../../d0/d00/classstored__file.html">stored_file</a> $avatar=null, ?\stdClass $instance=null,)</td></tr>
-<tr class="memdesc:af53ebfed1f586cbdff88b9b2d74f4bc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a communication ad-hoc task for update operation.  <br /></td></tr>
-<tr class="separator:af53ebfed1f586cbdff88b9b2d74f4bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70ed0f49ac69cd4763feac5456759c3e" id="r_a70ed0f49ac69cd4763feac5456759c3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70ed0f49ac69cd4763feac5456759c3e">update_room</a> (?int $active=null, ?string $communicationroomname=null, ?\<a class="el" href="../../d0/d00/classstored__file.html">stored_file</a> $avatar=null, ?\stdClass $instance=null, bool $queue=true,)</td></tr>
+<tr class="memdesc:a70ed0f49ac69cd4763feac5456759c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a communication ad-hoc task for update operation.  <br /></td></tr>
+<tr class="separator:a70ed0f49ac69cd4763feac5456759c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a406266a344a7c6ffbc897b4cf9c47020" id="r_a406266a344a7c6ffbc897b4cf9c47020"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a406266a344a7c6ffbc897b4cf9c47020">update_room_membership</a> (array $userids, bool $queue=true)</td></tr>
 <tr class="memdesc:a406266a344a7c6ffbc897b4cf9c47020"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a communication ad-hoc task for updating members operation and update the user mapping.  <br /></td></tr>
 <tr class="separator:a406266a344a7c6ffbc897b4cf9c47020"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,8 +200,65 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ada7f3a5d5aba5d572c94357d2decfd3c" name="ada7f3a5d5aba5d572c94357d2decfd3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada7f3a5d5aba5d572c94357d2decfd3c">&#9670;&#160;</a></span>create_and_configure_room()</h2>
+<a id="a421eebcd35db8502b3f2ad61bcc1c9ca" name="a421eebcd35db8502b3f2ad61bcc1c9ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a421eebcd35db8502b3f2ad61bcc1c9ca">&#9670;&#160;</a></span>configure_room_and_membership_by_provider()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_communication\api::configure_room_and_membership_by_provider </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$provider</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$instance</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$communicationroomname</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$users</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?\<a class="el" href="../../d0/d00/classstored__file.html">stored_file</a></td>          <td class="paramname"><span class="paramname"><em>$instanceimage</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Configure the room and membership by provider selected for the communication instance. </p>
+<p>This method will add a task to the queue to configure the room and membership by comparing the change of provider. There are some major cases to consider for this method to allow minimum duplication when this api is used. Some of the major cases are:</p><ol type="1">
+<li>If the communication instance is not created at all, then create it and add members.</li>
+<li>If the current provider is none and the new provider is also none, then nothing to do.</li>
+<li>If the current and existing provider is the same, don't need to do anything.</li>
+<li>If provider set to none, remove all the members.</li>
+<li>If previous provider was not none and current provider is not none, but a different provider, remove members and add for the new one.</li>
+<li>If previous provider was none and current provider is not none, don't need to remove, just update the selected provider and add users to that provider. Do not queue the task to add members to room as the room might not have created yet. The add room task adds the task to add members to room anyway.</li>
+<li>If it's a new provider, never used/created, now create the room after considering all these cases for a new provider.</li>
+</ol>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$provider</td><td>The provider name </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$instance</td><td>The instance object </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$communicationroomname</td><td>The communication room name </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$users</td><td>The user ids to add to the room </td></tr>
+    <tr><td class="paramtype">null&#160;|&#160;<a class="el" href="../../d0/d00/classstored__file.html">stored_file</a></td><td class="paramname">$instanceimage</td><td>The stored file for the avatar </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7d27265fb5f17acefdef6e0f4aa2cffc" name="a7d27265fb5f17acefdef6e0f4aa2cffc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d27265fb5f17acefdef6e0f4aa2cffc">&#9670;&#160;</a></span>create_and_configure_room()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -213,7 +276,12 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">?\stdClass</td>          <td class="paramname"><span class="paramname"><em>$instance</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span></span>&#160;)</td>
+          <td class="paramtype">?\stdClass</td>          <td class="paramname"><span class="paramname"><em>$instance</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$queue</em><span class="paramdefsep"> = </span><span class="paramdefval">true</span></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -225,6 +293,7 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$communicationroomname</td><td>The communication room name </td></tr>
     <tr><td class="paramtype">null&#160;|&#160;<a class="el" href="../../d0/d00/classstored__file.html">stored_file</a></td><td class="paramname">$avatar</td><td>The stored file for the avatar </td></tr>
     <tr><td class="paramtype">stdClass&#160;|&#160;null</td><td class="paramname">$instance</td><td>The actual instance object </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$queue</td><td>Whether to queue the task or not </td></tr>
   </table>
   </dd>
 </dl>
@@ -516,7 +585,7 @@ Protected Member Functions</h2></td></tr>
 <p>Return the underlying communication processor object. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">processor</td><td></td></tr>
+    <tr><td class="paramname">?processor</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -710,6 +779,31 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad2088e98d0307b2b3c7fcf662d8ccfcc" name="ad2088e98d0307b2b3c7fcf662d8ccfcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2088e98d0307b2b3c7fcf662d8ccfcc">&#9670;&#160;</a></span>remove_all_members_from_room()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_communication\api::remove_all_members_from_room </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$queue</em><span class="paramdefsep"> = </span><span class="paramdefval">true</span></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove all users from the room. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">bool</td><td class="paramname">$queue</td><td>Whether to queue the task or not </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad67ddb7644955478d8e755087980b795" name="ad67ddb7644955478d8e755087980b795"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad67ddb7644955478d8e755087980b795">&#9670;&#160;</a></span>remove_members_from_room()</h2>
 
@@ -798,8 +892,8 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af53ebfed1f586cbdff88b9b2d74f4bc2" name="af53ebfed1f586cbdff88b9b2d74f4bc2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af53ebfed1f586cbdff88b9b2d74f4bc2">&#9670;&#160;</a></span>update_room()</h2>
+<a id="a70ed0f49ac69cd4763feac5456759c3e" name="a70ed0f49ac69cd4763feac5456759c3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70ed0f49ac69cd4763feac5456759c3e">&#9670;&#160;</a></span>update_room()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -822,7 +916,12 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">?\stdClass</td>          <td class="paramname"><span class="paramname"><em>$instance</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span></span>&#160;)</td>
+          <td class="paramtype">?\stdClass</td>          <td class="paramname"><span class="paramname"><em>$instance</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$queue</em><span class="paramdefsep"> = </span><span class="paramdefval">true</span></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -835,6 +934,7 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">null&#160;|&#160;string</td><td class="paramname">$communicationroomname</td><td>The communication room name </td></tr>
     <tr><td class="paramtype">null&#160;|&#160;<a class="el" href="../../d0/d00/classstored__file.html">stored_file</a></td><td class="paramname">$avatar</td><td>The stored file for the avatar </td></tr>
     <tr><td class="paramtype">stdClass&#160;|&#160;null</td><td class="paramname">$instance</td><td>The actual instance object </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$queue</td><td>Whether to queue the task or not </td></tr>
   </table>
   </dd>
 </dl>
@@ -878,7 +978,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 24 2024 02:44:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 31 2024 02:34:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

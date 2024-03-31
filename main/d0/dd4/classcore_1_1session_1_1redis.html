@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240322) (342319339fe)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240326) (c895def59b1)</div>
   </td>
  </tr>
  </tbody>
@@ -147,6 +147,10 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>COMPRESSION_NONE</b>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>COMPRESSION_ZSTD</b> = 'zstd'</td></tr>
 <tr class="memdesc:a77cf1a01f65287a63dc0d2ffdf6bac57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compressor: PHP Zstandard. <br /></td></tr>
 <tr class="separator:a77cf1a01f65287a63dc0d2ffdf6bac57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa02bbbfddaf697673f10e23cc387cff4" id="r_aa02bbbfddaf697673f10e23cc387cff4"><td class="memItemLeft" align="right" valign="top"><a id="aa02bbbfddaf697673f10e23cc387cff4" name="aa02bbbfddaf697673f10e23cc387cff4"></a>
+int const&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_RETRIES</b> = 5</td></tr>
+<tr class="memdesc:aa02bbbfddaf697673f10e23cc387cff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum number of retries for cache store operations. <br /></td></tr>
+<tr class="separator:aa02bbbfddaf697673f10e23cc387cff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -175,23 +179,27 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$auth</b> = ''</td>
 <tr class="memdesc:a7907de9fd834669dbdc1dc6f08dcc91c"><td class="mdescLeft">&#160;</td><td class="mdescRight">$auth redis password <br  />
  <br /></td></tr>
 <tr class="separator:a7907de9fd834669dbdc1dc6f08dcc91c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e621532fdcedf18c48c85e0f07da4c5" id="r_a5e621532fdcedf18c48c85e0f07da4c5"><td class="memItemLeft" align="right" valign="top"><a id="a5e621532fdcedf18c48c85e0f07da4c5" name="a5e621532fdcedf18c48c85e0f07da4c5"></a>
+bool bool&#160;</td><td class="memItemRight" valign="bottom"><b>$clustermode</b> = false</td></tr>
+<tr class="memdesc:a5e621532fdcedf18c48c85e0f07da4c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">$clustermode <a class="el" href="../../d7/d0a/class_redis.html" title="Caches data to redis.">Redis</a> in cluster mode. <br /></td></tr>
+<tr class="separator:a5e621532fdcedf18c48c85e0f07da4c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abed5758ee5decd52ca7e4b98fae6e6c0" id="r_abed5758ee5decd52ca7e4b98fae6e6c0"><td class="memItemLeft" align="right" valign="top"><a id="abed5758ee5decd52ca7e4b98fae6e6c0" name="abed5758ee5decd52ca7e4b98fae6e6c0"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>$compressor</b> = self::COMPRESSION_NONE</td></tr>
 <tr class="memdesc:abed5758ee5decd52ca7e4b98fae6e6c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">$compressor The compressor to use <br /></td></tr>
 <tr class="separator:abed5758ee5decd52ca7e4b98fae6e6c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f5dcd20ea3fe193527c54f728f2b10e" id="r_a7f5dcd20ea3fe193527c54f728f2b10e"><td class="memItemLeft" align="right" valign="top"><a id="a7f5dcd20ea3fe193527c54f728f2b10e" name="a7f5dcd20ea3fe193527c54f728f2b10e"></a>
-<a class="el" href="../../d7/d0a/class_redis.html">Redis</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$connection</b> = null</td></tr>
-<tr class="memdesc:a7f5dcd20ea3fe193527c54f728f2b10e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection. <br /></td></tr>
-<tr class="separator:a7f5dcd20ea3fe193527c54f728f2b10e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fcb3b0cec2a4a4a5c7b58895013e106" id="r_a2fcb3b0cec2a4a4a5c7b58895013e106"><td class="memItemLeft" align="right" valign="top"><a id="a2fcb3b0cec2a4a4a5c7b58895013e106" name="a2fcb3b0cec2a4a4a5c7b58895013e106"></a>
+<a class="el" href="../../d7/d0a/class_redis.html">Redis</a> RedisCluster&#160;</td><td class="memItemRight" valign="bottom"><b>$connection</b> = null</td></tr>
+<tr class="memdesc:a2fcb3b0cec2a4a4a5c7b58895013e106"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection. <br /></td></tr>
+<tr class="separator:a2fcb3b0cec2a4a4a5c7b58895013e106"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01e42afcc3f9cd42aa6f4c1654edf335" id="r_a01e42afcc3f9cd42aa6f4c1654edf335"><td class="memItemLeft" align="right" valign="top"><a id="a01e42afcc3f9cd42aa6f4c1654edf335" name="a01e42afcc3f9cd42aa6f4c1654edf335"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>$database</b> = 0</td></tr>
 <tr class="memdesc:a01e42afcc3f9cd42aa6f4c1654edf335"><td class="mdescLeft">&#160;</td><td class="mdescRight">$database the <a class="el" href="../../d7/d0a/class_redis.html" title="Caches data to redis.">Redis</a> database to store sesions in <br /></td></tr>
 <tr class="separator:a01e42afcc3f9cd42aa6f4c1654edf335"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4253ebbdb5ff59534d88cfae79b443e2" id="r_a4253ebbdb5ff59534d88cfae79b443e2"><td class="memItemLeft" align="right" valign="top"><a id="a4253ebbdb5ff59534d88cfae79b443e2" name="a4253ebbdb5ff59534d88cfae79b443e2"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>$host</b> = ''</td></tr>
-<tr class="memdesc:a4253ebbdb5ff59534d88cfae79b443e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">$host save_path string <br  />
+<tr class="memitem:a60a54faf1c4e1127fe9001a4df9315b6" id="r_a60a54faf1c4e1127fe9001a4df9315b6"><td class="memItemLeft" align="right" valign="top"><a id="a60a54faf1c4e1127fe9001a4df9315b6" name="a60a54faf1c4e1127fe9001a4df9315b6"></a>
+array array&#160;</td><td class="memItemRight" valign="bottom"><b>$host</b> = []</td></tr>
+<tr class="memdesc:a60a54faf1c4e1127fe9001a4df9315b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">$host save_path string <br  />
  <br /></td></tr>
-<tr class="separator:a4253ebbdb5ff59534d88cfae79b443e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a60a54faf1c4e1127fe9001a4df9315b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45c76ac4c698dd48aef66dcf4b6ac2c4" id="r_a45c76ac4c698dd48aef66dcf4b6ac2c4"><td class="memItemLeft" align="right" valign="top"><a id="a45c76ac4c698dd48aef66dcf4b6ac2c4" name="a45c76ac4c698dd48aef66dcf4b6ac2c4"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$lasthash</b> = null</td></tr>
 <tr class="memdesc:a45c76ac4c698dd48aef66dcf4b6ac2c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">$lasthash hash of the session data content <br /></td></tr>
@@ -806,7 +814,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timeout</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 24 2024 02:44:35 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 31 2024 02:34:05 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

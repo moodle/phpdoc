@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240322) (342319339fe)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240326) (c895def59b1)</div>
   </td>
  </tr>
  </tbody>
@@ -88,6 +88,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aad6d6a8405aeb781d99590c06f6f6dc5" id="r_aad6d6a8405aeb781d99590c06f6f6dc5"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad6d6a8405aeb781d99590c06f6f6dc5">recordings_enabled</a> ()</td></tr>
 <tr class="memdesc:aad6d6a8405aeb781d99590c06f6f6dc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates if recording settings are enabled.  <br /></td></tr>
 <tr class="separator:aad6d6a8405aeb781d99590c06f6f6dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa05f19fe6fd6e52838b66496ab097c3e" id="r_aa05f19fe6fd6e52838b66496ab097c3e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa05f19fe6fd6e52838b66496ab097c3e">server_credentials_invalid</a> ()</td></tr>
+<tr class="memdesc:aa05f19fe6fd6e52838b66496ab097c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if bbb server credentials are invalid.  <br /></td></tr>
+<tr class="separator:aa05f19fe6fd6e52838b66496ab097c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -98,10 +101,6 @@ Public Attributes</h2></td></tr>
 string const&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_CHECKSUM_ALGORITHM</b> = 'SHA256'</td></tr>
 <tr class="memdesc:adcd94b0ccd9646c57574055ffaefa7c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">the default bigbluebutton checksum algorithm <br /></td></tr>
 <tr class="separator:adcd94b0ccd9646c57574055ffaefa7c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a966189690fa0d4ee4f1d7360825452a1" id="r_a966189690fa0d4ee4f1d7360825452a1"><td class="memItemLeft" align="right" valign="top"><a id="a966189690fa0d4ee4f1d7360825452a1" name="a966189690fa0d4ee4f1d7360825452a1"></a>
-string const&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_DPA_URL</b> = 'https://blindsidenetworks.com/dpa-moodle-free-tier'</td></tr>
-<tr class="memdesc:a966189690fa0d4ee4f1d7360825452a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default bigbluebutton data processing agreement url. <br /></td></tr>
-<tr class="separator:a966189690fa0d4ee4f1d7360825452a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08e3876b07cd006d6c89103be568497a" id="r_a08e3876b07cd006d6c89103be568497a"><td class="memItemLeft" align="right" valign="top"><a id="a08e3876b07cd006d6c89103be568497a" name="a08e3876b07cd006d6c89103be568497a"></a>
 string const&#160;</td><td class="memItemRight" valign="bottom"><b>DEFAULT_SERVER_URL</b> = 'https://test-moodle.blindsidenetworks.com/bigbluebutton/'</td></tr>
 <tr class="memdesc:a08e3876b07cd006d6c89103be568497a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default bigbluebutton server url. <br /></td></tr>
@@ -408,6 +407,39 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aa05f19fe6fd6e52838b66496ab097c3e" name="aa05f19fe6fd6e52838b66496ab097c3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa05f19fe6fd6e52838b66496ab097c3e">&#9670;&#160;</a></span>server_credentials_invalid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static mod_bigbluebuttonbn\local\config::server_credentials_invalid </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if bbb server credentials are invalid. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="aa01c15ff43e8291c7acd17432c759d9a" name="aa01c15ff43e8291c7acd17432c759d9a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa01c15ff43e8291c7acd17432c759d9a">&#9670;&#160;</a></span>CHECKSUM_ALGORITHMS</h2>
@@ -425,7 +457,7 @@ Static Protected Member Functions</h2></td></tr>
 <div class="line">        <span class="stringliteral">&#39;SHA1&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;SHA512&#39;</span></div>
 <div class="line">    ]</div>
-<div class="ttc" id="aclassmod__bigbluebuttonbn_1_1local_1_1config_html_adcd94b0ccd9646c57574055ffaefa7c5"><div class="ttname"><a href="#adcd94b0ccd9646c57574055ffaefa7c5">mod_bigbluebuttonbn\local\config\DEFAULT_CHECKSUM_ALGORITHM</a></div><div class="ttdeci">string const DEFAULT_CHECKSUM_ALGORITHM</div><div class="ttdoc">the default bigbluebutton checksum algorithm</div><div class="ttdef"><b>Definition</b> config.php:43</div></div>
+<div class="ttc" id="aclassmod__bigbluebuttonbn_1_1local_1_1config_html_adcd94b0ccd9646c57574055ffaefa7c5"><div class="ttname"><a href="#adcd94b0ccd9646c57574055ffaefa7c5">mod_bigbluebuttonbn\local\config\DEFAULT_CHECKSUM_ALGORITHM</a></div><div class="ttdeci">string const DEFAULT_CHECKSUM_ALGORITHM</div><div class="ttdoc">the default bigbluebutton checksum algorithm</div><div class="ttdef"><b>Definition</b> config.php:41</div></div>
 </div><!-- fragment -->
 <p>list of supported bigbluebutton checksum algorithm </p>
 
@@ -437,7 +469,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 24 2024 02:45:09 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 31 2024 02:34:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

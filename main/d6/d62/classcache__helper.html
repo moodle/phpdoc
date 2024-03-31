@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240322) (342319339fe)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240326) (c895def59b1)</div>
   </td>
  </tr>
  </tbody>
@@ -124,6 +124,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>cron</b> ()</td></t
 <tr class="memitem:aed95e3dbc0898f54608655efb83aa268" id="r_aed95e3dbc0898f54608655efb83aa268"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed95e3dbc0898f54608655efb83aa268">invalidate_by_event</a> ($event, array $keys)</td></tr>
 <tr class="memdesc:aed95e3dbc0898f54608655efb83aa268"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalidates a given set of keys by means of an event.  <br /></td></tr>
 <tr class="separator:aed95e3dbc0898f54608655efb83aa268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ed9cf9e6648f414ac4780a9e1c58acd" id="r_a3ed9cf9e6648f414ac4780a9e1c58acd"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ed9cf9e6648f414ac4780a9e1c58acd">is_cluster_available</a> ()</td></tr>
+<tr class="memdesc:a3ed9cf9e6648f414ac4780a9e1c58acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether the cluster mode is available in PHP.  <br /></td></tr>
+<tr class="separator:a3ed9cf9e6648f414ac4780a9e1c58acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c1598653bbe78d2a9a72344b984d7b9" id="r_a9c1598653bbe78d2a9a72344b984d7b9"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c1598653bbe78d2a9a72344b984d7b9">purge_all</a> ($usewriter=false)</td></tr>
 <tr class="memdesc:a9c1598653bbe78d2a9a72344b984d7b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Purge all of the cache stores of all of their data.  <br /></td></tr>
 <tr class="separator:a9c1598653bbe78d2a9a72344b984d7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -957,6 +960,39 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$stats</b> = 
 
 </div>
 </div>
+<a id="a3ed9cf9e6648f414ac4780a9e1c58acd" name="a3ed9cf9e6648f414ac4780a9e1c58acd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ed9cf9e6648f414ac4780a9e1c58acd">&#9670;&#160;</a></span>is_cluster_available()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static cache_helper::is_cluster_available </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks whether the cluster mode is available in PHP. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td>Return true if the PHP supports redis cluster, otherwise false. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a9c1598653bbe78d2a9a72344b984d7b9" name="a9c1598653bbe78d2a9a72344b984d7b9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9c1598653bbe78d2a9a72344b984d7b9">&#9670;&#160;</a></span>purge_all()</h2>
 
@@ -1500,7 +1536,7 @@ static array&#160;</td><td class="memItemRight" valign="bottom"><b>$stats</b> = 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 24 2024 02:43:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 31 2024 02:32:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240322) (342319339fe)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240326) (c895def59b1)</div>
   </td>
  </tr>
  </tbody>
@@ -178,7 +178,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:gaf3ef8403402c885e7e823843dcb2a244"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate the form.  <br /></td></tr>
 <tr class="separator:gaf3ef8403402c885e7e823843dcb2a244"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d075bc7ca1551fc142a7dadc73240ad" id="r_a3d075bc7ca1551fc142a7dadc73240ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d075bc7ca1551fc142a7dadc73240ad">validation</a> ($data, $files)</td></tr>
-<tr class="memdesc:a3d075bc7ca1551fc142a7dadc73240ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dummy stub method - override if you needed to perform some extra validation.  <br /></td></tr>
+<tr class="memdesc:a3d075bc7ca1551fc142a7dadc73240ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validate the data from the form.  <br /></td></tr>
 <tr class="separator:a3d075bc7ca1551fc142a7dadc73240ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
@@ -265,6 +265,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$groupid</b></td></tr>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>$groupmode</b></td></tr>
 <tr class="memdesc:ad4aa506406fa0a8ae4f6c369138c4bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">editing group override (true) or user override (false). <br /></td></tr>
 <tr class="separator:ad4aa506406fa0a8ae4f6c369138c4bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e297e2c997c7f1001e4e235dfa874fb" id="r_a1e297e2c997c7f1001e4e235dfa874fb"><td class="memItemLeft" align="right" valign="top"><a id="a1e297e2c997c7f1001e4e235dfa874fb" name="a1e297e2c997c7f1001e4e235dfa874fb"></a>
+int int&#160;</td><td class="memItemRight" valign="bottom"><b>$overrideid</b></td></tr>
+<tr class="memdesc:a1e297e2c997c7f1001e4e235dfa874fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">overrideid, if provided. <br /></td></tr>
+<tr class="separator:a1e297e2c997c7f1001e4e235dfa874fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07916746da3cb1e3c2365c1d6a22c2c8" id="r_a07916746da3cb1e3c2365c1d6a22c2c8"><td class="memItemLeft" align="right" valign="top"><a id="a07916746da3cb1e3c2365c1d6a22c2c8" name="a07916746da3cb1e3c2365c1d6a22c2c8"></a>
 stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$quiz</b></td></tr>
 <tr class="memdesc:a07916746da3cb1e3c2365c1d6a22c2c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">the quiz settings object. <br /></td></tr>
@@ -430,19 +434,17 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
       </table>
 </div><div class="memdoc">
 
-<p>Dummy stub method - override if you needed to perform some extra validation. </p>
-<p>If there are errors return array of errors ("fieldname"=&gt;"error message"), otherwise true if ok.</p>
-<p>Server side rules do not work for uploaded files, implement serverside rules here if needed.</p>
+<p>Validate the data from the form. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>array of ("fieldname"=&gt;value) of submitted data </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$files</td><td>array of uploaded files "element_name"=&gt;tmp_file_path </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>form data </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$files</td><td>form files </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array</td><td>of "element_name"=&gt;"error_description" if there are errors, or an empty array if everything is OK (true allowed for backwards compatibility too). </td></tr>
+    <tr><td class="paramname">array</td><td>An array of error messages, where the key is is the mform element name and the value is the error. </td></tr>
   </table>
   </dd>
 </dl>
@@ -457,7 +459,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 24 2024 02:45:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 31 2024 02:34:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

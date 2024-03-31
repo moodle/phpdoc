@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240322) (342319339fe)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240326) (c895def59b1)</div>
   </td>
  </tr>
  </tbody>
@@ -86,9 +86,9 @@ Inheritance diagram for cachestore_redis:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2db679792cbc7264f40e03b04e3b6bca" id="r_a2db679792cbc7264f40e03b04e3b6bca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2db679792cbc7264f40e03b04e3b6bca">__construct</a> ($name, array $configuration=array())</td></tr>
-<tr class="memdesc:a2db679792cbc7264f40e03b04e3b6bca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an instance of this type of store.  <br /></td></tr>
-<tr class="separator:a2db679792cbc7264f40e03b04e3b6bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d416249be9a731fff4dc454268d7675" id="r_a6d416249be9a731fff4dc454268d7675"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d416249be9a731fff4dc454268d7675">__construct</a> ( $name, array $configuration=[],)</td></tr>
+<tr class="memdesc:a6d416249be9a731fff4dc454268d7675"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an instance of this type of store.  <br /></td></tr>
+<tr class="separator:a6d416249be9a731fff4dc454268d7675"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8403f2959e41181e10fb7d98301a428" id="r_ae8403f2959e41181e10fb7d98301a428"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae8403f2959e41181e10fb7d98301a428">acquire_lock</a> ($key, $ownerid)</td></tr>
 <tr class="memdesc:ae8403f2959e41181e10fb7d98301a428"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to acquire a lock with a given name.  <br /></td></tr>
 <tr class="separator:ae8403f2959e41181e10fb7d98301a428"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -298,11 +298,11 @@ string const&#160;</td><td class="memItemRight" valign="bottom"><b>TTL_SUFFIX</b
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:abb86b0a11f6deb84cb1ca4391ad0f839" id="r_abb86b0a11f6deb84cb1ca4391ad0f839"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abb86b0a11f6deb84cb1ca4391ad0f839">new_redis</a> (array $configuration)</td></tr>
-<tr class="memdesc:abb86b0a11f6deb84cb1ca4391ad0f839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="../../d7/d0a/class_redis.html" title="Caches data to redis.">Redis</a> instance and connect to the server.  <br /></td></tr>
+<tr class="memdesc:abb86b0a11f6deb84cb1ca4391ad0f839"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new <a class="el" href="../../d7/d0a/class_redis.html" title="Caches data to redis.">Redis</a> or RedisCluster instance and connect to the server.  <br /></td></tr>
 <tr class="separator:abb86b0a11f6deb84cb1ca4391ad0f839"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bccd8689a4993fde577cfbf25281afd" id="r_a5bccd8689a4993fde577cfbf25281afd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5bccd8689a4993fde577cfbf25281afd">ping</a> (<a class="el" href="../../d7/d0a/class_redis.html">Redis</a> $redis)</td></tr>
-<tr class="memdesc:a5bccd8689a4993fde577cfbf25281afd"><td class="mdescLeft">&#160;</td><td class="mdescRight">See if we can ping <a class="el" href="../../d7/d0a/class_redis.html" title="Caches data to redis.">Redis</a> server.  <br /></td></tr>
-<tr class="separator:a5bccd8689a4993fde577cfbf25281afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf22242fda451756a4ff78a5e18e2991" id="r_adf22242fda451756a4ff78a5e18e2991"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf22242fda451756a4ff78a5e18e2991">ping</a> (RedisCluster|<a class="el" href="../../d7/d0a/class_redis.html">Redis</a> $redis)</td></tr>
+<tr class="memdesc:adf22242fda451756a4ff78a5e18e2991"><td class="mdescLeft">&#160;</td><td class="mdescRight">See if we can ping <a class="el" href="../../d7/d0a/class_redis.html" title="Caches data to redis.">Redis</a> server.  <br /></td></tr>
+<tr class="separator:adf22242fda451756a4ff78a5e18e2991"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
@@ -348,10 +348,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$lockwait</b> = 60</td
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$name</b></td></tr>
 <tr class="memdesc:ac59102303bcac8192441d6c889a11871"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of this store. <br /></td></tr>
 <tr class="separator:ac59102303bcac8192441d6c889a11871"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a014a273289bf8716c60123a2472fef12" id="r_a014a273289bf8716c60123a2472fef12"><td class="memItemLeft" align="right" valign="top"><a id="a014a273289bf8716c60123a2472fef12" name="a014a273289bf8716c60123a2472fef12"></a>
-<a class="el" href="../../d7/d0a/class_redis.html">Redis</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$redis</b></td></tr>
-<tr class="memdesc:a014a273289bf8716c60123a2472fef12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection to <a class="el" href="../../d7/d0a/class_redis.html" title="Caches data to redis.">Redis</a> for this store. <br /></td></tr>
-<tr class="separator:a014a273289bf8716c60123a2472fef12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5133abeeb2dc85485a22cef2c584b08d" id="r_a5133abeeb2dc85485a22cef2c584b08d"><td class="memItemLeft" align="right" valign="top"><a id="a5133abeeb2dc85485a22cef2c584b08d" name="a5133abeeb2dc85485a22cef2c584b08d"></a>
+<a class="el" href="../../d7/d0a/class_redis.html">Redis</a> RedisCluster&#160;</td><td class="memItemRight" valign="bottom"><b>$redis</b></td></tr>
+<tr class="memdesc:a5133abeeb2dc85485a22cef2c584b08d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connection to <a class="el" href="../../d7/d0a/class_redis.html" title="Caches data to redis.">Redis</a> for this store. <br /></td></tr>
+<tr class="separator:a5133abeeb2dc85485a22cef2c584b08d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab81fee8e4bd55ae23b4f09a40505e0c" id="r_aab81fee8e4bd55ae23b4f09a40505e0c"><td class="memItemLeft" align="right" valign="top"><a id="aab81fee8e4bd55ae23b4f09a40505e0c" name="aab81fee8e4bd55ae23b4f09a40505e0c"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>$serializer</b> = Redis::SERIALIZER_PHP</td></tr>
 <tr class="memdesc:aab81fee8e4bd55ae23b4f09a40505e0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serializer for this store. <br /></td></tr>
@@ -363,8 +363,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$serializer</b> = Redi
 <dl class="section copyright"><dt>Copyright</dt><dd>2013 Adam Durana </dd></dl>
 <dl class="section user"><dt>License</dt><dd><a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a> GNU GPL v3 or later </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a2db679792cbc7264f40e03b04e3b6bca" name="a2db679792cbc7264f40e03b04e3b6bca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2db679792cbc7264f40e03b04e3b6bca">&#9670;&#160;</a></span>__construct()</h2>
+<a id="a6d416249be9a731fff4dc454268d7675" name="a6d416249be9a731fff4dc454268d7675"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d416249be9a731fff4dc454268d7675">&#9670;&#160;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -377,7 +377,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$serializer</b> = Redi
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$configuration</em><span class="paramdefsep"> = </span><span class="paramdefval">array()</span></span>&#160;)</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$configuration</em><span class="paramdefsep"> = </span><span class="paramdefval">[]</span></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1653,24 +1653,24 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$serializer</b> = Redi
 </table>
 </div><div class="memdoc">
 
-<p>Create a new <a class="el" href="../../d7/d0a/class_redis.html" title="Caches data to redis.">Redis</a> instance and connect to the server. </p>
+<p>Create a new <a class="el" href="../../d7/d0a/class_redis.html" title="Caches data to redis.">Redis</a> or RedisCluster instance and connect to the server. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$configuration</td><td>The server configuration </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$configuration</td><td>The redis instance configuration. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../d7/d0a/class_redis.html" title="Caches data to redis.">Redis</a></td><td></td></tr>
+    <tr><td class="paramname">Redis|RedisCluster|null</td><td></td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a5bccd8689a4993fde577cfbf25281afd" name="a5bccd8689a4993fde577cfbf25281afd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5bccd8689a4993fde577cfbf25281afd">&#9670;&#160;</a></span>ping()</h2>
+<a id="adf22242fda451756a4ff78a5e18e2991" name="adf22242fda451756a4ff78a5e18e2991"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf22242fda451756a4ff78a5e18e2991">&#9670;&#160;</a></span>ping()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1681,7 +1681,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$serializer</b> = Redi
         <tr>
           <td class="memname">cachestore_redis::ping </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d7/d0a/class_redis.html">Redis</a></td>          <td class="paramname"><span class="paramname"><em>$redis</em></span></td><td>)</td>
+          <td class="paramtype">RedisCluster|<a class="el" href="../../d7/d0a/class_redis.html">Redis</a></td>          <td class="paramname"><span class="paramname"><em>$redis</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1695,7 +1695,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$serializer</b> = Redi
 <p>See if we can ping <a class="el" href="../../d7/d0a/class_redis.html" title="Caches data to redis.">Redis</a> server. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../d7/d0a/class_redis.html" title="Caches data to redis.">Redis</a></td><td class="paramname">$redis</td><td></td></tr>
+    <tr><td class="paramtype">RedisCluster&#160;|&#160;<a class="el" href="../../d7/d0a/class_redis.html" title="Caches data to redis.">Redis</a></td><td class="paramname">$redis</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2238,7 +2238,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$serializer</b> = Redi
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 24 2024 02:43:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Mar 31 2024 02:32:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>
