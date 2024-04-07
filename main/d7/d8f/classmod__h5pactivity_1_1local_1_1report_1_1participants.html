@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240326) (c895def59b1)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240405) (26649f5750e)</div>
   </td>
  </tr>
  </tbody>
@@ -260,9 +260,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a65cee91324d6a95ba547c7f4fc6ef94d" id="r_a65cee91324d6a95ba547c7f4fc6ef94d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65cee91324d6a95ba547c7f4fc6ef94d">print</a> ()</td></tr>
 <tr class="memdesc:a65cee91324d6a95ba547c7f4fc6ef94d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print the report.  <br /></td></tr>
 <tr class="separator:a65cee91324d6a95ba547c7f4fc6ef94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8e98e7dd1335a34297cc8ce5a886afe" id="r_ae8e98e7dd1335a34297cc8ce5a886afe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d18/classflexible__table.html#ae8e98e7dd1335a34297cc8ce5a886afe">print_headers</a> ()</td></tr>
-<tr class="memdesc:ae8e98e7dd1335a34297cc8ce5a886afe"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function is not part of the public api.  <br /></td></tr>
-<tr class="separator:ae8e98e7dd1335a34297cc8ce5a886afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c8021308935fdfd9106858cd70b1e76" id="r_a2c8021308935fdfd9106858cd70b1e76"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c8021308935fdfd9106858cd70b1e76">print_headers</a> ()</td></tr>
+<tr class="memdesc:a2c8021308935fdfd9106858cd70b1e76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print headers.  <br /></td></tr>
+<tr class="separator:a2c8021308935fdfd9106858cd70b1e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a890b7b37df95ea3b9b829d4f0b22d1f9" id="r_a890b7b37df95ea3b9b829d4f0b22d1f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d18/classflexible__table.html#a890b7b37df95ea3b9b829d4f0b22d1f9">print_html</a> ()</td></tr>
 <tr class="memdesc:a890b7b37df95ea3b9b829d4f0b22d1f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method is deprecated although the old api is still supported.  <br /></td></tr>
 <tr class="separator:a890b7b37df95ea3b9b829d4f0b22d1f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2868,32 +2868,25 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$sortdata</b></td></
 
 </div>
 </div>
-<a id="ae8e98e7dd1335a34297cc8ce5a886afe" name="ae8e98e7dd1335a34297cc8ce5a886afe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8e98e7dd1335a34297cc8ce5a886afe">&#9670;&#160;</a></span>print_headers()</h2>
+<a id="a2c8021308935fdfd9106858cd70b1e76" name="a2c8021308935fdfd9106858cd70b1e76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c8021308935fdfd9106858cd70b1e76">&#9670;&#160;</a></span>print_headers()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">flexible_table::print_headers </td>
+          <td class="memname">mod_h5pactivity\local\report\participants::print_headers </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>This function is not part of the public api. </p>
+<p>Print headers. </p>
+<p>Note: as per <a href="https://tracker.moodle.org/browse/MDL-80754" class="el">MDL-80754</a>, we have to modify the header dynamically to display the total attempts in the column header. </p>
 
-<p>Reimplemented in <a class="el" href="../../d3/d56/classcore__reportbuilder_1_1table_1_1custom__report__table.html#aae17a3fb9275ce7f9e5734e5239778be">core_reportbuilder\table\custom_report_table</a>, and <a class="el" href="../../db/d7f/classcore__reportbuilder_1_1table_1_1custom__report__table__view.html#a200a3f227d6cb6241a5a26b5b02b6b57">core_reportbuilder\table\custom_report_table_view</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d3/d18/classflexible__table.html#ae8e98e7dd1335a34297cc8ce5a886afe">flexible_table</a>.</p>
 
 </div>
 </div>
@@ -2921,7 +2914,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$sortdata</b></td></
 </div><div class="memdoc">
 
 <p>This method is deprecated although the old api is still supported. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000973">Deprecated</a></b></dt><dd>1.9.2 - Jun 2, 2008 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000967">Deprecated</a></b></dt><dd>1.9.2 - Jun 2, 2008 </dd></dl>
 
 </div>
 </div>
@@ -2999,7 +2992,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$sortdata</b></td></
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000974">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000968">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
 
 </div>
 </div>
@@ -4171,7 +4164,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$sortdata</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 31 2024 02:34:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 7 2024 02:35:04 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240326) (c895def59b1)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240405) (26649f5750e)</div>
   </td>
  </tr>
  </tbody>
@@ -103,6 +103,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aca79a954d1d713850b0812f5021d3490" id="r_aca79a954d1d713850b0812f5021d3490"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca79a954d1d713850b0812f5021d3490">get_default_completion</a> ($<a class="el" href="../../de/d1c/classcore_1_1context_1_1course.html">course</a>, $<a class="el" href="../../df/dfc/classcore_1_1context_1_1module.html">module</a>, $flatten=true, string $suffix='')</td></tr>
 <tr class="memdesc:aca79a954d1d713850b0812f5021d3490"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns default completion rules for given module type in the given course.  <br /></td></tr>
 <tr class="separator:aca79a954d1d713850b0812f5021d3490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb150adc817510b33c31a420d415c288" id="r_adb150adc817510b33c31a420d415c288"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adb150adc817510b33c31a420d415c288">get_module_form</a> (string $modname, stdClass $<a class="el" href="../../de/d1c/classcore_1_1context_1_1course.html">course</a>, ?<a class="el" href="../../df/db9/classcm__info.html">cm_info</a> $cm=null, string $suffix='')</td></tr>
+<tr class="memdesc:adb150adc817510b33c31a420d415c288"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a mod_form of the given module.  <br /></td></tr>
+<tr class="separator:adb150adc817510b33c31a420d415c288"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -172,7 +175,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$courseid</b></td></tr
 <p>Applies completion from the bulk edit form to all selected modules. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$data</td><td>data received from the <a class="el" href="../../dc/dcb/classcore__completion__bulkedit__form.html" title="Bulk edit activity completion form.">core_completion_bulkedit_form</a> </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$data</td><td>data received from the <a class="el" href="../../dc/dcb/classcore__completion__bulkedit__form.html">core_completion_bulkedit_form</a> </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$updateinstances</td><td>if we need to update the instance tables of the module (i.e. 'assign', 'forum', etc.) - if no module-specific completion rules were added to the form, update of the module table is not needed. </td></tr>
   </table>
   </dd>
@@ -257,7 +260,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$courseid</b></td></tr
 <p>Saves default completion from edit form to all selected module types. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$data</td><td>data received from the <a class="el" href="../../dc/dcb/classcore__completion__bulkedit__form.html" title="Bulk edit activity completion form.">core_completion_bulkedit_form</a> </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$data</td><td>data received from the <a class="el" href="../../dc/dcb/classcore__completion__bulkedit__form.html">core_completion_bulkedit_form</a> </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$updatecustomrules</td><td>if we need to update the custom rules of the module - if no module-specific completion rules were added to the form, update of the module table is not needed. </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$suffix</td><td>the suffix to add to the name of the completion rules. </td></tr>
   </table>
@@ -457,7 +460,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$courseid</b></td></tr
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000059">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000060">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 
 </div>
 </div>
@@ -589,13 +592,69 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$courseid</b></td></tr
 
 </div>
 </div>
+<a id="adb150adc817510b33c31a420d415c288" name="adb150adc817510b33c31a420d415c288"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb150adc817510b33c31a420d415c288">&#9670;&#160;</a></span>get_module_form()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_completion\manager::get_module_form </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$modname</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$course</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?<a class="el" href="../../df/db9/classcm__info.html">cm_info</a></td>          <td class="paramname"><span class="paramname"><em>$cm</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$suffix</em><span class="paramdefsep"> = </span><span class="paramdefval">''</span></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return a mod_form of the given module. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$modname</td><td>Module to get the form from. </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>Course object. </td></tr>
+    <tr><td class="paramtype">?cm_info</td><td class="paramname">$cm</td><td><a class="el" href="../../df/db9/classcm__info.html">cm_info</a> object to use. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$suffix</td><td>The suffix to add to the name of the completion rules. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">?::moodleform_mod</td><td>The <a class="el" href="../../d2/d19/classmoodleform__mod.html">moodleform_mod</a> object if everything goes fine. Null otherwise. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>completion/classes/<b>manager.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 31 2024 02:34:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 7 2024 02:34:32 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

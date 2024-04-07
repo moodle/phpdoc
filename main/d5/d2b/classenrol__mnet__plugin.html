@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240326) (c895def59b1)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240405) (26649f5750e)</div>
   </td>
  </tr>
  </tbody>
@@ -195,6 +195,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a328f59fc5433e03a7229e589a7b2ec87" id="r_a328f59fc5433e03a7229e589a7b2ec87"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/classenrol__plugin.html#a328f59fc5433e03a7229e589a7b2ec87">get_user_enrolment_actions</a> (<a class="el" href="../../dd/d43/classcourse__enrolment__manager.html">course_enrolment_manager</a> $manager, $ue)</td></tr>
 <tr class="memdesc:a328f59fc5433e03a7229e589a7b2ec87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets an array of the user enrolment actions.  <br /></td></tr>
 <tr class="separator:a328f59fc5433e03a7229e589a7b2ec87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9016e06e5463c82fd128aac3e0f723b4" id="r_a9016e06e5463c82fd128aac3e0f723b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/classenrol__plugin.html#a9016e06e5463c82fd128aac3e0f723b4">get_welcome_message_contact</a> (int $sendoption, context $context,)</td></tr>
+<tr class="memdesc:a9016e06e5463c82fd128aac3e0f723b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the "from" contact which the message will be sent from.  <br /></td></tr>
+<tr class="separator:a9016e06e5463c82fd128aac3e0f723b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb924cd37489787da3350c54849caa45" id="r_adb924cd37489787da3350c54849caa45"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/classenrol__plugin.html#adb924cd37489787da3350c54849caa45">has_bulk_operations</a> (<a class="el" href="../../dd/d43/classcourse__enrolment__manager.html">course_enrolment_manager</a> $manager)</td></tr>
 <tr class="memdesc:adb924cd37489787da3350c54849caa45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the plugin has one or more bulk operations that can be performed on user enrolments.  <br /></td></tr>
 <tr class="separator:adb924cd37489787da3350c54849caa45"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,6 +233,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaf9185e2fc2289000b4749b3025d1332" id="r_aaf9185e2fc2289000b4749b3025d1332"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/classenrol__plugin.html#aaf9185e2fc2289000b4749b3025d1332">roles_protected</a> ()</td></tr>
 <tr class="memdesc:aaf9185e2fc2289000b4749b3025d1332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does this plugin assign protected roles are can they be manually removed?  <br /></td></tr>
 <tr class="separator:aaf9185e2fc2289000b4749b3025d1332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2056d4b79bc520448aabbc291d571c04" id="r_a2056d4b79bc520448aabbc291d571c04"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/classenrol__plugin.html#a2056d4b79bc520448aabbc291d571c04">send_course_welcome_message_to_user</a> (stdClass $instance, int $userid, int $sendoption, ?string $message='',)</td></tr>
+<tr class="memdesc:a2056d4b79bc520448aabbc291d571c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send course welcome message to user.  <br /></td></tr>
+<tr class="separator:a2056d4b79bc520448aabbc291d571c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1f15a538d447a6be584a14fa2145b54" id="r_ad1f15a538d447a6be584a14fa2145b54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d0e/classenrol__plugin.html#ad1f15a538d447a6be584a14fa2145b54">send_expiry_notifications</a> ($trace)</td></tr>
 <tr class="memdesc:ad1f15a538d447a6be584a14fa2145b54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send expiry notifications.  <br /></td></tr>
 <tr class="separator:ad1f15a538d447a6be584a14fa2145b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1874,7 +1880,7 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d2/d2d/classenrol__guest__plugin.html#a05d86778a0221560b9c916421da87f3b">enrol_guest_plugin</a>, and <a class="el" href="../../de/d61/classenrol__self__plugin.html#af097d09d655c91a0045383ce9bf0818f">enrol_self_plugin</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d2/d2d/classenrol__guest__plugin.html#a05d86778a0221560b9c916421da87f3b">enrol_guest_plugin</a>, <a class="el" href="../../d5/de9/classenrol__manual__plugin.html#a51ccb7f9f3a43809459423a9156dc298">enrol_manual_plugin</a>, and <a class="el" href="../../de/d61/classenrol__self__plugin.html#af097d09d655c91a0045383ce9bf0818f">enrol_self_plugin</a>.</p>
 
 </div>
 </div>
@@ -2224,6 +2230,50 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a9016e06e5463c82fd128aac3e0f723b4" name="a9016e06e5463c82fd128aac3e0f723b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9016e06e5463c82fd128aac3e0f723b4">&#9670;&#160;</a></span>get_welcome_message_contact()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enrol_plugin::get_welcome_message_contact </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$sendoption</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">context</td>          <td class="paramname"><span class="paramname"><em>$context</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the "from" contact which the message will be sent from. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$sendoption</td><td>send email from constant ENROL_SEND_EMAIL_FROM_* </td></tr>
+    <tr><td class="paramtype">context</td><td class="paramname">$context</td><td>where the user will be fetched from. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">null|stdClass</td><td>the contact user object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="adb924cd37489787da3350c54849caa45" name="adb924cd37489787da3350c54849caa45"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adb924cd37489787da3350c54849caa45">&#9670;&#160;</a></span>has_bulk_operations()</h2>
 
@@ -2285,7 +2335,7 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000643">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 <a href="https://tracker.moodle.org/browse/MDL-35864" class="el">MDL-35864</a> - please use <a class="el" href="#a4df3f8d64c8049aedfa17dd92598f99b" title="Is it possible to delete enrol instance via standard UI?">can_delete_instance()</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000646">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.8 <a href="https://tracker.moodle.org/browse/MDL-35864" class="el">MDL-35864</a> - please use <a class="el" href="#a4df3f8d64c8049aedfa17dd92598f99b" title="Is it possible to delete enrol instance via standard UI?">can_delete_instance()</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -2848,6 +2898,56 @@ self::validate_plugin_data_context()}</dd></dl>
 
 </div>
 </div>
+<a id="a2056d4b79bc520448aabbc291d571c04" name="a2056d4b79bc520448aabbc291d571c04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2056d4b79bc520448aabbc291d571c04">&#9670;&#160;</a></span>send_course_welcome_message_to_user()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enrol_plugin::send_course_welcome_message_to_user </td>
+          <td>(</td>
+          <td class="paramtype">stdClass</td>          <td class="paramname"><span class="paramname"><em>$instance</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$userid</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$sendoption</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?string</td>          <td class="paramname"><span class="paramname"><em>$message</em><span class="paramdefsep"> = </span><span class="paramdefval">''</span></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Send course welcome message to user. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$instance</td><td>Enrol instance. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>User ID. </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$sendoption</td><td>Send email from constant ENROL_SEND_EMAIL_FROM_* </td></tr>
+    <tr><td class="paramtype">null&#160;|&#160;string</td><td class="paramname">$message</td><td>Message to send to the user. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad1f15a538d447a6be584a14fa2145b54" name="ad1f15a538d447a6be584a14fa2145b54"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad1f15a538d447a6be584a14fa2145b54">&#9670;&#160;</a></span>send_expiry_notifications()</h2>
 
@@ -3192,9 +3292,9 @@ self::validate_plugin_data_context()}</dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000644">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4.0. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000647">Deprecated</a></b></dt><dd>Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4.0. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../dd/d42/classcore__communication_1_1hook__listener.html#ad6d543a7f1ddb71d47e0a3571b2d9c39" title="Update the communication memberships for enrol status change.">core_communication::hook_listener::update_communication_memberships_for_enrol_status_change()</a> </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000114">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-80491" class="el">MDL-80491</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8.</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000115">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-80491" class="el">MDL-80491</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8.</dd></dl>
 
 </div>
 </div>
@@ -3540,7 +3640,7 @@ self::validate_plugin_data_context()}</dd></dl>
 
 <p>Check if plugin custom data is allowed in relevant context. </p>
 <p>This is called from the <a class="el" href="../../d5/d49/namespacetool__uploadcourse.html" title="&#160;">tool_uploadcourse</a> if the plugin supports instance creation in upload course ({</p><dl class="section see"><dt>See also</dt><dd>self::is_csv_upload_supported()})</dd></dl>
-<p>The fallback is to call the <a class="el" href="#a3f9c606ae31380da895543c165d0daf2" title="Perform custom validation of the data used to edit the instance.">edit_instance_validation()</a> but it will be better if the plugins implement this method to return better error messages.</p>
+<p>Override it if plugin can validate provided data in relevant context.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$enrolmentdata</td><td>enrolment data to validate. </td></tr>
@@ -3565,7 +3665,7 @@ self::validate_plugin_data_context()}</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 31 2024 02:32:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 7 2024 02:33:15 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

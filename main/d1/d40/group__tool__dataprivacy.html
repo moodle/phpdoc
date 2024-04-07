@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240326) (c895def59b1)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240405) (26649f5750e)</div>
   </td>
  </tr>
  </tbody>
@@ -179,6 +179,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d1e/classtool__dataprivacy_1_1form_1_1purpose.html">tool_dataprivacy\form\purpose</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Data purpose form.  <a href="../../d2/d1e/classtool__dataprivacy_1_1form_1_1purpose.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d37/classtool__dataprivacy_1_1hook__callbacks.html">tool_dataprivacy\hook_callbacks</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de4/classtool__dataprivacy_1_1local_1_1helper.html">tool_dataprivacy\local\helper</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class containing helper functions for the data privacy tool.  <a href="../../db/de4/classtool__dataprivacy_1_1local_1_1helper.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -285,15 +287,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ga03508db1df6cd3ec8c890e4504ce44d5" id="r_ga03508db1df6cd3ec8c890e4504ce44d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga03508db1df6cd3ec8c890e4504ce44d5">tool_dataprivacy_pluginfile</a> ($course, $cm, $context, $filearea, $args, $forcedownload, array $options=array())</td></tr>
 <tr class="memdesc:ga03508db1df6cd3ec8c890e4504ce44d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serves any files associated with the data privacy settings.  <br /></td></tr>
 <tr class="separator:ga03508db1df6cd3ec8c890e4504ce44d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga666c9af7169144681d96c7bff0153656" id="r_ga666c9af7169144681d96c7bff0153656"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga666c9af7169144681d96c7bff0153656">tool_dataprivacy_standard_footer_html</a> ()</td></tr>
-<tr class="memdesc:ga666c9af7169144681d96c7bff0153656"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback to add footer elements.  <br /></td></tr>
-<tr class="separator:ga666c9af7169144681d96c7bff0153656"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac5f8b3514c57762de2ef6bdd5476063f" id="r_gac5f8b3514c57762de2ef6bdd5476063f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gac5f8b3514c57762de2ef6bdd5476063f">xmldb_tool_dataprivacy_upgrade</a> ($oldversion)</td></tr>
 <tr class="memdesc:gac5f8b3514c57762de2ef6bdd5476063f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to upgrade <a class="el" href="../../dc/d73/namespacetool__dataprivacy.html" title="&#160;">tool_dataprivacy</a>.  <br /></td></tr>
 <tr class="separator:gac5f8b3514c57762de2ef6bdd5476063f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
+<tr class="memitem:ga151f6e603ac02a25364ad54bee36ab2a" id="r_ga151f6e603ac02a25364ad54bee36ab2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga151f6e603ac02a25364ad54bee36ab2a">$callbacks</a></td></tr>
+<tr class="separator:ga151f6e603ac02a25364ad54bee36ab2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3bd1a55d998861e02e56c127f4b46c94" id="r_ga3bd1a55d998861e02e56c127f4b46c94"><td class="memItemLeft" align="right" valign="top"><a id="ga3bd1a55d998861e02e56c127f4b46c94" name="ga3bd1a55d998861e02e56c127f4b46c94"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$capabilities</b></td></tr>
 <tr class="separator:ga3bd1a55d998861e02e56c127f4b46c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -598,31 +599,6 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 
 </div>
 </div>
-<a id="ga666c9af7169144681d96c7bff0153656" name="ga666c9af7169144681d96c7bff0153656"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga666c9af7169144681d96c7bff0153656">&#9670;&#160;</a></span>tool_dataprivacy_standard_footer_html()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">tool_dataprivacy_standard_footer_html </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Callback to add footer elements. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">string</td><td>HTML footer content </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="gac5f8b3514c57762de2ef6bdd5476063f" name="gac5f8b3514c57762de2ef6bdd5476063f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac5f8b3514c57762de2ef6bdd5476063f">&#9670;&#160;</a></span>xmldb_tool_dataprivacy_upgrade()</h2>
 
@@ -655,6 +631,26 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="ga151f6e603ac02a25364ad54bee36ab2a" name="ga151f6e603ac02a25364ad54bee36ab2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga151f6e603ac02a25364ad54bee36ab2a">&#9670;&#160;</a></span>$callbacks</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">$callbacks</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= [</div>
+<div class="line">    [</div>
+<div class="line">        <span class="stringliteral">&#39;hook&#39;</span> =&gt; core\hook\output\before_standard_footer_html_generation::class,</div>
+<div class="line">        <span class="stringliteral">&#39;callback&#39;</span> =&gt; tool_dataprivacy\hook_callbacks::class . <span class="stringliteral">&#39;::standard_footer_html&#39;</span>,</div>
+<div class="line">    ],</div>
+<div class="line">]</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="gac8133dac47f7c0c4f1608117f3e3a667" name="gac8133dac47f7c0c4f1608117f3e3a667"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac8133dac47f7c0c4f1608117f3e3a667">&#9670;&#160;</a></span>$definitions</h2>
 
@@ -756,7 +752,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 31 2024 02:32:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 7 2024 02:33:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

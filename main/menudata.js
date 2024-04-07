@@ -143,6 +143,7 @@ var menudata={children:[
 {text:"z",url:"functions_func_z.html#index_z"}]},
 {text:"Variables",url:"functions_vars.html",children:[
 {text:"$",url:"functions_vars.html#index__24"},
+{text:"_",url:"functions_vars__.html#index__5F"},
 {text:"a",url:"functions_vars_a.html#index_a"},
 {text:"b",url:"functions_vars_b.html#index_b"},
 {text:"c",url:"functions_vars_c.html#index_c"},

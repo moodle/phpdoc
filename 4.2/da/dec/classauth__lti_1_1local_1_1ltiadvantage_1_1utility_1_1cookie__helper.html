@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2.6+ (Build: 20240326) (fa4a79d6d74)</div>
+   <div id="projectbrief">Moodle 4.2.6+ (Build: 20240405) (c0038b965ed)</div>
   </td>
  </tr>
  </tbody>
@@ -84,6 +84,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a692ca5dca1c3d8efc33842ad70f7e947" id="r_a692ca5dca1c3d8efc33842ad70f7e947"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a692ca5dca1c3d8efc33842ad70f7e947">get_cookies_supported_method</a> ()</td></tr>
 <tr class="memdesc:a692ca5dca1c3d8efc33842ad70f7e947"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a cookie check has been made, gets the method used to set a cookie, or self::COOKIE_METHOD_NOT_SUPPORTED if not supported.  <br /></td></tr>
 <tr class="separator:a692ca5dca1c3d8efc33842ad70f7e947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab9cc4cdb4b0a31008bd09341c9bd807" id="r_aab9cc4cdb4b0a31008bd09341c9bd807"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab9cc4cdb4b0a31008bd09341c9bd807">setup_session_cookie</a> ()</td></tr>
+<tr class="memdesc:aab9cc4cdb4b0a31008bd09341c9bd807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets up the session cookie according to the method used in the cookie check, and with SameSite=None; Secure attributes.  <br /></td></tr>
+<tr class="separator:aab9cc4cdb4b0a31008bd09341c9bd807"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -322,13 +325,46 @@ self::COOKIE_METHOD_EXPLICIT_PARTITIONING</dd></dl>
 
 </div>
 </div>
+<a id="aab9cc4cdb4b0a31008bd09341c9bd807" name="aab9cc4cdb4b0a31008bd09341c9bd807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab9cc4cdb4b0a31008bd09341c9bd807">&#9670;&#160;</a></span>setup_session_cookie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auth_lti\local\ltiadvantage\utility\cookie_helper::setup_session_cookie </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets up the session cookie according to the method used in the cookie check, and with SameSite=None; Secure attributes. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>auth/lti/classes/local/ltiadvantage/utility/<b>cookie_helper.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 31 2024 02:25:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 7 2024 02:26:27 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

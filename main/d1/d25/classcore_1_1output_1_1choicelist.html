@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240326) (c895def59b1)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240405) (26649f5750e)</div>
   </td>
  </tr>
  </tbody>
@@ -101,6 +101,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa5216081abd5d997dabd8c82eb140348" id="r_aa5216081abd5d997dabd8c82eb140348"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5216081abd5d997dabd8c82eb140348">get_description</a> ()</td></tr>
 <tr class="memdesc:aa5216081abd5d997dabd8c82eb140348"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the choice description option.  <br /></td></tr>
 <tr class="separator:aa5216081abd5d997dabd8c82eb140348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6877767f94f11fdda3f59883c0062e92" id="r_a6877767f94f11fdda3f59883c0062e92"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6877767f94f11fdda3f59883c0062e92">get_option_extras</a> (string $value)</td></tr>
+<tr class="memdesc:a6877767f94f11fdda3f59883c0062e92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the HTML attributes for a given value from the options array.  <br /></td></tr>
+<tr class="separator:a6877767f94f11fdda3f59883c0062e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a844473f4669d41956fae757e5aaf7c72" id="r_a844473f4669d41956fae757e5aaf7c72"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a844473f4669d41956fae757e5aaf7c72">get_selectable_options</a> ()</td></tr>
+<tr class="memdesc:a844473f4669d41956fae757e5aaf7c72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the selectable options.  <br /></td></tr>
+<tr class="separator:a844473f4669d41956fae757e5aaf7c72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b635c70329f6def488f92f5cbce06c7" id="r_a5b635c70329f6def488f92f5cbce06c7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b635c70329f6def488f92f5cbce06c7">get_selected_content</a> (<a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a> $output)</td></tr>
 <tr class="memdesc:a5b635c70329f6def488f92f5cbce06c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the selected option HTML.  <br /></td></tr>
 <tr class="separator:a5b635c70329f6def488f92f5cbce06c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -354,6 +360,63 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$selected</b> = nul
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string|null</td><td>the current description. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6877767f94f11fdda3f59883c0062e92" name="a6877767f94f11fdda3f59883c0062e92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6877767f94f11fdda3f59883c0062e92">&#9670;&#160;</a></span>get_option_extras()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core\output\choicelist::get_option_extras </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$value</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieves the HTML attributes for a given value from the options array. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$value</td><td>The value for which to retrieve the extras. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>an array of HTML attributes of the option (attribute =&gt; value). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a844473f4669d41956fae757e5aaf7c72" name="a844473f4669d41956fae757e5aaf7c72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a844473f4669d41956fae757e5aaf7c72">&#9670;&#160;</a></span>get_selectable_options()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core\output\choicelist::get_selectable_options </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the selectable options. </p>
+<p>This method returns an array of options that are selectable, excluding the selected option and any disabled options.</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass[]</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -662,7 +725,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$selected</b> = nul
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 31 2024 02:34:03 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 7 2024 02:34:22 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

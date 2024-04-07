@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240326) (c895def59b1)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240405) (26649f5750e)</div>
   </td>
  </tr>
  </tbody>
@@ -772,18 +772,20 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
 <p>Perform the necessary preprocessing for the hint fields. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$question</td><td>the data being passed to the form. </td></tr>
+    <tr><td class="paramtype">object</td><td class="paramname">$question</td><td>The data being passed to the form. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$withclearwrong</td><td>Clear wrong hints. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$withshownumpartscorrect</td><td>Show number correct. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">object::$question</td><td>the modified data. </td></tr>
+    <tr><td class="paramname">stdClass</td><td>The modified data. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d4/db6/classqtype__ddmarker__edit__form.html#a2ba95b8e0ba40ea79a1936eba98a1f59">qtype_ddmarker_edit_form</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d4/db6/classqtype__ddmarker__edit__form.html#a2ba95b8e0ba40ea79a1936eba98a1f59">qtype_ddmarker_edit_form</a>, and <a class="el" href="../../d1/dc7/classqtype__ordering__edit__form.html#a155dd536556e48324f3aa75352125a7a">qtype_ordering_edit_form</a>.</p>
 
 </div>
 </div>
@@ -1312,7 +1314,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d4/db6/classqtype__ddmarker__edit__form.html#aef1b0527bfea6aeba67799ceacb5eb83">qtype_ddmarker_edit_form</a>, and <a class="el" href="../../dd/d84/classqtype__multichoice__edit__form.html#a91b45d750e276bbf24057504fe64c681">qtype_multichoice_edit_form</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d4/db6/classqtype__ddmarker__edit__form.html#aef1b0527bfea6aeba67799ceacb5eb83">qtype_ddmarker_edit_form</a>, <a class="el" href="../../dd/d84/classqtype__multichoice__edit__form.html#a91b45d750e276bbf24057504fe64c681">qtype_multichoice_edit_form</a>, and <a class="el" href="../../d1/dc7/classqtype__ordering__edit__form.html#abca758462bbc99c28153065046defdf4">qtype_ordering_edit_form</a>.</p>
 
 </div>
 </div>
@@ -1369,7 +1371,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
 </div><div class="memdoc">
 
 <p>Returns an array of editor options with collapsed options turned off. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001305">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001300">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td></td></tr>
@@ -1576,7 +1578,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 31 2024 02:33:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 7 2024 02:33:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

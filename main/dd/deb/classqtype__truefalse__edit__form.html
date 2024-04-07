@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240326) (c895def59b1)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240405) (26649f5750e)</div>
   </td>
  </tr>
  </tbody>
@@ -729,18 +729,20 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
 <p>Perform the necessary preprocessing for the hint fields. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$question</td><td>the data being passed to the form. </td></tr>
+    <tr><td class="paramtype">object</td><td class="paramname">$question</td><td>The data being passed to the form. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$withclearwrong</td><td>Clear wrong hints. </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$withshownumpartscorrect</td><td>Show number correct. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">object::$question</td><td>the modified data. </td></tr>
+    <tr><td class="paramname">stdClass</td><td>The modified data. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d4/db6/classqtype__ddmarker__edit__form.html#a2ba95b8e0ba40ea79a1936eba98a1f59">qtype_ddmarker_edit_form</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d4/db6/classqtype__ddmarker__edit__form.html#a2ba95b8e0ba40ea79a1936eba98a1f59">qtype_ddmarker_edit_form</a>, and <a class="el" href="../../d1/dc7/classqtype__ordering__edit__form.html#a155dd536556e48324f3aa75352125a7a">qtype_ordering_edit_form</a>.</p>
 
 </div>
 </div>
@@ -927,7 +929,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d4/db6/classqtype__ddmarker__edit__form.html#aef1b0527bfea6aeba67799ceacb5eb83">qtype_ddmarker_edit_form</a>, and <a class="el" href="../../dd/d84/classqtype__multichoice__edit__form.html#a91b45d750e276bbf24057504fe64c681">qtype_multichoice_edit_form</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d4/db6/classqtype__ddmarker__edit__form.html#aef1b0527bfea6aeba67799ceacb5eb83">qtype_ddmarker_edit_form</a>, <a class="el" href="../../dd/d84/classqtype__multichoice__edit__form.html#a91b45d750e276bbf24057504fe64c681">qtype_multichoice_edit_form</a>, and <a class="el" href="../../d1/dc7/classqtype__ordering__edit__form.html#abca758462bbc99c28153065046defdf4">qtype_ordering_edit_form</a>.</p>
 
 </div>
 </div>
@@ -984,7 +986,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
 </div><div class="memdoc">
 
 <p>Returns an array of editor options with collapsed options turned off. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001305">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001300">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td></td></tr>
@@ -1170,7 +1172,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
 
 <p>Reimplemented from <a class="el" href="../../d6/d9c/group__core__form.html#ga78804d4a6734d8166cd0b32a3c02c946">moodleform</a>.</p>
 
-<p>Reimplemented in <a class="el" href="../../dc/d9a/classqtype__calculated__edit__form.html#a65b91c5fc3bcf2c4c3da950566dadc33">qtype_calculated_edit_form</a>, <a class="el" href="../../d3/d27/classqtype__calculatedmulti__edit__form.html#ab6446dcd4b526808d6ab96edccdece56">qtype_calculatedmulti_edit_form</a>, <a class="el" href="../../dc/d99/classqtype__calculatedsimple__edit__form.html#acb7ecc65f51c86535ba19b08d228da6f">qtype_calculatedsimple_edit_form</a>, <a class="el" href="../../db/d33/classqtype__ddimageortext__edit__form.html#a1850cf2de6d398a78516242e39bffa65">qtype_ddimageortext_edit_form</a>, <a class="el" href="../../d4/db6/classqtype__ddmarker__edit__form.html#af64224b31efadb6d1d7adb2184da5edf">qtype_ddmarker_edit_form</a>, <a class="el" href="../../db/d44/classqtype__gapselect__edit__form__base.html#a06c86d728d15a452660630477b985861">qtype_gapselect_edit_form_base</a>, <a class="el" href="../../dd/d65/classqtype__match__edit__form.html#a7dabfe95f78c0c2b59fc1050df279ca1">qtype_match_edit_form</a>, <a class="el" href="../../da/d3c/classqtype__missingtype__edit__form.html#a32f324ab869a6e6e82670c8ebe64305a">qtype_missingtype_edit_form</a>, <a class="el" href="../../d3/de5/classqtype__multianswer__edit__form.html#a2786141ffdcf1915ae0046cedce14733">qtype_multianswer_edit_form</a>, <a class="el" href="../../dd/d84/classqtype__multichoice__edit__form.html#a0af55e0df8878d1c7b67fcffd66f7789">qtype_multichoice_edit_form</a>, <a class="el" href="../../d4/d9e/classqtype__numerical__edit__form.html#ab4939621e62e2d1343e5b9bc08d48aee">qtype_numerical_edit_form</a>, <a class="el" href="../../d3/d6c/classqtype__randomsamatch__edit__form.html#ad2cd5bd5c58dfc477c4a5a2601972eb8">qtype_randomsamatch_edit_form</a>, <a class="el" href="../../d3/df7/classqtype__shortanswer__edit__form.html#a3001eeae287e0707e7040d5bc77717a3">qtype_shortanswer_edit_form</a>, <a class="el" href="../../d6/d5f/classqtype__essay__edit__form.html#adb493531d678e0f2cbb85406db715bbc">qtype_essay_edit_form</a>, and <a class="el" href="../../d9/d64/classqtype__random__edit__form.html#a748bf934b6d6533b356dac395613438e">qtype_random_edit_form</a>.</p>
+<p>Reimplemented in <a class="el" href="../../dc/d9a/classqtype__calculated__edit__form.html#a65b91c5fc3bcf2c4c3da950566dadc33">qtype_calculated_edit_form</a>, <a class="el" href="../../d3/d27/classqtype__calculatedmulti__edit__form.html#ab6446dcd4b526808d6ab96edccdece56">qtype_calculatedmulti_edit_form</a>, <a class="el" href="../../dc/d99/classqtype__calculatedsimple__edit__form.html#acb7ecc65f51c86535ba19b08d228da6f">qtype_calculatedsimple_edit_form</a>, <a class="el" href="../../db/d33/classqtype__ddimageortext__edit__form.html#a1850cf2de6d398a78516242e39bffa65">qtype_ddimageortext_edit_form</a>, <a class="el" href="../../d4/db6/classqtype__ddmarker__edit__form.html#af64224b31efadb6d1d7adb2184da5edf">qtype_ddmarker_edit_form</a>, <a class="el" href="../../db/d44/classqtype__gapselect__edit__form__base.html#a06c86d728d15a452660630477b985861">qtype_gapselect_edit_form_base</a>, <a class="el" href="../../dd/d65/classqtype__match__edit__form.html#a7dabfe95f78c0c2b59fc1050df279ca1">qtype_match_edit_form</a>, <a class="el" href="../../da/d3c/classqtype__missingtype__edit__form.html#a32f324ab869a6e6e82670c8ebe64305a">qtype_missingtype_edit_form</a>, <a class="el" href="../../d3/de5/classqtype__multianswer__edit__form.html#a2786141ffdcf1915ae0046cedce14733">qtype_multianswer_edit_form</a>, <a class="el" href="../../dd/d84/classqtype__multichoice__edit__form.html#a0af55e0df8878d1c7b67fcffd66f7789">qtype_multichoice_edit_form</a>, <a class="el" href="../../d4/d9e/classqtype__numerical__edit__form.html#ab4939621e62e2d1343e5b9bc08d48aee">qtype_numerical_edit_form</a>, <a class="el" href="../../d1/dc7/classqtype__ordering__edit__form.html#ab57f92600148fa65199258e2852b2c33">qtype_ordering_edit_form</a>, <a class="el" href="../../d3/d6c/classqtype__randomsamatch__edit__form.html#ad2cd5bd5c58dfc477c4a5a2601972eb8">qtype_randomsamatch_edit_form</a>, <a class="el" href="../../d3/df7/classqtype__shortanswer__edit__form.html#a3001eeae287e0707e7040d5bc77717a3">qtype_shortanswer_edit_form</a>, <a class="el" href="../../d6/d5f/classqtype__essay__edit__form.html#adb493531d678e0f2cbb85406db715bbc">qtype_essay_edit_form</a>, and <a class="el" href="../../d9/d64/classqtype__random__edit__form.html#a748bf934b6d6533b356dac395613438e">qtype_random_edit_form</a>.</p>
 
 </div>
 </div>
@@ -1180,7 +1182,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 31 2024 02:33:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 7 2024 02:34:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

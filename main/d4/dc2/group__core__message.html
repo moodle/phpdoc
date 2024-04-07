@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240326) (c895def59b1)</div>
+   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240405) (26649f5750e)</div>
   </td>
  </tr>
  </tbody>
@@ -123,6 +123,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d63/classcore__message_1_1helper.html">core_message\helper</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper class for the message area.  <a href="../../dd/d63/classcore__message_1_1helper.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d48/classcore__message_1_1hook__callbacks.html">core_message\hook_callbacks</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d87/classcore__message_1_1output_1_1preferences_1_1message__notification__list.html">core_message\output\preferences\message_notification_list</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class to create context for the list of notifications on the message preferences page.  <a href="../../d0/d87/classcore__message_1_1output_1_1preferences_1_1message__notification__list.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,9 +180,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gacb613b76081bb5db671301ce414bcdfa" id="r_gacb613b76081bb5db671301ce414bcdfa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gacb613b76081bb5db671301ce414bcdfa">core_message_can_edit_message_profile</a> ($user)</td></tr>
 <tr class="memdesc:gacb613b76081bb5db671301ce414bcdfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if current user is allowed to edit messaging preferences of another user.  <br /></td></tr>
 <tr class="separator:gacb613b76081bb5db671301ce414bcdfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad0ab043ba09dc35d840d90e3202528e3" id="r_gad0ab043ba09dc35d840d90e3202528e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad0ab043ba09dc35d840d90e3202528e3">core_message_standard_after_main_region_html</a> ()</td></tr>
-<tr class="memdesc:gad0ab043ba09dc35d840d90e3202528e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render the message drawer to be included in the top of the body of each page.  <br /></td></tr>
-<tr class="separator:gad0ab043ba09dc35d840d90e3202528e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf583e674527cc6e38460c28cded1becd" id="r_gaf583e674527cc6e38460c28cded1becd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaf583e674527cc6e38460c28cded1becd">core_message_user_preferences</a> ()</td></tr>
 <tr class="memdesc:gaf583e674527cc6e38460c28cded1becd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implements callback user_preferences, lists preferences that users are allowed to update directly.  <br /></td></tr>
 <tr class="separator:gaf583e674527cc6e38460c28cded1becd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -344,31 +343,6 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_TYPE_NOTIFIC
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">bool</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="gad0ab043ba09dc35d840d90e3202528e3" name="gad0ab043ba09dc35d840d90e3202528e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad0ab043ba09dc35d840d90e3202528e3">&#9670;&#160;</a></span>core_message_standard_after_main_region_html()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">core_message_standard_after_main_region_html </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Render the message drawer to be included in the top of the body of each page. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">string</td><td>HTML </td></tr>
   </table>
   </dd>
 </dl>
@@ -1223,7 +1197,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_TYPE_NOTIFIC
 
 <p>Define contants for messaging default settings population. </p>
 <p>For unambiguity of plugin developer intentions we use 4-bit value (LSB numbering): bit 0 - whether to send message (MESSAGE_DEFAULT_ENABLED) bit 1 - Deprecated: whether to send message (MESSAGE_DEFAULT_LOGGEDOFF). Used to mean only when the user is logged off. bit 2..3 - messaging permission (MESSAGE_DISALLOWED|MESSAGE_PERMITTED|MESSAGE_FORCED)</p>
-<p>MESSAGE_PERMITTED_MASK contains the mask we use to distinguish permission setting. </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000991">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0. Use MESSAGE_DEFAULT_ENABLED instead. </dd></dl>
+<p>MESSAGE_PERMITTED_MASK contains the mask we use to distinguish permission setting. </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000985">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0. Use MESSAGE_DEFAULT_ENABLED instead. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000238">Todo</a></b></dt><dd>Remove on <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
 
 </div>
@@ -1239,7 +1213,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_TYPE_NOTIFIC
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000992">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. Use MESSAGE_DEFAULT_ENABLED instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000986">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. Use MESSAGE_DEFAULT_ENABLED instead. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000239">Todo</a></b></dt><dd>Remove on <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
 
 </div>
@@ -1257,7 +1231,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_TYPE_NOTIFIC
 </div><div class="memdoc">
 
 <p>Set default value for default outputs permitted setting. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000993">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000987">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000240">Todo</a></b></dt><dd>Remove on <a href="https://tracker.moodle.org/browse/MDL-73284" class="el">MDL-73284</a>. </dd></dl>
 
 </div>
@@ -1265,7 +1239,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MESSAGE_TYPE_NOTIFIC
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Mar 31 2024 02:32:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 7 2024 02:33:00 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>
