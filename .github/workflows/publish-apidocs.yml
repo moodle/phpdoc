@@ -1,5 +1,4 @@
 # TODO:
-#  - Document ALL code (below we exclude a bunch to try on a subset)
 #  - Document all supported versions and redirect to latest // see notes at https://github.com/phpDocumentor/phpDocumentor/blob/master/tests/integration/phpDocumentor/Configuration/data/phpDocumentor3XMLWithMultipleVersions.xml
 
 # Generate API docs and publish to GitHub Pages at phpdoc.moodledev.io
@@ -82,7 +81,7 @@ jobs:
 # Notice: -d xdebug.mode=off is required due to a bug/workaround
 # Issue: https://github.com/phpDocumentor/phpDocumentor/issues/3642#issuecomment-1912354577
       - name: Build with phpDocumentor
-        run: php -d xdebug.mode=off ${{ github.workspace }}/tools/phpDocumentor run -vv -d source --target docs --cache-folder phpdoc-cache --template default --ignore source/lib --ignore source/admin --ignore source/mod --ignore source/blocks --title 'Moodle PHP API'
+        run: php -d xdebug.mode=off ${{ github.workspace }}/tools/phpDocumentor run -vv -d source --target docs --cache-folder phpdoc-cache --template default --title 'Moodle PHP API'
 
       - name: Upload artifact to GitHub Pages
         uses: actions/upload-pages-artifact@v3
