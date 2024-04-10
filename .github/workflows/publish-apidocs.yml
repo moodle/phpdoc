@@ -72,11 +72,11 @@ jobs:
           home: ${{ runner.temp }}/.phive
           binPath: ${{ github.workspace }}/tools/phive
 
-# TODO: add phpDocumentator's GPG key here as a --trust-gpg-keys
+# TODO: confirm this is the correct GPG key
 # Blocker: https://github.com/phpDocumentor/phpDocumentor/issues/3694
-# Maybe: specify a stable major branch of phpDocumentor to install rather than always getting latest release
+# TODO Maybe: specify a stable major branch of phpDocumentor to install rather than always getting latest release
       - name: Install phpDocumentor
-        run: ${{ github.workspace }}/tools/phive install phpDocumentor 
+        run: ${{ github.workspace }}/tools/phive install phpDocumentor --trust-gpg-keys 8AC0BAA79732DD42
 
       - name: Cache phpDocumentor build files
         id: phpdocumentor-cache
