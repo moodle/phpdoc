@@ -1,59 +1,89 @@
-name: Generate API docs and publish to Github Pages
+# TODO:
+#  - Theming for Moodle
+#  - Document ALL code (below we exclude a bunch to try on a subset)
+
+# Generate API docs and publish to GitHub Pages at phpdoc.moodledev.io
+#
+# How it works:
+#   - Get Moodle code into .moodle
+#   - Build docs into .docs
+#   - Publish that to phpdoc.moodledev.io
+
+name: Generate phpdoc.moodledev.io
 
 env:
   BRANCHLIST: "MOODLE_401_STABLE MOODLE_402_STABLE MOODLE_403_STABLE main"
   VERSIONLIST: "4.1 4.2 4.3 main"
 
+# Allow GITHUB_TOKEN to deploy to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 on:
   schedule:
-    # Publish every Sunday at 1:30am
+    # Publish every Sunday at 00:30 UTC
     - cron: '30 1 * *  0'
   workflow_dispatch:
 
 jobs:
-  deploy:
-    runs-on: ubuntu-20.04
+  build:
+    runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          show-progress: ''
+          show-progress: false
 
       - name: Checkout Moodle
         uses: actions/checkout@v4
         with:
           repository: moodle/moodle
           path: .moodle
-          show-progress: ''
+          show-progress: false
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version-file: '.moodle/.nvmrc'
 
-      - name: Build doxygen
-        run: docker build --tag=doxygen phpdocs/doxygen
-
-      - name: Generate all API Documentation
-        run: ./scripts/generate_api_docs.sh
-
-      - name: Copy Moodle Redirector
-        run: |
-          mkdir -p build/master
-          cp redirect.html build/master/index.html
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Cache phpDocumentor build files
+        id: phpdocumentor-cache
+        uses: actions/cache@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
-          cname: phpdoc.moodledev.io
+          path: .phpdoc/cache
+          key: ${{ runner.os }}-phpdocumentor-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-phpdocumentor-
 
-      - name: Archive build ogs
-        if: always()
-        uses: actions/upload-artifact@v4
+        # TODO: remove the ignores below, they speed up the runs for quick evaluation while we're setting this up
+      - name: Build with phpDocumentor
+        run: docker run --rm --volume "$(pwd):/data" phpdoc/phpdoc:3 -vv -d .moodle --target .docs --cache-folder .phpdoc/cache --template default --ignore .moodle/libs --ignore .moodle/admin --ignore .moodle/mod --ignore .moodle/blocks
+
+      - name: Upload artifact to GitHub Pages
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: Build logs
-          path: logs
+          path: .docs
+
+  deploy:
+    needs: build
+
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+    
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+      
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
