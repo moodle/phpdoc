@@ -27,6 +27,9 @@ on:
     # Publish every Sunday at 00:30 UTC
     - cron: '30 1 * *  0'
   workflow_dispatch:
+  push:
+#TODO: update this when merging to moodle/phpdoc to only be main  
+    branches: ["main", "phpDocumentor"]  
 
 jobs:
   build:
