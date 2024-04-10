@@ -90,7 +90,7 @@ jobs:
 # Notice: -d xdebug.mode=off is required due to a bug/workaround
 # Issue: https://github.com/phpDocumentor/phpDocumentor/issues/3642#issuecomment-1912354577
       - name: Build with phpDocumentor
-        run: php -d xdebug.mode=off ${{ github.workspace }}/tools/phpDocumentor run -vv -d source --target docs --cache-folder phpdoc-cache --template default --ignore source/libs --ignore source/admin --ignore source/mod --ignore source/blocks
+        run: php -d xdebug.mode=off ${{ github.workspace }}/tools/phpDocumentor run -vv -d source --target docs --cache-folder phpdoc-cache --template default --ignore source/lib --ignore source/admin --ignore source/mod --ignore source/blocks
 
       - name: Upload artifact to GitHub Pages
         uses: actions/upload-pages-artifact@v3
