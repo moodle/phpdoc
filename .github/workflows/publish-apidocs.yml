@@ -34,22 +34,23 @@ jobs:
       group: ${{ github.workflow }}-${{ github.ref }}
       cancel-in-progress: true
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          show-progress: false
+#TODO: add theming config and then uncomment this
+# Not using anything in this repo yet    
+#      - name: Checkout moodle/phpdoc
+#        uses: actions/checkout@v4
 
-      - name: Checkout Moodle
+      - name: Checkout moodle/moodle
         uses: actions/checkout@v4
         with:
           repository: moodle/moodle
           path: .moodle
-          show-progress: false
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version-file: '.moodle/.nvmrc'
+#NOT USING NODE
+#TODO: remove commented out lines
+#      - name: Setup Node
+#        uses: actions/setup-node@v4
+#        with:
+#          node-version-file: '.moodle/.nvmrc'
 
       - name: Cache phpDocumentor build files
         id: phpdocumentor-cache
@@ -57,10 +58,9 @@ jobs:
         with:
           path: .phpdoc/cache
           key: ${{ runner.os }}-phpdocumentor-${{ github.sha }}
-          restore-keys: |
-            ${{ runner.os }}-phpdocumentor-
+          restore-keys: ${{ runner.os }}-phpdocumentor-
 
-        # TODO: remove the ignores below, they speed up the runs for quick evaluation while we're setting this up
+# TODO: remove the ignores below, they speed up the runs for quick evaluation while we're setting this up
       - name: Build with phpDocumentor
         run: docker run --rm --volume "$(pwd):/data" phpdoc/phpdoc:3 -vv -d .moodle --target .docs --cache-folder .phpdoc/cache --template default --ignore .moodle/libs --ignore .moodle/admin --ignore .moodle/mod --ignore .moodle/blocks
 
