@@ -88,7 +88,7 @@ jobs:
 
 # TODO: remove the ignores below, they speed up the runs for quick evaluation while we're setting this up
       - name: Build with phpDocumentor
-        run: ${{ github.workspace }}/tools/phpDocumentor -vv -d source --target docs --cache-folder phpdoc-cache --template default --ignore source/libs --ignore source/admin --ignore source/mod --ignore source/blocks
+        run: ${{ github.workspace }}/tools/phpDocumentor run -vv -d source --target docs --cache-folder phpdoc-cache --template default --ignore source/libs --ignore source/admin --ignore source/mod --ignore source/blocks
 
       - name: Upload artifact to GitHub Pages
         uses: actions/upload-pages-artifact@v3
