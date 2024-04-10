@@ -1,13 +1,14 @@
 # TODO:
-#  - Theming for Moodle
 #  - Document ALL code (below we exclude a bunch to try on a subset)
+#  - Document all supported versions and redirect to latest // see notes at https://github.com/phpDocumentor/phpDocumentor/blob/master/tests/integration/phpDocumentor/Configuration/data/phpDocumentor3XMLWithMultipleVersions.xml
 
 # Generate API docs and publish to GitHub Pages at phpdoc.moodledev.io
 #
 # How it works:
+#   - Get phpdoc config into ./
 #   - Get Moodle code into ./source
+#   - Setup cache at ./phpdoc-cache
 #   - Build docs into ./docs
-#   - Cache to ./phpdoc-cache
 #   - Publish that to phpdoc.moodledev.io
 
 name: Generate phpdoc.moodledev.io
@@ -38,23 +39,14 @@ jobs:
       group: ${{ github.workflow }}-${{ github.ref }}
       cancel-in-progress: true
     steps:
-#TODO: add theming config and then uncomment this
-# Not using anything in this repo yet    
-#      - name: Checkout moodle/phpdoc
-#        uses: actions/checkout@v4
+      - name: Checkout moodle/phpdoc
+        uses: actions/checkout@v4
 
       - name: Checkout moodle/moodle
         uses: actions/checkout@v4
         with:
           repository: moodle/moodle
           path: source
-
-#NOT USING NODE
-#TODO: remove commented out lines
-#      - name: Setup Node
-#        uses: actions/setup-node@v4
-#        with:
-#          node-version-file: '.moodle/.nvmrc'
 
       # Install phpDocumentator using PHIVE
       # phpDocumentator recommends PHIVE as the preferred install strategy
@@ -90,7 +82,7 @@ jobs:
 # Notice: -d xdebug.mode=off is required due to a bug/workaround
 # Issue: https://github.com/phpDocumentor/phpDocumentor/issues/3642#issuecomment-1912354577
       - name: Build with phpDocumentor
-        run: php -d xdebug.mode=off ${{ github.workspace }}/tools/phpDocumentor run -vv -d source --target docs --cache-folder phpdoc-cache --template default --ignore source/lib --ignore source/admin --ignore source/mod --ignore source/blocks
+        run: php -d xdebug.mode=off ${{ github.workspace }}/tools/phpDocumentor run -vv -d source --target docs --cache-folder phpdoc-cache --template default --ignore source/lib --ignore source/admin --ignore source/mod --ignore source/blocks --title Moodle PHP API
 
       - name: Upload artifact to GitHub Pages
         uses: actions/upload-pages-artifact@v3
