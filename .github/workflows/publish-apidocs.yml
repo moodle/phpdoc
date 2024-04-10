@@ -5,8 +5,9 @@
 # Generate API docs and publish to GitHub Pages at phpdoc.moodledev.io
 #
 # How it works:
-#   - Get Moodle code into .moodle
-#   - Build docs into .docs
+#   - Get Moodle code into ./source
+#   - Build docs into ./docs
+#   - Cache to ./phpdoc-cache
 #   - Publish that to phpdoc.moodledev.io
 
 name: Generate phpdoc.moodledev.io
@@ -43,7 +44,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: moodle/moodle
-          path: .moodle
+          path: source
 
 #NOT USING NODE
 #TODO: remove commented out lines
@@ -52,22 +53,44 @@ jobs:
 #        with:
 #          node-version-file: '.moodle/.nvmrc'
 
+      # Install phpDocumentator using PHIVE
+      # phpDocumentator recommends PHIVE as the preferred install strategy
+      # Source: https://github.com/phpDocumentor/phpDocumentor/blob/919d5c1ef42a3c74d050e05ce99add6efa87b5a4/README.md?plain=1#L79
+      - name: Cache PHIVE tools
+        uses: actions/cache@v4
+        with:
+          path: ${{ runner.temp }}/.phive
+          key: php-phive-${{ hashFiles('.phive/phars.xml') }}
+          restore-keys: php-phive-
+
+      - name: Install PHIVE
+        uses: szepeviktor/phive@v1
+        with:
+          home: ${{ runner.temp }}/.phive
+          binPath: ${{ github.workspace }}/tools/phive
+
+# TODO: add phpDocumentator's GPG key here as a --trust-gpg-keys
+# Blocker: https://github.com/phpDocumentor/phpDocumentor/issues/3694
+# Maybe: specify a stable major branch of phpDocumentor to install rather than always getting latest release
+      - name: Install phpDocumentor
+        run: ${{ github.workspace }}/tools/phive install phpDocumentor 
+
       - name: Cache phpDocumentor build files
         id: phpdocumentor-cache
         uses: actions/cache@v4
         with:
-          path: .phpdoc/cache
+          path: phpdoc-cache
           key: ${{ runner.os }}-phpdocumentor-${{ github.sha }}
           restore-keys: ${{ runner.os }}-phpdocumentor-
 
 # TODO: remove the ignores below, they speed up the runs for quick evaluation while we're setting this up
       - name: Build with phpDocumentor
-        run: docker run --rm --volume "$(pwd):/data" phpdoc/phpdoc:3 -vv -d .moodle --target .docs --cache-folder .phpdoc/cache --template default --ignore .moodle/libs --ignore .moodle/admin --ignore .moodle/mod --ignore .moodle/blocks
+        run: ${{ github.workspace }}/tools/phpDocumentor -vv -d source --target docs --cache-folder phpdoc-cache --template default --ignore source/libs --ignore source/admin --ignore source/mod --ignore source/blocks
 
       - name: Upload artifact to GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .docs
+          path: docs
 
   deploy:
     needs: build
