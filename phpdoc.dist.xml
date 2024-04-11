@@ -15,18 +15,18 @@
     <version number="4.3">
         <folder>4.3</folder>
         <api>
-            <source dsn="source">
-                <path>*</path>
+            <source dsn=".">
+                <path>source</path>
             </source>
             <ignore>
-                <path>lib/pear</path>
-                <path>lib/mlbackend</path>
+                <path>**/lib/pear/**/*</path>
+                <path>**/lib/mlbackend/**/*</path>
                 <path>**/tests/*_test.php</path>
-                <path>**/tests/fixtures</path>
-                <path>**/vendor</path>
-                <path>**/amd</path>
-                <path>**/yui</path>
-                <path>**/lang</path>
+                <path>**/tests/fixtures/**/*</path>
+                <path>**/vendor/**/*</path>
+                <path>**/amd/**/*</path>
+                <path>**/yui/**/*</path>
+                <path>**/lang/**/*</path>
             </ignore>
             <extensions>
                 <extension>php</extension>
