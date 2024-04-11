@@ -80,8 +80,10 @@ jobs:
 # TODO: remove the ignores below, they speed up the runs for quick evaluation while we're setting this up
 # Notice: -d xdebug.mode=off is required due to a bug/workaround
 # Issue: https://github.com/phpDocumentor/phpDocumentor/issues/3642#issuecomment-1912354577
+# TODO: have a nicer way to specify excludes
+# excludes from https://github.com/moodle/phpdoc/blob/929083a815c1f7e95c540173e7549810f6d4a598/scripts/generate_phpdoc.sh#L27-L48
       - name: Build with phpDocumentor
-        run: php -d xdebug.mode=off ${{ github.workspace }}/tools/phpDocumentor run -vv -d source --target docs --cache-folder phpdoc-cache --template default --title 'Moodle PHP API'
+        run: php -d xdebug.mode=off ${{ github.workspace }}/tools/phpDocumentor run -vv -d source --target docs --cache-folder phpdoc-cache --template default --title 'Moodle PHP API' --ignore source/lib/pear --ignore source/**/tests/*_test.php --ignore **/tests/fixtures --ignore source/**/vendor --ignore source/**/amd --ignore source/**/yui
 
       - name: Count files and get disk space
         run: |
