@@ -92,6 +92,9 @@ jobs:
           
           echo "Total disk space used by docs directory:"
           du -sh docs
+          
+          echo "File list:"
+          find docs -type f
 
       - name: Free disk space (Ubuntu)
         uses: jlumbroso/free-disk-space@main
