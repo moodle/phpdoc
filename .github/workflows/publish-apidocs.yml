@@ -83,6 +83,19 @@ jobs:
       - name: Build with phpDocumentor
         run: php -d xdebug.mode=off ${{ github.workspace }}/tools/phpDocumentor run -vv -d source --target docs --cache-folder phpdoc-cache --template default --title 'Moodle PHP API'
 
+      - name: Count files and get disk space
+        run: |
+          echo "Total files:"
+          find docs -type f | wc -l
+          
+          echo "Total disk space used by docs directory:"
+          du -sh docs
+
+      - name: Free disk space (Ubuntu)
+        uses: jlumbroso/free-disk-space@main
+        with:
+          tool-cache: false
+
       - name: Upload artifact to GitHub Pages
         uses: actions/upload-pages-artifact@v3
         with:
