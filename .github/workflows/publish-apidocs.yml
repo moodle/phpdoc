@@ -1,59 +1,126 @@
-name: Generate API docs and publish to Github Pages
+# TODO:
+#  - Document all supported versions and redirect to latest // see notes at https://github.com/phpDocumentor/phpDocumentor/blob/master/tests/integration/phpDocumentor/Configuration/data/phpDocumentor3XMLWithMultipleVersions.xml
+
+# Generate API docs and publish to GitHub Pages at phpdoc.moodledev.io
+#
+# How it works:
+#   - Get phpdoc config into ./
+#   - Get Moodle code into ./source
+#   - Setup cache at ./phpdoc-cache
+#   - Build docs into ./docs
+#   - Publish that to phpdoc.moodledev.io
+
+name: Generate phpdoc.moodledev.io
 
 env:
   BRANCHLIST: "MOODLE_401_STABLE MOODLE_402_STABLE MOODLE_403_STABLE main"
   VERSIONLIST: "4.1 4.2 4.3 main"
 
+# Allow GITHUB_TOKEN to deploy to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 on:
   schedule:
-    # Publish every Sunday at 1:30am
+    # Publish every Sunday at 00:30 UTC
     - cron: '30 1 * *  0'
   workflow_dispatch:
+  push:
+#TODO: update this when merging to moodle/phpdoc to only be main  
+    branches: ["main", "phpDocumentor"]  
 
 jobs:
-  deploy:
-    runs-on: ubuntu-20.04
+  build:
+    runs-on: ubuntu-latest
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
+      cancel-in-progress: true
     steps:
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          show-progress: ''
+      - name: Checkout moodle/phpdoc
+        uses: actions/checkout@v4
 
-      - name: Checkout Moodle
+      - name: Checkout moodle/moodle
         uses: actions/checkout@v4
         with:
           repository: moodle/moodle
-          path: .moodle
-          show-progress: ''
+          path: source
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      # Install phpDocumentator using PHIVE
+      # phpDocumentator recommends PHIVE as the preferred install strategy
+      # Source: https://github.com/phpDocumentor/phpDocumentor/blob/919d5c1ef42a3c74d050e05ce99add6efa87b5a4/README.md?plain=1#L79
+      - name: Cache PHIVE tools
+        uses: actions/cache@v4
         with:
-          node-version-file: '.moodle/.nvmrc'
+          path: ${{ runner.temp }}/.phive
+          key: php-phive-${{ hashFiles('.phive/phars.xml') }}
+          restore-keys: php-phive-
 
-      - name: Build doxygen
-        run: docker build --tag=doxygen phpdocs/doxygen
+      - name: Install PHIVE
+        uses: szepeviktor/phive@v1
+        with:
+          home: ${{ runner.temp }}/.phive
+          binPath: ${{ github.workspace }}/tools/phive
 
-      - name: Generate all API Documentation
-        run: ./scripts/generate_api_docs.sh
+# TODO: confirm this is the correct GPG key
+# Blocker: https://github.com/phpDocumentor/phpDocumentor/issues/3694
+# TODO Maybe: specify a stable major branch of phpDocumentor to install rather than always getting latest release
+      - name: Install phpDocumentor
+        run: ${{ github.workspace }}/tools/phive install phpDocumentor --trust-gpg-keys 8AC0BAA79732DD42
 
-      - name: Copy Moodle Redirector
+      - name: Cache phpDocumentor build files
+        id: phpdocumentor-cache
+        uses: actions/cache@v4
+        with:
+          path: phpdoc-cache
+          key: ${{ runner.os }}-phpdocumentor-${{ github.sha }}
+          restore-keys: ${{ runner.os }}-phpdocumentor-
+
+# TODO: remove the ignores below, they speed up the runs for quick evaluation while we're setting this up
+# Notice: -d xdebug.mode=off is required due to a bug/workaround
+# Issue: https://github.com/phpDocumentor/phpDocumentor/issues/3642#issuecomment-1912354577
+# See ignores implicitly loaded from phpdoc.dist.xml
+# excludes from https://github.com/moodle/phpdoc/blob/929083a815c1f7e95c540173e7549810f6d4a598/scripts/generate_phpdoc.sh#L27-L48
+      - name: Build with phpDocumentor
+        run: php -d xdebug.mode=off ${{ github.workspace }}/tools/phpDocumentor run -d source --target docs --cache-folder phpdoc-cache --template default --title 'Moodle PHP API'
+
+      - name: Count files and get disk space
         run: |
-          mkdir -p build/master
-          cp redirect.html build/master/index.html
+          echo "Total files:"
+          find docs -type f | wc -l
+          
+          echo "Total disk space used by docs directory:"
+          du -sh docs
+          
+          echo "File list:"
+          find docs -type f
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Free disk space (Ubuntu)
+        uses: jlumbroso/free-disk-space@main
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
-          cname: phpdoc.moodledev.io
+          tool-cache: false
 
-      - name: Archive build ogs
-        if: always()
-        uses: actions/upload-artifact@v4
+      - name: Upload artifact to GitHub Pages
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: Build logs
-          path: logs
+          path: docs
+
+  deploy:
+    needs: build
+
+    # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+    
+    # Deploy to the github-pages environment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+      
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
