@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240405) (26649f5750e)</div>
+   <div id="projectbrief">Moodle 4.4beta (Build: 20240412) (8cf14f6e701)</div>
   </td>
  </tr>
  </tbody>
@@ -82,6 +82,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac24b50272bf19b9c092ab7da82444e06" id="r_ac24b50272bf19b9c092ab7da82444e06"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dce/classtesting__module__generator.html#ac24b50272bf19b9c092ab7da82444e06">create_content</a> ($instance, $record=array())</td></tr>
 <tr class="memdesc:ac24b50272bf19b9c092ab7da82444e06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a piece of content for the module.  <br /></td></tr>
 <tr class="separator:ac24b50272bf19b9c092ab7da82444e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff457d961a78e9a2d53e7ddc59da9a30" id="r_aff457d961a78e9a2d53e7ddc59da9a30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff457d961a78e9a2d53e7ddc59da9a30">create_grade_item</a> (array $data)</td></tr>
+<tr class="memdesc:aff457d961a78e9a2d53e7ddc59da9a30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a quiz override (either user or group).  <br /></td></tr>
+<tr class="separator:aff457d961a78e9a2d53e7ddc59da9a30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e5e8fe9dea518fa678309c2aecb0da6" id="r_a9e5e8fe9dea518fa678309c2aecb0da6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e5e8fe9dea518fa678309c2aecb0da6">create_instance</a> ($record=null, array $options=null)</td></tr>
 <tr class="memdesc:a9e5e8fe9dea518fa678309c2aecb0da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of the module for testing purposes.  <br /></td></tr>
 <tr class="separator:a9e5e8fe9dea518fa678309c2aecb0da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,6 +227,37 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$instancecount</b> = 0
 </dl>
 
 <p>Reimplemented in <a class="el" href="../../d9/d4d/classmod__h5pactivity__generator.html#ac4a01c259e8982c4032dda29f91e1322">mod_h5pactivity_generator</a>, <a class="el" href="../../d3/d03/classmod__book__generator.html#aa798b9cbc8df8380783e060be2337ebf">mod_book_generator</a>, <a class="el" href="../../d6/d15/classmod__forum__generator.html#ae0bbba2d19167332f7a6843a830a683d">mod_forum_generator</a>, <a class="el" href="../../d1/d49/classmod__lesson__generator.html#a6c9ab88ba45cb6c49bfa3e93ca60d9ce">mod_lesson_generator</a>, and <a class="el" href="../../d8/d50/classmod__wiki__generator.html#ac64e12e4220667baf992985f67d277df">mod_wiki_generator</a>.</p>
+
+</div>
+</div>
+<a id="aff457d961a78e9a2d53e7ddc59da9a30" name="aff457d961a78e9a2d53e7ddc59da9a30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff457d961a78e9a2d53e7ddc59da9a30">&#9670;&#160;</a></span>create_grade_item()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz_generator::create_grade_item </td>
+          <td>(</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$data</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a quiz override (either user or group). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>must specify quizid and a name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass</td><td>the newly created quiz_grade_items row. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -433,7 +467,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$instancecount</b> = 0
 
 <p>Called after *_add_instance() </p>
 <p>Since 2.6 it is recommended to use function <a class="el" href="../../d5/dd0/group__core__course.html#ga05990b276289bacc307abb991fcced73" title="Add course module.">add_moduleinfo()</a> to create a module.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000971">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000973">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d6/dce/classtesting__module__generator.html#af03f05947257f952aadb86c3fc1ecf51" title="Creates an instance of the module for testing purposes.">testing_module_generator::create_instance()</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -480,7 +514,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$instancecount</b> = 0
 
 <p>Create course module and link it to course. </p>
 <p>Since 2.6 it is recommended to use function <a class="el" href="../../d5/dd0/group__core__course.html#ga05990b276289bacc307abb991fcced73" title="Add course module.">add_moduleinfo()</a> to create a module.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000970">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000972">Deprecated</a></b></dt><dd>since 2.6 </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d6/dce/classtesting__module__generator.html#af03f05947257f952aadb86c3fc1ecf51" title="Creates an instance of the module for testing purposes.">testing_module_generator::create_instance()</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -662,7 +696,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$instancecount</b> = 0
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 7 2024 02:33:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 14 2024 03:46:26 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

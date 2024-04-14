@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240405) (26649f5750e)</div>
+   <div id="projectbrief">Moodle 4.4beta (Build: 20240412) (8cf14f6e701)</div>
   </td>
  </tr>
  </tbody>
@@ -192,6 +192,12 @@ Static Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:ae097afdd7261febcc0d095010b037d00" id="r_ae097afdd7261febcc0d095010b037d00"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/daf/classadvanced__testcase.html#ae097afdd7261febcc0d095010b037d00">add_mocked_plugin</a> (string $plugintype, string $pluginname, string $path,)</td></tr>
+<tr class="memdesc:ae097afdd7261febcc0d095010b037d00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a mocked plugin to <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a>.  <br /></td></tr>
+<tr class="separator:ae097afdd7261febcc0d095010b037d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f46baadfb6c339702314ee3e1bda126" id="r_a8f46baadfb6c339702314ee3e1bda126"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/daf/classadvanced__testcase.html#a8f46baadfb6c339702314ee3e1bda126">add_mocked_plugintype</a> (string $plugintype, string $path,)</td></tr>
+<tr class="memdesc:a8f46baadfb6c339702314ee3e1bda126"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a mocked plugintype to <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a>.  <br /></td></tr>
+<tr class="separator:a8f46baadfb6c339702314ee3e1bda126"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa068064049b040206c0208676d5e1ae6" id="r_aa068064049b040206c0208676d5e1ae6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d42/classrepository__googledocs__testcase.html#aa068064049b040206c0208676d5e1ae6">create_file_content_node_array</a> (string $id, string $name, string $title, ?string $size=null, string $modified='', string $thumbnail='', string $<a class="el" href="../../d6/db1/group__mod__wiki.html#ga18b3d5253ddc6145e9bc81e2337889f6">link</a>='', string $exportformat='', ?string $googledoctype=null)</td></tr>
 <tr class="memdesc:aa068064049b040206c0208676d5e1ae6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create an array that would replicate the structure of a repository file node array.  <br /></td></tr>
 <tr class="separator:aa068064049b040206c0208676d5e1ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -252,6 +258,92 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$disallowedextension
 <tr class="separator:a7572535bd11f2da1b53d802f7955b543"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae097afdd7261febcc0d095010b037d00" name="ae097afdd7261febcc0d095010b037d00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae097afdd7261febcc0d095010b037d00">&#9670;&#160;</a></span>add_mocked_plugin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">advanced_testcase::add_mocked_plugin </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$plugintype</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$pluginname</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$path</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add a mocked plugin to <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a>. </p>
+<p>A new plugin name must be provided with a path to the plugin's root. The plugin type must already exist (or have been mocked separately).</p>
+<p>Please note that tests calling this method must be run in separate isolation mode. Please avoid using this if at all possible.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$plugintype</td><td>The name of the plugintype </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$pluginname</td><td>The name of the plugin </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$path</td><td>The path to the plugin's root </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8f46baadfb6c339702314ee3e1bda126" name="a8f46baadfb6c339702314ee3e1bda126"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f46baadfb6c339702314ee3e1bda126">&#9670;&#160;</a></span>add_mocked_plugintype()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">advanced_testcase::add_mocked_plugintype </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$plugintype</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$path</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add a mocked plugintype to <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a>. </p>
+<p>A new plugintype name must be provided with a path to the plugintype's root.</p>
+<p>Please note that tests calling this method must be run in separate isolation mode. Please avoid using this if at all possible.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$plugintype</td><td>The name of the plugintype </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$path</td><td>The path to the plugintype's root </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a50bf0b71390803e2d4b0f526349cbff5" name="a50bf0b71390803e2d4b0f526349cbff5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a50bf0b71390803e2d4b0f526349cbff5">&#9670;&#160;</a></span>assertDebuggingCalled()</h2>
 
@@ -625,7 +717,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$disallowedextension
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000809">Deprecated</a></b></dt><dd>3.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000811">Deprecated</a></b></dt><dd>3.0 </dd></dl>
 
 </div>
 </div>
@@ -677,7 +769,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$disallowedextension
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000808">Deprecated</a></b></dt><dd>3.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000810">Deprecated</a></b></dt><dd>3.0 </dd></dl>
 
 </div>
 </div>
@@ -1113,7 +1205,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$disallowedextension
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000806">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.10 - See <a href="https://tracker.moodle.org/browse/MDL-67673" class="el">MDL-67673</a> and <a href="https://tracker.moodle.org/browse/MDL-64600" class="el">MDL-64600</a> for more info. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000808">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.10 - See <a href="https://tracker.moodle.org/browse/MDL-67673" class="el">MDL-67673</a> and <a href="https://tracker.moodle.org/browse/MDL-64600" class="el">MDL-64600</a> for more info. </dd></dl>
 
 </div>
 </div>
@@ -1139,7 +1231,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$disallowedextension
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000805">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.10 - See <a href="https://tracker.moodle.org/browse/MDL-67673" class="el">MDL-67673</a> and <a href="https://tracker.moodle.org/browse/MDL-64600" class="el">MDL-64600</a> for more info. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000807">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.10 - See <a href="https://tracker.moodle.org/browse/MDL-67673" class="el">MDL-67673</a> and <a href="https://tracker.moodle.org/browse/MDL-64600" class="el">MDL-64600</a> for more info. </dd></dl>
 
 </div>
 </div>
@@ -1165,7 +1257,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$disallowedextension
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000804">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.10 - See <a href="https://tracker.moodle.org/browse/MDL-67673" class="el">MDL-67673</a> and <a href="https://tracker.moodle.org/browse/MDL-64600" class="el">MDL-64600</a> for more info. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000806">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.10 - See <a href="https://tracker.moodle.org/browse/MDL-67673" class="el">MDL-67673</a> and <a href="https://tracker.moodle.org/browse/MDL-64600" class="el">MDL-64600</a> for more info. </dd></dl>
 
 </div>
 </div>
@@ -1644,7 +1736,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$disallowedextension
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000807">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.10 - See <a href="https://tracker.moodle.org/browse/MDL-67673" class="el">MDL-67673</a> and <a href="https://tracker.moodle.org/browse/MDL-64600" class="el">MDL-64600</a> for more info. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000809">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.10 - See <a href="https://tracker.moodle.org/browse/MDL-67673" class="el">MDL-67673</a> and <a href="https://tracker.moodle.org/browse/MDL-64600" class="el">MDL-64600</a> for more info. </dd></dl>
 
 </div>
 </div>
@@ -2328,7 +2420,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$disallowedextension
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 7 2024 02:33:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 14 2024 03:46:22 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

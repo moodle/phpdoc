@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240405) (26649f5750e)</div>
+   <div id="projectbrief">Moodle 4.4beta (Build: 20240412) (8cf14f6e701)</div>
   </td>
  </tr>
  </tbody>
@@ -126,8 +126,11 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>NO_GROUPS_ALLOWE
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:ac6e8436014bcc8a21ac2bcaa4a098298" id="r_ac6e8436014bcc8a21ac2bcaa4a098298"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6e8436014bcc8a21ac2bcaa4a098298">add_grade_columns</a> ($quiz, $usercanseegrades, &amp;$columns, &amp;$headers, $includefeedback=true)</td></tr>
-<tr class="memdesc:ac6e8436014bcc8a21ac2bcaa4a098298"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add all the grade and feedback columns, if applicable, to the $columns and $headers arrays.  <br /></td></tr>
+<tr class="memdesc:ac6e8436014bcc8a21ac2bcaa4a098298"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a column for the overall quiz grade and the overall feedback, if applicable.  <br /></td></tr>
 <tr class="separator:ac6e8436014bcc8a21ac2bcaa4a098298"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae639bc0b0fbac1498ed8764ee0b9a2ff" id="r_ae639bc0b0fbac1498ed8764ee0b9a2ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae639bc0b0fbac1498ed8764ee0b9a2ff">add_grade_item_columns</a> (bool $usercanseegrades, array &amp;$columns, array &amp;$headers)</td></tr>
+<tr class="memdesc:ae639bc0b0fbac1498ed8764ee0b9a2ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add columns for any extra quiz grade items, if applicable.  <br /></td></tr>
+<tr class="separator:ae639bc0b0fbac1498ed8764ee0b9a2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7592326df29ed710db909268ba3af4f" id="r_af7592326df29ed710db909268ba3af4f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af7592326df29ed710db909268ba3af4f">add_state_column</a> (&amp;$columns, &amp;$headers)</td></tr>
 <tr class="memdesc:af7592326df29ed710db909268ba3af4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the state column to the $columns and $headers arrays.  <br /></td></tr>
 <tr class="separator:af7592326df29ed710db909268ba3af4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,7 +233,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$qmsubselect</b></t
 </table>
 </div><div class="memdoc">
 
-<p>Add all the grade and feedback columns, if applicable, to the $columns and $headers arrays. </p>
+<p>Add a column for the overall quiz grade and the overall feedback, if applicable. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$quiz</td><td>the quiz settings. </td></tr>
@@ -238,6 +241,50 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$qmsubselect</b></t
     <tr><td class="paramtype">array</td><td class="paramname">$columns</td><td>the list of columns. Added to. </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$headers</td><td>the columns headings. Added to. </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$includefeedback</td><td>whether to include the feedbacktext columns </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae639bc0b0fbac1498ed8764ee0b9a2ff" name="ae639bc0b0fbac1498ed8764ee0b9a2ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae639bc0b0fbac1498ed8764ee0b9a2ff">&#9670;&#160;</a></span>add_grade_item_columns()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\local\reports\attempts_report::add_grade_item_columns </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$usercanseegrades</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array &amp;</td>          <td class="paramname"><span class="paramname"><em>$columns</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array &amp;</td>          <td class="paramname"><span class="paramname"><em>$headers</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add columns for any extra quiz grade items, if applicable. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">bool</td><td class="paramname">$usercanseegrades</td><td>whether the user is allowed to see grades for this quiz. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$columns</td><td>the list of columns. Added to. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$headers</td><td>the columns headings. Added to. </td></tr>
   </table>
   </dd>
 </dl>
@@ -911,7 +958,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$qmsubselect</b></t
 <p>Set up the table. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../da/dc8/classtable__sql.html">table_sql</a></td><td class="paramname">$table</td><td>the table being constructed. </td></tr>
+    <tr><td class="paramtype">attempts_report_table</td><td class="paramname">$table</td><td>the table being constructed. </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$columns</td><td>the list of columns. </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$headers</td><td>the columns headings. </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a></td><td class="paramname">$reporturl</td><td>the URL of this report. </td></tr>
@@ -945,7 +992,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$qmsubselect</b></t
 </div><div class="memdoc">
 
 <p>quiz settings object. </p>
-<p>Set in the init method. </p>
+<p>Set in {</p><dl class="section see"><dt>See also</dt><dd>init()}. </dd></dl>
 
 </div>
 </div>
@@ -980,7 +1027,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$qmsubselect</b></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 7 2024 02:35:07 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 14 2024 03:47:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

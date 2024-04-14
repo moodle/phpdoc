@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.2</span>
    </div>
-   <div id="projectbrief">Moodle 4.2.6+ (Build: 20240405) (c0038b965ed)</div>
+   <div id="projectbrief">Moodle 4.2.6+ (Build: 20240412) (6ba9ca190c5)</div>
   </td>
  </tr>
  </tbody>
@@ -111,6 +111,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a235ea321bc3e9392749ef3c318f437c5" id="r_a235ea321bc3e9392749ef3c318f437c5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a235ea321bc3e9392749ef3c318f437c5">i_am_on_page_logged_in_as</a> (string $page, string $username)</td></tr>
 <tr class="memdesc:a235ea321bc3e9392749ef3c318f437c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a given page logged in as a given user.  <br /></td></tr>
 <tr class="separator:a235ea321bc3e9392749ef3c318f437c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a25b3229609062216b6d1b64599f468" id="r_a0a25b3229609062216b6d1b64599f468"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a25b3229609062216b6d1b64599f468">i_close_block_drawer_if_open</a> ()</td></tr>
+<tr class="memdesc:a0a25b3229609062216b6d1b64599f468"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the block drawer if it is open.  <br /></td></tr>
+<tr class="separator:a0a25b3229609062216b6d1b64599f468"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a253e490ff540c8f2c814579b962fc202" id="r_a253e490ff540c8f2c814579b962fc202"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a253e490ff540c8f2c814579b962fc202">i_close_flat_navigation_drawer</a> ()</td></tr>
 <tr class="memdesc:a253e490ff540c8f2c814579b962fc202"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes the flat navigation drawer if it is open (does nothing if JS disabled)  <br /></td></tr>
 <tr class="separator:a253e490ff540c8f2c814579b962fc202"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,6 +126,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afb04cdf6e9e5633d7353c9b02db7abce" id="r_afb04cdf6e9e5633d7353c9b02db7abce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb04cdf6e9e5633d7353c9b02db7abce">i_follow_in_the_user_menu</a> ($nodetext)</td></tr>
 <tr class="memdesc:afb04cdf6e9e5633d7353c9b02db7abce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Click on an entry in the user menu.  <br /></td></tr>
 <tr class="separator:afb04cdf6e9e5633d7353c9b02db7abce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefe0acffea77bd70db043395569a6b9a" id="r_aefe0acffea77bd70db043395569a6b9a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aefe0acffea77bd70db043395569a6b9a">i_keep_block_drawer_closed</a> ()</td></tr>
+<tr class="memdesc:aefe0acffea77bd70db043395569a6b9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">I close the block drawer and keep it closed.  <br /></td></tr>
+<tr class="separator:aefe0acffea77bd70db043395569a6b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40dc936ead00821422f1f83a38ce657d" id="r_a40dc936ead00821422f1f83a38ce657d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40dc936ead00821422f1f83a38ce657d">i_navigate_to_in_current_page_administration</a> ($nodetext)</td></tr>
 <tr class="memdesc:a40dc936ead00821422f1f83a38ce657d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Go to current page setting item.  <br /></td></tr>
 <tr class="separator:a40dc936ead00821422f1f83a38ce657d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1027,6 +1033,31 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a0a25b3229609062216b6d1b64599f468" name="a0a25b3229609062216b6d1b64599f468"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a25b3229609062216b6d1b64599f468">&#9670;&#160;</a></span>i_close_block_drawer_if_open()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_navigation::i_close_block_drawer_if_open </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Close the block drawer if it is open. </p>
+<p>This is necessary as in Behat the block drawer is open at each page load (disregarding user's settings) As the block drawer is positioned at the front of some contextual dialogs on the grade report for example. @Given I close block drawer if open </p><dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a253e490ff540c8f2c814579b962fc202" name="a253e490ff540c8f2c814579b962fc202"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a253e490ff540c8f2c814579b962fc202">&#9670;&#160;</a></span>i_close_flat_navigation_drawer()</h2>
 
@@ -1147,6 +1178,31 @@ Protected Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$nodetext</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aefe0acffea77bd70db043395569a6b9a" name="aefe0acffea77bd70db043395569a6b9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefe0acffea77bd70db043395569a6b9a">&#9670;&#160;</a></span>i_keep_block_drawer_closed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">behat_navigation::i_keep_block_drawer_closed </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>I close the block drawer and keep it closed. </p>
+<p>@Given I keep block drawer closed </p><dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2300,7 +2356,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 7 2024 02:25:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 14 2024 03:38:05 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

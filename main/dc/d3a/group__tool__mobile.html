@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240405) (26649f5750e)</div>
+   <div id="projectbrief">Moodle 4.4beta (Build: 20240412) (8cf14f6e701)</div>
   </td>
  </tr>
  </tbody>
@@ -69,6 +69,9 @@ Namespaces</h2></td></tr>
 <tr class="memitem:de/dbf/namespacetool__mobile" id="r_de/dbf/namespacetool__mobile"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbf/namespacetool__mobile.html">tool_mobile</a></td></tr>
 <tr class="memdesc:de/dbf/namespacetool__mobile"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#160; <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d2/d99/namespacetool__mobile_1_1local_1_1hooks_1_1output" id="r_d2/d99/namespacetool__mobile_1_1local_1_1hooks_1_1output"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d99/namespacetool__mobile_1_1local_1_1hooks_1_1output.html">tool_mobile\local\hooks\output</a></td></tr>
+<tr class="memdesc:d2/d99/namespacetool__mobile_1_1local_1_1hooks_1_1output"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#160; <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d4/ddc/namespacetool__mobile_1_1local_1_1hooks_1_1user" id="r_d4/ddc/namespacetool__mobile_1_1local_1_1hooks_1_1user"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddc/namespacetool__mobile_1_1local_1_1hooks_1_1user.html">tool_mobile\local\hooks\user</a></td></tr>
 <tr class="memdesc:d4/ddc/namespacetool__mobile_1_1local_1_1hooks_1_1user"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#160; <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -88,6 +91,8 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is the external API for this tool.  <a href="../../de/de0/classtool__mobile_1_1external.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ddd/classtool__mobile_1_1hook__callbacks.html">tool_mobile\hook_callbacks</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d53/classtool__mobile_1_1local_1_1hooks_1_1output_1_1before__http__headers.html">tool_mobile\local\hooks\output\before_http_headers</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dc6/classtool__mobile_1_1local_1_1hooks_1_1user_1_1after__complete__login.html">tool_mobile\local\hooks\user\after_complete_login</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -371,6 +376,10 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 <div class="line">        <span class="stringliteral">&#39;callback&#39;</span> =&gt; <span class="stringliteral">&#39;tool_mobile\local\hooks\user\after_user_passed_mfa::callback&#39;</span>,</div>
 <div class="line">        <span class="stringliteral">&#39;priority&#39;</span> =&gt; 500,</div>
 <div class="line">    ],</div>
+<div class="line">    [</div>
+<div class="line">        <span class="stringliteral">&#39;hook&#39;</span> =&gt; core\hook\output\before_http_headers::class,</div>
+<div class="line">        <span class="stringliteral">&#39;callback&#39;</span> =&gt; [\tool_mobile\local\hooks\output\before_http_headers::class, <span class="stringliteral">&#39;callback&#39;</span>],</div>
+<div class="line">    ],</div>
 <div class="line">]</div>
 </div><!-- fragment -->
 </div>
@@ -422,7 +431,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 7 2024 02:33:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 14 2024 03:45:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

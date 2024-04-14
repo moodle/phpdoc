@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3.3+ (Build: 20240405) (cf01fd6befe)</div>
+   <div id="projectbrief">Moodle 4.3.3+ (Build: 20240412) (d706265b8e7)</div>
   </td>
  </tr>
  </tbody>
@@ -69,12 +69,6 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a24830ffe1467089c6ab08bb7874b4fba" id="r_a24830ffe1467089c6ab08bb7874b4fba"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24830ffe1467089c6ab08bb7874b4fba">add_attributes_to_cookie_response_header</a> (string $cookiename, array $attributes)</td></tr>
-<tr class="memdesc:a24830ffe1467089c6ab08bb7874b4fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make sure the given attributes are set on the Set-Cookie response header identified by name=$cookiename.  <br /></td></tr>
-<tr class="separator:a24830ffe1467089c6ab08bb7874b4fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe3455cd7017f16e5595496ea7b2431d" id="r_afe3455cd7017f16e5595496ea7b2431d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afe3455cd7017f16e5595496ea7b2431d">cookie_response_headers_add_attributes</a> (array $headerstrings, array $cookiestomatch, array $attributes, bool $casesensitive=false)</td></tr>
-<tr class="memdesc:afe3455cd7017f16e5595496ea7b2431d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a list of HTTP header strings, return a list of HTTP header strings where the matched 'Set-Cookie' headers have been updated with the attributes defined in $attribute - an array of strings.  <br /></td></tr>
-<tr class="separator:afe3455cd7017f16e5595496ea7b2431d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84a0b69a708e027c967e7e43aac32bcc" id="r_a84a0b69a708e027c967e7e43aac32bcc"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84a0b69a708e027c967e7e43aac32bcc">cookies_supported</a> ()</td></tr>
 <tr class="memdesc:a84a0b69a708e027c967e7e43aac32bcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a cookie check has been made, returns whether cookies could be set or not.  <br /></td></tr>
 <tr class="separator:a84a0b69a708e027c967e7e43aac32bcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -104,108 +98,6 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>COOKIE_METHOD_NO
 <tr class="separator:ab09e485b5c1780141a6bdaaded68d086"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a24830ffe1467089c6ab08bb7874b4fba" name="a24830ffe1467089c6ab08bb7874b4fba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24830ffe1467089c6ab08bb7874b4fba">&#9670;&#160;</a></span>add_attributes_to_cookie_response_header()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static auth_lti\local\ltiadvantage\utility\cookie_helper::add_attributes_to_cookie_response_header </td>
-          <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$cookiename</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$attributes</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Make sure the given attributes are set on the Set-Cookie response header identified by name=$cookiename. </p>
-<p>This function only affects Set-Cookie headers and modifies the headers directly with the required changes, if any.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$cookiename</td><td>the cookie name. </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$attributes</td><td>the attributes to set/ensure are set. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="afe3455cd7017f16e5595496ea7b2431d" name="afe3455cd7017f16e5595496ea7b2431d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe3455cd7017f16e5595496ea7b2431d">&#9670;&#160;</a></span>cookie_response_headers_add_attributes()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static auth_lti\local\ltiadvantage\utility\cookie_helper::cookie_response_headers_add_attributes </td>
-          <td>(</td>
-          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$headerstrings</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$cookiestomatch</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$attributes</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$casesensitive</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Given a list of HTTP header strings, return a list of HTTP header strings where the matched 'Set-Cookie' headers have been updated with the attributes defined in $attribute - an array of strings. </p>
-<p>This method does not verify whether a given attribute is valid or not. It blindly sets it and returns the header strings. It's up to calling code to determine whether an attribute makes sense or not.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">array</td><td class="paramname">$headerstrings</td><td>the array of header strings. </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$cookiestomatch</td><td>the array of cookie names to match. </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$attributes</td><td>the attributes to set on each matched 'Set-Cookie' header. </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$casesensitive</td><td>whether to match the attribute in a case-sensitive way. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">array</td><td>the updated array of header strings. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a84a0b69a708e027c967e7e43aac32bcc" name="a84a0b69a708e027c967e7e43aac32bcc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a84a0b69a708e027c967e7e43aac32bcc">&#9670;&#160;</a></span>cookies_supported()</h2>
 
@@ -364,7 +256,7 @@ self::COOKIE_METHOD_EXPLICIT_PARTITIONING</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 7 2024 02:30:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 14 2024 03:42:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240405) (26649f5750e)</div>
+   <div id="projectbrief">Moodle 4.4beta (Build: 20240412) (8cf14f6e701)</div>
   </td>
  </tr>
  </tbody>
@@ -72,6 +72,18 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a4531354ba65100bd5adc6ba0693f3942" id="r_a4531354ba65100bd5adc6ba0693f3942"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4531354ba65100bd5adc6ba0693f3942">compute_grade_item_totals</a> (<a class="el" href="../../d6/dc0/classquestion__usage__by__activity.html">question_usage_by_activity</a> $quba)</td></tr>
+<tr class="memdesc:a4531354ba65100bd5adc6ba0693f3942"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the grade and maximum for each item, for an attempt where the <a class="el" href="../../d6/dc0/classquestion__usage__by__activity.html" title="This class keeps track of a group of questions that are being attempted, and which state,...">question_usage_by_activity</a> is available.  <br /></td></tr>
+<tr class="separator:a4531354ba65100bd5adc6ba0693f3942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae69916707f4fddf7c89a1759f190d97a" id="r_ae69916707f4fddf7c89a1759f190d97a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae69916707f4fddf7c89a1759f190d97a">compute_grade_item_totals_for_attempts</a> (array $qubaids)</td></tr>
+<tr class="memdesc:ae69916707f4fddf7c89a1759f190d97a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the grade and maximum for each item, for some attempts where we only have the usage ids.  <br /></td></tr>
+<tr class="separator:ae69916707f4fddf7c89a1759f190d97a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a101ec060f8277b37e34ad85604588a74" id="r_a101ec060f8277b37e34ad85604588a74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a101ec060f8277b37e34ad85604588a74">get_grade_items</a> ()</td></tr>
+<tr class="memdesc:a101ec060f8277b37e34ad85604588a74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the extra grade items for this quiz.  <br /></td></tr>
+<tr class="separator:a101ec060f8277b37e34ad85604588a74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a589d870dc62bcfbf2b63f04fda247302" id="r_a589d870dc62bcfbf2b63f04fda247302"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a589d870dc62bcfbf2b63f04fda247302">load_grade_item_totals</a> (<a class="el" href="../../d2/d58/classqubaid__condition.html">qubaid_condition</a> $qubaids)</td></tr>
+<tr class="memdesc:a589d870dc62bcfbf2b63f04fda247302"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query the database return the total mark for each grade item for a set of attempts.  <br /></td></tr>
+<tr class="separator:a589d870dc62bcfbf2b63f04fda247302"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31f1d456ca7ba97c985b7e39af5c6f07" id="r_a31f1d456ca7ba97c985b7e39af5c6f07"><td class="memItemLeft" align="right" valign="top"><a id="a31f1d456ca7ba97c985b7e39af5c6f07" name="a31f1d456ca7ba97c985b7e39af5c6f07"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>recompute_all_attempt_sumgrades</b> ()</td></tr>
 <tr class="memdesc:a31f1d456ca7ba97c985b7e39af5c6f07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the sumgrades field of attempts at this quiz. <br /></td></tr>
@@ -85,6 +97,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acbc437fef90b47cf5c66f62d15c1875d" id="r_acbc437fef90b47cf5c66f62d15c1875d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbc437fef90b47cf5c66f62d15c1875d">recompute_quiz_sumgrades</a> ()</td></tr>
 <tr class="memdesc:acbc437fef90b47cf5c66f62d15c1875d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the sumgrades field of the quiz.  <br /></td></tr>
 <tr class="separator:acbc437fef90b47cf5c66f62d15c1875d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad53b744f462cee81885a6efc5da01e4a" id="r_ad53b744f462cee81885a6efc5da01e4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad53b744f462cee81885a6efc5da01e4a">set_slots</a> (array $slots)</td></tr>
+<tr class="memdesc:ad53b744f462cee81885a6efc5da01e4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lets other code pass in the slot information, so it does note have to be re-loaded from the <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a>.  <br /></td></tr>
+<tr class="separator:ad53b744f462cee81885a6efc5da01e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec3b15686c9e071b175a34bbcb3358f0" id="r_aec3b15686c9e071b175a34bbcb3358f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec3b15686c9e071b175a34bbcb3358f0">update_quiz_maximum_grade</a> (float $newgrade)</td></tr>
 <tr class="memdesc:aec3b15686c9e071b175a34bbcb3358f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the quiz setting for the grade the quiz is out of.  <br /></td></tr>
 <tr class="separator:aec3b15686c9e071b175a34bbcb3358f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,13 +124,25 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a660d1d67afd81d5aee282d4050fb83bc" id="r_a660d1d67afd81d5aee282d4050fb83bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a660d1d67afd81d5aee282d4050fb83bc">compute_final_grade_from_attempts</a> (array $attempts)</td></tr>
 <tr class="memdesc:a660d1d67afd81d5aee282d4050fb83bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the overall grade for a quiz given a number of attempts by a particular user.  <br /></td></tr>
 <tr class="separator:a660d1d67afd81d5aee282d4050fb83bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9d37d78509648bccc616baa6c347913" id="r_ab9d37d78509648bccc616baa6c347913"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9d37d78509648bccc616baa6c347913">ensure_grade_items_loaded</a> ()</td></tr>
+<tr class="memdesc:ab9d37d78509648bccc616baa6c347913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensure the {.  <br /></td></tr>
+<tr class="separator:ab9d37d78509648bccc616baa6c347913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74d7ecb5c284c1f7388bbdd18048e7d" id="r_ab74d7ecb5c284c1f7388bbdd18048e7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab74d7ecb5c284c1f7388bbdd18048e7d">ensure_slots_loaded</a> ()</td></tr>
+<tr class="memdesc:ab74d7ecb5c284c1f7388bbdd18048e7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensure the {.  <br /></td></tr>
+<tr class="separator:ab74d7ecb5c284c1f7388bbdd18048e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:a444904108199ebb3adf782e36dc1fe00" id="r_a444904108199ebb3adf782e36dc1fe00"><td class="memItemLeft" align="right" valign="top">stdClass[] null array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a444904108199ebb3adf782e36dc1fe00">$gradeitems</a> = null</td></tr>
+<tr class="memdesc:a444904108199ebb3adf782e36dc1fe00"><td class="mdescLeft">&#160;</td><td class="mdescRight">quiz_grade_items for this quiz indexed by id, sorted by sortorder, with a maxmark field added.  <br /></td></tr>
+<tr class="separator:a444904108199ebb3adf782e36dc1fe00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad79f0f398b852781ef63b46fae4379a4" id="r_ad79f0f398b852781ef63b46fae4379a4"><td class="memItemLeft" align="right" valign="top"><a id="ad79f0f398b852781ef63b46fae4379a4" name="ad79f0f398b852781ef63b46fae4379a4"></a>
 <a class="el" href="../../db/d84/classmod__quiz_1_1quiz__settings.html">quiz_settings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$quizobj</b></td></tr>
 <tr class="memdesc:ad79f0f398b852781ef63b46fae4379a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">the quiz for which this instance computes grades. <br /></td></tr>
 <tr class="separator:ad79f0f398b852781ef63b46fae4379a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4cda838b52c0d092f5c4dbfbc54ec68" id="r_ac4cda838b52c0d092f5c4dbfbc54ec68"><td class="memItemLeft" align="right" valign="top">stdClass[] null array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4cda838b52c0d092f5c4dbfbc54ec68">$slots</a> = null</td></tr>
+<tr class="memdesc:ac4cda838b52c0d092f5c4dbfbc54ec68"><td class="mdescLeft">&#160;</td><td class="mdescRight">quiz_slot for this quiz.  <br /></td></tr>
+<tr class="separator:ac4cda838b52c0d092f5c4dbfbc54ec68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae7e365543a621606a67ab7cf7a440af2" name="ae7e365543a621606a67ab7cf7a440af2"></a>
@@ -192,6 +219,70 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a4531354ba65100bd5adc6ba0693f3942" name="a4531354ba65100bd5adc6ba0693f3942"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4531354ba65100bd5adc6ba0693f3942">&#9670;&#160;</a></span>compute_grade_item_totals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\grade_calculator::compute_grade_item_totals </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d6/dc0/classquestion__usage__by__activity.html">question_usage_by_activity</a></td>          <td class="paramname"><span class="paramname"><em>$quba</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute the grade and maximum for each item, for an attempt where the <a class="el" href="../../d6/dc0/classquestion__usage__by__activity.html" title="This class keeps track of a group of questions that are being attempted, and which state,...">question_usage_by_activity</a> is available. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d6/dc0/classquestion__usage__by__activity.html" title="This class keeps track of a group of questions that are being attempted, and which state,...">question_usage_by_activity</a></td><td class="paramname">$quba</td><td>usage for the quiz attempt we want to calculate the grades of. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">grade_out_of[]</td><td>the grade for each item where the total grade is not zero. -&gt;name will be set to the grade item name. Must be output through {</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/de1/group__core.html#ga5d853ba52ad6e416838c5dcc3680aa80" title="Given a simple string, this function returns the string processed by enabled string filters if $CFG-&gt;...">format_string()</a>}. </dd></dl>
+
+</div>
+</div>
+<a id="ae69916707f4fddf7c89a1759f190d97a" name="ae69916707f4fddf7c89a1759f190d97a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae69916707f4fddf7c89a1759f190d97a">&#9670;&#160;</a></span>compute_grade_item_totals_for_attempts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\grade_calculator::compute_grade_item_totals_for_attempts </td>
+          <td>(</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$qubaids</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compute the grade and maximum for each item, for some attempts where we only have the usage ids. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int[]</td><td class="paramname">$qubaids</td><td>array of usage ids. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">grade_out_of[][]</td><td>question_usage.id =&gt; array of grade_out_of. -&gt;name will be set to the grade item name. Must be output through {</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/de1/group__core.html#ga5d853ba52ad6e416838c5dcc3680aa80" title="Given a simple string, this function returns the string processed by enabled string filters if $CFG-&gt;...">format_string()</a>}.. </dd></dl>
+
+</div>
+</div>
 <a id="aba4b98c11d46693f4ec45a375b390ff3" name="aba4b98c11d46693f4ec45a375b390ff3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aba4b98c11d46693f4ec45a375b390ff3">&#9670;&#160;</a></span>create()</h2>
 
@@ -226,6 +317,118 @@ Protected Attributes</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">grade_calculator</td><td>instance of this class for the given quiz. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab9d37d78509648bccc616baa6c347913" name="ab9d37d78509648bccc616baa6c347913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9d37d78509648bccc616baa6c347913">&#9670;&#160;</a></span>ensure_grade_items_loaded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\grade_calculator::ensure_grade_items_loaded </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ensure the {. </p>
+<dl class="section see"><dt>See also</dt><dd>grade_calculator::$gradeitems} field is ready to use. </dd></dl>
+
+</div>
+</div>
+<a id="ab74d7ecb5c284c1f7388bbdd18048e7d" name="ab74d7ecb5c284c1f7388bbdd18048e7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab74d7ecb5c284c1f7388bbdd18048e7d">&#9670;&#160;</a></span>ensure_slots_loaded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\grade_calculator::ensure_slots_loaded </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ensure the {. </p>
+<dl class="section see"><dt>See also</dt><dd>$gradeitems} field is ready to use. </dd></dl>
+
+</div>
+</div>
+<a id="a101ec060f8277b37e34ad85604588a74" name="a101ec060f8277b37e34ad85604588a74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a101ec060f8277b37e34ad85604588a74">&#9670;&#160;</a></span>get_grade_items()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\grade_calculator::get_grade_items </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the extra grade items for this quiz. </p>
+<p>Returned objects have fields -&gt;id, -&gt;quizid, -&gt;sortorder, -&gt;name and maxmark. </p><dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass[]</td><td>the grade items for this quiz. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a589d870dc62bcfbf2b63f04fda247302" name="a589d870dc62bcfbf2b63f04fda247302"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a589d870dc62bcfbf2b63f04fda247302">&#9670;&#160;</a></span>load_grade_item_totals()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\grade_calculator::load_grade_item_totals </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d2/d58/classqubaid__condition.html">qubaid_condition</a></td>          <td class="paramname"><span class="paramname"><em>$qubaids</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Query the database return the total mark for each grade item for a set of attempts. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d2/d58/classqubaid__condition.html" title="This class represents a restriction on the set of question_usage ids to include in a larger database ...">qubaid_condition</a></td><td class="paramname">$qubaids</td><td>which question_usages to computer the total marks for. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">float[][]</td><td>Array question_usage.id =&gt; quiz_grade_item.id =&gt; mark. </td></tr>
   </table>
   </dd>
 </dl>
@@ -305,6 +508,31 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ad53b744f462cee81885a6efc5da01e4a" name="ad53b744f462cee81885a6efc5da01e4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad53b744f462cee81885a6efc5da01e4a">&#9670;&#160;</a></span>set_slots()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\grade_calculator::set_slots </td>
+          <td>(</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$slots</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lets other code pass in the slot information, so it does note have to be re-loaded from the <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">stdClass[]</td><td class="paramname">$slots</td><td>the data from quiz_slots. The only required fields are -&gt;slot and -&gt;quizgradeitemid. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aec3b15686c9e071b175a34bbcb3358f0" name="aec3b15686c9e071b175a34bbcb3358f0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aec3b15686c9e071b175a34bbcb3358f0">&#9670;&#160;</a></span>update_quiz_maximum_grade()</h2>
 
@@ -332,6 +560,59 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a444904108199ebb3adf782e36dc1fe00" name="a444904108199ebb3adf782e36dc1fe00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a444904108199ebb3adf782e36dc1fe00">&#9670;&#160;</a></span>$gradeitems</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">stdClass [] null array mod_quiz\grade_calculator::$gradeitems = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>quiz_grade_items for this quiz indexed by id, sorted by sortorder, with a maxmark field added. </p>
+<p>Lazy-loaded when needed. See {</p><dl class="section see"><dt>See also</dt><dd>ensure_grade_items_loaded()}. </dd></dl>
+
+</div>
+</div>
+<a id="ac4cda838b52c0d092f5c4dbfbc54ec68" name="ac4cda838b52c0d092f5c4dbfbc54ec68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4cda838b52c0d092f5c4dbfbc54ec68">&#9670;&#160;</a></span>$slots</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">stdClass [] null array mod_quiz\grade_calculator::$slots = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>quiz_slot for this quiz. </p>
+<p>Only -&gt;slot and -&gt;quizgradeitemid fields are used.</p>
+<p>This is either set by another class that already has the data, using {</p><dl class="section see"><dt>See also</dt><dd>set_slots()} or it is lazy-loaded when needed. See {</dd>
+<dd>
+ensure_slots_loaded()}. </dd></dl>
+
+</div>
+</div>
 <a id="a2884310a823320865e97b53f432323e7" name="a2884310a823320865e97b53f432323e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2884310a823320865e97b53f432323e7">&#9670;&#160;</a></span>ALMOST_ZERO</h2>
 
@@ -355,7 +636,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 7 2024 02:35:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 14 2024 03:47:37 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

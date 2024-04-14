@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240405) (26649f5750e)</div>
+   <div id="projectbrief">Moodle 4.4beta (Build: 20240412) (8cf14f6e701)</div>
   </td>
  </tr>
  </tbody>
@@ -101,6 +101,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8ec1832500178cfa8bbab72815b8595c" id="r_a8ec1832500178cfa8bbab72815b8595c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ec1832500178cfa8bbab72815b8595c">insert_questions_usage_by_activity</a> (<a class="el" href="../../d6/dc0/classquestion__usage__by__activity.html">question_usage_by_activity</a> $quba)</td></tr>
 <tr class="memdesc:a8ec1832500178cfa8bbab72815b8595c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store an entire <a class="el" href="../../d6/dc0/classquestion__usage__by__activity.html">question_usage_by_activity</a> in the database, including all the question_attempts that comprise it.  <br /></td></tr>
 <tr class="separator:a8ec1832500178cfa8bbab72815b8595c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7d96395a79da612afc651d1577ddafb" id="r_ac7d96395a79da612afc651d1577ddafb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7d96395a79da612afc651d1577ddafb">latest_step_for_qa_subquery</a> ($questionattemptid='qa.id')</td></tr>
+<tr class="memdesc:ac7d96395a79da612afc651d1577ddafb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the subquery which selects the latest step for each <a class="el" href="../../d3/dda/classquestion__attempt.html" title="Tracks an attempt at one particular question in a question_usage_by_activity.">question_attempt</a>.  <br /></td></tr>
+<tr class="separator:ac7d96395a79da612afc651d1577ddafb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f7d70636fa72f3d2dc50b3948ffeaa9" id="r_a3f7d70636fa72f3d2dc50b3948ffeaa9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f7d70636fa72f3d2dc50b3948ffeaa9">load_attempts_at_question</a> ($questionid, <a class="el" href="../../d2/d58/classqubaid__condition.html">qubaid_condition</a> $qubaids)</td></tr>
 <tr class="memdesc:a3f7d70636fa72f3d2dc50b3948ffeaa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load all the attempts at a given queston from a set of question_usages.  <br /></td></tr>
 <tr class="separator:a3f7d70636fa72f3d2dc50b3948ffeaa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,9 +173,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aee98ea9879969b5c315e92bceb0ce859" id="r_aee98ea9879969b5c315e92bceb0ce859"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aee98ea9879969b5c315e92bceb0ce859">full_states_to_summary_state_sql</a> ()</td></tr>
 <tr class="memdesc:aee98ea9879969b5c315e92bceb0ce859"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all the WHEN 'x' THEN 'y' terms needed to convert the question_attempt_steps.state column to a summary state.  <br /></td></tr>
 <tr class="separator:aee98ea9879969b5c315e92bceb0ce859"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7d96395a79da612afc651d1577ddafb" id="r_ac7d96395a79da612afc651d1577ddafb"><td class="memItemLeft" align="right" valign="top"><a id="ac7d96395a79da612afc651d1577ddafb" name="ac7d96395a79da612afc651d1577ddafb"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>latest_step_for_qa_subquery</b> ($questionattemptid='qa.id')</td></tr>
-<tr class="separator:ac7d96395a79da612afc651d1577ddafb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7070088877b115c8f8701f71c34f2801" id="r_a7070088877b115c8f8701f71c34f2801"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7070088877b115c8f8701f71c34f2801">make_step_record</a> (<a class="el" href="../../df/db2/classquestion__attempt__step.html">question_attempt_step</a> $step, $questionattemptid, $seq)</td></tr>
 <tr class="memdesc:a7070088877b115c8f8701f71c34f2801"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper method used by insert_question_attempt_step and update_question_attempt_step.  <br /></td></tr>
 <tr class="separator:a7070088877b115c8f8701f71c34f2801"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -654,6 +654,37 @@ Protected Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="../../d6/dc0/classquestion__usage__by__activity.html" title="This class keeps track of a group of questions that are being attempted, and which state,...">question_usage_by_activity</a></td><td class="paramname">$quba</td><td>the usage to store. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac7d96395a79da612afc651d1577ddafb" name="ac7d96395a79da612afc651d1577ddafb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7d96395a79da612afc651d1577ddafb">&#9670;&#160;</a></span>latest_step_for_qa_subquery()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">question_engine_data_mapper::latest_step_for_qa_subquery </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$questionattemptid</em><span class="paramdefsep"> = </span><span class="paramdefval">'qa.id'</span></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the subquery which selects the latest step for each <a class="el" href="../../d3/dda/classquestion__attempt.html" title="Tracks an attempt at one particular question in a question_usage_by_activity.">question_attempt</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$questionattemptid</td><td>column alias for the column to join on which is question_attempt.id. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>SQL fragment to include in the query. Has not placeholders. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1500,7 +1531,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 7 2024 02:34:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 14 2024 03:46:33 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

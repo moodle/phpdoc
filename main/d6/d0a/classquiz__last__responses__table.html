@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240405) (26649f5750e)</div>
+   <div id="projectbrief">Moodle 4.4beta (Build: 20240412) (8cf14f6e701)</div>
   </td>
  </tr>
  </tbody>
@@ -97,7 +97,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a117d3c19a5f0ddc29f0dac101f9b59c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contruct all the parts of the main database query.  <br /></td></tr>
 <tr class="separator:a117d3c19a5f0ddc29f0dac101f9b59c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af76c959e4e4765ff9e5604f361828f07" id="r_af76c959e4e4765ff9e5604f361828f07"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af76c959e4e4765ff9e5604f361828f07">build_table</a> ()</td></tr>
-<tr class="memdesc:af76c959e4e4765ff9e5604f361828f07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Take the data returned from the db_query and go through all the rows processing each col using either col_{columnname} method or other_cols method or if other_cols returns NULL then put the data straight into the table.  <br /></td></tr>
+<tr class="memdesc:af76c959e4e4765ff9e5604f361828f07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build the table from the fetched data.  <br /></td></tr>
 <tr class="separator:af76c959e4e4765ff9e5604f361828f07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7c53fb1fdf93a12291092abaf26c122" id="r_ae7c53fb1fdf93a12291092abaf26c122"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de0/classmod__quiz_1_1local_1_1reports_1_1attempts__report__table.html#ae7c53fb1fdf93a12291092abaf26c122">checkbox_col_header</a> (string $columnname)</td></tr>
 <tr class="memdesc:ae7c53fb1fdf93a12291092abaf26c122"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates the contents for the checkbox column header.  <br /></td></tr>
@@ -327,6 +327,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0cdde1c1dc93ce8788a11a16163f360e" id="r_a0cdde1c1dc93ce8788a11a16163f360e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d18/classflexible__table.html#a0cdde1c1dc93ce8788a11a16163f360e">set_page_number</a> (int $pagenumber)</td></tr>
 <tr class="memdesc:a0cdde1c1dc93ce8788a11a16163f360e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the page number.  <br /></td></tr>
 <tr class="separator:a0cdde1c1dc93ce8788a11a16163f360e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add30c834dcdb3cccba95cdf16269e2b1" id="r_add30c834dcdb3cccba95cdf16269e2b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de0/classmod__quiz_1_1local_1_1reports_1_1attempts__report__table.html#add30c834dcdb3cccba95cdf16269e2b1">set_quiz_setting</a> (quiz_settings $quizobj)</td></tr>
+<tr class="memdesc:add30c834dcdb3cccba95cdf16269e2b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A way for the report to pass in the quiz settings object.  <br /></td></tr>
+<tr class="separator:add30c834dcdb3cccba95cdf16269e2b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7341985554cbcc9c1cfabeb46d9a41a5" id="r_a7341985554cbcc9c1cfabeb46d9a41a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d18/classflexible__table.html#a7341985554cbcc9c1cfabeb46d9a41a5">set_sortdata</a> (array $sortdata)</td></tr>
 <tr class="memdesc:a7341985554cbcc9c1cfabeb46d9a41a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the preferred table sorting attributes.  <br /></td></tr>
 <tr class="separator:a7341985554cbcc9c1cfabeb46d9a41a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -488,6 +491,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$started_output</b> =
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:adbb22d9198c1102a8aab66a30c0479ed" id="r_adbb22d9198c1102a8aab66a30c0479ed"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de0/classmod__quiz_1_1local_1_1reports_1_1attempts__report__table.html#adbb22d9198c1102a8aab66a30c0479ed">add_grade_item_mark</a> (int $gradeitemid)</td></tr>
+<tr class="memdesc:adbb22d9198c1102a8aab66a30c0479ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a field marks$gradeitemid to the query, with the total score for that grade item.  <br /></td></tr>
+<tr class="separator:adbb22d9198c1102a8aab66a30c0479ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aebc23c314a40afedff6d9f2649a3867b" id="r_aebc23c314a40afedff6d9f2649a3867b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de0/classmod__quiz_1_1local_1_1reports_1_1attempts__report__table.html#aebc23c314a40afedff6d9f2649a3867b">add_latest_state_join</a> ($slot)</td></tr>
 <tr class="memdesc:aebc23c314a40afedff6d9f2649a3867b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add the information about the latest state of the question with slot $slot to the query.  <br /></td></tr>
 <tr class="separator:aebc23c314a40afedff6d9f2649a3867b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -531,6 +537,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ae75117fd876e1d593afd812c1107a954" id="r_ae75117fd876e1d593afd812c1107a954"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de0/classmod__quiz_1_1local_1_1reports_1_1attempts__report__table.html#ae75117fd876e1d593afd812c1107a954">is_flagged</a> ($questionusageid, $slot)</td></tr>
 <tr class="memdesc:ae75117fd876e1d593afd812c1107a954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Work out if a particular question in a particular attempt has been flagged.  <br /></td></tr>
 <tr class="separator:ae75117fd876e1d593afd812c1107a954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1086a762f515ef52e0d3c63813ead762" id="r_a1086a762f515ef52e0d3c63813ead762"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de0/classmod__quiz_1_1local_1_1reports_1_1attempts__report__table.html#a1086a762f515ef52e0d3c63813ead762">is_grade_item_column</a> (string $columnname)</td></tr>
+<tr class="memdesc:a1086a762f515ef52e0d3c63813ead762"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this the column key for an extra grade item column?  <br /></td></tr>
+<tr class="separator:a1086a762f515ef52e0d3c63813ead762"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fa283a1b2df00dc368e16fded06f2ab" id="r_a5fa283a1b2df00dc368e16fded06f2ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fa283a1b2df00dc368e16fded06f2ab">is_latest_step_column</a> ($column)</td></tr>
 <tr class="memdesc:a5fa283a1b2df00dc368e16fded06f2ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this a column that depends on joining to the latest state information?  <br /></td></tr>
 <tr class="separator:a5fa283a1b2df00dc368e16fded06f2ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -540,6 +549,10 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ab1de909c53726e3d669e0d4aa4f7294a" id="r_ab1de909c53726e3d669e0d4aa4f7294a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de0/classmod__quiz_1_1local_1_1reports_1_1attempts__report__table.html#ab1de909c53726e3d669e0d4aa4f7294a">load_extra_data</a> ()</td></tr>
 <tr class="memdesc:ab1de909c53726e3d669e0d4aa4f7294a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load any extra data after main query.  <br /></td></tr>
 <tr class="separator:ab1de909c53726e3d669e0d4aa4f7294a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f1073169d7637a5bf2fec35c1d7112e" id="r_a9f1073169d7637a5bf2fec35c1d7112e"><td class="memItemLeft" align="right" valign="top"><a id="a9f1073169d7637a5bf2fec35c1d7112e" name="a9f1073169d7637a5bf2fec35c1d7112e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>load_grade_item_marks</b> ()</td></tr>
+<tr class="memdesc:a9f1073169d7637a5bf2fec35c1d7112e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load the total mark for each grade item for each attempt. <br /></td></tr>
+<tr class="separator:a9f1073169d7637a5bf2fec35c1d7112e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a106a48ec1f93c9b270459baff98fbc3a" id="r_a106a48ec1f93c9b270459baff98fbc3a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de0/classmod__quiz_1_1local_1_1reports_1_1attempts__report__table.html#a106a48ec1f93c9b270459baff98fbc3a">load_question_latest_steps</a> (<a class="el" href="../../d2/d58/classqubaid__condition.html">qubaid_condition</a> $qubaids=null)</td></tr>
 <tr class="memdesc:a106a48ec1f93c9b270459baff98fbc3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load information about the latest state of selected questions in selected attempts.  <br /></td></tr>
 <tr class="separator:a106a48ec1f93c9b270459baff98fbc3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -620,6 +633,9 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$filename</b></td><
 <a class="el" href="../../d1/ddd/classcore__table_1_1local_1_1filter_1_1filterset.html">filterset</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$filterset</b> = null</td></tr>
 <tr class="memdesc:a30a4fdec93be2962bcc67d0f13018bfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The currently applied filerset This is required for dynamic tables, but can be used by other tables too if desired. <br /></td></tr>
 <tr class="separator:a30a4fdec93be2962bcc67d0f13018bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeda69cbb8f34f95f078a0e21d020f446" id="r_aeda69cbb8f34f95f078a0e21d020f446"><td class="memItemLeft" align="right" valign="top">float[][] null array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de0/classmod__quiz_1_1local_1_1reports_1_1attempts__report__table.html#aeda69cbb8f34f95f078a0e21d020f446">$gradeitemtotals</a> = null</td></tr>
+<tr class="memdesc:aeda69cbb8f34f95f078a0e21d020f446"><td class="mdescLeft">&#160;</td><td class="mdescRight">total mark for each grade item.  <br /></td></tr>
+<tr class="separator:aeda69cbb8f34f95f078a0e21d020f446"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23016677645cf627b091ee27609d667b" id="r_a23016677645cf627b091ee27609d667b"><td class="memItemLeft" align="right" valign="top"><a id="a23016677645cf627b091ee27609d667b" name="a23016677645cf627b091ee27609d667b"></a>
 core dml sql_join&#160;</td><td class="memItemRight" valign="bottom"><b>$groupstudentsjoins</b></td></tr>
 <tr class="memdesc:a23016677645cf627b091ee27609d667b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains joins, wheres, params to find students in the currently selected group, if applicable. <br /></td></tr>
@@ -663,6 +679,9 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$questions</b></td><
 stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$quiz</b></td></tr>
 <tr class="memdesc:af49d88b87179b37c678bf8dc5ff18b33"><td class="mdescLeft">&#160;</td><td class="mdescRight">the quiz settings for the quiz we are reporting on. <br /></td></tr>
 <tr class="separator:af49d88b87179b37c678bf8dc5ff18b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b34e7736127a82617ac05e0d0e0eb6b" id="r_a3b34e7736127a82617ac05e0d0e0eb6b"><td class="memItemLeft" align="right" valign="top">quiz_settings quiz_settings&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de0/classmod__quiz_1_1local_1_1reports_1_1attempts__report__table.html#a3b34e7736127a82617ac05e0d0e0eb6b">$quizobj</a></td></tr>
+<tr class="memdesc:a3b34e7736127a82617ac05e0d0e0eb6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">quiz settings object for this quiz.  <br /></td></tr>
+<tr class="separator:a3b34e7736127a82617ac05e0d0e0eb6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6fb3b21b6eb4bfba43ea6f0244a4680" id="r_aa6fb3b21b6eb4bfba43ea6f0244a4680"><td class="memItemLeft" align="right" valign="top"><a id="aa6fb3b21b6eb4bfba43ea6f0244a4680" name="aa6fb3b21b6eb4bfba43ea6f0244a4680"></a>
 <a class="el" href="../../dc/d31/classmoodle__url.html">moodle_url</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$reporturl</b></td></tr>
 <tr class="memdesc:aa6fb3b21b6eb4bfba43ea6f0244a4680"><td class="mdescLeft">&#160;</td><td class="mdescRight">the URL of this report. <br /></td></tr>
@@ -848,6 +867,39 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b> = 
 
 </div>
 </div>
+<a id="adbb22d9198c1102a8aab66a30c0479ed" name="adbb22d9198c1102a8aab66a30c0479ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbb22d9198c1102a8aab66a30c0479ed">&#9670;&#160;</a></span>add_grade_item_mark()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\local\reports\attempts_report_table::add_grade_item_mark </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$gradeitemid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add a field marks$gradeitemid to the query, with the total score for that grade item. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$gradeitemid</td><td>the grade item to add information for. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="aebc23c314a40afedff6d9f2649a3867b" name="aebc23c314a40afedff6d9f2649a3867b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aebc23c314a40afedff6d9f2649a3867b">&#9670;&#160;</a></span>add_latest_state_join()</h2>
 
@@ -936,7 +988,8 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b> = 
       </table>
 </div><div class="memdoc">
 
-<p>Take the data returned from the db_query and go through all the rows processing each col using either col_{columnname} method or other_cols method or if other_cols returns NULL then put the data straight into the table. </p>
+<p>Build the table from the fetched data. </p>
+<p>Take the data returned from the db_query and go through all the rows processing each col using either col_{columnname} method or other_cols method or if other_cols returns NULL then put the data straight into the table.</p>
 <p>After calling this function, don't forget to call close_recordset. </p>
 
 <p>Reimplemented from <a class="el" href="../../da/dc8/classtable__sql.html#ae1381ff8c2fd2d2fa0651fa8dd9f8d9e">table_sql</a>.</p>
@@ -3127,6 +3180,45 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b> = 
 
 </div>
 </div>
+<a id="a1086a762f515ef52e0d3c63813ead762" name="a1086a762f515ef52e0d3c63813ead762"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1086a762f515ef52e0d3c63813ead762">&#9670;&#160;</a></span>is_grade_item_column()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\local\reports\attempts_report_table::is_grade_item_column </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$columnname</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Is this the column key for an extra grade item column? </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$columnname</td><td>e.g. 'marks123' or 'duration'. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td>grade item id if this is a column for showing that grade item grade, else, 0. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a5fa283a1b2df00dc368e16fded06f2ab" name="a5fa283a1b2df00dc368e16fded06f2ab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5fa283a1b2df00dc368e16fded06f2ab">&#9670;&#160;</a></span>is_latest_step_column()</h2>
 
@@ -3492,7 +3584,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b> = 
 <p>You can override this method in a child class. </p>
 <p>See the description of build_table which calls this method. </p>
 
-<p>Reimplemented from <a class="el" href="../../d3/d18/classflexible__table.html#a8cc426df4ecf0c1fd587084b64ad0886">flexible_table</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d4/de0/classmod__quiz_1_1local_1_1reports_1_1attempts__report__table.html#a33186fd2285ed3ae20f79eb83fbaa2f6">mod_quiz\local\reports\attempts_report_table</a>.</p>
 
 </div>
 </div>
@@ -3670,7 +3762,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b> = 
 </div><div class="memdoc">
 
 <p>This method is deprecated although the old api is still supported. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000967">Deprecated</a></b></dt><dd>1.9.2 - Jun 2, 2008 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000969">Deprecated</a></b></dt><dd>1.9.2 - Jun 2, 2008 </dd></dl>
 
 </div>
 </div>
@@ -3756,7 +3848,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b> = 
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000968">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000970">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
 
 </div>
 </div>
@@ -4361,6 +4453,40 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b> = 
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$pagenumber</td><td>The page number. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="add30c834dcdb3cccba95cdf16269e2b1" name="add30c834dcdb3cccba95cdf16269e2b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add30c834dcdb3cccba95cdf16269e2b1">&#9670;&#160;</a></span>set_quiz_setting()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\local\reports\attempts_report_table::set_quiz_setting </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d84/classmod__quiz_1_1quiz__settings.html">quiz_settings</a></td>          <td class="paramname"><span class="paramname"><em>$quizobj</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A way for the report to pass in the quiz settings object. </p>
+<p>Currently done in {</p><dl class="section see"><dt>See also</dt><dd>attempts_report::set_up_table_columns()}.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">quiz_settings</td><td class="paramname">$quizobj</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -5186,6 +5312,31 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b> = 
 
 </div>
 </div>
+<a id="aeda69cbb8f34f95f078a0e21d020f446" name="aeda69cbb8f34f95f078a0e21d020f446"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeda69cbb8f34f95f078a0e21d020f446">&#9670;&#160;</a></span>$gradeitemtotals</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float [][] null array mod_quiz\local\reports\attempts_report_table::$gradeitemtotals = null</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>total mark for each grade item. </p>
+<p>Array question_usage.id =&gt; quiz_grade_item.id =&gt; mark. Loaded by {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d4/de0/classmod__quiz_1_1local_1_1reports_1_1attempts__report__table.html#a9f1073169d7637a5bf2fec35c1d7112e" title="Load the total mark for each grade item for each attempt.">load_grade_item_marks()</a>}, <a class="el" href="../../d8/d07/categoryif.html" title="Advance grading form element.">if</a> applicable. </dd></dl>
+
+</div>
+</div>
 <a id="a91a1cb01a345c3e2d8ecffab3e6a0099" name="a91a1cb01a345c3e2d8ecffab3e6a0099"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a91a1cb01a345c3e2d8ecffab3e6a0099">&#9670;&#160;</a></span>$lateststeps</h2>
 
@@ -5208,6 +5359,31 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b> = 
 
 <p>information about the latest step of each question. </p>
 <p>Loaded by {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d4/de0/classmod__quiz_1_1local_1_1reports_1_1attempts__report__table.html#a106a48ec1f93c9b270459baff98fbc3a" title="Load information about the latest state of selected questions in selected attempts.">load_question_latest_steps()</a>}, <a class="el" href="../../d8/d07/categoryif.html" title="Advance grading form element.">if</a> applicable. </dd></dl>
+
+</div>
+</div>
+<a id="a3b34e7736127a82617ac05e0d0e0eb6b" name="a3b34e7736127a82617ac05e0d0e0eb6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b34e7736127a82617ac05e0d0e0eb6b">&#9670;&#160;</a></span>$quizobj</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">quiz_settings quiz_settings mod_quiz\local\reports\attempts_report_table::$quizobj</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>quiz settings object for this quiz. </p>
+<p>Gets set in {</p><dl class="section see"><dt>See also</dt><dd>attempts_report::et_up_table_columns()}. </dd></dl>
 
 </div>
 </div>
@@ -5268,7 +5444,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$togglegroup</b> = 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 7 2024 02:34:02 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 14 2024 03:46:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

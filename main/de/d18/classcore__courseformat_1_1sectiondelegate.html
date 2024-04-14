@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240405) (26649f5750e)</div>
+   <div id="projectbrief">Moodle 4.4beta (Build: 20240412) (8cf14f6e701)</div>
   </td>
  </tr>
  </tbody>
@@ -73,6 +73,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:accbf655c73016004346573fa05857696" id="r_accbf655c73016004346573fa05857696"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accbf655c73016004346573fa05857696">__construct</a> (protected <a class="el" href="../../d1/db5/classsection__info.html">section_info</a> $sectioninfo)</td></tr>
 <tr class="memdesc:accbf655c73016004346573fa05857696"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
 <tr class="separator:accbf655c73016004346573fa05857696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7ecce4002fc3a52c0e365bcc116b052" id="r_aa7ecce4002fc3a52c0e365bcc116b052"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7ecce4002fc3a52c0e365bcc116b052">get_section_action_menu</a> (course_format $format, <a class="el" href="../../dc/df1/classcore__courseformat_1_1output_1_1local_1_1content_1_1section_1_1controlmenu.html">controlmenu</a> $<a class="el" href="../../dc/df1/classcore__courseformat_1_1output_1_1local_1_1content_1_1section_1_1controlmenu.html">controlmenu</a>, <a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a> $output,)</td></tr>
+<tr class="memdesc:aa7ecce4002fc3a52c0e365bcc116b052"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow delegate plugin to modify the available section menu.  <br /></td></tr>
+<tr class="separator:aa7ecce4002fc3a52c0e365bcc116b052"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a026256ddf3dd3af868222a83db3fd232" id="r_a026256ddf3dd3af868222a83db3fd232"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a026256ddf3dd3af868222a83db3fd232">preprocess_section_name</a> (<a class="el" href="../../d1/db5/classsection__info.html">section_info</a> $section, ?string $newname)</td></tr>
 <tr class="memdesc:a026256ddf3dd3af868222a83db3fd232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define the section final name.  <br /></td></tr>
 <tr class="separator:a026256ddf3dd3af868222a83db3fd232"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,6 +158,48 @@ Static Protected Member Functions</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string|null</td><td>the delegate class name or null if not found. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa7ecce4002fc3a52c0e365bcc116b052" name="aa7ecce4002fc3a52c0e365bcc116b052"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7ecce4002fc3a52c0e365bcc116b052">&#9670;&#160;</a></span>get_section_action_menu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\sectiondelegate::get_section_action_menu </td>
+          <td>(</td>
+          <td class="paramtype">course_format</td>          <td class="paramname"><span class="paramname"><em>$format</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/df1/classcore__courseformat_1_1output_1_1local_1_1content_1_1section_1_1controlmenu.html">controlmenu</a></td>          <td class="paramname"><span class="paramname"><em>$controlmenu</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a></td>          <td class="paramname"><span class="paramname"><em>$output</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allow delegate plugin to modify the available section menu. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">course_format</td><td class="paramname">$format</td><td>The course format instance. </td></tr>
+    <tr><td class="paramtype">controlmenu</td><td class="paramname">$controlmenu</td><td>The control menu instance. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a></td><td class="paramname">$output</td><td>The renderer instance. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">action_menu|null</td><td>The new action menu with the list of edit control items or null if no action menu is available. </td></tr>
   </table>
   </dd>
 </dl>
@@ -313,7 +358,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 7 2024 02:34:33 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 14 2024 03:47:05 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

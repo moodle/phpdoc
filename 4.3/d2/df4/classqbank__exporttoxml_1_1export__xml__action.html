@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3.3+ (Build: 20240405) (cf01fd6befe)</div>
+   <div id="projectbrief">Moodle 4.3.3+ (Build: 20240412) (d706265b8e7)</div>
   </td>
  </tr>
  </tbody>
@@ -61,6 +61,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../da/d53/classqbank__exporttoxml_1_1export__xml__action-members.html">List of all members</a>  </div>
@@ -86,12 +87,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af60f0b8d706936b17e3ff0607f59bf74" id="r_af60f0b8d706936b17e3ff0607f59bf74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/classcore__question_1_1local_1_1bank_1_1view__component.html#af60f0b8d706936b17e3ff0607f59bf74">get_extra_joins</a> ()</td></tr>
 <tr class="memdesc:af60f0b8d706936b17e3ff0607f59bf74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an array 'table_alias' =&gt; 'JOIN clause' to bring in any data that this feature requires.  <br /></td></tr>
 <tr class="separator:af60f0b8d706936b17e3ff0607f59bf74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62a39b29753fa6ccad367a72bf43e485" id="r_a62a39b29753fa6ccad367a72bf43e485"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62a39b29753fa6ccad367a72bf43e485">get_menu_position</a> ()</td></tr>
+<tr class="memdesc:a62a39b29753fa6ccad367a72bf43e485"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an integer to indicate the desired position in the menu for this link, smaller at the top.  <br /></td></tr>
+<tr class="separator:a62a39b29753fa6ccad367a72bf43e485"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64274f0a31d58a88873e0104d9fd0cac" id="r_a64274f0a31d58a88873e0104d9fd0cac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/classcore__question_1_1local_1_1bank_1_1view__component.html#a64274f0a31d58a88873e0104d9fd0cac">get_required_fields</a> ()</td></tr>
 <tr class="memdesc:a64274f0a31d58a88873e0104d9fd0cac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use table alias 'q' for the question table, or one of the ones from get_extra_joins.  <br /></td></tr>
 <tr class="separator:a64274f0a31d58a88873e0104d9fd0cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a514c1f6a3b833cd914f4f958268e2fba" id="r_a514c1f6a3b833cd914f4f958268e2fba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a514c1f6a3b833cd914f4f958268e2fba">init</a> ()</td></tr>
 <tr class="memdesc:a514c1f6a3b833cd914f4f958268e2fba"><td class="mdescLeft">&#160;</td><td class="mdescRight">A chance for subclasses to initialise themselves, for example to load lang strings, without having to override the constructor.  <br /></td></tr>
 <tr class="separator:a514c1f6a3b833cd914f4f958268e2fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a95ca5ed31ad5fd6cf90ce913f5a95351" id="r_a95ca5ed31ad5fd6cf90ce913f5a95351"><td class="memItemLeft" align="right" valign="top">int const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/classcore__question_1_1local_1_1bank_1_1view__component.html#a95ca5ed31ad5fd6cf90ce913f5a95351">MENU_POSITION_NOT_SET</a> = 6666</td></tr>
+<tr class="memdesc:a95ca5ed31ad5fd6cf90ce913f5a95351"><td class="mdescLeft">&#160;</td><td class="mdescRight">value we return from get_menu_position here.  <br /></td></tr>
+<tr class="separator:a95ca5ed31ad5fd6cf90ce913f5a95351"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -189,6 +199,35 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$strexportasxml</b>
 </dl>
 
 <p>Reimplemented in <a class="el" href="../../d8/d5a/classqbank__viewcreator_1_1creator__name__column.html#acbce4a907667d7939bac6f279b4b7dcc">qbank_viewcreator\creator_name_column</a>, <a class="el" href="../../df/d49/classqbank__viewcreator_1_1modifier__name__column.html#ad971313902a54ae0f28dfa0f66f0bb11">qbank_viewcreator\modifier_name_column</a>, <a class="el" href="../../df/dc2/classcore__question_1_1local_1_1bank_1_1action__column__base.html#a6f757ebda6983bfa1442d7518a721823">core_question\local\bank\action_column_base</a>, and <a class="el" href="../../dc/d9c/classcore__question_1_1local_1_1bank_1_1column__base.html#ab656aa360e8ac1923344f8f206c4d03a">core_question\local\bank\column_base</a>.</p>
+
+</div>
+</div>
+<a id="a62a39b29753fa6ccad367a72bf43e485" name="a62a39b29753fa6ccad367a72bf43e485"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62a39b29753fa6ccad367a72bf43e485">&#9670;&#160;</a></span>get_menu_position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">qbank_exporttoxml\export_xml_action::get_menu_position </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return an integer to indicate the desired position in the menu for this link, smaller at the top. </p>
+<p>The standard menu items in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> core return these numbers: 100 preview_action 200 edit_action 250 copy_action 300 tags_action 400 delete_action 500 history_action 600 export_xml_action (So, if you want your action at a particular place in the order, there should be space.)</p>
+<p>If two actions get the same order number, then the tie-break on the sort is plugin name, then the order returned by get_question_actions for that plugin.</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td>desired position. Smallest at the top. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="../../d5/dfa/classcore__question_1_1local_1_1bank_1_1view__component.html#a7ce76351abf2953461080fd423a83232">core_question\local\bank\view_component</a>.</p>
 
 </div>
 </div>
@@ -292,13 +331,39 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$strexportasxml</b>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a95ca5ed31ad5fd6cf90ce913f5a95351" name="a95ca5ed31ad5fd6cf90ce913f5a95351"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95ca5ed31ad5fd6cf90ce913f5a95351">&#9670;&#160;</a></span>MENU_POSITION_NOT_SET</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int const core_question\local\bank\view_component::MENU_POSITION_NOT_SET = 6666</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>value we return from get_menu_position here. </p>
+<p>Subclasses should override this. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>question/bank/exporttoxml/classes/<b>export_xml_action.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 7 2024 02:31:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 14 2024 03:43:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

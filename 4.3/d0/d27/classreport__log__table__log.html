@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3.3+ (Build: 20240405) (cf01fd6befe)</div>
+   <div id="projectbrief">Moodle 4.3.3+ (Build: 20240412) (d706265b8e7)</div>
   </td>
  </tr>
  </tbody>
@@ -95,7 +95,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a31fb7c2d556cf45af4c98d1cb33fe9ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a seperator line to table. <br /></td></tr>
 <tr class="separator:a31fb7c2d556cf45af4c98d1cb33fe9ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1381ff8c2fd2d2fa0651fa8dd9f8d9e" id="r_ae1381ff8c2fd2d2fa0651fa8dd9f8d9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dc8/classtable__sql.html#ae1381ff8c2fd2d2fa0651fa8dd9f8d9e">build_table</a> ()</td></tr>
-<tr class="memdesc:ae1381ff8c2fd2d2fa0651fa8dd9f8d9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Take the data returned from the db_query and go through all the rows processing each col using either col_{columnname} method or other_cols method or if other_cols returns NULL then put the data straight into the table.  <br /></td></tr>
+<tr class="memdesc:ae1381ff8c2fd2d2fa0651fa8dd9f8d9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build the table from the fetched data.  <br /></td></tr>
 <tr class="separator:ae1381ff8c2fd2d2fa0651fa8dd9f8d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa655469fc16ac809b8171db4cd8e2e52" id="r_aa655469fc16ac809b8171db4cd8e2e52"><td class="memItemLeft" align="right" valign="top"><a id="aa655469fc16ac809b8171db4cd8e2e52" name="aa655469fc16ac809b8171db4cd8e2e52"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>close_recordset</b> ()</td></tr>
@@ -561,9 +561,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a580f7b58efffad1f98aaf6ed7cf71934" id="r_a580f7b58efffad1f98aaf6ed7cf71934"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d18/classflexible__table.html#a580f7b58efffad1f98aaf6ed7cf71934">sort_order_name</a> ($isprimary, $order)</td></tr>
 <tr class="memdesc:a580f7b58efffad1f98aaf6ed7cf71934"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the correct tool tip for changing the sort order.  <br /></td></tr>
 <tr class="separator:a580f7b58efffad1f98aaf6ed7cf71934"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4543e70c97d588a248509287c67fbf6a" id="r_a4543e70c97d588a248509287c67fbf6a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4543e70c97d588a248509287c67fbf6a">update_users_used</a> ()</td></tr>
-<tr class="memdesc:a4543e70c97d588a248509287c67fbf6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to create list of user fullnames shown in log report.  <br /></td></tr>
-<tr class="separator:a4543e70c97d588a248509287c67fbf6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -815,7 +812,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$sortdata</b></td></
 </table>
 </div><div class="memdoc">
 
-<p>Take the data returned from the db_query and go through all the rows processing each col using either col_{columnname} method or other_cols method or if other_cols returns NULL then put the data straight into the table. </p>
+<p>Build the table from the fetched data. </p>
+<p>Take the data returned from the db_query and go through all the rows processing each col using either col_{columnname} method or other_cols method or if other_cols returns NULL then put the data straight into the table.</p>
 <p>After calling this function, don't forget to call close_recordset. </p>
 
 <p>Reimplemented in <a class="el" href="../../d5/d60/classmod__feedback__responses__table.html#a315b5bb7c94884170080807b02545c35">mod_feedback_responses_table</a>, <a class="el" href="../../da/d99/classquiz__overview__table.html#a0a2fd9218f5d0b092db963485b8e44e3">quiz_overview_table</a>, and <a class="el" href="../../d6/d0a/classquiz__last__responses__table.html#af76c959e4e4765ff9e5604f361828f07">quiz_last_responses_table</a>.</p>
@@ -1060,7 +1058,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$sortdata</b></td></
 <p>Generate the username column. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$event</td><td>event data. </td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../d9/d77/classcore_1_1event_1_1base.html">core::event::base</a></td><td class="paramname">$event</td><td>event data. </td></tr>
   </table>
   </dd>
 </dl>
@@ -4369,41 +4367,6 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$sortdata</b></td></
 
 </div>
 </div>
-<a id="a4543e70c97d588a248509287c67fbf6a" name="a4543e70c97d588a248509287c67fbf6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4543e70c97d588a248509287c67fbf6a">&#9670;&#160;</a></span>update_users_used()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">report_log_table_log::update_users_used </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Helper function to create list of user fullnames shown in log report. </p>
-<p>This will update $this-&gt;userfullnames array with userfullname, which will be used to render logs in table.</p>
-<dl class="section since"><dt>Since</dt><dd><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.9 </dd></dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">void</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="afc180515ea604c3dc05cb8daadd59f75" name="afc180515ea604c3dc05cb8daadd59f75"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afc180515ea604c3dc05cb8daadd59f75">&#9670;&#160;</a></span>wrap_html_finish()</h2>
 
@@ -4572,7 +4535,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$sortdata</b></td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 7 2024 02:30:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 14 2024 03:42:46 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

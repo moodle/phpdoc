@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240405) (26649f5750e)</div>
+   <div id="projectbrief">Moodle 4.4beta (Build: 20240412) (8cf14f6e701)</div>
   </td>
  </tr>
  </tbody>
@@ -269,6 +269,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ga1f2ad539c15c279982da704664a094fc" id="r_ga1f2ad539c15c279982da704664a094fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de1/group__core.html#ga1f2ad539c15c279982da704664a094fc">get_mustache</a> ()</td></tr>
 <tr class="memdesc:ga1f2ad539c15c279982da704664a094fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an instance of the mustache class.  <br /></td></tr>
 <tr class="separator:ga1f2ad539c15c279982da704664a094fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cc9a3eb79399af0c2916f43bba76d88" id="r_a6cc9a3eb79399af0c2916f43bba76d88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6cc9a3eb79399af0c2916f43bba76d88">render_grade_out_of</a> (<a class="el" href="../../d8/d6f/classmod__quiz_1_1output_1_1grades_1_1grade__out__of.html">grade_out_of</a> $grade)</td></tr>
+<tr class="memdesc:a6cc9a3eb79399af0c2916f43bba76d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render a {.  <br /></td></tr>
+<tr class="separator:a6cc9a3eb79399af0c2916f43bba76d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32abf449b48ccfa570c68b70caa41888" id="r_a32abf449b48ccfa570c68b70caa41888"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a32abf449b48ccfa570c68b70caa41888">render_links_to_other_attempts</a> (<a class="el" href="../../d8/d2e/classmod__quiz_1_1output_1_1links__to__other__attempts.html">links_to_other_attempts</a> $links)</td></tr>
 <tr class="memdesc:a32abf449b48ccfa570c68b70caa41888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders a list of links the other attempts.  <br /></td></tr>
 <tr class="separator:a32abf449b48ccfa570c68b70caa41888"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -754,7 +757,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001161">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4. Replaced by filter_review_attempt_summary. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001163">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4. Replaced by filter_review_attempt_summary. </dd></dl>
 
 </div>
 </div>
@@ -907,7 +910,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001163">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71915" class="el">MDL-71915</a> - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001165">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-71915" class="el">MDL-71915</a> - please do not use this function any more. </dd></dl>
 
 </div>
 </div>
@@ -1190,6 +1193,47 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 
 </div>
 </div>
+<a id="a6cc9a3eb79399af0c2916f43bba76d88" name="a6cc9a3eb79399af0c2916f43bba76d88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cc9a3eb79399af0c2916f43bba76d88">&#9670;&#160;</a></span>render_grade_out_of()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\output\renderer::render_grade_out_of </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d6f/classmod__quiz_1_1output_1_1grades_1_1grade__out__of.html">grade_out_of</a></td>          <td class="paramname"><span class="paramname"><em>$grade</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Render a {. </p>
+<dl class="section see"><dt>See also</dt><dd>grade_out_of}.</dd></dl>
+<p>Most of the logic is in methods of the grade_out_of class. However, having this renderer method allows themes to override the default rendering.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">grade_out_of</td><td class="paramname">$grade</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>HTML to output. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a32abf449b48ccfa570c68b70caa41888" name="a32abf449b48ccfa570c68b70caa41888"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a32abf449b48ccfa570c68b70caa41888">&#9670;&#160;</a></span>render_links_to_other_attempts()</h2>
 
@@ -1265,8 +1309,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001165">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Please use render_links_to_other_attempts instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000280">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76612" class="el">MDL-76612</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001167">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Please use render_links_to_other_attempts instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000282">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76612" class="el">MDL-76612</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6 </dd></dl>
 
 </div>
 </div>
@@ -1384,8 +1428,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001166">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Please use render_links_to_other_attempts instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000281">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76612" class="el">MDL-76612</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001168">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Please use render_links_to_other_attempts instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000283">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76612" class="el">MDL-76612</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6 </dd></dl>
 
 </div>
 </div>
@@ -1425,8 +1469,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001167">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Please use render_links_to_other_attempts instead. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000282">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76612" class="el">MDL-76612</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001169">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.2. Please use render_links_to_other_attempts instead. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000284">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-76612" class="el">MDL-76612</a> Final deprecation in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.6 </dd></dl>
 
 </div>
 </div>
@@ -1825,7 +1869,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001162">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4. Replaced by review_attempt_summary. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001164">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4. Replaced by review_attempt_summary. </dd></dl>
 
 </div>
 </div>
@@ -2364,7 +2408,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001164">Deprecated</a></b></dt><dd>Since 4.4 please use the {</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated001166">Deprecated</a></b></dt><dd>Since 4.4 please use the {</dd></dl>
 <dl class="section see"><dt>See also</dt><dd>list_of_attempts} <a class="el" href="../../da/d17/interfacerenderable.html">renderable</a> instead. </dd></dl>
 
 </div>
@@ -2375,7 +2419,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 7 2024 02:35:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 14 2024 03:47:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

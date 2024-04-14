@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240405) (26649f5750e)</div>
+   <div id="projectbrief">Moodle 4.4beta (Build: 20240412) (8cf14f6e701)</div>
   </td>
  </tr>
  </tbody>
@@ -106,6 +106,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab656aa360e8ac1923344f8f206c4d03a" id="r_ab656aa360e8ac1923344f8f206c4d03a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d9c/classcore__question_1_1local_1_1bank_1_1column__base.html#ab656aa360e8ac1923344f8f206c4d03a">get_extra_joins</a> ()</td></tr>
 <tr class="memdesc:ab656aa360e8ac1923344f8f206c4d03a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an array 'table_alias' =&gt; 'JOIN clause' to bring in any data that this feature requires.  <br /></td></tr>
 <tr class="separator:ab656aa360e8ac1923344f8f206c4d03a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ce76351abf2953461080fd423a83232" id="r_a7ce76351abf2953461080fd423a83232"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/classcore__question_1_1local_1_1bank_1_1view__component.html#a7ce76351abf2953461080fd423a83232">get_menu_position</a> ()</td></tr>
+<tr class="memdesc:a7ce76351abf2953461080fd423a83232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an integer to indicate the desired position in the menu for this link, smaller at the top.  <br /></td></tr>
+<tr class="separator:a7ce76351abf2953461080fd423a83232"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17be5b957341e56c081b6b5e3ac23a88" id="r_a17be5b957341e56c081b6b5e3ac23a88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17be5b957341e56c081b6b5e3ac23a88">get_name</a> ()</td></tr>
 <tr class="memdesc:a17be5b957341e56c081b6b5e3ac23a88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the internal name for this column.  <br /></td></tr>
 <tr class="separator:a17be5b957341e56c081b6b5e3ac23a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,6 +173,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$isvisible</b> = true
 string const&#160;</td><td class="memItemRight" valign="bottom"><b>ID_SEPARATOR</b> = '-'</td></tr>
 <tr class="memdesc:a4b70ff831d54e4201b7cd82359c9d46e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A separator for joining column attributes together into a unique ID string. <br /></td></tr>
 <tr class="separator:a4b70ff831d54e4201b7cd82359c9d46e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95ca5ed31ad5fd6cf90ce913f5a95351" id="r_a95ca5ed31ad5fd6cf90ce913f5a95351"><td class="memItemLeft" align="right" valign="top">int const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dfa/classcore__question_1_1local_1_1bank_1_1view__component.html#a95ca5ed31ad5fd6cf90ce913f5a95351">MENU_POSITION_NOT_SET</a> = 6666</td></tr>
+<tr class="memdesc:a95ca5ed31ad5fd6cf90ce913f5a95351"><td class="mdescLeft">&#160;</td><td class="mdescRight">value we return from get_menu_position here.  <br /></td></tr>
+<tr class="separator:a95ca5ed31ad5fd6cf90ce913f5a95351"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -693,6 +699,43 @@ view&#160;</td><td class="memItemRight" valign="bottom"><b>$qbank</b></td></tr>
 <p>Reimplemented from <a class="el" href="../../d5/dfa/classcore__question_1_1local_1_1bank_1_1view__component.html#af60f0b8d706936b17e3ff0607f59bf74">core_question\local\bank\view_component</a>.</p>
 
 <p>Reimplemented in <a class="el" href="../../d8/d5a/classqbank__viewcreator_1_1creator__name__column.html#acbce4a907667d7939bac6f279b4b7dcc">qbank_viewcreator\creator_name_column</a>, <a class="el" href="../../df/d49/classqbank__viewcreator_1_1modifier__name__column.html#ad971313902a54ae0f28dfa0f66f0bb11">qbank_viewcreator\modifier_name_column</a>, and <a class="el" href="../../df/dc2/classcore__question_1_1local_1_1bank_1_1action__column__base.html#a6f757ebda6983bfa1442d7518a721823">core_question\local\bank\action_column_base</a>.</p>
+
+</div>
+</div>
+<a id="a7ce76351abf2953461080fd423a83232" name="a7ce76351abf2953461080fd423a83232"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ce76351abf2953461080fd423a83232">&#9670;&#160;</a></span>get_menu_position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_question\local\bank\view_component::get_menu_position </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return an integer to indicate the desired position in the menu for this link, smaller at the top. </p>
+<p>The standard menu items in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> core return these numbers: 100 preview_action 200 edit_action 250 copy_action 300 tags_action 400 delete_action 500 history_action 600 export_xml_action (So, if you want your action at a particular place in the order, there should be space.)</p>
+<p>If two actions get the same order number, then the tie-break on the sort is plugin name, then the order returned by get_question_actions for that plugin.</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td>desired position. Smallest at the top. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../de/db6/classqbank__deletequestion_1_1delete__action.html#a54c4bd5d58fa8ec879ed8f23f60abf13">qbank_deletequestion\delete_action</a>, <a class="el" href="../../d6/dcf/classqbank__editquestion_1_1copy__action.html#af2fb835c7212ec8682bb6fc020d1bdbc">qbank_editquestion\copy_action</a>, <a class="el" href="../../d1/d11/classqbank__editquestion_1_1edit__action.html#a5770f406230ed1441405b8af117f55ed">qbank_editquestion\edit_action</a>, <a class="el" href="../../d2/df4/classqbank__exporttoxml_1_1export__xml__action.html#a62a39b29753fa6ccad367a72bf43e485">qbank_exporttoxml\export_xml_action</a>, <a class="el" href="../../d7/d15/classqbank__history_1_1history__action.html#af69394230a037b1a73624688fd8819f9">qbank_history\history_action</a>, <a class="el" href="../../d9/df8/classqbank__previewquestion_1_1preview__action.html#a90ce3745390e5673491c7e07de94546d">qbank_previewquestion\preview_action</a>, and <a class="el" href="../../d7/d99/classqbank__tagquestion_1_1tags__action.html#ad0f7e8f1541e53dc8ce8c608a15f4325">qbank_tagquestion\tags_action</a>.</p>
 
 </div>
 </div>
@@ -1280,13 +1323,39 @@ view&#160;</td><td class="memItemRight" valign="bottom"><b>$qbank</b></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a95ca5ed31ad5fd6cf90ce913f5a95351" name="a95ca5ed31ad5fd6cf90ce913f5a95351"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95ca5ed31ad5fd6cf90ce913f5a95351">&#9670;&#160;</a></span>MENU_POSITION_NOT_SET</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int const core_question\local\bank\view_component::MENU_POSITION_NOT_SET = 6666</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>value we return from get_menu_position here. </p>
+<p>Subclasses should override this. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>question/bank/statistics/classes/columns/<b>facility_index.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 7 2024 02:35:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 14 2024 03:47:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

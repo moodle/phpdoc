@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3.3+ (Build: 20240405) (cf01fd6befe)</div>
+   <div id="projectbrief">Moodle 4.3.3+ (Build: 20240412) (d706265b8e7)</div>
   </td>
  </tr>
  </tbody>
@@ -80,6 +80,9 @@ Inheritance diagram for format_weeks:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a9449815b890834080cbd4146f261a5b6" id="r_a9449815b890834080cbd4146f261a5b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a9449815b890834080cbd4146f261a5b6">add_section_preference_ids</a> (string $preferencename, array $sectionids,)</td></tr>
+<tr class="memdesc:a9449815b890834080cbd4146f261a5b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add section preference ids.  <br /></td></tr>
+<tr class="separator:a9449815b890834080cbd4146f261a5b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1742da8b567f2bf071e831950e052cab" id="r_a1742da8b567f2bf071e831950e052cab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1742da8b567f2bf071e831950e052cab">ajax_section_move</a> ()</td></tr>
 <tr class="memdesc:a1742da8b567f2bf071e831950e052cab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Custom action after section has been moved in AJAX mode.  <br /></td></tr>
 <tr class="separator:a1742da8b567f2bf071e831950e052cab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -239,6 +242,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aca802b43dfe3a9931d73652fc9bdc499" id="r_aca802b43dfe3a9931d73652fc9bdc499"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca802b43dfe3a9931d73652fc9bdc499">page_title</a> ()</td></tr>
 <tr class="memdesc:aca802b43dfe3a9931d73652fc9bdc499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the title for this section page.  <br /></td></tr>
 <tr class="separator:aca802b43dfe3a9931d73652fc9bdc499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bfc8c9fc9b73034731e6d72ea7e7353" id="r_a0bfc8c9fc9b73034731e6d72ea7e7353"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a0bfc8c9fc9b73034731e6d72ea7e7353">remove_section_preference_ids</a> (string $preferencename, array $sectionids,)</td></tr>
+<tr class="memdesc:a0bfc8c9fc9b73034731e6d72ea7e7353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove section preference ids.  <br /></td></tr>
+<tr class="separator:a0bfc8c9fc9b73034731e6d72ea7e7353"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa080d1935d195b12befc5720698c01a2" id="r_aa080d1935d195b12befc5720698c01a2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa080d1935d195b12befc5720698c01a2">section_action</a> ($section, $action, $sr)</td></tr>
 <tr class="memdesc:aa080d1935d195b12befc5720698c01a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback used in WS core_course_edit_section when teacher performs an AJAX action on a section (show/hide)  <br /></td></tr>
 <tr class="separator:aa080d1935d195b12befc5720698c01a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -364,6 +370,44 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesection</b> = 0
 <dl class="section copyright"><dt>Copyright</dt><dd>2012 Marina Glancy </dd></dl>
 <dl class="section user"><dt>License</dt><dd><a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a> GNU GPL v3 or later </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9449815b890834080cbd4146f261a5b6" name="a9449815b890834080cbd4146f261a5b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9449815b890834080cbd4146f261a5b6">&#9670;&#160;</a></span>add_section_preference_ids()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\base::add_section_preference_ids </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$preferencename</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$sectionids</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add section preference ids. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$preferencename</td><td>preference name </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$sectionids</td><td>affected section ids </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a1742da8b567f2bf071e831950e052cab" name="a1742da8b567f2bf071e831950e052cab"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1742da8b567f2bf071e831950e052cab">&#9670;&#160;</a></span>ajax_section_move()</h2>
 
@@ -2522,6 +2566,44 @@ course_modinfo::get_section_info_all()</dd></dl>
 
 </div>
 </div>
+<a id="a0bfc8c9fc9b73034731e6d72ea7e7353" name="a0bfc8c9fc9b73034731e6d72ea7e7353"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bfc8c9fc9b73034731e6d72ea7e7353">&#9670;&#160;</a></span>remove_section_preference_ids()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\base::remove_section_preference_ids </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$preferencename</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$sectionids</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove section preference ids. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$preferencename</td><td>preference name </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$sectionids</td><td>affected section ids </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ad0e898c8f2b611cdcc70d0811a49df48" name="ad0e898c8f2b611cdcc70d0811a49df48"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad0e898c8f2b611cdcc70d0811a49df48">&#9670;&#160;</a></span>reset_course_cache()</h2>
 
@@ -3395,7 +3477,7 @@ course_modinfo::get_section_info_all()</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 7 2024 02:29:25 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 14 2024 03:42:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

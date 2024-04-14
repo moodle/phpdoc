@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
    </div>
-   <div id="projectbrief">Moodle 4.4dev+ (Build: 20240405) (26649f5750e)</div>
+   <div id="projectbrief">Moodle 4.4beta (Build: 20240412) (8cf14f6e701)</div>
   </td>
  </tr>
  </tbody>
@@ -76,7 +76,7 @@ Inheritance diagram for format_topics\output\courseformat\content:</div>
  <div class="center">
   <img src="../../d7/d94/classformat__topics_1_1output_1_1courseformat_1_1content.png" usemap="#format_5Ftopics_5Coutput_5Ccourseformat_5Ccontent_map" alt=""/>
   <map id="format_5Ftopics_5Coutput_5Ccourseformat_5Ccontent_map" name="format_5Ftopics_5Coutput_5Ccourseformat_5Ccontent_map">
-<area href="../../d0/d88/classcore__courseformat_1_1output_1_1local_1_1content.html" title="Base class to render a course format." alt="core_courseformat\output\local\content" shape="rect" coords="129,112,377,136"/>
+<area href="../../d0/d88/classcore__courseformat_1_1output_1_1local_1_1content.html" alt="core_courseformat\output\local\content" shape="rect" coords="129,112,377,136"/>
 <area href="../../d8/df6/interfacecore_1_1output_1_1named__templatable.html" alt="core\output\named_templatable" shape="rect" coords="0,56,248,80"/>
 <area href="../../da/d17/interfacerenderable.html" alt="renderable" shape="rect" coords="258,56,506,80"/>
 <area href="../../d8/d34/interfacetemplatable.html" alt="templatable" shape="rect" coords="0,0,248,24"/>
@@ -91,6 +91,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5a445585f7269226f60bb2955aa49f7b" id="r_a5a445585f7269226f60bb2955aa49f7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a445585f7269226f60bb2955aa49f7b">export_for_template</a> (<a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a> $output)</td></tr>
 <tr class="memdesc:a5a445585f7269226f60bb2955aa49f7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export this data so it can be used as the context for a mustache template (core/inplace_editable).  <br /></td></tr>
 <tr class="separator:a5a445585f7269226f60bb2955aa49f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac90aa37be371fa9012b64d53e9ee094e" id="r_ac90aa37be371fa9012b64d53e9ee094e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d88/classcore__courseformat_1_1output_1_1local_1_1content.html#ac90aa37be371fa9012b64d53e9ee094e">get_page_header_action</a> (\<a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a> $output)</td></tr>
+<tr class="memdesc:ac90aa37be371fa9012b64d53e9ee094e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the action menu for the page header of the local content section.  <br /></td></tr>
+<tr class="separator:ac90aa37be371fa9012b64d53e9ee094e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a506d57fa69d885a28fba756b1d9b80e8" id="r_a506d57fa69d885a28fba756b1d9b80e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df6/interfacecore_1_1output_1_1named__templatable.html#a506d57fa69d885a28fba756b1d9b80e8">get_template_name</a> (\<a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a> $<a class="el" href="../../d5/dad/classformat__topics_1_1output_1_1renderer.html">renderer</a>)</td></tr>
 <tr class="memdesc:a506d57fa69d885a28fba756b1d9b80e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the template to use for this templatable.  <br /></td></tr>
 <tr class="separator:a506d57fa69d885a28fba756b1d9b80e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,6 +126,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$hasaddsection</b> = 
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$sectionclass</b></td></tr>
 <tr class="memdesc:ad3d9e7c8ef07330b10523adf98a689bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">the section format class <br /></td></tr>
 <tr class="separator:ad3d9e7c8ef07330b10523adf98a689bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d68f5d9e81ac77ff51d16d277edd96d" id="r_a1d68f5d9e81ac77ff51d16d277edd96d"><td class="memItemLeft" align="right" valign="top"><a id="a1d68f5d9e81ac77ff51d16d277edd96d" name="a1d68f5d9e81ac77ff51d16d277edd96d"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$sectioncontrolmenuclass</b></td></tr>
+<tr class="memdesc:a1d68f5d9e81ac77ff51d16d277edd96d"><td class="mdescLeft">&#160;</td><td class="mdescRight">the section control menu class <br /></td></tr>
+<tr class="separator:a1d68f5d9e81ac77ff51d16d277edd96d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99334da68a50075367a1d3d61c60caaf" id="r_a99334da68a50075367a1d3d61c60caaf"><td class="memItemLeft" align="right" valign="top"><a id="a99334da68a50075367a1d3d61c60caaf" name="a99334da68a50075367a1d3d61c60caaf"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>$sectionnavigationclass</b></td></tr>
 <tr class="memdesc:a99334da68a50075367a1d3d61c60caaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">section navigation class name <br /></td></tr>
@@ -248,6 +255,45 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$sectionselectorcla
 
 </div>
 </div>
+<a id="ac90aa37be371fa9012b64d53e9ee094e" name="ac90aa37be371fa9012b64d53e9ee094e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac90aa37be371fa9012b64d53e9ee094e">&#9670;&#160;</a></span>get_page_header_action()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_courseformat\output\local\content::get_page_header_action </td>
+          <td>(</td>
+          <td class="paramtype">\<a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a></td>          <td class="paramname"><span class="paramname"><em>$output</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Retrieves the action menu for the page header of the local content section. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../de/d60/classrenderer__base.html">renderer_base</a></td><td class="paramname">$output</td><td>The renderer object used for rendering the action menu. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string|null</td><td>The rendered action menu HTML, null if page no action menu is available. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a506d57fa69d885a28fba756b1d9b80e8" name="a506d57fa69d885a28fba756b1d9b80e8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a506d57fa69d885a28fba756b1d9b80e8">&#9670;&#160;</a></span>get_template_name()</h2>
 
@@ -285,7 +331,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$sectionselectorcla
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="../../d8/d80/classcore__courseformat_1_1output_1_1local_1_1content_1_1cm_1_1title.html#ac6198feaa30fafaab698cfdc67356ece">core_courseformat\output\local\content\cm\title</a>, <a class="el" href="../../d9/d98/classcore_1_1output_1_1local_1_1dropdown_1_1dialog.html#ae22029d446ba152c8df04f6ca3bb82b5">core\output\local\dropdown\dialog</a>, <a class="el" href="../../d8/d23/classcore_1_1output_1_1local_1_1dropdown_1_1status.html#a2dadf20e8444eee8c8b97067e1ca3ac3">core\output\local\dropdown\status</a>, <a class="el" href="../../d7/d15/classcore_1_1output_1_1sticky__footer.html#a58bb8c60d96e67bd9d05a1a49a96d723">core\output\sticky_footer</a>, <a class="el" href="../../d4/d33/classmod__quiz_1_1output_1_1attempt__summary__information.html#a24f335ea1241c300f2b4419ce12f28f0">mod_quiz\output\attempt_summary_information</a>, <a class="el" href="../../d9/d2c/classmod__quiz_1_1output_1_1list__of__attempts.html#aaf39099eafcabdaadde4ba5d35e771fe">mod_quiz\output\list_of_attempts</a>, and <a class="el" href="../../de/d52/classqbank__viewquestionname_1_1output_1_1questionname.html#af25ead9b620ea8ccda289b24389a1bef">qbank_viewquestionname\output\questionname</a>.</p>
+<p>Implemented in <a class="el" href="../../d8/d80/classcore__courseformat_1_1output_1_1local_1_1content_1_1cm_1_1title.html#ac6198feaa30fafaab698cfdc67356ece">core_courseformat\output\local\content\cm\title</a>, <a class="el" href="../../d9/d98/classcore_1_1output_1_1local_1_1dropdown_1_1dialog.html#ae22029d446ba152c8df04f6ca3bb82b5">core\output\local\dropdown\dialog</a>, <a class="el" href="../../d8/d23/classcore_1_1output_1_1local_1_1dropdown_1_1status.html#a2dadf20e8444eee8c8b97067e1ca3ac3">core\output\local\dropdown\status</a>, <a class="el" href="../../d7/d15/classcore_1_1output_1_1sticky__footer.html#a58bb8c60d96e67bd9d05a1a49a96d723">core\output\sticky_footer</a>, <a class="el" href="../../d9/d2c/classmod__quiz_1_1output_1_1list__of__attempts.html#aaf39099eafcabdaadde4ba5d35e771fe">mod_quiz\output\list_of_attempts</a>, and <a class="el" href="../../de/d52/classqbank__viewquestionname_1_1output_1_1questionname.html#af25ead9b620ea8ccda289b24389a1bef">qbank_viewquestionname\output\questionname</a>.</p>
 
 </div>
 </div>
@@ -295,7 +341,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$sectionselectorcla
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 7 2024 02:34:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 14 2024 03:47:21 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>
