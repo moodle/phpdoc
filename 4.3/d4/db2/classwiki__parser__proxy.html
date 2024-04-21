@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3.3+ (Build: 20240412) (d706265b8e7)</div>
+   <div id="projectbrief">Moodle 4.3.4 (Build: 20240422) (143c2cd5bef)</div>
   </td>
  </tr>
  </tbody>
@@ -73,21 +73,72 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>get_section</b> (&a
 <tr class="memitem:a640f64a87a33b5a5eeaa085f38749b31" id="r_a640f64a87a33b5a5eeaa085f38749b31"><td class="memItemLeft" align="right" valign="top"><a id="a640f64a87a33b5a5eeaa085f38749b31" name="a640f64a87a33b5a5eeaa085f38749b31"></a>
 static&#160;</td><td class="memItemRight" valign="bottom"><b>get_token</b> ($name, $type)</td></tr>
 <tr class="separator:a640f64a87a33b5a5eeaa085f38749b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab9ecbfd51fa1bccf4aa3d31fec03476" id="r_aab9ecbfd51fa1bccf4aa3d31fec03476"><td class="memItemLeft" align="right" valign="top"><a id="aab9ecbfd51fa1bccf4aa3d31fec03476" name="aab9ecbfd51fa1bccf4aa3d31fec03476"></a>
-static&#160;</td><td class="memItemRight" valign="bottom"><b>parse</b> (&amp;$string, $type, $options=array())</td></tr>
-<tr class="separator:aab9ecbfd51fa1bccf4aa3d31fec03476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98514f5991f9e7fa944454b9213c91e8" id="r_a98514f5991f9e7fa944454b9213c91e8"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98514f5991f9e7fa944454b9213c91e8">parse</a> (&amp;$string, $type, $options=[])</td></tr>
+<tr class="memdesc:a98514f5991f9e7fa944454b9213c91e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a string using a specific parser.  <br /></td></tr>
+<tr class="separator:a98514f5991f9e7fa944454b9213c91e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Generic parser implementation. </p>
 <dl class="section author"><dt>Author</dt><dd>Josep Arús</dd></dl>
 <dl class="section user"><dt>License</dt><dd><a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a> GNU Public License </dd></dl>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a98514f5991f9e7fa944454b9213c91e8" name="a98514f5991f9e7fa944454b9213c91e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98514f5991f9e7fa944454b9213c91e8">&#9670;&#160;</a></span>parse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static wiki_parser_proxy::parse </td>
+          <td>(</td>
+          <td class="paramtype">&amp;</td>          <td class="paramname"><span class="paramname"><em>$string</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$type</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$options</em><span class="paramdefsep"> = </span><span class="paramdefval">[]</span></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parse a string using a specific parser. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$string</td><td>The string to parse </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$type</td><td>The parser type </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$options</td><td>The parser options </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">mixed</td><td>The parsed string or false if the parser type is not found </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>mod/wiki/parser/<b>parser.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 14 2024 03:42:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 21 2024 02:32:22 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

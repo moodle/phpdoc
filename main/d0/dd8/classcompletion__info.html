@@ -25,9 +25,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../Moodle-Logo-ReversedWhite_RGB.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
+   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.4beta (Build: 20240412) (8cf14f6e701)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240422) (7b9a4eeca51)</div>
   </td>
  </tr>
  </tbody>
@@ -147,9 +147,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a30037bd261b41e8b884dfe9d088f6b52" id="r_a30037bd261b41e8b884dfe9d088f6b52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30037bd261b41e8b884dfe9d088f6b52">internal_set_data</a> ($cm, $data, $isbulkupdate=false)</td></tr>
 <tr class="memdesc:a30037bd261b41e8b884dfe9d088f6b52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates completion data for a particular coursemodule and user (user is determined from $data).  <br /></td></tr>
 <tr class="separator:a30037bd261b41e8b884dfe9d088f6b52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d299f998663cb6e51b372cdf7226705" id="r_a6d299f998663cb6e51b372cdf7226705"><td class="memItemLeft" align="right" valign="top">type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d299f998663cb6e51b372cdf7226705">internal_systemerror</a> ($<a class="el" href="../../d0/de1/group__core.html#ga43b8d30b879d4f09ceb059b02af2bc02">error</a>)</td></tr>
-<tr class="memdesc:a6d299f998663cb6e51b372cdf7226705"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is to be used only for system errors (things that shouldn't happen) and not user-level errors.  <br /></td></tr>
-<tr class="separator:a6d299f998663cb6e51b372cdf7226705"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ad90a0a06ea3da27645b1050497ba7f" id="r_a9ad90a0a06ea3da27645b1050497ba7f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ad90a0a06ea3da27645b1050497ba7f">internal_systemerror</a> ($<a class="el" href="../../d0/de1/group__core.html#ga43b8d30b879d4f09ceb059b02af2bc02">error</a>)</td></tr>
+<tr class="memdesc:a9ad90a0a06ea3da27645b1050497ba7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is to be used only for system errors (things that shouldn't happen) and not user-level errors.  <br /></td></tr>
+<tr class="separator:a9ad90a0a06ea3da27645b1050497ba7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af03c51287312ed0fef3a471d763c8931" id="r_af03c51287312ed0fef3a471d763c8931"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af03c51287312ed0fef3a471d763c8931">is_course_complete</a> ($user_id)</td></tr>
 <tr class="memdesc:af03c51287312ed0fef3a471d763c8931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Has the supplied user completed this course.  <br /></td></tr>
 <tr class="separator:af03c51287312ed0fef3a471d763c8931"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -730,7 +730,7 @@ Protected Member Functions</h2></td></tr>
     <tr><td class="paramtype">stdClass&#160;|&#160;<a class="el" href="../../df/db9/classcm__info.html">cm_info</a></td><td class="paramname">$cm</td><td>Activity; only required field is -&gt;id </td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$wholecourse</td><td>If true (default false) then, when necessary to fill the cache, retrieves information from the entire course not just for this one activity </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>User ID or 0 (default) for current user </td></tr>
-    <tr><td class="paramtype">null</td><td class="paramname">$unused</td><td>This parameter has been deprecated since 4.0 and should not be used anymore. </td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$unused</td><td>This parameter has been deprecated since 4.0 and should not be used anymore. </td></tr>
   </table>
   </dd>
 </dl>
@@ -950,7 +950,7 @@ Protected Member Functions</h2></td></tr>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">stdClass</td><td>with -&gt;total and -&gt;start (same as $start) and -&gt;users; an array of user objects (like mdl_user id, firstname, lastname) containing an additional -&gt;progress array of coursemoduleid =&gt; completionstate </td></tr>
+    <tr><td class="paramname">array</td><td>with -&gt;total and -&gt;start (same as $start) and -&gt;users; an array of user objects (like mdl_user id, firstname, lastname) containing an additional -&gt;progress array of coursemoduleid =&gt; completionstate </td></tr>
   </table>
   </dd>
 </dl>
@@ -1150,7 +1150,7 @@ Protected Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramtype">stdClass&#160;|&#160;<a class="el" href="../../df/db9/classcm__info.html">cm_info</a></td><td class="paramname">$cm</td><td>Course-module for item that owns grade </td></tr>
     <tr><td class="paramtype"><a class="el" href="../../d0/d8b/classgrade__item.html">grade_item</a></td><td class="paramname">$item</td><td>Grade item </td></tr>
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$grade</td><td></td></tr>
+    <tr><td class="paramtype">stdClass&#160;|&#160;<a class="el" href="../../dc/df3/classgrade__grade.html">grade_grade</a></td><td class="paramname">$grade</td><td></td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$deleted</td><td></td></tr>
     <tr><td class="paramtype">bool</td><td class="paramname">$isbulkupdate</td><td>If bulk grade update is happening. </td></tr>
   </table>
@@ -1290,14 +1290,14 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a6d299f998663cb6e51b372cdf7226705" name="a6d299f998663cb6e51b372cdf7226705"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d299f998663cb6e51b372cdf7226705">&#9670;&#160;</a></span>internal_systemerror()</h2>
+<a id="a9ad90a0a06ea3da27645b1050497ba7f" name="a9ad90a0a06ea3da27645b1050497ba7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ad90a0a06ea3da27645b1050497ba7f">&#9670;&#160;</a></span>internal_systemerror()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">type completion_info::internal_systemerror </td>
+          <td class="memname">completion_info::internal_systemerror </td>
           <td>(</td>
           <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$error</em></span></td><td>)</td>
           <td></td>
@@ -1306,7 +1306,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This is to be used only for system errors (things that shouldn't happen) and not user-level errors. </p>
-<p>$CFG </p><dl class="params"><dt>Parameters</dt><dd>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$error</td><td>Error string (will not be displayed to user unless debugging is enabled) </td></tr>
   </table>
@@ -1510,7 +1510,7 @@ Protected Member Functions</h2></td></tr>
 <p>Resetting state of manual tickbox has same result as deleting state for it.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">stcClass&#160;|&#160;<a class="el" href="../../df/db9/classcm__info.html">cm_info</a></td><td class="paramname">$cm</td><td>Activity </td></tr>
+    <tr><td class="paramtype">stdClass&#160;|&#160;<a class="el" href="../../df/db9/classcm__info.html">cm_info</a></td><td class="paramname">$cm</td><td>Activity </td></tr>
   </table>
   </dd>
 </dl>
@@ -1654,7 +1654,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 14 2024 03:45:45 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 21 2024 02:39:07 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

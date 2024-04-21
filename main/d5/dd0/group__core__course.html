@@ -25,9 +25,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../Moodle-Logo-ReversedWhite_RGB.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
+   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.4beta (Build: 20240412) (8cf14f6e701)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240422) (7b9a4eeca51)</div>
   </td>
  </tr>
  </tbody>
@@ -191,7 +191,7 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d7a/classcore__course_1_1hook_1_1after__form__validation.html">core_course\hook\after_form_validation</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d67/classcore__course_1_1hook_1_1before__course__delete.html">core_course\hook\before_course_delete</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d93/classcore__course_1_1hook_1_1before__course__deleted.html">core_course\hook\before_course_deleted</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d93/classcore__course_1_1local_1_1factory_1_1content__item__service__factory.html">core_course\local\factory\content_item_service_factory</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class service_factory, providing functions for location of service objects for course content items.  <a href="../../d2/d93/classcore__course_1_1local_1_1factory_1_1content__item__service__factory.html#details">More...</a><br /></td></tr>
@@ -1414,7 +1414,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 <p>Also returns some information like the module, context and course section info. The fucntion create the course section if it doesn't exist.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">object</td><td class="paramname">$course</td><td>the course of the module </td></tr>
+    <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>the course of the module </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$modulename</td><td>the module name </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$sectionnum</td><td>the section of the module </td></tr>
   </table>
@@ -1957,7 +1957,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../d4/d65/classcore_1_1output_1_1inplace__editable.html">core::output::inplace_editable</a></td><td></td></tr>
+    <tr><td class="paramname">?::core::output::inplace_editable</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -3045,7 +3045,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">The</td><td>markup for the move action, or an empty string if not available. </td></tr>
+    <tr><td class="paramname">string</td><td>The markup for the move action, or an empty string if not available. </td></tr>
   </table>
   </dd>
 </dl>
@@ -3462,7 +3462,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../d4/d0c/classcore__tag_1_1output_1_1tagindex.html" title="Class to display items tagged with a specific tag.">core_tag::output::tagindex</a></td><td></td></tr>
+    <tr><td class="paramname">?::core_tag::output::tagindex</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -3754,7 +3754,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array</td><td>array of messages with found problems. Empty output means everything is ok </td></tr>
+    <tr><td class="paramname">array|false</td><td>array of messages with found problems. Empty output means everything is ok </td></tr>
   </table>
   </dd>
 </dl>
@@ -3854,7 +3854,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">bool</td><td>whether the module was successfully scheduled for deletion. </td></tr>
+    <tr><td class="paramname">?bool</td><td>whether the module was successfully scheduled for deletion. </td></tr>
   </table>
   </dd>
 </dl>
@@ -4245,7 +4245,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int&#160;|&#160;stdClass</td><td class="paramname">$courseorid</td><td></td></tr>
-    <tr><td class="paramtype">stdClass</td><td class="paramname">$section</td><td>record from course_sections table - it will be updated with the new values </td></tr>
+    <tr><td class="paramtype">stdClass&#160;|&#160;<a class="el" href="../../d1/db5/classsection__info.html">section_info</a></td><td class="paramname">$section</td><td>record from course_sections table - it will be updated with the new values </td></tr>
     <tr><td class="paramtype">array&#160;|&#160;stdClass</td><td class="paramname">$data</td><td></td></tr>
   </table>
   </dd>
@@ -7050,7 +7050,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">Object</td><td>containing:<ul>
+    <tr><td class="paramname">stdClass</td><td>Object containing:<ul>
 <li>fullcontent: The HTML markup for the created CM</li>
 <li>cmid: The CMID of the newly created CM</li>
 <li>redirect: Whether to trigger a redirect following this change </li>
@@ -7337,7 +7337,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array</td><td></td></tr>
+    <tr><td class="paramname">array|false</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -7367,7 +7367,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">integer</td><td class="paramname">$courseid</td><td>the id of this course. </td></tr>
-    <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>the data that came from the course settings form. </td></tr>
+    <tr><td class="paramtype">array&#160;|&#160;stdClass</td><td class="paramname">$data</td><td>the data that came from the course settings form. </td></tr>
   </table>
   </dd>
 </dl>
@@ -8107,7 +8107,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>MOD_CLASS_RESOURCE</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 14 2024 03:45:33 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 21 2024 02:38:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

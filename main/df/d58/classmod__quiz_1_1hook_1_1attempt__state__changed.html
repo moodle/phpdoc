@@ -25,9 +25,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../Moodle-Logo-ReversedWhite_RGB.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
+   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.4beta (Build: 20240412) (8cf14f6e701)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240422) (7b9a4eeca51)</div>
   </td>
  </tr>
  </tbody>
@@ -68,9 +68,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad6516009def27742ce258840f0acf8bb" id="r_ad6516009def27742ce258840f0acf8bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6516009def27742ce258840f0acf8bb">__construct</a> (protected ?\stdClass $originalattempt, protected ?\stdClass $updatedattempt,)</td></tr>
-<tr class="memdesc:ad6516009def27742ce258840f0acf8bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new hook instance.  <br /></td></tr>
-<tr class="separator:ad6516009def27742ce258840f0acf8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1f6c86e93981e25da9d66e84fdbdcf6" id="r_af1f6c86e93981e25da9d66e84fdbdcf6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af1f6c86e93981e25da9d66e84fdbdcf6">__construct</a> (protected ?\stdClass ?\stdClass $originalattempt, protected ?\stdClass ?\stdClass $updatedattempt,)</td></tr>
+<tr class="memdesc:af1f6c86e93981e25da9d66e84fdbdcf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new hook instance.  <br /></td></tr>
+<tr class="separator:af1f6c86e93981e25da9d66e84fdbdcf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6baf1ad983758291f20d2f162629cc3a" id="r_a6baf1ad983758291f20d2f162629cc3a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6baf1ad983758291f20d2f162629cc3a">get_original_attempt</a> ()</td></tr>
 <tr class="memdesc:a6baf1ad983758291f20d2f162629cc3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the original attempt, null if it has just been created.  <br /></td></tr>
 <tr class="separator:a6baf1ad983758291f20d2f162629cc3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -79,8 +79,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad163021b3339369b63eb9eada7cd0083"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad6516009def27742ce258840f0acf8bb" name="ad6516009def27742ce258840f0acf8bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6516009def27742ce258840f0acf8bb">&#9670;&#160;</a></span>__construct()</h2>
+<a id="af1f6c86e93981e25da9d66e84fdbdcf6" name="af1f6c86e93981e25da9d66e84fdbdcf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1f6c86e93981e25da9d66e84fdbdcf6">&#9670;&#160;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -88,12 +88,12 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">mod_quiz\hook\attempt_state_changed::__construct </td>
           <td>(</td>
-          <td class="paramtype">protected ?\stdClass</td>          <td class="paramname"><span class="paramname"><em>$originalattempt</em>, </span></td>
+          <td class="paramtype">protected ?\stdClass ?\stdClass</td>          <td class="paramname"><span class="paramname"><em>$originalattempt</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">protected ?\stdClass</td>          <td class="paramname"><span class="paramname"><em>$updatedattempt</em></span>&#160;)</td>
+          <td class="paramtype">protected ?\stdClass ?\stdClass</td>          <td class="paramname"><span class="paramname"><em>$updatedattempt</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -103,6 +103,13 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramtype">?::stdClass</td><td class="paramname">$originalattempt</td><td>The original database record for the attempt, null if it has just been created. </td></tr>
     <tr><td class="paramtype">?::stdClass</td><td class="paramname">$updatedattempt</td><td>The updated database record of the new attempt, null if it has just been deleted. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">$originalattempt</td><td>The original database record for the attempt, null if it has just been created.  </td></tr>
+    <tr><td class="paramname">$updatedattempt</td><td>The updated database record of the new attempt, null if it has just been deleted. </td></tr>
   </table>
   </dd>
 </dl>
@@ -166,7 +173,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 14 2024 03:47:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 21 2024 02:40:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

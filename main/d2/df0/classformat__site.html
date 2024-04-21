@@ -25,9 +25,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../Moodle-Logo-ReversedWhite_RGB.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
+   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.4beta (Build: 20240412) (8cf14f6e701)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240422) (7b9a4eeca51)</div>
   </td>
  </tr>
  </tbody>
@@ -451,7 +451,7 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
 <p>Used in course/rest.php</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array</td><td>This will be passed in ajax respose </td></tr>
+    <tr><td class="paramname">?array</td><td>This will be passed in ajax respose </td></tr>
   </table>
   </dd>
 </dl>
@@ -1228,7 +1228,7 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
 <p>Returns a record from course database table plus additional fields that course format defines. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">stdClass</td><td></td></tr>
+    <tr><td class="paramname">?stdClass</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -1360,7 +1360,7 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
 <p>This is the default implementation for course formats, it is based on moodlecourse/courseduration setting. Course formats like <a class="el" href="../../d5/d8d/classformat__weeks.html" title="Main class for the Weeks course format.">format_weeks</a> for example can overwrite this method and return a value based on their internal options.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">moodleform</td><td class="paramname">$mform</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../d5/d8e/class_moodle_quick_form.html">MoodleQuickForm</a></td><td class="paramname">$mform</td><td></td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$fieldnames</td><td>The form - field names mapping. </td></tr>
   </table>
   </dd>
@@ -1481,7 +1481,7 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
 <p>Get the start date value from the course settings page form. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">moodleform</td><td class="paramname">$mform</td><td></td></tr>
+    <tr><td class="paramtype"><a class="el" href="../../d5/d8e/class_moodle_quick_form.html">MoodleQuickForm</a></td><td class="paramname">$mform</td><td></td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$fieldnames</td><td>The form - field names mapping. </td></tr>
   </table>
   </dd>
@@ -1982,7 +1982,7 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../d1/db5/classsection__info.html">section_info</a></td><td></td></tr>
+    <tr><td class="paramname">?section_info</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -2478,7 +2478,7 @@ course_modinfo::get_section_info_all()</dd></dl>
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../d4/d65/classcore_1_1output_1_1inplace__editable.html">core::output::inplace_editable</a></td><td></td></tr>
+    <tr><td class="paramname">?::core::output::inplace_editable</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -3772,7 +3772,7 @@ course_modinfo::get_section_info_all()</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 14 2024 03:45:49 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 21 2024 02:39:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

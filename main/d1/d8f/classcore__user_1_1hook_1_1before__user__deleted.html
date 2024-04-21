@@ -25,9 +25,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../Moodle-Logo-ReversedWhite_RGB.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
+   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.4beta (Build: 20240412) (8cf14f6e701)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240422) (7b9a4eeca51)</div>
   </td>
  </tr>
  </tbody>
@@ -61,7 +61,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d8/d79/classcore__user_1_1hook_1_1before__user__deleted-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">core_user\hook\before_user_deleted Class Reference<div class="ingroups"><a class="el" href="../../d6/d91/group__core__user.html">core_user</a></div></div></div>
 </div><!--header-->
@@ -78,27 +77,16 @@ Inheritance diagram for core_user\hook\before_user_deleted:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3c75ee5de9804a66e7d883015aa55237" id="r_a3c75ee5de9804a66e7d883015aa55237"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c75ee5de9804a66e7d883015aa55237">__construct</a> (public readonly stdClass $user,)</td></tr>
-<tr class="memdesc:a3c75ee5de9804a66e7d883015aa55237"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the hook.  <br /></td></tr>
-<tr class="separator:a3c75ee5de9804a66e7d883015aa55237"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98e4ebdd8df0aca62ad599ab93a158fd" id="r_a98e4ebdd8df0aca62ad599ab93a158fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98e4ebdd8df0aca62ad599ab93a158fd">isPropagationStopped</a> ()</td></tr>
-<tr class="memdesc:a98e4ebdd8df0aca62ad599ab93a158fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is propagation stopped?  <br /></td></tr>
-<tr class="separator:a98e4ebdd8df0aca62ad599ab93a158fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8d024b682df6e05f857eefeda8aa1da" id="r_aa8d024b682df6e05f857eefeda8aa1da"><td class="memItemLeft" align="right" valign="top"><a id="aa8d024b682df6e05f857eefeda8aa1da" name="aa8d024b682df6e05f857eefeda8aa1da"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>stop</b> ()</td></tr>
-<tr class="memdesc:aa8d024b682df6e05f857eefeda8aa1da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop the propagation of this event. <br /></td></tr>
-<tr class="separator:aa8d024b682df6e05f857eefeda8aa1da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a750843ca2cd263d08d912b9bfc75408c" id="r_a750843ca2cd263d08d912b9bfc75408c"><td class="memItemLeft" align="right" valign="top"><a id="a750843ca2cd263d08d912b9bfc75408c" name="a750843ca2cd263d08d912b9bfc75408c"></a>
-bool bool&#160;</td><td class="memItemRight" valign="bottom"><b>$stopped</b> = false</td></tr>
-<tr class="memdesc:a750843ca2cd263d08d912b9bfc75408c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the propagation of this event has been stopped. <br /></td></tr>
-<tr class="separator:a750843ca2cd263d08d912b9bfc75408c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd13e95932d0076e75e2e682d5245dd3" id="r_afd13e95932d0076e75e2e682d5245dd3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd13e95932d0076e75e2e682d5245dd3">__construct</a> (public stdClass readonly stdClass $user,)</td></tr>
+<tr class="memdesc:afd13e95932d0076e75e2e682d5245dd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the hook.  <br /></td></tr>
+<tr class="separator:afd13e95932d0076e75e2e682d5245dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a465b694112b1c3722b46890fe00c03c1" id="r_a465b694112b1c3722b46890fe00c03c1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dfd/interface_psr_1_1_event_dispatcher_1_1_stoppable_event_interface.html#a465b694112b1c3722b46890fe00c03c1">isPropagationStopped</a> ()</td></tr>
+<tr class="memdesc:a465b694112b1c3722b46890fe00c03c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is propagation stopped?  <br /></td></tr>
+<tr class="separator:a465b694112b1c3722b46890fe00c03c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a3c75ee5de9804a66e7d883015aa55237" name="a3c75ee5de9804a66e7d883015aa55237"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c75ee5de9804a66e7d883015aa55237">&#9670;&#160;</a></span>__construct()</h2>
+<a id="afd13e95932d0076e75e2e682d5245dd3" name="afd13e95932d0076e75e2e682d5245dd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd13e95932d0076e75e2e682d5245dd3">&#9670;&#160;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -106,7 +94,7 @@ bool bool&#160;</td><td class="memItemRight" valign="bottom"><b>$stopped</b> = f
         <tr>
           <td class="memname">core_user\hook\before_user_deleted::__construct </td>
           <td>(</td>
-          <td class="paramtype">public readonly stdClass</td>          <td class="paramname"><span class="paramname"><em>$user</em></span></td><td>)</td>
+          <td class="paramtype">public stdClass readonly stdClass</td>          <td class="paramname"><span class="paramname"><em>$user</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -119,23 +107,37 @@ bool bool&#160;</td><td class="memItemRight" valign="bottom"><b>$stopped</b> = f
   </table>
   </dd>
 </dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">$user</td><td>The user instance </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a98e4ebdd8df0aca62ad599ab93a158fd" name="a98e4ebdd8df0aca62ad599ab93a158fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98e4ebdd8df0aca62ad599ab93a158fd">&#9670;&#160;</a></span>isPropagationStopped()</h2>
+<a id="a465b694112b1c3722b46890fe00c03c1" name="a465b694112b1c3722b46890fe00c03c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a465b694112b1c3722b46890fe00c03c1">&#9670;&#160;</a></span>isPropagationStopped()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">core_user\hook\before_user_deleted::isPropagationStopped </td>
+          <td class="memname">Psr\EventDispatcher\StoppableEventInterface::isPropagationStopped </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Is propagation stopped? </p>
@@ -147,8 +149,6 @@ bool bool&#160;</td><td class="memItemRight" valign="bottom"><b>$stopped</b> = f
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="../../de/dfd/interface_psr_1_1_event_dispatcher_1_1_stoppable_event_interface.html#a465b694112b1c3722b46890fe00c03c1">Psr\EventDispatcher\StoppableEventInterface</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -157,7 +157,7 @@ bool bool&#160;</td><td class="memItemRight" valign="bottom"><b>$stopped</b> = f
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 14 2024 03:47:17 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 21 2024 02:40:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

@@ -25,9 +25,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../Moodle-Logo-ReversedWhite_RGB.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
+   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.4beta (Build: 20240412) (8cf14f6e701)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240422) (7b9a4eeca51)</div>
   </td>
  </tr>
  </tbody>
@@ -315,9 +315,9 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$removedprimarynavit
 <tr class="memitem:a5170e71eab89750d06d102b8804c593d" id="r_a5170e71eab89750d06d102b8804c593d"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5170e71eab89750d06d102b8804c593d">$rendererfactory</a> = '<a class="el" href="../../d5/df0/classstandard__renderer__factory.html">standard_renderer_factory</a>'</td></tr>
 <tr class="memdesc:a5170e71eab89750d06d102b8804c593d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the renderer factory class to use.  <br /></td></tr>
 <tr class="separator:a5170e71eab89750d06d102b8804c593d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2521f26c6c92221a121578aa352ceb8b" id="r_a2521f26c6c92221a121578aa352ceb8b"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2521f26c6c92221a121578aa352ceb8b">$requiredblocks</a> = false</td></tr>
-<tr class="memdesc:a2521f26c6c92221a121578aa352ceb8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">requiredblocks If set to a string, will list the block types that cannot be deleted.  <br /></td></tr>
-<tr class="separator:a2521f26c6c92221a121578aa352ceb8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a583c1be44b0e6ef0d8626e95e835abc4" id="r_a583c1be44b0e6ef0d8626e95e835abc4"><td class="memItemLeft" align="right" valign="top">string false&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a583c1be44b0e6ef0d8626e95e835abc4">$requiredblocks</a> = false</td></tr>
+<tr class="memdesc:a583c1be44b0e6ef0d8626e95e835abc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">requiredblocks If set to a string, will list the block types that cannot be deleted.  <br /></td></tr>
+<tr class="separator:a583c1be44b0e6ef0d8626e95e835abc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea67a9650b6592b9adc804fd32cd6e6a" id="r_aea67a9650b6592b9adc804fd32cd6e6a"><td class="memItemLeft" align="right" valign="top">string Closure&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea67a9650b6592b9adc804fd32cd6e6a">$scss</a> = false</td></tr>
 <tr class="memdesc:aea67a9650b6592b9adc804fd32cd6e6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The SCSS file to compile (without .scss), located in the scss/ folder of the theme.  <br /></td></tr>
 <tr class="separator:aea67a9650b6592b9adc804fd32cd6e6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1142,7 +1142,7 @@ false array&#160;</td><td class="memItemRight" valign="bottom"><b>$scsscache</b>
 <p>This resolves whether a SCSS file (or content) has to be used when generating the stylesheet for the theme. It will look at parents themes and check the SCSS properties there.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">False</td><td>when SCSS is not used. An array with the import paths, and the path to the SCSS file or Closure as second. </td></tr>
+    <tr><td class="paramname">array|false</td><td>False when SCSS is not used. An array with the import paths, and the path to the SCSS file or Closure as second. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1707,7 +1707,7 @@ false array&#160;</td><td class="memItemRight" valign="bottom"><b>$scsscache</b>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$image</td><td>name of image, may contain relative path </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$component</td><td></td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$svg,|null</td><td>Should SVG images also be looked for? If null, falls back to auto-detection of browser support </td></tr>
+    <tr><td class="paramtype">bool&#160;|&#160;null</td><td class="paramname">$svg</td><td>Should SVG images also be looked for? If null, falls back to auto-detection of browser support </td></tr>
   </table>
   </dd>
 </dl>
@@ -1746,7 +1746,7 @@ false array&#160;</td><td class="memItemRight" valign="bottom"><b>$scsscache</b>
 <p>Flip a stylesheet to RTL. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">Object</td><td class="paramname">$csstree</td><td>The parsed CSS tree structure to flip. </td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$csstree</td><td>The parsed CSS tree structure to flip. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2344,14 +2344,14 @@ false array&#160;</td><td class="memItemRight" valign="bottom"><b>$scsscache</b>
 
 </div>
 </div>
-<a id="a2521f26c6c92221a121578aa352ceb8b" name="a2521f26c6c92221a121578aa352ceb8b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2521f26c6c92221a121578aa352ceb8b">&#9670;&#160;</a></span>$requiredblocks</h2>
+<a id="a583c1be44b0e6ef0d8626e95e835abc4" name="a583c1be44b0e6ef0d8626e95e835abc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a583c1be44b0e6ef0d8626e95e835abc4">&#9670;&#160;</a></span>$requiredblocks</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string theme_config::$requiredblocks = false</td>
+          <td class="memname">string false theme_config::$requiredblocks = false</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2477,7 +2477,7 @@ false array&#160;</td><td class="memItemRight" valign="bottom"><b>$scsscache</b>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 14 2024 03:46:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 21 2024 02:40:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

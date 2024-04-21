@@ -25,9 +25,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../Moodle-Logo-ReversedWhite_RGB.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
+   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.4beta (Build: 20240412) (8cf14f6e701)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240422) (7b9a4eeca51)</div>
   </td>
  </tr>
  </tbody>
@@ -163,8 +163,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$jsconfigfunctions</
 <p>Create a new group within the <a class="el" href="../../da/d47/class_y_u_i__config.html">YUI_config</a> system. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">String</td><td class="paramname">$name</td><td>The name of the group. This must be unique and not previously used. </td></tr>
-    <tr><td class="paramtype">Array</td><td class="paramname">$config</td><td>The configuration for this group. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$name</td><td>The name of the group. This must be unique and not previously used. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$config</td><td>The configuration for this group. </td></tr>
   </table>
   </dd>
 </dl>
@@ -204,9 +204,9 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$jsconfigfunctions</
 <p>Add configuration for a specific module. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">String</td><td class="paramname">$name</td><td>The name of the module to add configuration for. </td></tr>
-    <tr><td class="paramtype">Array</td><td class="paramname">$config</td><td>The configuration for the specified module. </td></tr>
-    <tr><td class="paramtype">String</td><td class="paramname">$group</td><td>The name of the group to add configuration for. If not specified, then this module is added to the global configuration. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$name</td><td>The name of the module to add configuration for. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$config</td><td>The configuration for the specified module. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$group</td><td>The name of the group to add configuration for. If not specified, then this module is added to the global configuration. </td></tr>
   </table>
   </dd>
 </dl>
@@ -279,10 +279,10 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$jsconfigfunctions</
 <p>We must do this because we aggressively cache content on the browser, and we must also override use of the external CDN which will serve the true authoritative copy of the code without our patches.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">String</td><td>combobase The local combobase </td></tr>
-    <tr><td class="paramname">String</td><td>yuiversion The current YUI version </td></tr>
-    <tr><td class="paramname">Int</td><td>patchlevel The patch level we're working to for YUI </td></tr>
-    <tr><td class="paramname">Array</td><td>patchedmodules An array containing the names of the patched modules </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$combobase</td><td>The local combobase </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$yuiversion</td><td>The current YUI version </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$patchlevel</td><td>The patch level we're working to for YUI </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$patchedmodules</td><td>An array containing the names of the patched modules </td></tr>
   </table>
   </dd>
 </dl>
@@ -313,7 +313,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$jsconfigfunctions</
 <p>Retrieve the list of JavaScript functions for <a class="el" href="../../da/d47/class_y_u_i__config.html">YUI_config</a> groups. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">String</td><td>The complete set of config functions </td></tr>
+    <tr><td class="paramname">string</td><td>The complete set of config functions </td></tr>
   </table>
   </dd>
 </dl>
@@ -346,7 +346,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$jsconfigfunctions</
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">String</td><td>the name of the function to use in the group pattern configuration. </td></tr>
+    <tr><td class="paramname">string</td><td>the name of the function to use in the group pattern configuration. </td></tr>
   </table>
   </dd>
 </dl>
@@ -379,7 +379,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$jsconfigfunctions</
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">String</td><td>the name of the function to use in the group pattern configuration. </td></tr>
+    <tr><td class="paramname">string</td><td>the name of the function to use in the group pattern configuration. </td></tr>
   </table>
   </dd>
 </dl>
@@ -409,8 +409,8 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$jsconfigfunctions</
 <p>Note, any existing configuration for that group will be wiped out. This includes module configuration.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">String</td><td class="paramname">$name</td><td>The name of the group. This must be unique and not previously used. </td></tr>
-    <tr><td class="paramtype">Array</td><td class="paramname">$config</td><td>The configuration for this group. </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$name</td><td>The name of the group. This must be unique and not previously used. </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$config</td><td>The configuration for this group. </td></tr>
   </table>
   </dd>
 </dl>
@@ -447,7 +447,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$jsconfigfunctions</
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">String</td><td>the modified JS string. </td></tr>
+    <tr><td class="paramname">string</td><td>the modified JS string. </td></tr>
   </table>
   </dd>
 </dl>
@@ -482,7 +482,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$jsconfigfunctions</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 14 2024 03:46:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 21 2024 02:40:02 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

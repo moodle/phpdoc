@@ -25,9 +25,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../Moodle-Logo-ReversedWhite_RGB.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
+   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.4beta (Build: 20240412) (8cf14f6e701)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240422) (7b9a4eeca51)</div>
   </td>
  </tr>
  </tbody>
@@ -188,7 +188,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$_hiddenLabel</b> = f
     <tr><td class="paramtype">string</td><td class="paramname">$elementName</td><td>(optional) name of the group </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$elementLabel</td><td>(optional) group label </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$elements</td><td>(optional) array of HTML_QuickForm_element elements to group </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$separator</td><td>(optional) string to seperate elements. </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;array</td><td class="paramname">$separator</td><td>(optional) Use a string for one separator, or use an array to alternate the separators </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$appendName</td><td>(optional) string to appened to grouped elements. </td></tr>
     <tr><td class="paramtype">mixed</td><td class="paramname">$attributes</td><td>(optional) Either a typical HTML attribute string or an associative array </td></tr>
   </table>
@@ -426,6 +426,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$_hiddenLabel</b> = f
   </table>
   </dd>
 </dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">?bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Reimplemented in <a class="el" href="../../d3/d7b/class_moodle_quick_form__date__selector.html#a859729c86fa8cc82f72d1559355ca246">MoodleQuickForm_date_selector</a>, <a class="el" href="../../dc/d5e/class_moodle_quick_form__date__time__selector.html#a3549a1c44f6d86431a0d5cd4156b2dc3">MoodleQuickForm_date_time_selector</a>, <a class="el" href="../../d2/df5/class_moodle_quick_form__defaultcustom.html#a5a37500848a6f5141172bdd70f3724a8">MoodleQuickForm_defaultcustom</a>, <a class="el" href="../../d3/d97/class_moodle_quick_form__duration.html#a3234ab82b0ae5cb2a802e2d40a5bfe2b">MoodleQuickForm_duration</a>, <a class="el" href="../../de/d03/class_moodle_quick_form__filetypes.html#a64705540166b38a9a7a21030d420bd3b">MoodleQuickForm_filetypes</a>, and <a class="el" href="../../d2/d31/class_moodle_quick_form__modgrade.html#addbdb651e2a20ab98d0a40b88f1c726b">MoodleQuickForm_modgrade</a>.</p>
 
@@ -545,7 +551,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$_hiddenLabel</b> = f
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 14 2024 03:46:28 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 21 2024 02:39:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

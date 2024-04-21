@@ -25,9 +25,9 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../Moodle-Logo-ReversedWhite_RGB.svg"/></td>
   <td id="projectalign">
-   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.4</span>
+   <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.4beta (Build: 20240412) (8cf14f6e701)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240422) (7b9a4eeca51)</div>
   </td>
  </tr>
  </tbody>
@@ -669,10 +669,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$last_type</b></td></t
 <a class="el" href="../../da/dc9/classcache__application.html">cache_application</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$metacache</b></td></tr>
 <tr class="memdesc:aca7072a30d714c852b07ee839f2c7521"><td class="mdescLeft">&#160;</td><td class="mdescRight">for column info <br /></td></tr>
 <tr class="separator:aca7072a30d714c852b07ee839f2c7521"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18c0628f94f6d59ae6cb87e14911bf3a" id="r_a18c0628f94f6d59ae6cb87e14911bf3a"><td class="memItemLeft" align="right" valign="top"><a id="a18c0628f94f6d59ae6cb87e14911bf3a" name="a18c0628f94f6d59ae6cb87e14911bf3a"></a>
-<a class="el" href="../../d9/da9/classcache__request.html">cache_request</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$metacachetemp</b></td></tr>
-<tr class="memdesc:a18c0628f94f6d59ae6cb87e14911bf3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">for column info on temp tables <br /></td></tr>
-<tr class="separator:a18c0628f94f6d59ae6cb87e14911bf3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a367eaf5cad8acda505530eccaa0703d8" id="r_a367eaf5cad8acda505530eccaa0703d8"><td class="memItemLeft" align="right" valign="top"><a id="a367eaf5cad8acda505530eccaa0703d8" name="a367eaf5cad8acda505530eccaa0703d8"></a>
+<a class="el" href="../../da/dc9/classcache__application.html">cache_application</a> <a class="el" href="../../de/dcd/classcache__session.html">cache_session</a> <a class="el" href="../../d0/d4b/classcache__store.html">cache_store</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$metacachetemp</b></td></tr>
+<tr class="memdesc:a367eaf5cad8acda505530eccaa0703d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">for column info on temp tables <br /></td></tr>
+<tr class="separator:a367eaf5cad8acda505530eccaa0703d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1be57f4f91356801ae104e73b73d6ca0" id="r_a1be57f4f91356801ae104e73b73d6ca0"><td class="memItemLeft" align="right" valign="top"><a id="a1be57f4f91356801ae104e73b73d6ca0" name="a1be57f4f91356801ae104e73b73d6ca0"></a>
 mysqli&#160;</td><td class="memItemRight" valign="bottom"><b>$mysqli</b> = null</td></tr>
 <tr class="memdesc:a1be57f4f91356801ae104e73b73d6ca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">$mysqli <br /></td></tr>
@@ -2507,10 +2507,11 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname"><a class="el" href="../../d3/d6e/classmoodle__database.html" title="Abstract class representing moodle database interface.">moodle_database</a></td><td>driver object or null if error, for example of driver object see <a class="el" href="../../d1/d7c/classmysqli__native__moodle__database.html">mysqli_native_moodle_database</a> </td></tr>
+    <tr><td class="paramname">?moodle_database</td><td>driver object or null if error, for example of driver object see {</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d1/d7c/classmysqli__native__moodle__database.html" title="Native mysqli class representing moodle database interface.">mysqli_native_moodle_database</a>} </dd></dl>
 
 </div>
 </div>
@@ -4505,7 +4506,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 <p>Returns transaction trace for debugging purposes. </p>
 <p>to be used by core only </p><dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array</td><td>or null if not in transaction. </td></tr>
+    <tr><td class="paramname">?array</td><td>or null if not in transaction. </td></tr>
   </table>
   </dd>
 </dl>
@@ -8456,7 +8457,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$writes</b> = 0</td></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 14 2024 03:45:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 21 2024 02:39:02 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>
