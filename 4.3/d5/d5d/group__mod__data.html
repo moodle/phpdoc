@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3.4 (Build: 20240422) (143c2cd5bef)</div>
+   <div id="projectbrief">Moodle 4.3.4+ (Build: 20240425) (840d58af5ec)</div>
   </td>
  </tr>
  </tbody>
@@ -289,9 +289,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga35bd72b76e40476a6608274309d53359" id="r_ga35bd72b76e40476a6608274309d53359"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga35bd72b76e40476a6608274309d53359">data_add_instance</a> ($data, $mform=null)</td></tr>
 <tr class="memdesc:ga35bd72b76e40476a6608274309d53359"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an instance of a data.  <br /></td></tr>
 <tr class="separator:ga35bd72b76e40476a6608274309d53359"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa853fbbe12890b7c9021c450137ad198" id="r_gaa853fbbe12890b7c9021c450137ad198"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaa853fbbe12890b7c9021c450137ad198">data_add_record</a> ($data, $groupid=0, $userid=null)</td></tr>
-<tr class="memdesc:gaa853fbbe12890b7c9021c450137ad198"><td class="mdescLeft">&#160;</td><td class="mdescRight">function that takes in a dataid and adds a record this is used everytime an add template is submitted  <br /></td></tr>
-<tr class="separator:gaa853fbbe12890b7c9021c450137ad198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae2c6d730d8c9e6e958a2775b1c1cada9" id="r_gae2c6d730d8c9e6e958a2775b1c1cada9"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gae2c6d730d8c9e6e958a2775b1c1cada9">data_add_record</a> ($data, $groupid=0, $userid=null, bool $approved=true)</td></tr>
+<tr class="memdesc:gae2c6d730d8c9e6e958a2775b1c1cada9"><td class="mdescLeft">&#160;</td><td class="mdescRight">function that takes in a dataid and adds a record this is used everytime an add template is submitted  <br /></td></tr>
+<tr class="separator:gae2c6d730d8c9e6e958a2775b1c1cada9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga38c1b454b39c00ad58190c6621d0a2c1" id="r_ga38c1b454b39c00ad58190c6621d0a2c1"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga38c1b454b39c00ad58190c6621d0a2c1">data_append_new_field_to_templates</a> ($data, $newfieldname)</td></tr>
 <tr class="memdesc:ga38c1b454b39c00ad58190c6621d0a2c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends a new field at the end of the form template.  <br /></td></tr>
 <tr class="separator:ga38c1b454b39c00ad58190c6621d0a2c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -703,7 +703,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 </div><div class="memdoc">
 
 <p>Populate the field contents of a new record with the submitted data. </p>
-<p>An event has been previously triggered upon the creation of the new record in <a class="el" href="#gaa853fbbe12890b7c9021c450137ad198" title="function that takes in a dataid and adds a record this is used everytime an add template is submitted">data_add_record()</a>.</p>
+<p>An event has been previously triggered upon the creation of the new record in <a class="el" href="#gae2c6d730d8c9e6e958a2775b1c1cada9" title="function that takes in a dataid and adds a record this is used everytime an add template is submitted">data_add_record()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$data</td><td>database object </td></tr>
@@ -755,8 +755,8 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 
 </div>
 </div>
-<a id="gaa853fbbe12890b7c9021c450137ad198" name="gaa853fbbe12890b7c9021c450137ad198"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa853fbbe12890b7c9021c450137ad198">&#9670;&#160;</a></span>data_add_record()</h2>
+<a id="gae2c6d730d8c9e6e958a2775b1c1cada9" name="gae2c6d730d8c9e6e958a2775b1c1cada9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae2c6d730d8c9e6e958a2775b1c1cada9">&#9670;&#160;</a></span>data_add_record()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -774,7 +774,12 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$userid</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span></span>&#160;)</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$userid</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$approved</em><span class="paramdefsep"> = </span><span class="paramdefval">true</span></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -785,6 +790,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
     <tr><td class="paramtype">object</td><td class="paramname">$data</td><td></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$groupid</td><td></td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td></td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$approved</td><td>If specified, and the user has the capability to approve entries, then this value will be used as the approved status of the new record </td></tr>
   </table>
   </dd>
 </dl>
@@ -4587,7 +4593,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2023
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 21 2024 02:31:16 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 28 2024 02:35:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>

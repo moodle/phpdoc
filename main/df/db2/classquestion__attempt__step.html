@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240422) (7b9a4eeca51)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240425) (792698af000)</div>
   </td>
  </tr>
  </tbody>
@@ -79,9 +79,9 @@ Inheritance diagram for question_attempt_step:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0bddf286a76ceadbeb4e94c439b54aa7" id="r_a0bddf286a76ceadbeb4e94c439b54aa7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bddf286a76ceadbeb4e94c439b54aa7">__construct</a> ($data=array(), $timecreated=null, $userid=null, $existingstepid=null)</td></tr>
-<tr class="memdesc:a0bddf286a76ceadbeb4e94c439b54aa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">You should not need to call this constructor in your own code.  <br /></td></tr>
-<tr class="separator:a0bddf286a76ceadbeb4e94c439b54aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52ee897a0601d5f76fe962e23d1f69dc" id="r_a52ee897a0601d5f76fe962e23d1f69dc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52ee897a0601d5f76fe962e23d1f69dc">__construct</a> ($data=[], $timecreated=null, $userid=null, $existingstepid=null)</td></tr>
+<tr class="memdesc:a52ee897a0601d5f76fe962e23d1f69dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">You should not need to call this constructor in your own code.  <br /></td></tr>
+<tr class="separator:a52ee897a0601d5f76fe962e23d1f69dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6eac80372a163d127d5ff33d2d918e4d" id="r_a6eac80372a163d127d5ff33d2d918e4d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6eac80372a163d127d5ff33d2d918e4d">add_full_user_object</a> (stdClass $user)</td></tr>
 <tr class="memdesc:a6eac80372a163d127d5ff33d2d918e4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update full user information for step.  <br /></td></tr>
 <tr class="separator:a6eac80372a163d127d5ff33d2d918e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,8 +194,8 @@ Static Public Member Functions</h2></td></tr>
 <dl class="section copyright"><dt>Copyright</dt><dd>2009 The Open University </dd></dl>
 <dl class="section user"><dt>License</dt><dd><a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a> GNU GPL v3 or later </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a0bddf286a76ceadbeb4e94c439b54aa7" name="a0bddf286a76ceadbeb4e94c439b54aa7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bddf286a76ceadbeb4e94c439b54aa7">&#9670;&#160;</a></span>__construct()</h2>
+<a id="a52ee897a0601d5f76fe962e23d1f69dc" name="a52ee897a0601d5f76fe962e23d1f69dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52ee897a0601d5f76fe962e23d1f69dc">&#9670;&#160;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -203,7 +203,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">question_attempt_step::__construct </td>
           <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$data</em><span class="paramdefsep"> = </span><span class="paramdefval">array()</span>, </span></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$data</em><span class="paramdefsep"> = </span><span class="paramdefval">[]</span>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -230,9 +230,9 @@ question_attempt::process_action()}. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$data</td><td>the submitted data that defines this step. </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$timestamp</td><td>the time to record for the action. (If not given, use now.) </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>the user to attribute the aciton to. (If not given, use the current user.) </td></tr>
-    <tr><td class="paramtype">int</td><td class="paramname">$existingstepid</td><td>if this step is going to replace an existing step (for example, during a regrade) this is the id of the previous step we are replacing. </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$timecreated</td><td>the time to record for the action. (If not given, use now.) </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$userid</td><td>the user to attribute the aciton to. (If not given, use the current user.) </td></tr>
+    <tr><td class="paramtype">int&#160;|&#160;null</td><td class="paramname">$existingstepid</td><td>if this step is going to replace an existing step (for example, during a regrade) this is the id of the previous step we are replacing. </td></tr>
   </table>
   </dd>
 </dl>
@@ -630,7 +630,7 @@ question_attempt::process_action()}. </dd></dl>
 <p>Return the full user object. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">stdClass</td><td>Get full user object. </td></tr>
+    <tr><td class="paramname">null|stdClass</td><td>Get full user object. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1120,7 +1120,7 @@ question_attempt::process_action()}. </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 21 2024 02:39:54 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun Apr 28 2024 02:44:11 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>
