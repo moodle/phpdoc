@@ -27,7 +27,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3.4+ (Build: 20240425) (840d58af5ec)</div>
+   <div id="projectbrief">Moodle 4.3.4+ (Build: 20240503) (ab09144ccbb)</div>
   </td>
  </tr>
  </tbody>
@@ -71,12 +71,16 @@ Inheritance diagram for tiny_premium\plugininfo:</div>
  <div class="center">
   <img src="../../d5/d4a/classtiny__premium_1_1plugininfo.png" usemap="#tiny_5Fpremium_5Cplugininfo_map" alt=""/>
   <map id="tiny_5Fpremium_5Cplugininfo_map" name="tiny_5Fpremium_5Cplugininfo_map">
-<area href="../../d6/da5/classeditor__tiny_1_1plugin.html" alt="editor_tiny\plugin" shape="rect" coords="0,0,145,24"/>
+<area href="../../d6/da5/classeditor__tiny_1_1plugin.html" alt="editor_tiny\plugin" shape="rect" coords="0,0,219,24"/>
+<area href="../../d0/df9/interfaceeditor__tiny_1_1plugin__with__configuration.html" alt="editor_tiny\plugin_with_configuration" shape="rect" coords="229,0,448,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a8ec6b42cfd7ca148294cf95d06430aa5" id="r_a8ec6b42cfd7ca148294cf95d06430aa5"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8ec6b42cfd7ca148294cf95d06430aa5">get_plugin_configuration_for_context</a> (context $context, array $options, array $fpoptions, ?<a class="el" href="../../db/d4c/classeditor__tiny_1_1editor.html">editor</a> $<a class="el" href="../../db/d4c/classeditor__tiny_1_1editor.html">editor</a>=null)</td></tr>
+<tr class="memdesc:a8ec6b42cfd7ca148294cf95d06430aa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of enabled Tiny Premium plugins set by the admin.  <br /></td></tr>
+<tr class="separator:a8ec6b42cfd7ca148294cf95d06430aa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac949028e647dcb7ae297746f4c5a7b7c" id="r_ac949028e647dcb7ae297746f4c5a7b7c"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/da5/classeditor__tiny_1_1plugin.html#ac949028e647dcb7ae297746f4c5a7b7c">get_plugin_info</a> (context $context, array $options, array $fpoptions, ?<a class="el" href="../../db/d4c/classeditor__tiny_1_1editor.html">editor</a> $<a class="el" href="../../db/d4c/classeditor__tiny_1_1editor.html">editor</a>=null)</td></tr>
 <tr class="memdesc:ac949028e647dcb7ae297746f4c5a7b7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the plugin information for the plugin.  <br /></td></tr>
 <tr class="separator:ac949028e647dcb7ae297746f4c5a7b7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -85,6 +89,64 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ae3817292ce359b3fc6e1d96194497785"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8ec6b42cfd7ca148294cf95d06430aa5" name="a8ec6b42cfd7ca148294cf95d06430aa5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ec6b42cfd7ca148294cf95d06430aa5">&#9670;&#160;</a></span>get_plugin_configuration_for_context()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static tiny_premium\plugininfo::get_plugin_configuration_for_context </td>
+          <td>(</td>
+          <td class="paramtype">context</td>          <td class="paramname"><span class="paramname"><em>$context</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$options</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$fpoptions</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">?<a class="el" href="../../db/d4c/classeditor__tiny_1_1editor.html">editor</a></td>          <td class="paramname"><span class="paramname"><em>$editor</em><span class="paramdefsep"> = </span><span class="paramdefval">null</span></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a list of enabled Tiny Premium plugins set by the admin. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">context</td><td class="paramname">$context</td><td>The context that the editor is used within </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$options</td><td>The options passed in when requesting the editor </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$fpoptions</td><td>The filepicker options passed in when requesting the editor </td></tr>
+    <tr><td class="paramtype">editor&#160;|&#160;null</td><td class="paramname">$editor</td><td>The editor instance in which the plugin is initialised </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="../../d0/df9/interfaceeditor__tiny_1_1plugin__with__configuration.html#a03e468f398965025b8cb0732b1b87999">editor_tiny\plugin_with_configuration</a>.</p>
+
+</div>
+</div>
 <a id="ac949028e647dcb7ae297746f4c5a7b7c" name="ac949028e647dcb7ae297746f4c5a7b7c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac949028e647dcb7ae297746f4c5a7b7c">&#9670;&#160;</a></span>get_plugin_info()</h2>
 
@@ -205,7 +267,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Apr 28 2024 02:37:27 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+Generated on Sun May 5 2024 02:38:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
 </small></address>
 </body>
 </html>
