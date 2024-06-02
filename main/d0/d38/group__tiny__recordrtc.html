@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240524) (d32844ce296)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240530) (bcd8e0d6edd)</div>
   </td>
  </tr>
  </tbody>
@@ -71,6 +71,7 @@ $(function(){ initResizable(false); });
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">tiny_recordrtc</div></div>
 </div><!--header-->
@@ -87,10 +88,18 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7d/classtiny__recordrtc_1_1constants.html">tiny_recordrtc\constants</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d85/classtiny__recordrtc_1_1plugininfo.html">tiny_recordrtc\plugininfo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d4a/classtiny__recordrtc_1_1privacy_1_1provider.html">tiny_recordrtc\privacy\provider</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga29eca0a679e01bb0f53e4df90e21b009" id="r_ga29eca0a679e01bb0f53e4df90e21b009"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga29eca0a679e01bb0f53e4df90e21b009">xmldb_tiny_recordrtc_upgrade</a> ($oldversion)</td></tr>
+<tr class="memdesc:ga29eca0a679e01bb0f53e4df90e21b009"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run all Tiny recordrtc upgrade steps between the current <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> version and the current version on disk.  <br /></td></tr>
+<tr class="separator:ga29eca0a679e01bb0f53e4df90e21b009"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -103,10 +112,42 @@ Variables</h2></td></tr>
 $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>component</b> = 'tiny_recordrtc'</td></tr>
 <tr class="separator:ga27dc7e2c13f48a05e56e0d3138fe3c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga92a3fd99b37c9cbd65c4aead816b3a83" id="r_ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memItemLeft" align="right" valign="top"><a id="ga92a3fd99b37c9cbd65c4aead816b3a83" name="ga92a3fd99b37c9cbd65c4aead816b3a83"></a>
-$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024042200</td></tr>
+$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024042400</td></tr>
 <tr class="separator:ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga29eca0a679e01bb0f53e4df90e21b009" name="ga29eca0a679e01bb0f53e4df90e21b009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga29eca0a679e01bb0f53e4df90e21b009">&#9670;&#160;</a></span>xmldb_tiny_recordrtc_upgrade()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">xmldb_tiny_recordrtc_upgrade </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$oldversion</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Run all Tiny recordrtc upgrade steps between the current <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> version and the current version on disk. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$oldversion</td><td>The old version of atto equation in the <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">bool</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="ga3bd1a55d998861e02e56c127f4b46c94" name="ga3bd1a55d998861e02e56c127f4b46c94"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga3bd1a55d998861e02e56c127f4b46c94">&#9670;&#160;</a></span>$capabilities</h2>
@@ -136,6 +177,14 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 <div class="line">            <span class="stringliteral">&#39;user&#39;</span> =&gt; <a class="code hl_variable" href="../../da/d16/group__core__access.html#gacc879f41ad412efa2fc8022359b3ebfb">CAP_ALLOW</a>,</div>
 <div class="line">        ],</div>
 <div class="line">    ],</div>
+<div class="line">    </div>
+<div class="line">    <span class="stringliteral">&#39;tiny/recordrtc:recordscreen&#39;</span> =&gt; [</div>
+<div class="line">        <span class="stringliteral">&#39;captype&#39;</span>      =&gt; <span class="stringliteral">&#39;write&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;contextlevel&#39;</span> =&gt; <a class="code hl_variable" href="../../da/d16/group__core__access.html#gad810921ece54f4a0ccee43743267164f">CONTEXT_MODULE</a>,</div>
+<div class="line">        <span class="stringliteral">&#39;archetypes&#39;</span>   =&gt; [</div>
+<div class="line">            <span class="stringliteral">&#39;user&#39;</span> =&gt; <a class="code hl_variable" href="../../da/d16/group__core__access.html#gacc879f41ad412efa2fc8022359b3ebfb">CAP_ALLOW</a>,</div>
+<div class="line">        ],</div>
+<div class="line">    ],</div>
 <div class="line">]</div>
 <div class="ttc" id="agroup__core__access_html_gacc879f41ad412efa2fc8022359b3ebfb"><div class="ttname"><a href="../../da/d16/group__core__access.html#gacc879f41ad412efa2fc8022359b3ebfb">CAP_ALLOW</a></div><div class="ttdeci">const CAP_ALLOW</div><div class="ttdoc">Allow permission, overrides CAP_PREVENT defined in parent contexts.</div><div class="ttdef"><b>Definition</b> accesslib.php:115</div></div>
 <div class="ttc" id="agroup__core__access_html_gad810921ece54f4a0ccee43743267164f"><div class="ttname"><a href="../../da/d16/group__core__access.html#gad810921ece54f4a0ccee43743267164f">CONTEXT_MODULE</a></div><div class="ttdeci">const CONTEXT_MODULE</div><div class="ttdoc">Course module context level - one instance for each course module.</div><div class="ttdef"><b>Definition</b> accesslib.php:130</div></div>
@@ -145,7 +194,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 26 2024 02:49:50 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 2 2024 02:51:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

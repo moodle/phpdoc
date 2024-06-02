@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240524) (d32844ce296)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240530) (bcd8e0d6edd)</div>
   </td>
  </tr>
  </tbody>
@@ -79,17 +79,23 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">Kevinrob\GuzzleCache\CacheEntry Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<div class="dynheader">
+Inheritance diagram for Kevinrob\GuzzleCache\CacheEntry:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="../../df/de9/class_kevinrob_1_1_guzzle_cache_1_1_cache_entry.png" alt=""/>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2f508d845fd4fb6893914be59277b16e" id="r_a2f508d845fd4fb6893914be59277b16e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f508d845fd4fb6893914be59277b16e">__construct</a> (<a class="el" href="../../d8/db5/interface_psr_1_1_http_1_1_message_1_1_request_interface.html">RequestInterface</a> $request, <a class="el" href="../../df/d72/interface_psr_1_1_http_1_1_message_1_1_response_interface.html">ResponseInterface</a> $response, DateTime $staleAt, DateTime $staleIfErrorTo=null, DateTime $staleWhileRevalidateTo=null)</td></tr>
 <tr class="separator:a2f508d845fd4fb6893914be59277b16e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e1c292938ffaa006044acdfd9275231" id="r_a4e1c292938ffaa006044acdfd9275231"><td class="memItemLeft" align="right" valign="top"><a id="a4e1c292938ffaa006044acdfd9275231" name="a4e1c292938ffaa006044acdfd9275231"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>__sleep</b> ()</td></tr>
-<tr class="separator:a4e1c292938ffaa006044acdfd9275231"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac85e1671630357fc9c5a8e2f96d50ef5" id="r_ac85e1671630357fc9c5a8e2f96d50ef5"><td class="memItemLeft" align="right" valign="top"><a id="ac85e1671630357fc9c5a8e2f96d50ef5" name="ac85e1671630357fc9c5a8e2f96d50ef5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>__wakeup</b> ()</td></tr>
-<tr class="separator:ac85e1671630357fc9c5a8e2f96d50ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0958b987ebe15059b9116d95e339a0c0" id="r_a0958b987ebe15059b9116d95e339a0c0"><td class="memItemLeft" align="right" valign="top"><a id="a0958b987ebe15059b9116d95e339a0c0" name="a0958b987ebe15059b9116d95e339a0c0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>__serialize</b> ()</td></tr>
+<tr class="separator:a0958b987ebe15059b9116d95e339a0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e99ff843e3f9a964370da8d10b94826" id="r_a9e99ff843e3f9a964370da8d10b94826"><td class="memItemLeft" align="right" valign="top"><a id="a9e99ff843e3f9a964370da8d10b94826" name="a9e99ff843e3f9a964370da8d10b94826"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>__unserialize</b> (array $data)</td></tr>
+<tr class="separator:a9e99ff843e3f9a964370da8d10b94826"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a0b16c8ac6ee0593e7a923821a4117a" id="r_a6a0b16c8ac6ee0593e7a923821a4117a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6a0b16c8ac6ee0593e7a923821a4117a">getAge</a> ()</td></tr>
 <tr class="separator:a6a0b16c8ac6ee0593e7a923821a4117a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeaac3fd2899e8211b4068a2340f108f7" id="r_aeaac3fd2899e8211b4068a2340f108f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeaac3fd2899e8211b4068a2340f108f7">getOriginalRequest</a> ()</td></tr>
@@ -116,10 +122,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aae1fa8499d867b7048a2e965a45ea852"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2fe8b056dede7fa94a65a48fc243bbe" id="r_af2fe8b056dede7fa94a65a48fc243bbe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2fe8b056dede7fa94a65a48fc243bbe">isVaryEquals</a> (<a class="el" href="../../d8/db5/interface_psr_1_1_http_1_1_message_1_1_request_interface.html">RequestInterface</a> $request)</td></tr>
 <tr class="separator:af2fe8b056dede7fa94a65a48fc243bbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a638ded0571e3884b96cb64062a38c0f7" id="r_a638ded0571e3884b96cb64062a38c0f7"><td class="memItemLeft" align="right" valign="top"><a id="a638ded0571e3884b96cb64062a38c0f7" name="a638ded0571e3884b96cb64062a38c0f7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>serialize</b> ()</td></tr>
+<tr class="separator:a638ded0571e3884b96cb64062a38c0f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c6968f19063ccecda1df47a33c47d48" id="r_a7c6968f19063ccecda1df47a33c47d48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c6968f19063ccecda1df47a33c47d48">serveStaleIfError</a> ()</td></tr>
 <tr class="separator:a7c6968f19063ccecda1df47a33c47d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4887a85acf10ad40db896ba12b404353" id="r_a4887a85acf10ad40db896ba12b404353"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4887a85acf10ad40db896ba12b404353">staleWhileValidate</a> ()</td></tr>
 <tr class="separator:a4887a85acf10ad40db896ba12b404353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97b15940bcbf24d87d9c707a42727804" id="r_a97b15940bcbf24d87d9c707a42727804"><td class="memItemLeft" align="right" valign="top"><a id="a97b15940bcbf24d87d9c707a42727804" name="a97b15940bcbf24d87d9c707a42727804"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>unserialize</b> ($data)</td></tr>
+<tr class="separator:a97b15940bcbf24d87d9c707a42727804"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -533,7 +545,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>$timestampStale</b></t
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 26 2024 02:51:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 2 2024 02:53:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240524) (d32844ce296)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240530) (bcd8e0d6edd)</div>
   </td>
  </tr>
  </tbody>
@@ -119,14 +119,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a11783468845f704928e1ba13a63534e8" id="r_a11783468845f704928e1ba13a63534e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11783468845f704928e1ba13a63534e8">then</a> (callable $onFulfilled=null, callable $onRejected=null)</td></tr>
 <tr class="memdesc:a11783468845f704928e1ba13a63534e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends fulfillment and rejection handlers to the promise, and returns a new promise resolving to the return value of the called handler.  <br /></td></tr>
 <tr class="separator:a11783468845f704928e1ba13a63534e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae227b3f676a5ef659ffba497e432cc1b" id="r_ae227b3f676a5ef659ffba497e432cc1b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae227b3f676a5ef659ffba497e432cc1b">wait</a> ($<a class="el" href="../../dc/d5a/namespace_guzzle_http_1_1_promise.html#aa03041fbadb7915c938be72f93deda4b">unwrap</a>=true)</td></tr>
-<tr class="memdesc:ae227b3f676a5ef659ffba497e432cc1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits until the promise completes if possible.  <br /></td></tr>
-<tr class="separator:ae227b3f676a5ef659ffba497e432cc1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30c8ce7b05ff8694992b9df8f7057edc" id="r_a30c8ce7b05ff8694992b9df8f7057edc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30c8ce7b05ff8694992b9df8f7057edc">wait</a> (bool $unwrap=true)</td></tr>
+<tr class="memdesc:a30c8ce7b05ff8694992b9df8f7057edc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits until the promise completes if possible.  <br /></td></tr>
+<tr class="separator:a30c8ce7b05ff8694992b9df8f7057edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a5594156e8cb234e778f0392186e03a3a" id="r_a5594156e8cb234e778f0392186e03a3a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5594156e8cb234e778f0392186e03a3a">of</a> (callable $generatorFn)</td></tr>
-<tr class="memdesc:a5594156e8cb234e778f0392186e03a3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new coroutine.  <br /></td></tr>
+<tr class="memitem:a5594156e8cb234e778f0392186e03a3a" id="r_a5594156e8cb234e778f0392186e03a3a"><td class="memItemLeft" align="right" valign="top"><a id="a5594156e8cb234e778f0392186e03a3a" name="a5594156e8cb234e778f0392186e03a3a"></a>
+static&#160;</td><td class="memItemRight" valign="bottom"><b>of</b> (callable $generatorFn)</td></tr>
+<tr class="memdesc:a5594156e8cb234e778f0392186e03a3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new coroutine. <br /></td></tr>
 <tr class="separator:a5594156e8cb234e778f0392186e03a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -158,7 +159,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REJECTED</b> = 'reje
 </div><div class="memdoc">
 
 <p>Cancels the promise if possible. </p>
-<p>@externalurl <a href="https://github.com/promises-aplus/cancellation-spec/issues/7">https://github.com/promises-aplus/cancellation-spec/issues/7</a> </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://github.com/promises-aplus/cancellation-spec/issues/7">https://github.com/promises-aplus/cancellation-spec/issues/7</a> </dd></dl>
 
 <p>Implements <a class="el" href="../../d8/d14/interface_guzzle_http_1_1_promise_1_1_promise_interface.html#ab3f2eb63d775492446ab3784618aeef8">GuzzleHttp\Promise\PromiseInterface</a>.</p>
 
@@ -180,48 +181,9 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REJECTED</b> = 'reje
 </div><div class="memdoc">
 
 <p>Get the state of the promise ("pending", "rejected", or "fulfilled"). </p>
-<p>The three states can be checked against the constants defined on PromiseInterface: PENDING, FULFILLED, and REJECTED.</p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">string</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p>The three states can be checked against the constants defined on PromiseInterface: PENDING, FULFILLED, and REJECTED. </p>
 
 <p>Implements <a class="el" href="../../d8/d14/interface_guzzle_http_1_1_promise_1_1_promise_interface.html#a4473485faedc0b6489ff28b4fbdc2330">GuzzleHttp\Promise\PromiseInterface</a>.</p>
-
-</div>
-</div>
-<a id="a5594156e8cb234e778f0392186e03a3a" name="a5594156e8cb234e778f0392186e03a3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5594156e8cb234e778f0392186e03a3a">&#9670;&#160;</a></span>of()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static GuzzleHttp\Promise\Coroutine::of </td>
-          <td>(</td>
-          <td class="paramtype">callable</td>          <td class="paramname"><span class="paramname"><em>$generatorFn</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Create a new coroutine. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">self</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -243,13 +205,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REJECTED</b> = 'reje
 <p>Appends a rejection handler callback to the promise, and returns a new promise resolving to the return value of the callback if it is called, or to its original fulfillment value if the promise is instead fulfilled. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">callable</td><td class="paramname">$onRejected</td><td>Invoked when the promise is rejected.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">PromiseInterface</td><td></td></tr>
+    <tr><td class="paramtype">callable</td><td class="paramname">$onRejected</td><td>Invoked when the promise is rejected. </td></tr>
   </table>
   </dd>
 </dl>
@@ -347,13 +303,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REJECTED</b> = 'reje
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">callable</td><td class="paramname">$onFulfilled</td><td>Invoked when the promise fulfills. </td></tr>
-    <tr><td class="paramtype">callable</td><td class="paramname">$onRejected</td><td>Invoked when the promise is rejected.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">PromiseInterface</td><td></td></tr>
+    <tr><td class="paramtype">callable</td><td class="paramname">$onRejected</td><td>Invoked when the promise is rejected. </td></tr>
   </table>
   </dd>
 </dl>
@@ -362,8 +312,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REJECTED</b> = 'reje
 
 </div>
 </div>
-<a id="ae227b3f676a5ef659ffba497e432cc1b" name="ae227b3f676a5ef659ffba497e432cc1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae227b3f676a5ef659ffba497e432cc1b">&#9670;&#160;</a></span>wait()</h2>
+<a id="a30c8ce7b05ff8694992b9df8f7057edc" name="a30c8ce7b05ff8694992b9df8f7057edc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30c8ce7b05ff8694992b9df8f7057edc">&#9670;&#160;</a></span>wait()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -371,7 +321,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REJECTED</b> = 'reje
         <tr>
           <td class="memname">GuzzleHttp\Promise\Coroutine::wait </td>
           <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$unwrap</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span></td><td>)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$unwrap</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -380,12 +330,6 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REJECTED</b> = 'reje
 <p>Waits until the promise completes if possible. </p>
 <p>Pass $unwrap as true to unwrap the result of the promise, either returning the resolved value or throwing the rejected exception.</p>
 <p>If the promise cannot be waited on, then the promise will be rejected.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">bool</td><td class="paramname">$unwrap</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">mixed</td><td></td></tr>
@@ -399,7 +343,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REJECTED</b> = 'reje
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="../../d8/d14/interface_guzzle_http_1_1_promise_1_1_promise_interface.html#ad7f8dc7f9513af40c61a985ad89b6219">GuzzleHttp\Promise\PromiseInterface</a>.</p>
+<p>Implements <a class="el" href="../../d8/d14/interface_guzzle_http_1_1_promise_1_1_promise_interface.html#a2613742eb067ca52aaac3a884a9ffa7f">GuzzleHttp\Promise\PromiseInterface</a>.</p>
 
 </div>
 </div>
@@ -409,7 +353,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REJECTED</b> = 'reje
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 26 2024 02:51:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 2 2024 02:53:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

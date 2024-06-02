@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240524) (d32844ce296)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240530) (bcd8e0d6edd)</div>
   </td>
  </tr>
  </tbody>
@@ -99,21 +99,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afc6ca7b7aeedb30152cf9a1d37437fba" id="r_afc6ca7b7aeedb30152cf9a1d37437fba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc6ca7b7aeedb30152cf9a1d37437fba">__construct</a> (string $method, $uri, array $headers=[], $body=null, string $version='1.1', array $serverParams=[])</td></tr>
 <tr class="separator:afc6ca7b7aeedb30152cf9a1d37437fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92cc29d8e646a36435d09488e82c2ed9" id="r_a92cc29d8e646a36435d09488e82c2ed9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92cc29d8e646a36435d09488e82c2ed9">getAttribute</a> ($attribute, $default=null)</td></tr>
-<tr class="memdesc:a92cc29d8e646a36435d09488e82c2ed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">{Retrieve a single derived request attribute.Retrieves a single derived request attribute as described in <a class="el" href="../../d3/dc4/interface_psr_1_1_http_1_1_message_1_1_server_request_interface.html#a0cda25a9b297c86e7813ffcb98ceb3df" title="Retrieve attributes derived from the request.">getAttributes()</a>. If the attribute has not been previously set, returns the default value as provided.This method obviates the need for a hasAttribute() method, as it allows specifying a default value to return if the attribute is not found.<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d3/dc4/interface_psr_1_1_http_1_1_message_1_1_server_request_interface.html#a0cda25a9b297c86e7813ffcb98ceb3df" title="Retrieve attributes derived from the request.">getAttributes()</a> </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$name</td><td>The attribute name. </td></tr>
-    <tr><td class="paramtype">mixed</td><td class="paramname">$default</td><td>Default value to return if the attribute does not exist. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">mixed</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-}  <br /></td></tr>
 <tr class="separator:a92cc29d8e646a36435d09488e82c2ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c55ac2643aa033868e1780ffa5456a7" id="r_a0c55ac2643aa033868e1780ffa5456a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c55ac2643aa033868e1780ffa5456a7">getAttributes</a> ()</td></tr>
 <tr class="memdesc:a0c55ac2643aa033868e1780ffa5456a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve attributes derived from the request.  <br /></td></tr>
@@ -137,13 +122,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4eafa27a3768e0d353882e9aad075709"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the HTTP method of the request.  <br /></td></tr>
 <tr class="separator:a4eafa27a3768e0d353882e9aad075709"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ba7206b9235bef8c1c615bcb6528aa6" id="r_a1ba7206b9235bef8c1c615bcb6528aa6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ba7206b9235bef8c1c615bcb6528aa6">getParsedBody</a> ()</td></tr>
-<tr class="memdesc:a1ba7206b9235bef8c1c615bcb6528aa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">{Retrieve any parameters provided in the request body.If the request Content-Type is either application/x-www-form-urlencoded or multipart/form-data, and the request method is POST, this method MUST return the contents of $_POST.Otherwise, this method may return any results of deserializing the request body content; as parsing returns structured content, the potential types MUST be arrays or objects only. A null value indicates the absence of body content.<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">null|array|object</td><td>The deserialized body parameters, if any. These will typically be an array or object.</td></tr>
-  </table>
-  </dd>
-</dl>
-}  <br /></td></tr>
 <tr class="separator:a1ba7206b9235bef8c1c615bcb6528aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9eb3a7d44050ba1b4792c0332635121" id="r_af9eb3a7d44050ba1b4792c0332635121"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de0/interface_psr_1_1_http_1_1_message_1_1_message_interface.html#af9eb3a7d44050ba1b4792c0332635121">getProtocolVersion</a> ()</td></tr>
 <tr class="memdesc:af9eb3a7d44050ba1b4792c0332635121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the HTTP protocol version as a string.  <br /></td></tr>
@@ -266,7 +244,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>getUriFromGlobals</
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$method</td><td>HTTP method </td></tr>
     <tr><td class="paramtype">string&#160;|&#160;UriInterface</td><td class="paramname">$uri</td><td>URI </td></tr>
-    <tr><td class="paramtype"></td><td class="paramname">array&lt;string,string|string[]&gt;</td><td>$headers Request headers </td></tr>
+    <tr><td class="paramtype"></td><td class="paramname">(string|string[])[]</td><td>$headers Request headers </td></tr>
     <tr><td class="paramtype">string&#160;|&#160;resource&#160;|&#160;StreamInterface&#160;|&#160;null</td><td class="paramname">$body</td><td>Request body </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$version</td><td>Protocol version </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$serverParams</td><td>Typically the $_SERVER superglobal </td></tr>
@@ -295,22 +273,6 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>getUriFromGlobals</
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>{Retrieve a single derived request attribute.Retrieves a single derived request attribute as described in <a class="el" href="../../d3/dc4/interface_psr_1_1_http_1_1_message_1_1_server_request_interface.html#a0cda25a9b297c86e7813ffcb98ceb3df" title="Retrieve attributes derived from the request.">getAttributes()</a>. If the attribute has not been previously set, returns the default value as provided.This method obviates the need for a hasAttribute() method, as it allows specifying a default value to return if the attribute is not found.<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d3/dc4/interface_psr_1_1_http_1_1_message_1_1_server_request_interface.html#a0cda25a9b297c86e7813ffcb98ceb3df" title="Retrieve attributes derived from the request.">getAttributes()</a> </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$name</td><td>The attribute name. </td></tr>
-    <tr><td class="paramtype">mixed</td><td class="paramname">$default</td><td>Default value to return if the attribute does not exist. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">mixed</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-} </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">mixed</td><td></td></tr>
@@ -589,14 +551,6 @@ foreach ($message-&gt;getHeaders() as $name =&gt; $values) {
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>{Retrieve any parameters provided in the request body.If the request Content-Type is either application/x-www-form-urlencoded or multipart/form-data, and the request method is POST, this method MUST return the contents of $_POST.Otherwise, this method may return any results of deserializing the request body content; as parsing returns structured content, the potential types MUST be arrays or objects only. A null value indicates the absence of body content.<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">null|array|object</td><td>The deserialized body parameters, if any. These will typically be an array or object.</td></tr>
-  </table>
-  </dd>
-</dl>
-} </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array|object|null</td><td></td></tr>
@@ -1498,7 +1452,7 @@ foreach ($message-&gt;getHeaders() as $name =&gt; $values) {
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 26 2024 02:51:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 2 2024 02:53:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

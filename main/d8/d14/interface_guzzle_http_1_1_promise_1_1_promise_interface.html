@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240524) (d32844ce296)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240530) (bcd8e0d6edd)</div>
   </td>
  </tr>
  </tbody>
@@ -112,9 +112,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2f1174c4a67f1b7fb1a74d37466bc90a" id="r_a2f1174c4a67f1b7fb1a74d37466bc90a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f1174c4a67f1b7fb1a74d37466bc90a">then</a> (callable $onFulfilled=null, callable $onRejected=null)</td></tr>
 <tr class="memdesc:a2f1174c4a67f1b7fb1a74d37466bc90a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Appends fulfillment and rejection handlers to the promise, and returns a new promise resolving to the return value of the called handler.  <br /></td></tr>
 <tr class="separator:a2f1174c4a67f1b7fb1a74d37466bc90a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7f8dc7f9513af40c61a985ad89b6219" id="r_ad7f8dc7f9513af40c61a985ad89b6219"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad7f8dc7f9513af40c61a985ad89b6219">wait</a> ($<a class="el" href="../../dc/d5a/namespace_guzzle_http_1_1_promise.html#aa03041fbadb7915c938be72f93deda4b">unwrap</a>=true)</td></tr>
-<tr class="memdesc:ad7f8dc7f9513af40c61a985ad89b6219"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits until the promise completes if possible.  <br /></td></tr>
-<tr class="separator:ad7f8dc7f9513af40c61a985ad89b6219"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2613742eb067ca52aaac3a884a9ffa7f" id="r_a2613742eb067ca52aaac3a884a9ffa7f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2613742eb067ca52aaac3a884a9ffa7f">wait</a> (bool $unwrap=true)</td></tr>
+<tr class="memdesc:a2613742eb067ca52aaac3a884a9ffa7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits until the promise completes if possible.  <br /></td></tr>
+<tr class="separator:a2613742eb067ca52aaac3a884a9ffa7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -145,7 +145,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REJECTED</b> = 'reje
 </div><div class="memdoc">
 
 <p>Cancels the promise if possible. </p>
-<p>@externalurl <a href="https://github.com/promises-aplus/cancellation-spec/issues/7">https://github.com/promises-aplus/cancellation-spec/issues/7</a> </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://github.com/promises-aplus/cancellation-spec/issues/7">https://github.com/promises-aplus/cancellation-spec/issues/7</a> </dd></dl>
 
 <p>Implemented in <a class="el" href="../../de/ddf/class_guzzle_http_1_1_promise_1_1_coroutine.html#a7c999f58d48a3678a4e86b1796232649">GuzzleHttp\Promise\Coroutine</a>, <a class="el" href="../../d6/d52/class_guzzle_http_1_1_promise_1_1_fulfilled_promise.html#a2a1ed3ce2a277fef457c47e347ce3b8a">GuzzleHttp\Promise\FulfilledPromise</a>, <a class="el" href="../../d5/dd6/class_guzzle_http_1_1_promise_1_1_promise.html#a5e84ab7b355948f9e5ce0ee5ae76d864">GuzzleHttp\Promise\Promise</a>, and <a class="el" href="../../d4/d60/class_guzzle_http_1_1_promise_1_1_rejected_promise.html#a57da0985dd2da478314844a4a1b7d781">GuzzleHttp\Promise\RejectedPromise</a>.</p>
 
@@ -167,13 +167,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REJECTED</b> = 'reje
 </div><div class="memdoc">
 
 <p>Get the state of the promise ("pending", "rejected", or "fulfilled"). </p>
-<p>The three states can be checked against the constants defined on PromiseInterface: PENDING, FULFILLED, and REJECTED.</p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">string</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p>The three states can be checked against the constants defined on PromiseInterface: PENDING, FULFILLED, and REJECTED. </p>
 
 <p>Implemented in <a class="el" href="../../de/ddf/class_guzzle_http_1_1_promise_1_1_coroutine.html#a67968b964dd78cde69e69267f2f6bc8e">GuzzleHttp\Promise\Coroutine</a>, <a class="el" href="../../d6/d52/class_guzzle_http_1_1_promise_1_1_fulfilled_promise.html#a573e5b00f2e5a280190d101a128a4748">GuzzleHttp\Promise\FulfilledPromise</a>, <a class="el" href="../../d5/dd6/class_guzzle_http_1_1_promise_1_1_promise.html#a598a43e196fc3fd6445a9ca5e5b974f3">GuzzleHttp\Promise\Promise</a>, and <a class="el" href="../../d4/d60/class_guzzle_http_1_1_promise_1_1_rejected_promise.html#a335b97e19692bbbba3718d892d335dd9">GuzzleHttp\Promise\RejectedPromise</a>.</p>
 
@@ -197,13 +191,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REJECTED</b> = 'reje
 <p>Appends a rejection handler callback to the promise, and returns a new promise resolving to the return value of the callback if it is called, or to its original fulfillment value if the promise is instead fulfilled. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">callable</td><td class="paramname">$onRejected</td><td>Invoked when the promise is rejected.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">PromiseInterface</td><td></td></tr>
+    <tr><td class="paramtype">callable</td><td class="paramname">$onRejected</td><td>Invoked when the promise is rejected. </td></tr>
   </table>
   </dd>
 </dl>
@@ -301,13 +289,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REJECTED</b> = 'reje
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">callable</td><td class="paramname">$onFulfilled</td><td>Invoked when the promise fulfills. </td></tr>
-    <tr><td class="paramtype">callable</td><td class="paramname">$onRejected</td><td>Invoked when the promise is rejected.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">PromiseInterface</td><td></td></tr>
+    <tr><td class="paramtype">callable</td><td class="paramname">$onRejected</td><td>Invoked when the promise is rejected. </td></tr>
   </table>
   </dd>
 </dl>
@@ -316,8 +298,8 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REJECTED</b> = 'reje
 
 </div>
 </div>
-<a id="ad7f8dc7f9513af40c61a985ad89b6219" name="ad7f8dc7f9513af40c61a985ad89b6219"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7f8dc7f9513af40c61a985ad89b6219">&#9670;&#160;</a></span>wait()</h2>
+<a id="a2613742eb067ca52aaac3a884a9ffa7f" name="a2613742eb067ca52aaac3a884a9ffa7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2613742eb067ca52aaac3a884a9ffa7f">&#9670;&#160;</a></span>wait()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -325,7 +307,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REJECTED</b> = 'reje
         <tr>
           <td class="memname">GuzzleHttp\Promise\PromiseInterface::wait </td>
           <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$unwrap</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span></td><td>)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$unwrap</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -334,12 +316,6 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REJECTED</b> = 'reje
 <p>Waits until the promise completes if possible. </p>
 <p>Pass $unwrap as true to unwrap the result of the promise, either returning the resolved value or throwing the rejected exception.</p>
 <p>If the promise cannot be waited on, then the promise will be rejected.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">bool</td><td class="paramname">$unwrap</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">mixed</td><td></td></tr>
@@ -353,7 +329,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REJECTED</b> = 'reje
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="../../de/ddf/class_guzzle_http_1_1_promise_1_1_coroutine.html#ae227b3f676a5ef659ffba497e432cc1b">GuzzleHttp\Promise\Coroutine</a>, and <a class="el" href="../../d5/dd6/class_guzzle_http_1_1_promise_1_1_promise.html#abada4a05cb1b6e162db6567872415dad">GuzzleHttp\Promise\Promise</a>.</p>
+<p>Implemented in <a class="el" href="../../de/ddf/class_guzzle_http_1_1_promise_1_1_coroutine.html#a30c8ce7b05ff8694992b9df8f7057edc">GuzzleHttp\Promise\Coroutine</a>, <a class="el" href="../../d6/d52/class_guzzle_http_1_1_promise_1_1_fulfilled_promise.html#a82380c564840c05f75916e504c2ab25b">GuzzleHttp\Promise\FulfilledPromise</a>, <a class="el" href="../../d5/dd6/class_guzzle_http_1_1_promise_1_1_promise.html#ab3dc61661e562d731326ad7354daf282">GuzzleHttp\Promise\Promise</a>, and <a class="el" href="../../d4/d60/class_guzzle_http_1_1_promise_1_1_rejected_promise.html#a2a9aa0f475264bf51a70c06c6141b1c3">GuzzleHttp\Promise\RejectedPromise</a>.</p>
 
 </div>
 </div>
@@ -363,7 +339,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>REJECTED</b> = 'reje
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 26 2024 02:51:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 2 2024 02:53:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

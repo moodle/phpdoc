@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240524) (d32844ce296)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240530) (bcd8e0d6edd)</div>
   </td>
  </tr>
  </tbody>
@@ -108,19 +108,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a15286eba4928175f71e085d042707717"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the remaining contents in a string.  <br /></td></tr>
 <tr class="separator:a15286eba4928175f71e085d042707717"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b6f8daa65b2bc0a78f4950dfcb97d48" id="r_a2b6f8daa65b2bc0a78f4950dfcb97d48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b6f8daa65b2bc0a78f4950dfcb97d48">getMetadata</a> ($key=null)</td></tr>
-<tr class="memdesc:a2b6f8daa65b2bc0a78f4950dfcb97d48"><td class="mdescLeft">&#160;</td><td class="mdescRight">{Get stream metadata as an associative array or retrieve a specific key.The keys returned are identical to the keys returned from PHP's stream_get_meta_data() function.@externalurl <a href="http://php.net/manual/en/function.stream-get-meta-data.php">http://php.net/manual/en/function.stream-get-meta-data.php</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$key</td><td>Specific metadata to retrieve. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">array|mixed|null</td><td>Returns an associative array if no key is provided. Returns a specific key value if a key is provided and the value is found, or null if the key is not found.</td></tr>
-  </table>
-  </dd>
-</dl>
-}  <br /></td></tr>
 <tr class="separator:a2b6f8daa65b2bc0a78f4950dfcb97d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a592871e85dd572d1ef3f95f6a27948e2" id="r_a592871e85dd572d1ef3f95f6a27948e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a592871e85dd572d1ef3f95f6a27948e2">getSize</a> ()</td></tr>
 <tr class="memdesc:a592871e85dd572d1ef3f95f6a27948e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of the stream if known.  <br /></td></tr>
@@ -171,7 +158,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">callable(int)</td><td>(string|null|false) $source <a class="el" href="../../d8/d74/class_source.html" title="Handles &lt;atom:source&gt;">Source</a> of the stream data. The callable MAY accept an integer argument used to control the amount of data to return. The callable MUST return a string when called, or false|null on error or EOF. </td></tr>
+    <tr><td class="paramname">callable(int)</td><td>(string|false|null) $source <a class="el" href="../../d8/d74/class_source.html" title="Handles &lt;atom:source&gt;">Source</a> of the stream data. The callable MAY accept an integer argument used to control the amount of data to return. The callable MUST return a string when called, or false|null on error or EOF. </td></tr>
     <tr><td class="paramname">array{size?</td><td>int, metadata?: array} $options Stream options:<ul>
 <li>metadata: Hash of metadata to use with stream.</li>
 <li>size: Size of the stream, if known. </li>
@@ -344,20 +331,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>{Get stream metadata as an associative array or retrieve a specific key.The keys returned are identical to the keys returned from PHP's stream_get_meta_data() function.@externalurl <a href="http://php.net/manual/en/function.stream-get-meta-data.php">http://php.net/manual/en/function.stream-get-meta-data.php</a> </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$key</td><td>Specific metadata to retrieve. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">array|mixed|null</td><td>Returns an associative array if no key is provided. Returns a specific key value if a key is provided and the value is found, or null if the key is not found.</td></tr>
-  </table>
-  </dd>
-</dl>
-} </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">mixed</td><td></td></tr>
@@ -661,7 +634,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 26 2024 02:51:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 2 2024 02:53:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

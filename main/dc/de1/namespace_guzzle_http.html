@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240524) (d32844ce296)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240530) (bcd8e0d6edd)</div>
   </td>
  </tr>
  </tbody>
@@ -107,6 +107,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0d/class_guzzle_http_1_1_client.html">Client</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db8/interface_guzzle_http_1_1_client_interface.html">ClientInterface</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dd3/class_guzzle_http_1_1_message_formatter.html">MessageFormatter</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d19/interface_guzzle_http_1_1_message_formatter_interface.html">MessageFormatterInterface</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,19 +226,19 @@ Variables</h2></td></tr>
 
 <p>Chooses and creates a default handler to use based on the environment. </p>
 <p>The returned handler is not wrapped by any default middlewares.</p>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">RuntimeException</td><td>if no viable <a class="el" href="../../da/dda/namespace_guzzle_http_1_1_handler.html" title="&#160;">Handler</a> is available.</td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">callable(\Psr\Http\Message\RequestInterface,array)</td><td><a class="el" href="../../dc/de1/namespace_guzzle_http.html" title="&#160;">GuzzleHttp</a>\Promise\PromiseInterface Returns the best handler for the given system.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000722">Deprecated</a></b></dt><dd>choose_handler will be removed in guzzlehttp/guzzle:8.0. Use <a class="el" href="../../da/d96/class_guzzle_http_1_1_utils.html#adbc33e154444b3531476db3bdd114df9" title="Chooses and creates a default handler to use based on the environment.">Utils\chooseHandler</a> instead. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">RuntimeException</td><td>if no viable <a class="el" href="../../da/dda/namespace_guzzle_http_1_1_handler.html" title="&#160;">Handler</a> is available.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000723">Deprecated</a></b></dt><dd>choose_handler will be removed in guzzlehttp/guzzle:8.0. Use <a class="el" href="../../da/d96/class_guzzle_http_1_1_utils.html#adbc33e154444b3531476db3bdd114df9" title="Chooses and creates a default handler to use based on the environment.">Utils\chooseHandler</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -268,7 +270,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000721">Deprecated</a></b></dt><dd>debug_resource will be removed in guzzlehttp/guzzle:8.0. Use <a class="el" href="../../da/d96/class_guzzle_http_1_1_utils.html#a9d1204f090e5da08b3d5a9e25e3c3f46" title="Returns a debug stream based on the provided variable.">Utils\debugResource</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000722">Deprecated</a></b></dt><dd>debug_resource will be removed in guzzlehttp/guzzle:8.0. Use <a class="el" href="../../da/d96/class_guzzle_http_1_1_utils.html#a9d1204f090e5da08b3d5a9e25e3c3f46" title="Returns a debug stream based on the provided variable.">Utils\debugResource</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -296,7 +298,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000724">Deprecated</a></b></dt><dd>default_ca_bundle will be removed in guzzlehttp/guzzle:8.0. This function is not needed in PHP 5.6+. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000725">Deprecated</a></b></dt><dd>default_ca_bundle will be removed in guzzlehttp/guzzle:8.0. This function is not needed in PHP 5.6+. </dd></dl>
 
 </div>
 </div>
@@ -316,7 +318,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the default User-Agent string to use with Guzzle. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000723">Deprecated</a></b></dt><dd>default_user_agent will be removed in guzzlehttp/guzzle:8.0. Use <a class="el" href="../../da/d96/class_guzzle_http_1_1_utils.html#af9a1eaa3e5e9436853abf67eb5fd4085" title="Get the default User-Agent string to use with Guzzle.">Utils\defaultUserAgent</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000724">Deprecated</a></b></dt><dd>default_user_agent will be removed in guzzlehttp/guzzle:8.0. Use <a class="el" href="../../da/d96/class_guzzle_http_1_1_utils.html#af9a1eaa3e5e9436853abf67eb5fd4085" title="Get the default User-Agent string to use with Guzzle.">Utils\defaultUserAgent</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -546,7 +548,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000720">Deprecated</a></b></dt><dd>headers_from_lines will be removed in guzzlehttp/guzzle:8.0. Use <a class="el" href="../../da/d96/class_guzzle_http_1_1_utils.html#a0beaa6207482c9fa82b7f8d63a40530e" title="Parses an array of header lines into an associative array of headers.">Utils\headersFromLines</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000721">Deprecated</a></b></dt><dd>headers_from_lines will be removed in guzzlehttp/guzzle:8.0. Use <a class="el" href="../../da/d96/class_guzzle_http_1_1_utils.html#a0beaa6207482c9fa82b7f8d63a40530e" title="Parses an array of header lines into an associative array of headers.">Utils\headersFromLines</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -589,7 +591,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000726">Deprecated</a></b></dt><dd>is_host_in_noproxy will be removed in guzzlehttp/guzzle:8.0. Use <a class="el" href="../../da/d96/class_guzzle_http_1_1_utils.html#a96401d102babc586e2418acda2e9f9ec" title="Returns true if the provided host matches any of the no proxy areas.">Utils\isHostInNoProxy</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000727">Deprecated</a></b></dt><dd>is_host_in_noproxy will be removed in guzzlehttp/guzzle:8.0. Use <a class="el" href="../../da/d96/class_guzzle_http_1_1_utils.html#a96401d102babc586e2418acda2e9f9ec" title="Returns true if the provided host matches any of the no proxy areas.">Utils\isHostInNoProxy</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -644,7 +646,8 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>@externalurl <a href="https://www.php.net/manual/en/function.json-decode.php">https://www.php.net/manual/en/function.json-decode.php</a> </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000727">Deprecated</a></b></dt><dd>json_decode will be removed in guzzlehttp/guzzle:8.0. Use <a class="el" href="../../da/d96/class_guzzle_http_1_1_utils.html#a620c16411effd8a2dba3f23696f0b844" title="Wrapper for json_decode that throws when an error occurs.">Utils\jsonDecode</a> instead. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://www.php.net/manual/en/function.json-decode.php">https://www.php.net/manual/en/function.json-decode.php</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000728">Deprecated</a></b></dt><dd>json_decode will be removed in guzzlehttp/guzzle:8.0. Use <a class="el" href="../../da/d96/class_guzzle_http_1_1_utils.html#a620c16411effd8a2dba3f23696f0b844" title="Wrapper for json_decode that throws when an error occurs.">Utils\jsonDecode</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -687,7 +690,8 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>@externalurl <a href="https://www.php.net/manual/en/function.json-encode.php">https://www.php.net/manual/en/function.json-encode.php</a> </p><dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000728">Deprecated</a></b></dt><dd>json_encode will be removed in guzzlehttp/guzzle:8.0. Use <a class="el" href="../../da/d96/class_guzzle_http_1_1_utils.html#a9c6ed0c48e98894799092d3ba862a57c" title="Wrapper for JSON encoding that throws when an error occurs.">Utils\jsonEncode</a> instead. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://www.php.net/manual/en/function.json-encode.php">https://www.php.net/manual/en/function.json-encode.php</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000729">Deprecated</a></b></dt><dd>json_encode will be removed in guzzlehttp/guzzle:8.0. Use <a class="el" href="../../da/d96/class_guzzle_http_1_1_utils.html#a9c6ed0c48e98894799092d3ba862a57c" title="Wrapper for JSON encoding that throws when an error occurs.">Utils\jsonEncode</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -707,7 +711,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates an associative array of lowercase header names to the actual header casing. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000725">Deprecated</a></b></dt><dd>normalize_header_keys will be removed in guzzlehttp/guzzle:8.0. Use <a class="el" href="../../da/d96/class_guzzle_http_1_1_utils.html#a1e098e1a76c0153ff686ad8f1f9c7ec2" title="Creates an associative array of lowercase header names to the actual header casing.">Utils\normalizeHeaderKeys</a> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000726">Deprecated</a></b></dt><dd>normalize_header_keys will be removed in guzzlehttp/guzzle:8.0. Use <a class="el" href="../../da/d96/class_guzzle_http_1_1_utils.html#a1e098e1a76c0153ff686ad8f1f9c7ec2" title="Creates an associative array of lowercase header names to the actual header casing.">Utils\normalizeHeaderKeys</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -981,7 +985,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 26 2024 02:51:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 2 2024 02:53:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

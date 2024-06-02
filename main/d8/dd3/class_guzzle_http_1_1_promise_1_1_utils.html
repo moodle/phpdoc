@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240524) (d32844ce296)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240530) (bcd8e0d6edd)</div>
   </td>
  </tr>
  </tbody>
@@ -81,9 +81,9 @@ $(function(){ initResizable(false); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a70209914495b2caec26ed56d527e2eb6" id="r_a70209914495b2caec26ed56d527e2eb6"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a70209914495b2caec26ed56d527e2eb6">all</a> ($promises, $recursive=false)</td></tr>
-<tr class="memdesc:a70209914495b2caec26ed56d527e2eb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an array of promises, return a promise that is fulfilled when all the items in the array are fulfilled.  <br /></td></tr>
-<tr class="separator:a70209914495b2caec26ed56d527e2eb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac83d6ceb3cf74cf2fdb319bc19ca6708" id="r_ac83d6ceb3cf74cf2fdb319bc19ca6708"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac83d6ceb3cf74cf2fdb319bc19ca6708">all</a> ($promises, bool $recursive=false)</td></tr>
+<tr class="memdesc:ac83d6ceb3cf74cf2fdb319bc19ca6708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given an array of promises, return a promise that is fulfilled when all the items in the array are fulfilled.  <br /></td></tr>
+<tr class="separator:ac83d6ceb3cf74cf2fdb319bc19ca6708"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1ca339491cbb65be0b00c93f7f29010" id="r_ae1ca339491cbb65be0b00c93f7f29010"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1ca339491cbb65be0b00c93f7f29010">any</a> ($promises)</td></tr>
 <tr class="memdesc:ae1ca339491cbb65be0b00c93f7f29010"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like some(), with 1 as count.  <br /></td></tr>
 <tr class="separator:ae1ca339491cbb65be0b00c93f7f29010"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,9 +99,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>queue</b> (<a class
 <tr class="memitem:a228bd837a2d055751b310770c815744b" id="r_a228bd837a2d055751b310770c815744b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a228bd837a2d055751b310770c815744b">settle</a> ($promises)</td></tr>
 <tr class="memdesc:a228bd837a2d055751b310770c815744b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a promise that is fulfilled when all of the provided promises have been fulfilled or rejected.  <br /></td></tr>
 <tr class="separator:a228bd837a2d055751b310770c815744b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaca0b337d05e2f89200b1bcb4b46fe58" id="r_aaca0b337d05e2f89200b1bcb4b46fe58"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaca0b337d05e2f89200b1bcb4b46fe58">some</a> ($count, $promises)</td></tr>
-<tr class="memdesc:aaca0b337d05e2f89200b1bcb4b46fe58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiate a competitive race between multiple promises or values (values will become immediately fulfilled promises).  <br /></td></tr>
-<tr class="separator:aaca0b337d05e2f89200b1bcb4b46fe58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd0b0af7eadd9c593fe395ac1824f941" id="r_afd0b0af7eadd9c593fe395ac1824f941"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd0b0af7eadd9c593fe395ac1824f941">some</a> (int $count, $promises)</td></tr>
+<tr class="memdesc:afd0b0af7eadd9c593fe395ac1824f941"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiate a competitive race between multiple promises or values (values will become immediately fulfilled promises).  <br /></td></tr>
+<tr class="separator:afd0b0af7eadd9c593fe395ac1824f941"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ff6203607f21728a0fe20a890fe4fb8" id="r_a5ff6203607f21728a0fe20a890fe4fb8"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5ff6203607f21728a0fe20a890fe4fb8">task</a> (callable $task)</td></tr>
 <tr class="memdesc:a5ff6203607f21728a0fe20a890fe4fb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a function to run in the task queue when it is next <code>run()</code> and returns a promise that is fulfilled or rejected with the result.  <br /></td></tr>
 <tr class="separator:a5ff6203607f21728a0fe20a890fe4fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,8 +110,8 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>queue</b> (<a class
 <tr class="separator:a1b5339acf6705ed05887f5bc7a0a22de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a70209914495b2caec26ed56d527e2eb6" name="a70209914495b2caec26ed56d527e2eb6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70209914495b2caec26ed56d527e2eb6">&#9670;&#160;</a></span>all()</h2>
+<a id="ac83d6ceb3cf74cf2fdb319bc19ca6708" name="ac83d6ceb3cf74cf2fdb319bc19ca6708"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac83d6ceb3cf74cf2fdb319bc19ca6708">&#9670;&#160;</a></span>all()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -127,7 +127,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>queue</b> (<a class
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$recursive</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>$recursive</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -142,13 +142,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>queue</b> (<a class
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">mixed</td><td class="paramname">$promises</td><td>Promises or values. </td></tr>
-    <tr><td class="paramtype">bool</td><td class="paramname">$recursive</td><td>If true, resolves new promises that might have been added to the stack during its own resolution.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">PromiseInterface</td><td></td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$recursive</td><td>If true, resolves new promises that might have been added to the stack during its own resolution. </td></tr>
   </table>
   </dd>
 </dl>
@@ -182,13 +176,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>queue</b> (<a class
 <p>However, if the promise fulfills, the fulfillment value is not an array of 1 but the value directly.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">mixed</td><td class="paramname">$promises</td><td>Promises or values.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">PromiseInterface</td><td></td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$promises</td><td>Promises or values. </td></tr>
   </table>
   </dd>
 </dl>
@@ -222,13 +210,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>queue</b> (<a class
 <p>Returns a state associative array containing a "state" key mapping to a valid promise state. If the state of the promise is "fulfilled", the array will contain a "value" key mapping to the fulfilled value of the promise. If the promise is rejected, the array will contain a "reason" key mapping to the rejection reason of the promise.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">PromiseInterface</td><td class="paramname">$promise</td><td>Promise or value.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">array</td><td></td></tr>
+    <tr><td class="paramtype">PromiseInterface</td><td class="paramname">$promise</td><td>Promise or value. </td></tr>
   </table>
   </dd>
 </dl>
@@ -263,13 +245,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>queue</b> (<a class
 <dl class="section see"><dt>See also</dt><dd>inspect for the inspection state array <a class="el" href="../../dd/dc1/group__format.html">format</a>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">PromiseInterface[]</td><td class="paramname">$promises</td><td>Traversable of promises to wait upon.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">array</td><td></td></tr>
+    <tr><td class="paramtype">PromiseInterface[]</td><td class="paramname">$promises</td><td>Traversable of promises to wait upon. </td></tr>
   </table>
   </dd>
 </dl>
@@ -304,21 +280,15 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>queue</b> (<a class
 <dl class="section see"><dt>See also</dt><dd>inspect for the inspection state array <a class="el" href="../../dd/dc1/group__format.html">format</a>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">mixed</td><td class="paramname">$promises</td><td>Promises or values.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">PromiseInterface</td><td></td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$promises</td><td>Promises or values. </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="aaca0b337d05e2f89200b1bcb4b46fe58" name="aaca0b337d05e2f89200b1bcb4b46fe58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaca0b337d05e2f89200b1bcb4b46fe58">&#9670;&#160;</a></span>some()</h2>
+<a id="afd0b0af7eadd9c593fe395ac1824f941" name="afd0b0af7eadd9c593fe395ac1824f941"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd0b0af7eadd9c593fe395ac1824f941">&#9670;&#160;</a></span>some()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -329,7 +299,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>queue</b> (<a class
         <tr>
           <td class="memname">static GuzzleHttp\Promise\Utils::some </td>
           <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$count</em></span>, </td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$count</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -350,13 +320,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>queue</b> (<a class
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$count</td><td>Total number of promises. </td></tr>
-    <tr><td class="paramtype">mixed</td><td class="paramname">$promises</td><td>Promises or values.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">PromiseInterface</td><td></td></tr>
+    <tr><td class="paramtype">mixed</td><td class="paramname">$promises</td><td>Promises or values. </td></tr>
   </table>
   </dd>
 </dl>
@@ -389,13 +353,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>queue</b> (<a class
 <p>Adds a function to run in the task queue when it is next <code>run()</code> and returns a promise that is fulfilled or rejected with the result. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">callable</td><td class="paramname">$task</td><td>Task function to run.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">PromiseInterface</td><td></td></tr>
+    <tr><td class="paramtype">callable</td><td class="paramname">$task</td><td>Task function to run. </td></tr>
   </table>
   </dd>
 </dl>
@@ -433,16 +391,9 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>queue</b> (<a class
   </table>
   </dd>
 </dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">array</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../df/d70/class_exception.html" title="General SimplePie exception class.">Exception</a></td><td>on error </td></tr>
-    <tr><td class="paramname">Throwable</td><td>on error in PHP &gt;=7 </td></tr>
+    <tr><td class="paramname">Throwable</td><td>on error </td></tr>
   </table>
   </dd>
 </dl>
@@ -455,7 +406,7 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>queue</b> (<a class
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun May 26 2024 02:51:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 2 2024 02:53:30 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>
