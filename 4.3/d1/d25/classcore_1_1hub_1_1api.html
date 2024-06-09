@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3.4+ (Build: 20240530) (11a2641a137)</div>
+   <div id="projectbrief">Moodle 4.3.5 (Build: 20240610) (7dcfaa79f78)</div>
   </td>
  </tr>
  </tbody>
@@ -179,7 +179,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Uploads a screenshot for the published course. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000218">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8. Moodle.net has been sunsetted making this function useless.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000217">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8. Moodle.net has been sunsetted making this function useless.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$hubcourseid</td><td>id of the published course on the hub, it must be published from this site </td></tr>
@@ -331,7 +331,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Downloads course backup. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000219">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8. Moodle.net has been sunsetted making this function useless.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000218">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8. Moodle.net has been sunsetted making this function useless.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$hubcourseid</td><td>id of the course on the hub </td></tr>
@@ -380,7 +380,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Calls WS function hub_get_courses. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000215">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8. Moodle.net has been sunsetted making this function useless.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000214">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8. Moodle.net has been sunsetted making this function useless.</dd></dl>
 <p>Parameter $options may have any of these fields: [ 'ids' =&gt; new external_multiple_structure(new external_value(PARAM_INTEGER, 'id of a course in the hub course directory'), 'ids of course', VALUE_OPTIONAL), 'sitecourseids' =&gt; new external_multiple_structure(new external_value(PARAM_INTEGER, 'id of a course in the site'), 'ids of course in the site', VALUE_OPTIONAL), 'coverage' =&gt; new external_value(PARAM_TEXT, 'coverage', VALUE_OPTIONAL), 'licenceshortname' =&gt; new external_value(PARAM_ALPHANUMEXT, 'licence short name', VALUE_OPTIONAL), 'subject' =&gt; new external_value(PARAM_ALPHANUM, 'subject', VALUE_OPTIONAL), 'audience' =&gt; new external_value(PARAM_ALPHA, 'audience', VALUE_OPTIONAL), 'educationallevel' =&gt; new external_value(PARAM_ALPHA, 'educational level', VALUE_OPTIONAL), 'language' =&gt; new external_value(PARAM_ALPHANUMEXT, 'language', VALUE_OPTIONAL), 'orderby' =&gt; new external_value(PARAM_ALPHA, 'orderby method: newest, eldest, publisher, fullname, ratingaverage', VALUE_OPTIONAL), 'givememore' =&gt; new external_value(PARAM_INT, 'next range of result - range size being set by the hub server ', VALUE_OPTIONAL), 'allsitecourses' =&gt; new external_value(PARAM_INTEGER, 'if 1 return all not visible and visible courses whose siteid is the site matching token. Only courses of this site are returned. givememore parameter is ignored if this param = 1. In case of public token access, this param option is ignored', VALUE_DEFAULT, 0), ]</p>
 <p>Each course in the returned array of courses will have fields: [ 'id' =&gt; new external_value(PARAM_INTEGER, 'id'), 'fullname' =&gt; new external_value(PARAM_TEXT, 'course name'), 'shortname' =&gt; new external_value(PARAM_TEXT, 'course short name'), 'description' =&gt; new external_value(PARAM_TEXT, 'course description'), 'language' =&gt; new external_value(PARAM_ALPHANUMEXT, 'course language'), 'publishername' =&gt; new external_value(PARAM_TEXT, 'publisher name'), 'publisheremail' =&gt; new external_value(PARAM_EMAIL, 'publisher email', VALUE_OPTIONAL), 'privacy' =&gt; new external_value(PARAM_INT, 'privacy: published or not', VALUE_OPTIONAL), 'sitecourseid' =&gt; new external_value(PARAM_INT, 'course id on the site', VALUE_OPTIONAL), 'contributornames' =&gt; new external_value(PARAM_TEXT, 'contributor names', VALUE_OPTIONAL), 'coverage' =&gt; new external_value(PARAM_TEXT, 'coverage', VALUE_OPTIONAL), 'creatorname' =&gt; new external_value(PARAM_TEXT, 'creator name'), 'licenceshortname' =&gt; new external_value(PARAM_ALPHANUMEXT, 'licence short name'), 'subject' =&gt; new external_value(PARAM_ALPHANUM, 'subject'), 'audience' =&gt; new external_value(PARAM_ALPHA, 'audience'), 'educationallevel' =&gt; new external_value(PARAM_ALPHA, 'educational level'), 'creatornotes' =&gt; new external_value(PARAM_RAW, 'creator notes'), 'creatornotesformat' =&gt; new external_value(PARAM_INTEGER, 'notes format'), 'demourl' =&gt; new external_value(PARAM_URL, 'demo URL', VALUE_OPTIONAL), 'courseurl' =&gt; new external_value(PARAM_URL, 'course URL', VALUE_OPTIONAL), 'backupsize' =&gt; new external_value(PARAM_INT, 'course backup size in bytes', VALUE_OPTIONAL), 'enrollable' =&gt; new external_value(PARAM_BOOL, 'is the course enrollable'), 'screenshots' =&gt; new external_value(PARAM_INT, 'total number of screenshots'), 'timemodified' =&gt; new external_value(PARAM_INT, 'time of last modification - timestamp'), 'contents' =&gt; new external_multiple_structure(new external_single_structure( array( 'moduletype' =&gt; new external_value(PARAM_ALPHA, 'the type of module (activity/block)'), 'modulename' =&gt; new external_value(PARAM_TEXT, 'the name of the module (forum, resource etc)'), 'contentcount' =&gt; new external_value(PARAM_INT, 'how many time the module is used in the course'), )), 'contents', VALUE_OPTIONAL), 'rating' =&gt; new external_single_structure ( array( 'aggregate' =&gt; new external_value(PARAM_FLOAT, '<a class="el" href="../../d3/df9/class_rating.html" title="Handles &lt;media:rating&gt; or &lt;itunes:explicit&gt; tags as defined in Media RSS and iTunes RSS respectively.">Rating</a> average', VALUE_OPTIONAL), 'scaleid' =&gt; new external_value(PARAM_INT, '<a class="el" href="../../d3/df9/class_rating.html" title="Handles &lt;media:rating&gt; or &lt;itunes:explicit&gt; tags as defined in Media RSS and iTunes RSS respectively.">Rating</a> scale'), 'count' =&gt; new external_value(PARAM_INT, '<a class="el" href="../../d3/df9/class_rating.html" title="Handles &lt;media:rating&gt; or &lt;itunes:explicit&gt; tags as defined in Media RSS and iTunes RSS respectively.">Rating</a> count'), ), 'rating', VALUE_OPTIONAL), 'comments' =&gt; new external_multiple_structure(new external_single_structure ( array( 'comment' =&gt; new external_value(PARAM_TEXT, 'the comment'), 'commentator' =&gt; new external_value(PARAM_TEXT, 'the name of commentator'), 'date' =&gt; new external_value(PARAM_INT, 'date of the comment'), )), 'contents', VALUE_OPTIONAL), 'outcomes' =&gt; new external_multiple_structure(new external_single_structure( array( 'fullname' =&gt; new external_value(PARAM_TEXT, 'the outcome fullname') )), 'outcomes', VALUE_OPTIONAL) ]</p>
 <p>Additional fields for each course: 'screenshotbaseurl' (<a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a>) URL of the first screenshot, only set if $course['screenshots']&gt;0 'commenturl' (<a class="el" href="../../dc/d31/classmoodle__url.html" title="Class for creating and manipulating urls.">moodle_url</a>) URL for comments</p>
@@ -517,7 +517,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Publish one course. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000217">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8. Moodle.net has been sunsetted making this function useless.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000216">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8. Moodle.net has been sunsetted making this function useless.</dd></dl>
 <p>Expected contents of $courseinfo: [ 'sitecourseid' =&gt; new external_value(PARAM_INT, 'the id of the course on the publishing site'), 'fullname' =&gt; new external_value(PARAM_TEXT, 'course name'), 'shortname' =&gt; new external_value(PARAM_TEXT, 'course short name'), 'description' =&gt; new external_value(PARAM_TEXT, 'course description'), 'language' =&gt; new external_value(PARAM_ALPHANUMEXT, 'course language'), 'publishername' =&gt; new external_value(PARAM_TEXT, 'publisher name'), 'publisheremail' =&gt; new external_value(PARAM_EMAIL, 'publisher email'), 'contributornames' =&gt; new external_value(PARAM_TEXT, 'contributor names'), 'coverage' =&gt; new external_value(PARAM_TEXT, 'coverage'), 'creatorname' =&gt; new external_value(PARAM_TEXT, 'creator name'), 'licenceshortname' =&gt; new external_value(PARAM_ALPHANUMEXT, 'licence short name'), 'subject' =&gt; new external_value(PARAM_ALPHANUM, 'subject'), 'audience' =&gt; new external_value(PARAM_ALPHA, 'audience'), 'educationallevel' =&gt; new external_value(PARAM_ALPHA, 'educational level'), 'creatornotes' =&gt; new external_value(PARAM_RAW, 'creator notes'), 'creatornotesformat' =&gt; new external_value(PARAM_INTEGER, 'notes format'), 'demourl' =&gt; new external_value(PARAM_URL, 'demo URL', VALUE_OPTIONAL), 'courseurl' =&gt; new external_value(PARAM_URL, 'course URL', VALUE_OPTIONAL), 'enrollable' =&gt; new external_value(PARAM_BOOL, 'is the course enrollable', VALUE_DEFAULT, 0), 'screenshots' =&gt; new external_value(PARAM_INT, 'the number of screenhots', VALUE_OPTIONAL), 'deletescreenshots' =&gt; new external_value(PARAM_INT, 'ask to delete all the existing screenshot files (it does not reset the screenshot number)', VALUE_DEFAULT, 0), 'contents' =&gt; new external_multiple_structure(new external_single_structure( array( 'moduletype' =&gt; new external_value(PARAM_ALPHA, 'the type of module (activity/block)'), 'modulename' =&gt; new external_value(PARAM_TEXT, 'the name of the module (forum, resource etc)'), 'contentcount' =&gt; new external_value(PARAM_INT, 'how many time the module is used in the course'), )), 'contents', VALUE_OPTIONAL), 'outcomes' =&gt; new external_multiple_structure(new external_single_structure( array( 'fullname' =&gt; new external_value(PARAM_TEXT, 'the outcome fullname') )), 'outcomes', VALUE_OPTIONAL) ]</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -564,7 +564,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Unpublish courses. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000216">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8. Moodle.net has been sunsetted making this function useless.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000215">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8. Moodle.net has been sunsetted making this function useless.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int[]&#160;|&#160;int</td><td class="paramname">$courseids</td><td></td></tr>
@@ -680,7 +680,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Uploads a course backup. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000220">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8. Moodle.net has been sunsetted making this function useless.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000219">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.8. Moodle.net has been sunsetted making this function useless.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$hubcourseid</td><td>id of the published course on the hub, it must be published from this site </td></tr>
@@ -697,7 +697,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 2 2024 02:44:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 9 2024 02:47:34 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240530) (bcd8e0d6edd)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240606) (d3ae1391abe)</div>
   </td>
  </tr>
  </tbody>
@@ -79,9 +79,6 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">core_analytics\analysable Interface Reference<div class="ingroups"><a class="el" href="../../d3/d82/group__core__analytics.html">core_analytics</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Any element analysers can analyse.  
- <a href="#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for core_analytics\analysable:</div>
 <div class="dyncontent">
@@ -114,15 +111,12 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aa979561d0233d350967a88ab2d90a4b4" id="r_aa979561d0233d350967a88ab2d90a4b4"><td class="memItemLeft" align="right" valign="top">const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa979561d0233d350967a88ab2d90a4b4">MAX_TIME</a> = PHP_INT_MAX &lt; <a class="el" href="../../d5/db5/group__core__dml.html#ga6d626012c95a0cfd528532bbd539a9c0">SQL_INT_MAX</a> ? PHP_INT_MAX : <a class="el" href="../../d5/db5/group__core__dml.html#ga6d626012c95a0cfd528532bbd539a9c0">SQL_INT_MAX</a></td></tr>
-<tr class="memdesc:aa979561d0233d350967a88ab2d90a4b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max timestamp.  <br /></td></tr>
+<tr class="memitem:aa979561d0233d350967a88ab2d90a4b4" id="r_aa979561d0233d350967a88ab2d90a4b4"><td class="memItemLeft" align="right" valign="top"><a id="aa979561d0233d350967a88ab2d90a4b4" name="aa979561d0233d350967a88ab2d90a4b4"></a>
+const&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_TIME</b> = <a class="el" href="../../d5/db5/group__core__dml.html#ga6d626012c95a0cfd528532bbd539a9c0">SQL_INT_MAX</a></td></tr>
+<tr class="memdesc:aa979561d0233d350967a88ab2d90a4b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max timestamp. <br /></td></tr>
 <tr class="separator:aa979561d0233d350967a88ab2d90a4b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Any element analysers can analyse. </p>
-<dl class="section copyright"><dt>Copyright</dt><dd>2016 David Monllao <a href="http://www.davidmonllao.com" class="el externalurl"></a> </dd></dl>
-<dl class="section user"><dt>License</dt><dd><a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a> GNU GPL v3 or later </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac2998904c03399843f3bb0bff576630b" name="ac2998904c03399843f3bb0bff576630b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac2998904c03399843f3bb0bff576630b">&#9670;&#160;</a></span>get_context()</h2>
 
@@ -258,31 +252,13 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="aa979561d0233d350967a88ab2d90a4b4" name="aa979561d0233d350967a88ab2d90a4b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa979561d0233d350967a88ab2d90a4b4">&#9670;&#160;</a></span>MAX_TIME</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const core_analytics\analysable::MAX_TIME = PHP_INT_MAX &lt; <a class="el" href="../../d5/db5/group__core__dml.html#ga6d626012c95a0cfd528532bbd539a9c0">SQL_INT_MAX</a> ? PHP_INT_MAX : <a class="el" href="../../d5/db5/group__core__dml.html#ga6d626012c95a0cfd528532bbd539a9c0">SQL_INT_MAX</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Max timestamp. </p>
-<p>We are limited by both PHP's max int value and <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> (cross-db) max int allowed. Use the smallest one. </p>
-
-</div>
-</div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
 <li>analytics/classes/<b>analysable.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 2 2024 02:53:07 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 9 2024 02:55:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

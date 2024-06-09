@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.3</span>
    </div>
-   <div id="projectbrief">Moodle 4.3.4+ (Build: 20240530) (11a2641a137)</div>
+   <div id="projectbrief">Moodle 4.3.5 (Build: 20240610) (7dcfaa79f78)</div>
   </td>
  </tr>
  </tbody>
@@ -503,8 +503,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Constructor method, calls the parent constructor. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000073">Deprecated</a></b></dt><dd>since 4.0</dd></dl>
-<p>Note: this method exists only for compatibilitiy with legacy course formats. Legacy formats depends on $this-&gt;courserenderer to access the course renderer methods. Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a class="el" href="../../d0/dc2/classcore__courseformat_1_1output_1_1section__renderer.html" title="Base class to render a course add section buttons.">core_courseformat\output\section_renderer</a> extends <a class="el" href="../../de/db2/classcore__course__renderer.html" title="The core course renderer.">core_course_renderer</a> and all metdhos can be used directly from $this.</p>
+<p>Note: this method also helps for compatibilitiy with legacy course formats. Legacy formats depends on $this-&gt;courserenderer to access the course renderer methods. Since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a class="el" href="../../d0/dc2/classcore__courseformat_1_1output_1_1section__renderer.html" title="Base class to render a course add section buttons.">core_courseformat\output\section_renderer</a> extends <a class="el" href="../../de/db2/classcore__course__renderer.html" title="The core course renderer.">core_course_renderer</a> and all metdhos can be used directly from $this.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="../../dc/ded/classmoodle__page.html">moodle_page</a></td><td class="paramname">$page</td><td></td></tr>
@@ -631,7 +630,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000105">Deprecated</a></b></dt><dd>since 3.2 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000104">Deprecated</a></b></dt><dd>since 3.2 </dd></dl>
 
 </div>
 </div>
@@ -696,7 +695,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Displays availability info for a course section or course module. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000116">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000115">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - please do not use this function any more. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$text</td><td></td></tr>
@@ -772,7 +771,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Returns controls in the bottom of the page to increase/decrease number of sections. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000094">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000093">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td></td></tr>
@@ -811,7 +810,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Show if something is on on the course clipboard (moving around) </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000087">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000086">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
 <p>While the non ajax course eidtion is still supported, the old clipboard will be emulated by <a class="el" href="../../d5/d24/classcore__courseformat_1_1output_1_1local_1_1content_1_1section_1_1cmlist.html" title="Base class to render a section activity list.">core_courseformat\output\local\content\section\cmlist</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -970,7 +969,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Renderers a structured array of courses and categories into a nice XHTML tree structure. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000106">Deprecated</a></b></dt><dd>since 2.5</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000105">Deprecated</a></b></dt><dd>since 2.5</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$ignored</td><td>argument ignored </td></tr>
@@ -1014,7 +1013,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Renderers a category for use with course_category_tree. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000107">Deprecated</a></b></dt><dd>since 2.5</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000106">Deprecated</a></b></dt><dd>since 2.5</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">array</td><td class="paramname">$category</td><td></td></tr>
@@ -1242,7 +1241,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000108">Deprecated</a></b></dt><dd>since 3.9 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000107">Deprecated</a></b></dt><dd>since 3.9 </dd></dl>
 
 </div>
 </div>
@@ -1552,7 +1551,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 
 <p>Renders HTML to display one course module in a course section. </p>
 <p>This includes link, content, availability, completion info and additional information that module type wants to display (i.e. number of unread forum posts)</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000119">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000118">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td></td></tr>
@@ -1600,7 +1599,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Renders HTML to show course module availability information (for someone who isn't allowed to see the activity itself, or for staff) </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000117">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - please do not use this function any more. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000116">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - please do not use this function any more. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a></td><td class="paramname">$mod</td><td></td></tr>
@@ -1641,7 +1640,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Returns the CSS classes for the activity name/content. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000113">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - please do not use this function any more.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000112">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - please do not use this function any more.</dd></dl>
 <p>For items which are hidden, unavailable or stealth but should be displayed to current user ($mod-&gt;is_visible_on_course_page()), we show those as dimmed. Students will also see as dimmed activities names that are not yet available but should still be displayed (without link) with availability info.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1680,7 +1679,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000110">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000109">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.11 </dd></dl>
 
 </div>
 </div>
@@ -1717,7 +1716,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Renders HTML for displaying the sequence of course module editing buttons. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000109">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - please do not use this function any more.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000108">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - please do not use this function any more.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d5/dd0/group__core__course.html#ga3623a92bcafb5be5b7dddc7cacb568d4" title="Returns the list of all editing actions that current user can perform on the module.">course_get_cm_edit_actions()</a></dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1774,7 +1773,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Renders HTML to display a list of course modules in a course section Also displays "move here" controls in Javascript-disabled mode. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000120">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000119">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
 <p>This function calls <a class="el" href="">core_course_renderer::course_section_cm()</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1837,7 +1836,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Renders HTML to display one course module for display within a section. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000118">Deprecated</a></b></dt><dd>since 4.0 - use core_course output components or course_format\course_section_updated_cm_item instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000117">Deprecated</a></b></dt><dd>since 4.0 - use core_course output components or course_format\course_section_updated_cm_item instead.</dd></dl>
 <p>This function calls: <a class="el" href="">core_course_renderer::course_section_cm()</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1888,7 +1887,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 <p>Renders html to display a name with the link to the course module on a course page. </p>
 <p>If module is unavailable for user but still needs to be displayed in the list, just the name is returned without a link</p>
 <p>Note, that for course modules that never have separate pages (i.e. labels) this function return an empty string</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000112">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - please do not use this function any more.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000111">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - please do not use this function any more.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a></td><td class="paramname">$mod</td><td></td></tr>
@@ -1935,7 +1934,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 <p>Renders html to display a name with the link to the course module on a course page. </p>
 <p>If module is unavailable for user but still needs to be displayed in the list, just the name is returned without a link</p>
 <p>Note, that for course modules that never have separate pages (i.e. labels) this function return an empty string</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000114">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - please do not use this function any more.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000113">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - please do not use this function any more.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a></td><td class="paramname">$mod</td><td></td></tr>
@@ -1981,7 +1980,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 
 <p>Renders html to display the module content on the course page (i.e. </p>
 <p>text of the labels)</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000115">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - please do not use this function any more.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000114">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - please do not use this function any more.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a></td><td class="paramname">$mod</td><td></td></tr>
@@ -2655,7 +2654,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Generate the closing container html for a list of sections. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000080">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.y</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000079">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.y</dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>HTML to output. </td></tr>
@@ -2689,7 +2688,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Generate html for a section summary text. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000095">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000094">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">stdClass</td><td class="paramname">$section</td><td>The course_section entry from <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> </td></tr>
@@ -3234,7 +3233,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Generate next/previous section links for naviation. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000088">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000087">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
 <p>This element is now a core_courseformat\output\content\section output component and it is displayed using mustache templates instead of a renderer method.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3395,7 +3394,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Checks if course module has any conditions that may make it unavailable for all or some of the students. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000111">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - please do not use this function any more.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000110">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - please do not use this function any more.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a></td><td class="paramname">$mod</td><td></td></tr>
@@ -3440,7 +3439,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 
 <p>Return the direct URL for an image from the pix folder. </p>
 <p>Use this function sparingly and never for icons. For icons use <a class="el" href="../../d0/d6e/classpix__icon.html" title="Data structure representing an icon.">pix_icon</a> or the pix helper in a mustache template.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000793">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000792">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.3 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$imagename</td><td>the name of the icon. </td></tr>
@@ -3531,7 +3530,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Output the html for a multiple section page. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000093">Deprecated</a></b></dt><dd>since 4.0</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000092">Deprecated</a></b></dt><dd>since 4.0</dd></dl>
 <p>This is a deprecated method and it is mantain only for compatibilitiy with legacy course formats. Please, to render a single section page use:</p>
 <p>$format = course_get_format($course); $outputclass = $format-&gt;get_output_classname('content'); $widget = new $outputclass($format); echo $this-&gt;render($widget);</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -3587,7 +3586,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Output the html for a single section page. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000092">Deprecated</a></b></dt><dd>since 4.0</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000091">Deprecated</a></b></dt><dd>since 4.0</dd></dl>
 <p>This is a deprecated method and it is mantain only for compatibilitiy with legacy course formats. Please, to render a single section page use:</p>
 <p>$format = course_get_format($course); // Set the section to display. $format-&gt;set_section_number($displaysection); $outputclass = $format-&gt;get_output_classname('content'); $widget = new $outputclass($format); echo $this-&gt;render($widget);</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -3664,7 +3663,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 
 <p>Renders the activity information. </p>
 <p>Defer to template.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000121">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 <a href="https://tracker.moodle.org/browse/MDL-78744" class="el">MDL-78744</a> </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000120">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.3 <a href="https://tracker.moodle.org/browse/MDL-78744" class="el">MDL-78744</a> </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000041">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-78926" class="el">MDL-78926</a> This method will be deleted in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.7 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3877,7 +3876,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Generate a summary of the activites in a section. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000084">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000083">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
 <p>This element is now a core_courseformat\output\content\section output component and it is displayed using mustache templates instead of a renderer method.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3912,7 +3911,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Displays availability information for the section (hidden, not available unles, etc.) </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000086">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000085">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
 <p>This element is now a core_courseformat\output\content\section output component and it is displayed using mustache templates instead of a renderer method.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3959,7 +3958,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 <p>If section is not visible, display the message about that ('Not available until...', that sort of thing). </p>
 <p>Otherwise, returns blank.</p>
 <p>For users with the ability to view hidden sections, it shows the information even though you can view the section and also may include slightly fuller information (so that teachers can tell when sections are going to be unavailable etc). This logic is the same as for activities.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000085">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000084">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
 <p>This element is now a core_courseformat\output\content\section output component and it is displayed using mustache templates instead of a renderer method.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -4010,7 +4009,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Generate the edit control items of a section. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000082">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000081">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
 <p>This element is now a core_courseformat\output\content\section output component and it is displayed using mustache templates instead of a renderer method.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -4062,7 +4061,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Generate the edit control action menu. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000074">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000073">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
 <p>The section edit controls are now part of the main <a class="el" href="../../d4/db9/classcore__courseformat_1_1output_1_1local_1_1content_1_1section.html" title="Base class to render a course section.">core_courseformat\output\local\content\section</a> output and does not use renderer methods anymore.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -4106,7 +4105,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 
 <p>Old method to print section edit controls. </p>
 <p>Do not use it!</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000081">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.0 <a href="https://tracker.moodle.org/browse/MDL-48947" class="el">MDL-48947</a> - Use <a class="el" href="#ac0c1f9e17ba2c57d922ee2929c7d875d" title="Generate the edit control items of a section.">core_courseformat\output\section_renderer\section_edit_control_items()</a> instead </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000080">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 3.0 <a href="https://tracker.moodle.org/browse/MDL-48947" class="el">MDL-48947</a> - Use <a class="el" href="#ac0c1f9e17ba2c57d922ee2929c7d875d" title="Generate the edit control items of a section.">core_courseformat\output\section_renderer\section_edit_control_items()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -4134,7 +4133,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Generate the display of the footer part of a section. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000078">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000077">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
 <p>This element is integrated into <a class="el" href="../../d4/db9/classcore__courseformat_1_1output_1_1local_1_1content_1_1section.html" title="Base class to render a course section.">core_courseformat\output\local\content\section</a> output component and it is displayed using mustache templates instead of a renderer method.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -4183,7 +4182,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Generate the display of the header part of a section before course modules are included. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000077">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000076">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
 <p>This element is now a core_courseformat\output\content\section output component and it is displayed using mustache templates instead of a renderer method.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -4280,7 +4279,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Generate the content to displayed on the left part of a section before course modules are included. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000076">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000075">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
 <p>Spatial references like "left" or "right" are limiting the way formats and themes can extend courses. The elements from this method are now included in the <a class="el" href="../../d4/db9/classcore__courseformat_1_1output_1_1local_1_1content_1_1section.html" title="Base class to render a course section.">core_courseformat\output\local\content\section</a> output components.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -4332,7 +4331,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Generate the html for the 'Jump to' menu on a single section page. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000091">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000090">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
 <p>This element is now a core_courseformat\output\content\section output component and it is displayed using mustache templates instead of a renderer method.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -4384,7 +4383,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Generate the content to displayed on the right part of a section before course modules are included. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000075">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000074">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
 <p>Spatial references like "left" or "right" are limiting the way formats and themes can extend courses. The elements from this method are now included in the <a class="el" href="../../d4/db9/classcore__courseformat_1_1output_1_1local_1_1content_1_1section.html" title="Base class to render a course section.">core_courseformat\output\local\content\section</a> output components.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -4436,7 +4435,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Generate a summary of a section for display on the 'course index page'. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000083">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000082">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
 <p>This element is now a core_courseformat\output\content\section output component and it is displayed using mustache templates instead of a renderer method.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -4594,7 +4593,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Whether we should display the main logo. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000794">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000793">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.0 </dd></dl>
 <dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000184">Todo</a></b></dt><dd>final deprecation. To be removed in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4 <a href="https://tracker.moodle.org/browse/MDL-73165" class="el">MDL-73165</a>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -4669,7 +4668,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Generate the starting container html for a list of sections. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000079">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000078">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td>HTML to output. </td></tr>
@@ -4703,7 +4702,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Generate footer html of a stealth section. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000090">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000089">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
 <p>This element is now a core_courseformat\output\content\section output component and it is displayed using mustache templates instead of a renderer method.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
@@ -4738,7 +4737,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><div class="memdoc">
 
 <p>Generate the header html of a stealth section. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000089">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000088">Deprecated</a></b></dt><dd>since 4.0 <a href="https://tracker.moodle.org/browse/MDL-72656" class="el">MDL-72656</a> - use core_course output components instead.</dd></dl>
 <p>This element is now a core_courseformat\output\content\section output component and it is displayed using mustache templates instead of a renderer method.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -4900,7 +4899,7 @@ array&#160;</td><td class="memItemRight" valign="bottom"><b>$templatecache</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 2 2024 02:45:07 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 9 2024 02:47:46 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>

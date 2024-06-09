@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5dev (Build: 20240530) (bcd8e0d6edd)</div>
+   <div id="projectbrief">Moodle 4.5dev (Build: 20240606) (d3ae1391abe)</div>
   </td>
  </tr>
  </tbody>
@@ -117,9 +117,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8209d443cf4ba567b3f48df93cde89e0" id="r_a8209d443cf4ba567b3f48df93cde89e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8209d443cf4ba567b3f48df93cde89e0">get_full_information</a> (\<a class="el" href="../../d5/d26/classcourse__modinfo.html">course_modinfo</a> $modinfo=null)</td></tr>
 <tr class="memdesc:a8209d443cf4ba567b3f48df93cde89e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains a string describing all availability restrictions (even if they do not apply any more).  <br /></td></tr>
 <tr class="separator:a8209d443cf4ba567b3f48df93cde89e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bf62ee25f5c25148ef8c18336af8428" id="r_a3bf62ee25f5c25148ef8c18336af8428"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3bf62ee25f5c25148ef8c18336af8428">get_groups</a> (int $groupingid=0)</td></tr>
-<tr class="memdesc:a3bf62ee25f5c25148ef8c18336af8428"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns groups that the current user belongs to on the course.  <br /></td></tr>
-<tr class="separator:a3bf62ee25f5c25148ef8c18336af8428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac74a2f3154a786b68b50269c8a8aaa43" id="r_ac74a2f3154a786b68b50269c8a8aaa43"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac74a2f3154a786b68b50269c8a8aaa43">get_groups</a> (int $groupingid=0, int $userid=0)</td></tr>
+<tr class="memdesc:ac74a2f3154a786b68b50269c8a8aaa43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns groups that the given user belongs to on the course.  <br /></td></tr>
+<tr class="separator:ac74a2f3154a786b68b50269c8a8aaa43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed37d0a4634c7530377f8982b8ce98e5" id="r_aed37d0a4634c7530377f8982b8ce98e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed37d0a4634c7530377f8982b8ce98e5">get_modinfo</a> ()</td></tr>
 <tr class="memdesc:aed37d0a4634c7530377f8982b8ce98e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtains the modinfo associated with this availability information.  <br /></td></tr>
 <tr class="separator:aed37d0a4634c7530377f8982b8ce98e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -205,8 +205,8 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$course</b></td><
 <tr class="memdesc:a69bbafd08f4ec337ba709ec9268b65aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Course. <br /></td></tr>
 <tr class="separator:a69bbafd08f4ec337ba709ec9268b65aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28ddc3c16e9126fe41caa362d581b35b" id="r_a28ddc3c16e9126fe41caa362d581b35b"><td class="memItemLeft" align="right" valign="top"><a id="a28ddc3c16e9126fe41caa362d581b35b" name="a28ddc3c16e9126fe41caa362d581b35b"></a>
-array&#160;</td><td class="memItemRight" valign="bottom"><b>$groups</b></td></tr>
-<tr class="memdesc:a28ddc3c16e9126fe41caa362d581b35b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The groups the current user belongs to. <br /></td></tr>
+array&#160;</td><td class="memItemRight" valign="bottom"><b>$groups</b> = []</td></tr>
+<tr class="memdesc:a28ddc3c16e9126fe41caa362d581b35b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The groups each user belongs to. <br /></td></tr>
 <tr class="separator:a28ddc3c16e9126fe41caa362d581b35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a382e99ea8042cd9b260b3951b5380b0d" id="r_a382e99ea8042cd9b260b3951b5380b0d"><td class="memItemLeft" align="right" valign="top"><a id="a382e99ea8042cd9b260b3951b5380b0d" name="a382e99ea8042cd9b260b3951b5380b0d"></a>
 <a class="el" href="../../d5/d26/classcourse__modinfo.html">course_modinfo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$modinfo</b> = null</td></tr>
@@ -259,12 +259,6 @@ static array null&#160;</td><td class="memItemRight" valign="bottom"><b>$restore
     <tr><td class="paramtype">stdClass</td><td class="paramname">$course</td><td>Course object </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$visible</td><td>Value of visible flag (eye icon) </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$availability</td><td>Availability definition (JSON format) or null </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="../../da/d34/classcoding__exception.html" title="Exception indicating programming error, must be fixed by a programer.">coding_exception</a></td><td>If data is not valid JSON format </td></tr>
   </table>
   </dd>
 </dl>
@@ -779,8 +773,8 @@ static array null&#160;</td><td class="memItemRight" valign="bottom"><b>$restore
 
 </div>
 </div>
-<a id="a3bf62ee25f5c25148ef8c18336af8428" name="a3bf62ee25f5c25148ef8c18336af8428"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bf62ee25f5c25148ef8c18336af8428">&#9670;&#160;</a></span>get_groups()</h2>
+<a id="ac74a2f3154a786b68b50269c8a8aaa43" name="ac74a2f3154a786b68b50269c8a8aaa43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac74a2f3154a786b68b50269c8a8aaa43">&#9670;&#160;</a></span>get_groups()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -788,18 +782,23 @@ static array null&#160;</td><td class="memItemRight" valign="bottom"><b>$restore
         <tr>
           <td class="memname">core_availability\info::get_groups </td>
           <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$groupingid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span></td><td>)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$groupingid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$userid</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns groups that the current user belongs to on the course. </p>
+<p>Returns groups that the given user belongs to on the course. </p>
 <p>Note: If not already available, this may make a database query.</p>
 <p>This will include groups the user is not allowed to see themselves, so check visibility before displaying groups to the user.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$groupingid</td><td>Grouping ID or 0 (default) for all groups </td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$userid</td><td>User ID or 0 (default) for current user </td></tr>
   </table>
   </dd>
 </dl>
@@ -1353,7 +1352,7 @@ static array null&#160;</td><td class="memItemRight" valign="bottom"><b>$restore
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 2 2024 02:53:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+Generated on Sun Jun 9 2024 02:55:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
 </small></address>
 </div><!-- doc-content -->
 </body>
