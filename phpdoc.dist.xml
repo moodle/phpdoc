@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpdocumentor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:noNamespaceSchemaLocation="https://www.phpdoc.org/phpDocumentor.xsd"
+               configVersion="3.0">
+
+    <title>Moodle PHP API</title>
+
+    <paths>
+        <output>docs</output>
+        <cache>phpdoc-cache</cache>
+    </paths>
+
+    <template name="default" />
+
+    <version number="4.3">
+        <folder>4.3</folder>
+        <api>
+            <source dsn=".">
+                <path>source</path>
+            </source>
+            <ignore>
+                <path>**/lib/pear/**/*</path>
+                <path>**/lib/google/**/*</path>
+                <path>**/lib/mlbackend/**/*</path>
+                <path>**/lib/**/*</path>
+                <path>**/tests/**/*</path>
+                <path>**/fixtures/**/*</path>
+                <path>**/vendor/**/*</path>
+                <path>**/amd/**/*</path>
+                <path>**/yui/**/*</path>
+                <path>**/lang/**/*</path>
+            </ignore>
+            <extensions>
+                <extension>php</extension>
+            </extensions>
+        </api>
+    </version>
+
+</phpdocumentor>
