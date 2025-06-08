@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0+ (Build: 20250530) (1260cb24b83)</div>
+   <div id="projectbrief">Moodle 5.0.1 (Build: 20250609) (ffb6475f6ad)</div>
   </td>
  </tr>
  </tbody>
@@ -118,6 +118,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a49446783f27e9caacf8256807703882e" id="r_a49446783f27e9caacf8256807703882e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9f/classcore_1_1persistent.html#a49446783f27e9caacf8256807703882e">get_errors</a> ()</td></tr>
 <tr class="memdesc:a49446783f27e9caacf8256807703882e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the validation errors.  <br /></td></tr>
 <tr class="separator:a49446783f27e9caacf8256807703882e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fe922a6a2a7c4af8b2f546eb91ca3c4" id="r_a3fe922a6a2a7c4af8b2f546eb91ca3c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3fe922a6a2a7c4af8b2f546eb91ca3c4">get_system_email</a> ()</td></tr>
+<tr class="memdesc:a3fe922a6a2a7c4af8b2f546eb91ca3c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the system email address for this issuer.  <br /></td></tr>
+<tr class="separator:a3fe922a6a2a7c4af8b2f546eb91ca3c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f605a8a9e89487b1e9f044ddfa9b894" id="r_a1f605a8a9e89487b1e9f044ddfa9b894"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f605a8a9e89487b1e9f044ddfa9b894">is_authentication_supported</a> ()</td></tr>
 <tr class="memdesc:a1f605a8a9e89487b1e9f044ddfa9b894"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does this OAuth service support user authentication?  <br /></td></tr>
 <tr class="separator:a1f605a8a9e89487b1e9f044ddfa9b894"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,6 +220,10 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>LOGINONLY</b> = 
 int const&#160;</td><td class="memItemRight" valign="bottom"><b>SERVICEONLY</b> = 0</td></tr>
 <tr class="memdesc:aa679829ee55975e44b9fd797844f1fbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Issuer is displayed only in the services lists and can not be used for login. <br /></td></tr>
 <tr class="separator:aa679829ee55975e44b9fd797844f1fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2be3218e5ae90a2a78ad6e159eb9fc0" id="r_ac2be3218e5ae90a2a78ad6e159eb9fc0"><td class="memItemLeft" align="right" valign="top"><a id="ac2be3218e5ae90a2a78ad6e159eb9fc0" name="ac2be3218e5ae90a2a78ad6e159eb9fc0"></a>
+int const&#160;</td><td class="memItemRight" valign="bottom"><b>SMTPWITHXOAUTH2</b> = 3</td></tr>
+<tr class="memdesc:ac2be3218e5ae90a2a78ad6e159eb9fc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Issuer is used for sending email using SMTP with XOAUTH2. <br /></td></tr>
+<tr class="separator:ac2be3218e5ae90a2a78ad6e159eb9fc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1fe4962e5ab80555f3912ca6de7821d" id="r_ad1fe4962e5ab80555f3912ca6de7821d"><td class="memItemLeft" align="right" valign="top"><a id="ad1fe4962e5ab80555f3912ca6de7821d" name="ad1fe4962e5ab80555f3912ca6de7821d"></a>
 const&#160;</td><td class="memItemRight" valign="bottom"><b>TABLE</b> = 'oauth2_issuer'</td></tr>
 <tr class="separator:ad1fe4962e5ab80555f3912ca6de7821d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1274,6 +1281,31 @@ Static Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a3fe922a6a2a7c4af8b2f546eb91ca3c4" name="a3fe922a6a2a7c4af8b2f546eb91ca3c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fe922a6a2a7c4af8b2f546eb91ca3c4">&#9670;&#160;</a></span>get_system_email()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core\oauth2\issuer::get_system_email </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the system email address for this issuer. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string|null</td><td>The system email address or null if not set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ae235163f6a4840506b265b9d8b8934cb" name="ae235163f6a4840506b265b9d8b8934cb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae235163f6a4840506b265b9d8b8934cb">&#9670;&#160;</a></span>has_property()</h2>
 
@@ -2101,7 +2133,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 1 2025 03:55:55 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jun 8 2025 03:48:01 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.1</span>
    </div>
-   <div id="projectbrief">Moodle 5.1dev (Build: 20250530) (c39b7370636)</div>
+   <div id="projectbrief">Moodle 5.1dev (Build: 20250605) (9223e346c3e)</div>
   </td>
  </tr>
  </tbody>
@@ -98,6 +98,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a59b9178d4aa95c56306a06b064a6e47a" id="r_a59b9178d4aa95c56306a06b064a6e47a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59b9178d4aa95c56306a06b064a6e47a">get_blocked_url_string</a> ()</td></tr>
 <tr class="memdesc:a59b9178d4aa95c56306a06b064a6e47a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string message describing a blocked URL.  <br /></td></tr>
 <tr class="separator:a59b9178d4aa95c56306a06b064a6e47a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a036a8c5293ae61488f70f8702499137d" id="r_a036a8c5293ae61488f70f8702499137d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a036a8c5293ae61488f70f8702499137d">get_resolve_info</a> ()</td></tr>
+<tr class="memdesc:a036a8c5293ae61488f70f8702499137d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper that returns host, IP and port information for the URL that has passed the blocked hosts/allowed ports checks.  <br /></td></tr>
+<tr class="separator:a036a8c5293ae61488f70f8702499137d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94ec7030c66d97c17350243dd6b0ccf1" id="r_a94ec7030c66d97c17350243dd6b0ccf1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94ec7030c66d97c17350243dd6b0ccf1">is_enabled</a> ()</td></tr>
 <tr class="memdesc:a94ec7030c66d97c17350243dd6b0ccf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience method to check whether we have any entries in the host blocklist or ports allowlist admin settings.  <br /></td></tr>
 <tr class="separator:a94ec7030c66d97c17350243dd6b0ccf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,6 +140,18 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:ae96051c58e688b874d4db2e37887a132" id="r_ae96051c58e688b874d4db2e37887a132"><td class="memItemLeft" align="right" valign="top"><a id="ae96051c58e688b874d4db2e37887a132" name="ae96051c58e688b874d4db2e37887a132"></a>
+array&#160;</td><td class="memItemRight" valign="bottom"><b>$allowedips</b> = []</td></tr>
+<tr class="memdesc:ae96051c58e688b874d4db2e37887a132"><td class="mdescLeft">&#160;</td><td class="mdescRight">IP address or addresses the URL is allowed to be requested from (passed the blocked hosts check). <br /></td></tr>
+<tr class="separator:ae96051c58e688b874d4db2e37887a132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10c5df58ed030f99874194203ebef6e8" id="r_a10c5df58ed030f99874194203ebef6e8"><td class="memItemLeft" align="right" valign="top"><a id="a10c5df58ed030f99874194203ebef6e8" name="a10c5df58ed030f99874194203ebef6e8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>$allowedport</b></td></tr>
+<tr class="memdesc:a10c5df58ed030f99874194203ebef6e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The port the URL is allowed to be requested from (passed the allowed port check). <br /></td></tr>
+<tr class="separator:a10c5df58ed030f99874194203ebef6e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f3570cbcdaf563d8cdb371e18c54d31" id="r_a4f3570cbcdaf563d8cdb371e18c54d31"><td class="memItemLeft" align="right" valign="top"><a id="a4f3570cbcdaf563d8cdb371e18c54d31" name="a4f3570cbcdaf563d8cdb371e18c54d31"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>$host</b></td></tr>
+<tr class="memdesc:a4f3570cbcdaf563d8cdb371e18c54d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">the host of the URL being checked by the helper. <br /></td></tr>
+<tr class="separator:a4f3570cbcdaf563d8cdb371e18c54d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82cdbb6ebf27bb8f04c827ec7ae2d452" id="r_a82cdbb6ebf27bb8f04c827ec7ae2d452"><td class="memItemLeft" align="right" valign="top">array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82cdbb6ebf27bb8f04c827ec7ae2d452">$transportschemes</a></td></tr>
 <tr class="memdesc:a82cdbb6ebf27bb8f04c827ec7ae2d452"><td class="mdescLeft">&#160;</td><td class="mdescRight">of supported transport schemes and their respective default ports.  <br /></td></tr>
 <tr class="separator:a82cdbb6ebf27bb8f04c827ec7ae2d452"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -349,6 +364,38 @@ Protected Attributes</h2></td></tr>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td>An array of IPs associated with the host name. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a036a8c5293ae61488f70f8702499137d" name="a036a8c5293ae61488f70f8702499137d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a036a8c5293ae61488f70f8702499137d">&#9670;&#160;</a></span>get_resolve_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core\files\curl_security_helper::get_resolve_info </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Helper that returns host, IP and port information for the URL that has passed the blocked hosts/allowed ports checks. </p>
+<p>This data is in a format compatible with CURLOPT_RESOLVE, so it can be passed directly into that option. Doing so will prevent cURL re-fetching the info from DNS, preventing subsequent requests to the remote host from modifying the IP/port to ones that haven't been validated.</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>of strings in the format hostname:port:ip_address. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">coding_exception</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -621,7 +668,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 1 2025 04:03:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jun 8 2025 03:55:07 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

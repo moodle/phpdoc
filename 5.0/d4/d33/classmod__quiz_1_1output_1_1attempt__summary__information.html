@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0+ (Build: 20250530) (1260cb24b83)</div>
+   <div id="projectbrief">Moodle 5.0.1 (Build: 20250609) (ffb6475f6ad)</div>
   </td>
  </tr>
  </tbody>
@@ -124,6 +124,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4b51628d9106475aa1082d75b71d2d76" id="r_a4b51628d9106475aa1082d75b71d2d76"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b51628d9106475aa1082d75b71d2d76">remove_item</a> (string $shortname)</td></tr>
 <tr class="memdesc:a4b51628d9106475aa1082d75b71d2d76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an item, if present.  <br /></td></tr>
 <tr class="separator:a4b51628d9106475aa1082d75b71d2d76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42c2b983c873a71c01022d87a490338a" id="r_a42c2b983c873a71c01022d87a490338a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42c2b983c873a71c01022d87a490338a">set_caption</a> (string $caption)</td></tr>
+<tr class="memdesc:a42c2b983c873a71c01022d87a490338a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the caption for the summary table.  <br /></td></tr>
+<tr class="separator:a42c2b983c873a71c01022d87a490338a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -142,6 +145,10 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr class="memitem:ad3b7df70427e900d95784338161db761" id="r_ad3b7df70427e900d95784338161db761"><td class="memItemLeft" align="right" valign="top"><a id="ad3b7df70427e900d95784338161db761" name="ad3b7df70427e900d95784338161db761"></a>
+string string&#160;</td><td class="memItemRight" valign="bottom"><b>$caption</b> = ''</td></tr>
+<tr class="memdesc:ad3b7df70427e900d95784338161db761"><td class="mdescLeft">&#160;</td><td class="mdescRight">The caption for attempt summary table. <br /></td></tr>
+<tr class="separator:ad3b7df70427e900d95784338161db761"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a186a98b4fc8b6078c7e3f23a7eae85fd" id="r_a186a98b4fc8b6078c7e3f23a7eae85fd"><td class="memItemLeft" align="right" valign="top">array[] array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a186a98b4fc8b6078c7e3f23a7eae85fd">$summarydata</a> = []</td></tr>
 <tr class="memdesc:a186a98b4fc8b6078c7e3f23a7eae85fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The rows of summary data.  <br /></td></tr>
 <tr class="separator:a186a98b4fc8b6078c7e3f23a7eae85fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -588,6 +595,31 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a42c2b983c873a71c01022d87a490338a" name="a42c2b983c873a71c01022d87a490338a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42c2b983c873a71c01022d87a490338a">&#9670;&#160;</a></span>set_caption()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mod_quiz\output\attempt_summary_information::set_caption </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$caption</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the caption for the summary table. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$caption</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a186a98b4fc8b6078c7e3f23a7eae85fd" name="a186a98b4fc8b6078c7e3f23a7eae85fd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a186a98b4fc8b6078c7e3f23a7eae85fd">&#9670;&#160;</a></span>$summarydata</h2>
@@ -620,7 +652,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 1 2025 03:57:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jun 8 2025 03:49:42 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

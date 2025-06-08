@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5.4+ (Build: 20250530) (7acd85a1aa1)</div>
+   <div id="projectbrief">Moodle 4.5.5 (Build: 20250609) (812ef23c00a)</div>
   </td>
  </tr>
  </tbody>
@@ -93,6 +93,9 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da7/namespacemod__feedback_1_1external.html">mod_feedback\external</a></td></tr>
 <tr class="memdesc:df/da7/namespacemod__feedback_1_1external"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#160; <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d69/namespacemod__feedback_1_1external_1_1questions.html">mod_feedback\external\questions</a></td></tr>
+<tr class="memdesc:d0/d69/namespacemod__feedback_1_1external_1_1questions"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#160; <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dfc/namespacemod__feedback_1_1form.html">mod_feedback\form</a></td></tr>
 <tr class="memdesc:dc/dfc/namespacemod__feedback_1_1form"><td class="mdescLeft">&#160;</td><td class="mdescRight">&#160; <br /></td></tr>
@@ -168,6 +171,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d95/classmod__feedback_1_1external_1_1feedback__valuetmp__exporter.html">mod_feedback\external\feedback_valuetmp_exporter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class for exporting a feedback tmp response.  <a href="../../d2/d95/classmod__feedback_1_1external_1_1feedback__valuetmp__exporter.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d4c/classmod__feedback_1_1external_1_1questions_1_1reorder.html">mod_feedback\external\questions\reorder</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d20/classmod__feedback_1_1form_1_1create__template__form.html">mod_feedback\form\create_template_form</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -602,7 +607,7 @@ const&#160;</td><td class="memItemRight" valign="bottom"><b>FEEDBACK_THOUSAND</b
 &#160;</td><td class="memItemRight" valign="bottom"><b>if</b> (!defined( '<a class="el" href="../../d0/de1/group__core.html#ga4a87e5b19cb6b7e3148f68a819ff0790">MOODLE_INTERNAL</a>'))</td></tr>
 <tr class="separator:gaea5ac8d87ce191b85d7e827a95b01405"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga92a3fd99b37c9cbd65c4aead816b3a83" id="r_ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memItemLeft" align="right" valign="top"><a id="ga92a3fd99b37c9cbd65c4aead816b3a83" name="ga92a3fd99b37c9cbd65c4aead816b3a83"></a>
-$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024100700</td></tr>
+$plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024100701</td></tr>
 <tr class="separator:ga92a3fd99b37c9cbd65c4aead816b3a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -660,7 +665,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 <p>Move save the items of the given $feedback in the order of $itemlist. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$itemlist</td><td>a comma separated list with item ids </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$itemlist</td><td>a list with item ids </td></tr>
     <tr><td class="paramtype">stdClass</td><td class="paramname">$feedback</td><td></td></tr>
   </table>
   </dd>
@@ -3893,7 +3898,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2024
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 1 2025 03:46:39 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jun 8 2025 03:38:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.1</span>
    </div>
-   <div id="projectbrief">Moodle 5.1dev (Build: 20250530) (c39b7370636)</div>
+   <div id="projectbrief">Moodle 5.1dev (Build: 20250605) (9223e346c3e)</div>
   </td>
  </tr>
  </tbody>
@@ -193,9 +193,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7f95b73922f79e67198dfe3f271514d0" id="r_a7f95b73922f79e67198dfe3f271514d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a7f95b73922f79e67198dfe3f271514d0">get_last_section_number</a> ()</td></tr>
 <tr class="memdesc:a7f95b73922f79e67198dfe3f271514d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method used in the rendered and during backup instead of legacy 'numsections'.  <br /></td></tr>
 <tr class="separator:a7f95b73922f79e67198dfe3f271514d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63abeedfcdbeac8055f0824fcf35b57b" id="r_a63abeedfcdbeac8055f0824fcf35b57b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a63abeedfcdbeac8055f0824fcf35b57b">get_max_sections</a> ()</td></tr>
-<tr class="memdesc:a63abeedfcdbeac8055f0824fcf35b57b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method used to get the maximum number of sections for this course format.  <br /></td></tr>
-<tr class="separator:a63abeedfcdbeac8055f0824fcf35b57b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6fb2d33e0eb3df84823c1c1aa499698" id="r_ab6fb2d33e0eb3df84823c1c1aa499698"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#ab6fb2d33e0eb3df84823c1c1aa499698">get_modinfo</a> ()</td></tr>
 <tr class="memdesc:ab6fb2d33e0eb3df84823c1c1aa499698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current course modinfo.  <br /></td></tr>
 <tr class="separator:ab6fb2d33e0eb3df84823c1c1aa499698"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -368,21 +365,36 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ab78be857f67541b2409d625b60491416" id="r_ab78be857f67541b2409d625b60491416"><td class="memItemLeft" align="right" valign="top"><a id="ab78be857f67541b2409d625b60491416" name="ab78be857f67541b2409d625b60491416"></a>
 replacement <a class="el" href="../../df/db9/classcm__info.html">cm_info</a>&#160;</td><td class="memItemRight" valign="bottom"><b>$cm</b>: moodle_url { $nonajaxactions = [ 'cmDelete' =&gt; 'cm_delete'</td></tr>
 <tr class="separator:ab78be857f67541b2409d625b60491416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab102d462db309690fb8aebec554bbd9c" id="r_ab102d462db309690fb8aebec554bbd9c"><td class="memItemLeft" align="right" valign="top"><a id="ab102d462db309690fb8aebec554bbd9c" name="ab102d462db309690fb8aebec554bbd9c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>$maxsections</b> = <a class="el" href="../../d0/de1/group__core.html#ga5950075e4b78b7084558af79b3166224">get_config</a>('moodlecourse', 'maxsections')</td></tr>
+<tr class="separator:ab102d462db309690fb8aebec554bbd9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab68a68123a887c824793a41b2ca582f4" id="r_ab68a68123a887c824793a41b2ca582f4"><td class="memItemLeft" align="right" valign="top"><a id="ab68a68123a887c824793a41b2ca582f4" name="ab68a68123a887c824793a41b2ca582f4"></a>
+if(!isset($maxsections)||!is_numeric($maxsections)) return&#160;</td><td class="memItemRight" valign="bottom"><b>$maxsections</b></td></tr>
+<tr class="separator:ab68a68123a887c824793a41b2ca582f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedc6336969b21fa974c90b43aad51869" id="r_aedc6336969b21fa974c90b43aad51869"><td class="memItemLeft" align="right" valign="top"><a id="aedc6336969b21fa974c90b43aad51869" name="aedc6336969b21fa974c90b43aad51869"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>$nonajaxaction</b> = $nonajaxactions[$action]</td></tr>
 <tr class="separator:aedc6336969b21fa974c90b43aad51869"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0093e5cc722428480db03d1da3eb3555" id="r_a0093e5cc722428480db03d1da3eb3555"><td class="memItemLeft" align="right" valign="top">replacement&#160;</td><td class="memItemRight" valign="bottom">: 'base::set_sectionnum'</td></tr>
+<tr class="memitem:aa801816cc8520de74bb4715399e5b8fd" id="r_aa801816cc8520de74bb4715399e5b8fd"><td class="memItemLeft" align="right" valign="top"><a id="aa801816cc8520de74bb4715399e5b8fd" name="aa801816cc8520de74bb4715399e5b8fd"></a>
+replacement&#160;</td><td class="memItemRight" valign="bottom"><b>__FUNCTION__</b></td></tr>
+<tr class="separator:aa801816cc8520de74bb4715399e5b8fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0093e5cc722428480db03d1da3eb3555" id="r_a0093e5cc722428480db03d1da3eb3555"><td class="memItemLeft" align="right" valign="top">replacement&#160;</td><td class="memItemRight" valign="bottom">: null</td></tr>
+<tr class="memdesc:a0093e5cc722428480db03d1da3eb3555"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method used to get the maximum number of sections for this course format.  <br /></td></tr>
 <tr class="separator:a0093e5cc722428480db03d1da3eb3555"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56552487a1b860a3b9bd386831351a87" id="r_a56552487a1b860a3b9bd386831351a87"><td class="memItemLeft" align="right" valign="top">replacement&#160;</td><td class="memItemRight" valign="bottom">: 'base::get_sectionnum'</td></tr>
+<tr class="memitem:a56552487a1b860a3b9bd386831351a87" id="r_a56552487a1b860a3b9bd386831351a87"><td class="memItemLeft" align="right" valign="top">replacement&#160;</td><td class="memItemRight" valign="bottom">: 'base::set_sectionnum'</td></tr>
 <tr class="separator:a56552487a1b860a3b9bd386831351a87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c1a3acf81329eeba9161fe4662074da" id="r_a4c1a3acf81329eeba9161fe4662074da"><td class="memItemLeft" align="right" valign="top">replacement&#160;</td><td class="memItemRight" valign="bottom">: '<a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#ab7a851df791f1d734264f4f0e00c85f2">core_courseformat\base::get_update_url</a>'</td></tr>
-<tr class="memdesc:a4c1a3acf81329eeba9161fe4662074da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the old non-ajax activity action url.  <br /></td></tr>
+<tr class="memitem:a4c1a3acf81329eeba9161fe4662074da" id="r_a4c1a3acf81329eeba9161fe4662074da"><td class="memItemLeft" align="right" valign="top">replacement&#160;</td><td class="memItemRight" valign="bottom">: 'base::get_sectionnum'</td></tr>
 <tr class="separator:a4c1a3acf81329eeba9161fe4662074da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aba6c8afd6226ed6047e968a33bd27f" id="r_a9aba6c8afd6226ed6047e968a33bd27f"><td class="memItemLeft" align="right" valign="top">replacement&#160;</td><td class="memItemRight" valign="bottom">: '<a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#ab7a851df791f1d734264f4f0e00c85f2">core_courseformat\base::get_update_url</a>'</td></tr>
+<tr class="memdesc:a9aba6c8afd6226ed6047e968a33bd27f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the old non-ajax activity action url.  <br /></td></tr>
+<tr class="separator:a9aba6c8afd6226ed6047e968a33bd27f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfc8c636c2a9befad0d1325a29d912a0" id="r_adfc8c636c2a9befad0d1325a29d912a0"><td class="memItemLeft" align="right" valign="top"><a id="adfc8c636c2a9befad0d1325a29d912a0" name="adfc8c636c2a9befad0d1325a29d912a0"></a>
-replacement&#160;</td><td class="memItemRight" valign="bottom"><b>mdl</b>: '&lt;a class=&quot;el&quot; href=&quot;https: final: true</td></tr>
+replacement&#160;</td><td class="memItemRight" valign="bottom"><b>mdl</b>: '&lt;a class=&quot;el&quot; href=&quot;https: )] public function get_max_sections() { <a class="el" href="../../dd/ddd/classcore_1_1deprecation.html#aa6a2a0314495a710cd681ca96146679d">core\deprecation::emit_deprecation_if_present</a>([self::class</td></tr>
 <tr class="separator:adfc8c636c2a9befad0d1325a29d912a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee9f25f967f2e5232aa26d5b61cf87ff" id="r_aee9f25f967f2e5232aa26d5b61cf87ff"><td class="memItemLeft" align="right" valign="top"><a id="aee9f25f967f2e5232aa26d5b61cf87ff" name="aee9f25f967f2e5232aa26d5b61cf87ff"></a>
+replacement&#160;</td><td class="memItemRight" valign="bottom"><b>reason</b>: 'The maxsection setting is removed.'</td></tr>
+<tr class="separator:aee9f25f967f2e5232aa26d5b61cf87ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad34e3b5f67210e4548a22e6d5296fc14" id="r_ad34e3b5f67210e4548a22e6d5296fc14"><td class="memItemLeft" align="right" valign="top"><a id="ad34e3b5f67210e4548a22e6d5296fc14" name="ad34e3b5f67210e4548a22e6d5296fc14"></a>
-replacement&#160;</td><td class="memItemRight" valign="bottom"><b>since</b>: '4.4'</td></tr>
+replacement&#160;</td><td class="memItemRight" valign="bottom"><b>since</b>: '5.1'</td></tr>
 <tr class="separator:ad34e3b5f67210e4548a22e6d5296fc14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
@@ -1747,39 +1759,6 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">int</td><td>The last section number, or -1 if sections are entirely missing </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a63abeedfcdbeac8055f0824fcf35b57b" name="a63abeedfcdbeac8055f0824fcf35b57b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63abeedfcdbeac8055f0824fcf35b57b">&#9670;&#160;</a></span>get_max_sections()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">core_courseformat\base::get_max_sections </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Method used to get the maximum number of sections for this course format. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">int</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -3866,7 +3845,16 @@ course_modinfo::get_section_info_all()</dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000073">Deprecated</a></b></dt><dd>Since 4.4. Use set_sectionnum instead. </dd></dl>
+
+<p>Method used to get the maximum number of sections for this course format. </p>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000073">Deprecated</a></b></dt><dd>Since 5.1 the setting is removed. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000061">Todo</a></b></dt><dd>Remove this method in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0 (<a href="https://tracker.moodle.org/browse/MDL-85272" class="el">MDL-85272</a>). </dd></dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -3889,7 +3877,7 @@ course_modinfo::get_section_info_all()</dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000074">Deprecated</a></b></dt><dd>Since 4.4. Use get_sectionnum instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000074">Deprecated</a></b></dt><dd>Since 4.4. Use set_sectionnum instead. </dd></dl>
 
 </div>
 </div>
@@ -3912,11 +3900,34 @@ course_modinfo::get_section_info_all()</dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000075">Deprecated</a></b></dt><dd>Since 4.4. Use get_sectionnum instead. </dd></dl>
+
+</div>
+</div>
+<a id="a9aba6c8afd6226ed6047e968a33bd27f" name="a9aba6c8afd6226ed6047e968a33bd27f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aba6c8afd6226ed6047e968a33bd27f">&#9670;&#160;</a></span>__pad3__</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">replacement core_courseformat\base::__pad3__</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 <p>Return the old non-ajax activity action url. </p>
 <p>BrowserKit behats tests cannot trigger javascript events, so we must translate to an old non-ajax url while non-ajax course editing is still supported.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000075">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 5.0 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000061">Todo</a></b></dt><dd>Remove this method in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0 (<a href="https://tracker.moodle.org/browse/MDL-83530" class="el">MDL-83530</a>).</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000076">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 5.0 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000062">Todo</a></b></dt><dd>Remove this method in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0 (<a href="https://tracker.moodle.org/browse/MDL-83530" class="el">MDL-83530</a>).</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$action</td><td>action name the reactive action </td></tr>
@@ -3939,7 +3950,7 @@ course_modinfo::get_section_info_all()</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 1 2025 04:01:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jun 8 2025 03:53:31 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

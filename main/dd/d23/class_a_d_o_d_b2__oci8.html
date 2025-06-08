@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.1</span>
    </div>
-   <div id="projectbrief">Moodle 5.1dev (Build: 20250530) (c39b7370636)</div>
+   <div id="projectbrief">Moodle 5.1dev (Build: 20250605) (9223e346c3e)</div>
   </td>
  </tr>
  </tbody>
@@ -87,12 +87,9 @@ Inheritance diagram for ADODB2_oci8:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3e221fec0031c797ac6d80d51cfd8369" id="r_a3e221fec0031c797ac6d80d51cfd8369"><td class="memItemLeft" align="right" valign="top"><a id="a3e221fec0031c797ac6d80d51cfd8369" name="a3e221fec0031c797ac6d80d51cfd8369"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>_CreateSuffix</b> ($fname, &amp;$ftype, $fnotnull, $fdefault, $fautoinc, $fconstraint, $funsigned)</td></tr>
-<tr class="separator:a3e221fec0031c797ac6d80d51cfd8369"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad679b202a3260299c4c801de4ef62a6d" id="r_ad679b202a3260299c4c801de4ef62a6d"><td class="memItemLeft" align="right" valign="top"><a id="ad679b202a3260299c4c801de4ef62a6d" name="ad679b202a3260299c4c801de4ef62a6d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>_createSuffix</b> ($fname, &amp;$ftype, $fnotnull, $fdefault, $fautoinc, $fconstraint, $funsigned)</td></tr>
-<tr class="separator:ad679b202a3260299c4c801de4ef62a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ec2c6e1f9bc5ffdfe16993d08a2852c" id="r_a2ec2c6e1f9bc5ffdfe16993d08a2852c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ec2c6e1f9bc5ffdfe16993d08a2852c">_createSuffix</a> ($fname, &amp;$ftype, $fnotnull, $fdefault, $fautoinc, $fconstraint, $funsigned, $fprimary, &amp;$pkey)</td></tr>
+<tr class="memdesc:a2ec2c6e1f9bc5ffdfe16993d08a2852c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an database specific SQL string of constraints for column.  <br /></td></tr>
+<tr class="separator:a2ec2c6e1f9bc5ffdfe16993d08a2852c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ea30dd727146fb98969523dd6ecdb78" id="r_a0ea30dd727146fb98969523dd6ecdb78"><td class="memItemLeft" align="right" valign="top"><a id="a0ea30dd727146fb98969523dd6ecdb78" name="a0ea30dd727146fb98969523dd6ecdb78"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>_DropAutoIncrement</b> ($t)</td></tr>
 <tr class="separator:a0ea30dd727146fb98969523dd6ecdb78"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -308,6 +305,86 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$quote</b></td></tr
 <tr class="separator:a51603770a84052600b25fe7a4153955f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a2ec2c6e1f9bc5ffdfe16993d08a2852c" name="a2ec2c6e1f9bc5ffdfe16993d08a2852c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ec2c6e1f9bc5ffdfe16993d08a2852c">&#9670;&#160;</a></span>_createSuffix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ADODB2_oci8::_createSuffix </td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$fname</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;</td>          <td class="paramname"><span class="paramname"><em>$ftype</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$fnotnull</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$fdefault</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$fautoinc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$fconstraint</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$funsigned</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$fprimary</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&amp;</td>          <td class="paramname"><span class="paramname"><em>$pkey</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct an database specific SQL string of constraints for column. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$fname</td><td>column name </td></tr>
+    <tr><td class="paramtype"></td><td class="paramname">string</td><td>&amp; $ftype column type </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$fnotnull</td><td>NOT NULL flag </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;bool</td><td class="paramname">$fdefault</td><td>DEFAULT value </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$fautoinc</td><td>AUTOINCREMENT flag </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$fconstraint</td><td>CONSTRAINT value </td></tr>
+    <tr><td class="paramtype">bool</td><td class="paramname">$funsigned</td><td>UNSIGNED flag </td></tr>
+    <tr><td class="paramtype">string&#160;|&#160;bool</td><td class="paramname">$fprimary</td><td>PRIMARY value </td></tr>
+    <tr><td class="paramtype"></td><td class="paramname">array</td><td>&amp; $pkey array of primary key column names</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>Combined constraint string, must start with a space </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="../../d1/d53/class_a_d_o_d_b___data_dict.html#adf719b4fb75f4c26c77bf93ae7d83729">ADODB_DataDict</a>.</p>
+
+</div>
+</div>
 <a id="a5492a06a505ed1480d05eff19c53854c" name="a5492a06a505ed1480d05eff19c53854c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5492a06a505ed1480d05eff19c53854c">&#9670;&#160;</a></span>_Triggers()</h2>
 
@@ -719,7 +796,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>$quote</b></td></tr
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 1 2025 04:01:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jun 8 2025 03:53:14 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

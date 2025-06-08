@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5.4+ (Build: 20250530) (7acd85a1aa1)</div>
+   <div id="projectbrief">Moodle 4.5.5 (Build: 20250609) (812ef23c00a)</div>
   </td>
  </tr>
  </tbody>
@@ -91,10 +91,11 @@ Inheritance diagram for core\oauth2\client:</div>
  <div class="center">
   <img src="../../d8/dc2/classcore_1_1oauth2_1_1client.png" usemap="#core_5Coauth2_5Cclient_map" alt=""/>
   <map id="core_5Coauth2_5Cclient_map" name="core_5Coauth2_5Cclient_map">
-<area href="../../d2/d90/classoauth2__client.html" title="OAuth 2.0 Client for using web access tokens." alt="oauth2_client" shape="rect" coords="86,56,248,80"/>
-<area href="../../da/d9f/classcurl.html" title="RESTful cURL class." alt="curl" shape="rect" coords="86,0,248,24"/>
-<area href="../../d4/d0b/classcore_1_1oauth2_1_1client_1_1linkedin.html" alt="core\oauth2\client\linkedin" shape="rect" coords="0,168,162,192"/>
-<area href="../../d0/d80/classcore__badges_1_1oauth2_1_1client.html" title="Configurable OAuth2 client to request authorization and store token." alt="core_badges\oauth2\client" shape="rect" coords="172,168,334,192"/>
+<area href="../../d2/d90/classoauth2__client.html" title="OAuth 2.0 Client for using web access tokens." alt="oauth2_client" shape="rect" coords="179,56,348,80"/>
+<area href="../../da/d9f/classcurl.html" title="RESTful cURL class." alt="curl" shape="rect" coords="179,0,348,24"/>
+<area href="../../d4/d0b/classcore_1_1oauth2_1_1client_1_1linkedin.html" alt="core\oauth2\client\linkedin" shape="rect" coords="0,168,169,192"/>
+<area href="../../d9/dce/classcore_1_1oauth2_1_1client_1_1microsoft.html" alt="core\oauth2\client\microsoft" shape="rect" coords="179,168,348,192"/>
+<area href="../../d0/d80/classcore__badges_1_1oauth2_1_1client.html" title="Configurable OAuth2 client to request authorization and store token." alt="core_badges\oauth2\client" shape="rect" coords="358,168,527,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -128,6 +129,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a74cd07e38b872ce113c5e720777e9eaa" id="r_a74cd07e38b872ce113c5e720777e9eaa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a74cd07e38b872ce113c5e720777e9eaa">get_additional_login_parameters</a> ()</td></tr>
 <tr class="memdesc:a74cd07e38b872ce113c5e720777e9eaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Override to append additional params to a authentication request.  <br /></td></tr>
 <tr class="separator:a74cd07e38b872ce113c5e720777e9eaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27d686b42f6a19d5a1718fb8eacd6640" id="r_a27d686b42f6a19d5a1718fb8eacd6640"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/classoauth2__client.html#a27d686b42f6a19d5a1718fb8eacd6640">get_additional_upgrade_token_parameters</a> ()</td></tr>
+<tr class="memdesc:a27d686b42f6a19d5a1718fb8eacd6640"><td class="mdescLeft">&#160;</td><td class="mdescRight">An additional array of url params to pass with upgrade token request.  <br /></td></tr>
+<tr class="separator:a27d686b42f6a19d5a1718fb8eacd6640"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11ed6ace7e4723d7342a13a3430b9915" id="r_a11ed6ace7e4723d7342a13a3430b9915"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d90/classoauth2__client.html#a11ed6ace7e4723d7342a13a3430b9915">get_clientid</a> ()</td></tr>
 <tr class="memdesc:a11ed6ace7e4723d7342a13a3430b9915"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the client ID.  <br /></td></tr>
 <tr class="separator:a11ed6ace7e4723d7342a13a3430b9915"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -903,6 +907,41 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$system</b> = false</
 </dl>
 
 <p>Reimplemented from <a class="el" href="../../d2/d90/classoauth2__client.html#a9274544cec42409224780bd091b08ee6">oauth2_client</a>.</p>
+
+</div>
+</div>
+<a id="a27d686b42f6a19d5a1718fb8eacd6640" name="a27d686b42f6a19d5a1718fb8eacd6640"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27d686b42f6a19d5a1718fb8eacd6640">&#9670;&#160;</a></span>get_additional_upgrade_token_parameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">oauth2_client::get_additional_upgrade_token_parameters </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>An additional array of url params to pass with upgrade token request. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>of name value pairs. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="../../d9/dce/classcore_1_1oauth2_1_1client_1_1microsoft.html#ab6024a6364b55fa6c086deec7ec0f3ec">core\oauth2\client\microsoft</a>.</p>
 
 </div>
 </div>
@@ -2451,7 +2490,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>$system</b> = false</
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 1 2025 03:48:43 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jun 8 2025 03:40:53 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>
