@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5.5+ (Build: 20250613) (95518023c62)</div>
+   <div id="projectbrief">Moodle 4.5.5+ (Build: 20250620) (97ed6b7083c)</div>
   </td>
  </tr>
  </tbody>
@@ -124,7 +124,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a210b4752c507a52217e7ff077b5565f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return joins necessary for retrieving tags.  <br /></td></tr>
 <tr class="separator:a210b4752c507a52217e7ff077b5565f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5a179e133f69f62840386ee45a94f00" id="r_af5a179e133f69f62840386ee45a94f00"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5a179e133f69f62840386ee45a94f00">initialise</a> ()</td></tr>
-<tr class="memdesc:af5a179e133f69f62840386ee45a94f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise the entity, add all user fields and all 'visible' user profile fields.  <br /></td></tr>
+<tr class="memdesc:af5a179e133f69f62840386ee45a94f00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise the entity.  <br /></td></tr>
 <tr class="separator:af5a179e133f69f62840386ee45a94f00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e7814a7733649243fa316325cb074fd" id="r_a2e7814a7733649243fa316325cb074fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d72/classcore_1_1dataformat_1_1base.html#a2e7814a7733649243fa316325cb074fd">send_http_headers</a> ()</td></tr>
 <tr class="memdesc:a2e7814a7733649243fa316325cb074fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output file headers to initialise the download of the file.  <br /></td></tr>
@@ -204,9 +204,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a8dd76b1e416fb379dc4df81d06f18440" id="r_a8dd76b1e416fb379dc4df81d06f18440"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8dd76b1e416fb379dc4df81d06f18440">get_user_fields</a> ()</td></tr>
 <tr class="memdesc:a8dd76b1e416fb379dc4df81d06f18440"><td class="mdescLeft">&#160;</td><td class="mdescRight">User fields.  <br /></td></tr>
 <tr class="separator:a8dd76b1e416fb379dc4df81d06f18440"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bc12f26825022bb2d3d43dc44535e3f" id="r_a2bc12f26825022bb2d3d43dc44535e3f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bc12f26825022bb2d3d43dc44535e3f">get_user_profile_fields</a> ()</td></tr>
-<tr class="memdesc:a2bc12f26825022bb2d3d43dc44535e3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get user profile fields helper instance.  <br /></td></tr>
-<tr class="separator:a2bc12f26825022bb2d3d43dc44535e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cb7462e890a7330b2ea590d75c1d6fd" id="r_a2cb7462e890a7330b2ea590d75c1d6fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2cb7462e890a7330b2ea590d75c1d6fd">is_sortable</a> (string $fieldname)</td></tr>
 <tr class="memdesc:a2cb7462e890a7330b2ea590d75c1d6fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this field is sortable.  <br /></td></tr>
 <tr class="separator:a2cb7462e890a7330b2ea590d75c1d6fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1096,39 +1093,6 @@ $mimetype&#160;</td><td class="memItemRight" valign="bottom"><b>$mimetype</b> = 
 
 </div>
 </div>
-<a id="a2bc12f26825022bb2d3d43dc44535e3f" name="a2bc12f26825022bb2d3d43dc44535e3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bc12f26825022bb2d3d43dc44535e3f">&#9670;&#160;</a></span>get_user_profile_fields()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">core_reportbuilder\local\entities\user::get_user_profile_fields </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Get user profile fields helper instance. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">user_profile_fields</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="af5a179e133f69f62840386ee45a94f00" name="af5a179e133f69f62840386ee45a94f00"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af5a179e133f69f62840386ee45a94f00">&#9670;&#160;</a></span>initialise()</h2>
 
@@ -1144,7 +1108,7 @@ $mimetype&#160;</td><td class="memItemRight" valign="bottom"><b>$mimetype</b> = 
       </table>
 </div><div class="memdoc">
 
-<p>Initialise the entity, add all user fields and all 'visible' user profile fields. </p>
+<p>Initialise the entity. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">base</td><td></td></tr>
@@ -1545,7 +1509,7 @@ $mimetype&#160;</td><td class="memItemRight" valign="bottom"><b>$mimetype</b> = 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 15 2025 03:43:32 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jun 22 2025 03:44:21 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

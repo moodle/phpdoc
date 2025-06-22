@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.1</span>
    </div>
-   <div id="projectbrief">Moodle 5.1dev (Build: 20250613) (c42efe971fe)</div>
+   <div id="projectbrief">Moodle 5.1dev (Build: 20250620) (7d9030acd6e)</div>
   </td>
  </tr>
  </tbody>
@@ -79,16 +79,14 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">format_singleactivity Class Reference<div class="ingroups"><a class="el" href="../../dc/d3f/group__format__singleactivity.html">format_singleactivity</a></div></div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Main class for the singleactivity course format.  
- <a href="#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for format_singleactivity:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="../../d7/d86/classformat__singleactivity.png" usemap="#format_5Fsingleactivity_map" alt=""/>
   <map id="format_5Fsingleactivity_map" name="format_5Fsingleactivity_map">
-<area href="../../d4/da0/classcore__courseformat_1_1base.html" title="Base class for course formats." alt="core_courseformat\base" shape="rect" coords="0,0,150,24"/>
+<area href="../../d4/da0/classcore__courseformat_1_1base.html" title="Base class for course formats." alt="core_courseformat\base" shape="rect" coords="0,0,253,24"/>
+<area href="../../db/db4/interfacecore__courseformat_1_1main__activity__interface.html" alt="core_courseformat\main_activity_interface" shape="rect" coords="263,0,516,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -103,9 +101,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aea44ccf530bbbee13506cb4bab24162c" id="r_aea44ccf530bbbee13506cb4bab24162c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#aea44ccf530bbbee13506cb4bab24162c">ajax_section_move</a> ()</td></tr>
 <tr class="memdesc:aea44ccf530bbbee13506cb4bab24162c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Custom action after section has been moved in AJAX mode.  <br /></td></tr>
 <tr class="separator:aea44ccf530bbbee13506cb4bab24162c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a816b4491ae02aaae676c541e6ec0625c" id="r_a816b4491ae02aaae676c541e6ec0625c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a816b4491ae02aaae676c541e6ec0625c">allow_stealth_module_visibility</a> ($cm, $section)</td></tr>
-<tr class="memdesc:a816b4491ae02aaae676c541e6ec0625c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether this course format allows the activity to have "triple visibility state" - visible always, hidden on course page but available, hidden.  <br /></td></tr>
-<tr class="separator:a816b4491ae02aaae676c541e6ec0625c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a311dab49e1c95b06e8ae71f3a224d956" id="r_a311dab49e1c95b06e8ae71f3a224d956"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a311dab49e1c95b06e8ae71f3a224d956">allow_stealth_module_visibility</a> ($cm, $section)</td></tr>
+<tr class="memdesc:a311dab49e1c95b06e8ae71f3a224d956"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether this course format allows the activity to have "triple visibility state" - visible always, hidden on course page but available, hidden.  <br /></td></tr>
+<tr class="separator:a311dab49e1c95b06e8ae71f3a224d956"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7287098ef9e44286a2edd86efb85c6f9" id="r_a7287098ef9e44286a2edd86efb85c6f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a7287098ef9e44286a2edd86efb85c6f9">can_delete_section</a> ($section)</td></tr>
 <tr class="memdesc:a7287098ef9e44286a2edd86efb85c6f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this format allows to delete sections.  <br /></td></tr>
 <tr class="separator:a7287098ef9e44286a2edd86efb85c6f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,6 +194,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7f95b73922f79e67198dfe3f271514d0" id="r_a7f95b73922f79e67198dfe3f271514d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a7f95b73922f79e67198dfe3f271514d0">get_last_section_number</a> ()</td></tr>
 <tr class="memdesc:a7f95b73922f79e67198dfe3f271514d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method used in the rendered and during backup instead of legacy 'numsections'.  <br /></td></tr>
 <tr class="separator:a7f95b73922f79e67198dfe3f271514d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f6864245460c51403d13100fd97ca9b" id="r_a9f6864245460c51403d13100fd97ca9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9f6864245460c51403d13100fd97ca9b">get_main_activity</a> ()</td></tr>
+<tr class="memdesc:a9f6864245460c51403d13100fd97ca9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the main activity of the course.  <br /></td></tr>
+<tr class="separator:a9f6864245460c51403d13100fd97ca9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6fb2d33e0eb3df84823c1c1aa499698" id="r_ab6fb2d33e0eb3df84823c1c1aa499698"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#ab6fb2d33e0eb3df84823c1c1aa499698">get_modinfo</a> ()</td></tr>
 <tr class="memdesc:ab6fb2d33e0eb3df84823c1c1aa499698"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the current course modinfo.  <br /></td></tr>
 <tr class="separator:ab6fb2d33e0eb3df84823c1c1aa499698"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,18 +215,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a77c7efc1b0bd333988a661957ddb0c0d" id="r_a77c7efc1b0bd333988a661957ddb0c0d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a77c7efc1b0bd333988a661957ddb0c0d">get_section_highlighted_name</a> ()</td></tr>
 <tr class="memdesc:a77c7efc1b0bd333988a661957ddb0c0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name for the highlighted section.  <br /></td></tr>
 <tr class="separator:a77c7efc1b0bd333988a661957ddb0c0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a728d87f6f226d930bd7491df64e8584b" id="r_a728d87f6f226d930bd7491df64e8584b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a728d87f6f226d930bd7491df64e8584b">get_section_name</a> ($section)</td></tr>
-<tr class="memdesc:a728d87f6f226d930bd7491df64e8584b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the display name of the given section that the course prefers.  <br /></td></tr>
-<tr class="separator:a728d87f6f226d930bd7491df64e8584b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20c4efaf65fb05ae80f0a7226cd7052d" id="r_a20c4efaf65fb05ae80f0a7226cd7052d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20c4efaf65fb05ae80f0a7226cd7052d">get_section_name</a> ($section)</td></tr>
+<tr class="memdesc:a20c4efaf65fb05ae80f0a7226cd7052d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the display name of the given section that the course prefers.  <br /></td></tr>
+<tr class="separator:a20c4efaf65fb05ae80f0a7226cd7052d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5d4bf1edd446bf144f7541f0ff0b50f" id="r_af5d4bf1edd446bf144f7541f0ff0b50f"><td class="memItemLeft" align="right" valign="top"><a id="af5d4bf1edd446bf144f7541f0ff0b50f" name="af5d4bf1edd446bf144f7541f0ff0b50f"></a>
 replacement&#160;</td><td class="memItemRight" valign="bottom"><b>get_section_number</b> ()</td></tr>
 <tr class="separator:af5d4bf1edd446bf144f7541f0ff0b50f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee6d731a31a2e754b5f3815ae84f1f5e" id="r_aee6d731a31a2e754b5f3815ae84f1f5e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#aee6d731a31a2e754b5f3815ae84f1f5e">get_sectionid</a> ()</td></tr>
 <tr class="memdesc:aee6d731a31a2e754b5f3815ae84f1f5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get if the current format instance will show multiple sections or an individual one.  <br /></td></tr>
 <tr class="separator:aee6d731a31a2e754b5f3815ae84f1f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca0ac8634be1be4f4657bed6984c3aba" id="r_aca0ac8634be1be4f4657bed6984c3aba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#aca0ac8634be1be4f4657bed6984c3aba">get_sectionnum</a> ()</td></tr>
-<tr class="memdesc:aca0ac8634be1be4f4657bed6984c3aba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current section number to display.  <br /></td></tr>
-<tr class="separator:aca0ac8634be1be4f4657bed6984c3aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a245f6f07d878374c6a382ec45117b373" id="r_a245f6f07d878374c6a382ec45117b373"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a245f6f07d878374c6a382ec45117b373">get_sectionnum</a> ()</td></tr>
+<tr class="memdesc:a245f6f07d878374c6a382ec45117b373"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current section number to display.  <br /></td></tr>
+<tr class="separator:a245f6f07d878374c6a382ec45117b373"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7043b2d0a428500cd0ebabbb065b651e" id="r_a7043b2d0a428500cd0ebabbb065b651e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a7043b2d0a428500cd0ebabbb065b651e">get_sections</a> ()</td></tr>
 <tr class="memdesc:a7043b2d0a428500cd0ebabbb065b651e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list of sections used in the course.  <br /></td></tr>
 <tr class="separator:a7043b2d0a428500cd0ebabbb065b651e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -245,9 +246,9 @@ replacement&#160;</td><td class="memItemRight" valign="bottom"><b>get_section_nu
 <tr class="memitem:ab7a851df791f1d734264f4f0e00c85f2" id="r_ab7a851df791f1d734264f4f0e00c85f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#ab7a851df791f1d734264f4f0e00c85f2">get_update_url</a> (string $action, array $ids=[], ?int $targetsectionid=null, ?int $targetcmid=null, ?moodle_url $returnurl=null)</td></tr>
 <tr class="memdesc:ab7a851df791f1d734264f4f0e00c85f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The URL to update the course format.  <br /></td></tr>
 <tr class="separator:ab7a851df791f1d734264f4f0e00c85f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab41b2fbbeb42894b090933daa44f2bbb" id="r_ab41b2fbbeb42894b090933daa44f2bbb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab41b2fbbeb42894b090933daa44f2bbb">get_view_url</a> ($section, $options=array())</td></tr>
-<tr class="memdesc:ab41b2fbbeb42894b090933daa44f2bbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The URL to use for the specified course.  <br /></td></tr>
-<tr class="separator:ab41b2fbbeb42894b090933daa44f2bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0773d0d349b1cef939a2566b3086b261" id="r_a0773d0d349b1cef939a2566b3086b261"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0773d0d349b1cef939a2566b3086b261">get_view_url</a> ($section, $options=[])</td></tr>
+<tr class="memdesc:a0773d0d349b1cef939a2566b3086b261"><td class="mdescLeft">&#160;</td><td class="mdescRight">The URL to use for the specified course.  <br /></td></tr>
+<tr class="separator:a0773d0d349b1cef939a2566b3086b261"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a553a2bcf23f35c287d26cd401375fbfb" id="r_a553a2bcf23f35c287d26cd401375fbfb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a553a2bcf23f35c287d26cd401375fbfb">has_view_page</a> ()</td></tr>
 <tr class="memdesc:a553a2bcf23f35c287d26cd401375fbfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the course has a front page.  <br /></td></tr>
 <tr class="separator:a553a2bcf23f35c287d26cd401375fbfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -260,9 +261,9 @@ replacement&#160;</td><td class="memItemRight" valign="bottom"><b>get_section_nu
 <tr class="memitem:a3fa94ed8321f28c52832dedda307ffe7" id="r_a3fa94ed8321f28c52832dedda307ffe7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a3fa94ed8321f28c52832dedda307ffe7">is_section_current</a> ($section)</td></tr>
 <tr class="memdesc:a3fa94ed8321f28c52832dedda307ffe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the specified section is current.  <br /></td></tr>
 <tr class="separator:a3fa94ed8321f28c52832dedda307ffe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56027c6e1c0ab73e1e2c7c0254a5af3b" id="r_a56027c6e1c0ab73e1e2c7c0254a5af3b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a56027c6e1c0ab73e1e2c7c0254a5af3b">is_section_visible</a> (<a class="el" href="../../d1/db5/classsection__info.html">section_info</a> $section)</td></tr>
-<tr class="memdesc:a56027c6e1c0ab73e1e2c7c0254a5af3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if an specific section is visible to the current user.  <br /></td></tr>
-<tr class="separator:a56027c6e1c0ab73e1e2c7c0254a5af3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6032937a802df5481c4c36c3d4e8de58" id="r_a6032937a802df5481c4c36c3d4e8de58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6032937a802df5481c4c36c3d4e8de58">is_section_visible</a> (<a class="el" href="../../d1/db5/classsection__info.html">section_info</a> $section)</td></tr>
+<tr class="memdesc:a6032937a802df5481c4c36c3d4e8de58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if a specific section is visible to the current user.  <br /></td></tr>
+<tr class="separator:a6032937a802df5481c4c36c3d4e8de58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a540a1005538575ba5ebfefc13a098b08" id="r_a540a1005538575ba5ebfefc13a098b08"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a540a1005538575ba5ebfefc13a098b08">move_section_after</a> (<a class="el" href="../../d1/db5/classsection__info.html">section_info</a> $section, <a class="el" href="../../d1/db5/classsection__info.html">section_info</a> $destination)</td></tr>
 <tr class="memdesc:a540a1005538575ba5ebfefc13a098b08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves a section just after the target section.  <br /></td></tr>
 <tr class="separator:a540a1005538575ba5ebfefc13a098b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -278,9 +279,6 @@ replacement&#160;</td><td class="memItemRight" valign="bottom"><b>get_section_nu
 <tr class="memitem:a0bfc8c9fc9b73034731e6d72ea7e7353" id="r_a0bfc8c9fc9b73034731e6d72ea7e7353"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a0bfc8c9fc9b73034731e6d72ea7e7353">remove_section_preference_ids</a> (string $preferencename, array $sectionids,)</td></tr>
 <tr class="memdesc:a0bfc8c9fc9b73034731e6d72ea7e7353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove section preference ids.  <br /></td></tr>
 <tr class="separator:a0bfc8c9fc9b73034731e6d72ea7e7353"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fb9d689b3f4c50974f32b02ff4896a3" id="r_a7fb9d689b3f4c50974f32b02ff4896a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7fb9d689b3f4c50974f32b02ff4896a3">reorder_activities</a> ()</td></tr>
-<tr class="memdesc:a7fb9d689b3f4c50974f32b02ff4896a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make sure that current active activity is in section 0.  <br /></td></tr>
-<tr class="separator:a7fb9d689b3f4c50974f32b02ff4896a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac55295f194b4b339614c95cb80b1712b" id="r_ac55295f194b4b339614c95cb80b1712b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#ac55295f194b4b339614c95cb80b1712b">section_action</a> ($section, $action, $sr)</td></tr>
 <tr class="memdesc:ac55295f194b4b339614c95cb80b1712b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback used in WS core_course_edit_section when teacher performs an AJAX action on a section (show/hide)  <br /></td></tr>
 <tr class="separator:ac55295f194b4b339614c95cb80b1712b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -311,12 +309,12 @@ replacement&#160;</td><td class="memItemRight" valign="bottom"><b>set_section_nu
 <tr class="memitem:af137fafafaa336909cbe04fda267cba6" id="r_af137fafafaa336909cbe04fda267cba6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#af137fafafaa336909cbe04fda267cba6">show_groupmode</a> (<a class="el" href="../../df/db9/classcm__info.html">cm_info</a> $cm)</td></tr>
 <tr class="memdesc:af137fafafaa336909cbe04fda267cba6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the group mode can be displayed.  <br /></td></tr>
 <tr class="separator:af137fafafaa336909cbe04fda267cba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63bcded94a5fefca3013f70140d343c9" id="r_a63bcded94a5fefca3013f70140d343c9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a63bcded94a5fefca3013f70140d343c9">supports_ajax</a> ()</td></tr>
-<tr class="memdesc:a63bcded94a5fefca3013f70140d343c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the information about the ajax support in the given source format.  <br /></td></tr>
-<tr class="separator:a63bcded94a5fefca3013f70140d343c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2261e667b7010f31305bf048dee8e2ac" id="r_a2261e667b7010f31305bf048dee8e2ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a2261e667b7010f31305bf048dee8e2ac">supports_components</a> ()</td></tr>
-<tr class="memdesc:a2261e667b7010f31305bf048dee8e2ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this course format is compatible with content components.  <br /></td></tr>
-<tr class="separator:a2261e667b7010f31305bf048dee8e2ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78eff098480bbd791b9d63c09dd2878e" id="r_a78eff098480bbd791b9d63c09dd2878e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78eff098480bbd791b9d63c09dd2878e">supports_ajax</a> ()</td></tr>
+<tr class="memdesc:a78eff098480bbd791b9d63c09dd2878e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the information about the ajax support in the given source format.  <br /></td></tr>
+<tr class="separator:a78eff098480bbd791b9d63c09dd2878e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4daecaaa490c6ec25808ddeb9cbb74a4" id="r_a4daecaaa490c6ec25808ddeb9cbb74a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4daecaaa490c6ec25808ddeb9cbb74a4">supports_components</a> ()</td></tr>
+<tr class="memdesc:a4daecaaa490c6ec25808ddeb9cbb74a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this course format is compatible with content components.  <br /></td></tr>
+<tr class="separator:a4daecaaa490c6ec25808ddeb9cbb74a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81c83e36a07d6df4b3717f533ebdee3e" id="r_a81c83e36a07d6df4b3717f533ebdee3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a81c83e36a07d6df4b3717f533ebdee3e">supports_news</a> ()</td></tr>
 <tr class="memdesc:a81c83e36a07d6df4b3717f533ebdee3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the course format supports the creation of the Announcements forum.  <br /></td></tr>
 <tr class="separator:a81c83e36a07d6df4b3717f533ebdee3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -332,9 +330,9 @@ replacement&#160;</td><td class="memItemRight" valign="bottom"><b>set_section_nu
 <tr class="memitem:afeb02beabea2b68e04dd5d7516b0ff4a" id="r_afeb02beabea2b68e04dd5d7516b0ff4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#afeb02beabea2b68e04dd5d7516b0ff4a">uses_indentation</a> ()</td></tr>
 <tr class="memdesc:afeb02beabea2b68e04dd5d7516b0ff4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this course format uses activity indentation.  <br /></td></tr>
 <tr class="separator:afeb02beabea2b68e04dd5d7516b0ff4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a591717986091b88fb2e4cbf9d00063b3" id="r_a591717986091b88fb2e4cbf9d00063b3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a591717986091b88fb2e4cbf9d00063b3">uses_sections</a> ()</td></tr>
-<tr class="memdesc:a591717986091b88fb2e4cbf9d00063b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this course format uses sections.  <br /></td></tr>
-<tr class="separator:a591717986091b88fb2e4cbf9d00063b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bcb0ca707a22f072f6c5a7cee4a4409" id="r_a9bcb0ca707a22f072f6c5a7cee4a4409"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9bcb0ca707a22f072f6c5a7cee4a4409">uses_sections</a> ()</td></tr>
+<tr class="memdesc:a9bcb0ca707a22f072f6c5a7cee4a4409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this course format uses sections.  <br /></td></tr>
+<tr class="separator:a9bcb0ca707a22f072f6c5a7cee4a4409"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a726361dce81a71a5da2a7a7188796118" id="r_a726361dce81a71a5da2a7a7188796118"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a726361dce81a71a5da2a7a7188796118">validate_course_format_options</a> (array $data)</td></tr>
 <tr class="memdesc:a726361dce81a71a5da2a7a7188796118"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates format options for the course.  <br /></td></tr>
 <tr class="separator:a726361dce81a71a5da2a7a7188796118"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -405,9 +403,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:afdadc4060e7978475132aec4edf21cd6" id="r_afdadc4060e7978475132aec4edf21cd6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afdadc4060e7978475132aec4edf21cd6">can_add_activity</a> ()</td></tr>
 <tr class="memdesc:afdadc4060e7978475132aec4edf21cd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the current user can add the activity of the specified type to this course.  <br /></td></tr>
 <tr class="separator:afdadc4060e7978475132aec4edf21cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5888cf751b312249255876090900c82c" id="r_a5888cf751b312249255876090900c82c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5888cf751b312249255876090900c82c">get_activity</a> ()</td></tr>
-<tr class="memdesc:a5888cf751b312249255876090900c82c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current activity if exists.  <br /></td></tr>
-<tr class="separator:a5888cf751b312249255876090900c82c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4d7fd440626bebf6acd892cac58c311" id="r_ac4d7fd440626bebf6acd892cac58c311"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4d7fd440626bebf6acd892cac58c311">get_activitytype</a> ()</td></tr>
 <tr class="memdesc:ac4d7fd440626bebf6acd892cac58c311"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of activity type used for this course.  <br /></td></tr>
 <tr class="separator:ac4d7fd440626bebf6acd892cac58c311"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -417,9 +412,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a2be66f796328d96188963f8f280af226" id="r_a2be66f796328d96188963f8f280af226"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a2be66f796328d96188963f8f280af226">get_section_modules_updated</a> (<a class="el" href="../../d1/db5/classsection__info.html">section_info</a> $section)</td></tr>
 <tr class="memdesc:a2be66f796328d96188963f8f280af226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an array with all section modules content.  <br /></td></tr>
 <tr class="separator:a2be66f796328d96188963f8f280af226"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51634de8082260202a9eb17d9570a3ad" id="r_a51634de8082260202a9eb17d9570a3ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51634de8082260202a9eb17d9570a3ad">navigation_add_activity</a> (<a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a> $node, $cm)</td></tr>
-<tr class="memdesc:a51634de8082260202a9eb17d9570a3ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a course module to the navigation node.  <br /></td></tr>
-<tr class="separator:a51634de8082260202a9eb17d9570a3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6659ff038d7ce8b42ae65553d16bd65e" id="r_a6659ff038d7ce8b42ae65553d16bd65e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a6659ff038d7ce8b42ae65553d16bd65e">update_format_options</a> ($data, $sectionid=null)</td></tr>
 <tr class="memdesc:a6659ff038d7ce8b42ae65553d16bd65e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates format options for a course or section.  <br /></td></tr>
 <tr class="separator:a6659ff038d7ce8b42ae65553d16bd65e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -466,11 +458,7 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
 <tr class="memdesc:a360d885514d9aac92e3a7e714c85984b"><td class="mdescLeft">&#160;</td><td class="mdescRight">the sectionid when a single section is selected, null when multiple sections are displayed. <br /></td></tr>
 <tr class="separator:a360d885514d9aac92e3a7e714c85984b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Main class for the singleactivity course format. </p>
-<dl class="section copyright"><dt>Copyright</dt><dd>2012 Marina Glancy </dd></dl>
-<dl class="section user"><dt>License</dt><dd><a href="http://www.gnu.org/copyleft/gpl.html">http://www.gnu.org/copyleft/gpl.html</a> GNU GPL v3 or later </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="af6484c4a68ed48870288b7723f834df1" name="af6484c4a68ed48870288b7723f834df1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af6484c4a68ed48870288b7723f834df1">&#9670;&#160;</a></span>activity_has_subtypes()</h2>
 
@@ -570,17 +558,14 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
 
 </div>
 </div>
-<a id="a816b4491ae02aaae676c541e6ec0625c" name="a816b4491ae02aaae676c541e6ec0625c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a816b4491ae02aaae676c541e6ec0625c">&#9670;&#160;</a></span>allow_stealth_module_visibility()</h2>
+<a id="a311dab49e1c95b06e8ae71f3a224d956" name="a311dab49e1c95b06e8ae71f3a224d956"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a311dab49e1c95b06e8ae71f3a224d956">&#9670;&#160;</a></span>allow_stealth_module_visibility()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">core_courseformat\base::allow_stealth_module_visibility </td>
+          <td class="memname">format_singleactivity::allow_stealth_module_visibility </td>
           <td>(</td>
           <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$cm</em></span>, </td>
         </tr>
@@ -590,11 +575,6 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
           <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$section</em></span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Returns whether this course format allows the activity to have "triple visibility state" - visible always, hidden on course page but available, hidden. </p>
@@ -612,7 +592,7 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d2/df0/classformat__site.html#a6367e9a2de3648f08db22a7e119f1475">format_site</a>, <a class="el" href="../../de/d63/classformat__social.html#a914f8e53ae25cc27b7d0c1a0860c2c36">format_social</a>, <a class="el" href="../../d1/d92/classformat__topics.html#aac5ef986ead87e2d1c5ca833b60d31b2">format_topics</a>, and <a class="el" href="../../d5/d8d/classformat__weeks.html#a53316ff3b55d8b58e662129b8a0493ef">format_weeks</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a816b4491ae02aaae676c541e6ec0625c">core_courseformat\base</a>.</p>
 
 </div>
 </div>
@@ -1221,39 +1201,6 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
 </dl>
 
 <p>Reimplemented from <a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a76567ed4a998a2e09ca0b00c63f74cb0">core_courseformat\base</a>.</p>
-
-</div>
-</div>
-<a id="a5888cf751b312249255876090900c82c" name="a5888cf751b312249255876090900c82c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5888cf751b312249255876090900c82c">&#9670;&#160;</a></span>get_activity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">format_singleactivity::get_activity </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the current activity if exists. </p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">null|cm_info</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -1942,6 +1889,33 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
 
 </div>
 </div>
+<a id="a9f6864245460c51403d13100fd97ca9b" name="a9f6864245460c51403d13100fd97ca9b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f6864245460c51403d13100fd97ca9b">&#9670;&#160;</a></span>get_main_activity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">format_singleactivity::get_main_activity </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the main activity of the course. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">cm_info|null</td><td>The main activity object or null if main activity is not set. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="../../db/db4/interfacecore__courseformat_1_1main__activity__interface.html#abfd897931187772743be77fede7a96aa">core_courseformat\main_activity_interface</a>.</p>
+
+</div>
+</div>
 <a id="ab6fb2d33e0eb3df84823c1c1aa499698" name="ab6fb2d33e0eb3df84823c1c1aa499698"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab6fb2d33e0eb3df84823c1c1aa499698">&#9670;&#160;</a></span>get_modinfo()</h2>
 
@@ -2216,27 +2190,19 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
 
 </div>
 </div>
-<a id="a728d87f6f226d930bd7491df64e8584b" name="a728d87f6f226d930bd7491df64e8584b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a728d87f6f226d930bd7491df64e8584b">&#9670;&#160;</a></span>get_section_name()</h2>
+<a id="a20c4efaf65fb05ae80f0a7226cd7052d" name="a20c4efaf65fb05ae80f0a7226cd7052d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20c4efaf65fb05ae80f0a7226cd7052d">&#9670;&#160;</a></span>get_section_name()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">core_courseformat\base::get_section_name </td>
+          <td class="memname">format_singleactivity::get_section_name </td>
           <td>(</td>
           <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$section</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Returns the display name of the given section that the course prefers. </p>
@@ -2253,7 +2219,7 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d0/d97/classformat__legacy.html#a5f728dc9d2ab60e710c6a391d95aed8f">format_legacy</a>, <a class="el" href="../../d2/df0/classformat__site.html#a006766eaa488c5e4f2253a4d41f46042">format_site</a>, <a class="el" href="../../de/d63/classformat__social.html#adf16d9c0c370ac46867fccd768ecc1cc">format_social</a>, <a class="el" href="../../d1/d92/classformat__topics.html#a3ec1c231d7042e17e14616c2837bd984">format_topics</a>, and <a class="el" href="../../d5/d8d/classformat__weeks.html#a3f26247d0dbe80600af8800194789ded">format_weeks</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a728d87f6f226d930bd7491df64e8584b">core_courseformat\base</a>.</p>
 
 </div>
 </div>
@@ -2291,27 +2257,19 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
 
 </div>
 </div>
-<a id="aca0ac8634be1be4f4657bed6984c3aba" name="aca0ac8634be1be4f4657bed6984c3aba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca0ac8634be1be4f4657bed6984c3aba">&#9670;&#160;</a></span>get_sectionnum()</h2>
+<a id="a245f6f07d878374c6a382ec45117b373" name="a245f6f07d878374c6a382ec45117b373"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a245f6f07d878374c6a382ec45117b373">&#9670;&#160;</a></span>get_sectionnum()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">core_courseformat\base::get_sectionnum </td>
+          <td class="memname">format_singleactivity::get_sectionnum </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Get the current section number to display. </p>
@@ -2324,7 +2282,7 @@ int null&#160;</td><td class="memItemRight" valign="bottom"><b>$singlesectionid<
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d2/df0/classformat__site.html#a14ace9ef77dd454621d63eb846c05169">format_site</a>, and <a class="el" href="../../de/d63/classformat__social.html#a8d33df77560675babfd140ecc239d9d6">format_social</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#aca0ac8634be1be4f4657bed6984c3aba">core_courseformat\base</a>.</p>
 
 </div>
 </div>
@@ -2490,7 +2448,7 @@ course_modinfo::get_section_info_all()</dd></dl>
 <p>Here we ignore the modules that do not have a page of their own or need sections, like the label or subsection.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">array</td><td>array($module =&gt; $name of the module). </td></tr>
+    <tr><td class="paramname">array</td><td>[$module =&gt; $name of the module]. </td></tr>
   </table>
   </dd>
 </dl>
@@ -2560,8 +2518,8 @@ course_modinfo::get_section_info_all()</dd></dl>
 
 </div>
 </div>
-<a id="ab41b2fbbeb42894b090933daa44f2bbb" name="ab41b2fbbeb42894b090933daa44f2bbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab41b2fbbeb42894b090933daa44f2bbb">&#9670;&#160;</a></span>get_view_url()</h2>
+<a id="a0773d0d349b1cef939a2566b3086b261" name="a0773d0d349b1cef939a2566b3086b261"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0773d0d349b1cef939a2566b3086b261">&#9670;&#160;</a></span>get_view_url()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2574,7 +2532,7 @@ course_modinfo::get_section_info_all()</dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$options</em></span><span class="paramdefsep"> = </span><span class="paramdefval">array()</span>&#160;)</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$options</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[]</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2614,12 +2572,15 @@ course_modinfo::get_section_info_all()</dd></dl>
 </div><div class="memdoc">
 
 <p>Returns true if the course has a front page. </p>
+<p>This function is called to determine if the course has a view page, whether or not it contains a listing of activities. It can be useful to set this to false when the course format has only one activity and ignores the course page. Or if there are multiple activities but no page to see the centralised information.</p>
+<p>Initially this was created to know if forms should add a button to return to the course page. So if 'Return to course' does not make sense in your format your should probably return false.</p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
-    <tr><td class="paramname">boolean</td><td>false </td></tr>
+    <tr><td class="paramname">boolean</td><td></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 2.6 </dd></dl>
 
 <p>Reimplemented from <a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#ad418401fa775d5b0b751db5d5e9a23da">core_courseformat\base</a>.</p>
 
@@ -2762,7 +2723,7 @@ course_modinfo::get_section_info_all()</dd></dl>
 </div><div class="memdoc">
 
 <p>Returns an instance of the class. </p>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000060">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-35727" class="el">MDL-35727</a> use MUC for caching of instances, limit the number of cached instances</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000058">Todo</a></b></dt><dd><a href="https://tracker.moodle.org/browse/MDL-35727" class="el">MDL-35727</a> use MUC for caching of instances, limit the number of cached instances</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">int&#160;|&#160;stdClass</td><td class="paramname">$courseorid</td><td>either course id or an object that has the property 'format' and may contain property 'id' </td></tr>
@@ -2860,31 +2821,23 @@ course_modinfo::get_section_info_all()</dd></dl>
 
 </div>
 </div>
-<a id="a56027c6e1c0ab73e1e2c7c0254a5af3b" name="a56027c6e1c0ab73e1e2c7c0254a5af3b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56027c6e1c0ab73e1e2c7c0254a5af3b">&#9670;&#160;</a></span>is_section_visible()</h2>
+<a id="a6032937a802df5481c4c36c3d4e8de58" name="a6032937a802df5481c4c36c3d4e8de58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6032937a802df5481c4c36c3d4e8de58">&#9670;&#160;</a></span>is_section_visible()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">core_courseformat\base::is_section_visible </td>
+          <td class="memname">format_singleactivity::is_section_visible </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d1/db5/classsection__info.html">section_info</a></td>          <td class="paramname"><span class="paramname"><em>$section</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Returns if an specific section is visible to the current user. </p>
-<p>Formats can overrride this method to implement any special section logic.</p>
+<p>Returns if a specific section is visible to the current user. </p>
+<p>The single activity format does only have the section zero and subsections (delegated sections).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype"><a class="el" href="../../d1/db5/classsection__info.html">section_info</a></td><td class="paramname">$section</td><td>the section modinfo </td></tr>
@@ -2898,7 +2851,7 @@ course_modinfo::get_section_info_all()</dd></dl>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../de/d63/classformat__social.html#a3e3c79af365867c92a2da63a2de7f5b9">format_social</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a56027c6e1c0ab73e1e2c7c0254a5af3b">core_courseformat\base</a>.</p>
 
 </div>
 </div>
@@ -2940,51 +2893,6 @@ course_modinfo::get_section_info_all()</dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">boolean</td><td>if the section can be moved or not </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a51634de8082260202a9eb17d9570a3ad" name="a51634de8082260202a9eb17d9570a3ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51634de8082260202a9eb17d9570a3ad">&#9670;&#160;</a></span>navigation_add_activity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">format_singleactivity::navigation_add_activity </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dd/de3/classnavigation__node.html">navigation_node</a></td>          <td class="paramname"><span class="paramname"><em>$node</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>$cm</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Adds a course module to the navigation node. </p>
-<p>This is basically copied from function global_navigation::load_section_activities() because it is not accessible from outside.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype"><a class="el" href="../../dd/de3/classnavigation__node.html" title="This class is used to represent a node in a navigation tree.">navigation_node</a></td><td class="paramname">$node</td><td></td></tr>
-    <tr><td class="paramtype"><a class="el" href="../../df/db9/classcm__info.html">cm_info</a></td><td class="paramname">$cm</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">null|navigation_node</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -3037,7 +2945,6 @@ course_modinfo::get_section_info_all()</dd></dl>
 <p>Allows course format to execute code on moodle_page::set_course() </p>
 <p>This function is executed before the output starts.</p>
 <p>If everything is configured correctly, user is redirected from the default course view page to the activity view page.</p>
-<p>"Section 1" is the administrative page to manage orphaned activities</p>
 <p>If user is on course view page and there is no module added to the course and the user has 'moodle/course:manageactivities' capability, redirect to create module form.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -3117,32 +3024,6 @@ course_modinfo::get_section_info_all()</dd></dl>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$preferencename</td><td>preference name </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$sectionids</td><td>affected section ids </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a7fb9d689b3f4c50974f32b02ff4896a3" name="a7fb9d689b3f4c50974f32b02ff4896a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7fb9d689b3f4c50974f32b02ff4896a3">&#9670;&#160;</a></span>reorder_activities()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">format_singleactivity::reorder_activities </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Make sure that current active activity is in section 0. </p>
-<p>All other activities are moved to section 1 that will be displayed as 'Orphaned'. It may be needed after the course format was changed or activitytype in course settings has been changed.</p>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">null|cm_info</td><td>current activity </td></tr>
   </table>
   </dd>
 </dl>
@@ -3665,27 +3546,19 @@ course_modinfo::get_section_info_all()</dd></dl>
 
 </div>
 </div>
-<a id="a63bcded94a5fefca3013f70140d343c9" name="a63bcded94a5fefca3013f70140d343c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a63bcded94a5fefca3013f70140d343c9">&#9670;&#160;</a></span>supports_ajax()</h2>
+<a id="a78eff098480bbd791b9d63c09dd2878e" name="a78eff098480bbd791b9d63c09dd2878e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78eff098480bbd791b9d63c09dd2878e">&#9670;&#160;</a></span>supports_ajax()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">core_courseformat\base::supports_ajax </td>
+          <td class="memname">format_singleactivity::supports_ajax </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Returns the information about the ajax support in the given source format. </p>
@@ -3697,31 +3570,23 @@ course_modinfo::get_section_info_all()</dd></dl>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d0/d97/classformat__legacy.html#a3f6a22452ed79af4df1443bd8ec82a67">format_legacy</a>, <a class="el" href="../../d2/df0/classformat__site.html#a482464d08e0d493484f6b92564b43893">format_site</a>, <a class="el" href="../../de/d63/classformat__social.html#ac8a7b535b3e2135429faafe6fb4bfa65">format_social</a>, <a class="el" href="../../d1/d92/classformat__topics.html#a70826be053e47b3e38103ad4f31aa1bd">format_topics</a>, and <a class="el" href="../../d5/d8d/classformat__weeks.html#a0c9837cdae52637a0bef62945d7c3dfb">format_weeks</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a63bcded94a5fefca3013f70140d343c9">core_courseformat\base</a>.</p>
 
 </div>
 </div>
-<a id="a2261e667b7010f31305bf048dee8e2ac" name="a2261e667b7010f31305bf048dee8e2ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2261e667b7010f31305bf048dee8e2ac">&#9670;&#160;</a></span>supports_components()</h2>
+<a id="a4daecaaa490c6ec25808ddeb9cbb74a4" name="a4daecaaa490c6ec25808ddeb9cbb74a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4daecaaa490c6ec25808ddeb9cbb74a4">&#9670;&#160;</a></span>supports_components()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">core_courseformat\base::supports_components </td>
+          <td class="memname">format_singleactivity::supports_components </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Returns true if this course format is compatible with content components. </p>
@@ -3733,7 +3598,7 @@ course_modinfo::get_section_info_all()</dd></dl>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d2/df0/classformat__site.html#a5671579111fb1f08b89387fafd39d017">format_site</a>, <a class="el" href="../../de/d63/classformat__social.html#ae9dbbf4e3b69039318d134d282a2b08c">format_social</a>, <a class="el" href="../../d1/d92/classformat__topics.html#acd4c0dfc2c5839b22e916e07988da484">format_topics</a>, and <a class="el" href="../../d5/d8d/classformat__weeks.html#abebdba2efc027800c22c68ff7f9f5d70">format_weeks</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a2261e667b7010f31305bf048dee8e2ac">core_courseformat\base</a>.</p>
 
 </div>
 </div>
@@ -3976,27 +3841,19 @@ course_modinfo::get_section_info_all()</dd></dl>
 
 </div>
 </div>
-<a id="a591717986091b88fb2e4cbf9d00063b3" name="a591717986091b88fb2e4cbf9d00063b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a591717986091b88fb2e4cbf9d00063b3">&#9670;&#160;</a></span>uses_sections()</h2>
+<a id="a9bcb0ca707a22f072f6c5a7cee4a4409" name="a9bcb0ca707a22f072f6c5a7cee4a4409"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bcb0ca707a22f072f6c5a7cee4a4409">&#9670;&#160;</a></span>uses_sections()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">core_courseformat\base::uses_sections </td>
+          <td class="memname">format_singleactivity::uses_sections </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Returns true if this course format uses sections. </p>
@@ -4009,7 +3866,7 @@ course_modinfo::get_section_info_all()</dd></dl>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../d0/d97/classformat__legacy.html#af30cd0c319e2a522ec4f38acc1cdc91c">format_legacy</a>, <a class="el" href="../../d2/df0/classformat__site.html#a41f6a0a8b4065325d0b435f99c86299f">format_site</a>, <a class="el" href="../../de/d63/classformat__social.html#a5633b948b0540c47454427ba38fdc309">format_social</a>, <a class="el" href="../../d1/d92/classformat__topics.html#a16e6cbe96e9d977833e91a1b3c9d4b00">format_topics</a>, and <a class="el" href="../../d5/d8d/classformat__weeks.html#ab903d76f9ce88d542e654680e47cd551">format_weeks</a>.</p>
+<p>Reimplemented from <a class="el" href="../../d4/da0/classcore__courseformat_1_1base.html#a591717986091b88fb2e4cbf9d00063b3">core_courseformat\base</a>.</p>
 
 </div>
 </div>
@@ -4144,8 +4001,8 @@ course_modinfo::get_section_info_all()</dd></dl>
 </div><div class="memdoc">
 
 <p>Method used to get the maximum number of sections for this course format. </p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000073">Deprecated</a></b></dt><dd>Since 5.1 the setting is removed. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000061">Todo</a></b></dt><dd>Remove this method in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0 (<a href="https://tracker.moodle.org/browse/MDL-85272" class="el">MDL-85272</a>). </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000071">Deprecated</a></b></dt><dd>Since 5.1 the setting is removed. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000059">Todo</a></b></dt><dd>Remove this method in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0 (<a href="https://tracker.moodle.org/browse/MDL-85272" class="el">MDL-85272</a>). </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">int</td><td></td></tr>
@@ -4174,7 +4031,7 @@ course_modinfo::get_section_info_all()</dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000074">Deprecated</a></b></dt><dd>Since 4.4. Use set_sectionnum instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000072">Deprecated</a></b></dt><dd>Since 4.4. Use set_sectionnum instead. </dd></dl>
 
 </div>
 </div>
@@ -4197,7 +4054,7 @@ course_modinfo::get_section_info_all()</dd></dl>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000075">Deprecated</a></b></dt><dd>Since 4.4. Use get_sectionnum instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000073">Deprecated</a></b></dt><dd>Since 4.4. Use get_sectionnum instead. </dd></dl>
 
 </div>
 </div>
@@ -4223,8 +4080,8 @@ course_modinfo::get_section_info_all()</dd></dl>
 
 <p>Return the old non-ajax activity action url. </p>
 <p>BrowserKit behats tests cannot trigger javascript events, so we must translate to an old non-ajax url while non-ajax course editing is still supported.</p>
-<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000076">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 5.0 </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000062">Todo</a></b></dt><dd>Remove this method in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0 (<a href="https://tracker.moodle.org/browse/MDL-83530" class="el">MDL-83530</a>).</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000074">Deprecated</a></b></dt><dd>since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 5.0 </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000060">Todo</a></b></dt><dd>Remove this method in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 6.0 (<a href="https://tracker.moodle.org/browse/MDL-83530" class="el">MDL-83530</a>).</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">string</td><td class="paramname">$action</td><td>action name the reactive action </td></tr>
@@ -4247,7 +4104,7 @@ course_modinfo::get_section_info_all()</dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jun 15 2025 03:55:47 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jun 22 2025 03:56:12 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>
