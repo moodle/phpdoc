@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;4.5</span>
    </div>
-   <div id="projectbrief">Moodle 4.5.5+ (Build: 20250706) (2fce8316271)</div>
+   <div id="projectbrief">Moodle 4.5.5+ (Build: 20250711) (ce34e8ff087)</div>
   </td>
  </tr>
  </tbody>
@@ -102,6 +102,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7501bdd295f9281c37bd06aab3116a9d" id="r_a7501bdd295f9281c37bd06aab3116a9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d04/classquestion__type.html#a7501bdd295f9281c37bd06aab3116a9d">can_analyse_responses</a> ()</td></tr>
 <tr class="memdesc:a7501bdd295f9281c37bd06aab3116a9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this question type can perform a frequency analysis of student responses.  <br /></td></tr>
 <tr class="separator:a7501bdd295f9281c37bd06aab3116a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7e8c12ac3dcc7bd7bf9c136657d139c" id="r_ab7e8c12ac3dcc7bd7bf9c136657d139c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7e8c12ac3dcc7bd7bf9c136657d139c">create_default_options</a> ($question)</td></tr>
+<tr class="memdesc:ab7e8c12ac3dcc7bd7bf9c136657d139c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a default options object for the provided question.  <br /></td></tr>
+<tr class="separator:ab7e8c12ac3dcc7bd7bf9c136657d139c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c1613baead5f8dac8a537f86342f6ab" id="r_a3c1613baead5f8dac8a537f86342f6ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d04/classquestion__type.html#a3c1613baead5f8dac8a537f86342f6ab">create_editing_form</a> ($submiturl, $question, $category, $contexts, $formeditable)</td></tr>
 <tr class="memdesc:a3c1613baead5f8dac8a537f86342f6ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an instance of the question editing form definition.  <br /></td></tr>
 <tr class="separator:a3c1613baead5f8dac8a537f86342f6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,9 +234,6 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a513141041a4e78b029643e785a5121bc" id="r_a513141041a4e78b029643e785a5121bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d04/classquestion__type.html#a513141041a4e78b029643e785a5121bc">count_hints_on_form</a> ($formdata, $withparts)</td></tr>
 <tr class="memdesc:a513141041a4e78b029643e785a5121bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count number of hints on the form.  <br /></td></tr>
 <tr class="separator:a513141041a4e78b029643e785a5121bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7e8c12ac3dcc7bd7bf9c136657d139c" id="r_ab7e8c12ac3dcc7bd7bf9c136657d139c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7e8c12ac3dcc7bd7bf9c136657d139c">create_default_options</a> ($question)</td></tr>
-<tr class="memdesc:ab7e8c12ac3dcc7bd7bf9c136657d139c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a default options object for the provided question.  <br /></td></tr>
-<tr class="separator:ab7e8c12ac3dcc7bd7bf9c136657d139c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabfe1b13d5ee34a14b387cc37bdcf74e" id="r_aabfe1b13d5ee34a14b387cc37bdcf74e"><td class="memItemLeft" align="right" valign="top"><a id="aabfe1b13d5ee34a14b387cc37bdcf74e" name="aabfe1b13d5ee34a14b387cc37bdcf74e"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>decode_file</b> ($file)</td></tr>
 <tr class="separator:aabfe1b13d5ee34a14b387cc37bdcf74e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -487,9 +487,6 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">qtype_multichoice::create_default_options </td>
@@ -498,11 +495,6 @@ Protected Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel protected">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Create a default options object for the provided question. </p>
@@ -3063,7 +3055,7 @@ Protected Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 6 2025 03:43:03 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jul 13 2025 03:48:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

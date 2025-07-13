@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.1</span>
    </div>
-   <div id="projectbrief">Moodle 5.1dev (Build: 20250706) (a6b17d8f6bd)</div>
+   <div id="projectbrief">Moodle 5.1dev (Build: 20250711) (9addea9f0ac)</div>
   </td>
  </tr>
  </tbody>
@@ -89,7 +89,7 @@ Inheritance diagram for lesson:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a10b2ac13f42a004f0efb20410e6d464f" id="r_a10b2ac13f42a004f0efb20410e6d464f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10b2ac13f42a004f0efb20410e6d464f">__construct</a> ($<a class="el" href="../../db/da8/classlesson__base.html#a7cb897559652b710591fd26adbfb829f">properties</a>, $cm=null, $course=null)</td></tr>
+<tr class="memitem:a10b2ac13f42a004f0efb20410e6d464f" id="r_a10b2ac13f42a004f0efb20410e6d464f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10b2ac13f42a004f0efb20410e6d464f">__construct</a> ($properties, $cm=null, $course=null)</td></tr>
 <tr class="memdesc:a10b2ac13f42a004f0efb20410e6d464f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor method.  <br /></td></tr>
 <tr class="separator:a10b2ac13f42a004f0efb20410e6d464f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26f66cf2f80e5f2e8cb12858cd45d290" id="r_a26f66cf2f80e5f2e8cb12858cd45d290"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/da8/classlesson__base.html#a26f66cf2f80e5f2e8cb12858cd45d290">__get</a> ($key)</td></tr>
@@ -125,6 +125,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a62b5cb84ff25e0a3cb22e5d548ccd109" id="r_a62b5cb84ff25e0a3cb22e5d548ccd109"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62b5cb84ff25e0a3cb22e5d548ccd109">cluster_jump</a> ($pageid, $userid=null)</td></tr>
 <tr class="memdesc:a62b5cb84ff25e0a3cb22e5d548ccd109"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interprets LESSON_CLUSTERJUMP jumpto value.  <br /></td></tr>
 <tr class="separator:a62b5cb84ff25e0a3cb22e5d548ccd109"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef9af1401c62ce6246a743fa0a00086d" id="r_aef9af1401c62ce6246a743fa0a00086d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef9af1401c62ce6246a743fa0a00086d">count_all_participants</a> ()</td></tr>
+<tr class="memdesc:aef9af1401c62ce6246a743fa0a00086d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of participants that have access to the lesson.  <br /></td></tr>
+<tr class="separator:aef9af1401c62ce6246a743fa0a00086d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a973b092e45ab0b60ac1be54933836b93" id="r_a973b092e45ab0b60ac1be54933836b93"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a973b092e45ab0b60ac1be54933836b93">count_all_submissions</a> ()</td></tr>
+<tr class="memdesc:a973b092e45ab0b60ac1be54933836b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count all submissions by all users in the lesson.  <br /></td></tr>
+<tr class="separator:a973b092e45ab0b60ac1be54933836b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e2b1a9e3ca47bce1f40af977bb98364" id="r_a0e2b1a9e3ca47bce1f40af977bb98364"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e2b1a9e3ca47bce1f40af977bb98364">count_submitted_participants</a> ()</td></tr>
+<tr class="memdesc:a0e2b1a9e3ca47bce1f40af977bb98364"><td class="mdescLeft">&#160;</td><td class="mdescRight">Count the number of participants that have attempted the lesson.  <br /></td></tr>
+<tr class="separator:a0e2b1a9e3ca47bce1f40af977bb98364"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49688ad0c8fcf9d722b74a808e8127ca" id="r_a49688ad0c8fcf9d722b74a808e8127ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49688ad0c8fcf9d722b74a808e8127ca">count_user_retries</a> ($userid)</td></tr>
 <tr class="memdesc:a49688ad0c8fcf9d722b74a808e8127ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of retries in a lesson for a given user.  <br /></td></tr>
 <tr class="separator:a49688ad0c8fcf9d722b74a808e8127ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,7 +266,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a45e9cdb0dbe7e2a1fbfc5738b10a1bb0" id="r_a45e9cdb0dbe7e2a1fbfc5738b10a1bb0"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45e9cdb0dbe7e2a1fbfc5738b10a1bb0">create</a> ($<a class="el" href="../../db/da8/classlesson__base.html#a7cb897559652b710591fd26adbfb829f">properties</a>)</td></tr>
+<tr class="memitem:a45e9cdb0dbe7e2a1fbfc5738b10a1bb0" id="r_a45e9cdb0dbe7e2a1fbfc5738b10a1bb0"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45e9cdb0dbe7e2a1fbfc5738b10a1bb0">create</a> ($properties)</td></tr>
 <tr class="memdesc:a45e9cdb0dbe7e2a1fbfc5738b10a1bb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simply generates a lesson object given an array/object of properties Overrides {.  <br /></td></tr>
 <tr class="separator:a45e9cdb0dbe7e2a1fbfc5738b10a1bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cc8263b1db5d2d30b635cf5619db86e" id="r_a7cc8263b1db5d2d30b635cf5619db86e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cc8263b1db5d2d30b635cf5619db86e">load</a> ($lessonid)</td></tr>
@@ -793,6 +802,81 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$properties</b></
 
 </div>
 </div>
+<a id="aef9af1401c62ce6246a743fa0a00086d" name="aef9af1401c62ce6246a743fa0a00086d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef9af1401c62ce6246a743fa0a00086d">&#9670;&#160;</a></span>count_all_participants()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">lesson::count_all_participants </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Count the number of participants that have access to the lesson. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td>the number of users that have access to view the lesson </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a973b092e45ab0b60ac1be54933836b93" name="a973b092e45ab0b60ac1be54933836b93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a973b092e45ab0b60ac1be54933836b93">&#9670;&#160;</a></span>count_all_submissions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">lesson::count_all_submissions </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Count all submissions by all users in the lesson. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td>the number of submissions (grades table) by all users in the lesson </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0e2b1a9e3ca47bce1f40af977bb98364" name="a0e2b1a9e3ca47bce1f40af977bb98364"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e2b1a9e3ca47bce1f40af977bb98364">&#9670;&#160;</a></span>count_submitted_participants()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">lesson::count_submitted_participants </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Count the number of participants that have attempted the lesson. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">int</td><td>the number of users that have attempted the lesson </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a49688ad0c8fcf9d722b74a808e8127ca" name="a49688ad0c8fcf9d722b74a808e8127ca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a49688ad0c8fcf9d722b74a808e8127ca">&#9670;&#160;</a></span>count_user_retries()</h2>
 
@@ -849,7 +933,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$properties</b></
 </div><div class="memdoc">
 
 <p>Simply generates a lesson object given an array/object of properties Overrides {. </p>
-<dl class="section see"><dt>See also</dt><dd>lesson_base-&gt;<a class="el" href="#a45e9cdb0dbe7e2a1fbfc5738b10a1bb0" title="Simply generates a lesson object given an array/object of properties Overrides {.">create()</a>}</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>lesson_base-&gt;create()}</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">object&#160;|&#160;array</td><td class="paramname">$properties</td><td></td></tr>
@@ -1152,7 +1236,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$properties</b></
 </div><div class="memdoc">
 
 <p>Returns the first page for the lesson or false if there isn't one. </p>
-<p>This method should be called via the magic method <a class="el" href="../../db/da8/classlesson__base.html#a26f66cf2f80e5f2e8cb12858cd45d290" title="Magic get method.">__get()</a>; <code> $firstpage = $lesson-&gt;firstpage; </code></p>
+<p>This method should be called via the magic method <a class="el" href="../../dc/d2c/group___a_d_odb.html#ga6481e8cfc93c80885b3d72a6e1f15a1f" title="Magic method to proxy property getter calls back to the proper ADODB object currently in use.">__get()</a>; <code> $firstpage = $lesson-&gt;firstpage; </code></p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">lesson_page|bool</td><td>Returns the <a class="el" href="../../dc/d90/classlesson__page.html">lesson_page</a> specialised object or false </td></tr>
@@ -1281,7 +1365,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$properties</b></
 </div><div class="memdoc">
 
 <p>Returns the last page for the lesson or false if there isn't one. </p>
-<p>This method should be called via the magic method <a class="el" href="../../db/da8/classlesson__base.html#a26f66cf2f80e5f2e8cb12858cd45d290" title="Magic get method.">__get()</a>; <code> $lastpage = $lesson-&gt;lastpage; </code></p>
+<p>This method should be called via the magic method <a class="el" href="../../dc/d2c/group___a_d_odb.html#ga6481e8cfc93c80885b3d72a6e1f15a1f" title="Magic method to proxy property getter calls back to the proper ADODB object currently in use.">__get()</a>; <code> $lastpage = $lesson-&gt;lastpage; </code></p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">lesson_page|bool</td><td>Returns the <a class="el" href="../../dc/d90/classlesson__page.html">lesson_page</a> specialised object or false </td></tr>
@@ -2271,7 +2355,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$properties</b></
 </div><div class="memdoc">
 
 <p>Course module object gets set and retrieved by directly calling <code>$lesson-&gt;cm;</code> </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="#abc901e8eba4929286f65b631e9fb5d61" title="Return the lesson course module object.">get_cm()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>get_cm() </dd></dl>
 
 </div>
 </div>
@@ -2296,7 +2380,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$properties</b></
 </div><div class="memdoc">
 
 <p>Context object gets set and retrieved by directly calling <code>$lesson-&gt;context;</code> </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a300be49256c833a9e639898ea82d5708" title="Return the lesson context object.">get_context()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>get_context() </dd></dl>
 
 </div>
 </div>
@@ -2321,7 +2405,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$properties</b></
 </div><div class="memdoc">
 
 <p>Course object gets set and retrieved by directly calling <code>$lesson-&gt;courserecord;</code> </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a8c5b06070429180ef812f02ff09f89c4" title="Return the lesson course object.">get_courserecord()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>get_courserecord() </dd></dl>
 
 </div>
 </div>
@@ -2346,7 +2430,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$properties</b></
 </div><div class="memdoc">
 
 <p>The id of the first page (where prevpageid = 0) gets set and retrieved by {. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="#afb511c82561339798655c9a71c7f0d7c" title="Returns the id of the first page of this lesson.">get_firstpageid()</a>} by directly calling <code>$lesson-&gt;firstpageid;</code> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>get_firstpageid()} by directly calling <code>$lesson-&gt;firstpageid;</code> </dd></dl>
 
 </div>
 </div>
@@ -2371,7 +2455,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$properties</b></
 </div><div class="memdoc">
 
 <p>The id of the last page (where nextpageid = 0) gets set and retrieved by {. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="#adb59512633db5242d088449d2f1e131b" title="Returns the id of the last page of this lesson.">get_lastpageid()</a>} by directly calling <code>$lesson-&gt;lastpageid;</code> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>get_lastpageid()} by directly calling <code>$lesson-&gt;lastpageid;</code> </dd></dl>
 
 </div>
 </div>
@@ -2396,7 +2480,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$properties</b></
 </div><div class="memdoc">
 
 <p>An array used to cache the pages associated with this lesson after the first time they have been loaded. </p>
-<p>A note to developers: If you are going to be working with MORE than one or two pages from a lesson you should probably call {</p><dl class="section see"><dt>See also</dt><dd>$lesson-&gt;<a class="el" href="#ad38b6334e6d00aef592360d9c9dd70e8" title="Loads ALL of the pages for this lesson.">load_all_pages()</a>} in order to save excess database queries. An array of <a class="el" href="../../dc/d90/classlesson__page.html">lesson_page</a> objects </dd></dl>
+<p>A note to developers: If you are going to be working with MORE than one or two pages from a lesson you should probably call {</p><dl class="section see"><dt>See also</dt><dd>$lesson-&gt;load_all_pages()} in order to save excess database queries. An array of <a class="el" href="../../dc/d90/classlesson__page.html">lesson_page</a> objects </dd></dl>
 
 </div>
 </div>
@@ -2406,7 +2490,7 @@ stdClass&#160;</td><td class="memItemRight" valign="bottom"><b>$properties</b></
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 6 2025 03:56:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jul 13 2025 04:03:20 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

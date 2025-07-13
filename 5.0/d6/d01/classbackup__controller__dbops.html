@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0.1+ (Build: 20250706) (03659104489)</div>
+   <div id="projectbrief">Moodle 5.0.1+ (Build: 20250711) (61af040cd5f)</div>
   </td>
  </tr>
  </tbody>
@@ -116,12 +116,19 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>create_backup_files
 <tr class="memitem:a843c6dbc9d5b63f63eb6397f8ccf7402" id="r_a843c6dbc9d5b63f63eb6397f8ccf7402"><td class="memItemLeft" align="right" valign="top"><a id="a843c6dbc9d5b63f63eb6397f8ccf7402" name="a843c6dbc9d5b63f63eb6397f8ccf7402"></a>
 static&#160;</td><td class="memItemRight" valign="bottom"><b>create_backup_ids_temp_table</b> ($backupid)</td></tr>
 <tr class="separator:a843c6dbc9d5b63f63eb6397f8ccf7402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af81b0b6f0c7d4caa94971503bef5069a" id="r_af81b0b6f0c7d4caa94971503bef5069a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af81b0b6f0c7d4caa94971503bef5069a">create_question_category_temp_tables</a> ()</td></tr>
+<tr class="memdesc:af81b0b6f0c7d4caa94971503bef5069a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create temporary tables to store a partial copies of question category data from the backup_ids_temp table.  <br /></td></tr>
+<tr class="separator:af81b0b6f0c7d4caa94971503bef5069a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e57dccc3f012a512151ab2476491b26" id="r_a7e57dccc3f012a512151ab2476491b26"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e57dccc3f012a512151ab2476491b26">decode_backup_temp_info</a> ($info)</td></tr>
 <tr class="memdesc:a7e57dccc3f012a512151ab2476491b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decode the info field from backup_ids_temp or backup_files_temp.  <br /></td></tr>
 <tr class="separator:a7e57dccc3f012a512151ab2476491b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a555ef61ba41f07ff0ea4954e9eaa2a62" id="r_a555ef61ba41f07ff0ea4954e9eaa2a62"><td class="memItemLeft" align="right" valign="top"><a id="a555ef61ba41f07ff0ea4954e9eaa2a62" name="a555ef61ba41f07ff0ea4954e9eaa2a62"></a>
 static&#160;</td><td class="memItemRight" valign="bottom"><b>drop_backup_ids_temp_table</b> ($backupid)</td></tr>
 <tr class="separator:a555ef61ba41f07ff0ea4954e9eaa2a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a948e8447026ebc7b1aedc72519135c52" id="r_a948e8447026ebc7b1aedc72519135c52"><td class="memItemLeft" align="right" valign="top"><a id="a948e8447026ebc7b1aedc72519135c52" name="a948e8447026ebc7b1aedc72519135c52"></a>
+static&#160;</td><td class="memItemRight" valign="bottom"><b>drop_question_category_temp_tables</b> ()</td></tr>
+<tr class="memdesc:a948e8447026ebc7b1aedc72519135c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispose of the additional temporary tables. <br /></td></tr>
+<tr class="separator:a948e8447026ebc7b1aedc72519135c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfbc1d98843575a029a1f6a4ee7ec3d4" id="r_acfbc1d98843575a029a1f6a4ee7ec3d4"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acfbc1d98843575a029a1f6a4ee7ec3d4">encode_backup_temp_info</a> ($info)</td></tr>
 <tr class="memdesc:acfbc1d98843575a029a1f6a4ee7ec3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encode the info field for backup_ids_temp or backup_files_temp.  <br /></td></tr>
 <tr class="separator:acfbc1d98843575a029a1f6a4ee7ec3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -295,6 +302,34 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>$includesfil
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="af81b0b6f0c7d4caa94971503bef5069a" name="af81b0b6f0c7d4caa94971503bef5069a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af81b0b6f0c7d4caa94971503bef5069a">&#9670;&#160;</a></span>create_question_category_temp_tables()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static backup_controller_dbops::create_question_category_temp_tables </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create temporary tables to store a partial copies of question category data from the backup_ids_temp table. </p>
+<p>This is to work around <a class="el" href="../../d1/dd7/class_my_s_q_l.html" title="Caches data to a MySQL database.">MySQL</a>'s restruction on joining the same temporary table multiple times in the same query. It isn't necessary on PostgreSQL (which can join temporary tables multiple times) or MSSQL (which doesn't really use temporary tables) but doing it this way keeps things database-agnostic. </p>
 
 </div>
 </div>
@@ -523,7 +558,7 @@ static string&#160;</td><td class="memItemRight" valign="bottom"><b>$includesfil
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 6 2025 03:48:58 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jul 13 2025 03:54:51 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

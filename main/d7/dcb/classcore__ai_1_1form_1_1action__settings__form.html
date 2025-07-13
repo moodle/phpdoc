@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.1</span>
    </div>
-   <div id="projectbrief">Moodle 5.1dev (Build: 20250706) (a6b17d8f6bd)</div>
+   <div id="projectbrief">Moodle 5.1dev (Build: 20250711) (9addea9f0ac)</div>
   </td>
  </tr>
  </tbody>
@@ -128,9 +128,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ga523a0de68ba31d13579137105b7f514c" id="r_ga523a0de68ba31d13579137105b7f514c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9c/group__core__form.html#ga523a0de68ba31d13579137105b7f514c">focus</a> ($name=NULL)</td></tr>
 <tr class="memdesc:ga523a0de68ba31d13579137105b7f514c"><td class="mdescLeft">&#160;</td><td class="mdescRight">To autofocus on first form element or first element with error.  <br /></td></tr>
 <tr class="separator:ga523a0de68ba31d13579137105b7f514c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga381e23f9e3fee00c66fd44f821fdbcd9" id="r_ga381e23f9e3fee00c66fd44f821fdbcd9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d9c/group__core__form.html#ga381e23f9e3fee00c66fd44f821fdbcd9">get_data</a> ()</td></tr>
-<tr class="memdesc:ga381e23f9e3fee00c66fd44f821fdbcd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return submitted data if properly submitted or returns NULL if validation fails or if there is no submitted data.  <br /></td></tr>
-<tr class="separator:ga381e23f9e3fee00c66fd44f821fdbcd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d12243e6948bc0550456f6e5842da22" id="r_a6d12243e6948bc0550456f6e5842da22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d12243e6948bc0550456f6e5842da22">get_data</a> ()</td></tr>
+<tr class="memdesc:a6d12243e6948bc0550456f6e5842da22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return submitted data if properly submitted or returns NULL if validation fails or if there is no submitted data.  <br /></td></tr>
+<tr class="separator:a6d12243e6948bc0550456f6e5842da22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9102e8f23e6a8e2b10a2909eb6fda6d4" id="r_a9102e8f23e6a8e2b10a2909eb6fda6d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9102e8f23e6a8e2b10a2909eb6fda6d4">get_defaults</a> ()</td></tr>
 <tr class="memdesc:a9102e8f23e6a8e2b10a2909eb6fda6d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the default values for the form.  <br /></td></tr>
 <tr class="separator:a9102e8f23e6a8e2b10a2909eb6fda6d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -366,6 +366,36 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
 
 </div>
 </div>
+<a id="a6d12243e6948bc0550456f6e5842da22" name="a6d12243e6948bc0550456f6e5842da22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d12243e6948bc0550456f6e5842da22">&#9670;&#160;</a></span>get_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_ai\form\action_settings_form::get_data </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return submitted data if properly submitted or returns NULL if validation fails or if there is no submitted data. </p>
+<p>note: $slashed param removed</p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">stdClass|null</td><td>submitted data; NULL if not valid or not submitted or cancelled </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="../../d6/d9c/group__core__form.html#ga381e23f9e3fee00c66fd44f821fdbcd9">moodleform</a>.</p>
+
+<p>Reimplemented in <a class="el" href="../../d6/da6/classaiprovider__ollama_1_1form_1_1action__form.html#a4963344b0cc2bd8313fd9c96b100f97c">aiprovider_ollama\form\action_form</a>, and <a class="el" href="../../d6/d37/classaiprovider__openai_1_1form_1_1action__form.html#a1ea6beab0a11990ad6e7b972e1c8cdcc">aiprovider_openai\form\action_form</a>.</p>
+
+</div>
+</div>
 <a id="a9102e8f23e6a8e2b10a2909eb6fda6d4" name="a9102e8f23e6a8e2b10a2909eb6fda6d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9102e8f23e6a8e2b10a2909eb6fda6d4">&#9670;&#160;</a></span>get_defaults()</h2>
 
@@ -399,7 +429,7 @@ static int&#160;</td><td class="memItemRight" valign="bottom"><b>$uniqueid</b> =
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 6 2025 03:58:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jul 13 2025 04:04:36 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

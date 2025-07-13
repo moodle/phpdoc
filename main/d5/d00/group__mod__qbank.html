@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.1</span>
    </div>
-   <div id="projectbrief">Moodle 5.1dev (Build: 20250706) (a6b17d8f6bd)</div>
+   <div id="projectbrief">Moodle 5.1dev (Build: 20250711) (9addea9f0ac)</div>
   </td>
  </tr>
  </tbody>
@@ -115,6 +115,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga36689ce4036be7a7552ec69febfb1125" id="r_ga36689ce4036be7a7552ec69febfb1125"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga36689ce4036be7a7552ec69febfb1125">qbank_add_instance</a> (stdClass $moduleinstance, ?<a class="el" href="../../d7/dc4/classmod__qbank__mod__form.html">mod_qbank_mod_form</a> $mform)</td></tr>
 <tr class="memdesc:ga36689ce4036be7a7552ec69febfb1125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves a new instance of the mod_qbank into the database.  <br /></td></tr>
 <tr class="separator:ga36689ce4036be7a7552ec69febfb1125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1cc5a21756b16db236abdb8fec07a0b8" id="r_ga1cc5a21756b16db236abdb8fec07a0b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1cc5a21756b16db236abdb8fec07a0b8">qbank_course_backend_generator_create_activity</a> (<a class="el" href="../../d4/d96/classtool__generator__course__backend.html">tool_generator_course_backend</a> $backend, testing_data_generator $generator, int $courseid, int $number,)</td></tr>
+<tr class="memdesc:ga1cc5a21756b16db236abdb8fec07a0b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback for tool_generator so we can add qbanks to generated courses.  <br /></td></tr>
+<tr class="separator:ga1cc5a21756b16db236abdb8fec07a0b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2806d44c2eecb7d77d24d484facc3c18" id="r_ga2806d44c2eecb7d77d24d484facc3c18"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga2806d44c2eecb7d77d24d484facc3c18">qbank_delete_instance</a> (int $id)</td></tr>
 <tr class="memdesc:ga2806d44c2eecb7d77d24d484facc3c18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes an instance of the mod_qbank from the database.  <br /></td></tr>
 <tr class="separator:ga2806d44c2eecb7d77d24d484facc3c18"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,6 +190,60 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2025
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">int</td><td>The id of the newly inserted record. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga1cc5a21756b16db236abdb8fec07a0b8" name="ga1cc5a21756b16db236abdb8fec07a0b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1cc5a21756b16db236abdb8fec07a0b8">&#9670;&#160;</a></span>qbank_course_backend_generator_create_activity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">qbank_course_backend_generator_create_activity </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d96/classtool__generator__course__backend.html">tool_generator_course_backend</a></td>          <td class="paramname"><span class="paramname"><em>$backend</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">testing_data_generator</td>          <td class="paramname"><span class="paramname"><em>$generator</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$courseid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$number</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Callback for tool_generator so we can add qbanks to generated courses. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype"><a class="el" href="../../d4/d96/classtool__generator__course__backend.html" title="Backend code for the &#39;make large course&#39; tool.">tool_generator_course_backend</a></td><td class="paramname">$backend</td><td></td></tr>
+    <tr><td class="paramtype">testing_data_generator</td><td class="paramname">$generator</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$courseid</td><td></td></tr>
+    <tr><td class="paramtype">int</td><td class="paramname">$number</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">void</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">coding_exception</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -373,7 +430,7 @@ $plugin&#160;</td><td class="memItemRight" valign="bottom"><b>version</b> = 2025
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 6 2025 03:55:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jul 13 2025 04:02:06 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

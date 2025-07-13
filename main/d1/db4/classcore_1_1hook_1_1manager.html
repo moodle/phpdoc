@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.1</span>
    </div>
-   <div id="projectbrief">Moodle 5.1dev (Build: 20250706) (a6b17d8f6bd)</div>
+   <div id="projectbrief">Moodle 5.1dev (Build: 20250711) (9addea9f0ac)</div>
   </td>
  </tr>
  </tbody>
@@ -110,9 +110,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acebb8200bcd76b9e16a479a00206f44c" id="r_acebb8200bcd76b9e16a479a00206f44c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acebb8200bcd76b9e16a479a00206f44c">getListenersForEvent</a> (object $event)</td></tr>
 <tr class="memdesc:acebb8200bcd76b9e16a479a00206f44c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the list of listeners for the specified event.  <br /></td></tr>
 <tr class="separator:acebb8200bcd76b9e16a479a00206f44c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa41e3671020a7eacb6ff0c34b07209f5" id="r_aa41e3671020a7eacb6ff0c34b07209f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa41e3671020a7eacb6ff0c34b07209f5">is_deprecated_plugin_callback</a> (string $plugincallback)</td></tr>
-<tr class="memdesc:aa41e3671020a7eacb6ff0c34b07209f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the plugin callback from lib.php deprecated by any hook?  <br /></td></tr>
-<tr class="separator:aa41e3671020a7eacb6ff0c34b07209f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd32e6dafcf27a39d5e29bca75d89f22" id="r_afd32e6dafcf27a39d5e29bca75d89f22"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd32e6dafcf27a39d5e29bca75d89f22">is_deprecated_plugin_callback</a> ()</td></tr>
+<tr class="separator:afd32e6dafcf27a39d5e29bca75d89f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a337c01ecdc9191040b800e317904de44" id="r_a337c01ecdc9191040b800e317904de44"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a337c01ecdc9191040b800e317904de44">is_deprecating_hook_present</a> (string $<a class="el" href="../../db/d60/classcore_1_1component.html">component</a>, string $plugincallback)</td></tr>
 <tr class="memdesc:a337c01ecdc9191040b800e317904de44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is there a hook callback in component that deprecates given lib.php plugin callback?  <br /></td></tr>
 <tr class="separator:a337c01ecdc9191040b800e317904de44"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -428,8 +427,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa41e3671020a7eacb6ff0c34b07209f5" name="aa41e3671020a7eacb6ff0c34b07209f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa41e3671020a7eacb6ff0c34b07209f5">&#9670;&#160;</a></span>is_deprecated_plugin_callback()</h2>
+<a id="afd32e6dafcf27a39d5e29bca75d89f22" name="afd32e6dafcf27a39d5e29bca75d89f22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd32e6dafcf27a39d5e29bca75d89f22">&#9670;&#160;</a></span>is_deprecated_plugin_callback()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -437,27 +436,12 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">core\hook\manager::is_deprecated_plugin_callback </td>
           <td>(</td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$plugincallback</em></span></td><td>)</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Is the plugin callback from lib.php deprecated by any hook? </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$plugincallback</td><td>short callback name without the component prefix </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="retval"><dt>Return values</dt><dd>
-  <table class="retval">
-    <tr><td class="paramname">bool</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="deprecated"><dt><b><a class="el" href="../../da/d58/deprecated.html#_deprecated000196">Deprecated</a></b></dt><dd>in favour of get_hooks_deprecating_plugin_callback since <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.4. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000108">Todo</a></b></dt><dd>Remove in <a class="el" href="../../d7/d79/namespace_moodle.html" title="&#160;">Moodle</a> 4.8 (<a href="https://tracker.moodle.org/browse/MDL-80327" class="el">MDL-80327</a>). </dd></dl>
 
 </div>
 </div>
@@ -599,7 +583,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 6 2025 03:57:46 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jul 13 2025 04:04:08 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.1</span>
    </div>
-   <div id="projectbrief">Moodle 5.1dev (Build: 20250706) (a6b17d8f6bd)</div>
+   <div id="projectbrief">Moodle 5.1dev (Build: 20250711) (9addea9f0ac)</div>
   </td>
  </tr>
  </tbody>
@@ -101,9 +101,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a09f8effa0f655690bc0f3c44386865c3" id="r_a09f8effa0f655690bc0f3c44386865c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a09f8effa0f655690bc0f3c44386865c3">get_model_name</a> ()</td></tr>
 <tr class="memdesc:a09f8effa0f655690bc0f3c44386865c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the model.  <br /></td></tr>
 <tr class="separator:a09f8effa0f655690bc0f3c44386865c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11cd87b69cc54f3574b7cc07863d6708" id="r_a11cd87b69cc54f3574b7cc07863d6708"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11cd87b69cc54f3574b7cc07863d6708">has_model_settings</a> ()</td></tr>
-<tr class="memdesc:a11cd87b69cc54f3574b7cc07863d6708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the model has settings.  <br /></td></tr>
-<tr class="separator:a11cd87b69cc54f3574b7cc07863d6708"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae322a81940fa29decab3cdfd0b67a448" id="r_ae322a81940fa29decab3cdfd0b67a448"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae322a81940fa29decab3cdfd0b67a448">get_model_settings</a> ()</td></tr>
+<tr class="memdesc:ae322a81940fa29decab3cdfd0b67a448"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all settings that can be configured for a model.  <br /></td></tr>
+<tr class="separator:ae322a81940fa29decab3cdfd0b67a448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fb80fb67341026f8216c5d3d9209615" id="r_a1fb80fb67341026f8216c5d3d9209615"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/de3/classcore__ai_1_1aimodel_1_1base.html#a1fb80fb67341026f8216c5d3d9209615">has_model_settings</a> ()</td></tr>
+<tr class="memdesc:a1fb80fb67341026f8216c5d3d9209615"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the model has settings.  <br /></td></tr>
+<tr class="separator:a1fb80fb67341026f8216c5d3d9209615"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a636d88af890dd81233fd321f08faa905" id="r_a636d88af890dd81233fd321f08faa905"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a636d88af890dd81233fd321f08faa905">model_type</a> ()</td></tr>
 <tr class="memdesc:a636d88af890dd81233fd321f08faa905"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get model type.  <br /></td></tr>
 <tr class="separator:a636d88af890dd81233fd321f08faa905"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,19 +206,54 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>MODEL_TYPE_TEXT<
 
 </div>
 </div>
-<a id="a11cd87b69cc54f3574b7cc07863d6708" name="a11cd87b69cc54f3574b7cc07863d6708"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11cd87b69cc54f3574b7cc07863d6708">&#9670;&#160;</a></span>has_model_settings()</h2>
+<a id="ae322a81940fa29decab3cdfd0b67a448" name="ae322a81940fa29decab3cdfd0b67a448"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae322a81940fa29decab3cdfd0b67a448">&#9670;&#160;</a></span>get_model_settings()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">aiprovider_ollama\aimodel\llama33::has_model_settings </td>
+          <td class="memname">aiprovider_ollama\aimodel\llama33::get_model_settings </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+<p>Get all settings that can be configured for a model. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string[]</td><td>Array of settings. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="../../d4/de3/classcore__ai_1_1aimodel_1_1base.html#a5c85dbefefea92a43c3d518277eb9dca">core_ai\aimodel\base</a>.</p>
+
+</div>
+</div>
+<a id="a1fb80fb67341026f8216c5d3d9209615" name="a1fb80fb67341026f8216c5d3d9209615"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fb80fb67341026f8216c5d3d9209615">&#9670;&#160;</a></span>has_model_settings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_ai\aimodel\base::has_model_settings </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Check if the model has settings. </p>
@@ -226,7 +264,7 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>MODEL_TYPE_TEXT<
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="../../d4/de3/classcore__ai_1_1aimodel_1_1base.html#a1fb80fb67341026f8216c5d3d9209615">core_ai\aimodel\base</a>.</p>
+<p>Reimplemented in <a class="el" href="../../df/d98/classaiprovider__openai_1_1aimodel_1_1dalle3.html#a20dab9e92bed9c3dd47e54902a91d62c">aiprovider_openai\aimodel\dalle3</a>.</p>
 
 </div>
 </div>
@@ -263,7 +301,7 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>MODEL_TYPE_TEXT<
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 6 2025 03:57:19 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jul 13 2025 04:03:41 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

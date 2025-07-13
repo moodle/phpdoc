@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0.1+ (Build: 20250706) (03659104489)</div>
+   <div id="projectbrief">Moodle 5.0.1+ (Build: 20250711) (61af040cd5f)</div>
   </td>
  </tr>
  </tbody>
@@ -200,6 +200,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d41/classcore__question_1_1output_1_1question__bank__list.html">core_question\output\question_bank_list</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddd/classcore__question_1_1output_1_1question__category__selector.html">core_question\output\question_category_selector</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d13/classcore__question_1_1output_1_1question__version__info.html">core_question\output\question_version_info</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df8/classcore__question_1_1output_1_1question__version__selection.html">core_question\output\question_version_selection</a></td></tr>
@@ -280,6 +282,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ga2ae870662b9cb6bd589e29bdd4e2196f" id="r_ga2ae870662b9cb6bd589e29bdd4e2196f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga2ae870662b9cb6bd589e29bdd4e2196f">core_question_output_fragment_category_selector</a> (array $args)</td></tr>
+<tr class="memdesc:ga2ae870662b9cb6bd589e29bdd4e2196f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Render and return a category selector for the categories in a given question bank.  <br /></td></tr>
+<tr class="separator:ga2ae870662b9cb6bd589e29bdd4e2196f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad25175bac907fb65ebacad421630eda9" id="r_gad25175bac907fb65ebacad421630eda9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gad25175bac907fb65ebacad421630eda9">core_question_output_fragment_question_data</a> (array $args)</td></tr>
 <tr class="memdesc:gad25175bac907fb65ebacad421630eda9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Question data fragment to get the question html via ajax call.  <br /></td></tr>
 <tr class="separator:gad25175bac907fb65ebacad421630eda9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -289,6 +294,37 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga2ae870662b9cb6bd589e29bdd4e2196f" name="ga2ae870662b9cb6bd589e29bdd4e2196f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2ae870662b9cb6bd589e29bdd4e2196f">&#9670;&#160;</a></span>core_question_output_fragment_category_selector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_question_output_fragment_category_selector </td>
+          <td>(</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$args</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Render and return a category selector for the categories in a given question bank. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$args</td><td>['bankcmid' =&gt; Course module ID of the question bank] </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td>The rendered selector. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="gad25175bac907fb65ebacad421630eda9" name="gad25175bac907fb65ebacad421630eda9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gad25175bac907fb65ebacad421630eda9">&#9670;&#160;</a></span>core_question_output_fragment_question_data()</h2>
 
@@ -404,7 +440,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 6 2025 03:48:48 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jul 13 2025 03:54:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

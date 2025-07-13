@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0.1+ (Build: 20250706) (03659104489)</div>
+   <div id="projectbrief">Moodle 5.0.1+ (Build: 20250711) (61af040cd5f)</div>
   </td>
  </tr>
  </tbody>
@@ -75,6 +75,7 @@ $(function(){ initResizable(false); });
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="../../dd/d52/classcore__question_1_1external_1_1search__shared__banks-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">core_question\external\search_shared_banks Class Reference<div class="ingroups"><a class="el" href="../../de/d37/group__core__question.html">core_question</a></div></div></div>
 </div><!--header-->
@@ -88,9 +89,9 @@ Inheritance diagram for core_question\external\search_shared_banks:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab40251ddaa7fee78e7186a74a0eb5c7a" id="r_ab40251ddaa7fee78e7186a74a0eb5c7a"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab40251ddaa7fee78e7186a74a0eb5c7a">execute</a> (int $contextid, string $search='')</td></tr>
-<tr class="memdesc:ab40251ddaa7fee78e7186a74a0eb5c7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return ID and formatted name of question banks accessible by the user, in courses other than the one $contextid is in.  <br /></td></tr>
-<tr class="separator:ab40251ddaa7fee78e7186a74a0eb5c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82487d080970cc67c27a583b02814feb" id="r_a82487d080970cc67c27a583b02814feb"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82487d080970cc67c27a583b02814feb">execute</a> (int $contextid, string $search='', array $requiredcapabilities=['use'],)</td></tr>
+<tr class="memdesc:a82487d080970cc67c27a583b02814feb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return ID and formatted name of question banks accessible by the user, in courses other than the one $contextid is in.  <br /></td></tr>
+<tr class="separator:a82487d080970cc67c27a583b02814feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89e35208abf01c799cc86d16dc7230ee" id="r_a89e35208abf01c799cc86d16dc7230ee"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89e35208abf01c799cc86d16dc7230ee">execute_parameters</a> ()</td></tr>
 <tr class="memdesc:a89e35208abf01c799cc86d16dc7230ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define parameters for external function.  <br /></td></tr>
 <tr class="separator:a89e35208abf01c799cc86d16dc7230ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -104,10 +105,16 @@ Public Attributes</h2></td></tr>
 int const&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_RESULTS</b> = 20</td></tr>
 <tr class="memdesc:a21302adef10050f706d48d87616eb2ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of banks to return. <br /></td></tr>
 <tr class="separator:a21302adef10050f706d48d87616eb2ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:ae2ef2a067db376b116a5af0e080987cd" id="r_ae2ef2a067db376b116a5af0e080987cd"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae2ef2a067db376b116a5af0e080987cd">expand_capabilities</a> (array $abbreviations)</td></tr>
+<tr class="memdesc:ae2ef2a067db376b116a5af0e080987cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expand a list of abbreviated capaibilities into an array of full capability strings.  <br /></td></tr>
+<tr class="separator:ae2ef2a067db376b116a5af0e080987cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab40251ddaa7fee78e7186a74a0eb5c7a" name="ab40251ddaa7fee78e7186a74a0eb5c7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab40251ddaa7fee78e7186a74a0eb5c7a">&#9670;&#160;</a></span>execute()</h2>
+<a id="a82487d080970cc67c27a583b02814feb" name="a82487d080970cc67c27a583b02814feb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82487d080970cc67c27a583b02814feb">&#9670;&#160;</a></span>execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -123,7 +130,12 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_RESULTS</b> 
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$search</em></span><span class="paramdefsep"> = </span><span class="paramdefval">''</span>&#160;)</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$search</em></span><span class="paramdefsep"> = </span><span class="paramdefval">''</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$requiredcapabilities</em></span><span class="paramdefsep"> = </span><span class="paramdefval">['use']</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -138,9 +150,11 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_RESULTS</b> 
   <table class="params">
     <tr><td class="paramtype">int</td><td class="paramname">$contextid</td><td>Context ID of the current activity </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$search</td><td>String to filter results by question bank name </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$requiredcapabilities</td><td>List of abbreviated capabilities to check, {</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section see"><dt>See also</dt><dd>self::expand_capabilities()} </dd></dl>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">array</td><td></td></tr>
@@ -216,13 +230,54 @@ int const&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_RESULTS</b> 
 
 </div>
 </div>
+<a id="ae2ef2a067db376b116a5af0e080987cd" name="ae2ef2a067db376b116a5af0e080987cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2ef2a067db376b116a5af0e080987cd">&#9670;&#160;</a></span>expand_capabilities()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static core_question\external\search_shared_banks::expand_capabilities </td>
+          <td>(</td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$abbreviations</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Expand a list of abbreviated capaibilities into an array of full capability strings. </p>
+<p>Each abbreviation must match a capability with the 'moodle/question:' prefix. Capabilities that have an "all" and "mine" variant will have both variants included in the returned array.</p>
+<p>These abbreviations are copied from {</p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/de1/group__core.html#ga9430f595d0f2a57d86ff4765dd98b339" title="Check capability on category.">question_has_capability_on()</a>}</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$abbreviations</td><td>Abbreviated capabilities. Must match capabilities with the 'moodle/question:' prefix. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>The expanded capabilities </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>question/classes/external/<b>search_shared_banks.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 6 2025 03:51:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jul 13 2025 03:57:38 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

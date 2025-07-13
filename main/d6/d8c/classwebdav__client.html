@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.1</span>
    </div>
-   <div id="projectbrief">Moodle 5.1dev (Build: 20250706) (a6b17d8f6bd)</div>
+   <div id="projectbrief">Moodle 5.1dev (Build: 20250711) (9addea9f0ac)</div>
   </td>
  </tr>
  </tbody>
@@ -144,6 +144,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8763fdf63b7a6b46efdeb477d6dfdc4a" id="r_a8763fdf63b7a6b46efdeb477d6dfdc4a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8763fdf63b7a6b46efdeb477d6dfdc4a">put_file</a> ($path, $filename)</td></tr>
 <tr class="memdesc:a8763fdf63b7a6b46efdeb477d6dfdc4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Public method put_file.  <br /></td></tr>
 <tr class="separator:a8763fdf63b7a6b46efdeb477d6dfdc4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a493e1f271b9ef8885e0611ffc49dc8ca" id="r_a493e1f271b9ef8885e0611ffc49dc8ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a493e1f271b9ef8885e0611ffc49dc8ca">search</a> (string $path, string $username, string $query, array $properties=[])</td></tr>
+<tr class="memdesc:a493e1f271b9ef8885e0611ffc49dc8ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search for files using WebDAV method.  <br /></td></tr>
+<tr class="separator:a493e1f271b9ef8885e0611ffc49dc8ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ee70fe726cbc4645cb164c9919a6f67" id="r_a1ee70fe726cbc4645cb164c9919a6f67"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ee70fe726cbc4645cb164c9919a6f67">set_protocol</a> ($version)</td></tr>
 <tr class="memdesc:a1ee70fe726cbc4645cb164c9919a6f67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set which HTTP protocol will be used.  <br /></td></tr>
 <tr class="separator:a1ee70fe726cbc4645cb164c9919a6f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -841,6 +844,55 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a493e1f271b9ef8885e0611ffc49dc8ca" name="a493e1f271b9ef8885e0611ffc49dc8ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a493e1f271b9ef8885e0611ffc49dc8ca">&#9670;&#160;</a></span>search()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">webdav_client::search </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$path</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$username</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$query</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">array</td>          <td class="paramname"><span class="paramname"><em>$properties</em></span><span class="paramdefsep"> = </span><span class="paramdefval">[]</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Search for files using WebDAV method. </p>
+<p>Implements the WebDAV SEARCH extension (RFC 5323).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$path</td><td>Request path for the DAV path </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$username</td><td>Username from the repository user in the nextcloud </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$query</td><td>Search query </td></tr>
+    <tr><td class="paramtype">array</td><td class="paramname">$properties</td><td>Optional array of DAV properties to return </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array|bool</td><td>Array of matching files/folders or false on error </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a1ee70fe726cbc4645cb164c9919a6f67" name="a1ee70fe726cbc4645cb164c9919a6f67"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ee70fe726cbc4645cb164c9919a6f67">&#9670;&#160;</a></span>set_protocol()</h2>
 
@@ -908,7 +960,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 6 2025 03:57:18 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jul 13 2025 04:03:40 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.1</span>
    </div>
-   <div id="projectbrief">Moodle 5.1dev (Build: 20250706) (a6b17d8f6bd)</div>
+   <div id="projectbrief">Moodle 5.1dev (Build: 20250711) (9addea9f0ac)</div>
   </td>
  </tr>
  </tbody>
@@ -90,12 +90,15 @@ Inheritance diagram for core_ai\aiactions\responses\response_summarise_text:</di
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab3697b11402d4080996459bfa9b35d03" id="r_ab3697b11402d4080996459bfa9b35d03"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3697b11402d4080996459bfa9b35d03">__construct</a> (bool $success, int $errorcode=0, string $errormessage='',)</td></tr>
-<tr class="memdesc:ab3697b11402d4080996459bfa9b35d03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
-<tr class="separator:ab3697b11402d4080996459bfa9b35d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0bbb0c79f4faf57d04c1a93b52ff262" id="r_ae0bbb0c79f4faf57d04c1a93b52ff262"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0bbb0c79f4faf57d04c1a93b52ff262">__construct</a> (bool $success, int $errorcode=0, string $error='', string $errormessage='',)</td></tr>
+<tr class="memdesc:ae0bbb0c79f4faf57d04c1a93b52ff262"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
+<tr class="separator:ae0bbb0c79f4faf57d04c1a93b52ff262"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf684f84e345efb9c9bd6ee4c4b98dcd" id="r_acf684f84e345efb9c9bd6ee4c4b98dcd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d73/classcore__ai_1_1aiactions_1_1responses_1_1response__base.html#acf684f84e345efb9c9bd6ee4c4b98dcd">get_actionname</a> ()</td></tr>
 <tr class="memdesc:acf684f84e345efb9c9bd6ee4c4b98dcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the name of the action that was processed.  <br /></td></tr>
 <tr class="separator:acf684f84e345efb9c9bd6ee4c4b98dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cee898ee1078c7fcc5bb6793c035b46" id="r_a8cee898ee1078c7fcc5bb6793c035b46"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d73/classcore__ai_1_1aiactions_1_1responses_1_1response__base.html#a8cee898ee1078c7fcc5bb6793c035b46">get_error</a> ()</td></tr>
+<tr class="memdesc:a8cee898ee1078c7fcc5bb6793c035b46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the error name.  <br /></td></tr>
+<tr class="separator:a8cee898ee1078c7fcc5bb6793c035b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a9daca560e75025042b3769932b2e5f" id="r_a8a9daca560e75025042b3769932b2e5f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d73/classcore__ai_1_1aiactions_1_1responses_1_1response__base.html#a8a9daca560e75025042b3769932b2e5f">get_errorcode</a> ()</td></tr>
 <tr class="memdesc:a8a9daca560e75025042b3769932b2e5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the error code.  <br /></td></tr>
 <tr class="separator:a8a9daca560e75025042b3769932b2e5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,8 +122,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2363362367c49af3f9cba7acc5844c1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab3697b11402d4080996459bfa9b35d03" name="ab3697b11402d4080996459bfa9b35d03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab3697b11402d4080996459bfa9b35d03">&#9670;&#160;</a></span>__construct()</h2>
+<a id="ae0bbb0c79f4faf57d04c1a93b52ff262" name="ae0bbb0c79f4faf57d04c1a93b52ff262"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0bbb0c79f4faf57d04c1a93b52ff262">&#9670;&#160;</a></span>__construct()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -138,6 +141,11 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$error</em></span><span class="paramdefsep"> = </span><span class="paramdefval">''</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>$errormessage</em></span><span class="paramdefsep"> = </span><span class="paramdefval">''</span>&#160;)</td>
         </tr>
       </table>
@@ -148,7 +156,8 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramtype">bool</td><td class="paramname">$success</td><td>The success status of the action. </td></tr>
     <tr><td class="paramtype">int</td><td class="paramname">$errorcode</td><td>Error code. Must exist if success is false. </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$errormessage</td><td>Error message. Must exist if success is false </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$error</td><td>Error name. Must exist if success is false </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$errormessage</td><td>Error message. </td></tr>
   </table>
   </dd>
 </dl>
@@ -180,6 +189,39 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the name of the action that was processed. </p>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">string</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8cee898ee1078c7fcc5bb6793c035b46" name="a8cee898ee1078c7fcc5bb6793c035b46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cee898ee1078c7fcc5bb6793c035b46">&#9670;&#160;</a></span>get_error()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">core_ai\aiactions\responses\response_base::get_error </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inherited">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the error name. </p>
 <dl class="retval"><dt>Return values</dt><dd>
   <table class="retval">
     <tr><td class="paramname">string</td><td></td></tr>
@@ -414,7 +456,7 @@ Public Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 6 2025 03:58:13 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jul 13 2025 04:04:35 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>

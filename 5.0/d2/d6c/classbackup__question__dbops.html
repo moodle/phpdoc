@@ -29,7 +29,7 @@
   <td id="projectalign">
    <div id="projectname">Moodle PHP Documentation<span id="projectnumber">&#160;5.0</span>
    </div>
-   <div id="projectbrief">Moodle 5.0.1+ (Build: 20250706) (03659104489)</div>
+   <div id="projectbrief">Moodle 5.0.1+ (Build: 20250711) (61af040cd5f)</div>
   </td>
  </tr>
  </tbody>
@@ -70,6 +70,7 @@ $(function(){ initResizable(false); });
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="../../df/dc3/classbackup__question__dbops-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">backup_question_dbops Class Reference<div class="ingroups"><a class="el" href="../../d6/d9f/group__moodlecore.html">moodlecore</a></div></div></div>
 </div><!--header-->
@@ -97,18 +98,64 @@ static&#160;</td><td class="memItemRight" valign="bottom"><b>calculate_question_
 static&#160;</td><td class="memItemRight" valign="bottom"><b>delete_temp_questions</b> ($backupid)</td></tr>
 <tr class="memdesc:a87729375b344eb69258871c427d833c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete all the annotated questions present in backup_ids_temp. <br /></td></tr>
 <tr class="separator:a87729375b344eb69258871c427d833c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-static-methods" name="pro-static-methods"></a>
+Static Protected Member Functions</h2></td></tr>
+<tr class="memitem:a7a254920787d315a5bb46a287aa23c42" id="r_a7a254920787d315a5bb46a287aa23c42"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a254920787d315a5bb46a287aa23c42">get_parent_categories</a> (int $categoryid)</td></tr>
+<tr class="memdesc:a7a254920787d315a5bb46a287aa23c42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recursively find the parents and ancestors of the given category.  <br /></td></tr>
+<tr class="separator:a7a254920787d315a5bb46a287aa23c42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Non instantiable helper class providing <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> support to the questions backup stuff. </p>
 <p>This class contains various static methods available for all the <a class="el" href="../../d1/dc8/class_d_b.html" title="The main &quot;DB&quot; class is simply a container class with some static methods for creating DB objects as w...">DB</a> operations performed by questions stuff</p>
 <p>TODO: Finish phpdocs </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7a254920787d315a5bb46a287aa23c42" name="a7a254920787d315a5bb46a287aa23c42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a254920787d315a5bb46a287aa23c42">&#9670;&#160;</a></span>get_parent_categories()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static backup_question_dbops::get_parent_categories </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>$categoryid</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span><span class="mlabel protected">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Recursively find the parents and ancestors of the given category. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">int</td><td class="paramname">$categoryid</td><td>The category we want to find parents for. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">array</td><td>id =&gt; parentid for each category </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>backup/util/dbops/<b>backup_question_dbops.class.php</b></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 6 2025 03:48:59 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
+Generated on Sun Jul 13 2025 03:54:52 for Moodle PHP Documentation by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2
 </small></address>
 </div><!-- doc-content -->
 </body>
